@@ -6,6 +6,10 @@
 - Unterschied zwischen GR-Daten und GR-Rest
 - Klassifizierung der Daten: Was sind Werknormdaten, wie sind die Daten verbunden.
 - Bitte mal Bilder schicken
+- Frontend Entwurf besprechen
+- Ich bräuchte mal Bilder zu den Grafiken
+- Mengengerüst
+- Gibt es einen Loop durch die verschiedenen Typen (Gemälde, Literatur, etc.)
 
 */
 
