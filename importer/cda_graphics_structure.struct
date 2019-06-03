@@ -1,0 +1,406 @@
+
+CrystalReports
+	Group* # entspricht einer Grafik
+		GroupHeader # Enthält immer genau 41 Section-Elemente
+
+			Section[SectionNumber="0"] # -> unwichtig
+
+
+			Section[SectionNumber="1"] # Beteiligte Personen
+				Subreport
+					Details[0] # Deutsch
+						Section[SectionNumber="0"] #-> Reihenfolge (des Details)
+							Field[FieldName="{CONXREFS.DISPLAYORDER}"]
+								FormattedValue
+						Section[SectionNumber="1"] #-> Rolle
+							Field[FieldName="{ROLES.ROLE}"]
+								FormattedValue
+						Section[SectionNumber="2"] #-> Displayname
+							Field[FieldName="{CONALTNAMES.DISPLAYNAME}"]
+								FormattedValue
+						Section[SectionNumber="9"] #-> Namenstyp
+							Field[FieldName="{@Nametype}"]
+								FormattedValue
+						Section[SectionNumber="10"] #-> Anderer Name
+							Field[FieldName="{@AndererName}"]
+								FormattedValue
+						Section[SectionNumber="11"] #-> Bemerkungen
+							Field[FieldName="{CONXREFDETAILS.REMARKS}"]
+								FormattedValue
+
+					Details[1] # Englisch
+						Section[SectionNumber="0"] #-> Reihenfolge
+							Field[FieldName="{CONXREFS.DISPLAYORDER}"]
+								FormattedValue
+						Section[SectionNumber="1"] #-> Rolle
+							Field[FieldName="{ROLES.ROLE}"]
+								FormattedValue
+						Section[SectionNumber="2"] #-> Displayname
+							Field[FieldName="{CONALTNAMES.DISPLAYNAME}"]
+								FormattedValue
+						Section[SectionNumber="9"] #-> Namenstyp
+							Field[FieldName="{@Nametype}"]
+								FormattedValue
+						Section[SectionNumber="10"] #-> Anderer Name
+							Field[FieldName="{@AndererName}"]
+								FormattedValue
+						Section[SectionNumber="11"] #-> Bemerkungen
+							Field[FieldName="{CONXREFDETAILS.REMARKS}"]
+								FormattedValue
+
+
+			Section[SectionNumber="2"]
+				Subreport
+					Group
+						GroupHeader
+							Section #-> Constituent-ID
+								Field[FieldName="GroupName ({CONALTNAMES.CONSTITUENTID})"]
+									FormattedValue
+
+						Group* # Alternative Namen
+							GroupHeader
+								Section #-> Displayname
+									Field[FieldName="GroupName ({CONALTNAMES.DISPLAYNAME})"]
+							Group
+								GroupHeader
+									Section #-> Namenstyp
+										Field[FieldName="GroupName ({CONALTNAMES.NAMETYPE})"]
+											FormattedValue
+
+
+			Section[SectionNumber="3"]
+				Subreport
+					Details* # Title
+						Section[SectionNumber="0"] #-> Reihenfolge
+							Field[FieldName="{OBJTITLES.DISPLAYORDER}"]
+								FormattedValue
+						Section[SectionNumber="1"] #-> Title-Typ
+							Field[FieldName="{TITLETYPES.TITLETYPE}"]
+								FormattedValue
+						Section[SectionNumber="2"] #-> Sprache
+							Field[FieldName="{LANGUAGES.LANGUAGE}"]
+								FormattedValue
+						Section[SectionNumber="3"] #-> Title
+							Field[FieldName="{OBJTITLES.TITLE}"]
+								FormattedValue
+						Section[SectionNumber="4"] #-> Bemerkungen
+							Field[FieldName="{OBJTITLES.REMARKS}"]
+								FormattedValue
+
+
+			Section[SectionNumber="4"] #-> Klassifizierung und Zustand / Version
+				Field[FieldName="{@Klassifizierung}"]
+					FormattedValue
+				Field[FieldName="{@Druckzustand}"]
+					FormattedValue
+
+
+			Section[SectionNumber="5"] #-> Objektname
+				Field[FieldName="{OBJECTS.OBJECTNAME}"]
+					FormattedValue
+
+
+			Section[SectionNumber="6"] #-> Inventarnummer !!!
+				Field[FieldName="{@Inventarnummer}"]
+					FormattedValue
+
+
+			Section[SectionNumber="7"] #-> Objekt-ID und virtuell
+				Field[FieldName="{OBJECTS.OBJECTID}"]
+					FormattedValue
+				Field[FieldName="{OBJECTS.ISVIRTUAL}"]
+					FormattedValue
+
+
+			Section[SectionNumber="8"] #-> Maße (textuell, nicht-atomar)
+				Field[FieldName="{OBJECTS.DIMENSIONS}"]
+					FormattedValue
+
+
+			Section[SectionNumber="9"] #-> Datierung
+				Field[FieldName="{OBJECTS.DATED}"]
+					FormattedValue
+
+
+			Section[SectionNumber="10"] #-> Anfangsdatum
+				Field[FieldName="{OBJECTS.DATEBEGIN}"]
+					FormattedValue
+
+
+			Section[SectionNumber="11"] #->Enddatum
+				Field[FieldName="{OBJECTS.DATEEND}"]
+					FormattedValue
+
+			Section[SectionNumber="12"] #-> Datierungsbemerkung -> Deutsch und Englisch getrennt durch '#'
+				Field[FieldName="{OBJECTS.DATEREMARKS}"]
+					FormattedValue
+
+
+			Section[SectionNumber="13"] #-> Historische Daten (odd = Deutsch; even = Englisch; abwechselnd)
+				Subreport
+					Details*
+						Section[SectionNumber="0"] #-> Ereignis-Typ
+							Field[FieldName="{OBJDATES.EVENTTYPE}"]
+								FormattedValue
+						Section[SectionNumber="1"] #-> Datumstext
+							Field[FieldName="{OBJDATES.DATETEXT}"]
+								FormattedValue
+						Section[SectionNumber="2"] #-> Anfangsdatum
+							Field[FieldName="{@Anfangsdatum}"]
+								FormattedValue
+						Section[SectionNumber="3"] #-> Enddatum
+							Field[FieldName="{@Enddatum }"]
+								FormattedValue
+						Section[SectionNumber="4"] #-> Bemerkung
+							Field[FieldName="{OBJDATES.REMARKS}"]
+								FormattedValue
+
+
+
+			Section[SectionNumber="14"] #-> Beschreibung in Deutsch
+				Field[FieldName="{OBJECTS.DESCRIPTION}"]
+					FormattedValue
+
+
+			Section[SectionNumber="15"] #-> Beschreibung in Englisch
+				Field[FieldName="{OBJCONTEXT.LONGTEXT3}"]
+					FormattedValue
+
+
+			Section[SectionNumber="16"] #-> Provenienz in Deutsch
+				Field[FieldName="{OBJECTS.PROVENANCE}"]
+					FormattedValue
+
+
+			Section[SectionNumber="17"] #-> Provenienz in Englisch
+				Field[FieldName="{OBJCONTEXT.LONGTEXT5}"]
+					FormattedValue
+
+
+			Section[SectionNumber="18"] #-> Material und Technik in Deutsch
+				Field[FieldName="{OBJECTS.MEDIUM}"]
+					FormattedValue
+
+
+			Section[SectionNumber="19"] #-> Material und Technik in Englisch
+				Field[FieldName="{OBJCONTEXT.LONGTEXT4}"]
+					FormattedValue
+
+
+			Section[SectionNumber="20"] #-> Datierung / Künstlersignatur / Unterzeichner in Deutsch
+				Field[FieldName="{OBJECTS.PAPERSUPPORT}"]
+					FormattedValue
+
+
+			Section[SectionNumber="21"] #-> Datierung / Künstlersignatur / Unterzeichner in Englisch
+				Field[FieldName="{OBJCONTEXT.SHORTTEXT6}"]
+					FormattedValue
+
+
+			Section[SectionNumber="22"] #-> Beschriftung in Deutsch
+				Field[FieldName="{OBJECTS.INSCRIBED}"]
+					FormattedValue
+
+
+			Section[SectionNumber="23"] #-> Beschriftung in Englisch
+				Field[FieldName="{OBJECTS.INSCRIBED}"]
+					FormattedValue
+
+
+			Section[SectionNumber="24"] #-> Stempel / Zeichen in Deutsch
+				Field[FieldName="{OBJECTS.MARKINGS}"]
+					FormattedValue
+
+
+			Section[SectionNumber="25"] #-> Stempel / Zeichen in Englisch
+				Field[FieldName="{OBJCONTEXT.LONGTEXT9}"]
+					FormattedValue
+
+
+			Section[SectionNumber="26"] #-> Verwandte Arbeiten in Deutsch
+				Field[FieldName="{OBJECTS.RELATEDWORKS}"]
+					FormattedValue
+
+
+			Section[SectionNumber="27"] #-> Verwandte Arbeiten in Englisch
+				Field[FieldName="{OBJCONTEXT.LONGTEXT6}"]
+					FormattedValue
+
+
+			Section[SectionNumber="28"] #-> Ausstellungsgeschichte in Deutsch
+				Field[FieldName="{OBJECTS.EXHIBITIONS}"]
+					FormattedValue
+
+
+			Section[SectionNumber="29"] #-> Ausstellungsgeschichte in Englisch
+				Field[FieldName="{OBJCONTEXT.LONGTEXT8}"]
+					FormattedValue
+
+
+			Section[SectionNumber="30"] # Einleitung von "Literatur und Quellen"-Bereich; normalerweise nicht benötigt
+				Field[Fieldname="{OBJECTS.BIBLIOGRAPHY}"]
+					FormattedValue
+
+
+			Section[SectionNumber="31"] # Abzüge
+				Subreport
+					Details* # Abzug
+						Section[SectionNumber="0"] # unwichtig (?), da nur Textlabel
+						Section[SectionNumber="1"] #-> Inventarnummer
+							Field[FieldName="{@Inventarnummer}"]
+								FormattedValue
+						Section[SectionNumber="2"] #-> Bemerkung
+							Field[FieldName="{ASSOCIATIONS.REMARKS}"]
+								FormattedValue
+
+
+			Section[SectionNumber="32"] # Abzüge
+				Supreport
+					Details* # Abzug
+						Section[SectionNumber="0"] # unwichtig (?), da nur Textlabel
+						Section[SectionNumber="1"] #-> Inventarnummer
+							Field[FieldName="{@Inventarnummer}"]
+								FormattedValue
+						Section[SectionNumber="2"] #-> Bemerkung
+							Field[FieldName="{ASSOCIATIONS.REMARKS}"]
+								FormattedValue
+
+
+			Section[SectionNumber="33"] # Zusätzliches (?)
+				Subreport
+					Details*
+						Section[SectionNumber="0"] #-> Text-Typ
+							Field[FieldName="{TEXTTYPES.TEXTTYPE}"]
+								FormattedValue
+					Section[SectionNumber="1"] #-> Text
+							Field[FieldName="{TEXTENTRIES.TEXTENTRY}""]
+								FormattedValue
+					Section[SectionNumber="3"] #-> Veröffentlichungsjahr
+							Text[Name="Text1"]
+								TextValue
+
+
+			Section[SectionNumber="34"] #-> Quellen / Publikationen
+				Supreport
+					Details*
+						Section[SectionNumber="0"] #-> Titel
+							Field[FieldName="{REFERENCEMASTER.HEADING}"]
+								FormattedValue
+						Section[SectionNumber="1"] #-> Seitennummer
+							Field[FieldName="{REFXREFS.PAGENUMBER}"]
+								FormattedValue
+						Section[SectionNumber="2"] #-> Referenz-ID
+							Field[FieldName="{REFERENCEMASTER.REFERENCEID}"]
+								FormattedValue
+
+
+			Section[SectionNumber="35"] # Schlagwörter
+				Subreport
+					Details*
+						Section[SectionNumber="0"] #-> Kreuzreferenz-Typ
+							Field[FieldName="{THESXREFTYPES.THESXREFTYPE}"]
+								FormattedValue
+						Section[SectionNumber="1"] #-> Term
+							Field[FieldName="{TERMS.TERM}"]
+								FormattedValue
+						Section[SectionNumber="3"] #-> Kreuzreferenz-Pfad
+							Field[FieldName="{THESXREFSPATH1.PATH}"]
+								FormattedValue
+
+
+			Section[SectionNumber="36"] # Standort des Cranach Objekts
+				Subreport
+					Details*
+						Section[SectionNumber="0"] #-> Kreuzreferenz-Typ
+							Field[FieldName="{THESXREFTYPES.THESXREFTYPE}"]
+								FormattedValue
+						Section[SectionNumber="1"] #-> Term
+							Field[FieldName="{TERMS.TERM}"]
+								FormattedValue
+						Section[SectionNumber="3"] #-> Kreuzreferenz-Pfad
+							Field[FieldName="{THESXREFSPATH1.PATH}"]
+								FormattedValue
+
+
+			Section[SectionNumber="37"] # Besitzer / Repository / Eigentümer
+				Subreport
+					Details[0] #-> Besitzer in Deutsch (Besitzer)
+						Section[SectionNumber="0"] #-> Reihenfolge
+							Field[FieldName="{CONXREFS.DISPLAYORDER}"]
+								FormattedValue
+						Section[SectionNumber="1"] #-> Rolle
+							Field[FieldName="{@Rolle}"]
+								FormattedValue
+						Section[SectionNumber="3"] #-> Displayname
+							Field[FieldName="{CONALTNAMES.DISPLAYNAME}"]
+								FormattedValue
+
+					Details[1] #-> Besitzer in Englisch (Repository)
+						Section[SectionNumber="0"] #-> Reihenfolge
+							Field[FieldName="{CONXREFS.DISPLAYORDER}"]
+								FormattedValue
+						Section[SectionNumber="1"] #-> Rolle
+							Field[FieldName="{@Rolle}"]
+								FormattedValue
+						Section[SectionNumber="3"] #-> Displayname
+							Field[FieldName="{CONALTNAMES.DISPLAYNAME}"]
+								FormattedValue
+
+					Details[2] #-> Eigentümer in Deutsch (Eigentümer)
+						Section[SectionNumber="0"] #-> Reihenfolge
+							Field[FieldName="{CONXREFS.DISPLAYORDER}"]
+								FormattedValue
+						Section[SectionNumber="1"] #-> Rolle
+							Field[FieldName="{@Rolle}"]
+								FormattedValue
+						Section[SectionNumber="3"] #-> Displayname
+							Field[FieldName="{CONALTNAMES.DISPLAYNAME}"]
+								FormattedValue
+
+					Details[3] #-> Eigentümer in Englisch (Owner)
+						Section[SectionNumber="0"] #-> Reihenfolge
+							Field[FieldName="{CONXREFS.DISPLAYORDER}"]
+								FormattedValue
+						Section[SectionNumber="1"] #-> Rolle
+							Field[FieldName="{@Rolle}"]
+								FormattedValue
+						Section[SectionNumber="3"] #-> Displayname
+							Field[FieldName="{CONALTNAMES.DISPLAYNAME}"]
+								FormattedValue
+
+
+			Section[SectionNumber="38"] #-> Sortiernummer
+				Field[FieldName="{OBJCONTEXT.PERIOD}"]
+					FormattedValue
+
+
+			Section[SectionNumber="39"] #-> Werkverzeichnisse
+				Subreport
+					Details*
+						Section[SectionNumber="0"] #-> Beschreibung
+							Field[FieldName="{ALTNUMS.DESCRIPTION}"]
+								FormattedValue
+						Section[SectionNumber="1"] #-> Nummer
+							Field[FieldName="{ALTNUMS.ALTNUM}"]
+								FormattedValue
+
+
+			Section[SectionNumber="40"] # Dimensionen (?); evtl. auch
+				Subreport
+					Group
+						GroupHeader
+							Section[SectionNumber="0"]
+								Field[FieldName="{DIMENSIONELEMENTS.ELEMENT}"]
+									FormattedValue
+						Details[0]
+							Section[SectionNumber="0"]
+								Field[FieldName="{DIMENSIONTYPES.DIMENSIONTYPE}"]
+									FormattedValue
+								Field[FieldName="{DIMENSIONS.DIMENSION}"]
+									Value
+						Details[1]
+							Section[SectionNumber="0"]
+								Field[FieldName="{DIMENSIONTYPES.DIMENSIONTYPE}"]
+									FormattedValue
+								Field[FieldName="{DIMENSIONS.DIMENSION}"]
+									Value
