@@ -1,5 +1,5 @@
 
-CrystalReports
+CrystalReport
 	Group* # entspricht einer Grafik
 		GroupHeader # Enthält immer genau 41 Section-Elemente
 

@@ -1,5 +1,5 @@
 
-CrystalReports
+CrystalReport
 	Group* # entspricht einer Grafik(-abzug?)
         GroupHeader
             Section[SectionNumber="1"] #-> Inventarnummer (mit Prefix => 'G_')
