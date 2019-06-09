@@ -249,7 +249,7 @@ CrystalReport
 					FormattedValue
 
 
-			Section[SectionNumber="31"] # Abzüge
+			Section[SectionNumber="31"] # Abzüge 1. Zustand
 				Subreport
 					Details* # Abzug
 						Section[SectionNumber="0"] # unwichtig (?), da nur Textlabel
@@ -261,7 +261,7 @@ CrystalReport
 								FormattedValue
 
 
-			Section[SectionNumber="32"] # Abzüge
+			Section[SectionNumber="32"] # Abzüge 2. Zustand
 				Supreport
 					Details* # Abzug
 						Section[SectionNumber="0"] # unwichtig (?), da nur Textlabel
