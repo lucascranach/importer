@@ -1,0 +1,73 @@
+
+CrystalReports
+	Group* # entspricht einer Grafik(-abzug?)
+        GroupHeader
+            Section[SectionNumber="1"] #-> Inventarnummer (mit Prefix => 'G_')
+                Field[FieldName="{@Inventarnummer}"]
+                    FormattedValue
+
+            Section[SectionNumber="2"] #-> Objekt-ID
+                Field[FieldName="{OBJECTS.OBJECTID}"]
+                    FormattedValue
+
+        Details* # Untersuchungen
+            Section[SectionNumber="0"] # Untersuchungstyp
+                Field[FieldName="{SURVEYTYPES.SURVEYTYPE}"]
+                    FormattedValue
+
+            Section[SectionNumber="1"]#  Projekt
+                Field[FieldName="{CONDITIONS.PROJECT}"]
+                    FormattedValue
+
+            Section[SectionNumber="2"] # Gnerelle Analyse
+                Field[FieldName="{CONDITIONS.OVERALLANALYSIS}"]
+                    FormattedValue
+
+            Section[SectionNumber="3"] # Bemerkungen
+                Field[FieldName="{CONDITIONS.REMARKS}"]
+                    FormattedValue
+
+            Section[SectionNumber="4"] # (???)
+                Field[FieldName="{CONDITIONS.SHORTTEXT07}"]
+                    FormattedValue
+
+            Section[SectionNumber="5"] # Tests
+                Subreport[Name="Subreport2"]
+                    Details*
+                        Section[SectionNumber="0"] #-> Testart
+                            Field[FieldName="{@testart}"]
+                                FormattedValue
+                        Section[SectionNumber="1"] #-> Text
+                            Field[FieldName="{TEXTENTRIES.TEXTENTRY}"]
+                                FormattedValue
+                        Section[SectionNumber="2"] #-> Zweck
+                            Field[FieldName="{TEXTENTRIES.PURPOSE}"]
+                                FormattedValue
+                        Section[SectionNumber="3"] #-> Bemerkungen
+                            FormattedValue
+
+            Section[SectionNumber="6"] # Beteiligte Personen
+                Subreport[Name="Subreport1"]
+                    Details* # Person
+                        Section[SectionNumber="0"] #-> Rolle
+                            Field[FieldName="{ROLES.ROLE}"]
+                                FormattedValue
+
+                        Section[SectionNumber="1"] #-> Name
+                            Field[FieldName="{CONALTNAMES.DISPLAYNAME}"]
+                                FormattedValue
+
+            Section[SectionNumber="7"] # Bearbeitungsdatum
+                Field[FieldName="{@BearbeitungsdatumTrue}"]
+                    FormattedValue
+
+            Section[SectionNumber="11"] # Zeitstempel (???)
+                Text
+                    TextValue
+
+                Field[FieldName="{@:name}"] # Etwas unklar (:name Content von anderem Element?)
+                    FormattedValue
+
+            Section[SectionNumber="12"] # (???)
+                Subreport[Name="Subreport3"]
+                    Details
