@@ -6,10 +6,10 @@ CrystalReport
 			Section[SectionNumber="0"] # -> unwichtig
 
 
-			Section[SectionNumber="1"] # Beteiligte Personen
+			Section[SectionNumber="1"] # Beteiligte Personen (odd = Deutsch; even = Englisch; abwechselnd, zweierpärchen)
 				Subreport
-					Details[0] # Deutsch
-						Section[SectionNumber="0"] #-> Reihenfolge (des Details)
+					Details*
+						Section[SectionNumber="0"] #-> Reihenfolge
 							Field[FieldName="{CONXREFS.DISPLAYORDER}"]
 								FormattedValue
 						Section[SectionNumber="1"] #-> Rolle
@@ -18,6 +18,29 @@ CrystalReport
 						Section[SectionNumber="2"] #-> Displayname
 							Field[FieldName="{CONALTNAMES.DISPLAYNAME}"]
 								FormattedValue
+
+						# Struktur für Felder 3-8 und 12 aus Dokumentation der Gemälde übernommen
+						Section[SectionNumber="3"] #-> Prefix
+							Field # Unbekannter, eindeutiger Attributwert für FieldName
+								FormattedValue
+						Section[SectionNumber="4"] #-> Suffix
+							Field # Unbekannter, eindeutiger Attributwert für FieldName
+								FormattedValue
+
+						# Ersetzung von Felder 0-2, sofern Person unbekannt
+						Section[SectionNumber="5"] #-> Reihenfolge
+							Field # Unbekannter, eindeutiger Attributwert für FieldName
+								FormattedValue
+						Section[SectionNumber="6"] #-> Rolle
+							Field[FieldName="{ROLES.ROLE}"]
+								FormattedValue
+						Section[SectionNumber="7"] #-> Prefix
+							Field # Unbekannter, eindeutiger Attributwert für FieldName
+								FormattedValue
+						Section[SectionNumber="8"] #-> Suffix
+							Field # Unbekannter, eindeutiger Attributwert für FieldName
+								FormattedValue
+
 						Section[SectionNumber="9"] #-> Namenstyp
 							Field[FieldName="{@Nametype}"]
 								FormattedValue
@@ -28,24 +51,8 @@ CrystalReport
 							Field[FieldName="{CONXREFDETAILS.REMARKS}"]
 								FormattedValue
 
-					Details[1] # Englisch
-						Section[SectionNumber="0"] #-> Reihenfolge
-							Field[FieldName="{CONXREFS.DISPLAYORDER}"]
-								FormattedValue
-						Section[SectionNumber="1"] #-> Rolle
-							Field[FieldName="{ROLES.ROLE}"]
-								FormattedValue
-						Section[SectionNumber="2"] #-> Displayname
-							Field[FieldName="{CONALTNAMES.DISPLAYNAME}"]
-								FormattedValue
-						Section[SectionNumber="9"] #-> Namenstyp
-							Field[FieldName="{@Nametype}"]
-								FormattedValue
-						Section[SectionNumber="10"] #-> Anderer Name
-							Field[FieldName="{@AndererName}"]
-								FormattedValue
-						Section[SectionNumber="11"] #-> Bemerkungen
-							Field[FieldName="{CONXREFDETAILS.REMARKS}"]
+						Section[SectionNumber="12"] #-> Datum
+							Field # Unbekannter, eindeutiger Attributwert für FieldName
 								FormattedValue
 
 
@@ -61,7 +68,7 @@ CrystalReport
 							GroupHeader
 								Section #-> Displayname
 									Field[FieldName="GroupName ({CONALTNAMES.DISPLAYNAME})"]
-							Group
+							Group*
 								GroupHeader
 									Section #-> Namenstyp
 										Field[FieldName="GroupName ({CONALTNAMES.NAMETYPE})"]
