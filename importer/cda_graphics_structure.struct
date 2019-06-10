@@ -58,7 +58,7 @@ CrystalReport
 
 			Section[SectionNumber="2"]
 				Subreport
-					Group
+					Group* # Person
 						GroupHeader
 							Section #-> Constituent-ID
 								Field[FieldName="GroupName ({CONALTNAMES.CONSTITUENTID})"]
