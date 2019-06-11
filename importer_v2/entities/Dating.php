@@ -7,10 +7,10 @@ require_once 'HistoricEventInformation.php';
 
 class Dating {
 
-	public $dated = null;
+	public $dated = '';
 	public $begin = null;
 	public $end = null;
-	public $remark = '';
+	public $remarks = '';
 	public $historicEventInformations = [];
 
 
@@ -19,12 +19,12 @@ class Dating {
 	}
 
 
-	function setDated(int $dated) {
+	function setDated(string $dated) {
 		$this->dated = $dated;
 	}
 
 
-	function getDated(): ?int {
+	function getDated(): string {
 		return $this->dated;
 	}
 
@@ -49,13 +49,13 @@ class Dating {
 	}
 
 
-	function setRemark(int $remark) {
-		$this->remark = $remark;
+	function setRemarks(string $remark) {
+		$this->remarks = $remark;
 	}
 
 
-	function getRemark(): string {
-		return $this->remark;
+	function getRemarks(): string {
+		return $this->remarks;
 	}
 
 

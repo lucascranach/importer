@@ -7,12 +7,14 @@ require_once 'entities/IBaseItem.php';
 require_once 'Person.php';
 require_once 'PersonName.php';
 require_once 'Title.php';
+require_once 'Classification.php';
 require_once 'Dating.php';
 require_once 'Reprint.php';
 require_once 'AdditionalTextInformationEntry.php';
 require_once 'Publication.php';
 require_once 'MetaReference.php';
 require_once 'CatalogWorkReference.php';
+require_once 'StructuredDimensionsEntry.php';
 require_once 'StructuredDimensionsEntry.php';
 
 use CranachImport\Entities\IBaseItem;
@@ -26,13 +28,13 @@ class Graphic implements IBaseItem {
 	public $involvedPersonsNames = []; // Evtl. Umbau notwendig
 
 	public $titles = [];
-	public $classification = '';
+	public $classification = null;
 	public $objectName = '';
 	public $inventoryNumber = '';
-	public $objectId = '';
+	public $objectId = null;
 	public $isVirtual = false;
 	public $dimensions = '';
-	public $date = null;
+	public $dating = null;
 	public $description = '';
 	public $provenance = '';
 	public $medium = '';
@@ -91,7 +93,7 @@ class Graphic implements IBaseItem {
 
 
 	function addTitle(Title $title) {
-		$this->title = $titles;
+		$this->titles = $title;
 	}
 
 
@@ -100,12 +102,12 @@ class Graphic implements IBaseItem {
 	}
 
 
-	function setClassification(string $classification) {
+	function setClassification(Classification $classification) {
 		$this->classification = $classification;
 	}
 
 
-	function getClassification(): string {
+	function getClassification(): Classification {
 		return $this->classification;
 	}
 
@@ -130,12 +132,12 @@ class Graphic implements IBaseItem {
 	}
 
 
-	function setObjectId(string $objectId) {
+	function setObjectId(int $objectId) {
 		$this->objectId = $objectId;
 	}
 
 
-	function getObjectId(): string {
+	function getObjectId(): int {
 		return $this->objectId;
 	}
 

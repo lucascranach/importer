@@ -5,12 +5,23 @@ namespace CranachImport\Entities;
 
 class Title {
 
+	public $type = '';
 	public $title = '';
-	public $remark = '';
+	public $remarks = '';
 
 
 	function __construct() {
 
+	}
+
+
+	function setType(string $type) {
+		$this->type = $type;
+	}
+
+
+	function getType(): string {
+		return $this->type;
 	}
 
 
@@ -24,13 +35,13 @@ class Title {
 	}
 
 
-	function setRemark(string $remark) {
-		$this->remark = $remark;
+	function setRemarks(string $remarks) {
+		$this->remarks = $remarks;
 	}
 
 
-	function getRemark(): string {
-		return $this->remark;
+	function getRemarks(): string {
+		return $this->remarks;
 	}
 
 }

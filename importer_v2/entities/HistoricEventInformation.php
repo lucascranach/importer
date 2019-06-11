@@ -9,7 +9,7 @@ class HistoricEventInformation {
 	public $text = '';
 	public $begin = null;
 	public $end = null;
-	public $remark = '';
+	public $remarks = '';
 
 
 	function __construct() {
@@ -57,13 +57,13 @@ class HistoricEventInformation {
 	}
 
 
-	function setRemark(string $remark) {
-		$this->remark = $remark;
+	function setRemarks(string $remarks) {
+		$this->remarks = $remarks;
 	}
 
 
-	function getRemark(): string {
-		return $this->remark;
+	function getRemarks(): string {
+		return $this->remarks;
 	}
 
 }
