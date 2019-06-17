@@ -210,7 +210,7 @@ CrystalReport
 
 
 			Section[SectionNumber="23"] #-> Beschriftung in Englisch
-				Field[FieldName="{OBJECTS.INSCRIBED}"]
+				Field[FieldName="{OBJCONTEXT.LONGTEXT7}"]
 					FormattedValue
 
 
@@ -252,7 +252,9 @@ CrystalReport
 			Section[SectionNumber="31"] # Abzüge 1. Zustand
 				Subreport
 					Details* # Abzug
-						Section[SectionNumber="0"] # unwichtig (?), da nur Textlabel
+						Section[SectionNumber="0"] #-> Textlabel (unwichtig?)
+							Text[Name="Text5"]
+								TextValue
 						Section[SectionNumber="1"] #-> Inventarnummer
 							Field[FieldName="{@Inventarnummer}"]
 								FormattedValue
@@ -264,7 +266,9 @@ CrystalReport
 			Section[SectionNumber="32"] # Abzüge 2. Zustand
 				Supreport
 					Details* # Abzug
-						Section[SectionNumber="0"] # unwichtig (?), da nur Textlabel
+						Section[SectionNumber="0"] #-> Textlabel (unwichtig?)
+							Text[Name="Text5"]
+								TextValue
 						Section[SectionNumber="1"] #-> Inventarnummer
 							Field[FieldName="{@Inventarnummer}"]
 								FormattedValue
@@ -273,18 +277,19 @@ CrystalReport
 								FormattedValue
 
 
-			Section[SectionNumber="33"] # Zusätzliches (?)
+			Section[SectionNumber="33"] # Zusätzliches (?); Vermischung von Sprachen -> keine Trennung erkennbar
 				Subreport
 					Details*
 						Section[SectionNumber="0"] #-> Text-Typ
 							Field[FieldName="{TEXTTYPES.TEXTTYPE}"]
 								FormattedValue
-					Section[SectionNumber="1"] #-> Text
-							Field[FieldName="{TEXTENTRIES.TEXTENTRY}""]
-								FormattedValue
-					Section[SectionNumber="3"] #-> Veröffentlichungsjahr
-							Text[Name="Text1"]
-								TextValue
+						Section[SectionNumber="1"] #-> Text
+								Field[FieldName="{TEXTENTRIES.TEXTENTRY}""]
+									FormattedValue
+						Section[SectionNumber="2"] # ???
+						Section[SectionNumber="3"] #-> Jahr
+								Text[Name="Text1"]
+									TextValue
 
 
 			Section[SectionNumber="34"] #-> Quellen / Publikationen
@@ -324,6 +329,7 @@ CrystalReport
 						Section[SectionNumber="1"] #-> Term
 							Field[FieldName="{TERMS.TERM}"]
 								FormattedValue
+						Section[SectionNumber="2"] # ???
 						Section[SectionNumber="3"] #-> Kreuzreferenz-Pfad
 							Field[FieldName="{THESXREFSPATH1.PATH}"]
 								FormattedValue
