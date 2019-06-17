@@ -5,12 +5,23 @@ namespace CranachImport\Entities;
 
 class Reprint {
 
+	public $text = '';
 	public $inventoryNumber = '';
 	public $remark = '';
 
 
 	function __construct() {
 
+	}
+
+
+	function setText(string $text) {
+		$this->text = $text;
+	}
+
+
+	function getText(): string {
+		return $this->text;
 	}
 
 

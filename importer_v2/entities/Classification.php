@@ -6,7 +6,7 @@ namespace CranachImport\Entities;
 class Classification {
 
 	public $classification = '';
-	public $state = '';
+	public $condition = '';
 
 
 	function __construct() {
@@ -24,13 +24,13 @@ class Classification {
 	}
 
 
-	function setState(string $state) {
-		$this->state = $state;
+	function setCondition(string $condition) {
+		$this->condition = $condition;
 	}
 
 
-	function getState(): string {
-		return $this->state;
+	function getCondition(): string {
+		return $this->condition;
 	}
 
 }

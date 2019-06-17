@@ -5,9 +5,9 @@ namespace CranachImport\Entities;
 
 class MetaReference {
 
-	public $title = '';
-	public $pageNumber = '';
-	public $referenceId = '';
+	public $type = '';
+	public $term = '';
+	public $path = '';
 
 
 	function __construct() {
@@ -15,33 +15,33 @@ class MetaReference {
 	}
 
 
-	function setTitle(string $title) {
-		$this->title = $title;
+	function setType(string $type) {
+		$this->type = $type;
 	}
 
 
-	function getTitle(): string {
-		return $this->title;
+	function getType(): string {
+		return $this->type;
 	}
 
 
-	function setPageNUmber(string $pageNUmber) {
-		$this->pageNUmber = $pageNUmber;
+	function setTerm(string $term) {
+		$this->term = $term;
 	}
 
 
-	function getPageNUmber(): string {
-		return $this->pageNUmber;
+	function getTerm(): string {
+		return $this->term;
 	}
 
 
-	function setReferenceId(string $referenceId) {
-		$this->referenceId = $referenceId;
+	function setPath(string $path) {
+		$this->path = $path;
 	}
 
 
-	function getReferenceId(): string {
-		return $this->referenceId;
+	function getPath(): string {
+		return $this->path;
 	}
 
 }

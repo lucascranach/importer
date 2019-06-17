@@ -3,7 +3,7 @@
 namespace CranachImport\Entities;
 
 
-class AdditionalTextInformationEntry {
+class AdditionalTextInformation {
 
 	public $type = '';
 	public $text = '';

@@ -25,12 +25,12 @@ class Publication {
 	}
 
 
-	function setPageNUmber(string $pageNUmber) {
-		$this->pageNUmber = $pageNUmber;
+	function setPageNumber(string $pageNumber) {
+		$this->pageNumber = $pageNumber;
 	}
 
 
-	function getPageNUmber(): string {
+	function getPageNumber(): string {
 		return $this->pageNUmber;
 	}
 

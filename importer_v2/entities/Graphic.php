@@ -10,12 +10,11 @@ require_once 'Title.php';
 require_once 'Classification.php';
 require_once 'Dating.php';
 require_once 'Reprint.php';
-require_once 'AdditionalTextInformationEntry.php';
+require_once 'AdditionalTextInformation.php';
 require_once 'Publication.php';
 require_once 'MetaReference.php';
 require_once 'CatalogWorkReference.php';
-require_once 'StructuredDimensionsEntry.php';
-require_once 'StructuredDimensionsEntry.php';
+require_once 'StructuredDimension.php';
 
 use CranachImport\Entities\IBaseItem;
 
@@ -46,15 +45,15 @@ class Graphic implements IBaseItem {
 	public $bibliography = '';
 	public $reprints = [];
 	public $secondaryReprints = [];
-	public $additionalTextInformationEntries = [];
+	public $additionalTextInformation = [];
 	public $publications = [];
 	public $keywords = [];
 	public $locations = [];
 	public $repository = '';
 	public $owner = '';
 	public $sortingNumber = '';
-	public $catalogReferences = [];
-	public $structuredDimensionsEntries = [];
+	public $catalogWorkReferences = [];
+	public $structuredDimension = null;
 
 
 	function __construct() {
@@ -282,6 +281,16 @@ class Graphic implements IBaseItem {
 	}
 
 
+	function addAdditionalTextInformation(AdditionalTextInformation $additonalTextInformation) {
+		$this->additionalTextInformation[] = $additonalTextInformation;
+	}
+
+
+	function getAdditionalTextInformations() {
+		return $this->additionalTextInformation;
+	}
+
+
 	function addPublication(Publication $publication) {
 		$this->publications[] = $publication;
 	}
@@ -352,13 +361,13 @@ class Graphic implements IBaseItem {
 	}
 
 
-	function addStructuredDimensionEntry(StructuredDimensionsEntry $structuredDimensionEntry) {
-		$this->structuredDimensionsEntries[] = $structuredDimensionEntry;
+	function setStructuredDimension(StructuredDimension $structuredDimension) {
+		$this->structuredDimension = $structuredDimension;
 	}
 
 
-	function getStructuredDimensionsEntries(): array {
-		return $this->structuredDimensionsEntries;
+	function getStructuredDimension(): StructuredDimension {
+		return $this->structuredDimension;
 	}
 
 }
