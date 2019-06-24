@@ -9,7 +9,7 @@ require_once 'PersonName.php';
 require_once 'Title.php';
 require_once 'Classification.php';
 require_once 'Dating.php';
-require_once 'Reprint.php';
+require_once 'GraphicReference.php';
 require_once 'AdditionalTextInformation.php';
 require_once 'Publication.php';
 require_once 'MetaReference.php';
@@ -47,8 +47,8 @@ class Graphic implements IBaseItem {
 	public $relatedWorks = '';
 	public $exhibitionHistory = '';
 	public $bibliography = '';
-	public $reprints = [];
-	public $secondaryReprints = [];
+	public $firstLevelReferences = [];
+	public $secondLevelReferences = [];
 	public $additionalTextInformation = [];
 	public $publications = [];
 	public $keywords = [];
@@ -265,23 +265,23 @@ class Graphic implements IBaseItem {
 	}
 
 
-	function addReprint(Reprint $reprint) {
-		$this->reprints[] = $reprint;
+	function addFirstLevelReference(GraphicReference $firstLevelReference) {
+		$this->firstLevelReferences[] = $firstLevelReference;
 	}
 
 
-	function getReprints(): array {
-		return $this->reprints;
+	function getFirstLevelReferences(): array {
+		return $this->firstLevelReferences;
 	}
 
 
-	function addSecondaryReprint(Reprint $secondaryReprint) {
-		$this->secondaryReprints[] = $secondaryReprint;
+	function addSecondLevelReference(GraphicReference $secondLevelReference) {
+		$this->secondLevelReferences[] = $secondLevelReference;
 	}
 
 
-	function getSecondaryReprints(): array {
-		return $this->secondaryReprints;
+	function getSecondLevelReferences(): array {
+		return $this->secondLevelReferences;
 	}
 
 

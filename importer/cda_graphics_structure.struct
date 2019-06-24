@@ -249,9 +249,9 @@ CrystalReport
 					FormattedValue
 
 
-			Section[SectionNumber="31"] # Abzüge 1. Zustand
+			Section[SectionNumber="31"] # Erste Level Referenzen
 				Subreport
-					Details* # Abzug
+					Details* # Referenz
 						Section[SectionNumber="0"] #-> Textlabel (unwichtig?)
 							Text[Name="Text5"]
 								TextValue
@@ -263,9 +263,9 @@ CrystalReport
 								FormattedValue
 
 
-			Section[SectionNumber="32"] # Abzüge 2. Zustand
+			Section[SectionNumber="32"] # Zweite Level Referenzen
 				Supreport
-					Details* # Abzug
+					Details* # Referenz
 						Section[SectionNumber="0"] #-> Textlabel (unwichtig?)
 							Text[Name="Text5"]
 								TextValue

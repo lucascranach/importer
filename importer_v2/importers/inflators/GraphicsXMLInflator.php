@@ -11,7 +11,7 @@ require_once 'entities/Title.php';
 require_once 'entities/Classification.php';
 require_once 'entities/Dating.php';
 require_once 'entities/HistoricEventInformation.php';
-require_once 'entities/Reprint.php';
+require_once 'entities/GraphicReference.php';
 require_once 'entities/AdditionalTextInformation.php';
 require_once 'entities/Publication.php';
 require_once 'entities/MetaReference.php';
@@ -27,7 +27,7 @@ use CranachImport\Entities\Title;
 use CranachImport\Entities\Classification;
 use CranachImport\Entities\Dating;
 use CranachImport\Entities\HistoricEventInformation;
-use CranachImport\Entities\Reprint;
+use CranachImport\Entities\GraphicReference;
 use CranachImport\Entities\AdditionalTextInformation;
 use CranachImport\Entities\Publication;
 use CranachImport\Entities\MetaReference;
@@ -74,8 +74,8 @@ class GraphicsXMLInflator implements IInflator {
 		self::inflateRelatedWorks($subNode, $graphicDe, $graphicEn);
 		self::inflateExhibitionHistory($subNode, $graphicDe, $graphicEn);
 		self::inflateBibliography($subNode, $graphicDe, $graphicEn);
-		self::inflateReprints($subNode, $graphicDe, $graphicEn);
-		self::inflateSecondaryReprints($subNode, $graphicDe, $graphicEn);
+		self::inflateFirstLevelReferences($subNode, $graphicDe, $graphicEn);
+		self::inflateSecondLevelReferences($subNode, $graphicDe, $graphicEn);
 		self::inflateAdditionalTextInformations($subNode, $graphicDe, $graphicEn);
 		self::inflatePublications($subNode, $graphicDe, $graphicEn);
 		self::inflateKeywords($subNode, $graphicDe, $graphicEn);
@@ -889,103 +889,103 @@ class GraphicsXMLInflator implements IInflator {
 	}
 
 
-	/* Reprints */
-	private static function inflateReprints(\SimpleXMLElement &$node,
-	                                        Graphic &$graphicDe,
-	                                        Graphic &$graphicEn) {
-		$reprintsDetailsElements = $node->Section[31]->Subreport->Details;
+	/* First level references */
+	private static function inflateFirstLevelReferences(\SimpleXMLElement &$node,
+	                                                    Graphic &$graphicDe,
+	                                                    Graphic &$graphicEn) {
+		$referenceDetailsElements = $node->Section[31]->Subreport->Details;
 
-		for ($i = 0; $i < count($reprintsDetailsElements); $i += 1) {
-			$reprintDetailElement = $reprintsDetailsElements[$i];
+		for ($i = 0; $i < count($referenceDetailsElements); $i += 1) {
+			$referenceDetailElement = $referenceDetailsElements[$i];
 
-			if ($reprintDetailElement->count() === 0) {
+			if ($referenceDetailElement->count() === 0) {
 				continue;
 			}
 
-			$reprint = new Reprint;
+			$reference = new GraphicReference;
 
-			$graphicDe->addReprint($reprint);
-			$graphicEn->addReprint($reprint);
+			$graphicDe->addFirstLevelReference($reference);
+			$graphicEn->addFirstLevelReference($reference);
 
 			/* Text */
 			$textElement = self::findElementByXPath(
-				$reprintDetailElement,
+				$referenceDetailElement,
 				'Section[@SectionNumber="0"]/Text[@Name="Text5"]/TextValue',
 			);
 			if ($textElement) {
 				$textStr = trim($textElement);
-				$reprint->setText($textStr);
+				$reference->setText($textStr);
 			}
 
 			/* Inventory number */
 			$inventoryNumberElement = self::findElementByXPath(
-				$reprintDetailElement,
+				$referenceDetailElement,
 				'Section[@SectionNumber="1"]/Field[@FieldName="{@Inventarnummer}"]/FormattedValue',
 			);
 			if ($inventoryNumberElement) {
 				$inventoryNumberStr = trim($inventoryNumberElement);
-				$reprint->setInventoryNumber($inventoryNumberStr);
+				$reference->setInventoryNumber($inventoryNumberStr);
 			}
 
 			/* Remarks */
 			$remarksElement = self::findElementByXPath(
-				$reprintDetailElement,
+				$referenceDetailElement,
 				'Section[@SectionNumber="2"]/Field[@FieldName="{ASSOCIATIONS.REMARKS}"]/FormattedValue',
 			);
 			if ($remarksElement) {
 				$remarksStr = trim($remarksElement);
-				$reprint->setRemark($remarksStr);
+				$reference->setRemark($remarksStr);
 			}
 		}
 	}
 
 
-	/* Secondary reprints */
-	private static function inflateSecondaryReprints(\SimpleXMLElement &$node,
-	                                                 Graphic &$graphicDe,
-	                                                 Graphic &$graphicEn) {
-		$reprintsDetailsElements = $node->Section[32]->Subreport->Details;
+	/* Second level references */
+	private static function inflateSecondLevelReferences(\SimpleXMLElement &$node,
+	                                                     Graphic &$graphicDe,
+	                                                     Graphic &$graphicEn) {
+		$referenceDetailsElements = $node->Section[32]->Subreport->Details;
 
-		for ($i = 0; $i < count($reprintsDetailsElements); $i += 1) {
-			$reprintDetailElement = $reprintsDetailsElements[$i];
+		for ($i = 0; $i < count($referenceDetailsElements); $i += 1) {
+			$referenceDetailElement = $referenceDetailsElements[$i];
 
-			if ($reprintDetailElement->count() === 0) {
+			if ($referenceDetailElement->count() === 0) {
 				continue;
 			}
 
-			$reprint = new Reprint;
+			$reference = new GraphicReference;
 
-			$graphicDe->addSecondaryReprint($reprint);
-			$graphicEn->addSecondaryReprint($reprint);
+			$graphicDe->addSecondLevelReference($reference);
+			$graphicEn->addSecondLevelReference($reference);
 
 			/* Text */
 			$textElement = self::findElementByXPath(
-				$reprintDetailElement,
+				$referenceDetailElement,
 				'Section[@SectionNumber="0"]/Text[@Name="Text5"]/TextValue',
 			);
 			if ($textElement) {
 				$textStr = trim($textElement);
-				$reprint->setText($textStr);
+				$reference->setText($textStr);
 			}
 
 			/* Inventory number */
 			$inventoryNumberElement = self::findElementByXPath(
-				$reprintDetailElement,
+				$referenceDetailElement,
 				'Section[@SectionNumber="1"]/Field[@FieldName="{@Inventarnummer}"]/FormattedValue',
 			);
 			if ($inventoryNumberElement) {
 				$inventoryNumberStr = trim($inventoryNumberElement);
-				$reprint->setInventoryNumber($inventoryNumberStr);
+				$reference->setInventoryNumber($inventoryNumberStr);
 			}
 
 			/* Remarks */
 			$remarksElement = self::findElementByXPath(
-				$reprintDetailElement,
+				$referenceDetailElement,
 				'Section[@SectionNumber="2"]/Field[@FieldName="{ASSOCIATIONS.REMARKS}"]/FormattedValue',
 			);
 			if ($remarksElement) {
 				$remarksStr = trim($remarksElement);
-				$reprint->setRemark($remarksStr);
+				$reference->setRemark($remarksStr);
 			}
 		}
 	}
