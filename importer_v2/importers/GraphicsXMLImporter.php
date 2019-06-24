@@ -61,7 +61,7 @@ class GraphicsXMLImporter implements IFileImporter {
 
 		/* Signaling the pipeline, that we reached the end of the file
 			and we are done */
-		$this->pipeline->handleEOF();
+		$this->pipeline->handleDone();
 	}
 
 

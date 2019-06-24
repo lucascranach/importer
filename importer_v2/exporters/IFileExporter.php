@@ -10,4 +10,6 @@ require_once 'IExporter.php';
  */
 interface IFileExporter extends IExporter {
 
+	function __construct(string $destFilepath);
+
 }

@@ -49,9 +49,13 @@ class Pipeline implements IPipeline {
 	}
 
 
-	function handleEOF() {
+	function handleDone() {
 		foreach ($this->exporters as $exporter) {
 			$exporter->done();
+		}
+
+		foreach ($this->collectors as $collector) {
+			$collector->done();
 		}
 	}
 
