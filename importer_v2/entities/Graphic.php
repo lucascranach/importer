@@ -96,7 +96,7 @@ class Graphic implements IBaseItem {
 
 
 	function addTitle(Title $title) {
-		$this->titles = $title;
+		$this->titles[] = $title;
 	}
 
 
