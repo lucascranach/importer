@@ -3,6 +3,9 @@
 namespace CranachImport\Entities;
 
 
+/**
+ * Representing a single meta reference
+ */
 class MetaReference {
 
 	public $type = '';

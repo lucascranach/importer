@@ -3,6 +3,9 @@
 namespace CranachImport\Entities;
 
 
+/**
+ * Representing a single reprint information referencing the original work
+ */
 class Reprint {
 
 	public $text = '';

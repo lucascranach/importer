@@ -3,6 +3,9 @@
 namespace CranachImport\Entities;
 
 
+/**
+ * Representing a single publication
+ */
 class Publication {
 
 	public $title = '';

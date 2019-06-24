@@ -8,6 +8,9 @@ require_once 'entities/IBaseItem.php';
 use CranachImport\Entities\IBaseItem;
 
 
+/**
+ * Graphics exporter on a json flat file base
+ */
 class GraphicsJSONExporter implements IFileExporter {
 
 	private $destFilepath = null;

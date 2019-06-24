@@ -3,6 +3,9 @@
 namespace CranachImport\Entities;
 
 
+/**
+ * Representing a single classifcation, including the condition
+ */
 class Classification {
 
 	public $classification = '';

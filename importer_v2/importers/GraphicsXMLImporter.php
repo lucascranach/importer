@@ -16,6 +16,9 @@ use CranachImport\Process\IPipeline;
 use CranachImport\Importers\Inflators\GraphicsXMLInflator;
 
 
+/**
+ * Graphics importer on a xml file base
+ */
 class GraphicsXMLImporter implements IFileImporter {
 
 	private $items = [];
@@ -56,6 +59,8 @@ class GraphicsXMLImporter implements IFileImporter {
 
 		while ($this->processNextItem()) {}
 
+		/* Signaling the pipeline, that we reached the end of the file
+			and we are done */
 		$this->pipeline->handleEOF();
 	}
 
@@ -66,17 +71,18 @@ class GraphicsXMLImporter implements IFileImporter {
 			&& $this->xmlReader->nodeType !== \XMLReader::ELEMENT
 			&& $this->xmlReader->name !== $this->graphicElementName) {}
 
-		/* Returning if we get to the end */
+		/* Returning if we get to the end of the file */
 		if ($this->xmlReader->nodeType === \XMLReader::NONE) {
 			return false;
 		}
 
 		$this->transformCurrentItem();
-		return true; // TODO: Fix me -> true
+		return true;
 	}
 
 
 	private function transformCurrentItem() {
+		/* Preparing the graphic objects for the different languages */
 		$graphicDe = new Graphic;
 		$graphicDe->setLangCode(Language::DE);
 
@@ -85,8 +91,10 @@ class GraphicsXMLImporter implements IFileImporter {
 
 		$xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 
+		/* Moved the inflation action(s) into its own class */
 		GraphicsXMLInflator::inflate($xmlNode, $graphicDe, $graphicEn);
 
+		/* Passing the graphic objects to the pipeline */
 		$this->pipeline->handleIncomingItem($graphicDe);
 		$this->pipeline->handleIncomingItem($graphicEn);
 	}

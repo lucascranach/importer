@@ -3,6 +3,9 @@
 namespace CranachImport\Entities;
 
 
+/**
+ * Representing the structure of a single additional text information
+ */
 class AdditionalTextInformation {
 
 	public $type = '';

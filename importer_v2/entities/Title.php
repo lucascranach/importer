@@ -3,6 +3,9 @@
 namespace CranachImport\Entities;
 
 
+/**
+ * Representing the title of a work including remarks to the title
+ */
 class Title {
 
 	public $type = '';

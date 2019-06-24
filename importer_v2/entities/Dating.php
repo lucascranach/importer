@@ -5,6 +5,9 @@ namespace CranachImport\Entities;
 require_once 'HistoricEventInformation.php';
 
 
+/**
+ * Representing a dating including multiple historic event informations
+ */
 class Dating {
 
 	public $dated = '';

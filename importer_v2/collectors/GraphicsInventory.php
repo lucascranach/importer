@@ -8,6 +8,9 @@ require_once 'entities/IBaseItem.php';
 use CranachImport\Entities\IBaseItem;
 
 
+/**
+ * Representing a graphics collector for grouping or aggregation purposes
+ */
 class GraphicsInventory implements ICollector {
 
 	public $inventoryLanguages = [];
@@ -28,11 +31,23 @@ class GraphicsInventory implements ICollector {
 		$this->inventoryLanguages[$langCode][] = $item;
 	}
 
+
 	function getItems(): array {
 		return $this->inventoryLanguages; // TODO: flatten
 	}
 
 
+	function done() {
+		/* Not implemented! */
+	}
+
+
+	/**
+	 * Getting all items existing in the collection of a certain language
+	 *
+	 * @param string $langCode
+	 * @return iBaseItem Array of items of a certain language
+	 */
 	function getItemsForLanguage(string $langCode): array {
 		if (!isset($this->inventoryLanguages[$langCode])) {
 			throw new \Error('Unknown language code: ' . $langCode);
@@ -42,6 +57,11 @@ class GraphicsInventory implements ICollector {
 	}
 
 
+	/**
+	 * Get all language codes
+	 *
+	 * @return string[] Array of language codes
+	 */
 	function getLanguageCodes(): array {
 		return array_keys($this->inventoryLanguages);
 	}

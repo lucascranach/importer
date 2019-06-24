@@ -3,6 +3,9 @@
 namespace CranachImport\Entities;
 
 
+/**
+ * Representing a single catalog work refrence
+ */
 class CatalogWorkReference {
 
 	public $description = '';

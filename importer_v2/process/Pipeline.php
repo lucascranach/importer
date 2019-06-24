@@ -14,6 +14,9 @@ use CranachImport\Importers\IImporter;
 use CranachImport\Exporters\IExporter;
 
 
+/**
+ * A simple pipeline
+ */
 class Pipeline implements IPipeline {
 
 	private $exporters = [];
@@ -23,7 +26,6 @@ class Pipeline implements IPipeline {
 	function __construct() {
 
 	}
-
 
 
 	function addExporter(IExporter $exporter) {
@@ -45,6 +47,7 @@ class Pipeline implements IPipeline {
 			$collector->addItem($item);
 		}
 	}
+
 
 	function handleEOF() {
 		foreach ($this->exporters as $exporter) {

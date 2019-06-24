@@ -3,6 +3,9 @@
 namespace CranachImport\Entities;
 
 
+/**
+ * Representing a the dimension in a structured way
+ */
 class StructuredDimension {
 
 	public $element = '';

@@ -19,6 +19,10 @@ require_once 'StructuredDimension.php';
 use CranachImport\Entities\IBaseItem;
 
 
+/**
+ * Representing a single graphic and all its data
+ * 	One instance containing only data for one language
+ */
 class Graphic implements IBaseItem {
 
 	public $langCode = '<unknown language>';

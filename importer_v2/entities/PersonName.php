@@ -5,6 +5,9 @@ namespace CranachImport\Entities;
 require_once 'PersonNameDetail.php';
 
 
+/**
+ * Representing a single person name having multiple details
+ */
 class PersonName {
 
 	public $constituentId = '';

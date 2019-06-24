@@ -35,6 +35,10 @@ use CranachImport\Entities\CatalogWorkReference;
 use CranachImport\Entities\StructuredDimension;
 
 
+/**
+ * Graphics inflator used to inflate german and english graphic instances
+ * 	by traversing the xml element node and extracting the data in a structured way
+ */
 class GraphicsXMLInflator implements IInflator {
 
 	private static $nsPrefix = 'ns';

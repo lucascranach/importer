@@ -3,6 +3,10 @@
 namespace CranachImport\Entities;
 
 
+/**
+ * Representing a single historic event information
+ *  Used for dating purposes
+ */
 class HistoricEventInformation {
 
 	public $eventType = '';

@@ -3,6 +3,9 @@
 namespace CranachImport\Entities;
 
 
+/**
+ * Representing a single person and their role
+ */
 class Person {
 
 	public $id = '';

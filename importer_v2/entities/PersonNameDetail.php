@@ -3,6 +3,11 @@
 namespace CranachImport\Entities;
 
 
+/**
+ * Representing a single person name detail and type
+ * 	A type can be understood as a kind of indicator of how a name differs from the original,
+ *  like a wrong spelling
+ */
 class PersonNameDetail {
 
 	public $name = '';
