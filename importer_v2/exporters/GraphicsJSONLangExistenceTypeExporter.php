@@ -13,7 +13,7 @@ use CranachImport\Entities\IBaseItem;
  * - one file per language
  * - linked works
  */
-class GraphicsJSONLangLinkedExporter implements IFileExporter {
+class GraphicsJSONLangExistenceTypeExporter implements IFileExporter {
 
 	private $fileExt = 'json';
 	private $filename = null;
@@ -117,11 +117,28 @@ class GraphicsJSONLangLinkedExporter implements IFileExporter {
 		$this->outputReferenceCheckResult();
 
 		foreach ($this->langBuckets as $langCode => $bucket) {
-			$filename = $this->filename . '.' . $langCode . '.' . $this->fileExt;
-			$destFilepath = $this->dirname . DIRECTORY_SEPARATOR . $filename;
+			$existenceTypes = array_reduce(
+				$bucket->items,
+				function($carry, $item) {
+					$existenceTypeKey = $item->getIsVirtual() ? 'virtual' : 'real';
+					$carry[$existenceTypeKey][] = $item;
+					return $carry;
+				},
+				[ "virtual" => [], "real" => [] ],
+			);
 
-			$data = json_encode($bucket, JSON_PRETTY_PRINT);
-			file_put_contents($destFilepath, $data);
+			foreach ($existenceTypes as $existenceTypeKey => $existenceTypeItems) {
+				$filename = implode('.', [
+					$this->filename,
+					$existenceTypeKey,
+					$langCode,
+					$this->fileExt,
+				]);
+				$destFilepath = $this->dirname . DIRECTORY_SEPARATOR . $filename;
+
+				$data = json_encode(array('items' => $existenceTypeItems), JSON_PRETTY_PRINT);
+				file_put_contents($destFilepath, $data);
+			}
 		}
 
 		$this->done = true;
