@@ -19,7 +19,7 @@ CrystalReport
                 Field[FieldName="{CONDITIONS.PROJECT}"]
                     FormattedValue
 
-            Section[SectionNumber="2"] # Gnerelle Analyse
+            Section[SectionNumber="2"] # Genrelle Analyse
                 Field[FieldName="{CONDITIONS.OVERALLANALYSIS}"]
                     FormattedValue
 
@@ -57,8 +57,20 @@ CrystalReport
                             Field[FieldName="{CONALTNAMES.DISPLAYNAME}"]
                                 FormattedValue
 
-            Section[SectionNumber="7"] # Bearbeitungsdatum
+            Section[SectionNumber="7"] # Bearbeitungsdatum (Start, True?)
                 Field[FieldName="{@BearbeitungsdatumTrue}"]
+                    FormattedValue
+
+            Section[SectionNumber="8"] # Bearbeitungsdatum (Start, False?)
+                Field[FieldName="{@BearbeitungsdatumFalse}"]
+                    FormattedValue
+
+            Section[SectionNumber="9"] # Bearbeitungsdatum (Ende, True?)
+                Field[FieldName="{@BearbeitungsdatEndTrue}"]
+                    FormattedValue
+
+            Section[SectionNumber="10"] # Bearbeitungsdatum (Ende, False?)
+                Field[FieldName="{@BearbeitungsdatEndFalse}"]
                     FormattedValue
 
             Section[SectionNumber="11"] # Zeitstempel (???)
