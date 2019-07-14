@@ -96,7 +96,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-75",
@@ -108,7 +108,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [
                 {
                     "type": "Description\/ Interpretation\/ Comments",
@@ -277,7 +276,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-242",
@@ -364,7 +363,6 @@
                     "remark": "Hollstein VI.107.132b"
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [
                 {
                     "type": "Description\/ Interpretation\/ Comments",
@@ -509,7 +507,7 @@
             "relatedWorks": "- Amsterdam, Kunstsammlung Schloss Wolfegg, Salamander Fine Arts (second state)\n- Oxford (1st state)",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-98",
@@ -521,7 +519,6 @@
                     "remark": "II. Zustand# 2nd state"
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [
                 {
                     "type": "Beschreibung\/ Interpretation\/ Kommentare",
@@ -708,7 +705,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-104",
@@ -740,7 +737,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -918,7 +914,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-127",
@@ -942,68 +938,6 @@
                 {
                     "text": "Teil eines Werkes",
                     "inventoryNumber": "LC_H011-1",
-                    "remark": ""
-                }
-            ],
-            "secondLevelReferences": [
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H014-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H015-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H016-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H017-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H018-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H019-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H020-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H021-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H022-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H023-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H013-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H012-1",
                     "remark": ""
                 }
             ],
@@ -1199,7 +1133,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-143",
@@ -1218,73 +1152,6 @@
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "DE_KSVC_1-41-18",
-                    "remark": ""
-                }
-            ],
-            "secondLevelReferences": [
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H014-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H015-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H016-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H017-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H018-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H019-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H020-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H021-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H022-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H023-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H010-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H013-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H012-1",
                     "remark": ""
                 }
             ],
@@ -1485,7 +1352,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-145",
@@ -1509,63 +1376,6 @@
                 {
                     "text": "Teil eines Werkes",
                     "inventoryNumber": "LC_H011-1",
-                    "remark": ""
-                }
-            ],
-            "secondLevelReferences": [
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H014-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H015-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H016-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H017-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H018-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H019-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H020-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H021-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H022-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H023-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H012-1",
                     "remark": ""
                 }
             ],
@@ -1761,7 +1571,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-144",
@@ -1790,58 +1600,6 @@
                 {
                     "text": "Teil eines Werkes",
                     "inventoryNumber": "LC_H013-1",
-                    "remark": ""
-                }
-            ],
-            "secondLevelReferences": [
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H014-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H015-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H016-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H017-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H018-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H019-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H020-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H021-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H022-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H023-1",
                     "remark": ""
                 }
             ],
@@ -1997,7 +1755,7 @@
             "relatedWorks": "- also in Amsterdam, Basel private collection, Bayerische Staatsbibliothek",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-82",
@@ -2009,7 +1767,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -2221,17 +1978,10 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-187",
-                    "remark": ""
-                }
-            ],
-            "secondLevelReferences": [
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H078b-1",
                     "remark": ""
                 }
             ],
@@ -2452,7 +2202,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-188",
@@ -2464,7 +2214,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -2603,14 +2352,13 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-85",
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -2772,8 +2520,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [],
-            "secondLevelReferences": [],
+            "references": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -2940,7 +2687,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "DE_SMKP_KA-FP-350D",
@@ -2957,7 +2704,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [
                 {
                     "type": "Description\/ Interpretation\/ Comments",
@@ -3094,14 +2840,13 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-72",
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -3270,7 +3015,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-76",
@@ -3282,7 +3027,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -3425,7 +3169,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-78",
@@ -3437,7 +3181,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -3580,14 +3323,13 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-83",
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -3747,7 +3489,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-84",
@@ -3759,7 +3501,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -3882,14 +3623,13 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-86",
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -4006,7 +3746,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-87",
@@ -4018,7 +3758,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -4131,7 +3870,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-89",
@@ -4143,7 +3882,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -4251,7 +3989,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-91",
@@ -4263,7 +4001,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -4384,14 +4121,13 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-92",
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -4504,14 +4240,13 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-93",
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -4620,7 +4355,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "DE_SKD_A6617",
@@ -4632,7 +4367,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -4745,7 +4479,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-95",
@@ -4757,7 +4491,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -4870,7 +4603,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-96",
@@ -4882,7 +4615,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -4995,7 +4727,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-97",
@@ -5007,7 +4739,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [
                 {
                     "type": "Description\/ Interpretation\/ Comments",
@@ -5126,14 +4857,13 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-100",
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [
                 {
                     "type": "Description\/ Interpretation\/ Comments",
@@ -5252,14 +4982,13 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-101",
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [
                 {
                     "type": "Description\/ Interpretation\/ Comments",
@@ -5378,14 +5107,13 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1927-128",
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -5516,14 +5244,13 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-102",
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -5651,14 +5378,13 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-103",
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -5811,7 +5537,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-108",
@@ -5838,7 +5564,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -6015,7 +5740,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-112",
@@ -6032,7 +5757,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -6183,14 +5907,13 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-114",
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -6308,14 +6031,13 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-115",
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -6424,7 +6146,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-123",
@@ -6436,7 +6158,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -6569,7 +6290,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-124",
@@ -6581,7 +6302,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -6714,7 +6434,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-125",
@@ -6726,7 +6446,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {
@@ -6859,7 +6578,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-126",
@@ -6871,7 +6590,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [
                 {
                     "type": "Description\/ Interpretation\/ Comments",
@@ -7055,7 +6773,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-146",
@@ -7089,53 +6807,6 @@
                 {
                     "text": "Teil eines Werkes",
                     "inventoryNumber": "LC_H013-1",
-                    "remark": ""
-                }
-            ],
-            "secondLevelReferences": [
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H015-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H016-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H017-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H018-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H019-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H020-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H021-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H022-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H023-1",
                     "remark": ""
                 }
             ],
@@ -7326,7 +6997,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-133",
@@ -7365,48 +7036,6 @@
                 {
                     "text": "Teil eines Werkes",
                     "inventoryNumber": "LC_H014-1",
-                    "remark": ""
-                }
-            ],
-            "secondLevelReferences": [
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H016-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H017-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H018-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H019-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H020-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H021-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H022-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H023-1",
                     "remark": ""
                 }
             ],
@@ -7597,7 +7226,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-134",
@@ -7641,43 +7270,6 @@
                 {
                     "text": "Teil eines Werkes",
                     "inventoryNumber": "LC_H015-1",
-                    "remark": ""
-                }
-            ],
-            "secondLevelReferences": [
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H017-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H018-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H019-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H020-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H021-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H022-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H023-1",
                     "remark": ""
                 }
             ],
@@ -7868,7 +7460,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-135",
@@ -7917,38 +7509,6 @@
                 {
                     "text": "Teil eines Werkes",
                     "inventoryNumber": "LC_H016-1",
-                    "remark": ""
-                }
-            ],
-            "secondLevelReferences": [
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H018-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H019-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H020-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H021-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H022-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H023-1",
                     "remark": ""
                 }
             ],
@@ -8139,7 +7699,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "DE_KSVC_1-42-24",
@@ -8193,33 +7753,6 @@
                 {
                     "text": "Teil eines Werkes",
                     "inventoryNumber": "LC_H017-1",
-                    "remark": ""
-                }
-            ],
-            "secondLevelReferences": [
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H019-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H020-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H021-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H022-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H023-1",
                     "remark": ""
                 }
             ],
@@ -8410,7 +7943,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-137",
@@ -8474,23 +8007,6 @@
                 {
                     "text": "Teil eines Werkes",
                     "inventoryNumber": "LC_H020-1",
-                    "remark": ""
-                }
-            ],
-            "secondLevelReferences": [
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H021-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H022-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H023-1",
                     "remark": ""
                 }
             ],
@@ -8681,7 +8197,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-138",
@@ -8740,28 +8256,6 @@
                 {
                     "text": "Teil eines Werkes",
                     "inventoryNumber": "LC_H018-1",
-                    "remark": ""
-                }
-            ],
-            "secondLevelReferences": [
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H019-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H021-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H022-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H023-1",
                     "remark": ""
                 }
             ],
@@ -8952,7 +8446,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-139",
@@ -9021,18 +8515,6 @@
                 {
                     "text": "Teil eines Werkes",
                     "inventoryNumber": "LC_H020-1",
-                    "remark": ""
-                }
-            ],
-            "secondLevelReferences": [
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H022-1",
-                    "remark": ""
-                },
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H023-1",
                     "remark": ""
                 }
             ],
@@ -9223,7 +8705,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-140",
@@ -9297,13 +8779,6 @@
                 {
                     "text": "Teil eines Werkes",
                     "inventoryNumber": "LC_H021-1",
-                    "remark": ""
-                }
-            ],
-            "secondLevelReferences": [
-                {
-                    "text": "Teil eines Werkes",
-                    "inventoryNumber": "G_LC_H023-1",
                     "remark": ""
                 }
             ],
@@ -9494,7 +8969,7 @@
             "relatedWorks": "",
             "exhibitionHistory": "",
             "bibliography": "",
-            "firstLevelReferences": [
+            "references": [
                 {
                     "text": "Abzug A",
                     "inventoryNumber": "AT_A_DG1929-141",
@@ -9576,7 +9051,6 @@
                     "remark": ""
                 }
             ],
-            "secondLevelReferences": [],
             "additionalTextInformation": [],
             "publications": [
                 {

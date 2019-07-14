@@ -74,8 +74,7 @@ class GraphicsXMLInflator implements IInflator {
 		self::inflateRelatedWorks($subNode, $graphicDe, $graphicEn);
 		self::inflateExhibitionHistory($subNode, $graphicDe, $graphicEn);
 		self::inflateBibliography($subNode, $graphicDe, $graphicEn);
-		self::inflateFirstLevelReferences($subNode, $graphicDe, $graphicEn);
-		self::inflateSecondLevelReferences($subNode, $graphicDe, $graphicEn);
+		self::inflateReferences($subNode, $graphicDe, $graphicEn);
 		self::inflateAdditionalTextInformations($subNode, $graphicDe, $graphicEn);
 		self::inflatePublications($subNode, $graphicDe, $graphicEn);
 		self::inflateKeywords($subNode, $graphicDe, $graphicEn);
@@ -889,8 +888,8 @@ class GraphicsXMLInflator implements IInflator {
 	}
 
 
-	/* First level references */
-	private static function inflateFirstLevelReferences(\SimpleXMLElement &$node,
+	/* References */
+	private static function inflateReferences(\SimpleXMLElement &$node,
 	                                                    Graphic &$graphicDe,
 	                                                    Graphic &$graphicEn) {
 		$referenceDetailsElements = $node->Section[31]->Subreport->Details;
@@ -904,59 +903,8 @@ class GraphicsXMLInflator implements IInflator {
 
 			$reference = new GraphicReference;
 
-			$graphicDe->addFirstLevelReference($reference);
-			$graphicEn->addFirstLevelReference($reference);
-
-			/* Text */
-			$textElement = self::findElementByXPath(
-				$referenceDetailElement,
-				'Section[@SectionNumber="0"]/Text[@Name="Text5"]/TextValue',
-			);
-			if ($textElement) {
-				$textStr = trim($textElement);
-				$reference->setText($textStr);
-			}
-
-			/* Inventory number */
-			$inventoryNumberElement = self::findElementByXPath(
-				$referenceDetailElement,
-				'Section[@SectionNumber="1"]/Field[@FieldName="{@Inventarnummer}"]/FormattedValue',
-			);
-			if ($inventoryNumberElement) {
-				$inventoryNumberStr = trim($inventoryNumberElement);
-				$reference->setInventoryNumber($inventoryNumberStr);
-			}
-
-			/* Remarks */
-			$remarksElement = self::findElementByXPath(
-				$referenceDetailElement,
-				'Section[@SectionNumber="2"]/Field[@FieldName="{ASSOCIATIONS.REMARKS}"]/FormattedValue',
-			);
-			if ($remarksElement) {
-				$remarksStr = trim($remarksElement);
-				$reference->setRemark($remarksStr);
-			}
-		}
-	}
-
-
-	/* Second level references */
-	private static function inflateSecondLevelReferences(\SimpleXMLElement &$node,
-	                                                     Graphic &$graphicDe,
-	                                                     Graphic &$graphicEn) {
-		$referenceDetailsElements = $node->Section[32]->Subreport->Details;
-
-		for ($i = 0; $i < count($referenceDetailsElements); $i += 1) {
-			$referenceDetailElement = $referenceDetailsElements[$i];
-
-			if ($referenceDetailElement->count() === 0) {
-				continue;
-			}
-
-			$reference = new GraphicReference;
-
-			$graphicDe->addSecondLevelReference($reference);
-			$graphicEn->addSecondLevelReference($reference);
+			$graphicDe->addReference($reference);
+			$graphicEn->addReference($reference);
 
 			/* Text */
 			$textElement = self::findElementByXPath(

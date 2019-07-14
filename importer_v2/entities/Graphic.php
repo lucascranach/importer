@@ -47,8 +47,7 @@ class Graphic implements IBaseItem {
 	public $relatedWorks = '';
 	public $exhibitionHistory = '';
 	public $bibliography = '';
-	public $firstLevelReferences = [];
-	public $secondLevelReferences = [];
+	public $references = [];
 	public $additionalTextInformation = [];
 	public $publications = [];
 	public $keywords = [];
@@ -265,23 +264,13 @@ class Graphic implements IBaseItem {
 	}
 
 
-	function addFirstLevelReference(GraphicReference $firstLevelReference) {
-		$this->firstLevelReferences[] = $firstLevelReference;
+	function addReference(GraphicReference $reference) {
+		$this->references[] = $reference;
 	}
 
 
-	function getFirstLevelReferences(): array {
-		return $this->firstLevelReferences;
-	}
-
-
-	function addSecondLevelReference(GraphicReference $secondLevelReference) {
-		$this->secondLevelReferences[] = $secondLevelReference;
-	}
-
-
-	function getSecondLevelReferences(): array {
-		return $this->secondLevelReferences;
+	function getReferences(): array {
+		return $this->references;
 	}
 
 

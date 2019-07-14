@@ -254,7 +254,7 @@ CrystalReport
 					Details* # Referenz
 						Section[SectionNumber="0"] #-> Textlabel (unwichtig?)
 							Text[Name="Text5"]
-								TextValue
+								TextValues
 						Section[SectionNumber="1"] #-> Inventarnummer
 							Field[FieldName="{@Inventarnummer}"]
 								FormattedValue
@@ -263,7 +263,7 @@ CrystalReport
 								FormattedValue
 
 
-			Section[SectionNumber="32"] # Zweite Level Referenzen
+			Section[SectionNumber="32"] # Zweite Level Referenzen (wird nicht benötigt!)
 				Supreport
 					Details* # Referenz
 						Section[SectionNumber="0"] #-> Textlabel (unwichtig?)

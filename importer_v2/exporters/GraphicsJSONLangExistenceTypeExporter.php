@@ -60,50 +60,29 @@ class GraphicsJSONLangExistenceTypeExporter implements IFileExporter {
 
 
 	function outputReferenceCheckResult() {
-		$referenceCheckOutput = false;
+		if (count($this->langBuckets) === 0) {
+			throw new Exception('At least one language needed!');
+		}
 
-		foreach ($this->langBuckets as $langBucket) {
+		$firstLangBucket = $this->langBuckets[array_key_first($this->langBuckets)];
+		$objectsWithMissingReferencesList = [];
 
-			$objectsWithMissingReferencesList = (object) [
-				'firstLevelReferences' => [],
-				'secondLevelReferences' => [],
-			];
-
-			foreach($langBucket->items as $item) {
-				foreach ($item->getFirstLevelReferences() as $reference) {
-					if (!in_array($reference->getInventoryNumber(), $this->inventoryNumberList)) {
-						$objectsWithMissingReferencesList->firstLevelReferences[] = $item->getInventoryNumber();
-					}
-				}
-
-				foreach ($item->getSecondLevelReferences() as $reference) {
-					$croppedInventoryNumber = preg_replace('/^G_/', '', $reference->getInventoryNumber());
-
-					if (!in_array($croppedInventoryNumber, $this->inventoryNumberList)) {
-						$objectsWithMissingReferencesList->secondLevelReferences[] = $item->getInventoryNumber();
-					}
+		foreach($firstLangBucket->items as $item) {
+			foreach ($item->getReferences() as $reference) {
+				if (!in_array($reference->getInventoryNumber(), $this->inventoryNumberList)) {
+					$objectsWithMissingReferencesList[] = $item->getInventoryNumber();
 				}
 			}
+		}
 
-			if (!$referenceCheckOutput) {
+		echo "\nGraphics with missing references: \n\n";
 
-				echo "Graphics with missing references: \n\n";
-				echo "  first level references: \n";
-				foreach ($objectsWithMissingReferencesList->firstLevelReferences as $objectInventoryNumber) {
-					echo "    - " . $$objectInventoryNumber . "\n";
-				}
-
-				echo "\n";
-
-				echo "  second level references: \n";
-				foreach ($objectsWithMissingReferencesList->secondLevelReferences as $objectInventoryNumber) {
-					echo "    - " . $$objectInventoryNumber . "\n";
-				}
-
-				echo "\n";
-
-				$referenceCheckOutput = true;
+		if (count($objectsWithMissingReferencesList) > 0) {
+			foreach ($objectsWithMissingReferencesList as $objectInventoryNumber) {
+				echo "    - " . $$objectInventoryNumber . "\n";
 			}
+		} else {
+			echo "    - No missing references!\n\n";
 		}
 	}
 
