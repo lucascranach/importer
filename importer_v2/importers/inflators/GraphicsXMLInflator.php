@@ -45,6 +45,18 @@ class GraphicsXMLInflator implements IInflator {
 	private static $ns = 'urn:crystal-reports:schemas:report-detail';
 	private static $langSplitChar = '#';
 
+	private static $additionalTextLanguageTypes = [
+		'de' => 'Beschreibung/ Interpretation/ Kommentare',
+		'en' => 'Description/ Interpretation/ Comments',
+		'not_assigned' => '(not assigned)',
+	];
+
+	private static $locationLanguageTypes = [
+		'de' => 'Standort Cranach Objekt',
+		'en' => 'Location Cranach Object',
+		'not_assigned' => '(not assigned)',
+	];
+
 
 	private function __construct() {}
 
@@ -954,17 +966,31 @@ class GraphicsXMLInflator implements IInflator {
 
 			$additionalTextInformation = new AdditionalTextInformation;
 
-			$graphicDe->addAdditionalTextInformation($additionalTextInformation);
-			$graphicEn->addAdditionalTextInformation($additionalTextInformation);
-
 			/* Text type */
 			$textTypeElement = self::findElementByXPath(
 				$additonalTextDetailElement,
 				'Section[@SectionNumber="0"]/Field[@FieldName="{TEXTTYPES.TEXTTYPE}"]/FormattedValue',
 			);
+
+			/* Language determination */
 			if ($textTypeElement) {
 				$textTypeStr = trim($textTypeElement);
 				$additionalTextInformation->setType($textTypeStr);
+
+				if (self::$additionalTextLanguageTypes['de'] === $textTypeStr) {
+					$graphicDe->addAdditionalTextInformation($additionalTextInformation);
+				} else if (self::$additionalTextLanguageTypes['en'] === $textTypeStr) {
+					$graphicEn->addAdditionalTextInformation($additionalTextInformation);
+				} else if(self::$additionalTextLanguageTypes['not_assigned'] === $textTypeStr) {
+					echo 'Unassigned additional text type for object ' . $graphicDe->getInventoryNumber() . "\n";
+				} else {
+					echo 'Unknown additional text type: ' . $textTypeStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
+					$graphicDe->addAdditionalTextInformation($additionalTextInformation);
+					$graphicEn->addAdditionalTextInformation($additionalTextInformation);
+				}
+			} else {
+				$graphicDe->addAdditionalTextInformation($additionalTextInformation);
+				$graphicEn->addAdditionalTextInformation($additionalTextInformation);
 			}
 
 			/* Text */
@@ -986,6 +1012,7 @@ class GraphicsXMLInflator implements IInflator {
 				$yearStr = trim($yearElement);
 				$additionalTextInformation->setYear($yearStr);
 			}
+
 		}
 	}
 
@@ -1107,17 +1134,31 @@ class GraphicsXMLInflator implements IInflator {
 
 			$metaReference = new MetaReference;
 
-			$graphicDe->addLocation($metaReference);
-			$graphicEn->addLocation($metaReference);
-
 			/* Type */
 			$locationTypeElement = self::findElementByXPath(
 				$locationDetailElement,
 				'Section[@SectionNumber="0"]/Field[@FieldName="{THESXREFTYPES.THESXREFTYPE}"]/FormattedValue',
 			);
+
+			/* Language determination */
 			if ($locationTypeElement) {
 				$locationTypeStr = trim($locationTypeElement);
 				$metaReference->setType($locationTypeStr);
+
+				if (self::$locationLanguageTypes['de'] === $locationTypeStr) {
+					$graphicDe->addLocation($metaReference);
+				} else if (self::$locationLanguageTypes['en'] === $locationTypeStr) {
+					$graphicEn->addLocation($metaReference);
+				} else if(self::$locationLanguageTypes['not_assigned'] === $locationTypeStr) {
+					echo 'Unassigned location type for object ' . $graphicDe->getInventoryNumber() . "\n";
+				} else {
+					echo 'Unknown location type: ' . $textTypeStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
+					$graphicDe->addLocation($metaReference);
+					$graphicEn->addLocation($metaReference);
+				}
+			} else {
+				$graphicDe->addLocation($metaReference);
+				$graphicEn->addLocation($metaReference);
 			}
 
 			/* Term */

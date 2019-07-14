@@ -277,7 +277,7 @@ CrystalReport
 								FormattedValue
 
 
-			Section[SectionNumber="33"] # Zusätzliches (?); Vermischung von Sprachen -> keine Trennung erkennbar
+			Section[SectionNumber="33"] # Zusätzliches (?); Sprache anhand {TEXTTYPES.TEXTTYPE}-Wert erkennbar
 				Subreport
 					Details*
 						Section[SectionNumber="0"] #-> Text-Typ
@@ -320,7 +320,7 @@ CrystalReport
 								FormattedValue
 
 
-			Section[SectionNumber="36"] # Standort des Cranach Objekts
+			Section[SectionNumber="36"] # Standort des Cranach Objekts; Sprache anhand {THESXREFTYPES.THESXREFTYPE}-Wert erkennbar
 				Subreport
 					Details*
 						Section[SectionNumber="0"] #-> Kreuzreferenz-Typ

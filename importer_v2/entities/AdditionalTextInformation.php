@@ -17,7 +17,6 @@ class AdditionalTextInformation {
 
 	}
 
-
 	function setType(string $type) {
 		$this->type = $type;
 	}

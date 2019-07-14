@@ -370,11 +370,6 @@
                     "year": 1911
                 },
                 {
-                    "type": "Beschreibung\/ Interpretation\/ Kommentare",
-                    "text": "Ein fr\u00fcherer Abdruck aus dem Dresdener Kupferstichcabinet hat nur den Namen Lutherus. Unten blo\u00df die vier Verse: Quaesitus-vale.\n[Schuchardt 1871,vol. III, 254, No. 179]",
-                    "year": null
-                },
-                {
                     "type": "Description\/ Interpretation\/ Comments",
                     "text": "An early print in the Prints and Drawing Department in Dresden, which only has the name 'Lutherus' above the portrait and below the two couplets: Quaesitus-vale. \n[Schuchardt 1871,vol. III, 254, No. 179]",
                     "year": null
@@ -520,11 +515,6 @@
                 }
             ],
             "additionalTextInformation": [
-                {
-                    "type": "Beschreibung\/ Interpretation\/ Kommentare",
-                    "text": "Vorbild u. a. einer Miniatur f\u00fcr Kaiser Maximilian I. und eines Bronzereliefs Loy Herings.\n[Exhib. Cat. Basel 1974, 242,, No. 138]",
-                    "year": null
-                },
                 {
                     "type": "Description\/ Interpretation\/ Comments",
                     "text": "Its influence can be seen in a minature made in 1512 for the Emperor Maximilian and in Loy Hering's bronze relief for the Hauptsall (principal room) of the Castle at Gr\u00fcnau.\n[Exhib. Cat. Basel 1974, 242,, No. 138]",
@@ -2909,16 +2899,6 @@
             ],
             "locations": [
                 {
-                    "type": "Standort Cranach Objekt",
-                    "term": "Wien",
-                    "path": "\u00d6sterreich > Wien > Wien"
-                },
-                {
-                    "type": "Standort Cranach Objekt",
-                    "term": "Wien",
-                    "path": "\u00d6sterreich > Wien > Wien"
-                },
-                {
                     "type": "Location Cranach Object",
                     "term": "Wien",
                     "path": "\u00d6sterreich > Wien > Wien"
@@ -3386,16 +3366,6 @@
                 }
             ],
             "locations": [
-                {
-                    "type": "Standort Cranach Objekt",
-                    "term": "Wien",
-                    "path": "\u00d6sterreich > Wien > Wien"
-                },
-                {
-                    "type": "Standort Cranach Objekt",
-                    "term": "Wien",
-                    "path": "\u00d6sterreich > Wien > Wien"
-                },
                 {
                     "type": "Location Cranach Object",
                     "term": "Wien",
