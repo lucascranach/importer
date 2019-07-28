@@ -2,19 +2,19 @@
 
 namespace CranachImport\Entities;
 
-require_once 'entities/IBaseItem.php';
+require_once 'IBaseItem.php';
 
-require_once 'Person.php';
-require_once 'PersonName.php';
-require_once 'Title.php';
-require_once 'Classification.php';
-require_once 'Dating.php';
-require_once 'GraphicReference.php';
-require_once 'AdditionalTextInformation.php';
-require_once 'Publication.php';
-require_once 'MetaReference.php';
-require_once 'CatalogWorkReference.php';
-require_once 'StructuredDimension.php';
+require_once 'graphic/Person.php';
+require_once 'graphic/PersonName.php';
+require_once 'graphic/Title.php';
+require_once 'graphic/Classification.php';
+require_once 'graphic/Dating.php';
+require_once 'graphic/GraphicReference.php';
+require_once 'graphic/AdditionalTextInformation.php';
+require_once 'graphic/Publication.php';
+require_once 'graphic/MetaReference.php';
+require_once 'graphic/CatalogWorkReference.php';
+require_once 'graphic/StructuredDimension.php';
 
 use CranachImport\Entities\IBaseItem;
 

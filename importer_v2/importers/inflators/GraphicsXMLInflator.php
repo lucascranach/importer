@@ -4,19 +4,20 @@ namespace CranachImport\Importers\Inflators;
 
 require_once 'IInflator.php';
 require_once 'entities/Graphic.php';
-require_once 'entities/Person.php';
-require_once 'entities/PersonName.php';
-require_once 'entities/PersonNameDetail.php';
-require_once 'entities/Title.php';
-require_once 'entities/Classification.php';
-require_once 'entities/Dating.php';
-require_once 'entities/HistoricEventInformation.php';
-require_once 'entities/GraphicReference.php';
-require_once 'entities/AdditionalTextInformation.php';
-require_once 'entities/Publication.php';
-require_once 'entities/MetaReference.php';
-require_once 'entities/CatalogWorkReference.php';
-require_once 'entities/StructuredDimension.php';
+
+require_once 'entities/graphic/Person.php';
+require_once 'entities/graphic/PersonName.php';
+require_once 'entities/graphic/PersonNameDetail.php';
+require_once 'entities/graphic/Title.php';
+require_once 'entities/graphic/Classification.php';
+require_once 'entities/graphic/Dating.php';
+require_once 'entities/graphic/HistoricEventInformation.php';
+require_once 'entities/graphic/GraphicReference.php';
+require_once 'entities/graphic/AdditionalTextInformation.php';
+require_once 'entities/graphic/Publication.php';
+require_once 'entities/graphic/MetaReference.php';
+require_once 'entities/graphic/CatalogWorkReference.php';
+require_once 'entities/graphic/StructuredDimension.php';
 
 
 use CranachImport\Entities\Graphic;
