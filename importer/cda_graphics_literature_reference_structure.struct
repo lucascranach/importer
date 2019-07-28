@@ -1,0 +1,139 @@
+
+CrystalReport
+	Group* # entspricht einer Grafik
+		GroupHeader # Enthält immer genau 41 Section-Elemente
+
+			Section[SectionNumber="0"] # -> ID
+				Field[FieldName="{vgsrpReferenceMasterS_RO.REFERENCEID}"]
+					FormattedValue
+
+			Section[SectionNumber="1"] # -> Referenznummer
+				Field[FieldName="{@Verweisnummer}"]
+					FormattedValue
+
+			Section[SectionNumber="2"] # -> Titel
+				Field[FieldName="{vgsrpReferenceMasterS_RO.TITLE}"]
+					FormattedValue
+
+			Section[SectionNumber="3"] # -> Untertitel
+				Field[FieldName="{vgsrpReferenceMasterS_RO.SUBTITLE}"]
+					FormattedValue
+
+			Section[SectionNumber="4"] # -> Kurztitel
+				Field[FieldName="{vgsrpReferenceMasterS_RO.HEADING}"]
+					FormattedValue
+
+			Section[SectionNumber="5"] # -> Journal
+				Field[FieldName="{vgsrpReferenceMasterS_RO.JOURNAL}"]
+					FormattedValue
+
+			Section[SectionNumber="6"] # -> Serie
+				Field[FieldName="{vgsrpReferenceMasterS_RO.SERIES}"]
+					FormattedValue
+
+			Section[SectionNumber="7"] # -> Band
+				Field[FieldName="{vgsrpReferenceMasterS_RO.VOLUME}"]
+					FormattedValue
+
+			Section[SectionNumber="8"] # -> Ausgabe
+				Field[FieldName="{vgsrpReferenceMasterS_RO.EDITION}"]
+					FormattedValue
+
+			Section[SectionNumber="9"] # -> Erscheinungsort
+				Field[FieldName="{vgsrpReferenceMasterS_RO.PLACEPUBLISHED}"]
+					FormattedValue
+
+			Section[SectionNumber="10"] # -> Erscheinungsjahr
+				Field[FieldName="{vgsrpReferenceMasterS_RO.YEARPUBLISHED}"]
+					FormattedValue
+
+			Section[SectionNumber="11"] # -> Seiten
+				Field[FieldName="{vgsrpReferenceMasterS_RO.NUMOFPAGES}"]
+					FormattedValue
+
+			Section[SectionNumber="12"] # -> Datum
+				Field[FieldName="{vgsrpReferenceMasterS_RO.DISPLAYDATE}"]
+					FormattedValue
+
+			Section[SectionNumber="13"] # -> Ereignis
+				Subreport
+					Details*
+						Section[SectionNumber="0"] # -> Ereignistyp
+							Field[FieldName="{REFDATES.EVENTTYPE}"]
+								FormattedValue
+
+						Section[SectionNumber="1"] # -> Datumstext
+							Field[FieldName="{REFDATES.DATETEXT}"]
+								FormattedValue
+
+						Section[SectionNumber="2"] # -> Anfangsdatum
+							Field[FieldName="{@Anfangsdatum}"]
+								FormattedValue
+
+						Section[SectionNumber="3"] # -> Enddatum
+							Field[FieldName="{@Enddatum }"]
+								FormattedValue
+
+						Section[SectionNumber="4"] # -> Bermerkungen
+							Field[FieldName="{REFDATES.REMARKS}"]
+								FormattedValue
+
+			Section[SectionNumber="14"] # -> Urheberrecht
+				Field[FieldName="{vgsrpReferenceMasterS_RO.COPYRIGHT}"]
+					FormattedValue
+
+			Section[SectionNumber="15"] # -> Autor
+				Subreport
+					Details* (?)
+						Section[SectionNumber="0"]
+							Field[FieldName="{@PersonSuffix}"]
+								FormattedValue
+
+			Section[SectionNumber="16"] # -> Publikationen
+				Subreport
+					Details*
+						Section[SectionNumber="0"] # -> Nicht wichtig, da Feldtitel
+
+						Section[SectionNumber="1"] # -> Publikationstyp
+							Field[FieldName="{TERMS.TERM}"]
+								FormattedValue
+
+						Section[SectionNumber="2"] # -> Bemerkung
+							Field[FieldName="{THESXREFS.REMARKS}"]
+								FormattedValue
+
+			Section[SectionNumber="17"] # -> ID
+				Subreport
+					Details
+						Section[SectionNumber="0"]
+							Field[FieldName="{ALTNUMS.ALTNUM}"]
+								FormattedValue
+
+
+		Group[Level="2"] # -> Verbundene Objekte
+			Details
+				Section
+					Subreport
+						Details*
+							Section[SectionNumber="0"] # -> Inventarnummer
+								Field[FieldName="{@Inventarnummer}"]
+									FormattedValue
+
+							Section[SectionNumber="1"] # -> Katalognummner
+								Field[FieldName="{VGSRPREFXREFSS_RO.CATALOGUENUMBER}"]
+									FormattedValue
+
+							Section[SectionNumber="2"] # -> Seitenzahl
+								Field[FieldName="{VGSRPREFXREFSS_RO.PAGENUMBER}"]
+									FormattedValue
+
+							Section[SectionNumber="3"] # -> Abbildungsnummber
+								Field[FieldName="{VGSRPREFXREFSS_RO.APPENDAGE}"]
+									FormattedValue
+
+							Section[SectionNumber="4"] # -> Bemerkungen
+								Field[FieldName="{VGSRPREFXREFSS_RO.REMARKS}"]
+									FormattedValue
+
+
+
