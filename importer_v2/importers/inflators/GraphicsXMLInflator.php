@@ -57,6 +57,11 @@ class GraphicsXMLInflator implements IInflator {
 		'not_assigned' => '(not assigned)',
 	];
 
+	private static $titlesLanguageTypes = [
+		'de' => 'Deutsch',
+		'en' => 'Englisch',
+		'not_assigned' => '(not assigned)',
+	];
 
 	private function __construct() {}
 
@@ -304,51 +309,69 @@ class GraphicsXMLInflator implements IInflator {
 	                                      Graphic &$graphicEn) {
 		$titleDetailElements = $node->Section[3]->Subreport->Details;
 
-		for ($i = 0; $i < count($titleDetailElements); $i += 2) {
-			$titlesArr = [
-				new Title, // de
-				new Title, // en
-			];
+		for ($i = 0; $i < count($titleDetailElements); $i += 1) {
+			$titleDetailElement = $titleDetailElements[$i];
 
-			$graphicDe->addTitle($titlesArr[0]);
-			$graphicEn->addTitle($titlesArr[1]);
+			if (is_null($titleDetailElement)) {
+				continue;
+			}
 
-			for ($j = 0; $j < count($titlesArr); $j += 1) {
-				$titleDetailElement = $titleDetailElements[$i + $j];
+			$title = new Title;
 
-				if (is_null($titleDetailElement)) {
-					continue;
+			/* title language */
+			$langElement = self::findElementByXPath(
+				$titleDetailElement,
+				'Field[@FieldName="{LANGUAGES.LANGUAGE}"]/FormattedValue',
+			);
+			if ($langElement) {
+				$langStr = trim($langElement);
+
+				if (self::$titlesLanguageTypes['de'] === $langStr) {
+					$graphicDe->addTitle($title);
+				} else if (self::$titlesLanguageTypes['en'] === $langStr) {
+					$graphicEn->addTitle($title);
+				} else if(self::$titlesLanguageTypes['not_assigned'] === $langStr) {
+					echo 'Unassigned title lang for object ' . $graphicDe->getInventoryNumber() . "\n";
+				} else {
+					echo 'Unknown title lang: ' . $langStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
+					/* Bind title to both languages to prevent loss */
+					$graphicDe->addTitle($title);
+					$graphicEn->addTitle($title);
 				}
+			} else {
+				/* Bind title to both languages to prevent loss */
+				$graphicDe->addTitle($title);
+				$graphicEn->addTitle($title);
+			}
 
-				/* title type */
-				$typeElement = self::findElementByXPath(
-					$titleDetailElement,
-					'Field[@FieldName="{TITLETYPES.TITLETYPE}"]/FormattedValue',
-				);
-				if ($typeElement) {
-					$typeStr = trim($typeElement);
-					$titlesArr[$j]->setType($typeStr);
-				}
+			/* title type */
+			$typeElement = self::findElementByXPath(
+				$titleDetailElement,
+				'Field[@FieldName="{TITLETYPES.TITLETYPE}"]/FormattedValue',
+			);
+			if ($typeElement) {
+				$typeStr = trim($typeElement);
+				$title->setType($typeStr);
+			}
 
-				/* title */
-				$titleElement = self::findElementByXPath(
-					$titleDetailElement,
-					'Field[@FieldName="{OBJTITLES.TITLE}"]/FormattedValue',
-				);
-				if ($titleElement) {
-					$titleStr = trim($titleElement);
-					$titlesArr[$j]->setTitle($titleStr);
-				}
+			/* title */
+			$titleElement = self::findElementByXPath(
+				$titleDetailElement,
+				'Field[@FieldName="{OBJTITLES.TITLE}"]/FormattedValue',
+			);
+			if ($titleElement) {
+				$titleStr = trim($titleElement);
+				$title->setTitle($titleStr);
+			}
 
-				/* remark */
-				$remarksElement = self::findElementByXPath(
-					$titleDetailElement,
-					'Field[@FieldName="{OBJTITLES.REMARKS}"]/FormattedValue',
-				);
-				if ($remarksElement) {
-					$remarksStr = trim($remarksElement);
-					$titlesArr[$j]->setRemarks($remarksStr);
-				}
+			/* remark */
+			$remarksElement = self::findElementByXPath(
+				$titleDetailElement,
+				'Field[@FieldName="{OBJTITLES.REMARKS}"]/FormattedValue',
+			);
+			if ($remarksElement) {
+				$remarksStr = trim($remarksElement);
+				$title->setRemarks($remarksStr);
 			}
 		}
 	}

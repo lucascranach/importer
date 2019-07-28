@@ -15,8 +15,8 @@ use CranachImport\Importers\GraphicsXMLImporter;
 // use CranachImport\Exporters\GraphicsJSONLangExporter;
 use CranachImport\Exporters\GraphicsJSONLangExistenceTypeExporter;
 
-$graphicsXMLSourceFilePath = '../importer/import-file/20190328/CDA-GR_DatenÅbersicht_20190329.xml';
-$graphicsJSONDestinationPath = './output/cda-graphics-v2.json';
+$graphicsXMLSourceFilePath = '../importer/import-file/20190712/CDA-G_MiniExport_20190712.xml';
+$graphicsJSONDestinationPath = './output/20190712/cda-graphics-v2.json';
 
 $graphicsXmlImporter = new GraphicsXMLImporter($graphicsXMLSourceFilePath);
 $graphicsJsonExporter = new GraphicsJSONLangExistenceTypeExporter($graphicsJSONDestinationPath);
