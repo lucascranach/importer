@@ -13,7 +13,7 @@ use CranachImport\Exporters\GraphicsJSONLangExistenceTypeExporter;
 
 
 function importGraphics() {
-	$graphicsXMLSourceFilePath = '../importer/import-file/20190712/CDA-G_MiniExport_20190712.xml';
+	$graphicsXMLSourceFilePath = '../import-file/20190712/CDA-G_MiniExport_20190712.xml';
 	$graphicsJSONDestinationPath = './output/20190712/cda-graphics-v2.json';
 
 	$graphicsXmlImporter = new GraphicsXMLImporter($graphicsXMLSourceFilePath);
