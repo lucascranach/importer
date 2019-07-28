@@ -4,8 +4,10 @@ namespace CranachImport\Collectors;
 
 require_once 'ICollector.php';
 require_once 'entities/IBaseItem.php';
+require_once 'entities/Graphic.php';
 
 use CranachImport\Entities\IBaseItem;
+use CranachImport\Entities\Graphic;
 
 
 /**
@@ -22,6 +24,10 @@ class GraphicsInventory implements ICollector {
 
 
 	function addItem(IBaseItem $item) {
+		if (!($item instanceof Graphic)) {
+			throw new Exception('Pushed item is not of expected class \'Graphic\'!');
+		}
+
 		$langCode = $item->getLangCode();
 
 		if (!isset($this->inventoryLanguages[$langCode])) {

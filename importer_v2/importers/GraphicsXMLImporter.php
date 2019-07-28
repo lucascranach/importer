@@ -4,13 +4,11 @@ namespace CranachImport\Importers;
 
 require_once 'Language.php';
 require_once 'IFileImporter.php';
-require_once 'entities/IBaseItem.php';
 require_once 'entities/Graphic.php';
 require_once 'process/IPipeline.php';
 require_once 'importers/inflators/GraphicsXMLInflator.php';
 
 use CranachImport\Language;
-use CranachImport\Entities\IBaseItem;
 use CranachImport\Entities\Graphic;
 use CranachImport\Process\IPipeline;
 use CranachImport\Importers\Inflators\GraphicsXMLInflator;

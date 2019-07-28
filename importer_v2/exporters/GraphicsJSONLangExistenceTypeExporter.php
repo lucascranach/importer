@@ -4,8 +4,10 @@ namespace CranachImport\Exporters;
 
 require_once 'IFileExporter.php';
 require_once 'entities/IBaseItem.php';
+require_once 'entities/Graphic.php';
 
 use CranachImport\Entities\IBaseItem;
+use CranachImport\Entities\Graphic;
 
 
 /**
@@ -39,6 +41,10 @@ class GraphicsJSONLangExistenceTypeExporter implements IFileExporter {
 
 
 	function pushItem(IBaseItem $item) {
+		if (!($item instanceof Graphic)) {
+			throw new Exception('Pushed item is not of expected class \'Graphic\'');
+		}
+
 		if ($this->isDone()) {
 			throw new \Error('Can\'t push more items after done() was called!');
 		}

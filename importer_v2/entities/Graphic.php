@@ -2,7 +2,7 @@
 
 namespace CranachImport\Entities;
 
-require_once 'IBaseItem.php';
+require_once 'ILanguageBaseItem.php';
 
 require_once 'graphic/Person.php';
 require_once 'graphic/PersonName.php';
@@ -16,14 +16,14 @@ require_once 'graphic/MetaReference.php';
 require_once 'graphic/CatalogWorkReference.php';
 require_once 'graphic/StructuredDimension.php';
 
-use CranachImport\Entities\IBaseItem;
+use CranachImport\Entities\ILanguageBaseItem;
 
 
 /**
  * Representing a single graphic and all its data
  * 	One instance containing only data for one language
  */
-class Graphic implements IBaseItem {
+class Graphic implements ILanguageBaseItem {
 
 	public $langCode = '<unknown language>';
 
