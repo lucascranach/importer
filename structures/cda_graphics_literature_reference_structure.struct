@@ -84,7 +84,10 @@ CrystalReport
 
 			Section[SectionNumber="15"] # -> Autor
 				Subreport
-					Details* (?)
+					Details*
+						Text[Name="Text1"]
+							TextValue
+
 						Section[SectionNumber="0"]
 							Field[FieldName="{@PersonSuffix}"]
 								FormattedValue
