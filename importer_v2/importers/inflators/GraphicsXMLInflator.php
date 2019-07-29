@@ -2,7 +2,7 @@
 
 namespace CranachImport\Importers\Inflators;
 
-require_once 'IInflator.php';
+require_once 'IGraphicInflator.php';
 require_once 'entities/Graphic.php';
 
 require_once 'entities/graphic/Person.php';
@@ -40,7 +40,7 @@ use CranachImport\Entities\StructuredDimension;
  * Graphics inflator used to inflate german and english graphic instances
  * 	by traversing the xml element node and extracting the data in a structured way
  */
-class GraphicsXMLInflator implements IInflator {
+class GraphicsXMLInflator implements IGraphicInflator {
 
 	private static $nsPrefix = 'ns';
 	private static $ns = 'urn:crystal-reports:schemas:report-detail';
