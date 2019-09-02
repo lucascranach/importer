@@ -547,8 +547,15 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		if ($datedElement) {
 			$datedDateStr = trim($datedElement);
 
-			$datingDe->setDated($datedDateStr);
-			$datingEn->setDated($datedDateStr);
+			$splitStateStr = self::splitLanguageString($datedDateStr);
+
+			if (isset($splitStateStr[0])) {
+				$datingDe->setDated($splitStateStr[0]);
+			}
+
+			if (isset($splitStateStr[1])) {
+				$datingEn->setDated($splitStateStr[1]);
+			}
 		}
 
 		/* Date begin */
