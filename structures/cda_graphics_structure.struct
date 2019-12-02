@@ -10,13 +10,13 @@ CrystalReport
 				Subreport
 					Details*
 						Section[SectionNumber="0"] #-> Reihenfolge
-							Field[FieldName="{CONXREFS.DISPLAYORDER}"]
+							Field[FieldName="{CONXREFS.DisplayOrder}"]
 								FormattedValue
 						Section[SectionNumber="1"] #-> Rolle
-							Field[FieldName="{ROLES.ROLE}"]
+							Field[FieldName="{ROLES.Role}"]
 								FormattedValue
 						Section[SectionNumber="2"] #-> Displayname
-							Field[FieldName="{CONALTNAMES.DISPLAYNAME}"]
+							Field[FieldName="{CONALTNAMES.DisplayName}"]
 								FormattedValue
 
 						# Struktur für Felder 3-8 und 12 aus Dokumentation der Gemälde übernommen
@@ -32,7 +32,7 @@ CrystalReport
 							Field # Unbekannter, eindeutiger Attributwert für FieldName
 								FormattedValue
 						Section[SectionNumber="6"] #-> Rolle
-							Field[FieldName="{ROLES.ROLE}"]
+							Field[FieldName="{ROLES.Role}"]
 								FormattedValue
 						Section[SectionNumber="7"] #-> Prefix
 							Field # Unbekannter, eindeutiger Attributwert für FieldName
@@ -48,7 +48,7 @@ CrystalReport
 							Field[FieldName="{@AndererName}"]
 								FormattedValue
 						Section[SectionNumber="11"] #-> Bemerkungen
-							Field[FieldName="{CONXREFDETAILS.REMARKS}"]
+							Field[FieldName="{CONXREFDETAILS.Remarks}"]
 								FormattedValue
 
 						Section[SectionNumber="12"] #-> Datum
@@ -61,17 +61,17 @@ CrystalReport
 					Group* # Person
 						GroupHeader
 							Section #-> Constituent-ID
-								Field[FieldName="GroupName ({CONALTNAMES.CONSTITUENTID})"]
+								Field[FieldName="GroupName ({CONALTNAMES.ConstituentID})"]
 									FormattedValue
 
 						Group* # Alternative Namen
 							GroupHeader
 								Section #-> Displayname
-									Field[FieldName="GroupName ({CONALTNAMES.DISPLAYNAME})"]
+									Field[FieldName="GroupName ({CONALTNAMES.DisplayName})"]
 							Group*
 								GroupHeader
 									Section #-> Namenstyp
-										Field[FieldName="GroupName ({CONALTNAMES.NAMETYPE})"]
+										Field[FieldName="GroupName ({CONALTNAMES.NameType})"]
 											FormattedValue
 
 
@@ -79,19 +79,19 @@ CrystalReport
 				Subreport
 					Details* # Title
 						Section[SectionNumber="0"] #-> Reihenfolge
-							Field[FieldName="{OBJTITLES.DISPLAYORDER}"]
+							Field[FieldName="{OBJTITLES.DisplayOrder}"]
 								FormattedValue
 						Section[SectionNumber="1"] #-> Title-Typ
-							Field[FieldName="{TITLETYPES.TITLETYPE}"]
+							Field[FieldName="{TITLETYPES.TitleType}"]
 								FormattedValue
 						Section[SectionNumber="2"] #-> Sprache
-							Field[FieldName="{LANGUAGES.LANGUAGE}"]
+							Field[FieldName="{LANGUAGES.Language}"]
 								FormattedValue
 						Section[SectionNumber="3"] #-> Title
-							Field[FieldName="{OBJTITLES.TITLE}"]
+							Field[FieldName="{OBJTITLES.Title}"]
 								FormattedValue
 						Section[SectionNumber="4"] #-> Bemerkungen
-							Field[FieldName="{OBJTITLES.REMARKS}"]
+							Field[FieldName="{OBJTITLES.Remarks}"]
 								FormattedValue
 
 
@@ -103,7 +103,7 @@ CrystalReport
 
 
 			Section[SectionNumber="5"] #-> Objektname
-				Field[FieldName="{OBJECTS.OBJECTNAME}"]
+				Field[FieldName="{OBJECTS.ObjectName}"]
 					FormattedValue
 
 
@@ -113,33 +113,33 @@ CrystalReport
 
 
 			Section[SectionNumber="7"] #-> Objekt-ID und virtuell
-				Field[FieldName="{OBJECTS.OBJECTID}"]
+				Field[FieldName="{OBJECTS.ObjectID}"]
 					FormattedValue
-				Field[FieldName="{OBJECTS.ISVIRTUAL}"]
+				Field[FieldName="{OBJECTS.IsVirtual}"]
 					FormattedValue
 
 
 			Section[SectionNumber="8"] #-> Maße (textuell, nicht-atomar)
-				Field[FieldName="{OBJECTS.DIMENSIONS}"]
+				Field[FieldName="{OBJECTS.Dimensions}"]
 					FormattedValue
 
 
 			Section[SectionNumber="9"] #-> Datierung
-				Field[FieldName="{OBJECTS.DATED}"]
+				Field[FieldName="{OBJECTS.Dated}"]
 					FormattedValue
 
 
 			Section[SectionNumber="10"] #-> Anfangsdatum
-				Field[FieldName="{OBJECTS.DATEBEGIN}"]
+				Field[FieldName="{OBJECTS.DateBegin}"]
 					FormattedValue
 
 
 			Section[SectionNumber="11"] #->Enddatum
-				Field[FieldName="{OBJECTS.DATEEND}"]
+				Field[FieldName="{OBJECTS.DateEnd}"]
 					FormattedValue
 
 			Section[SectionNumber="12"] #-> Datierungsbemerkung -> Deutsch und Englisch getrennt durch '#'
-				Field[FieldName="{OBJECTS.DATEREMARKS}"]
+				Field[FieldName="{OBJECTS.DateRemarks}"]
 					FormattedValue
 
 
@@ -147,10 +147,10 @@ CrystalReport
 				Subreport
 					Details*
 						Section[SectionNumber="0"] #-> Ereignis-Typ
-							Field[FieldName="{OBJDATES.EVENTTYPE}"]
+							Field[FieldName="{OBJDATES.EventType}"]
 								FormattedValue
 						Section[SectionNumber="1"] #-> Datumstext
-							Field[FieldName="{OBJDATES.DATETEXT}"]
+							Field[FieldName="{OBJDATES.DateText}"]
 								FormattedValue
 						Section[SectionNumber="2"] #-> Anfangsdatum
 							Field[FieldName="{@Anfangsdatum}"]
@@ -159,93 +159,93 @@ CrystalReport
 							Field[FieldName="{@Enddatum }"]
 								FormattedValue
 						Section[SectionNumber="4"] #-> Bemerkung
-							Field[FieldName="{OBJDATES.REMARKS}"]
+							Field[FieldName="{OBJDATES.Remarks}"]
 								FormattedValue
 
 
 
 			Section[SectionNumber="14"] #-> Beschreibung in Deutsch
-				Field[FieldName="{OBJECTS.DESCRIPTION}"]
+				Field[FieldName="{OBJECTS.Description}"]
 					FormattedValue
 
 
 			Section[SectionNumber="15"] #-> Beschreibung in Englisch
-				Field[FieldName="{OBJCONTEXT.LONGTEXT3}"]
+				Field[FieldName="{OBJCONTEXT.LongText3}"]
 					FormattedValue
 
 
 			Section[SectionNumber="16"] #-> Provenienz in Deutsch
-				Field[FieldName="{OBJECTS.PROVENANCE}"]
+				Field[FieldName="{OBJECTS.Provenance}"]
 					FormattedValue
 
 
 			Section[SectionNumber="17"] #-> Provenienz in Englisch
-				Field[FieldName="{OBJCONTEXT.LONGTEXT5}"]
+				Field[FieldName="{OBJCONTEXT.LongText5}"]
 					FormattedValue
 
 
 			Section[SectionNumber="18"] #-> Material und Technik in Deutsch
-				Field[FieldName="{OBJECTS.MEDIUM}"]
+				Field[FieldName="{OBJECTS.Medium}"]
 					FormattedValue
 
 
 			Section[SectionNumber="19"] #-> Material und Technik in Englisch
-				Field[FieldName="{OBJCONTEXT.LONGTEXT4}"]
+				Field[FieldName="{OBJCONTEXT.LongText4}"]
 					FormattedValue
 
 
 			Section[SectionNumber="20"] #-> Datierung / Künstlersignatur / Unterzeichner in Deutsch
-				Field[FieldName="{OBJECTS.PAPERSUPPORT}"]
+				Field[FieldName="{OBJECTS.PaperSupport}"]
 					FormattedValue
 
 
 			Section[SectionNumber="21"] #-> Datierung / Künstlersignatur / Unterzeichner in Englisch
-				Field[FieldName="{OBJCONTEXT.SHORTTEXT6}"]
+				Field[FieldName="{OBJCONTEXT.ShortText6}"]
 					FormattedValue
 
 
 			Section[SectionNumber="22"] #-> Beschriftung in Deutsch
-				Field[FieldName="{OBJECTS.INSCRIBED}"]
+				Field[FieldName="{OBJECTS.Inscribed}"]
 					FormattedValue
 
 
 			Section[SectionNumber="23"] #-> Beschriftung in Englisch
-				Field[FieldName="{OBJCONTEXT.LONGTEXT7}"]
+				Field[FieldName="{OBJCONTEXT.LongText7}"]
 					FormattedValue
 
 
 			Section[SectionNumber="24"] #-> Stempel / Zeichen in Deutsch
-				Field[FieldName="{OBJECTS.MARKINGS}"]
+				Field[FieldName="{OBJECTS.Markings}"]
 					FormattedValue
 
 
 			Section[SectionNumber="25"] #-> Stempel / Zeichen in Englisch
-				Field[FieldName="{OBJCONTEXT.LONGTEXT9}"]
+				Field[FieldName="{OBJCONTEXT.LongText9}"]
 					FormattedValue
 
 
 			Section[SectionNumber="26"] #-> Verwandte Arbeiten in Deutsch
-				Field[FieldName="{OBJECTS.RELATEDWORKS}"]
+				Field[FieldName="{OBJECTS.RelatedWorks}"]
 					FormattedValue
 
 
 			Section[SectionNumber="27"] #-> Verwandte Arbeiten in Englisch
-				Field[FieldName="{OBJCONTEXT.LONGTEXT6}"]
+				Field[FieldName="{OBJCONTEXT.LongText6}"]
 					FormattedValue
 
 
 			Section[SectionNumber="28"] #-> Ausstellungsgeschichte in Deutsch
-				Field[FieldName="{OBJECTS.EXHIBITIONS}"]
+				Field[FieldName="{OBJECTS.Exhibitions}"]
 					FormattedValue
 
 
 			Section[SectionNumber="29"] #-> Ausstellungsgeschichte in Englisch
-				Field[FieldName="{OBJCONTEXT.LONGTEXT8}"]
+				Field[FieldName="{OBJCONTEXT.LongText8}"]
 					FormattedValue
 
 
 			Section[SectionNumber="30"] # Einleitung von "Literatur und Quellen"-Bereich
-				Field[Fieldname="{OBJECTS.BIBLIOGRAPHY}"]
+				Field[Fieldname="{OBJECTS.Bibliographpy}"]
 					FormattedValue
 
 
@@ -259,7 +259,7 @@ CrystalReport
 							Field[FieldName="{@Inventarnummer}"]
 								FormattedValue
 						Section[SectionNumber="2"] #-> Bemerkung
-							Field[FieldName="{ASSOCIATIONS.REMARKS}"]
+							Field[FieldName="{ASSOCIATIONS.Remarks}"]
 								FormattedValue
 
 
@@ -273,18 +273,18 @@ CrystalReport
 							Field[FieldName="{@Inventarnummer}"]
 								FormattedValue
 						Section[SectionNumber="2"] #-> Bemerkung
-							Field[FieldName="{ASSOCIATIONS.REMARKS}"]
+							Field[FieldName="{ASSOCIATIONS.Remarks}"]
 								FormattedValue
 
 
-			Section[SectionNumber="33"] # Zusätzliches (?); Sprache anhand {TEXTTYPES.TEXTTYPE}-Wert erkennbar
+			Section[SectionNumber="33"] # Zusätzliches (?); Sprache anhand {TEXTTYPES.TextType}-Wert erkennbar
 				Subreport
 					Details*
 						Section[SectionNumber="0"] #-> Text-Typ
-							Field[FieldName="{TEXTTYPES.TEXTTYPE}"]
+							Field[FieldName="{TEXTTYPES.TextType}"]
 								FormattedValue
 						Section[SectionNumber="1"] #-> Text
-								Field[FieldName="{TEXTENTRIES.TEXTENTRY}""]
+								Field[FieldName="{TEXTENTRIES.TextEntry}""]
 									FormattedValue
 						Section[SectionNumber="2"] # ???
 						Section[SectionNumber="3"] #-> Jahr
@@ -296,13 +296,13 @@ CrystalReport
 				Supreport
 					Details*
 						Section[SectionNumber="0"] #-> Titel
-							Field[FieldName="{REFERENCEMASTER.HEADING}"]
+							Field[FieldName="{REFERENCEMASTER.Heading}"]
 								FormattedValue
 						Section[SectionNumber="1"] #-> Seitennummer
-							Field[FieldName="{REFXREFS.PAGENUMBER}"]
+							Field[FieldName="{REFXREFS.PageNumber}"]
 								FormattedValue
 						Section[SectionNumber="2"] #-> Referenz-ID
-							Field[FieldName="{REFERENCEMASTER.REFERENCEID}"]
+							Field[FieldName="{REFERENCEMASTER.ReferenceID}"]
 								FormattedValue
 
 
@@ -310,13 +310,13 @@ CrystalReport
 				Subreport
 					Details*
 						Section[SectionNumber="0"] #-> Kreuzreferenz-Typ
-							Field[FieldName="{THESXREFTYPES.THESXREFTYPE}"]
+							Field[FieldName="{THESXREFTYPES.ThesXrefType}"]
 								FormattedValue
 						Section[SectionNumber="1"] #-> Term
 							Field[FieldName="{TERMS.TERM}"]
 								FormattedValue
 						Section[SectionNumber="3"] #-> Kreuzreferenz-Pfad
-							Field[FieldName="{THESXREFSPATH1.PATH}"]
+							Field[FieldName="{THESXREFSPATH1.Path}"]
 								FormattedValue
 
 
@@ -324,14 +324,14 @@ CrystalReport
 				Subreport
 					Details*
 						Section[SectionNumber="0"] #-> Kreuzreferenz-Typ
-							Field[FieldName="{THESXREFTYPES.THESXREFTYPE}"]
+							Field[FieldName="{THESXREFTYPES.ThesXrefType}"]
 								FormattedValue
 						Section[SectionNumber="1"] #-> Term
 							Field[FieldName="{TERMS.TERM}"]
 								FormattedValue
 						Section[SectionNumber="2"] # ???
 						Section[SectionNumber="3"] #-> Kreuzreferenz-Pfad
-							Field[FieldName="{THESXREFSPATH1.PATH}"]
+							Field[FieldName="{THESXREFSPATH1.Path}"]
 								FormattedValue
 
 
@@ -339,51 +339,51 @@ CrystalReport
 				Subreport
 					Details[0] #-> Besitzer in Deutsch (Besitzer)
 						Section[SectionNumber="0"] #-> Reihenfolge
-							Field[FieldName="{CONXREFS.DISPLAYORDER}"]
+							Field[FieldName="{CONXREFS.DisplayOrder}"]
 								FormattedValue
 						Section[SectionNumber="1"] #-> Rolle
 							Field[FieldName="{@Rolle}"]
 								FormattedValue
 						Section[SectionNumber="3"] #-> Displayname
-							Field[FieldName="{CONALTNAMES.DISPLAYNAME}"]
+							Field[FieldName="{CONALTNAMES.DisplayName}"]
 								FormattedValue
 
 					Details[1] #-> Besitzer in Englisch (Repository)
 						Section[SectionNumber="0"] #-> Reihenfolge
-							Field[FieldName="{CONXREFS.DISPLAYORDER}"]
+							Field[FieldName="{CONXREFS.DisplayOrder}"]
 								FormattedValue
 						Section[SectionNumber="1"] #-> Rolle
 							Field[FieldName="{@Rolle}"]
 								FormattedValue
 						Section[SectionNumber="3"] #-> Displayname
-							Field[FieldName="{CONALTNAMES.DISPLAYNAME}"]
+							Field[FieldName="{CONALTNAMES.DisplayName}"]
 								FormattedValue
 
 					Details[2] #-> Eigentümer in Deutsch (Eigentümer)
 						Section[SectionNumber="0"] #-> Reihenfolge
-							Field[FieldName="{CONXREFS.DISPLAYORDER}"]
+							Field[FieldName="{CONXREFS.DisplayOrder}"]
 								FormattedValue
 						Section[SectionNumber="1"] #-> Rolle
 							Field[FieldName="{@Rolle}"]
 								FormattedValue
 						Section[SectionNumber="3"] #-> Displayname
-							Field[FieldName="{CONALTNAMES.DISPLAYNAME}"]
+							Field[FieldName="{CONALTNAMES.DisplayName}"]
 								FormattedValue
 
 					Details[3] #-> Eigentümer in Englisch (Owner)
 						Section[SectionNumber="0"] #-> Reihenfolge
-							Field[FieldName="{CONXREFS.DISPLAYORDER}"]
+							Field[FieldName="{CONXREFS.DisplayOrder}"]
 								FormattedValue
 						Section[SectionNumber="1"] #-> Rolle
 							Field[FieldName="{@Rolle}"]
 								FormattedValue
 						Section[SectionNumber="3"] #-> Displayname
-							Field[FieldName="{CONALTNAMES.DISPLAYNAME}"]
+							Field[FieldName="{CONALTNAMES.DisplayName}"]
 								FormattedValue
 
 
 			Section[SectionNumber="38"] #-> Sortiernummer
-				Field[FieldName="{OBJCONTEXT.PERIOD}"]
+				Field[FieldName="{OBJCONTEXT.Period}"]
 					FormattedValue
 
 
@@ -391,10 +391,10 @@ CrystalReport
 				Subreport
 					Details*
 						Section[SectionNumber="0"] #-> Beschreibung
-							Field[FieldName="{ALTNUMS.DESCRIPTION}"]
+							Field[FieldName="{AltNumDescriptions.AltNumDescription}"]
 								FormattedValue
 						Section[SectionNumber="1"] #-> Nummer
-							Field[FieldName="{ALTNUMS.ALTNUM}"]
+							Field[FieldName="{AltNums.AltNum}"]
 								FormattedValue
 
 
@@ -403,17 +403,17 @@ CrystalReport
 					Group
 						GroupHeader
 							Section[SectionNumber="0"]
-								Field[FieldName="{DIMENSIONELEMENTS.ELEMENT}"]
+								Field[FieldName="{DIMENSIONELEMENTS.Element}"]
 									FormattedValue
 						Details[0]
 							Section[SectionNumber="0"]
-								Field[FieldName="{DIMENSIONTYPES.DIMENSIONTYPE}"]
+								Field[FieldName="{DIMENSIONTYPES.DimensionType}"]
 									FormattedValue
-								Field[FieldName="{DIMENSIONS.DIMENSION}"]
+								Field[FieldName="{DIMENSIONS.Dimension}"]
 									Value
 						Details[1]
 							Section[SectionNumber="0"]
-								Field[FieldName="{DIMENSIONTYPES.DIMENSIONTYPE}"]
+								Field[FieldName="{DIMENSIONTYPES.DimensionType}"]
 									FormattedValue
-								Field[FieldName="{DIMENSIONS.DIMENSION}"]
+								Field[FieldName="{DIMENSIONS.Dimension}"]
 									Value
