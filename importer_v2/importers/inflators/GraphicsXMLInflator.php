@@ -59,9 +59,13 @@ class GraphicsXMLInflator implements IGraphicInflator {
 	];
 
 	private static $titlesLanguageTypes = [
-		'de' => 'Deutsch',
-		'en' => 'Englisch',
+		'de' => 'GERMAN',
+		'en' => 'ENGLISH',
 		'not_assigned' => '(not assigned)',
+	];
+
+	private static $inventoryNumberReplaceArr = [
+		'CDA.',
 	];
 
 	private function __construct() {}
@@ -130,7 +134,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				/* role */
 				$roleElement = self::findElementByXPath(
 					$currDetails,
-					'Field[@FieldName="{ROLES.ROLE}"]/FormattedValue',
+					'Field[@FieldName="{ROLES.Role}"]/FormattedValue',
 				);
 				if ($roleElement) {
 					$roleStr = trim($roleElement);
@@ -140,7 +144,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				/* name */
 				$nameElement = self::findElementByXPath(
 					$currDetails,
-					'Field[@FieldName="{CONALTNAMES.DISPLAYNAME}"]/FormattedValue',
+					'Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
 				);
 				if ($nameElement) {
 					$nameStr = trim($nameElement);
@@ -260,7 +264,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* constituent id */
 			$constituentIdElement = self::findElementByXPath(
 				$group,
-				'Field[@FieldName="GroupName ({CONALTNAMES.CONSTITUENTID})"]/FormattedValue',
+				'Field[@FieldName="GroupName ({CONALTNAMES.ConstituentID})"]/FormattedValue',
 			);
 			if ($constituentIdElement) {
 				$constituentIdStr = trim($constituentIdElement);
@@ -283,7 +287,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				/* name */
 				$detailNameElement = self::findElementByXPath(
 					$nameDetailGroup,
-					'Field[@FieldName="GroupName ({CONALTNAMES.DISPLAYNAME})"]/FormattedValue',
+					'Field[@FieldName="GroupName ({CONALTNAMES.DisplayName})"]/FormattedValue',
 				);
 				if ($detailNameElement) {
 					$detailNameStr = trim($detailNameElement);
@@ -293,7 +297,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				/* type */
 				$detailNameTypeElement = self::findElementByXPath(
 					$nameDetailGroup,
-					'Field[@FieldName="GroupName ({CONALTNAMES.NAMETYPE})"]/FormattedValue',
+					'Field[@FieldName="GroupName ({CONALTNAMES.NameType})"]/FormattedValue',
 				);
 				if ($detailNameTypeElement) {
 					$detailNameTypeStr = trim($detailNameTypeElement);
@@ -322,7 +326,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* title language */
 			$langElement = self::findElementByXPath(
 				$titleDetailElement,
-				'Field[@FieldName="{LANGUAGES.LANGUAGE}"]/FormattedValue',
+				'Field[@FieldName="{LANGUAGES.Language}"]/FormattedValue',
 			);
 			if ($langElement) {
 				$langStr = trim($langElement);
@@ -348,7 +352,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* title type */
 			$typeElement = self::findElementByXPath(
 				$titleDetailElement,
-				'Field[@FieldName="{TITLETYPES.TITLETYPE}"]/FormattedValue',
+				'Field[@FieldName="{TITLETYPES.TitleType}}"]/FormattedValue',
 			);
 			if ($typeElement) {
 				$typeStr = trim($typeElement);
@@ -358,7 +362,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* title */
 			$titleElement = self::findElementByXPath(
 				$titleDetailElement,
-				'Field[@FieldName="{OBJTITLES.TITLE}"]/FormattedValue',
+				'Field[@FieldName="{OBJTITLES.Title}"]/FormattedValue',
 			);
 			if ($titleElement) {
 				$titleStr = trim($titleElement);
@@ -368,7 +372,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* remark */
 			$remarksElement = self::findElementByXPath(
 				$titleDetailElement,
-				'Field[@FieldName="{OBJTITLES.REMARKS}"]/FormattedValue',
+				'Field[@FieldName="{OBJTITLES.Remarks}"]/FormattedValue',
 			);
 			if ($remarksElement) {
 				$remarksStr = trim($remarksElement);
@@ -431,7 +435,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 		$objectNameElement = self::findElementByXPath(
 			$objectNameSectionElement,
-			'Field[@FieldName="{OBJECTS.OBJECTNAME}"]/FormattedValue',
+			'Field[@FieldName="{OBJECTS.ObjectName}"]/FormattedValue',
 		);
 		if ($objectNameElement) {
 			$objectNameStr = trim($objectNameElement);
@@ -447,7 +451,6 @@ class GraphicsXMLInflator implements IGraphicInflator {
 	private static function inflateInventoryNumber(\SimpleXMLElement &$node,
 	                                               Graphic &$graphicDe,
 	                                               Graphic &$graphicEn) {
-		$strToReplaceArr = array('CDA.');
 		$inventoryNumberSectionElement = $node->Section[6];
 
 		$inventoryNumberElement = self::findElementByXPath(
@@ -456,7 +459,11 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($inventoryNumberElement) {
 			$inventoryNumberStr = trim($inventoryNumberElement);
-			$cleanInventoryNumberStr = str_replace($strToReplaceArr, '', $inventoryNumberStr);
+			$cleanInventoryNumberStr = str_replace(
+				self::$inventoryNumberReplaceArr,
+				'',
+				$inventoryNumberStr,
+			);
 
 			/* Using single german value for both language objects */
 			$graphicDe->setInventoryNumber($cleanInventoryNumberStr);
@@ -474,7 +481,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		/* object id */
 		$objectIdElement = self::findElementByXPath(
 			$metaSectionElement,
-			'Field[@FieldName="{OBJECTS.OBJECTID}"]/Value',
+			'Field[@FieldName="{OBJECTS.ObjectID}"]/Value',
 		);
 		if ($objectIdElement) {
 			$objectIdStr = intval(trim($objectIdElement));
@@ -487,7 +494,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		/* virtual*/
 		$virtualElement = self::findElementByXPath(
 			$metaSectionElement,
-			'Field[@FieldName="{OBJECTS.ISVIRTUAL}"]/FormattedValue',
+			'Field[@FieldName="{OBJECTS.IsVirtual}"]/FormattedValue',
 		);
 		if ($virtualElement) {
 			$virtualStr = trim($virtualElement);
@@ -510,7 +517,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		/* object id */
 		$dimensionsElement = self::findElementByXPath(
 			$metaSectionElement,
-			'Field[@FieldName="{OBJECTS.DIMENSIONS}"]/FormattedValue',
+			'Field[@FieldName="{OBJECTS.Dimensions}"]/FormattedValue',
 		);
 		if ($dimensionsElement) {
 			$dimensionsStr = trim($dimensionsElement);
@@ -544,7 +551,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 		$datedElement = self::findElementByXPath(
 			$datedSectionElement,
-			'Field[@FieldName="{OBJECTS.DATED}"]/FormattedValue',
+			'Field[@FieldName="{OBJECTS.Dated}"]/FormattedValue',
 		);
 		if ($datedElement) {
 			$datedDateStr = trim($datedElement);
@@ -565,7 +572,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 		$dateBeginElement = self::findElementByXPath(
 			$dateBeginSectionElement,
-			'Field[@FieldName="{OBJECTS.DATEBEGIN}"]/FormattedValue',
+			'Field[@FieldName="{OBJECTS.DateBegin}"]/FormattedValue',
 		);
 		if ($dateBeginElement) {
 			$dateBeginStr = intval(trim($dateBeginElement));
@@ -579,7 +586,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 		$dateEndElement = self::findElementByXPath(
 			$dateEndSectionElement,
-			'Field[@FieldName="{OBJECTS.DATEEND}"]/FormattedValue',
+			'Field[@FieldName="{OBJECTS.DateEnd}"]/FormattedValue',
 		);
 		if ($dateEndElement) {
 			$dateEndStr = intval(trim($dateEndElement));
@@ -593,7 +600,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 		$remarksElement = self::findElementByXPath(
 			$remarksSectionElement,
-			'Field[@FieldName="{OBJECTS.DATEREMARKS}"]/FormattedValue',
+			'Field[@FieldName="{OBJECTS.DateRemarks}"]/FormattedValue',
 		);
 		if ($remarksElement) {
 			$remarksStr = trim($remarksElement);
@@ -641,7 +648,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				/* event type */
 				$eventTypeElement = self::findElementByXPath(
 					$historicEventDetailElement,
-					'Field[@FieldName="{OBJDATES.EVENTTYPE}"]/FormattedValue',
+					'Field[@FieldName="{OBJDATES.EventType}"]/FormattedValue',
 				);
 				if ($eventTypeElement) {
 					$eventTypeStr = trim($eventTypeElement);
@@ -651,7 +658,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				/* date text */
 				$dateTextElement = self::findElementByXPath(
 					$historicEventDetailElement,
-					'Field[@FieldName="{OBJDATES.DATETEXT}"]/FormattedValue',
+					'Field[@FieldName="{OBJDATES.DateText}"]/FormattedValue',
 				);
 				if ($dateTextElement) {
 					$dateTextStr = trim($dateTextElement);
@@ -681,7 +688,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				/* remarks */
 				$dateRemarksElement = self::findElementByXPath(
 					$historicEventDetailElement,
-					'Field[@FieldName="{OBJDATES.REMARKS}"]/FormattedValue',
+					'Field[@FieldName="{OBJDATES.Remarks}"]/FormattedValue',
 				);
 				if ($dateRemarksElement) {
 					$dateRemarksNumber = trim($dateRemarksElement);
@@ -700,7 +707,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$descriptionDeSectionElement = $node->Section[14];
 		$descriptionElement = self::findElementByXPath(
 			$descriptionDeSectionElement,
-			'Field[@FieldName="{OBJECTS.DESCRIPTION}"]/FormattedValue',
+			'Field[@FieldName="{OBJECTS.Description}"]/FormattedValue',
 		);
 		if ($descriptionElement) {
 			$descriptionStr = trim($descriptionElement);
@@ -711,7 +718,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$descriptionEnSectionElement = $node->Section[15];
 		$descriptionElement = self::findElementByXPath(
 			$descriptionEnSectionElement,
-			'Field[@FieldName="{OBJCONTEXT.LONGTEXT3}"]/FormattedValue',
+			'Field[@FieldName="{OBJCONTEXT.LongText3}"]/FormattedValue',
 		);
 		if ($descriptionElement) {
 			$descriptionStr = trim($descriptionElement);
@@ -728,7 +735,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$provenanceDeSectionElement = $node->Section[16];
 		$provenanceElement = self::findElementByXPath(
 			$provenanceDeSectionElement,
-			'Field[@FieldName="{OBJECTS.PROVENANCE}"]/FormattedValue',
+			'Field[@FieldName="{OBJECTS.Provenance}"]/FormattedValue',
 		);
 		if ($provenanceElement) {
 			$provenanceStr = trim($provenanceElement);
@@ -739,7 +746,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$provenanceEnSectionElement = $node->Section[17];
 		$provenanceElement = self::findElementByXPath(
 			$provenanceEnSectionElement,
-			'Field[@FieldName="{OBJCONTEXT.LONGTEXT5}"]/FormattedValue',
+			'Field[@FieldName="{OBJCONTEXT.LongText5}"]/FormattedValue',
 		);
 		if ($provenanceElement) {
 			$provenanceStr = trim($provenanceElement);
@@ -756,7 +763,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$mediumDeSectionElement = $node->Section[18];
 		$mediumElement = self::findElementByXPath(
 			$mediumDeSectionElement,
-			'Field[@FieldName="{OBJECTS.MEDIUM}"]/FormattedValue',
+			'Field[@FieldName="{OBJECTS.Medium}"]/FormattedValue',
 		);
 		if ($mediumElement) {
 			$mediumStr = trim($mediumElement);
@@ -767,7 +774,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$mediumEnSectionElement = $node->Section[19];
 		$mediumElement = self::findElementByXPath(
 			$mediumEnSectionElement,
-			'Field[@FieldName="{OBJCONTEXT.LONGTEXT4}"]/FormattedValue',
+			'Field[@FieldName="{OBJCONTEXT.LongText4}"]/FormattedValue',
 		);
 		if ($mediumElement) {
 			$mediumStr = trim($mediumElement);
@@ -784,7 +791,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$signatureDeSectionElement = $node->Section[20];
 		$signatureElement = self::findElementByXPath(
 			$signatureDeSectionElement,
-			'Field[@FieldName="{OBJECTS.PAPERSUPPORT}"]/FormattedValue',
+			'Field[@FieldName="{OBJECTS.PaperSupport}"]/FormattedValue',
 		);
 		if ($signatureElement) {
 			$signatureStr = trim($signatureElement);
@@ -795,7 +802,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$signatureEnSectionElement = $node->Section[21];
 		$signatureElement = self::findElementByXPath(
 			$signatureEnSectionElement,
-			'Field[@FieldName="{OBJCONTEXT.SHORTTEXT6}"]/FormattedValue',
+			'Field[@FieldName="{OBJCONTEXT.ShortText6}"]/FormattedValue',
 		);
 		if ($signatureElement) {
 			$signatureStr = trim($signatureElement);
@@ -812,7 +819,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$inscriptionDeSectionElement = $node->Section[22];
 		$inscriptionElement = self::findElementByXPath(
 			$inscriptionDeSectionElement,
-			'Field[@FieldName="{OBJECTS.INSCRIBED}"]/FormattedValue',
+			'Field[@FieldName="{OBJECTS.Inscribed}"]/FormattedValue',
 		);
 		if ($inscriptionElement) {
 			$inscriptionStr = trim($inscriptionElement);
@@ -823,7 +830,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$inscriptionEnSectionElement = $node->Section[23];
 		$inscriptionElement = self::findElementByXPath(
 			$inscriptionEnSectionElement,
-			'Field[@FieldName="{OBJCONTEXT.LONGTEXT7}"]/FormattedValue',
+			'Field[@FieldName="{OBJCONTEXT.LongText7}"]/FormattedValue',
 		);
 		if ($inscriptionElement) {
 			$inscriptionStr = trim($inscriptionElement);
@@ -840,7 +847,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$markingsDeSectionElement = $node->Section[24];
 		$markingsElement = self::findElementByXPath(
 			$markingsDeSectionElement,
-			'Field[@FieldName="{OBJECTS.MARKINGS}"]/FormattedValue',
+			'Field[@FieldName="{OBJECTS.Markings}"]/FormattedValue',
 		);
 		if ($markingsElement) {
 			$markingsStr = trim($markingsElement);
@@ -851,7 +858,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$markingsEnSectionElement = $node->Section[25];
 		$markingsElement = self::findElementByXPath(
 			$markingsEnSectionElement,
-			'Field[@FieldName="{OBJCONTEXT.LONGTEXT9}"]/FormattedValue',
+			'Field[@FieldName="{OBJCONTEXT.LongText9}"]/FormattedValue',
 		);
 		if ($markingsElement) {
 			$markingsStr = trim($markingsElement);
@@ -868,7 +875,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$relatedWorksDeSectionElement = $node->Section[26];
 		$relatedWorksElement = self::findElementByXPath(
 			$relatedWorksDeSectionElement,
-			'Field[@FieldName="{OBJECTS.RELATEDWORKS}"]/FormattedValue',
+			'Field[@FieldName="{OBJECTS.RelatedWorks}"]/FormattedValue',
 		);
 		if ($relatedWorksElement) {
 			$relatedWorksStr = trim($relatedWorksElement);
@@ -879,7 +886,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$relatedWorksEnSectionElement = $node->Section[27];
 		$relatedWorksElement = self::findElementByXPath(
 			$relatedWorksEnSectionElement,
-			'Field[@FieldName="{OBJCONTEXT.LONGTEXT6}"]/FormattedValue',
+			'Field[@FieldName="{OBJCONTEXT.LongText6}"]/FormattedValue',
 		);
 		if ($relatedWorksElement) {
 			$relatedWorksStr = trim($relatedWorksElement);
@@ -896,22 +903,32 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$exhibitionHistoryDeSectionElement = $node->Section[28];
 		$exhibitionHistoryElement = self::findElementByXPath(
 			$exhibitionHistoryDeSectionElement,
-			'Field[@FieldName="{OBJECTS.EXHIBITIONS}"]/FormattedValue',
+			'Field[@FieldName="{OBJECTS.Exhibitions}"]/FormattedValue',
 		);
 		if ($exhibitionHistoryElement) {
 			$exhibitionHistoryStr = trim($exhibitionHistoryElement);
-			$graphicDe->setExhibitionHistory($exhibitionHistoryStr);
+			$cleanExhibitionHistoryStr = str_replace(
+				self::$inventoryNumberReplaceArr,
+				'',
+				$exhibitionHistoryStr,
+			);
+			$graphicDe->setExhibitionHistory($cleanExhibitionHistoryStr);
 		}
 
 		/* en */
 		$exhibitionHistoryEnSectionElement = $node->Section[29];
 		$exhibitionHistoryElement = self::findElementByXPath(
 			$exhibitionHistoryEnSectionElement,
-			'Field[@FieldName="{OBJCONTEXT.LONGTEXT8}"]/FormattedValue',
+			'Field[@FieldName="{OBJCONTEXT.LongText8}"]/FormattedValue',
 		);
 		if ($exhibitionHistoryElement) {
 			$exhibitionHistoryStr = trim($exhibitionHistoryElement);
-			$graphicEn->setExhibitionHistory($exhibitionHistoryStr);
+						$cleanExhibitionHistoryStr = str_replace(
+				self::$inventoryNumberReplaceArr,
+				'',
+				$exhibitionHistoryStr,
+			);
+			$graphicEn->setExhibitionHistory($cleanExhibitionHistoryStr);
 		}
 	}
 
@@ -923,7 +940,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$bibliographySectionElement = $node->Section[30];
 		$bibliographyElement = self::findElementByXPath(
 			$bibliographySectionElement,
-			'Field[@FieldName="{OBJECTS.BIBLIOGRAPHY}"]/FormattedValue',
+			'Field[@FieldName="{OBJECTS.Bibliography}"]/FormattedValue',
 		);
 		if ($bibliographyElement) {
 			$bibliographyStr = trim($bibliographyElement);
@@ -974,7 +991,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* Remarks */
 			$remarksElement = self::findElementByXPath(
 				$referenceDetailElement,
-				'Section[@SectionNumber="2"]/Field[@FieldName="{ASSOCIATIONS.REMARKS}"]/FormattedValue',
+				'Section[@SectionNumber="2"]/Field[@FieldName="{ASSOCIATIONS.Remarks}"]/FormattedValue',
 			);
 			if ($remarksElement) {
 				$remarksStr = trim($remarksElement);
@@ -1002,7 +1019,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* Text type */
 			$textTypeElement = self::findElementByXPath(
 				$additonalTextDetailElement,
-				'Section[@SectionNumber="0"]/Field[@FieldName="{TEXTTYPES.TEXTTYPE}"]/FormattedValue',
+				'Section[@SectionNumber="0"]/Field[@FieldName="{TEXTTYPES.TextType}"]/FormattedValue',
 			);
 
 			/* Language determination */
@@ -1029,7 +1046,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* Text */
 			$textElement = self::findElementByXPath(
 				$additonalTextDetailElement,
-				'Section[@SectionNumber="1"]/Field[@FieldName="{TEXTENTRIES.TEXTENTRY}"]/FormattedValue',
+				'Section[@SectionNumber="1"]/Field[@FieldName="{TEXTENTRIES.TextEntry}"]/FormattedValue',
 			);
 			if ($textElement) {
 				$textStr = trim($textElement);
@@ -1071,7 +1088,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* Title */
 			$titleElement = self::findElementByXPath(
 				$publicationDetailElement,
-				'Section[@SectionNumber="0"]/Field[@FieldName="{REFERENCEMASTER.HEADING}"]/FormattedValue',
+				'Section[@SectionNumber="0"]/Field[@FieldName="{REFERENCEMASTER.Heading}"]/FormattedValue',
 			);
 			if ($titleElement) {
 				$titleStr = trim($titleElement);
@@ -1081,7 +1098,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* Seitennummer */
 			$pageNumberElement = self::findElementByXPath(
 				$publicationDetailElement,
-				'Section[@SectionNumber="1"]/Field[@FieldName="{REFXREFS.PAGENUMBER}"]/FormattedValue',
+				'Section[@SectionNumber="1"]/Field[@FieldName="{REFXREFS.PageNumber}"]/FormattedValue',
 			);
 			if ($pageNumberElement) {
 				$pageNumberStr = trim($pageNumberElement);
@@ -1091,7 +1108,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* Reference */
 			$referenceIdElement = self::findElementByXPath(
 				$publicationDetailElement,
-				'Section[@SectionNumber="2"]/Field[@FieldName="{REFERENCEMASTER.REFERENCEID}"]/FormattedValue',
+				'Section[@SectionNumber="2"]/Field[@FieldName="{REFERENCEMASTER.ReferenceID}"]/FormattedValue',
 			);
 			if ($referenceIdElement) {
 				$referenceIdStr = trim($referenceIdElement);
@@ -1122,7 +1139,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* Type */
 			$keywordTypeElement = self::findElementByXPath(
 				$keywordDetailElement,
-				'Section[@SectionNumber="0"]/Field[@FieldName="{THESXREFTYPES.THESXREFTYPE}"]/FormattedValue',
+				'Section[@SectionNumber="0"]/Field[@FieldName="{THESXREFTYPES.ThesXrefType}"]/FormattedValue',
 			);
 			if ($keywordTypeElement) {
 				$keywordTypeStr = trim($keywordTypeElement);
@@ -1132,7 +1149,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* Term */
 			$keywordTermElement = self::findElementByXPath(
 				$keywordDetailElement,
-				'Section[@SectionNumber="1"]/Field[@FieldName="{TERMS.TERM}"]/FormattedValue',
+				'Section[@SectionNumber="1"]/Field[@FieldName="{TERMS.Term}"]/FormattedValue',
 			);
 			if ($keywordTermElement) {
 				$keywordTermStr = trim($keywordTermElement);
@@ -1142,7 +1159,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* Path */
 			$keywordPathElement = self::findElementByXPath(
 				$keywordDetailElement,
-				'Section[@SectionNumber="3"]/Field[@FieldName="{THESXREFSPATH1.PATH}"]/FormattedValue',
+				'Section[@SectionNumber="3"]/Field[@FieldName="{THESXREFSPATH1.Path}"]/FormattedValue',
 			);
 			if ($keywordPathElement) {
 				$keywordPathStr = trim($keywordPathElement);
@@ -1170,7 +1187,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* Type */
 			$locationTypeElement = self::findElementByXPath(
 				$locationDetailElement,
-				'Section[@SectionNumber="0"]/Field[@FieldName="{THESXREFTYPES.THESXREFTYPE}"]/FormattedValue',
+				'Section[@SectionNumber="0"]/Field[@FieldName="{THESXREFTYPES.ThesXrefType}"]/FormattedValue',
 			);
 
 			/* Language determination */
@@ -1197,7 +1214,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* Term */
 			$locationTermElement = self::findElementByXPath(
 				$locationDetailElement,
-				'Section[@SectionNumber="1"]/Field[@FieldName="{TERMS.TERM}"]/FormattedValue',
+				'Section[@SectionNumber="1"]/Field[@FieldName="{TERMS.Term}"]/FormattedValue',
 			);
 			if ($locationTermElement) {
 				$locationTermStr = trim($locationTermElement);
@@ -1207,7 +1224,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* Path */
 			$locationPathElement = self::findElementByXPath(
 				$locationDetailElement,
-				'Section[@SectionNumber="3"]/Field[@FieldName="{THESXREFSPATH1.PATH}"]/FormattedValue',
+				'Section[@SectionNumber="3"]/Field[@FieldName="{THESXREFSPATH1.Path}"]/FormattedValue',
 			);
 			if ($locationPathElement) {
 				$locationPathStr = trim($locationPathElement);
@@ -1226,7 +1243,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		// de
 		$repositoryDeElement = self::findElementByXPath(
 			$repositoryDetailsSubreport,
-			'Details[1]/Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DISPLAYNAME}"]/FormattedValue',
+			'Details[1]/Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
 		);
 		if ($repositoryDeElement) {
 			$repositoryStr = trim($repositoryDeElement);
@@ -1237,7 +1254,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		// en
 		$repositoryEnElement = self::findElementByXPath(
 			$repositoryDetailsSubreport,
-			'Details[2]/Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DISPLAYNAME}"]/FormattedValue',
+			'Details[2]/Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
 		);
 		if ($repositoryEnElement) {
 			$repositoryStr = trim($repositoryEnElement);
@@ -1256,7 +1273,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		// de
 		$ownerDeElement = self::findElementByXPath(
 			$ownerDetailsSubreport,
-			'Details[3]/Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DISPLAYNAME}"]/FormattedValue',
+			'Details[3]/Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
 		);
 		if ($ownerDeElement) {
 			$ownerStr = trim($ownerDeElement);
@@ -1267,7 +1284,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		// en
 		$ownerEnElement = self::findElementByXPath(
 			$ownerDetailsSubreport,
-			'Details[4]/Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DISPLAYNAME}"]/FormattedValue',
+			'Details[4]/Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
 		);
 		if ($ownerEnElement) {
 			$ownerStr = trim($ownerEnElement);
@@ -1285,7 +1302,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 		$sortingNumberElement = self::findElementByXPath(
 			$sortingNumberSubreport,
-			'Field[@FieldName="{OBJCONTEXT.PERIOD}"]/FormattedValue',
+			'Field[@FieldName="{OBJCONTEXT.Period}"]/FormattedValue',
 		);
 		if ($sortingNumberElement) {
 			$sortingNumberStr = trim($sortingNumberElement);
@@ -1317,7 +1334,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* Description */
 			$descriptionElement = self::findElementByXPath(
 				$catalogWorkReferenceDetailElement,
-				'Field[@FieldName="{ALTNUMS.DESCRIPTION}"]/FormattedValue',
+				'Field[@FieldName="{AltNumDescriptions.AltNumDescription}"]/FormattedValue',
 			);
 			if ($descriptionElement) {
 				$descriptionStr = trim($descriptionElement);
@@ -1328,7 +1345,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* Reference number */
 			$referenceNumberElement = self::findElementByXPath(
 				$catalogWorkReferenceDetailElement,
-				'Field[@FieldName="{ALTNUMS.ALTNUM}"]/FormattedValue',
+				'Field[@FieldName="{AltNums.AltNum}"]/FormattedValue',
 			);
 			if ($referenceNumberElement) {
 				$referenceNumberStr = trim($referenceNumberElement);
@@ -1353,7 +1370,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		/* element */
 		$elementElement = self::findElementByXPath(
 			$catalogWorkReferenceSubreport,
-			'Field[@FieldName="{DIMENSIONELEMENTS.ELEMENT}"]/FormattedValue',
+			'Field[@FieldName="{DIMENSIONELEMENTS.Element}"]/FormattedValue',
 		);
 
 		if($elementElement) {
@@ -1372,7 +1389,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* height */
 			$heightElement = self::findElementByXPath(
 				$detailsElements[0],
-				'Field[@FieldName="{DIMENSIONS.DIMENSION}"]/Value',
+				'Field[@FieldName="{DIMENSIONS.Dimension}"]/Value',
 			);
 			if ($heightElement) {
 				$heightNumber = trim($heightElement);
@@ -1383,7 +1400,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* width */
 			$widthElement = self::findElementByXPath(
 				$detailsElements[1],
-				'Field[@FieldName="{DIMENSIONS.DIMENSION}"]/Value',
+				'Field[@FieldName="{DIMENSIONS.Dimension}"]/Value',
 			);
 			if ($widthElement) {
 				$widthNumber = trim($widthElement);
