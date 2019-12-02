@@ -447,6 +447,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 	private static function inflateInventoryNumber(\SimpleXMLElement &$node,
 	                                               Graphic &$graphicDe,
 	                                               Graphic &$graphicEn) {
+		$strToReplaceArr = array('CDA.');
 		$inventoryNumberSectionElement = $node->Section[6];
 
 		$inventoryNumberElement = self::findElementByXPath(
@@ -455,10 +456,11 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($inventoryNumberElement) {
 			$inventoryNumberStr = trim($inventoryNumberElement);
+			$cleanInventoryNumberStr = str_replace($strToReplaceArr, '', $inventoryNumberStr);
 
 			/* Using single german value for both language objects */
-			$graphicDe->setInventoryNumber($inventoryNumberStr);
-			$graphicEn->setInventoryNumber($inventoryNumberStr);
+			$graphicDe->setInventoryNumber($cleanInventoryNumberStr);
+			$graphicEn->setInventoryNumber($cleanInventoryNumberStr);
 		}
 	}
 
