@@ -15,7 +15,7 @@ use CranachImport\Exporters\LiteratureReferencesJSONExporter;
 
 
 function importGraphics() {
-	$graphicsXMLSourceFilePath = '../import-file/20191122/CDA-GR_Datenübersicht_20191122.xml';
+	$graphicsXMLSourceFilePath = '../import-file/20191122/CDA-GR_Datenuebersicht_20191122.xml';
 	$graphicsJSONDestinationPath = './output/20191122/cda-graphics-v2.json';
 
 	$graphicsXmlImporter = new GraphicsXMLImporter($graphicsXMLSourceFilePath);
