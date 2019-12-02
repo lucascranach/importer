@@ -20,7 +20,6 @@ class GraphicsJSONLangExistenceTypeExporter implements IFileExporter {
 	private $fileExt = 'json';
 	private $filename = null;
 	private $dirname = null;
-	private $destFilepaths = [];
 	private $langBuckets = [];
 	private $done = false;
 	private $inventoryNumberList = [];
@@ -42,7 +41,7 @@ class GraphicsJSONLangExistenceTypeExporter implements IFileExporter {
 
 	function pushItem(IBaseItem $item) {
 		if (!($item instanceof Graphic)) {
-			throw new Exception('Pushed item is not of expected class \'Graphic\'');
+			throw new \Exception('Pushed item is not of expected class \'Graphic\'');
 		}
 
 		if ($this->isDone()) {
@@ -67,7 +66,7 @@ class GraphicsJSONLangExistenceTypeExporter implements IFileExporter {
 
 	function outputReferenceCheckResult() {
 		if (count($this->langBuckets) === 0) {
-			throw new Exception('At least one language needed!');
+			throw new \Exception('At least one language needed!');
 		}
 
 		$firstLangBucket = $this->langBuckets[array_key_first($this->langBuckets)];
