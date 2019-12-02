@@ -15,8 +15,8 @@ use CranachImport\Exporters\LiteratureReferencesJSONExporter;
 
 
 function importGraphics() {
-	$graphicsXMLSourceFilePath = '../import-file/20190712/CDA-G_MiniExport_20190712.xml';
-	$graphicsJSONDestinationPath = './output/20190712/cda-graphics-v2.json';
+	$graphicsXMLSourceFilePath = '../import-file/20191122/CDA-GR_Datenübersicht_20191122.xml';
+	$graphicsJSONDestinationPath = './output/20191122/cda-graphics-v2.json';
 
 	$graphicsXmlImporter = new GraphicsXMLImporter($graphicsXMLSourceFilePath);
 	$graphicsJsonExporter = new GraphicsJSONLangExistenceTypeExporter($graphicsJSONDestinationPath);
@@ -30,8 +30,8 @@ function importGraphics() {
 }
 
 function importLiteratureReferences() {
-	$literatureReferencesXMLSourceFilePath = '../import-file/20190712/CDA_Literaturverweise_20190712.xml';
-	$literatureReferencesJSONDestinationPath = './output/20190712/cda-literaturereferences-v2.json';
+	$literatureReferencesXMLSourceFilePath = '../import-file/20191122/CDA-GR_RestDokumente_20191122.xml';
+	$literatureReferencesJSONDestinationPath = './output/20191122/cda-literaturereferences-v2.json';
 
 	$literatureReferencesXmlImporter = new LiteratureReferencesXMLImporter($literatureReferencesXMLSourceFilePath);
 	$literatureReferencesJsonExporter = new LiteratureReferencesJSONExporter($literatureReferencesJSONDestinationPath);
@@ -46,4 +46,4 @@ function importLiteratureReferences() {
 
 
 importGraphics();
-importLiteratureReferences();
+// importLiteratureReferences();
