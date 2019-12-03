@@ -74,7 +74,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 	                                           LiteratureReference &$literatureReference) {
 		$idElement = self::findElementByXPath(
 			$node,
-			'Section[@SectionNumber="0"]/Field[@FieldName="{vgsrpReferenceMasterS_RO.REFERENCEID}"]/FormattedValue',
+			'Section[@SectionNumber="0"]/Field[@FieldName="{ReferenceMaster.ReferenceID}"]/FormattedValue',
 		);
 		if ($idElement) {
 			$idStr = trim($idElement);
@@ -103,7 +103,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 	                                     LiteratureReference &$literatureReference) {
 		$titleElement = self::findElementByXPath(
 			$node,
-			'Section[@SectionNumber="2"]/Field[@FieldName="{vgsrpReferenceMasterS_RO.TITLE}"]/FormattedValue',
+			'Section[@SectionNumber="2"]/Field[@FieldName="{ReferenceMaster.Title}"]/FormattedValue',
 		);
 		if ($titleElement) {
 			$titleStr = trim($titleElement);
@@ -117,7 +117,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 	                                        LiteratureReference &$literatureReference) {
 		$subtitleElement = self::findElementByXPath(
 			$node,
-			'Section[@SectionNumber="3"]/Field[@FieldName="{vgsrpReferenceMasterS_RO.SUBTITLE}"]/FormattedValue',
+			'Section[@SectionNumber="3"]/Field[@FieldName="{ReferenceMaster.SubTitle}}"]/FormattedValue',
 		);
 		if ($subtitleElement) {
 			$subtitleStr = trim($subtitleElement);
@@ -131,7 +131,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 	                                          LiteratureReference &$literatureReference) {
 		$shorttitleElement = self::findElementByXPath(
 			$node,
-			'Section[@SectionNumber="4"]/Field[@FieldName="{vgsrpReferenceMasterS_RO.HEADING}"]/FormattedValue',
+			'Section[@SectionNumber="4"]/Field[@FieldName="{ReferenceMaster.Heading}"]/FormattedValue',
 		);
 		if ($shorttitleElement) {
 			$shorttitleStr = trim($shorttitleElement);
@@ -145,7 +145,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 	                                       LiteratureReference &$literatureReference) {
 		$journalElement = self::findElementByXPath(
 			$node,
-			'Section[@SectionNumber="5"]/Field[@FieldName="{vgsrpReferenceMasterS_RO.JOURNAL}"]/FormattedValue',
+			'Section[@SectionNumber="5"]/Field[@FieldName="{ReferenceMaster.Journal}"]/FormattedValue',
 		);
 
 		if ($journalElement) {
@@ -161,7 +161,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 
 		$seriesElement = self::findElementByXPath(
 			$node,
-			'Section[@SectionNumber="6"]/Field[@FieldName="{vgsrpReferenceMasterS_RO.SERIES}"]/FormattedValue',
+			'Section[@SectionNumber="6"]/Field[@FieldName="{ReferenceMaster.Series}"]/FormattedValue',
 		);
 		if ($seriesElement) {
 			$seriesStr = trim($seriesElement);
@@ -175,7 +175,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 	                                      LiteratureReference &$literatureReference) {
 		$volumeElement = self::findElementByXPath(
 			$node,
-			'Section[@SectionNumber="7"]/Field[@FieldName="{vgsrpReferenceMasterS_RO.VOLUME}"]/FormattedValue',
+			'Section[@SectionNumber="7"]/Field[@FieldName="{ReferenceMaster.Volume}"]/FormattedValue',
 		);
 		if ($volumeElement) {
 			$volumeStr = trim($volumeElement);
@@ -189,7 +189,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 	                                       LiteratureReference &$literatureReference) {
 		$editionElement = self::findElementByXPath(
 			$node,
-			'Section[@SectionNumber="8"]/Field[@FieldName="{vgsrpReferenceMasterS_RO.EDITION}"]/FormattedValue',
+			'Section[@SectionNumber="8"]/Field[@FieldName="{ReferenceMaster.Edition}"]/FormattedValue',
 		);
 		if ($editionElement) {
 			$editionStr = trim($editionElement);
@@ -203,7 +203,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 	                                               LiteratureReference &$literatureReference) {
 		$publishLocationElement = self::findElementByXPath(
 			$node,
-			'Section[@SectionNumber="9"]/Field[@FieldName="{vgsrpReferenceMasterS_RO.PLACEPUBLISHED}"]/FormattedValue',
+			'Section[@SectionNumber="9"]/Field[@FieldName="{ReferenceMaster.PlacePublished}"]/FormattedValue',
 		);
 		if ($publishLocationElement) {
 			$publishLocationStr = trim($publishLocationElement);
@@ -217,7 +217,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 	                                           LiteratureReference &$literatureReference) {
 		$publishDateElement = self::findElementByXPath(
 			$node,
-			'Section[@SectionNumber="10"]/Field[@FieldName="{vgsrpReferenceMasterS_RO.YEARPUBLISHED}"]/FormattedValue',
+			'Section[@SectionNumber="10"]/Field[@FieldName="{ReferenceMaster.YearPublished}}"]/FormattedValue',
 		);
 		if ($publishDateElement) {
 			$publishDateStr = trim($publishDateElement);
@@ -231,7 +231,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 	                                           LiteratureReference &$literatureReference) {
 		$pageNumbersElement = self::findElementByXPath(
 			$node,
-			'Section[@SectionNumber="11"]/Field[@FieldName="{vgsrpReferenceMasterS_RO.NUMOFPAGES}"]/FormattedValue',
+			'Section[@SectionNumber="11"]/Field[@FieldName="{ReferenceMaster.NumOfPages}"]/FormattedValue',
 		);
 		if ($pageNumbersElement) {
 			$pageNumbersStr = trim($pageNumbersElement);
@@ -245,7 +245,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 	                                    LiteratureReference &$literatureReference) {
 		$dateElement = self::findElementByXPath(
 			$node,
-			'Section[@SectionNumber="12"]/Field[@FieldName="{vgsrpReferenceMasterS_RO.DISPLAYDATE}"]/FormattedValue',
+			'Section[@SectionNumber="12"]/Field[@FieldName="{ReferenceMaster.DisplayDate}"]/FormattedValue',
 		);
 		if ($dateElement) {
 			$dateStr = trim($dateElement);
@@ -273,7 +273,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 			/* EventType */
 			$eventTypeElement = self::findElementByXPath(
 				$detailElement,
-				'Section[@SectionNumber="0"]/Field[@FieldName="{REFDATES.EVENTTYPE}"]/FormattedValue',
+				'Section[@SectionNumber="0"]/Field[@FieldName="{RefDates.EventType}"]/FormattedValue',
 			);
 
 			if ($eventTypeElement) {
@@ -284,7 +284,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 			/* DateText */
 			$dateTextElement = self::findElementByXPath(
 				$detailElement,
-				'Section[@SectionNumber="1"]/Field[@FieldName="{REFDATES.DATETEXT}"]/FormattedValue',
+				'Section[@SectionNumber="1"]/Field[@FieldName="{RefDates.DateText}"]/FormattedValue',
 			);
 
 			if ($dateTextElement) {
@@ -306,7 +306,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 			/* DateEnd */
 			$dateEndElement = self::findElementByXPath(
 				$detailElement,
-				'Section[@SectionNumber="3"]/Field[@FieldName="{@Enddatum }"]/FormattedValue',
+				'Section[@SectionNumber="3"]/Field[@FieldName="{@Enddatum}"]/FormattedValue',
 			);
 
 			if ($dateEndElement) {
@@ -317,7 +317,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 			/* Remarks */
 			$remarksElement = self::findElementByXPath(
 				$detailElement,
-				'Section[@SectionNumber="4"]/Field[@FieldName="{REFDATES.REMARKS}"]/FormattedValue',
+				'Section[@SectionNumber="4"]/Field[@FieldName="{RefDates.Remarks}"]/FormattedValue',
 			);
 
 			if ($remarksElement) {
@@ -333,7 +333,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 	                                         LiteratureReference &$literatureReference) {
 		$copyrightElement = self::findElementByXPath(
 			$node,
-			'Section[@SectionNumber="14"]/Field[@FieldName="{vgsrpReferenceMasterS_RO.COPYRIGHT}"]/FormattedValue',
+			'Section[@SectionNumber="14"]/Field[@FieldName="{ReferenceMaster.Copyright}"]/FormattedValue',
 		);
 		if ($copyrightElement) {
 			$copyrightStr = trim($copyrightElement);
@@ -361,7 +361,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 			/* Role */
 			$roleElement = self::findElementByXPath(
 				$detailElement,
-				'Text[@Name="Text1"]/TextValue',
+				'Text[@Name="Text2"]/TextValue',
 			);
 
 			if ($roleElement) {
@@ -402,7 +402,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 			/* Type */
 			$typeElement = self::findElementByXPath(
 				$detailElement,
-				'Section[@SectionNumber="1"]/Field[@FieldName="{TERMS.TERM}"]/FormattedValue',
+				'Section[@SectionNumber="1"]/Field[@FieldName="{Terms.Term}"]/FormattedValue',
 			);
 
 			if ($typeElement) {
@@ -413,7 +413,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 			/* Remarks */
 			$remarksElement = self::findElementByXPath(
 				$detailElement,
-				'Section[@SectionNumber="2"]/Field[@FieldName="{THESXREFS.REMARKS}"]/FormattedValue',
+				'Section[@SectionNumber="2"]/Field[@FieldName="{ThesXrefs.Remarks}"]/FormattedValue',
 			);
 
 			if ($remarksElement) {
@@ -429,7 +429,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 	                                  LiteratureReference &$literatureReference) {
 		$idElement = self::findElementByXPath(
 			$node,
-			'Section[@SectionNumber="17"]/Subreport/Details/Section[@SectionNumber="0"]/Field[@FieldName="{ALTNUMS.ALTNUM}"]/FormattedValue',
+			'Section[@SectionNumber="17"]/Subreport/Details/Section[@SectionNumber="0"]/Field[@FieldName="{@AltNum}"]/FormattedValue',
 		);
 		if ($idElement) {
 			$idStr = trim($idElement);
@@ -470,7 +470,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 			/* CatalogNumber */
 			$catalogNumberElement = self::findElementByXPath(
 				$detailElement,
-				'Section[@SectionNumber="1"]/Field[@FieldName="{VGSRPREFXREFSS_RO.CATALOGUENUMBER}"]/FormattedValue',
+				'Section[@SectionNumber="1"]/Field[@FieldName="{RefXRefs.CatalogueNumber}"]/FormattedValue',
 			);
 
 			if ($catalogNumberElement) {
@@ -481,7 +481,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 			/* PageNumber */
 			$pageNumberElement = self::findElementByXPath(
 				$detailElement,
-				'Section[@SectionNumber="2"]/Field[@FieldName="{VGSRPREFXREFSS_RO.PAGENUMBER}"]/FormattedValue',
+				'Section[@SectionNumber="2"]/Field[@FieldName="{RefXRefs.PageNumber}"]/FormattedValue',
 			);
 
 			if ($pageNumberElement) {
@@ -492,7 +492,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 			/* FigureNumber */
 			$figureNumberElement = self::findElementByXPath(
 				$detailElement,
-				'Section[@SectionNumber="3"]/Field[@FieldName="{VGSRPREFXREFSS_RO.APPENDAGE}"]/FormattedValue',
+				'Section[@SectionNumber="3"]/Field[@FieldName="{RefXRefs.Appendage}"]/FormattedValue',
 			);
 
 			if ($figureNumberElement) {
@@ -503,7 +503,7 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 			/* Remarks */
 			$remarksElement = self::findElementByXPath(
 				$detailElement,
-				'Section[@SectionNumber="4"]/Field[@FieldName="{VGSRPREFXREFSS_RO.REMARKS}"]/FormattedValue',
+				'Section[@SectionNumber="4"]/Field[@FieldName="{RefXRefs.Remarks}"]/FormattedValue',
 			);
 
 			if ($remarksElement) {

@@ -9,11 +9,6 @@ require_once 'literatureReference/Person.php';
 require_once 'literatureReference/Publication.php';
 require_once 'literatureReference/ConnectedObject.php';
 
-use CranachImport\Entities\LiteratureReference\Event;
-use CranachImport\Entities\LiteratureReference\Person;
-use CranachImport\Entities\LiteratureReference\Publication;
-use CranachImport\Entities\LiteratureReference\ConnectedObject;
-
 
 /**
  * Representing a single literature reference
@@ -176,7 +171,7 @@ class LiteratureReference implements IBaseItem {
 		return $this->date;
 	}
 
-	function addEvent(Event $event) {
+	function addEvent(LiteratureReference\Event $event) {
 		$this->events[] = $event;
 	}
 
@@ -196,7 +191,7 @@ class LiteratureReference implements IBaseItem {
 	}
 
 
-	function addPerson(Person $person) {
+	function addPerson(LiteratureReference\Person $person) {
 		$this->persons[] = $person;
 	}
 
@@ -206,7 +201,7 @@ class LiteratureReference implements IBaseItem {
 	}
 
 
-	function addPublication(Publication $publication) {
+	function addPublication(LiteratureReference\Publication $publication) {
 		$this->publications[] = $publication;
 	}
 
@@ -226,7 +221,7 @@ class LiteratureReference implements IBaseItem {
 	}
 
 
-	function addConnectedObject(ConnectedObject $connectedObject) {
+	function addConnectedObject(LiteratureReference\ConnectedObject $connectedObject) {
 		$this->connectedObjects[] = $connectedObject;
 	}
 

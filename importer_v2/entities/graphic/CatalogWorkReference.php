@@ -1,6 +1,6 @@
 <?php
 
-namespace CranachImport\Entities;
+namespace CranachImport\Entities\Graphic;
 
 
 /**

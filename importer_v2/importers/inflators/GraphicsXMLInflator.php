@@ -5,10 +5,11 @@ namespace CranachImport\Importers\Inflators;
 require_once 'IGraphicInflator.php';
 require_once 'entities/Graphic.php';
 
-require_once 'entities/graphic/Person.php';
-require_once 'entities/graphic/PersonName.php';
-require_once 'entities/graphic/PersonNameDetail.php';
-require_once 'entities/graphic/Title.php';
+require_once 'entities/main/Person.php';
+require_once 'entities/main/PersonName.php';
+require_once 'entities/main/PersonNameDetail.php';
+require_once 'entities/main/Title.php';
+
 require_once 'entities/graphic/Classification.php';
 require_once 'entities/graphic/Dating.php';
 require_once 'entities/graphic/HistoricEventInformation.php';
@@ -21,19 +22,21 @@ require_once 'entities/graphic/StructuredDimension.php';
 
 
 use CranachImport\Entities\Graphic;
-use CranachImport\Entities\Person;
-use CranachImport\Entities\PersonName;
-use CranachImport\Entities\PersonNameDetail;
-use CranachImport\Entities\Title;
-use CranachImport\Entities\Classification;
-use CranachImport\Entities\Dating;
-use CranachImport\Entities\HistoricEventInformation;
-use CranachImport\Entities\GraphicReference;
-use CranachImport\Entities\AdditionalTextInformation;
-use CranachImport\Entities\Publication;
-use CranachImport\Entities\MetaReference;
-use CranachImport\Entities\CatalogWorkReference;
-use CranachImport\Entities\StructuredDimension;
+
+use CranachImport\Entities\Main\Person;
+use CranachImport\Entities\Main\PersonName;
+use CranachImport\Entities\Main\PersonNameDetail;
+use CranachImport\Entities\Main\Title;
+
+use CranachImport\Entities\Graphic\Classification;
+use CranachImport\Entities\Graphic\Dating;
+use CranachImport\Entities\Graphic\HistoricEventInformation;
+use CranachImport\Entities\Graphic\GraphicReference;
+use CranachImport\Entities\Graphic\AdditionalTextInformation;
+use CranachImport\Entities\Graphic\Publication;
+use CranachImport\Entities\Graphic\MetaReference;
+use CranachImport\Entities\Graphic\CatalogWorkReference;
+use CranachImport\Entities\Graphic\StructuredDimension;
 
 
 /**

@@ -4,9 +4,10 @@ namespace CranachImport\Entities;
 
 require_once 'ILanguageBaseItem.php';
 
-require_once 'graphic/Person.php';
-require_once 'graphic/PersonName.php';
-require_once 'graphic/Title.php';
+require_once 'main/Person.php';
+require_once 'main/PersonName.php';
+require_once 'main/Title.php';
+
 require_once 'graphic/Classification.php';
 require_once 'graphic/Dating.php';
 require_once 'graphic/GraphicReference.php';
@@ -74,7 +75,7 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function addPerson(Person $person) {
+	function addPerson(Main\Person $person) {
 		$this->involvedPersons[] = $person;
 	}
 
@@ -84,7 +85,7 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function addPersonName(PersonName $personName) {
+	function addPersonName(Main\PersonName $personName) {
 		$this->involvedPersonsNames[] = $personName;
 	}
 
@@ -94,7 +95,7 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function addTitle(Title $title) {
+	function addTitle(Main\Title $title) {
 		$this->titles[] = $title;
 	}
 
@@ -104,12 +105,12 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function setClassification(Classification $classification) {
+	function setClassification(Graphic\Classification $classification) {
 		$this->classification = $classification;
 	}
 
 
-	function getClassification(): Classification {
+	function getClassification(): Graphic\Classification {
 		return $this->classification;
 	}
 
@@ -164,12 +165,12 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function setDating(Dating $dating) {
+	function setDating(Graphic\Dating $dating) {
 		$this->dating = $dating;
 	}
 
 
-	function getDating(): ?Dating {
+	function getDating(): ?Graphic\Dating {
 		return $this->dating;
 	}
 
@@ -264,7 +265,7 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function addReference(GraphicReference $reference) {
+	function addReference(Graphic\GraphicReference $reference) {
 		$this->references[] = $reference;
 	}
 
@@ -274,7 +275,9 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function addAdditionalTextInformation(AdditionalTextInformation $additonalTextInformation) {
+	function addAdditionalTextInformation(
+		Graphic\AdditionalTextInformation $additonalTextInformation
+	) {
 		$this->additionalTextInformation[] = $additonalTextInformation;
 	}
 
@@ -284,7 +287,7 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function addPublication(Publication $publication) {
+	function addPublication(Graphic\Publication $publication) {
 		$this->publications[] = $publication;
 	}
 
@@ -294,7 +297,7 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function addKeyword(MetaReference $keyword) {
+	function addKeyword(Graphic\MetaReference $keyword) {
 		$this->keywords[] = $keyword;
 	}
 
@@ -304,7 +307,7 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function addLocation(MetaReference $location) {
+	function addLocation(Graphic\MetaReference $location) {
 		$this->locations[] = $location;
 	}
 
@@ -344,7 +347,9 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function addCatalogWorkReference(CatalogWorkReference $catalogWorkReference) {
+	function addCatalogWorkReference(
+		Graphic\CatalogWorkReference $catalogWorkReference
+	) {
 		$this->catalogWorkReferences[] = $catalogWorkReference;
 	}
 
@@ -354,12 +359,14 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function setStructuredDimension(StructuredDimension $structuredDimension) {
+	function setStructuredDimension(
+		Graphic\StructuredDimension $structuredDimension
+	) {
 		$this->structuredDimension = $structuredDimension;
 	}
 
 
-	function getStructuredDimension(): StructuredDimension {
+	function getStructuredDimension(): Graphic\StructuredDimension {
 		return $this->structuredDimension;
 	}
 

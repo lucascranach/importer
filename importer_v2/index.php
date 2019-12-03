@@ -52,7 +52,7 @@ function importGraphics() {
 }
 
 function importLiteratureReferences() {
-	$literatureReferencesXMLSourceFilePath = '../import-file/20191122/CDA-GR_RestDokumente_20191122.xml';
+	$literatureReferencesXMLSourceFilePath = '../import-file/20191122/CDA_Literaturverweise_20191122.xml';
 	$literatureReferencesJSONDestinationPath = './output/20191122/cda-literaturereferences-v2.json';
 
 	$literatureReferencesXmlImporter = new LiteratureReferencesXMLImporter($literatureReferencesXMLSourceFilePath);

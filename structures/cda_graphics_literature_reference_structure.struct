@@ -4,7 +4,7 @@ CrystalReport
 		GroupHeader # Enthält immer genau 41 Section-Elemente
 
 			Section[SectionNumber="0"] # -> ID
-				Field[FieldName="{vgsrpReferenceMasterS_RO.REFERENCEID}"]
+				Field[FieldName="{ReferenceMaster.ReferenceID}"]
 					FormattedValue
 
 			Section[SectionNumber="1"] # -> Referenznummer
@@ -12,58 +12,58 @@ CrystalReport
 					FormattedValue
 
 			Section[SectionNumber="2"] # -> Titel
-				Field[FieldName="{vgsrpReferenceMasterS_RO.TITLE}"]
+				Field[FieldName="{ReferenceMaster.Title}"]
 					FormattedValue
 
 			Section[SectionNumber="3"] # -> Untertitel
-				Field[FieldName="{vgsrpReferenceMasterS_RO.SUBTITLE}"]
+				Field[FieldName="{ReferenceMaster.Subtitle}"]
 					FormattedValue
 
 			Section[SectionNumber="4"] # -> Kurztitel
-				Field[FieldName="{vgsrpReferenceMasterS_RO.HEADING}"]
+				Field[FieldName="{ReferenceMaster.Heading}"]
 					FormattedValue
 
 			Section[SectionNumber="5"] # -> Journal
-				Field[FieldName="{vgsrpReferenceMasterS_RO.JOURNAL}"]
+				Field[FieldName="{ReferenceMaster.Journal}"]
 					FormattedValue
 
 			Section[SectionNumber="6"] # -> Serie
-				Field[FieldName="{vgsrpReferenceMasterS_RO.SERIES}"]
+				Field[FieldName="{ReferenceMaster.Series}"]
 					FormattedValue
 
 			Section[SectionNumber="7"] # -> Band
-				Field[FieldName="{vgsrpReferenceMasterS_RO.VOLUME}"]
+				Field[FieldName="{ReferenceMaster.Volume}"]
 					FormattedValue
 
 			Section[SectionNumber="8"] # -> Ausgabe
-				Field[FieldName="{vgsrpReferenceMasterS_RO.EDITION}"]
+				Field[FieldName="{ReferenceMaster.Edition}"]
 					FormattedValue
 
 			Section[SectionNumber="9"] # -> Erscheinungsort
-				Field[FieldName="{vgsrpReferenceMasterS_RO.PLACEPUBLISHED}"]
+				Field[FieldName="{ReferenceMaster.PlacePublished}"]
 					FormattedValue
 
 			Section[SectionNumber="10"] # -> Erscheinungsjahr
-				Field[FieldName="{vgsrpReferenceMasterS_RO.YEARPUBLISHED}"]
+				Field[FieldName="{ReferenceMaster.YearPublished}"]
 					FormattedValue
 
 			Section[SectionNumber="11"] # -> Seiten
-				Field[FieldName="{vgsrpReferenceMasterS_RO.NUMOFPAGES}"]
+				Field[FieldName="{ReferenceMaster.NumOfPages}"]
 					FormattedValue
 
 			Section[SectionNumber="12"] # -> Datum
-				Field[FieldName="{vgsrpReferenceMasterS_RO.DISPLAYDATE}"]
+				Field[FieldName="{ReferenceMaster.DisplayDate}"]
 					FormattedValue
 
 			Section[SectionNumber="13"] # -> Ereignis
 				Subreport
 					Details*
 						Section[SectionNumber="0"] # -> Ereignistyp
-							Field[FieldName="{REFDATES.EVENTTYPE}"]
+							Field[FieldName="{RefDates.EventType}"]
 								FormattedValue
 
 						Section[SectionNumber="1"] # -> Datumstext
-							Field[FieldName="{REFDATES.DATETEXT}"]
+							Field[FieldName="{RefDates.DateText}"]
 								FormattedValue
 
 						Section[SectionNumber="2"] # -> Anfangsdatum
@@ -71,21 +71,21 @@ CrystalReport
 								FormattedValue
 
 						Section[SectionNumber="3"] # -> Enddatum
-							Field[FieldName="{@Enddatum }"]
+							Field[FieldName="{@Enddatum}"]
 								FormattedValue
 
 						Section[SectionNumber="4"] # -> Bermerkungen
-							Field[FieldName="{REFDATES.REMARKS}"]
+							Field[FieldName="{RefDates.Remarks}"]
 								FormattedValue
 
 			Section[SectionNumber="14"] # -> Urheberrecht
-				Field[FieldName="{vgsrpReferenceMasterS_RO.COPYRIGHT}"]
+				Field[FieldName="{ReferenceMaster.Copyright}"]
 					FormattedValue
 
 			Section[SectionNumber="15"] # -> Autor
 				Subreport
 					Details*
-						Text[Name="Text1"]
+						Text[Name="Text2"]
 							TextValue
 
 						Section[SectionNumber="0"]
@@ -98,18 +98,18 @@ CrystalReport
 						Section[SectionNumber="0"] # -> Nicht wichtig, da Feldtitel
 
 						Section[SectionNumber="1"] # -> Publikationstyp
-							Field[FieldName="{TERMS.TERM}"]
+							Field[FieldName="{Terms.Term}"]
 								FormattedValue
 
 						Section[SectionNumber="2"] # -> Bemerkung
-							Field[FieldName="{THESXREFS.REMARKS}"]
+							Field[FieldName="{ThesXrefs.Remarks}"]
 								FormattedValue
 
 			Section[SectionNumber="17"] # -> ID
 				Subreport
 					Details
 						Section[SectionNumber="0"]
-							Field[FieldName="{ALTNUMS.ALTNUM}"]
+							Field[FieldName="{@AltNum}"]
 								FormattedValue
 
 
@@ -123,19 +123,19 @@ CrystalReport
 									FormattedValue
 
 							Section[SectionNumber="1"] # -> Katalognummner
-								Field[FieldName="{VGSRPREFXREFSS_RO.CATALOGUENUMBER}"]
+								Field[FieldName="{RefXRefs.CatalogueNumber}"]
 									FormattedValue
 
 							Section[SectionNumber="2"] # -> Seitenzahl
-								Field[FieldName="{VGSRPREFXREFSS_RO.PAGENUMBER}"]
+								Field[FieldName="{RefXRefs.PageNumber}"]
 									FormattedValue
 
 							Section[SectionNumber="3"] # -> Abbildungsnummber
-								Field[FieldName="{VGSRPREFXREFSS_RO.APPENDAGE}"]
+								Field[FieldName="{RefXRefs.Appendage}"]
 									FormattedValue
 
 							Section[SectionNumber="4"] # -> Bemerkungen
-								Field[FieldName="{VGSRPREFXREFSS_RO.REMARKS}"]
+								Field[FieldName="{RefXRefs.Remarks}"]
 									FormattedValue
 
 
