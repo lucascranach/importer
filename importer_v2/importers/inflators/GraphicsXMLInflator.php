@@ -1190,7 +1190,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 
 			/* Decide if keyword is valid */
-			if (!empty($metaReference->getPath())) {
+			if (!empty($metaReference->getTerm())) {
 				$graphicDe->addKeyword($metaReference);
 				$graphicEn->addKeyword($metaReference);
 			}

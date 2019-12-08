@@ -1215,7 +1215,7 @@ class PaintingsXMLInflator implements IPaintingInflator {
 
 
 			/* Decide if keyword is valid */
-			if (!empty($metaReference->getPath())) {
+			if (!empty($metaReference->getTerm())) {
 				$paintingDe->addKeyword($metaReference);
 				$paintingEn->addKeyword($metaReference);
 			}
