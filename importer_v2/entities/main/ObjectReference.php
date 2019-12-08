@@ -1,12 +1,12 @@
 <?php
 
-namespace CranachImport\Entities\Graphic;
+namespace CranachImport\Entities\Main;
 
 
 /**
- * Representing a single graphic reference by inventory number
+ * Representing a single object reference by inventory number
  */
-class GraphicReference {
+class ObjectReference {
 
 	public $text = '';
 	public $inventoryNumber = '';

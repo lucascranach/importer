@@ -1,6 +1,6 @@
 <?php
 
-namespace CranachImport\Entities\Graphic;
+namespace CranachImport\Entities\Main;
 
 
 /**
@@ -10,6 +10,7 @@ class CatalogWorkReference {
 
 	public $description = '';
 	public $referenceNumber = '';
+	public $remarks = '';
 
 
 	function __construct() {
@@ -34,6 +35,16 @@ class CatalogWorkReference {
 
 	function getReferenceNumber(): string {
 		return $this->referenceNumber;
+	}
+
+
+	function setRemarks(string $remarks) {
+		$this->remarks = $remarks;
+	}
+
+
+	function getRemarks(): string {
+		return $this->remarks;
 	}
 
 }

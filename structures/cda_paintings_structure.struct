@@ -112,10 +112,8 @@ CrystalReport
 					FormattedValue
 
 
-			Section[SectionNumber="7"] #-> Objekt-ID und virtuell
+			Section[SectionNumber="7"] #-> Objekt-ID
 				Field[FieldName="{OBJECTS.ObjectID}"]
-					FormattedValue
-				Field[FieldName="{OBJECTS.IsVirtual}"]
 					FormattedValue
 
 
@@ -263,7 +261,7 @@ CrystalReport
 								FormattedValue
 
 
-			Section[SectionNumber="32"] # Zweite Level Referenzen (wird nicht benötigt!)
+			Section[SectionNumber="32"] # Zweite Level Referenzen
 				Supreport
 					Details* # Referenz
 						Section[SectionNumber="0"] #-> Textlabel (unwichtig?)
@@ -286,9 +284,14 @@ CrystalReport
 						Section[SectionNumber="1"] #-> Text
 								Field[FieldName="{TEXTENTRIES.TextEntry}""]
 									FormattedValue
-						Section[SectionNumber="2"] # ???
+						Section[SectionNumber="2"] #-> Datum
+							Text[Name="Text21"]
+									TextValue
 						Section[SectionNumber="3"] #-> Jahr
 								Text[Name="Text1"]
+									TextValue
+						Section[SectionNumber="4"] #-> Autor/in
+								Text[Name="Text3"]
 									TextValue
 
 
@@ -327,7 +330,7 @@ CrystalReport
 							Field[FieldName="{THESXREFTYPES.ThesXrefType}"]
 								FormattedValue
 						Section[SectionNumber="1"] #-> Term
-							Field[FieldName="{TERMS.TERM}"]
+							Field[FieldName="{TERMS.Term}"]
 								FormattedValue
 						Section[SectionNumber="2"] # ???
 						Section[SectionNumber="3"] #-> Kreuzreferenz-Pfad
@@ -396,6 +399,9 @@ CrystalReport
 						Section[SectionNumber="1"] #-> Nummer
 							Field[FieldName="{AltNums.AltNum}"]
 								FormattedValue
+						Section[SectionNumber="2"] #-> Bemerungen
+							Field[FieldName="{AltNums.Remarks}"]
+								FormattedValue
 
 
 			Section[SectionNumber="40"] # Dimensionen (?)
@@ -417,3 +423,6 @@ CrystalReport
 									FormattedValue
 								Field[FieldName="{DIMENSIONS.Dimension}"]
 									Value
+
+			Section[SectionNumber="41"] # Best of (Element existiert nur, sofern Best of)
+				Field[FieldName="{@BestOf}"]

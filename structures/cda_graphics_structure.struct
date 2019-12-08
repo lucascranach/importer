@@ -286,9 +286,14 @@ CrystalReport
 						Section[SectionNumber="1"] #-> Text
 								Field[FieldName="{TEXTENTRIES.TextEntry}""]
 									FormattedValue
-						Section[SectionNumber="2"] # ???
+						Section[SectionNumber="2"] #-> Datum
+							Text[Name="Text21"]
+									TextValue
 						Section[SectionNumber="3"] #-> Jahr
 								Text[Name="Text1"]
+									TextValue
+						Section[SectionNumber="4"] #-> Autor/in
+								Text[Name="Text3"]
 									TextValue
 
 
@@ -313,7 +318,7 @@ CrystalReport
 							Field[FieldName="{THESXREFTYPES.ThesXrefType}"]
 								FormattedValue
 						Section[SectionNumber="1"] #-> Term
-							Field[FieldName="{TERMS.TERM}"]
+							Field[FieldName="{TERMS.Term}"]
 								FormattedValue
 						Section[SectionNumber="3"] #-> Kreuzreferenz-Pfad
 							Field[FieldName="{THESXREFSPATH1.Path}"]
@@ -396,7 +401,9 @@ CrystalReport
 						Section[SectionNumber="1"] #-> Nummer
 							Field[FieldName="{AltNums.AltNum}"]
 								FormattedValue
-
+						Section[SectionNumber="2"] #-> Bemerungen
+							Field[FieldName="{AltNums.Remarks}"]
+								FormattedValue
 
 			Section[SectionNumber="40"] # Dimensionen (?)
 				Subreport

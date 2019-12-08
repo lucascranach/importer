@@ -9,16 +9,16 @@ require_once 'entities/main/Person.php';
 require_once 'entities/main/PersonName.php';
 require_once 'entities/main/PersonNameDetail.php';
 require_once 'entities/main/Title.php';
+require_once 'entities/main/Dating.php';
+require_once 'entities/main/HistoricEventInformation.php';
+require_once 'entities/main/ObjectReference.php';
+require_once 'entities/main/AdditionalTextInformation.php';
+require_once 'entities/main/Publication.php';
+require_once 'entities/main/MetaReference.php';
+require_once 'entities/main/CatalogWorkReference.php';
+require_once 'entities/main/StructuredDimension.php';
 
 require_once 'entities/graphic/Classification.php';
-require_once 'entities/graphic/Dating.php';
-require_once 'entities/graphic/HistoricEventInformation.php';
-require_once 'entities/graphic/GraphicReference.php';
-require_once 'entities/graphic/AdditionalTextInformation.php';
-require_once 'entities/graphic/Publication.php';
-require_once 'entities/graphic/MetaReference.php';
-require_once 'entities/graphic/CatalogWorkReference.php';
-require_once 'entities/graphic/StructuredDimension.php';
 
 
 use CranachImport\Entities\Graphic;
@@ -27,16 +27,16 @@ use CranachImport\Entities\Main\Person;
 use CranachImport\Entities\Main\PersonName;
 use CranachImport\Entities\Main\PersonNameDetail;
 use CranachImport\Entities\Main\Title;
+use CranachImport\Entities\Main\Dating;
+use CranachImport\Entities\Main\HistoricEventInformation;
+use CranachImport\Entities\Main\ObjectReference;
+use CranachImport\Entities\Main\AdditionalTextInformation;
+use CranachImport\Entities\Main\Publication;
+use CranachImport\Entities\Main\MetaReference;
+use CranachImport\Entities\Main\CatalogWorkReference;
+use CranachImport\Entities\Main\StructuredDimension;
 
 use CranachImport\Entities\Graphic\Classification;
-use CranachImport\Entities\Graphic\Dating;
-use CranachImport\Entities\Graphic\HistoricEventInformation;
-use CranachImport\Entities\Graphic\GraphicReference;
-use CranachImport\Entities\Graphic\AdditionalTextInformation;
-use CranachImport\Entities\Graphic\Publication;
-use CranachImport\Entities\Graphic\MetaReference;
-use CranachImport\Entities\Graphic\CatalogWorkReference;
-use CranachImport\Entities\Graphic\StructuredDimension;
 
 
 /**
@@ -955,8 +955,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 	/* References */
 	private static function inflateReferences(\SimpleXMLElement &$node,
-	                                                    Graphic &$graphicDe,
-	                                                    Graphic &$graphicEn) {
+	                                          Graphic &$graphicDe,
+	                                          Graphic &$graphicEn) {
 		$referenceDetailsElements = $node->Section[31]->Subreport->Details;
 
 		for ($i = 0; $i < count($referenceDetailsElements); $i += 1) {
@@ -966,7 +966,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				continue;
 			}
 
-			$reference = new GraphicReference;
+			$reference = new ObjectReference;
 
 			$graphicDe->addReference($reference);
 			$graphicEn->addReference($reference);
@@ -1011,9 +1011,9 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$additionalTextsDetailsElements = $node->Section[33]->Subreport->Details;
 
 		for ($i = 0; $i < count($additionalTextsDetailsElements); $i += 1) {
-			$additonalTextDetailElement = $additionalTextsDetailsElements[$i];
+			$additionalTextDetailElement = $additionalTextsDetailsElements[$i];
 
-			if ($additonalTextDetailElement->count() === 0) {
+			if ($additionalTextDetailElement->count() === 0) {
 				continue;
 			}
 
@@ -1021,7 +1021,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 			/* Text type */
 			$textTypeElement = self::findElementByXPath(
-				$additonalTextDetailElement,
+				$additionalTextDetailElement,
 				'Section[@SectionNumber="0"]/Field[@FieldName="{TEXTTYPES.TextType}"]/FormattedValue',
 			);
 
@@ -1036,6 +1036,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 					$graphicEn->addAdditionalTextInformation($additionalTextInformation);
 				} else if(self::$additionalTextLanguageTypes['not_assigned'] === $textTypeStr) {
 					echo 'Unassigned additional text type for object ' . $graphicDe->getInventoryNumber() . "\n";
+					$graphicDe->addAdditionalTextInformation($additionalTextInformation);
+					$graphicEn->addAdditionalTextInformation($additionalTextInformation);
 				} else {
 					echo 'Unknown additional text type: ' . $textTypeStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
 					$graphicDe->addAdditionalTextInformation($additionalTextInformation);
@@ -1048,7 +1050,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 			/* Text */
 			$textElement = self::findElementByXPath(
-				$additonalTextDetailElement,
+				$additionalTextDetailElement,
 				'Section[@SectionNumber="1"]/Field[@FieldName="{TEXTENTRIES.TextEntry}"]/FormattedValue',
 			);
 			if ($textElement) {
@@ -1056,14 +1058,34 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				$additionalTextInformation->setText($textStr);
 			}
 
+			/* Date */
+			$dateElement = self::findElementByXPath(
+				$additionalTextDetailElement,
+				'Section[@SectionNumber="2"]/Text[@Name="Text21"]/TextValue',
+			);
+			if ($dateElement) {
+				$dateStr = trim($dateElement);
+				$additionalTextInformation->setDate($dateStr);
+			}
+
 			/* Year */
 			$yearElement = self::findElementByXPath(
-				$additonalTextDetailElement,
+				$additionalTextDetailElement,
 				'Section[@SectionNumber="3"]/Text[@Name="Text1"]/TextValue',
 			);
 			if ($yearElement) {
 				$yearStr = trim($yearElement);
 				$additionalTextInformation->setYear($yearStr);
+			}
+
+			/* Author */
+			$authorElement = self::findElementByXPath(
+				$additionalTextDetailElement,
+				'Section[@SectionNumber="4"]/Text[@Name="Text3"]/TextValue',
+			);
+			if ($authorElement) {
+				$authorStr = trim($authorElement);
+				$additionalTextInformation->setAuthor($authorStr);
 			}
 
 		}
@@ -1098,7 +1120,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				$publication->setTitle($titleStr);
 			}
 
-			/* Seitennummer */
+			/* Pagenumber */
 			$pageNumberElement = self::findElementByXPath(
 				$publicationDetailElement,
 				'Section[@SectionNumber="1"]/Field[@FieldName="{REFXREFS.PageNumber}"]/FormattedValue',
@@ -1136,9 +1158,6 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 			$metaReference = new MetaReference;
 
-			$graphicDe->addKeyword($metaReference);
-			$graphicEn->addKeyword($metaReference);
-
 			/* Type */
 			$keywordTypeElement = self::findElementByXPath(
 				$keywordDetailElement,
@@ -1167,6 +1186,13 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			if ($keywordPathElement) {
 				$keywordPathStr = trim($keywordPathElement);
 				$metaReference->setPath($keywordPathStr);
+			}
+
+
+			/* Decide if keyword is valid */
+			if (!empty($metaReference->getPath())) {
+				$graphicDe->addKeyword($metaReference);
+				$graphicEn->addKeyword($metaReference);
 			}
 		}
 	}
@@ -1204,6 +1230,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 					$graphicEn->addLocation($metaReference);
 				} else if(self::$locationLanguageTypes['not_assigned'] === $locationTypeStr) {
 					echo 'Unassigned location type for object ' . $graphicDe->getInventoryNumber() . "\n";
+					$graphicDe->addLocation($metaReference);
+					$graphicEn->addLocation($metaReference);
 				} else {
 					echo 'Unknown location type: ' . $textTypeStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
 					$graphicDe->addLocation($metaReference);
@@ -1318,8 +1346,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 	/* Catalog work reference */
 	private static function inflateCatalogWorkReference(\SimpleXMLElement &$node,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn) {
+	                                                    Graphic &$graphicDe,
+	                                                    Graphic &$graphicEn) {
 		$catalogWorkReferenceDetailsElements = $node->Section[39]->Subreport->Details;
 
 		for ($i = 0; $i < count($catalogWorkReferenceDetailsElements); $i += 1) {
@@ -1330,9 +1358,6 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			}
 
 			$catalogWorkReference = new CatalogWorkReference;
-
-			$graphicDe->addCatalogWorkReference($catalogWorkReference);
-			$graphicEn->addCatalogWorkReference($catalogWorkReference);
 
 			/* Description */
 			$descriptionElement = self::findElementByXPath(
@@ -1355,14 +1380,32 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 				$catalogWorkReference->setReferenceNumber($referenceNumberStr);
 			}
+
+			/* Remarks */
+			$remarksElement = self::findElementByXPath(
+				$catalogWorkReferenceDetailElement,
+				'Field[@FieldName="{AltNums.Remarks}"]/FormattedValue',
+			);
+			if ($remarksElement) {
+				$remarksStr = trim($remarksElement);
+
+				$catalogWorkReference->setRemarks($remarksStr);
+			}
+
+
+			/* Decide if reference should be added */
+			if (!empty($catalogWorkReference->getReferenceNumber())) {
+				$graphicDe->addCatalogWorkReference($catalogWorkReference);
+				$graphicEn->addCatalogWorkReference($catalogWorkReference);
+			}
 		}
 	}
 
 
 	/* Structured dimension */
 	private static function inflateStructuredDimension(\SimpleXMLElement &$node,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn) {
+	                                                   Graphic &$graphicDe,
+	                                                   Graphic &$graphicEn) {
 		$catalogWorkReferenceSubreport = $node->Section[40]->Subreport;
 
 		$structuredDimension = new StructuredDimension;
@@ -1449,7 +1492,14 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 
 	private static function splitLanguageString(string $langStr): array {
-		return array_map('trim', explode(self::$langSplitChar, $langStr));
+		$splitLangStrs = array_map('trim', explode(self::$langSplitChar, $langStr));
+		$cntItems = count($splitLangStrs);
+
+		if ($cntItems > 0 && $cntItems < 2) {
+			$splitLangStrs[] = $splitLangStrs[0];
+		} 
+
+		return $splitLangStrs;
 	}
 
 }

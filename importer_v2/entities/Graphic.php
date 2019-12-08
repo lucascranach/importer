@@ -7,15 +7,15 @@ require_once 'ILanguageBaseItem.php';
 require_once 'main/Person.php';
 require_once 'main/PersonName.php';
 require_once 'main/Title.php';
+require_once 'main/Dating.php';
+require_once 'main/ObjectReference.php';
+require_once 'main/AdditionalTextInformation.php';
+require_once 'main/Publication.php';
+require_once 'main/MetaReference.php';
+require_once 'main/CatalogWorkReference.php';
+require_once 'main/StructuredDimension.php';
 
 require_once 'graphic/Classification.php';
-require_once 'graphic/Dating.php';
-require_once 'graphic/GraphicReference.php';
-require_once 'graphic/AdditionalTextInformation.php';
-require_once 'graphic/Publication.php';
-require_once 'graphic/MetaReference.php';
-require_once 'graphic/CatalogWorkReference.php';
-require_once 'graphic/StructuredDimension.php';
 
 use CranachImport\Entities\ILanguageBaseItem;
 
@@ -165,12 +165,12 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function setDating(Graphic\Dating $dating) {
+	function setDating(Main\Dating $dating) {
 		$this->dating = $dating;
 	}
 
 
-	function getDating(): ?Graphic\Dating {
+	function getDating(): ?Main\Dating {
 		return $this->dating;
 	}
 
@@ -265,7 +265,7 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function addReference(Graphic\GraphicReference $reference) {
+	function addReference(Main\ObjectReference $reference) {
 		$this->references[] = $reference;
 	}
 
@@ -276,18 +276,18 @@ class Graphic implements ILanguageBaseItem {
 
 
 	function addAdditionalTextInformation(
-		Graphic\AdditionalTextInformation $additonalTextInformation
+		Main\AdditionalTextInformation $additonalTextInformation
 	) {
 		$this->additionalTextInformation[] = $additonalTextInformation;
 	}
 
 
-	function getAdditionalTextInformations() {
+	function getAdditionalTextInformations(): array {
 		return $this->additionalTextInformation;
 	}
 
 
-	function addPublication(Graphic\Publication $publication) {
+	function addPublication(Main\Publication $publication) {
 		$this->publications[] = $publication;
 	}
 
@@ -297,7 +297,7 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function addKeyword(Graphic\MetaReference $keyword) {
+	function addKeyword(Main\MetaReference $keyword) {
 		$this->keywords[] = $keyword;
 	}
 
@@ -307,7 +307,7 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function addLocation(Graphic\MetaReference $location) {
+	function addLocation(Main\MetaReference $location) {
 		$this->locations[] = $location;
 	}
 
@@ -348,25 +348,25 @@ class Graphic implements ILanguageBaseItem {
 
 
 	function addCatalogWorkReference(
-		Graphic\CatalogWorkReference $catalogWorkReference
+		Main\CatalogWorkReference $catalogWorkReference
 	) {
 		$this->catalogWorkReferences[] = $catalogWorkReference;
 	}
 
 
-	function getCatalogWorkReferences(): string {
+	function getCatalogWorkReferences(): array {
 		return $this->catalogWorkReferences;
 	}
 
 
 	function setStructuredDimension(
-		Graphic\StructuredDimension $structuredDimension
+		Main\StructuredDimension $structuredDimension
 	) {
 		$this->structuredDimension = $structuredDimension;
 	}
 
 
-	function getStructuredDimension(): Graphic\StructuredDimension {
+	function getStructuredDimension(): Main\StructuredDimension {
 		return $this->structuredDimension;
 	}
 
