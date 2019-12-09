@@ -9,15 +9,22 @@ require_once 'exporters/PaintingsJSONLangExporter.php';
 require_once 'importers/GraphicsXMLImporter.php';
 require_once 'exporters/GraphicsJSONLangExistenceTypeExporter.php';
 
+require_once 'importers/GraphicsRestorationXMLImporter.php';
+require_once 'exporters/GraphicsRestorationJSONExporter.php';
+
 require_once 'importers/LiteratureReferencesXMLImporter.php';
 require_once 'exporters/LiteratureReferencesJSONExporter.php';
 
 use CranachImport\Process\Pipeline;
+
 use CranachImport\Importers\PaintingsXMLImporter;
 use CranachImport\Exporters\PaintingsJSONLangExporter;
 
 use CranachImport\Importers\GraphicsXMLImporter;
 use CranachImport\Exporters\GraphicsJSONLangExistenceTypeExporter;
+
+use CranachImport\Importers\GraphicsRestorationXMLImporter;
+use CranachImport\Exporters\GraphicsRestorationJSONExporter;
 
 use CranachImport\Importers\LiteratureReferencesXMLImporter;
 use CranachImport\Exporters\LiteratureReferencesJSONExporter;
@@ -56,6 +63,25 @@ function importGraphics() {
 	$graphicsXmlImporter->start();
 }
 
+function importGraphicsRestoration() {
+	$graphicsRestorationXMLSourceFilePath = '../import-file/20191122/CDA-GR_RestDokumente_20191122.xml';
+	$graphicsRestorationJSONDestinationPath = './output/20191122/cda-graphics-restoration-v2.json';
+
+	$graphicsRestorationXmlImporter = new GraphicsRestorationXMLImporter(
+		$graphicsRestorationXMLSourceFilePath,
+	);
+	$graphicsRestorationJsonExporter = new GraphicsRestorationJSONExporter(
+		$graphicsRestorationJSONDestinationPath,
+	);
+
+	$pipe = new Pipeline;
+	$pipe->addExporter($graphicsRestorationJsonExporter);
+
+	$graphicsRestorationXmlImporter->registerPipeline($pipe);
+
+	$graphicsRestorationXmlImporter->start();
+}
+
 function importLiteratureReferences() {
 	$literatureReferencesXMLSourceFilePath = '../import-file/20191122/CDA_Literaturverweise_20191122.xml';
 	$literatureReferencesJSONDestinationPath = './output/20191122/cda-literaturereferences-v2.json';
@@ -71,6 +97,7 @@ function importLiteratureReferences() {
 	$literatureReferencesXmlImporter->start();
 }
 
-importPaintings();
+// importPaintings();
 // importGraphics();
+// importGraphicsRestoration();
 // importLiteratureReferences();
