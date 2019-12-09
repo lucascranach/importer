@@ -1438,18 +1438,12 @@ class PaintingsXMLInflator implements IPaintingInflator {
 	                                                    Painting &$paintingEn) {
 		$catalogWorkReferenceDetailsElements = $node->Section[39]->Subreport->Details;
 
-		for ($i = 0; $i < count($catalogWorkReferenceDetailsElements); $i += 1) {
-			$catalogWorkReferenceDetailElement = $catalogWorkReferenceDetailsElements[$i];
-
-			if ($catalogWorkReferenceDetailElement->count() === 0) {
-				continue;
-			}
-
+		foreach($catalogWorkReferenceDetailsElements as $detailElement) {
 			$catalogWorkReference = new CatalogWorkReference;
 
 			/* Description */
 			$descriptionElement = self::findElementByXPath(
-				$catalogWorkReferenceDetailElement,
+				$detailElement,
 				'Field[@FieldName="{AltNumDescriptions.AltNumDescription}"]/FormattedValue',
 			);
 			if ($descriptionElement) {
@@ -1460,7 +1454,7 @@ class PaintingsXMLInflator implements IPaintingInflator {
 
 			/* Reference number */
 			$referenceNumberElement = self::findElementByXPath(
-				$catalogWorkReferenceDetailElement,
+				$detailElement,
 				'Field[@FieldName="{AltNums.AltNum}"]/FormattedValue',
 			);
 			if ($referenceNumberElement) {
@@ -1471,7 +1465,7 @@ class PaintingsXMLInflator implements IPaintingInflator {
 
 			/* Remarks */
 			$remarksElement = self::findElementByXPath(
-				$catalogWorkReferenceDetailElement,
+				$detailElement,
 				'Field[@FieldName="{AltNums.Remarks}"]/FormattedValue',
 			);
 			if ($remarksElement) {

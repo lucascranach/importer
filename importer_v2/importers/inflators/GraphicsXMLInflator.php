@@ -1414,10 +1414,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 	                                                    Graphic &$graphicEn) {
 		$catalogWorkReferenceDetailsElements = $node->Section[39]->Subreport->Details;
 
-		for ($i = 0; $i < count($catalogWorkReferenceDetailsElements); $i += 1) {
-			$catalogWorkReferenceDetailElement = $catalogWorkReferenceDetailsElements[$i];
-
-			if ($catalogWorkReferenceDetailElement->count() === 0) {
+		foreach($catalogWorkReferenceDetailsElements as $detailElement) {
+			if ($detailElement->count() === 0) {
 				continue;
 			}
 
@@ -1425,7 +1423,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 			/* Description */
 			$descriptionElement = self::findElementByXPath(
-				$catalogWorkReferenceDetailElement,
+				$detailElement,
 				'Field[@FieldName="{AltNumDescriptions.AltNumDescription}"]/FormattedValue',
 			);
 			if ($descriptionElement) {
@@ -1436,7 +1434,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 			/* Reference number */
 			$referenceNumberElement = self::findElementByXPath(
-				$catalogWorkReferenceDetailElement,
+				$detailElement,
 				'Field[@FieldName="{AltNums.AltNum}"]/FormattedValue',
 			);
 			if ($referenceNumberElement) {
@@ -1453,7 +1451,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 			/* Remarks */
 			$remarksElement = self::findElementByXPath(
-				$catalogWorkReferenceDetailElement,
+				$detailElement,
 				'Field[@FieldName="{AltNums.Remarks}"]/FormattedValue',
 			);
 			if ($remarksElement) {
