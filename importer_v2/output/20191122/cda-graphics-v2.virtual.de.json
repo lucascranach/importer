@@ -58,7 +58,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Doppelbildnis Friedrichs des Weise, Kurf\u00fcrst von Sachsen, und Johann des Best\u00e4ndigen, Herzog von Sachsen (Titelbild des Wittenberger Heiltumbuchs)",
                     "remarks": ""
                 }
@@ -196,7 +196,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther als Junker J\u00f6rg",
                     "remarks": ""
                 }
@@ -492,7 +492,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Gro\u00dfe Hirschjagd",
                     "remarks": ""
                 }
@@ -630,7 +630,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Christophorus",
                     "remarks": ""
                 }
@@ -817,7 +817,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christus am \u00d6lberg (aus der Passion Christi, Folge von 14 Holzschnitten)",
                     "remarks": ""
                 }
@@ -1012,7 +1012,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Gefangennahme (aus der Passion Christi, Folge von 14 Holzschnitten)",
                     "remarks": ""
                 }
@@ -1202,12 +1202,12 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christus vor Hannas (aus der Passion Christi, Folge von 14 Holzschnitten)",
                     "remarks": ""
                 },
                 {
-                    "type": "",
+                    "type": "Titel",
                     "title": "Christus vor Kaiphas",
                     "remarks": ""
                 }
@@ -1410,12 +1410,12 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christus vor Kaiphas (aus der Passion Christi, Folge von 14 Holzschnitten)",
                     "remarks": ""
                 },
                 {
-                    "type": "",
+                    "type": "Titel",
                     "title": "Christus vor Annas",
                     "remarks": ""
                 }
@@ -1623,7 +1623,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Stephanus",
                     "remarks": ""
                 }
@@ -1773,7 +1773,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die Himmelsleiter des heiligen Bonaventura",
                     "remarks": ""
                 }
@@ -1923,7 +1923,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die H\u00f6lle",
                     "remarks": ""
                 }
@@ -2051,7 +2051,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Peinigung des hl. Antonius",
                     "remarks": ""
                 }
@@ -2176,7 +2176,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Martyrium des Apostels Petrus aus der Folge 'Das Martyrium der zw\u00f6lf Apostel', 12 Bl\u00e4tter",
                     "remarks": ""
                 }
@@ -2417,7 +2417,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Bu\u00dfe des heiligen Johannes Chrysostomos",
                     "remarks": ""
                 }
@@ -2552,7 +2552,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Friedrich der Weise, Kurf\u00fcrst von Sachsen, den heiligen Bartholom\u00e4us anbetend",
                     "remarks": ""
                 }
@@ -2685,7 +2685,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Kardinal Albrecht von Brandenburg, Erzbischof und Kurf\u00fcrst von Mainz",
                     "remarks": ""
                 }
@@ -2815,7 +2815,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Martin Luther als Augustinerm\u00f6nch",
                     "remarks": ""
                 }
@@ -3090,7 +3090,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Maria und Johannes unter dem Gekreuzigten",
                     "remarks": ""
                 }
@@ -3226,7 +3226,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das von Christus und dem Hl. Geist erf\u00fcllte Herz des Gl\u00e4ubigen",
                     "remarks": ""
                 }
@@ -3351,7 +3351,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Landsknecht und Dame",
                     "remarks": ""
                 }
@@ -3481,7 +3481,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Der heilige Michael als Seelenw\u00e4ger",
                     "remarks": ""
                 }
@@ -3611,7 +3611,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Maria Magdalena von Engeln zu Himmel getragen",
                     "remarks": ""
                 }
@@ -3736,7 +3736,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Der heilige Georg",
                     "remarks": ""
                 }
@@ -3866,7 +3866,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Martyrium des heiligen Erasmus",
                     "remarks": ""
                 }
@@ -3999,7 +3999,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Ritter nach rechts reitend",
                     "remarks": ""
                 }
@@ -4109,7 +4109,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Vornehmes Paar auf einem Pferd reitend",
                     "remarks": ""
                 }
@@ -4239,7 +4239,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Prinz auf einem Pferd reitend",
                     "remarks": ""
                 }
@@ -4369,7 +4369,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Reiter im Wald auf Wildschweinjagd",
                     "remarks": ""
                 }
@@ -4507,7 +4507,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Turnier auf dem Marktplatz",
                     "remarks": ""
                 }
@@ -4637,7 +4637,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Der heilige Georg zu Pferd",
                     "remarks": ""
                 }
@@ -4762,7 +4762,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Der Opfertod des Marcus Curtius",
                     "remarks": ""
                 }
@@ -4887,12 +4887,12 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die Kreuzigung Christi",
                     "remarks": ""
                 },
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christ on the Cross between the Virgin and St John",
                     "remarks": ""
                 }
@@ -5002,12 +5002,12 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die Kreuzigung",
                     "remarks": ""
                 },
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christ on the Cross between the Virgin and St John",
                     "remarks": ""
                 }
@@ -5159,7 +5159,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Urteil des Paris",
                     "remarks": ""
                 }
@@ -5304,7 +5304,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Venus und Cupido",
                     "remarks": ""
                 }
@@ -5459,12 +5459,12 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Der hl. Augustin in Anbetung des Schmerzensmannes",
                     "remarks": ""
                 },
                 {
-                    "type": "",
+                    "type": "Titel",
                     "title": "Der hl. Bernhard in Anbetung des Schmerzensmannes",
                     "remarks": ""
                 }
@@ -5607,7 +5607,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Der heilige Petrus",
                     "remarks": ""
                 }
@@ -5754,7 +5754,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Wappen des Herzogs Johann des Best\u00e4ndigen von Sachsen (Holzschnitt zum Wittenberger Heiltumsbuch, Wittenberg 1509)",
                     "remarks": ""
                 }
@@ -5877,7 +5877,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christus und die Samariterin am Brunnen",
                     "remarks": ""
                 }
@@ -6010,7 +6010,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Adam und Eva",
                     "remarks": ""
                 }
@@ -6135,7 +6135,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Ruhe auf der Flucht nach \u00c4gypten",
                     "remarks": ""
                 }
@@ -6275,7 +6275,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "David und Abigail",
                     "remarks": ""
                 }
@@ -6415,7 +6415,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die Bu\u00dfe des hl. Hieronymus",
                     "remarks": ""
                 }
@@ -6545,7 +6545,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das dritte Turnier mit Lanzen",
                     "remarks": ""
                 }
@@ -6675,7 +6675,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das vierte Turnier mit Schwertern",
                     "remarks": ""
                 }
@@ -6805,7 +6805,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das zweite Turnier mit Lanzen und Schwertern sowie Balkonteppich",
                     "remarks": ""
                 }
@@ -6930,7 +6930,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christus vor Herodes (aus der Passion Christi, Folge von 14 Holzschnitten)",
                     "remarks": ""
                 }
@@ -7135,7 +7135,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die Gei\u00dfelung (aus der Passion Christi, Folge von 14 Holzschnitten)",
                     "remarks": ""
                 }
@@ -7345,7 +7345,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die Dornenkr\u00f6nung (aus der Passion Christi, Folge von 14 Holzschnitten)",
                     "remarks": ""
                 }
@@ -7560,7 +7560,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Ecce Homo (aus der Passion Christi, Folge von 14 Holzschnitten)",
                     "remarks": ""
                 }
@@ -7780,7 +7780,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Handwaschung des Pilatus (aus der Passion Christi, Folge von 14 Holzschnitten)",
                     "remarks": ""
                 }
@@ -8005,7 +8005,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die Kreuztragung (aus der Passion Christi, Folge von 14 Holzschnitten)",
                     "remarks": ""
                 }
@@ -8240,7 +8240,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die Kreuzigung (aus der Passion Christi, Folge von 14 Holzschnitten)",
                     "remarks": ""
                 }
@@ -8470,7 +8470,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die Beweinung Christi (aus der Passion Christi, Folge von 14 Holzschnitten)",
                     "remarks": ""
                 }
@@ -8710,7 +8710,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die Grablegung (aus der Passion Christi, Folge von 14 Holzschnitten)",
                     "remarks": ""
                 }
@@ -8955,7 +8955,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die Auferstehung (aus der Passion Christi, Folge von 14 Holzschnitten)",
                     "remarks": ""
                 }
@@ -9205,7 +9205,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christus am \u00d6lberg",
                     "remarks": ""
                 }
@@ -9315,7 +9315,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Der heilige Paulus",
                     "remarks": ""
                 }
@@ -9460,7 +9460,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Martyrium der heiligen Barbara",
                     "remarks": ""
                 }
@@ -9598,7 +9598,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Martin Luther als Augustinerm\u00f6nch in der Nische",
                     "remarks": ""
                 }
@@ -9748,7 +9748,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Martin Luther im Profil mit Doktorhut",
                     "remarks": ""
                 }
@@ -9988,7 +9988,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Martyrium des Apostels Andreas aus der Folge 'Das Martyrium der zw\u00f6lf Apostel', 12 Bl\u00e4tter",
                     "remarks": ""
                 }
@@ -10209,7 +10209,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Martyrium des Apostels Johannes aus der Folge 'Das Martyrium der zw\u00f6lf Apostel', 12 Bl\u00e4tter",
                     "remarks": ""
                 }
@@ -10425,7 +10425,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Martyrium des Apostels Philippus aus der Folge 'Das Martyrium der zw\u00f6lf Apostel', 12 Bl\u00e4tter",
                     "remarks": ""
                 }
@@ -10626,7 +10626,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Martyrium des Apostels Bartholom\u00e4us aus der Folge 'Das Martyrium der zw\u00f6lf Apostel', 12 Bl\u00e4tter",
                     "remarks": ""
                 }
@@ -10827,7 +10827,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Martyrium des Apostels Thomas aus der Folge 'Das Martyrium der zw\u00f6lf Apostel', 12 Bl\u00e4tter",
                     "remarks": ""
                 }
@@ -11028,12 +11028,12 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Martyrium des Apostels Paulus aus der Folge 'Das Martyrium der zw\u00f6lf Apostel', 12 Bl\u00e4tter",
                     "remarks": ""
                 },
                 {
-                    "type": "",
+                    "type": "Titel (vermutlich falsch)",
                     "title": "Das Martyrium des heiligen Matth\u00e4us",
                     "remarks": ""
                 }
@@ -11224,7 +11224,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Martyrium des Apostels Jakobus des J\u00fcngeren aus der Folge 'Das Martyrium der zw\u00f6lf Apostel', 12 Bl\u00e4tter",
                     "remarks": ""
                 }
@@ -11405,7 +11405,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Martyrium des Apostels Simon aus der Folge 'Das Martyrium der zw\u00f6lf Apostel', 12 Bl\u00e4tter",
                     "remarks": ""
                 }
@@ -11586,7 +11586,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Martyrium des Apostels Matthias aus der Folge 'Das Martyrium der zw\u00f6lf Apostel', 12 Bl\u00e4tter",
                     "remarks": ""
                 }
@@ -11757,7 +11757,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Martyrium des Apostels Judas Thadd\u00e4us aus der Folge 'Das Martyrium der zw\u00f6lf Apostel', 12 Bl\u00e4tter",
                     "remarks": ""
                 }
@@ -11933,7 +11933,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Martyrium des Apostels Jakobus des \u00c4lteren aus der Folge 'Das Martyrium der zw\u00f6lf Apostel', 12 Bl\u00e4tter",
                     "remarks": ""
                 }
@@ -12154,7 +12154,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Der Werwolf",
                     "remarks": ""
                 }
@@ -12279,7 +12279,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Georg zu Pferd mit dem Schwert gegen den Drachen k\u00e4mpfend",
                     "remarks": ""
                 }
@@ -12404,7 +12404,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die Kreuzigung (Holzschnitt zu Adam von Fulda, Ein ser andechtig Cristenlich Buchlein ..., Wittenberg 1512)",
                     "remarks": ""
                 }
@@ -12572,7 +12572,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die Heilige Sippe",
                     "remarks": ""
                 }
@@ -12697,7 +12697,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Anna selbdritt",
                     "remarks": ""
                 }
@@ -12822,7 +12822,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Das Jesuskind auf dem Grabe stehend und Engel mit den Leidenswerkzeugen",
                     "remarks": ""
                 }
@@ -12947,7 +12947,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Familie mit Engelsreigen",
                     "remarks": ""
                 }
@@ -13077,7 +13077,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Titel",
                     "title": "Die Predigt Johannes des T\u00e4ufers",
                     "remarks": ""
                 }
@@ -13207,7 +13207,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Der Kalender des Bonifacius von Czorbegk",
                     "remarks": ""
                 }
@@ -13340,7 +13340,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die Verk\u00fcndigung",
                     "remarks": ""
                 }
@@ -13470,7 +13470,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christus Salvator (Teil einer Serie mit Christus, Aposteln und Hl. Paulus, 14 Bl\u00e4tter)",
                     "remarks": ""
                 }
@@ -13605,7 +13605,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Petrus (Teil einer Serie mit Christus, Aposteln und Hl. Paulus, 14 Bl\u00e4tter)",
                     "remarks": ""
                 }
@@ -13745,7 +13745,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Andreas (Teil einer Serie mit Christus, Aposteln und Hl. Paulus, 14 Bl\u00e4tter)",
                     "remarks": ""
                 }
@@ -13890,7 +13890,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Jakobus der \u00c4ltere (Teil einer Serie mit Christus, Aposteln und Hl. Paulus, 14 Bl\u00e4tter)",
                     "remarks": ""
                 }
@@ -14040,7 +14040,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Johannes Ev. (Teil einer Serie mit Christus, Aposteln und Hl. Paulus, 14 Bl\u00e4tter)",
                     "remarks": ""
                 }
@@ -14195,7 +14195,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Philippus(Teil einer Serie mit Christus, Aposteln und Hl. Paulus, 14 Bl\u00e4tter)",
                     "remarks": ""
                 }
@@ -14355,7 +14355,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Bartholom\u00e4us (Teil einer Serie mit Christus, Aposteln und Hl. Paulus, 14 Bl\u00e4tter)",
                     "remarks": ""
                 }
@@ -14520,7 +14520,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Thomas (Teil einer Serie mit Christus, Aposteln und Hl. Paulus, 14 Bl\u00e4tter)",
                     "remarks": ""
                 }
@@ -14690,7 +14690,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Matth\u00e4us (Teil einer Serie mit Christus, Aposteln und Hl. Paulus, 14 Bl\u00e4tter)",
                     "remarks": ""
                 }
@@ -14865,7 +14865,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Jakobus der J\u00fcngere (Teil einer Serie mit Christus, Aposteln und Hl. Paulus, 14 Bl\u00e4tter)",
                     "remarks": ""
                 }
@@ -15045,7 +15045,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Simon (Teil einer Serie mit Christus, Aposteln und Hl. Paulus, 14 Bl\u00e4tter)",
                     "remarks": ""
                 }
@@ -15230,7 +15230,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Judas Thadd\u00e4us (Teil einer Serie mit Christus, Aposteln und Hl. Paulus, 14 Bl\u00e4tter)",
                     "remarks": ""
                 }
@@ -15420,7 +15420,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Matthias (Teil einer Serie mit Christus, Aposteln und Hl. Paulus, 14 Bl\u00e4tter)",
                     "remarks": ""
                 }
@@ -15615,7 +15615,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hl. Paulus (Teil einer Serie mit Christus, Aposteln und Hl. Paulus, 14 Bl\u00e4tter)",
                     "remarks": ""
                 }
@@ -15815,7 +15815,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Friedrich der Weise, Kurf\u00fcrst von Sachsen, die Madonna anbetend",
                     "remarks": ""
                 }
@@ -15945,7 +15945,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die Enthauptung Johannes des T\u00e4ufers",
                     "remarks": ""
                 }
@@ -16070,7 +16070,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die Enthauptung Johannes des T\u00e4ufers",
                     "remarks": ""
                 }
@@ -16203,7 +16203,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Ritter in Turnierr\u00fcstung",
                     "remarks": ""
                 }
@@ -16341,7 +16341,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die heilige Barbara",
                     "remarks": ""
                 }
@@ -16466,7 +16466,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Die heilige Katharina",
                     "remarks": ""
                 }
@@ -16596,7 +16596,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Friedrich der Weise, Kurf\u00fcrst von Sachsen",
                     "remarks": ""
                 }
@@ -16716,7 +16716,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Der heilige Sebastian",
                     "remarks": ""
                 }
@@ -16831,7 +16831,7 @@
             "involvedPersonsNames": [],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Martin Luther im Rund",
                     "remarks": ""
                 }
@@ -16895,7 +16895,7 @@
             "involvedPersonsNames": [],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther als Augustinerm\u00f6nch, Blick nach links",
                     "remarks": ""
                 }
@@ -16975,7 +16975,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther als Augustinerm\u00f6nch mit Taube und Heiligenschein (1. Zustand?)",
                     "remarks": ""
                 }
@@ -17063,7 +17063,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther als Augustinerm\u00f6nch mit Taube und Heiligenschein (2. Zustand?)",
                     "remarks": ""
                 }
@@ -17176,7 +17176,7 @@
             "involvedPersonsNames": [],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther als Augustinerm\u00f6nch mit Taube und Heiligenschein",
                     "remarks": ""
                 }
@@ -17314,7 +17314,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther als Augustinerm\u00f6nch mit Taube und Heiligenschein",
                     "remarks": ""
                 }
@@ -17402,7 +17402,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther als Augustinerm\u00f6nch mit Taube und Heiligenschein",
                     "remarks": ""
                 }
@@ -17551,7 +17551,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther als Evangelist",
                     "remarks": ""
                 }
@@ -17639,7 +17639,7 @@
             "involvedPersonsNames": [],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther als Augustinerm\u00f6nch mit Buch in Nische, nach rechts (erg\u00e4nzt um Taube)",
                     "remarks": ""
                 }
@@ -17867,7 +17867,7 @@
             "involvedPersonsNames": [],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther im Rund mit Ornamentrahmen",
                     "remarks": ""
                 }
@@ -17955,7 +17955,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther als Augustinerm\u00f6nch mit Buch in Nische, nach rechts, rechte Hand sichtbar",
                     "remarks": ""
                 }
@@ -18050,7 +18050,7 @@
             "involvedPersonsNames": [],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther als Augustinerm\u00f6nch mit Buch in Nische, nach links, linke Hand sichtbar",
                     "remarks": ""
                 }
@@ -18130,7 +18130,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther als Augustinerm\u00f6nch mit Buch in Nische, nach rechts, mit Ornamentpilastern (Textvariante 1)",
                     "remarks": ""
                 }
@@ -18250,7 +18250,7 @@
             "involvedPersonsNames": [],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther als Augustinerm\u00f6nch",
                     "remarks": ""
                 }
@@ -18394,7 +18394,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther als Junker J\u00f6rg (1. Zustand nach Hollstein)",
                     "remarks": ""
                 }
@@ -18507,7 +18507,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther mit Doktorhut und Nimbus, nach rechts (1. Zustand)",
                     "remarks": ""
                 }
@@ -18692,7 +18692,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther als Augustinerm\u00f6nch mit Doktorhut, nach rechts",
                     "remarks": ""
                 }
@@ -18915,7 +18915,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther mit Barett, Blick an Betrachter",
                     "remarks": ""
                 }
@@ -19007,7 +19007,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther mit Barett, nach links, Blick nach links",
                     "remarks": ""
                 }
@@ -19130,7 +19130,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther mit Barett nach links, Blick zum Betrachter",
                     "remarks": ""
                 }
@@ -19292,7 +19292,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Bildnis Martin Luthers im Rund",
                     "remarks": ""
                 }
@@ -19380,7 +19380,7 @@
             "involvedPersonsNames": [],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther als M\u00f6nch im Rund mit Taube des Heiligen Geistes",
                     "remarks": ""
                 }
@@ -19532,7 +19532,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Diskussion zwischen Luther und katholischen Theologen",
                     "remarks": ""
                 }
@@ -19625,7 +19625,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Adam und Eva",
                     "remarks": ""
                 }

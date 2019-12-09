@@ -58,7 +58,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Portrait of Elector Friedrich the Wise and his brother Duke John the Steadfast of Saxony",
                     "remarks": ""
                 }
@@ -204,7 +204,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther as Junker J\u00f6rg",
                     "remarks": ""
                 }
@@ -499,7 +499,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "A Stag Hunt",
                     "remarks": ""
                 }
@@ -637,7 +637,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Christopher",
                     "remarks": ""
                 }
@@ -816,7 +816,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Agony in the Garden (from the Passion Christi, series of 14 woodcuts)",
                     "remarks": ""
                 }
@@ -1011,7 +1011,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Capture of Christ (from the Passion Christi, series of 14 woodcuts)",
                     "remarks": ""
                 }
@@ -1201,12 +1201,12 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christ before Annas (from the Passion Christi, series of 14 woodcuts)",
                     "remarks": ""
                 },
                 {
-                    "type": "",
+                    "type": "Titel",
                     "title": "Christ before Caiphas",
                     "remarks": ""
                 }
@@ -1409,12 +1409,12 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christ before Caiphas (from the Passion Christi, series of 14 woodcuts)",
                     "remarks": ""
                 },
                 {
-                    "type": "",
+                    "type": "Titel",
                     "title": "Christ before Annas",
                     "remarks": ""
                 }
@@ -1622,7 +1622,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Stephen",
                     "remarks": ""
                 }
@@ -1772,7 +1772,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Celestial Ladder of  St Bonaventura",
                     "remarks": ""
                 }
@@ -1922,7 +1922,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hell",
                     "remarks": ""
                 }
@@ -2050,7 +2050,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Temptation of St Antony",
                     "remarks": ""
                 }
@@ -2175,7 +2175,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Martyrdom of St Peter (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
                     "remarks": ""
                 }
@@ -2416,7 +2416,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The penance of St John Chrysostom",
                     "remarks": ""
                 }
@@ -2559,7 +2559,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Friedrich the Wise, Elector of Saxony in Adoration of St Bartholomew",
                     "remarks": ""
                 }
@@ -2692,7 +2692,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Cardinal Albrecht of Brandenburg, Archbishop and Elector of Mainz",
                     "remarks": ""
                 }
@@ -2822,7 +2822,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther as an Augustinian Friar",
                     "remarks": ""
                 }
@@ -3097,7 +3097,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Virgin and St John beneath the Cross",
                     "remarks": ""
                 }
@@ -3233,7 +3233,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Four Saints Adoring Christ crucified on the Sacred Heart",
                     "remarks": ""
                 }
@@ -3358,7 +3358,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Footsoldier with Halberd, Lady holding Pansies",
                     "remarks": ""
                 }
@@ -3488,7 +3488,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Archangel Michael weighing a Soul",
                     "remarks": ""
                 }
@@ -3618,7 +3618,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Ecstacy of St Mary Magdalen",
                     "remarks": ""
                 }
@@ -3743,7 +3743,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St George standing, with Two Angels",
                     "remarks": ""
                 }
@@ -3873,7 +3873,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Martyrdom of St Erasmus",
                     "remarks": ""
                 }
@@ -4006,7 +4006,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Knight on Horseback riding towards the right",
                     "remarks": ""
                 }
@@ -4116,7 +4116,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Gentleman and Lady riding to the Hunt",
                     "remarks": ""
                 }
@@ -4246,7 +4246,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "A Saxon Prince on Horseback",
                     "remarks": ""
                 }
@@ -4376,7 +4376,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Hunter on Horseback Hunting a Wild Boar",
                     "remarks": ""
                 }
@@ -4514,7 +4514,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The First Tournament",
                     "remarks": ""
                 }
@@ -4652,7 +4652,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St George on Horseback with the Dead Dragon",
                     "remarks": ""
                 }
@@ -4785,7 +4785,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Marcus Curtius Plunging into the Chasm",
                     "remarks": ""
                 }
@@ -5168,7 +5168,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Judgement of Paris",
                     "remarks": ""
                 }
@@ -5313,7 +5313,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Venus and Cupid",
                     "remarks": ""
                 }
@@ -5468,12 +5468,12 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Augustine in Prayer with Christ as the Man of Sorrows",
                     "remarks": ""
                 },
                 {
-                    "type": "",
+                    "type": "Titel",
                     "title": "St Bernard Adoring the Man of Sorrows",
                     "remarks": ""
                 }
@@ -5616,7 +5616,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Peter",
                     "remarks": ""
                 }
@@ -5763,7 +5763,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Electoral Coat of Arms (Title page from the Wittenberger Heiltumsbuch, Wittenberg 1509)",
                     "remarks": ""
                 }
@@ -5886,7 +5886,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christ and the Woman of Samaria",
                     "remarks": ""
                 }
@@ -6019,7 +6019,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Adam and Eve",
                     "remarks": ""
                 }
@@ -6144,7 +6144,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Rest on the Flight into Egypt",
                     "remarks": ""
                 }
@@ -6284,7 +6284,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "David and Abigail",
                     "remarks": ""
                 }
@@ -6424,7 +6424,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Penitence of St Jerome",
                     "remarks": ""
                 }
@@ -6554,7 +6554,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Third Tournament with Lances",
                     "remarks": ""
                 }
@@ -6684,7 +6684,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Fourth Tournament with Swords",
                     "remarks": ""
                 }
@@ -6814,7 +6814,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Second Tournament with the Tapestry",
                     "remarks": ""
                 }
@@ -6947,7 +6947,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christ before Herod (from the Passion Christi, series of 14 woodcuts)",
                     "remarks": ""
                 }
@@ -7152,7 +7152,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Flagellation (from the Passion Christi, series of 14 woodcuts)",
                     "remarks": ""
                 }
@@ -7362,7 +7362,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christ crowned with Thorns (from the Passion Christi, series of 14 woodcuts)",
                     "remarks": ""
                 }
@@ -7577,7 +7577,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Ecce Homo (from the Passion Christi, series of 14 woodcuts)",
                     "remarks": ""
                 }
@@ -7797,7 +7797,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Pilate washing his hands (from the Passion Christi, series of 14 woodcuts)",
                     "remarks": ""
                 }
@@ -8022,7 +8022,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christ bearing the Cross (from the Passion Christi, series of 14 woodcuts)",
                     "remarks": ""
                 }
@@ -8257,7 +8257,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Crucifixion (from the Passion Christi, series of 14 woodcuts)",
                     "remarks": ""
                 }
@@ -8487,7 +8487,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Lamentation (from the Passion Christi, series of 14 woodcuts)",
                     "remarks": ""
                 }
@@ -8727,7 +8727,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Entombment (from the Passion Christi, series of 14 woodcuts)",
                     "remarks": ""
                 }
@@ -8972,7 +8972,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Resurrection (from the Passion Christi, series of 14 woodcuts)",
                     "remarks": ""
                 }
@@ -9222,7 +9222,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christ on the Mount of Olives",
                     "remarks": ""
                 }
@@ -9332,7 +9332,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Paul",
                     "remarks": ""
                 }
@@ -9477,7 +9477,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Martyrdom of St Barbara",
                     "remarks": ""
                 }
@@ -9615,7 +9615,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther as an Augustinian Friar in a Niche",
                     "remarks": ""
                 }
@@ -9765,7 +9765,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther in Profile with a Doctor's Cap",
                     "remarks": ""
                 }
@@ -10005,7 +10005,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Martyrdom of St Andrew (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
                     "remarks": ""
                 }
@@ -10226,7 +10226,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Martyrdom of St John (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
                     "remarks": ""
                 }
@@ -10442,7 +10442,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Martyrdom of St Philip (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
                     "remarks": ""
                 }
@@ -10643,7 +10643,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Martyrdom of St Bartholomew (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
                     "remarks": ""
                 }
@@ -10844,7 +10844,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Martyrdom of St Thomas (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
                     "remarks": ""
                 }
@@ -11045,12 +11045,12 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Martyrdom of St Paul (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
                     "remarks": ""
                 },
                 {
-                    "type": "",
+                    "type": "Titel (vermutlich falsch)",
                     "title": "The Martyrdom of St Matthew",
                     "remarks": ""
                 }
@@ -11241,7 +11241,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Martyrdom of St James the Less (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
                     "remarks": ""
                 }
@@ -11422,7 +11422,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Martyrdom of St Simon (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
                     "remarks": ""
                 }
@@ -11603,7 +11603,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Martyrdom of St Matthias (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
                     "remarks": ""
                 }
@@ -11774,7 +11774,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Martyrdom of St Judas Thaddeus (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
                     "remarks": ""
                 }
@@ -11950,7 +11950,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Martyrdom of St James the Greater (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
                     "remarks": ""
                 }
@@ -12171,7 +12171,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Werewolf",
                     "remarks": ""
                 }
@@ -12296,7 +12296,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St George on Horseback slaying the Dragon",
                     "remarks": ""
                 }
@@ -12421,7 +12421,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Crucifixion (Woodcut illustration to  Adam von Fulda, Ein ser andechtig Cristenlich Buchlein ..., Wittenberg 1512)",
                     "remarks": ""
                 }
@@ -12589,7 +12589,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Holy Kinship",
                     "remarks": ""
                 }
@@ -12714,7 +12714,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Anne and the Virgin with the Child",
                     "remarks": ""
                 }
@@ -12839,7 +12839,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Infant as Redeemer",
                     "remarks": ""
                 }
@@ -12964,7 +12964,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Holy Family with Dancing Angels",
                     "remarks": ""
                 }
@@ -13094,7 +13094,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Titel",
                     "title": "The Sermon of St John the Baptist",
                     "remarks": ""
                 }
@@ -13224,7 +13224,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Astronomical Chart of Bonifacius of Czorbegk",
                     "remarks": ""
                 }
@@ -13357,7 +13357,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Annunciation",
                     "remarks": ""
                 }
@@ -13487,7 +13487,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Christ as Saviour (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
                     "remarks": ""
                 }
@@ -13622,7 +13622,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Peter (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
                     "remarks": ""
                 }
@@ -13762,7 +13762,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Andrew (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
                     "remarks": ""
                 }
@@ -13907,7 +13907,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St James the Greater (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
                     "remarks": ""
                 }
@@ -14057,7 +14057,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St John the Evangelist (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
                     "remarks": ""
                 }
@@ -14212,7 +14212,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Philip (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
                     "remarks": ""
                 }
@@ -14372,7 +14372,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Bartholomew (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
                     "remarks": ""
                 }
@@ -14537,7 +14537,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Thomas (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
                     "remarks": ""
                 }
@@ -14707,7 +14707,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Matthew (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
                     "remarks": ""
                 }
@@ -14882,7 +14882,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St James the Less (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
                     "remarks": ""
                 }
@@ -15062,7 +15062,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Simon (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
                     "remarks": ""
                 }
@@ -15247,7 +15247,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Judas Thaddaeus  (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
                     "remarks": ""
                 }
@@ -15437,7 +15437,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Matthias  (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
                     "remarks": ""
                 }
@@ -15632,7 +15632,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Paul (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
                     "remarks": ""
                 }
@@ -15832,7 +15832,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Virgin and Child adored by Friedrich the Wise of Saxony",
                     "remarks": ""
                 }
@@ -15962,7 +15962,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Beheading of St John the Baptist",
                     "remarks": ""
                 }
@@ -16087,7 +16087,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "The Beheading of St John the Baptist",
                     "remarks": ""
                 }
@@ -16220,7 +16220,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Titel",
                     "title": "Armed Knight Riding to the Left",
                     "remarks": ""
                 }
@@ -16358,7 +16358,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Barbara",
                     "remarks": ""
                 }
@@ -16483,7 +16483,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Catherine",
                     "remarks": ""
                 }
@@ -16613,7 +16613,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Friedrich the Wise, Elector of Saxony",
                     "remarks": ""
                 }
@@ -16733,7 +16733,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "St Sebastian",
                     "remarks": ""
                 }
@@ -16848,7 +16848,7 @@
             "involvedPersonsNames": [],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Martin Luther in medaillon",
                     "remarks": ""
                 }
@@ -17291,7 +17291,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Luther as augustine friar with holy ghost and halo",
                     "remarks": ""
                 }
@@ -19420,7 +19420,7 @@
             ],
             "titles": [
                 {
-                    "type": "",
+                    "type": "Beschreibender Titel",
                     "title": "Adam and Eve",
                     "remarks": ""
                 }

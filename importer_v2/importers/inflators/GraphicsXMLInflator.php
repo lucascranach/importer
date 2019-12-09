@@ -356,7 +356,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			/* title type */
 			$typeElement = self::findElementByXPath(
 				$titleDetailElement,
-				'Field[@FieldName="{TITLETYPES.TitleType}}"]/FormattedValue',
+				'Field[@FieldName="{TITLETYPES.TitleType}"]/FormattedValue',
 			);
 			if ($typeElement) {
 				$typeStr = trim($typeElement);
