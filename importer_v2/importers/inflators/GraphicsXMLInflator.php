@@ -69,6 +69,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 	private static $inventoryNumberReplaceRegExpArr = [
 		'/^CDA\./',
+		'/^G_/',
 	];
 
 	private function __construct() {}
@@ -1378,7 +1379,13 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			if ($referenceNumberElement) {
 				$referenceNumberStr = trim($referenceNumberElement);
 
-				$catalogWorkReference->setReferenceNumber($referenceNumberStr);
+				$cleanReferenceNumberStr = preg_replace(
+					self::$inventoryNumberReplaceRegExpArr,
+					'',
+					$referenceNumberStr,
+				);
+
+				$catalogWorkReference->setReferenceNumber($cleanReferenceNumberStr);
 			}
 
 			/* Remarks */
