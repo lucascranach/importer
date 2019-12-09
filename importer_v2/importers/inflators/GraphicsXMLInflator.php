@@ -67,6 +67,16 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		'not_assigned' => '(not assigned)',
 	];
 
+	private static $repositoryTypes = [
+		'de' => 'Besitzer',
+		'en' => 'Repository',
+	];
+
+	private static $ownerTypes = [
+		'de' => 'Eigentümer',
+		'en' => 'Owner',
+	];
+
 	private static $inventoryNumberReplaceRegExpArr = [
 		'/^CDA\./',
 		'/^G_/',
@@ -105,8 +115,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		self::inflatePublications($subNode, $graphicDe, $graphicEn);
 		self::inflateKeywords($subNode, $graphicDe, $graphicEn);
 		self::inflateLocations($subNode, $graphicDe, $graphicEn);
-		self::inflateRepository($subNode, $graphicDe, $graphicEn);
-		self::inflateOwner($subNode, $graphicDe, $graphicEn);
+		self::inflateRepositoryAndOwner($subNode, $graphicDe, $graphicEn);
 		self::inflateSortingNumber($subNode, $graphicDe, $graphicEn);
 		self::inflateCatalogWorkReference($subNode, $graphicDe, $graphicEn);
 		self::inflateStructuredDimension($subNode, $graphicDe, $graphicEn);
@@ -1266,63 +1275,117 @@ class GraphicsXMLInflator implements IGraphicInflator {
 	}
 
 
-	/* Repository */
-	private static function inflateRepository(\SimpleXMLElement &$node,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn) {
-		$repositoryDetailsSubreport = $node->Section[37]->Subreport;
+	/* Repository and Owner */
+	private static function inflateRepositoryAndOwner(\SimpleXMLElement &$node,
+	                                                  Graphic &$graphicDe,
+	                                                  Graphic &$graphicEn) {
+		$repositoryAndOwnerDetailsSubreport = $node->Section[37]->Subreport;
+		$details = $repositoryAndOwnerDetailsSubreport->Details;
 
-		// de
-		$repositoryDeElement = self::findElementByXPath(
-			$repositoryDetailsSubreport,
-			'Details[1]/Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
-		);
-		if ($repositoryDeElement) {
-			$repositoryStr = trim($repositoryDeElement);
+		foreach($details as $detail) {
+			/* We have to extract the role */
+			$roleElement = self::findElementByXPath(
+				$detail,
+				'Section[@SectionNumber="1"]/Field[@FieldName="{@Rolle}"]/FormattedValue',
+			);
 
-			$graphicDe->setRepository($repositoryStr);
-		}
+			if (!$roleElement) {
+				continue;
+			}
 
-		// en
-		$repositoryEnElement = self::findElementByXPath(
-			$repositoryDetailsSubreport,
-			'Details[2]/Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
-		);
-		if ($repositoryEnElement) {
-			$repositoryStr = trim($repositoryEnElement);
+			$roleName = trim($roleElement);
 
-			$graphicEn->setRepository($repositoryStr);
+			/* Passing the roleName to the infaltors for themself to decide if they are
+			  responsible for further value extraction */
+			$isRepository = false;
+			$isOwner = false;
+
+			try {
+				$isRepository = self::inflateRepository($detail, $roleName, $graphicDe, $graphicEn);
+			} catch (Exception $e) {
+				echo $e->getMessage() . "\n";
+			}
+
+			try {
+				$isOwner = self::inflateOwner($detail, $roleName, $graphicDe, $graphicEn);
+			} catch (Exception $e) {
+				echo $e->getMessage() . "\n";
+			}
+
+			if (!$isRepository && !$isOwner) {
+				echo "Item is neither a repository or an owner: " . $roleName . "\n";
+			}
 		}
 	}
 
 
-	/* Owner */
-	private static function inflateOwner(\SimpleXMLElement &$node,
+	/* Repository */
+	private static function inflateRepository(\SimpleXMLElement &$detail,
+	                                          string $roleName,
 	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn) {
-		$ownerDetailsSubreport = $node->Section[37]->Subreport;
-
-		// de
-		$ownerDeElement = self::findElementByXPath(
-			$ownerDetailsSubreport,
-			'Details[3]/Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
+	                                          Graphic &$graphicEn): bool {
+		$repositoryElement = self::findElementByXPath(
+			$detail,
+			'Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
 		);
-		if ($ownerDeElement) {
-			$ownerStr = trim($ownerDeElement);
 
-			$graphicDe->setOwner($ownerStr);
+		if (!$repositoryElement) {
+			throw new Exception('Missing element with repository name!');
 		}
 
-		// en
-		$ownerEnElement = self::findElementByXPath(
-			$ownerDetailsSubreport,
-			'Details[4]/Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
-		);
-		if ($ownerEnElement) {
-			$ownerStr = trim($ownerEnElement);
+		$repositoryStr = trim($repositoryElement);
 
-			$graphicEn->setOwner($ownerStr);
+		switch ($roleName) {
+			case self::$repositoryTypes['de']:
+				/* de */
+				$graphicDe->setRepository($repositoryStr);
+				break;
+
+			case self::$repositoryTypes['en']:
+				/* en */
+				$graphicEn->setRepository($repositoryStr);
+				break;
+
+			default:
+				return FALSE;
 		}
+
+		return TRUE;
+	}
+
+
+	/* Owner */
+	private static function inflateOwner(\SimpleXMLElement &$detail,
+	                                     string $roleName,
+	                                     Graphic &$graphicDe,
+	                                     Graphic &$graphicEn): bool {
+		$ownerElement = self::findElementByXPath(
+			$detail,
+			'Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
+		);
+
+		if (!$ownerElement) {
+			throw new Exception('Missing element with owner name!');
+		}
+
+		$ownerStr = trim($ownerElement);
+
+		switch ($roleName) {
+			case self::$ownerTypes['de']:
+				/* de */
+				$graphicDe->setOwner($ownerStr);
+				break;
+
+			case self::$ownerTypes['en']:
+				/* en */
+				$graphicEn->setOwner($ownerStr);
+				break;
+
+			default:
+				return FALSE;
+		}
+
+		return TRUE;
 	}
 
 
