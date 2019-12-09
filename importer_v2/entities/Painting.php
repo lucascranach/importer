@@ -372,7 +372,7 @@ class Painting implements ILanguageBaseItem {
 	}
 
 
-	function getBestOf(): bool {
+	function getIsBestOf(): bool {
 		return $this->isBestOf;
 	}
 
