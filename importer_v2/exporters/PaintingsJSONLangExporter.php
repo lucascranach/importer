@@ -15,7 +15,7 @@ use CranachImport\Entities\Painting;
  * - one file per language
  * - linked works
  */
-class PaintingsJSONLangExistenceTypeExporter implements IFileExporter {
+class PaintingsJSONLangExporter implements IFileExporter {
 
 	private $fileExt = 'json';
 	private $filename = null;

@@ -2,18 +2,23 @@
 
 require_once 'Language.php';
 require_once 'process/Pipeline.php';
+
 require_once 'importers/PaintingsXMLImporter.php';
-require_once 'exporters/PaintingsJSONLangExistenceTypeExporter.php';
+require_once 'exporters/PaintingsJSONLangExporter.php';
+
 require_once 'importers/GraphicsXMLImporter.php';
 require_once 'exporters/GraphicsJSONLangExistenceTypeExporter.php';
+
 require_once 'importers/LiteratureReferencesXMLImporter.php';
 require_once 'exporters/LiteratureReferencesJSONExporter.php';
 
 use CranachImport\Process\Pipeline;
 use CranachImport\Importers\PaintingsXMLImporter;
-use CranachImport\Exporters\PaintingsJSONLangExistenceTypeExporter;
+use CranachImport\Exporters\PaintingsJSONLangExporter;
+
 use CranachImport\Importers\GraphicsXMLImporter;
 use CranachImport\Exporters\GraphicsJSONLangExistenceTypeExporter;
+
 use CranachImport\Importers\LiteratureReferencesXMLImporter;
 use CranachImport\Exporters\LiteratureReferencesJSONExporter;
 
@@ -26,7 +31,7 @@ function importPaintings() {
 	$paintingsJSONDestinationPath = './output/20191122/cda-paintings-v2.json';
 
 	$paintingsXmlImporter = new PaintingsXMLImporter($paintingsXMLSourceFilePaths);
-	$paintingsJsonExporter = new PaintingsJSONLangExistenceTypeExporter($paintingsJSONDestinationPath);
+	$paintingsJsonExporter = new PaintingsJSONLangExporter($paintingsJSONDestinationPath);
 
 	$pipe = new Pipeline;
 	$pipe->addExporter($paintingsJsonExporter);
