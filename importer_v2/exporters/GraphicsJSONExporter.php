@@ -49,6 +49,12 @@ class GraphicsJSONExporter implements IFileExporter {
 		}
 
 		$data = json_encode(array('items' => $this->items), JSON_PRETTY_PRINT);
+		$dirname = dirname($this->destFilepath);
+
+		if(!file_exists($dirname)) {
+			mkdir($dirname, 0777, TRUE);
+		}
+
 		file_put_contents($this->destFilepath, $data);
 
 		$this->done = true;

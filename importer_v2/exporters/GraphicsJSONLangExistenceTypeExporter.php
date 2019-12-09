@@ -121,6 +121,11 @@ class GraphicsJSONLangExistenceTypeExporter implements IFileExporter {
 				$destFilepath = $this->dirname . DIRECTORY_SEPARATOR . $filename;
 
 				$data = json_encode(array('items' => $existenceTypeItems), JSON_PRETTY_PRINT);
+
+				if(!file_exists($this->dirname)) {
+					mkdir($this->dirname, 0777, TRUE);
+				}
+
 				file_put_contents($destFilepath, $data);
 			}
 		}
