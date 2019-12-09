@@ -397,7 +397,6 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 			}
 
 			$publication = new Publication;
-			$literatureReference->addPublication($publication);
 
 			/* Type */
 			$typeElement = self::findElementByXPath(
@@ -419,6 +418,11 @@ class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
 			if ($remarksElement) {
 				$remarksStr = trim($remarksElement);
 				$publication->setRemarks($remarksStr);
+			}
+
+
+			if (!empty($publication->getType())) {
+				$literatureReference->addPublication($publication);
 			}
 		}
 	}
