@@ -67,8 +67,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		'not_assigned' => '(not assigned)',
 	];
 
-	private static $inventoryNumberReplaceArr = [
-		'CDA.',
+	private static $inventoryNumberReplaceRegExpArr = [
+		'/^CDA\./',
 	];
 
 	private function __construct() {}
@@ -462,8 +462,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($inventoryNumberElement) {
 			$inventoryNumberStr = trim($inventoryNumberElement);
-			$cleanInventoryNumberStr = str_replace(
-				self::$inventoryNumberReplaceArr,
+			$cleanInventoryNumberStr = preg_replace(
+				self::$inventoryNumberReplaceRegExpArr,
 				'',
 				$inventoryNumberStr,
 			);
@@ -910,8 +910,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($exhibitionHistoryElement) {
 			$exhibitionHistoryStr = trim($exhibitionHistoryElement);
-			$cleanExhibitionHistoryStr = str_replace(
-				self::$inventoryNumberReplaceArr,
+			$cleanExhibitionHistoryStr = preg_replace(
+				self::$inventoryNumberReplaceRegExpArr,
 				'',
 				$exhibitionHistoryStr,
 			);
@@ -926,8 +926,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($exhibitionHistoryElement) {
 			$exhibitionHistoryStr = trim($exhibitionHistoryElement);
-						$cleanExhibitionHistoryStr = str_replace(
-				self::$inventoryNumberReplaceArr,
+			$cleanExhibitionHistoryStr = preg_replace(
+				self::$inventoryNumberReplaceRegExpArr,
 				'',
 				$exhibitionHistoryStr,
 			);
@@ -1491,6 +1491,10 @@ class GraphicsXMLInflator implements IGraphicInflator {
 	}
 
 
+	/*
+	  TODO: Move out into helper -> dynamically settable at runtime if possible
+	    -> composition over inheritance
+	*/
 	private static function splitLanguageString(string $langStr): array {
 		$splitLangStrs = array_map('trim', explode(self::$langSplitChar, $langStr));
 		$cntItems = count($splitLangStrs);
