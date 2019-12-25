@@ -1,0 +1,142 @@
+
+CrystalReport
+	Group* # entspricht einer Grafik
+		GroupHeader # Enthält immer genau 41 Section-Elemente
+
+			Section[SectionNumber="0"] # -> ID
+				Field[FieldName="{ReferenceMaster.ReferenceID}"]
+					FormattedValue
+
+			Section[SectionNumber="1"] # -> Referenznummer
+				Field[FieldName="{@Verweisnummer}"]
+					FormattedValue
+
+			Section[SectionNumber="2"] # -> Titel
+				Field[FieldName="{ReferenceMaster.Title}"]
+					FormattedValue
+
+			Section[SectionNumber="3"] # -> Untertitel
+				Field[FieldName="{ReferenceMaster.Subtitle}"]
+					FormattedValue
+
+			Section[SectionNumber="4"] # -> Kurztitel
+				Field[FieldName="{ReferenceMaster.Heading}"]
+					FormattedValue
+
+			Section[SectionNumber="5"] # -> Journal
+				Field[FieldName="{ReferenceMaster.Journal}"]
+					FormattedValue
+
+			Section[SectionNumber="6"] # -> Serie
+				Field[FieldName="{ReferenceMaster.Series}"]
+					FormattedValue
+
+			Section[SectionNumber="7"] # -> Band
+				Field[FieldName="{ReferenceMaster.Volume}"]
+					FormattedValue
+
+			Section[SectionNumber="8"] # -> Ausgabe
+				Field[FieldName="{ReferenceMaster.Edition}"]
+					FormattedValue
+
+			Section[SectionNumber="9"] # -> Erscheinungsort
+				Field[FieldName="{ReferenceMaster.PlacePublished}"]
+					FormattedValue
+
+			Section[SectionNumber="10"] # -> Erscheinungsjahr
+				Field[FieldName="{ReferenceMaster.YearPublished}"]
+					FormattedValue
+
+			Section[SectionNumber="11"] # -> Seiten
+				Field[FieldName="{ReferenceMaster.NumOfPages}"]
+					FormattedValue
+
+			Section[SectionNumber="12"] # -> Datum
+				Field[FieldName="{ReferenceMaster.DisplayDate}"]
+					FormattedValue
+
+			Section[SectionNumber="13"] # -> Ereignis
+				Subreport
+					Details*
+						Section[SectionNumber="0"] # -> Ereignistyp
+							Field[FieldName="{RefDates.EventType}"]
+								FormattedValue
+
+						Section[SectionNumber="1"] # -> Datumstext
+							Field[FieldName="{RefDates.DateText}"]
+								FormattedValue
+
+						Section[SectionNumber="2"] # -> Anfangsdatum
+							Field[FieldName="{@Anfangsdatum}"]
+								FormattedValue
+
+						Section[SectionNumber="3"] # -> Enddatum
+							Field[FieldName="{@Enddatum}"]
+								FormattedValue
+
+						Section[SectionNumber="4"] # -> Bermerkungen
+							Field[FieldName="{RefDates.Remarks}"]
+								FormattedValue
+
+			Section[SectionNumber="14"] # -> Urheberrecht
+				Field[FieldName="{ReferenceMaster.Copyright}"]
+					FormattedValue
+
+			Section[SectionNumber="15"] # -> Autor
+				Subreport
+					Details*
+						Text[Name="Text2"]
+							TextValue
+
+						Section[SectionNumber="0"]
+							Field[FieldName="{@PersonSuffix}"]
+								FormattedValue
+
+			Section[SectionNumber="16"] # -> Publikationen
+				Subreport
+					Details*
+						Section[SectionNumber="0"] # -> Nicht wichtig, da Feldtitel
+
+						Section[SectionNumber="1"] # -> Publikationstyp
+							Field[FieldName="{Terms.Term}"]
+								FormattedValue
+
+						Section[SectionNumber="2"] # -> Bemerkung
+							Field[FieldName="{ThesXrefs.Remarks}"]
+								FormattedValue
+
+			Section[SectionNumber="17"] # -> ID
+				Subreport
+					Details
+						Section[SectionNumber="0"]
+							Field[FieldName="{@AltNum}"]
+								FormattedValue
+
+
+		Group[Level="2"] # -> Verbundene Objekte
+			Details
+				Section
+					Subreport
+						Details*
+							Section[SectionNumber="0"] # -> Inventarnummer
+								Field[FieldName="{@Inventarnummer}"]
+									FormattedValue
+
+							Section[SectionNumber="1"] # -> Katalognummner
+								Field[FieldName="{RefXRefs.CatalogueNumber}"]
+									FormattedValue
+
+							Section[SectionNumber="2"] # -> Seitenzahl
+								Field[FieldName="{RefXRefs.PageNumber}"]
+									FormattedValue
+
+							Section[SectionNumber="3"] # -> Abbildungsnummber
+								Field[FieldName="{RefXRefs.Appendage}"]
+									FormattedValue
+
+							Section[SectionNumber="4"] # -> Bemerkungen
+								Field[FieldName="{RefXRefs.Remarks}"]
+									FormattedValue
+
+
+

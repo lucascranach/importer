@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://th-koeln.github.io/cranach/</loc>
+    <lastmod>2016-11-05T21:05:33+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://th-koeln.github.io/cranach/autoren/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://th-koeln.github.io/cranach/betreuer/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://th-koeln.github.io/cranach/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://th-koeln.github.io/cranach/keywords/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://th-koeln.github.io/cranach/module/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://th-koeln.github.io/cranach/papers/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://th-koeln.github.io/cranach/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://th-koeln.github.io/cranach/years/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

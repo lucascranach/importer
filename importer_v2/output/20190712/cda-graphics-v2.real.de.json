@@ -1,0 +1,3033 @@
+{
+    "items": [
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Exhib. Cat. D\u00fcsseldorf 2017, 155, No. 65]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Hl. Christophorus",
+                    "remarks": "[Exhib. Cat. D\u00fcsseldorf 2017, 155, No. 65]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": "I. Zustand (Hollstein Ia)"
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "DE_SMKP_KA-FP-352D",
+            "objectId": 929035,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 28,7 x 19 cm\n[Exhib. Cat. D\u00fcsseldorf 2017, 155, No. 65]",
+            "dating": {
+                "dated": "um 1509",
+                "begin": 1504,
+                "end": 1514,
+                "remarks": "vermutlich vordatiert \"1506\" [Exhib. Cat. D\u00fcsseldorf 2017, 155, No. 65]",
+                "historicEventInformations": []
+            },
+            "description": "Clair-obscur-Holzschnitt gedruckt von zwei Bl\u00f6cken, in rot-braun",
+            "provenance": "",
+            "medium": "Druck auf Papier",
+            "signature": "Bezeichnet links oben am Baum, Tafel: \"LC\", Schlangensignet (mit aufstehenden Fl\u00fcgeln) und datiert \"1506\"",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "D\u00fcsseldorf 2017, Nr. 65",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [
+                {
+                    "title": "Exhib. Cat. D\u00fcsseldorf 2017",
+                    "pageNumber": "154, 155",
+                    "referenceId": "29687"
+                },
+                {
+                    "title": "Exhib. Cat. Hamburg 2003",
+                    "pageNumber": "38, 169",
+                    "referenceId": "464"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010205",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Form > 010205"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010215",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Form > 010215"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010506",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010506"
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "D\u00fcsseldorf",
+                    "path": "Deutschland > Nordrhein-Westfalen > D\u00fcsseldorf > D\u00fcsseldorf"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "D\u00fcsseldorf",
+                    "path": "Deutschland > Nordrhein-Westfalen > D\u00fcsseldorf > D\u00fcsseldorf"
+                }
+            ],
+            "repository": "Kunstpalast",
+            "owner": "Kunstakademie D\u00fcsseldorf",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.56.79"
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.283.58"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "28.70"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Museum Kunstpalast, revised 2018]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Kreuzigung",
+                    "remarks": "[Exhib. Cat. D\u00fcsseldorf 2017, No. 40]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "DE_SMKP_KA-FP_349D",
+            "objectId": 935100,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 24,9 x 17,3 cm\n[Museum Kunstpalast, revised 2018]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[2. Blatt der Folge datiert]",
+                "historicEventInformations": []
+            },
+            "description": "",
+            "provenance": "",
+            "medium": "Druck auf Papier\n[cda 2018]",
+            "signature": "In der rechten, unteren Ecke bezeichnet: Schlangensignet mit aufstehenden Fl\u00fcgeln",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "D\u00fcsseldorf 2017, Nr. 40",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [
+                {
+                    "type": "Beschreibung\/ Interpretation\/ Kommentare",
+                    "text": "Neben einer nur in geringer Auflage erschienenen Buchausgabe mit erg\u00e4nzendem Text scheint die Folge vor allem in kompletten S\u00e4tzen von Einzelblattdrucken vertrieben oder als Geschenke des Hofes vergeben worden zu sein.\n[Exhib. Cat. D\u00fcsseldorf 2017, 128, No. 40]",
+                    "year": 2017
+                }
+            ],
+            "publications": [
+                {
+                    "title": "Exhib. Cat. D\u00fcsseldorf 2017",
+                    "pageNumber": "125",
+                    "referenceId": "29687"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "D\u00fcsseldorf",
+                    "path": "Deutschland > Nordrhein-Westfalen > D\u00fcsseldorf > D\u00fcsseldorf"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "D\u00fcsseldorf",
+                    "path": "Deutschland > Nordrhein-Westfalen > D\u00fcsseldorf > D\u00fcsseldorf"
+                }
+            ],
+            "repository": "Kunstpalast",
+            "owner": "Kunstakademie D\u00fcsseldorf",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.280.17"
+                },
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.19-21.20"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "24.90"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Christus am \u00d6lberg (Passion Christi, 1)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-127",
+            "objectId": 945987,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 24,7 \u00d7 17,1 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "",
+            "provenance": "- Hofbibliothek\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "Bartsch VII.280.7; Hollstein German VI.21.10; Jahn S. 218; TIB 11.325.7 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "24.70"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Christus am \u00d6lberg (Passion Christi, 1)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-128r",
+            "objectId": 945988,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 22,7 \u00d7 16,9 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "R\u00fcckseitig ist die Gefangennahme Christi abgebildet.\n[cda 2019]",
+            "provenance": "- Albertina, Altbestand\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "Bartsch VII.280.7; Hollstein German VI.21.10; Jahn S. 218",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "22.70"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Gefangennahme (Passion Christi, 2)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-128v",
+            "objectId": 945989,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 22,7 \u00d7 16,9 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "Christus am \u00d6lberg ist auf der R\u00fcckseite abgebildet.\n[cda 2019]",
+            "provenance": "- Albertina, Altbestand\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "In der unteren rechten Ecke bezeichnet: Monogramm \"LC\", Schlangensignet (mit aufstehenden Fl\u00fcgeln) und datiert \"1509\"",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "Bartsch VII.280.8; Hollstein German VI.21.11; Jahn S. 220",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "22.70"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Gefangennahme (Passion Christi, 2)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-129",
+            "objectId": 945990,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 24,3 \u00d7 16,9 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "",
+            "provenance": "- Hofbibliothek\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "In der unteren rechten Ecke bezeichnet: Monogramm \"LC\", Schlangensignet (mit aufstehenden Fl\u00fcgeln) und datiert \"1509\"",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "Bartsch VII.280.8; Hollstein German VI.21.11; Jahn S. 220; TIB 11.326.8 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "24.30"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Christus vor Kaiphas (Passion Christi, 4)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-130",
+            "objectId": 945991,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 25,1 \u00d7 17,2 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "",
+            "provenance": "- Hofbibliothek\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "Bartsch VII.280.9; Hollstein German VI.21.13 (dort Bartsch 10); Jahn S. 224",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.10"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Christus vor Annas (Passion Christi, 3)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-131",
+            "objectId": 945992,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 24,7 \u00d7 16,8 cm\n\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "",
+            "provenance": "- Albertina, Altbestand\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "Bartsch VII.280.10; Hollstein German VI.21.12 (dort Bartsch 9=; Jahn S. 222; TIB 11.328.10 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "24.70"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Christus vor Herodes (Passion Christi, 5)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-132",
+            "objectId": 945993,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 24,9 \u00d7 17,2 cm\n\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "",
+            "provenance": "- Hofbibliothek\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "Bartsch VII.280.11; Hollstein German VI.21.14; Jahn S. 226; TIB 11.329.11 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "24.90"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Gei\u00dfelung (Passion Christi, 6)",
+                    "remarks": ""
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-133",
+            "objectId": 945994,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 25,2 \u00d7 17,1 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "",
+            "provenance": "- Hofbibliothek\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Am rechten, unteren Rand bezeichnet: Schlangensignet (mit aufstehenden Fl\u00fcgeln)",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "TIB 11.330.12 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.20"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Dornenkr\u00f6nung (Passion Christi, 7)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-134",
+            "objectId": 945995,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 25,1 \u00d7 17,3 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "",
+            "provenance": "- Hofbibliothek\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "TIB 11.331.13 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.10"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Ecce Homo (Passion Christi, 8)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-135",
+            "objectId": 945996,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 24,9 \u00d7 17,1 cm\n\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "",
+            "provenance": "- Hofbibliothek\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "TIB 11.332.14 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "24.90"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Handwaschung des Pilatus (Passion Christi, 9)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-136",
+            "objectId": 945997,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 25,1 \u00d7 17,3 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "",
+            "provenance": "- Hofbibliothek\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "TIB 11.333.15 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.10"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Kreuztragung (Passion Christi, 10)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-137",
+            "objectId": 945998,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 24,8 \u00d7 17 cm\n\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "",
+            "provenance": "- Hofbibliothek\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "TIB 11.334.16 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "24.80"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Kreuzigung (Passion Christi, 11)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-138",
+            "objectId": 945999,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 25 \u00d7 17,2 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "",
+            "provenance": "- Hofbibliothek\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "In der rechten, unteren Ecke bezeichnet: Schlangensignet mit aufstehenden Fl\u00fcgeln",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "TIB 11.335.17 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Beweinung Christi (Passion Christi, 12)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-139",
+            "objectId": 946000,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 25,1 \u00d7 17,2 cm\n\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "",
+            "provenance": "- Hofbibliothek\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "TIB 11.336.18 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.10"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Grablegung (Passion Christi, 13)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-140",
+            "objectId": 946001,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 25 \u00d7 17,1 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "",
+            "provenance": "- Albertina, Altbestand\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "Bartsch VII.280.19; Hollstein German VI.21.22; Jahn S. 242; TIB 11.337.19 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Auferstehung (Passion Christi, 14)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-141",
+            "objectId": 946002,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 25 \u00d7 17,2 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "",
+            "provenance": "- Albertina, Altbestand\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Rechts auf der Mauer bezeichnet: Schlangensignet (mit aufstehenden Fl\u00fcgeln)",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "Bartsch VII.280.20; Hollstein German VI.21.23; Jahn S. 244; TIB 11.338.20 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Christus am \u00d6lberg (Passion Christi, 1)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-142",
+            "objectId": 946003,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 36,2 \u00d7 25,5 cm\n\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": [
+                    {
+                        "eventType": "Datierung",
+                        "text": "nach 1509",
+                        "begin": 1509,
+                        "end": 0,
+                        "remarks": "[cda 2019]"
+                    }
+                ]
+            },
+            "description": "Variante mit dekorativer Rahmung und beschreibendem Text",
+            "provenance": "- Albertina, Altbestand\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "Beschriftung unten: \"1. Mein Vater, ists nicht m\u00fcglich, das dieser Kelch von mir gehe, ich trincke in denn, so gesche dein \/ wille. Matthej xxvi.\"",
+            "markings": "",
+            "relatedWorks": "Bartsch VII.280.7; Hollstein German VI.21.10; Jahn S. 218;",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010504",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010504"
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "36.20"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Gefangennahme (Passion Christi, 2)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-143",
+            "objectId": 946004,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 36,7 \u00d7 25,3 cm\n\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "nach 1509",
+                "begin": 1509,
+                "end": 0,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "Variante mit dekorativer Rahmung und beschreibendem Text",
+            "provenance": "- Albertina, Altbestand\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "In der unteren rechten Ecke bezeichnet: Monogramm \"LC\", Schlangensignet (mit aufstehenden Fl\u00fcgeln) und datiert \"1509\"",
+            "inscription": "Unter der Darstellung: \"2. Der Verrheter Judas hatte inen ein Zeichen gegeben, vnd gesagt, Welchen ich k\u00fcssen werde, \/ der ists, den greiffet. Matth. xxvi.\"",
+            "markings": "",
+            "relatedWorks": "Bartsch VII.280.8; Hollstein German VI.21.11; Jahn S. 220",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010504",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010504"
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "36.70"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Christus vor Herodes (Passion Christi, 5)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-146",
+            "objectId": 946007,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 36,6 \u00d7 25,7 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "nach 1509",
+                "begin": 1509,
+                "end": 0,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "Variante mit dekorativer Rahmung und beschreibendem Text",
+            "provenance": "- Albertina, Altbestand\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "Unter der Abbildung: \"5. Du hettest keine macht vber mich, wenn sie dir nicht were von oben herab gegeben, Darumb der \/ mich dir vberantwortet hat, der hats gr\u00f6sser S\u00fande. Johan. xix.\"",
+            "markings": "",
+            "relatedWorks": "TIB 11.329.11 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010504",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010504"
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "36.60"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Gei\u00dfelung (Passion Christi, 6)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-147",
+            "objectId": 946008,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 36,5 \u00d7 25,7 cm\n\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "nach 1509",
+                "begin": 1509,
+                "end": 0,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "Variante mit dekorativer Rahmung und beschreibendem Text",
+            "provenance": "- Albertina, Altbestand\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Am rechten, unteren Rand bezeichnet: Schlangensignet (mit aufstehenden Fl\u00fcgeln)",
+            "inscription": "Unter der Abbildung: \"6. Die Straff ligt auff im, auff das wir friede hetten, Und durch seine wunden sind wir alle geheilet. \/ Esaie liij.\"",
+            "markings": "",
+            "relatedWorks": "TIB 11.330.12 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010504",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010504"
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "36.50"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Dornenkr\u00f6nung (Passion Christi, 7)",
+                    "remarks": ""
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-148",
+            "objectId": 946009,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 36,3 \u00d7 25,8 cm\n\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "nach 1509",
+                "begin": 1509,
+                "end": 0,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "Variante mit dekorativer Rahmung und beschreibendem Text",
+            "provenance": "- Albertina, Altbestand\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "Unter der Abbildung: \"7. Wir giengen alle in der irre, wie Schafe, ein jgliche sahe auff seinen weg, Aber der HERR warff \/ vnser aller S\u00fande auff in. Esaie liij.\"",
+            "markings": "",
+            "relatedWorks": "TIB 11.331.13 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010504",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010504"
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "36.30"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Ecce Homo (Passion Christi, 8)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-149",
+            "objectId": 946010,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 36,3 \u00d7 25,7 cm\n\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "",
+                "historicEventInformations": []
+            },
+            "description": "Variante mit dekorativer Rahmung und beschreibendem Text",
+            "provenance": "- Hofbibliothek\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "Unter der Abbildung: \"8. Er hatte keine gestalt noch Sch\u00f6ne, wir sahen jn, aber da war keine gestalt, das wir sein hetten m\u00fcgen \/ begeren. Esaie liij.\"",
+            "markings": "",
+            "relatedWorks": "TIB 11.332.14 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010504",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010504"
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "36.30"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Handwaschung des Pilatus (Passion Christi, 9)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-150",
+            "objectId": 946011,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 36,2 \u00d7 25,8 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "nach 1509",
+                "begin": 1509,
+                "end": 0,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "Variante mit dekorativer Rahmung und beschreibendem Text",
+            "provenance": "- Albertina, Altbestand\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "Unter der Abbildung: \"9. Da Pilatus sahe, das er nichts schaffet etc. nam er wasser, wusch die hende, vnd sprach, Ich bin vn= \/ schuldig an dem blut dieses gerechten, Sehet jr zu. Matth. xxvij.\"",
+            "markings": "",
+            "relatedWorks": "TIB 11.333.15 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010504",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010504"
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "36.20"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Kreuztragung (Passion Christi, 10)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-151",
+            "objectId": 946012,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 36,4 \u00d7 25,7 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "nach 1509",
+                "begin": 1509,
+                "end": 0,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "Variante mit dekorativer Rahmung und beschreibendem Text",
+            "provenance": "- Albertina, Altbestand\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "Unter der Abbildung: \"10. Jhesus wandte sich vmb zu den Weibern, vnd sprach, Jr T\u00f6chter von Jerusalem, weinet nicht \/ vber mich, sondern weinet vber euch selbs, vnd ewre Kinder. Luce xxiij.\"",
+            "markings": "",
+            "relatedWorks": "TIB 11.334.16 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010504",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010504"
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "36.40"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Kreuzigung (Passion Christi, 11)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-152",
+            "objectId": 946013,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 36,3 \u00d7 25,9 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "nach 1509",
+                "begin": 1509,
+                "end": 0,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "Variante mit dekorativer Rahmung und beschreibendem Text",
+            "provenance": "- Albertina, Altbestand\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "In der rechten, unteren Ecke bezeichnet: Schlangensignet mit aufstehenden Fl\u00fcgeln",
+            "inscription": "Unter der Abbildung: \"11. Er ist den Ubelthetern gleich gerechnet, vnd hat vieler S\u00fcnde getragen, vnd f\u00fcr die Ubeltheter gebe= \/ ten. Esaie liij.\"",
+            "markings": "",
+            "relatedWorks": "TIB 11.335.17 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010504",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010504"
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "36.30"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Beweinung Christi (Passion Christi, 12)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-153",
+            "objectId": 946014,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 35,9 \u00d7 25,8 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "nach 1509",
+                "begin": 1509,
+                "end": 0,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "Variante mit dekorativer Rahmung und beschreibendem Text",
+            "provenance": "- Albertina, Altbestand\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "Unter der Abbildung: \"12. Er ist vmb vnser missethat willen verwundet, vnd vmb vnser S\u00fcnde willen zuschlagen. Esaie liij.\"",
+            "markings": "",
+            "relatedWorks": "TIB 11.336.18 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010504",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010504"
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "35.90"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Grablegung (Passion Christi, 13)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-154",
+            "objectId": 946015,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 35,6 \u00d7 25,8 cm\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "nach 1509",
+                "begin": 1509,
+                "end": 0,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "Variante mit dekorativer Rahmung und beschreibendem Text",
+            "provenance": "- Albertina, Altbestand\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Keine",
+            "inscription": "Unter der Abbildung: \"13. Er ist begraben wie Gottlosen, vnd gestorben wie ein Reicher. Esaie liij.\"",
+            "markings": "",
+            "relatedWorks": "Bartsch VII.280.19; Hollstein German VI.21.22; Jahn S. 242; TIB 11.337.19 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010504",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010504"
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "35.60"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Albertina, revised 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Titel",
+                    "title": "Die Auferstehung (Passion Christi, 14)",
+                    "remarks": "[Albertina, revised 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "AT_A_DG1929-155",
+            "objectId": 946016,
+            "isVirtual": false,
+            "dimensions": "Blattma\u00df: 36,2 \u00d7 26 cm\n\n[Albertina, revised 2019]",
+            "dating": {
+                "dated": "nach 1509",
+                "begin": 1509,
+                "end": 0,
+                "remarks": "[Albertina, revised 2019]",
+                "historicEventInformations": []
+            },
+            "description": "Variante mit dekorativer Rahmung und beschreibendem Text",
+            "provenance": "- Hofbibliothek\n[Albertina, revised 2019]",
+            "medium": "Druck auf Papier",
+            "signature": "Rechts auf der Mauer bezeichnet: Schlangensignet (mit aufstehenden Fl\u00fcgeln)",
+            "inscription": "Unter der Abbildung: \"14. Gleich wie Jonas war dren tag vnd dren nacht in des Walfischs bauch, Also wird des menschen \/ Son, dren tag vnddren nacht, mitten in der erden sein. Matth. xij.\"",
+            "markings": "",
+            "relatedWorks": "Bartsch VII.280.20; Hollstein German VI.21.23; Jahn S. 244; TIB 11.338.20 (280)",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": [],
+            "additionalTextInformation": [],
+            "publications": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010504",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010504"
+                }
+            ],
+            "locations": [
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                },
+                {
+                    "type": "Standort Cranach Objekt",
+                    "term": "Wien",
+                    "path": "\u00d6sterreich > Wien > Wien"
+                }
+            ],
+            "repository": "Albertina, Wien",
+            "owner": "Albertina, Wien",
+            "sortingNumber": "",
+            "catalogWorkReferences": [],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "36.20"
+            }
+        }
+    ]
+}

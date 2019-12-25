@@ -1,0 +1,5002 @@
+{
+    "items": [
+        {
+            "inventoryNumber": "DE_SMBKSK_66-1898",
+            "objectId": 927563,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "Papier",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt, schwarze Tinte\n- Buchdruck",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [
+                        {
+                            "role": "Bearbeiter\/in",
+                            "name": "Helen Smith"
+                        }
+                    ],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "11. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Horizontale, links ausgebrochene und restaurierte Mittelfalte; angeschmutzt, gebr\u00e4unt \nund stockfleckig. - Quetschfalten.",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "erstellt von",
+                            "name": "Armin Kunz"
+                        }
+                    ],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "11. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "US_MMANY_27-54-27",
+            "objectId": 927875,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "assigned)",
+                            "text": "WZ: sch\u00f6ne Krone.",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [
+                        {
+                            "role": "erstellt von",
+                            "name": "Armin Kunz"
+                        }
+                    ],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "11. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "Papier",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt, schwarze Tinte\n- Buchdruck",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [
+                        {
+                            "role": "Bearbeiter\/in",
+                            "name": "Helen Smith"
+                        }
+                    ],
+                    "processingDates": {
+                        "beginDate": "2018-01-11",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "11. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Schulterumriss sowie zahleiche Schraffurlinien auf Brust retuschiert; einige horizontale Falten.",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "erstellt von",
+                            "name": "Armin Kunz"
+                        }
+                    ],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "11. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "US_MMANY_41-1-163",
+            "objectId": 927881,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "WZ: grosser Ochsenkopf.",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [
+                        {
+                            "role": "erstellt von",
+                            "name": "Armin Kunz"
+                        }
+                    ],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "11. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "offenbar vor Umrissl\u00fccke an Schulter, zahlreiche L\u00fccken in Himmel- und Brustschraffur, scharfer Druck:\nSeitlicher Blattrand stellenweise erg\u00e4nzt, Einfassungslinie durchgehend sorgf\u00e4ltig nachgezogen; fleckig und etwas angeschmutzt.",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "erstellt von",
+                            "name": "Armin Kunz"
+                        }
+                    ],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "12. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "UK_BM_1895-0122-279",
+            "objectId": 928004,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- kleine h\u00f6he Krone\n[Dodgson 1911, 124, 316, 317]",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [
+                        {
+                            "role": "erstellt von",
+                            "name": "Armin Kunz"
+                        }
+                    ],
+                    "processingDates": {
+                        "beginDate": "2018-01-12",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "12. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Text oben abgeschnitten:\nOben z.T. beschnitten; Einfassungslinie seitlich stellenweise angeschnitten; leicht gebr\u00e4untes Papier.",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "erstellt von",
+                            "name": "Armin Kunz"
+                        }
+                    ],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "12. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "UK_BM_O-3-190",
+            "objectId": 928050,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- kleine h\u00f6he Krone\n[Dodgson 1911, 124, 316, 317]",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "12. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Text unten abgeschnitten:\nObere linke Ecke mit Schrift defekt (\"IM\" fehlt), mehrere Risse und L\u00f6cher mit Knickspuren in linker Blatth\u00e4lfte, gr\u00f6sseres Loch links unten; Einfassungslinie seitlich und unten angeschnitten; schmutzig.",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "erstellt von",
+                            "name": "Armin Kunz"
+                        }
+                    ],
+                    "processingDates": {
+                        "beginDate": "2018-01-12",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "12. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-242",
+            "objectId": 928054,
+            "surveys": [
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Rechts Randeinriss; oben im Text berieben, gebr\u00e4unt.",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "erstellt von",
+                            "name": "Armin Kunz"
+                        }
+                    ],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "12. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_HAUMB_AB3-74",
+            "objectId": 928074,
+            "surveys": [
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Restauriert und retouchiert.\n[http:\/\/kk.haum-bs.de\/?id=l-cranach-d-ae-ab3-0074](accessed 10.01.2018)",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "12. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SKD_A 6645",
+            "objectId": 928130,
+            "surveys": [
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Zwei horizontale Falten, vertikal ausgerichtete Knickspuren v.a. am oberen und unteren Rand; fleckig und angeschmutzt. \n\nSchraffuren unten vor Brust schon mit einigen Defekten, zahlreiche aussen in den Himmelsschraffuren, linke obere Ecke der Einfassungslinie bereits hier nurmehr schwach druckend, kleine Randl\u00fccke links oben (ca. 2 mm);\ngute und recht scharfe Drucke.",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "erstellt von",
+                            "name": "Armin Kunz"
+                        }
+                    ],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "15. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SBB_I-L-44",
+            "objectId": 928132,
+            "surveys": [
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Rechts Randeinriss; oben im Text berieben, gebr\u00e4unt.",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "erstellt von",
+                            "name": "Armin Kunz"
+                        }
+                    ],
+                    "processingDates": {
+                        "beginDate": "2018-01-15",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "15. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_KSVC_H64",
+            "objectId": 928140,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "WZ: Ovalkartusche mit dreigeteilter Bl\u00fctenform (nicht bei Briquet).\n[Cat. Coburg 1972, 44, No. 92]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "2018-01-15",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "15. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Zustand: im unteren Rand links sehr kleiner Ausbruch; Erhaltung sehr gut\n[Cat. Coburg 1972, 44, No. 92]",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "15. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "US_NGA_1943-3-2875",
+            "objectId": 928151,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "WZ: kleiner Ochsenkopf mit Antoniuskreuz.",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [
+                        {
+                            "role": "erstellt von",
+                            "name": "Armin Kunz"
+                        }
+                    ],
+                    "processingDates": {
+                        "beginDate": "2018-01-15",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "15. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Text unten abgeschnitten:\nSeitlich angeschnitten; vertikale und horizontale Mittelfalte; st\u00e4rker angeschmutzt.",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "erstellt von",
+                            "name": "Armin Kunz"
+                        }
+                    ],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "15. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_KSW_DK-181-83",
+            "objectId": 928152,
+            "surveys": [
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Randl\u00fccke oben links sowie L\u00fccke im Schulterumriss retuschiert, linke obere Ecke fehlt; Einfassungslinie seitlich angeschnitten; Randdefekte, Knickspuren; st\u00e4rker angeschmutztes Papier.",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "erstellt von",
+                            "name": "Armin Kunz"
+                        }
+                    ],
+                    "processingDates": {
+                        "beginDate": "2018-01-15",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "15. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SGSM_1912-997D",
+            "objectId": 928290,
+            "surveys": [
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Rechte untere Ecke defekt, Risse und Defekte; graubraunes, verschmutztes und etwas fleckiges Blatt; alte Doublierung.\n\nWeitere kleine L\u00fccke im rechten Schulterumriss unterhalb des Halsansatzes, L\u00fccke rechts in grosser bogenf\u00f6rmiger Falte auf Luthers Brust, Einfassungslinie in linker unterer Ecke defekt und fehlend, untere und obere Ecken rechts fehlen; geringe Drucke.",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "erstellt von",
+                            "name": "Armin Kunz"
+                        }
+                    ],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "16. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SMKP_KA-FP-352D",
+            "objectId": 929035,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Farbholzschnitt von zwei Druckbl\u00f6cken; Druck von einem orange-braunen Tonblock (vermutlich Ockerpigmente) sowie einen Druck vom schwarzen Linienblock\n[Exhib. Cat. D\u00fcsseldorf 2017, 60, 61, 155, No. 65]",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2017,
+                        "endDate": "",
+                        "endYear": 2017
+                    },
+                    "signature": {
+                        "date": "23. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_KSVC_1-43-64",
+            "objectId": 929439,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "WZ: keine \n[Cat. Coburg 1972, 34, No. 65]",
+                            "purpose": "",
+                            "remarks": "Wasserzeichen #Watermark"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "23. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock\n[Cat. Coburg 1972, 34, No. 65]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "23. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Zustand: ausgebrochener Rand obenhalb des Buchstabens 'L' im T\u00e4felchen, 3 Randspr\u00fcnge oben rechts\nErhaltung: sehr gut, senkrechte Quetschfalte in der Mitte\n[Cat. Coburg 1972, 34, No. 65]",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "23. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SMKP_KA-FP-350D",
+            "objectId": 929476,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Kupferstich, schwarze Tinte \n[Exhib. Cat. D\u00fcsseldorf 2017, 156, No. 68]",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "23. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SMKP_K-1958-12",
+            "objectId": 929546,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt mit Typendruck: ein Druck vom schwarzen Linienblock\n[Exhib. Cat. D\u00fcsseldorf 2017, 170, No. 78]",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2017,
+                        "endDate": "",
+                        "endYear": 2017
+                    },
+                    "signature": {
+                        "date": "24. Januar 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "US_MMANY_27-54-3",
+            "objectId": 933707,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Waage im Kreis, \u00e4hnlich Briquet 2488\n[Exhib. Cat. Basel 1974, 175, No. 73]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "10. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "NL_RM_RP-P-2005-215",
+            "objectId": 933790,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt, koloriert \n[Exhib. Cat. D\u00fcsseldorf 2017, 108, No. 6]",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2017,
+                        "endDate": "",
+                        "endYear": 2017
+                    },
+                    "signature": {
+                        "date": "11. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-82",
+            "objectId": 933848,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "11. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-83",
+            "objectId": 933888,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Pergament",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt, koloriert",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "12. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "US_MMANY_27-54-23",
+            "objectId": 934765,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "Papier",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt, schwarze Tinte\n- Buchdruck",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "13. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-98",
+            "objectId": 934789,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt von zwei Druckst\u00f6cken",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "16. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 14522 \u00e4hnlich (Cahier): T\u00eate de Boeuf | \u00e0 yeux | croix entre les cornes; Venedig 1492",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "16. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-99",
+            "objectId": 934821,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt von zwei Druckst\u00f6cken",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "16. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 14522 \u00e4hnlich (Cahier): T\u00eate de Boeuf | \u00e0 yeux | croix entre les cornes; Venedig 1492\n[check]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "16. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-76",
+            "objectId": 934890,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Kupferstich",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "18. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-72",
+            "objectId": 934931,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Kupferstich",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "19. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "US_MMANY_26-106-3",
+            "objectId": 934937,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "WZ: Hohe Krone\n[https:\/\/www.metmuseum.org\/art\/collection\/search\/392024?sortBy=Relevance&amp;ft=cranach&amp;offset=100&amp;rpp=20&amp;pos=118] (accessed 10.04.2018)",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "19. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_KSVC_1-41-17",
+            "objectId": 934950,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "WZ: keine \n[Cat. Coburg 1972, 19, No. 18]",
+                            "purpose": "",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "2018-04-20",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "2018-04-20",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Erhaltung: in der Mitte je L\u00e4ngs- und Querfalte noch erkennbar, linker Rand mehrfach hinterlegt, ebenso die \u00fcbrigen R\u00e4nder ausgebessert, kleine Stelle zwischen den beiden B\u00e4umen rechts oben erg\u00e4nzt, mehrere kleine hinterlegte Stellen, R\u00fcckseite braune Farbspuren \n[Cat. Coburg 1972, 19, No. 18]",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "2018-04-20",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_KSVC_1-41-18",
+            "objectId": 934955,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "WZ: kleiner Ocsenkopf (nicht weiter zu erkennen)\n[Cat. Coburg 1972, 19, No. 19]",
+                            "purpose": "",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Zustand: Links oben Randausbruch, am unteren Rand links kleiner Ausbruch\nErhaltung: gut, jedoch schwacher Druck\n[Cat. Coburg 1972, 19, No. 19]",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_KSVC_1-42-21",
+            "objectId": 934956,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "WZ: kleiner Ochsenkopf (schwer erkennbar)\n[Cat. Coburg 1972, 21, No. 23]",
+                            "purpose": "",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Zustand: Vertikalsprung durch den ganzen Holzstock Mitte S\u00e4ule, starke Randausbr\u00fcche rechts unten\nErhaltung: Rand unten Mitte hinterlegt, links in H\u00f6he der ersten Stufe hinterlegte d\u00fcnne Stelle\n[Cat. Coburg 1972, 21 No. 23]",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_KSVC_1-42-22a",
+            "objectId": 934957,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "WZ: keine\n[Cat. Coburg 1972, 21, No. 24]",
+                            "purpose": "",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Zustand: Rand oben drei ausbr\u00fcche und klkeinere Besch\u00e4digungen, 1 cm Fehlstelle, Linien der Wand unterhalb des Kurschwerterwappens 1 cm senkrecht unterbrochen, unterer Rand links und rechts je ein Ausbruch\nErhaltung: gut, rechter Rand beschnitten\n[Cat. Coburg 1972, 21 No. 24]",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_KSVC_1-42-24",
+            "objectId": 934958,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "WZ: keine\n[Cat. Coburg 1972, 21, No. 26]",
+                            "purpose": "",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Zustand: Ausbruch im schwarzen feld des Kurwappens, an Thronstufenecke rechts, Randausbruch links unten\nErhaltung: R\u00fcckseite leichte braune Flecken\n[Cat. Coburg 1972, 21 No. 26]",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_KSVC_1-42-25",
+            "objectId": 934959,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "WZ: keine\n[Cat. Coburg 1972, 22, No. 27]",
+                            "purpose": "",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Zustand: Vertikalsprung im unteren Drittel Mitte, gro\u00dfer Randausbruch Mitte oben\nErhaltung: unten Mitte ausgebesserter kleiner Ri\u00df, unterer Rand etwas beschnitten\n[Cat. Coburg 1972, 22 No. 27]",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_KSVC_1-42-28",
+            "objectId": 934962,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "WZ: keine\n[Cat. Coburg 1972, 22, No. 29]",
+                            "purpose": "",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "Zustand: an der linken Ecke unten Randlinie ausgebrochen \nErhaltung: gut, links oben und rechts unten d\u00fcnne Stelle\n[Cat. Coburg 1972, 22, No. 29]",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "20. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_HAUMB_3195",
+            "objectId": 934964,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "23. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_HAUMB_AB3-14",
+            "objectId": 934989,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "23. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_HAUMB_AB3-25",
+            "objectId": 934998,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "23. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SKD_1908-26",
+            "objectId": 935011,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "23. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SKD_A1892-98",
+            "objectId": 935099,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "2018-04-23",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "23. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SMKP_KA-FP_349D",
+            "objectId": 935100,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "23. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "NL_RM_RP-P-1964-633",
+            "objectId": 935101,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "23. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SKD_A6618",
+            "objectId": 935353,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "25. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SKD_A6617",
+            "objectId": 935468,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "27. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SKD_A6616",
+            "objectId": 935470,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "2018-04-27",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "27. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SKD_A6519",
+            "objectId": 935472,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "27. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "NL_RM_RP-P-OB-4474",
+            "objectId": 935473,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "27. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SKD_A5394",
+            "objectId": 935478,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "30. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SGSM_1926-0172D",
+            "objectId": 935483,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Farbholzschnitt von zwei Druckbl\u00f6cken",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "30. April 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SKD_A8523",
+            "objectId": 935505,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "02. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-187",
+            "objectId": 935512,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt mit Typendruck",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "02. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Wz. Eine Lilie, senkrecht stehend, mit schmalem, aber langem durchgehenden Band\n[http:\/\/sammlungenonline.albertina.at\/?query=Inventarnummer=[DG1929\/187]&showtype=record]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "02. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-188",
+            "objectId": 935592,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt mit Typendruck",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "03. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-190",
+            "objectId": 935593,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt mit Typendruck in Rot",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "03. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SKD_A5391",
+            "objectId": 935598,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "03. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SMKP_KA-FP-360D",
+            "objectId": 935601,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt, schwarze Farbe",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2017,
+                        "endDate": "",
+                        "endYear": 2017
+                    },
+                    "signature": {
+                        "date": "03. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-103",
+            "objectId": 935670,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt, schwarze Tinte",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "08. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Wz verso (Cahier)\n[http:\/\/sammlungenonline.albertina.at\/?query=Inventarnummer=[DG1929\/103]&showtype=record]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "08. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-78",
+            "objectId": 935675,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Fragment: Stange und dreieck, als Anh\u00e4nger einer Ochsenkopf (?)\n[Exhib. Cat. Basel 1974, 91, no. 35]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 1974,
+                        "endDate": "",
+                        "endYear": 1974
+                    },
+                    "signature": {
+                        "date": "21. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Kupferstich",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "08. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-80",
+            "objectId": 935690,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Kupferstich",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "08. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SKD_A5389",
+            "objectId": 935692,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Kupferstich",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "09. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_EKW_EKW001",
+            "objectId": 935744,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "14. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SMKP_K-1928-2871",
+            "objectId": 935881,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt mit Typendruck: ein Druck vom schwarzen Linienblock\n[Exhib. Cat. D\u00fcsseldorf 2017, 170, No. 78]",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2017,
+                        "endDate": "",
+                        "endYear": 2017
+                    },
+                    "signature": {
+                        "date": "15. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SMKP_K-1928-2870",
+            "objectId": 935913,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt mit Typendruck: ein Druck vom schwarzen Linienblock\n[Exhib. Cat. D\u00fcsseldorf 2017, 170, No. 78]",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2017,
+                        "endDate": "",
+                        "endYear": 2017
+                    },
+                    "signature": {
+                        "date": "16. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SMKP_K-1971-1624",
+            "objectId": 935924,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt mit Typendruck: ein Druck vom schwarzen Linienblock",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2017,
+                        "endDate": "",
+                        "endYear": 2017
+                    },
+                    "signature": {
+                        "date": "16. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "DE_SMKP_K-1928-2869",
+            "objectId": 935966,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt mit Typendruck: ein Druck vom schwarzen Linienblock",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2017,
+                        "endDate": "",
+                        "endYear": 2017
+                    },
+                    "signature": {
+                        "date": "17. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-75",
+            "objectId": 935997,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Kupferstich",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "18. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-185",
+            "objectId": 936004,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt, schwarze Tinte",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "18. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Wz verso (Cahier)\n[http:\/\/sammlungenonline.albertina.at\/?query=Inventarnummer=[DG1929\/103]&showtype=record]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "18. Mai 2018",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1927-128",
+            "objectId": 945941,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt; handkoloriert\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "09. April 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-79",
+            "objectId": 945945,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "kleines s\u00e4chsisches Wappen (verwandt Briquet 1203\n[Exhib. Cat. Basel 1974, 91, no. 35]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "21. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-84",
+            "objectId": 945947,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 4995 \u00e4hnlich (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "22. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-87",
+            "objectId": 945950,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Briquet 4896 \u00e4hnlich (Cahier)",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "22. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-90",
+            "objectId": 945953,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 255 \u00e4hnlich (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "23. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-93",
+            "objectId": 945956,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Briquet 12550 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "23. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-97",
+            "objectId": 945960,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Ein Kreis, darin zwei sich \u00fcberschneidenden \"V\"s\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "24. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-101",
+            "objectId": 945962,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Krone mit zweikonturigem B\u00fcgel, der au\u00dfen jeweils mit drei Perlen besetzt ist und von einem Reichsapfel mit ebenfalls zweikonturigem lateinischen Kreuz bekr\u00f6nt wird. Der Reif unten ist einreihig mit drei Perlen verziert: Piccard 53438 \u00e4hnlich\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "24. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-105",
+            "objectId": 945965,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Briquet 4827 (laut Cahier)",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "30. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-107",
+            "objectId": 945967,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "Papier",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "Holzschnitt (Clair-obscur-Holzschnitt), von zwei Platten\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "11. April 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-109",
+            "objectId": 945969,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Briquet 5940 \u00e4hnlich (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "31. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-112",
+            "objectId": 945972,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Briquet 6903 \u00e4hnlich (laut Cahier)\n[Albertina, Wien, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "13. M\u00e4rz 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-115",
+            "objectId": 945975,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Briquet 14203 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "04. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-123",
+            "objectId": 945983,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 12299 \u00e4hnlich (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "11. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-128r",
+            "objectId": 945988,
+            "surveys": [
+                {
+                    "type": "Condition Report",
+                    "project": "",
+                    "overallAnalysis": "- upper margin cropped\n[cda 2019]",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "written by",
+                            "name": "Helen Smith"
+                        }
+                    ],
+                    "processingDates": {
+                        "beginDate": "2019-02-12",
+                        "beginYear": null,
+                        "endDate": "2019-02-12",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "12. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Zustandsprotokoll",
+                    "project": "",
+                    "overallAnalysis": "-oben beschnitten\n[cda 2019]",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "Bearbeiter\/in",
+                            "name": "Helen Smith"
+                        }
+                    ],
+                    "processingDates": {
+                        "beginDate": "2019-02-12",
+                        "beginYear": null,
+                        "endDate": "2019-02-12",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "12. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-129",
+            "objectId": 945990,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 12334 \u00e4hnlich (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "13. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-131",
+            "objectId": 945992,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 14718 \u00e4hnlich (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "13. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-138",
+            "objectId": 945999,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 15155 \u00e4hnlich (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "15. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-141",
+            "objectId": 946002,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 15155 \u00e4hnlich (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "15. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-142",
+            "objectId": 946003,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Briquet 146 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "12. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-143",
+            "objectId": 946004,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 146 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "15. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-144",
+            "objectId": 946005,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 146 (laut Cahier)\n[Albertina, evised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "15. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-145",
+            "objectId": 946006,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 146 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "15. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-146",
+            "objectId": 946007,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 146 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "15. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-147",
+            "objectId": 946008,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 146 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "14. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-148",
+            "objectId": 946009,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 146 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "14. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-149",
+            "objectId": 946010,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 146 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "14. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-150",
+            "objectId": 946011,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 146 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "14. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-151",
+            "objectId": 946012,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 146 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "14. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-152",
+            "objectId": 946013,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 146 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "15. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-153",
+            "objectId": 946014,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 146 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "15. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-154",
+            "objectId": 946015,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 146 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "15. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-155",
+            "objectId": 946016,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 146 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "15. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-158",
+            "objectId": 946019,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- lt. Cahier: Briquet 146\n[Albertina, revised 2019]",
+                            "purpose": "Technical Examination",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "06. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-159",
+            "objectId": 946020,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- lt. Cahier: Briquet 146\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "07. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-160",
+            "objectId": 946021,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- lt. Cahier: Briquet 146\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "15. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-181",
+            "objectId": 946042,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 14547 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "22. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-186",
+            "objectId": 946046,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt (Clair-obscur-Holzschnitt), von zwei Platten\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "23. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-189",
+            "objectId": 946047,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Eine Lilie, senkrecht stehend, mit schmalem, aber langem durchgehenden Band\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "10. April 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-191",
+            "objectId": 946048,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 5014 \u00e4hnlich (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "24. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-192",
+            "objectId": 946049,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 5034 \u00e4hnlich (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "24. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-198",
+            "objectId": 946055,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 15450 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "31. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-203",
+            "objectId": 946060,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 15450 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "04. Juni 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-205",
+            "objectId": 946062,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 15450 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "05. Juni 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-206",
+            "objectId": 946063,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 15450 (laut Cahier)\n\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "30. September 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-207",
+            "objectId": 946064,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 12357 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "28. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-208",
+            "objectId": 946065,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 12357 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "29. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-209",
+            "objectId": 946066,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 5013 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "29. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-212",
+            "objectId": 946069,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 12378 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "31. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-213",
+            "objectId": 946070,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 12357 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "31. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-214",
+            "objectId": 946071,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 12357 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "03. Juni 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-215",
+            "objectId": 946072,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 12357 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "03. Juni 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-216",
+            "objectId": 946073,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 12357 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "04. Juni 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-217",
+            "objectId": 946074,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 5822 \u00e4hnlich (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "04. Juni 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-218",
+            "objectId": 946075,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 5819 \u00e4hnlich (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "05. Juni 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-219",
+            "objectId": 946076,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 5819 \u00e4hnlich (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "05. Juni 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-220",
+            "objectId": 946077,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 12357 (laut Cahier)\n\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": null,
+                    "signature": {
+                        "date": "30. September 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-229",
+            "objectId": 946086,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Wappen mit Kreuz undeutlich\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "03. Juni 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-235",
+            "objectId": 946092,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "- Briquet 4921 (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "13. Juni 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-239",
+            "objectId": 946096,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Briquet 4964 \u00e4hnlich (laut Cahier)\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "05. Juli 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "AT_A_DG1929-253",
+            "objectId": 946100,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- papier",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt (Clair-obscur-Holzschnitt), von zwei Platten\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "10. Juli 2019",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Ein zweikonturiger Pfeil senkrecht stehend, unten mit Befiederung, links der Buchstabe \"G\" und rechts der Buchstabe \"L\": Piccard 123336 \u00e4hnlich\n[Albertina, revised 2019]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2019,
+                        "endDate": "",
+                        "endYear": 2019
+                    },
+                    "signature": {
+                        "date": "10. Juli 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "GWN_LC_HVI-5_4",
+            "objectId": 946475,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Kupferstich",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "18. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "GWN_LC_HVI-80_104",
+            "objectId": 948144,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt, schwarze Tinte",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "30. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Wz verso (Cahier)\n[http:\/\/sammlungenonline.albertina.at\/?query=Inventarnummer=[DG1929\/103]&showtype=record]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "30. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "GWN_LC_HVI-81_105",
+            "objectId": 948223,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt, schwarze Farbe",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2017,
+                        "endDate": "",
+                        "endYear": 2017
+                    },
+                    "signature": {
+                        "date": "31. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "GWN_LC_HVI-53_77",
+            "objectId": 948345,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt mit Typendruck: ein Druck vom schwarzen Linienblock\n[Exhib. Cat. D\u00fcsseldorf 2017, 170, No. 78]",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2017,
+                        "endDate": "",
+                        "endYear": 2017
+                    },
+                    "signature": {
+                        "date": "01. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "GWN_LC_HVI-10_1",
+            "objectId": 948652,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "2019-02-05",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "05. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "GWN_LC_HVI-61_84",
+            "objectId": 948787,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "2019-02-06",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "06. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "GWN_LC_HVI-8_7",
+            "objectId": 954608,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Kupferstich",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "06. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "GWN_LC_HVI-59_82",
+            "objectId": 955461,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "2019-05-17",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "17. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "GWN_LC_HVI-18_8",
+            "objectId": 955708,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "2019-05-23",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "23. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "GWN_LC_HVI-62_85",
+            "objectId": 955717,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt, schwarze Tinte",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "23. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Wz verso (Cahier)\n[http:\/\/sammlungenonline.albertina.at\/?query=Inventarnummer=[DG1929\/103]&showtype=record]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "23. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "inventoryNumber": "GWN_LC_HVI-99_122",
+            "objectId": 955754,
+            "surveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt mit Typendruck in Rot",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "24. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        }
+    ]
+}

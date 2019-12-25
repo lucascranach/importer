@@ -1,0 +1,3439 @@
+{
+    "items": [
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[Exhib. Cat. D\u00fcsseldorf 2017, 155, No. 66]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Hl. Christophorus",
+                    "remarks": "[cda 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "LC_HVI-56_79",
+            "objectId": 940729,
+            "isVirtual": true,
+            "dimensions": "Blockma\u00df: 28,1 x 19,7 cm (+ - 5 mm)\n[cda 2019]",
+            "dating": {
+                "dated": "1506",
+                "begin": 1501,
+                "end": 1511,
+                "remarks": "[vordatiert in Block]",
+                "historicEventInformations": [
+                    {
+                        "eventType": "Auflage",
+                        "text": "1554",
+                        "begin": 1549,
+                        "end": 1559,
+                        "remarks": "Datierung im Block entfernt; mit Text von Johann Stigel und \"1554\" datiert"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1556",
+                        "begin": 1551,
+                        "end": 1561,
+                        "remarks": "Datierung im Block entfernt; mit Text von Johann Stigel und datiert \"1556\""
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1556",
+                        "begin": 1551,
+                        "end": 1561,
+                        "remarks": "Datierung im block entfernt; mit Text rechts; datiert \"1556\""
+                    },
+                    {
+                        "eventType": "Dating",
+                        "text": "1509",
+                        "begin": 1504,
+                        "end": 1514,
+                        "remarks": "[cda 2019]"
+                    }
+                ]
+            },
+            "description": "Cranach stellt den heiligen Christophorus in einer bergigen Landschaft mit breitem Fluss dar, der dem Bild Tiefe verleiht. In seinem Gesicht ist deutlich die Anstrengung zu erkennen, der es bedarf, um das Jesuskind \u00fcber den Fluss zu tragen. Am Ufer im rechten Hintergrund steht ein Eremit mit Laterne. Die kurf\u00fcrstlichen Wappen, die an den Zweigen oben rechts h\u00e4ngen, legen nahe, dass der Holzschnitt von Friedrich III. dem Weisen in Auftrag gegeben wurde.\nUrspr\u00fcnglich war der Block auf 1506 datiert, doch wurde die Datierung sp\u00e4ter entfernt, was dem 2. Zustand entspricht. K\u00fcnstlerischer Wettstreit zwischen Cranach und seinen Zeitgenossen f\u00fchrte zur Entwicklung des Clair-obscur-Holzschnittes, bei dem unter Verwendung eines Tonblockes Lichth\u00f6hungen erzeugt wurden, indem diese Bereiche des Papiers wei\u00df blieben. Diese Erfindung mag Cranach dazu angeregt haben, den ersten Zustand um zwei Jahre vorzudatieren. Die Datierung ist zudem zweifelhaft, da Cranach das Wappen mit der Schlange, wie sie auf den ersten Drucken abgebildet ist, erst 1508 von Kurf\u00fcrst Friedrich erhielt und es vor 1509 auf keinem anderen Druck nachzuweisen ist.\nWahrscheinlich ist, dass Cranach von der in Augsburg gemachten Erfindung des Tonblocks erfuhr, als er 1508 aus den Niederlanden zur\u00fcckkehrte und dann seine eigene Version des hl. Christopherus um 1509 produzierte.\n\n1. Zustand [Dodgson 1911, 295-296, 61a-c] [Hollstein 56.79]:\na. mit Datierung 1506, Clair-obscur-Holzschnitt gedruckt von zwei Bl\u00f6cken, in rot-braun\nb. wie oben aber nur der Linien-Block\n\n2. Zustand [Hollstein 56.79]:\na. die Datierung unterhalb der Schlange entfernt, nur der Linienblock; oben: \"AdImaginem Divi\/ Christophori.\"; unten: \"In Imaginem Divi Christophori\" und 26 Verse von Johann Stigel in zwei Spalten 1554\nb. wie a. aber mit Datierung 1556\nc. mit 86 Zeilen Buchdruck rechts und der Datierung 1556\nd. mit der Datierung 1560 [Schuchardt 1870, 224]\ne. Datierung entfernt. Clair-obscur gedruckt sowohl in orange-braun als auch in schiefergrau.\n\n[Geisberg 1930, 594] zufolge: 1. Zustand - der Lichtreflex auf dem Knie ist wei\u00df; 2. Zustand - der Lichtreflex auf dem Knie hat mittig eine Linie",
+            "provenance": "",
+            "medium": "",
+            "signature": "Bezeichnet im Block, links oben am Baum Tafel: \"LC\", Schlangensignet (mit aufstehenden Fl\u00fcgeln) und datiert \"1506\" (5 spiegelverkehrt), I. Zustand\n\nsp\u00e4ter Datum entfernt, II. Zustand",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "CDA.G_DE_SMKP_KA-FP-352D",
+            "bibliography": "",
+            "references": [
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-104",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-105",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-106",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-107",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "DE_SMKP_KA-FP-352D",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "DE_KSVC_1-43-64",
+                    "remark": ""
+                }
+            ],
+            "additionalTextInformation": [
+                {
+                    "type": "Beschreibung\/ Interpretation\/ Kommentare",
+                    "text": "W\u00e4hrend sich auf den ersten Abz\u00fcgen die Datierung 1506 findet, wurde die Jahreszahl sp\u00e4ter aus dem Druckstock herausgeschnitten, was dem zweiten Zustand des Holzschnitts entspricht. Bereits Eduard Flechsig hat vermutet, dass die Grafik erst 1509 entstanden ist und anf\u00e4nglich vordatiert wurde [...]. Dies k\u00f6nnte mit dem verwendeten Verfahren des Farbholzschnitts in Zusammenhang stehen. [...] Durch die Vordatierung hatte Cranach m\u00f6glicherweise versucht, die Entwicklung der auch von Hans Burgkmair genutzten Technik f\u00fcr sich zu reklamieren.\n[Exhib. Cat. D\u00fcsseldorf 2017, 155, No. 65]",
+                    "year": 2017
+                }
+            ],
+            "publications": [
+                {
+                    "title": "Bartsch 1808",
+                    "pageNumber": "283",
+                    "referenceId": "241"
+                },
+                {
+                    "title": "Dodgson 1911",
+                    "pageNumber": "295, 296",
+                    "referenceId": "346"
+                },
+                {
+                    "title": "Exhib. Cat. Basel 1974",
+                    "pageNumber": "546",
+                    "referenceId": "160"
+                },
+                {
+                    "title": "Hollstein 1959",
+                    "pageNumber": "56",
+                    "referenceId": "736"
+                },
+                {
+                    "title": "Jahn, Bernhard 1972",
+                    "pageNumber": "281, 335",
+                    "referenceId": "1939"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010501"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030110",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Inhalt > Christliche Religion \/ Bibel > Heilige, Aposteln, Propheten > M\u00e4nnliche Heilige > 010403030110"
+                }
+            ],
+            "locations": [],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.283.58"
+                },
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.56.79"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "19.70",
+                "height": "29.30"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Christus am \u00d6lberg (aus der Passion Christi, Folge von 14 Holzschnitten)",
+                    "remarks": "[cda 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "LC_HVI-19-21_10",
+            "objectId": 940731,
+            "isVirtual": true,
+            "dimensions": "Blockma\u00df: 25 x 17,2 cm (+- 5 mm)\n[cda 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Titelblock und 2. Block datiert]",
+                "historicEventInformations": [
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5350]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1616",
+                        "begin": 1611,
+                        "end": 1621,
+                        "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1509",
+                        "begin": 1504,
+                        "end": 1514,
+                        "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
+                    },
+                    {
+                        "eventType": "Edition",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4780; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1540",
+                        "begin": 1535,
+                        "end": 1545,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4782; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4786; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5354; accessed 11-07-2019]"
+                    }
+                ]
+            },
+            "description": "Die Darstellung von Christus am \u00d6lberg bildet den ersten Teil der \"Passion Christi\", einer Serie von 14 Holzschnitten.\nAus dieser Serie ist nur die zweite Szene mit dem Monogramm LC, dem Schlangensignet und der Datierung versehen. Drei weitere Holzschnitte sind mit der gefl\u00fcgelten Schlange bezeichnet: die Gei\u00dfelung, die Kreuzigung und die Auferstehung.\nDie Drucke wurden sowohl in Einzelblattauflagen als auch in B\u00fcchern verbreitet. Zwischen 1509 und 1616 sind zahlreiche Auflagen dokumentiert.\n[cda 2019]",
+            "provenance": "",
+            "medium": "",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "CDA.G_AT_A_DG1929-127",
+            "bibliography": "",
+            "references": [
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-127",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-128r",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-142",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "DE_KSVC_1-41-17",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_11",
+                    "remark": ""
+                }
+            ],
+            "additionalTextInformation": [],
+            "publications": [
+                {
+                    "title": "Bartsch 1808",
+                    "pageNumber": "280-281",
+                    "referenceId": "241"
+                },
+                {
+                    "title": "Dodgson 1911",
+                    "pageNumber": "298, 299",
+                    "referenceId": "346"
+                },
+                {
+                    "title": "Exhib. Cat. Basel 1974",
+                    "pageNumber": "470-476",
+                    "referenceId": "160"
+                },
+                {
+                    "title": "Hollstein 1959",
+                    "pageNumber": "19, 21",
+                    "referenceId": "736"
+                },
+                {
+                    "title": "Jahn, Bernhard 1972",
+                    "pageNumber": "216, 217, 218, 219",
+                    "referenceId": "1939"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Form > 010212"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010501"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020405",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Inhalt > Christliche Religion \/ Bibel > Neues Testament > Die Passion > 010403020405"
+                }
+            ],
+            "locations": [],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.19-21.10"
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.280.7"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Gefangennahme (aus der Passion Christi, Folge von 14 Holzschnitten)",
+                    "remarks": "[cda 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "LC_HVI-19-21_11",
+            "objectId": 940749,
+            "isVirtual": true,
+            "dimensions": "Blockma\u00df: 25 x 17,2 cm (+- 5 mm)\n[cda 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Titelblock und 2. Block datiert]",
+                "historicEventInformations": [
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5350]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1616",
+                        "begin": 1611,
+                        "end": 1621,
+                        "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1509",
+                        "begin": 1504,
+                        "end": 1514,
+                        "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4780; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1540",
+                        "begin": 1535,
+                        "end": 1545,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4782; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4786; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5354; accessed 11-07-2019]"
+                    }
+                ]
+            },
+            "description": "Die Gefangennahme von Christus ist das zweite Motiv der \"Passion Christi\", einer Serie von 14 Holzschnitten.\nAus dieser Serie ist nur diese Szene mit dem Monogramm LC, dem Schlangensignet und der Datierung versehen. Drei weitere Holzschnitte sind mit der gefl\u00fcgelten Schlange bezeichnet: die Gei\u00dfelung, die Kreuzigung und die Auferstehung.\nDie Drucke wurden sowohl in Einzelblattauflagen als auch in B\u00fcchern verbreitet. Zwischen 1509 und 1616 sind zahlreiche Auflagen dokumentiert.",
+            "provenance": "",
+            "medium": "",
+            "signature": "Im Block bezeichnet, untere rechte Ecke: Monogramm \"LC\", Schlangensignet (mit aufstehenden Fl\u00fcgeln) und datiert \"1509\"",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "CDA.G_AT_A_DG1929-129",
+            "bibliography": "",
+            "references": [
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-143",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-129",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-128v",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "DE_KSVC_1-41-18",
+                    "remark": ""
+                }
+            ],
+            "additionalTextInformation": [],
+            "publications": [
+                {
+                    "title": "Bartsch 1808",
+                    "pageNumber": "280-281",
+                    "referenceId": "241"
+                },
+                {
+                    "title": "Dodgson 1911",
+                    "pageNumber": "299",
+                    "referenceId": "346"
+                },
+                {
+                    "title": "Exhib. Cat. Basel 1974",
+                    "pageNumber": "470-476",
+                    "referenceId": "160"
+                },
+                {
+                    "title": "Hollstein 1959",
+                    "pageNumber": "19, 21",
+                    "referenceId": "736"
+                },
+                {
+                    "title": "Jahn, Bernhard 1972",
+                    "pageNumber": "216, 217, 218, 219",
+                    "referenceId": "1939"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010501"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020406",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Inhalt > Christliche Religion \/ Bibel > Neues Testament > Die Passion > 010403020406"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Form > 010212"
+                }
+            ],
+            "locations": [],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.19-21.11"
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.280.8"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Christus vor Hannas (aus der Passion Christi, Folge von 14 Holzschnitten)",
+                    "remarks": "[cda 2019]"
+                },
+                {
+                    "type": "Titel",
+                    "title": "Christus vor Kaiphas",
+                    "remarks": "[Hollstein 13] Fehlerhafte Identifikation"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "LC_HVI-19-21_13",
+            "objectId": 940758,
+            "isVirtual": true,
+            "dimensions": "Blockma\u00df: 25 x 17,2 cm (+- 5 mm)\n[cda 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Titelblock und 2. Block datiert]",
+                "historicEventInformations": [
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5350; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1616",
+                        "begin": 1611,
+                        "end": 1621,
+                        "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1509",
+                        "begin": 1504,
+                        "end": 1514,
+                        "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4780; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1540",
+                        "begin": 1535,
+                        "end": 1545,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4782; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4786; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5354; accessed 11-07-2019]"
+                    }
+                ]
+            },
+            "description": "Christus vor Hannas ist das vierte Motiv der \"Passion Christi\", einer Serie von 14 Holzschnitten.\nAus dieser Serie ist nur die zweite Szene mit dem Monogramm LC, dem Schlangensignet und der Datierung versehen. Drei weitere Holzschnitte sind mit der gefl\u00fcgelten Schlange bezeichnet: die Gei\u00dfelung, die Kreuzigung und die Auferstehung.\nDie Drucke wurden sowohl in Einzelblattauflagen als auch in B\u00fcchern verbreitet. Zwischen 1509 und 1616 sind zahlreiche Auflagen dokumentiert.\n[cda 2019]",
+            "provenance": "",
+            "medium": "",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "CDA.G_AT_A_DG1929-131",
+            "bibliography": "",
+            "references": [
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-145",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-131",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_10",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "DE_HAUMB_3195",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_11",
+                    "remark": ""
+                }
+            ],
+            "additionalTextInformation": [],
+            "publications": [
+                {
+                    "title": "Bartsch 1808",
+                    "pageNumber": "280-281",
+                    "referenceId": "241"
+                },
+                {
+                    "title": "Dodgson 1911",
+                    "pageNumber": "299",
+                    "referenceId": "346"
+                },
+                {
+                    "title": "Exhib. Cat. Basel 1974",
+                    "pageNumber": "470-476",
+                    "referenceId": "160"
+                },
+                {
+                    "title": "Hollstein 1959",
+                    "pageNumber": "20, 21",
+                    "referenceId": "736"
+                },
+                {
+                    "title": "Jahn, Bernhard 1972",
+                    "pageNumber": "216, 217, 218, 219",
+                    "referenceId": "1939"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010501"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Form > 010212"
+                }
+            ],
+            "locations": [],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.19-21.13"
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.280.9"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Christus vor Kaiphas (aus der Passion Christi, Folge von 14 Holzschnitten)",
+                    "remarks": "[cda 2019]"
+                },
+                {
+                    "type": "Titel",
+                    "title": "Christus vor Annas",
+                    "remarks": "[Hollstein 12] falsch benannt"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "LC_HVI-19-21_12",
+            "objectId": 940760,
+            "isVirtual": true,
+            "dimensions": "Blockma\u00df: 25 x 17,2 cm (+- 5 mm)\n[cda 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Titelblock und 2. Block datiert]",
+                "historicEventInformations": [
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5350; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1616",
+                        "begin": 1611,
+                        "end": 1621,
+                        "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1509",
+                        "begin": 1504,
+                        "end": 1514,
+                        "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4780; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1540",
+                        "begin": 1535,
+                        "end": 1545,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4782; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4786; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5354; accessed 11-07-2019]"
+                    }
+                ]
+            },
+            "description": "Christus vor Kaiphas ist das dritte Motiv der \"Passion Christi\", einer Serie von 14 Holzschnitten.\nAus dieser Serie ist nur die zweite Szene mit dem Monogramm LC, dem Schlangensignet und der Datierung versehen. Drei weitere Holzschnitte sind mit der gefl\u00fcgelten Schlange bezeichnet: die Gei\u00dfelung, die Kreuzigung und die Auferstehung.\nDie Drucke wurden sowohl in Einzelblattauflagen als auch in B\u00fcchern verbreitet. Zwischen 1509 und 1616 sind zahlreiche Auflagen dokumentiert.\n[cda 2019]",
+            "provenance": "",
+            "medium": "",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "CDA.G_AT_A_DG1929-130",
+            "bibliography": "",
+            "references": [
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-144",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-130",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "DE_SKD_1908-26",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_10",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_11",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_13",
+                    "remark": ""
+                }
+            ],
+            "additionalTextInformation": [],
+            "publications": [
+                {
+                    "title": "Bartsch 1808",
+                    "pageNumber": "280-281",
+                    "referenceId": "241"
+                },
+                {
+                    "title": "Dodgson 1911",
+                    "pageNumber": "299",
+                    "referenceId": "346"
+                },
+                {
+                    "title": "Exhib. Cat. Basel 1974",
+                    "pageNumber": "470-476",
+                    "referenceId": "160"
+                },
+                {
+                    "title": "Hollstein 1959",
+                    "pageNumber": "19, 21",
+                    "referenceId": "736"
+                },
+                {
+                    "title": "Jahn, Bernhard 1972",
+                    "pageNumber": "216, 217, 218, 219",
+                    "referenceId": "1939"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010501"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Form > 010212"
+                }
+            ],
+            "locations": [],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.19-21.12"
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.280.10"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Christus vor Herodes (aus der Passion Christi, Folge von 14 Holzschnitten)",
+                    "remarks": "[cda 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "LC_HVI-19-21_14",
+            "objectId": 949223,
+            "isVirtual": true,
+            "dimensions": "Blockma\u00df: 25 x 17,2 cm (+- 5mm)\n[cda 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Titelblock und 2. Block datiert]",
+                "historicEventInformations": [
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5350; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1616",
+                        "begin": 1611,
+                        "end": 1621,
+                        "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1509",
+                        "begin": 1504,
+                        "end": 1514,
+                        "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4780; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1540",
+                        "begin": 1535,
+                        "end": 1545,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4782; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4786; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5354; accessed 11-07-2019]"
+                    }
+                ]
+            },
+            "description": "Christus vor Herodes ist das f\u00fcnfte Motiv der \"Passion Christi\", einer Serie von 14 Holzschnitten.\nAus dieser Serie ist nur die zweite Szene mit dem Monogramm LC, dem Schlangensignet und der Datierung versehen. Drei weitere Holzschnitte sind mit der gefl\u00fcgelten Schlange bezeichnet: die Gei\u00dfelung, die Kreuzigung und die Auferstehung.\nDie Drucke wurden sowohl in Einzelblattauflagen als auch in B\u00fcchern verbreitet. Zwischen 1509 und 1616 sind zahlreiche Auflagen dokumentiert.\n[cda 2019]",
+            "provenance": "",
+            "medium": "",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "CDA.G_AT_A_DG1929-132",
+            "bibliography": "",
+            "references": [
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-146",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-132",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "DE_HAUMB_AB3-14",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_10",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_11",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_12",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_13",
+                    "remark": ""
+                }
+            ],
+            "additionalTextInformation": [],
+            "publications": [
+                {
+                    "title": "Bartsch 1808",
+                    "pageNumber": "280-281",
+                    "referenceId": "241"
+                },
+                {
+                    "title": "Dodgson 1911",
+                    "pageNumber": "299",
+                    "referenceId": "346"
+                },
+                {
+                    "title": "Exhib. Cat. Basel 1974",
+                    "pageNumber": "470-476",
+                    "referenceId": "160"
+                },
+                {
+                    "title": "Hollstein 1959",
+                    "pageNumber": "20, 21",
+                    "referenceId": "736"
+                },
+                {
+                    "title": "Jahn, Bernhard 1972",
+                    "pageNumber": "216, 217, 218, 219",
+                    "referenceId": "1939"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010501"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Form > 010212"
+                }
+            ],
+            "locations": [],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.19-21.14"
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.280.11"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[cda 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Die Gei\u00dfelung (aus der Passion Christi, Folge von 14 Holzschnitten)",
+                    "remarks": "[cda 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "LC_HVI-19-21_15",
+            "objectId": 949238,
+            "isVirtual": true,
+            "dimensions": "Blockma\u00df: 25 x 17,2 cm (+- 5 mm)\n[cda 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Titelblock und 2. Block datiert]",
+                "historicEventInformations": [
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5354; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5350; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1616",
+                        "begin": 1611,
+                        "end": 1621,
+                        "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1509",
+                        "begin": 1504,
+                        "end": 1514,
+                        "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4780; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1540",
+                        "begin": 1535,
+                        "end": 1545,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4782; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4786; accessed 11-07-2019]"
+                    }
+                ]
+            },
+            "description": "Die Gei\u00dfelung ist das sechste Motiv der \"Passion Christi\", einer Serie von 14 Holzschnitten.\nAus dieser Serie ist nur die zweite Szene mit dem Monogramm LC, dem Schlangensignet und der Datierung versehen. Drei weitere Holzschnitte sind mit der gefl\u00fcgelten Schlange bezeichnet: die Gei\u00dfelung, die Kreuzigung und die Auferstehung.\nDie Drucke wurden sowohl in Einzelblattauflagen als auch in B\u00fcchern verbreitet. Zwischen 1509 und 1616 sind zahlreiche Auflagen dokumentiert.\n[cda 2019]",
+            "provenance": "",
+            "medium": "",
+            "signature": "Am rechten, unteren Rand bezeichnet: Schlangensignet (mit aufstehenden Fl\u00fcgeln)",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "CDA.G_AT_A_DG1929-133",
+            "bibliography": "",
+            "references": [
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-133",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-147",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "DE_KSVC_1-42-21",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_10",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_11",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_12",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_13",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_14",
+                    "remark": ""
+                }
+            ],
+            "additionalTextInformation": [],
+            "publications": [
+                {
+                    "title": "Bartsch 1808",
+                    "pageNumber": "280-281",
+                    "referenceId": "241"
+                },
+                {
+                    "title": "Dodgson 1911",
+                    "pageNumber": "298",
+                    "referenceId": "346"
+                },
+                {
+                    "title": "Exhib. Cat. Basel 1974",
+                    "pageNumber": "470-476",
+                    "referenceId": "160"
+                },
+                {
+                    "title": "Hollstein 1959",
+                    "pageNumber": "20, 21",
+                    "referenceId": "736"
+                },
+                {
+                    "title": "Jahn, Bernhard 1972",
+                    "pageNumber": "216, 217, 218, 219",
+                    "referenceId": "1939"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020408",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Inhalt > Christliche Religion \/ Bibel > Neues Testament > Die Passion > 010403020408"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010501"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Form > 010212"
+                }
+            ],
+            "locations": [],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.19-21.15"
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.280.12"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[cda 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Die Dornenkr\u00f6nung (aus der Passion Christi, Folge von 14 Holzschnitten)",
+                    "remarks": "[cda 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "LC_HVI-19-21_16",
+            "objectId": 949241,
+            "isVirtual": true,
+            "dimensions": "Blockma\u00df: 25 x 17,2 cm (+- 5 mm)\n[cda 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Titelblock und 2. Block datiert]",
+                "historicEventInformations": [
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5354; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5350; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1616",
+                        "begin": 1611,
+                        "end": 1621,
+                        "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1509",
+                        "begin": 1504,
+                        "end": 1514,
+                        "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4780; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1540",
+                        "begin": 1535,
+                        "end": 1545,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4782; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4786; accessed 11-07-2019]"
+                    }
+                ]
+            },
+            "description": "Die Dornenkr\u00f6nung ist das siebte Motiv der \"Passion Christi\", einer Serie von 14 Holzschnitten.\nAus dieser Serie ist nur die zweite Szene mit dem Monogramm LC, dem Schlangensignet und der Datierung versehen. Drei weitere Holzschnitte sind mit der gefl\u00fcgelten Schlange bezeichnet: die Gei\u00dfelung, die Kreuzigung und die Auferstehung.\nDie Drucke wurden sowohl in Einzelblattauflagen als auch in B\u00fcchern verbreitet. Zwischen 1509 und 1616 sind zahlreiche Auflagen dokumentiert.\n[cda 2019]",
+            "provenance": "",
+            "medium": "",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "CDA.G_AT_A_DG1929-134",
+            "bibliography": "",
+            "references": [
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-134",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-148",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "DE_KSVC_1-42-22a",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_10",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_11",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_12",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_13",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_14",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_15",
+                    "remark": ""
+                }
+            ],
+            "additionalTextInformation": [],
+            "publications": [
+                {
+                    "title": "Bartsch 1808",
+                    "pageNumber": "280-281",
+                    "referenceId": "241"
+                },
+                {
+                    "title": "Dodgson 1911",
+                    "pageNumber": "298",
+                    "referenceId": "346"
+                },
+                {
+                    "title": "Exhib. Cat. Basel 1974",
+                    "pageNumber": "470-476",
+                    "referenceId": "160"
+                },
+                {
+                    "title": "Hollstein 1959",
+                    "pageNumber": "20, 21",
+                    "referenceId": "736"
+                },
+                {
+                    "title": "Jahn, Bernhard 1972",
+                    "pageNumber": "216, 217, 218, 219",
+                    "referenceId": "1939"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020410",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Inhalt > Christliche Religion \/ Bibel > Neues Testament > Die Passion > 010403020410"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010501"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Form > 010212"
+                }
+            ],
+            "locations": [],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.19-21.16"
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.280.13"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[cda 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Ecce Homo (aus der Passion Christi, Folge von 14 Holzschnitten)",
+                    "remarks": "[cda 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "LC_HVI-19-21_17",
+            "objectId": 949243,
+            "isVirtual": true,
+            "dimensions": "Blockma\u00df: 25 x 17,2 cm (+- 5 mm)\n[cda 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Titelblock und 2. Block datiert]",
+                "historicEventInformations": [
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5354; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5350; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1616",
+                        "begin": 1611,
+                        "end": 1621,
+                        "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1509",
+                        "begin": 1504,
+                        "end": 1514,
+                        "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4780; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1540",
+                        "begin": 1535,
+                        "end": 1545,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4782; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4786; accessed 11-07-2019]"
+                    }
+                ]
+            },
+            "description": "Ecce Homo ist das achte Motiv der \"Passion Christi\", einer Serie von 14 Holzschnitten.\nAus dieser Serie ist nur die zweite Szene mit dem Monogramm LC, dem Schlangensignet und der Datierung versehen. Drei weitere Holzschnitte sind mit der gefl\u00fcgelten Schlange bezeichnet: die Gei\u00dfelung, die Kreuzigung und die Auferstehung.\nDie Drucke wurden sowohl in Einzelblattauflagen als auch in B\u00fcchern verbreitet. Zwischen 1509 und 1616 sind zahlreiche Auflagen dokumentiert.\n[cda 2019]",
+            "provenance": "",
+            "medium": "",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "CDA.G_AT_A_DG1929-135",
+            "bibliography": "",
+            "references": [
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-135",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-149",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "DE_SKD_A1892-98",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_10",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_11",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_12",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_13",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_14",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_15",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_16",
+                    "remark": ""
+                }
+            ],
+            "additionalTextInformation": [],
+            "publications": [
+                {
+                    "title": "Bartsch 1808",
+                    "pageNumber": "280-281",
+                    "referenceId": "241"
+                },
+                {
+                    "title": "Dodgson 1911",
+                    "pageNumber": "298",
+                    "referenceId": "346"
+                },
+                {
+                    "title": "Exhib. Cat. Basel 1974",
+                    "pageNumber": "470-476",
+                    "referenceId": "160"
+                },
+                {
+                    "title": "Hollstein 1959",
+                    "pageNumber": "20, 21",
+                    "referenceId": "736"
+                },
+                {
+                    "title": "Jahn, Bernhard 1972",
+                    "pageNumber": "216, 217, 218, 219",
+                    "referenceId": "1939"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020411",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Inhalt > Christliche Religion \/ Bibel > Neues Testament > Die Passion > 010403020411"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010501"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Form > 010212"
+                }
+            ],
+            "locations": [],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.19-21.17"
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.280.14"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[cda 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Handwaschung des Pilatus (aus der Passion Christi, Folge von 14 Holzschnitten)",
+                    "remarks": "[cda 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "LC_HVI-19-21_18",
+            "objectId": 949246,
+            "isVirtual": true,
+            "dimensions": "Blockma\u00df: 25 x 17,2 cm (+- 5 mm)\n[cda 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Titelblock und 2. Block datiert]",
+                "historicEventInformations": [
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5354; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5350; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1616",
+                        "begin": 1611,
+                        "end": 1621,
+                        "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1509",
+                        "begin": 1504,
+                        "end": 1514,
+                        "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4780; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1540",
+                        "begin": 1535,
+                        "end": 1545,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4782; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4786; accessed 11-07-2019]"
+                    }
+                ]
+            },
+            "description": "Die Handwaschung des Pilatus ist das neunte Motiv der \"Passion Christi\", einer Serie von 14 Holzschnitten.\nAus dieser Serie ist nur die zweite Szene mit dem Monogramm LC, dem Schlangensignet und der Datierung versehen. Drei weitere Holzschnitte sind mit der gefl\u00fcgelten Schlange bezeichnet: die Gei\u00dfelung, die Kreuzigung und die Auferstehung.\nDie Drucke wurden sowohl in Einzelblattauflagen als auch in B\u00fcchern verbreitet. Zwischen 1509 und 1616 sind zahlreiche Auflagen dokumentiert.\n[cda 2019]",
+            "provenance": "",
+            "medium": "",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "CDA.G_AT_A_DG1929-136",
+            "bibliography": "",
+            "references": [
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "DE_KSVC_1-42-24",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-136",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-150",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_10",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_11",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_12",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_13",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_14",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_15",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_16",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_17",
+                    "remark": ""
+                }
+            ],
+            "additionalTextInformation": [],
+            "publications": [
+                {
+                    "title": "Bartsch 1808",
+                    "pageNumber": "280-281",
+                    "referenceId": "241"
+                },
+                {
+                    "title": "Dodgson 1911",
+                    "pageNumber": "298, 299",
+                    "referenceId": "346"
+                },
+                {
+                    "title": "Exhib. Cat. Basel 1974",
+                    "pageNumber": "470-476",
+                    "referenceId": "160"
+                },
+                {
+                    "title": "Hollstein 1959",
+                    "pageNumber": "20, 21",
+                    "referenceId": "736"
+                },
+                {
+                    "title": "Jahn, Bernhard 1972",
+                    "pageNumber": "216, 217, 218, 219",
+                    "referenceId": "1939"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010501"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Form > 010212"
+                }
+            ],
+            "locations": [],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.19-21.18"
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.280.15"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[cda 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Die Kreuztragung (aus der Passion Christi, Folge von 14 Holzschnitten)",
+                    "remarks": "[cda 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "LC_HVI-19-21_19",
+            "objectId": 949250,
+            "isVirtual": true,
+            "dimensions": "Blockma\u00df: 25 x 17,2 cm (+- 5 mm)\n[cda 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Titelblock und 2. Block datiert]",
+                "historicEventInformations": [
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5354; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5350; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1616",
+                        "begin": 1611,
+                        "end": 1621,
+                        "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1509",
+                        "begin": 1504,
+                        "end": 1514,
+                        "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4780; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1540",
+                        "begin": 1535,
+                        "end": 1545,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4782; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4786; accessed 11-07-2019]"
+                    }
+                ]
+            },
+            "description": "Die Kreuztragung ist das zehnte Motiv der \"Passion Christi\", einer Serie von 14 Holzschnitten.\nAus dieser Serie ist nur die zweite Szene mit dem Monogramm LC, dem Schlangensignet und der Datierung versehen. Drei weitere Holzschnitte sind mit der gefl\u00fcgelten Schlange bezeichnet: die Gei\u00dfelung, die Kreuzigung und die Auferstehung.\nDie Drucke wurden sowohl in Einzelblattauflagen als auch in B\u00fcchern verbreitet. Zwischen 1509 und 1616 sind zahlreiche Auflagen dokumentiert.\n[cda 2019]",
+            "provenance": "",
+            "medium": "",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "CDA.G_AT_A_DG1929-137",
+            "bibliography": "",
+            "references": [
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-137",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-151",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "DE_KSVC_1-42-25",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_10",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_11",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_12",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_13",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_14",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_15",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_16",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_17",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_18",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_20",
+                    "remark": ""
+                }
+            ],
+            "additionalTextInformation": [],
+            "publications": [
+                {
+                    "title": "Bartsch 1808",
+                    "pageNumber": "280-281",
+                    "referenceId": "241"
+                },
+                {
+                    "title": "Dodgson 1911",
+                    "pageNumber": "298",
+                    "referenceId": "346"
+                },
+                {
+                    "title": "Exhib. Cat. Basel 1974",
+                    "pageNumber": "470-476",
+                    "referenceId": "160"
+                },
+                {
+                    "title": "Hollstein 1959",
+                    "pageNumber": "20, 21",
+                    "referenceId": "736"
+                },
+                {
+                    "title": "Jahn, Bernhard 1972",
+                    "pageNumber": "216, 217, 218, 219",
+                    "referenceId": "1939"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010501"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Form > 010212"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020412",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Inhalt > Christliche Religion \/ Bibel > Neues Testament > Die Passion > 010403020412"
+                }
+            ],
+            "locations": [],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.19-21.19"
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.280.16"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[cda 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Die Kreuzigung (aus der Passion Christi, Folge von 14 Holzschnitten)",
+                    "remarks": "[cda 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "LC_HVI-19-21_20",
+            "objectId": 949257,
+            "isVirtual": true,
+            "dimensions": "Blockma\u00df: 25 x 17,2 cm (+- 5 mm)\n[cda 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Titelblock und 2. Block datiert]",
+                "historicEventInformations": [
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5354; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5350; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1616",
+                        "begin": 1611,
+                        "end": 1621,
+                        "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1509",
+                        "begin": 1504,
+                        "end": 1514,
+                        "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4780; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1540",
+                        "begin": 1535,
+                        "end": 1545,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4782; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4786; accessed 11-07-2019]"
+                    }
+                ]
+            },
+            "description": "Die Kreuzigung ist das elfte Motiv der \"Passion Christi\", einer Serie von 14 Holzschnitten.\nAus dieser Serie ist nur die zweite Szene mit dem Monogramm LC, dem Schlangensignet und der Datierung versehen. Dieser Block ist mit der gefl\u00fcgelten Schlange bezeichnet, ebenso wie die Gei\u00dfelung und die Auferstehung.\nDie Drucke wurden sowohl in Einzelblattauflagen als auch in B\u00fcchern verbreitet. Zwischen 1509 und 1616 sind zahlreiche Auflagen dokumentiert.\n[cda 2019]",
+            "provenance": "",
+            "medium": "",
+            "signature": "Im Block in der rechten, unteren Ecke bezeichnet: Schlangensignet mit aufstehenden Fl\u00fcgeln",
+            "inscription": "- mittig auf dem Kreuz: \"INRI\"",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "CDA.G_AT_A_DG1929-138",
+            "bibliography": "",
+            "references": [
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-138",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-152",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "DE_SMKP_KA-FP_349D",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_10",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_11",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_12",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_13",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_14",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_15",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_16",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_17",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_18",
+                    "remark": ""
+                }
+            ],
+            "additionalTextInformation": [],
+            "publications": [
+                {
+                    "title": "Bartsch 1808",
+                    "pageNumber": "280-281",
+                    "referenceId": "241"
+                },
+                {
+                    "title": "Dodgson 1911",
+                    "pageNumber": "299",
+                    "referenceId": "346"
+                },
+                {
+                    "title": "Exhib. Cat. Basel 1974",
+                    "pageNumber": "470-476",
+                    "referenceId": "160"
+                },
+                {
+                    "title": "Hollstein 1959",
+                    "pageNumber": "20, 21",
+                    "referenceId": "736"
+                },
+                {
+                    "title": "Jahn, Bernhard 1972",
+                    "pageNumber": "216, 217, 218, 219",
+                    "referenceId": "1939"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020414",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Inhalt > Christliche Religion \/ Bibel > Neues Testament > Die Passion > 010403020414"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010501"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Form > 010212"
+                }
+            ],
+            "locations": [],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.19-21.20"
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.280.17"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[cda 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Die Beweinung Christi (aus der Passion Christi, Folge von 14 Holzschnitten)",
+                    "remarks": "[cda 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "LC_HVI-19-21_21",
+            "objectId": 949262,
+            "isVirtual": true,
+            "dimensions": "Blockma\u00df: 25 x 17,2 cm (+- 5 mm)\n[cda 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Titelblock und 2. Block datiert]",
+                "historicEventInformations": [
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5354; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5350; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1616",
+                        "begin": 1611,
+                        "end": 1621,
+                        "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1509",
+                        "begin": 1504,
+                        "end": 1514,
+                        "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4780; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1540",
+                        "begin": 1535,
+                        "end": 1545,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4782; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4786; accessed 11-07-2019]"
+                    }
+                ]
+            },
+            "description": "Die Beweinung Christi ist das zw\u00f6lfte Motiv der \"Passion Christi\", einer Serie von 14 Holzschnitten.\nAus dieser Serie ist nur die zweite Szene mit dem Monogramm LC, dem Schlangensignet und der Datierung versehen. Drei weitere Holzschnitte sind mit der gefl\u00fcgelten Schlange bezeichnet: die Gei\u00dfelung, die Kreuzigung und die Auferstehung.\nDie Drucke wurden sowohl in Einzelblattauflagen als auch in B\u00fcchern verbreitet. Zwischen 1509 und 1616 sind zahlreiche Auflagen dokumentiert.\n[cda 2019]",
+            "provenance": "",
+            "medium": "",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "CDA.G_AT_A_DG1929-139",
+            "bibliography": "",
+            "references": [
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-139",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-153",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "DE_KSVC_1-42-28",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_10",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_11",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_12",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_13",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_14",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_15",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_16",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_17",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_18",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_19",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_20",
+                    "remark": ""
+                }
+            ],
+            "additionalTextInformation": [],
+            "publications": [
+                {
+                    "title": "Bartsch 1808",
+                    "pageNumber": "280-281",
+                    "referenceId": "241"
+                },
+                {
+                    "title": "Dodgson 1911",
+                    "pageNumber": "299",
+                    "referenceId": "346"
+                },
+                {
+                    "title": "Exhib. Cat. Basel 1974",
+                    "pageNumber": "470-476",
+                    "referenceId": "160"
+                },
+                {
+                    "title": "Hollstein 1959",
+                    "pageNumber": "20, 21",
+                    "referenceId": "736"
+                },
+                {
+                    "title": "Jahn, Bernhard 1972",
+                    "pageNumber": "216, 217, 218, 219",
+                    "referenceId": "1939"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010501"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Form > 010212"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020416",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Inhalt > Christliche Religion \/ Bibel > Neues Testament > Die Passion > 010403020416"
+                }
+            ],
+            "locations": [],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.19-21.21"
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.280.18"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[cda 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Die Grablegung (aus der Passion Christi, Folge von 14 Holzschnitten)",
+                    "remarks": "[cda 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "LC_HVI-19-21_22",
+            "objectId": 949271,
+            "isVirtual": true,
+            "dimensions": "Blockma\u00df: 25 x 17,2 cm (+- 5 mm)\n[cda 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Titelblatt und 2. Blatt datiert]",
+                "historicEventInformations": [
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5354; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5350; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1616",
+                        "begin": 1611,
+                        "end": 1621,
+                        "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1509",
+                        "begin": 1504,
+                        "end": 1514,
+                        "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4780; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1540",
+                        "begin": 1535,
+                        "end": 1545,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4782; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4786; accessed 11-07-2019]"
+                    }
+                ]
+            },
+            "description": "Die Grablegung ist das 13. Motiv der \"Passion Christi\", einer Serie von 14 Holzschnitten.\nAus dieser Serie ist nur die zweite Szene mit dem Monogramm LC, dem Schlangensignet und der Datierung versehen. Drei weitere Holzschnitte sind mit der gefl\u00fcgelten Schlange bezeichnet: die Gei\u00dfelung, die Kreuzigung und die Auferstehung.\nDie Drucke wurden sowohl in Einzelblattauflagen als auch in B\u00fcchern verbreitet. Zwischen 1509 und 1616 sind zahlreiche Auflagen dokumentiert.\n[cda 2019]",
+            "provenance": "",
+            "medium": "",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "CDA.G_AT_A_DG1929-140",
+            "bibliography": "",
+            "references": [
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-140",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-154",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "NL_RM_RP-P-1964-633",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_10",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_11",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_12",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_13",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_14",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_15",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_16",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_17",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_18",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_19",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_20",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_21",
+                    "remark": ""
+                }
+            ],
+            "additionalTextInformation": [],
+            "publications": [
+                {
+                    "title": "Bartsch 1808",
+                    "pageNumber": "280-281",
+                    "referenceId": "241"
+                },
+                {
+                    "title": "Dodgson 1911",
+                    "pageNumber": "299",
+                    "referenceId": "346"
+                },
+                {
+                    "title": "Exhib. Cat. Basel 1974",
+                    "pageNumber": "470-476",
+                    "referenceId": "160"
+                },
+                {
+                    "title": "Hollstein 1959",
+                    "pageNumber": "20, 21",
+                    "referenceId": "736"
+                },
+                {
+                    "title": "Jahn, Bernhard 1972",
+                    "pageNumber": "216, 217, 218, 219",
+                    "referenceId": "1939"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010501"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Form > 010212"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020417",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Inhalt > Christliche Religion \/ Bibel > Neues Testament > Die Passion > 010403020417"
+                }
+            ],
+            "locations": [],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.19-21.22"
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.280.19"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        },
+        {
+            "langCode": "de",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach der \u00c4ltere",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Lucas Cranach der \u00c4ltere",
+                    "remarks": "[cda 2019]",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Die Auferstehung (aus der Passion Christi, Folge von 14 Holzschnitten)",
+                    "remarks": "[cda 2019]"
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": ""
+            },
+            "objectName": "Holzschnitt",
+            "inventoryNumber": "LC_HVI-19-21_23",
+            "objectId": 949272,
+            "isVirtual": true,
+            "dimensions": "Blockma\u00df: 25 x 17,2 cm (+- 5 mm)\n[cda 2019]",
+            "dating": {
+                "dated": "1509",
+                "begin": 1509,
+                "end": 1509,
+                "remarks": "[Titelblock und 2. Block datiert]",
+                "historicEventInformations": [
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5354; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden\", Antonius Corvinus, Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+C+5350; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1616",
+                        "begin": 1611,
+                        "end": 1621,
+                        "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1509",
+                        "begin": 1504,
+                        "end": 1514,
+                        "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1539",
+                        "begin": 1534,
+                        "end": 1544,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4780; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1540",
+                        "begin": 1535,
+                        "end": 1545,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4782; accessed 11-07-2019]"
+                    },
+                    {
+                        "eventType": "Auflage",
+                        "text": "1543",
+                        "begin": 1538,
+                        "end": 1548,
+                        "remarks": "\"Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi\", Georg Rhau, Wittenberg [http:\/\/gateway-bayern.de\/VD16+B+4786; accessed 11-07-2019]"
+                    }
+                ]
+            },
+            "description": "Die Auferstehung ist das letzte Motiv der \"Passion Christi\", einer Serie von 14 Holzschnitten.\nAus dieser Serie ist nur die zweite Szene mit dem Monogramm LC, dem Schlangensignet und der Datierung versehen. Dieser Block ist mit der gefl\u00fcgelten Schlange bezeichnet, ebenso wie die Gei\u00dfelung und die Kreuzigung.\nDie Drucke wurden sowohl in Einzelblattauflagen als auch in B\u00fcchern verbreitet. Zwischen 1509 und 1616 sind zahlreiche Auflagen dokumentiert.\n[cda 2019]",
+            "provenance": "",
+            "medium": "",
+            "signature": "Im Block, rechts auf der Mauer bezeichnet: Schlangensignet (mit aufstehenden Fl\u00fcgeln)",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "CDA.G_AT_A_DG1929-141",
+            "bibliography": "",
+            "references": [
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-141",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "AT_A_DG1929-155",
+                    "remark": ""
+                },
+                {
+                    "text": "Abzug A",
+                    "inventoryNumber": "DE_HAUMB_AB3-25",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_10",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_11",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_12",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_13",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_14",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_15",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_16",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_17",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_18",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_19",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_20",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_21",
+                    "remark": ""
+                },
+                {
+                    "text": "Teil eines Werkes",
+                    "inventoryNumber": "LC_HVI-19-21_22",
+                    "remark": ""
+                }
+            ],
+            "additionalTextInformation": [],
+            "publications": [
+                {
+                    "title": "Bartsch 1808",
+                    "pageNumber": "280-281",
+                    "referenceId": "241"
+                },
+                {
+                    "title": "Dodgson 1911",
+                    "pageNumber": "299, 300",
+                    "referenceId": "346"
+                },
+                {
+                    "title": "Exhib. Cat. Basel 1974",
+                    "pageNumber": "470-476",
+                    "referenceId": "160"
+                },
+                {
+                    "title": "Hollstein 1959",
+                    "pageNumber": "20, 21",
+                    "referenceId": "736"
+                },
+                {
+                    "title": "Jahn, Bernhard 1972",
+                    "pageNumber": "216, 217, 218, 219",
+                    "referenceId": "1939"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010501"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Form > 010212"
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020604",
+                    "path": "Attributes > Objekte > Cranach-Archiv > Inhalt > Christliche Religion \/ Bibel > Neues Testament > Von der Auferstehung bis Pfingsten > 010403020604"
+                }
+            ],
+            "locations": [],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "",
+            "catalogWorkReferences": [
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.19-21.23"
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VII.280.20"
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "25.00"
+            }
+        }
+    ]
+}
