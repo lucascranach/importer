@@ -1,0 +1,184 @@
+/Users/cnoss/git/lucascranach/importer/importer_v2/exporters/GraphicsJSONLangExistenceTypeExporter.php:46:
+class CranachImport\Entities\Graphic#5 (30) {
+  public $langCode =>
+  string(2) "de"
+  public $involvedPersons =>
+  array(1) {
+    [0] =>
+    class CranachImport\Entities\Main\Person#7 (10) {
+      public $id =>
+      string(0) ""
+      public $role =>
+      string(8) "Inventor"
+      public $name =>
+      string(25) "Lucas Cranach der Ältere"
+      public $prefix =>
+      string(0) ""
+      public $suffix =>
+      string(0) ""
+      public $nameType =>
+      string(14) "Primärer Name"
+      public $alternativeName =>
+      string(25) "Lucas Cranach der Ältere"
+      public $remarks =>
+      string(0) ""
+      public $date =>
+      string(0) ""
+      public $isUnknown =>
+      bool(false)
+    }
+  }
+  public $involvedPersonsNames =>
+  array(1) {
+    [0] =>
+    class CranachImport\Entities\Main\PersonName#14 (2) {
+      public $constituentId =>
+      string(5) "32400"
+      public $details =>
+      array(3) {
+        ...
+      }
+    }
+  }
+  public $titles =>
+  array(1) {
+    [0] =>
+    class CranachImport\Entities\Main\Title#13 (3) {
+      public $type =>
+      string(5) "Titel"
+      public $title =>
+      string(23) "Luther als Junker Jörg"
+      public $remarks =>
+      string(0) ""
+    }
+  }
+  public $classification =>
+  class CranachImport\Entities\Graphic\Classification#19 (2) {
+    public $classification =>
+    string(11) "Druckgrafik"
+    public $condition =>
+    string(0) ""
+  }
+  public $objectName =>
+  string(11) "Holzschnitt"
+  public $inventoryNumber =>
+  string(17) "DE_SMBKSK_66-1898"
+  public $objectId =>
+  int(927563)
+  public $isVirtual =>
+  bool(false)
+  public $dimensions =>
+  string(147) "Blattmaß: 35,1 x 22,6 cm
+[http://www.smb-digital.de/eMuseumPlus?service=ExternalInterface&module=collection&objectId=1056187](accessed 10.01.2018]"
+  public $dating =>
+  class CranachImport\Entities\Main\Dating#16 (5) {
+    public $dated =>
+    string(4) "1522"
+    public $begin =>
+    int(1517)
+    public $end =>
+    int(1527)
+    public $remarks =>
+    string(28) "[datiert, später gedrückt]"
+    public $historicEventInformations =>
+    array(0) {
+    }
+  }
+  public $description =>
+  string(0) ""
+  public $provenance =>
+  string(0) ""
+  public $medium =>
+  string(27) "Druck auf Papier
+[cda 2018]"
+  public $signature =>
+  string(0) ""
+  public $inscription =>
+  string(702) "Oben:
+IMAGO MARTINI LVTHERI EO HABIT V EX-/ PRESSA, QVO REVERSVS EST EX PATHMO VVITTE-/BERGAM ANNO DOMINI 1522.
+
+Unten:
+Zwei Verspaare in einem Spalt:
+Queasitus toties, toties tibi Roma petitus,/ En ego per Christum uiuo Lutherus adhuc.
+Vna mihi spes est, quo non fraudabor, IESVS,/ Hunc mihi dum teneam, perfida Roma uale.
+In drei Spalten:
+ANNVS CONFESSIONIS VVO-/RMATIAE 1521./ CaesarIs ante peDes, proCeres stetit ante potentes/ ACCoLa qVà Rheni VangIo LhtVs aDIt.
+ANNVS PATHMI/ 1521./ A Rheno properans CapI"...
+  public $markings =>
+  string(0) ""
+  public $relatedWorks =>
+  string(0) ""
+  public $exhibitionHistory =>
+  string(0) ""
+  public $bibliography =>
+  string(0) ""
+  public $references =>
+  array(0) {
+  }
+  public $additionalTextInformation =>
+  array(0) {
+  }
+  public $publications =>
+  array(2) {
+    [0] =>
+    class CranachImport\Entities\Main\Publication#30 (3) {
+      public $title =>
+      string(26) "Exhib. Cat. Nuremberg 1983"
+      public $pageNumber =>
+      string(0) ""
+      public $referenceId =>
+      string(3) "807"
+    }
+    [1] =>
+    class CranachImport\Entities\Main\Publication#31 (3) {
+      public $title =>
+      string(11) "Warnke 1984"
+      public $pageNumber =>
+      string(5) "49-51"
+      public $referenceId =>
+      string(4) "1445"
+    }
+  }
+  public $keywords =>
+  array(0) {
+  }
+  public $locations =>
+  array(1) {
+    [0] =>
+    class CranachImport\Entities\Main\MetaReference#32 (3) {
+      public $type =>
+      string(23) "Standort Cranach Objekt"
+      public $term =>
+      string(6) "Berlin"
+      public $path =>
+      string(0) ""
+    }
+  }
+  public $repository =>
+  string(74) "Kupferstichkabinett, Staatliche Museen zu Berlin Preussischer Kulturbesitz"
+  public $owner =>
+  string(74) "Kupferstichkabinett, Staatliche Museen zu Berlin Preussischer Kulturbesitz"
+  public $sortingNumber =>
+  string(0) ""
+  public $catalogWorkReferences =>
+  array(1) {
+    [0] =>
+    class CranachImport\Entities\Main\CatalogWorkReference#29 (3) {
+      public $description =>
+      string(9) "Hollstein"
+      public $referenceNumber =>
+      string(11) "VI.107.132c"
+      public $remarks =>
+      string(0) ""
+    }
+  }
+  public $structuredDimension =>
+  class CranachImport\Entities\Main\StructuredDimension#28 (3) {
+    public $element =>
+    string(12) "Maßstab CDA"
+    public $width =>
+    string(4) "0.00"
+    public $height =>
+    string(5) "35.10"
+  }
+}

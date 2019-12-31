@@ -98,6 +98,6 @@ function importLiteratureReferences() {
 }
 
 // importPaintings();
-// importGraphics();
+importGraphics();
 // importGraphicsRestoration();
 // importLiteratureReferences();

@@ -42,8 +42,8 @@ class GraphicsJSONLangExistenceTypeExporter implements IFileExporter {
 	function pushItem(IBaseItem $item) {
 		if (!($item instanceof Graphic)) {
 			throw new \Exception('Pushed item is not of expected class \'Graphic\'');
-		}
-
+    }
+   
 		if ($this->isDone()) {
 			throw new \Error('Can\'t push more items after done() was called!');
 		}
@@ -52,10 +52,22 @@ class GraphicsJSONLangExistenceTypeExporter implements IFileExporter {
 			$this->langBuckets[$item->getLangCode()] = (object) [
 				'items' => [],
 			];
-		}
+    }
+    
+    if(sizeof($item->references) > 0){
+      $inventoryNumber = $item->references[0]->inventoryNumber; 
+      $imgurl = 'http://lucascranach.org/imageserver/G_'.$inventoryNumber.'/01_Overall/G_'.$inventoryNumber.'_Overall-s.jpg';
+      $headers = @get_headers($imgurl);
+      $bildok = (preg_match("=200=", $headers[0])) ? true : false;
+      
+      if($bildok){
+        $item->imagebase = preg_replace("=-s\.jpg=", "", $imgurl);
+        $this->langBuckets[$item->getLangCode()]->items[] = $item;
+      }
+    } 
 
-		$this->inventoryNumberList[] = $item->getInventoryNumber();
-		$this->langBuckets[$item->getLangCode()]->items[] = $item;
+    $this->inventoryNumberList[] = $item->getInventoryNumber();
+
 	}
 
 
