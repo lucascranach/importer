@@ -3,14 +3,14 @@
 namespace CranachImport\Process;
 
 require_once 'entities/IBaseItem.php';
-require_once 'collectors/ICollector.php';
-require_once 'importers/IImporter.php';
 require_once 'exporters/IExporter.php';
+require_once 'collectors/ICollector.php';
+require_once 'postProcessors/IPostProcessor.php';
 
 use CranachImport\Entities\IBaseItem;
-use CranachImport\Collectors\ICollector;
-use CranachImport\Importers\IImporter;
 use CranachImport\Exporters\IExporter;
+use CranachImport\Collectors\ICollector;
+use CranachImport\PostProcessors\IPostProcessor;
 
 
 /**
@@ -26,11 +26,39 @@ interface IPipeline {
 	function addExporter(IExporter $exporter);
 
 	/**
+	 * Adding multiple exporter instances to pass items to
+	 *
+	 * @param array[IExporter] $exporters Exporter instances
+	 */
+	function addExporters(array $exporters);
+
+	/**
 	 * Adding a collector instance to pass items to
 	 *
 	 * @param ICollector $collector Collector instance
 	 */
 	function addCollector(ICollector $collector);
+
+	/**
+	 * Adding multiple collector instances to pass items to
+	 *
+	 * @param array[ICollector] $collectors Collector instances
+	 */
+	function addCollectors(array $collectors);
+
+	/**
+	 * Adding a post processor instance to pass items to
+	 *
+	 * @param IPostProcessor $processor Post processor instance
+	 */
+	function addPostProcessor(IPostProcessor $postProcessor);
+
+	/**
+	 * Adding multiple post processor instances to pass items to
+	 *
+	 * @param array[IPostProcessor] $processors Post processors instances
+	 */
+	function addPostProcessors(array $postProcessors);
 
 	/**
 	 * Handling items passed from importers

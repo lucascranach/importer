@@ -13,7 +13,7 @@ use CranachImport\Entities\IBaseItem;
 interface ICollector {
 
 	/**
-	 * Addint an item to the collection
+	 * Add an item to the collection
 	 *
 	 * @param IBaseItem $item Item to be added to the collection
 	 */

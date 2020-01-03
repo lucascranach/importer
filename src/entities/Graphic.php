@@ -59,6 +59,16 @@ class Graphic implements ILanguageBaseItem {
 	public $catalogWorkReferences = [];
 	public $structuredDimension = null;
 
+	public $images = [
+		'xsmall' => '',
+		'small' => '',
+		'medium' => '',
+		'large' => '',
+		'xlarge' => '',
+	];
+
+	public $hasAllImages = false;
+
 
 	function __construct() {
 
@@ -368,6 +378,26 @@ class Graphic implements ILanguageBaseItem {
 
 	function getStructuredDimension(): Main\StructuredDimension {
 		return $this->structuredDimension;
+	}
+
+
+	function getImages(): array {
+		return $this->images;
+	}
+
+
+	function setImages(array $images) {
+		$this->images = $images;
+	}
+
+
+	function getHasAllImages(): bool {
+		return $this->hasAllImages;
+	}
+
+
+	function setHasAllImages(bool $hasAllImages) {
+		$this->hasAllImages = $hasAllImages;
 	}
 
 }

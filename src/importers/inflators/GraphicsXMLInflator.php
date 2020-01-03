@@ -943,6 +943,12 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			);
 			$graphicEn->setExhibitionHistory($cleanExhibitionHistoryStr);
 		}
+
+
+		/* Use the german exhibition history if none is set for the english one */
+		if (empty($graphicEn->getExhibitionHistory())) {
+			$graphicEn->setExhibitionHistory($graphicDe->getExhibitionHistory());
+		}
 	}
 
 

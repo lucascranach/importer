@@ -157,7 +157,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "13.20"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -453,7 +461,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "28.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -591,7 +607,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "37.90"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -778,7 +802,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "19.70",
                 "height": "29.30"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -973,7 +1005,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-127\/01_Overall\/G_AT_A_DG1929-127_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-127\/01_Overall\/G_AT_A_DG1929-127_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-127\/01_Overall\/G_AT_A_DG1929-127_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-127\/01_Overall\/G_AT_A_DG1929-127_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-127\/01_Overall\/G_AT_A_DG1929-127_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -1163,7 +1203,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-129\/01_Overall\/G_AT_A_DG1929-129_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-129\/01_Overall\/G_AT_A_DG1929-129_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-129\/01_Overall\/G_AT_A_DG1929-129_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-129\/01_Overall\/G_AT_A_DG1929-129_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-129\/01_Overall\/G_AT_A_DG1929-129_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -1371,7 +1419,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-131\/01_Overall\/G_AT_A_DG1929-131_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-131\/01_Overall\/G_AT_A_DG1929-131_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-131\/01_Overall\/G_AT_A_DG1929-131_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-131\/01_Overall\/G_AT_A_DG1929-131_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-131\/01_Overall\/G_AT_A_DG1929-131_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -1584,7 +1640,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-130\/01_Overall\/G_AT_A_DG1929-130_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-130\/01_Overall\/G_AT_A_DG1929-130_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-130\/01_Overall\/G_AT_A_DG1929-130_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-130\/01_Overall\/G_AT_A_DG1929-130_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-130\/01_Overall\/G_AT_A_DG1929-130_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -1734,7 +1798,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "21.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-82\/01_Overall\/G_AT_A_DG1929-82_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-82\/01_Overall\/G_AT_A_DG1929-82_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-82\/01_Overall\/G_AT_A_DG1929-82_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-82\/01_Overall\/G_AT_A_DG1929-82_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-82\/01_Overall\/G_AT_A_DG1929-82_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -1884,7 +1956,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "38.90"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -2012,7 +2092,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "12.00"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -2137,7 +2225,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "40.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-85\/01_Overall\/G_AT_A_DG1929-85_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-85\/01_Overall\/G_AT_A_DG1929-85_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-85\/01_Overall\/G_AT_A_DG1929-85_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-85\/01_Overall\/G_AT_A_DG1929-85_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-85\/01_Overall\/G_AT_A_DG1929-85_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -2378,7 +2474,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-158\/01_Overall\/G_AT_A_DG1929-158_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-158\/01_Overall\/G_AT_A_DG1929-158_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-158\/01_Overall\/G_AT_A_DG1929-158_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-158\/01_Overall\/G_AT_A_DG1929-158_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-158\/01_Overall\/G_AT_A_DG1929-158_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -2513,7 +2617,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.60"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-74\/01_Overall\/G_AT_A_DG1929-74_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-74\/01_Overall\/G_AT_A_DG1929-74_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-74\/01_Overall\/G_AT_A_DG1929-74_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-74\/01_Overall\/G_AT_A_DG1929-74_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-74\/01_Overall\/G_AT_A_DG1929-74_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -2646,7 +2758,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "18.70"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -2776,7 +2896,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.80"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-77\/01_Overall\/G_AT_A_DG1929-77_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-77\/01_Overall\/G_AT_A_DG1929-77_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-77\/01_Overall\/G_AT_A_DG1929-77_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-77\/01_Overall\/G_AT_A_DG1929-77_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-77\/01_Overall\/G_AT_A_DG1929-77_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -3051,7 +3179,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "14.00"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -3187,7 +3323,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "22.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-83\/01_Overall\/G_AT_A_DG1929-83_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-83\/01_Overall\/G_AT_A_DG1929-83_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-83\/01_Overall\/G_AT_A_DG1929-83_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-83\/01_Overall\/G_AT_A_DG1929-83_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-83\/01_Overall\/G_AT_A_DG1929-83_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -3312,7 +3456,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "38.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-84\/01_Overall\/G_AT_A_DG1929-84_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-84\/01_Overall\/G_AT_A_DG1929-84_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-84\/01_Overall\/G_AT_A_DG1929-84_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-84\/01_Overall\/G_AT_A_DG1929-84_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-84\/01_Overall\/G_AT_A_DG1929-84_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -3442,7 +3594,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-86\/01_Overall\/G_AT_A_DG1929-86_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-86\/01_Overall\/G_AT_A_DG1929-86_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-86\/01_Overall\/G_AT_A_DG1929-86_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-86\/01_Overall\/G_AT_A_DG1929-86_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-86\/01_Overall\/G_AT_A_DG1929-86_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -3572,7 +3732,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-87\/01_Overall\/G_AT_A_DG1929-87_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-87\/01_Overall\/G_AT_A_DG1929-87_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-87\/01_Overall\/G_AT_A_DG1929-87_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-87\/01_Overall\/G_AT_A_DG1929-87_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-87\/01_Overall\/G_AT_A_DG1929-87_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -3697,7 +3865,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-89\/01_Overall\/G_AT_A_DG1929-89_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-89\/01_Overall\/G_AT_A_DG1929-89_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-89\/01_Overall\/G_AT_A_DG1929-89_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-89\/01_Overall\/G_AT_A_DG1929-89_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-89\/01_Overall\/G_AT_A_DG1929-89_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -3827,7 +4003,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "37.80"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-91\/01_Overall\/G_AT_A_DG1929-91_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-91\/01_Overall\/G_AT_A_DG1929-91_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-91\/01_Overall\/G_AT_A_DG1929-91_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-91\/01_Overall\/G_AT_A_DG1929-91_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-91\/01_Overall\/G_AT_A_DG1929-91_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -3960,7 +4144,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "22.80"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-92\/01_Overall\/G_AT_A_DG1929-92_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-92\/01_Overall\/G_AT_A_DG1929-92_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-92\/01_Overall\/G_AT_A_DG1929-92_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-92\/01_Overall\/G_AT_A_DG1929-92_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-92\/01_Overall\/G_AT_A_DG1929-92_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -4070,7 +4262,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "17.40"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-93\/01_Overall\/G_AT_A_DG1929-93_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-93\/01_Overall\/G_AT_A_DG1929-93_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-93\/01_Overall\/G_AT_A_DG1929-93_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-93\/01_Overall\/G_AT_A_DG1929-93_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-93\/01_Overall\/G_AT_A_DG1929-93_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -4200,7 +4400,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "17.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-94\/01_Overall\/G_AT_A_DG1929-94_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-94\/01_Overall\/G_AT_A_DG1929-94_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-94\/01_Overall\/G_AT_A_DG1929-94_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-94\/01_Overall\/G_AT_A_DG1929-94_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-94\/01_Overall\/G_AT_A_DG1929-94_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -4330,7 +4538,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "18.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-95\/01_Overall\/G_AT_A_DG1929-95_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-95\/01_Overall\/G_AT_A_DG1929-95_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-95\/01_Overall\/G_AT_A_DG1929-95_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-95\/01_Overall\/G_AT_A_DG1929-95_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-95\/01_Overall\/G_AT_A_DG1929-95_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -4468,7 +4684,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "18.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-96\/01_Overall\/G_AT_A_DG1929-96_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-96\/01_Overall\/G_AT_A_DG1929-96_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-96\/01_Overall\/G_AT_A_DG1929-96_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-96\/01_Overall\/G_AT_A_DG1929-96_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-96\/01_Overall\/G_AT_A_DG1929-96_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -4598,7 +4822,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.60"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-97\/01_Overall\/G_AT_A_DG1929-97_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-97\/01_Overall\/G_AT_A_DG1929-97_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-97\/01_Overall\/G_AT_A_DG1929-97_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-97\/01_Overall\/G_AT_A_DG1929-97_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-97\/01_Overall\/G_AT_A_DG1929-97_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -4723,7 +4955,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "23.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-100\/01_Overall\/G_AT_A_DG1929-100_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-100\/01_Overall\/G_AT_A_DG1929-100_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-100\/01_Overall\/G_AT_A_DG1929-100_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-100\/01_Overall\/G_AT_A_DG1929-100_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-100\/01_Overall\/G_AT_A_DG1929-100_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -4848,7 +5088,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "33.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-101\/01_Overall\/G_AT_A_DG1929-101_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-101\/01_Overall\/G_AT_A_DG1929-101_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-101\/01_Overall\/G_AT_A_DG1929-101_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-101\/01_Overall\/G_AT_A_DG1929-101_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-101\/01_Overall\/G_AT_A_DG1929-101_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -4963,7 +5211,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "21.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1927-128\/01_Overall\/G_AT_A_DG1927-128_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1927-128\/01_Overall\/G_AT_A_DG1927-128_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1927-128\/01_Overall\/G_AT_A_DG1927-128_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1927-128\/01_Overall\/G_AT_A_DG1927-128_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1927-128\/01_Overall\/G_AT_A_DG1927-128_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -5120,7 +5376,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "26.80"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-102\/01_Overall\/G_AT_A_DG1929-102_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-102\/01_Overall\/G_AT_A_DG1929-102_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-102\/01_Overall\/G_AT_A_DG1929-102_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-102\/01_Overall\/G_AT_A_DG1929-102_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-102\/01_Overall\/G_AT_A_DG1929-102_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -5265,7 +5529,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "36.30"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -5420,7 +5692,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "28.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-111\/01_Overall\/G_AT_A_DG1929-111_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-111\/01_Overall\/G_AT_A_DG1929-111_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-111\/01_Overall\/G_AT_A_DG1929-111_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-111\/01_Overall\/G_AT_A_DG1929-111_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-111\/01_Overall\/G_AT_A_DG1929-111_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -5568,7 +5848,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "13.10"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-112\/01_Overall\/G_AT_A_DG1929-112_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-112\/01_Overall\/G_AT_A_DG1929-112_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-112\/01_Overall\/G_AT_A_DG1929-112_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-112\/01_Overall\/G_AT_A_DG1929-112_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-112\/01_Overall\/G_AT_A_DG1929-112_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -5715,7 +6003,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "13.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-114\/01_Overall\/G_AT_A_DG1929-114_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-114\/01_Overall\/G_AT_A_DG1929-114_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-114\/01_Overall\/G_AT_A_DG1929-114_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-114\/01_Overall\/G_AT_A_DG1929-114_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-114\/01_Overall\/G_AT_A_DG1929-114_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -5838,7 +6134,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "12.80"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-115\/01_Overall\/G_AT_A_DG1929-115_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-115\/01_Overall\/G_AT_A_DG1929-115_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-115\/01_Overall\/G_AT_A_DG1929-115_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-115\/01_Overall\/G_AT_A_DG1929-115_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-115\/01_Overall\/G_AT_A_DG1929-115_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -5971,7 +6275,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "23.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-116\/01_Overall\/G_AT_A_DG1929-116_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-116\/01_Overall\/G_AT_A_DG1929-116_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-116\/01_Overall\/G_AT_A_DG1929-116_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-116\/01_Overall\/G_AT_A_DG1929-116_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-116\/01_Overall\/G_AT_A_DG1929-116_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -6096,7 +6408,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "33.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-117\/01_Overall\/G_AT_A_DG1929-117_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-117\/01_Overall\/G_AT_A_DG1929-117_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-117\/01_Overall\/G_AT_A_DG1929-117_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-117\/01_Overall\/G_AT_A_DG1929-117_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-117\/01_Overall\/G_AT_A_DG1929-117_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -6236,7 +6556,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "28.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-118\/01_Overall\/G_AT_A_DG1929-118_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-118\/01_Overall\/G_AT_A_DG1929-118_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-118\/01_Overall\/G_AT_A_DG1929-118_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-118\/01_Overall\/G_AT_A_DG1929-118_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-118\/01_Overall\/G_AT_A_DG1929-118_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -6376,7 +6704,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-122\/01_Overall\/G_AT_A_DG1929-122_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-122\/01_Overall\/G_AT_A_DG1929-122_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-122\/01_Overall\/G_AT_A_DG1929-122_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-122\/01_Overall\/G_AT_A_DG1929-122_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-122\/01_Overall\/G_AT_A_DG1929-122_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -6506,7 +6842,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "33.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-123\/01_Overall\/G_AT_A_DG1929-123_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-123\/01_Overall\/G_AT_A_DG1929-123_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-123\/01_Overall\/G_AT_A_DG1929-123_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-123\/01_Overall\/G_AT_A_DG1929-123_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-123\/01_Overall\/G_AT_A_DG1929-123_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -6636,7 +6980,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "29.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-124\/01_Overall\/G_AT_A_DG1929-124_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-124\/01_Overall\/G_AT_A_DG1929-124_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-124\/01_Overall\/G_AT_A_DG1929-124_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-124\/01_Overall\/G_AT_A_DG1929-124_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-124\/01_Overall\/G_AT_A_DG1929-124_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -6766,7 +7118,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "29.60"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-125\/01_Overall\/G_AT_A_DG1929-125_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-125\/01_Overall\/G_AT_A_DG1929-125_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-125\/01_Overall\/G_AT_A_DG1929-125_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-125\/01_Overall\/G_AT_A_DG1929-125_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-125\/01_Overall\/G_AT_A_DG1929-125_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -6891,7 +7251,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "29.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-126\/01_Overall\/G_AT_A_DG1929-126_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-126\/01_Overall\/G_AT_A_DG1929-126_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-126\/01_Overall\/G_AT_A_DG1929-126_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-126\/01_Overall\/G_AT_A_DG1929-126_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-126\/01_Overall\/G_AT_A_DG1929-126_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -7096,7 +7464,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-132\/01_Overall\/G_AT_A_DG1929-132_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-132\/01_Overall\/G_AT_A_DG1929-132_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-132\/01_Overall\/G_AT_A_DG1929-132_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-132\/01_Overall\/G_AT_A_DG1929-132_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-132\/01_Overall\/G_AT_A_DG1929-132_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -7306,7 +7682,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-133\/01_Overall\/G_AT_A_DG1929-133_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-133\/01_Overall\/G_AT_A_DG1929-133_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-133\/01_Overall\/G_AT_A_DG1929-133_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-133\/01_Overall\/G_AT_A_DG1929-133_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-133\/01_Overall\/G_AT_A_DG1929-133_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -7521,7 +7905,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-134\/01_Overall\/G_AT_A_DG1929-134_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-134\/01_Overall\/G_AT_A_DG1929-134_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-134\/01_Overall\/G_AT_A_DG1929-134_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-134\/01_Overall\/G_AT_A_DG1929-134_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-134\/01_Overall\/G_AT_A_DG1929-134_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -7741,7 +8133,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-135\/01_Overall\/G_AT_A_DG1929-135_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-135\/01_Overall\/G_AT_A_DG1929-135_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-135\/01_Overall\/G_AT_A_DG1929-135_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-135\/01_Overall\/G_AT_A_DG1929-135_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-135\/01_Overall\/G_AT_A_DG1929-135_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -7966,7 +8366,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-136\/01_Overall\/G_AT_A_DG1929-136_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-136\/01_Overall\/G_AT_A_DG1929-136_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-136\/01_Overall\/G_AT_A_DG1929-136_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-136\/01_Overall\/G_AT_A_DG1929-136_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-136\/01_Overall\/G_AT_A_DG1929-136_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -8201,7 +8609,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-137\/01_Overall\/G_AT_A_DG1929-137_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-137\/01_Overall\/G_AT_A_DG1929-137_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-137\/01_Overall\/G_AT_A_DG1929-137_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-137\/01_Overall\/G_AT_A_DG1929-137_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-137\/01_Overall\/G_AT_A_DG1929-137_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -8431,7 +8847,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-138\/01_Overall\/G_AT_A_DG1929-138_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-138\/01_Overall\/G_AT_A_DG1929-138_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-138\/01_Overall\/G_AT_A_DG1929-138_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-138\/01_Overall\/G_AT_A_DG1929-138_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-138\/01_Overall\/G_AT_A_DG1929-138_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -8671,7 +9095,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-139\/01_Overall\/G_AT_A_DG1929-139_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-139\/01_Overall\/G_AT_A_DG1929-139_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-139\/01_Overall\/G_AT_A_DG1929-139_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-139\/01_Overall\/G_AT_A_DG1929-139_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-139\/01_Overall\/G_AT_A_DG1929-139_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -8916,7 +9348,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-140\/01_Overall\/G_AT_A_DG1929-140_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-140\/01_Overall\/G_AT_A_DG1929-140_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-140\/01_Overall\/G_AT_A_DG1929-140_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-140\/01_Overall\/G_AT_A_DG1929-140_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-140\/01_Overall\/G_AT_A_DG1929-140_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -9166,7 +9606,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-141\/01_Overall\/G_AT_A_DG1929-141_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-141\/01_Overall\/G_AT_A_DG1929-141_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-141\/01_Overall\/G_AT_A_DG1929-141_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-141\/01_Overall\/G_AT_A_DG1929-141_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-141\/01_Overall\/G_AT_A_DG1929-141_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -9276,7 +9724,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "38.90"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -9421,7 +9877,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "13.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-113\/01_Overall\/G_AT_A_DG1929-113_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-113\/01_Overall\/G_AT_A_DG1929-113_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-113\/01_Overall\/G_AT_A_DG1929-113_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-113\/01_Overall\/G_AT_A_DG1929-113_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-113\/01_Overall\/G_AT_A_DG1929-113_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -9559,7 +10023,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.80"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-156\/01_Overall\/G_AT_A_DG1929-156_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-156\/01_Overall\/G_AT_A_DG1929-156_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-156\/01_Overall\/G_AT_A_DG1929-156_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-156\/01_Overall\/G_AT_A_DG1929-156_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-156\/01_Overall\/G_AT_A_DG1929-156_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -9709,7 +10181,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.50"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -9949,7 +10429,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "20.90"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-81\/01_Overall\/G_AT_A_DG1929-81_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-81\/01_Overall\/G_AT_A_DG1929-81_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-81\/01_Overall\/G_AT_A_DG1929-81_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-81\/01_Overall\/G_AT_A_DG1929-81_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-81\/01_Overall\/G_AT_A_DG1929-81_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -10170,7 +10658,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-159\/01_Overall\/G_AT_A_DG1929-159_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-159\/01_Overall\/G_AT_A_DG1929-159_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-159\/01_Overall\/G_AT_A_DG1929-159_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-159\/01_Overall\/G_AT_A_DG1929-159_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-159\/01_Overall\/G_AT_A_DG1929-159_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -10386,7 +10882,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-161\/01_Overall\/G_AT_A_DG1929-161_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-161\/01_Overall\/G_AT_A_DG1929-161_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-161\/01_Overall\/G_AT_A_DG1929-161_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-161\/01_Overall\/G_AT_A_DG1929-161_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-161\/01_Overall\/G_AT_A_DG1929-161_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -10587,7 +11091,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-162\/01_Overall\/G_AT_A_DG1929-162_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-162\/01_Overall\/G_AT_A_DG1929-162_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-162\/01_Overall\/G_AT_A_DG1929-162_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-162\/01_Overall\/G_AT_A_DG1929-162_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-162\/01_Overall\/G_AT_A_DG1929-162_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -10788,7 +11300,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-163\/01_Overall\/G_AT_A_DG1929-163_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-163\/01_Overall\/G_AT_A_DG1929-163_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-163\/01_Overall\/G_AT_A_DG1929-163_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-163\/01_Overall\/G_AT_A_DG1929-163_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-163\/01_Overall\/G_AT_A_DG1929-163_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -10989,7 +11509,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -11185,7 +11713,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-165\/01_Overall\/G_AT_A_DG1929-165_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-165\/01_Overall\/G_AT_A_DG1929-165_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-165\/01_Overall\/G_AT_A_DG1929-165_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-165\/01_Overall\/G_AT_A_DG1929-165_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-165\/01_Overall\/G_AT_A_DG1929-165_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -11366,7 +11902,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-166\/01_Overall\/G_AT_A_DG1929-166_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-166\/01_Overall\/G_AT_A_DG1929-166_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-166\/01_Overall\/G_AT_A_DG1929-166_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-166\/01_Overall\/G_AT_A_DG1929-166_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-166\/01_Overall\/G_AT_A_DG1929-166_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -11547,7 +12091,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-167\/01_Overall\/G_AT_A_DG1929-167_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-167\/01_Overall\/G_AT_A_DG1929-167_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-167\/01_Overall\/G_AT_A_DG1929-167_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-167\/01_Overall\/G_AT_A_DG1929-167_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-167\/01_Overall\/G_AT_A_DG1929-167_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -11718,7 +12270,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-168\/01_Overall\/G_AT_A_DG1929-168_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-168\/01_Overall\/G_AT_A_DG1929-168_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-168\/01_Overall\/G_AT_A_DG1929-168_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-168\/01_Overall\/G_AT_A_DG1929-168_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-168\/01_Overall\/G_AT_A_DG1929-168_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -11894,7 +12454,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-169\/01_Overall\/G_AT_A_DG1929-169_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-169\/01_Overall\/G_AT_A_DG1929-169_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-169\/01_Overall\/G_AT_A_DG1929-169_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-169\/01_Overall\/G_AT_A_DG1929-169_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-169\/01_Overall\/G_AT_A_DG1929-169_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -12115,7 +12683,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-160\/01_Overall\/G_AT_A_DG1929-160_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-160\/01_Overall\/G_AT_A_DG1929-160_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-160\/01_Overall\/G_AT_A_DG1929-160_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-160\/01_Overall\/G_AT_A_DG1929-160_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-160\/01_Overall\/G_AT_A_DG1929-160_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -12240,7 +12816,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-178\/01_Overall\/G_AT_A_DG1929-178_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-178\/01_Overall\/G_AT_A_DG1929-178_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-178\/01_Overall\/G_AT_A_DG1929-178_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-178\/01_Overall\/G_AT_A_DG1929-178_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-178\/01_Overall\/G_AT_A_DG1929-178_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -12365,7 +12949,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.40"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-179\/01_Overall\/G_AT_A_DG1929-179_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-179\/01_Overall\/G_AT_A_DG1929-179_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-179\/01_Overall\/G_AT_A_DG1929-179_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-179\/01_Overall\/G_AT_A_DG1929-179_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-179\/01_Overall\/G_AT_A_DG1929-179_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -12533,7 +13125,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "11.20"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -12658,7 +13258,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "22.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-181\/01_Overall\/G_AT_A_DG1929-181_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-181\/01_Overall\/G_AT_A_DG1929-181_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-181\/01_Overall\/G_AT_A_DG1929-181_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-181\/01_Overall\/G_AT_A_DG1929-181_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-181\/01_Overall\/G_AT_A_DG1929-181_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -12783,7 +13391,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.70"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-182\/01_Overall\/G_AT_A_DG1929-182_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-182\/01_Overall\/G_AT_A_DG1929-182_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-182\/01_Overall\/G_AT_A_DG1929-182_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-182\/01_Overall\/G_AT_A_DG1929-182_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-182\/01_Overall\/G_AT_A_DG1929-182_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -12908,7 +13524,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-183\/01_Overall\/G_AT_A_DG1929-183_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-183\/01_Overall\/G_AT_A_DG1929-183_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-183\/01_Overall\/G_AT_A_DG1929-183_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-183\/01_Overall\/G_AT_A_DG1929-183_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-183\/01_Overall\/G_AT_A_DG1929-183_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -13038,7 +13662,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "33.80"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-184\/01_Overall\/G_AT_A_DG1929-184_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-184\/01_Overall\/G_AT_A_DG1929-184_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-184\/01_Overall\/G_AT_A_DG1929-184_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-184\/01_Overall\/G_AT_A_DG1929-184_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-184\/01_Overall\/G_AT_A_DG1929-184_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -13168,7 +13800,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "33.50"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -13301,7 +13941,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "28.40"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -13431,7 +14079,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-191\/01_Overall\/G_AT_A_DG1929-191_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-191\/01_Overall\/G_AT_A_DG1929-191_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-191\/01_Overall\/G_AT_A_DG1929-191_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-191\/01_Overall\/G_AT_A_DG1929-191_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-191\/01_Overall\/G_AT_A_DG1929-191_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -13566,7 +14222,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "32.90"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-193\/01_Overall\/G_AT_A_DG1929-193_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-193\/01_Overall\/G_AT_A_DG1929-193_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-193\/01_Overall\/G_AT_A_DG1929-193_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-193\/01_Overall\/G_AT_A_DG1929-193_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-193\/01_Overall\/G_AT_A_DG1929-193_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -13706,7 +14370,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "30.90"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-194\/01_Overall\/G_AT_A_DG1929-194_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-194\/01_Overall\/G_AT_A_DG1929-194_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-194\/01_Overall\/G_AT_A_DG1929-194_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-194\/01_Overall\/G_AT_A_DG1929-194_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-194\/01_Overall\/G_AT_A_DG1929-194_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -13851,7 +14523,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-195\/01_Overall\/G_AT_A_DG1929-195_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-195\/01_Overall\/G_AT_A_DG1929-195_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-195\/01_Overall\/G_AT_A_DG1929-195_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-195\/01_Overall\/G_AT_A_DG1929-195_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-195\/01_Overall\/G_AT_A_DG1929-195_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -14001,7 +14681,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-196\/01_Overall\/G_AT_A_DG1929-196_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-196\/01_Overall\/G_AT_A_DG1929-196_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-196\/01_Overall\/G_AT_A_DG1929-196_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-196\/01_Overall\/G_AT_A_DG1929-196_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-196\/01_Overall\/G_AT_A_DG1929-196_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -14156,7 +14844,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "30.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-197\/01_Overall\/G_AT_A_DG1929-197_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-197\/01_Overall\/G_AT_A_DG1929-197_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-197\/01_Overall\/G_AT_A_DG1929-197_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-197\/01_Overall\/G_AT_A_DG1929-197_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-197\/01_Overall\/G_AT_A_DG1929-197_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -14316,7 +15012,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-198\/01_Overall\/G_AT_A_DG1929-198_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-198\/01_Overall\/G_AT_A_DG1929-198_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-198\/01_Overall\/G_AT_A_DG1929-198_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-198\/01_Overall\/G_AT_A_DG1929-198_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-198\/01_Overall\/G_AT_A_DG1929-198_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -14481,7 +15185,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.40"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-199\/01_Overall\/G_AT_A_DG1929-199_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-199\/01_Overall\/G_AT_A_DG1929-199_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-199\/01_Overall\/G_AT_A_DG1929-199_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-199\/01_Overall\/G_AT_A_DG1929-199_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-199\/01_Overall\/G_AT_A_DG1929-199_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -14651,7 +15363,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-200\/01_Overall\/G_AT_A_DG1929-200_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-200\/01_Overall\/G_AT_A_DG1929-200_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-200\/01_Overall\/G_AT_A_DG1929-200_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-200\/01_Overall\/G_AT_A_DG1929-200_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-200\/01_Overall\/G_AT_A_DG1929-200_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -14826,7 +15546,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-201\/01_Overall\/G_AT_A_DG1929-201_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-201\/01_Overall\/G_AT_A_DG1929-201_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-201\/01_Overall\/G_AT_A_DG1929-201_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-201\/01_Overall\/G_AT_A_DG1929-201_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-201\/01_Overall\/G_AT_A_DG1929-201_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -15006,7 +15734,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.30"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -15191,7 +15927,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-203\/01_Overall\/G_AT_A_DG1929-203_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-203\/01_Overall\/G_AT_A_DG1929-203_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-203\/01_Overall\/G_AT_A_DG1929-203_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-203\/01_Overall\/G_AT_A_DG1929-203_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-203\/01_Overall\/G_AT_A_DG1929-203_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -15381,7 +16125,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.10"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-204\/01_Overall\/G_AT_A_DG1929-204_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-204\/01_Overall\/G_AT_A_DG1929-204_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-204\/01_Overall\/G_AT_A_DG1929-204_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-204\/01_Overall\/G_AT_A_DG1929-204_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-204\/01_Overall\/G_AT_A_DG1929-204_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -15576,7 +16328,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-205\/01_Overall\/G_AT_A_DG1929-205_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-205\/01_Overall\/G_AT_A_DG1929-205_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-205\/01_Overall\/G_AT_A_DG1929-205_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-205\/01_Overall\/G_AT_A_DG1929-205_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-205\/01_Overall\/G_AT_A_DG1929-205_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -15776,7 +16536,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.40"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-206\/01_Overall\/G_AT_A_DG1929-206_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-206\/01_Overall\/G_AT_A_DG1929-206_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-206\/01_Overall\/G_AT_A_DG1929-206_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-206\/01_Overall\/G_AT_A_DG1929-206_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-206\/01_Overall\/G_AT_A_DG1929-206_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -15906,7 +16674,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "36.70"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-235\/01_Overall\/G_AT_A_DG1929-235_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-235\/01_Overall\/G_AT_A_DG1929-235_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-235\/01_Overall\/G_AT_A_DG1929-235_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-235\/01_Overall\/G_AT_A_DG1929-235_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-235\/01_Overall\/G_AT_A_DG1929-235_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -16031,7 +16807,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "40.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-236\/01_Overall\/G_AT_A_DG1929-236_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-236\/01_Overall\/G_AT_A_DG1929-236_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-236\/01_Overall\/G_AT_A_DG1929-236_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-236\/01_Overall\/G_AT_A_DG1929-236_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-236\/01_Overall\/G_AT_A_DG1929-236_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -16164,7 +16948,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "33.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-237\/01_Overall\/G_AT_A_DG1929-237_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-237\/01_Overall\/G_AT_A_DG1929-237_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-237\/01_Overall\/G_AT_A_DG1929-237_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-237\/01_Overall\/G_AT_A_DG1929-237_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-237\/01_Overall\/G_AT_A_DG1929-237_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -16302,7 +17094,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.70"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-238\/01_Overall\/G_AT_A_DG1929-238_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-238\/01_Overall\/G_AT_A_DG1929-238_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-238\/01_Overall\/G_AT_A_DG1929-238_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-238\/01_Overall\/G_AT_A_DG1929-238_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-238\/01_Overall\/G_AT_A_DG1929-238_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -16427,7 +17227,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "21.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-240\/01_Overall\/G_AT_A_DG1929-240_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-240\/01_Overall\/G_AT_A_DG1929-240_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-240\/01_Overall\/G_AT_A_DG1929-240_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-240\/01_Overall\/G_AT_A_DG1929-240_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-240\/01_Overall\/G_AT_A_DG1929-240_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -16557,7 +17365,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "21.40"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-241\/01_Overall\/G_AT_A_DG1929-241_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-241\/01_Overall\/G_AT_A_DG1929-241_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-241\/01_Overall\/G_AT_A_DG1929-241_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-241\/01_Overall\/G_AT_A_DG1929-241_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-241\/01_Overall\/G_AT_A_DG1929-241_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "de",
@@ -16677,7 +17493,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "27.50"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -16810,7 +17634,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "12.80"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -16874,7 +17706,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -16944,7 +17784,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -17032,7 +17880,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -17155,7 +18011,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -17250,7 +18114,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -17371,7 +18243,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -17456,7 +18336,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -17618,7 +18506,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -17846,7 +18742,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -17924,7 +18828,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -18029,7 +18941,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -18099,7 +19019,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -18229,7 +19157,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -18299,7 +19235,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -18476,7 +19420,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -18661,7 +19613,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -18867,7 +19827,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "4.00",
                 "height": "6.10"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -18972,7 +19940,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -19099,7 +20075,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -19257,7 +20241,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -19359,7 +20351,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -19437,7 +20437,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -19586,7 +20594,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "de",
@@ -19733,7 +20749,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "13.20"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         }
     ]
 }

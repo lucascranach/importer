@@ -94,7 +94,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-75",
             "bibliography": "",
             "references": [
                 {
@@ -165,7 +165,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "13.20"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -232,7 +240,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-242",
             "bibliography": "",
             "references": [
                 {
@@ -460,7 +468,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "28.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -527,7 +543,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "- Amsterdam, Kunstsammlung Schloss Wolfegg, Salamander Fine Arts (second state)\n- Oxford (1st state)",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-98",
             "bibliography": "",
             "references": [
                 {
@@ -598,7 +614,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "37.90"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -694,7 +718,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "DE_SMKP_KA-FP-352D",
             "bibliography": "",
             "references": [
                 {
@@ -777,7 +801,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "19.70",
                 "height": "29.30"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -894,7 +926,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-127",
             "bibliography": "",
             "references": [
                 {
@@ -972,7 +1004,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-127\/01_Overall\/G_AT_A_DG1929-127_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-127\/01_Overall\/G_AT_A_DG1929-127_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-127\/01_Overall\/G_AT_A_DG1929-127_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-127\/01_Overall\/G_AT_A_DG1929-127_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-127\/01_Overall\/G_AT_A_DG1929-127_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -1089,7 +1129,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-129",
             "bibliography": "",
             "references": [
                 {
@@ -1162,7 +1202,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-129\/01_Overall\/G_AT_A_DG1929-129_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-129\/01_Overall\/G_AT_A_DG1929-129_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-129\/01_Overall\/G_AT_A_DG1929-129_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-129\/01_Overall\/G_AT_A_DG1929-129_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-129\/01_Overall\/G_AT_A_DG1929-129_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -1284,7 +1332,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-131",
             "bibliography": "",
             "references": [
                 {
@@ -1370,7 +1418,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-131\/01_Overall\/G_AT_A_DG1929-131_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-131\/01_Overall\/G_AT_A_DG1929-131_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-131\/01_Overall\/G_AT_A_DG1929-131_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-131\/01_Overall\/G_AT_A_DG1929-131_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-131\/01_Overall\/G_AT_A_DG1929-131_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -1492,7 +1548,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-130",
             "bibliography": "",
             "references": [
                 {
@@ -1583,7 +1639,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-130\/01_Overall\/G_AT_A_DG1929-130_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-130\/01_Overall\/G_AT_A_DG1929-130_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-130\/01_Overall\/G_AT_A_DG1929-130_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-130\/01_Overall\/G_AT_A_DG1929-130_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-130\/01_Overall\/G_AT_A_DG1929-130_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -1665,7 +1729,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "- also in Amsterdam, Basel private collection, Bayerische Staatsbibliothek",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-82",
             "bibliography": "",
             "references": [
                 {
@@ -1733,7 +1797,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "21.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-82\/01_Overall\/G_AT_A_DG1929-82_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-82\/01_Overall\/G_AT_A_DG1929-82_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-82\/01_Overall\/G_AT_A_DG1929-82_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-82\/01_Overall\/G_AT_A_DG1929-82_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-82\/01_Overall\/G_AT_A_DG1929-82_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -1815,7 +1887,7 @@
             "inscription": "in gothic type:\nOn the ladder on the l. upright: 'Messigkeit in gluckseligen dingen' \nOn the opposite upright, 'Gedult in widderwertigen dingen.'\nOn the rungs 'Demutige lieb gottes', 'Sein selbs kleinmechtigung', and 'Verschmehung der welt'\nBeneath and above: 'Furcht ewiger pein' and 'Lieb ewiger belonug'\n- on the circles: 'Heilig Heilig Heilig almechtiger hergot der do war ist vnd kunfftig sein wurt.\/ Sehent das ich allein vnd kein ander got sey dan ich. Ich bin der anfang vnd das End.'\n- on a scroll held above the Trinity by angels: 'Heilig, heilig, heilig Hergot der vil scharen\/ dein himele vn erde sein voll deiner gloria'\n- God the Father holds a scroll in his hands: 'Kubt all zu mir\/ die jr mit jrdischer angst seit belade Ich will euch widd mit hilischer spei\u00dfvn freud laben.'\n- on the scroll enfolding the groups either side of God the Father: 'Die welt haben wir gelassen vnd dise leittern gestigen all\/ darumb frewen wir vns ewigklich mit got jn himelischen jubelschall.'\n- below these groups is a flying angel bearing a scroll: (l.) 'Drenget euch hinein zu \/ gehn durch die ege pfort', (r.) 'Kument hyrauff wir wollen \/ vns frewen jn dem herren vnd \/ jubiliern gotte vnsrn heyl.'\n- above Friedrich the Wise is a scroll: 'O got mein herr fuhr gerad uber sich in deine angesicht meinen wegk'\n- above the women: 'hilff vns got vnser heyl' \n- on either side is a devil, on the l. : 'So got kein gefallen hat jn ewern\/ verterben\/ was arbeit jr so hart in \/ tugenden bi\u00df auff ewer sterben' - on the r.: 'Huth dich mensch vor harten dingen\/ der du asch bist vnd schwacher natur\/ Brauch in wollust weil du lebst gots\/ creatur'",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-187",
             "bibliography": "",
             "references": [
                 {
@@ -1883,7 +1955,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "38.90"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -1958,7 +2038,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-188",
             "bibliography": "",
             "references": [
                 {
@@ -2011,7 +2091,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "12.00"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -2078,7 +2166,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-85",
             "bibliography": "",
             "references": [
                 {
@@ -2136,7 +2224,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "40.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-85\/01_Overall\/G_AT_A_DG1929-85_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-85\/01_Overall\/G_AT_A_DG1929-85_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-85\/01_Overall\/G_AT_A_DG1929-85_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-85\/01_Overall\/G_AT_A_DG1929-85_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-85\/01_Overall\/G_AT_A_DG1929-85_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -2239,7 +2335,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-158",
             "bibliography": "",
             "references": [
                 {
@@ -2377,7 +2473,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-158\/01_Overall\/G_AT_A_DG1929-158_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-158\/01_Overall\/G_AT_A_DG1929-158_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-158\/01_Overall\/G_AT_A_DG1929-158_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-158\/01_Overall\/G_AT_A_DG1929-158_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-158\/01_Overall\/G_AT_A_DG1929-158_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -2444,7 +2548,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-74",
             "bibliography": "",
             "references": [
                 {
@@ -2520,7 +2624,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.60"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-74\/01_Overall\/G_AT_A_DG1929-74_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-74\/01_Overall\/G_AT_A_DG1929-74_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-74\/01_Overall\/G_AT_A_DG1929-74_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-74\/01_Overall\/G_AT_A_DG1929-74_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-74\/01_Overall\/G_AT_A_DG1929-74_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -2595,7 +2707,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-72",
             "bibliography": "",
             "references": [
                 {
@@ -2653,7 +2765,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "18.70"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -2720,7 +2840,7 @@
             "inscription": "- top right: 'ALBERTVS MI DI SA SANC \/ ROMANE ECCLAE TI SAN \/ CHRYSOGONI PBR CARDINA \/ MAGVN AC MAGDE ARCHI \/ EPS ELECTOR IMPE PRIMAS \/ ADMINI HALBER MARCHI \/ BRANDEBVRGENSIS' \n- bottom: 'SIC OCVLOS SIC ILLE GENAS SIC \/ ORA FEREBAT \/ ANNO ETATIS SVE XXX \/ MDXX'",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-77",
             "bibliography": "",
             "references": [
                 {
@@ -2783,7 +2903,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.80"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-77\/01_Overall\/G_AT_A_DG1929-77_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-77\/01_Overall\/G_AT_A_DG1929-77_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-77\/01_Overall\/G_AT_A_DG1929-77_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-77\/01_Overall\/G_AT_A_DG1929-77_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-77\/01_Overall\/G_AT_A_DG1929-77_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -2850,7 +2978,7 @@
             "inscription": "- bottom: 'AETHERNA IPSE SVAE MENTIS SIMVLACHRA LVTHERVS \/ EXPRIMIT . AT VVLTVS CERA LVCAE OCCIDVOS \/ .M.D.X.X.'",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-78",
             "bibliography": "",
             "references": [
                 {
@@ -3058,7 +3186,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "14.00"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -3140,7 +3276,7 @@
             "inscription": "Cross titled 'INRI' in the block",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-83",
             "bibliography": "",
             "references": [
                 {
@@ -3194,7 +3330,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "22.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-83\/01_Overall\/G_AT_A_DG1929-83_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-83\/01_Overall\/G_AT_A_DG1929-83_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-83\/01_Overall\/G_AT_A_DG1929-83_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-83\/01_Overall\/G_AT_A_DG1929-83_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-83\/01_Overall\/G_AT_A_DG1929-83_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -3261,7 +3405,7 @@
             "inscription": "The cross is titled 'IN R'I in the block",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-84",
             "bibliography": "",
             "references": [
                 {
@@ -3319,7 +3463,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "38.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-84\/01_Overall\/G_AT_A_DG1929-84_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-84\/01_Overall\/G_AT_A_DG1929-84_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-84\/01_Overall\/G_AT_A_DG1929-84_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-84\/01_Overall\/G_AT_A_DG1929-84_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-84\/01_Overall\/G_AT_A_DG1929-84_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -3386,7 +3538,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-86",
             "bibliography": "",
             "references": [
                 {
@@ -3449,7 +3601,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-86\/01_Overall\/G_AT_A_DG1929-86_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-86\/01_Overall\/G_AT_A_DG1929-86_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-86\/01_Overall\/G_AT_A_DG1929-86_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-86\/01_Overall\/G_AT_A_DG1929-86_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-86\/01_Overall\/G_AT_A_DG1929-86_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -3516,7 +3676,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-87",
             "bibliography": "",
             "references": [
                 {
@@ -3579,7 +3739,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-87\/01_Overall\/G_AT_A_DG1929-87_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-87\/01_Overall\/G_AT_A_DG1929-87_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-87\/01_Overall\/G_AT_A_DG1929-87_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-87\/01_Overall\/G_AT_A_DG1929-87_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-87\/01_Overall\/G_AT_A_DG1929-87_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -3646,7 +3814,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-89",
             "bibliography": "",
             "references": [
                 {
@@ -3704,7 +3872,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-89\/01_Overall\/G_AT_A_DG1929-89_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-89\/01_Overall\/G_AT_A_DG1929-89_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-89\/01_Overall\/G_AT_A_DG1929-89_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-89\/01_Overall\/G_AT_A_DG1929-89_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-89\/01_Overall\/G_AT_A_DG1929-89_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -3771,7 +3947,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-91",
             "bibliography": "",
             "references": [
                 {
@@ -3834,7 +4010,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "37.80"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-91\/01_Overall\/G_AT_A_DG1929-91_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-91\/01_Overall\/G_AT_A_DG1929-91_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-91\/01_Overall\/G_AT_A_DG1929-91_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-91\/01_Overall\/G_AT_A_DG1929-91_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-91\/01_Overall\/G_AT_A_DG1929-91_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -3909,7 +4093,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-92",
             "bibliography": "",
             "references": [
                 {
@@ -3967,7 +4151,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "22.80"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-92\/01_Overall\/G_AT_A_DG1929-92_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-92\/01_Overall\/G_AT_A_DG1929-92_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-92\/01_Overall\/G_AT_A_DG1929-92_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-92\/01_Overall\/G_AT_A_DG1929-92_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-92\/01_Overall\/G_AT_A_DG1929-92_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -4034,7 +4226,7 @@
             "inscription": "in the block on the right sleeve: 'KLVE'",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-93",
             "bibliography": "",
             "references": [
                 {
@@ -4077,7 +4269,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "17.40"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-93\/01_Overall\/G_AT_A_DG1929-93_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-93\/01_Overall\/G_AT_A_DG1929-93_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-93\/01_Overall\/G_AT_A_DG1929-93_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-93\/01_Overall\/G_AT_A_DG1929-93_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-93\/01_Overall\/G_AT_A_DG1929-93_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -4144,7 +4344,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-94",
             "bibliography": "",
             "references": [
                 {
@@ -4207,7 +4407,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "17.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-94\/01_Overall\/G_AT_A_DG1929-94_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-94\/01_Overall\/G_AT_A_DG1929-94_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-94\/01_Overall\/G_AT_A_DG1929-94_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-94\/01_Overall\/G_AT_A_DG1929-94_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-94\/01_Overall\/G_AT_A_DG1929-94_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -4274,7 +4482,7 @@
             "inscription": "-  in the block on the boy's chest band: 'AV'",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-95",
             "bibliography": "",
             "references": [
                 {
@@ -4337,7 +4545,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "18.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-95\/01_Overall\/G_AT_A_DG1929-95_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-95\/01_Overall\/G_AT_A_DG1929-95_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-95\/01_Overall\/G_AT_A_DG1929-95_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-95\/01_Overall\/G_AT_A_DG1929-95_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-95\/01_Overall\/G_AT_A_DG1929-95_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -4412,7 +4628,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-96",
             "bibliography": "",
             "references": [
                 {
@@ -4475,7 +4691,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "18.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-96\/01_Overall\/G_AT_A_DG1929-96_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-96\/01_Overall\/G_AT_A_DG1929-96_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-96\/01_Overall\/G_AT_A_DG1929-96_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-96\/01_Overall\/G_AT_A_DG1929-96_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-96\/01_Overall\/G_AT_A_DG1929-96_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -4542,7 +4766,7 @@
             "inscription": "on the knight in the lower right corner: 'A'",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-97",
             "bibliography": "",
             "references": [
                 {
@@ -4613,7 +4837,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.60"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-97\/01_Overall\/G_AT_A_DG1929-97_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-97\/01_Overall\/G_AT_A_DG1929-97_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-97\/01_Overall\/G_AT_A_DG1929-97_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-97\/01_Overall\/G_AT_A_DG1929-97_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-97\/01_Overall\/G_AT_A_DG1929-97_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -4680,7 +4912,7 @@
             "inscription": "on the caparison of the horse, in the block: 'A'",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-100",
             "bibliography": "",
             "references": [
                 {
@@ -4746,7 +4978,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "23.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-100\/01_Overall\/G_AT_A_DG1929-100_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-100\/01_Overall\/G_AT_A_DG1929-100_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-100\/01_Overall\/G_AT_A_DG1929-100_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-100\/01_Overall\/G_AT_A_DG1929-100_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-100\/01_Overall\/G_AT_A_DG1929-100_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -4813,7 +5053,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-101",
             "bibliography": "",
             "references": [
                 {
@@ -4879,7 +5119,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "33.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-101\/01_Overall\/G_AT_A_DG1929-101_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-101\/01_Overall\/G_AT_A_DG1929-101_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-101\/01_Overall\/G_AT_A_DG1929-101_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-101\/01_Overall\/G_AT_A_DG1929-101_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-101\/01_Overall\/G_AT_A_DG1929-101_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -4940,7 +5188,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1927-128",
             "bibliography": "",
             "references": [
                 {
@@ -4983,7 +5231,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "21.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1927-128\/01_Overall\/G_AT_A_DG1927-128_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1927-128\/01_Overall\/G_AT_A_DG1927-128_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1927-128\/01_Overall\/G_AT_A_DG1927-128_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1927-128\/01_Overall\/G_AT_A_DG1927-128_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1927-128\/01_Overall\/G_AT_A_DG1927-128_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -5066,7 +5322,7 @@
             "inscription": "in the block cross titled IRNI (R and N in reverse).",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-102",
             "bibliography": "",
             "references": [
                 {
@@ -5129,7 +5385,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "26.80"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-102\/01_Overall\/G_AT_A_DG1929-102_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-102\/01_Overall\/G_AT_A_DG1929-102_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-102\/01_Overall\/G_AT_A_DG1929-102_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-102\/01_Overall\/G_AT_A_DG1929-102_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-102\/01_Overall\/G_AT_A_DG1929-102_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -5196,7 +5460,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-103",
             "bibliography": "",
             "references": [
                 {
@@ -5274,7 +5538,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "36.30"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -5341,7 +5613,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-111",
             "bibliography": "",
             "references": [
                 {
@@ -5429,7 +5701,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "28.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-111\/01_Overall\/G_AT_A_DG1929-111_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-111\/01_Overall\/G_AT_A_DG1929-111_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-111\/01_Overall\/G_AT_A_DG1929-111_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-111\/01_Overall\/G_AT_A_DG1929-111_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-111\/01_Overall\/G_AT_A_DG1929-111_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -5509,7 +5789,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-112",
             "bibliography": "",
             "references": [
                 {
@@ -5577,7 +5857,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "13.10"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-112\/01_Overall\/G_AT_A_DG1929-112_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-112\/01_Overall\/G_AT_A_DG1929-112_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-112\/01_Overall\/G_AT_A_DG1929-112_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-112\/01_Overall\/G_AT_A_DG1929-112_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-112\/01_Overall\/G_AT_A_DG1929-112_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -5666,7 +5954,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-114",
             "bibliography": "",
             "references": [
                 {
@@ -5724,7 +6012,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "13.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-114\/01_Overall\/G_AT_A_DG1929-114_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-114\/01_Overall\/G_AT_A_DG1929-114_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-114\/01_Overall\/G_AT_A_DG1929-114_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-114\/01_Overall\/G_AT_A_DG1929-114_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-114\/01_Overall\/G_AT_A_DG1929-114_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -5799,7 +6095,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-115",
             "bibliography": "",
             "references": [
                 {
@@ -5847,7 +6143,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "12.80"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-115\/01_Overall\/G_AT_A_DG1929-115_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-115\/01_Overall\/G_AT_A_DG1929-115_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-115\/01_Overall\/G_AT_A_DG1929-115_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-115\/01_Overall\/G_AT_A_DG1929-115_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-115\/01_Overall\/G_AT_A_DG1929-115_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -5922,7 +6226,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-116",
             "bibliography": "",
             "references": [
                 {
@@ -5980,7 +6284,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "23.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-116\/01_Overall\/G_AT_A_DG1929-116_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-116\/01_Overall\/G_AT_A_DG1929-116_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-116\/01_Overall\/G_AT_A_DG1929-116_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-116\/01_Overall\/G_AT_A_DG1929-116_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-116\/01_Overall\/G_AT_A_DG1929-116_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -6047,7 +6359,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-117",
             "bibliography": "",
             "references": [
                 {
@@ -6105,7 +6417,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "33.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-117\/01_Overall\/G_AT_A_DG1929-117_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-117\/01_Overall\/G_AT_A_DG1929-117_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-117\/01_Overall\/G_AT_A_DG1929-117_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-117\/01_Overall\/G_AT_A_DG1929-117_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-117\/01_Overall\/G_AT_A_DG1929-117_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -6172,7 +6492,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-118",
             "bibliography": "",
             "references": [
                 {
@@ -6245,7 +6565,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "28.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-118\/01_Overall\/G_AT_A_DG1929-118_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-118\/01_Overall\/G_AT_A_DG1929-118_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-118\/01_Overall\/G_AT_A_DG1929-118_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-118\/01_Overall\/G_AT_A_DG1929-118_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-118\/01_Overall\/G_AT_A_DG1929-118_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -6312,7 +6640,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-122",
             "bibliography": "",
             "references": [
                 {
@@ -6385,7 +6713,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-122\/01_Overall\/G_AT_A_DG1929-122_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-122\/01_Overall\/G_AT_A_DG1929-122_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-122\/01_Overall\/G_AT_A_DG1929-122_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-122\/01_Overall\/G_AT_A_DG1929-122_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-122\/01_Overall\/G_AT_A_DG1929-122_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -6452,7 +6788,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-123",
             "bibliography": "",
             "references": [
                 {
@@ -6515,7 +6851,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "33.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-123\/01_Overall\/G_AT_A_DG1929-123_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-123\/01_Overall\/G_AT_A_DG1929-123_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-123\/01_Overall\/G_AT_A_DG1929-123_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-123\/01_Overall\/G_AT_A_DG1929-123_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-123\/01_Overall\/G_AT_A_DG1929-123_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -6582,7 +6926,7 @@
             "inscription": "- on the shabraque of the knight in the foreground at the right:\na repeat pattern incorporating the initial 'G'.",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-124",
             "bibliography": "",
             "references": [
                 {
@@ -6645,7 +6989,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "29.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-124\/01_Overall\/G_AT_A_DG1929-124_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-124\/01_Overall\/G_AT_A_DG1929-124_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-124\/01_Overall\/G_AT_A_DG1929-124_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-124\/01_Overall\/G_AT_A_DG1929-124_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-124\/01_Overall\/G_AT_A_DG1929-124_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -6712,7 +7064,7 @@
             "inscription": "- on the shabraque of the knight in the foreground at the right: a repeat pattern with the initial 'G'.",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-125",
             "bibliography": "",
             "references": [
                 {
@@ -6775,7 +7127,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "29.60"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-125\/01_Overall\/G_AT_A_DG1929-125_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-125\/01_Overall\/G_AT_A_DG1929-125_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-125\/01_Overall\/G_AT_A_DG1929-125_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-125\/01_Overall\/G_AT_A_DG1929-125_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-125\/01_Overall\/G_AT_A_DG1929-125_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -6842,7 +7202,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-126",
             "bibliography": "",
             "references": [
                 {
@@ -6908,7 +7268,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "29.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-126\/01_Overall\/G_AT_A_DG1929-126_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-126\/01_Overall\/G_AT_A_DG1929-126_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-126\/01_Overall\/G_AT_A_DG1929-126_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-126\/01_Overall\/G_AT_A_DG1929-126_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-126\/01_Overall\/G_AT_A_DG1929-126_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -7025,7 +7393,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-132",
             "bibliography": "",
             "references": [
                 {
@@ -7113,7 +7481,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-132\/01_Overall\/G_AT_A_DG1929-132_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-132\/01_Overall\/G_AT_A_DG1929-132_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-132\/01_Overall\/G_AT_A_DG1929-132_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-132\/01_Overall\/G_AT_A_DG1929-132_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-132\/01_Overall\/G_AT_A_DG1929-132_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -7230,7 +7606,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-133",
             "bibliography": "",
             "references": [
                 {
@@ -7323,7 +7699,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-133\/01_Overall\/G_AT_A_DG1929-133_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-133\/01_Overall\/G_AT_A_DG1929-133_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-133\/01_Overall\/G_AT_A_DG1929-133_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-133\/01_Overall\/G_AT_A_DG1929-133_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-133\/01_Overall\/G_AT_A_DG1929-133_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -7440,7 +7824,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-134",
             "bibliography": "",
             "references": [
                 {
@@ -7538,7 +7922,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-134\/01_Overall\/G_AT_A_DG1929-134_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-134\/01_Overall\/G_AT_A_DG1929-134_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-134\/01_Overall\/G_AT_A_DG1929-134_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-134\/01_Overall\/G_AT_A_DG1929-134_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-134\/01_Overall\/G_AT_A_DG1929-134_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -7655,7 +8047,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-135",
             "bibliography": "",
             "references": [
                 {
@@ -7758,7 +8150,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-135\/01_Overall\/G_AT_A_DG1929-135_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-135\/01_Overall\/G_AT_A_DG1929-135_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-135\/01_Overall\/G_AT_A_DG1929-135_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-135\/01_Overall\/G_AT_A_DG1929-135_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-135\/01_Overall\/G_AT_A_DG1929-135_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -7875,7 +8275,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-136",
             "bibliography": "",
             "references": [
                 {
@@ -7983,7 +8383,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-136\/01_Overall\/G_AT_A_DG1929-136_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-136\/01_Overall\/G_AT_A_DG1929-136_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-136\/01_Overall\/G_AT_A_DG1929-136_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-136\/01_Overall\/G_AT_A_DG1929-136_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-136\/01_Overall\/G_AT_A_DG1929-136_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -8100,7 +8508,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-137",
             "bibliography": "",
             "references": [
                 {
@@ -8218,7 +8626,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-137\/01_Overall\/G_AT_A_DG1929-137_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-137\/01_Overall\/G_AT_A_DG1929-137_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-137\/01_Overall\/G_AT_A_DG1929-137_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-137\/01_Overall\/G_AT_A_DG1929-137_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-137\/01_Overall\/G_AT_A_DG1929-137_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -8335,7 +8751,7 @@
             "inscription": "- on the cross: 'INRI'",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-138",
             "bibliography": "",
             "references": [
                 {
@@ -8448,7 +8864,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-138\/01_Overall\/G_AT_A_DG1929-138_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-138\/01_Overall\/G_AT_A_DG1929-138_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-138\/01_Overall\/G_AT_A_DG1929-138_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-138\/01_Overall\/G_AT_A_DG1929-138_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-138\/01_Overall\/G_AT_A_DG1929-138_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -8565,7 +8989,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-139",
             "bibliography": "",
             "references": [
                 {
@@ -8688,7 +9112,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-139\/01_Overall\/G_AT_A_DG1929-139_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-139\/01_Overall\/G_AT_A_DG1929-139_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-139\/01_Overall\/G_AT_A_DG1929-139_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-139\/01_Overall\/G_AT_A_DG1929-139_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-139\/01_Overall\/G_AT_A_DG1929-139_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -8805,7 +9237,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-140",
             "bibliography": "",
             "references": [
                 {
@@ -8933,7 +9365,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-140\/01_Overall\/G_AT_A_DG1929-140_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-140\/01_Overall\/G_AT_A_DG1929-140_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-140\/01_Overall\/G_AT_A_DG1929-140_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-140\/01_Overall\/G_AT_A_DG1929-140_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-140\/01_Overall\/G_AT_A_DG1929-140_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -9050,7 +9490,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-141",
             "bibliography": "",
             "references": [
                 {
@@ -9183,7 +9623,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "25.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-141\/01_Overall\/G_AT_A_DG1929-141_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-141\/01_Overall\/G_AT_A_DG1929-141_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-141\/01_Overall\/G_AT_A_DG1929-141_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-141\/01_Overall\/G_AT_A_DG1929-141_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-141\/01_Overall\/G_AT_A_DG1929-141_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -9250,7 +9698,7 @@
             "inscription": "None",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "US_MMANY_27-54-3",
             "bibliography": "",
             "references": [
                 {
@@ -9293,7 +9741,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "38.90"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -9375,7 +9831,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-113",
             "bibliography": "",
             "references": [
                 {
@@ -9438,7 +9894,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "13.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-113\/01_Overall\/G_AT_A_DG1929-113_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-113\/01_Overall\/G_AT_A_DG1929-113_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-113\/01_Overall\/G_AT_A_DG1929-113_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-113\/01_Overall\/G_AT_A_DG1929-113_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-113\/01_Overall\/G_AT_A_DG1929-113_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -9513,7 +9977,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-156",
             "bibliography": "",
             "references": [
                 {
@@ -9576,7 +10040,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.80"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-156\/01_Overall\/G_AT_A_DG1929-156_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-156\/01_Overall\/G_AT_A_DG1929-156_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-156\/01_Overall\/G_AT_A_DG1929-156_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-156\/01_Overall\/G_AT_A_DG1929-156_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-156\/01_Overall\/G_AT_A_DG1929-156_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -9643,7 +10115,7 @@
             "inscription": "- bottom: 'AETHERNA IPSE SVAE MENTIS SIMVLACHRA LVTHERVS \/ EXPRIMIT . AT VVLTVS CERA LVCAE OCCIDVOS \/ .M.D.X.X.'",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-80",
             "bibliography": "",
             "references": [
                 {
@@ -9726,7 +10198,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.50"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -9793,7 +10273,7 @@
             "inscription": "at the bottom in the plate: 'LVCAE . OPVS . EFFIGIES . HAEC . EST . MORITVRA . LVTHERI . \/ AETHERNAM . MENTIS . EXPRIMIT . IPSE . SVAE . M D X X I.'",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-81",
             "bibliography": "",
             "references": [
                 {
@@ -9966,7 +10446,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "20.90"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-81\/01_Overall\/G_AT_A_DG1929-81_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-81\/01_Overall\/G_AT_A_DG1929-81_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-81\/01_Overall\/G_AT_A_DG1929-81_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-81\/01_Overall\/G_AT_A_DG1929-81_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-81\/01_Overall\/G_AT_A_DG1929-81_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -10069,7 +10557,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-159",
             "bibliography": "",
             "references": [
                 {
@@ -10187,7 +10675,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-159\/01_Overall\/G_AT_A_DG1929-159_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-159\/01_Overall\/G_AT_A_DG1929-159_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-159\/01_Overall\/G_AT_A_DG1929-159_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-159\/01_Overall\/G_AT_A_DG1929-159_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-159\/01_Overall\/G_AT_A_DG1929-159_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -10290,7 +10786,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-161",
             "bibliography": "",
             "references": [
                 {
@@ -10403,7 +10899,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-161\/01_Overall\/G_AT_A_DG1929-161_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-161\/01_Overall\/G_AT_A_DG1929-161_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-161\/01_Overall\/G_AT_A_DG1929-161_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-161\/01_Overall\/G_AT_A_DG1929-161_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-161\/01_Overall\/G_AT_A_DG1929-161_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -10506,7 +11010,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-162",
             "bibliography": "",
             "references": [
                 {
@@ -10604,7 +11108,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-162\/01_Overall\/G_AT_A_DG1929-162_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-162\/01_Overall\/G_AT_A_DG1929-162_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-162\/01_Overall\/G_AT_A_DG1929-162_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-162\/01_Overall\/G_AT_A_DG1929-162_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-162\/01_Overall\/G_AT_A_DG1929-162_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -10707,7 +11219,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-163",
             "bibliography": "",
             "references": [
                 {
@@ -10805,7 +11317,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-163\/01_Overall\/G_AT_A_DG1929-163_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-163\/01_Overall\/G_AT_A_DG1929-163_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-163\/01_Overall\/G_AT_A_DG1929-163_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-163\/01_Overall\/G_AT_A_DG1929-163_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-163\/01_Overall\/G_AT_A_DG1929-163_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -10908,7 +11428,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-164",
             "bibliography": "",
             "references": [
                 {
@@ -11006,7 +11526,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -11114,7 +11642,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-165",
             "bibliography": "",
             "references": [
                 {
@@ -11202,7 +11730,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-165\/01_Overall\/G_AT_A_DG1929-165_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-165\/01_Overall\/G_AT_A_DG1929-165_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-165\/01_Overall\/G_AT_A_DG1929-165_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-165\/01_Overall\/G_AT_A_DG1929-165_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-165\/01_Overall\/G_AT_A_DG1929-165_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -11305,7 +11841,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-166",
             "bibliography": "",
             "references": [
                 {
@@ -11383,7 +11919,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-166\/01_Overall\/G_AT_A_DG1929-166_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-166\/01_Overall\/G_AT_A_DG1929-166_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-166\/01_Overall\/G_AT_A_DG1929-166_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-166\/01_Overall\/G_AT_A_DG1929-166_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-166\/01_Overall\/G_AT_A_DG1929-166_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -11486,7 +12030,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-167",
             "bibliography": "",
             "references": [
                 {
@@ -11564,7 +12108,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-167\/01_Overall\/G_AT_A_DG1929-167_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-167\/01_Overall\/G_AT_A_DG1929-167_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-167\/01_Overall\/G_AT_A_DG1929-167_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-167\/01_Overall\/G_AT_A_DG1929-167_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-167\/01_Overall\/G_AT_A_DG1929-167_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -11667,7 +12219,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-168",
             "bibliography": "",
             "references": [
                 {
@@ -11735,7 +12287,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-168\/01_Overall\/G_AT_A_DG1929-168_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-168\/01_Overall\/G_AT_A_DG1929-168_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-168\/01_Overall\/G_AT_A_DG1929-168_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-168\/01_Overall\/G_AT_A_DG1929-168_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-168\/01_Overall\/G_AT_A_DG1929-168_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -11838,7 +12398,7 @@
             "inscription": "- text in Hebrew above the altarpiece in the background",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-169",
             "bibliography": "",
             "references": [
                 {
@@ -11911,7 +12471,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-169\/01_Overall\/G_AT_A_DG1929-169_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-169\/01_Overall\/G_AT_A_DG1929-169_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-169\/01_Overall\/G_AT_A_DG1929-169_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-169\/01_Overall\/G_AT_A_DG1929-169_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-169\/01_Overall\/G_AT_A_DG1929-169_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -12014,7 +12582,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-160",
             "bibliography": "",
             "references": [
                 {
@@ -12132,7 +12700,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-160\/01_Overall\/G_AT_A_DG1929-160_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-160\/01_Overall\/G_AT_A_DG1929-160_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-160\/01_Overall\/G_AT_A_DG1929-160_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-160\/01_Overall\/G_AT_A_DG1929-160_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-160\/01_Overall\/G_AT_A_DG1929-160_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -12199,7 +12775,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-178",
             "bibliography": "",
             "references": [
                 {
@@ -12257,7 +12833,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-178\/01_Overall\/G_AT_A_DG1929-178_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-178\/01_Overall\/G_AT_A_DG1929-178_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-178\/01_Overall\/G_AT_A_DG1929-178_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-178\/01_Overall\/G_AT_A_DG1929-178_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-178\/01_Overall\/G_AT_A_DG1929-178_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -12324,7 +12908,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-179",
             "bibliography": "",
             "references": [
                 {
@@ -12382,7 +12966,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "16.40"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-179\/01_Overall\/G_AT_A_DG1929-179_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-179\/01_Overall\/G_AT_A_DG1929-179_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-179\/01_Overall\/G_AT_A_DG1929-179_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-179\/01_Overall\/G_AT_A_DG1929-179_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-179\/01_Overall\/G_AT_A_DG1929-179_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -12492,7 +13084,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-388",
             "bibliography": "",
             "references": [
                 {
@@ -12550,7 +13142,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "11.20"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -12617,7 +13217,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-181",
             "bibliography": "",
             "references": [
                 {
@@ -12675,7 +13275,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "22.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-181\/01_Overall\/G_AT_A_DG1929-181_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-181\/01_Overall\/G_AT_A_DG1929-181_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-181\/01_Overall\/G_AT_A_DG1929-181_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-181\/01_Overall\/G_AT_A_DG1929-181_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-181\/01_Overall\/G_AT_A_DG1929-181_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -12742,7 +13350,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-182",
             "bibliography": "",
             "references": [
                 {
@@ -12800,7 +13408,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.70"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-182\/01_Overall\/G_AT_A_DG1929-182_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-182\/01_Overall\/G_AT_A_DG1929-182_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-182\/01_Overall\/G_AT_A_DG1929-182_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-182\/01_Overall\/G_AT_A_DG1929-182_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-182\/01_Overall\/G_AT_A_DG1929-182_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -12867,7 +13483,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-183",
             "bibliography": "",
             "references": [
                 {
@@ -12925,7 +13541,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-183\/01_Overall\/G_AT_A_DG1929-183_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-183\/01_Overall\/G_AT_A_DG1929-183_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-183\/01_Overall\/G_AT_A_DG1929-183_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-183\/01_Overall\/G_AT_A_DG1929-183_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-183\/01_Overall\/G_AT_A_DG1929-183_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -12992,7 +13616,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-184",
             "bibliography": "",
             "references": [
                 {
@@ -13055,7 +13679,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "33.80"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-184\/01_Overall\/G_AT_A_DG1929-184_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-184\/01_Overall\/G_AT_A_DG1929-184_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-184\/01_Overall\/G_AT_A_DG1929-184_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-184\/01_Overall\/G_AT_A_DG1929-184_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-184\/01_Overall\/G_AT_A_DG1929-184_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -13122,7 +13754,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-185",
             "bibliography": "",
             "references": [
                 {
@@ -13185,7 +13817,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "33.50"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -13260,7 +13900,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-190",
             "bibliography": "",
             "references": [
                 {
@@ -13318,7 +13958,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "28.40"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -13385,7 +14033,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-191",
             "bibliography": "",
             "references": [
                 {
@@ -13448,7 +14096,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-191\/01_Overall\/G_AT_A_DG1929-191_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-191\/01_Overall\/G_AT_A_DG1929-191_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-191\/01_Overall\/G_AT_A_DG1929-191_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-191\/01_Overall\/G_AT_A_DG1929-191_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-191\/01_Overall\/G_AT_A_DG1929-191_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -13515,7 +14171,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-193",
             "bibliography": "",
             "references": [
                 {
@@ -13583,7 +14239,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "32.90"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-193\/01_Overall\/G_AT_A_DG1929-193_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-193\/01_Overall\/G_AT_A_DG1929-193_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-193\/01_Overall\/G_AT_A_DG1929-193_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-193\/01_Overall\/G_AT_A_DG1929-193_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-193\/01_Overall\/G_AT_A_DG1929-193_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -13650,7 +14314,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-194",
             "bibliography": "",
             "references": [
                 {
@@ -13723,7 +14387,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "30.90"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-194\/01_Overall\/G_AT_A_DG1929-194_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-194\/01_Overall\/G_AT_A_DG1929-194_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-194\/01_Overall\/G_AT_A_DG1929-194_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-194\/01_Overall\/G_AT_A_DG1929-194_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-194\/01_Overall\/G_AT_A_DG1929-194_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -13790,7 +14462,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-195",
             "bibliography": "",
             "references": [
                 {
@@ -13868,7 +14540,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-195\/01_Overall\/G_AT_A_DG1929-195_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-195\/01_Overall\/G_AT_A_DG1929-195_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-195\/01_Overall\/G_AT_A_DG1929-195_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-195\/01_Overall\/G_AT_A_DG1929-195_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-195\/01_Overall\/G_AT_A_DG1929-195_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -13935,7 +14615,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-196",
             "bibliography": "",
             "references": [
                 {
@@ -14018,7 +14698,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.30"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-196\/01_Overall\/G_AT_A_DG1929-196_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-196\/01_Overall\/G_AT_A_DG1929-196_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-196\/01_Overall\/G_AT_A_DG1929-196_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-196\/01_Overall\/G_AT_A_DG1929-196_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-196\/01_Overall\/G_AT_A_DG1929-196_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -14085,7 +14773,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-197",
             "bibliography": "",
             "references": [
                 {
@@ -14173,7 +14861,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "30.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-197\/01_Overall\/G_AT_A_DG1929-197_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-197\/01_Overall\/G_AT_A_DG1929-197_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-197\/01_Overall\/G_AT_A_DG1929-197_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-197\/01_Overall\/G_AT_A_DG1929-197_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-197\/01_Overall\/G_AT_A_DG1929-197_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -14240,7 +14936,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-198",
             "bibliography": "",
             "references": [
                 {
@@ -14333,7 +15029,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-198\/01_Overall\/G_AT_A_DG1929-198_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-198\/01_Overall\/G_AT_A_DG1929-198_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-198\/01_Overall\/G_AT_A_DG1929-198_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-198\/01_Overall\/G_AT_A_DG1929-198_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-198\/01_Overall\/G_AT_A_DG1929-198_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -14400,7 +15104,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-199",
             "bibliography": "",
             "references": [
                 {
@@ -14498,7 +15202,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.40"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-199\/01_Overall\/G_AT_A_DG1929-199_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-199\/01_Overall\/G_AT_A_DG1929-199_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-199\/01_Overall\/G_AT_A_DG1929-199_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-199\/01_Overall\/G_AT_A_DG1929-199_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-199\/01_Overall\/G_AT_A_DG1929-199_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -14565,7 +15277,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-200",
             "bibliography": "",
             "references": [
                 {
@@ -14668,7 +15380,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-200\/01_Overall\/G_AT_A_DG1929-200_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-200\/01_Overall\/G_AT_A_DG1929-200_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-200\/01_Overall\/G_AT_A_DG1929-200_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-200\/01_Overall\/G_AT_A_DG1929-200_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-200\/01_Overall\/G_AT_A_DG1929-200_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -14735,7 +15455,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-201",
             "bibliography": "",
             "references": [
                 {
@@ -14843,7 +15563,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-201\/01_Overall\/G_AT_A_DG1929-201_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-201\/01_Overall\/G_AT_A_DG1929-201_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-201\/01_Overall\/G_AT_A_DG1929-201_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-201\/01_Overall\/G_AT_A_DG1929-201_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-201\/01_Overall\/G_AT_A_DG1929-201_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -14910,7 +15638,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-202",
             "bibliography": "",
             "references": [
                 {
@@ -15023,7 +15751,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.30"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -15090,7 +15826,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-203",
             "bibliography": "",
             "references": [
                 {
@@ -15208,7 +15944,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-203\/01_Overall\/G_AT_A_DG1929-203_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-203\/01_Overall\/G_AT_A_DG1929-203_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-203\/01_Overall\/G_AT_A_DG1929-203_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-203\/01_Overall\/G_AT_A_DG1929-203_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-203\/01_Overall\/G_AT_A_DG1929-203_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -15275,7 +16019,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-204",
             "bibliography": "",
             "references": [
                 {
@@ -15398,7 +16142,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.10"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-204\/01_Overall\/G_AT_A_DG1929-204_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-204\/01_Overall\/G_AT_A_DG1929-204_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-204\/01_Overall\/G_AT_A_DG1929-204_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-204\/01_Overall\/G_AT_A_DG1929-204_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-204\/01_Overall\/G_AT_A_DG1929-204_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -15465,7 +16217,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-205",
             "bibliography": "",
             "references": [
                 {
@@ -15593,7 +16345,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.00"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-205\/01_Overall\/G_AT_A_DG1929-205_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-205\/01_Overall\/G_AT_A_DG1929-205_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-205\/01_Overall\/G_AT_A_DG1929-205_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-205\/01_Overall\/G_AT_A_DG1929-205_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-205\/01_Overall\/G_AT_A_DG1929-205_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -15660,7 +16420,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-206",
             "bibliography": "",
             "references": [
                 {
@@ -15793,7 +16553,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "31.40"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-206\/01_Overall\/G_AT_A_DG1929-206_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-206\/01_Overall\/G_AT_A_DG1929-206_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-206\/01_Overall\/G_AT_A_DG1929-206_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-206\/01_Overall\/G_AT_A_DG1929-206_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-206\/01_Overall\/G_AT_A_DG1929-206_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -15860,7 +16628,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-235",
             "bibliography": "",
             "references": [
                 {
@@ -15923,7 +16691,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "36.70"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-235\/01_Overall\/G_AT_A_DG1929-235_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-235\/01_Overall\/G_AT_A_DG1929-235_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-235\/01_Overall\/G_AT_A_DG1929-235_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-235\/01_Overall\/G_AT_A_DG1929-235_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-235\/01_Overall\/G_AT_A_DG1929-235_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -15990,7 +16766,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-236",
             "bibliography": "",
             "references": [
                 {
@@ -16048,7 +16824,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "40.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-236\/01_Overall\/G_AT_A_DG1929-236_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-236\/01_Overall\/G_AT_A_DG1929-236_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-236\/01_Overall\/G_AT_A_DG1929-236_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-236\/01_Overall\/G_AT_A_DG1929-236_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-236\/01_Overall\/G_AT_A_DG1929-236_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -16123,7 +16907,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-237",
             "bibliography": "",
             "references": [
                 {
@@ -16181,7 +16965,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "33.20"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-237\/01_Overall\/G_AT_A_DG1929-237_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-237\/01_Overall\/G_AT_A_DG1929-237_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-237\/01_Overall\/G_AT_A_DG1929-237_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-237\/01_Overall\/G_AT_A_DG1929-237_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-237\/01_Overall\/G_AT_A_DG1929-237_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -16256,7 +17048,7 @@
             "inscription": "in the block on the horse's caparison a pattern with the letter 'G'",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-238",
             "bibliography": "",
             "references": [
                 {
@@ -16319,7 +17111,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "24.70"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-238\/01_Overall\/G_AT_A_DG1929-238_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-238\/01_Overall\/G_AT_A_DG1929-238_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-238\/01_Overall\/G_AT_A_DG1929-238_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-238\/01_Overall\/G_AT_A_DG1929-238_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-238\/01_Overall\/G_AT_A_DG1929-238_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -16386,7 +17186,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-240",
             "bibliography": "",
             "references": [
                 {
@@ -16444,7 +17244,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "21.50"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-240\/01_Overall\/G_AT_A_DG1929-240_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-240\/01_Overall\/G_AT_A_DG1929-240_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-240\/01_Overall\/G_AT_A_DG1929-240_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-240\/01_Overall\/G_AT_A_DG1929-240_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-240\/01_Overall\/G_AT_A_DG1929-240_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -16511,7 +17319,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-241",
             "bibliography": "",
             "references": [
                 {
@@ -16574,7 +17382,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "21.40"
-            }
+            },
+            "images": {
+                "xsmall": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-241\/01_Overall\/G_AT_A_DG1929-241_Overall-xs.jpg",
+                "small": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-241\/01_Overall\/G_AT_A_DG1929-241_Overall-s.jpg",
+                "medium": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-241\/01_Overall\/G_AT_A_DG1929-241_Overall-m.jpg",
+                "large": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-241\/01_Overall\/G_AT_A_DG1929-241_Overall-l.jpg",
+                "xlarge": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-241\/01_Overall\/G_AT_A_DG1929-241_Overall-xl.jpg"
+            },
+            "hasAllImages": true
         },
         {
             "langCode": "en",
@@ -16641,7 +17457,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-253",
             "bibliography": "",
             "references": [
                 {
@@ -16694,7 +17510,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "27.50"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -16769,7 +17593,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-254",
             "bibliography": "",
             "references": [
                 {
@@ -16827,7 +17651,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "12.80"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -16891,7 +17723,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -16955,7 +17795,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -17029,7 +17877,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -17138,7 +17994,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -17227,7 +18091,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -17340,7 +18212,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -17419,7 +18299,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -17567,7 +18455,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -17781,7 +18677,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -17845,7 +18749,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -17944,7 +18856,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -18008,7 +18928,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -18132,7 +19060,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -18196,7 +19132,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -18359,7 +19303,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -18538,7 +19490,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -18738,7 +19698,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "4.00",
                 "height": "6.10"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -18829,7 +19797,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -18942,7 +19918,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -19086,7 +20070,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -19174,7 +20166,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -19238,7 +20238,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -19381,7 +20389,15 @@
                 "element": "",
                 "width": null,
                 "height": null
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         },
         {
             "langCode": "en",
@@ -19470,7 +20486,7 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
-            "exhibitionHistory": "",
+            "exhibitionHistory": "AT_A_DG1929-256v",
             "bibliography": "",
             "references": [
                 {
@@ -19528,7 +20544,15 @@
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
                 "height": "13.20"
-            }
+            },
+            "images": {
+                "xsmall": "",
+                "small": "",
+                "medium": "",
+                "large": "",
+                "xlarge": ""
+            },
+            "hasAllImages": false
         }
     ]
 }
