@@ -29,13 +29,15 @@ use CranachImport\Exporters\GraphicsRestorationJSONExporter;
 use CranachImport\Importers\LiteratureReferencesXMLImporter;
 use CranachImport\Exporters\LiteratureReferencesJSONExporter;
 
+/* @TODO: Use better determination and handling of source- and destination-paths */
+
 function importPaintings() {
 	$paintingsXMLSourceFilePaths = [
-		'../import-file/20191122/CDA_Datenübersicht_P1_20191122.xml',
-		'../import-file/20191122/CDA_Datenübersicht_P2_20191122.xml',
-		'../import-file/20191122/CDA_Datenübersicht_P3_20191122.xml',
+		'../content/20191122/CDA_Datenübersicht_P1_20191122.xml',
+		'../content/20191122/CDA_Datenübersicht_P2_20191122.xml',
+		'../content/20191122/CDA_Datenübersicht_P3_20191122.xml',
 	];
-	$paintingsJSONDestinationPath = './output/20191122/cda-paintings-v2.json';
+	$paintingsJSONDestinationPath = '../output/20191122/cda-paintings-v2.json';
 
 	$paintingsXmlImporter = new PaintingsXMLImporter($paintingsXMLSourceFilePaths);
 	$paintingsJsonExporter = new PaintingsJSONLangExporter($paintingsJSONDestinationPath);
@@ -49,8 +51,8 @@ function importPaintings() {
 }
 
 function importGraphics() {
-	$graphicsXMLSourceFilePath = '../import-file/20191122/CDA-GR_Datenuebersicht_20191122.xml';
-	$graphicsJSONDestinationPath = './output/20191122/cda-graphics-v2.json';
+	$graphicsXMLSourceFilePath = '../content/20191122/CDA-GR_Datenuebersicht_20191122.xml';
+	$graphicsJSONDestinationPath = '../output/20191122/cda-graphics-v2.json';
 
 	$graphicsXmlImporter = new GraphicsXMLImporter($graphicsXMLSourceFilePath);
 	$graphicsJsonExporter = new GraphicsJSONLangExistenceTypeExporter($graphicsJSONDestinationPath);
@@ -64,8 +66,8 @@ function importGraphics() {
 }
 
 function importGraphicsRestoration() {
-	$graphicsRestorationXMLSourceFilePath = '../import-file/20191122/CDA-GR_RestDokumente_20191122.xml';
-	$graphicsRestorationJSONDestinationPath = './output/20191122/cda-graphics-restoration-v2.json';
+	$graphicsRestorationXMLSourceFilePath = '../content/20191122/CDA-GR_RestDokumente_20191122.xml';
+	$graphicsRestorationJSONDestinationPath = '../output/20191122/cda-graphics-restoration-v2.json';
 
 	$graphicsRestorationXmlImporter = new GraphicsRestorationXMLImporter(
 		$graphicsRestorationXMLSourceFilePath,
@@ -83,8 +85,8 @@ function importGraphicsRestoration() {
 }
 
 function importLiteratureReferences() {
-	$literatureReferencesXMLSourceFilePath = '../import-file/20191122/CDA_Literaturverweise_20191122.xml';
-	$literatureReferencesJSONDestinationPath = './output/20191122/cda-literaturereferences-v2.json';
+	$literatureReferencesXMLSourceFilePath = '../content/20191122/CDA_Literaturverweise_20191122.xml';
+	$literatureReferencesJSONDestinationPath = '../output/20191122/cda-literaturereferences-v2.json';
 
 	$literatureReferencesXmlImporter = new LiteratureReferencesXMLImporter($literatureReferencesXMLSourceFilePath);
 	$literatureReferencesJsonExporter = new LiteratureReferencesJSONExporter($literatureReferencesJSONDestinationPath);
