@@ -58,7 +58,7 @@ function importGraphics() {
 
 	$graphicsXmlImporter = new GraphicsXMLImporter($graphicsXMLSourceFilePath);
 	$graphicsJsonExporter = new GraphicsJSONLangExistenceTypeExporter($graphicsJSONDestinationPath);
-	$graphicRemoteImageExitenceChecker = new RemoteImageExistenceChecker('./cache');
+	$graphicRemoteImageExitenceChecker = new RemoteImageExistenceChecker('../.cache');
 
 	$pipe = new Pipeline;
 	$pipe->addExporter($graphicsJsonExporter);

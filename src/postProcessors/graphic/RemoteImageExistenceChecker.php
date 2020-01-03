@@ -21,13 +21,6 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 		'large' => 'imageserver/G_%s/01_Overall/G_%s_Overall-l.jpg',
 		'xlarge' => 'imageserver/G_%s/01_Overall/G_%s_Overall-xl.jpg',
 	];
-	private $streamContextOptions = [
-		'http' => [
-			'method' => 'HEAD',
-			'header' => "Accept-language: de\r\n",
-			'ignore_errors' => true,
-		],
-	];
 	private $cacheDir = null;
 	private $cacheFilename = 'remoteImageExistenceChecker.cache.json';
 	private $cacheFilepath = null;
@@ -38,14 +31,12 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 	function __construct($cacheDir = null) {
 		if (is_string($cacheDir)) {
 			if (!file_exists($cacheDir)) {
-				mkdir($cacheDir, 077, true);
+				mkdir($cacheDir, 0777, true);
 			}
 			$this->cacheDir = $cacheDir;
 			$this->cacheFilepath = trim($this->cacheDir) . DIRECTORY_SEPARATOR . $this->cacheFilename;
 			$this->restoreCache();
 		}
-
-		$this->streamContext = stream_context_create($this->streamContextOptions);
 	}
 
 
@@ -86,12 +77,12 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 			$this->cache[$inventoryNumber] = [
 				'isVirtual' => $item->getIsVirtual(),
 				'hasExhibitionHistory' => !empty($item->getExhibitionHistory()),
-				'images' => $images,
+				'image' => $images,
 			];
 		}
 
-		$cachedImagesForObject = $this->cache[$inventoryNumber]['images'];
-		$item->setImages($cachedImagesForObject);
+		$cachedImagesForObject = $this->cache[$inventoryNumber]['image'];
+		$item->setImage($cachedImagesForObject);
 
 
 		$hasAllImages = $this->checkIfAllImagesFoundAndLogMissing(
@@ -99,7 +90,7 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 			$cachedImagesForObject,
 		);
 
-		$item->setHasAllImages($hasAllImages);
+		$item->setHasImage($hasAllImages);
 
 		return $item;
 	}
@@ -118,9 +109,9 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 
 
 	private function checkIfResourceExistsRemote($url): bool {
-		file_get_contents($url, false, $this->streamContext);
+		$responseHeaders = @get_headers($url);
 
-		$statusHeader = $http_response_header[0];
+		$statusHeader = $responseHeaders[0];
 
 		$splitStatusLine = explode(' ', $statusHeader, 3);
 
