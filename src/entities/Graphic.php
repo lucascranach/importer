@@ -59,15 +59,37 @@ class Graphic implements ILanguageBaseItem {
 	public $catalogWorkReferences = [];
 	public $structuredDimension = null;
 
-	public $image = [
-		'xsmall' => '',
-		'small' => '',
-		'medium' => '',
-		'large' => '',
-		'xlarge' => '',
-	];
+	public $images = null;
 
-	public $hasImage = false;
+	/* Awaited images structure if images exist
+		[
+			'infos' => [
+				'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
+			],
+			'sizes' => [
+				'xs' => [
+					'dimensions' => [ 'width' => 0, 'height' => 0 ],
+					'src' => '',
+				],
+				's' => [
+					'dimensions' => [ 'width' => 0, 'height' => 0 ],
+					'src' => '',
+				],
+				'm' => [
+					'dimensions' => [ 'width' => 0, 'height' => 0 ],
+					'src' => '',
+				],
+				'l' => [
+					'dimensions' => [ 'width' => 0, 'height' => 0 ],
+					'src' => '',
+				],
+				'xl' => [
+					'dimensions' => [ 'width' => 0, 'height' => 0 ],
+					'src' => '',
+				],
+			],
+		]
+	*/
 
 
 	function __construct() {
@@ -381,23 +403,13 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function setImage(array $image) {
-		$this->image = $image;
+	function setImages(?array $images) {
+		$this->images = $images;
 	}
 
 
-	function getImage(): array {
-		return $this->image;
-	}
-
-
-	function setHasImage(bool $hasImage) {
-		$this->hasImage = $hasImage;
-	}
-	
-
-	function getHasImage(): bool {
-		return $this->hasImage;
+	function getImages(): array {
+		return $this->images;
 	}
 
 }

@@ -14,13 +14,9 @@ use CranachImport\PostProcessors\IPostProcessor;
 class RemoteImageExistenceChecker implements IPostProcessor {
 
 	private $serverHost = 'http://lucascranach.org/';
-	private $sizePaths = [
-		'xsmall' => 'imageserver/G_%s/01_Overall/G_%s_Overall-xs.jpg',
-		'small' => 'imageserver/G_%s/01_Overall/G_%s_Overall-s.jpg',
-		'medium' => 'imageserver/G_%s/01_Overall/G_%s_Overall-m.jpg',
-		'large' => 'imageserver/G_%s/01_Overall/G_%s_Overall-l.jpg',
-		'xlarge' => 'imageserver/G_%s/01_Overall/G_%s_Overall-xl.jpg',
-	];
+	private $remoteImageBasePath = 'imageserver/G_%s/';
+	private $remoteImageDataPath = 'imageserver/G_%s/imageData.json';
+	private $remoteImageSubDirectoryName = '01_Overall';
 	private $cacheDir = null;
 	private $cacheFilename = 'remoteImageExistenceChecker.cache.json';
 	private $cacheFilepath = null;
@@ -53,7 +49,7 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 			if (!empty($item->getExhibitionHistory())) {
 				$inventoryNumber = $item->getExhibitionHistory();
 			} else {
-				echo 'Missing exhibition history for virtual object \'' . $inventoryNumber . "\'\n";
+				echo 'Missing exhibition history for virtual object \'' . $inventoryNumber . "'\n";
 
 				return $item;
 			}
@@ -61,36 +57,36 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 
 		/* Fill cache to avoid unnecessary duplicate requests for the same resource */
 		if (!isset($this->cache[$inventoryNumber])) {
-			$images = [];
+			$rawImagesData = [];
 
-			foreach ($this->sizePaths as $size => $path) {
-				$interpolatedPath = sprintf($path, $inventoryNumber, $inventoryNumber);
-				$url = $this->serverHost . $interpolatedPath;
+			$interpolatedRemoteImageDataPath = sprintf(
+				$this->remoteImageDataPath,
+				$inventoryNumber,
+			);
+			$url = $this->serverHost . $interpolatedRemoteImageDataPath;
 
-				if ($this->checkIfResourceExistsRemote($url)) {
-					$images[$size] = $url;
-				} else {
-					$images[$size] = '';
-				}
-			};
+			$result = $this->getRemoteImageDataResource($url);
+
+			if (!is_null($result)) {
+				$rawImagesData = $result;
+			} else {
+				echo "Missing remote images for '" . $inventoryNumber . "'\n";
+				$rawImagesData = null;
+			}
 
 			$this->cache[$inventoryNumber] = [
 				'isVirtual' => $item->getIsVirtual(),
 				'hasExhibitionHistory' => !empty($item->getExhibitionHistory()),
-				'image' => $images,
+				'rawImagesData' => $rawImagesData,
 			];
 		}
 
-		$cachedImagesForObject = $this->cache[$inventoryNumber]['image'];
-		$item->setImage($cachedImagesForObject);
+		$cachedImagesForObject = $this->cache[$inventoryNumber]['rawImagesData'];
 
-
-		$hasAllImages = $this->checkIfAllImagesFoundAndLogMissing(
-			$inventoryNumber,
-			$cachedImagesForObject,
-		);
-
-		$item->setHasImage($hasAllImages);
+		if (!is_null($cachedImagesForObject)) {
+			$preparedImages = $this->prepareRawImages($inventoryNumber, $cachedImagesForObject);
+			$item->setImages($preparedImages);
+		}
 
 		return $item;
 	}
@@ -108,40 +104,86 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 	}
 
 
-	private function checkIfResourceExistsRemote($url): bool {
-		$responseHeaders = @get_headers($url);
+	private function getRemoteImageDataResource(string $url): ?array {
+		$content = @file_get_contents($url);
 
-		$statusHeader = $responseHeaders[0];
+		if ($content === FALSE) {
+			return null;
+		}
 
+		$statusHeader = $http_response_header[0];
+		
 		$splitStatusLine = explode(' ', $statusHeader, 3);
-
+		
 		if (count($splitStatusLine) !== 3) {
 			throw new \Exception('Could not get status code for request!');
 		}
-
+		
 		$statusCode = $splitStatusLine[1];
+		
+		/* @TODO: Check content-type on response */
 
-		return ($statusCode[0] === '2');
+		return ($statusCode[0] === '2') ? json_decode($content, TRUE) : null;
 	}
 
 
-	private function checkIfAllImagesFoundAndLogMissing(string $inventoryNumber, array $images): bool {
-		$missingImageSizes = [];
+	private function prepareRawImages(string $inventoryNumber, array $cachedImagesForObject): array {
+		$destinationStructure = [
+			'infos' => [
+				'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
+			],
+			'sizes' => [
+				'xs' => [
+					'dimensions' => [ 'width' => 0, 'height' => 0 ],
+					'src' => '',
+				],
+				's' => [
+					'dimensions' => [ 'width' => 0, 'height' => 0 ],
+					'src' => '',
+				],
+				'm' => [
+					'dimensions' => [ 'width' => 0, 'height' => 0 ],
+					'src' => '',
+				],
+				'l' => [
+					'dimensions' => [ 'width' => 0, 'height' => 0 ],
+					'src' => '',
+				],
+				'xl' => [
+					'dimensions' => [ 'width' => 0, 'height' => 0 ],
+					'src' => '',
+				],
+			],
+		];
 
-		foreach ($images as $size => $path) {
-			if (empty($path)) {
-				$missingImageSizes[] = $size;
-			}
+		$imageStack = $cachedImagesForObject['imageStack'];
+		$baseStackItem = $imageStack[$this->remoteImageSubDirectoryName];
+
+		if (!isset($baseStackItem)) {
+			throw new \Exception('Could not find base stack item ' . $this->remoteImageSubDirectoryName);
 		}
 
-		if (count($missingImageSizes) > 0) {
-			echo "Missing remote images for '" . $inventoryNumber . "'"
-				. " in size/s " . implode(', ', $missingImageSizes) . "\n";
-			return false;
-		} else {
-			echo "Found all remote images for '" . $inventoryNumber . "'\n";
-			return true;
+		$destinationStructure['infos']['maxDimensions'] = [
+			'width' => intval($baseStackItem['maxDimensions']['width']),
+			'height' => intval($baseStackItem['maxDimensions']['height']),
+		];
+
+		foreach ($baseStackItem['images'] as $size => $image) {
+			$dimensions = $image['dimensions'];
+			$src = $this->serverHost .
+				sprintf($this->remoteImageBasePath, $inventoryNumber) .
+				$this->remoteImageSubDirectoryName . '/' . $image['src'];
+
+			$destinationStructure['sizes'][$size] = [
+				'dimensions' => [
+					'width' => intval($dimensions['width']),
+					'height' => intval($dimensions['height']),
+				],
+				'src' => $src,
+			];
 		}
+
+		return $destinationStructure;
 	}
 
 
@@ -164,4 +206,5 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 
 		$this->cache = json_decode($cacheAsJSON, true);
 	}
+
 }
