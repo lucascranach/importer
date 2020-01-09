@@ -73,7 +73,13 @@ class GraphicsJSONLangExistenceTypeExporter implements IFileExporter {
 		$objectsWithMissingReferencesList = [];
 
 		foreach($firstLangBucket->items as $item) {
-			foreach ($item->getReferences() as $reference) {
+			foreach ($item->getReprintReferences() as $reference) {
+				if (!in_array($reference->getInventoryNumber(), $this->inventoryNumberList)) {
+					$objectsWithMissingReferencesList[] = $item->getInventoryNumber();
+				}
+			}
+
+			foreach ($item->getRelatedWorkReferences() as $reference) {
 				if (!in_array($reference->getInventoryNumber(), $this->inventoryNumberList)) {
 					$objectsWithMissingReferencesList[] = $item->getInventoryNumber();
 				}

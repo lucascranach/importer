@@ -249,7 +249,7 @@ CrystalReport
 					FormattedValue
 
 
-			Section[SectionNumber="31"] # Erste Level Referenzen
+			Section[SectionNumber="31"] # Referenzen zu Abzügen
 				Subreport
 					Details* # Referenz
 						Section[SectionNumber="0"] #-> Textlabel (unwichtig?)
@@ -263,7 +263,7 @@ CrystalReport
 								FormattedValue
 
 
-			Section[SectionNumber="32"] # Zweite Level Referenzen (wird nicht benötigt!)
+			Section[SectionNumber="32"] # Referenzen zu verwandte Arbeiten
 				Supreport
 					Details* # Referenz
 						Section[SectionNumber="0"] #-> Textlabel (unwichtig?)

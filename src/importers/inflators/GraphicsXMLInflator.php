@@ -77,6 +77,11 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		'en' => 'Owner',
 	];
 
+	private static $referenceTypeValues = [
+		'reprint' => 'Abzug A',
+		'relatedWork' => 'Teil eines Werkes',
+	];
+
 	private static $inventoryNumberReplaceRegExpArr = [
 		'/^CDA\./',
 		'/^G_/',
@@ -973,7 +978,46 @@ class GraphicsXMLInflator implements IGraphicInflator {
 	private static function inflateReferences(\SimpleXMLElement &$node,
 	                                          Graphic &$graphicDe,
 	                                          Graphic &$graphicEn) {
-		$referenceDetailsElements = $node->Section[31]->Subreport->Details;
+		/* Reprints References */
+		$referenceReprintDetailsElements = $node->Section[31]->Subreport->Details;
+
+		
+		$reprintReferences = self::getReferencesForDetailElements(
+			$referenceReprintDetailsElements,
+		);
+
+		/* RelatedWorks References */
+		$referenceRelatedWorksDetailsElements = $node->Section[32]->Subreport->Details;
+
+		$relatedWorksReferences = self::getReferencesForDetailElements(
+			$referenceRelatedWorksDetailsElements,
+		);
+
+		$overallReferences = [];
+		$overallReferences = array_merge($overallReferences, $reprintReferences);
+		$overallReferences = array_merge($overallReferences, $relatedWorksReferences);
+
+		$filteredReprintReferences = array_filter($overallReferences, function($reference) {
+			return $reference->getText() === self::$referenceTypeValues['reprint'];
+		});
+
+		$filteredRelatedWorkReferences = array_filter($overallReferences, function($reference) {
+			return $reference->getText() === self::$referenceTypeValues['relatedWork'];
+		});
+
+		$graphicDe->setReprintReferences($filteredReprintReferences);
+		$graphicEn->setReprintReferences($filteredReprintReferences);
+
+		$graphicDe->setRelatedWorkReferences($filteredRelatedWorkReferences);
+		$graphicEn->setRelatedWorkReferences($filteredRelatedWorkReferences);
+	}
+
+
+	/* Reusable helper function for extration of reference like elements */
+	private static function getReferencesForDetailElements(
+		\SimpleXMLElement &$referenceDetailsElements
+	): array {
+		$references = [];
 
 		for ($i = 0; $i < count($referenceDetailsElements); $i += 1) {
 			$referenceDetailElement = $referenceDetailsElements[$i];
@@ -983,9 +1027,6 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			}
 
 			$reference = new ObjectReference;
-
-			$graphicDe->addReference($reference);
-			$graphicEn->addReference($reference);
 
 			/* Text */
 			$textElement = self::findElementByXPath(
@@ -1016,7 +1057,11 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				$remarksStr = trim($remarksElement);
 				$reference->setRemark($remarksStr);
 			}
+
+			$references[] = $reference;
 		}
+
+		return $references;
 	}
 
 

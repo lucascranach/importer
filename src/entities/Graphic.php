@@ -48,7 +48,10 @@ class Graphic implements ILanguageBaseItem {
 	public $relatedWorks = '';
 	public $exhibitionHistory = '';
 	public $bibliography = '';
-	public $references = [];
+	public $references = [
+		'reprints' => [],
+		'relatedWorks' => [],
+	];
 	public $additionalTextInformation = [];
 	public $publications = [];
 	public $keywords = [];
@@ -297,13 +300,33 @@ class Graphic implements ILanguageBaseItem {
 	}
 
 
-	function addReference(Main\ObjectReference $reference) {
-		$this->references[] = $reference;
+	function addReprintReference(Main\ObjectReference $reference) {
+		$this->references['reprints'][] = $reference;
 	}
 
 
-	function getReferences(): array {
-		return $this->references;
+	function setReprintReferences(array $references) {
+		$this->references['reprints'] = $references;
+	}
+
+
+	function getReprintReferences(): array {
+		return $this->references['reprints'];
+	}
+
+
+	function addRelatedWorkReference(Main\ObjectReference $reference) {
+		$this->references['relatedWorks'][] = $reference;
+	}
+
+
+	function setRelatedWorkReferences(array $references) {
+		$this->references['relatedWorks'] = $references;
+	}
+
+
+	function getRelatedWorkReferences(): array {
+		return $this->references['relatedWorks'];
 	}
 
 
