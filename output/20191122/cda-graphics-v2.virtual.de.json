@@ -1090,95 +1090,95 @@
             "exhibitionHistory": "AT_A_DG1929-127",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "1": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_KSVC_1-41-17",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-127",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-128r",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-142",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_11",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_13",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_12",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_14",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_15",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_16",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_17",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_18",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_19",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_20",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_21",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_22",
                         "remark": ""
                     },
-                    "16": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_23",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -1416,73 +1416,73 @@
                         "remark": ""
                     }
                 ],
-                "relatedWorks": {
-                    "4": {
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_10",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_13",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_12",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_14",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_15",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_16",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_17",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_18",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_19",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_20",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_21",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_22",
                         "remark": ""
                     },
-                    "16": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_23",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -1703,90 +1703,90 @@
             "exhibitionHistory": "AT_A_DG1929-131",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "2": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_HAUMB_3195",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-131",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-145",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_11",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_10",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_12",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_14",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_15",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_16",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_17",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_18",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_19",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_20",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_21",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_22",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_23",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [
                 {
@@ -2015,90 +2015,90 @@
             "exhibitionHistory": "AT_A_DG1929-130",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "3": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_SKD_1908-26",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-130",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-144",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_10",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_11",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_13",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_14",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_15",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_16",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_17",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_18",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_19",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_20",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_21",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_22",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_23",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [
                 {
@@ -2497,13 +2497,13 @@
                         "remark": ""
                     }
                 ],
-                "relatedWorks": {
-                    "2": {
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-55_78b",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -2682,13 +2682,13 @@
             "exhibitionHistory": "AT_A_DG1929-188",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "1": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-188",
                         "remark": ""
                     }
-                },
+                ],
                 "relatedWorks": [
                     {
                         "text": "Teil eines Werkes",
@@ -3060,85 +3060,85 @@
             "exhibitionHistory": "AT_A_DG1929-158",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "9": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-158",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-170",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-294",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-307v",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_54",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_55",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_56",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_57",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_58",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_59",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_60",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_61",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_62",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_64",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_63",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -9461,90 +9461,90 @@
             "exhibitionHistory": "AT_A_DG1929-132",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "4": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_HAUMB_AB3-14",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-132",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-146",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_10",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_11",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_12",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_13",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_15",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_16",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_17",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_18",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_19",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_20",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_21",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_22",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_23",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -9760,90 +9760,90 @@
             "exhibitionHistory": "AT_A_DG1929-133",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "4": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_KSVC_1-42-21",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-133",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-147",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_10",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_11",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_12",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_13",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_14",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_16",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_17",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_18",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_19",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_20",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_21",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_22",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_23",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -10059,90 +10059,90 @@
             "exhibitionHistory": "AT_A_DG1929-134",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "4": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_KSVC_1-42-22a",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-134",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-148",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_10",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_11",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_12",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_13",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_14",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_15",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_17",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_18",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_19",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_20",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_21",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_22",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_23",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -10358,90 +10358,90 @@
             "exhibitionHistory": "AT_A_DG1929-135",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "4": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_SKD_A1892-98",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-135",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-149",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_10",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_11",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_12",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_13",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_14",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_15",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_16",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_18",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_19",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_20",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_21",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_22",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_23",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -10657,90 +10657,90 @@
             "exhibitionHistory": "AT_A_DG1929-136",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "4": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_KSVC_1-42-24",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-136",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-150",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_10",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_11",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_12",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_13",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_14",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_15",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_16",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_17",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_19",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_20",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_21",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_22",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_23",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -10956,90 +10956,90 @@
             "exhibitionHistory": "AT_A_DG1929-137",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "4": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-137",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-151",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_KSVC_1-42-25",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_10",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_11",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_12",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_13",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_14",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_15",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_16",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_17",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_18",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_20",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_21",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_22",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_23",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -11255,90 +11255,90 @@
             "exhibitionHistory": "AT_A_DG1929-138",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "4": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_SMKP_KA-FP_349D",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-138",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-152",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_10",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_11",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_12",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_13",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_14",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_15",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_16",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_17",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_18",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_19",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_21",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_22",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_23",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -11554,90 +11554,90 @@
             "exhibitionHistory": "AT_A_DG1929-139",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "4": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-139",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_KSVC_1-42-28",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-153",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_10",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_11",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_12",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_13",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_14",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_15",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_16",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_17",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_18",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_19",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_20",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_22",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_23",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -11853,90 +11853,90 @@
             "exhibitionHistory": "AT_A_DG1929-140",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "12": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "NL_RM_RP-P-1964-633",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-140",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-154",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_10",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_11",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_12",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_13",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_14",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_15",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_16",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_17",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_18",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_19",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_20",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_21",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_23",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -12152,90 +12152,90 @@
             "exhibitionHistory": "AT_A_DG1929-141",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "12": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_HAUMB_AB3-25",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-141",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-155",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_10",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_11",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_12",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_13",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_14",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_15",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_16",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_17",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_18",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_19",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_20",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_21",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-19-21_22",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -13416,75 +13416,75 @@
             "exhibitionHistory": "AT_A_DG1929-159",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "9": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-159",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-171",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_55",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_56",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_57",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_58",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_59",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_60",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_61",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_62",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_63",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_64",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_53",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -13691,80 +13691,80 @@
             "exhibitionHistory": "AT_A_DG1929-161",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "3": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-161",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-173",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-298",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_57",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_58",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_59",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_60",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_61",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_62",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_64",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_63",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_53",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_54",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_55",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -13971,70 +13971,70 @@
             "exhibitionHistory": "AT_A_DG1929-162",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "3": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-162",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_58",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_59",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_60",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_61",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_62",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_64",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_63",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_53",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_54",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_56",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_55",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -14241,75 +14241,75 @@
             "exhibitionHistory": "AT_A_DG1929-163",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "3": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-163",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-175",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_59",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_60",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_61",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_62",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_64",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_63",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_53",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_54",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_56",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_57",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_55",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -14516,80 +14516,80 @@
             "exhibitionHistory": "AT_A_DG1929-164",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "3": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-164",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-176",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-301",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_60",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_61",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_62",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_64",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_63",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_53",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_54",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_56",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_57",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_58",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_55",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -14757,75 +14757,75 @@
             "exhibitionHistory": "AT_A_DG1929-165",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "3": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-165",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-177",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_61",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_62",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_63",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_64",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_53",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_54",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_56",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_57",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_58",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_59",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_55",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -15032,70 +15032,70 @@
             "exhibitionHistory": "AT_A_DG1929-166",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "3": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-166",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_62",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_63",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_64",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_53",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_54",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_56",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_57",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_58",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_59",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_60",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_55",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -15302,75 +15302,75 @@
             "exhibitionHistory": "AT_A_DG1929-167",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "2": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-167",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-304",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_63",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_64",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_53",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_54",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_56",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_57",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_58",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_59",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_60",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_61",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_55",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -15589,63 +15589,63 @@
                         "remark": ""
                     }
                 ],
-                "relatedWorks": {
-                    "2": {
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_53",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_54",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_56",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_57",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_58",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_59",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_60",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_61",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_62",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_63",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_55",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -15852,75 +15852,75 @@
             "exhibitionHistory": "AT_A_DG1929-169",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "1": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-169",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-305",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_64",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_53",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_54",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_56",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_57",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_58",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_59",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_60",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_61",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_62",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_55",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -16127,80 +16127,80 @@
             "exhibitionHistory": "AT_A_DG1929-160",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "9": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-160",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-172",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-297",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_56",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_57",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_58",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_59",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_60",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_61",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_62",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_64",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_63",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_53",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-36-37_54",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -18140,73 +18140,73 @@
                         "remark": ""
                     }
                 ],
-                "relatedWorks": {
-                    "3": {
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_32",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_33",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_34",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_35",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_36",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_37",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_38",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_39",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_40",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_41",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_42",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_43",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_44",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -18372,90 +18372,90 @@
             "exhibitionHistory": "AT_A_DG1929-194",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "1": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-194",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-208",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-222",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_31",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_33",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_34",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_35",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_36",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_37",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_38",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_39",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_40",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_41",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_42",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_43",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_44",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -18621,90 +18621,90 @@
             "exhibitionHistory": "AT_A_DG1929-195",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "2": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-195",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-209",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-223",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_31",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_32",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_34",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_35",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_36",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_37",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_38",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_39",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_40",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_41",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_42",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_43",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_44",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -18870,90 +18870,90 @@
             "exhibitionHistory": "AT_A_DG1929-196",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "3": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-196",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-210",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-224",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_31",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_32",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_33",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_35",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_36",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_37",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_38",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_39",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_40",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_41",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_42",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_43",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_44",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -19119,90 +19119,90 @@
             "exhibitionHistory": "AT_A_DG1929-197",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "3": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-197",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-211",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-225",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_31",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_32",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_33",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_34",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_36",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_37",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_38",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_39",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_40",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_41",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_42",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_43",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_44",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -19368,90 +19368,90 @@
             "exhibitionHistory": "AT_A_DG1929-198",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "3": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-198",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-212",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-226",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_31",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_32",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_33",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_34",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_35",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_37",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_38",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_39",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_40",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_41",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_42",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_43",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_44",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -19617,90 +19617,90 @@
             "exhibitionHistory": "AT_A_DG1929-199",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "3": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-199",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-213",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-227",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_31",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_32",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_33",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_34",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_35",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_36",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_38",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_39",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_40",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_41",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_42",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_43",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_44",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -19866,90 +19866,90 @@
             "exhibitionHistory": "AT_A_DG1929-200",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "3": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-200",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-214",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-228",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_31",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_32",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_33",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_34",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_35",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_36",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_37",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_39",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_40",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_41",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_42",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_43",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_44",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -20115,90 +20115,90 @@
             "exhibitionHistory": "AT_A_DG1929-201",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "3": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-201",
                         "remark": ""
                     },
-                    "9": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-215",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-229",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_31",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_32",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_33",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_34",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_35",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_36",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_37",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_38",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_40",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_41",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_42",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_43",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_44",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -20364,90 +20364,90 @@
             "exhibitionHistory": "AT_A_DG1929-202",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "9": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-202",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-216",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-230",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_31",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_32",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_33",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_34",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_35",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_36",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_37",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_38",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_39",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_41",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_42",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_43",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_44",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -20613,90 +20613,90 @@
             "exhibitionHistory": "AT_A_DG1929-203",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "9": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-203",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-217",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-231",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_31",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_32",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_33",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_34",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_35",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_36",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_37",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_38",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_39",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_40",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_42",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_43",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_44",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -20862,90 +20862,90 @@
             "exhibitionHistory": "AT_A_DG1929-204",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "9": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-204",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-218",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-232",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_31",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_32",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_33",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_34",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_35",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_36",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_37",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_38",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_39",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_40",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_41",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_43",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_44",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -21111,90 +21111,90 @@
             "exhibitionHistory": "AT_A_DG1929-205",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "9": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-205",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-219",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-233",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_31",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_32",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_33",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_34",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_35",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_36",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_37",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_38",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_39",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_40",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_41",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_42",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_44",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -21360,90 +21360,90 @@
             "exhibitionHistory": "AT_A_DG1929-206",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "9": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-206",
                         "remark": ""
                     },
-                    "10": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-220",
                         "remark": ""
                     },
-                    "11": {
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-234",
                         "remark": ""
                     }
-                },
-                "relatedWorks": {
-                    "0": {
+                ],
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_31",
                         "remark": ""
                     },
-                    "1": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_32",
                         "remark": ""
                     },
-                    "2": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_33",
                         "remark": ""
                     },
-                    "3": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_34",
                         "remark": ""
                     },
-                    "4": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_35",
                         "remark": ""
                     },
-                    "5": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_36",
                         "remark": ""
                     },
-                    "6": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_37",
                         "remark": ""
                     },
-                    "7": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_38",
                         "remark": ""
                     },
-                    "8": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_39",
                         "remark": ""
                     },
-                    "12": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_40",
                         "remark": ""
                     },
-                    "13": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_41",
                         "remark": ""
                     },
-                    "14": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_42",
                         "remark": ""
                     },
-                    "15": {
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-30_43",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -22334,13 +22334,13 @@
                         "remark": ""
                     }
                 ],
-                "relatedWorks": {
-                    "1": {
+                "relatedWorks": [
+                    {
                         "text": "Teil eines Werkes",
                         "inventoryNumber": "GWN_LC_HVI-69_93",
                         "remark": ""
                     }
-                }
+                ]
             },
             "additionalTextInformation": [],
             "publications": [
@@ -22506,13 +22506,13 @@
             "exhibitionHistory": "AT_A_DG1929-241",
             "bibliography": "",
             "references": {
-                "reprints": {
-                    "1": {
+                "reprints": [
+                    {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-241",
                         "remark": ""
                     }
-                },
+                ],
                 "relatedWorks": [
                     {
                         "text": "Teil eines Werkes",

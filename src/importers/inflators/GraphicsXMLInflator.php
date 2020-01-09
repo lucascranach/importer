@@ -997,13 +997,17 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		$overallReferences = array_merge($overallReferences, $reprintReferences);
 		$overallReferences = array_merge($overallReferences, $relatedWorksReferences);
 
-		$filteredReprintReferences = array_filter($overallReferences, function($reference) {
-			return $reference->getText() === self::$referenceTypeValues['reprint'];
-		});
+		$filteredReprintReferences = array_values(
+			array_filter($overallReferences, function($reference) {
+				return $reference->getText() === self::$referenceTypeValues['reprint'];
+			}),
+		);
 
-		$filteredRelatedWorkReferences = array_filter($overallReferences, function($reference) {
-			return $reference->getText() === self::$referenceTypeValues['relatedWork'];
-		});
+		$filteredRelatedWorkReferences = array_values(
+			array_filter($overallReferences, function($reference) {
+				return $reference->getText() === self::$referenceTypeValues['relatedWork'];
+			}),
+		);
 
 		$graphicDe->setReprintReferences($filteredReprintReferences);
 		$graphicEn->setReprintReferences($filteredReprintReferences);
