@@ -67,6 +67,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341",
             "inventoryNumber": "GWN_LC_HVI-4_3",
             "objectId": 940687,
@@ -261,6 +262,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-107_132",
             "objectId": 940712,
@@ -604,6 +606,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-92_115",
             "objectId": 940721,
@@ -790,6 +793,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-56_79",
             "objectId": 940729,
@@ -1017,6 +1021,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-19-21_10",
             "objectId": 940731,
@@ -1321,6 +1326,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-19-21_11",
             "objectId": 940749,
@@ -1630,6 +1636,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-19-21_13",
             "objectId": 940758,
@@ -1942,6 +1949,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-19-21_12",
             "objectId": 940760,
@@ -2249,6 +2257,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-66_89",
             "objectId": 940764,
@@ -2447,6 +2456,7 @@
                 "classification": "Druckgrafik",
                 "condition": "1st state"
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-54_78a",
             "objectId": 940824,
@@ -2651,6 +2661,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-55_78b",
             "objectId": 940845,
@@ -2828,6 +2839,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-52_76",
             "objectId": 940846,
@@ -3001,6 +3013,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-36-37_53",
             "objectId": 940866,
@@ -3291,6 +3304,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341",
             "inventoryNumber": "GWN_LC_HVI-1_2",
             "objectId": 946471,
@@ -3482,6 +3496,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341",
             "inventoryNumber": "GWN_LC_HVI-5_4",
             "objectId": 946475,
@@ -3663,6 +3678,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341",
             "inventoryNumber": "GWN_LC_HVI-3_2",
             "objectId": 946541,
@@ -3841,6 +3857,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Kupferstich",
             "inventoryNumber": "GWN_LC_HVI-7_6",
             "objectId": 946551,
@@ -4164,6 +4181,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-27_29",
             "objectId": 946569,
@@ -4348,6 +4366,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-44_69",
             "objectId": 946577,
@@ -4521,6 +4540,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-86_109",
             "objectId": 946625,
@@ -4699,6 +4719,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-65_88",
             "objectId": 946629,
@@ -4877,6 +4898,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-70_94",
             "objectId": 946632,
@@ -5050,6 +5072,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-60_83",
             "objectId": 946665,
@@ -5228,6 +5251,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-57_80",
             "objectId": 946680,
@@ -5409,6 +5433,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-88_111",
             "objectId": 946719,
@@ -5567,6 +5592,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-91_114",
             "objectId": 946724,
@@ -5745,6 +5771,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-87_110",
             "objectId": 946778,
@@ -5923,6 +5950,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-90_113",
             "objectId": 946786,
@@ -6109,6 +6137,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-93_116",
             "objectId": 946794,
@@ -6295,6 +6324,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-58_81",
             "objectId": 946837,
@@ -6476,6 +6506,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-82_106",
             "objectId": 946854,
@@ -6651,6 +6682,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-26_28",
             "objectId": 948064,
@@ -6803,6 +6835,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-25_27",
             "objectId": 948065,
@@ -7003,6 +7036,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-80_104",
             "objectId": 948144,
@@ -7196,6 +7230,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-81_105",
             "objectId": 948223,
@@ -7404,6 +7439,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "H077",
             "inventoryNumber": "GWN_LC_HVI-53_77",
             "objectId": 948345,
@@ -7595,6 +7631,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-75_96-93",
             "objectId": 948391,
@@ -7790,6 +7827,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-76_96a",
             "objectId": 948605,
@@ -7961,6 +7999,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-19_9",
             "objectId": 948610,
@@ -8142,6 +8181,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-10_1",
             "objectId": 948652,
@@ -8315,6 +8355,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-17_7",
             "objectId": 948660,
@@ -8503,6 +8544,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-12_3",
             "objectId": 948677,
@@ -8691,6 +8733,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-61_84",
             "objectId": 948787,
@@ -8869,6 +8912,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-95_118",
             "objectId": 949007,
@@ -9047,6 +9091,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-96_119",
             "objectId": 949045,
@@ -9225,6 +9270,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-94_117",
             "objectId": 949118,
@@ -9406,6 +9452,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-19-21_14",
             "objectId": 949223,
@@ -9705,6 +9752,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-19-21_15",
             "objectId": 949238,
@@ -10004,6 +10052,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-19-21_16",
             "objectId": 949241,
@@ -10303,6 +10352,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-19-21_17",
             "objectId": 949243,
@@ -10602,6 +10652,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-19-21_18",
             "objectId": 949246,
@@ -10901,6 +10952,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-19-21_19",
             "objectId": 949250,
@@ -11200,6 +11252,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-19-21_20",
             "objectId": 949257,
@@ -11499,6 +11552,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-19-21_21",
             "objectId": 949262,
@@ -11798,6 +11852,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-19-21_22",
             "objectId": 949271,
@@ -12097,6 +12152,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-19-21_23",
             "objectId": 949272,
@@ -12396,6 +12452,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-22_24",
             "objectId": 952852,
@@ -12510,6 +12567,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-75_96-90",
             "objectId": 953339,
@@ -12703,6 +12761,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-67_91",
             "objectId": 954113,
@@ -12889,6 +12948,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Kupferstich",
             "inventoryNumber": "GWN_LC_HVI-8_7",
             "objectId": 954608,
@@ -13087,6 +13147,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Kupferstich",
             "inventoryNumber": "GWN_LC_HVI-9_8",
             "objectId": 954634,
@@ -13375,6 +13436,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-36-37_54",
             "objectId": 954694,
@@ -13650,6 +13712,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-36-37_56",
             "objectId": 954736,
@@ -13930,6 +13993,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-36-37_57",
             "objectId": 954762,
@@ -14200,6 +14264,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-36-37_58",
             "objectId": 954782,
@@ -14475,6 +14540,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-36-37_59",
             "objectId": 954844,
@@ -14716,6 +14782,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-36-37_60",
             "objectId": 954877,
@@ -14991,6 +15058,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-36-37_61",
             "objectId": 954883,
@@ -15261,6 +15329,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-36-37_62",
             "objectId": 955191,
@@ -15536,6 +15605,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-36-37_64",
             "objectId": 955218,
@@ -15811,6 +15881,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-36-37_63",
             "objectId": 955300,
@@ -16086,6 +16157,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
             "inventoryNumber": "GWN_LC_HVI-36-37_55",
             "objectId": 955309,
@@ -16366,6 +16438,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-83_107",
             "objectId": 955450,
@@ -16539,6 +16612,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-59_82",
             "objectId": 955461,
@@ -16712,6 +16786,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LG_HVI-39_65e",
             "objectId": 955570,
@@ -16884,6 +16959,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-46_71",
             "objectId": 955660,
@@ -17057,6 +17133,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-51_75",
             "objectId": 955666,
@@ -17230,6 +17307,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-45_70",
             "objectId": 955703,
@@ -17403,6 +17481,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-18_8",
             "objectId": 955708,
@@ -17581,6 +17660,7 @@
                 "classification": "Druckgrafik",
                 "condition": "- early impression"
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-62_85",
             "objectId": 955717,
@@ -17759,6 +17839,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-99_122",
             "objectId": 955754,
@@ -17940,6 +18021,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-16_6",
             "objectId": 955766,
@@ -18118,6 +18200,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-30_31",
             "objectId": 955855,
@@ -18367,6 +18450,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-30_32",
             "objectId": 955952,
@@ -18616,6 +18700,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-30_33",
             "objectId": 955988,
@@ -18865,6 +18950,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-30_34",
             "objectId": 955989,
@@ -19114,6 +19200,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-30_35",
             "objectId": 955998,
@@ -19363,6 +19450,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-30_36",
             "objectId": 956037,
@@ -19612,6 +19700,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-30_37",
             "objectId": 956038,
@@ -19861,6 +19950,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-30_38",
             "objectId": 956062,
@@ -20110,6 +20200,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-30_39",
             "objectId": 956071,
@@ -20359,6 +20450,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-30_40",
             "objectId": 956085,
@@ -20608,6 +20700,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-30_41",
             "objectId": 959151,
@@ -20857,6 +20950,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-30_42",
             "objectId": 959172,
@@ -21106,6 +21200,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-30_43",
             "objectId": 959221,
@@ -21355,6 +21450,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-30_44",
             "objectId": 959233,
@@ -21604,6 +21700,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-47_72",
             "objectId": 959754,
@@ -21782,6 +21879,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-63_86",
             "objectId": 959849,
@@ -21955,6 +22053,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-64_87",
             "objectId": 959911,
@@ -22136,6 +22235,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-89_112",
             "objectId": 959958,
@@ -22322,6 +22422,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-68_92",
             "objectId": 960774,
@@ -22501,6 +22602,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-69_93",
             "objectId": 960823,
@@ -22680,6 +22782,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-104_129",
             "objectId": 960893,
@@ -22804,6 +22907,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-75_96-75",
             "objectId": 961070,
@@ -22923,6 +23027,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_ANO_H-NONE-001",
             "objectId": 961195,
@@ -22985,6 +23090,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_ANO_H-NONE-002",
             "objectId": 961196,
@@ -23063,6 +23169,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_HBG_H-NONE-001",
             "objectId": 961197,
@@ -23141,6 +23248,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_HBG_HII-154_270",
             "objectId": 961198,
@@ -23244,6 +23352,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_ANO_HVI-8_7-8",
             "objectId": 961199,
@@ -23386,6 +23495,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_ANO_H-NONE-003",
             "objectId": 961200,
@@ -23464,6 +23574,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Radierung",
             "inventoryNumber": "GWN_HH_HXV-238_69",
             "objectId": 961201,
@@ -23611,6 +23722,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_HSB_HIII-210",
             "objectId": 961202,
@@ -23689,6 +23801,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_ANO_HVI-8_7-3",
             "objectId": 961203,
@@ -23907,6 +24020,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_ANO_H-NONE-004",
             "objectId": 961204,
@@ -23985,6 +24099,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_HBG_HVI-8_7-4",
             "objectId": 961205,
@@ -24078,6 +24193,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_ANO_H-NONE-005",
             "objectId": 961206,
@@ -24156,6 +24272,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_ANO_HVI-8_7-1",
             "objectId": 961207,
@@ -24274,6 +24391,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_ANO_H-NONE-006",
             "objectId": 961208,
@@ -24416,6 +24534,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_HSB_HIII-223-I",
             "objectId": 961209,
@@ -24519,6 +24638,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Eisenradierung",
             "inventoryNumber": "GWN_DH_HHo-96_I",
             "objectId": 961210,
@@ -24702,6 +24822,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Kupferstich",
             "inventoryNumber": "GWN_AA_HI-210_80",
             "objectId": 961211,
@@ -24923,6 +25044,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_HB_HIV-595_259",
             "objectId": 961212,
@@ -25005,6 +25127,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_HB_HIV-259_596",
             "objectId": 961213,
@@ -25118,6 +25241,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Kupferstich",
             "inventoryNumber": "GWN_MIB_H-NONE-001",
             "objectId": 961214,
@@ -25270,6 +25394,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_HHJ_HXIVb-27-113",
             "objectId": 961215,
@@ -25348,6 +25473,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_ANO_H-NONE-007",
             "objectId": 961216,
@@ -25490,6 +25616,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_HSB_H-NONE-001",
             "objectId": 961217,
@@ -25587,6 +25714,7 @@
                 "classification": "Druckgrafik",
                 "condition": ""
             },
+            "conditionLevel": 0,
             "objectName": "Holzschnitt",
             "inventoryNumber": "GWN_LC_HVI-76_96-107",
             "objectId": 961480,

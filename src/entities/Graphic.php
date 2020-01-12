@@ -33,6 +33,7 @@ class Graphic implements ILanguageBaseItem {
 
 	public $titles = [];
 	public $classification = null;
+	public $conditionLevel = 0;
 	public $objectName = '';
 	public $inventoryNumber = '';
 	public $objectId = null;
@@ -147,6 +148,16 @@ class Graphic implements ILanguageBaseItem {
 
 	function getClassification(): Graphic\Classification {
 		return $this->classification;
+	}
+
+
+	function setConditionLevel(int $conditionLevel) {
+		$this->conditionLevel = $conditionLevel;
+	}
+
+
+	function getConditionLevel(): int {
+		return $this->conditionLevel;
 	}
 
 

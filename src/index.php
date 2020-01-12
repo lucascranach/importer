@@ -9,6 +9,7 @@ require_once 'exporters/PaintingsJSONLangExporter.php';
 require_once 'importers/GraphicsXMLImporter.php';
 require_once 'exporters/GraphicsJSONLangExistenceTypeExporter.php';
 require_once 'postProcessors/graphic/RemoteImageExistenceChecker.php';
+require_once 'postProcessors/graphic/ConditionDeterminer.php';
 
 require_once 'importers/GraphicsRestorationXMLImporter.php';
 require_once 'exporters/GraphicsRestorationJSONExporter.php';
@@ -24,6 +25,7 @@ use CranachImport\Exporters\PaintingsJSONLangExporter;
 use CranachImport\Importers\GraphicsXMLImporter;
 use CranachImport\Exporters\GraphicsJSONLangExistenceTypeExporter;
 use CranachImport\PostProcessors\Graphic\RemoteImageExistenceChecker;
+use CranachImport\PostProcessors\Graphic\ConditionDeterminer;
 
 use CranachImport\Importers\GraphicsRestorationXMLImporter;
 use CranachImport\Exporters\GraphicsRestorationJSONExporter;
@@ -59,10 +61,14 @@ function importGraphics() {
 	$graphicsXmlImporter = new GraphicsXMLImporter($graphicsXMLSourceFilePath);
 	$graphicsJsonExporter = new GraphicsJSONLangExistenceTypeExporter($graphicsJSONDestinationPath);
 	$graphicRemoteImageExitenceChecker = new RemoteImageExistenceChecker('../.cache');
+	$graphicConditionDeterminer = new ConditionDeterminer();
 
 	$pipe = new Pipeline;
 	$pipe->addExporter($graphicsJsonExporter);
-	$pipe->addPostProcessor($graphicRemoteImageExitenceChecker);
+	$pipe->addPostProcessors([
+		$graphicRemoteImageExitenceChecker,
+		$graphicConditionDeterminer,
+	]);
 
 	$graphicsXmlImporter->registerPipeline($pipe);
 
