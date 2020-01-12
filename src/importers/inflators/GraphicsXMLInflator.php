@@ -87,6 +87,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		'/^G_/',
 	];
 
+	private static $activeLoggingOfWronglyCategorizedReferences = false;
+
 	private function __construct() {}
 
 
@@ -993,6 +995,25 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			$referenceRelatedWorksDetailsElements,
 		);
 
+
+		$wrongReprintReferences = self::getWronglyCategorizedReferences(
+			$reprintReferences,
+			self::$referenceTypeValues['relatedWork'],
+		);
+
+		$wrongRelatedWorkReferences = self::getWronglyCategorizedReferences(
+			$relatedWorksReferences,
+			self::$referenceTypeValues['reprint'],
+		);
+
+		if (self::$activeLoggingOfWronglyCategorizedReferences) {
+			self::logWronglyCategorizedReferences(
+				$graphicDe,
+				$wrongReprintReferences,
+				$wrongRelatedWorkReferences,
+			);
+		}
+
 		$overallReferences = [];
 		$overallReferences = array_merge($overallReferences, $reprintReferences);
 		$overallReferences = array_merge($overallReferences, $relatedWorksReferences);
@@ -1014,6 +1035,43 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 		$graphicDe->setRelatedWorkReferences($filteredRelatedWorkReferences);
 		$graphicEn->setRelatedWorkReferences($filteredRelatedWorkReferences);
+	}
+
+
+	/* Helper function for logging graphics with wrongly categorized references */
+	private static function logWronglyCategorizedReferences(
+		Graphic &$graphic,
+		array $reprintRefs,
+		array $relatedWorkRefs
+	) {
+		if (count($reprintRefs) > 0 || count($relatedWorkRefs) > 0) {
+			echo '> ' . $graphic->getInventoryNumber() . (($graphic->getIsVirtual()) ? ' (isVirtual)' : '') . "\n";
+
+			if (count($reprintRefs) > 0) {
+				echo "  wrong reprint refs:\n";
+				foreach($reprintRefs as $ref) {
+					echo "    * " . $ref->getInventoryNumber() . ' (' . $ref->getText() . ')' . "\n";
+				}
+			}
+
+			if (count($relatedWorkRefs) > 0) {
+				echo "  wrong relatedWork refs:\n";
+				foreach($relatedWorkRefs as $ref) {
+					echo "    * " . $ref->getInventoryNumber() . ' (' . $ref->getText() . ')' . "\n";
+				}
+			}
+		}
+	}
+
+
+	/* Helper function for checking wrongly groupe */
+	private static function getWronglyCategorizedReferences(
+		array $references,
+		string $wrongType
+	) {
+		return array_filter($references, function ($ref) use($wrongType) {
+			return $ref->getText() === $wrongType;
+		});
 	}
 
 
