@@ -384,7 +384,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd edition"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "UK_BM_1895-0122-279",
             "objectId": 928004,
@@ -495,7 +495,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd edition"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "UK_BM_O-3-190",
             "objectId": 928050,
@@ -611,7 +611,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd edition"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-242",
             "objectId": 928054,
@@ -1014,7 +1014,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd edition"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "DE_GNMN_Mp14637a",
             "objectId": 928101,
@@ -1351,7 +1351,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd edition"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "DE_KSVC_H64",
             "objectId": 928140,
@@ -1694,7 +1694,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd edition"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "DE_KSW_DK-181-83",
             "objectId": 928152,
@@ -1942,7 +1942,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd edition"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "BE_KBR_S-II20715",
             "objectId": 928308,
@@ -2308,7 +2308,7 @@
                 "classification": "Druckgrafik",
                 "condition": "1st. state (Hollstein Ia)"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 1,
             "objectName": "Holzschnitt",
             "inventoryNumber": "DE_SMKP_KA-FP-352D",
             "objectId": 929035,
@@ -2473,7 +2473,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state (Hollstein IIa)"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "DE_KSVC_1-43-64",
             "objectId": 929439,
@@ -3745,7 +3745,7 @@
                 "classification": "Druckgrafik",
                 "condition": "1st state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 1,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-98",
             "objectId": 934789,
@@ -3920,7 +3920,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-99",
             "objectId": 934821,
@@ -4085,7 +4085,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "DE_SKD_A6623",
             "objectId": 934837,
@@ -7467,7 +7467,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "DE_SKD_A6618",
             "objectId": 935353,
@@ -7583,7 +7583,7 @@
                 "classification": "Druckgrafik",
                 "condition": "1st state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 1,
             "objectName": "Holzschnitt",
             "inventoryNumber": "DE_SKD_A6617",
             "objectId": 935468,
@@ -7699,7 +7699,7 @@
                 "classification": "Druckgrafik",
                 "condition": "1st state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 1,
             "objectName": "Holzschnitt",
             "inventoryNumber": "DE_SKD_A6616",
             "objectId": 935470,
@@ -7931,7 +7931,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "NL_RM_RP-P-OB-4474",
             "objectId": 935473,
@@ -8424,7 +8424,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-187",
             "objectId": 935512,
@@ -9046,7 +9046,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "DE_SMKP_KA-FP-360D",
             "objectId": 935601,
@@ -9327,7 +9327,7 @@
                 "classification": "Druckgrafik",
                 "condition": "1st state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 1,
             "objectName": "Kupferstich",
             "inventoryNumber": "AT_A_DG1929-78",
             "objectId": 935675,
@@ -11867,7 +11867,7 @@
                 "classification": "Druckgrafik",
                 "condition": "3rd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 3,
             "objectName": "Kupferstich",
             "inventoryNumber": "AT_A_DG1929-79",
             "objectId": 945945,
@@ -12302,7 +12302,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-85",
             "objectId": 945948,
@@ -12594,7 +12594,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-87",
             "objectId": 945950,
@@ -12737,7 +12737,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-88",
             "objectId": 945951,
@@ -12880,7 +12880,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-89",
             "objectId": 945952,
@@ -13023,7 +13023,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-90",
             "objectId": 945953,
@@ -13166,7 +13166,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-91",
             "objectId": 945954,
@@ -13309,7 +13309,7 @@
                 "classification": "Druckgrafik",
                 "condition": "1st state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 1,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-92",
             "objectId": 945955,
@@ -13595,7 +13595,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-94",
             "objectId": 945957,
@@ -13738,7 +13738,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-95",
             "objectId": 945958,
@@ -13881,7 +13881,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-96",
             "objectId": 945959,
@@ -14024,7 +14024,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-97",
             "objectId": 945960,
@@ -14167,7 +14167,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-100",
             "objectId": 945961,
@@ -14607,7 +14607,7 @@
                 "classification": "Druckgrafik",
                 "condition": "1st state (b)"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 1,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-104",
             "objectId": 945964,
@@ -14758,7 +14758,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-105",
             "objectId": 945965,
@@ -14909,7 +14909,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-106",
             "objectId": 945966,
@@ -15060,7 +15060,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-107",
             "objectId": 945967,
@@ -15219,7 +15219,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-108",
             "objectId": 945968,
@@ -15505,7 +15505,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-110",
             "objectId": 945970,
@@ -15648,7 +15648,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2nd state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-111",
             "objectId": 945971,
@@ -16404,7 +16404,7 @@
                 "classification": "Druckgrafik",
                 "condition": "1st state"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 1,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-116",
             "objectId": 945976,

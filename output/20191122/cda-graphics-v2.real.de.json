@@ -384,7 +384,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2. Auflage"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "UK_BM_1895-0122-279",
             "objectId": 928004,
@@ -495,7 +495,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2. Auflage"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "UK_BM_O-3-190",
             "objectId": 928050,
@@ -611,7 +611,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2. Auflage"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "AT_A_DG1929-242",
             "objectId": 928054,
@@ -1030,7 +1030,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2. Auflage"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "DE_GNMN_Mp14637a",
             "objectId": 928101,
@@ -1386,7 +1386,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2.  Auflage"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "DE_KSVC_H64",
             "objectId": 928140,
@@ -1729,7 +1729,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2. Auflage"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "DE_KSW_DK-181-83",
             "objectId": 928152,
@@ -1985,7 +1985,7 @@
                 "classification": "Druckgrafik",
                 "condition": "2. Auflage"
             },
-            "conditionLevel": 0,
+            "conditionLevel": 2,
             "objectName": "Holzschnitt",
             "inventoryNumber": "BE_KBR_S-II20715",
             "objectId": 928308,
