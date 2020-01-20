@@ -28,7 +28,7 @@ interface IPostProcessor {
 	function isDone(): bool;
 
 	/**
-	 * Called by the pipeline when the import is finished
+	 * Called by the pipeline when the import job is finished
 	 */
 	function done();
 }

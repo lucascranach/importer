@@ -1,6 +1,6 @@
 <?php
 
-namespace CranachImport\Importers\XML\Inflators;
+namespace CranachImport\Jobs\XML\Inflators;
 
 require_once 'ILiteratureReferenceInflator.php';
 require_once 'entities/LiteratureReference.php';

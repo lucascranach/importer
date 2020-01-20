@@ -1,6 +1,6 @@
 <?php
 
-namespace CranachImport\Importers\XML\Inflators;
+namespace CranachImport\Jobs\XML\Inflators;
 
 require_once 'IInflator.php';
 require_once 'entities/Painting.php';

@@ -1,24 +1,24 @@
 <?php
 
-namespace CranachImport\Importers\XML;
+namespace CranachImport\Jobs\XML;
 
 require_once 'Language.php';
-require_once 'importers/IFileImporter.php';
+require_once 'jobs/IFileJob.php';
 require_once 'entities/LiteratureReference.php';
 require_once 'process/IPipeline.php';
-require_once 'importers/xml/inflators/LiteratureReferencesInflator.php';
+require_once 'jobs/xml/inflators/LiteratureReferencesInflator.php';
 
 use CranachImport\Language;
-use CranachImport\Importers\IFileImporter;
+use CranachImport\Jobs\IFileJob;
 use CranachImport\Entities\LiteratureReference;
 use CranachImport\Process\IPipeline;
-use CranachImport\Importers\XML\Inflators\LiteratureReferencesInflator;
+use CranachImport\Jobs\XML\Inflators\LiteratureReferencesInflator;
 
 
 /**
- * LitereatureReferences importer on a xml file base
+ * LitereatureReferences job on a xml file base
  */
-class LiteratureReferencesImporter implements IFileImporter {
+class LiteratureReferencesJob implements IFileJob {
 
 	private $items = [];
 	private $sourceFilePath = null;

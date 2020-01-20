@@ -3,34 +3,34 @@
 require_once 'Language.php';
 require_once 'process/Pipeline.php';
 
-require_once 'importers/xml/PaintingsImporter.php';
+require_once 'jobs/xml/PaintingsJob.php';
 require_once 'exporters/PaintingsJSONLangExporter.php';
 
-require_once 'importers/xml/GraphicsImporter.php';
+require_once 'jobs/xml/GraphicsJob.php';
 require_once 'exporters/GraphicsJSONLangExistenceTypeExporter.php';
 require_once 'postProcessors/graphic/RemoteImageExistenceChecker.php';
 require_once 'postProcessors/graphic/ConditionDeterminer.php';
 
-require_once 'importers/xml/GraphicsRestorationImporter.php';
+require_once 'jobs/xml/GraphicsRestorationJob.php';
 require_once 'exporters/GraphicsRestorationJSONExporter.php';
 
-require_once 'importers/xml/LiteratureReferencesImporter.php';
+require_once 'jobs/xml/LiteratureReferencesJob.php';
 require_once 'exporters/LiteratureReferencesJSONExporter.php';
 
 use CranachImport\Process\Pipeline;
 
-use CranachImport\Importers\XML\PaintingsImporter;
+use CranachImport\Jobs\XML\PaintingsJob;
 use CranachImport\Exporters\PaintingsJSONLangExporter;
 
-use CranachImport\Importers\XML\GraphicsImporter;
+use CranachImport\Jobs\XML\GraphicsJob;
 use CranachImport\Exporters\GraphicsJSONLangExistenceTypeExporter;
 use CranachImport\PostProcessors\Graphic\RemoteImageExistenceChecker;
 use CranachImport\PostProcessors\Graphic\ConditionDeterminer;
 
-use CranachImport\Importers\XML\GraphicsRestorationImporter;
+use CranachImport\Jobs\XML\GraphicsRestorationJob;
 use CranachImport\Exporters\GraphicsRestorationJSONExporter;
 
-use CranachImport\Importers\XML\LiteratureReferencesImporter;
+use CranachImport\Jobs\XML\LiteratureReferencesJob;
 use CranachImport\Exporters\LiteratureReferencesJSONExporter;
 
 /* @TODO: Use better determination and handling of source- and destination-paths */
@@ -43,22 +43,22 @@ function importPaintings() {
 	];
 	$paintingsJSONDestinationPath = '../output/20191122/cda-paintings-v2.json';
 
-	$paintingsXmlImporter = new PaintingsImporter($paintingsXMLSourceFilePaths);
+	$paintingsXmlJob = new PaintingsJob($paintingsXMLSourceFilePaths);
 	$paintingsJsonExporter = new PaintingsJSONLangExporter($paintingsJSONDestinationPath);
 
 	$pipe = new Pipeline;
 	$pipe->addExporter($paintingsJsonExporter);
 
-	$paintingsXmlImporter->registerPipeline($pipe);
+	$paintingsXmlJob->registerPipeline($pipe);
 
-	$paintingsXmlImporter->start();
+	$paintingsXmlJob->start();
 }
 
 function importGraphics() {
 	$graphicsXMLSourceFilePath = '../content/20191122/CDA-GR_Datenuebersicht_20191122.xml';
 	$graphicsJSONDestinationPath = '../output/20191122/cda-graphics-v2.json';
 
-	$graphicsXmlImporter = new GraphicsImporter($graphicsXMLSourceFilePath);
+	$graphicsXmlJob = new GraphicsJob($graphicsXMLSourceFilePath);
 	$graphicsJsonExporter = new GraphicsJSONLangExistenceTypeExporter($graphicsJSONDestinationPath);
 	$graphicRemoteImageExitenceChecker = new RemoteImageExistenceChecker('../.cache');
 	$graphicConditionDeterminer = new ConditionDeterminer();
@@ -70,16 +70,16 @@ function importGraphics() {
 		$graphicConditionDeterminer,
 	]);
 
-	$graphicsXmlImporter->registerPipeline($pipe);
+	$graphicsXmlJob->registerPipeline($pipe);
 
-	$graphicsXmlImporter->start();
+	$graphicsXmlJob->start();
 }
 
 function importGraphicsRestoration() {
 	$graphicsRestorationXMLSourceFilePath = '../content/20191122/CDA-GR_RestDokumente_20191122.xml';
 	$graphicsRestorationJSONDestinationPath = '../output/20191122/cda-graphics-restoration-v2.json';
 
-	$graphicsRestorationXmlImporter = new GraphicsRestorationImporter(
+	$graphicsRestorationXmlJob = new GraphicsRestorationJob(
 		$graphicsRestorationXMLSourceFilePath,
 	);
 	$graphicsRestorationJsonExporter = new GraphicsRestorationJSONExporter(
@@ -89,24 +89,24 @@ function importGraphicsRestoration() {
 	$pipe = new Pipeline;
 	$pipe->addExporter($graphicsRestorationJsonExporter);
 
-	$graphicsRestorationXmlImporter->registerPipeline($pipe);
+	$graphicsRestorationXmlJob->registerPipeline($pipe);
 
-	$graphicsRestorationXmlImporter->start();
+	$graphicsRestorationXmlJob->start();
 }
 
 function importLiteratureReferences() {
 	$literatureReferencesXMLSourceFilePath = '../content/20191122/CDA_Literaturverweise_20191122.xml';
 	$literatureReferencesJSONDestinationPath = '../output/20191122/cda-literaturereferences-v2.json';
 
-	$literatureReferencesXmlImporter = new LiteratureReferencesImporter($literatureReferencesXMLSourceFilePath);
+	$literatureReferencesXmlJob = new LiteratureReferencesJob($literatureReferencesXMLSourceFilePath);
 	$literatureReferencesJsonExporter = new LiteratureReferencesJSONExporter($literatureReferencesJSONDestinationPath);
 
 	$pipe = new Pipeline;
 	$pipe->addExporter($literatureReferencesJsonExporter);
 
-	$literatureReferencesXmlImporter->registerPipeline($pipe);
+	$literatureReferencesXmlJob->registerPipeline($pipe);
 
-	$literatureReferencesXmlImporter->start();
+	$literatureReferencesXmlJob->start();
 }
 
 importPaintings();

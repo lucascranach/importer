@@ -1,6 +1,6 @@
 <?php
 
-namespace CranachImport\Importers;
+namespace CranachImport\Jobs;
 
 require_once 'process/IPipeline.php';
 
@@ -8,9 +8,9 @@ use CranachImport\Process\IPipeline;
 
 
 /**
- * Interface describing a simple importer
+ * Interface describing a simple import job
  */
-interface IImporter {
+interface IJob {
 
 	/**
 	 * Binding a pipeline to the importer for item handling
@@ -20,7 +20,7 @@ interface IImporter {
 	function registerPipeline(IPipeline $pipeline);
 
 	/**
-	 * Triggering the data reading / fetching and import
+	 * Start the job and trigger the data reading / fetching and import
 	 */
 	function start();
 

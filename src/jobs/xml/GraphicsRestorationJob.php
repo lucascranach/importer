@@ -1,24 +1,24 @@
 <?php
 
-namespace CranachImport\Importers\XML;
+namespace CranachImport\Jobs\XML;
 
 require_once 'Language.php';
-require_once 'importers/IFileImporter.php';
+require_once 'jobs/IFileJob.php';
 require_once 'entities/GraphicRestoration.php';
 require_once 'process/IPipeline.php';
-require_once 'importers/xml/inflators/GraphicsRestorationInflator.php';
+require_once 'jobs/xml/inflators/GraphicsRestorationInflator.php';
 
 use CranachImport\Language;
-use CranachImport\Importers\IFileImporter;
+use CranachImport\Jobs\IFileJob;
 use CranachImport\Entities\GraphicRestoration;
 use CranachImport\Process\IPipeline;
-use CranachImport\Importers\XML\Inflators\GraphicsRestorationInflator;
+use CranachImport\Jobs\XML\Inflators\GraphicsRestorationInflator;
 
 
 /**
- * Graphics test importer on a xml file base
+ * GraphicsRestoration job on a xml file base
  */
-class GraphicsRestorationImporter implements IFileImporter {
+class GraphicsRestorationJob implements IFileJob {
 
 	private $items = [];
 	private $sourceFilePath = null;

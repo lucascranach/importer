@@ -1,24 +1,24 @@
 <?php
 
-namespace CranachImport\Importers\XML;
+namespace CranachImport\Jobs\XML;
 
 require_once 'Language.php';
-require_once 'importers/IMultipleFileImporter.php';
+require_once 'jobs/IMultipleFileJob.php';
 require_once 'entities/Painting.php';
 require_once 'process/IPipeline.php';
-require_once 'importers/xml/inflators/PaintingsInflator.php';
+require_once 'jobs/xml/inflators/PaintingsInflator.php';
 
 use CranachImport\Language;
-use CranachImport\Importers\IMultipleFileImporter;
+use CranachImport\Jobs\IMultipleFileJob;
 use CranachImport\Entities\Painting;
 use CranachImport\Process\IPipeline;
-use CranachImport\Importers\XML\Inflators\PaintingsInflator;
+use CranachImport\Jobs\XML\Inflators\PaintingsInflator;
 
 
 /**
- * Paintings importer on a xml file base
+ * Paintings job on a xml file base
  */
-class PaintingsImporter implements IMultipleFileImporter {
+class PaintingsJob implements IMultipleFileJob {
 
 	private $sourceFilePaths = [];
 	private $items = [];

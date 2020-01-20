@@ -61,14 +61,14 @@ interface IPipeline {
 	function addPostProcessors(array $postProcessors);
 
 	/**
-	 * Handling items passed from importers
+	 * Handling items passed from importer jobs
 	 *
 	 * @param IBaseItem $item Item passed from an importer
 	 */
 	function handleIncomingItem(IBaseItem $item);
 
 	/**
-	 * Called by an importer to signal the end of the import
+	 * Called by an importer job to signal the end of the import
 	 */
 	function handleDone();
 
