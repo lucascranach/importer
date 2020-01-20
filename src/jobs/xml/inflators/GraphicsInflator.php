@@ -1158,7 +1158,7 @@ class GraphicsInflator implements IGraphicInflator {
 				} else if (self::$additionalTextLanguageTypes['en'] === $textTypeStr) {
 					$graphicEn->addAdditionalTextInformation($additionalTextInformation);
 				} else if(self::$additionalTextLanguageTypes['not_assigned'] === $textTypeStr) {
-					echo '  Unassigned additional text type for object ' . $graphicDe->getInventoryNumber() . "\n";
+					echo '  Unassigned additional text type for object \'' . $graphicDe->getInventoryNumber() . "'\n";
 					$graphicDe->addAdditionalTextInformation($additionalTextInformation);
 					$graphicEn->addAdditionalTextInformation($additionalTextInformation);
 				} else {
