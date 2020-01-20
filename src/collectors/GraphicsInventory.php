@@ -15,7 +15,8 @@ use CranachImport\Entities\Graphic;
  */
 class GraphicsInventory implements ICollector {
 
-	public $inventoryLanguages = [];
+	private $inventoryLanguages = [];
+	private $isDone = false;
 
 
 	function __construct() {
@@ -44,7 +45,16 @@ class GraphicsInventory implements ICollector {
 
 
 	function done() {
-		/* Not implemented! */
+		if ($this->isDone) {
+			throw new \Exception('GraphicsInventory collector was already signaled a \'done\'-state!');
+		}
+
+		$this->isDone = true;
+	}
+
+
+	function isDone() {
+		return $isDone;
 	}
 
 

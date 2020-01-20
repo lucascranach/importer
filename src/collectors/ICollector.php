@@ -27,8 +27,15 @@ interface ICollector {
 	function getItems(): array;
 
 	/**
-	 * Called by the pipeline to signal a finsihed import
+	 * Called by the pipeline to signal a finished import
 	 */
 	function done();
+
+	/**
+	 * Check if collection items is full / done
+	 *
+	 * @return bool
+	 */
+	function isDone(): bool;
 
 }
