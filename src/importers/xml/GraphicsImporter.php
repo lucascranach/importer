@@ -34,6 +34,8 @@ class GraphicsImporter implements IFileImporter {
 			throw new \Error('Could\'t open graphics xml source file: ' . $sourceFilePath);
 		}
 
+		echo 'Processing graphics file : ' . $sourceFilePath . "\n";
+
 
 		$this->xmlReader->next();
 

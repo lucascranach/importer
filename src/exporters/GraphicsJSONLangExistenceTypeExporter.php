@@ -86,14 +86,14 @@ class GraphicsJSONLangExistenceTypeExporter implements IFileExporter {
 			}
 		}
 
-		echo "\nGraphics with missing references: \n\n";
+		echo "\n  Graphics with missing references: \n\n";
 
 		if (count($objectsWithMissingReferencesList) > 0) {
 			foreach ($objectsWithMissingReferencesList as $objectInventoryNumber) {
-				echo "    - " . $objectInventoryNumber . "\n";
+				echo "      - " . $objectInventoryNumber . "\n";
 			}
 		} else {
-			echo "    - No missing references!\n\n";
+			echo "      - No missing references!\n\n";
 		}
 	}
 

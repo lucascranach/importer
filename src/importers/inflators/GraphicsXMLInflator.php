@@ -356,9 +356,9 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				} else if (self::$titlesLanguageTypes['en'] === $langStr) {
 					$graphicEn->addTitle($title);
 				} else if(self::$titlesLanguageTypes['not_assigned'] === $langStr) {
-					echo 'Unassigned title lang for object ' . $graphicDe->getInventoryNumber() . "\n";
+					echo '  Unassigned title lang for object ' . $graphicDe->getInventoryNumber() . "\n";
 				} else {
-					echo 'Unknown title lang: ' . $langStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
+					echo '  Unknown title lang: ' . $langStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
 					/* Bind title to both languages to prevent loss */
 					$graphicDe->addTitle($title);
 					$graphicEn->addTitle($title);
@@ -1045,19 +1045,19 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		array $relatedWorkRefs
 	) {
 		if (count($reprintRefs) > 0 || count($relatedWorkRefs) > 0) {
-			echo '> ' . $graphic->getInventoryNumber() . (($graphic->getIsVirtual()) ? ' (isVirtual)' : '') . "\n";
+			echo '  > ' . $graphic->getInventoryNumber() . (($graphic->getIsVirtual()) ? ' (isVirtual)' : '') . "\n";
 
 			if (count($reprintRefs) > 0) {
 				echo "  wrong reprint refs:\n";
 				foreach($reprintRefs as $ref) {
-					echo "    * " . $ref->getInventoryNumber() . ' (' . $ref->getText() . ')' . "\n";
+					echo "      * " . $ref->getInventoryNumber() . ' (' . $ref->getText() . ')' . "\n";
 				}
 			}
 
 			if (count($relatedWorkRefs) > 0) {
 				echo "  wrong relatedWork refs:\n";
 				foreach($relatedWorkRefs as $ref) {
-					echo "    * " . $ref->getInventoryNumber() . ' (' . $ref->getText() . ')' . "\n";
+					echo "      * " . $ref->getInventoryNumber() . ' (' . $ref->getText() . ')' . "\n";
 				}
 			}
 		}
@@ -1158,11 +1158,11 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				} else if (self::$additionalTextLanguageTypes['en'] === $textTypeStr) {
 					$graphicEn->addAdditionalTextInformation($additionalTextInformation);
 				} else if(self::$additionalTextLanguageTypes['not_assigned'] === $textTypeStr) {
-					echo 'Unassigned additional text type for object ' . $graphicDe->getInventoryNumber() . "\n";
+					echo '  Unassigned additional text type for object ' . $graphicDe->getInventoryNumber() . "\n";
 					$graphicDe->addAdditionalTextInformation($additionalTextInformation);
 					$graphicEn->addAdditionalTextInformation($additionalTextInformation);
 				} else {
-					echo 'Unknown additional text type: ' . $textTypeStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
+					echo '  Unknown additional text type: ' . $textTypeStr . ' for object \'' . $graphicDe->getInventoryNumber() . "'\n";
 					$graphicDe->addAdditionalTextInformation($additionalTextInformation);
 					$graphicEn->addAdditionalTextInformation($additionalTextInformation);
 				}
@@ -1352,11 +1352,11 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				} else if (self::$locationLanguageTypes['en'] === $locationTypeStr) {
 					$graphicEn->addLocation($metaReference);
 				} else if(self::$locationLanguageTypes['not_assigned'] === $locationTypeStr) {
-					echo 'Unassigned location type for object ' . $graphicDe->getInventoryNumber() . "\n";
+					echo '  Unassigned location type for object ' . $graphicDe->getInventoryNumber() . "\n";
 					$graphicDe->addLocation($metaReference);
 					$graphicEn->addLocation($metaReference);
 				} else {
-					echo 'Unknown location type: ' . $textTypeStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
+					echo '  Unknown location type: ' . $textTypeStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
 					$graphicDe->addLocation($metaReference);
 					$graphicEn->addLocation($metaReference);
 				}
@@ -1416,17 +1416,17 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			try {
 				$isRepository = self::inflateRepository($detail, $roleName, $graphicDe, $graphicEn);
 			} catch (Exception $e) {
-				echo $e->getMessage() . "\n";
+				echo '  ' . $e->getMessage() . "\n";
 			}
 
 			try {
 				$isOwner = self::inflateOwner($detail, $roleName, $graphicDe, $graphicEn);
 			} catch (Exception $e) {
-				echo $e->getMessage() . "\n";
+				echo '  ' . $e->getMessage() . "\n";
 			}
 
 			if (!$isRepository && !$isOwner) {
-				echo "Item is neither a repository or an owner: " . $roleName . "\n";
+				echo '  Item is neither a repository or an owner: ' . $roleName . "\n";
 			}
 		}
 	}

@@ -34,6 +34,8 @@ class GraphicsRestorationImporter implements IFileImporter {
 			throw new \Error('Could\'t open graphics xml source file: ' . $sourceFilePath);
 		}
 
+		echo 'Processing graphics restoration file : ' . $sourceFilePath . "\n";
+
 
 		$this->xmlReader->next();
 

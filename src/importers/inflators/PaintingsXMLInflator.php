@@ -352,9 +352,9 @@ class PaintingsXMLInflator implements IPaintingInflator {
 				} else if (self::$titlesLanguageTypes['en'] === $langStr) {
 					$paintingEn->addTitle($title);
 				} else if(self::$titlesLanguageTypes['not_assigned'] === $langStr) {
-					echo 'Unassigned title lang for object ' . $paintingDe->getInventoryNumber() . "\n";
+					echo '  Unassigned title lang for object ' . $paintingDe->getInventoryNumber() . "\n";
 				} else {
-					echo 'Unknown title lang: ' . $langStr . ' for object ' . $paintingDe->getInventoryNumber() . "\n";
+					echo '  Unknown title lang: ' . $langStr . ' for object ' . $paintingDe->getInventoryNumber() . "\n";
 					/* Bind title to both languages to prevent loss */
 					$paintingDe->addTitle($title);
 					$paintingEn->addTitle($title);
@@ -1070,11 +1070,11 @@ class PaintingsXMLInflator implements IPaintingInflator {
 				} else if(self::$additionalTextLanguageTypes['letter'] === $textTypeStr) { 
 					$paintingEn->addAdditionalTextInformation($additionalTextInformation);
 				} else if(self::$additionalTextLanguageTypes['not_assigned'] === $textTypeStr) {
-					echo 'Unassigned additional text type for object ' . $paintingDe->getInventoryNumber() . "\n";
+					echo '  Unassigned additional text type for object \'' . $paintingDe->getInventoryNumber() . "'\n";
 					$paintingDe->addAdditionalTextInformation($additionalTextInformation);
 					$paintingEn->addAdditionalTextInformation($additionalTextInformation);
 				} else {
-					echo 'Unknown additional text type: ' . $textTypeStr . ' for object ' . $paintingDe->getInventoryNumber() . "\n";
+					echo '  Unknown additional text type: ' . $textTypeStr . ' for object ' . $paintingDe->getInventoryNumber() . "\n";
 					$paintingDe->addAdditionalTextInformation($additionalTextInformation);
 					$paintingEn->addAdditionalTextInformation($additionalTextInformation);
 				}
@@ -1263,11 +1263,11 @@ class PaintingsXMLInflator implements IPaintingInflator {
 				} else if (self::$locationLanguageTypes['en'] === $locationTypeStr) {
 					$paintingEn->addLocation($metaReference);
 				} else if(self::$locationLanguageTypes['not_assigned'] === $locationTypeStr) {
-					echo 'Unassigned location type for object ' . $graphicDe->getInventoryNumber() . "\n";
+					echo '  Unassigned location type for object ' . $graphicDe->getInventoryNumber() . "\n";
 					$paintingDe->addLocation($metaReference);
 					$paintingEn->addLocation($metaReference);
 				} else {
-					echo 'Unknown location type: ' . $textTypeStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
+					echo '  Unknown location type: ' . $textTypeStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
 					$paintingDe->addLocation($metaReference);
 					$paintingEn->addLocation($metaReference);
 				}
@@ -1327,17 +1327,17 @@ class PaintingsXMLInflator implements IPaintingInflator {
 			try {
 				$isRepository = self::inflateRepository($detail, $roleName, $paintingDe, $paintingEn);
 			} catch (Exception $e) {
-				echo $e->getMessage() . "\n";
+				echo '  ' . $e->getMessage() . "\n";
 			}
 
 			try {
 				$isOwner = self::inflateOwner($detail, $roleName, $paintingDe, $paintingEn);
 			} catch (Exception $e) {
-				echo $e->getMessage() . "\n";
+				echo '  ' . $e->getMessage() . "\n";
 			}
 
 			if (!$isRepository && !$isOwner) {
-				echo "Item is neither a repository or an owner: " . $roleName . "\n";
+				echo '  Item is neither a repository or an owner: ' . $roleName . "\n";
 			}
 		}
 	}

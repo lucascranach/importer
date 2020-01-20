@@ -46,7 +46,7 @@ class PaintingsImporter implements IMultipleFileImporter {
 			$this->loadNextFile($sourceFilePath);
 			$this->checkXMlReaderInitialization();
 
-			echo "Loaded file : " . $sourceFilePath . "\n";
+			echo 'Processing paintings file : ' . $sourceFilePath . "\n";
 
 			/* And process all items in a loaded file */
 			while ($this->processNextItem()) {}

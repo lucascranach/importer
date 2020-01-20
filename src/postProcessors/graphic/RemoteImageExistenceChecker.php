@@ -49,7 +49,7 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 			if (!empty($item->getExhibitionHistory())) {
 				$inventoryNumber = $item->getExhibitionHistory();
 			} else {
-				echo 'Missing exhibition history for virtual object \'' . $inventoryNumber . "'\n";
+				echo '  Missing exhibition history for virtual object \'' . $inventoryNumber . "'\n";
 
 				return $item;
 			}
@@ -70,7 +70,7 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 			if (!is_null($result)) {
 				$rawImagesData = $result;
 			} else {
-				echo "Missing remote images for '" . $inventoryNumber . "'\n";
+				echo '  Missing remote images for \'' . $inventoryNumber . "'\n";
 				$rawImagesData = null;
 			}
 

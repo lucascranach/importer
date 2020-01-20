@@ -34,6 +34,7 @@ class LiteratureReferencesImporter implements IFileImporter {
 			throw new \Error('Could\'t open literature reference xml source file: ' . $sourceFilePath);
 		}
 
+		echo 'Processing literature references file : ' . $sourceFilePath . "\n";
 
 		$this->xmlReader->next();
 
