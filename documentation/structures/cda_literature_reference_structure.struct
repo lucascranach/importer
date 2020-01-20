@@ -119,7 +119,7 @@ CrystalReport
 					Subreport
 						Details*
 							Section[SectionNumber="0"] # -> Inventarnummer
-								Field[FieldName="{@Inventarnummer}"]
+								Field[FieldName="{@Inventanummer}"]
 									FormattedValue
 
 							Section[SectionNumber="1"] # -> Katalognummner
