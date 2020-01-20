@@ -87,6 +87,10 @@ class GraphicsInflator implements IGraphicInflator {
 		'/^G_/',
 	];
 
+	private static $catalogWrokReferenceReplaceArr = [
+		'-Nummer',
+	];
+
 	private static $activeLoggingOfWronglyCategorizedReferences = false;
 
 	private function __construct() {}
@@ -1542,7 +1546,13 @@ class GraphicsInflator implements IGraphicInflator {
 			if ($descriptionElement) {
 				$descriptionStr = trim($descriptionElement);
 
-				$catalogWorkReference->setDescription($descriptionStr);
+				$cleanDescriptionStr = str_ireplace(
+					self::$catalogWrokReferenceReplaceArr,
+					'',
+					$descriptionStr,
+				);
+
+				$catalogWorkReference->setDescription($cleanDescriptionStr);
 			}
 
 			/* Reference number */
