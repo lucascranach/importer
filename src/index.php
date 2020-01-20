@@ -109,7 +109,7 @@ function importLiteratureReferences() {
 	$literatureReferencesXmlJob->start();
 }
 
-importPaintings();
+// importPaintings();
 importGraphics();
-importGraphicsRestoration();
-importLiteratureReferences();
+// importGraphicsRestoration();
+// importLiteratureReferences();
