@@ -1,6 +1,6 @@
 <?php
 
-namespace CranachImport\Importers\Inflators;
+namespace CranachImport\Importers\XML\Inflators;
 
 require_once 'ILiteratureReferenceInflator.php';
 require_once 'entities/LiteratureReference.php';
@@ -23,7 +23,7 @@ use CranachImport\Entities\LiteratureReference\ConnectedObject;
  * LiteratureReferences inflator used to inflate literature reference instances
  * 	by traversing the xml element node and extracting the data in a structured way
  */
-class LiteratureReferencesXMLInflator implements ILiteratureReferenceInflator {
+class LiteratureReferencesInflator implements ILiteratureReferenceInflator {
 
 	private static $nsPrefix = 'ns';
 	private static $ns = 'urn:crystal-reports:schemas:report-detail';

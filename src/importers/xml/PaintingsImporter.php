@@ -6,13 +6,13 @@ require_once 'Language.php';
 require_once 'importers/IMultipleFileImporter.php';
 require_once 'entities/Painting.php';
 require_once 'process/IPipeline.php';
-require_once 'importers/inflators/PaintingsXMLInflator.php';
+require_once 'importers/xml/inflators/PaintingsInflator.php';
 
 use CranachImport\Language;
 use CranachImport\Importers\IMultipleFileImporter;
 use CranachImport\Entities\Painting;
 use CranachImport\Process\IPipeline;
-use CranachImport\Importers\Inflators\PaintingsXMLInflator;
+use CranachImport\Importers\XML\Inflators\PaintingsInflator;
 
 
 /**
@@ -115,7 +115,7 @@ class PaintingsImporter implements IMultipleFileImporter {
 		$xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 
 		/* Moved the inflation action(s) into its own class */
-		PaintingsXMLInflator::inflate($xmlNode, $paintingDe, $paintingEn);
+		PaintingsInflator::inflate($xmlNode, $paintingDe, $paintingEn);
 
 		/* Passing the painting objects to the pipeline */
 		$this->pipeline->handleIncomingItem($paintingDe);

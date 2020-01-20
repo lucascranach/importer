@@ -1,6 +1,6 @@
 <?php
 
-namespace CranachImport\Importers\Inflators;
+namespace CranachImport\Importers\XML\Inflators;
 
 require_once 'IInflator.php';
 require_once 'entities/GraphicRestoration.php';

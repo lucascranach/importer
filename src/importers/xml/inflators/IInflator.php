@@ -1,6 +1,6 @@
 <?php
 
-namespace CranachImport\Importers\Inflators;
+namespace CranachImport\Importers\XML\Inflators;
 
 
 /**

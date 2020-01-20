@@ -6,13 +6,13 @@ require_once 'Language.php';
 require_once 'importers/IFileImporter.php';
 require_once 'entities/Graphic.php';
 require_once 'process/IPipeline.php';
-require_once 'importers/inflators/GraphicsXMLInflator.php';
+require_once 'importers/xml/inflators/GraphicsInflator.php';
 
 use CranachImport\Language;
 use CranachImport\Importers\IFileImporter;
 use CranachImport\Entities\Graphic;
 use CranachImport\Process\IPipeline;
-use CranachImport\Importers\Inflators\GraphicsXMLInflator;
+use CranachImport\Importers\XML\Inflators\GraphicsInflator;
 
 
 /**
@@ -93,7 +93,7 @@ class GraphicsImporter implements IFileImporter {
 		$xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 
 		/* Moved the inflation action(s) into its own class */
-		GraphicsXMLInflator::inflate($xmlNode, $graphicDe, $graphicEn);
+		GraphicsInflator::inflate($xmlNode, $graphicDe, $graphicEn);
 
 		/* Passing the graphic objects to the pipeline */
 		$this->pipeline->handleIncomingItem($graphicDe);

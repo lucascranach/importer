@@ -1,9 +1,9 @@
 <?php
 
-namespace CranachImport\Importers\Inflators;
+namespace CranachImport\Importers\XML\Inflators;
 
-require_once 'IGraphicInflator.php';
-require_once 'entities/Graphic.php';
+require_once 'IPaintingInflator.php';
+require_once 'entities/Painting.php';
 
 require_once 'entities/main/Person.php';
 require_once 'entities/main/PersonName.php';
@@ -18,10 +18,10 @@ require_once 'entities/main/MetaReference.php';
 require_once 'entities/main/CatalogWorkReference.php';
 require_once 'entities/main/StructuredDimension.php';
 
-require_once 'entities/graphic/Classification.php';
+require_once 'entities/painting/Classification.php';
 
 
-use CranachImport\Entities\Graphic;
+use CranachImport\Entities\Painting;
 
 use CranachImport\Entities\Main\Person;
 use CranachImport\Entities\Main\PersonName;
@@ -36,14 +36,14 @@ use CranachImport\Entities\Main\MetaReference;
 use CranachImport\Entities\Main\CatalogWorkReference;
 use CranachImport\Entities\Main\StructuredDimension;
 
-use CranachImport\Entities\Graphic\Classification;
+use CranachImport\Entities\Painting\Classification;
 
 
 /**
- * Graphics inflator used to inflate german and english graphic instances
+ * Paintingss inflator used to inflate german and english painting instances
  * 	by traversing the xml element node and extracting the data in a structured way
  */
-class GraphicsXMLInflator implements IGraphicInflator {
+class PaintingsInflator implements IPaintingInflator {
 
 	private static $nsPrefix = 'ns';
 	private static $ns = 'urn:crystal-reports:schemas:report-detail';
@@ -52,6 +52,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 	private static $additionalTextLanguageTypes = [
 		'de' => 'Beschreibung/ Interpretation/ Kommentare',
 		'en' => 'Description/ Interpretation/ Comments',
+		'author' => 'Autor', /* TODO: To be checked; has german values? */
+		'letter' => 'Briefumschrift', /* TODO: To be checked; has english values? */
 		'not_assigned' => '(not assigned)',
 	];
 
@@ -77,62 +79,56 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		'en' => 'Owner',
 	];
 
-	private static $referenceTypeValues = [
-		'reprint' => 'Abzug A',
-		'relatedWork' => 'Teil eines Werkes',
-	];
-
 	private static $inventoryNumberReplaceRegExpArr = [
 		'/^CDA\./',
-		'/^G_/',
 	];
-
-	private static $activeLoggingOfWronglyCategorizedReferences = false;
 
 	private function __construct() {}
 
 
 	public static function inflate(\SimpleXMLElement &$node,
-	                               Graphic &$graphicDe,
-	                               Graphic &$graphicEn) {
+	                               Painting &$paintingDe,
+	                               Painting &$paintingEn) {
 		$subNode = $node->GroupHeader;
 
 		self::registerXPathNamespace($subNode);
-
-		self::inflateInvolvedPersons($subNode, $graphicDe, $graphicEn);
-		self::inflatePersonNames($subNode, $graphicDe, $graphicEn);
-		self::inflateTitles($subNode, $graphicDe, $graphicEn);
-		self::inflateClassification($subNode, $graphicDe, $graphicEn);
-		self::inflateObjectName($subNode, $graphicDe, $graphicEn);
-		self::inflateInventoryNumber($subNode, $graphicDe, $graphicEn);
-		self::inflateObjectMeta($subNode, $graphicDe, $graphicEn);
-		self::inflateDimensions($subNode, $graphicDe, $graphicEn);
-		self::inflateDating($subNode, $graphicDe, $graphicEn);
-		self::inflateDescription($subNode, $graphicDe, $graphicEn);
-		self::inflateProvenance($subNode, $graphicDe, $graphicEn);
-		self::inflateMedium($subNode, $graphicDe, $graphicEn);
-		self::inflateSignature($subNode, $graphicDe, $graphicEn);
-		self::inflateInscription($subNode, $graphicDe, $graphicEn);
-		self::inflateMarkings($subNode, $graphicDe, $graphicEn);
-		self::inflateRelatedWorks($subNode, $graphicDe, $graphicEn);
-		self::inflateExhibitionHistory($subNode, $graphicDe, $graphicEn);
-		self::inflateBibliography($subNode, $graphicDe, $graphicEn);
-		self::inflateReferences($subNode, $graphicDe, $graphicEn);
-		self::inflateAdditionalTextInformations($subNode, $graphicDe, $graphicEn);
-		self::inflatePublications($subNode, $graphicDe, $graphicEn);
-		self::inflateKeywords($subNode, $graphicDe, $graphicEn);
-		self::inflateLocations($subNode, $graphicDe, $graphicEn);
-		self::inflateRepositoryAndOwner($subNode, $graphicDe, $graphicEn);
-		self::inflateSortingNumber($subNode, $graphicDe, $graphicEn);
-		self::inflateCatalogWorkReference($subNode, $graphicDe, $graphicEn);
-		self::inflateStructuredDimension($subNode, $graphicDe, $graphicEn);
+	
+		self::inflateInvolvedPersons($subNode, $paintingDe, $paintingEn);
+		self::inflatePersonNames($subNode, $paintingDe, $paintingEn);
+		self::inflateTitles($subNode, $paintingDe, $paintingEn);
+		self::inflateClassification($subNode, $paintingDe, $paintingEn);
+		self::inflateObjectName($subNode, $paintingDe, $paintingEn);
+		self::inflateInventoryNumber($subNode, $paintingDe, $paintingEn);
+		self::inflateObjectMeta($subNode, $paintingDe, $paintingEn);
+		self::inflateDimensions($subNode, $paintingDe, $paintingEn);
+		self::inflateDating($subNode, $paintingDe, $paintingEn);
+		self::inflateDescription($subNode, $paintingDe, $paintingEn);
+		self::inflateProvenance($subNode, $paintingDe, $paintingEn);
+		self::inflateMedium($subNode, $paintingDe, $paintingEn);
+		self::inflateSignature($subNode, $paintingDe, $paintingEn);
+		self::inflateInscription($subNode, $paintingDe, $paintingEn);
+		self::inflateMarkings($subNode, $paintingDe, $paintingEn);
+		self::inflateRelatedWorks($subNode, $paintingDe, $paintingEn);
+		self::inflateExhibitionHistory($subNode, $paintingDe, $paintingEn);
+		self::inflateBibliography($subNode, $paintingDe, $paintingEn);
+		self::inflateReferences($subNode, $paintingDe, $paintingEn);
+		self::inflateSecondaryReferences($subNode, $paintingDe, $paintingEn);
+		self::inflateAdditionalTextInformations($subNode, $paintingDe, $paintingEn);
+		self::inflatePublications($subNode, $paintingDe, $paintingEn);
+		self::inflateKeywords($subNode, $paintingDe, $paintingEn);
+		self::inflateLocations($subNode, $paintingDe, $paintingEn);
+		self::inflateRepositoryAndOwner($subNode, $paintingDe, $paintingEn);
+		self::inflateSortingNumber($subNode, $paintingDe, $paintingEn);
+		self::inflateCatalogWorkReference($subNode, $paintingDe, $paintingEn);
+		self::inflateStructuredDimension($subNode, $paintingDe, $paintingEn);
+		self::inflateIsBestOf($subNode, $paintingDe, $paintingEn);
 	}
 
 
 	/* Involved persons */
 	private static function inflateInvolvedPersons(\SimpleXMLElement &$node,
-	                                               Graphic &$graphicDe,
-	                                               Graphic &$graphicEn) {
+	                                               Painting &$paintingDe,
+	                                               Painting &$paintingEn) {
 		$details = $node->Section[1]->Subreport->Details;
 
 		for ($i = 0; $i < count($details); $i += 2) {
@@ -141,8 +137,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				new Person, // en
 			];
 
-			$graphicDe->addPerson($personsArr[0]);
-			$graphicEn->addPerson($personsArr[1]);
+			$paintingDe->addPerson($personsArr[0]);
+			$paintingEn->addPerson($personsArr[1]);
 
 			for ($j = 0; $j < count($personsArr); $j += 1) {
 				$currDetails = $details[$i + $j];
@@ -271,15 +267,15 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 	/* Person names */
 	private static function inflatePersonNames(\SimpleXMLElement &$node,
-	                                           Graphic &$graphicDe,
-	                                           Graphic &$graphicEn) {
+	                                           Painting &$paintingDe,
+	                                           Painting &$paintingEn) {
 		$groups = $node->Section[2]->Subreport->Group;
 
 		foreach ($groups as $group) {
 			$personName = new PersonName;
 
-			$graphicDe->addPersonName($personName);
-			$graphicEn->addPersonName($personName);
+			$paintingDe->addPersonName($personName);
+			$paintingEn->addPersonName($personName);
 
 			/* constituent id */
 			$constituentIdElement = self::findElementByXPath(
@@ -330,8 +326,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 	/* Titles */
 	private static function inflateTitles(\SimpleXMLElement &$node,
-	                                      Graphic &$graphicDe,
-	                                      Graphic &$graphicEn) {
+	                                      Painting &$paintingDe,
+	                                      Painting &$paintingEn) {
 		$titleDetailElements = $node->Section[3]->Subreport->Details;
 
 		for ($i = 0; $i < count($titleDetailElements); $i += 1) {
@@ -352,21 +348,21 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				$langStr = trim($langElement);
 
 				if (self::$titlesLanguageTypes['de'] === $langStr) {
-					$graphicDe->addTitle($title);
+					$paintingDe->addTitle($title);
 				} else if (self::$titlesLanguageTypes['en'] === $langStr) {
-					$graphicEn->addTitle($title);
+					$paintingEn->addTitle($title);
 				} else if(self::$titlesLanguageTypes['not_assigned'] === $langStr) {
-					echo '  Unassigned title lang for object ' . $graphicDe->getInventoryNumber() . "\n";
+					echo '  Unassigned title lang for object ' . $paintingDe->getInventoryNumber() . "\n";
 				} else {
-					echo '  Unknown title lang: ' . $langStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
+					echo '  Unknown title lang: ' . $langStr . ' for object ' . $paintingDe->getInventoryNumber() . "\n";
 					/* Bind title to both languages to prevent loss */
-					$graphicDe->addTitle($title);
-					$graphicEn->addTitle($title);
+					$paintingDe->addTitle($title);
+					$paintingEn->addTitle($title);
 				}
 			} else {
 				/* Bind title to both languages to prevent loss */
-				$graphicDe->addTitle($title);
-				$graphicEn->addTitle($title);
+				$paintingDe->addTitle($title);
+				$paintingEn->addTitle($title);
 			}
 
 			/* title type */
@@ -404,15 +400,15 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 	/* Classification */
 	private static function inflateClassification(\SimpleXMLElement &$node,
-	                                              Graphic &$graphicDe,
-	                                              Graphic &$graphicEn) {
+	                                              Painting &$paintingDe,
+	                                              Painting &$paintingEn) {
 		$classificationSectionElement = $node->Section[4];
 
 		$classificationDe = new Classification;
 		$classificationEn = new Classification;
 
-		$graphicDe->setClassification($classificationDe);
-		$graphicEn->setClassification($classificationEn);
+		$paintingDe->setClassification($classificationDe);
+		$paintingEn->setClassification($classificationEn);
 
 		/* classification */
 		$classificationElement = self::findElementByXPath(
@@ -426,31 +422,13 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			$classificationDe->setClassification($classificationStr);
 			$classificationEn->setClassification($classificationStr);
 		}
-
-		/* condition */
-		$stateElement = self::findElementByXPath(
-			$classificationSectionElement,
-			'Field[@FieldName="{@Druckzustand}"]/FormattedValue',
-		);
-		if ($stateElement) {
-			$stateStr = trim($stateElement);
-
-			$splitStateStr = self::splitLanguageString($stateStr);
-
-			if (isset($splitStateStr[0])) {
-				$classificationDe->setCondition($splitStateStr[0]);
-			}
-
-			if (isset($splitStateStr[1])) {
-				$classificationEn->setCondition($splitStateStr[1]);
-			}
-		}
 	}
+
 
 	/* Object name */
 	private static function inflateObjectName(\SimpleXMLElement &$node,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn) {
+	                                          Painting &$paintingDe,
+	                                          Painting &$paintingEn) {
 		$objectNameSectionElement = $node->Section[5];
 
 		$objectNameElement = self::findElementByXPath(
@@ -461,16 +439,16 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			$objectNameStr = trim($objectNameElement);
 
 			/* Using single german value for both language objects */
-			$graphicDe->setObjectName($objectNameStr);
-			$graphicEn->setObjectName($objectNameStr);
+			$paintingDe->setObjectName($objectNameStr);
+			$paintingEn->setObjectName($objectNameStr);
 		}
 	}
 
 
 	/* Inventory number */
 	private static function inflateInventoryNumber(\SimpleXMLElement &$node,
-	                                               Graphic &$graphicDe,
-	                                               Graphic &$graphicEn) {
+	                                               Painting &$paintingDe,
+	                                               Painting &$paintingEn) {
 		$inventoryNumberSectionElement = $node->Section[6];
 
 		$inventoryNumberElement = self::findElementByXPath(
@@ -486,16 +464,16 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			);
 
 			/* Using single german value for both language objects */
-			$graphicDe->setInventoryNumber($cleanInventoryNumberStr);
-			$graphicEn->setInventoryNumber($cleanInventoryNumberStr);
+			$paintingDe->setInventoryNumber($cleanInventoryNumberStr);
+			$paintingEn->setInventoryNumber($cleanInventoryNumberStr);
 		}
 	}
 
 
 	/* Object id & virtual (meta) */
 	private static function inflateObjectMeta(\SimpleXMLElement &$node,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn) {
+	                                          Painting &$paintingDe,
+	                                          Painting &$paintingEn) {
 		$metaSectionElement = $node->Section[7];
 
 		/* object id */
@@ -507,31 +485,16 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			$objectIdStr = intval(trim($objectIdElement));
 
 			/* Using single german value for both language objects */
-			$graphicDe->setObjectId($objectIdStr);
-			$graphicEn->setObjectId($objectIdStr);
-		}
-
-		/* virtual*/
-		$virtualElement = self::findElementByXPath(
-			$metaSectionElement,
-			'Field[@FieldName="{OBJECTS.IsVirtual}"]/FormattedValue',
-		);
-		if ($virtualElement) {
-			$virtualStr = trim($virtualElement);
-
-			$isVirtual = ($virtualStr === '1');
-
-			/* Using single german value for both language objects */
-			$graphicDe->setIsVirtual($isVirtual);
-			$graphicEn->setIsVirtual($isVirtual);
+			$paintingDe->setObjectId($objectIdStr);
+			$paintingEn->setObjectId($objectIdStr);
 		}
 	}
 
 
 	/* Dimensions */
 	private static function inflateDimensions(\SimpleXMLElement &$node,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn) {
+	                                          Painting &$paintingDe,
+	                                          Painting &$paintingEn) {
 		$metaSectionElement = $node->Section[8];
 
 		/* object id */
@@ -545,11 +508,11 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			$splitDimensionsStr = self::splitLanguageString($dimensionsStr);
 
 			if (isset($splitDimensionsStr[0])) {
-				$graphicDe->setDimensions($splitDimensionsStr[0]);
+				$paintingDe->setDimensions($splitDimensionsStr[0]);
 			}
 
 			if (isset($splitDimensionsStr[1])) {
-				$graphicEn->setDimensions($splitDimensionsStr[1]);
+				$paintingEn->setDimensions($splitDimensionsStr[1]);
 			}
 		}
 	}
@@ -557,14 +520,14 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 	/* Dating */
 	private static function inflateDating(\SimpleXMLElement &$node,
-	                                      Graphic &$graphicDe,
-	                                      Graphic &$graphicEn) {
+	                                      Painting &$paintingDe,
+	                                      Painting &$paintingEn) {
 		$datingDe = new Dating;
 		$datingEn = new Dating;
 
 		/* Using single german value for both language objects */
-		$graphicDe->setDating($datingDe);
-		$graphicEn->setDating($datingEn);
+		$paintingDe->setDating($datingDe);
+		$paintingEn->setDating($datingEn);
 
 		/* Dated (string) */
 		$datedSectionElement = $node->Section[9];
@@ -721,8 +684,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 	/* Description */
 	private static function inflateDescription(\SimpleXMLElement &$node,
-	                                           Graphic &$graphicDe,
-	                                           Graphic &$graphicEn) {
+	                                           Painting &$paintingDe,
+	                                           Painting &$paintingEn) {
 		/* de */
 		$descriptionDeSectionElement = $node->Section[14];
 		$descriptionElement = self::findElementByXPath(
@@ -731,7 +694,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($descriptionElement) {
 			$descriptionStr = trim($descriptionElement);
-			$graphicDe->setDescription($descriptionStr);
+			$paintingDe->setDescription($descriptionStr);
 		}
 
 		/* en */
@@ -742,15 +705,15 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($descriptionElement) {
 			$descriptionStr = trim($descriptionElement);
-			$graphicEn->setDescription($descriptionStr);
+			$paintingEn->setDescription($descriptionStr);
 		}
 	}
 
 
 	/* Provenance */
 	private static function inflateProvenance(\SimpleXMLElement &$node,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn) {
+	                                          Painting &$paintingDe,
+	                                          Painting &$paintingEn) {
 		/* de */
 		$provenanceDeSectionElement = $node->Section[16];
 		$provenanceElement = self::findElementByXPath(
@@ -759,7 +722,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($provenanceElement) {
 			$provenanceStr = trim($provenanceElement);
-			$graphicDe->setProvenance($provenanceStr);
+			$paintingDe->setProvenance($provenanceStr);
 		}
 
 		/* en */
@@ -770,15 +733,15 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($provenanceElement) {
 			$provenanceStr = trim($provenanceElement);
-			$graphicEn->setProvenance($provenanceStr);
+			$paintingEn->setProvenance($provenanceStr);
 		}
 	}
 
 
 	/* Medium */
 	private static function inflateMedium(\SimpleXMLElement &$node,
-	                                        Graphic &$graphicDe,
-	                                        Graphic &$graphicEn) {
+	                                        Painting &$paintingDe,
+	                                        Painting &$paintingEn) {
 		/* de */
 		$mediumDeSectionElement = $node->Section[18];
 		$mediumElement = self::findElementByXPath(
@@ -787,7 +750,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($mediumElement) {
 			$mediumStr = trim($mediumElement);
-			$graphicDe->setMedium($mediumStr);
+			$paintingDe->setMedium($mediumStr);
 		}
 
 		/* en */
@@ -798,15 +761,15 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($mediumElement) {
 			$mediumStr = trim($mediumElement);
-			$graphicEn->setMedium($mediumStr);
+			$paintingEn->setMedium($mediumStr);
 		}
 	}
 
 
 	/* Signature */
 	private static function inflateSignature(\SimpleXMLElement &$node,
-	                                         Graphic &$graphicDe,
-	                                         Graphic &$graphicEn) {
+	                                         Painting &$paintingDe,
+	                                         Painting &$paintingEn) {
 		/* de */
 		$signatureDeSectionElement = $node->Section[20];
 		$signatureElement = self::findElementByXPath(
@@ -815,7 +778,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($signatureElement) {
 			$signatureStr = trim($signatureElement);
-			$graphicDe->setSignature($signatureStr);
+			$paintingDe->setSignature($signatureStr);
 		}
 
 		/* en */
@@ -826,15 +789,15 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($signatureElement) {
 			$signatureStr = trim($signatureElement);
-			$graphicEn->setSignature($signatureStr);
+			$paintingEn->setSignature($signatureStr);
 		}
 	}
 
 
 	/* Inscription */
 	private static function inflateInscription(\SimpleXMLElement &$node,
-	                                           Graphic &$graphicDe,
-	                                           Graphic &$graphicEn) {
+	                                           Painting &$paintingDe,
+	                                           Painting &$paintingEn) {
 		/* de */
 		$inscriptionDeSectionElement = $node->Section[22];
 		$inscriptionElement = self::findElementByXPath(
@@ -843,7 +806,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($inscriptionElement) {
 			$inscriptionStr = trim($inscriptionElement);
-			$graphicDe->setInscription($inscriptionStr);
+			$paintingDe->setInscription($inscriptionStr);
 		}
 
 		/* en */
@@ -854,15 +817,15 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($inscriptionElement) {
 			$inscriptionStr = trim($inscriptionElement);
-			$graphicEn->setInscription($inscriptionStr);
+			$paintingEn->setInscription($inscriptionStr);
 		}
 	}
 
 
 	/* Markings */
 	private static function inflateMarkings(\SimpleXMLElement &$node,
-	                                        Graphic &$graphicDe,
-	                                        Graphic &$graphicEn) {
+	                                        Painting &$paintingDe,
+	                                        Painting &$paintingEn) {
 		/* de */
 		$markingsDeSectionElement = $node->Section[24];
 		$markingsElement = self::findElementByXPath(
@@ -871,7 +834,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($markingsElement) {
 			$markingsStr = trim($markingsElement);
-			$graphicDe->setMarkings($markingsStr);
+			$paintingDe->setMarkings($markingsStr);
 		}
 
 		/* en */
@@ -882,15 +845,15 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($markingsElement) {
 			$markingsStr = trim($markingsElement);
-			$graphicEn->setMarkings($markingsStr);
+			$paintingEn->setMarkings($markingsStr);
 		}
 	}
 
 
 	/* Related works */
 	private static function inflateRelatedWorks(\SimpleXMLElement &$node,
-	                                            Graphic &$graphicDe,
-	                                            Graphic &$graphicEn) {
+	                                            Painting &$paintingDe,
+	                                            Painting &$paintingEn) {
 		/* de */
 		$relatedWorksDeSectionElement = $node->Section[26];
 		$relatedWorksElement = self::findElementByXPath(
@@ -899,7 +862,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($relatedWorksElement) {
 			$relatedWorksStr = trim($relatedWorksElement);
-			$graphicDe->setRelatedWorks($relatedWorksStr);
+			$paintingDe->setRelatedWorks($relatedWorksStr);
 		}
 
 		/* en */
@@ -910,15 +873,15 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($relatedWorksElement) {
 			$relatedWorksStr = trim($relatedWorksElement);
-			$graphicEn->setRelatedWorks($relatedWorksStr);
+			$paintingEn->setRelatedWorks($relatedWorksStr);
 		}
 	}
 
 
 	/* Exhibition history */
 	private static function inflateExhibitionHistory(\SimpleXMLElement &$node,
-	                                                 Graphic &$graphicDe,
-	                                                 Graphic &$graphicEn) {
+	                                                 Painting &$paintingDe,
+	                                                 Painting &$paintingEn) {
 		/* de */
 		$exhibitionHistoryDeSectionElement = $node->Section[28];
 		$exhibitionHistoryElement = self::findElementByXPath(
@@ -932,7 +895,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				'',
 				$exhibitionHistoryStr,
 			);
-			$graphicDe->setExhibitionHistory($cleanExhibitionHistoryStr);
+			$paintingDe->setExhibitionHistory($cleanExhibitionHistoryStr);
 		}
 
 		/* en */
@@ -948,21 +911,15 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				'',
 				$exhibitionHistoryStr,
 			);
-			$graphicEn->setExhibitionHistory($cleanExhibitionHistoryStr);
-		}
-
-
-		/* Use the german exhibition history if none is set for the english one */
-		if (empty($graphicEn->getExhibitionHistory())) {
-			$graphicEn->setExhibitionHistory($graphicDe->getExhibitionHistory());
+			$paintingEn->setExhibitionHistory($cleanExhibitionHistoryStr);
 		}
 	}
 
 
 	/* Bibliography */
 	private static function inflateBibliography(\SimpleXMLElement &$node,
-	                                            Graphic &$graphicDe,
-	                                            Graphic &$graphicEn) {
+	                                            Painting &$paintingDe,
+	                                            Painting &$paintingEn) {
 		$bibliographySectionElement = $node->Section[30];
 		$bibliographyElement = self::findElementByXPath(
 			$bibliographySectionElement,
@@ -970,116 +927,17 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		);
 		if ($bibliographyElement) {
 			$bibliographyStr = trim($bibliographyElement);
-			$graphicDe->setBibliography($bibliographyStr);
-			$graphicEn->setBibliography($bibliographyStr);
+			$paintingDe->setBibliography($bibliographyStr);
+			$paintingEn->setBibliography($bibliographyStr);
 		}
 	}
 
 
 	/* References */
 	private static function inflateReferences(\SimpleXMLElement &$node,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn) {
-		/* Reprints References */
-		$referenceReprintDetailsElements = $node->Section[31]->Subreport->Details;
-
-		
-		$reprintReferences = self::getReferencesForDetailElements(
-			$referenceReprintDetailsElements,
-		);
-
-		/* RelatedWorks References */
-		$referenceRelatedWorksDetailsElements = $node->Section[32]->Subreport->Details;
-
-		$relatedWorksReferences = self::getReferencesForDetailElements(
-			$referenceRelatedWorksDetailsElements,
-		);
-
-
-		$wrongReprintReferences = self::getWronglyCategorizedReferences(
-			$reprintReferences,
-			self::$referenceTypeValues['relatedWork'],
-		);
-
-		$wrongRelatedWorkReferences = self::getWronglyCategorizedReferences(
-			$relatedWorksReferences,
-			self::$referenceTypeValues['reprint'],
-		);
-
-		if (self::$activeLoggingOfWronglyCategorizedReferences) {
-			self::logWronglyCategorizedReferences(
-				$graphicDe,
-				$wrongReprintReferences,
-				$wrongRelatedWorkReferences,
-			);
-		}
-
-		$overallReferences = [];
-		$overallReferences = array_merge($overallReferences, $reprintReferences);
-		$overallReferences = array_merge($overallReferences, $relatedWorksReferences);
-
-		$filteredReprintReferences = array_values(
-			array_filter($overallReferences, function($reference) {
-				return $reference->getText() === self::$referenceTypeValues['reprint'];
-			}),
-		);
-
-		$filteredRelatedWorkReferences = array_values(
-			array_filter($overallReferences, function($reference) {
-				return $reference->getText() === self::$referenceTypeValues['relatedWork'];
-			}),
-		);
-
-		$graphicDe->setReprintReferences($filteredReprintReferences);
-		$graphicEn->setReprintReferences($filteredReprintReferences);
-
-		$graphicDe->setRelatedWorkReferences($filteredRelatedWorkReferences);
-		$graphicEn->setRelatedWorkReferences($filteredRelatedWorkReferences);
-	}
-
-
-	/* Helper function for logging graphics with wrongly categorized references */
-	private static function logWronglyCategorizedReferences(
-		Graphic &$graphic,
-		array $reprintRefs,
-		array $relatedWorkRefs
-	) {
-		if (count($reprintRefs) > 0 || count($relatedWorkRefs) > 0) {
-			echo '  > ' . $graphic->getInventoryNumber() . (($graphic->getIsVirtual()) ? ' (isVirtual)' : '') . "\n";
-
-			if (count($reprintRefs) > 0) {
-				echo "  wrong reprint refs:\n";
-				foreach($reprintRefs as $ref) {
-					echo "      * " . $ref->getInventoryNumber() . ' (' . $ref->getText() . ')' . "\n";
-				}
-			}
-
-			if (count($relatedWorkRefs) > 0) {
-				echo "  wrong relatedWork refs:\n";
-				foreach($relatedWorkRefs as $ref) {
-					echo "      * " . $ref->getInventoryNumber() . ' (' . $ref->getText() . ')' . "\n";
-				}
-			}
-		}
-	}
-
-
-	/* Helper function for checking wrongly groupe */
-	private static function getWronglyCategorizedReferences(
-		array $references,
-		string $wrongType
-	) {
-		return array_filter($references, function ($ref) use($wrongType) {
-			return $ref->getText() === $wrongType;
-		});
-	}
-
-
-	/* Reusable helper function for extration of reference like elements */
-	private static function getReferencesForDetailElements(
-		\SimpleXMLElement &$referenceDetailsElements
-	): array {
-		$references = [];
+                                              Painting &$paintingDe,
+	                                          Painting &$paintingEn) {
+		$referenceDetailsElements = $node->Section[31]->Subreport->Details;
 
 		for ($i = 0; $i < count($referenceDetailsElements); $i += 1) {
 			$referenceDetailElement = $referenceDetailsElements[$i];
@@ -1089,6 +947,9 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			}
 
 			$reference = new ObjectReference;
+
+			$paintingDe->addReference($reference);
+			$paintingEn->addReference($reference);
 
 			/* Text */
 			$textElement = self::findElementByXPath(
@@ -1119,18 +980,65 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				$remarksStr = trim($remarksElement);
 				$reference->setRemark($remarksStr);
 			}
-
-			$references[] = $reference;
 		}
+	}
 
-		return $references;
+
+	/* Secondary References */
+	private static function inflateSecondaryReferences(\SimpleXMLElement &$node,
+                                                       Painting &$paintingDe,
+	                                                   Painting &$paintingEn) {
+		$referenceDetailsElements = $node->Section[32]->Subreport->Details;
+
+		for ($i = 0; $i < count($referenceDetailsElements); $i += 1) {
+			$referenceDetailElement = $referenceDetailsElements[$i];
+
+			if ($referenceDetailElement->count() === 0) {
+				continue;
+			}
+
+			$reference = new ObjectReference;
+
+			$paintingDe->addSecondaryReference($reference);
+			$paintingEn->addSecondaryReference($reference);
+
+			/* Text */
+			$textElement = self::findElementByXPath(
+				$referenceDetailElement,
+				'Section[@SectionNumber="0"]/Text[@Name="Text5"]/TextValue',
+			);
+			if ($textElement) {
+				$textStr = trim($textElement);
+				$reference->setText($textStr);
+			}
+
+			/* Inventory number */
+			$inventoryNumberElement = self::findElementByXPath(
+				$referenceDetailElement,
+				'Section[@SectionNumber="1"]/Field[@FieldName="{@Inventarnummer}"]/FormattedValue',
+			);
+			if ($inventoryNumberElement) {
+				$inventoryNumberStr = trim($inventoryNumberElement);
+				$reference->setInventoryNumber($inventoryNumberStr);
+			}
+
+			/* Remarks */
+			$remarksElement = self::findElementByXPath(
+				$referenceDetailElement,
+				'Section[@SectionNumber="2"]/Field[@FieldName="{ASSOCIATIONS.Remarks}"]/FormattedValue',
+			);
+			if ($remarksElement) {
+				$remarksStr = trim($remarksElement);
+				$reference->setRemark($remarksStr);
+			}
+		}
 	}
 
 
 	/* Additional text informations */
 	private static function inflateAdditionalTextInformations(\SimpleXMLElement &$node,
-	                                                          Graphic &$graphicDe,
-	                                                          Graphic &$graphicEn) {
+	                                                          Painting &$paintingDe,
+	                                                          Painting &$paintingEn) {
 		$additionalTextsDetailsElements = $node->Section[33]->Subreport->Details;
 
 		for ($i = 0; $i < count($additionalTextsDetailsElements); $i += 1) {
@@ -1154,21 +1062,25 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				$additionalTextInformation->setType($textTypeStr);
 
 				if (self::$additionalTextLanguageTypes['de'] === $textTypeStr) {
-					$graphicDe->addAdditionalTextInformation($additionalTextInformation);
+					$paintingDe->addAdditionalTextInformation($additionalTextInformation);
 				} else if (self::$additionalTextLanguageTypes['en'] === $textTypeStr) {
-					$graphicEn->addAdditionalTextInformation($additionalTextInformation);
+					$paintingEn->addAdditionalTextInformation($additionalTextInformation);
+				} else if(self::$additionalTextLanguageTypes['author'] === $textTypeStr) { 
+					$paintingDe->addAdditionalTextInformation($additionalTextInformation);
+				} else if(self::$additionalTextLanguageTypes['letter'] === $textTypeStr) { 
+					$paintingEn->addAdditionalTextInformation($additionalTextInformation);
 				} else if(self::$additionalTextLanguageTypes['not_assigned'] === $textTypeStr) {
-					echo '  Unassigned additional text type for object ' . $graphicDe->getInventoryNumber() . "\n";
-					$graphicDe->addAdditionalTextInformation($additionalTextInformation);
-					$graphicEn->addAdditionalTextInformation($additionalTextInformation);
+					echo '  Unassigned additional text type for object \'' . $paintingDe->getInventoryNumber() . "'\n";
+					$paintingDe->addAdditionalTextInformation($additionalTextInformation);
+					$paintingEn->addAdditionalTextInformation($additionalTextInformation);
 				} else {
-					echo '  Unknown additional text type: ' . $textTypeStr . ' for object \'' . $graphicDe->getInventoryNumber() . "'\n";
-					$graphicDe->addAdditionalTextInformation($additionalTextInformation);
-					$graphicEn->addAdditionalTextInformation($additionalTextInformation);
+					echo '  Unknown additional text type: ' . $textTypeStr . ' for object ' . $paintingDe->getInventoryNumber() . "\n";
+					$paintingDe->addAdditionalTextInformation($additionalTextInformation);
+					$paintingEn->addAdditionalTextInformation($additionalTextInformation);
 				}
 			} else {
-				$graphicDe->addAdditionalTextInformation($additionalTextInformation);
-				$graphicEn->addAdditionalTextInformation($additionalTextInformation);
+				$paintingDe->addAdditionalTextInformation($additionalTextInformation);
+				$paintingEn->addAdditionalTextInformation($additionalTextInformation);
 			}
 
 			/* Text */
@@ -1210,15 +1122,14 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				$authorStr = trim($authorElement);
 				$additionalTextInformation->setAuthor($authorStr);
 			}
-
 		}
 	}
 
 
 	/* Publications */
 	private static function inflatePublications(\SimpleXMLElement &$node,
-	                                            Graphic &$graphicDe,
-	                                            Graphic &$graphicEn) {
+	                                            Painting &$paintingDe,
+	                                            Painting &$paintingEn) {
 		$publicationDetailsElements = $node->Section[34]->Subreport->Details;
 
 		for ($i = 0; $i < count($publicationDetailsElements); $i += 1) {
@@ -1230,8 +1141,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 			$publication = new Publication;
 
-			$graphicDe->addPublication($publication);
-			$graphicEn->addPublication($publication);
+			$paintingDe->addPublication($publication);
+			$paintingEn->addPublication($publication);
 
 			/* Title */
 			$titleElement = self::findElementByXPath(
@@ -1268,8 +1179,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 	/* Keywords */
 	private static function inflateKeywords(\SimpleXMLElement &$node,
-	                                        Graphic &$graphicDe,
-	                                        Graphic &$graphicEn) {
+	                                        Painting &$paintingDe,
+	                                        Painting &$paintingEn) {
 		$keywordDetailsElements = $node->Section[35]->Subreport->Details;
 
 		for ($i = 0; $i < count($keywordDetailsElements); $i += 1) {
@@ -1314,8 +1225,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 			/* Decide if keyword is valid */
 			if (!empty($metaReference->getTerm())) {
-				$graphicDe->addKeyword($metaReference);
-				$graphicEn->addKeyword($metaReference);
+				$paintingDe->addKeyword($metaReference);
+				$paintingEn->addKeyword($metaReference);
 			}
 		}
 	}
@@ -1323,8 +1234,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 	/* Locations */
 	private static function inflateLocations(\SimpleXMLElement &$node,
-	                                         Graphic &$graphicDe,
-	                                         Graphic &$graphicEn) {
+	                                         Painting &$paintingDe,
+	                                         Painting &$paintingEn) {
 		$locationDetailsElements = $node->Section[36]->Subreport->Details;
 
 		for ($i = 0; $i < count($locationDetailsElements); $i += 1) {
@@ -1348,21 +1259,21 @@ class GraphicsXMLInflator implements IGraphicInflator {
 				$metaReference->setType($locationTypeStr);
 
 				if (self::$locationLanguageTypes['de'] === $locationTypeStr) {
-					$graphicDe->addLocation($metaReference);
+					$paintingDe->addLocation($metaReference);
 				} else if (self::$locationLanguageTypes['en'] === $locationTypeStr) {
-					$graphicEn->addLocation($metaReference);
+					$paintingEn->addLocation($metaReference);
 				} else if(self::$locationLanguageTypes['not_assigned'] === $locationTypeStr) {
 					echo '  Unassigned location type for object ' . $graphicDe->getInventoryNumber() . "\n";
-					$graphicDe->addLocation($metaReference);
-					$graphicEn->addLocation($metaReference);
+					$paintingDe->addLocation($metaReference);
+					$paintingEn->addLocation($metaReference);
 				} else {
 					echo '  Unknown location type: ' . $textTypeStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
-					$graphicDe->addLocation($metaReference);
-					$graphicEn->addLocation($metaReference);
+					$paintingDe->addLocation($metaReference);
+					$paintingEn->addLocation($metaReference);
 				}
 			} else {
-				$graphicDe->addLocation($metaReference);
-				$graphicEn->addLocation($metaReference);
+				$paintingDe->addLocation($metaReference);
+				$paintingEn->addLocation($metaReference);
 			}
 
 			/* Term */
@@ -1390,8 +1301,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 	/* Repository and Owner */
 	private static function inflateRepositoryAndOwner(\SimpleXMLElement &$node,
-	                                                  Graphic &$graphicDe,
-	                                                  Graphic &$graphicEn) {
+	                                                  Painting &$paintingDe,
+	                                                  Painting &$paintingEn) {
 		$repositoryAndOwnerDetailsSubreport = $node->Section[37]->Subreport;
 		$details = $repositoryAndOwnerDetailsSubreport->Details;
 
@@ -1414,13 +1325,13 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			$isOwner = false;
 
 			try {
-				$isRepository = self::inflateRepository($detail, $roleName, $graphicDe, $graphicEn);
+				$isRepository = self::inflateRepository($detail, $roleName, $paintingDe, $paintingEn);
 			} catch (Exception $e) {
 				echo '  ' . $e->getMessage() . "\n";
 			}
 
 			try {
-				$isOwner = self::inflateOwner($detail, $roleName, $graphicDe, $graphicEn);
+				$isOwner = self::inflateOwner($detail, $roleName, $paintingDe, $paintingEn);
 			} catch (Exception $e) {
 				echo '  ' . $e->getMessage() . "\n";
 			}
@@ -1435,8 +1346,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 	/* Repository */
 	private static function inflateRepository(\SimpleXMLElement &$detail,
 	                                          string $roleName,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn): bool {
+	                                          Painting &$paintingDe,
+	                                          Painting &$paintingEn): bool {
 		$repositoryElement = self::findElementByXPath(
 			$detail,
 			'Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
@@ -1451,12 +1362,12 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		switch ($roleName) {
 			case self::$repositoryTypes['de']:
 				/* de */
-				$graphicDe->setRepository($repositoryStr);
+				$paintingDe->setRepository($repositoryStr);
 				break;
 
 			case self::$repositoryTypes['en']:
 				/* en */
-				$graphicEn->setRepository($repositoryStr);
+				$paintingEn->setRepository($repositoryStr);
 				break;
 
 			default:
@@ -1470,8 +1381,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 	/* Owner */
 	private static function inflateOwner(\SimpleXMLElement &$detail,
 	                                     string $roleName,
-	                                     Graphic &$graphicDe,
-	                                     Graphic &$graphicEn): bool {
+	                                     Painting &$paintingDe,
+	                                     Painting &$paintingEn): bool {
 		$ownerElement = self::findElementByXPath(
 			$detail,
 			'Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
@@ -1486,12 +1397,12 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		switch ($roleName) {
 			case self::$ownerTypes['de']:
 				/* de */
-				$graphicDe->setOwner($ownerStr);
+				$paintingDe->setOwner($ownerStr);
 				break;
 
 			case self::$ownerTypes['en']:
 				/* en */
-				$graphicEn->setOwner($ownerStr);
+				$paintingEn->setOwner($ownerStr);
 				break;
 
 			default:
@@ -1504,8 +1415,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 	/* Sorting number */
 	private static function inflateSortingNumber(\SimpleXMLElement &$node,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn) {
+	                                             Painting &$paintingDe,
+	                                             Painting &$paintingEn) {
 		$sortingNumberSubreport = $node->Section[38];
 
 		$sortingNumberElement = self::findElementByXPath(
@@ -1515,23 +1426,19 @@ class GraphicsXMLInflator implements IGraphicInflator {
 		if ($sortingNumberElement) {
 			$sortingNumberStr = trim($sortingNumberElement);
 
-			$graphicDe->setSortingNumber($sortingNumberStr);
-			$graphicEn->setSortingNumber($sortingNumberStr);
+			$paintingDe->setSortingNumber($sortingNumberStr);
+			$paintingEn->setSortingNumber($sortingNumberStr);
 		}
 	}
 
 
 	/* Catalog work reference */
 	private static function inflateCatalogWorkReference(\SimpleXMLElement &$node,
-	                                                    Graphic &$graphicDe,
-	                                                    Graphic &$graphicEn) {
+	                                                    Painting &$paintingDe,
+	                                                    Painting &$paintingEn) {
 		$catalogWorkReferenceDetailsElements = $node->Section[39]->Subreport->Details;
 
 		foreach($catalogWorkReferenceDetailsElements as $detailElement) {
-			if ($detailElement->count() === 0) {
-				continue;
-			}
-
 			$catalogWorkReference = new CatalogWorkReference;
 
 			/* Description */
@@ -1553,13 +1460,7 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			if ($referenceNumberElement) {
 				$referenceNumberStr = trim($referenceNumberElement);
 
-				$cleanReferenceNumberStr = preg_replace(
-					self::$inventoryNumberReplaceRegExpArr,
-					'',
-					$referenceNumberStr,
-				);
-
-				$catalogWorkReference->setReferenceNumber($cleanReferenceNumberStr);
+				$catalogWorkReference->setReferenceNumber($referenceNumberStr);
 			}
 
 			/* Remarks */
@@ -1576,8 +1477,8 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 			/* Decide if reference should be added */
 			if (!empty($catalogWorkReference->getReferenceNumber())) {
-				$graphicDe->addCatalogWorkReference($catalogWorkReference);
-				$graphicEn->addCatalogWorkReference($catalogWorkReference);
+				$paintingDe->addCatalogWorkReference($catalogWorkReference);
+				$paintingEn->addCatalogWorkReference($catalogWorkReference);
 			}
 		}
 	}
@@ -1585,14 +1486,14 @@ class GraphicsXMLInflator implements IGraphicInflator {
 
 	/* Structured dimension */
 	private static function inflateStructuredDimension(\SimpleXMLElement &$node,
-	                                                   Graphic &$graphicDe,
-	                                                   Graphic &$graphicEn) {
+	                                                   Painting &$paintingDe,
+	                                                   Painting &$paintingEn) {
 		$catalogWorkReferenceSubreport = $node->Section[40]->Subreport;
 
 		$structuredDimension = new StructuredDimension;
 
-		$graphicDe->setStructuredDimension($structuredDimension);
-		$graphicEn->setStructuredDimension($structuredDimension);
+		$paintingDe->setStructuredDimension($structuredDimension);
+		$paintingEn->setStructuredDimension($structuredDimension);
 
 		/* element */
 		$elementElement = self::findElementByXPath(
@@ -1636,6 +1537,17 @@ class GraphicsXMLInflator implements IGraphicInflator {
 			}
 		}
 
+	}
+
+
+	/* Structured dimension */
+	private static function inflateIsBestOf(\SimpleXMLElement &$node,
+	                                        Painting &$paintingDe,
+	                                        Painting &$paintingEn) {
+		$isBestOf = isset($node->Section[41]);
+
+		$paintingDe->setIsBestOf($isBestOf);
+		$paintingEn->setIsBestOf($isBestOf);
 	}
 
 

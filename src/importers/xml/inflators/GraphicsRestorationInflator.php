@@ -1,6 +1,6 @@
 <?php
 
-namespace CranachImport\Importers\Inflators;
+namespace CranachImport\Importers\XML\Inflators;
 
 require_once 'IGraphicRestorationInflator.php';
 require_once 'entities/GraphicRestoration.php';
@@ -25,7 +25,7 @@ use CranachImport\Entities\GraphicRestoration\Signature;
  * Graphics Restoration inflator used to inflate graphic restoration instances
  * 	by traversing the xml element node and extracting the data in a structured way
  */
-class GraphicsRestorationXMLInflator implements IGraphicRestorationInflator {
+class GraphicsRestorationInflator implements IGraphicRestorationInflator {
 
 	private static $nsPrefix = 'ns';
 	private static $ns = 'urn:crystal-reports:schemas:report-detail';
