@@ -1,14 +1,15 @@
 <?php
 
-namespace CranachImport\Importers;
+namespace CranachImport\Importers\XML;
 
 require_once 'Language.php';
-require_once 'IMultipleFileImporter.php';
+require_once 'importers/IMultipleFileImporter.php';
 require_once 'entities/Painting.php';
 require_once 'process/IPipeline.php';
 require_once 'importers/inflators/PaintingsXMLInflator.php';
 
 use CranachImport\Language;
+use CranachImport\Importers\IMultipleFileImporter;
 use CranachImport\Entities\Painting;
 use CranachImport\Process\IPipeline;
 use CranachImport\Importers\Inflators\PaintingsXMLInflator;
@@ -17,7 +18,7 @@ use CranachImport\Importers\Inflators\PaintingsXMLInflator;
 /**
  * Paintings importer on a xml file base
  */
-class PaintingsXMLImporter implements IMultipleFileImporter {
+class PaintingsImporter implements IMultipleFileImporter {
 
 	private $sourceFilePaths = [];
 	private $items = [];

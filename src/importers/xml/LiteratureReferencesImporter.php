@@ -1,14 +1,15 @@
 <?php
 
-namespace CranachImport\Importers;
+namespace CranachImport\Importers\XML;
 
 require_once 'Language.php';
-require_once 'IFileImporter.php';
+require_once 'importers/IFileImporter.php';
 require_once 'entities/LiteratureReference.php';
 require_once 'process/IPipeline.php';
 require_once 'importers/inflators/LiteratureReferencesXMLInflator.php';
 
 use CranachImport\Language;
+use CranachImport\Importers\IFileImporter;
 use CranachImport\Entities\LiteratureReference;
 use CranachImport\Process\IPipeline;
 use CranachImport\Importers\Inflators\LiteratureReferencesXMLInflator;
@@ -17,7 +18,7 @@ use CranachImport\Importers\Inflators\LiteratureReferencesXMLInflator;
 /**
  * LitereatureReferences importer on a xml file base
  */
-class LiteratureReferencesXMLImporter implements IFileImporter {
+class LiteratureReferencesImporter implements IFileImporter {
 
 	private $items = [];
 	private $sourceFilePath = null;

@@ -1,14 +1,15 @@
 <?php
 
-namespace CranachImport\Importers;
+namespace CranachImport\Importers\XML;
 
 require_once 'Language.php';
-require_once 'IFileImporter.php';
+require_once 'importers/IFileImporter.php';
 require_once 'entities/Graphic.php';
 require_once 'process/IPipeline.php';
 require_once 'importers/inflators/GraphicsXMLInflator.php';
 
 use CranachImport\Language;
+use CranachImport\Importers\IFileImporter;
 use CranachImport\Entities\Graphic;
 use CranachImport\Process\IPipeline;
 use CranachImport\Importers\Inflators\GraphicsXMLInflator;
@@ -17,7 +18,7 @@ use CranachImport\Importers\Inflators\GraphicsXMLInflator;
 /**
  * Graphics importer on a xml file base
  */
-class GraphicsXMLImporter implements IFileImporter {
+class GraphicsImporter implements IFileImporter {
 
 	private $items = [];
 	private $sourceFilePath = null;
