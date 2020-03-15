@@ -2273,7 +2273,7 @@
             "publications": [
                 {
                     "title": "Cranach 1510",
-                    "pageNumber": "Titelblatt #Title-page",
+                    "pageNumber": "Titelblatt",
                     "referenceId": "29936"
                 }
             ],
@@ -3193,7 +3193,7 @@
                 },
                 {
                     "title": "Winterburger 1503",
-                    "pageNumber": "Frontispiz #Frontispiece",
+                    "pageNumber": "Frontispiz",
                     "referenceId": "30002"
                 }
             ],
@@ -3338,7 +3338,7 @@
             "publications": [
                 {
                     "title": "Winterburger 1503",
-                    "pageNumber": "Frontispiz #Frontispiece",
+                    "pageNumber": "Frontispiz",
                     "referenceId": "30002"
                 }
             ],
@@ -3555,7 +3555,7 @@
                 },
                 {
                     "title": "Winterburger 1503",
-                    "pageNumber": "Kanonblatt#the canon page",
+                    "pageNumber": "Kanonblatt",
                     "referenceId": "30002"
                 }
             ],
@@ -10554,7 +10554,7 @@
                 },
                 {
                     "title": "Luther 1522 A",
-                    "pageNumber": "Titelblatt #Title-page",
+                    "pageNumber": "Titelblatt",
                     "referenceId": "30029"
                 }
             ],
@@ -10674,7 +10674,7 @@
                 },
                 {
                     "title": "Luther 1522 B",
-                    "pageNumber": "Titelblatt #Title-page",
+                    "pageNumber": "Titelblatt",
                     "referenceId": "30030"
                 }
             ],
@@ -10800,7 +10800,7 @@
                 },
                 {
                     "title": "Luther 1527",
-                    "pageNumber": "Titelblatt #Title-page",
+                    "pageNumber": "Titelblatt",
                     "referenceId": "30032"
                 }
             ],
@@ -10923,7 +10923,7 @@
                 },
                 {
                     "title": "Scepperus 1524",
-                    "pageNumber": "R\u00fcckseite des Titelblatts# verso of title-page",
+                    "pageNumber": "R\u00fcckseite des Titelblatts",
                     "referenceId": "30038"
                 }
             ],
@@ -11042,7 +11042,7 @@
             "publications": [
                 {
                     "title": "Cranach 1510",
-                    "pageNumber": "Titelblatt#Title-page",
+                    "pageNumber": "Titelblatt",
                     "referenceId": "29936"
                 },
                 {
