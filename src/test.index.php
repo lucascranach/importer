@@ -14,7 +14,10 @@ use CranachImport\Pipeline\PipelineSource;
 use CranachImport\Pipeline\PipelineOperation;
 use CranachImport\Pipeline\PipelineDestination;
 
-
+/*
+	@TODO: Introduce Pipeline-Class to add Input, Ops and Destinations to; process can only be started through the pipeline
+	@TODO: Use src and sink as Input- and Output-Fields?
+*/
 
 
 class Source extends PipelineSource {
