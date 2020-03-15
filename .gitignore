@@ -1,3 +1,7 @@
 devilbox/
 .DS_Store
 .cache/
+
+# IntelliJ
+.idea
+*.iml

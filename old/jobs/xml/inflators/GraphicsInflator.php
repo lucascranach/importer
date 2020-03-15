@@ -1232,10 +1232,11 @@ class GraphicsInflator implements IGraphicInflator {
 				continue;
 			}
 
-			$publication = new Publication;
+			$publicationDe = new Publication;
+			$publicationEn = new Publication;
 
-			$graphicDe->addPublication($publication);
-			$graphicEn->addPublication($publication);
+			$graphicDe->addPublication($publicationDe);
+			$graphicEn->addPublication($publicationEn);
 
 			/* Title */
 			$titleElement = self::findElementByXPath(
@@ -1244,7 +1245,8 @@ class GraphicsInflator implements IGraphicInflator {
 			);
 			if ($titleElement) {
 				$titleStr = trim($titleElement);
-				$publication->setTitle($titleStr);
+				$publicationDe->setTitle($titleStr);
+				$publicationEn->setTitle($titleStr);
 			}
 
 			/* Pagenumber */
@@ -1254,7 +1256,16 @@ class GraphicsInflator implements IGraphicInflator {
 			);
 			if ($pageNumberElement) {
 				$pageNumberStr = trim($pageNumberElement);
-				$publication->setPageNumber($pageNumberStr);
+
+				$splitPageNumberStr = self::splitLanguageString($pageNumberStr);
+
+                if (isset($splitPageNumberStr[0])) {
+                    $publicationDe->setPageNumber($splitPageNumberStr[0]);
+                }
+
+                if (isset($splitPageNumberStr[1])) {
+                    $publicationEn->setPageNumber($splitPageNumberStr[1]);
+                }
 			}
 
 			/* Reference */
@@ -1264,7 +1275,8 @@ class GraphicsInflator implements IGraphicInflator {
 			);
 			if ($referenceIdElement) {
 				$referenceIdStr = trim($referenceIdElement);
-				$publication->setReferenceId($referenceIdStr);
+				$publicationDe->setReferenceId($referenceIdStr);
+				$publicationEn->setReferenceId($referenceIdStr);
 			}
 		}
 	}
@@ -1690,7 +1702,7 @@ class GraphicsInflator implements IGraphicInflator {
 		$splitLangStrs = array_map('trim', explode(self::$langSplitChar, $langStr));
 		$cntItems = count($splitLangStrs);
 
-		if ($cntItems > 0 && $cntItems < 2) {
+		if ($cntItems == 1) {
 			$splitLangStrs[] = $splitLangStrs[0];
 		} 
 
