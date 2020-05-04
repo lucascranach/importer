@@ -5,3 +5,4 @@ devilbox/
 # IntelliJ
 .idea
 *.iml
+/vendor/

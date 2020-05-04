@@ -1,0 +1,16 @@
+{
+    "name": "cranach-digital-archive/importer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Jorge H. F. Pereira",
+            "email": "jhfpereira@users.noreply.github.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "CranachDigitalArchive\\Importer\\": "src/"
+        }
+    }
+}
