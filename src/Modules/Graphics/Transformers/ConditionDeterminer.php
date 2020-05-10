@@ -1,13 +1,13 @@
 <?php
 
-namespace CranachDigitalArchive\Importer\Modules\Graphics\Operations;
+namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
-use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
-use CranachDigitalArchive\Importer\Interfaces\Operations\IPostProcessor;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
+use CranachDigitalArchive\Importer\Pipeline\Hybrid;
+use Error;
 
-
-class ConditionDeterminer implements IPostProcessor {
+class ConditionDeterminer extends Hybrid
+{
 
 	private static $conditionLangMappings = [
 		'de' => [
@@ -58,16 +58,22 @@ class ConditionDeterminer implements IPostProcessor {
 		],
 	];
 	private $conditionLevelCache = [];
-	private $isDone = false;
 
 
-	function __construct() {
+	private function __construct()
+	{
 	}
 
 
-	function handleItem(IBaseItem $item): IBaseItem {
+	public static function new()
+	{
+		return new self;
+	}
+
+	function handleItem($item): bool
+    {
 		if (!($item instanceof Graphic)) {
-			throw new \Exception('Pushed item is not of expected class \'Graphic\'');
+			throw new Error('Pushed item is not of expected class \'Graphic\'');
 		}
 
 		$inventoryNumber = $item->getInventoryNumber();
@@ -81,21 +87,13 @@ class ConditionDeterminer implements IPostProcessor {
 
 		$item->setConditionLevel($this->conditionLevelCache[$inventoryNumber]);
 
-		return $item;
+		$this->next($item);
+		return true;
 	}
 
 
-	function isDone(): bool {
-		return $this->isDone;
-	}
-
-
-	function done() {
-		$this->isDone = true;
-	}
-
-
-	private function getConditionLevel(Graphic $graphic, $conditionLevel = 0): int {
+	private function getConditionLevel(Graphic $graphic, $conditionLevel = 0): int
+    {
 		$classification = $graphic->getClassification();
 
 		if (

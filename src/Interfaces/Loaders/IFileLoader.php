@@ -8,6 +8,6 @@ namespace CranachDigitalArchive\Importer\Interfaces\Loaders;
  */
 interface IFileLoader extends ILoader {
 
-	function __construct(string $sourceFilePath);
+	static function withSourceAt(string $sourceFilePath);
 
 }

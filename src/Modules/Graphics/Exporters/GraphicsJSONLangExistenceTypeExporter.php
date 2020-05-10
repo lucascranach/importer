@@ -2,9 +2,12 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Exporters;
 
+use Error;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
 use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
+use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 
 /**
@@ -12,37 +15,48 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
  * - one file per language
  * - linked works
  */
-class GraphicsJSONLangExistenceTypeExporter implements IFileExporter {
+class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExporter {
 
 	private $fileExt = 'json';
 	private $filename = null;
 	private $dirname = null;
 	private $langBuckets = [];
-	private $done = false;
 	private $inventoryNumberList = [];
+	private $done = false;
 
 
-	function __construct(string $destFilepath) {
+	private function __construct()
+	{
+	}
+
+
+	public static function withDestinationAt(string $destFilepath)
+	{
+		$exporter = new self;
+
 		$filename = basename($destFilepath);
-		$this->dirname = trim(dirname($destFilepath));
+		$exporter->dirname = trim(dirname($destFilepath));
 
 		$splitFilename = array_map('trim', explode('.', $filename));
 
 		if (count($splitFilename) === 2 && strlen($splitFilename[1])) {
-			$this->fileExt = $splitFilename[1];
+			$exporter->fileExt = $splitFilename[1];
 		}
 
-		$this->filename = $splitFilename[0];
+		$exporter->filename = $splitFilename[0];
+
+		return $exporter;
 	}
 
 
-	function pushItem(IBaseItem $item) {
+	function handleItem($item): bool
+	{
 		if (!($item instanceof Graphic)) {
-			throw new \Exception('Pushed item is not of expected class \'Graphic\'');
+			throw new Error('Pushed item is not of expected class \'Graphic\'');
 		}
 
-		if ($this->isDone()) {
-			throw new \Error('Can\'t push more items after done() was called!');
+		if ($this->done) {
+			throw new Error('Can\'t push more items after done() was called!');
 		}
 
 		if (!isset($this->langBuckets[$item->getLangCode()])) {
@@ -53,17 +67,15 @@ class GraphicsJSONLangExistenceTypeExporter implements IFileExporter {
 
 		$this->inventoryNumberList[] = $item->getInventoryNumber();
 		$this->langBuckets[$item->getLangCode()]->items[] = $item;
+
+		return true;
 	}
 
 
-	function isDone(): bool {
-		return $this->done;
-	}
-
-
-	function outputReferenceCheckResult() {
+	function outputReferenceCheckResult()
+	{
 		if (count($this->langBuckets) === 0) {
-			throw new \Exception('At least one language needed!');
+			throw new Error('At least one language needed!');
 		}
 
 		$firstLangBucket = $this->langBuckets[array_key_first($this->langBuckets)];
@@ -95,10 +107,11 @@ class GraphicsJSONLangExistenceTypeExporter implements IFileExporter {
 	}
 
 
-	function done() {
+	function done(ProducerInterface $producer)
+	{
 		if (is_null($this->dirname) || empty($this->dirname)
 	     || is_null($this->filename) || empty($this->filename)) {
-			throw new \Error('No filepath for JSON graphics export set!');
+			throw new Error('No filepath for JSON graphics export set!');
 		}
 
 		$this->outputReferenceCheckResult();
@@ -134,6 +147,12 @@ class GraphicsJSONLangExistenceTypeExporter implements IFileExporter {
 		}
 
 		$this->done = true;
+	}
+
+
+	public function error($error)
+	{
+		echo get_class($this) . ": Error -> " . $error . "\n";
 	}
 
 }

@@ -7,7 +7,12 @@
             "email": "jhfpereira@users.noreply.github.com"
         }
     ],
-    "require": {},
+    "require": {
+      "ext-json": "*",
+      "ext-xmlreader": "*",
+        "ext-dom": "*",
+        "ext-simplexml": "*"
+    },
     "autoload": {
         "psr-4": {
             "CranachDigitalArchive\\Importer\\": "src/"

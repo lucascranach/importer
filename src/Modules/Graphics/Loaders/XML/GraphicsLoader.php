@@ -1,71 +1,78 @@
 <?php
 
-namespace CranachDigitalArchive\Importer\Jobs\XML;
+namespace CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML;
 
+use Error;
+use DOMDocument;
+use SimpleXMLElement;
+use XMLReader;
 use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Interfaces\Loaders\IFileLoader;
+use CranachDigitalArchive\Importer\Pipeline\Producer;
+use CranachDigitalArchive\Importer\Modules\Graphics\Inflators\XML\GraphicInflator;
 
 
 /**
  * Graphics job on a xml file base
  */
-class GraphicsLoader implements IFileLoader {
+class GraphicsLoader extends Producer implements IFileLoader
+{
 
-	private $items = [];
-	private $sourceFilePath = null;
 	private $xmlReader = null;
 	private $rootElementName = 'CrystalReport';
 	private $graphicElementName = 'Group';
-	private $pipeline = null;
+	private $sourceFilePath = '';
 
-	function __construct(string $sourceFilePath) {
-		$this->xmlReader = new \XMLReader();
+	private function __construct()
+	{
+	}
 
-		if (!$this->xmlReader->open($sourceFilePath)) {
-			throw new \Error('Could\'t open graphics xml source file: ' . $sourceFilePath);
+	public static function withSourceAt(string $sourceFilePath)
+	{
+		$loader = new self;
+		$loader->xmlReader = new XMLReader();
+		$loader->sourceFilePath = $sourceFilePath;
+
+		if (!$loader->xmlReader->open($loader->sourceFilePath)) {
+			throw new Error('Could\'t open graphics xml source file: ' . $loader->sourceFilePath);
 		}
 
-		echo 'Processing graphics file : ' . $sourceFilePath . "\n";
+		$loader->xmlReader->next();
 
-
-		$this->xmlReader->next();
-
-		if ($this->xmlReader->nodeType !== \XMLReader::ELEMENT
-			|| $this->xmlReader->name !== $this->rootElementName) {
-			throw new \Error('First element is not expected \'' . $this->rootElementName . '\'');
+		if ($loader->xmlReader->nodeType !== XMLReader::ELEMENT
+			|| $loader->xmlReader->name !== $loader->rootElementName) {
+			throw new Error('First element is not expected \'' . $loader->rootElementName . '\'');
 		}
 
 		/* Entering the root node */
-		$this->xmlReader->read();
+		$loader->xmlReader->read();
+
+		return $loader;
 	}
 
+	public function run()
+	{
+		echo 'Processing graphics file : ' . $this->sourceFilePath . "\n";
 
-	function registerPipeline(IPipeline $pipeline) {
-		$this->pipeline = $pipeline;
-	}
-
-
-	function start() {
 		$this->checkXMlReaderInitialization();
-		$this->checkPipelineBinding();
 
 		while ($this->processNextItem()) {}
 
-		/* Signaling the pipeline, that we reached the end of the file
-			and we are done */
-		$this->pipeline->handleDone();
+		/* Signaling that we are done reading in the xml */
+		$this->notifyDone();
 	}
 
 
-	private function processNextItem() {
+	private function processNextItem()
+	{
 		/* Skipping empty text nodes */
 		while ($this->xmlReader->next()
-			&& $this->xmlReader->nodeType !== \XMLReader::ELEMENT
+			&& $this->xmlReader->nodeType !== XMLReader::ELEMENT
 			&& $this->xmlReader->name !== $this->graphicElementName) {}
 
 		/* Returning if we get to the end of the file */
-		if ($this->xmlReader->nodeType === \XMLReader::NONE) {
+		if ($this->xmlReader->nodeType === XMLReader::NONE) {
 			return false;
 		}
 
@@ -74,7 +81,8 @@ class GraphicsLoader implements IFileLoader {
 	}
 
 
-	private function transformCurrentItem() {
+	private function transformCurrentItem()
+	{
 		/* Preparing the graphic objects for the different languages */
 		$graphicDe = new Graphic;
 		$graphicDe->setLangCode(Language::DE);
@@ -85,18 +93,19 @@ class GraphicsLoader implements IFileLoader {
 		$xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 
 		/* Moved the inflation action(s) into its own class */
-		GraphicsInflator::inflate($xmlNode, $graphicDe, $graphicEn);
+		GraphicInflator::inflate($xmlNode, $graphicDe, $graphicEn);
 
-		/* Passing the graphic objects to the pipeline */
-		$this->pipeline->handleIncomingItem($graphicDe);
-		$this->pipeline->handleIncomingItem($graphicEn);
+		/* Passing the graphic objects to the next nodes in the pipeline */
+		$this->next($graphicDe);
+		$this->next($graphicEn);
 	}
 
 
-	private function convertCurrentItemToSimpleXMLElement(): \SimpleXMLElement {
+	private function convertCurrentItemToSimpleXMLElement(): SimpleXMLElement
+	{
 		$element = $this->xmlReader->expand();
 
-		$doc = new \DomDocument();
+		$doc = new DomDocument();
 		$node = $doc->importNode($element, true);
 		$doc->appendChild($node);
 
@@ -104,16 +113,10 @@ class GraphicsLoader implements IFileLoader {
 	}
 
 
-	private function checkXMlReaderInitialization() {
+	private function checkXMlReaderInitialization()
+	{
 		if (is_null($this->xmlReader)) {
-			throw new \Error('Graphics XML-Reader was not correctly initialized!');
-		}
-	}
-
-
-	private function checkPipelineBinding() {
-		if (is_null($this->pipeline)) {
-			throw new \Error('No pipeline bound!');
+			throw new Error('Graphics XML-Reader was not correctly initialized!');
 		}
 	}
 

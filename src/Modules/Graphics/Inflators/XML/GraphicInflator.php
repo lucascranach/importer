@@ -2,6 +2,7 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Inflators\XML;
 
+use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\{Graphic, Classification};
 
 use CranachDigitalArchive\Importer\Modules\Main\Entities\{
@@ -24,7 +25,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\{
  * Graphics inflator used to inflate german and english graphic instances
  * 	by traversing the xml element node and extracting the data in a structured way
  */
-class GraphicInflator implements IGraphicInflator {
+class GraphicInflator implements IInflator {
 
 	private static $nsPrefix = 'ns';
 	private static $ns = 'urn:crystal-reports:schemas:report-detail';
@@ -76,7 +77,13 @@ class GraphicInflator implements IGraphicInflator {
 
 	private function __construct() {}
 
-
+	/**
+	 * Inflates the passed graphic objects
+	 *
+	 * @param \SimpleXMLElement &$node Current graphics element node
+	 * @param Graphic &$graphicDe Graphic object holding the german informations
+	 * @param Graphic &$graphicEn Graphic object holding the english informations
+	 */
 	public static function inflate(\SimpleXMLElement &$node,
 	                               Graphic &$graphicDe,
 	                               Graphic &$graphicEn) {
@@ -1213,10 +1220,11 @@ class GraphicInflator implements IGraphicInflator {
 				continue;
 			}
 
-			$publication = new Publication;
+			$publicationDe = new Publication;
+			$publicationEn = new Publication;
 
-			$graphicDe->addPublication($publication);
-			$graphicEn->addPublication($publication);
+			$graphicDe->addPublication($publicationDe);
+			$graphicEn->addPublication($publicationEn);
 
 			/* Title */
 			$titleElement = self::findElementByXPath(
@@ -1225,7 +1233,8 @@ class GraphicInflator implements IGraphicInflator {
 			);
 			if ($titleElement) {
 				$titleStr = trim($titleElement);
-				$publication->setTitle($titleStr);
+				$publicationDe->setTitle($titleStr);
+				$publicationEn->setTitle($titleStr);
 			}
 
 			/* Pagenumber */
@@ -1235,7 +1244,16 @@ class GraphicInflator implements IGraphicInflator {
 			);
 			if ($pageNumberElement) {
 				$pageNumberStr = trim($pageNumberElement);
-				$publication->setPageNumber($pageNumberStr);
+
+				$splitPageNumberStr = self::splitLanguageString($pageNumberStr);
+
+				if (isset($splitPageNumberStr[0])) {
+					$publicationDe->setPageNumber($splitPageNumberStr[0]);
+				}
+
+				if (isset($splitPageNumberStr[1])) {
+					$publicationEn->setPageNumber($splitPageNumberStr[1]);
+				}
 			}
 
 			/* Reference */
@@ -1245,7 +1263,8 @@ class GraphicInflator implements IGraphicInflator {
 			);
 			if ($referenceIdElement) {
 				$referenceIdStr = trim($referenceIdElement);
-				$publication->setReferenceId($referenceIdStr);
+				$publicationDe->setReferenceId($referenceIdStr);
+				$publicationEn->setReferenceId($referenceIdStr);
 			}
 		}
 	}
@@ -1341,7 +1360,7 @@ class GraphicInflator implements IGraphicInflator {
 					$graphicDe->addLocation($metaReference);
 					$graphicEn->addLocation($metaReference);
 				} else {
-					echo '  Unknown location type: ' . $textTypeStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
+					echo '  Unknown location type: ' . $locationTypeStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
 					$graphicDe->addLocation($metaReference);
 					$graphicEn->addLocation($metaReference);
 				}

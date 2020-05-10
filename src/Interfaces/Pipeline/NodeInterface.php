@@ -3,8 +3,8 @@
 namespace CranachDigitalArchive\Importer\Interfaces\Pipeline;
 
 
-interface IPipelineDestination {
+interface NodeInterface
+{
 
-	function done();
-	
+
 }

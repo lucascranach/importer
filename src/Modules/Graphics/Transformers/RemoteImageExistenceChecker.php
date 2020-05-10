@@ -1,13 +1,14 @@
 <?php
 
-namespace CranachDigitalArchive\Importer\Modules\Graphics\Operations;
+namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
 use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
-use CranachDigitalArchive\Importer\Interfaces\Oparations\IPostProcessor;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
+use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 
-class RemoteImageExistenceChecker implements IPostProcessor {
+class RemoteImageExistenceChecker extends Hybrid {
 
 	private $serverHost = 'http://lucascranach.org/';
 	private $remoteImageBasePath = 'imageserver/G_%s/';
@@ -17,22 +18,36 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 	private $cacheFilename = 'remoteImageExistenceChecker.cache.json';
 	private $cacheFilepath = null;
 	private $cache = [];
-	private $isDone = false;
 
 
-	function __construct($cacheDir = null) {
+	private function __construct()
+	{
+	}
+
+	public static function new()
+	{
+		return new self;
+	}
+
+	public static function withCacheAt($cacheDir)
+	{
+		$checker = self::new();
+
 		if (is_string($cacheDir)) {
 			if (!file_exists($cacheDir)) {
 				mkdir($cacheDir, 0777, true);
 			}
-			$this->cacheDir = $cacheDir;
-			$this->cacheFilepath = trim($this->cacheDir) . DIRECTORY_SEPARATOR . $this->cacheFilename;
-			$this->restoreCache();
+			$checker->cacheDir = $cacheDir;
+			$checker->cacheFilepath = trim($checker->cacheDir) . DIRECTORY_SEPARATOR . $checker->cacheFilename;
+			$checker->restoreCache();
 		}
+
+		return $checker;
 	}
 
 
-	function handleItem(IBaseItem $item): IBaseItem {
+	function handleItem($item): bool
+	{
 		if (!($item instanceof Graphic)) {
 			throw new \Exception('Pushed item is not of expected class \'Graphic\'');
 		}
@@ -47,14 +62,13 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 			} else {
 				echo '  Missing exhibition history for virtual object \'' . $inventoryNumber . "'\n";
 
-				return $item;
+				$this->next($item);
+				return false;
 			}
 		}
 
 		/* Fill cache to avoid unnecessary duplicate requests for the same resource */
 		if (!isset($this->cache[$inventoryNumber])) {
-			$rawImagesData = [];
-
 			$interpolatedRemoteImageDataPath = sprintf(
 				$this->remoteImageDataPath,
 				$inventoryNumber,
@@ -84,23 +98,21 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 			$item->setImages($preparedImages);
 		}
 
-		return $item;
+		$this->next($item);
+		return true;
 	}
 
 
-	function isDone(): bool {
-		return $this->isDone;
-	}
-
-
-	function done() {
-		$this->isDone = true;
+	function done(ProducerInterface $producer)
+	{
+		parent::done($producer);
 
 		$this->storeCache();
 	}
 
 
-	private function getRemoteImageDataResource(string $url): ?array {
+	private function getRemoteImageDataResource(string $url): ?array
+	{
 		$content = @file_get_contents($url);
 
 		if ($content === FALSE) {
@@ -123,7 +135,8 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 	}
 
 
-	private function prepareRawImages(string $inventoryNumber, array $cachedImagesForObject): array {
+	private function prepareRawImages(string $inventoryNumber, array $cachedImagesForObject): array
+	{
 		$destinationStructure = [
 			'infos' => [
 				'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
@@ -183,7 +196,8 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 	}
 
 
-	private function storeCache() {
+	private function storeCache()
+	{
 		if (is_null($this->cacheFilepath)) {
 			return;
 		}
@@ -193,7 +207,8 @@ class RemoteImageExistenceChecker implements IPostProcessor {
 	}
 
 
-	private function restoreCache() {
+	private function restoreCache()
+	{
 		if (is_null($this->cacheFilepath) || !file_exists($this->cacheFilepath)) {
 			return;
 		}
