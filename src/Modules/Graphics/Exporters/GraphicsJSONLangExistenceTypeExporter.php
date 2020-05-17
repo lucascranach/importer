@@ -3,9 +3,9 @@
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Exporters;
 
 use Error;
+
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
-use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
