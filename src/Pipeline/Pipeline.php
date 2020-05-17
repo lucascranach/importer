@@ -2,7 +2,8 @@
 
 namespace CranachDigitalArchive\Importer\Pipeline;
 
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\NodeInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\{NodeInterface, ProducerInterface};
+use Error;
 
 
 class Pipeline
@@ -22,9 +23,9 @@ class Pipeline
 	}
 
 
-	public function addNodes(NodeInterface ...$nodes)
+	public function addNodes(NodeInterface ...$nodes): Pipeline
 	{
-		$this->nodes = $nodes;
+		$this->nodes = array_merge($this->nodes, $nodes);
 
 		return $this;
 	}
@@ -34,13 +35,31 @@ class Pipeline
 	{
 		/* Only producers */
 		$producers = $this->filterForProducers($this->nodes);
-
 		foreach($producers as $producer) {
-			$producer->run();
+			if (!$producer->isReady()) {
+				throw new Error('Producer ' . get_class($producer) . ' is not ready!');
+			}
+		}
+
+		/* Only producers with a start procedure */
+		$contentProducers = $this->filterForContentProducers($this->nodes);
+
+		foreach($contentProducers as $contentProducer) {
+			$contentProducer->run();
 		}
 	}
 
-	private function filterForProducers($nodes)
+	private function filterForProducers($nodes): array
+	{
+		return array_filter(
+			$nodes,
+			function($node) {
+				return $node instanceof ProducerInterface;
+			}
+		);
+	}
+
+	private function filterForContentProducers($nodes): array
 	{
 		return array_filter(
 			$nodes,

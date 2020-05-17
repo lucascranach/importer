@@ -12,6 +12,9 @@ trait ProducerTrait
 	private $consumerNodes = [];
 	private $done = false;
 
+	public function isReady(): bool {
+		return true;
+	}
 
 	public function pipe(ConsumerInterface ...$nodes): ConsumerInterface
 	{
