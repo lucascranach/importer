@@ -20,6 +20,9 @@ $graphicsLoader->pipe(
 	$destination,
 );
 
-Pipeline::new()->addNodes(
+Pipeline::new()->withNodes(
 	$graphicsLoader,
+	$remoteImageExistenceChecker,
+	$conditionDeterminer,
+	$destination,
 )->start();

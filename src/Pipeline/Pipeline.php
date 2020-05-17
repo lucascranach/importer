@@ -23,7 +23,7 @@ class Pipeline
 	}
 
 
-	public function addNodes(NodeInterface ...$nodes): Pipeline
+	public function withNodes(NodeInterface ...$nodes): Pipeline
 	{
 		$this->nodes = array_merge($this->nodes, $nodes);
 
