@@ -105,7 +105,7 @@ class GraphicsLoader extends Producer implements IFileLoader
 	{
 		$element = $this->xmlReader->expand();
 
-		$doc = new DomDocument();
+		$doc = new DOMDocument();
 		$node = $doc->importNode($element, true);
 		$doc->appendChild($node);
 
