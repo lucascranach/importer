@@ -3,6 +3,7 @@
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 use Error;
 
@@ -115,6 +116,19 @@ class ConditionDeterminer extends Hybrid
 		}
 
 		return $conditionLevel;
+	}
+
+
+	public function done(ProducerInterface $producer)
+	{
+		parent::done($producer);
+		$this->cleanUp();
+	}
+
+
+	private function cleanUp()
+	{
+		$this->conditionLevelCache = [];
 	}
 
 }

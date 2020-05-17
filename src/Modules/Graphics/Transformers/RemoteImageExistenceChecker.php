@@ -108,6 +108,7 @@ class RemoteImageExistenceChecker extends Hybrid {
 		parent::done($producer);
 
 		$this->storeCache();
+		$this->cleanUp();
 	}
 
 
@@ -216,6 +217,12 @@ class RemoteImageExistenceChecker extends Hybrid {
 		$cacheAsJSON = file_get_contents($this->cacheFilepath);
 
 		$this->cache = json_decode($cacheAsJSON, true);
+	}
+
+
+	private function cleanUp()
+	{
+		$this->cache = [];
 	}
 
 }
