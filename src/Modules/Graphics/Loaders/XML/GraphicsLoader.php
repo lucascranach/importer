@@ -19,6 +19,8 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Inflators\XML\GraphicInflato
 class GraphicsLoader extends Producer implements IFileLoader
 {
 
+	const GRAPHICS_LOADER = 'Test';
+
 	private $xmlReader = null;
 	private $rootElementName = 'CrystalReport';
 	private $graphicElementName = 'Group';

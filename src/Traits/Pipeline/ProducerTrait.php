@@ -6,17 +6,20 @@ use CranachDigitalArchive\Importer\Interfaces\Pipeline\{NodeInterface, ConsumerI
 use Error;
 
 
+const DEFAULT_INPUT_NAME = '::DEFAULT';
+
 trait ProducerTrait
 {
 
-	private $consumerNodes = [];
+	private $consumers = [];
 	private $done = false;
 
 	public function isReady(): bool {
 		return true;
 	}
 
-	public function pipe(ConsumerInterface ...$nodes): ConsumerInterface
+	/*
+	public function pipeChain(ConsumerInterface ...$nodes): ConsumerInterface
 	{
 		if (count($nodes) === 0) {
 			throw new Error('At least one node expected to build the pipe up');
@@ -25,8 +28,8 @@ trait ProducerTrait
 		$this->checkForExistingConnection(...$nodes);
 
 		$firstNode = current($nodes);
-		$this->consumerNodes[] = $firstNode;
-		$firstNode->registerProducerNode($this);
+		$this->consumer[] = $firstNode;
+		$firstNode->registerProducerOnInput($this);
 		$lastNode = end($nodes);
 		reset($nodes);
 
@@ -45,19 +48,36 @@ trait ProducerTrait
 
 		return $lastNode;
 	}
+	*/
+
+
+	public function pipe(ConsumerInterface $node, string $input = DEFAULT_INPUT_NAME): ConsumerInterface
+	{
+		$this->checkForExistingConnection($node);
+
+		$this->consumers[] = (object)[
+			'node' => $node,
+			'input' => $input,
+		];
+		$node->registerProducerOnInput($this, $input);
+
+		return $node;
+	}
 
 
 	public function next($data)
 	{
-		foreach ($this->consumerNodes as $consumerNode) {
-			$consumerNode->handleItem($data);
+		foreach ($this->consumers as $consumer) {
+			if (!$consumer->node->handleItem($data, $consumer->input)) {
+				throw new Error('Consumer ' . get_class($consumer->node) . ' could not handle item');
+			}
 		}
 	}
 
 
 	public function getConsumerNodes(): array
 	{
-		return $this->consumerNodes;
+		return $this->consumers;
 	}
 
 
@@ -69,8 +89,8 @@ trait ProducerTrait
 
 	public function notifyError($error)
 	{
-		foreach ($this->consumerNodes as $consumerNode) {
-			$consumerNode->error($error);
+		foreach ($this->consumers as $consumer) {
+			$consumer->node->error($error);
 		}
 	}
 
@@ -80,8 +100,8 @@ trait ProducerTrait
 		$this->done = true;
 		$srcProducer = !is_null($producer) ? $producer : $this;
 
-		foreach ($this->consumerNodes as $consumerNode) {
-			$consumerNode->done($srcProducer);
+		foreach ($this->consumers as $consumer) {
+			$consumer->node->done($srcProducer);
 		}
 	}
 
@@ -103,15 +123,12 @@ trait ProducerTrait
 		}
 	}
 
-	public function checkForExistingConnection(NodeInterface ...$nodes) {
-		$alreadyConnectedTo = array_search(
-				$nodes[0],
-				$this->consumerNodes,
-				true,
-			) !== false;
-
-		if ($alreadyConnectedTo) {
-			throw new Error('Already piping ' . get_class($this) . ' into ' . get_class($nodes[0]));
+	public function checkForExistingConnection(NodeInterface $node)
+	{
+		foreach ($this->consumers as $consumer) {
+			if ($node === $consumer->node) {
+				throw new Error('Already piping ' . get_class($this) . ' into ' . get_class($node));
+			}
 		}
 	}
 

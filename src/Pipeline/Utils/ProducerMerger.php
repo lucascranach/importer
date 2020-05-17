@@ -21,7 +21,7 @@ final class ProducerMerger extends Hybrid
 
 	public static function merge(ProducerInterface ...$producers) {
 		if (count($producers) === 0) {
-			throw new Error('No producers passed to ' . get_class(self));
+			throw new Error('No producers passed to ' . self::class);
 		}
 
 		$nodeMerger = new self;
@@ -34,7 +34,7 @@ final class ProducerMerger extends Hybrid
 		return $nodeMerger;
 	}
 
-	public function handleItem($item): bool
+	public function handleItem($item, string $input): bool
 	{
 		$this->next($item);
 
@@ -43,7 +43,7 @@ final class ProducerMerger extends Hybrid
 
 	public function done(ProducerInterface $producer)
 	{
-		if (!in_array($producer, $this->producersToForward)) {
+		if (!in_array($producer, $this->producersToForward, true)) {
 			throw new Error('Unexpected producer passed for done trigger: ' . get_class($producer));
 		}
 

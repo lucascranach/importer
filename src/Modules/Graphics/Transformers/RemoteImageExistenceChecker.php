@@ -2,7 +2,6 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
-use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
@@ -46,10 +45,10 @@ class RemoteImageExistenceChecker extends Hybrid {
 	}
 
 
-	function handleItem($item): bool
+	function handleItem($item, string $input): bool
 	{
 		if (!($item instanceof Graphic)) {
-			throw new \Exception('Pushed item is not of expected class \'Graphic\'');
+			throw new \Exception('Pushed item is not of expected class \'' . Graphic::class . '\'');
 		}
 
 		$inventoryNumber = $item->getInventoryNumber();
@@ -63,7 +62,7 @@ class RemoteImageExistenceChecker extends Hybrid {
 				echo '  Missing exhibition history for virtual object \'' . $inventoryNumber . "'\n";
 
 				$this->next($item);
-				return false;
+				return true;
 			}
 		}
 

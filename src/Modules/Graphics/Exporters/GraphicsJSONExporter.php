@@ -33,7 +33,7 @@ class GraphicsJSONExporter extends Consumer implements IFileExporter {
 	}
 
 
-	function handleItem($item): bool
+	function handleItem($item, string $input): bool
 	{
 		if (!($item instanceof Graphic)) {
 			throw new Error('Pushed item is not of expected class \'Graphic\'');

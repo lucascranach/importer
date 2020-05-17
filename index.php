@@ -18,11 +18,11 @@ $remoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt('./.cach
 $conditionDeterminer = ConditionDeterminer::new();
 $graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt('./output/20191122/cda-graphics-v2.json');
 
-$graphicsLoader->pipe(
-	$remoteImageExistenceChecker,
-	$conditionDeterminer,
-	$graphicsDestination,
-);
+$graphicsLoader
+	->pipe($remoteImageExistenceChecker)
+	->pipe($conditionDeterminer)
+	->pipe($graphicsDestination);
+
 
 Pipeline::new()->withNodes(
 	$graphicsLoader,
@@ -36,11 +36,11 @@ Pipeline::new()->withNodes(
 $graphicRestorationsLoader = GraphicRestorationsLoader::withSourceAt('./input/20191122/CDA-GR_RestDokumente_20191122.xml');
 $graphicRestorationsDestination = GraphicRestorationsJSONExporter::withDestinationAt('./output/20191122/cda-graphics-restoration-v2.json');
 
-$graphicRestorationsLoader->pipe(
-	$graphicRestorationsDestination,
-);
+$graphicRestorationsLoader
+	->pipe($graphicRestorationsDestination);
 
 Pipeline::new()->withNodes(
 	$graphicRestorationsLoader,
 	$graphicRestorationsDestination,
 )->start();
+*/

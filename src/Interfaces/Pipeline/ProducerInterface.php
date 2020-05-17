@@ -7,7 +7,7 @@ interface ProducerInterface extends NodeInterface
 {
 
 	public function isReady(): bool;
-	public function pipe(ConsumerInterface ...$nodes): ConsumerInterface;
+	public function pipe(ConsumerInterface $node, string $input): ConsumerInterface;
 	public function getConsumerNodes(): array;
 	public function next($data);
 	public function isDone(): bool;
