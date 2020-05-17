@@ -2,30 +2,33 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Inflators\XML;
 
+use Error;
+use SimpleXMLElement;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\{Graphic, Classification};
 
 use CranachDigitalArchive\Importer\Modules\Main\Entities\{
-    Person,
-    PersonName,
-    PersonNameDetail,
-    Title,
-    Dating,
-    HistoricEventInformation,
-    ObjectReference,
-    AdditionalTextInformation,
-    Publication,
-    MetaReference,
-    CatalogWorkReference,
-    StructuredDimension,
+	Person,
+	PersonName,
+	PersonNameDetail,
+	Title,
+	Dating,
+	HistoricEventInformation,
+	ObjectReference,
+	AdditionalTextInformation,
+	Publication,
+	MetaReference,
+	CatalogWorkReference,
+	StructuredDimension,
 };
 
 
 /**
  * Graphics inflator used to inflate german and english graphic instances
- * 	by traversing the xml element node and extracting the data in a structured way
+ *    by traversing the xml element node and extracting the data in a structured way
  */
-class GraphicInflator implements IInflator {
+class GraphicInflator implements IInflator
+{
 
 	private static $nsPrefix = 'ns';
 	private static $ns = 'urn:crystal-reports:schemas:report-detail';
@@ -75,18 +78,23 @@ class GraphicInflator implements IInflator {
 
 	private static $activeLoggingOfWronglyCategorizedReferences = false;
 
-	private function __construct() {}
+	private function __construct()
+	{
+	}
 
 	/**
 	 * Inflates the passed graphic objects
 	 *
-	 * @param \SimpleXMLElement &$node Current graphics element node
-	 * @param Graphic &$graphicDe Graphic object holding the german informations
-	 * @param Graphic &$graphicEn Graphic object holding the english informations
+	 * @param SimpleXMLElement $node Current graphics element node
+	 * @param Graphic $graphicDe Graphic object holding the german informations
+	 * @param Graphic $graphicEn Graphic object holding the english informations
 	 */
-	public static function inflate(\SimpleXMLElement &$node,
-	                               Graphic &$graphicDe,
-	                               Graphic &$graphicEn) {
+	public static function inflate(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$subNode = $node->GroupHeader;
 
 		self::registerXPathNamespace($subNode);
@@ -122,9 +130,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Involved persons */
-	private static function inflateInvolvedPersons(\SimpleXMLElement &$node,
-	                                               Graphic &$graphicDe,
-	                                               Graphic &$graphicEn) {
+	private static function inflateInvolvedPersons(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$details = $node->Section[1]->Subreport->Details;
 
 		for ($i = 0; $i < count($details); $i += 2) {
@@ -262,9 +273,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Person names */
-	private static function inflatePersonNames(\SimpleXMLElement &$node,
-	                                           Graphic &$graphicDe,
-	                                           Graphic &$graphicEn) {
+	private static function inflatePersonNames(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$groups = $node->Section[2]->Subreport->Group;
 
 		foreach ($groups as $group) {
@@ -321,9 +335,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Titles */
-	private static function inflateTitles(\SimpleXMLElement &$node,
-	                                      Graphic &$graphicDe,
-	                                      Graphic &$graphicEn) {
+	private static function inflateTitles(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$titleDetailElements = $node->Section[3]->Subreport->Details;
 
 		for ($i = 0; $i < count($titleDetailElements); $i += 1) {
@@ -347,7 +364,7 @@ class GraphicInflator implements IInflator {
 					$graphicDe->addTitle($title);
 				} else if (self::$titlesLanguageTypes['en'] === $langStr) {
 					$graphicEn->addTitle($title);
-				} else if(self::$titlesLanguageTypes['not_assigned'] === $langStr) {
+				} else if (self::$titlesLanguageTypes['not_assigned'] === $langStr) {
 					echo '  Unassigned title lang for object ' . $graphicDe->getInventoryNumber() . "\n";
 				} else {
 					echo '  Unknown title lang: ' . $langStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
@@ -395,9 +412,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Classification */
-	private static function inflateClassification(\SimpleXMLElement &$node,
-	                                              Graphic &$graphicDe,
-	                                              Graphic &$graphicEn) {
+	private static function inflateClassification(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$classificationSectionElement = $node->Section[4];
 
 		$classificationDe = new Classification;
@@ -440,9 +460,12 @@ class GraphicInflator implements IInflator {
 	}
 
 	/* Object name */
-	private static function inflateObjectName(\SimpleXMLElement &$node,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn) {
+	private static function inflateObjectName(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$objectNameSectionElement = $node->Section[5];
 
 		$objectNameElement = self::findElementByXPath(
@@ -460,9 +483,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Inventory number */
-	private static function inflateInventoryNumber(\SimpleXMLElement &$node,
-	                                               Graphic &$graphicDe,
-	                                               Graphic &$graphicEn) {
+	private static function inflateInventoryNumber(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$inventoryNumberSectionElement = $node->Section[6];
 
 		$inventoryNumberElement = self::findElementByXPath(
@@ -485,9 +511,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Object id & virtual (meta) */
-	private static function inflateObjectMeta(\SimpleXMLElement &$node,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn) {
+	private static function inflateObjectMeta(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$metaSectionElement = $node->Section[7];
 
 		/* object id */
@@ -521,9 +550,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Dimensions */
-	private static function inflateDimensions(\SimpleXMLElement &$node,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn) {
+	private static function inflateDimensions(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$metaSectionElement = $node->Section[8];
 
 		/* object id */
@@ -548,9 +580,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Dating */
-	private static function inflateDating(\SimpleXMLElement &$node,
-	                                      Graphic &$graphicDe,
-	                                      Graphic &$graphicEn) {
+	private static function inflateDating(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$datingDe = new Dating;
 		$datingEn = new Dating;
 
@@ -712,9 +747,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Description */
-	private static function inflateDescription(\SimpleXMLElement &$node,
-	                                           Graphic &$graphicDe,
-	                                           Graphic &$graphicEn) {
+	private static function inflateDescription(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		/* de */
 		$descriptionDeSectionElement = $node->Section[14];
 		$descriptionElement = self::findElementByXPath(
@@ -740,9 +778,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Provenance */
-	private static function inflateProvenance(\SimpleXMLElement &$node,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn) {
+	private static function inflateProvenance(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		/* de */
 		$provenanceDeSectionElement = $node->Section[16];
 		$provenanceElement = self::findElementByXPath(
@@ -768,9 +809,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Medium */
-	private static function inflateMedium(\SimpleXMLElement &$node,
-	                                        Graphic &$graphicDe,
-	                                        Graphic &$graphicEn) {
+	private static function inflateMedium(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		/* de */
 		$mediumDeSectionElement = $node->Section[18];
 		$mediumElement = self::findElementByXPath(
@@ -796,9 +840,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Signature */
-	private static function inflateSignature(\SimpleXMLElement &$node,
-	                                         Graphic &$graphicDe,
-	                                         Graphic &$graphicEn) {
+	private static function inflateSignature(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		/* de */
 		$signatureDeSectionElement = $node->Section[20];
 		$signatureElement = self::findElementByXPath(
@@ -824,9 +871,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Inscription */
-	private static function inflateInscription(\SimpleXMLElement &$node,
-	                                           Graphic &$graphicDe,
-	                                           Graphic &$graphicEn) {
+	private static function inflateInscription(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		/* de */
 		$inscriptionDeSectionElement = $node->Section[22];
 		$inscriptionElement = self::findElementByXPath(
@@ -852,9 +902,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Markings */
-	private static function inflateMarkings(\SimpleXMLElement &$node,
-	                                        Graphic &$graphicDe,
-	                                        Graphic &$graphicEn) {
+	private static function inflateMarkings(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		/* de */
 		$markingsDeSectionElement = $node->Section[24];
 		$markingsElement = self::findElementByXPath(
@@ -880,9 +933,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Related works */
-	private static function inflateRelatedWorks(\SimpleXMLElement &$node,
-	                                            Graphic &$graphicDe,
-	                                            Graphic &$graphicEn) {
+	private static function inflateRelatedWorks(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		/* de */
 		$relatedWorksDeSectionElement = $node->Section[26];
 		$relatedWorksElement = self::findElementByXPath(
@@ -908,9 +964,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Exhibition history */
-	private static function inflateExhibitionHistory(\SimpleXMLElement &$node,
-	                                                 Graphic &$graphicDe,
-	                                                 Graphic &$graphicEn) {
+	private static function inflateExhibitionHistory(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		/* de */
 		$exhibitionHistoryDeSectionElement = $node->Section[28];
 		$exhibitionHistoryElement = self::findElementByXPath(
@@ -952,9 +1011,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Bibliography */
-	private static function inflateBibliography(\SimpleXMLElement &$node,
-	                                            Graphic &$graphicDe,
-	                                            Graphic &$graphicEn) {
+	private static function inflateBibliography(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$bibliographySectionElement = $node->Section[30];
 		$bibliographyElement = self::findElementByXPath(
 			$bibliographySectionElement,
@@ -969,13 +1031,16 @@ class GraphicInflator implements IInflator {
 
 
 	/* References */
-	private static function inflateReferences(\SimpleXMLElement &$node,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn) {
+	private static function inflateReferences(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		/* Reprints References */
 		$referenceReprintDetailsElements = $node->Section[31]->Subreport->Details;
 
-		
+
 		$reprintReferences = self::getReferencesForDetailElements(
 			$referenceReprintDetailsElements,
 		);
@@ -1011,13 +1076,13 @@ class GraphicInflator implements IInflator {
 		$overallReferences = array_merge($overallReferences, $relatedWorksReferences);
 
 		$filteredReprintReferences = array_values(
-			array_filter($overallReferences, function($reference) {
+			array_filter($overallReferences, function ($reference) {
 				return $reference->getText() === self::$referenceTypeValues['reprint'];
 			}),
 		);
 
 		$filteredRelatedWorkReferences = array_values(
-			array_filter($overallReferences, function($reference) {
+			array_filter($overallReferences, function ($reference) {
 				return $reference->getText() === self::$referenceTypeValues['relatedWork'];
 			}),
 		);
@@ -1032,23 +1097,24 @@ class GraphicInflator implements IInflator {
 
 	/* Helper function for logging graphics with wrongly categorized references */
 	private static function logWronglyCategorizedReferences(
-		Graphic &$graphic,
+		Graphic $graphic,
 		array $reprintRefs,
 		array $relatedWorkRefs
-	) {
+	)
+	{
 		if (count($reprintRefs) > 0 || count($relatedWorkRefs) > 0) {
 			echo '  > ' . $graphic->getInventoryNumber() . (($graphic->getIsVirtual()) ? ' (isVirtual)' : '') . "\n";
 
 			if (count($reprintRefs) > 0) {
 				echo "  wrong reprint refs:\n";
-				foreach($reprintRefs as $ref) {
+				foreach ($reprintRefs as $ref) {
 					echo "      * " . $ref->getInventoryNumber() . ' (' . $ref->getText() . ')' . "\n";
 				}
 			}
 
 			if (count($relatedWorkRefs) > 0) {
 				echo "  wrong relatedWork refs:\n";
-				foreach($relatedWorkRefs as $ref) {
+				foreach ($relatedWorkRefs as $ref) {
 					echo "      * " . $ref->getInventoryNumber() . ' (' . $ref->getText() . ')' . "\n";
 				}
 			}
@@ -1060,8 +1126,9 @@ class GraphicInflator implements IInflator {
 	private static function getWronglyCategorizedReferences(
 		array $references,
 		string $wrongType
-	) {
-		return array_filter($references, function ($ref) use($wrongType) {
+	)
+	{
+		return array_filter($references, function ($ref) use ($wrongType) {
 			return $ref->getText() === $wrongType;
 		});
 	}
@@ -1069,8 +1136,9 @@ class GraphicInflator implements IInflator {
 
 	/* Reusable helper function for extration of reference like elements */
 	private static function getReferencesForDetailElements(
-		\SimpleXMLElement &$referenceDetailsElements
-	): array {
+		SimpleXMLElement $referenceDetailsElements
+	): array
+	{
 		$references = [];
 
 		for ($i = 0; $i < count($referenceDetailsElements); $i += 1) {
@@ -1120,9 +1188,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Additional text informations */
-	private static function inflateAdditionalTextInformations(\SimpleXMLElement &$node,
-	                                                          Graphic &$graphicDe,
-	                                                          Graphic &$graphicEn) {
+	private static function inflateAdditionalTextInformations(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$additionalTextsDetailsElements = $node->Section[33]->Subreport->Details;
 
 		for ($i = 0; $i < count($additionalTextsDetailsElements); $i += 1) {
@@ -1149,7 +1220,7 @@ class GraphicInflator implements IInflator {
 					$graphicDe->addAdditionalTextInformation($additionalTextInformation);
 				} else if (self::$additionalTextLanguageTypes['en'] === $textTypeStr) {
 					$graphicEn->addAdditionalTextInformation($additionalTextInformation);
-				} else if(self::$additionalTextLanguageTypes['not_assigned'] === $textTypeStr) {
+				} else if (self::$additionalTextLanguageTypes['not_assigned'] === $textTypeStr) {
 					echo '  Unassigned additional text type for object \'' . $graphicDe->getInventoryNumber() . "'\n";
 					$graphicDe->addAdditionalTextInformation($additionalTextInformation);
 					$graphicEn->addAdditionalTextInformation($additionalTextInformation);
@@ -1208,9 +1279,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Publications */
-	private static function inflatePublications(\SimpleXMLElement &$node,
-	                                            Graphic &$graphicDe,
-	                                            Graphic &$graphicEn) {
+	private static function inflatePublications(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$publicationDetailsElements = $node->Section[34]->Subreport->Details;
 
 		for ($i = 0; $i < count($publicationDetailsElements); $i += 1) {
@@ -1271,9 +1345,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Keywords */
-	private static function inflateKeywords(\SimpleXMLElement &$node,
-	                                        Graphic &$graphicDe,
-	                                        Graphic &$graphicEn) {
+	private static function inflateKeywords(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$keywordDetailsElements = $node->Section[35]->Subreport->Details;
 
 		for ($i = 0; $i < count($keywordDetailsElements); $i += 1) {
@@ -1326,9 +1403,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Locations */
-	private static function inflateLocations(\SimpleXMLElement &$node,
-	                                         Graphic &$graphicDe,
-	                                         Graphic &$graphicEn) {
+	private static function inflateLocations(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$locationDetailsElements = $node->Section[36]->Subreport->Details;
 
 		for ($i = 0; $i < count($locationDetailsElements); $i += 1) {
@@ -1355,7 +1435,7 @@ class GraphicInflator implements IInflator {
 					$graphicDe->addLocation($metaReference);
 				} else if (self::$locationLanguageTypes['en'] === $locationTypeStr) {
 					$graphicEn->addLocation($metaReference);
-				} else if(self::$locationLanguageTypes['not_assigned'] === $locationTypeStr) {
+				} else if (self::$locationLanguageTypes['not_assigned'] === $locationTypeStr) {
 					echo '  Unassigned location type for object ' . $graphicDe->getInventoryNumber() . "\n";
 					$graphicDe->addLocation($metaReference);
 					$graphicEn->addLocation($metaReference);
@@ -1393,13 +1473,16 @@ class GraphicInflator implements IInflator {
 
 
 	/* Repository and Owner */
-	private static function inflateRepositoryAndOwner(\SimpleXMLElement &$node,
-	                                                  Graphic &$graphicDe,
-	                                                  Graphic &$graphicEn) {
+	private static function inflateRepositoryAndOwner(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$repositoryAndOwnerDetailsSubreport = $node->Section[37]->Subreport;
 		$details = $repositoryAndOwnerDetailsSubreport->Details;
 
-		foreach($details as $detail) {
+		foreach ($details as $detail) {
 			/* We have to extract the role */
 			$roleElement = self::findElementByXPath(
 				$detail,
@@ -1419,13 +1502,13 @@ class GraphicInflator implements IInflator {
 
 			try {
 				$isRepository = self::inflateRepository($detail, $roleName, $graphicDe, $graphicEn);
-			} catch (Exception $e) {
+			} catch (Error $e) {
 				echo '  ' . $e->getMessage() . "\n";
 			}
 
 			try {
 				$isOwner = self::inflateOwner($detail, $roleName, $graphicDe, $graphicEn);
-			} catch (Exception $e) {
+			} catch (Error $e) {
 				echo '  ' . $e->getMessage() . "\n";
 			}
 
@@ -1437,17 +1520,20 @@ class GraphicInflator implements IInflator {
 
 
 	/* Repository */
-	private static function inflateRepository(\SimpleXMLElement &$detail,
-	                                          string $roleName,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn): bool {
+	private static function inflateRepository(
+		SimpleXMLElement $detail,
+		string $roleName,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	): bool
+	{
 		$repositoryElement = self::findElementByXPath(
 			$detail,
 			'Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
 		);
 
 		if (!$repositoryElement) {
-			throw new Exception('Missing element with repository name!');
+			throw new Error('Missing element with repository name!');
 		}
 
 		$repositoryStr = trim($repositoryElement);
@@ -1472,17 +1558,20 @@ class GraphicInflator implements IInflator {
 
 
 	/* Owner */
-	private static function inflateOwner(\SimpleXMLElement &$detail,
-	                                     string $roleName,
-	                                     Graphic &$graphicDe,
-	                                     Graphic &$graphicEn): bool {
+	private static function inflateOwner(
+		SimpleXMLElement $detail,
+		string $roleName,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	): bool
+	{
 		$ownerElement = self::findElementByXPath(
 			$detail,
 			'Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
 		);
 
 		if (!$ownerElement) {
-			throw new Exception('Missing element with owner name!');
+			throw new Error('Missing element with owner name!');
 		}
 
 		$ownerStr = trim($ownerElement);
@@ -1507,9 +1596,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Sorting number */
-	private static function inflateSortingNumber(\SimpleXMLElement &$node,
-	                                          Graphic &$graphicDe,
-	                                          Graphic &$graphicEn) {
+	private static function inflateSortingNumber(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$sortingNumberSubreport = $node->Section[38];
 
 		$sortingNumberElement = self::findElementByXPath(
@@ -1526,12 +1618,15 @@ class GraphicInflator implements IInflator {
 
 
 	/* Catalog work reference */
-	private static function inflateCatalogWorkReference(\SimpleXMLElement &$node,
-	                                                    Graphic &$graphicDe,
-	                                                    Graphic &$graphicEn) {
+	private static function inflateCatalogWorkReference(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic $graphicEn
+	)
+	{
 		$catalogWorkReferenceDetailsElements = $node->Section[39]->Subreport->Details;
 
-		foreach($catalogWorkReferenceDetailsElements as $detailElement) {
+		foreach ($catalogWorkReferenceDetailsElements as $detailElement) {
 			if ($detailElement->count() === 0) {
 				continue;
 			}
@@ -1594,9 +1689,12 @@ class GraphicInflator implements IInflator {
 
 
 	/* Structured dimension */
-	private static function inflateStructuredDimension(\SimpleXMLElement &$node,
-	                                                   Graphic &$graphicDe,
-	                                                   Graphic &$graphicEn) {
+	private static function inflateStructuredDimension(
+		SimpleXMLElement $node,
+		Graphic $graphicDe,
+		Graphic &$graphicEn
+	)
+	{
 		$catalogWorkReferenceSubreport = $node->Section[40]->Subreport;
 
 		$structuredDimension = new StructuredDimension;
@@ -1610,7 +1708,7 @@ class GraphicInflator implements IInflator {
 			'Field[@FieldName="{DIMENSIONELEMENTS.Element}"]/FormattedValue',
 		);
 
-		if($elementElement) {
+		if ($elementElement) {
 			$elementStr = trim($elementElement);
 
 			$structuredDimension->setElement($elementStr);
@@ -1649,29 +1747,32 @@ class GraphicInflator implements IInflator {
 	}
 
 
-	private static function registerXPathNamespace(\SimpleXMLElement $node) {
+	private static function registerXPathNamespace(SimpleXMLElement $node)
+	{
 		$node->registerXPathNamespace(self::$nsPrefix, self::$ns);
 	}
 
 
-	private static function findElementsByXPath(\SimpleXMLElement $node, string $path) {
+	private static function findElementsByXPath(SimpleXMLElement $node, string $path)
+	{
 		self::registerXPathNamespace($node);
 
 		$splitPath = explode('/', $path);
 
 		$nsPrefix = self::$nsPrefix;
 		$xpathStr = './/' . implode('/', array_map(
-			function($val) use($nsPrefix) {
-				return empty($val) ? $val : $nsPrefix . ':' . $val;
-			},
-			$splitPath
-		));
+				function ($val) use ($nsPrefix) {
+					return empty($val) ? $val : $nsPrefix . ':' . $val;
+				},
+				$splitPath
+			));
 
 		return $node->xpath($xpathStr);
 	}
 
 
-	private static function findElementByXPath(\SimpleXMLElement $node, string $path) {
+	private static function findElementByXPath(SimpleXMLElement $node, string $path)
+	{
 		$result = self::findElementsByXPath($node, $path);
 
 		if (is_array($result) && count($result) > 0) {
@@ -1686,13 +1787,14 @@ class GraphicInflator implements IInflator {
 	  TODO: Move out into helper -> dynamically settable at runtime if possible
 	    -> composition over inheritance
 	*/
-	private static function splitLanguageString(string $langStr): array {
+	private static function splitLanguageString(string $langStr): array
+	{
 		$splitLangStrs = array_map('trim', explode(self::$langSplitChar, $langStr));
 		$cntItems = count($splitLangStrs);
 
 		if ($cntItems > 0 && $cntItems < 2) {
 			$splitLangStrs[] = $splitLangStrs[0];
-		} 
+		}
 
 		return $splitLangStrs;
 	}

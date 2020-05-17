@@ -9,14 +9,14 @@ trait ConsumerTrait
 
 	private $connectedProducers = [];
 
-	public function registerProducerNode(ProducerInterface &$producer) {
-		$this->connectedProducers[] = &$producer;
+	public function registerProducerNode(ProducerInterface $producer) {
+		$this->connectedProducers[] = $producer;
 	}
 
-	public function unregisterProducerNode(ProducerInterface &$producer) {
+	public function unregisterProducerNode(ProducerInterface $producer) {
 		$this->connectedProducers = array_filter(
 			$$this->connectedProducers,
-			function($connectedProducer) use (&$producer) {
+			function($connectedProducer) use ($producer) {
 				return $connectedProducer !== $producer;
 			},
 		);

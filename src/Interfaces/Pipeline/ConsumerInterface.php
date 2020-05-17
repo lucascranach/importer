@@ -7,8 +7,8 @@ namespace CranachDigitalArchive\Importer\Interfaces\Pipeline;
 interface ConsumerInterface extends NodeInterface
 {
 
-	public function registerProducerNode(ProducerInterface &$producer);
-	public function unregisterProducerNode(ProducerInterface &$producer);
+	public function registerProducerNode(ProducerInterface $producer);
+	public function unregisterProducerNode(ProducerInterface $producer);
 	public function getProducerNodes(): array;
 	public function handleItem($item): bool;
 	public function error($error);
