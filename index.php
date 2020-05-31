@@ -6,13 +6,20 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use CranachDigitalArchive\Importer\Pipeline\Pipeline;
 
-use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsJSONLangExistenceTypeExporter;
-use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\{ConditionDeterminer, RemoteImageExistenceChecker};
-use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsLoader;
+use CranachDigitalArchive\Importer\Modules\{
+	Graphics\Exporters\GraphicsJSONLangExistenceTypeExporter,
+	Graphics\Transformers\ConditionDeterminer,
+	Graphics\Transformers\RemoteImageExistenceChecker,
+	Graphics\Loaders\XML\GraphicsLoader,
 
-use CranachDigitalArchive\Importer\Modules\GraphicRestorations\Loaders\XML\GraphicRestorationsLoader;
-use CranachDigitalArchive\Importer\Modules\GraphicRestorations\Exporters\GraphicRestorationsJSONExporter;
+	GraphicRestorations\Loaders\XML\GraphicRestorationsLoader,
+	GraphicRestorations\Exporters\GraphicRestorationsJSONExporter,
 
+	LiteratureReferences\Loaders\XML\LiteratureReferencesLoader,
+	LiteratureReferences\Exporters\LiteratureReferencesJSONExporter,
+};
+
+/* Graphics */
 $graphicsLoader = GraphicsLoader::withSourceAt('./input/20191122/CDA-GR_Datenuebersicht_20191122.xml');
 $remoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt('./.cache');
 $conditionDeterminer = ConditionDeterminer::new();
@@ -32,7 +39,7 @@ Pipeline::new()->withNodes(
 )->start();
 
 
-
+/* Graphics restoration */
 $graphicRestorationsLoader = GraphicRestorationsLoader::withSourceAt('./input/20191122/CDA-GR_RestDokumente_20191122.xml');
 $graphicRestorationsDestination = GraphicRestorationsJSONExporter::withDestinationAt('./output/20191122/cda-graphics-restoration-v2.json');
 
@@ -43,4 +50,18 @@ $graphicRestorationsLoader->pipe(
 Pipeline::new()->withNodes(
 	$graphicRestorationsLoader,
 	$graphicRestorationsDestination,
+)->start();
+
+
+/* Literature references */
+$literatureReferencesLoader = LiteratureReferencesLoader::withSourceAt('./input/20191122/CDA_Literaturverweise_20191122.xml');
+$literatureReferencesDestination = LiteratureReferencesJSONExporter::withDestinationAt('./output/20191122/cda-literaturereferences-v2.json');
+
+$literatureReferencesLoader->pipe(
+	$literatureReferencesDestination,
+);
+
+Pipeline::new()->withNodes(
+	$literatureReferencesLoader,
+	$literatureReferencesDestination,
 )->start();

@@ -1,0 +1,38 @@
+<?php
+
+namespace CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities;
+
+
+/**
+ * Representing an person
+ */
+class Person {
+
+	public $role = '';
+	public $name = '';
+
+
+	function __construct() {
+
+	}
+
+
+	function setRole(string $role) {
+		$this->role = $role;
+	}
+
+
+	function getRole(): string {
+		return $this->role;
+	}
+
+
+	function setName(string $name) {
+		$this->name = $name;
+	}
+
+
+	function getName(): string {
+		return $this->name;
+	}
+}
