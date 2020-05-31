@@ -2,69 +2,66 @@
 
 namespace CranachDigitalArchive\Importer\Modules\GraphicRestorations\Entities;
 
-
 /**
  * Representing a single graphic restoration test
  */
-class Test {
-
-	public $kind = '';
-	public $text = '';
-	public $purpose = '';
-	public $remarks = '';
-
-
-	function __construct()
-	{
-
-	}
+class Test
+{
+    public $kind = '';
+    public $text = '';
+    public $purpose = '';
+    public $remarks = '';
 
 
-	function setKind(string $kind)
-	{
-		$this->kind = $kind;
-	}
+    public function __construct()
+    {
+    }
 
 
-	function getKind(): string
-	{
-		return $this->kind;
-	}
+    public function setKind(string $kind)
+    {
+        $this->kind = $kind;
+    }
 
 
-	function setText(string $text)
-	{
-		$this->text = $text;
-	}
+    public function getKind(): string
+    {
+        return $this->kind;
+    }
 
 
-	function getText(): string
-	{
-		return $this->text;
-	}
+    public function setText(string $text)
+    {
+        $this->text = $text;
+    }
 
 
-	function setPurpose(string $purpose)
-	{
-		$this->purpose = $purpose;
-	}
+    public function getText(): string
+    {
+        return $this->text;
+    }
 
 
-	function getPurpose(): string
-	{
-		return $this->purpose;
-	}
+    public function setPurpose(string $purpose)
+    {
+        $this->purpose = $purpose;
+    }
 
 
-	function setRemarks(string $remarks)
-	{
-		$this->remarks = $remarks;
-	}
+    public function getPurpose(): string
+    {
+        return $this->purpose;
+    }
 
 
-	function getRemarks(): string
-	{
-		return $this->remarks;
-	}
+    public function setRemarks(string $remarks)
+    {
+        $this->remarks = $remarks;
+    }
 
+
+    public function getRemarks(): string
+    {
+        return $this->remarks;
+    }
 }

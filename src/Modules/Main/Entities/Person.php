@@ -2,127 +2,145 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Main\Entities;
 
-
 /**
  * Representing a single person and their role
  */
-class Person {
+class Person
+{
+    public $id = '';
+    public $role = '';
+    public $name = '';
+    public $prefix = '';
+    public $suffix = '';
+    public $nameType = '';
+    public $alternativeName = '';
+    public $remarks = '';
+    public $date = '';
 
-	public $id = '';
-	public $role = '';
-	public $name = '';
-	public $prefix = '';
-	public $suffix = '';
-	public $nameType = '';
-	public $alternativeName = '';
-	public $remarks = '';
-	public $date = '';
-
-	public $isUnknown = false;
-
-
-	function __construct() {
-
-	}
+    public $isUnknown = false;
 
 
-	function setId(string $id) {
-		$this->id = $id;
-	}
+    public function __construct()
+    {
+    }
 
 
-	function getId(): string {
-		return $this->id;
-	}
+    public function setId(string $id)
+    {
+        $this->id = $id;
+    }
 
 
-	function setRole(string $role) {
-		$this->role = $role;
-	}
+    public function getId(): string
+    {
+        return $this->id;
+    }
 
 
-	function getRole(): string {
-		return $this->role;
-	}
+    public function setRole(string $role)
+    {
+        $this->role = $role;
+    }
 
 
-	function setName(string $name) {
-		$this->name = $name;
-	}
+    public function getRole(): string
+    {
+        return $this->role;
+    }
 
 
-	function getName(): string {
-		return $this->name;
-	}
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
 
-	function setPrefix(string $prefix) {
-		$this->prefix = $prefix;
-	}
+    public function getName(): string
+    {
+        return $this->name;
+    }
 
 
-	function getPrefix(): string {
-		return $this->prefix;
-	}
+    public function setPrefix(string $prefix)
+    {
+        $this->prefix = $prefix;
+    }
 
 
-	function setSuffix(string $suffix) {
-		$this->suffix = $suffix;
-	}
+    public function getPrefix(): string
+    {
+        return $this->prefix;
+    }
 
 
-	function getSuffix(): string {
-		return $this->suffix;
-	}
+    public function setSuffix(string $suffix)
+    {
+        $this->suffix = $suffix;
+    }
 
 
-	function setNameType(string $nameType) {
-		$this->nameType = $nameType;
-	}
+    public function getSuffix(): string
+    {
+        return $this->suffix;
+    }
 
 
-	function getNameType(): string {
-		return $this->nameType;
-	}
+    public function setNameType(string $nameType)
+    {
+        $this->nameType = $nameType;
+    }
 
 
-	function setAlternativeName(string $alternativeName) {
-		$this->alternativeName = $alternativeName;
-	}
+    public function getNameType(): string
+    {
+        return $this->nameType;
+    }
 
 
-	function getAlternativeName(): string {
-		return $this->alternativeName;
-	}
+    public function setAlternativeName(string $alternativeName)
+    {
+        $this->alternativeName = $alternativeName;
+    }
 
 
-	function setRemarks(string $remarks) {
-		$this->remarks = $remarks;
-	}
+    public function getAlternativeName(): string
+    {
+        return $this->alternativeName;
+    }
 
 
-	function getRemarks(): string {
-		return $this->remarks;
-	}
+    public function setRemarks(string $remarks)
+    {
+        $this->remarks = $remarks;
+    }
 
 
-	function setDate(string $date) {
-		$this->date = $date;
-	}
+    public function getRemarks(): string
+    {
+        return $this->remarks;
+    }
 
 
-	function getDate(): string {
-		return $this->date;
-	}
+    public function setDate(string $date)
+    {
+        $this->date = $date;
+    }
 
 
-	function setIsUnknown(bool $isUnknown) {
-		$this->isUnknown = $isUnknown;
-	}
+    public function getDate(): string
+    {
+        return $this->date;
+    }
 
 
-	function getIsUnknown(): bool {
-		return $this->isUnknown;
-	}
+    public function setIsUnknown(bool $isUnknown)
+    {
+        $this->isUnknown = $isUnknown;
+    }
 
+
+    public function getIsUnknown(): bool
+    {
+        return $this->isUnknown;
+    }
 }

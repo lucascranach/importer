@@ -8,34 +8,37 @@ require_once 'PersonNameDetail.php';
 /**
  * Representing a single person name having multiple details
  */
-class PersonName {
-
-	public $constituentId = '';
-	public $details = [];
-
-
-	function __construct() {
-
-	}
+class PersonName
+{
+    public $constituentId = '';
+    public $details = [];
 
 
-	function setConstituentId(string $constituentId) {
-		$this->constituentId = $constituentId;
-	}
+    public function __construct()
+    {
+    }
 
 
-	function getConstituentId(): string {
-		return $this->constituentId;
-	}
+    public function setConstituentId(string $constituentId)
+    {
+        $this->constituentId = $constituentId;
+    }
 
 
-	function addDetail(PersonNameDetail $detail) {
-		$this->details[] = $detail;
-	}
+    public function getConstituentId(): string
+    {
+        return $this->constituentId;
+    }
 
 
-	function getDetails(): array {
-		return $this->details;
-	}
+    public function addDetail(PersonNameDetail $detail)
+    {
+        $this->details[] = $detail;
+    }
 
+
+    public function getDetails(): array
+    {
+        return $this->details;
+    }
 }

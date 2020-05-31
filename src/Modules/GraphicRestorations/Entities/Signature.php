@@ -2,43 +2,40 @@
 
 namespace CranachDigitalArchive\Importer\Modules\GraphicRestorations\Entities;
 
-
 /**
  * Representing a single signature
  */
-class Signature {
-
-	public $date = '';
-	public $name = '';
-
-
-	function __construct()
-	{
-
-	}
+class Signature
+{
+    public $date = '';
+    public $name = '';
 
 
-	function setDate(string $date)
-	{
-		$this->date = $date;
-	}
+    public function __construct()
+    {
+    }
 
 
-	function getDate(): string
-	{
-		return $this->date;
-	}
+    public function setDate(string $date)
+    {
+        $this->date = $date;
+    }
 
 
-	function setName(string $name)
-	{
-		$this->name = $name;
-	}
+    public function getDate(): string
+    {
+        return $this->date;
+    }
 
 
-	function getName(): string
-	{
-		return $this->name;
-	}
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
+
+    public function getName(): string
+    {
+        return $this->name;
+    }
 }

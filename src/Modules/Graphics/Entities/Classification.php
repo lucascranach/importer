@@ -2,38 +2,40 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Entities;
 
-
 /**
  * Representing a single classifcation, including the condition
  */
-class Classification {
-
-	public $classification = '';
-	public $condition = '';
-
-
-	function __construct() {
-
-	}
+class Classification
+{
+    public $classification = '';
+    public $condition = '';
 
 
-	function setClassification(string $classification) {
-		$this->classification = $classification;
-	}
+    public function __construct()
+    {
+    }
 
 
-	function getClassification(): string {
-		return $this->classification;
-	}
+    public function setClassification(string $classification)
+    {
+        $this->classification = $classification;
+    }
 
 
-	function setCondition(string $condition) {
-		$this->condition = $condition;
-	}
+    public function getClassification(): string
+    {
+        return $this->classification;
+    }
 
 
-	function getCondition(): string {
-		return $this->condition;
-	}
+    public function setCondition(string $condition)
+    {
+        $this->condition = $condition;
+    }
 
+
+    public function getCondition(): string
+    {
+        return $this->condition;
+    }
 }

@@ -2,49 +2,53 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Main\Entities;
 
-
 /**
  * Representing a single object reference by inventory number
  */
-class ObjectReference {
-
-	public $text = '';
-	public $inventoryNumber = '';
-	public $remark = '';
-
-
-	function __construct() {
-
-	}
+class ObjectReference
+{
+    public $text = '';
+    public $inventoryNumber = '';
+    public $remark = '';
 
 
-	function setText(string $text) {
-		$this->text = $text;
-	}
+    public function __construct()
+    {
+    }
 
 
-	function getText(): string {
-		return $this->text;
-	}
+    public function setText(string $text)
+    {
+        $this->text = $text;
+    }
 
 
-	function setInventoryNumber(string $inventoryNumber) {
-		$this->inventoryNumber = $inventoryNumber;
-	}
+    public function getText(): string
+    {
+        return $this->text;
+    }
 
 
-	function getInventoryNumber(): string {
-		return $this->inventoryNumber;
-	}
+    public function setInventoryNumber(string $inventoryNumber)
+    {
+        $this->inventoryNumber = $inventoryNumber;
+    }
 
 
-	function setRemark(string $remark) {
-		$this->remark = $remark;
-	}
+    public function getInventoryNumber(): string
+    {
+        return $this->inventoryNumber;
+    }
 
 
-	function getRemark(): string {
-		return $this->remark;
-	}
+    public function setRemark(string $remark)
+    {
+        $this->remark = $remark;
+    }
 
+
+    public function getRemark(): string
+    {
+        return $this->remark;
+    }
 }

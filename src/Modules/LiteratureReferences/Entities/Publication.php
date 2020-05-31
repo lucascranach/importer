@@ -2,37 +2,40 @@
 
 namespace CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities;
 
-
 /**
  * Representing a publication
  */
-class Publication {
-
-	public $type = '';
-	public $remarks = '';
-
-
-	function __construct() {
-
-	}
+class Publication
+{
+    public $type = '';
+    public $remarks = '';
 
 
-	function setType(string $type) {
-		$this->type = $type;
-	}
+    public function __construct()
+    {
+    }
 
 
-	function getType(): string {
-		return $this->type;
-	}
+    public function setType(string $type)
+    {
+        $this->type = $type;
+    }
 
 
-	function setRemarks(string $remarks) {
-		$this->remarks = $remarks;
-	}
+    public function getType(): string
+    {
+        return $this->type;
+    }
 
 
-	function getRemarks(): string {
-		return $this->remarks;
-	}
+    public function setRemarks(string $remarks)
+    {
+        $this->remarks = $remarks;
+    }
+
+
+    public function getRemarks(): string
+    {
+        return $this->remarks;
+    }
 }

@@ -2,49 +2,53 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Main\Entities;
 
-
 /**
  * Representing a single catalog work refrence
  */
-class CatalogWorkReference {
-
-	public $description = '';
-	public $referenceNumber = '';
-	public $remarks = '';
-
-
-	function __construct() {
-
-	}
+class CatalogWorkReference
+{
+    public $description = '';
+    public $referenceNumber = '';
+    public $remarks = '';
 
 
-	function setDescription(string $description) {
-		$this->description = $description;
-	}
+    public function __construct()
+    {
+    }
 
 
-	function getDescription(): string {
-		return $this->description;
-	}
+    public function setDescription(string $description)
+    {
+        $this->description = $description;
+    }
 
 
-	function setReferenceNumber(string $referenceNumber) {
-		$this->referenceNumber = $referenceNumber;
-	}
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
 
 
-	function getReferenceNumber(): string {
-		return $this->referenceNumber;
-	}
+    public function setReferenceNumber(string $referenceNumber)
+    {
+        $this->referenceNumber = $referenceNumber;
+    }
 
 
-	function setRemarks(string $remarks) {
-		$this->remarks = $remarks;
-	}
+    public function getReferenceNumber(): string
+    {
+        return $this->referenceNumber;
+    }
 
 
-	function getRemarks(): string {
-		return $this->remarks;
-	}
+    public function setRemarks(string $remarks)
+    {
+        $this->remarks = $remarks;
+    }
 
+
+    public function getRemarks(): string
+    {
+        return $this->remarks;
+    }
 }

@@ -2,49 +2,53 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Main\Entities;
 
-
 /**
  * Representing a single publication
  */
-class Publication {
-
-	public $title = '';
-	public $pageNumber = '';
-	public $referenceId = '';
-
-
-	function __construct() {
-
-	}
+class Publication
+{
+    public $title = '';
+    public $pageNumber = '';
+    public $referenceId = '';
 
 
-	function setTitle(string $title) {
-		$this->title = $title;
-	}
+    public function __construct()
+    {
+    }
 
 
-	function getTitle(): string {
-		return $this->title;
-	}
+    public function setTitle(string $title)
+    {
+        $this->title = $title;
+    }
 
 
-	function setPageNumber(string $pageNumber) {
-		$this->pageNumber = $pageNumber;
-	}
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
 
 
-	function getPageNumber(): string {
-		return $this->pageNUmber;
-	}
+    public function setPageNumber(string $pageNumber)
+    {
+        $this->pageNumber = $pageNumber;
+    }
 
 
-	function setReferenceId(string $referenceId) {
-		$this->referenceId = $referenceId;
-	}
+    public function getPageNumber(): string
+    {
+        return $this->pageNUmber;
+    }
 
 
-	function getReferenceId(): string {
-		return $this->referenceId;
-	}
+    public function setReferenceId(string $referenceId)
+    {
+        $this->referenceId = $referenceId;
+    }
 
+
+    public function getReferenceId(): string
+    {
+        return $this->referenceId;
+    }
 }

@@ -2,121 +2,118 @@
 
 namespace CranachDigitalArchive\Importer\Modules\GraphicRestorations\Entities;
 
-
 /**
  * Representing a single graphic restoration survey
  */
-class Survey {
-
-	public $type = '';
-	public $project = '';
-	public $overallAnalysis = '';
-	public $remarks = '';
-	public $tests = [];
-	public $involvedPersons = [];
-	public $processingDates = null;
-	public $signature = null;
-
-
-	function __construct()
-	{
-
-	}
+class Survey
+{
+    public $type = '';
+    public $project = '';
+    public $overallAnalysis = '';
+    public $remarks = '';
+    public $tests = [];
+    public $involvedPersons = [];
+    public $processingDates = null;
+    public $signature = null;
 
 
-	function setType(string $type)
-	{
-		$this->type = $type;
-	}
+    public function __construct()
+    {
+    }
 
 
-	function getType(): string
-	{
-		return $this->type;
-	}
+    public function setType(string $type)
+    {
+        $this->type = $type;
+    }
 
 
-	function setProject(string $project)
-	{
-		$this->project = $project;
-	}
+    public function getType(): string
+    {
+        return $this->type;
+    }
 
 
-	function getProject(): string
-	{
-		return $this->project;
-	}
+    public function setProject(string $project)
+    {
+        $this->project = $project;
+    }
 
 
-	function setOverallAnalysis(string $overallAnalysis)
-	{
-		$this->overallAnalysis = $overallAnalysis;
-	}
+    public function getProject(): string
+    {
+        return $this->project;
+    }
 
 
-	function getOverallAnalysis(): string
-	{
-		return $this->overallAnalysis;
-	}
+    public function setOverallAnalysis(string $overallAnalysis)
+    {
+        $this->overallAnalysis = $overallAnalysis;
+    }
 
 
-	function setRemarks(string $remarks)
-	{
-		$this->remarks = $remarks;
-	}
+    public function getOverallAnalysis(): string
+    {
+        return $this->overallAnalysis;
+    }
 
 
-	function getRemarks(): string
-	{
-		return $this->remarks;
-	}
+    public function setRemarks(string $remarks)
+    {
+        $this->remarks = $remarks;
+    }
 
 
-	function addTest(Test $test)
-	{
-		$this->tests[] = $test;
-	}
+    public function getRemarks(): string
+    {
+        return $this->remarks;
+    }
 
 
-	function getTests(): array
-	{
-		return $this->tests;
-	}
+    public function addTest(Test $test)
+    {
+        $this->tests[] = $test;
+    }
 
 
-	function addInvolvedPerson(Person $involvedPerson)
-	{
-		$this->involvedPersons[] = $involvedPerson;
-	}
+    public function getTests(): array
+    {
+        return $this->tests;
+    }
 
 
-	function getInvolvedPersons(): array
-	{
-		return $this->involvedPersons;
-	}
+    public function addInvolvedPerson(Person $involvedPerson)
+    {
+        $this->involvedPersons[] = $involvedPerson;
+    }
 
 
-	function setProcessingDates(ProcessingDates $processingDates)
-	{
-		$this->processingDates = $processingDates;
-	}
+    public function getInvolvedPersons(): array
+    {
+        return $this->involvedPersons;
+    }
 
 
-	function getProcessingDates(): ProcessingDates
-	{
-		return $this->processingDates;
-	}
+    public function setProcessingDates(ProcessingDates $processingDates)
+    {
+        $this->processingDates = $processingDates;
+    }
 
 
-	function setSignature(Signature $signature)
-	{
-		$this->signature = $signature;
-	}
+    public function getProcessingDates(): ProcessingDates
+    {
+        return $this->processingDates;
+    }
 
 
-	function getSignature(): Signature
-	{
-		return $this->signature;
-	}
+    public function setSignature(Signature $signature)
+    {
+        $this->signature = $signature;
+    }
 
+
+    public function getSignature(): Signature
+    {
+        return $this->signature;
+    }
 }

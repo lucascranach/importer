@@ -2,68 +2,77 @@
 
 namespace CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities;
 
-
 /**
  * Representing an connected object
  */
-class ConnectedObject {
-
-	public $inventoryNumber = '';
-	public $catalogNumber = '';
-	public $pageNumber = '';
-	public $figureNumber = '';
-	public $remarks = '';
-
-
-	function __construct() {
-
-	}
+class ConnectedObject
+{
+    public $inventoryNumber = '';
+    public $catalogNumber = '';
+    public $pageNumber = '';
+    public $figureNumber = '';
+    public $remarks = '';
 
 
-	function setInventoryNumber(string $inventoryNumber) {
-		$this->inventoryNumber = $inventoryNumber;
-	}
+    public function __construct()
+    {
+    }
 
 
-	function getInventoryNumber(): string {
-		return $this->inventoryNumber;
-	}
+    public function setInventoryNumber(string $inventoryNumber)
+    {
+        $this->inventoryNumber = $inventoryNumber;
+    }
 
 
-	function setCatalogNumber(string $catalogNumber) {
-		$this->catalogNumber = $catalogNumber;
-	}
+    public function getInventoryNumber(): string
+    {
+        return $this->inventoryNumber;
+    }
 
 
-	function getCatalogNumber(): string {
-		return $this->catalogNumber;
-	}
+    public function setCatalogNumber(string $catalogNumber)
+    {
+        $this->catalogNumber = $catalogNumber;
+    }
 
 
-	function setPageNumber(string $pageNumber) {
-		$this->pageNumber = $pageNumber;
-	}
+    public function getCatalogNumber(): string
+    {
+        return $this->catalogNumber;
+    }
 
 
-	function getPageNumber(): string {
-		return $this->pageNumber;
-	}
-
-	function setFigureNumber(string $figureNumber) {
-		$this->figureNumber = $figureNumber;
-	}
+    public function setPageNumber(string $pageNumber)
+    {
+        $this->pageNumber = $pageNumber;
+    }
 
 
-	function getFigureNumber(): string {
-		return $this->figureNumber;
-	}
+    public function getPageNumber(): string
+    {
+        return $this->pageNumber;
+    }
 
-	function setRemarks(string $remarks) {
-		$this->remarks = $remarks;
-	}
+    public function setFigureNumber(string $figureNumber)
+    {
+        $this->figureNumber = $figureNumber;
+    }
 
 
-	function getRemarks(): string {
-		return $this->remarks;
-	}
+    public function getFigureNumber(): string
+    {
+        return $this->figureNumber;
+    }
+
+    public function setRemarks(string $remarks)
+    {
+        $this->remarks = $remarks;
+    }
+
+
+    public function getRemarks(): string
+    {
+        return $this->remarks;
+    }
 }

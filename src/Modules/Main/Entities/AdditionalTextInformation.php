@@ -2,70 +2,78 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Main\Entities;
 
-
 /**
  * Representing the structure of a single additional text information
  */
-class AdditionalTextInformation {
-
-	public $type = '';
-	public $text = '';
-	public $date = '';
-	public $year = null;
-	public $author = '';
-
-
-	function __construct() {
-
-	}
-
-	function setType(string $type) {
-		$this->type = $type;
-	}
+class AdditionalTextInformation
+{
+    public $type = '';
+    public $text = '';
+    public $date = '';
+    public $year = null;
+    public $author = '';
 
 
-	function getType(): string {
-		return $this->type;
-	}
+    public function __construct()
+    {
+    }
+
+    public function setType(string $type)
+    {
+        $this->type = $type;
+    }
 
 
-	function setText(string $text) {
-		$this->text = $text;
-	}
+    public function getType(): string
+    {
+        return $this->type;
+    }
 
 
-	function getText(): string {
-		return $this->text;
-	}
+    public function setText(string $text)
+    {
+        $this->text = $text;
+    }
 
 
-	function setDate(string $date) {
-		$this->date = $date;
-	}
+    public function getText(): string
+    {
+        return $this->text;
+    }
 
 
-	function getDate(): string {
-		return $this->date;
-	}
+    public function setDate(string $date)
+    {
+        $this->date = $date;
+    }
 
 
-	function setYear(int $year) {
-		$this->year = $year;
-	}
+    public function getDate(): string
+    {
+        return $this->date;
+    }
 
 
-	function getYear(): ?int {
-		return $this->year;
-	}
+    public function setYear(int $year)
+    {
+        $this->year = $year;
+    }
 
 
-	function setAuthor(string $author) {
-		$this->author = $author;
-	}
+    public function getYear(): ?int
+    {
+        return $this->year;
+    }
 
 
-	function getAuhtor(): ?string {
-		return $this->author;
-	}
+    public function setAuthor(string $author)
+    {
+        $this->author = $author;
+    }
 
+
+    public function getAuhtor(): ?string
+    {
+        return $this->author;
+    }
 }

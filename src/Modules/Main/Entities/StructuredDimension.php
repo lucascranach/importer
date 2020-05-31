@@ -2,49 +2,53 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Main\Entities;
 
-
 /**
  * Representing a the dimension in a structured way
  */
-class StructuredDimension {
-
-	public $element = '';
-	public $width = null;
-	public $height = null;
-
-
-	function __construct() {
-
-	}
+class StructuredDimension
+{
+    public $element = '';
+    public $width = null;
+    public $height = null;
 
 
-	function setElement(string $element) {
-		$this->element = $element;
-	}
+    public function __construct()
+    {
+    }
 
 
-	function getElement(): string {
-		return $this->element;
-	}
+    public function setElement(string $element)
+    {
+        $this->element = $element;
+    }
 
 
-	function setWidth(string $width) {
-		$this->width = $width;
-	}
+    public function getElement(): string
+    {
+        return $this->element;
+    }
 
 
-	function getWidth(): string {
-		return $this->width;
-	}
+    public function setWidth(string $width)
+    {
+        $this->width = $width;
+    }
 
 
-	function setHeight(string $height) {
-		$this->height = $height;
-	}
+    public function getWidth(): string
+    {
+        return $this->width;
+    }
 
 
-	function getHeight(): string {
-		return $this->height;
-	}
+    public function setHeight(string $height)
+    {
+        $this->height = $height;
+    }
 
+
+    public function getHeight(): string
+    {
+        return $this->height;
+    }
 }

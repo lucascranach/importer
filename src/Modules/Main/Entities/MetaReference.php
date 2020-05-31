@@ -2,49 +2,53 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Main\Entities;
 
-
 /**
  * Representing a single meta reference
  */
-class MetaReference {
-
-	public $type = '';
-	public $term = '';
-	public $path = '';
-
-
-	function __construct() {
-
-	}
+class MetaReference
+{
+    public $type = '';
+    public $term = '';
+    public $path = '';
 
 
-	function setType(string $type) {
-		$this->type = $type;
-	}
+    public function __construct()
+    {
+    }
 
 
-	function getType(): string {
-		return $this->type;
-	}
+    public function setType(string $type)
+    {
+        $this->type = $type;
+    }
 
 
-	function setTerm(string $term) {
-		$this->term = $term;
-	}
+    public function getType(): string
+    {
+        return $this->type;
+    }
 
 
-	function getTerm(): string {
-		return $this->term;
-	}
+    public function setTerm(string $term)
+    {
+        $this->term = $term;
+    }
 
 
-	function setPath(string $path) {
-		$this->path = $path;
-	}
+    public function getTerm(): string
+    {
+        return $this->term;
+    }
 
 
-	function getPath(): string {
-		return $this->path;
-	}
+    public function setPath(string $path)
+    {
+        $this->path = $path;
+    }
 
+
+    public function getPath(): string
+    {
+        return $this->path;
+    }
 }

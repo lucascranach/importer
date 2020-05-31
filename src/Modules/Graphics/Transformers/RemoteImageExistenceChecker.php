@@ -7,222 +7,219 @@ use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
-
-class RemoteImageExistenceChecker extends Hybrid {
-
-	private $serverHost = 'http://lucascranach.org/';
-	private $remoteImageBasePath = 'imageserver/G_%s/';
-	private $remoteImageDataPath = 'imageserver/G_%s/imageData.json';
-	private $remoteImageSubDirectoryName = '01_Overall';
-	private $cacheDir = null;
-	private $cacheFilename = 'remoteImageExistenceChecker.cache.json';
-	private $cacheFilepath = null;
-	private $cache = [];
-
-
-	private function __construct()
-	{
-	}
-
-	public static function new()
-	{
-		return new self;
-	}
-
-	public static function withCacheAt($cacheDir)
-	{
-		$checker = self::new();
-
-		if (is_string($cacheDir)) {
-			if (!file_exists($cacheDir)) {
-				mkdir($cacheDir, 0777, true);
-			}
-			$checker->cacheDir = $cacheDir;
-			$checker->cacheFilepath = trim($checker->cacheDir) . DIRECTORY_SEPARATOR . $checker->cacheFilename;
-			$checker->restoreCache();
-		}
-
-		return $checker;
-	}
+class RemoteImageExistenceChecker extends Hybrid
+{
+    private $serverHost = 'http://lucascranach.org/';
+    private $remoteImageBasePath = 'imageserver/G_%s/';
+    private $remoteImageDataPath = 'imageserver/G_%s/imageData.json';
+    private $remoteImageSubDirectoryName = '01_Overall';
+    private $cacheDir = null;
+    private $cacheFilename = 'remoteImageExistenceChecker.cache.json';
+    private $cacheFilepath = null;
+    private $cache = [];
 
 
-	function handleItem($item): bool
-	{
-		if (!($item instanceof Graphic)) {
-			throw new \Exception('Pushed item is not of expected class \'Graphic\'');
-		}
+    private function __construct()
+    {
+    }
 
-		$inventoryNumber = $item->getInventoryNumber();
+    public static function new()
+    {
+        return new self;
+    }
 
-		/* We want to use the exhibition history inventory number for virtual objects */
-		if ($item->getIsVirtual()) {
+    public static function withCacheAt($cacheDir)
+    {
+        $checker = self::new();
 
-			if (!empty($item->getExhibitionHistory())) {
-				$inventoryNumber = $item->getExhibitionHistory();
-			} else {
-				echo '  Missing exhibition history for virtual object \'' . $inventoryNumber . "'\n";
+        if (is_string($cacheDir)) {
+            if (!file_exists($cacheDir)) {
+                mkdir($cacheDir, 0777, true);
+            }
+            $checker->cacheDir = $cacheDir;
+            $checker->cacheFilepath = trim($checker->cacheDir) . DIRECTORY_SEPARATOR . $checker->cacheFilename;
+            $checker->restoreCache();
+        }
 
-				$this->next($item);
-				return false;
-			}
-		}
-
-		/* Fill cache to avoid unnecessary duplicate requests for the same resource */
-		if (!isset($this->cache[$inventoryNumber])) {
-			$interpolatedRemoteImageDataPath = sprintf(
-				$this->remoteImageDataPath,
-				$inventoryNumber,
-			);
-			$url = $this->serverHost . $interpolatedRemoteImageDataPath;
-
-			$result = $this->getRemoteImageDataResource($url);
-
-			if (!is_null($result)) {
-				$rawImagesData = $result;
-			} else {
-				echo '  Missing remote images for \'' . $inventoryNumber . "'\n";
-				$rawImagesData = null;
-			}
-
-			$this->cache[$inventoryNumber] = [
-				'isVirtual' => $item->getIsVirtual(),
-				'hasExhibitionHistory' => !empty($item->getExhibitionHistory()),
-				'rawImagesData' => $rawImagesData,
-			];
-		}
-
-		$cachedImagesForObject = $this->cache[$inventoryNumber]['rawImagesData'];
-
-		if (!is_null($cachedImagesForObject)) {
-			$preparedImages = $this->prepareRawImages($inventoryNumber, $cachedImagesForObject);
-			$item->setImages($preparedImages);
-		}
-
-		$this->next($item);
-		return true;
-	}
+        return $checker;
+    }
 
 
-	function done(ProducerInterface $producer)
-	{
-		parent::done($producer);
+    public function handleItem($item): bool
+    {
+        if (!($item instanceof Graphic)) {
+            throw new \Exception('Pushed item is not of expected class \'Graphic\'');
+        }
 
-		$this->storeCache();
-		$this->cleanUp();
-	}
+        $inventoryNumber = $item->getInventoryNumber();
 
+        /* We want to use the exhibition history inventory number for virtual objects */
+        if ($item->getIsVirtual()) {
+            if (!empty($item->getExhibitionHistory())) {
+                $inventoryNumber = $item->getExhibitionHistory();
+            } else {
+                echo '  Missing exhibition history for virtual object \'' . $inventoryNumber . "'\n";
 
-	private function getRemoteImageDataResource(string $url): ?array
-	{
-		$content = @file_get_contents($url);
+                $this->next($item);
+                return false;
+            }
+        }
 
-		if ($content === FALSE) {
-			return null;
-		}
+        /* Fill cache to avoid unnecessary duplicate requests for the same resource */
+        if (!isset($this->cache[$inventoryNumber])) {
+            $interpolatedRemoteImageDataPath = sprintf(
+                $this->remoteImageDataPath,
+                $inventoryNumber,
+            );
+            $url = $this->serverHost . $interpolatedRemoteImageDataPath;
 
-		$statusHeader = $http_response_header[0];
-		
-		$splitStatusLine = explode(' ', $statusHeader, 3);
-		
-		if (count($splitStatusLine) !== 3) {
-			throw new \Exception('Could not get status code for request!');
-		}
-		
-		$statusCode = $splitStatusLine[1];
-		
-		/* @TODO: Check content-type on response */
+            $result = $this->getRemoteImageDataResource($url);
 
-		return ($statusCode[0] === '2') ? json_decode($content, TRUE) : null;
-	}
+            if (!is_null($result)) {
+                $rawImagesData = $result;
+            } else {
+                echo '  Missing remote images for \'' . $inventoryNumber . "'\n";
+                $rawImagesData = null;
+            }
 
+            $this->cache[$inventoryNumber] = [
+                'isVirtual' => $item->getIsVirtual(),
+                'hasExhibitionHistory' => !empty($item->getExhibitionHistory()),
+                'rawImagesData' => $rawImagesData,
+            ];
+        }
 
-	private function prepareRawImages(string $inventoryNumber, array $cachedImagesForObject): array
-	{
-		$destinationStructure = [
-			'infos' => [
-				'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
-			],
-			'sizes' => [
-				'xs' => [
-					'dimensions' => [ 'width' => 0, 'height' => 0 ],
-					'src' => '',
-				],
-				's' => [
-					'dimensions' => [ 'width' => 0, 'height' => 0 ],
-					'src' => '',
-				],
-				'm' => [
-					'dimensions' => [ 'width' => 0, 'height' => 0 ],
-					'src' => '',
-				],
-				'l' => [
-					'dimensions' => [ 'width' => 0, 'height' => 0 ],
-					'src' => '',
-				],
-				'xl' => [
-					'dimensions' => [ 'width' => 0, 'height' => 0 ],
-					'src' => '',
-				],
-			],
-		];
+        $cachedImagesForObject = $this->cache[$inventoryNumber]['rawImagesData'];
 
-		$imageStack = $cachedImagesForObject['imageStack'];
-		$baseStackItem = $imageStack[$this->remoteImageSubDirectoryName];
+        if (!is_null($cachedImagesForObject)) {
+            $preparedImages = $this->prepareRawImages($inventoryNumber, $cachedImagesForObject);
+            $item->setImages($preparedImages);
+        }
 
-		if (!isset($baseStackItem)) {
-			throw new \Exception('Could not find base stack item ' . $this->remoteImageSubDirectoryName);
-		}
-
-		$destinationStructure['infos']['maxDimensions'] = [
-			'width' => intval($baseStackItem['maxDimensions']['width']),
-			'height' => intval($baseStackItem['maxDimensions']['height']),
-		];
-
-		foreach ($baseStackItem['images'] as $size => $image) {
-			$dimensions = $image['dimensions'];
-			$src = $this->serverHost .
-				sprintf($this->remoteImageBasePath, $inventoryNumber) .
-				$this->remoteImageSubDirectoryName . '/' . $image['src'];
-
-			$destinationStructure['sizes'][$size] = [
-				'dimensions' => [
-					'width' => intval($dimensions['width']),
-					'height' => intval($dimensions['height']),
-				],
-				'src' => $src,
-			];
-		}
-
-		return $destinationStructure;
-	}
+        $this->next($item);
+        return true;
+    }
 
 
-	private function storeCache()
-	{
-		if (is_null($this->cacheFilepath)) {
-			return;
-		}
+    public function done(ProducerInterface $producer)
+    {
+        parent::done($producer);
 
-		$cacheAsJSON = json_encode($this->cache);
-		file_put_contents($this->cacheFilepath, $cacheAsJSON);
-	}
+        $this->storeCache();
+        $this->cleanUp();
+    }
 
 
-	private function restoreCache()
-	{
-		if (is_null($this->cacheFilepath) || !file_exists($this->cacheFilepath)) {
-			return;
-		}
+    private function getRemoteImageDataResource(string $url): ?array
+    {
+        $content = @file_get_contents($url);
 
-		$cacheAsJSON = file_get_contents($this->cacheFilepath);
+        if ($content === false) {
+            return null;
+        }
 
-		$this->cache = json_decode($cacheAsJSON, true);
-	}
+        $statusHeader = $http_response_header[0];
+        
+        $splitStatusLine = explode(' ', $statusHeader, 3);
+        
+        if (count($splitStatusLine) !== 3) {
+            throw new \Exception('Could not get status code for request!');
+        }
+        
+        $statusCode = $splitStatusLine[1];
+        
+        /* @TODO: Check content-type on response */
+
+        return ($statusCode[0] === '2') ? json_decode($content, true) : null;
+    }
 
 
-	private function cleanUp()
-	{
-		$this->cache = [];
-	}
+    private function prepareRawImages(string $inventoryNumber, array $cachedImagesForObject): array
+    {
+        $destinationStructure = [
+            'infos' => [
+                'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
+            ],
+            'sizes' => [
+                'xs' => [
+                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                    'src' => '',
+                ],
+                's' => [
+                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                    'src' => '',
+                ],
+                'm' => [
+                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                    'src' => '',
+                ],
+                'l' => [
+                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                    'src' => '',
+                ],
+                'xl' => [
+                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                    'src' => '',
+                ],
+            ],
+        ];
 
+        $imageStack = $cachedImagesForObject['imageStack'];
+        $baseStackItem = $imageStack[$this->remoteImageSubDirectoryName];
+
+        if (!isset($baseStackItem)) {
+            throw new \Exception('Could not find base stack item ' . $this->remoteImageSubDirectoryName);
+        }
+
+        $destinationStructure['infos']['maxDimensions'] = [
+            'width' => intval($baseStackItem['maxDimensions']['width']),
+            'height' => intval($baseStackItem['maxDimensions']['height']),
+        ];
+
+        foreach ($baseStackItem['images'] as $size => $image) {
+            $dimensions = $image['dimensions'];
+            $src = $this->serverHost .
+                sprintf($this->remoteImageBasePath, $inventoryNumber) .
+                $this->remoteImageSubDirectoryName . '/' . $image['src'];
+
+            $destinationStructure['sizes'][$size] = [
+                'dimensions' => [
+                    'width' => intval($dimensions['width']),
+                    'height' => intval($dimensions['height']),
+                ],
+                'src' => $src,
+            ];
+        }
+
+        return $destinationStructure;
+    }
+
+
+    private function storeCache()
+    {
+        if (is_null($this->cacheFilepath)) {
+            return;
+        }
+
+        $cacheAsJSON = json_encode($this->cache);
+        file_put_contents($this->cacheFilepath, $cacheAsJSON);
+    }
+
+
+    private function restoreCache()
+    {
+        if (is_null($this->cacheFilepath) || !file_exists($this->cacheFilepath)) {
+            return;
+        }
+
+        $cacheAsJSON = file_get_contents($this->cacheFilepath);
+
+        $this->cache = json_decode($cacheAsJSON, true);
+    }
+
+
+    private function cleanUp()
+    {
+        $this->cache = [];
+    }
 }

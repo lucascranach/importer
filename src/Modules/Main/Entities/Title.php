@@ -2,49 +2,53 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Main\Entities;
 
-
 /**
  * Representing the title of a work including remarks to the title
  */
-class Title {
-
-	public $type = '';
-	public $title = '';
-	public $remarks = '';
-
-
-	function __construct() {
-
-	}
+class Title
+{
+    public $type = '';
+    public $title = '';
+    public $remarks = '';
 
 
-	function setType(string $type) {
-		$this->type = $type;
-	}
+    public function __construct()
+    {
+    }
 
 
-	function getType(): string {
-		return $this->type;
-	}
+    public function setType(string $type)
+    {
+        $this->type = $type;
+    }
 
 
-	function setTitle(string $title) {
-		$this->title = $title;
-	}
+    public function getType(): string
+    {
+        return $this->type;
+    }
 
 
-	function getTitle(): string {
-		return $this->title;
-	}
+    public function setTitle(string $title)
+    {
+        $this->title = $title;
+    }
 
 
-	function setRemarks(string $remarks) {
-		$this->remarks = $remarks;
-	}
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
 
 
-	function getRemarks(): string {
-		return $this->remarks;
-	}
+    public function setRemarks(string $remarks)
+    {
+        $this->remarks = $remarks;
+    }
 
+
+    public function getRemarks(): string
+    {
+        return $this->remarks;
+    }
 }

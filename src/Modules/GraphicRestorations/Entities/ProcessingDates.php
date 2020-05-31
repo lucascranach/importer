@@ -2,68 +2,66 @@
 
 namespace CranachDigitalArchive\Importer\Modules\GraphicRestorations\Entities;
 
-
 /**
  * Representing a single graphic restoration processing date and year set
  */
-class ProcessingDates {
-
-	public $beginDate = '';
-	public $beginYear = null;
-	public $endDate = '';
-	public $endYear = null;
-
-
-	function __construct() {
-
-	}
+class ProcessingDates
+{
+    public $beginDate = '';
+    public $beginYear = null;
+    public $endDate = '';
+    public $endYear = null;
 
 
-	function setBeginDate(string $beginDate)
-	{
-		$this->beginDate = $beginDate;
-	}
+    public function __construct()
+    {
+    }
 
 
-	function getBeginDate(): string
-	{
-		return $this->beginDate;
-	}
+    public function setBeginDate(string $beginDate)
+    {
+        $this->beginDate = $beginDate;
+    }
 
 
-	function setBeginYear(int $beginYear)
-	{
-		$this->beginYear = $beginYear;
-	}
+    public function getBeginDate(): string
+    {
+        return $this->beginDate;
+    }
 
 
-	function getBeginYear(): ?int
-	{
-		return $this->beginYear;
-	}
+    public function setBeginYear(int $beginYear)
+    {
+        $this->beginYear = $beginYear;
+    }
 
 
-	function setEndDate(string $endDate)
-	{
-		$this->endDate = $endDate;
-	}
+    public function getBeginYear(): ?int
+    {
+        return $this->beginYear;
+    }
 
 
-	function getEndDate(): string
-	{
-		return $this->endDate;
-	}
+    public function setEndDate(string $endDate)
+    {
+        $this->endDate = $endDate;
+    }
 
 
-	function setEndYear(int $endYear)
-	{
-		$this->endYear = $endYear;
-	}
+    public function getEndDate(): string
+    {
+        return $this->endDate;
+    }
 
 
-	function getEndYear(): ?int
-	{
-		return $this->endYear;
-	}
+    public function setEndYear(int $endYear)
+    {
+        $this->endYear = $endYear;
+    }
 
+
+    public function getEndYear(): ?int
+    {
+        return $this->endYear;
+    }
 }

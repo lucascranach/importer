@@ -3,438 +3,502 @@
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Entities;
 
 use CranachDigitalArchive\Importer\Interfaces\Entities\ILanguageBaseItem;
-use CranachDigitalArchive\Importer\Modules\Main\Entities\{
-    Person,
-    PersonName,
-    Title,
-    Dating,
-    ObjectReference,
-    AdditionalTextInformation,
-    Publication,
-    MetaReference,
-    CatalogWorkReference,
-    StructuredDimension,
-};
-
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\PersonName;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Title;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Dating;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\ObjectReference;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\AdditionalTextInformation;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Publication;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaReference;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\CatalogWorkReference;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\StructuredDimension;
 
 /**
  * Representing a single graphic and all its data
  * 	One instance containing only data for one language
  */
-class Graphic implements ILanguageBaseItem {
-
-	public $langCode = '<unknown language>';
-
-	public $involvedPersons = [];
-	public $involvedPersonsNames = []; // Evtl. Umbau notwendig
-
-	public $titles = [];
-	public $classification = null;
-	public $conditionLevel = 0;
-	public $objectName = '';
-	public $inventoryNumber = '';
-	public $objectId = null;
-	public $isVirtual = false;
-	public $dimensions = '';
-	public $dating = null;
-	public $description = '';
-	public $provenance = '';
-	public $medium = '';
-	public $signature = '';
-	public $inscription = '';
-	public $markings = '';
-	public $relatedWorks = '';
-	public $exhibitionHistory = '';
-	public $bibliography = '';
-	public $references = [
-		'reprints' => [],
-		'relatedWorks' => [],
-	];
-	public $additionalTextInformation = [];
-	public $publications = [];
-	public $keywords = [];
-	public $locations = [];
-	public $repository = '';
-	public $owner = '';
-	public $sortingNumber = '';
-	public $catalogWorkReferences = [];
-	public $structuredDimension = null;
-
-	public $images = null;
-
-	/* Awaited images structure if images exist
-		[
-			'infos' => [
-				'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
-			],
-			'sizes' => [
-				'xs' => [
-					'dimensions' => [ 'width' => 0, 'height' => 0 ],
-					'src' => '',
-				],
-				's' => [
-					'dimensions' => [ 'width' => 0, 'height' => 0 ],
-					'src' => '',
-				],
-				'm' => [
-					'dimensions' => [ 'width' => 0, 'height' => 0 ],
-					'src' => '',
-				],
-				'l' => [
-					'dimensions' => [ 'width' => 0, 'height' => 0 ],
-					'src' => '',
-				],
-				'xl' => [
-					'dimensions' => [ 'width' => 0, 'height' => 0 ],
-					'src' => '',
-				],
-			],
-		]
-	*/
+class Graphic implements ILanguageBaseItem
+{
+    public $langCode = '<unknown language>';
+
+    public $involvedPersons = [];
+    public $involvedPersonsNames = []; // Evtl. Umbau notwendig
+
+    public $titles = [];
+    public $classification = null;
+    public $conditionLevel = 0;
+    public $objectName = '';
+    public $inventoryNumber = '';
+    public $objectId = null;
+    public $isVirtual = false;
+    public $dimensions = '';
+    public $dating = null;
+    public $description = '';
+    public $provenance = '';
+    public $medium = '';
+    public $signature = '';
+    public $inscription = '';
+    public $markings = '';
+    public $relatedWorks = '';
+    public $exhibitionHistory = '';
+    public $bibliography = '';
+    public $references = [
+        'reprints' => [],
+        'relatedWorks' => [],
+    ];
+    public $additionalTextInformation = [];
+    public $publications = [];
+    public $keywords = [];
+    public $locations = [];
+    public $repository = '';
+    public $owner = '';
+    public $sortingNumber = '';
+    public $catalogWorkReferences = [];
+    public $structuredDimension = null;
+
+    public $images = null;
+
+    /* Awaited images structure if images exist
+        [
+            'infos' => [
+                'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
+            ],
+            'sizes' => [
+                'xs' => [
+                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                    'src' => '',
+                ],
+                's' => [
+                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                    'src' => '',
+                ],
+                'm' => [
+                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                    'src' => '',
+                ],
+                'l' => [
+                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                    'src' => '',
+                ],
+                'xl' => [
+                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                    'src' => '',
+                ],
+            ],
+        ]
+    */
+
+
+    public function __construct()
+    {
+    }
+
+
+    public function setLangCode(string $langCode)
+    {
+        $this->langCode = $langCode;
+    }
+
+
+    public function getLangCode(): string
+    {
+        return $this->langCode;
+    }
+
+
+    public function addPerson(Person $person)
+    {
+        $this->involvedPersons[] = $person;
+    }
+
+
+    public function getPersons(): array
+    {
+        $this->involvedPersons;
+    }
+
+
+    public function addPersonName(PersonName $personName)
+    {
+        $this->involvedPersonsNames[] = $personName;
+    }
 
 
-	function __construct() {
+    public function getPersonNames(): array
+    {
+        $this->involvedPersonsNames;
+    }
 
-	}
 
+    public function addTitle(Title $title)
+    {
+        $this->titles[] = $title;
+    }
 
-	function setLangCode(string $langCode) {
-		$this->langCode = $langCode;
-	}
 
+    public function getTitles(): array
+    {
+        return $this->titles;
+    }
 
-	function getLangCode(): string {
-		return $this->langCode;
-	}
 
+    public function setClassification(Classification $classification)
+    {
+        $this->classification = $classification;
+    }
 
-	function addPerson(Person $person) {
-		$this->involvedPersons[] = $person;
-	}
 
+    public function getClassification(): Classification
+    {
+        return $this->classification;
+    }
 
-	function getPersons(): array {
-		$this->involvedPersons;
-	}
 
+    public function setConditionLevel(int $conditionLevel)
+    {
+        $this->conditionLevel = $conditionLevel;
+    }
 
-	function addPersonName(PersonName $personName) {
-		$this->involvedPersonsNames[] = $personName;
-	}
 
+    public function getConditionLevel(): int
+    {
+        return $this->conditionLevel;
+    }
 
-	function getPersonNames(): array {
-		$this->involvedPersonsNames;
-	}
 
+    public function setObjectName(string $objectName)
+    {
+        $this->objectName = $objectName;
+    }
 
-	function addTitle(Title $title) {
-		$this->titles[] = $title;
-	}
 
+    public function getObjectName(): string
+    {
+        return $this->objectName;
+    }
 
-	function getTitles(): array {
-		return $this->titles;
-	}
 
+    public function setInventoryNumber(string $inventoryNumber)
+    {
+        $this->inventoryNumber = $inventoryNumber;
+    }
 
-	function setClassification(Classification $classification) {
-		$this->classification = $classification;
-	}
 
+    public function getInventoryNumber(): string
+    {
+        return $this->inventoryNumber;
+    }
 
-	function getClassification(): Classification {
-		return $this->classification;
-	}
 
+    public function setObjectId(int $objectId)
+    {
+        $this->objectId = $objectId;
+    }
 
-	function setConditionLevel(int $conditionLevel) {
-		$this->conditionLevel = $conditionLevel;
-	}
 
+    public function getObjectId(): int
+    {
+        return $this->objectId;
+    }
 
-	function getConditionLevel(): int {
-		return $this->conditionLevel;
-	}
 
+    public function setIsVirtual(bool $isVirtual)
+    {
+        $this->isVirtual = $isVirtual;
+    }
 
-	function setObjectName(string $objectName) {
-		$this->objectName = $objectName;
-	}
 
+    public function getIsVirtual(): bool
+    {
+        return $this->isVirtual;
+    }
 
-	function getObjectName(): string {
-		return $this->objectName;
-	}
 
+    public function setDimensions(string $dimensions)
+    {
+        $this->dimensions = $dimensions;
+    }
 
-	function setInventoryNumber(string $inventoryNumber) {
-		$this->inventoryNumber = $inventoryNumber;
-	}
 
+    public function getDimensions(): string
+    {
+        return $this->dimensions;
+    }
 
-	function getInventoryNumber(): string {
-		return $this->inventoryNumber;
-	}
 
+    public function setDating(Dating $dating)
+    {
+        $this->dating = $dating;
+    }
 
-	function setObjectId(int $objectId) {
-		$this->objectId = $objectId;
-	}
 
+    public function getDating(): ?Dating
+    {
+        return $this->dating;
+    }
 
-	function getObjectId(): int {
-		return $this->objectId;
-	}
 
+    public function setDescription(string $description)
+    {
+        $this->description = $description;
+    }
 
-	function setIsVirtual(bool $isVirtual) {
-		$this->isVirtual = $isVirtual;
-	}
 
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
 
-	function getIsVirtual(): bool {
-		return $this->isVirtual;
-	}
 
+    public function setProvenance(string $provenance)
+    {
+        $this->provenance = $provenance;
+    }
 
-	function setDimensions(string $dimensions) {
-		$this->dimensions = $dimensions;
-	}
 
+    public function getProvenance(): string
+    {
+        return $this->provenance;
+    }
 
-	function getDimensions(): string {
-		return $this->dimensions;
-	}
 
+    public function setMedium(string $medium)
+    {
+        $this->medium = $medium;
+    }
 
-	function setDating(Dating $dating) {
-		$this->dating = $dating;
-	}
 
+    public function getMedium(): string
+    {
+        return $this->medium;
+    }
 
-	function getDating(): ?Dating {
-		return $this->dating;
-	}
 
+    public function setSignature(string $signature)
+    {
+        $this->signature = $signature;
+    }
 
-	function setDescription(string $description) {
-		$this->description = $description;
-	}
 
+    public function getSignature(): string
+    {
+        return $this->signature;
+    }
 
-	function getDescription(): string {
-		return $this->description;
-	}
 
+    public function setInscription(string $inscription)
+    {
+        $this->inscription = $inscription;
+    }
 
-	function setProvenance(string $provenance) {
-		$this->provenance = $provenance;
-	}
 
+    public function getInscription(): string
+    {
+        return $this->inscription;
+    }
 
-	function getProvenance(): string {
-		return $this->provenance;
-	}
 
+    public function setMarkings(string $markings)
+    {
+        $this->markings = $markings;
+    }
 
-	function setMedium(string $medium) {
-		$this->medium = $medium;
-	}
 
+    public function getMarkings(): string
+    {
+        return $this->markings;
+    }
 
-	function getMedium(): string {
-		return $this->medium;
-	}
 
+    public function setRelatedWorks(string $relatedWorks)
+    {
+        $this->relatedWorks = $relatedWorks;
+    }
 
-	function setSignature(string $signature) {
-		$this->signature = $signature;
-	}
 
+    public function getRelatedWorks(): string
+    {
+        return $this->relatedWorks;
+    }
 
-	function getSignature(): string {
-		return $this->signature;
-	}
 
+    public function setExhibitionHistory(string $exhibitionHistory)
+    {
+        $this->exhibitionHistory = $exhibitionHistory;
+    }
 
-	function setInscription(string $inscription) {
-		$this->inscription = $inscription;
-	}
 
+    public function getExhibitionHistory(): string
+    {
+        return $this->exhibitionHistory;
+    }
 
-	function getInscription(): string {
-		return $this->inscription;
-	}
 
+    public function setBibliography(string $bibliography)
+    {
+        $this->bibliography = $bibliography;
+    }
 
-	function setMarkings(string $markings) {
-		$this->markings = $markings;
-	}
 
+    public function getBibliography(): string
+    {
+        return $this->bibliography;
+    }
 
-	function getMarkings(): string {
-		return $this->markings;
-	}
 
+    public function addReprintReference(ObjectReference $reference)
+    {
+        $this->references['reprints'][] = $reference;
+    }
 
-	function setRelatedWorks(string $relatedWorks) {
-		$this->relatedWorks = $relatedWorks;
-	}
 
+    public function setReprintReferences(array $references)
+    {
+        $this->references['reprints'] = $references;
+    }
 
-	function getRelatedWorks(): string {
-		return $this->relatedWorks;
-	}
 
+    public function getReprintReferences(): array
+    {
+        return $this->references['reprints'];
+    }
 
-	function setExhibitionHistory(string $exhibitionHistory) {
-		$this->exhibitionHistory = $exhibitionHistory;
-	}
 
+    public function addRelatedWorkReference(ObjectReference $reference)
+    {
+        $this->references['relatedWorks'][] = $reference;
+    }
 
-	function getExhibitionHistory(): string {
-		return $this->exhibitionHistory;
-	}
 
+    public function setRelatedWorkReferences(array $references)
+    {
+        $this->references['relatedWorks'] = $references;
+    }
 
-	function setBibliography(string $bibliography) {
-		$this->bibliography = $bibliography;
-	}
 
+    public function getRelatedWorkReferences(): array
+    {
+        return $this->references['relatedWorks'];
+    }
 
-	function getBibliography(): string {
-		return $this->bibliography;
-	}
 
+    public function addAdditionalTextInformation(AdditionalTextInformation $additionalTextInformation)
+    {
+        $this->additionalTextInformation[] = $additionalTextInformation;
+    }
 
-	function addReprintReference(ObjectReference $reference) {
-		$this->references['reprints'][] = $reference;
-	}
 
+    public function getAdditionalTextInformations(): array
+    {
+        return $this->additionalTextInformation;
+    }
 
-	function setReprintReferences(array $references) {
-		$this->references['reprints'] = $references;
-	}
 
+    public function addPublication(Publication $publication)
+    {
+        $this->publications[] = $publication;
+    }
 
-	function getReprintReferences(): array {
-		return $this->references['reprints'];
-	}
 
+    public function getPublications(): array
+    {
+        return $this->publications;
+    }
 
-	function addRelatedWorkReference(ObjectReference $reference) {
-		$this->references['relatedWorks'][] = $reference;
-	}
 
+    public function addKeyword(MetaReference $keyword)
+    {
+        $this->keywords[] = $keyword;
+    }
 
-	function setRelatedWorkReferences(array $references) {
-		$this->references['relatedWorks'] = $references;
-	}
 
+    public function getKeywords(): array
+    {
+        return $this->keywords;
+    }
 
-	function getRelatedWorkReferences(): array {
-		return $this->references['relatedWorks'];
-	}
 
+    public function addLocation(MetaReference $location)
+    {
+        $this->locations[] = $location;
+    }
 
-	function addAdditionalTextInformation(AdditionalTextInformation $additionalTextInformation) {
-		$this->additionalTextInformation[] = $additionalTextInformation;
-	}
 
+    public function getLocations(): array
+    {
+        return $this->locations;
+    }
 
-	function getAdditionalTextInformations(): array {
-		return $this->additionalTextInformation;
-	}
 
+    public function setRepository(string $repository)
+    {
+        $this->repository = $repository;
+    }
 
-	function addPublication(Publication $publication) {
-		$this->publications[] = $publication;
-	}
 
+    public function getRepository(): string
+    {
+        return $this->repository;
+    }
 
-	function getPublications(): array {
-		return $this->publications;
-	}
 
+    public function setOwner(string $owner)
+    {
+        $this->owner = $owner;
+    }
 
-	function addKeyword(MetaReference $keyword) {
-		$this->keywords[] = $keyword;
-	}
 
+    public function getOwner(): string
+    {
+        return $this->owner;
+    }
 
-	function getKeywords(): array {
-		return $this->keywords;
-	}
 
+    public function setSortingNumber(string $sortingNumber)
+    {
+        $this->sortingNumber = $sortingNumber;
+    }
 
-	function addLocation(MetaReference $location) {
-		$this->locations[] = $location;
-	}
 
+    public function getSortingNumber(): string
+    {
+        return $this->sortingNumber;
+    }
 
-	function getLocations(): array {
-		return $this->locations;
-	}
 
+    public function addCatalogWorkReference(CatalogWorkReference $catalogWorkReference)
+    {
+        $this->catalogWorkReferences[] = $catalogWorkReference;
+    }
 
-	function setRepository(string $repository) {
-		$this->repository = $repository;
-	}
 
+    public function getCatalogWorkReferences(): array
+    {
+        return $this->catalogWorkReferences;
+    }
 
-	function getRepository(): string {
-		return $this->repository;
-	}
 
+    public function setStructuredDimension(StructuredDimension $structuredDimension)
+    {
+        $this->structuredDimension = $structuredDimension;
+    }
 
-	function setOwner(string $owner) {
-		$this->owner = $owner;
-	}
 
+    public function getStructuredDimension(): StructuredDimension
+    {
+        return $this->structuredDimension;
+    }
 
-	function getOwner(): string {
-		return $this->owner;
-	}
 
+    public function setImages(?array $images)
+    {
+        $this->images = $images;
+    }
 
-	function setSortingNumber(string $sortingNumber) {
-		$this->sortingNumber = $sortingNumber;
-	}
 
-
-	function getSortingNumber(): string {
-		return $this->sortingNumber;
-	}
-
-
-	function addCatalogWorkReference(CatalogWorkReference $catalogWorkReference) {
-		$this->catalogWorkReferences[] = $catalogWorkReference;
-	}
-
-
-	function getCatalogWorkReferences(): array {
-		return $this->catalogWorkReferences;
-	}
-
-
-	function setStructuredDimension(StructuredDimension $structuredDimension) {
-		$this->structuredDimension = $structuredDimension;
-	}
-
-
-	function getStructuredDimension(): StructuredDimension {
-		return $this->structuredDimension;
-	}
-
-
-	function setImages(?array $images) {
-		$this->images = $images;
-	}
-
-
-	function getImages(): array {
-		return $this->images;
-	}
-
+    public function getImages(): array
+    {
+        return $this->images;
+    }
 }

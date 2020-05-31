@@ -2,72 +2,80 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Main\Entities;
 
-
 /**
  * Representing a single historic event information
  *  Used for dating purposes
  */
-class HistoricEventInformation {
-
-	public $eventType = '';
-	public $text = '';
-	public $begin = null;
-	public $end = null;
-	public $remarks = '';
-
-
-	function __construct() {
-
-	}
+class HistoricEventInformation
+{
+    public $eventType = '';
+    public $text = '';
+    public $begin = null;
+    public $end = null;
+    public $remarks = '';
 
 
-	function setEventType(string $eventType) {
-		$this->eventType = $eventType;
-	}
+    public function __construct()
+    {
+    }
 
 
-	function getEventType(): string {
-		return $this->eventType;
-	}
+    public function setEventType(string $eventType)
+    {
+        $this->eventType = $eventType;
+    }
 
 
-	function setText(string $text) {
-		$this->text = $text;
-	}
+    public function getEventType(): string
+    {
+        return $this->eventType;
+    }
 
 
-	function getText(): string {
-		return $this->text;
-	}
+    public function setText(string $text)
+    {
+        $this->text = $text;
+    }
 
 
-	function setBegin(int $begin) {
-		$this->begin = $begin;
-	}
+    public function getText(): string
+    {
+        return $this->text;
+    }
 
 
-	function getBegin(): ?int {
-		return $this->begin;
-	}
+    public function setBegin(int $begin)
+    {
+        $this->begin = $begin;
+    }
 
 
-	function setEnd(int $end) {
-		$this->end = $end;
-	}
+    public function getBegin(): ?int
+    {
+        return $this->begin;
+    }
 
 
-	function getEnd(): ?int {
-		return $this->end;
-	}
+    public function setEnd(int $end)
+    {
+        $this->end = $end;
+    }
 
 
-	function setRemarks(string $remarks) {
-		$this->remarks = $remarks;
-	}
+    public function getEnd(): ?int
+    {
+        return $this->end;
+    }
 
 
-	function getRemarks(): string {
-		return $this->remarks;
-	}
+    public function setRemarks(string $remarks)
+    {
+        $this->remarks = $remarks;
+    }
 
+
+    public function getRemarks(): string
+    {
+        return $this->remarks;
+    }
 }

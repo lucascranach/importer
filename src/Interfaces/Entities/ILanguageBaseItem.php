@@ -2,14 +2,12 @@
 
 namespace CranachDigitalArchive\Importer\Interfaces\Entities;
 
-
 /**
  * Representing a generalized, language depending item
  */
-interface ILanguageBaseItem extends IBaseItem {
+interface ILanguageBaseItem extends IBaseItem
+{
+    public function setLangCode(string $langCode);
 
-	function setLangCode(string $langCode);
-
-	function getLangCode(): string;
-
+    public function getLangCode(): string;
 }
