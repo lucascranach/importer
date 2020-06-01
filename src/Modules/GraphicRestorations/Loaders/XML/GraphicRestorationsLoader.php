@@ -8,8 +8,11 @@ use XMLReader;
 use SimpleXMLElement;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Interfaces\Loaders\IFileLoader;
-use CranachDigitalArchive\Importer\Modules\GraphicRestorations\Entities\GraphicRestoration;
-use CranachDigitalArchive\Importer\Modules\GraphicRestorations\Inflators\XML\GraphicRestorationsInflator;
+
+use CranachDigitalArchive\Importer\Modules\GraphicRestorations\{
+	Entities\GraphicRestoration,
+	Inflators\XML\GraphicRestorationInflator,
+};
 
 /**
  * GraphicsRestoration job on a xml file base
@@ -89,7 +92,7 @@ class GraphicRestorationsLoader extends Producer implements IFileLoader
         $xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 
         /* Moved the inflation action(s) into its own class */
-        GraphicRestorationsInflator::inflate($xmlNode, $graphicRestoration);
+        GraphicRestorationInflator::inflate($xmlNode, $graphicRestoration);
 
         /* Passing the graphic objects to the pipeline */
         $this->next($graphicRestoration);

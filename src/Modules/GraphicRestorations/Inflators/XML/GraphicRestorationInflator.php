@@ -15,7 +15,7 @@ use CranachDigitalArchive\Importer\Modules\GraphicRestorations\Entities\Signatur
  * Graphics Restoration inflator used to inflate graphic restoration instances
  *    by traversing the xml element node and extracting the data in a structured way
  */
-class GraphicRestorationsInflator implements IInflator
+class GraphicRestorationInflator implements IInflator
 {
     private static $nsPrefix = 'ns';
     private static $ns = 'urn:crystal-reports:schemas:report-detail';
