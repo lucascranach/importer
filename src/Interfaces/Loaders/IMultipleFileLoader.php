@@ -7,5 +7,5 @@ namespace CranachDigitalArchive\Importer\Interfaces\Loaders;
  */
 interface IMultipleFileLoader extends ILoader
 {
-    public function __construct(array $sourceFilePaths);
+    public static function withSourcesAt(array $sourceFilePaths);
 }
