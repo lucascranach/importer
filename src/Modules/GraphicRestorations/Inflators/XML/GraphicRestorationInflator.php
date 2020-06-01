@@ -400,8 +400,8 @@ class GraphicRestorationInflator implements IInflator
         $nsPrefix = self::$nsPrefix;
         $xpathStr = './/' . implode('/', array_map(
             function ($val) use ($nsPrefix) {
-                    return empty($val) ? $val : $nsPrefix . ':' . $val;
-                },
+                return empty($val) ? $val : $nsPrefix . ':' . $val;
+            },
             $splitPath
         ));
 

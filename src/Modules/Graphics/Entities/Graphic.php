@@ -3,19 +3,16 @@
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Entities;
 
 use CranachDigitalArchive\Importer\Interfaces\Entities\ILanguageBaseItem;
-use CranachDigitalArchive\Importer\Modules\Main\Entities\{
-	Person,
-	PersonName,
-	Title,
-	Dating,
-	ObjectReference,
-	AdditionalTextInformation,
-	Publication,
-	MetaReference,
-	CatalogWorkReference,
-	StructuredDimension,
-};
-
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\PersonName;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Title;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Dating;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\ObjectReference;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\AdditionalTextInformation;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Publication;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaReference;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\CatalogWorkReference;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\StructuredDimension;
 
 /**
  * Representing a single graphic and all its data

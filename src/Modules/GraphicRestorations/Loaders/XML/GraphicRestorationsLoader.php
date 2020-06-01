@@ -9,13 +9,11 @@ use SimpleXMLElement;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Interfaces\Loaders\IFileLoader;
 
-use CranachDigitalArchive\Importer\Modules\GraphicRestorations\{
-	Entities\GraphicRestoration,
-	Inflators\XML\GraphicRestorationInflator,
-};
+use CranachDigitalArchive\Importer\Modules\GraphicRestorations\Entities\GraphicRestoration;
+use CranachDigitalArchive\Importer\Modules\GraphicRestorations\Inflators\XML\GraphicRestorationInflator;
 
 /**
- * GraphicsRestoration job on a xml file base
+ * GraphicsRestoration loader on a xml file base
  */
 class GraphicRestorationsLoader extends Producer implements IFileLoader
 {

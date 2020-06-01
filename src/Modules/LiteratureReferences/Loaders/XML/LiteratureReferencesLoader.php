@@ -12,7 +12,7 @@ use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator;
 
 /**
- * LitereatureReferences job on a xml file base
+ * LitereatureReferences loader on a xml file base
  */
 class LiteratureReferencesLoader extends Producer implements IFileLoader
 {

@@ -13,7 +13,7 @@ use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Inflators\XML\GraphicInflator;
 
 /**
- * Graphics job on a xml file base
+ * Graphics loader on a xml file base
  */
 class GraphicsLoader extends Producer implements IFileLoader
 {
