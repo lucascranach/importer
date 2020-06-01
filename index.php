@@ -17,6 +17,9 @@ use CranachDigitalArchive\Importer\Modules\{
 
 	LiteratureReferences\Loaders\XML\LiteratureReferencesLoader,
 	LiteratureReferences\Exporters\LiteratureReferencesJSONExporter,
+
+	Paintings\Loaders\XML\PaintingsLoader,
+	Paintings\Exporters\PaintingsJSONLangExporter,
 };
 
 /* Graphics */
@@ -64,4 +67,22 @@ $literatureReferencesLoader->pipe(
 Pipeline::new()->withNodes(
 	$literatureReferencesLoader,
 	$literatureReferencesDestination,
+)->start();
+
+
+/* Paintings */
+$paintingsLoader = PaintingsLoader::withSourcesAt([
+	'./input/20191122/CDA_Datenübersicht_P1_20191122.xml',
+	'./input/20191122/CDA_Datenübersicht_P2_20191122.xml',
+	'./input/20191122/CDA_Datenübersicht_P3_20191122.xml',
+]);
+$paintingsDestination = PaintingsJSONLangExporter::withDestinationAt('./output/20191122/cda-paintings-v2.json');
+
+$paintingsLoader->pipe(
+	$paintingsDestination,
+);
+
+Pipeline::new()->withNodes(
+	$paintingsLoader,
+	$paintingsDestination,
 )->start();
