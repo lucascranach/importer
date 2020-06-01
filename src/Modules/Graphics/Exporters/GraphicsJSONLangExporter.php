@@ -86,6 +86,8 @@ class GraphicsJSONLangExporter extends Consumer implements IFileExporter
         }
 
         $this->done = true;
+
+        $this->langBuckets = [];
     }
 
 

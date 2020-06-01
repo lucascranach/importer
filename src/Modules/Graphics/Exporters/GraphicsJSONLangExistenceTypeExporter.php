@@ -146,6 +146,9 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
         }
 
         $this->done = true;
+
+        $this->langBuckets = [];
+        $this->inventoryNumberList = [];
     }
 
 

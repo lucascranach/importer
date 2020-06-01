@@ -66,6 +66,8 @@ class LiteratureReferencesJSONExporter extends Consumer implements IFileExporter
         file_put_contents($this->destFilepath, $data);
 
         $this->done = true;
+
+        $this->items = [];
     }
 
 
