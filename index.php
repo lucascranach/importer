@@ -16,6 +16,8 @@ use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\Lite
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\LiteratureReferencesJSONExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsLoader;
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsJSONLangExporter;
+use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader;
+use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
 
 /* Graphics */
 $graphicsLoader = GraphicsLoader::withSourceAt('./input/20191122/CDA-GR_Datenuebersicht_20191122.xml');
@@ -80,4 +82,17 @@ $paintingsLoader->pipe(
 Pipeline::new()->withNodes(
     $paintingsLoader,
     $paintingsDestination,
+)->start();
+
+
+$thesaurusLoader = ThesaurusLoader::withSourceAt('./input/20191122/CDA_Thesaurus_20191021.xml');
+$thesaurusDestination = ThesaurusJSONExporter::withDestinationAt('./output/20191122/cda-thesaurus-v2.json');
+
+$thesaurusLoader->pipe(
+	$thesaurusDestination,
+);
+
+Pipeline::new()->withNodes(
+	$thesaurusLoader,
+	$thesaurusDestination,
 )->start();
