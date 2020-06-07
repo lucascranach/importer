@@ -1296,11 +1296,11 @@ class PaintingInflator implements IInflator
                 } elseif (self::$locationLanguageTypes['en'] === $locationTypeStr) {
                     $paintingEn->addLocation($metaReference);
                 } elseif (self::$locationLanguageTypes['not_assigned'] === $locationTypeStr) {
-                    echo '  Unassigned location type for object ' . $graphicDe->getInventoryNumber() . "\n";
+                    echo '  Unassigned location type for object ' . $paintingDe->getInventoryNumber() . "\n";
                     $paintingDe->addLocation($metaReference);
                     $paintingEn->addLocation($metaReference);
                 } else {
-                    echo '  Unknown location type: ' . $textTypeStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
+                    echo '  Unknown location type: ' . $locationTypeStr . ' for object ' . $paintingDe->getInventoryNumber() . "\n";
                     $paintingDe->addLocation($metaReference);
                     $paintingEn->addLocation($metaReference);
                 }
