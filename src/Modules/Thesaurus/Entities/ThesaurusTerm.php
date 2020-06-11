@@ -9,48 +9,48 @@ use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
  */
 class ThesaurusTerm
 {
-	public $term = '';
-	public $alt = [];
-	public $subTerms = [];
+    public $term = '';
+    public $alt = [];
+    public $subTerms = [];
 
 
-	public function __construct()
-	{
-	}
+    public function __construct()
+    {
+    }
 
 
-	public function setTerm(string $term)
-	{
-		$this->term = $term;
-	}
+    public function setTerm(string $term)
+    {
+        $this->term = $term;
+    }
 
 
-	public function getTerm(string $term)
-	{
-		return $this->term;
-	}
+    public function getTerm(string $term)
+    {
+        return $this->term;
+    }
 
 
-	public function addAlt(string $key, $value)
-	{
-		$this->alt[$key] = $value;
-	}
+    public function addAlt(string $key, $value)
+    {
+        $this->alt[$key] = $value;
+    }
 
 
-	public function getAlts(): array
-	{
-		return $this->alt;
-	}
+    public function getAlts(): array
+    {
+        return $this->alt;
+    }
 
 
-	public function addSubTerm(ThesaurusTerm $term)
-	{
-		$this->subTerms[] = $term;
-	}
+    public function addSubTerm(ThesaurusTerm $term)
+    {
+        $this->subTerms[] = $term;
+    }
 
 
-	public function getSubTerms(): array
-	{
-		return $this->subTerms;
-	}
+    public function getSubTerms(): array
+    {
+        return $this->subTerms;
+    }
 }

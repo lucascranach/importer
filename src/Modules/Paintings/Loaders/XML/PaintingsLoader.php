@@ -43,7 +43,7 @@ class PaintingsLoader extends Producer implements IMultipleFileLoader
         /* We have to go through all given files */
         foreach ($this->sourceFilePaths as $sourceFilePath) {
             $this->loadNextFile($sourceFilePath);
-			$this->checkXMlReaderInitialization();
+            $this->checkXMlReaderInitialization();
 
             echo 'Processing paintings file : ' . $sourceFilePath . "\n";
 

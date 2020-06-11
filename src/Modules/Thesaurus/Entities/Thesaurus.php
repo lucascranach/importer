@@ -9,22 +9,22 @@ use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
  */
 class Thesaurus implements IBaseItem
 {
-	public $rootTerms = [];
+    public $rootTerms = [];
 
 
-	public function __construct()
-	{
-	}
+    public function __construct()
+    {
+    }
 
 
-	public function addRootTerm(ThesaurusTerm $term)
-	{
-		$this->rootTerms[] = $term;
-	}
+    public function addRootTerm(ThesaurusTerm $term)
+    {
+        $this->rootTerms[] = $term;
+    }
 
 
-	public function getRootTerms(): array
-	{
-		return $this->rootTerms;
-	}
+    public function getRootTerms(): array
+    {
+        return $this->rootTerms;
+    }
 }

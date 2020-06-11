@@ -89,10 +89,10 @@ $thesaurusLoader = ThesaurusLoader::withSourceAt('./input/20191122/CDA_Thesaurus
 $thesaurusDestination = ThesaurusJSONExporter::withDestinationAt('./output/20191122/cda-thesaurus-v2.json');
 
 $thesaurusLoader->pipe(
-	$thesaurusDestination,
+    $thesaurusDestination,
 );
 
 Pipeline::new()->withNodes(
-	$thesaurusLoader,
-	$thesaurusDestination,
+    $thesaurusLoader,
+    $thesaurusDestination,
 )->start();

@@ -1,17 +1,17 @@
 <?php
 
 /*
-	@TODO: Introduce Pipeline-Class to add Input, Ops and Destinations to; process can only be started through the pipeline
-	@TODO: Use src and sink as Input- and Output-Fields?
+    @TODO: Introduce Pipeline-Class to add Input, Ops and Destinations to; process can only be started through the pipeline
+    @TODO: Use src and sink as Input- and Output-Fields?
 */
 
 
 /*
 $litCollector = LiteratureCollector::withLoader(
-	LiteratureLoader::withSourceAt('../00_rawContent/lit.xml'),
+    LiteratureLoader::withSourceAt('../00_rawContent/lit.xml'),
 );
 $thesCollector = ThesaurusCollector::withLoader(
-	ThesaurusLoader::withSourceAt('../00_rawContent/thesaurus.xml'),
+    ThesaurusLoader::withSourceAt('../00_rawContent/thesaurus.xml'),
 );
 */
 
@@ -23,7 +23,7 @@ $thesaurusCollector = ThesaurusLoader::withSourceAt('../00_rawContent/thesaurus.
 
 $graphicsCollector = GraphicsLoader::withSourceAt('../00_rawContent/graphics.xml')->pipe(
     GraphicConditionDeterminerOp::new(),
-	GraphicExternalImageExtenderOp::withCacheAt('./cache'),
+    GraphicExternalImageExtenderOp::withCacheAt('./cache'),
     GraphicsCollector::new(),
 );
 
@@ -34,11 +34,11 @@ $graphicsCollector->pipe($graphicsExtender);
 $thesaurusCollector->pipe($graphicsExtender);
 
 $graphicsExtender->pipe(
-	GraphicsOutput::withDestinationAt('../output/graphics.simple.json'),
+    GraphicsOutput::withDestinationAt('../output/graphics.simple.json'),
 );
 
 $graphicsExtender->pipe(
-	GraphicsOutput::withDestinationAt('../output/graphics.extended.json'),
+    GraphicsOutput::withDestinationAt('../output/graphics.extended.json'),
 );
 
 $thesaurusCollector->pipe(

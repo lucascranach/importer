@@ -14,50 +14,50 @@ use CranachDigitalArchive\Importer\Modules\Thesaurus\Entities\Thesaurus;
  */
 class ThesaurusLoader extends Producer implements IFileLoader
 {
-	private $sourceFilePath = '';
-	private $rootElementName = 'root';
+    private $sourceFilePath = '';
+    private $rootElementName = 'root';
 
 
-	private function __construct()
-	{
-	}
+    private function __construct()
+    {
+    }
 
 
-	public static function withSourceAt(string $sourceFilePath)
-	{
-		$loader = new self;
+    public static function withSourceAt(string $sourceFilePath)
+    {
+        $loader = new self;
 
-		$loader->sourceFilePath = $sourceFilePath;
+        $loader->sourceFilePath = $sourceFilePath;
 
-		if (!file_exists($sourceFilePath)) {
-			throw new Error('Thesaurus reference xml source file does not exit: ' . $sourceFilePath);
-		}
+        if (!file_exists($sourceFilePath)) {
+            throw new Error('Thesaurus reference xml source file does not exit: ' . $sourceFilePath);
+        }
 
-		return $loader;
-	}
+        return $loader;
+    }
 
 
-	public function run()
-	{
-		echo 'Processing thesaurus file : ' . $this->sourceFilePath . "\n";
+    public function run()
+    {
+        echo 'Processing thesaurus file : ' . $this->sourceFilePath . "\n";
 
-		$thesaurusContent = file_get_contents($this->sourceFilePath);
-		$xmlNode = new SimpleXMLElement($thesaurusContent);
-		unset($thesaurusContent);
+        $thesaurusContent = file_get_contents($this->sourceFilePath);
+        $xmlNode = new SimpleXMLElement($thesaurusContent);
+        unset($thesaurusContent);
 
-		if ($xmlNode->getName() !== $this->rootElementName) {
-			throw new Error('Unexpected root element in thesaurus reference xml source file!');
-		}
+        if ($xmlNode->getName() !== $this->rootElementName) {
+            throw new Error('Unexpected root element in thesaurus reference xml source file!');
+        }
 
-		$thesaurus = new Thesaurus;
+        $thesaurus = new Thesaurus;
 
-		ThesaurusInflator::inflate($xmlNode, $thesaurus);
+        ThesaurusInflator::inflate($xmlNode, $thesaurus);
 
-		unset($xmlElement);
+        unset($xmlElement);
 
-		$this->next($thesaurus);
+        $this->next($thesaurus);
 
-		/* Signaling that we are done reading in the xml */
-		$this->notifyDone();
-	}
+        /* Signaling that we are done reading in the xml */
+        $this->notifyDone();
+    }
 }

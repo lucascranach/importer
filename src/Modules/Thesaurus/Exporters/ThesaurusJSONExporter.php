@@ -14,68 +14,68 @@ use CranachDigitalArchive\Importer\Pipeline\Consumer;
  */
 class ThesaurusJSONExporter extends Consumer implements IFileExporter
 {
-	private $destFilepath = null;
-	private $item = null;
-	private $done = false;
+    private $destFilepath = null;
+    private $item = null;
+    private $done = false;
 
 
-	private function __construct()
-	{
-	}
+    private function __construct()
+    {
+    }
 
 
-	public static function withDestinationAt(string $destFilepath)
-	{
-		$exporter = new self();
-		$exporter->destFilepath = $destFilepath;
-		return $exporter;
-	}
+    public static function withDestinationAt(string $destFilepath)
+    {
+        $exporter = new self();
+        $exporter->destFilepath = $destFilepath;
+        return $exporter;
+    }
 
 
-	public function handleItem($item): bool
-	{
-		if (!($item instanceof Thesaurus)) {
-			throw new Error('Pushed item is not of expected class \'Thesaurus\'');
-		}
+    public function handleItem($item): bool
+    {
+        if (!($item instanceof Thesaurus)) {
+            throw new Error('Pushed item is not of expected class \'Thesaurus\'');
+        }
 
-		if ($this->done) {
-			throw new \Error('Can\'t push more items after done() was called!');
-		}
+        if ($this->done) {
+            throw new \Error('Can\'t push more items after done() was called!');
+        }
 
-		$this->item = $item;
+        $this->item = $item;
 
-		return true;
-	}
-
-
-	public function isDone(): bool
-	{
-		return $this->done;
-	}
+        return true;
+    }
 
 
-	public function done(ProducerInterface $producer)
-	{
-		if (is_null($this->destFilepath)) {
-			throw new \Error('No filepath for JSON thesaurus export set!');
-		}
-
-		$data = json_encode($this->item, JSON_PRETTY_PRINT);
-		$dirname = dirname($this->destFilepath);
-
-		if (!file_exists($dirname)) {
-			mkdir($dirname, 0777, true);
-		}
-
-		file_put_contents($this->destFilepath, $data);
-
-		$this->done = true;
-		$this->item = null;
-	}
+    public function isDone(): bool
+    {
+        return $this->done;
+    }
 
 
-	public function error($error)
-	{
-		echo get_class($this) . ": Error -> " . $error . "\n";
-	}
+    public function done(ProducerInterface $producer)
+    {
+        if (is_null($this->destFilepath)) {
+            throw new \Error('No filepath for JSON thesaurus export set!');
+        }
+
+        $data = json_encode($this->item, JSON_PRETTY_PRINT);
+        $dirname = dirname($this->destFilepath);
+
+        if (!file_exists($dirname)) {
+            mkdir($dirname, 0777, true);
+        }
+
+        file_put_contents($this->destFilepath, $data);
+
+        $this->done = true;
+        $this->item = null;
+    }
+
+
+    public function error($error)
+    {
+        echo get_class($this) . ": Error -> " . $error . "\n";
+    }
 }
