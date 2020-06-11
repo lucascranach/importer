@@ -13,9 +13,15 @@
         "ext-dom": "*",
         "ext-simplexml": "*"
     },
+    "scripts": {
+         "fix": "php-cs-fixer fix ."
+    },
     "autoload": {
         "psr-4": {
             "CranachDigitalArchive\\Importer\\": "src/"
         }
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16"
     }
 }
