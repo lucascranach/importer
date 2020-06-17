@@ -31,8 +31,13 @@ class PaintingsLoader extends Producer implements IMultipleFileLoader
     public static function withSourcesAt(array $sourceFilePaths)
     {
         $loader = new self;
-
         $loader->sourceFilePaths = $sourceFilePaths;
+
+        foreach ($sourceFilePaths as $sourceFilePath) {
+            if (!file_exists($sourceFilePath)) {
+                throw new Error('Paintings xml source file does not exit: ' . $sourceFilePath);
+            }
+        }
 
         return $loader;
     }

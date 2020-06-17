@@ -30,7 +30,7 @@ class ThesaurusLoader extends Producer implements IFileLoader
         $loader->sourceFilePath = $sourceFilePath;
 
         if (!file_exists($sourceFilePath)) {
-            throw new Error('Thesaurus reference xml source file does not exit: ' . $sourceFilePath);
+            throw new Error('Thesaurus xml source file does not exit: ' . $sourceFilePath);
         }
 
         return $loader;

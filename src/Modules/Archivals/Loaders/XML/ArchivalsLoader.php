@@ -32,28 +32,32 @@ class ArchivalsLoader extends Producer implements IFileLoader
         $loader->xmlReader = new XMLReader();
         $loader->sourceFilePath = $sourceFilePath;
 
-        if (!$loader->xmlReader->open($loader->sourceFilePath)) {
-            throw new Error('Could\'t open archivals xml source file: ' . $loader->sourceFilePath);
+        if (!file_exists($sourceFilePath)) {
+            throw new Error('Archivals xml source file does not exit: ' . $sourceFilePath);
         }
-
-        $loader->xmlReader->next();
-
-        if ($loader->xmlReader->nodeType !== XMLReader::ELEMENT
-            || $loader->xmlReader->name !== $loader->rootElementName) {
-            throw new Error('First element is not expected \'' . $loader->rootElementName . '\'');
-        }
-
-        /* Entering the root node */
-        $loader->xmlReader->read();
 
         return $loader;
     }
 
     public function run()
     {
+        $this->checkXMlReaderInitialization();
+
+        if (!$this->xmlReader->open($this->sourceFilePath)) {
+            throw new Error('Could\'t open archivals xml source file: ' . $this->sourceFilePath);
+        }
+
         echo 'Processing archivals file : ' . $this->sourceFilePath . "\n";
 
-        $this->checkXMlReaderInitialization();
+        $this->xmlReader->next();
+
+        if ($this->xmlReader->nodeType !== XMLReader::ELEMENT
+            || $this->xmlReader->name !== $this->rootElementName) {
+            throw new Error('First element is not expected \'' . $this->rootElementName . '\'');
+        }
+
+        /* Entering the root node */
+        $this->xmlReader->read();
 
         while ($this->processNextItem()) {
         }

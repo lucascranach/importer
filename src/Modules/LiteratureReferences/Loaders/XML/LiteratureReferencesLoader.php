@@ -19,7 +19,7 @@ class LiteratureReferencesLoader extends Producer implements IFileLoader
     private $xmlReader = null;
     private $rootElementName = 'CrystalReport';
     private $literatureReferenceElementName = 'Group';
-    private $pipeline = null;
+    private $sourceFilePath = '';
 
     public function __construct()
     {
@@ -29,24 +29,12 @@ class LiteratureReferencesLoader extends Producer implements IFileLoader
     public static function withSourceAt(string $sourceFilePath)
     {
         $loader = new self;
-
         $loader->xmlReader = new XMLReader();
+        $loader->sourceFilePath = $sourceFilePath;
 
-        if (!$loader->xmlReader->open($sourceFilePath)) {
-            throw new Error('Could\'t open literature reference xml source file: ' . $sourceFilePath);
+        if (!file_exists($sourceFilePath)) {
+            throw new Error('LiteratureReferences xml source file does not exit: ' . $sourceFilePath);
         }
-
-        echo 'Processing literature references file : ' . $sourceFilePath . "\n";
-
-        $loader->xmlReader->next();
-
-        if ($loader->xmlReader->nodeType !== XMLReader::ELEMENT
-            || $loader->xmlReader->name !== $loader->rootElementName) {
-            throw new Error('First element is not expected \'' . $loader->rootElementName . '\'');
-        }
-
-        /* Entering the root node */
-        $loader->xmlReader->read();
 
         return $loader;
     }
@@ -55,6 +43,22 @@ class LiteratureReferencesLoader extends Producer implements IFileLoader
     public function run()
     {
         $this->checkXMlReaderInitialization();
+
+        if (!$this->xmlReader->open($this->sourceFilePath)) {
+            throw new Error('Could\'t open literature reference xml source file: ' . $this->sourceFilePath);
+        }
+
+        echo 'Processing literature references file : ' . $this->sourceFilePath . "\n";
+
+        $this->xmlReader->next();
+
+        if ($this->xmlReader->nodeType !== XMLReader::ELEMENT
+            || $this->xmlReader->name !== $this->rootElementName) {
+            throw new Error('First element is not expected \'' . $this->rootElementName . '\'');
+        }
+
+        /* Entering the root node */
+        $this->xmlReader->read();
 
         while ($this->processNextItem()) {
         }

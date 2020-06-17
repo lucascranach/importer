@@ -504,7 +504,6 @@ class ArchivalInflator implements IInflator
 
         foreach ($publicationDetailElements as $publicationDetailElement) {
             self::inflatePublication($publicationDetailElement, $archivalDe, $archivalEn);
-
         }
     }
 
@@ -572,11 +571,11 @@ class ArchivalInflator implements IInflator
 
         $nsPrefix = self::$nsPrefix;
         $xpathStr = './/' . implode('/', array_map(
-                function ($val) use ($nsPrefix) {
+            function ($val) use ($nsPrefix) {
                     return empty($val) ? $val : $nsPrefix . ':' . $val;
                 },
-                $splitPath
-            ));
+            $splitPath
+        ));
 
         return $node->xpath($xpathStr);
     }

@@ -249,5 +249,4 @@ class Archival implements ILanguageBaseItem
     {
         return $this->publications;
     }
-
 }
