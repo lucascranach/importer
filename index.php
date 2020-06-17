@@ -11,7 +11,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterm
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\RemoteImageExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsLoader;
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
-use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsJSONExporter;
+use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\LiteratureReferencesLoader;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\LiteratureReferencesJSONExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsLoader;
@@ -21,13 +21,16 @@ use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsJSONLang
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
 
+
 /* Paintings */
 $paintingsLoader = PaintingsLoader::withSourcesAt([
     './input/20191122/CDA_Datenübersicht_P1_20191122.xml',
     './input/20191122/CDA_Datenübersicht_P2_20191122.xml',
     './input/20191122/CDA_Datenübersicht_P3_20191122.xml',
 ]);
-$paintingsDestination = PaintingsJSONLangExporter::withDestinationAt('./output/20191122/cda-paintings-v2.json');
+$paintingsDestination = PaintingsJSONLangExporter::withDestinationAt(
+    './output/20191122/cda-paintings-v2.json',
+);
 
 $paintingsLoader->pipe(
     $paintingsDestination,
@@ -40,7 +43,9 @@ $paintingRestorationsLoader = RestorationsLoader::withSourcesAt([
     './input/20191122/CDA_RestDokumente_P2_20191122.xml',
     './input/20191122/CDA_RestDokumente_P3_20191122.xml',
 ]);
-$paintingRestorationsDestination = RestorationsJSONExporter::withDestinationAt('./output/20191122/cda-paintings-restoration-v2.json');
+$paintingRestorationsDestination = RestorationsJSONLangExporter::withDestinationAt(
+    './output/20191122/cda-paintings-restoration-v2.json',
+);
 
 $paintingRestorationsLoader->pipe(
     $paintingRestorationsDestination,
@@ -48,10 +53,14 @@ $paintingRestorationsLoader->pipe(
 
 
 /* Graphics */
-$graphicsLoader = GraphicsLoader::withSourceAt('./input/20191122/CDA-GR_Datenuebersicht_20191122.xml');
+$graphicsLoader = GraphicsLoader::withSourceAt(
+    './input/20191122/CDA-GR_Datenuebersicht_20191122.xml',
+);
 $remoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt('./.cache');
 $conditionDeterminer = ConditionDeterminer::new();
-$graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt('./output/20191122/cda-graphics-v2.json');
+$graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt(
+    './output/20191122/cda-graphics-v2.json',
+);
 
 $graphicsLoader->pipe(
     $remoteImageExistenceChecker,
@@ -61,8 +70,12 @@ $graphicsLoader->pipe(
 
 
 /* GraphicRestorations */
-$graphicRestorationsLoader = RestorationsLoader::withSourcesAt(['./input/20191122/CDA-GR_RestDokumente_20191122.xml']);
-$graphicRestorationsDestination = RestorationsJSONExporter::withDestinationAt('./output/20191122/cda-graphics-restoration-v2.json');
+$graphicRestorationsLoader = RestorationsLoader::withSourcesAt([
+    './input/20191122/CDA-GR_RestDokumente_20191122.xml',
+]);
+$graphicRestorationsDestination = RestorationsJSONLangExporter::withDestinationAt(
+    './output/20191122/cda-graphics-restoration-v2.json',
+);
 
 $graphicRestorationsLoader->pipe(
     $graphicRestorationsDestination,
@@ -70,8 +83,12 @@ $graphicRestorationsLoader->pipe(
 
 
 /* LiteratureReferences */
-$literatureReferencesLoader = LiteratureReferencesLoader::withSourceAt('./input/20191122/CDA_Literaturverweise_20191122.xml');
-$literatureReferencesDestination = LiteratureReferencesJSONExporter::withDestinationAt('./output/20191122/cda-literaturereferences-v2.json');
+$literatureReferencesLoader = LiteratureReferencesLoader::withSourceAt(
+    './input/20191122/CDA_Literaturverweise_20191122.xml',
+);
+$literatureReferencesDestination = LiteratureReferencesJSONExporter::withDestinationAt(
+    './output/20191122/cda-literaturereferences-v2.json',
+);
 
 $literatureReferencesLoader->pipe(
     $literatureReferencesDestination,
@@ -79,8 +96,12 @@ $literatureReferencesLoader->pipe(
 
 
 /* Archivals */
-$archivalsLoader = ArchivalsLoader::withSourceAt('./input/20191122/CDA-A_Datenübersicht_20191122.xml');
-$archivalsDestination = ArchivalsJSONLangExporter::withDestinationAt('./output/20191122/cda-archivals-v2.json');
+$archivalsLoader = ArchivalsLoader::withSourceAt(
+    './input/20191122/CDA-A_Datenübersicht_20191122.xml',
+);
+$archivalsDestination = ArchivalsJSONLangExporter::withDestinationAt(
+    './output/20191122/cda-archivals-v2.json',
+);
 
 $archivalsLoader->pipe(
     $archivalsDestination,
@@ -88,8 +109,12 @@ $archivalsLoader->pipe(
 
 
 /* Thesaurus */
-$thesaurusLoader = ThesaurusLoader::withSourceAt('./input/20191122/CDA_Thesaurus_20191021.xml');
-$thesaurusDestination = ThesaurusJSONExporter::withDestinationAt('./output/20191122/cda-thesaurus-v2.json');
+$thesaurusLoader = ThesaurusLoader::withSourceAt(
+    './input/20191122/CDA_Thesaurus_20191021.xml'
+);
+$thesaurusDestination = ThesaurusJSONExporter::withDestinationAt(
+    './output/20191122/cda-thesaurus-v2.json',
+);
 
 $thesaurusLoader->pipe(
     $thesaurusDestination,

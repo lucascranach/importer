@@ -3,6 +3,7 @@
 namespace CranachDigitalArchive\Importer\Modules\Restorations\Inflators\XML;
 
 use SimpleXMLElement;
+use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
 use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Restoration;
 use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Survey;
@@ -25,6 +26,16 @@ class RestorationInflator implements IInflator
         '/^G_/',
     ];
 
+    private static $surveyTypesLanguageTypes = [
+        'Material/Technik' => Language::DE,
+        'Zustandsprotokoll' => Language::DE,
+        'Restaurierungsdokumentation' => Language::DE,
+
+        'Material/Technique' => Language::EN,
+        'Condition Report' => Language::EN,
+        'Conservation Report' => Language::EN,
+    ];
+
     private function __construct()
     {
     }
@@ -32,7 +43,8 @@ class RestorationInflator implements IInflator
 
     public static function inflate(
         SimpleXMLElement $node,
-        Restoration $restoration
+        Restoration $restorationDe,
+        Restoration $restorationEn
     ) {
         $headerNode = $node->GroupHeader;
         $detailsNodes = $node->Details;
@@ -40,17 +52,18 @@ class RestorationInflator implements IInflator
         self::registerXPathNamespace($headerNode);
         self::registerXPathNamespace($detailsNodes);
 
-        self::inflateInventoryNumber($headerNode, $restoration);
-        self::inflateObjectId($headerNode, $restoration);
+        self::inflateInventoryNumber($headerNode, $restorationDe, $restorationEn);
+        self::inflateObjectId($headerNode, $restorationDe, $restorationEn);
 
-        self::inflateSurveys($detailsNodes, $restoration);
+        self::inflateSurveys($detailsNodes, $restorationDe, $restorationEn);
     }
 
 
     /* Inventory number */
     private static function inflateInventoryNumber(
         SimpleXMLElement $node,
-        Restoration $restoration
+        Restoration $restorationDe,
+        Restoration $restorationEn
     ) {
         $inventoryNumberSectionElement = $node->Section[0];
 
@@ -67,7 +80,7 @@ class RestorationInflator implements IInflator
                 $inventoryNumberStr,
             );
 
-            $restoration->setInventoryNumber($cleanInventoryNumberStr);
+            $restorationDe->setInventoryNumber($cleanInventoryNumberStr);
         }
     }
 
@@ -75,7 +88,8 @@ class RestorationInflator implements IInflator
     /* Object Id */
     private static function inflateObjectId(
         SimpleXMLElement $node,
-        Restoration $restoration
+        Restoration $restorationDe,
+        Restoration $restorationEn
     ) {
         $objectIdSectionElement = $node->Section[1];
 
@@ -86,7 +100,7 @@ class RestorationInflator implements IInflator
         if ($objectIdElement) {
             $objectIdNumberInt = intval(trim($objectIdElement));
 
-            $restoration->setObjectId($objectIdNumberInt);
+            $restorationDe->setObjectId($objectIdNumberInt);
         }
     }
 
@@ -94,10 +108,11 @@ class RestorationInflator implements IInflator
     /* Surveys */
     private static function inflateSurveys(
         SimpleXMLElement $nodes,
-        Restoration $restoration
+        Restoration $restorationDe,
+        Restoration $restorationEn
     ) {
         foreach ($nodes as $node) {
-            self::inflateSurvey($node, $restoration);
+            self::inflateSurvey($node, $restorationDe, $restorationEn);
         }
     }
 
@@ -105,7 +120,8 @@ class RestorationInflator implements IInflator
     /* Survey */
     private static function inflateSurvey(
         SimpleXMLElement $node,
-        Restoration $restoration
+        Restoration $restorationDe,
+        Restoration $restorationEn
     ) {
         $survey = new Survey();
 
@@ -179,7 +195,25 @@ class RestorationInflator implements IInflator
         /* Signature */
         self::inflateSurveySignature($node, $survey);
 
-        $restoration->addSurvey($survey);
+        $surveyType = $survey->getType();
+
+        $lang = isset(self::$surveyTypesLanguageTypes[$surveyType])
+            ? self::$surveyTypesLanguageTypes[$surveyType]
+            : 'unknown' ;
+
+        switch($lang) {
+            case Language::DE:
+                $restorationDe->addSurvey($survey);
+                break;
+
+            case Language::EN:
+                $restorationEn->addSurvey($survey);
+                break;
+
+            default:
+                $restorationDe->addSurvey($survey);
+                $restorationEn->addSurvey($survey);
+        }
     }
 
 

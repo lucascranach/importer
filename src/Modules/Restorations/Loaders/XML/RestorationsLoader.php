@@ -6,6 +6,7 @@ use Error;
 use DomDocument;
 use XMLReader;
 use SimpleXMLElement;
+use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Interfaces\Loaders\IMultipleFileLoader;
 
@@ -62,8 +63,6 @@ class RestorationsLoader extends Producer implements IMultipleFileLoader
             $this->closeXMLReader();
         }
 
-        var_dump($this->surveyTypes);
-
         /* Signaling that we are done reading in the xml */
         $this->notifyDone();
     }
@@ -119,16 +118,21 @@ class RestorationsLoader extends Producer implements IMultipleFileLoader
 
     private function transformCurrentItem()
     {
-        /* Preparing the restoration object */
-        $restoration = new Restoration();
+        /* Preparing the restoration objects for the different languages */
+        $restorationDe = new Restoration;
+        $restorationDe->setLangCode(Language::DE);
+
+        $restorationEn = new Restoration;
+        $restorationEn->setLangCode(Language::EN);
 
         $xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 
         /* Moved the inflation action(s) into its own class */
-        RestorationInflator::inflate($xmlNode, $restoration);
+        RestorationInflator::inflate($xmlNode, $restorationDe, $restorationEn);
 
         /* Passing the restoration objects to the pipeline */
-        $this->next($restoration);
+        $this->next($restorationDe);
+        $this->next($restorationEn);
     }
 
 
