@@ -542,7 +542,7 @@ ____________
 			</Section>
 			<Section SectionNumber="8">
 				<Subreport Name="Unterbericht1">
-					<Details Level="1">
+					<Details Level="1">DE_ThHStAW_EGA_Reg-L_fol_807_N_3
 						<Section SectionNumber="0">
 							<Field FieldName="{CONXREFS.DisplayOrder}" Name="DISPLAYORDER1">
 								<FormattedValue>1</FormattedValue>
