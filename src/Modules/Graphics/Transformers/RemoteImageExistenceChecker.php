@@ -2,7 +2,7 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
-use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
+use Error;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
@@ -48,48 +48,35 @@ class RemoteImageExistenceChecker extends Hybrid
     public function handleItem($item): bool
     {
         if (!($item instanceof Graphic)) {
-            throw new \Exception('Pushed item is not of expected class \'Graphic\'');
+            throw new Error('Pushed item is not of expected class \'Graphic\'');
         }
 
-        $inventoryNumber = $item->getInventoryNumber();
+        $inventoryNumber = $this->getInventoryNumber($item);
 
-        /* We want to use the exhibition history inventory number for virtual objects */
-        if ($item->getIsVirtual()) {
-            if (!empty($item->getExhibitionHistory())) {
-                $inventoryNumber = $item->getExhibitionHistory();
-            } else {
-                echo '  Missing exhibition history for virtual object \'' . $inventoryNumber . "'\n";
-
-                $this->next($item);
-                return false;
-            }
+        if (empty($inventoryNumber)) {
+            $this->next($item);
+            return false;
         }
 
         /* Fill cache to avoid unnecessary duplicate requests for the same resource */
-        if (!isset($this->cache[$inventoryNumber])) {
-            $interpolatedRemoteImageDataPath = sprintf(
-                $this->remoteImageDataPath,
-                $inventoryNumber,
-            );
-            $url = $this->serverHost . $interpolatedRemoteImageDataPath;
+        if (is_null($this->getCacheFor($inventoryNumber))) {
+            $url = $this->buildURLForInventoryNumber($inventoryNumber);
 
             $result = $this->getRemoteImageDataResource($url);
+            $rawImagesData = null;
 
             if (!is_null($result)) {
                 $rawImagesData = $result;
             } else {
                 echo '  Missing remote images for \'' . $inventoryNumber . "'\n";
-                $rawImagesData = null;
             }
 
-            $this->cache[$inventoryNumber] = [
-                'isVirtual' => $item->getIsVirtual(),
-                'hasExhibitionHistory' => !empty($item->getExhibitionHistory()),
-                'rawImagesData' => $rawImagesData,
-            ];
+            $dataToCache = $this->createCacheDataForItem($item, $rawImagesData);
+            $this->updateCacheFor($inventoryNumber, $dataToCache);
         }
 
-        $cachedImagesForObject = $this->cache[$inventoryNumber]['rawImagesData'];
+        $cachedItem = $this->getCacheFor($inventoryNumber);
+        $cachedImagesForObject = $cachedItem['rawImagesData'];
 
         if (!is_null($cachedImagesForObject)) {
             $preparedImages = $this->prepareRawImages($inventoryNumber, $cachedImagesForObject);
@@ -98,6 +85,17 @@ class RemoteImageExistenceChecker extends Hybrid
 
         $this->next($item);
         return true;
+    }
+
+
+    private function buildURLForInventoryNumber(string $inventoryNumber): string
+    {
+        $interpolatedRemoteImageDataPath = sprintf(
+            $this->remoteImageDataPath,
+            $inventoryNumber,
+        );
+
+        return $this->serverHost . $interpolatedRemoteImageDataPath;
     }
 
 
@@ -110,6 +108,47 @@ class RemoteImageExistenceChecker extends Hybrid
     }
 
 
+    private function getInventoryNumber(Graphic $item): string
+    {
+        $inventoryNumber = $item->getInventoryNumber();
+
+        /* We want to use the exhibition history inventory number for virtual objects */
+        if ($item->getIsVirtual()) {
+            if (!empty($item->getExhibitionHistory())) {
+                $inventoryNumber = $item->getExhibitionHistory();
+            } else {
+                echo '  Missing exhibition history for virtual object \'' . $inventoryNumber . "'\n";
+
+                $inventoryNumber = '';
+            }
+        }
+
+        return $inventoryNumber;
+    }
+
+
+    private function createCacheDataForItem(Graphic $item, ?array $data)
+    {
+        return [
+            'isVirtual' => $item->getIsVirtual(),
+            'hasExhibitionHistory' => !empty($item->getExhibitionHistory()),
+            'rawImagesData' => $data,
+        ];
+    }
+
+
+    private function updateCacheFor(string $key, $data)
+    {
+        $this->cache[$key] = $data;
+    }
+
+
+    private function getCacheFor(string $key, $orElse = null)
+    {
+        return isset($this->cache[$key]) ? $this->cache[$key]: $orElse;
+    }
+
+
     private function getRemoteImageDataResource(string $url): ?array
     {
         $content = @file_get_contents($url);
@@ -119,15 +158,15 @@ class RemoteImageExistenceChecker extends Hybrid
         }
 
         $statusHeader = $http_response_header[0];
-        
+
         $splitStatusLine = explode(' ', $statusHeader, 3);
-        
+
         if (count($splitStatusLine) !== 3) {
-            throw new \Exception('Could not get status code for request!');
+            throw new Error('Could not get status code for request!');
         }
-        
+
         $statusCode = $splitStatusLine[1];
-        
+
         /* @TODO: Check content-type on response */
 
         return ($statusCode[0] === '2') ? json_decode($content, true) : null;
@@ -168,7 +207,7 @@ class RemoteImageExistenceChecker extends Hybrid
         $baseStackItem = $imageStack[$this->remoteImageSubDirectoryName];
 
         if (!isset($baseStackItem)) {
-            throw new \Exception('Could not find base stack item ' . $this->remoteImageSubDirectoryName);
+            throw new Error('Could not find base stack item ' . $this->remoteImageSubDirectoryName);
         }
 
         $destinationStructure['infos']['maxDimensions'] = [
