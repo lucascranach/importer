@@ -3,6 +3,7 @@
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Entities;
 
 use CranachDigitalArchive\Importer\Interfaces\Entities\ILanguageBaseItem;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\AbstractImagesItem;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\PersonName;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Title;
@@ -18,7 +19,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\StructuredDimension;
  * Representing a single graphic and all its data
  * 	One instance containing only data for one language
  */
-class Graphic implements ILanguageBaseItem
+class Graphic extends AbstractImagesItem implements ILanguageBaseItem
 {
     public $langCode = '<unknown language>';
 
@@ -57,41 +58,32 @@ class Graphic implements ILanguageBaseItem
     public $catalogWorkReferences = [];
     public $structuredDimension = null;
 
-    public $images = null;
-
-    /* Awaited images structure if images exist
-        [
-            'infos' => [
-                'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
-            ],
-            'sizes' => [
-                'xs' => [
-                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                    'src' => '',
-                ],
-                's' => [
-                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                    'src' => '',
-                ],
-                'm' => [
-                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                    'src' => '',
-                ],
-                'l' => [
-                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                    'src' => '',
-                ],
-                'xl' => [
-                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                    'src' => '',
-                ],
-            ],
-        ]
-    */
-
 
     public function __construct()
     {
+    }
+
+
+    public function getId(): string
+    {
+        return $this->getInventoryNumber();
+    }
+
+
+    public function getImageId(): string
+    {
+        $id = $this->getId();
+
+        /* We want to use the exhibition history inventory number for virtual objects */
+        if ($this->getIsVirtual()) {
+            if (!empty($this->getExhibitionHistory())) {
+                $id = $this->getExhibitionHistory();
+            } else {
+                $id = '';
+            }
+        }
+
+        return empty($id) ? $id : 'G_' . $id;
     }
 
 
@@ -488,17 +480,5 @@ class Graphic implements ILanguageBaseItem
     public function getStructuredDimension(): StructuredDimension
     {
         return $this->structuredDimension;
-    }
-
-
-    public function setImages(?array $images)
-    {
-        $this->images = $images;
-    }
-
-
-    public function getImages(): array
-    {
-        return $this->images;
     }
 }

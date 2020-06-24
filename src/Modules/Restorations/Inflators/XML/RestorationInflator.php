@@ -201,7 +201,7 @@ class RestorationInflator implements IInflator
             ? self::$surveyTypesLanguageTypes[$surveyType]
             : 'unknown' ;
 
-        switch($lang) {
+        switch ($lang) {
             case Language::DE:
                 $restorationDe->addSurvey($survey);
                 break;

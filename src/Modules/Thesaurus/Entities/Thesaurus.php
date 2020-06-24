@@ -17,6 +17,12 @@ class Thesaurus implements IBaseItem
     }
 
 
+    public function getId(): string
+    {
+        return '';
+    }
+
+
     public function addRootTerm(ThesaurusTerm $term)
     {
         $this->rootTerms[] = $term;

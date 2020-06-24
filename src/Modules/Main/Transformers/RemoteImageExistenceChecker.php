@@ -1,21 +1,21 @@
 <?php
 
-namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
+namespace CranachDigitalArchive\Importer\Modules\Main\Transformers;
 
 use Error;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\AbstractImagesItem;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class RemoteImageExistenceChecker extends Hybrid
 {
     private $serverHost = 'http://lucascranach.org/';
-    private $remoteImageBasePath = 'imageserver/G_%s/';
-    private $remoteImageDataPath = 'imageserver/G_%s/imageData.json';
-    private $remoteImageSubDirectoryName = '01_Overall';
+    private $remoteImageBasePath = 'imageserver/%s/';
+    private $remoteImageDataPath = 'imageserver/%s/imageData.json';
+    private $remoteImageSubDirectoryName = null;
     private $cacheDir = null;
-    private $cacheFilename = 'remoteImageExistenceChecker.cache.json';
-    private $cacheFilepath = null;
+    private $cacheFilename = 'remoteImageExistenceChecker';
+    private $cacheFileSuffix = '.cache';
     private $cache = [];
 
 
@@ -23,44 +23,71 @@ class RemoteImageExistenceChecker extends Hybrid
     {
     }
 
-    public static function new()
+    public static function withCacheAt(
+        string $cacheDir,
+        string $remoteImageSubDirectoryName,
+        string $cacheFilename = ''
+    )
     {
-        return new self;
-    }
+        $checker = new self;
 
-    public static function withCacheAt($cacheDir)
-    {
-        $checker = self::new();
+        if (!empty($remoteImageSibDirectoryName)) {
+            $checker->remoteImageSubDirectoryName = $remoteImageSibDirectoryName;
+        }
 
         if (is_string($cacheDir)) {
             if (!file_exists($cacheDir)) {
                 mkdir($cacheDir, 0777, true);
             }
+
             $checker->cacheDir = $cacheDir;
-            $checker->cacheFilepath = trim($checker->cacheDir) . DIRECTORY_SEPARATOR . $checker->cacheFilename;
+
+            if (!empty($remoteImageSubDirectoryName)) {
+                $checker->remoteImageSubDirectoryName = $remoteImageSubDirectoryName;
+            }
+
+            if (!empty($cacheFilename)) {
+                $checker->cacheFilename = $cacheFilename;
+            }
+
             $checker->restoreCache();
+        }
+
+        if (is_null($checker->cacheDir)) {
+            throw new Error('RemoteImageExistenceChecker: Missing cache directory for');
+        }
+
+        if (is_null($checker->remoteImageSubDirectoryName)) {
+            throw new Error('RemoteImageExistenceChecker: Missing remote image subdirectory name');
         }
 
         return $checker;
     }
 
 
+    private function getCachePath(): string
+    {
+        return $this->cacheDir . DIRECTORY_SEPARATOR . $this->cacheFilename . $this->cacheFileSuffix;
+    }
+
+
     public function handleItem($item): bool
     {
-        if (!($item instanceof Graphic)) {
-            throw new Error('Pushed item is not of expected class \'Graphic\'');
+        if (!($item instanceof AbstractImagesItem)) {
+            throw new Error('Pushed item is not of expected class \'AbstractImagesItem\'');
         }
 
-        $inventoryNumber = $this->getInventoryNumber($item);
+        $id = $item->getImageId();
 
-        if (empty($inventoryNumber)) {
+        if (empty($id)) {
+            echo '  Missing imageId for \'' . $item->getId() . "'\n";
             $this->next($item);
             return false;
         }
 
         /* Fill cache to avoid unnecessary duplicate requests for the same resource */
-        if (is_null($this->getCacheFor($inventoryNumber))) {
-            $url = $this->buildURLForInventoryNumber($inventoryNumber);
+        if (is_null($this->getCacheFor($id))) {
+            $url = $this->buildURLForInventoryNumber($id);
 
             $result = $this->getRemoteImageDataResource($url);
             $rawImagesData = null;
@@ -68,18 +95,18 @@ class RemoteImageExistenceChecker extends Hybrid
             if (!is_null($result)) {
                 $rawImagesData = $result;
             } else {
-                echo '  Missing remote images for \'' . $inventoryNumber . "'\n";
+                echo '  Missing remote images for \'' . $id . "'\n";
             }
 
-            $dataToCache = $this->createCacheDataForItem($item, $rawImagesData);
-            $this->updateCacheFor($inventoryNumber, $dataToCache);
+            $dataToCache = $this->createCacheData($rawImagesData);
+            $this->updateCacheFor($id, $dataToCache);
         }
 
-        $cachedItem = $this->getCacheFor($inventoryNumber);
+        $cachedItem = $this->getCacheFor($id);
         $cachedImagesForObject = $cachedItem['rawImagesData'];
 
         if (!is_null($cachedImagesForObject)) {
-            $preparedImages = $this->prepareRawImages($inventoryNumber, $cachedImagesForObject);
+            $preparedImages = $this->prepareRawImages($id, $cachedImagesForObject);
             $item->setImages($preparedImages);
         }
 
@@ -108,30 +135,9 @@ class RemoteImageExistenceChecker extends Hybrid
     }
 
 
-    private function getInventoryNumber(Graphic $item): string
-    {
-        $inventoryNumber = $item->getInventoryNumber();
-
-        /* We want to use the exhibition history inventory number for virtual objects */
-        if ($item->getIsVirtual()) {
-            if (!empty($item->getExhibitionHistory())) {
-                $inventoryNumber = $item->getExhibitionHistory();
-            } else {
-                echo '  Missing exhibition history for virtual object \'' . $inventoryNumber . "'\n";
-
-                $inventoryNumber = '';
-            }
-        }
-
-        return $inventoryNumber;
-    }
-
-
-    private function createCacheDataForItem(Graphic $item, ?array $data)
+    private function createCacheData(?array $data)
     {
         return [
-            'isVirtual' => $item->getIsVirtual(),
-            'hasExhibitionHistory' => !empty($item->getExhibitionHistory()),
             'rawImagesData' => $data,
         ];
     }
@@ -236,22 +242,19 @@ class RemoteImageExistenceChecker extends Hybrid
 
     private function storeCache()
     {
-        if (is_null($this->cacheFilepath)) {
-            return;
-        }
-
         $cacheAsJSON = json_encode($this->cache);
-        file_put_contents($this->cacheFilepath, $cacheAsJSON);
+        file_put_contents($this->getCachePath(), $cacheAsJSON);
     }
 
 
     private function restoreCache()
     {
-        if (is_null($this->cacheFilepath) || !file_exists($this->cacheFilepath)) {
+        $cacheFilepath = $this->getCachePath();
+        if (is_null($cacheFilepath) || !file_exists($cacheFilepath)) {
             return;
         }
 
-        $cacheAsJSON = file_get_contents($this->cacheFilepath);
+        $cacheAsJSON = file_get_contents($cacheFilepath);
 
         $this->cache = json_decode($cacheAsJSON, true);
     }

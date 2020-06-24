@@ -8,7 +8,7 @@ use CranachDigitalArchive\Importer\Pipeline\Pipeline;
 
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsJSONLangExistenceTypeExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterminer;
-use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\RemoteImageExistenceChecker;
+use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsLoader;
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
 use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsJSONLangExporter;
@@ -22,26 +22,36 @@ use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsJSONLang
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
 
-
 /* Paintings */
 $paintingsLoader = PaintingsLoader::withSourcesAt([
     './input/20191122/CDA_Datenübersicht_P1_20191122.xml',
     './input/20191122/CDA_Datenübersicht_P2_20191122.xml',
     './input/20191122/CDA_Datenübersicht_P3_20191122.xml',
 ]);
+$paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
+    './.cache',
+    'pyramid',
+    'paintingssRemoteImageExistenceChecker',
+);
 $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt(
     './output/20191122/cda-paintings-v2.json',
 );
 $paintingsElasticsearchBulkDestination = PaintingsElasticsearchLangExporter::withDestinationAt(
-    './output/20191122/elasticsarch/cda-paintings-v2.bulk',
+    './output/20191122/elasticsearch/cda-paintings-v2.bulk',
 );
 
 $paintingsLoader->pipe(
+    $paintingsRemoteImageExistenceChecker,
+);
+
+$paintingsRemoteImageExistenceChecker->pipe(
     $paintingsDestination,
 );
-$paintingsLoader->pipe(
+
+$paintingsRemoteImageExistenceChecker->pipe(
     $paintingsElasticsearchBulkDestination,
 );
+
 
 
 /* PaintingsRestorations */
@@ -63,15 +73,19 @@ $paintingRestorationsLoader->pipe(
 $graphicsLoader = GraphicsLoader::withSourceAt(
     './input/20191122/CDA-GR_Datenuebersicht_20191122.xml',
 );
-$remoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt('./.cache');
-$conditionDeterminer = ConditionDeterminer::new();
+$graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
+    './.cache',
+    '01_Overall',
+    'graphicsRemoteImageExistenceChecker',
+);
+$graphicsConditionDeterminer = ConditionDeterminer::new();
 $graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt(
     './output/20191122/cda-graphics-v2.json',
 );
 
 $graphicsLoader->pipe(
-    $remoteImageExistenceChecker,
-    $conditionDeterminer,
+    $graphicsRemoteImageExistenceChecker,
+    $graphicsConditionDeterminer,
     $graphicsDestination,
 );
 
@@ -134,6 +148,7 @@ $thesaurusLoader->pipe(
 Pipeline::new()->withNodes(
     /* Paintings */
     $paintingsLoader,
+    $paintingsRemoteImageExistenceChecker,
     $paintingsDestination,
     $paintingsElasticsearchBulkDestination,
 
@@ -143,8 +158,8 @@ Pipeline::new()->withNodes(
 
     /* Graphics */
     $graphicsLoader,
-    $remoteImageExistenceChecker,
-    $conditionDeterminer,
+    $graphicsRemoteImageExistenceChecker,
+    $graphicsConditionDeterminer,
     $graphicsDestination,
 
     /* GraphicRestorations */

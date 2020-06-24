@@ -35,6 +35,13 @@ class Archival implements ILanguageBaseItem
     {
     }
 
+
+    public function getId(): string
+    {
+        return $this->getInventoryNumber();
+    }
+
+
     public function setLangCode(string $langCode)
     {
         $this->langCode = $langCode;

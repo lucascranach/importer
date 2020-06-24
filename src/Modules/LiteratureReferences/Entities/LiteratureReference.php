@@ -36,6 +36,17 @@ class LiteratureReference implements IBaseItem
     }
 
 
+    public function setId(string $id)
+    {
+        $this->id = $id;
+    }
+
+
+    public function getId(): string
+    {
+        return $this->id;
+    }
+
     public function setReferenceId(string $referenceId)
     {
         $this->referenceId = $referenceId;
@@ -236,18 +247,6 @@ class LiteratureReference implements IBaseItem
     public function getPublications(): array
     {
         return $this->publications;
-    }
-
-
-    public function setId(string $id)
-    {
-        $this->id = $id;
-    }
-
-
-    public function getId(): array
-    {
-        return $this->id;
     }
 
 

@@ -83,13 +83,23 @@ class PaintingsJSONLangExporter extends Consumer implements IFileExporter
             ]);
             $destFilepath = $this->dirname . DIRECTORY_SEPARATOR . $filename;
 
-            $data = json_encode(array('items' => $bucket->items), JSON_PRETTY_PRINT);
-
             if (!file_exists($this->dirname)) {
                 mkdir($this->dirname, 0777, true);
             }
 
-            file_put_contents($destFilepath, $data);
+            file_put_contents($destFilepath, "{ \"items\": [\n");
+
+            foreach ($bucket->items as $idx => $item) {
+                $data = json_encode($item, JSON_PRETTY_PRINT);
+
+                if ($idx < count($bucket->items) - 1) {
+                    $data .= ',';
+                }
+
+                file_put_contents($destFilepath, $data, FILE_APPEND);
+            }
+
+            file_put_contents($destFilepath, ']}', FILE_APPEND);
         }
 
         $this->done = true;

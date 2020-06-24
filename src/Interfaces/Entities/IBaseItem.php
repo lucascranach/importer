@@ -7,4 +7,5 @@ namespace CranachDigitalArchive\Importer\Interfaces\Entities;
  */
 interface IBaseItem
 {
+    public function getID(): string;
 }

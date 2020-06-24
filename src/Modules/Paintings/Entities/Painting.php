@@ -3,6 +3,7 @@
 namespace CranachDigitalArchive\Importer\Modules\Paintings\Entities;
 
 use CranachDigitalArchive\Importer\Interfaces\Entities\ILanguageBaseItem;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\AbstractImagesItem;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\PersonName;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Title;
@@ -18,7 +19,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\StructuredDimension;
  * Representing a single graphic and all its data
  * 	One instance containing only data for one language
  */
-class Painting implements ILanguageBaseItem
+class Painting extends AbstractImagesItem implements ILanguageBaseItem
 {
     public $langCode = '<unknown language>';
 
@@ -57,6 +58,18 @@ class Painting implements ILanguageBaseItem
 
     public function __construct()
     {
+    }
+
+
+    public function getImageId(): string
+    {
+        return $this->getId() . '_' . $this->getObjectName();
+    }
+
+
+    public function getId(): string
+    {
+        return $this->getInventoryNumber();
     }
 
 

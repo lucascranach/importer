@@ -2,8 +2,6 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Thesaurus\Entities;
 
-use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
-
 /**
  * Representing a single thesaurus term
  */
