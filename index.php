@@ -16,6 +16,7 @@ use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\Lite
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\LiteratureReferencesJSONExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsLoader;
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsJSONLangExporter;
+use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Archivals\Loaders\XML\ArchivalsLoader;
 use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader;
@@ -31,9 +32,15 @@ $paintingsLoader = PaintingsLoader::withSourcesAt([
 $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt(
     './output/20191122/cda-paintings-v2.json',
 );
+$paintingsElasticsearchBulkDestination = PaintingsElasticsearchLangExporter::withDestinationAt(
+    './output/20191122/elasticsarch/cda-paintings-v2.bulk',
+);
 
 $paintingsLoader->pipe(
     $paintingsDestination,
+);
+$paintingsLoader->pipe(
+    $paintingsElasticsearchBulkDestination,
 );
 
 
@@ -128,6 +135,7 @@ Pipeline::new()->withNodes(
     /* Paintings */
     $paintingsLoader,
     $paintingsDestination,
+    $paintingsElasticsearchBulkDestination,
 
     /* PaintingRestorations */
     $paintingRestorationsLoader,
