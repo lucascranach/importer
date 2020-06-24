@@ -86,6 +86,8 @@ class PaintingsElasticsearchLangExporter extends Consumer implements IFileExport
                 mkdir($this->dirname, 0777, true);
             }
 
+            file_put_contents($destFilepath, '');
+
             foreach ($bucket->items as $item) {
                 $index = [
                     'index' => [
