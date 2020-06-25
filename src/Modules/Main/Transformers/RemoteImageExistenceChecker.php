@@ -27,8 +27,7 @@ class RemoteImageExistenceChecker extends Hybrid
         string $cacheDir,
         string $remoteImageSubDirectoryName,
         string $cacheFilename = ''
-    )
-    {
+    ) {
         $checker = new self;
 
         if (!empty($remoteImageSibDirectoryName)) {
