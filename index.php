@@ -6,10 +6,11 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use CranachDigitalArchive\Importer\Pipeline\Pipeline;
 
-use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsJSONLangExistenceTypeExporter;
-use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterminer;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsLoader;
+use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsJSONLangExistenceTypeExporter;
+use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsElasticsearchLangExporter;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterminer;
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
 use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\LiteratureReferencesLoader;
@@ -82,11 +83,21 @@ $graphicsConditionDeterminer = ConditionDeterminer::new();
 $graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt(
     './output/20191122/cda-graphics-v2.json',
 );
+$graphicsElasticsearchBulkDestination = GraphicsElasticsearchLangExporter::withDestinationAt(
+    './output/20191122/elasticsearch/cda-graphics-v2.bulk',
+);
 
 $graphicsLoader->pipe(
     $graphicsRemoteImageExistenceChecker,
     $graphicsConditionDeterminer,
+);
+
+$graphicsConditionDeterminer->pipe(
     $graphicsDestination,
+);
+
+$graphicsConditionDeterminer->pipe(
+    $graphicsElasticsearchBulkDestination,
 );
 
 
