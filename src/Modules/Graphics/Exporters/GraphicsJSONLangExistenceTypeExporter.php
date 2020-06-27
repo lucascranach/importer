@@ -19,7 +19,8 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
     private $fileExt = 'json';
     private $filename = null;
     private $dirname = null;
-    private $langBuckets = [];
+    private $outputFilesByLangCode = [];
+    private $objectsWithMissingReferencesList = [];
     private $inventoryNumberList = [];
     private $done = false;
 
@@ -44,6 +45,11 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
 
         $exporter->filename = $splitFilename[0];
 
+        if (is_null($exporter->dirname) || empty($exporter->dirname)
+            || is_null($exporter->filename) || empty($exporter->filename)) {
+            throw new Error('No filepath for JSON graphics export set!');
+        }
+
         return $exporter;
     }
 
@@ -58,46 +64,33 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
             throw new Error('Can\'t push more items after done() was called!');
         }
 
-        if (!isset($this->langBuckets[$item->getLangCode()])) {
-            $this->langBuckets[$item->getLangCode()] = (object) [
-                'items' => [],
-            ];
-        }
-
-        $this->inventoryNumberList[] = $item->getInventoryNumber();
-        $this->langBuckets[$item->getLangCode()]->items[] = $item;
-
-        return true;
+        $this->addDataForReferenceCheck($item);
+        return $this->appendItemToOutputFile($item);
     }
 
 
-    public function outputReferenceCheckResult()
+    private function addDataForReferenceCheck(Graphic $item)
     {
-        if (count($this->langBuckets) === 0) {
-            throw new Error('At least one language needed!');
-        }
-
-        $firstLangBucket = $this->langBuckets[array_key_first($this->langBuckets)];
-        $objectsWithMissingReferencesList = [];
-
-        foreach ($firstLangBucket->items as $item) {
-            foreach ($item->getReprintReferences() as $reference) {
-                if (!in_array($reference->getInventoryNumber(), $this->inventoryNumberList)) {
-                    $objectsWithMissingReferencesList[] = $item->getInventoryNumber();
-                }
-            }
-
-            foreach ($item->getRelatedWorkReferences() as $reference) {
-                if (!in_array($reference->getInventoryNumber(), $this->inventoryNumberList)) {
-                    $objectsWithMissingReferencesList[] = $item->getInventoryNumber();
-                }
+        foreach ($item->getReprintReferences() as $reference) {
+            if (!in_array($reference->getInventoryNumber(), $this->inventoryNumberList)) {
+                $this->objectsWithMissingReferencesList[] = $item->getInventoryNumber();
             }
         }
 
+        foreach ($item->getRelatedWorkReferences() as $reference) {
+            if (!in_array($reference->getInventoryNumber(), $this->inventoryNumberList)) {
+                $this->objectsWithMissingReferencesList[] = $item->getInventoryNumber();
+            }
+        }
+    }
+
+
+    private function outputReferenceCheckResult()
+    {
         echo "\n  Graphics with missing references: \n\n";
 
-        if (count($objectsWithMissingReferencesList) > 0) {
-            foreach ($objectsWithMissingReferencesList as $objectInventoryNumber) {
+        if (count($this->objectsWithMissingReferencesList) > 0) {
+            foreach ($this->objectsWithMissingReferencesList as $objectInventoryNumber) {
                 echo "      - " . $objectInventoryNumber . "\n";
             }
         } else {
@@ -108,52 +101,81 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
 
     public function done(ProducerInterface $producer)
     {
-        if (is_null($this->dirname) || empty($this->dirname)
-         || is_null($this->filename) || empty($this->filename)) {
-            throw new Error('No filepath for JSON graphics export set!');
-        }
+        $this->closeAllOutputFiles();
+        $this->done = true;
+        $this->outputFilesByLangCode = [];
+        $this->objectsWithMissingReferencesList = [];
+        $this->inventoryNumberList = [];
 
         $this->outputReferenceCheckResult();
-
-        foreach ($this->langBuckets as $langCode => $bucket) {
-            $existenceTypes = array_reduce(
-                $bucket->items,
-                function ($carry, $item) {
-                    $existenceTypeKey = $item->getIsVirtual() ? 'virtual' : 'real';
-                    $carry[$existenceTypeKey][] = $item;
-                    return $carry;
-                },
-                [ "virtual" => [], "real" => [] ],
-            );
-
-            foreach ($existenceTypes as $existenceTypeKey => $existenceTypeItems) {
-                $filename = implode('.', [
-                    $this->filename,
-                    $existenceTypeKey,
-                    $langCode,
-                    $this->fileExt,
-                ]);
-                $destFilepath = $this->dirname . DIRECTORY_SEPARATOR . $filename;
-
-                $data = json_encode(array('items' => $existenceTypeItems), JSON_PRETTY_PRINT);
-
-                if (!file_exists($this->dirname)) {
-                    mkdir($this->dirname, 0777, true);
-                }
-
-                file_put_contents($destFilepath, $data);
-            }
-        }
-
-        $this->done = true;
-
-        $this->langBuckets = [];
-        $this->inventoryNumberList = [];
     }
 
 
     public function error($error)
     {
         echo get_class($this) . ": Error -> " . $error . "\n";
+    }
+
+    private function appendItemToOutputFile(Graphic $item): bool
+    {
+        $existenceTypes = $item->getIsVirtual() ? 'virtual' : 'real';
+        $langCode = $item->getLangCode();
+        $key = $existenceTypes . '.' . $langCode;
+
+        if (!isset($this->outputFilesByLangCode[$key])) {
+
+            $this->outputFilesByLangCode[$key] = [
+                "path" => $this->initializeOutputFileForLangCode($key),
+                "isFirstItem" => true,
+            ];
+        }
+
+        $delimiter = ',';
+
+        if ($this->outputFilesByLangCode[$key]['isFirstItem']) {
+            $delimiter = '';
+            $this->outputFilesByLangCode[$key]['isFirstItem'] = false;
+        }
+
+        $data = json_encode($item, JSON_PRETTY_PRINT);
+        $data = implode(
+            "\n",
+            array_map(
+                function($line) {
+                    return '        ' . $line;
+                },
+                explode("\n", $data),
+            ),
+        );
+
+        $entryData = $delimiter . "\n" . $data;
+
+        file_put_contents($this->outputFilesByLangCode[$key]['path'], $entryData, FILE_APPEND);
+        return true;
+    }
+
+
+    private function initializeOutputFileForLangCode(string $key): string
+    {
+        $filename = $this->filename . '.' . $key . '.' . $this->fileExt;
+        $destFilepath = $this->dirname . DIRECTORY_SEPARATOR . $filename;
+
+        if (!file_exists($this->dirname)) {
+            mkdir($this->dirname, 0777, true);
+        }
+
+        file_put_contents($destFilepath, "{\n    \"items\": [");
+
+        return $destFilepath;
+    }
+
+
+    private function closeAllOutputFiles(): bool
+    {
+        foreach ($this->outputFilesByLangCode as $file) {
+            file_put_contents($file['path'], "\n    ]\n}", FILE_APPEND);
+        }
+
+        return true;
     }
 }

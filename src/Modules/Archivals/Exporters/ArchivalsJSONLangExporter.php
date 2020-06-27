@@ -17,7 +17,7 @@ class ArchivalsJSONLangExporter extends Consumer implements IFileExporter
     private $fileExt = 'json';
     private $filename = null;
     private $dirname = null;
-    private $langBuckets = [];
+    private $outputFilesByLangCode = [];
     private $done = false;
 
 
@@ -41,6 +41,11 @@ class ArchivalsJSONLangExporter extends Consumer implements IFileExporter
 
         $exporter->filename = $splitFilename[0];
 
+        if (is_null($exporter->dirname) || empty($exporter->dirname)
+            || is_null($exporter->filename) || empty($exporter->filename)) {
+            throw new Error('No filepath for JSON archivals export set!');
+        }
+
         return $exporter;
     }
 
@@ -55,44 +60,81 @@ class ArchivalsJSONLangExporter extends Consumer implements IFileExporter
             throw new Error('Can\'t push more items after done() was called!');
         }
 
-        if (!isset($this->langBuckets[$item->getLangCode()])) {
-            $this->langBuckets[$item->getLangCode()] = [];
-        }
-
-        $this->langBuckets[$item->getLangCode()][] = $item;
-
-        return true;
+        return $this->appendItemToOutputFile($item);
     }
 
 
     public function done(ProducerInterface $producer)
     {
-        if (is_null($this->dirname) || empty($this->dirname)
-         || is_null($this->filename) || empty($this->filename)) {
-            throw new Error('No filepath for JSON archivals export set!');
-        }
-
-        foreach ($this->langBuckets as $langCode => $items) {
-            $filename = $this->filename . '.' . $langCode . '.' . $this->fileExt;
-            $destFilepath = $this->dirname . DIRECTORY_SEPARATOR . $filename;
-
-            $data = json_encode(array('items' => $items), JSON_PRETTY_PRINT);
-
-            if (!file_exists($this->dirname)) {
-                mkdir($this->dirname, 0777, true);
-            }
-
-            file_put_contents($destFilepath, $data);
-        }
-
+        $this->closeAllOutputFiles();
         $this->done = true;
-
-        $this->langBuckets = [];
+        $this->outputFilesByLangCode = [];
     }
 
 
     public function error($error)
     {
         echo get_class($this) . ": Error -> " . $error . "\n";
+    }
+
+
+    private function appendItemToOutputFile(Archival $item): bool
+    {
+        $langCode = $item->getLangCode();
+
+        if (!isset($this->outputFilesByLangCode[$langCode])) {
+            $this->outputFilesByLangCode[$langCode] = [
+                "path" => $this->initializeOutputFileForLangCode($langCode),
+                "isFirstItem" => true,
+            ];
+        }
+
+        $delimiter = ',';
+
+        if ($this->outputFilesByLangCode[$langCode]['isFirstItem']) {
+            $delimiter = '';
+            $this->outputFilesByLangCode[$langCode]['isFirstItem'] = false;
+        }
+
+        $data = json_encode($item, JSON_PRETTY_PRINT);
+        $data = implode(
+            "\n",
+            array_map(
+                function($line) {
+                    return '        ' . $line;
+                },
+                explode("\n", $data),
+            ),
+        );
+
+        $entryData = $delimiter . "\n" . $data;
+
+        file_put_contents($this->outputFilesByLangCode[$langCode]['path'], $entryData, FILE_APPEND);
+        return true;
+    }
+
+
+    private function initializeOutputFileForLangCode(string $langCode): string
+    {
+        $filename = $this->filename . '.' . $langCode . '.' . $this->fileExt;
+        $destFilepath = $this->dirname . DIRECTORY_SEPARATOR . $filename;
+
+        if (!file_exists($this->dirname)) {
+            mkdir($this->dirname, 0777, true);
+        }
+
+        file_put_contents($destFilepath, "{\n    \"items\": [");
+
+        return $destFilepath;
+    }
+
+
+    private function closeAllOutputFiles(): bool
+    {
+        foreach ($this->outputFilesByLangCode as $file) {
+            file_put_contents($file['path'], "\n    ]\n}", FILE_APPEND);
+        }
+
+        return true;
     }
 }

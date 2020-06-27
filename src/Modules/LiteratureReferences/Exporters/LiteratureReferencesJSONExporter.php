@@ -15,7 +15,8 @@ use CranachDigitalArchive\Importer\Pipeline\Consumer;
 class LiteratureReferencesJSONExporter extends Consumer implements IFileExporter
 {
     private $destFilepath = null;
-    private $items = [];
+    private $destFileInitialized = false;
+    private $isFirstItem = true;
     private $done = false;
 
 
@@ -29,6 +30,10 @@ class LiteratureReferencesJSONExporter extends Consumer implements IFileExporter
         $exporter = new self;
 
         $exporter->destFilepath = $destFilepath;
+
+        if (is_null($exporter->destFilepath)) {
+            throw new \Error('No filepath for JSON literature references export set!');
+        }
 
         return $exporter;
     }
@@ -44,35 +49,74 @@ class LiteratureReferencesJSONExporter extends Consumer implements IFileExporter
             throw new \Error('Can\'t push more items after done() was called!');
         }
 
-        $this->items[] = $item;
-
-        return true;
+        return $this->appendItemToOutputFile($item);
     }
 
 
     public function done(ProducerInterface $producer)
     {
-        if (is_null($this->destFilepath)) {
-            throw new \Error('No filepath for JSON graphics export set!');
-        }
-
-        $data = json_encode(array('items' => $this->items), JSON_PRETTY_PRINT);
-        $dirname = dirname($this->destFilepath);
-
-        if (!file_exists($dirname)) {
-            mkdir($dirname, 0777, true);
-        }
-
-        file_put_contents($this->destFilepath, $data);
-
+        $this->closeAllOutputFile();
         $this->done = true;
-
-        $this->items = [];
+        $this->destFileInitialized = false;
+        $this->isFirstItem = true;
     }
 
 
     public function error($error)
     {
         echo get_class($this) . ": Error -> " . $error . "\n";
+    }
+
+
+    private function appendItemToOutputFile(LiteratureReference $item): bool
+    {
+        if (!$this->destFileInitialized) {
+            $this->initializeOutputFile();
+            $this->destFileInitialized = true;
+        }
+
+        $delimiter = ',';
+
+        if ($this->isFirstItem) {
+            $delimiter = '';
+            $this->isFirstItem = false;
+        }
+
+        $data = json_encode($item, JSON_PRETTY_PRINT);
+        $data = implode(
+            "\n",
+            array_map(
+                function($line) {
+                    return '        ' . $line;
+                },
+                explode("\n", $data),
+            ),
+        );
+
+        $entryData = $delimiter . "\n" . $data;
+
+        file_put_contents($this->destFilepath, $entryData, FILE_APPEND);
+        return true;
+    }
+
+
+    private function initializeOutputFile(): string
+    {
+        $dirname = dirname($this->destFilepath);
+        if (!file_exists($this->destFilepath)) {
+            mkdir($dirname, 0777, true);
+        }
+
+        file_put_contents($this->destFilepath, "{\n    \"items\": [");
+
+        return $this->destFilepath;
+    }
+
+
+    private function closeAllOutputFile(): bool
+    {
+        file_put_contents($this->destFilepath, "\n    ]\n}", FILE_APPEND);
+
+        return true;
     }
 }
