@@ -95,7 +95,7 @@ class GraphicsElasticsearchLangExporter extends Consumer implements IFileExporte
                 $destFilepath = $this->dirname . DIRECTORY_SEPARATOR . $filename;
 
                 if (!file_exists($this->dirname)) {
-                    mkdir($this->dirname, 0777, true);
+                    @mkdir($this->dirname, 0777, true);
                 }
 
                 file_put_contents($destFilepath, '');

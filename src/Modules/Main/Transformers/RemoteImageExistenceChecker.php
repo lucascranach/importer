@@ -36,7 +36,7 @@ class RemoteImageExistenceChecker extends Hybrid
 
         if (is_string($cacheDir)) {
             if (!file_exists($cacheDir)) {
-                mkdir($cacheDir, 0777, true);
+                @mkdir($cacheDir, 0777, true);
             }
 
             $checker->cacheDir = $cacheDir;

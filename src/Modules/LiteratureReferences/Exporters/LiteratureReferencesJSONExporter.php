@@ -104,7 +104,7 @@ class LiteratureReferencesJSONExporter extends Consumer implements IFileExporter
     {
         $dirname = dirname($this->destFilepath);
         if (!file_exists($this->destFilepath)) {
-            mkdir($dirname, 0777, true);
+            @mkdir($dirname, 0777, true);
         }
 
         file_put_contents($this->destFilepath, "{\n    \"items\": [");
