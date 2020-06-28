@@ -77,7 +77,7 @@ class PaintingInflator implements IInflator
         $subNode = $node->GroupHeader;
 
         self::registerXPathNamespace($subNode);
-    
+
         self::inflateInvolvedPersons($subNode, $paintingDe, $paintingEn);
         self::inflatePersonNames($subNode, $paintingDe, $paintingEn);
         self::inflateTitles($subNode, $paintingDe, $paintingEn);
@@ -1244,15 +1244,17 @@ class PaintingInflator implements IInflator
             }
 
             /* Path */
-            $keywordPathElement = self::findElementByXPath(
-                $keywordDetailElement,
-                'Section[@SectionNumber="3"]/Field[@FieldName="{THESXREFSPATH1.Path}"]/FormattedValue',
-            );
-            if ($keywordPathElement) {
-                $keywordPathStr = trim($keywordPathElement);
-                $metaReference->setPath($keywordPathStr);
+            $fieldnames = ['{THESXREFSPATH1.Path}', '{THESXREFSPATH2.Path}'];
+            foreach ($fieldnames as $fieldname) {
+                $keywordPathElement = self::findElementByXPath(
+                    $keywordDetailElement,
+                    'Section[@SectionNumber="3"]/Field[@FieldName="' . $fieldname . '"]/FormattedValue',
+                );
+                if ($keywordPathElement) {
+                    $keywordPathStr = trim($keywordPathElement);
+                    $metaReference->setPath($keywordPathStr);
+                }
             }
-
 
             /* Decide if keyword is valid */
             if (!empty($metaReference->getTerm())) {
