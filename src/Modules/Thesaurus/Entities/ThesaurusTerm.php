@@ -23,7 +23,7 @@ class ThesaurusTerm
     }
 
 
-    public function getTerm(string $term)
+    public function getTerm()
     {
         return $this->term;
     }
@@ -38,6 +38,13 @@ class ThesaurusTerm
     public function getAlts(): array
     {
         return $this->alt;
+    }
+
+
+    public function getAlt(string $key): ?string
+    {
+        $alts = $this->getAlts();
+        return isset($alts[$key]) ? $alts[$key] : null;
     }
 
 

@@ -4,6 +4,8 @@ namespace CranachDigitalArchive\Importer;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithThesaurus;
+use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 use CranachDigitalArchive\Importer\Pipeline\Pipeline;
 
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
@@ -23,6 +25,30 @@ use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsJSONLang
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
 
+/* Thesaurus */
+$thesaurusLoader = ThesaurusLoader::withSourceAt(
+    './input/20191122/CDA_Thesaurus_20191021.xml'
+);
+$thesaurusDestination = ThesaurusJSONExporter::withDestinationAt(
+    './output/20191122/cda-thesaurus-v2.json',
+);
+$thesaurusMemoryDestination = ThesaurusMemoryExporter::new();
+
+$thesaurusLoader->pipe(
+    $thesaurusDestination,
+);
+$thesaurusLoader->pipe(
+    $thesaurusMemoryDestination,
+);
+
+Pipeline::new()->withNodes(
+    $thesaurusLoader,
+    $thesaurusDestination,
+    $thesaurusMemoryDestination,
+)->start();
+
+
+
 /* Paintings */
 $paintingsLoader = PaintingsLoader::withSourcesAt([
     './input/20191122/CDA_Datenübersicht_P1_20191122.xml',
@@ -34,6 +60,7 @@ $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt
     'pyramid',
     'paintingssRemoteImageExistenceChecker',
 );
+$paintingsThesaurusExtender = ExtenderWithThesaurus::new($thesaurusMemoryDestination->getData());
 $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt(
     './output/20191122/cda-paintings-v2.json',
 );
@@ -50,6 +77,9 @@ $paintingsRemoteImageExistenceChecker->pipe(
 );
 
 $paintingsRemoteImageExistenceChecker->pipe(
+    $paintingsThesaurusExtender,
+);
+$paintingsThesaurusExtender->pipe(
     $paintingsElasticsearchBulkDestination,
 );
 
@@ -140,27 +170,15 @@ $archivalsLoader->pipe(
 );
 
 
-/* Thesaurus */
-$thesaurusLoader = ThesaurusLoader::withSourceAt(
-    './input/20191122/CDA_Thesaurus_20191021.xml'
-);
-$thesaurusDestination = ThesaurusJSONExporter::withDestinationAt(
-    './output/20191122/cda-thesaurus-v2.json',
-);
-
-$thesaurusLoader->pipe(
-    $thesaurusDestination,
-);
-
-
-
 /* Pipeline */
 
 Pipeline::new()->withNodes(
-    /* Paintings */
+/* Paintings */
     $paintingsLoader,
     $paintingsRemoteImageExistenceChecker,
     $paintingsDestination,
+
+    $paintingsThesaurusExtender,
     $paintingsElasticsearchBulkDestination,
 
     /* PaintingRestorations */
@@ -184,8 +202,7 @@ Pipeline::new()->withNodes(
     /* Archivals */
     $archivalsLoader,
     $archivalsDestination,
-
-    /* Thesaurus */
-    $thesaurusLoader,
-    $thesaurusDestination,
 )->start();
+
+
+$thesaurusMemoryDestination->cleanUp();
