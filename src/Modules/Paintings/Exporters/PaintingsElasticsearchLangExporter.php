@@ -17,7 +17,7 @@ class PaintingsElasticsearchLangExporter extends Consumer implements IFileExport
     private $fileExt = 'bulk';
     private $filename = null;
     private $dirname = null;
-    private $langBuckets = [];
+    private $outputFilesByLangCode = [];
     private $done = false;
 
 
@@ -41,6 +41,11 @@ class PaintingsElasticsearchLangExporter extends Consumer implements IFileExport
 
         $exporter->filename = $splitFilename[0];
 
+        if (is_null($exporter->dirname) || empty($exporter->dirname)
+            || is_null($exporter->filename) || empty($exporter->filename)) {
+            throw new Error('No filepath for JSON paintings export set!');
+        }
+
         return $exporter;
     }
 
@@ -55,61 +60,59 @@ class PaintingsElasticsearchLangExporter extends Consumer implements IFileExport
             throw new Error('Can\'t push more items after done() was called!');
         }
 
-        if (!isset($this->langBuckets[$item->getLangCode()])) {
-            $this->langBuckets[$item->getLangCode()] = (object) [
-                'items' => [],
-            ];
-        }
-
-        $this->langBuckets[$item->getLangCode()]->items[] = $item;
-
-        return true;
+        return $this->appendItemToOutputFile($item);
     }
 
 
     public function done(ProducerInterface $producer)
     {
-        if (is_null($this->dirname) || empty($this->dirname)
-         || is_null($this->filename) || empty($this->filename)) {
-            throw new Error('No filepath for JSON paintings export set!');
-        }
-
-        foreach ($this->langBuckets as $langCode => $bucket) {
-            $filename = implode('.', [
-                $this->filename,
-                $langCode,
-                $this->fileExt,
-            ]);
-            $destFilepath = $this->dirname . DIRECTORY_SEPARATOR . $filename;
-
-            if (!file_exists($this->dirname)) {
-                @mkdir($this->dirname, 0777, true);
-            }
-
-            file_put_contents($destFilepath, '');
-
-            foreach ($bucket->items as $item) {
-                $index = [
-                    'index' => [
-                        '_id' => $item->getInventoryNumber(),
-                    ],
-                ];
-                $indexStringified = json_encode($index);
-                $itemStringified = json_encode($item);
-
-                $itemBundleStringified = $indexStringified . "\n" . $itemStringified . "\n";
-
-                file_put_contents($destFilepath, $itemBundleStringified, FILE_APPEND);
-            }
-        }
-
         $this->done = true;
-
-        $this->langBuckets = [];
+        $this->outputFilesByLangCode = [];
     }
+
 
     public function error($error)
     {
         echo get_class($this) . ": Error -> " . $error . "\n";
+    }
+
+
+    private function appendItemToOutputFile(Painting $item): bool
+    {
+        $langCode = $item->getLangCode();
+
+        if (!isset($this->outputFilesByLangCode[$langCode])) {
+            $this->outputFilesByLangCode[$langCode] = [
+                "path" => $this->initializeOutputFileForLangCode($langCode),
+            ];
+        }
+
+        $index = [
+            'index' => [
+                '_id' => $item->getInventoryNumber(),
+            ],
+        ];
+        $indexStringified = json_encode($index);
+        $itemStringified = json_encode($item);
+
+        $itemBundleStringified = $indexStringified . "\n" . $itemStringified . "\n";
+
+        file_put_contents($this->outputFilesByLangCode[$langCode]['path'], $itemBundleStringified, FILE_APPEND);
+        return true;
+    }
+
+
+    private function initializeOutputFileForLangCode(string $langCode): string
+    {
+        $filename = $this->filename . '.' . $langCode . '.' . $this->fileExt;
+        $destFilepath = $this->dirname . DIRECTORY_SEPARATOR . $filename;
+
+        if (!file_exists($this->dirname)) {
+            @mkdir($this->dirname, 0777, true);
+        }
+
+        file_put_contents($destFilepath, '');
+
+        return $destFilepath;
     }
 }
