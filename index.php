@@ -51,9 +51,9 @@ Pipeline::new()->withNodes(
 
 /* Paintings */
 $paintingsLoader = PaintingsLoader::withSourcesAt([
-    './input/20191122/CDA_Datenübersicht_P1_20191122.xml',
-    './input/20191122/CDA_Datenübersicht_P2_20191122.xml',
-    './input/20191122/CDA_Datenübersicht_P3_20191122.xml',
+    './input/20200110/CDA_Datenübersicht_P1_20200110.xml',
+    './input/20200110/CDA_Datenübersicht_P2_20200110.xml',
+    './input/20200110/CDA_Datenübersicht_P3_20200110.xml',
 ]);
 $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     './.cache',
@@ -62,10 +62,10 @@ $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt
 );
 $paintingsThesaurusExtender = ExtenderWithThesaurus::new($thesaurusMemoryDestination->getData());
 $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt(
-    './output/20191122/cda-paintings-v2.json',
+    './output/20200110/cda-paintings-v2.json',
 );
 $paintingsElasticsearchBulkDestination = PaintingsElasticsearchLangExporter::withDestinationAt(
-    './output/20191122/elasticsearch/cda-paintings-v2.bulk',
+    './output/20200110/elasticsearch/cda-paintings-v2.bulk',
 );
 
 $paintingsLoader->pipe(
