@@ -55,7 +55,7 @@ class LiteratureReferencesJSONExporter extends Consumer implements IFileExporter
 
     public function done(ProducerInterface $producer)
     {
-        $this->closeAllOutputFile();
+        $this->closeOutputFile();
         $this->done = true;
         $this->destFileInitialized = false;
         $this->isFirstItem = true;
@@ -86,7 +86,7 @@ class LiteratureReferencesJSONExporter extends Consumer implements IFileExporter
         $data = implode(
             "\n",
             array_map(
-                function($line) {
+                function ($line) {
                     return '        ' . $line;
                 },
                 explode("\n", $data),
@@ -113,7 +113,7 @@ class LiteratureReferencesJSONExporter extends Consumer implements IFileExporter
     }
 
 
-    private function closeAllOutputFile(): bool
+    private function closeOutputFile(): bool
     {
         file_put_contents($this->destFilepath, "\n    ]\n}", FILE_APPEND);
 

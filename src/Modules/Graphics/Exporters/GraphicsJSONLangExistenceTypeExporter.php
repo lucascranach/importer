@@ -123,7 +123,6 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
         $key = $existenceTypes . '.' . $langCode;
 
         if (!isset($this->outputFilesByLangCode[$key])) {
-
             $this->outputFilesByLangCode[$key] = [
                 "path" => $this->initializeOutputFileForLangCode($key),
                 "isFirstItem" => true,
@@ -141,7 +140,7 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
         $data = implode(
             "\n",
             array_map(
-                function($line) {
+                function ($line) {
                     return '        ' . $line;
                 },
                 explode("\n", $data),

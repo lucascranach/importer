@@ -100,7 +100,7 @@ class ArchivalsJSONLangExporter extends Consumer implements IFileExporter
         $data = implode(
             "\n",
             array_map(
-                function($line) {
+                function ($line) {
                     return '        ' . $line;
                 },
                 explode("\n", $data),
