@@ -1,0 +1,1040 @@
+{
+    "items": [
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": [
+                {
+                    "type": "(nichts angegeben)",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "Bearbeiter\/in",
+                            "name": "Daniel G\u00f6rres"
+                        }
+                    ],
+                    "processingDates": {
+                        "beginDate": "2020-03-18",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": null
+                }
+            ]
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": [
+                {
+                    "type": "Material\/Technique",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Support",
+                            "text": "#category\na) single sheet woodcut print\n\nSheet:\nPlate\/Block marks:-\nImage: 284 x 205\/203 mm\nText block: -\nPlate, quality (1-6): 1-2\nProof, quality (1-6): 2-3\nPaper, structure: laid\nPaper, thickness (mm): 0,16-0,19\nChain lines, orientation: horizontal\nChain lines, sequence* (mm): 28;26;26;27;25;27;26;25;26;25;26;26;25;27;25\nChain lines, anomalies: -\nChain lines, density (of 10 mm): 11\nDistribution of fibres: homogeneous\nWatermark, motif: St. Catherine's wheel, single outline, with 6 spokes, 6 knives fitted and a plant with 5 arms, each with trilium   \nWatermark, dimensions: 78 x 32 (wheel: 23)\nWatermark, reference: Briquet 13375 (cf. Briquet 13242-13568)\nWire side (depending on the orientation of the motif): verso\nEncrustation, anomalies: -\nShadow of chain lines, width (mm): 5-10\nInscription\/accompanying text: \nComments:\n\n*\nChain lines always run perpendicular to laid lines. The chain line sequence refers to the measured interval between each parallel line and relies on the legibility of the paper structure. Measurements are taken from the left to the right edge or from the lower to the upper edge with depending on the orientation of the motif. These measurements serve as spot checks.\n\n[Thomas Klinke, KKL 2020]",
+                            "purpose": "Technical Examination",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [
+                        {
+                            "role": "Bearbeiter\/in",
+                            "name": "Thomas Klinke"
+                        }
+                    ],
+                    "processingDates": {
+                        "beginDate": "2020-03-30",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "30. M\u00e4rz 2020",
+                        "name": "Thomas Klinke,"
+                    }
+                }
+            ]
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": [
+                {
+                    "type": "Condition Report",
+                    "project": "",
+                    "overallAnalysis": "- upper margin cropped\n[cda 2019]",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "written by",
+                            "name": "Helen Smith"
+                        }
+                    ],
+                    "processingDates": {
+                        "beginDate": "2019-02-12",
+                        "beginYear": null,
+                        "endDate": "2019-02-12",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "12. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ]
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        },
+        {
+            "langCode": "en",
+            "inventoryNumber": "",
+            "objectId": "",
+            "surveys": []
+        }
+    ]
+}
