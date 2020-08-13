@@ -144,7 +144,7 @@ class RestorationsLoader extends Producer implements IMultipleFileLoader
         $node = $doc->importNode($element, true);
         $doc->appendChild($node);
 
-        return simplexml_import_dom($node, null);
+        return simplexml_import_dom($node);
     }
 
 

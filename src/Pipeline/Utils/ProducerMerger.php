@@ -20,7 +20,7 @@ final class ProducerMerger extends Hybrid
     public static function merge(ProducerInterface ...$producers)
     {
         if (count($producers) === 0) {
-            throw new Error('No producers passed to ' . get_class(self));
+            throw new Error('No producers passed to ' . get_called_class());
         }
 
         $nodeMerger = new self;

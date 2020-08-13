@@ -41,7 +41,7 @@ class ArchivalInflator implements IInflator
         Archival $archivalDe,
         Archival $archivalEn
     ) {
-        $subNode = $node->GroupHeader;
+        $subNode = $node->{'GroupHeader'};
 
         self::registerXPathNamespace($subNode);
 

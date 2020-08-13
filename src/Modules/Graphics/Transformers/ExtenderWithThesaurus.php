@@ -61,7 +61,7 @@ class ExtenderWithThesaurus extends Hybrid
     {
         $searchableGraphic = new SearchableGraphic();
 
-        foreach ($graphic as $key => $value) {
+        foreach (get_object_vars($graphic) as $key => $value) {
             $searchableGraphic->$key = $value;
         }
 

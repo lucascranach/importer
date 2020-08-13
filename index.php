@@ -24,7 +24,6 @@ use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 
-
 /* Thesaurus */
 $thesaurusMemoryDestination = ThesaurusMemoryExporter::new(); /* needed later for graphics and paintings */
 
@@ -147,6 +146,8 @@ $loaders = [
     $archivalsLoader,
 ];
 
-foreach ($loaders as $loader) { $loader->run(); }
+foreach ($loaders as $loader) {
+    $loader->run();
+}
 
 $thesaurusMemoryDestination->cleanUp();

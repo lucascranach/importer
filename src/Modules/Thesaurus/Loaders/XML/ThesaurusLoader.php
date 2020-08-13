@@ -53,7 +53,7 @@ class ThesaurusLoader extends Producer implements IFileLoader
 
         ThesaurusInflator::inflate($xmlNode, $thesaurus);
 
-        unset($xmlElement);
+        unset($xmlNode);
 
         $this->next($thesaurus);
 

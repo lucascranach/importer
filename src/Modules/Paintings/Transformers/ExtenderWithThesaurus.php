@@ -61,7 +61,7 @@ class ExtenderWithThesaurus extends Hybrid
     {
         $searchablePainting = new SearchablePainting();
 
-        foreach ($painting as $key => $value) {
+        foreach (get_object_vars($painting) as $key => $value) {
             $searchablePainting->$key = $value;
         }
 

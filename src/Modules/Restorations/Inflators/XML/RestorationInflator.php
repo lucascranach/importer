@@ -46,8 +46,8 @@ class RestorationInflator implements IInflator
         Restoration $restorationDe,
         Restoration $restorationEn
     ) {
-        $headerNode = $node->GroupHeader;
-        $detailsNodes = $node->Details;
+        $headerNode = $node->{'GroupHeader'};
+        $detailsNodes = $node->{'Details'};
 
         self::registerXPathNamespace($headerNode);
         self::registerXPathNamespace($detailsNodes);
@@ -65,7 +65,7 @@ class RestorationInflator implements IInflator
         Restoration $restorationDe,
         Restoration $restorationEn
     ) {
-        $inventoryNumberSectionElement = $node->Section[0];
+        $inventoryNumberSectionElement = $node->{'Section'}[0];
 
         $inventoryNumberElement = self::findElementByXPath(
             $inventoryNumberSectionElement,
@@ -81,6 +81,7 @@ class RestorationInflator implements IInflator
             );
 
             $restorationDe->setInventoryNumber($cleanInventoryNumberStr);
+            $restorationEn->setInventoryNumber($cleanInventoryNumberStr);
         }
     }
 
@@ -91,7 +92,7 @@ class RestorationInflator implements IInflator
         Restoration $restorationDe,
         Restoration $restorationEn
     ) {
-        $objectIdSectionElement = $node->Section[1];
+        $objectIdSectionElement = $node->{'Section'}[1];
 
         $objectIdElement = self::findElementByXPath(
             $objectIdSectionElement,
@@ -101,6 +102,7 @@ class RestorationInflator implements IInflator
             $objectIdNumberInt = intval(trim($objectIdElement));
 
             $restorationDe->setObjectId($objectIdNumberInt);
+            $restorationEn->setObjectId($objectIdNumberInt);
         }
     }
 
@@ -222,7 +224,7 @@ class RestorationInflator implements IInflator
         SimpleXMLElement $node,
         Survey $restorationSurvey
     ) {
-        $testNodes = $node->Details;
+        $testNodes = $node->{'Details'};
 
         if (is_null($testNodes) || $testNodes->children()->count() === 0) {
             return;
@@ -285,7 +287,7 @@ class RestorationInflator implements IInflator
         SimpleXMLElement $node,
         Survey $restorationSurvey
     ) {
-        $personNodes = $node->Details;
+        $personNodes = $node->{'Details'};
 
         if (is_null($personNodes) || $personNodes->children()->count() === 0) {
             return;

@@ -37,7 +37,7 @@ class Publication
 
     public function getPageNumber(): string
     {
-        return $this->pageNUmber;
+        return $this->pageNumber;
     }
 
 

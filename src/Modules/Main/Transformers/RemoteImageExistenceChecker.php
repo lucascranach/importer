@@ -249,7 +249,7 @@ class RemoteImageExistenceChecker extends Hybrid
     private function restoreCache()
     {
         $cacheFilepath = $this->getCachePath();
-        if (is_null($cacheFilepath) || !file_exists($cacheFilepath)) {
+        if (!file_exists($cacheFilepath)) {
             return;
         }
 

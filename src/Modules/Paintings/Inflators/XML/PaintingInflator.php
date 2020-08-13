@@ -74,7 +74,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $subNode = $node->GroupHeader;
+        $subNode = $node->{'GroupHeader'};
 
         self::registerXPathNamespace($subNode);
 
@@ -116,7 +116,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $details = $node->Section[1]->Subreport->Details;
+        $details = $node->{'Section'}[1]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($details); $i += 2) {
             $personsArr = [
@@ -258,7 +258,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $groups = $node->Section[2]->Subreport->Group;
+        $groups = $node->{'Section'}[2]->{'Subreport'}->{'Group'};
 
         foreach ($groups as $group) {
             $personName = new PersonName;
@@ -319,7 +319,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $titleDetailElements = $node->Section[3]->Subreport->Details;
+        $titleDetailElements = $node->{'Section'}[3]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($titleDetailElements); $i += 1) {
             $titleDetailElement = $titleDetailElements[$i];
@@ -395,7 +395,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $classificationSectionElement = $node->Section[4];
+        $classificationSectionElement = $node->{'Section'}[4];
 
         $classificationDe = new Classification;
         $classificationEn = new Classification;
@@ -424,7 +424,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $objectNameSectionElement = $node->Section[5];
+        $objectNameSectionElement = $node->{'Section'}[5];
 
         $objectNameElement = self::findElementByXPath(
             $objectNameSectionElement,
@@ -446,7 +446,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $inventoryNumberSectionElement = $node->Section[6];
+        $inventoryNumberSectionElement = $node->{'Section'}[6];
 
         $inventoryNumberElement = self::findElementByXPath(
             $inventoryNumberSectionElement,
@@ -473,7 +473,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $metaSectionElement = $node->Section[7];
+        $metaSectionElement = $node->{'Section'}[7];
 
         /* object id */
         $objectIdElement = self::findElementByXPath(
@@ -496,7 +496,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $metaSectionElement = $node->Section[8];
+        $metaSectionElement = $node->{'Section'}[8];
 
         /* object id */
         $dimensionsElement = self::findElementByXPath(
@@ -533,7 +533,7 @@ class PaintingInflator implements IInflator
         $paintingEn->setDating($datingEn);
 
         /* Dated (string) */
-        $datedSectionElement = $node->Section[9];
+        $datedSectionElement = $node->{'Section'}[9];
 
         $datedElement = self::findElementByXPath(
             $datedSectionElement,
@@ -554,7 +554,7 @@ class PaintingInflator implements IInflator
         }
 
         /* Date begin */
-        $dateBeginSectionElement = $node->Section[10];
+        $dateBeginSectionElement = $node->{'Section'}[10];
 
         $dateBeginElement = self::findElementByXPath(
             $dateBeginSectionElement,
@@ -568,7 +568,7 @@ class PaintingInflator implements IInflator
         }
 
         /* Date end */
-        $dateEndSectionElement = $node->Section[11];
+        $dateEndSectionElement = $node->{'Section'}[11];
 
         $dateEndElement = self::findElementByXPath(
             $dateEndSectionElement,
@@ -582,7 +582,7 @@ class PaintingInflator implements IInflator
         }
 
         /* Remarks */
-        $remarksSectionElement = $node->Section[12];
+        $remarksSectionElement = $node->{'Section'}[12];
 
         $remarksElement = self::findElementByXPath(
             $remarksSectionElement,
@@ -603,7 +603,7 @@ class PaintingInflator implements IInflator
         }
 
         /* HistoricEventInformation */
-        $historicEventDetailElements = $node->Section[13]->Subreport->Details;
+        $historicEventDetailElements = $node->{'Section'}[13]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($historicEventDetailElements); $i += 2) {
             $historicEventArr = [];
@@ -692,7 +692,7 @@ class PaintingInflator implements IInflator
         Painting $paintingEn
     ) {
         /* de */
-        $descriptionDeSectionElement = $node->Section[14];
+        $descriptionDeSectionElement = $node->{'Section'}[14];
         $descriptionElement = self::findElementByXPath(
             $descriptionDeSectionElement,
             'Field[@FieldName="{OBJECTS.Description}"]/FormattedValue',
@@ -703,7 +703,7 @@ class PaintingInflator implements IInflator
         }
 
         /* en */
-        $descriptionEnSectionElement = $node->Section[15];
+        $descriptionEnSectionElement = $node->{'Section'}[15];
         $descriptionElement = self::findElementByXPath(
             $descriptionEnSectionElement,
             'Field[@FieldName="{OBJCONTEXT.LongText3}"]/FormattedValue',
@@ -722,7 +722,7 @@ class PaintingInflator implements IInflator
         Painting $paintingEn
     ) {
         /* de */
-        $provenanceDeSectionElement = $node->Section[16];
+        $provenanceDeSectionElement = $node->{'Section'}[16];
         $provenanceElement = self::findElementByXPath(
             $provenanceDeSectionElement,
             'Field[@FieldName="{OBJECTS.Provenance}"]/FormattedValue',
@@ -733,7 +733,7 @@ class PaintingInflator implements IInflator
         }
 
         /* en */
-        $provenanceEnSectionElement = $node->Section[17];
+        $provenanceEnSectionElement = $node->{'Section'}[17];
         $provenanceElement = self::findElementByXPath(
             $provenanceEnSectionElement,
             'Field[@FieldName="{OBJCONTEXT.LongText5}"]/FormattedValue',
@@ -752,7 +752,7 @@ class PaintingInflator implements IInflator
         Painting $paintingEn
     ) {
         /* de */
-        $mediumDeSectionElement = $node->Section[18];
+        $mediumDeSectionElement = $node->{'Section'}[18];
         $mediumElement = self::findElementByXPath(
             $mediumDeSectionElement,
             'Field[@FieldName="{OBJECTS.Medium}"]/FormattedValue',
@@ -763,7 +763,7 @@ class PaintingInflator implements IInflator
         }
 
         /* en */
-        $mediumEnSectionElement = $node->Section[19];
+        $mediumEnSectionElement = $node->{'Section'}[19];
         $mediumElement = self::findElementByXPath(
             $mediumEnSectionElement,
             'Field[@FieldName="{OBJCONTEXT.LongText4}"]/FormattedValue',
@@ -782,7 +782,7 @@ class PaintingInflator implements IInflator
         Painting $paintingEn
     ) {
         /* de */
-        $signatureDeSectionElement = $node->Section[20];
+        $signatureDeSectionElement = $node->{'Section'}[20];
         $signatureElement = self::findElementByXPath(
             $signatureDeSectionElement,
             'Field[@FieldName="{OBJECTS.PaperSupport}"]/FormattedValue',
@@ -793,7 +793,7 @@ class PaintingInflator implements IInflator
         }
 
         /* en */
-        $signatureEnSectionElement = $node->Section[21];
+        $signatureEnSectionElement = $node->{'Section'}[21];
         $signatureElement = self::findElementByXPath(
             $signatureEnSectionElement,
             'Field[@FieldName="{OBJCONTEXT.ShortText6}"]/FormattedValue',
@@ -812,7 +812,7 @@ class PaintingInflator implements IInflator
         Painting &$paintingEn
     ) {
         /* de */
-        $inscriptionDeSectionElement = $node->Section[22];
+        $inscriptionDeSectionElement = $node->{'Section'}[22];
         $inscriptionElement = self::findElementByXPath(
             $inscriptionDeSectionElement,
             'Field[@FieldName="{OBJECTS.Inscribed}"]/FormattedValue',
@@ -823,7 +823,7 @@ class PaintingInflator implements IInflator
         }
 
         /* en */
-        $inscriptionEnSectionElement = $node->Section[23];
+        $inscriptionEnSectionElement = $node->{'Section'}[23];
         $inscriptionElement = self::findElementByXPath(
             $inscriptionEnSectionElement,
             'Field[@FieldName="{OBJCONTEXT.LongText7}"]/FormattedValue',
@@ -842,7 +842,7 @@ class PaintingInflator implements IInflator
         Painting $paintingEn
     ) {
         /* de */
-        $markingsDeSectionElement = $node->Section[24];
+        $markingsDeSectionElement = $node->{'Section'}[24];
         $markingsElement = self::findElementByXPath(
             $markingsDeSectionElement,
             'Field[@FieldName="{OBJECTS.Markings}"]/FormattedValue',
@@ -853,7 +853,7 @@ class PaintingInflator implements IInflator
         }
 
         /* en */
-        $markingsEnSectionElement = $node->Section[25];
+        $markingsEnSectionElement = $node->{'Section'}[25];
         $markingsElement = self::findElementByXPath(
             $markingsEnSectionElement,
             'Field[@FieldName="{OBJCONTEXT.LongText9}"]/FormattedValue',
@@ -872,7 +872,7 @@ class PaintingInflator implements IInflator
         Painting $paintingEn
     ) {
         /* de */
-        $relatedWorksDeSectionElement = $node->Section[26];
+        $relatedWorksDeSectionElement = $node->{'Section'}[26];
         $relatedWorksElement = self::findElementByXPath(
             $relatedWorksDeSectionElement,
             'Field[@FieldName="{OBJECTS.RelatedWorks}"]/FormattedValue',
@@ -883,7 +883,7 @@ class PaintingInflator implements IInflator
         }
 
         /* en */
-        $relatedWorksEnSectionElement = $node->Section[27];
+        $relatedWorksEnSectionElement = $node->{'Section'}[27];
         $relatedWorksElement = self::findElementByXPath(
             $relatedWorksEnSectionElement,
             'Field[@FieldName="{OBJCONTEXT.LongText6}"]/FormattedValue',
@@ -902,7 +902,7 @@ class PaintingInflator implements IInflator
         Painting $paintingEn
     ) {
         /* de */
-        $exhibitionHistoryDeSectionElement = $node->Section[28];
+        $exhibitionHistoryDeSectionElement = $node->{'Section'}[28];
         $exhibitionHistoryElement = self::findElementByXPath(
             $exhibitionHistoryDeSectionElement,
             'Field[@FieldName="{OBJECTS.Exhibitions}"]/FormattedValue',
@@ -918,7 +918,7 @@ class PaintingInflator implements IInflator
         }
 
         /* en */
-        $exhibitionHistoryEnSectionElement = $node->Section[29];
+        $exhibitionHistoryEnSectionElement = $node->{'Section'}[29];
         $exhibitionHistoryElement = self::findElementByXPath(
             $exhibitionHistoryEnSectionElement,
             'Field[@FieldName="{OBJCONTEXT.LongText8}"]/FormattedValue',
@@ -941,7 +941,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $bibliographySectionElement = $node->Section[30];
+        $bibliographySectionElement = $node->{'Section'}[30];
         $bibliographyElement = self::findElementByXPath(
             $bibliographySectionElement,
             'Field[@FieldName="{OBJECTS.Bibliography}"]/FormattedValue',
@@ -960,7 +960,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $referenceDetailsElements = $node->Section[31]->Subreport->Details;
+        $referenceDetailsElements = $node->{'Section'}[31]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($referenceDetailsElements); $i += 1) {
             $referenceDetailElement = $referenceDetailsElements[$i];
@@ -1013,7 +1013,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $referenceDetailsElements = $node->Section[32]->Subreport->Details;
+        $referenceDetailsElements = $node->{'Section'}[32]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($referenceDetailsElements); $i += 1) {
             $referenceDetailElement = $referenceDetailsElements[$i];
@@ -1066,7 +1066,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $additionalTextsDetailsElements = $node->Section[33]->Subreport->Details;
+        $additionalTextsDetailsElements = $node->{'Section'}[33]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($additionalTextsDetailsElements); $i += 1) {
             $additionalTextDetailElement = $additionalTextsDetailsElements[$i];
@@ -1159,7 +1159,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $publicationDetailsElements = $node->Section[34]->Subreport->Details;
+        $publicationDetailsElements = $node->{'Section'}[34]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($publicationDetailsElements); $i += 1) {
             $publicationDetailElement = $publicationDetailsElements[$i];
@@ -1212,7 +1212,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $keywordDetailsElements = $node->Section[35]->Subreport->Details;
+        $keywordDetailsElements = $node->{'Section'}[35]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($keywordDetailsElements); $i += 1) {
             $keywordDetailElement = $keywordDetailsElements[$i];
@@ -1271,7 +1271,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $locationDetailsElements = $node->Section[36]->Subreport->Details;
+        $locationDetailsElements = $node->{'Section'}[36]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($locationDetailsElements); $i += 1) {
             $locationDetailElement = $locationDetailsElements[$i];
@@ -1340,8 +1340,8 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $repositoryAndOwnerDetailsSubreport = $node->Section[37]->Subreport;
-        $details = $repositoryAndOwnerDetailsSubreport->Details;
+        $repositoryAndOwnerDetailsSubreport = $node->{'Section'}[37]->{'Subreport'};
+        $details = $repositoryAndOwnerDetailsSubreport->{'Details'};
 
         foreach ($details as $detail) {
             /* We have to extract the role */
@@ -1363,13 +1363,13 @@ class PaintingInflator implements IInflator
 
             try {
                 $isRepository = self::inflateRepository($detail, $roleName, $paintingDe, $paintingEn);
-            } catch (Exception $e) {
+            } catch (Error $e) {
                 echo '  ' . $e->getMessage() . "\n";
             }
 
             try {
                 $isOwner = self::inflateOwner($detail, $roleName, $paintingDe, $paintingEn);
-            } catch (Exception $e) {
+            } catch (Error $e) {
                 echo '  ' . $e->getMessage() . "\n";
             }
 
@@ -1393,7 +1393,7 @@ class PaintingInflator implements IInflator
         );
 
         if (!$repositoryElement) {
-            throw new Exception('Missing element with repository name!');
+            throw new Error('Missing element with repository name!');
         }
 
         $repositoryStr = trim($repositoryElement);
@@ -1430,7 +1430,7 @@ class PaintingInflator implements IInflator
         );
 
         if (!$ownerElement) {
-            throw new Exception('Missing element with owner name!');
+            throw new Error('Missing element with owner name!');
         }
 
         $ownerStr = trim($ownerElement);
@@ -1460,7 +1460,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $sortingNumberSubreport = $node->Section[38];
+        $sortingNumberSubreport = $node->{'Section'}[38];
 
         $sortingNumberElement = self::findElementByXPath(
             $sortingNumberSubreport,
@@ -1481,7 +1481,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $catalogWorkReferenceDetailsElements = $node->Section[39]->Subreport->Details;
+        $catalogWorkReferenceDetailsElements = $node->{'Section'}[39]->{'Subreport'}->{'Details'};
 
         foreach ($catalogWorkReferenceDetailsElements as $detailElement) {
             $catalogWorkReference = new CatalogWorkReference;
@@ -1535,7 +1535,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ) {
-        $catalogWorkReferenceSubreport = $node->Section[40]->Subreport;
+        $catalogWorkReferenceSubreport = $node->{'Section'}[40]->{'Subreport'};
 
         $structuredDimension = new StructuredDimension;
 
@@ -1592,7 +1592,7 @@ class PaintingInflator implements IInflator
         Painting &$paintingDe,
         Painting &$paintingEn
     ) {
-        $isBestOf = isset($node->Section[41]);
+        $isBestOf = isset($node->{'Section'}[41]);
 
         $paintingDe->setIsBestOf($isBestOf);
         $paintingEn->setIsBestOf($isBestOf);

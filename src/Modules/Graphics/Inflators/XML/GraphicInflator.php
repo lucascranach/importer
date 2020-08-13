@@ -91,7 +91,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic $graphicEn
     ) {
-        $subNode = $node->GroupHeader;
+        $subNode = $node->{'GroupHeader'};
 
         self::registerXPathNamespace($subNode);
 
@@ -130,7 +130,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic $graphicEn
     ) {
-        $details = $node->Section[1]->Subreport->Details;
+        $details = $node->{'Section'}[1]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($details); $i += 2) {
             $personsArr = [
@@ -272,7 +272,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic $graphicEn
     ) {
-        $groups = $node->Section[2]->Subreport->Group;
+        $groups = $node->{'Section'}[2]->{'Subreport'}->{'Group'};
 
         foreach ($groups as $group) {
             $personName = new PersonName;
@@ -333,7 +333,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic $graphicEn
     ) {
-        $titleDetailElements = $node->Section[3]->Subreport->Details;
+        $titleDetailElements = $node->{'Section'}[3]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($titleDetailElements); $i += 1) {
             $titleDetailElement = $titleDetailElements[$i];
@@ -409,7 +409,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic $graphicEn
     ) {
-        $classificationSectionElement = $node->Section[4];
+        $classificationSectionElement = $node->{'Section'}[4];
 
         $classificationDe = new Classification;
         $classificationEn = new Classification;
@@ -450,7 +450,7 @@ class GraphicInflator implements IInflator
         }
 
         /* PrintProcess */
-        $objectNameSectionElement = $node->Section[5];
+        $objectNameSectionElement = $node->{'Section'}[5];
 
         $objectNameElement = self::findElementByXPath(
             $objectNameSectionElement,
@@ -472,7 +472,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic $graphicEn
     ) {
-        $inventoryNumberSectionElement = $node->Section[6];
+        $inventoryNumberSectionElement = $node->{'Section'}[6];
 
         $inventoryNumberElement = self::findElementByXPath(
             $inventoryNumberSectionElement,
@@ -499,7 +499,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic $graphicEn
     ) {
-        $metaSectionElement = $node->Section[7];
+        $metaSectionElement = $node->{'Section'}[7];
 
         /* object id */
         $objectIdElement = self::findElementByXPath(
@@ -537,7 +537,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic $graphicEn
     ) {
-        $metaSectionElement = $node->Section[8];
+        $metaSectionElement = $node->{'Section'}[8];
 
         /* object id */
         $dimensionsElement = self::findElementByXPath(
@@ -574,7 +574,7 @@ class GraphicInflator implements IInflator
         $graphicEn->setDating($datingEn);
 
         /* Dated (string) */
-        $datedSectionElement = $node->Section[9];
+        $datedSectionElement = $node->{'Section'}[9];
 
         $datedElement = self::findElementByXPath(
             $datedSectionElement,
@@ -595,7 +595,7 @@ class GraphicInflator implements IInflator
         }
 
         /* Date begin */
-        $dateBeginSectionElement = $node->Section[10];
+        $dateBeginSectionElement = $node->{'Section'}[10];
 
         $dateBeginElement = self::findElementByXPath(
             $dateBeginSectionElement,
@@ -609,7 +609,7 @@ class GraphicInflator implements IInflator
         }
 
         /* Date end */
-        $dateEndSectionElement = $node->Section[11];
+        $dateEndSectionElement = $node->{'Section'}[11];
 
         $dateEndElement = self::findElementByXPath(
             $dateEndSectionElement,
@@ -623,7 +623,7 @@ class GraphicInflator implements IInflator
         }
 
         /* Remarks */
-        $remarksSectionElement = $node->Section[12];
+        $remarksSectionElement = $node->{'Section'}[12];
 
         $remarksElement = self::findElementByXPath(
             $remarksSectionElement,
@@ -644,7 +644,7 @@ class GraphicInflator implements IInflator
         }
 
         /* HistoricEventInformation */
-        $historicEventDetailElements = $node->Section[13]->Subreport->Details;
+        $historicEventDetailElements = $node->{'Section'}[13]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($historicEventDetailElements); $i += 2) {
             $historicEventArr = [];
@@ -733,7 +733,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicEn
     ) {
         /* de */
-        $descriptionDeSectionElement = $node->Section[14];
+        $descriptionDeSectionElement = $node->{'Section'}[14];
         $descriptionElement = self::findElementByXPath(
             $descriptionDeSectionElement,
             'Field[@FieldName="{OBJECTS.Description}"]/FormattedValue',
@@ -744,7 +744,7 @@ class GraphicInflator implements IInflator
         }
 
         /* en */
-        $descriptionEnSectionElement = $node->Section[15];
+        $descriptionEnSectionElement = $node->{'Section'}[15];
         $descriptionElement = self::findElementByXPath(
             $descriptionEnSectionElement,
             'Field[@FieldName="{OBJCONTEXT.LongText3}"]/FormattedValue',
@@ -763,7 +763,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicEn
     ) {
         /* de */
-        $provenanceDeSectionElement = $node->Section[16];
+        $provenanceDeSectionElement = $node->{'Section'}[16];
         $provenanceElement = self::findElementByXPath(
             $provenanceDeSectionElement,
             'Field[@FieldName="{OBJECTS.Provenance}"]/FormattedValue',
@@ -774,7 +774,7 @@ class GraphicInflator implements IInflator
         }
 
         /* en */
-        $provenanceEnSectionElement = $node->Section[17];
+        $provenanceEnSectionElement = $node->{'Section'}[17];
         $provenanceElement = self::findElementByXPath(
             $provenanceEnSectionElement,
             'Field[@FieldName="{OBJCONTEXT.LongText5}"]/FormattedValue',
@@ -793,7 +793,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicEn
     ) {
         /* de */
-        $mediumDeSectionElement = $node->Section[18];
+        $mediumDeSectionElement = $node->{'Section'}[18];
         $mediumElement = self::findElementByXPath(
             $mediumDeSectionElement,
             'Field[@FieldName="{OBJECTS.Medium}"]/FormattedValue',
@@ -804,7 +804,7 @@ class GraphicInflator implements IInflator
         }
 
         /* en */
-        $mediumEnSectionElement = $node->Section[19];
+        $mediumEnSectionElement = $node->{'Section'}[19];
         $mediumElement = self::findElementByXPath(
             $mediumEnSectionElement,
             'Field[@FieldName="{OBJCONTEXT.LongText4}"]/FormattedValue',
@@ -823,7 +823,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicEn
     ) {
         /* de */
-        $signatureDeSectionElement = $node->Section[20];
+        $signatureDeSectionElement = $node->{'Section'}[20];
         $signatureElement = self::findElementByXPath(
             $signatureDeSectionElement,
             'Field[@FieldName="{OBJECTS.PaperSupport}"]/FormattedValue',
@@ -834,7 +834,7 @@ class GraphicInflator implements IInflator
         }
 
         /* en */
-        $signatureEnSectionElement = $node->Section[21];
+        $signatureEnSectionElement = $node->{'Section'}[21];
         $signatureElement = self::findElementByXPath(
             $signatureEnSectionElement,
             'Field[@FieldName="{OBJCONTEXT.ShortText6}"]/FormattedValue',
@@ -853,7 +853,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicEn
     ) {
         /* de */
-        $inscriptionDeSectionElement = $node->Section[22];
+        $inscriptionDeSectionElement = $node->{'Section'}[22];
         $inscriptionElement = self::findElementByXPath(
             $inscriptionDeSectionElement,
             'Field[@FieldName="{OBJECTS.Inscribed}"]/FormattedValue',
@@ -864,7 +864,7 @@ class GraphicInflator implements IInflator
         }
 
         /* en */
-        $inscriptionEnSectionElement = $node->Section[23];
+        $inscriptionEnSectionElement = $node->{'Section'}[23];
         $inscriptionElement = self::findElementByXPath(
             $inscriptionEnSectionElement,
             'Field[@FieldName="{OBJCONTEXT.LongText7}"]/FormattedValue',
@@ -883,7 +883,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicEn
     ) {
         /* de */
-        $markingsDeSectionElement = $node->Section[24];
+        $markingsDeSectionElement = $node->{'Section'}[24];
         $markingsElement = self::findElementByXPath(
             $markingsDeSectionElement,
             'Field[@FieldName="{OBJECTS.Markings}"]/FormattedValue',
@@ -894,7 +894,7 @@ class GraphicInflator implements IInflator
         }
 
         /* en */
-        $markingsEnSectionElement = $node->Section[25];
+        $markingsEnSectionElement = $node->{'Section'}[25];
         $markingsElement = self::findElementByXPath(
             $markingsEnSectionElement,
             'Field[@FieldName="{OBJCONTEXT.LongText9}"]/FormattedValue',
@@ -913,7 +913,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicEn
     ) {
         /* de */
-        $relatedWorksDeSectionElement = $node->Section[26];
+        $relatedWorksDeSectionElement = $node->{'Section'}[26];
         $relatedWorksElement = self::findElementByXPath(
             $relatedWorksDeSectionElement,
             'Field[@FieldName="{OBJECTS.RelatedWorks}"]/FormattedValue',
@@ -924,7 +924,7 @@ class GraphicInflator implements IInflator
         }
 
         /* en */
-        $relatedWorksEnSectionElement = $node->Section[27];
+        $relatedWorksEnSectionElement = $node->{'Section'}[27];
         $relatedWorksElement = self::findElementByXPath(
             $relatedWorksEnSectionElement,
             'Field[@FieldName="{OBJCONTEXT.LongText6}"]/FormattedValue',
@@ -943,7 +943,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicEn
     ) {
         /* de */
-        $exhibitionHistoryDeSectionElement = $node->Section[28];
+        $exhibitionHistoryDeSectionElement = $node->{'Section'}[28];
         $exhibitionHistoryElement = self::findElementByXPath(
             $exhibitionHistoryDeSectionElement,
             'Field[@FieldName="{OBJECTS.Exhibitions}"]/FormattedValue',
@@ -959,7 +959,7 @@ class GraphicInflator implements IInflator
         }
 
         /* en */
-        $exhibitionHistoryEnSectionElement = $node->Section[29];
+        $exhibitionHistoryEnSectionElement = $node->{'Section'}[29];
         $exhibitionHistoryElement = self::findElementByXPath(
             $exhibitionHistoryEnSectionElement,
             'Field[@FieldName="{OBJCONTEXT.LongText8}"]/FormattedValue',
@@ -988,7 +988,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic $graphicEn
     ) {
-        $bibliographySectionElement = $node->Section[30];
+        $bibliographySectionElement = $node->{'Section'}[30];
         $bibliographyElement = self::findElementByXPath(
             $bibliographySectionElement,
             'Field[@FieldName="{OBJECTS.Bibliography}"]/FormattedValue',
@@ -1008,7 +1008,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicEn
     ) {
         /* Reprints References */
-        $referenceReprintDetailsElements = $node->Section[31]->Subreport->Details;
+        $referenceReprintDetailsElements = $node->{'Section'}[31]->{'Subreport'}->{'Details'};
 
 
         $reprintReferences = self::getReferencesForDetailElements(
@@ -1016,7 +1016,7 @@ class GraphicInflator implements IInflator
         );
 
         /* RelatedWorks References */
-        $referenceRelatedWorksDetailsElements = $node->Section[32]->Subreport->Details;
+        $referenceRelatedWorksDetailsElements = $node->{'Section'}[32]->{'Subreport'}->{'Details'};
 
         $relatedWorksReferences = self::getReferencesForDetailElements(
             $referenceRelatedWorksDetailsElements,
@@ -1160,7 +1160,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic $graphicEn
     ) {
-        $additionalTextsDetailsElements = $node->Section[33]->Subreport->Details;
+        $additionalTextsDetailsElements = $node->{'Section'}[33]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($additionalTextsDetailsElements); $i += 1) {
             $additionalTextDetailElement = $additionalTextsDetailsElements[$i];
@@ -1227,7 +1227,8 @@ class GraphicInflator implements IInflator
             );
             if ($yearElement) {
                 $yearStr = trim($yearElement);
-                $additionalTextInformation->setYear($yearStr);
+                $year = intval($yearStr);
+                $additionalTextInformation->setYear($year);
             }
 
             /* Author */
@@ -1249,7 +1250,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic $graphicEn
     ) {
-        $publicationDetailsElements = $node->Section[34]->Subreport->Details;
+        $publicationDetailsElements = $node->{'Section'}[34]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($publicationDetailsElements); $i += 1) {
             $publicationDetailElement = $publicationDetailsElements[$i];
@@ -1314,7 +1315,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic $graphicEn
     ) {
-        $keywordDetailsElements = $node->Section[35]->Subreport->Details;
+        $keywordDetailsElements = $node->{'Section'}[35]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($keywordDetailsElements); $i += 1) {
             $keywordDetailElement = $keywordDetailsElements[$i];
@@ -1371,7 +1372,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic $graphicEn
     ) {
-        $locationDetailsElements = $node->Section[36]->Subreport->Details;
+        $locationDetailsElements = $node->{'Section'}[36]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($locationDetailsElements); $i += 1) {
             $locationDetailElement = $locationDetailsElements[$i];
@@ -1440,8 +1441,8 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic $graphicEn
     ) {
-        $repositoryAndOwnerDetailsSubreport = $node->Section[37]->Subreport;
-        $details = $repositoryAndOwnerDetailsSubreport->Details;
+        $repositoryAndOwnerDetailsSubreport = $node->{'Section'}[37]->{'Subreport'};
+        $details = $repositoryAndOwnerDetailsSubreport->{'Details'};
 
         foreach ($details as $detail) {
             /* We have to extract the role */
@@ -1560,7 +1561,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic $graphicEn
     ) {
-        $sortingNumberSubreport = $node->Section[38];
+        $sortingNumberSubreport = $node->{'Section'}[38];
 
         $sortingNumberElement = self::findElementByXPath(
             $sortingNumberSubreport,
@@ -1581,7 +1582,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic $graphicEn
     ) {
-        $catalogWorkReferenceDetailsElements = $node->Section[39]->Subreport->Details;
+        $catalogWorkReferenceDetailsElements = $node->{'Section'}[39]->{'Subreport'}->{'Details'};
 
         foreach ($catalogWorkReferenceDetailsElements as $detailElement) {
             if ($detailElement->count() === 0) {
@@ -1651,7 +1652,7 @@ class GraphicInflator implements IInflator
         Graphic $graphicDe,
         Graphic &$graphicEn
     ) {
-        $catalogWorkReferenceSubreport = $node->Section[40]->Subreport;
+        $catalogWorkReferenceSubreport = $node->{'Section'}[40]->{'Subreport'};
 
         $structuredDimension = new StructuredDimension;
 

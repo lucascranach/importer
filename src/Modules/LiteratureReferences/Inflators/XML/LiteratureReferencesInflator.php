@@ -29,8 +29,8 @@ class LiteratureReferencesInflator implements IInflator
         SimpleXMLElement &$node,
         LiteratureReference &$literatureReference
     ) {
-        $subNode = $node->GroupHeader;
-        $connectedObjectsSubNode = $node->Group;
+        $subNode = $node->{'GroupHeader'};
+        $connectedObjectsSubNode = $node->{'Group'};
 
         self::registerXPathNamespace($subNode);
 

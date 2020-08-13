@@ -141,7 +141,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function getClassification(): Classification
+    public function getClassification(): ?Classification
     {
         return $this->classification;
     }
@@ -189,7 +189,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function getObjectId(): int
+    public function getObjectId(): ?int
     {
         return $this->objectId;
     }
@@ -477,7 +477,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function getStructuredDimension(): StructuredDimension
+    public function getStructuredDimension(): ?StructuredDimension
     {
         return $this->structuredDimension;
     }

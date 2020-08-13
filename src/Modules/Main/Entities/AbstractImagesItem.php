@@ -39,6 +39,9 @@ abstract class AbstractImagesItem
         ]
     */
 
+
+    abstract public function getId(): string;
+
     abstract public function getImageId(): string;
 
 
