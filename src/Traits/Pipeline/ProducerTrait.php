@@ -17,7 +17,7 @@ trait ProducerTrait
         return true;
     }
 
-    public function pipe(ConsumerInterface ...$nodes): ConsumerInterface
+    public function pipe(ConsumerInterface ...$nodes): ProducerInterface
     {
         if (count($nodes) === 0) {
             throw new Error('At least one node expected to build the pipe up');
@@ -25,26 +25,12 @@ trait ProducerTrait
         $this->checkForCyclicChains(...$nodes);
         $this->checkForExistingConnection(...$nodes);
 
-        $firstNode = current($nodes);
-        $this->consumerNodes[] = $firstNode;
-        $firstNode->registerProducerNode($this);
-        $lastNode = end($nodes);
-        reset($nodes);
-
-        while (current($nodes) !== $lastNode) {
-            $currentNode = current($nodes);
-            $nextNode = next($nodes);
-
-            if ($currentNode instanceof ProducerInterface) {
-                $currentNode->pipe($nextNode);
-            } else {
-                throw new Error(
-                    'Non-Producer is only allowed as last item in the pipe-chain: ' . get_class($currentNode),
-                );
-            }
+        foreach ($nodes as $node) {
+            $this->consumerNodes[] = $node;
+            $node->registerProducerNode($this);
         }
 
-        return $lastNode;
+        return $this;
     }
 
 
