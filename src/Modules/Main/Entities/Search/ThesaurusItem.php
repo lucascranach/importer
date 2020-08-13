@@ -1,6 +1,6 @@
 <?php
 
-namespace CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search;
+namespace CranachDigitalArchive\Importer\Modules\Main\Entities\Search;
 
 /**
  * Representing a single searchable graphic and all flattened and embedded related data
