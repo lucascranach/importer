@@ -5,7 +5,7 @@ namespace CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
 
 /**
- * Representing a single searchable graphic and all flattened and embedded related data
+ * Representing a single searchable painting and all flattened and embedded related data
  * 	One instance containing only data for one language
  */
 class SearchablePainting extends Painting
