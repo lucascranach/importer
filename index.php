@@ -4,8 +4,6 @@ namespace CranachDigitalArchive\Importer;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithThesaurus;
-use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 use CranachDigitalArchive\Importer\Pipeline\Pipeline;
 
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
@@ -13,6 +11,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsLoader;
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsJSONLangExistenceTypeExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterminer;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithThesaurus as GraphicsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
 use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\LiteratureReferencesLoader;
@@ -20,10 +19,12 @@ use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\Litera
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsLoader;
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsElasticsearchLangExporter;
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithThesaurus as PaintingsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Archivals\Loaders\XML\ArchivalsLoader;
 use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
+use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 
 /* Thesaurus */
 $thesaurusLoader = ThesaurusLoader::withSourceAt(
@@ -60,7 +61,7 @@ $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt
     'pyramid',
     'paintingssRemoteImageExistenceChecker',
 );
-$paintingsThesaurusExtender = ExtenderWithThesaurus::new($thesaurusMemoryDestination->getData());
+$paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination->getData());
 $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt(
     './output/20200716/cda-paintings-v2.json',
 );
@@ -110,6 +111,7 @@ $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     'graphicsRemoteImageExistenceChecker',
 );
 $graphicsConditionDeterminer = ConditionDeterminer::new();
+$graphicsThesaurusExtender = GraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination->getData());
 $graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt(
     './output/20200716/cda-graphics-v2.json',
 );
@@ -127,6 +129,7 @@ $graphicsConditionDeterminer->pipe(
 );
 
 $graphicsConditionDeterminer->pipe(
+    $graphicsThesaurusExtender,
     $graphicsElasticsearchBulkDestination,
 );
 
