@@ -99,7 +99,6 @@ class GraphicInflator implements IInflator
         self::inflatePersonNames($subNode, $graphicDe, $graphicEn);
         self::inflateTitles($subNode, $graphicDe, $graphicEn);
         self::inflateClassification($subNode, $graphicDe, $graphicEn);
-        self::inflateObjectName($subNode, $graphicDe, $graphicEn);
         self::inflateInventoryNumber($subNode, $graphicDe, $graphicEn);
         self::inflateObjectMeta($subNode, $graphicDe, $graphicEn);
         self::inflateDimensions($subNode, $graphicDe, $graphicEn);
@@ -449,14 +448,8 @@ class GraphicInflator implements IInflator
                 $classificationEn->setCondition($splitStateStr[1]);
             }
         }
-    }
 
-    /* Object name */
-    private static function inflateObjectName(
-        SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
-    ) {
+        /* PrintProcess */
         $objectNameSectionElement = $node->Section[5];
 
         $objectNameElement = self::findElementByXPath(
@@ -467,8 +460,8 @@ class GraphicInflator implements IInflator
             $objectNameStr = trim($objectNameElement);
 
             /* Using single german value for both language objects */
-            $graphicDe->setObjectName($objectNameStr);
-            $graphicEn->setObjectName($objectNameStr);
+            $classificationDe->setPrintProcess($objectNameStr);
+            $classificationEn->setPrintProcess($objectNameStr);
         }
     }
 

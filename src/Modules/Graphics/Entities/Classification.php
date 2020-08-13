@@ -9,6 +9,7 @@ class Classification
 {
     public $classification = '';
     public $condition = '';
+    public $printProcess = '';
 
 
     public function __construct()
@@ -37,5 +38,17 @@ class Classification
     public function getCondition(): string
     {
         return $this->condition;
+    }
+
+
+    public function setPrintProcess(string $printProcess)
+    {
+        $this->printProcess = $printProcess;
+    }
+
+
+    public function getPrintProcess(): string
+    {
+        return $this->printProcess;
     }
 }
