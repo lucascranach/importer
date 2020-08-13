@@ -14,7 +14,8 @@
         "ext-simplexml": "*"
     },
     "scripts": {
-         "fix": "php-cs-fixer fix ."
+         "lint": "php-cs-fixer fix --dry-run",
+         "lint:fix": "php-cs-fixer fix"
     },
     "autoload": {
         "psr-4": {
