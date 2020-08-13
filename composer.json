@@ -16,7 +16,8 @@
     "scripts": {
          "import": "php index.php",
          "lint": "php-cs-fixer fix --dry-run",
-         "lint:fix": "php-cs-fixer fix"
+         "lint:fix": "php-cs-fixer fix",
+         "analyse": "phpstan analyse -l 5 src"
     },
     "autoload": {
         "psr-4": {
@@ -24,6 +25,7 @@
         }
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.16"
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "phpstan/phpstan": "^0.12.37"
     }
 }
