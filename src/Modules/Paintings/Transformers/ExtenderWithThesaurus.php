@@ -18,6 +18,7 @@ class ExtenderWithThesaurus extends Hybrid
     private $langToAltKey = [
         Language::EN => 'britishEquivalent',
     ];
+    private $keywordType = 'Schlagwort';
 
 
     private function __construct()
@@ -71,7 +72,7 @@ class ExtenderWithThesaurus extends Hybrid
     private function extendWithThesaurusData(SearchablePainting $painting)
     {
         foreach ($painting->getKeywords() as $keyword) {
-            if ($keyword->getType() !== 'Schlagwort') {
+            if ($keyword->getType() !== $this->keywordType) {
                 continue;
             }
 
