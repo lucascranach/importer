@@ -2,15 +2,15 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Paintings\Transformers;
 
+use Error;
 use CranachDigitalArchive\Importer\Language;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\ThesaurusItem;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search\SearchablePainting;
-use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search\ThesaurusItem;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Entities\Thesaurus;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Entities\ThesaurusTerm;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
-use Error;
 
 class ExtenderWithThesaurus extends Hybrid
 {
@@ -135,7 +135,7 @@ class ExtenderWithThesaurus extends Hybrid
 
         $prevId = '';
 
-        for($i = 0; $i < count($terms); $i += 1) {
+        for ($i = 0; $i < count($terms); $i += 1) {
             $currTerm = $terms[$i];
 
             $id = $this->getDKultIdentifierForTerm($currTerm);

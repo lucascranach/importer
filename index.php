@@ -177,7 +177,6 @@ Pipeline::new()->withNodes(
     $paintingsLoader,
     $paintingsRemoteImageExistenceChecker,
     $paintingsDestination,
-
     $paintingsThesaurusExtender,
     $paintingsElasticsearchBulkDestination,
 

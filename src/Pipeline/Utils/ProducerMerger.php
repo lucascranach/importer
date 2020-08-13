@@ -42,7 +42,7 @@ final class ProducerMerger extends Hybrid
 
     public function done(ProducerInterface $producer)
     {
-        if (!in_array($producer, $this->producersToForward)) {
+        if (!in_array($producer, $this->producersToForward, true)) {
             throw new Error('Unexpected producer passed for done trigger: ' . get_class($producer));
         }
 
