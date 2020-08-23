@@ -10,14 +10,17 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsJSONLangEx
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterminer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithThesaurus as GraphicsExtenderWithThesaurus;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRestorations as GraphicsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
 use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsJSONLangExporter;
+use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\LiteratureReferencesLoader;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\LiteratureReferencesJSONExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsLoader;
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithThesaurus as PaintingsExtenderWithThesaurus;
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithRestorations as PaintingsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Archivals\Loaders\XML\ArchivalsLoader;
 use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader;
@@ -37,12 +40,28 @@ ThesaurusLoader::withSourceAt(
 )->run(); /* and we have to run it directly */
 
 
+/* PaintingsRestorations */
+$paintingsRestorationMemoryDestination = RestorationsMemoryExporter::new();
+
+RestorationsLoader::withSourcesAt([
+    './input/20200716/CDA_RestDokumente_P1_20200716.xml',
+    './input/20200716/CDA_RestDokumente_P2_20200716.xml',
+    './input/20200716/CDA_RestDokumente_P3_20200716.xml',
+])->pipe(
+    RestorationsJSONLangExporter::withDestinationAt(
+        './output/20200716/cda-paintings-restoration-v2.json',
+    ),
+    $paintingsRestorationMemoryDestination,
+)->run(); /* and we have to run it directly */
+
+
 /* Paintings */
 $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     './.cache',
     'pyramid',
     'paintingssRemoteImageExistenceChecker',
 );
+$paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
 $paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt(
     './output/20200716/cda-paintings-v2.json',
@@ -57,24 +76,27 @@ $paintingsLoader = PaintingsLoader::withSourcesAt([
     './input/20200716/CDA_Datenübersicht_P3_20200716.xml',
 ])->pipe(
     $paintingsRemoteImageExistenceChecker->pipe(
-        $paintingsDestination,
-        $paintingsThesaurusExtender->pipe(
-            $paintingsElasticsearchBulkDestination,
+        $paintingsRestorationExtender->pipe(
+            $paintingsDestination,
+            $paintingsThesaurusExtender->pipe(
+                $paintingsElasticsearchBulkDestination,
+            ),
         ),
     ),
 );
 
 
-/* PaintingsRestorations */
-$paintingsRestorationLoader = RestorationsLoader::withSourcesAt([
-    './input/20200716/CDA_RestDokumente_P1_20200716.xml',
-    './input/20200716/CDA_RestDokumente_P2_20200716.xml',
-    './input/20200716/CDA_RestDokumente_P3_20200716.xml',
+/* GraphicRestorations */
+$graphicsRestorationMemoryDestination = RestorationsMemoryExporter::new();
+
+RestorationsLoader::withSourcesAt([
+    './input/20200716/CDA-GR_RestDokumente_20200716.xml',
 ])->pipe(
     RestorationsJSONLangExporter::withDestinationAt(
-        './output/20200716/cda-paintings-restoration-v2.json',
+        './output/20200716/cda-graphics-restoration-v2.json',
     ),
-);
+    $graphicsRestorationMemoryDestination,
+)->run(); /* and we have to run it directly */
 
 
 /* Graphics */
@@ -84,6 +106,7 @@ $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     'graphicsRemoteImageExistenceChecker',
 );
 $graphicsConditionDeterminer = ConditionDeterminer::new();
+$graphicsRestorationExtender = GraphicsExtenderWithRestorations::new($graphicsRestorationMemoryDestination);
 $graphicsThesaurusExtender = GraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt(
     './output/20200716/cda-graphics-v2.json',
@@ -97,21 +120,13 @@ $graphicsLoader = GraphicsLoader::withSourceAt(
 )->pipe(
     $graphicsRemoteImageExistenceChecker->pipe(
         $graphicsConditionDeterminer->pipe(
-            $graphicsDestination,
-            $graphicsThesaurusExtender->pipe(
-                $graphicsElasticsearchBulkDestination,
+            $graphicsRestorationExtender->pipe(
+                $graphicsDestination,
+                $graphicsThesaurusExtender->pipe(
+                    $graphicsElasticsearchBulkDestination,
+                ),
             ),
         ),
-    ),
-);
-
-
-/* GraphicRestorations */
-$graphicsRestorationLoader = RestorationsLoader::withSourcesAt([
-    './input/20200716/CDA-GR_RestDokumente_20200716.xml',
-])->pipe(
-    RestorationsJSONLangExporter::withDestinationAt(
-        './output/20200716/cda-graphics-restoration-v2.json',
     ),
 );
 
@@ -139,11 +154,9 @@ $archivalsLoader = ArchivalsLoader::withSourceAt(
 /* Trigger loaders and final exit routines */
 $loaders = [
     $paintingsLoader,
-    $paintingsRestorationLoader,
     $graphicsLoader,
-    $graphicsRestorationLoader,
-    $literatureReferencesLoader,
-    $archivalsLoader,
+    // $literatureReferencesLoader,
+    // $archivalsLoader,
 ];
 
 foreach ($loaders as $loader) {
@@ -151,3 +164,5 @@ foreach ($loaders as $loader) {
 }
 
 $thesaurusMemoryDestination->cleanUp();
+$paintingsRestorationMemoryDestination->cleanUp();
+$graphicsRestorationMemoryDestination->cleanUp();

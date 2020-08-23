@@ -57,6 +57,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     public $sortingNumber = '';
     public $catalogWorkReferences = [];
     public $structuredDimension = null;
+    public $restorationSurveys = [];
 
 
     public function __construct()
@@ -480,5 +481,17 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     public function getStructuredDimension(): ?StructuredDimension
     {
         return $this->structuredDimension;
+    }
+
+
+    public function setRestorationSurveys(array $restorationSurveys)
+    {
+        $this->restorationSurveys = $restorationSurveys;
+    }
+
+
+    public function getRestorationSurveys(): array
+    {
+        return $this->restorationSurveys;
     }
 }

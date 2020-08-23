@@ -179,6 +179,7 @@
                 "width": "0.00",
                 "height": "13.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -378,6 +379,7 @@
                 "width": "0.00",
                 "height": "37.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -626,6 +628,7 @@
                 "width": "19.70",
                 "height": "29.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -948,6 +951,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -1270,6 +1274,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -1595,6 +1600,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -1920,6 +1926,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -2131,6 +2138,7 @@
                 "width": "0.00",
                 "height": "21.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -2353,6 +2361,7 @@
                 "width": "0.00",
                 "height": "38.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -2538,6 +2547,7 @@
                 "width": "0.00",
                 "height": "12.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -2724,6 +2734,7 @@
                 "width": "0.00",
                 "height": "40.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -3032,6 +3043,7 @@
                 "width": "0.00",
                 "height": "16.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -3228,6 +3240,7 @@
                 "width": "0.00",
                 "height": "25.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -3427,6 +3440,39 @@
                 "width": "0.00",
                 "height": "18.70"
             },
+            "restorationSurveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Kupferstich",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "18. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -3618,6 +3664,7 @@
                 "width": "0.00",
                 "height": "16.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -3954,6 +4001,7 @@
                 "width": "0.00",
                 "height": "14.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -4156,6 +4204,7 @@
                 "width": "0.00",
                 "height": "22.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -4362,6 +4411,7 @@
                 "width": "0.00",
                 "height": "38.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -4548,6 +4598,7 @@
                 "width": "0.00",
                 "height": "24.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -4739,6 +4790,7 @@
                 "width": "0.00",
                 "height": "24.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -4925,6 +4977,7 @@
                 "width": "0.00",
                 "height": "24.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -5116,6 +5169,7 @@
                 "width": "0.00",
                 "height": "37.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -5299,6 +5353,7 @@
                 "width": "0.00",
                 "height": "22.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -5459,6 +5514,7 @@
                 "width": "0.00",
                 "height": "17.40"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -5639,6 +5695,7 @@
                 "width": "0.00",
                 "height": "17.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -5830,6 +5887,7 @@
                 "width": "0.00",
                 "height": "18.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -6029,6 +6087,7 @@
                 "width": "0.00",
                 "height": "18.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -6220,6 +6279,7 @@
                 "width": "0.00",
                 "height": "25.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -6406,6 +6466,7 @@
                 "width": "0.00",
                 "height": "23.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -6592,6 +6653,7 @@
                 "width": "0.00",
                 "height": "33.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -6768,6 +6830,7 @@
                 "width": "0.00",
                 "height": "21.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -6986,6 +7049,7 @@
                 "width": "0.00",
                 "height": "26.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -7192,6 +7256,64 @@
                 "width": "0.00",
                 "height": "36.30"
             },
+            "restorationSurveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt, schwarze Tinte",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "30. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Wz verso (Cahier)\n[http:\/\/sammlungenonline.albertina.at\/?query=Inventarnummer=[DG1929\/103]&showtype=record]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "30. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -7413,6 +7535,39 @@
                 "width": "0.00",
                 "height": "28.00"
             },
+            "restorationSurveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt, schwarze Farbe",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2017,
+                        "endDate": "",
+                        "endYear": 2017
+                    },
+                    "signature": {
+                        "date": "31. Januar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -7627,6 +7782,39 @@
                 "width": "0.00",
                 "height": "13.10"
             },
+            "restorationSurveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt mit Typendruck: ein Druck vom schwarzen Linienblock\n[Exhib. Cat. D\u00fcsseldorf 2017, 170, No. 78]",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2017,
+                        "endDate": "",
+                        "endYear": 2017
+                    },
+                    "signature": {
+                        "date": "01. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -7835,6 +8023,7 @@
                 "width": "0.00",
                 "height": "13.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -8019,6 +8208,7 @@
                 "width": "0.00",
                 "height": "12.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -8213,6 +8403,7 @@
                 "width": "0.00",
                 "height": "23.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -8404,6 +8595,39 @@
                 "width": "0.00",
                 "height": "33.30"
             },
+            "restorationSurveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "2019-02-05",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "05. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -8610,6 +8834,7 @@
                 "width": "0.00",
                 "height": "28.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -8816,6 +9041,7 @@
                 "width": "0.00",
                 "height": "24.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -9007,6 +9233,39 @@
                 "width": "0.00",
                 "height": "33.50"
             },
+            "restorationSurveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "2019-02-06",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "06. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -9198,6 +9457,7 @@
                 "width": "0.00",
                 "height": "29.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -9389,6 +9649,7 @@
                 "width": "0.00",
                 "height": "29.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -9575,6 +9836,7 @@
                 "width": "0.00",
                 "height": "29.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -9887,6 +10149,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -10204,6 +10467,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -10521,6 +10785,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -10838,6 +11103,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -11150,6 +11416,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -11467,6 +11734,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -11784,6 +12052,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -12101,6 +12370,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -12418,6 +12688,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -12735,6 +13006,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -12906,6 +13178,7 @@
                 "width": "0.00",
                 "height": "38.90"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -13068,6 +13341,7 @@
                 "width": "0.00",
                 "height": "13.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -13267,6 +13541,7 @@
                 "width": "0.00",
                 "height": "24.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -13478,6 +13753,39 @@
                 "width": "0.00",
                 "height": "16.50"
             },
+            "restorationSurveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Kupferstich",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "06. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -13779,6 +14087,7 @@
                 "width": "0.00",
                 "height": "20.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -14072,6 +14381,7 @@
                 "width": "0.00",
                 "height": "16.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -14370,6 +14680,7 @@
                 "width": "0.00",
                 "height": "16.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -14658,6 +14969,7 @@
                 "width": "0.00",
                 "height": "16.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -14951,6 +15263,7 @@
                 "width": "0.00",
                 "height": "16.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -15249,6 +15562,7 @@
                 "width": "0.00",
                 "height": "16.20"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -15503,6 +15817,7 @@
                 "width": "0.00",
                 "height": "16.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -15791,6 +16106,7 @@
                 "width": "0.00",
                 "height": "16.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -16084,6 +16400,7 @@
                 "width": "0.00",
                 "height": "16.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -16377,6 +16694,7 @@
                 "width": "0.00",
                 "height": "16.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -16670,6 +16988,7 @@
                 "width": "0.00",
                 "height": "16.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -16968,6 +17287,7 @@
                 "width": "0.00",
                 "height": "16.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -17154,6 +17474,7 @@
                 "width": "0.00",
                 "height": "16.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -17340,6 +17661,39 @@
                 "width": "0.00",
                 "height": "16.40"
             },
+            "restorationSurveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "2019-05-17",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "17. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -17569,6 +17923,7 @@
                 "width": "0.00",
                 "height": "11.20"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -17711,6 +18066,7 @@
                 "width": "0.00",
                 "height": "22.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -17897,6 +18253,7 @@
                 "width": "0.00",
                 "height": "24.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18083,6 +18440,7 @@
                 "width": "0.00",
                 "height": "24.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18274,6 +18632,39 @@
                 "width": "0.00",
                 "height": "33.80"
             },
+            "restorationSurveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "2019-05-23",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "23. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18465,6 +18856,64 @@
                 "width": "0.00",
                 "height": "33.50"
             },
+            "restorationSurveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt, schwarze Tinte",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "23. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                },
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "",
+                            "text": "Wz verso (Cahier)\n[http:\/\/sammlungenonline.albertina.at\/?query=Inventarnummer=[DG1929\/103]&showtype=record]",
+                            "purpose": "Technologische Untersuchung",
+                            "remarks": "Wasserzeichen"
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "23. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18654,6 +19103,39 @@
                 "width": "0.00",
                 "height": "28.40"
             },
+            "restorationSurveys": [
+                {
+                    "type": "Material\/Technik",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Bildtr\u00e4ger",
+                            "text": "- Papier",
+                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                            "remarks": ""
+                        },
+                        {
+                            "kind": "Prozess, Medium",
+                            "text": "- Holzschnitt mit Typendruck in Rot",
+                            "purpose": "",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [],
+                    "processingDates": {
+                        "beginDate": "",
+                        "beginYear": 2018,
+                        "endDate": "",
+                        "endYear": 2018
+                    },
+                    "signature": {
+                        "date": "24. Mai 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18834,6 +19316,7 @@
                 "width": "0.00",
                 "height": "24.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -19101,6 +19584,7 @@
                 "width": "0.00",
                 "height": "32.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -19368,6 +19852,7 @@
                 "width": "0.00",
                 "height": "30.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -19635,6 +20120,7 @@
                 "width": "0.00",
                 "height": "31.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -19902,6 +20388,7 @@
                 "width": "0.00",
                 "height": "31.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -20169,6 +20656,7 @@
                 "width": "0.00",
                 "height": "30.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -20436,6 +20924,7 @@
                 "width": "0.00",
                 "height": "31.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -20703,6 +21192,7 @@
                 "width": "0.00",
                 "height": "31.40"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -20970,6 +21460,7 @@
                 "width": "0.00",
                 "height": "31.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -21237,6 +21728,7 @@
                 "width": "0.00",
                 "height": "31.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -21504,6 +21996,7 @@
                 "width": "0.00",
                 "height": "31.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -21771,6 +22264,7 @@
                 "width": "0.00",
                 "height": "31.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -22038,6 +22532,7 @@
                 "width": "0.00",
                 "height": "31.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -22305,6 +22800,7 @@
                 "width": "0.00",
                 "height": "31.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -22572,6 +23068,7 @@
                 "width": "0.00",
                 "height": "31.40"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -22768,6 +23265,7 @@
                 "width": "0.00",
                 "height": "36.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -22954,6 +23452,7 @@
                 "width": "0.00",
                 "height": "40.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -23148,6 +23647,7 @@
                 "width": "0.00",
                 "height": "33.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -23342,6 +23842,7 @@
                 "width": "0.00",
                 "height": "24.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -23539,6 +24040,7 @@
                 "width": "0.00",
                 "height": "21.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -23736,6 +24238,7 @@
                 "width": "0.00",
                 "height": "21.40"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -23917,6 +24420,7 @@
                 "width": "0.00",
                 "height": "27.50"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -24067,6 +24571,7 @@
                 "width": "0.00",
                 "height": "12.80"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -24148,6 +24653,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -24235,6 +24741,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -24340,6 +24847,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -24480,6 +24988,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -24592,6 +25101,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -24730,6 +25240,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -24832,6 +25343,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -25011,6 +25523,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -25256,6 +25769,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -25351,6 +25865,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -25473,6 +25988,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -25560,6 +26076,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -25707,6 +26224,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -25794,6 +26312,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -26013,6 +26532,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -26220,6 +26740,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -26443,6 +26964,7 @@
                 "width": "4.00",
                 "height": "6.10"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -26565,6 +27087,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -26709,6 +27232,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -26884,6 +27408,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -27003,6 +27528,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -27098,6 +27624,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -27264,6 +27791,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -27428,6 +27956,7 @@
                 "width": "0.00",
                 "height": "13.20"
             },
+            "restorationSurveys": [],
             "images": null
         }
     ]

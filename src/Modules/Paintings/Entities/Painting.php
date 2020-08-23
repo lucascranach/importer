@@ -54,6 +54,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     public $catalogWorkReferences = [];
     public $structuredDimension = null;
     public $isBestOf = false;
+    public $restorationSurveys = [];
 
 
     public function __construct()
@@ -440,5 +441,17 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     public function getIsBestOf(): bool
     {
         return $this->isBestOf;
+    }
+
+
+    public function setRestorationSurveys(array $restorationSurveys)
+    {
+        $this->restorationSurveys = $restorationSurveys;
+    }
+
+
+    public function getRestorationSurveys(): array
+    {
+        return $this->restorationSurveys;
     }
 }

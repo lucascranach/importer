@@ -131,6 +131,7 @@
                 "width": "0.00",
                 "height": "35.10"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -259,6 +260,7 @@
                 "width": "0.00",
                 "height": "36.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -382,6 +384,7 @@
                 "width": "0.00",
                 "height": "28.50"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -510,6 +513,7 @@
                 "width": "0.00",
                 "height": "32.60"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -643,6 +647,7 @@
                 "width": "0.00",
                 "height": "31.20"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -771,6 +776,7 @@
                 "width": "0.00",
                 "height": "35.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -943,6 +949,7 @@
                 "width": "0.00",
                 "height": "34.90"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -1092,6 +1099,7 @@
                 "width": "0.00",
                 "height": "34.80"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -1214,6 +1222,28 @@
                 "width": "0.00",
                 "height": "28.20"
             },
+            "restorationSurveys": [
+                {
+                    "type": "(nichts angegeben)",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "Bearbeiter\/in",
+                            "name": "Daniel G\u00f6rres"
+                        }
+                    ],
+                    "processingDates": {
+                        "beginDate": "2020-03-18",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": null
+                }
+            ],
             "images": null
         },
         {
@@ -1342,6 +1372,38 @@
                 "width": "0.00",
                 "height": "42.20"
             },
+            "restorationSurveys": [
+                {
+                    "type": "Material\/Technique",
+                    "project": "",
+                    "overallAnalysis": "",
+                    "remarks": "",
+                    "tests": [
+                        {
+                            "kind": "Support",
+                            "text": "#category\na) single sheet woodcut print\n\nSheet:\nPlate\/Block marks:-\nImage: 284 x 205\/203 mm\nText block: -\nPlate, quality (1-6): 1-2\nProof, quality (1-6): 2-3\nPaper, structure: laid\nPaper, thickness (mm): 0,16-0,19\nChain lines, orientation: horizontal\nChain lines, sequence* (mm): 28;26;26;27;25;27;26;25;26;25;26;26;25;27;25\nChain lines, anomalies: -\nChain lines, density (of 10 mm): 11\nDistribution of fibres: homogeneous\nWatermark, motif: St. Catherine's wheel, single outline, with 6 spokes, 6 knives fitted and a plant with 5 arms, each with trilium   \nWatermark, dimensions: 78 x 32 (wheel: 23)\nWatermark, reference: Briquet 13375 (cf. Briquet 13242-13568)\nWire side (depending on the orientation of the motif): verso\nEncrustation, anomalies: -\nShadow of chain lines, width (mm): 5-10\nInscription\/accompanying text: \nComments:\n\n*\nChain lines always run perpendicular to laid lines. The chain line sequence refers to the measured interval between each parallel line and relies on the legibility of the paper structure. Measurements are taken from the left to the right edge or from the lower to the upper edge with depending on the orientation of the motif. These measurements serve as spot checks.\n\n[Thomas Klinke, KKL 2020]",
+                            "purpose": "Technical Examination",
+                            "remarks": ""
+                        }
+                    ],
+                    "involvedPersons": [
+                        {
+                            "role": "Bearbeiter\/in",
+                            "name": "Thomas Klinke"
+                        }
+                    ],
+                    "processingDates": {
+                        "beginDate": "2020-03-30",
+                        "beginYear": null,
+                        "endDate": "",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "30. M\u00e4rz 2020",
+                        "name": "Thomas Klinke,"
+                    }
+                }
+            ],
             "images": null
         },
         {
@@ -1475,6 +1537,7 @@
                 "width": "0.00",
                 "height": "28.30"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -1623,6 +1686,7 @@
                 "width": "0.00",
                 "height": "35.30"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -1751,6 +1815,7 @@
                 "width": "0.00",
                 "height": "37.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -1879,6 +1944,7 @@
                 "width": "0.00",
                 "height": "30.80"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -2017,6 +2083,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -2161,6 +2228,7 @@
                 "width": "0.00",
                 "height": "34.80"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -2289,6 +2357,7 @@
                 "width": "232.00",
                 "height": "28.30"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -2432,6 +2501,7 @@
                 "width": "0.00",
                 "height": "39.90"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -2583,6 +2653,7 @@
                 "width": "0.00",
                 "height": "13.20"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -2726,6 +2797,7 @@
                 "width": "0.00",
                 "height": "28.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -2916,6 +2988,7 @@
                 "width": "0.00",
                 "height": "29.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -3113,6 +3186,7 @@
                 "width": "0.00",
                 "height": "25.70"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -3287,6 +3361,7 @@
                 "width": "0.00",
                 "height": "13.10"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -3430,6 +3505,7 @@
                 "width": "0.00",
                 "height": "39.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -3625,6 +3701,7 @@
                 "width": "0.00",
                 "height": "22.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -3797,6 +3874,7 @@
                 "width": "0.00",
                 "height": "23.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -4041,6 +4119,7 @@
                 "width": "0.00",
                 "height": "26.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -4218,6 +4297,7 @@
                 "width": "0.00",
                 "height": "36.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -4366,6 +4446,7 @@
                 "width": "0.00",
                 "height": "37.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -4548,6 +4629,7 @@
                 "width": "0.00",
                 "height": "36.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -4730,6 +4812,7 @@
                 "width": "0.00",
                 "height": "26.40"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -4858,6 +4941,7 @@
                 "width": "0.00",
                 "height": "30.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -4986,6 +5070,7 @@
                 "width": "0.00",
                 "height": "29.80"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -5114,6 +5199,7 @@
                 "width": "0.00",
                 "height": "29.50"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -5267,6 +5353,7 @@
                 "width": "0.00",
                 "height": "14.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -5463,6 +5550,7 @@
                 "width": "0.00",
                 "height": "20.70"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -5606,6 +5694,7 @@
                 "width": "0.00",
                 "height": "18.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -5772,6 +5861,7 @@
                 "width": "0.00",
                 "height": "36.60"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -5888,6 +5978,7 @@
                 "width": "0.00",
                 "height": "24.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -6104,6 +6195,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -6312,6 +6404,7 @@
                 "width": "0.00",
                 "height": "25.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -6515,6 +6608,7 @@
                 "width": "0.00",
                 "height": "25.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -6723,6 +6817,7 @@
                 "width": "0.00",
                 "height": "25.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -6931,6 +7026,7 @@
                 "width": "0.00",
                 "height": "25.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -7097,6 +7193,7 @@
                 "width": "0.00",
                 "height": "24.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -7252,6 +7349,7 @@
                 "width": "0.00",
                 "height": "24.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -7422,6 +7520,7 @@
                 "width": "0.00",
                 "height": "24.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -7592,6 +7691,7 @@
                 "width": "0.00",
                 "height": "24.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -7747,6 +7847,7 @@
                 "width": "0.00",
                 "height": "24.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -7902,6 +8003,7 @@
                 "width": "0.00",
                 "height": "24.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -8065,6 +8167,7 @@
                 "width": "0.00",
                 "height": "24.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -8220,6 +8323,7 @@
                 "width": "0.00",
                 "height": "24.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -8397,6 +8501,7 @@
                 "width": "0.00",
                 "height": "18.20"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -8530,6 +8635,7 @@
                 "width": "0.00",
                 "height": "17.20"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -8663,6 +8769,7 @@
                 "width": "0.00",
                 "height": "18.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -8791,6 +8898,7 @@
                 "width": "0.00",
                 "height": "16.40"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -8929,6 +9037,7 @@
                 "width": "0.00",
                 "height": "38.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -9057,6 +9166,7 @@
                 "width": "0.00",
                 "height": "34.20"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -9199,6 +9309,7 @@
                 "width": "0.00",
                 "height": "28.60"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -9337,6 +9448,7 @@
                 "width": "0.00",
                 "height": "29.70"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -9488,6 +9600,7 @@
                 "width": "0.00",
                 "height": "40.40"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -9678,6 +9791,7 @@
                 "width": "0.00",
                 "height": "13.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -9860,6 +9974,7 @@
                 "width": "0.00",
                 "height": "31.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -10047,6 +10162,7 @@
                 "width": "0.00",
                 "height": "33.30"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -10180,6 +10296,7 @@
                 "width": "0.00",
                 "height": "28.20"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -10313,6 +10430,7 @@
                 "width": "0.00",
                 "height": "37.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -10495,6 +10613,7 @@
                 "width": "0.00",
                 "height": "13.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -10656,6 +10775,7 @@
                 "width": "0.00",
                 "height": "16.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -10873,6 +10993,7 @@
                 "width": "0.00",
                 "height": "20.90"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -11015,6 +11136,7 @@
                 "width": "0.00",
                 "height": "29.70"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -11172,6 +11294,7 @@
                 "width": "0.00",
                 "height": "29.90"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -11339,6 +11462,7 @@
                 "width": "0.00",
                 "height": "20.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -11501,6 +11625,7 @@
                 "width": "0.00",
                 "height": "20.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -11649,6 +11774,7 @@
                 "width": "0.00",
                 "height": "16.40"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -11781,6 +11907,7 @@
                 "width": "0.00",
                 "height": "16.70"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -11934,6 +12061,7 @@
                 "width": "0.00",
                 "height": "19.60"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -12087,6 +12215,7 @@
                 "width": "0.00",
                 "height": "19.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -12224,6 +12353,7 @@
                 "width": "0.00",
                 "height": "16.80"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -12405,6 +12535,7 @@
                 "width": "0.00",
                 "height": "13.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -12587,6 +12718,7 @@
                 "width": "0.00",
                 "height": "34.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -12988,6 +13120,7 @@
                 "width": "0.00",
                 "height": "28.50"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -13099,6 +13232,7 @@
                 "width": "0.00",
                 "height": "26.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -13248,6 +13382,7 @@
                 "width": "0.00",
                 "height": "25.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -13397,6 +13532,7 @@
                 "width": "0.00",
                 "height": "25.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -13557,6 +13693,7 @@
                 "width": "0.00",
                 "height": "16.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -13712,6 +13849,7 @@
                 "width": "0.00",
                 "height": "14.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -13873,6 +14011,7 @@
                 "width": "0.00",
                 "height": "20.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -14028,6 +14167,7 @@
                 "width": "0.00",
                 "height": "38.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -14183,6 +14323,7 @@
                 "width": "0.00",
                 "height": "40.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -14338,6 +14479,7 @@
                 "width": "0.00",
                 "height": "24.40"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -14498,6 +14640,7 @@
                 "width": "0.00",
                 "height": "24.40"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -14658,6 +14801,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -14813,6 +14957,7 @@
                 "width": "0.00",
                 "height": "24.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -14968,6 +15113,7 @@
                 "width": "0.00",
                 "height": "25.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -15128,6 +15274,7 @@
                 "width": "0.00",
                 "height": "38.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -15283,6 +15430,7 @@
                 "width": "0.00",
                 "height": "22.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -15438,6 +15586,7 @@
                 "width": "0.00",
                 "height": "17.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -15598,6 +15747,7 @@
                 "width": "0.00",
                 "height": "17.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -15758,6 +15908,7 @@
                 "width": "0.00",
                 "height": "18.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -15918,6 +16069,7 @@
                 "width": "0.00",
                 "height": "17.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -16078,6 +16230,7 @@
                 "width": "0.00",
                 "height": "36.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -16238,6 +16391,7 @@
                 "width": "0.00",
                 "height": "23.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -16387,6 +16541,7 @@
                 "width": "0.00",
                 "height": "33.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -16547,6 +16702,7 @@
                 "width": "0.00",
                 "height": "24.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -16715,6 +16871,7 @@
                 "width": "0.00",
                 "height": "28.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -16878,6 +17035,7 @@
                 "width": "0.00",
                 "height": "28.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -17046,6 +17204,7 @@
                 "width": "0.00",
                 "height": "28.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -17227,6 +17386,7 @@
                 "width": "0.00",
                 "height": "28.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -17392,6 +17552,7 @@
                 "width": "0.00",
                 "height": "32.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -17557,6 +17718,7 @@
                 "width": "0.00",
                 "height": "33.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -17717,6 +17879,7 @@
                 "width": "0.00",
                 "height": "27.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -17877,6 +18040,7 @@
                 "width": "0.00",
                 "height": "20.40"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18026,6 +18190,7 @@
                 "width": "0.00",
                 "height": "13.40"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18175,6 +18340,7 @@
                 "width": "0.00",
                 "height": "13.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18376,6 +18542,7 @@
                 "width": "0.00",
                 "height": "13.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18525,6 +18692,7 @@
                 "width": "0.00",
                 "height": "13.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18680,6 +18848,7 @@
                 "width": "0.00",
                 "height": "23.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18829,6 +18998,7 @@
                 "width": "0.00",
                 "height": "33.40"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18984,6 +19154,7 @@
                 "width": "0.00",
                 "height": "28.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -19144,6 +19315,7 @@
                 "width": "0.00",
                 "height": "28.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -19299,6 +19471,7 @@
                 "width": "0.00",
                 "height": "29.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -19448,6 +19621,7 @@
                 "width": "0.00",
                 "height": "24.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -19597,6 +19771,7 @@
                 "width": "0.00",
                 "height": "23.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -19752,6 +19927,7 @@
                 "width": "0.00",
                 "height": "33.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -19907,6 +20083,7 @@
                 "width": "0.00",
                 "height": "29.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -20062,6 +20239,7 @@
                 "width": "0.00",
                 "height": "29.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -20217,6 +20395,7 @@
                 "width": "0.00",
                 "height": "29.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -20366,6 +20545,7 @@
                 "width": "0.00",
                 "height": "24.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -20510,6 +20690,31 @@
                 "width": "0.00",
                 "height": "22.70"
             },
+            "restorationSurveys": [
+                {
+                    "type": "Condition Report",
+                    "project": "",
+                    "overallAnalysis": "- upper margin cropped\n[cda 2019]",
+                    "remarks": "",
+                    "tests": [],
+                    "involvedPersons": [
+                        {
+                            "role": "written by",
+                            "name": "Helen Smith"
+                        }
+                    ],
+                    "processingDates": {
+                        "beginDate": "2019-02-12",
+                        "beginYear": null,
+                        "endDate": "2019-02-12",
+                        "endYear": null
+                    },
+                    "signature": {
+                        "date": "12. Februar 2019",
+                        "name": "Helen Smith,"
+                    }
+                }
+            ],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -20659,6 +20864,7 @@
                 "width": "0.00",
                 "height": "22.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -20808,6 +21014,7 @@
                 "width": "0.00",
                 "height": "24.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -20957,6 +21164,7 @@
                 "width": "0.00",
                 "height": "25.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -21106,6 +21314,7 @@
                 "width": "0.00",
                 "height": "24.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -21255,6 +21464,7 @@
                 "width": "0.00",
                 "height": "24.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -21398,6 +21608,7 @@
                 "width": "0.00",
                 "height": "25.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -21547,6 +21758,7 @@
                 "width": "0.00",
                 "height": "25.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -21696,6 +21908,7 @@
                 "width": "0.00",
                 "height": "24.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -21845,6 +22058,7 @@
                 "width": "0.00",
                 "height": "25.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -21994,6 +22208,7 @@
                 "width": "0.00",
                 "height": "24.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -22143,6 +22358,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -22292,6 +22508,7 @@
                 "width": "0.00",
                 "height": "25.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -22441,6 +22658,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -22590,6 +22808,7 @@
                 "width": "0.00",
                 "height": "25.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -22753,6 +22972,7 @@
                 "width": "0.00",
                 "height": "36.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -22908,6 +23128,7 @@
                 "width": "0.00",
                 "height": "36.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -23063,6 +23284,7 @@
                 "width": "0.00",
                 "height": "36.40"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -23218,6 +23440,7 @@
                 "width": "0.00",
                 "height": "36.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -23373,6 +23596,7 @@
                 "width": "0.00",
                 "height": "36.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -23528,6 +23752,7 @@
                 "width": "0.00",
                 "height": "36.50"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -23633,6 +23858,7 @@
                 "width": "0.00",
                 "height": "36.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -23788,6 +24014,7 @@
                 "width": "0.00",
                 "height": "36.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -23943,6 +24170,7 @@
                 "width": "0.00",
                 "height": "36.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -24098,6 +24326,7 @@
                 "width": "0.00",
                 "height": "36.40"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -24253,6 +24482,7 @@
                 "width": "0.00",
                 "height": "36.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -24408,6 +24638,7 @@
                 "width": "0.00",
                 "height": "35.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -24563,6 +24794,7 @@
                 "width": "0.00",
                 "height": "35.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -24718,6 +24950,7 @@
                 "width": "0.00",
                 "height": "36.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -24873,6 +25106,7 @@
                 "width": "0.00",
                 "height": "24.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -25033,6 +25267,7 @@
                 "width": "0.00",
                 "height": "29.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -25182,6 +25417,7 @@
                 "width": "0.00",
                 "height": "16.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -25331,6 +25567,7 @@
                 "width": "0.00",
                 "height": "16.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -25480,6 +25717,7 @@
                 "width": "0.00",
                 "height": "16.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -25629,6 +25867,7 @@
                 "width": "0.00",
                 "height": "16.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -25778,6 +26017,7 @@
                 "width": "0.00",
                 "height": "16.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -25927,6 +26167,7 @@
                 "width": "0.00",
                 "height": "16.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -26076,6 +26317,7 @@
                 "width": "0.00",
                 "height": "16.10"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -26181,6 +26423,7 @@
                 "width": "0.00",
                 "height": "16.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -26330,6 +26573,7 @@
                 "width": "0.00",
                 "height": "16.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -26479,6 +26723,7 @@
                 "width": "0.00",
                 "height": "16.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -26628,6 +26873,7 @@
                 "width": "0.00",
                 "height": "16.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -26777,6 +27023,7 @@
                 "width": "0.00",
                 "height": "16.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -26942,6 +27189,7 @@
                 "width": "0.00",
                 "height": "20.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -27107,6 +27355,7 @@
                 "width": "0.00",
                 "height": "20.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -27299,6 +27548,7 @@
                 "width": "0.00",
                 "height": "20.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -27485,6 +27735,7 @@
                 "width": "0.00",
                 "height": "20.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -27665,6 +27916,7 @@
                 "width": "0.00",
                 "height": "20.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -27830,6 +28082,7 @@
                 "width": "0.00",
                 "height": "20.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -28016,6 +28269,7 @@
                 "width": "0.00",
                 "height": "20.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -28202,6 +28456,7 @@
                 "width": "0.00",
                 "height": "20.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -28351,6 +28606,7 @@
                 "width": "0.00",
                 "height": "16.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -28500,6 +28756,7 @@
                 "width": "0.00",
                 "height": "16.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -28649,6 +28906,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -28798,6 +29056,7 @@
                 "width": "0.00",
                 "height": "22.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -28947,6 +29206,7 @@
                 "width": "0.00",
                 "height": "24.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -29096,6 +29356,7 @@
                 "width": "0.00",
                 "height": "24.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -29245,6 +29506,7 @@
                 "width": "0.00",
                 "height": "34.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -29400,6 +29662,7 @@
                 "width": "0.00",
                 "height": "33.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -29573,6 +29836,7 @@
                 "width": "0.00",
                 "height": "38.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -29728,6 +29992,7 @@
                 "width": "0.00",
                 "height": "24.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -29877,6 +30142,7 @@
                 "width": "0.00",
                 "height": "34.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -30026,6 +30292,7 @@
                 "width": "0.00",
                 "height": "33.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -30175,6 +30442,7 @@
                 "width": "0.00",
                 "height": "31.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -30324,6 +30592,7 @@
                 "width": "0.00",
                 "height": "31.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -30473,6 +30742,7 @@
                 "width": "0.00",
                 "height": "31.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -30622,6 +30892,7 @@
                 "width": "0.00",
                 "height": "31.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -30771,6 +31042,7 @@
                 "width": "0.00",
                 "height": "31.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -30920,6 +31192,7 @@
                 "width": "0.00",
                 "height": "31.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -31069,6 +31342,7 @@
                 "width": "0.00",
                 "height": "31.40"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -31218,6 +31492,7 @@
                 "width": "0.00",
                 "height": "31.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -31367,6 +31642,7 @@
                 "width": "0.00",
                 "height": "31.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -31516,6 +31792,7 @@
                 "width": "0.00",
                 "height": "32.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -31665,6 +31942,7 @@
                 "width": "0.00",
                 "height": "31.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -31814,6 +32092,7 @@
                 "width": "0.00",
                 "height": "31.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -31963,6 +32242,7 @@
                 "width": "0.00",
                 "height": "31.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -32118,6 +32398,7 @@
                 "width": "0.00",
                 "height": "37.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -32273,6 +32554,7 @@
                 "width": "0.00",
                 "height": "35.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -32428,6 +32710,7 @@
                 "width": "0.00",
                 "height": "36.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -32583,6 +32866,7 @@
                 "width": "0.00",
                 "height": "36.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -32738,6 +33022,7 @@
                 "width": "0.00",
                 "height": "35.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -32893,6 +33178,7 @@
                 "width": "0.00",
                 "height": "35.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -33048,6 +33334,7 @@
                 "width": "0.00",
                 "height": "35.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -33203,6 +33490,7 @@
                 "width": "0.00",
                 "height": "36.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -33358,6 +33646,7 @@
                 "width": "0.00",
                 "height": "35.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -33513,6 +33802,7 @@
                 "width": "0.00",
                 "height": "34.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -33668,6 +33958,7 @@
                 "width": "0.00",
                 "height": "36.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -33823,6 +34114,7 @@
                 "width": "0.00",
                 "height": "36.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -33978,6 +34270,7 @@
                 "width": "0.00",
                 "height": "35.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -34133,6 +34426,7 @@
                 "width": "0.00",
                 "height": "34.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -34288,6 +34582,7 @@
                 "width": "0.00",
                 "height": "36.60"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -34443,6 +34738,7 @@
                 "width": "0.00",
                 "height": "33.80"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -34598,6 +34894,7 @@
                 "width": "0.00",
                 "height": "34.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -34753,6 +35050,7 @@
                 "width": "0.00",
                 "height": "34.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -34908,6 +35206,7 @@
                 "width": "0.00",
                 "height": "34.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -35063,6 +35362,7 @@
                 "width": "0.00",
                 "height": "34.40"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -35218,6 +35518,7 @@
                 "width": "0.00",
                 "height": "33.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -35373,6 +35674,7 @@
                 "width": "0.00",
                 "height": "33.90"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -35528,6 +35830,7 @@
                 "width": "0.00",
                 "height": "34.40"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -35683,6 +35986,7 @@
                 "width": "0.00",
                 "height": "34.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -35838,6 +36142,7 @@
                 "width": "0.00",
                 "height": "34.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -35993,6 +36298,7 @@
                 "width": "0.00",
                 "height": "34.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -36148,6 +36454,7 @@
                 "width": "0.00",
                 "height": "34.00"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -36303,6 +36610,7 @@
                 "width": "0.00",
                 "height": "34.30"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -36458,6 +36766,7 @@
                 "width": "0.00",
                 "height": "36.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -36613,6 +36922,7 @@
                 "width": "0.00",
                 "height": "40.20"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -36762,6 +37072,7 @@
                 "width": "0.00",
                 "height": "33.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -36911,6 +37222,7 @@
                 "width": "0.00",
                 "height": "24.70"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -37066,6 +37378,7 @@
                 "width": "0.00",
                 "height": "29.10"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -37215,6 +37528,7 @@
                 "width": "0.00",
                 "height": "21.50"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -37364,6 +37678,7 @@
                 "width": "0.00",
                 "height": "21.40"
             },
+            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -37519,6 +37834,7 @@
                 "width": "0.00",
                 "height": "29.60"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -37624,6 +37940,7 @@
                 "width": "0.00",
                 "height": "13.20"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -37773,6 +38090,7 @@
                 "width": "0.00",
                 "height": "11.60"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -37921,6 +38239,7 @@
                 "width": "0.00",
                 "height": "14.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -38070,6 +38389,7 @@
                 "width": "0.00",
                 "height": "14.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -38163,6 +38483,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -38256,6 +38577,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -38349,6 +38671,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -38442,6 +38765,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -38535,6 +38859,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -38628,6 +38953,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -38721,6 +39047,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -38814,6 +39141,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -38907,6 +39235,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -39000,6 +39329,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -39093,6 +39423,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -39186,6 +39517,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -39279,6 +39611,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -39372,6 +39705,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -39465,6 +39799,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -39558,6 +39893,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -39651,6 +39987,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -39744,6 +40081,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -39837,6 +40175,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -39930,6 +40269,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -40023,6 +40363,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -40116,6 +40457,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -40209,6 +40551,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -40302,6 +40645,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -40395,6 +40739,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -40488,6 +40833,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -40581,6 +40927,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -40674,6 +41021,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -40767,6 +41115,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -40860,6 +41209,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -40953,6 +41303,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -41046,6 +41397,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -41139,6 +41491,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -41232,6 +41585,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -41325,6 +41679,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -41418,6 +41773,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -41511,6 +41867,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -41604,6 +41961,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -41697,6 +42055,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -41790,6 +42149,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -41883,6 +42243,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -41976,6 +42337,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -42069,6 +42431,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -42162,6 +42525,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -42295,6 +42659,7 @@
                 "width": "0.00",
                 "height": "18.50"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -42388,6 +42753,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -42481,6 +42847,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -42635,6 +43002,7 @@
                 "width": "0.00",
                 "height": "19.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -42789,6 +43157,7 @@
                 "width": "0.00",
                 "height": "18.70"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -42937,6 +43306,7 @@
                 "width": "0.00",
                 "height": "18.90"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -43030,6 +43400,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -43178,6 +43549,7 @@
                 "width": "0.00",
                 "height": "18.90"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -43271,6 +43643,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -43364,6 +43737,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -43518,6 +43892,7 @@
                 "width": "0.00",
                 "height": "18.90"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -43666,6 +44041,7 @@
                 "width": "0.00",
                 "height": "18.80"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -43820,6 +44196,7 @@
                 "width": "0.00",
                 "height": "18.90"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -43913,6 +44290,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -44062,6 +44440,7 @@
                 "width": "0.00",
                 "height": "15.80"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -44155,6 +44534,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -44248,6 +44628,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -44341,6 +44722,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -44434,6 +44816,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -44583,6 +44966,7 @@
                 "width": "0.00",
                 "height": "13.20"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -44676,6 +45060,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -44781,6 +45166,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -44874,6 +45260,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -44967,6 +45354,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -45060,6 +45448,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -45153,6 +45542,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -45246,6 +45636,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -45351,6 +45742,7 @@
                 "width": "0.00",
                 "height": "13.10"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -45444,6 +45836,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -45537,6 +45930,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -45630,6 +46024,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -45723,6 +46118,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -45816,6 +46212,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -45909,6 +46306,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -46002,6 +46400,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -46095,6 +46494,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -46188,6 +46588,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -46281,6 +46682,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -46374,6 +46776,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -46467,6 +46870,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -46560,6 +46964,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -46653,6 +47058,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -46746,6 +47152,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -46839,6 +47246,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -46932,6 +47340,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -47025,6 +47434,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -47118,6 +47528,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -47211,6 +47622,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -47304,6 +47716,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -47397,6 +47810,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -47490,6 +47904,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -47583,6 +47998,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -47676,6 +48092,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -47769,6 +48186,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -47862,6 +48280,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -47955,6 +48374,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -48048,6 +48468,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -48141,6 +48562,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -48234,6 +48656,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -48327,6 +48750,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -48420,6 +48844,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -48513,6 +48938,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -48606,6 +49032,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -48699,6 +49126,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -48792,6 +49220,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -48885,6 +49314,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -48978,6 +49408,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -49071,6 +49502,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -49164,6 +49596,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -49257,6 +49690,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -49350,6 +49784,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -49443,6 +49878,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -49536,6 +49972,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -49629,6 +50066,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -49722,6 +50160,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -49815,6 +50254,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -49908,6 +50348,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -50001,6 +50442,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -50094,6 +50536,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -50187,6 +50630,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -50280,6 +50724,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -50373,6 +50818,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -50466,6 +50912,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -50559,6 +51006,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -50648,6 +51096,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -50737,6 +51186,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -50826,6 +51276,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -50915,6 +51366,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -51004,6 +51456,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -51093,6 +51546,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -51182,6 +51636,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -51271,6 +51726,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -51360,6 +51816,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -51449,6 +51906,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -51538,6 +51996,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -51627,6 +52086,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -51716,6 +52176,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -51805,6 +52266,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -51894,6 +52356,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -51983,6 +52446,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -52072,6 +52536,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -52161,6 +52626,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -52250,6 +52716,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -52339,6 +52806,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -52428,6 +52896,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -52517,6 +52986,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -52606,6 +53076,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -52695,6 +53166,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -52784,6 +53256,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -52873,6 +53346,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -52962,6 +53436,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -53051,6 +53526,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -53140,6 +53616,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -53229,6 +53706,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -53318,6 +53796,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -53407,6 +53886,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -53496,6 +53976,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -53585,6 +54066,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -53674,6 +54156,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -53763,6 +54246,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -53852,6 +54336,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -53941,6 +54426,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -54030,6 +54516,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -54119,6 +54606,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -54208,6 +54696,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -54297,6 +54786,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -54386,6 +54876,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -54475,6 +54966,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -54564,6 +55056,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -54653,6 +55146,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -54742,6 +55236,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -54831,6 +55326,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -54920,6 +55416,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -55009,6 +55506,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -55098,6 +55596,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -55187,6 +55686,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -55276,6 +55776,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -55365,6 +55866,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -55454,6 +55956,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -55543,6 +56046,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -55632,6 +56136,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -55721,6 +56226,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -55810,6 +56316,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -55899,6 +56406,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -55988,6 +56496,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -56077,6 +56586,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -56166,6 +56676,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -56255,6 +56766,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -56344,6 +56856,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -56433,6 +56946,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -56522,6 +57036,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -56611,6 +57126,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -56700,6 +57216,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -56789,6 +57306,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -56878,6 +57396,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -56967,6 +57486,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -57056,6 +57576,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -57145,6 +57666,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -57234,6 +57756,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -57323,6 +57846,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -57412,6 +57936,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -57501,6 +58026,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -57590,6 +58116,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -57679,6 +58206,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -57768,6 +58296,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -57857,6 +58386,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -57946,6 +58476,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -58035,6 +58566,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -58124,6 +58656,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -58213,6 +58746,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -58302,6 +58836,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -58391,6 +58926,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -58480,6 +59016,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -58569,6 +59106,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -58658,6 +59196,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -58747,6 +59286,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -58836,6 +59376,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -58925,6 +59466,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -59014,6 +59556,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -59103,6 +59646,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -59192,6 +59736,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -59281,6 +59826,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -59370,6 +59916,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -59459,6 +60006,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -59548,6 +60096,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -59637,6 +60186,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -59726,6 +60276,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -59815,6 +60366,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -59904,6 +60456,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -59993,6 +60546,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -60082,6 +60636,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -60171,6 +60726,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -60260,6 +60816,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -60349,6 +60906,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -60438,6 +60996,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -60527,6 +61086,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -60616,6 +61176,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -60705,6 +61266,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -60794,6 +61356,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -60883,6 +61446,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -60972,6 +61536,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -61061,6 +61626,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -61150,6 +61716,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -61239,6 +61806,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -61328,6 +61896,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -61417,6 +61986,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -61506,6 +62076,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -61595,6 +62166,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -61684,6 +62256,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -61759,6 +62332,7 @@
                 "width": "0.00",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -61846,6 +62420,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -61933,6 +62508,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -62031,6 +62607,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -62118,6 +62695,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -62205,6 +62783,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -62292,6 +62871,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -62379,6 +62959,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -62466,6 +63047,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -62553,6 +63135,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -62640,6 +63223,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -62738,6 +63322,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -62825,6 +63410,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -62912,6 +63498,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -62999,6 +63586,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -63086,6 +63674,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -63173,6 +63762,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -63260,6 +63850,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -63347,6 +63938,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -63434,6 +64026,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -63521,6 +64114,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -63608,6 +64202,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -63695,6 +64290,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -63782,6 +64378,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -63869,6 +64466,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -63956,6 +64554,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -64043,6 +64642,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -64130,6 +64730,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -64217,6 +64818,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -64304,6 +64906,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -64391,6 +64994,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -64478,6 +65082,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -64565,6 +65170,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -64652,6 +65258,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -64739,6 +65346,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -64826,6 +65434,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -64913,6 +65522,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -65000,6 +65610,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -65087,6 +65698,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -65174,6 +65786,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -65261,6 +65874,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -65348,6 +65962,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -65435,6 +66050,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -65522,6 +66138,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -65609,6 +66226,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -65696,6 +66314,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -65783,6 +66402,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -65870,6 +66490,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -65957,6 +66578,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -66055,6 +66677,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -66142,6 +66765,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -66229,6 +66853,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -66316,6 +66941,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -66403,6 +67029,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -66490,6 +67117,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -66577,6 +67205,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -66664,6 +67293,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -66751,6 +67381,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -66838,6 +67469,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -66936,6 +67568,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -67023,6 +67656,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -67110,6 +67744,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -67197,6 +67832,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -67284,6 +67920,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -67371,6 +68008,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -67458,6 +68096,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -67545,6 +68184,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -67632,6 +68272,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -67719,6 +68360,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -67806,6 +68448,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -67893,6 +68536,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -67980,6 +68624,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -68078,6 +68723,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -68165,6 +68811,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -68252,6 +68899,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -68339,6 +68987,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -68426,6 +69075,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -68513,6 +69163,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -68600,6 +69251,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -68687,6 +69339,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -68774,6 +69427,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -68861,6 +69515,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -68948,6 +69603,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -69035,6 +69691,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -69122,6 +69779,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -69209,6 +69867,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -69296,6 +69955,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -69383,6 +70043,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -69470,6 +70131,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -69557,6 +70219,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -69644,6 +70307,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -69731,6 +70395,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -69818,6 +70483,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -69905,6 +70571,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -69992,6 +70659,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -70079,6 +70747,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -70166,6 +70835,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -70253,6 +70923,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -70340,6 +71011,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -70427,6 +71099,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -70514,6 +71187,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -70601,6 +71275,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -70699,6 +71374,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -70786,6 +71462,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -70873,6 +71550,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -70960,6 +71638,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -71047,6 +71726,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -71134,6 +71814,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -71221,6 +71902,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -71308,6 +71990,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -71395,6 +72078,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -71482,6 +72166,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -71569,6 +72254,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -71656,6 +72342,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -71743,6 +72430,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -71830,6 +72518,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -71917,6 +72606,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -72004,6 +72694,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -72091,6 +72782,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -72178,6 +72870,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -72265,6 +72958,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -72352,6 +73046,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -72439,6 +73134,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -72526,6 +73222,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -72613,6 +73310,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -72700,6 +73398,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -72787,6 +73486,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -72874,6 +73574,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -72961,6 +73662,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -73048,6 +73750,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -73135,6 +73838,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -73222,6 +73926,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -73309,6 +74014,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -73396,6 +74102,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -73483,6 +74190,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -73570,6 +74278,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -73657,6 +74366,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -73744,6 +74454,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -73831,6 +74542,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -73918,6 +74630,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -74005,6 +74718,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -74092,6 +74806,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -74179,6 +74894,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -74266,6 +74982,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -74353,6 +75070,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -74440,6 +75158,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -74527,6 +75246,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -74614,6 +75334,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -74701,6 +75422,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -74788,6 +75510,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -74875,6 +75598,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -74962,6 +75686,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -75049,6 +75774,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -75136,6 +75862,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -75234,6 +75961,7 @@
                 "width": "15.30",
                 "height": "0.00"
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -75321,6 +76049,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -75419,6 +76148,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -75506,6 +76236,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -75593,6 +76324,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -75680,6 +76412,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -75767,6 +76500,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -75854,6 +76588,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -75941,6 +76676,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -76028,6 +76764,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -76126,6 +76863,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -76213,6 +76951,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -76300,6 +77039,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -76387,6 +77127,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -76474,6 +77215,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -76561,6 +77303,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -76648,6 +77391,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -76735,6 +77479,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -76822,6 +77567,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -76909,6 +77655,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -76996,6 +77743,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -77083,6 +77831,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -77170,6 +77919,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -77257,6 +78007,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -77355,6 +78106,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -77442,6 +78194,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -77529,6 +78282,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -77616,6 +78370,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -77703,6 +78458,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -77790,6 +78546,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -77877,6 +78634,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -77964,6 +78722,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -78051,6 +78810,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -78138,6 +78898,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -78225,6 +78986,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -78312,6 +79074,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -78399,6 +79162,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -78486,6 +79250,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -78573,6 +79338,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -78660,6 +79426,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -78747,6 +79514,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -78834,6 +79602,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -78921,6 +79690,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -79008,6 +79778,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -79095,6 +79866,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -79182,6 +79954,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -79269,6 +80042,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -79356,6 +80130,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -79443,6 +80218,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -79530,6 +80306,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -79617,6 +80394,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -79704,6 +80482,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -79791,6 +80570,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -79878,6 +80658,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -79965,6 +80746,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -80052,6 +80834,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -80150,6 +80933,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -80237,6 +81021,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -80324,6 +81109,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -80411,6 +81197,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -80498,6 +81285,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -80585,6 +81373,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -80683,6 +81472,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -80770,6 +81560,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -80857,6 +81648,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -80944,6 +81736,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -81031,6 +81824,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -81118,6 +81912,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -81205,6 +82000,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -81292,6 +82088,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -81379,6 +82176,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -81477,6 +82275,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -81564,6 +82363,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -81651,6 +82451,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -81738,6 +82539,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -81825,6 +82627,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -81912,6 +82715,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -81993,6 +82797,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -82080,6 +82885,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -82161,6 +82967,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -82248,6 +83055,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -82381,6 +83189,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -82519,6 +83328,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -82657,6 +83467,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -82738,6 +83549,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -82825,6 +83637,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -82912,6 +83725,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -82999,6 +83813,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -83075,6 +83890,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         },
         {
@@ -83151,6 +83967,7 @@
                 "width": null,
                 "height": null
             },
+            "restorationSurveys": [],
             "images": null
         }
     ]
