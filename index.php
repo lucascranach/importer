@@ -43,7 +43,7 @@ $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt
     'pyramid',
     'paintingssRemoteImageExistenceChecker',
 );
-$paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination->getData());
+$paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt(
     './output/20200716/cda-paintings-v2.json',
 );
@@ -84,7 +84,7 @@ $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     'graphicsRemoteImageExistenceChecker',
 );
 $graphicsConditionDeterminer = ConditionDeterminer::new();
-$graphicsThesaurusExtender = GraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination->getData());
+$graphicsThesaurusExtender = GraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt(
     './output/20200716/cda-graphics-v2.json',
 );

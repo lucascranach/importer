@@ -8,5 +8,6 @@ namespace CranachDigitalArchive\Importer\Interfaces\Exporters;
 interface IMemoryExporter extends IExporter
 {
     public function getData();
+    public function findByFields(array $fieldValues);
     public function cleanUp();
 }

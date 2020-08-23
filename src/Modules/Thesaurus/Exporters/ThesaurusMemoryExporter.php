@@ -10,7 +10,7 @@ use CranachDigitalArchive\Importer\Modules\Thesaurus\Entities\Thesaurus;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 /**
- * Graphics restoration exporter on a json flat file base
+ * Thesaurus in memory exporter
  */
 class ThesaurusMemoryExporter extends Consumer implements IMemoryExporter
 {
@@ -53,6 +53,31 @@ class ThesaurusMemoryExporter extends Consumer implements IMemoryExporter
 
         return $this->item;
     }
+
+
+    public function findByFields(array $fieldValues)
+    {
+        if (!$this->isDone()) {
+            throw new Error('Can not return thesaurus data if not done!');
+        }
+
+        $items = !is_null($this->item) ? [$this->item] : [];
+
+        foreach ($items as $item) {
+            $matching = true;
+
+            foreach ($fieldValues as $fieldName => $value) {
+                $matching = $matching && isset($item->{$fieldName}) && $item->{$fieldName} === $value;
+            }
+
+            if ($matching) {
+                return $item;
+            }
+        }
+
+        return null;
+    }
+
 
     public function cleanUp()
     {

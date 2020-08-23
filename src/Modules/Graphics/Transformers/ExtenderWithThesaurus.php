@@ -7,7 +7,7 @@ use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\ThesaurusItem;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Search\SearchableGraphic;
-use CranachDigitalArchive\Importer\Modules\Thesaurus\Entities\Thesaurus;
+use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Entities\ThesaurusTerm;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
@@ -26,11 +26,11 @@ class ExtenderWithThesaurus extends Hybrid
     }
 
 
-    public static function new(Thesaurus $thesaurus)
+    public static function new(ThesaurusMemoryExporter $thesaurusMemoryExporter)
     {
         $transformer = new self;
 
-        $transformer->thesaurus = $thesaurus;
+        $transformer->thesaurus = $thesaurusMemoryExporter->getData();
 
         return $transformer;
     }
