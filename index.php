@@ -12,7 +12,6 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterm
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithThesaurus as GraphicsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRestorations as GraphicsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
-use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\LiteratureReferencesLoader;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\LiteratureReferencesJSONExporter;
@@ -48,9 +47,6 @@ RestorationsLoader::withSourcesAt([
     './input/20200716/CDA_RestDokumente_P2_20200716.xml',
     './input/20200716/CDA_RestDokumente_P3_20200716.xml',
 ])->pipe(
-    RestorationsJSONLangExporter::withDestinationAt(
-        './output/20200716/cda-paintings-restoration-v2.json',
-    ),
     $paintingsRestorationMemoryDestination,
 )->run(); /* and we have to run it directly */
 
@@ -92,9 +88,6 @@ $graphicsRestorationMemoryDestination = RestorationsMemoryExporter::new();
 RestorationsLoader::withSourcesAt([
     './input/20200716/CDA-GR_RestDokumente_20200716.xml',
 ])->pipe(
-    RestorationsJSONLangExporter::withDestinationAt(
-        './output/20200716/cda-graphics-restoration-v2.json',
-    ),
     $graphicsRestorationMemoryDestination,
 )->run(); /* and we have to run it directly */
 
@@ -155,8 +148,8 @@ $archivalsLoader = ArchivalsLoader::withSourceAt(
 $loaders = [
     $paintingsLoader,
     $graphicsLoader,
-    // $literatureReferencesLoader,
-    // $archivalsLoader,
+    $literatureReferencesLoader,
+    $archivalsLoader,
 ];
 
 foreach ($loaders as $loader) {
