@@ -78,12 +78,12 @@ class PaintingInflator implements IInflator
 
         self::registerXPathNamespace($subNode);
 
+        self::inflateInventoryNumber($subNode, $paintingDe, $paintingEn);
         self::inflateInvolvedPersons($subNode, $paintingDe, $paintingEn);
         self::inflatePersonNames($subNode, $paintingDe, $paintingEn);
         self::inflateTitles($subNode, $paintingDe, $paintingEn);
         self::inflateClassification($subNode, $paintingDe, $paintingEn);
         self::inflateObjectName($subNode, $paintingDe, $paintingEn);
-        self::inflateInventoryNumber($subNode, $paintingDe, $paintingEn);
         self::inflateObjectMeta($subNode, $paintingDe, $paintingEn);
         self::inflateDimensions($subNode, $paintingDe, $paintingEn);
         self::inflateDating($subNode, $paintingDe, $paintingEn);
@@ -345,7 +345,7 @@ class PaintingInflator implements IInflator
                 } elseif (self::$titlesLanguageTypes['not_assigned'] === $langStr) {
                     echo '  Unassigned title lang for object ' . $paintingDe->getInventoryNumber() . "\n";
                 } else {
-                    echo '  Unknown title lang: ' . $langStr . ' for object ' . $paintingDe->getInventoryNumber() . "\n";
+                    echo '  Unknown title lang: ' . $langStr . ' for object \'' . $paintingDe->getInventoryNumber() . "'\n";
                     /* Bind title to both languages to prevent loss */
                     $paintingDe->addTitle($title);
                     $paintingEn->addTitle($title);

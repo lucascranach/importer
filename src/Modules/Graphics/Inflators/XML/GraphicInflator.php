@@ -95,11 +95,11 @@ class GraphicInflator implements IInflator
 
         self::registerXPathNamespace($subNode);
 
+        self::inflateInventoryNumber($subNode, $graphicDe, $graphicEn);
         self::inflateInvolvedPersons($subNode, $graphicDe, $graphicEn);
         self::inflatePersonNames($subNode, $graphicDe, $graphicEn);
         self::inflateTitles($subNode, $graphicDe, $graphicEn);
         self::inflateClassification($subNode, $graphicDe, $graphicEn);
-        self::inflateInventoryNumber($subNode, $graphicDe, $graphicEn);
         self::inflateObjectMeta($subNode, $graphicDe, $graphicEn);
         self::inflateDimensions($subNode, $graphicDe, $graphicEn);
         self::inflateDating($subNode, $graphicDe, $graphicEn);
@@ -359,7 +359,7 @@ class GraphicInflator implements IInflator
                 } elseif (self::$titlesLanguageTypes['not_assigned'] === $langStr) {
                     echo '  Unassigned title lang for object ' . $graphicDe->getInventoryNumber() . "\n";
                 } else {
-                    echo '  Unknown title lang: ' . $langStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
+                    echo '  Unknown title lang: ' . $langStr . ' for object \'' . $graphicDe->getInventoryNumber() . "\'\n";
                     /* Bind title to both languages to prevent loss */
                     $graphicDe->addTitle($title);
                     $graphicEn->addTitle($title);
