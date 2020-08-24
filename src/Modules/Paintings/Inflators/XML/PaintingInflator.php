@@ -1137,7 +1137,8 @@ class PaintingInflator implements IInflator
             );
             if ($yearElement) {
                 $yearStr = trim($yearElement);
-                $additionalTextInformation->setYear($yearStr);
+                $year = intval($yearStr);
+                $additionalTextInformation->setYear($year);
             }
 
             /* Author */
