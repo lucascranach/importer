@@ -26,6 +26,11 @@ use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 
+
+$date = '20200716';
+$destDirectory = './docs/' . $date;
+
+
 /* Thesaurus */
 $thesaurusMemoryDestination = ThesaurusMemoryExporter::new(); /* needed later for graphics and paintings */
 
@@ -33,7 +38,7 @@ ThesaurusLoader::withSourceAt(
     './input/20200716/CDA_Thesaurus_20200716.xml'
 )->pipe(
     ThesaurusJSONExporter::withDestinationAt(
-        './output/20200716/cda-thesaurus-v2.json',
+        './docs/20200716/cda-thesaurus-v2.json',
     ),
     $thesaurusMemoryDestination,
 )->run(); /* and we have to run it directly */
@@ -60,10 +65,10 @@ $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt
 $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
 $paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt(
-    './output/20200716/cda-paintings-v2.json',
+    $destDirectory . '/cda-paintings-v2.json',
 );
 $paintingsElasticsearchBulkDestination = PaintingsElasticsearchLangExporter::withDestinationAt(
-    './output/20200716/elasticsearch/cda-paintings-v2.bulk',
+    $destDirectory . '/elasticsearch/cda-paintings-v2.bulk',
 );
 
 $paintingsLoader = PaintingsLoader::withSourcesAt([
@@ -102,10 +107,10 @@ $graphicsConditionDeterminer = ConditionDeterminer::new();
 $graphicsRestorationExtender = GraphicsExtenderWithRestorations::new($graphicsRestorationMemoryDestination);
 $graphicsThesaurusExtender = GraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt(
-    './output/20200716/cda-graphics-v2.json',
+    $destDirectory . '/cda-graphics-v2.json',
 );
 $graphicsElasticsearchBulkDestination = GraphicsElasticsearchLangExporter::withDestinationAt(
-    './output/20200716/elasticsearch/cda-graphics-v2.bulk',
+    $destDirectory . '/elasticsearch/cda-graphics-v2.bulk',
 );
 
 $graphicsLoader = GraphicsLoader::withSourceAt(
@@ -129,7 +134,7 @@ $literatureReferencesLoader = LiteratureReferencesLoader::withSourceAt(
     './input/20200716/CDA_Literaturverweise_20200716.xml',
 )->pipe(
     LiteratureReferencesJSONExporter::withDestinationAt(
-        './output/20200716/cda-literaturereferences-v2.json',
+        $destDirectory . '/cda-literaturereferences-v2.json',
     ),
 );
 
@@ -139,7 +144,7 @@ $archivalsLoader = ArchivalsLoader::withSourceAt(
     './input/20200716/CDA-A_Datenübersicht_20200716.xml',
 )->pipe(
     ArchivalsJSONLangExporter::withDestinationAt(
-        './output/20200716/cda-archivals-v2.json',
+        $destDirectory . '/cda-archivals-v2.json',
     ),
 );
 
