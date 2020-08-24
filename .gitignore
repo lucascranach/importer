@@ -5,3 +5,7 @@ devilbox/
 # IntelliJ
 .idea
 *.iml
+/vendor/
+
+# PHP-CS-Fix
+.php_cs.cache

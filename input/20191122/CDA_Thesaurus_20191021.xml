@@ -1,0 +1,1730 @@
+<root>
+	<root-term term="Cranach-Archiv">
+		<term scopenote="false" term="Inhalt" type="Descriptor">
+			<alt-term term="Subject" type="British Equivalent"/>
+			<alt-term term="0104" type="dkult Term Identifier"/>
+			<term scopenote="true" term="Klassische Mythologie und antike Geschichte" type="Descriptor">
+				<alt-term term="Classical Mythology and Ancient History" type="British Equivalent"/>
+				<alt-term term="010405" type="dkult Term Identifier"/>
+				<term scopenote="true" term="Bacchus" type="Descriptor">
+					<alt-term term="Bacchus" type="British Equivalent"/>
+					<alt-term term="01040502" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Faunenfamilie" type="Descriptor">
+					<alt-term term="A Faun with his Family" type="British Equivalent"/>
+					<alt-term term="01040507" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Die drei Grazien" type="Descriptor">
+					<alt-term term="The Three Graces" type="British Equivalent"/>
+					<alt-term term="01040506" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Der Mund der Wahrheit" type="Descriptor">
+					<alt-term term="The Mouth of Truth" type="British Equivalent"/>
+					<alt-term term="01040504" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Lucretia" type="Descriptor">
+					<alt-term term="Lucretia" type="British Equivalent"/>
+					<alt-term term="01040509" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Das Parisurteil" type="Descriptor">
+					<alt-term term="The Judgement of Paris" type="British Equivalent"/>
+					<alt-term term="01040503" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Pyramus und Thisbe" type="Descriptor">
+					<alt-term term="Pyramus and Thisbe" type="British Equivalent"/>
+					<alt-term term="01040510" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Quellnymphe" type="Descriptor">
+					<alt-term term="Nymph" type="British Equivalent"/>
+					<alt-term term="01040511" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Herkules" type="Descriptor">
+					<alt-term term="Hercules" type="British Equivalent"/>
+					<alt-term term="01040508" type="dkult Term Identifier"/>
+					<term scopenote="true" term="Herkules bei Omphale" type="Descriptor">
+						<alt-term term="Hercules with Omphale" type="British Equivalent"/>
+						<alt-term term="0104050802" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Herkules und die Pygmäen" type="Descriptor">
+						<alt-term term="Hercules and the Pygmies" type="British Equivalent"/>
+						<alt-term term="0104050803" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Die Taten des Herkules" type="Descriptor">
+						<alt-term term="The Labours of Hercules" type="British Equivalent"/>
+						<alt-term term="0104050801" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Herkules und Antäus" type="Descriptor">
+						<alt-term term="Hercules and Antaeus" type="British Equivalent"/>
+						<alt-term term="0104050804" type="dkult Term Identifier"/>
+					</term>
+				</term>
+				<term scopenote="true" term="Dido" type="Descriptor">
+					<alt-term term="Dido" type="British Equivalent"/>
+					<alt-term term="01040505" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Diana" type="Descriptor">
+					<alt-term term="Diana" type="British Equivalent"/>
+					<alt-term term="01040501" type="dkult Term Identifier"/>
+					<term scopenote="true" term="Apollo und Diana" type="Descriptor">
+						<alt-term term="Apollo and Diana" type="British Equivalent"/>
+						<alt-term term="0104050101" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Diana und Aktäon" type="Descriptor">
+						<alt-term term="Diana and Acteon" type="British Equivalent"/>
+						<alt-term term="0104050102" type="dkult Term Identifier"/>
+					</term>
+				</term>
+				<term scopenote="true" term="Venus und Amor" type="Descriptor">
+					<alt-term term="Venus and Cupid" type="British Equivalent"/>
+					<alt-term term="01040512" type="dkult Term Identifier"/>
+					<term scopenote="true" term="Venus" type="Descriptor">
+						<alt-term term="Venus" type="British Equivalent"/>
+						<alt-term term="0104051202" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Amor" type="Descriptor">
+						<alt-term term="Cupid" type="British Equivalent"/>
+						<alt-term term="0104051201" type="dkult Term Identifier"/>
+					</term>
+				</term>
+				<term scopenote="true" term="Der Opfertod des Marcus Curtius" type="Descriptor">
+					<alt-term term="Marcus Curtius Plunging into the Chasm" type="British Equivalent"/>
+					<alt-term term="01040513" type="dkult Term Identifier"/>
+				</term>
+			</term>
+			<term scopenote="true" term="Genre" type="Descriptor">
+				<alt-term term="Genre" type="British Equivalent"/>
+				<alt-term term="010404" type="dkult Term Identifier"/>
+				<term scopenote="true" term="Ungleiches Paar" type="Descriptor">
+					<alt-term term="An Ill-matched Pair" type="British Equivalent"/>
+					<alt-term term="01040403" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Jagdszene" type="Descriptor">
+					<alt-term term="Hunting scene" type="British Equivalent"/>
+					<alt-term term="01040401" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Turnier" type="Descriptor">
+					<alt-term term="Tournament" type="British Equivalent"/>
+					<alt-term term="01040402" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Werwolf" type="Descriptor">
+					<alt-term term="Werewolf" type="British Equivalent"/>
+					<alt-term term="01040404" type="dkult Term Identifier"/>
+				</term>
+			</term>
+			<term scopenote="true" term="Allegorie" type="Descriptor">
+				<alt-term term="Allegory" type="British Equivalent"/>
+				<alt-term term="010401" type="dkult Term Identifier"/>
+				<term scopenote="true" term="Caritas" type="Descriptor">
+					<alt-term term="Charity" type="British Equivalent"/>
+					<alt-term term="01040101" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Melancholie" type="Descriptor">
+					<alt-term term="Melancholy" type="British Equivalent"/>
+					<alt-term term="01040106" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Das goldene Zeitalter" type="Descriptor">
+					<alt-term term="The Golden Age" type="British Equivalent"/>
+					<alt-term term="01040102" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Das silberne Zeitalter" type="Descriptor">
+					<alt-term term="The Silver Age" type="British Equivalent"/>
+					<alt-term term="01040103" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Jungbrunnen" type="Descriptor">
+					<alt-term term="Fountain of Youth" type="British Equivalent"/>
+					<alt-term term="01040104" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Justitia" type="Descriptor">
+					<alt-term term="Justice" type="British Equivalent"/>
+					<alt-term term="01040108" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Liebe" type="Descriptor">
+					<alt-term term="Love" type="British Equivalent"/>
+					<alt-term term="01040109" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Glauben" type="Descriptor">
+					<alt-term term="Faith" type="British Equivalent"/>
+					<alt-term term="01040107" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Unschuld" type="Descriptor">
+					<alt-term term="Innocence" type="British Equivalent"/>
+					<alt-term term="01040105" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Tugend" type="Descriptor">
+					<alt-term term="Virtue" type="British Equivalent"/>
+					<alt-term term="01040110" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Phyllis und Aristoteles" type="Descriptor">
+					<alt-term term="Phyllis and Aristotle" type="British Equivalent"/>
+					<alt-term term="01040111" type="dkult Term Identifier"/>
+				</term>
+			</term>
+			<term scopenote="true" term="Christliche Religion / Bibel" type="Descriptor">
+				<alt-term term="Christian Religion / Bible" type="British Equivalent"/>
+				<alt-term term="010403" type="dkult Term Identifier"/>
+				<term scopenote="true" term="Altes Testament" type="Descriptor">
+					<alt-term term="The Old Testament" type="British Equivalent"/>
+					<alt-term term="01040301" type="dkult Term Identifier"/>
+					<term scopenote="true" term="Judith" type="Descriptor">
+						<alt-term term="Judith" type="British Equivalent"/>
+						<alt-term term="0104030107" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Judith mit dem Haupt Holofernes" type="Descriptor">
+							<alt-term term="Judith with the Head of Holofernes" type="British Equivalent"/>
+							<alt-term term="010403010702" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Tod des Holofernes" type="Descriptor">
+							<alt-term term="The Death of Holofernes" type="British Equivalent"/>
+							<alt-term term="010403010703" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Judith an der Tafel des Holofernes" type="Descriptor">
+							<alt-term term="Judith Dining with Holoferens" type="British Equivalent"/>
+							<alt-term term="010403010701" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Moses" type="Descriptor">
+						<alt-term term="Moses" type="British Equivalent"/>
+						<alt-term term="0104030109" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Die zehn Gebote" type="Descriptor">
+							<alt-term term="The Ten Commandments" type="British Equivalent"/>
+							<alt-term term="010403010902" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Der Untergang Pharaos" type="Descriptor">
+							<alt-term term="Pharaoh's Hosts engulfed in the Red Sea" type="British Equivalent"/>
+							<alt-term term="010403010901" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Moses und Aaron" type="Descriptor">
+							<alt-term term="Moses and Aaron" type="British Equivalent"/>
+							<alt-term term="010403010904" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Anbetung der Ehernen Schlange" type="Descriptor">
+							<alt-term term="The Brazen Serpent" type="British Equivalent"/>
+							<alt-term term="010403010903" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="" term="Moses auf dem Berge Horeb" type="Descriptor">
+							<alt-term term="Moses on Mount Horeb" type="British Equivalent"/>
+							<alt-term term="010403010905" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Simson" type="Descriptor">
+						<alt-term term="Samson" type="British Equivalent"/>
+						<alt-term term="0104030111" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Simson und Delila" type="Descriptor">
+							<alt-term term="Samson and Delilah" type="British Equivalent"/>
+							<alt-term term="010403011102" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Simson bezwingt den Löwen" type="Descriptor">
+							<alt-term term="Samson vanquishing the Lion" type="British Equivalent"/>
+							<alt-term term="010403011101" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Salomon" type="Descriptor">
+						<alt-term term="Solomon" type="British Equivalent"/>
+						<alt-term term="0104030110" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Salomons Urteil" type="Descriptor">
+							<alt-term term="The Judgement of Solomon" type="British Equivalent"/>
+							<alt-term term="010403011002" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Gottsendienst Salomons" type="Descriptor">
+							<alt-term term="The Idolatry of Solomon" type="British Equivalent"/>
+							<alt-term term="010403011001" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Lot" type="Descriptor">
+						<alt-term term="Lot" type="British Equivalent"/>
+						<alt-term term="0104030108" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Lot und seine Töchter" type="Descriptor">
+							<alt-term term="Lot and his Daughters" type="British Equivalent"/>
+							<alt-term term="010403010801" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="David" type="Descriptor">
+						<alt-term term="David" type="British Equivalent"/>
+						<alt-term term="0104030102" type="dkult Term Identifier"/>
+						<term scopenote="true" term="David in der Wüste Siphmot" type="Descriptor">
+							<alt-term term="David in the Wilderness of Ziph" type="British Equivalent"/>
+							<alt-term term="010403010201" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="David und Bathseba" type="Descriptor">
+							<alt-term term="David and Bathsheba" type="British Equivalent"/>
+							<alt-term term="010403010202" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="David und Goliath" type="Descriptor">
+							<alt-term term="David and Goliath" type="British Equivalent"/>
+							<alt-term term="010403010203" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="David und Abigail" type="Descriptor">
+							<alt-term term="David and Abigail" type="British Equivalent"/>
+							<alt-term term="010403010204" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Abraham" type="Descriptor">
+						<alt-term term="Abraham" type="British Equivalent"/>
+						<alt-term term="0104030103" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Das Opfer Abrahams" type="Descriptor">
+							<alt-term term="The Sacrifice of Abraham" type="British Equivalent"/>
+							<alt-term term="010403010301" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Jonas" type="Descriptor">
+						<alt-term term="Jonah" type="British Equivalent"/>
+						<alt-term term="0104030106" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Jonas und der Wal" type="Descriptor">
+							<alt-term term="Jonah and the Whale" type="British Equivalent"/>
+							<alt-term term="010403010601" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Joab" type="Descriptor">
+						<alt-term term="Joab" type="British Equivalent"/>
+						<alt-term term="0104030105" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Joab ermordet Abner" type="Descriptor">
+							<alt-term term="Joab murdering Abner" type="British Equivalent"/>
+							<alt-term term="010403010501" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Elias" type="Descriptor">
+						<alt-term term="Elijah" type="British Equivalent"/>
+						<alt-term term="0104030104" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Elias und die Priester von Baal" type="Descriptor">
+							<alt-term term="Elijah and the Priests of Baal" type="British Equivalent"/>
+							<alt-term term="010403010401" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Genesis" type="Descriptor">
+						<alt-term term="Genesis" type="British Equivalent"/>
+						<alt-term term="0104030101" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Adam und Eva" type="Descriptor">
+							<alt-term term="Adam and Eve" type="British Equivalent"/>
+							<alt-term term="010403010101" type="dkult Term Identifier"/>
+							<term scopenote="true" term="Adam" type="Descriptor">
+								<alt-term term="Adam" type="British Equivalent"/>
+								<alt-term term="01040301010101" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Eva" type="Descriptor">
+								<alt-term term="Eve" type="British Equivalent"/>
+								<alt-term term="01040301010102" type="dkult Term Identifier"/>
+							</term>
+						</term>
+						<term scopenote="" term="Die Sintflut" type="Descriptor">
+							<alt-term term="The Deluge" type="British Equivalent"/>
+							<alt-term term="010403010102" type="dkult Term Identifier"/>
+						</term>
+					</term>
+				</term>
+				<term scopenote="true" term="Neues Testament" type="Descriptor">
+					<alt-term term="The New Testament" type="British Equivalent"/>
+					<alt-term term="01040302" type="dkult Term Identifier"/>
+					<term scopenote="true" term="Vor der Geburt Christi" type="Descriptor">
+						<alt-term term="Before the Birth of Christ" type="British Equivalent"/>
+						<alt-term term="0104030201" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Die Geburt Mariae" type="Descriptor">
+							<alt-term term="The Birth of the Virgin" type="British Equivalent"/>
+							<alt-term term="010403020103" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Erziehung der Jungfrau" type="Descriptor">
+							<alt-term term="The Education of the Virgin" type="British Equivalent"/>
+							<alt-term term="010403020104" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Verkündigung an Joachim" type="Descriptor">
+							<alt-term term="The Annunciation of the Birth of Mary to Joachim" type="British Equivalent"/>
+							<alt-term term="010403020102" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Verkündigung" type="Descriptor">
+							<alt-term term="The Annunciation" type="British Equivalent"/>
+							<alt-term term="010403020105" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Begegnung an der Goldenen Pforte" type="Descriptor">
+							<alt-term term="Meeting at the Golden Gate" type="British Equivalent"/>
+							<alt-term term="010403020101" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Mariä Heimsuchung" type="Descriptor">
+							<alt-term term="The Visitation" type="British Equivalent"/>
+							<alt-term term="010403020106" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Die Geburt und Jugend Christi" type="Descriptor">
+						<alt-term term="The Birth and Youth of Christ" type="British Equivalent"/>
+						<alt-term term="0104030202" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Die Geburt Christi" type="Descriptor">
+							<alt-term term="The Nativity" type="British Equivalent"/>
+							<alt-term term="010403020201" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Heilige Familie" type="Descriptor">
+							<alt-term term="The Holy Family" type="British Equivalent"/>
+							<alt-term term="010403020206" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Der Bethleheminische Kindermord" type="Descriptor">
+							<alt-term term="The Massacre of the Innocence" type="British Equivalent"/>
+							<alt-term term="010403020204" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Anbetung der Könige" type="Descriptor">
+							<alt-term term="The Adoration of the Magi" type="British Equivalent"/>
+							<alt-term term="010403020202" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Vorstellung im Tempel" type="Descriptor">
+							<alt-term term="The Presentation in the Temple" type="British Equivalent"/>
+							<alt-term term="010403020207" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Ruhe auf der Flucht nach Ägypten" type="Descriptor">
+							<alt-term term="Rest on the Flight into Egypt" type="British Equivalent"/>
+							<alt-term term="010403020205" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Christus als Zwölfjähriger im Tempel" type="Descriptor">
+							<alt-term term="Christ in the Temple" type="British Equivalent"/>
+							<alt-term term="010403020208" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Anbetung der Hirten" type="Descriptor">
+							<alt-term term="The Adoration of the Shepherds" type="British Equivalent"/>
+							<alt-term term="010403020203" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Wirken und Leben Christi" type="Descriptor">
+						<alt-term term="Public Ministry/Life" type="British Equivalent"/>
+						<alt-term term="0104030203" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Lehre" type="Descriptor">
+							<alt-term term="Teaching" type="British Equivalent"/>
+							<alt-term term="010403020302" type="dkult Term Identifier"/>
+							<term scopenote="true" term="Christus im Hause der Pharisäer" type="Descriptor">
+								<alt-term term="Christ in the House of the Pharisee" type="British Equivalent"/>
+								<alt-term term="01040302030201" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Christus segnet die Kinder" type="Descriptor">
+								<alt-term term="Christ Blessing the Children" type="British Equivalent"/>
+								<alt-term term="01040302030202" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Christus und die Ehebrecherin" type="Descriptor">
+								<alt-term term="Christ and the Adulteress" type="British Equivalent"/>
+								<alt-term term="01040302030203" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Christus und die Samariterin" type="Descriptor">
+								<alt-term term="Christ and the Woman of Samaria" type="British Equivalent"/>
+								<alt-term term="01040302030204" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Die Vertreibung der Wechsler aus dem Tempel" type="Descriptor">
+								<alt-term term="Christ driving the Money-changers from the Temple" type="British Equivalent"/>
+								<alt-term term="01040302030206" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Der Zöllner und der Pharisäer" type="Descriptor">
+								<alt-term term="The Pharisee and the Publican" type="British Equivalent"/>
+								<alt-term term="01040302030205" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Verklärung Christi auf dem Berg Tabor" type="Descriptor">
+								<alt-term term="The Transfiguration on Mount Tabor" type="British Equivalent"/>
+								<alt-term term="01040302030207" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Gleichnis von den Arbeitern im Weinberg" type="Descriptor">
+								<alt-term term="Parable of the Workers in the Vineyard" type="British Equivalent"/>
+								<alt-term term="01040302030208" type="dkult Term Identifier"/>
+							</term>
+						</term>
+						<term scopenote="true" term="Wunder" type="Descriptor">
+							<alt-term term="Miracles" type="British Equivalent"/>
+							<alt-term term="010403020303" type="dkult Term Identifier"/>
+							<term scopenote="true" term="Die Auferweckung des Lazarus" type="Descriptor">
+								<alt-term term="The Raising of Lazarus" type="British Equivalent"/>
+								<alt-term term="01040302030301" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Die Heilung des blutflüssigen Weibes" type="Descriptor">
+								<alt-term term="The Miracle of the Bleeding Woman" type="British Equivalent"/>
+								<alt-term term="01040302030302" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Die Speisung der Zehntausend" type="Descriptor">
+								<alt-term term="The Feeding of the Ten Thousand" type="British Equivalent"/>
+								<alt-term term="01040302030303" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Christus und das kanaanäische Weib" type="Descriptor">
+								<alt-term term="Christ and the Canaanite Woman" type="British Equivalent"/>
+								<alt-term term="01040302030304" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Die Auferweckung des Jünglings zu Nain" type="Descriptor">
+								<alt-term term="Raising of the son of the widow of Nain" type="British Equivalent"/>
+								<alt-term term="01040302030305" type="dkult Term Identifier"/>
+							</term>
+						</term>
+						<term scopenote="true" term="Taufe Christi" type="Descriptor">
+							<alt-term term="The Baptism of Christ" type="British Equivalent"/>
+							<alt-term term="010403020301" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Die Passion" type="Descriptor">
+						<alt-term term="The Passion" type="British Equivalent"/>
+						<alt-term term="0104030204" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Christus am Ölberg" type="Descriptor">
+							<alt-term term="Agony in the Garden" type="British Equivalent"/>
+							<alt-term term="010403020405" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Der Abschied der Apostel" type="Descriptor">
+							<alt-term term="Christ Taking Leave from the Apostels" type="British Equivalent"/>
+							<alt-term term="010403020404" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Gefangennahme Christi" type="Descriptor">
+							<alt-term term="The Taking of Christ" type="British Equivalent"/>
+							<alt-term term="010403020406" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Ausstellung Christi" type="Descriptor">
+							<alt-term term="Christ is Condemned to Death" type="British Equivalent"/>
+							<alt-term term="010403020407" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Fußwaschung" type="Descriptor">
+							<alt-term term="The Washing of the Feet" type="British Equivalent"/>
+							<alt-term term="010403020403" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Geißelung Christi" type="Descriptor">
+							<alt-term term="The Flagellation" type="British Equivalent"/>
+							<alt-term term="010403020408" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Kreuztragung" type="Descriptor">
+							<alt-term term="Christ on the Way to Calvary" type="British Equivalent"/>
+							<alt-term term="010403020412" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Kreuzigung" type="Descriptor">
+							<alt-term term="The Crucifixion" type="British Equivalent"/>
+							<alt-term term="010403020414" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Grablegung" type="Descriptor">
+							<alt-term term="The Deposition" type="British Equivalent"/>
+							<alt-term term="010403020417" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Kreuzabnahme" type="Descriptor">
+							<alt-term term="The Descent from the Cross" type="British Equivalent"/>
+							<alt-term term="010403020415" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Beweinung" type="Descriptor">
+							<alt-term term="The Lamentation" type="British Equivalent"/>
+							<alt-term term="010403020416" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Christi Abschied von Maria" type="Descriptor">
+							<alt-term term="Christ Taking Leave from the Virgin" type="British Equivalent"/>
+							<alt-term term="010403020401" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Verspottung Christi" type="Descriptor">
+							<alt-term term="The Mockery of Christ" type="British Equivalent"/>
+							<alt-term term="010403020409" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Dornenkrönung" type="Descriptor">
+							<alt-term term="Christ  is Crowned with Thorns" type="British Equivalent"/>
+							<alt-term term="010403020410" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Das Abendmahl" type="Descriptor">
+							<alt-term term="The Last Supper" type="British Equivalent"/>
+							<alt-term term="010403020402" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Ecce Homo" type="Descriptor">
+							<alt-term term="Ecce Homo" type="British Equivalent"/>
+							<alt-term term="010403020411" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Kreuzannagelung" type="Descriptor">
+							<alt-term term="Christ is Nailed to the Cross" type="British Equivalent"/>
+							<alt-term term="010403020413" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Von der Auferstehung bis Pfingsten" type="Descriptor">
+						<alt-term term="Events from the Resurrection to Pentecost" type="British Equivalent"/>
+						<alt-term term="0104030206" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Die Auferstehung" type="Descriptor">
+							<alt-term term="The Resurrection" type="British Equivalent"/>
+							<alt-term term="010403020604" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Der Tod Mariae" type="Descriptor">
+							<alt-term term="The Death of the Virgin" type="British Equivalent"/>
+							<alt-term term="010403020602" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Christus in der Vorhölle" type="Descriptor">
+							<alt-term term="Christ in Purgatory/Limbo" type="British Equivalent"/>
+							<alt-term term="010403020601" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Die Frauen am Grabe Christi" type="Descriptor">
+							<alt-term term="The Holy Women at Christ's Tomb" type="British Equivalent"/>
+							<alt-term term="010403020603" type="dkult Term Identifier"/>
+						</term>
+					</term>
+				</term>
+				<term scopenote="true" term="Christus" type="Descriptor">
+					<alt-term term="Christ" type="British Equivalent"/>
+					<alt-term term="01040305" type="dkult Term Identifier"/>
+					<term scopenote="true" term="Christus als Weltheiland" type="Descriptor">
+						<alt-term term="Christ as Saviour" type="British Equivalent"/>
+						<alt-term term="0104030503" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Der Schmerzensmann" type="Descriptor">
+						<alt-term term="Christ as the Man of Sorrows" type="British Equivalent"/>
+						<alt-term term="0104030504" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Christus als guter Hirte" type="Descriptor">
+						<alt-term term="Christ as the Good Shepherd" type="British Equivalent"/>
+						<alt-term term="0104030502" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Christusknabe" type="Descriptor">
+						<alt-term term="The Christ Child" type="British Equivalent"/>
+						<alt-term term="0104030501" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Die Himmelfahrt Christi" type="Descriptor">
+						<alt-term term="The Ascension of Christ" type="British Equivalent"/>
+						<alt-term term="0104030505" type="dkult Term Identifier"/>
+					</term>
+				</term>
+				<term scopenote="true" term="Vorhölle" type="Descriptor">
+					<alt-term term="Purgatory" type="British Equivalent"/>
+					<alt-term term="01040306" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Heilige, Aposteln, Propheten" type="Descriptor">
+					<alt-term term="Saints, apostles, prophets" type="British Equivalent"/>
+					<alt-term term="01040303" type="dkult Term Identifier"/>
+					<term scopenote="true" term="Männliche Heilige" type="Descriptor">
+						<alt-term term="Male Saints" type="British Equivalent"/>
+						<alt-term term="0104030301" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Hl. Willibald" type="Descriptor">
+							<alt-term term="St Willibald" type="British Equivalent"/>
+							<alt-term term="010403030152" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Valentin" type="Descriptor">
+							<alt-term term="St Valentine" type="British Equivalent"/>
+							<alt-term term="010403030149" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Stephanus" type="Descriptor">
+							<alt-term term="St Stephen" type="British Equivalent"/>
+							<alt-term term="010403030147" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Sebastian" type="Descriptor">
+							<alt-term term="St Sebastian" type="British Equivalent"/>
+							<alt-term term="010403030143" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Sebald" type="Descriptor">
+							<alt-term term="St Sebald" type="British Equivalent"/>
+							<alt-term term="010403030142" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Rochus" type="Descriptor">
+							<alt-term term="St Roche" type="British Equivalent"/>
+							<alt-term term="010403030140" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Paulus" type="Descriptor">
+							<alt-term term="St Paul" type="British Equivalent"/>
+							<alt-term term="010403030137" type="dkult Term Identifier"/>
+							<term scopenote="true" term="Die Bekehrung Pauli" type="Descriptor">
+								<alt-term term="The Conversion of Saul" type="British Equivalent"/>
+								<alt-term term="01040303013701" type="dkult Term Identifier"/>
+							</term>
+						</term>
+						<term scopenote="true" term="Hl. Nikolaus" type="Descriptor">
+							<alt-term term="St Nicholas" type="British Equivalent"/>
+							<alt-term term="010403030135" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Mauritius" type="Descriptor">
+							<alt-term term="St Maurice" type="British Equivalent"/>
+							<alt-term term="010403030133" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Martin" type="Descriptor">
+							<alt-term term="St Martin" type="British Equivalent"/>
+							<alt-term term="010403030130" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Leopold" type="Descriptor">
+							<alt-term term="St Leopold" type="British Equivalent"/>
+							<alt-term term="010403030129" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Lazarus" type="Descriptor">
+							<alt-term term="St Lazarus" type="British Equivalent"/>
+							<alt-term term="010403030128" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Johannes" type="Descriptor">
+							<alt-term term="St John" type="British Equivalent"/>
+							<alt-term term="010403030124" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Jakobus der Ältere" type="Descriptor">
+							<alt-term term="St James the Greater" type="British Equivalent"/>
+							<alt-term term="010403030122" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Hubertus" type="Descriptor">
+							<alt-term term="St Hubertus" type="British Equivalent"/>
+							<alt-term term="010403030121" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Hieronymus" type="Descriptor">
+							<alt-term term="St Jerome" type="British Equivalent"/>
+							<alt-term term="010403030120" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Gregor" type="Descriptor">
+							<alt-term term="St Gregory" type="British Equivalent"/>
+							<alt-term term="010403030118" type="dkult Term Identifier"/>
+							<term scopenote="true" term="Die Messe des hl. Gregor" type="Descriptor">
+								<alt-term term="The Mass of Pope Gregory" type="British Equivalent"/>
+								<alt-term term="01040303011801" type="dkult Term Identifier"/>
+							</term>
+						</term>
+						<term scopenote="true" term="Hl. Georg" type="Descriptor">
+							<alt-term term="St George" type="British Equivalent"/>
+							<alt-term term="010403030117" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Franziskus" type="Descriptor">
+							<alt-term term="St Francis" type="British Equivalent"/>
+							<alt-term term="010403030116" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Erasmus" type="Descriptor">
+							<alt-term term="St Erasmus" type="British Equivalent"/>
+							<alt-term term="010403030114" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Chrysostomus" type="Descriptor">
+							<alt-term term="St Chrysostom" type="British Equivalent"/>
+							<alt-term term="010403030111" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Christophorus" type="Descriptor">
+							<alt-term term="St Christopher" type="British Equivalent"/>
+							<alt-term term="010403030110" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Bartholomäus" type="Descriptor">
+							<alt-term term="St Bartholomew" type="British Equivalent"/>
+							<alt-term term="010403030108" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Achatius" type="Descriptor">
+							<alt-term term="St Achatius" type="British Equivalent"/>
+							<alt-term term="010403030101" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Peter" type="Descriptor">
+							<alt-term term="St Peter" type="British Equivalent"/>
+							<alt-term term="010403030138" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Andreas" type="Descriptor">
+							<alt-term term="St Andrew" type="British Equivalent"/>
+							<alt-term term="010403030105" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Blasius" type="Descriptor">
+							<alt-term term="St Blaise" type="British Equivalent"/>
+							<alt-term term="010403030109" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Cyriakus" type="Descriptor">
+							<alt-term term="St Cyriacus" type="British Equivalent"/>
+							<alt-term term="010403030112" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Pantaleon" type="Descriptor">
+							<alt-term term="St Pantaleon" type="British Equivalent"/>
+							<alt-term term="010403030136" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Vitus" type="Descriptor">
+							<alt-term term="St Vitus" type="British Equivalent"/>
+							<alt-term term="010403030150" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Eustachius" type="Descriptor">
+							<alt-term term="St Eustace" type="British Equivalent"/>
+							<alt-term term="010403030115" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Dionysius" type="Descriptor">
+							<alt-term term="St Dionysius" type="British Equivalent"/>
+							<alt-term term="010403030113" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Ägidius" type="Descriptor">
+							<alt-term term="St Gilles" type="British Equivalent"/>
+							<alt-term term="010403030103" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Antonius" type="Descriptor">
+							<alt-term term="St Anthony" type="British Equivalent"/>
+							<alt-term term="010403030106" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Unbekannte" type="Descriptor">
+							<alt-term term="Unknown" type="British Equivalent"/>
+							<alt-term term="010403030153" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Sigismund" type="Descriptor">
+							<alt-term term="St Sigismund" type="British Equivalent"/>
+							<alt-term term="010403030144" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Wenzel" type="Descriptor">
+							<alt-term term="St Wenceslaus" type="British Equivalent"/>
+							<alt-term term="010403030151" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Adalbert" type="Descriptor">
+							<alt-term term="St Adalbert" type="British Equivalent"/>
+							<alt-term term="010403030102" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Alexander" type="Descriptor">
+							<alt-term term="St Alexander" type="British Equivalent"/>
+							<alt-term term="010403030104" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Augustinus" type="Descriptor">
+							<alt-term term="St Augustine" type="British Equivalent"/>
+							<alt-term term="010403030107" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Sixtus" type="Descriptor">
+							<alt-term term="St Sixtus" type="British Equivalent"/>
+							<alt-term term="010403030146" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Laurentius" type="Descriptor">
+							<alt-term term="St Lawrence" type="British Equivalent"/>
+							<alt-term term="010403030127" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Heinrich" type="Descriptor">
+							<alt-term term="St Henry" type="British Equivalent"/>
+							<alt-term term="010403030119" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Maximus" type="Descriptor">
+							<alt-term term="St Maximus" type="British Equivalent"/>
+							<alt-term term="010403030134" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Romanus" type="Descriptor">
+							<alt-term term="St Romanus" type="British Equivalent"/>
+							<alt-term term="010403030141" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Simon" type="Descriptor">
+							<alt-term term="St Simon" type="British Equivalent"/>
+							<alt-term term="010403030145" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Judas Thaddäus" type="Descriptor">
+							<alt-term term="St Judas Thaddaeus" type="British Equivalent"/>
+							<alt-term term="010403030126" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Johannes der Täufer" type="Descriptor">
+							<alt-term term="St John the Baptist" type="British Equivalent"/>
+							<alt-term term="010403030125" type="dkult Term Identifier"/>
+							<term scopenote="true" term="Geburt Johannes des Täufers" type="Descriptor">
+								<alt-term term="The Birth of John the Baptist" type="British Equivalent"/>
+								<alt-term term="01040303012501" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Johannesknabe" type="Descriptor">
+								<alt-term term="The Young St John" type="British Equivalent"/>
+								<alt-term term="01040303012502" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Das Gastmahl des Herodes" type="Descriptor">
+								<alt-term term="Herod's Banquet" type="British Equivalent"/>
+								<alt-term term="01040303012504" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Salome mit dem Kopf Johannes des Täufers" type="Descriptor">
+								<alt-term term="Salome with the Head of St John the Baptist" type="British Equivalent"/>
+								<alt-term term="01040303012506" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Enthauptung Johannes des Täufers" type="Descriptor">
+								<alt-term term="The Beheading of St John the Baptist" type="British Equivalent"/>
+								<alt-term term="01040303012505" type="dkult Term Identifier"/>
+							</term>
+							<term scopenote="true" term="Predigt Johannes des Täufers" type="Descriptor">
+								<alt-term term="The Sermon of St John the Baptist" type="British Equivalent"/>
+								<alt-term term="01040303012503" type="dkult Term Identifier"/>
+							</term>
+						</term>
+						<term scopenote="true" term="Hl. Matthias" type="Descriptor">
+							<alt-term term="St Matthias" type="British Equivalent"/>
+							<alt-term term="010403030132" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Philippus" type="Descriptor">
+							<alt-term term="St Philip" type="British Equivalent"/>
+							<alt-term term="010403030139" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Thomas" type="Descriptor">
+							<alt-term term="St Thomas" type="British Equivalent"/>
+							<alt-term term="010403030148" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Jakobus des Jüngeren" type="Descriptor">
+							<alt-term term="St James the Less" type="British Equivalent"/>
+							<alt-term term="010403030123" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Matthäus" type="Descriptor">
+							<alt-term term="St Matthew" type="British Equivalent"/>
+							<alt-term term="010403030131" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Weibliche Heilige" type="Descriptor">
+						<alt-term term="Female Saints" type="British Equivalent"/>
+						<alt-term term="0104030302" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Hl. Walpurga" type="Descriptor">
+							<alt-term term="St Walpurga" type="British Equivalent"/>
+							<alt-term term="010403030219" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Ursula" type="Descriptor">
+							<alt-term term="St Ursula" type="British Equivalent"/>
+							<alt-term term="010403030217" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Ottilia" type="Descriptor">
+							<alt-term term="St Ottilia" type="British Equivalent"/>
+							<alt-term term="010403030216" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Marta" type="Descriptor">
+							<alt-term term="St Martha" type="British Equivalent"/>
+							<alt-term term="010403030215" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Margaretha" type="Descriptor">
+							<alt-term term="St Margaret" type="British Equivalent"/>
+							<alt-term term="010403030214" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Magdalena" type="Descriptor">
+							<alt-term term="St Magdalene" type="British Equivalent"/>
+							<alt-term term="010403030213" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Kunigunde" type="Descriptor">
+							<alt-term term="St Kunigunde" type="British Equivalent"/>
+							<alt-term term="010403030212" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Katharina" type="Descriptor">
+							<alt-term term="St Catherine" type="British Equivalent"/>
+							<alt-term term="010403030211" type="dkult Term Identifier"/>
+							<term scopenote="" term="Die Vermählung der Heiligen Katharina" type="Descriptor">
+								<alt-term term="The Mystical Marriage of St Catherine" type="British Equivalent"/>
+								<alt-term term="01040303021101" type="dkult Term Identifier"/>
+							</term>
+						</term>
+						<term scopenote="true" term="Hl. Helena" type="Descriptor">
+							<alt-term term="St Helen" type="British Equivalent"/>
+							<alt-term term="010403030210" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Genoveva" type="Descriptor">
+							<alt-term term="St Genoveva" type="British Equivalent"/>
+							<alt-term term="010403030209" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Dorothea" type="Descriptor">
+							<alt-term term="St Dorothy" type="British Equivalent"/>
+							<alt-term term="010403030206" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Christina" type="Descriptor">
+							<alt-term term="St Christine" type="British Equivalent"/>
+							<alt-term term="010403030205" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Barbara" type="Descriptor">
+							<alt-term term="St Barbara" type="British Equivalent"/>
+							<alt-term term="010403030204" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Apollonia" type="Descriptor">
+							<alt-term term="St Apollonia" type="British Equivalent"/>
+							<alt-term term="010403030203" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Anna" type="Descriptor">
+							<alt-term term="St Anna" type="British Equivalent"/>
+							<alt-term term="010403030202" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Agnes" type="Descriptor">
+							<alt-term term="St Agnes" type="British Equivalent"/>
+							<alt-term term="010403030201" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Elizabeth" type="Descriptor">
+							<alt-term term="St Elizabeth" type="British Equivalent"/>
+							<alt-term term="010403030207" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Unbekannte" type="Descriptor">
+							<alt-term term="Unknown" type="British Equivalent"/>
+							<alt-term term="010403030220" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Felicitas" type="Descriptor">
+							<alt-term term="St Felicitas" type="British Equivalent"/>
+							<alt-term term="010403030208" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hl. Veronika" type="Descriptor">
+							<alt-term term="St Veronica" type="British Equivalent"/>
+							<alt-term term="010403030218" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Die Vierzehn Nothelfer" type="Descriptor">
+						<alt-term term="The Fourteen Helpers in Need" type="British Equivalent"/>
+						<alt-term term="0104030303" type="dkult Term Identifier"/>
+					</term>
+				</term>
+				<term scopenote="true" term="Die Madonna" type="Descriptor">
+					<alt-term term="The Virgin" type="British Equivalent"/>
+					<alt-term term="01040304" type="dkult Term Identifier"/>
+					<term scopenote="true" term="Die Madonna auf der Mondsichel" type="Descriptor">
+						<alt-term term="The Virgin standing on a Crescent Moon" type="British Equivalent"/>
+						<alt-term term="0104030401" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Die Madonna mit dem Kinde" type="Descriptor">
+						<alt-term term="The Virgin and Child" type="British Equivalent"/>
+						<alt-term term="0104030403" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Die Madonna mit dem Kinde und dem Johannesknaben" type="Descriptor">
+						<alt-term term="The Virgin and Child and St John" type="British Equivalent"/>
+						<alt-term term="0104030404" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Die Madonna mit dem Kinde und Heiligen" type="Descriptor">
+						<alt-term term="The Virgin and Child with Saints" type="British Equivalent"/>
+						<alt-term term="0104030405" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Maria als Schmerzensmutter" type="Descriptor">
+						<alt-term term="Mary, Mother of Sorrows" type="British Equivalent"/>
+						<alt-term term="0104030407" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Die Madonna im Ährenkleid" type="Descriptor">
+						<alt-term term="The Virgin wearing an 'Ährenkleid'" type="British Equivalent"/>
+						<alt-term term="0104030402" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Die Marienkrönung" type="Descriptor">
+						<alt-term term="The Coronation of the Virgin" type="British Equivalent"/>
+						<alt-term term="0104030406" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Maria Selbdritt" type="Descriptor">
+						<alt-term term="The Virgin and Child with St Anne" type="British Equivalent"/>
+						<alt-term term="0104030408" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="" term="Schutzmantelmadonna" type="Descriptor">
+						<alt-term term="The Virgin of Mercy" type="British Equivalent"/>
+						<alt-term term="0104030409" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Maria lactans" type="Descriptor">
+						<alt-term term="Madonna Lactans" type="British Equivalent"/>
+						<alt-term term="0104030410" type="dkult Term Identifier"/>
+					</term>
+				</term>
+				<term scopenote="true" term="Die Erlösung" type="Descriptor">
+					<alt-term term="Salvation" type="British Equivalent"/>
+					<alt-term term="01040307" type="dkult Term Identifier"/>
+					<term scopenote="true" term="Der Sterbende" type="Descriptor">
+						<alt-term term="The Dying Man" type="British Equivalent"/>
+						<alt-term term="0104030702" type="dkult Term Identifier"/>
+					</term>
+					<term scopenote="true" term="Gesetz und Gnade" type="Descriptor">
+						<alt-term term="Law and Grace" type="British Equivalent"/>
+						<alt-term term="0104030701" type="dkult Term Identifier"/>
+					</term>
+				</term>
+				<term scopenote="true" term="Das Jüngste Gericht" type="Descriptor">
+					<alt-term term="The Last Judgement" type="British Equivalent"/>
+					<alt-term term="01040308" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Die hl. Sippe" type="Descriptor">
+					<alt-term term="The Holy Kinship" type="British Equivalent"/>
+					<alt-term term="01040309" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Die hl. Dreifaltigkeit" type="Descriptor">
+					<alt-term term="The Holy Trinity" type="British Equivalent"/>
+					<alt-term term="01040310" type="dkult Term Identifier"/>
+				</term>
+				<term scopenote="true" term="Der Erzengel Michael" type="Descriptor">
+					<alt-term term="The Archangel Michael" type="British Equivalent"/>
+					<alt-term term="01040311" type="dkult Term Identifier"/>
+				</term>
+			</term>
+			<term scopenote="true" term="Bildnisse" type="Descriptor">
+				<alt-term term="Portraits" type="British Equivalent"/>
+				<alt-term term="010402" type="dkult Term Identifier"/>
+				<term scopenote="true" term="Männliche Bildnisse" type="Descriptor">
+					<alt-term term="Male Portraits" type="British Equivalent"/>
+					<alt-term term="01040201" type="dkult Term Identifier"/>
+					<term scopenote="true" term="Fürstliche Personen" type="Descriptor">
+						<alt-term term="Nobility" type="British Equivalent"/>
+						<alt-term term="0104020102" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Albrecht von Brandenburg, Kardinal" type="Descriptor">
+							<alt-term term="Albrecht of Brandenburg, Cardinal" type="British Equivalent"/>
+							<alt-term term="010402010201" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Albrecht, Markgraf von Brandenburg" type="Descriptor">
+							<alt-term term="Albrecht, Margrave of Prussia" type="British Equivalent"/>
+							<alt-term term="010402010202" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="August, Kurfürst von Sachsen" type="Descriptor">
+							<alt-term term="August, Elector of Saxony" type="British Equivalent"/>
+							<alt-term term="010402010204" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Karl V., Kaiser" type="Descriptor">
+							<alt-term term="Charles V, Holy Roman Emperor" type="British Equivalent"/>
+							<alt-term term="010402010231" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Christian II., König von Dänemark" type="Descriptor">
+							<alt-term term="Christian II, King of Denmark" type="British Equivalent"/>
+							<alt-term term="010402010205" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Friedrich III. der Weise, Kurfürst von Sachsen" type="Descriptor">
+							<alt-term term="Friedrich III the Wise, Elector of Saxony" type="British Equivalent"/>
+							<alt-term term="010402010209" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Johann der Beständige, Kurfürst von Sachsen" type="Descriptor">
+							<alt-term term="Johann the Steadfast, Elector of Saxony" type="British Equivalent"/>
+							<alt-term term="010402010221" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Johann Friedrich I. der Großmütige, Kurfürst von Sachsen" type="Descriptor">
+							<alt-term term="Johann Friedrich I, the Magnanimous, Elector of Saxony" type="British Equivalent"/>
+							<alt-term term="010402010223" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Georg, Fürst von Anhalt" type="Descriptor">
+							<alt-term term="Georg, Duke of Anhalt" type="British Equivalent"/>
+							<alt-term term="010402010214" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Georg der Bärtige, Herzog von Sachsen" type="Descriptor">
+							<alt-term term="Georg the Bearded, Duke of Saxony" type="British Equivalent"/>
+							<alt-term term="010402010210" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Georg der Fromme, Markgraf von Brandenburg-Ansbach" type="Descriptor">
+							<alt-term term="Georg the Devout, Margrave of Brandenburg-Ansbach" type="British Equivalent"/>
+							<alt-term term="010402010211" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Heinrich der Fromme, Herzog von Sachsen" type="Descriptor">
+							<alt-term term="Heinrich the Devout, Duke of Saxony" type="British Equivalent"/>
+							<alt-term term="010402010215" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Joachim I., Kurfürst von Brandenburg" type="Descriptor">
+							<alt-term term="Joachim I, Elector of Brandenburg" type="British Equivalent"/>
+							<alt-term term="010402010218" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Joachim II., Kurfürst von Brandenburg" type="Descriptor">
+							<alt-term term="Joachim II, Elector of Brandenburg" type="British Equivalent"/>
+							<alt-term term="010402010220" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Johann,  Prinz von Anhalt" type="Descriptor">
+							<alt-term term="Johann, Prince of Anhalt" type="British Equivalent"/>
+							<alt-term term="010402010228" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Johann, Markgraf von Brandenburg-Ansbach" type="Descriptor">
+							<alt-term term="Johann, Margrave of Brandenburg-Ansbach" type="British Equivalent"/>
+							<alt-term term="010402010230" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Johann, Herzog von Sachsen" type="Descriptor">
+							<alt-term term="Johann, Duke of Saxony" type="British Equivalent"/>
+							<alt-term term="010402010229" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Kasimir, Markgraf von Brandenburg-Kulmbach" type="Descriptor">
+							<alt-term term="Kasimir, Margrave of Brandenburg-Kulmbach" type="British Equivalent"/>
+							<alt-term term="010402010232" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Moritz, Kurfürst von Sachsen" type="Descriptor">
+							<alt-term term="Moritz, Elector of Saxony" type="British Equivalent"/>
+							<alt-term term="010402010234" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Philipp bei Rhein, Pfalzgraf" type="Descriptor">
+							<alt-term term="Philipp of the Rhein, Count Palatine" type="British Equivalent"/>
+							<alt-term term="010402010235" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Severin, Prinz von Sachsen" type="Descriptor">
+							<alt-term term="Severin, Prince of Saxony" type="British Equivalent"/>
+							<alt-term term="010402010238" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Ulrich, Herzog von Württemberg" type="Descriptor">
+							<alt-term term="Ulrich, Duke of Württemberg" type="British Equivalent"/>
+							<alt-term term="010402010239" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Wolfgang der Standhafte, Fürst von Anhalt-Köthen" type="Descriptor">
+							<alt-term term="Wolfgang the Steadfast, Duke of Anhalt-Köthen" type="British Equivalent"/>
+							<alt-term term="010402010240" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Johann Friedrich II., Herzog von Sachsen" type="Descriptor">
+							<alt-term term="Johann Friedrich II, Duke of Saxony" type="British Equivalent"/>
+							<alt-term term="010402010224" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Heinrich II., Kaiser" type="Descriptor">
+							<alt-term term="Heinrich II, Emperor" type="British Equivalent"/>
+							<alt-term term="010402010216" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Johann Georg, Kurfürst von Brandenburg" type="Descriptor">
+							<alt-term term="Johann Georg, Elector of Brandenburg" type="British Equivalent"/>
+							<alt-term term="010402010226" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Alexander, Kurprinz von Sachsen" type="Descriptor">
+							<alt-term term="Alexander, Prince of Saxony" type="British Equivalent"/>
+							<alt-term term="010402010203" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Johann Ernst von Sachsen" type="Descriptor">
+							<alt-term term="Johann Ernst of Saxony" type="British Equivalent"/>
+							<alt-term term="010402010222" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Maximilian I., Kaiser" type="Descriptor">
+							<alt-term term="Maximilian I, Emperor" type="British Equivalent"/>
+							<alt-term term="010402010233" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Ferdinand I., Kaiser" type="Descriptor">
+							<alt-term term="Ferdinand I, Holy Roman Emporer" type="British Equivalent"/>
+							<alt-term term="010402010208" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Joachim Ernst, Fürst von Anhalt" type="Descriptor">
+							<alt-term term="Joachim Ernst, Prince of  Anhalt" type="British Equivalent"/>
+							<alt-term term="010402010217" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Joachim I., Fürst von Anhalt" type="Descriptor">
+							<alt-term term="Joachim I, Prince of Anhalt" type="British Equivalent"/>
+							<alt-term term="010402010219" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Georg III., Fürst von Anhalt" type="Descriptor">
+							<alt-term term="Georg III, Prince of Anhalt" type="British Equivalent"/>
+							<alt-term term="010402010213" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Johann Georg I., Fürst von Anhalt" type="Descriptor">
+							<alt-term term="Johann Georg I, Prince of Anhalt" type="British Equivalent"/>
+							<alt-term term="010402010225" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Johann II., Fürst von Anhalt" type="Descriptor">
+							<alt-term term="Johann II, Prince of Anhalt" type="British Equivalent"/>
+							<alt-term term="010402010227" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Georg Friedrich, Markgraf von Brandenburg-Ansbach-Bayreuth" type="Descriptor">
+							<alt-term term="Georg Friedrich, Margrave of Brandenburg-Ansbach-Bayreuth" type="British Equivalent"/>
+							<alt-term term="010402010212" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Ernst, Herzog von Braunschweig-Grubenhagen" type="Descriptor">
+							<alt-term term="Ernst, Duke of Braunschweig-Grubenhagen" type="British Equivalent"/>
+							<alt-term term="010402010207" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Ernst der Bekenner, Herzog von Braunschweig-Lüneburg-Celle" type="Descriptor">
+							<alt-term term="Ernst the Confessor, Duke of Braunschweig-Lüneburg-Celle" type="British Equivalent"/>
+							<alt-term term="010402010206" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Philipp I., Herzog von Pommern-Wolgast" type="Descriptor">
+							<alt-term term="Philipp I, Duke of Pommeriania-Wolgast" type="British Equivalent"/>
+							<alt-term term="010402010236" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Philipp, Graf von Solms-Lich" type="Descriptor">
+							<alt-term term="Philipp, Count of Solms-Lich" type="British Equivalent"/>
+							<alt-term term="010402010237" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Bekannte Personen" type="Descriptor">
+						<alt-term term="Public Personalities" type="British Equivalent"/>
+						<alt-term term="0104020101" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Otto Brunfels" type="Descriptor">
+							<alt-term term="Otto Brunfels" type="British Equivalent"/>
+							<alt-term term="010402010133" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Moritz Buchner" type="Descriptor">
+							<alt-term term="Moritz Buchner" type="British Equivalent"/>
+							<alt-term term="010402010130" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Johannes Bugenhagen" type="Descriptor">
+							<alt-term term="Johannes Bugenhagen" type="British Equivalent"/>
+							<alt-term term="010402010121" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Johannes Carion" type="Descriptor">
+							<alt-term term="Johannes Carion" type="British Equivalent"/>
+							<alt-term term="010402010122" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Lucas Cranach der Ältere" type="Descriptor">
+							<alt-term term="Lucas Cranach the Elder" type="British Equivalent"/>
+							<alt-term term="010402010127" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Johannes Cuspinian" type="Descriptor">
+							<alt-term term="Johannes Cuspinian" type="British Equivalent"/>
+							<alt-term term="010402010123" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Geiler von Keisersberg" type="Descriptor">
+							<alt-term term="Geiler of Keisersberg" type="British Equivalent"/>
+							<alt-term term="010402010105" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Sigmunt Kingsfeld, Ritter" type="Descriptor">
+							<alt-term term="Sigmunt Kingsfeld, Knight" type="British Equivalent"/>
+							<alt-term term="010402010138" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Herr Kökeritz" type="Descriptor">
+							<alt-term term="Mr Kökeritz" type="British Equivalent"/>
+							<alt-term term="010402010115" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hans Luther" type="Descriptor">
+							<alt-term term="Hans Luther" type="British Equivalent"/>
+							<alt-term term="010402010112" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="H. Melber" type="Descriptor">
+							<alt-term term="H. Melber" type="British Equivalent"/>
+							<alt-term term="010402010111" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Herr von Rava" type="Descriptor">
+							<alt-term term="Lord Rava" type="British Equivalent"/>
+							<alt-term term="010402010116" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Johann Schreiring" type="Descriptor">
+							<alt-term term="Johann Schreir" type="British Equivalent"/>
+							<alt-term term="010402010120" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Christoph Scheurl" type="Descriptor">
+							<alt-term term="Christoph Scheurl" type="British Equivalent"/>
+							<alt-term term="010402010101" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Johann Schöner" type="Descriptor">
+							<alt-term term="Johann Schöner" type="British Equivalent"/>
+							<alt-term term="010402010119" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Georg Spalatin" type="Descriptor">
+							<alt-term term="Georg Spalatin" type="British Equivalent"/>
+							<alt-term term="010402010106" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Gerhart Volk" type="Descriptor">
+							<alt-term term="Gerhart Volk" type="British Equivalent"/>
+							<alt-term term="010402010108" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Georg von Weidebach" type="Descriptor">
+							<alt-term term="Georg of Weidebach" type="British Equivalent"/>
+							<alt-term term="010402010107" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Philipp Melanchthon" type="Descriptor">
+							<alt-term term="Philipp Melanchthon" type="British Equivalent"/>
+							<alt-term term="010402010135" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Martin Luther" type="Descriptor">
+							<alt-term term="Martin Luther" type="British Equivalent"/>
+							<alt-term term="010402010128" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Gregor Brück" type="Descriptor">
+							<alt-term term="Gregor Brück" type="British Equivalent"/>
+							<alt-term term="010402010109" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Gabriel von Eyb" type="Descriptor">
+							<alt-term term="Gabriel von Eyb" type="British Equivalent"/>
+							<alt-term term="010402010104" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Nikolaus Seidel" type="Descriptor">
+							<alt-term term="Nikolaus Seidel" type="British Equivalent"/>
+							<alt-term term="010402010132" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Veit Dietrich" type="Descriptor">
+							<alt-term term="Veit Dietrich" type="British Equivalent"/>
+							<alt-term term="010402010139" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Herr von Schleinitz" type="Descriptor">
+							<alt-term term="Lord Schleinitz" type="British Equivalent"/>
+							<alt-term term="010402010117" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Leonhard Badehorn" type="Descriptor">
+							<alt-term term="Leonhard Badehorn" type="British Equivalent"/>
+							<alt-term term="010402010126" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Guilleaume de Croy" type="Descriptor">
+							<alt-term term="Guilleaume de Croy" type="British Equivalent"/>
+							<alt-term term="010402010110" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Leon Braunsberg" type="Descriptor">
+							<alt-term term="Leon Braunsberg" type="British Equivalent"/>
+							<alt-term term="010402010125" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Paulus von Berge" type="Descriptor">
+							<alt-term term="Paulus of Berge" type="British Equivalent"/>
+							<alt-term term="010402010134" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Rudolph Agricola" type="Descriptor">
+							<alt-term term="Rudolph Agricola" type="British Equivalent"/>
+							<alt-term term="010402010137" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Nicholas de Backer" type="Descriptor">
+							<alt-term term="Nicholas de Backer" type="British Equivalent"/>
+							<alt-term term="010402010131" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Jeronimus Tedenhamer" type="Descriptor">
+							<alt-term term="Jeronimus Tedenhamer" type="British Equivalent"/>
+							<alt-term term="010402010118" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Michael Meyenburg" type="Descriptor">
+							<alt-term term="Michael Meyenburg" type="British Equivalent"/>
+							<alt-term term="010402010129" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Erasmus von Rotterdam" type="Descriptor">
+							<alt-term term="Erasmus of Rotterdam" type="British Equivalent"/>
+							<alt-term term="010402010102" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hans von Lindenau" type="Descriptor">
+							<alt-term term="Hans von Lindenau" type="British Equivalent"/>
+							<alt-term term="010402010113" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Erich Volckmar von Berlepsch" type="Descriptor">
+							<alt-term term="Erich Volckmar von Berlepsch" type="British Equivalent"/>
+							<alt-term term="010402010103" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Heinrich Stromer, Dr., gen. Auerbach" type="Descriptor">
+							<alt-term term="Heinrich Stromer, Dr., called Auerbach" type="British Equivalent"/>
+							<alt-term term="010402010114" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Philipp von Wittelsbach, Bischof" type="Descriptor">
+							<alt-term term="Philipp von Wittelsbach, Bishop" type="British Equivalent"/>
+							<alt-term term="010402010136" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Johannes III von Schönberg, Bishop" type="Descriptor">
+							<alt-term term="Johannes III von Schönberg, Bishop" type="British Equivalent"/>
+							<alt-term term="010402010124" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Unbekannte Personen" type="Descriptor">
+						<alt-term term="anonymous sitters" type="British Equivalent"/>
+						<alt-term term="0104020103" type="dkult Term Identifier"/>
+					</term>
+				</term>
+				<term scopenote="true" term="Weibliche Bildnisse" type="Descriptor">
+					<alt-term term="Female Portraits" type="British Equivalent"/>
+					<alt-term term="01040202" type="dkult Term Identifier"/>
+					<term scopenote="true" term="Fürstliche Personen" type="Descriptor">
+						<alt-term term="Nobility" type="British Equivalent"/>
+						<alt-term term="0104020202" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Anna von Dänemark, Gemahlin des Herzogs August von Sachsen" type="Descriptor">
+							<alt-term term="Anna of Denmark, Wife of August, Duke of Saxony" type="British Equivalent"/>
+							<alt-term term="010402020203" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Sidonia, Prinzessin von Sachsen" type="Descriptor">
+							<alt-term term="Sidonia, Princess of Saxony" type="British Equivalent"/>
+							<alt-term term="010402020217" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Sibylle von Cleve, Kurfürstin von Sachsen" type="Descriptor">
+							<alt-term term="Sibylle of Cleve, Duchess of Saxony" type="British Equivalent"/>
+							<alt-term term="010402020216" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Sibylla, Prinzessin von Sachsen" type="Descriptor">
+							<alt-term term="Sibylla, Princess of Saxony" type="British Equivalent"/>
+							<alt-term term="010402020215" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Margaretha von Savoyen" type="Descriptor">
+							<alt-term term="Margaretha of Savoy" type="British Equivalent"/>
+							<alt-term term="010402020213" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Katharina von Mecklenburg, Herzogin von Sachsen" type="Descriptor">
+							<alt-term term="Katharina of Mecklenburg, Duchess of Saxony" type="British Equivalent"/>
+							<alt-term term="010402020209" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Hedwig, Markgräfin von Brandenburg-Ansbach" type="Descriptor">
+							<alt-term term="Hedwig, Margravine of Brandenburg-Anbach" type="British Equivalent"/>
+							<alt-term term="010402020208" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Emilia, Prinzessin von Sachsen" type="Descriptor">
+							<alt-term term="Emilia, Princess of Saxony" type="British Equivalent"/>
+							<alt-term term="010402020207" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Barbara, Herzogin von Sachsen" type="Descriptor">
+							<alt-term term="Barbara, Duchess of Saxony" type="British Equivalent"/>
+							<alt-term term="010402020205" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Agnes von Hessen, Kurfürsten von Sachsen" type="Descriptor">
+							<alt-term term="Agnes von Hessen, Electress of Saxony" type="British Equivalent"/>
+							<alt-term term="010402020202" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Anna von Mecklenburg, Landgräfin von Hessen (1485 - 1525)" type="Descriptor">
+							<alt-term term="Anna von Mecklenburg, Landgravine of Hesse (1485 - 1525)" type="British Equivalent"/>
+							<alt-term term="010402020204" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Agnes von Barby-Mühlingen, Fürstin von Anhalt" type="Descriptor">
+							<alt-term term="Agnes von Barby-Mühlingen, Princess of Anhalt" type="British Equivalent"/>
+							<alt-term term="010402020201" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Elizabeth von Hessen, Prinzessin von Sachsen (1502 - 1557)" type="Descriptor">
+							<alt-term term="Elizabeth von Hessen, Princess of Saxony (1502 - 1557)" type="British Equivalent"/>
+							<alt-term term="010402020206" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Maria, Prinzessin von Sachsen" type="Descriptor">
+							<alt-term term="Maria, Princess of Saxony" type="British Equivalent"/>
+							<alt-term term="010402020214" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Margarete, Prinzessin von Sachsen (1518 - 1535)" type="Descriptor">
+							<alt-term term="Margarete, Princess of Saxony (1518 - 1535)" type="British Equivalent"/>
+							<alt-term term="010402020212" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Margarete von Anhalt, Herzogin von Sachsen (1494 - 1521)" type="Descriptor">
+							<alt-term term="Margarete von Anhalt, Duchess of Saxony (1494 - 1521)" type="British Equivalent"/>
+							<alt-term term="010402020211" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Magdalene von Sachsen, Kurprinzessin von Brandenburg (1507 - 1534)" type="Descriptor">
+							<alt-term term="Magdalene von Sachsen, Princess of Brandenburg (1507 - 1534)" type="British Equivalent"/>
+							<alt-term term="010402020210" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Bekannte Personen" type="Descriptor">
+						<alt-term term="Public Personalities" type="British Equivalent"/>
+						<alt-term term="0104020201" type="dkult Term Identifier"/>
+						<term scopenote="true" term="Margarethe von Ponickau" type="Descriptor">
+							<alt-term term="Margarethe of Ponickau" type="British Equivalent"/>
+							<alt-term term="010402020112" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Margaretha Luther" type="Descriptor">
+							<alt-term term="Margaretha Luther" type="British Equivalent"/>
+							<alt-term term="010402020110" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Katharina von Bora" type="Descriptor">
+							<alt-term term="Katharina of Bora" type="British Equivalent"/>
+							<alt-term term="010402020107" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Christiane von Eulenau" type="Descriptor">
+							<alt-term term="Christiane of Eulenau" type="British Equivalent"/>
+							<alt-term term="010402020105" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Apolonia von Weidebach" type="Descriptor">
+							<alt-term term="Apolonia of Wiedebach" type="British Equivalent"/>
+							<alt-term term="010402020104" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Anna Cuspinian" type="Descriptor">
+							<alt-term term="Anna Cuspinian" type="British Equivalent"/>
+							<alt-term term="010402020103" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Anna Buchner" type="Descriptor">
+							<alt-term term="Anna Buchner" type="British Equivalent"/>
+							<alt-term term="010402020102" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Frau von Schleinitz" type="Descriptor">
+							<alt-term term="Lady Schleinitz" type="British Equivalent"/>
+							<alt-term term="010402020106" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Lucretia von Berlepsch" type="Descriptor">
+							<alt-term term="Lucretia von Berlepsch" type="British Equivalent"/>
+							<alt-term term="010402020109" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Walpurga Budenhagen" type="Descriptor">
+							<alt-term term="Walpurga Budenhagen" type="British Equivalent"/>
+							<alt-term term="010402020113" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Agnes von Hayn, geb. von Rabenstein" type="Descriptor">
+							<alt-term term="Agnes von Hayn, née von Rabenstein" type="British Equivalent"/>
+							<alt-term term="010402020101" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Katharina von Ebeleben" type="Descriptor">
+							<alt-term term="Katharina von Ebeleben" type="British Equivalent"/>
+							<alt-term term="010402020108" type="dkult Term Identifier"/>
+						</term>
+						<term scopenote="true" term="Margarethe von Carlowitz" type="Descriptor">
+							<alt-term term="Margarethe von Carlowitz" type="British Equivalent"/>
+							<alt-term term="010402020111" type="dkult Term Identifier"/>
+						</term>
+					</term>
+					<term scopenote="true" term="Unbekannte Personen" type="Descriptor">
+						<alt-term term="anonymous sitters" type="British Equivalent"/>
+						<alt-term term="0104020203" type="dkult Term Identifier"/>
+					</term>
+				</term>
+			</term>
+		</term>
+		<term scopenote="false" term="Form" type="Descriptor">
+			<alt-term term="Form" type="British Equivalent"/>
+			<alt-term term="0102" type="dkult Term Identifier"/>
+			<term scopenote="true" term="Diptychon" type="Descriptor">
+				<alt-term term="Diptych" type="British Equivalent"/>
+				<alt-term term="010201" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="Triptychon" type="Descriptor">
+				<alt-term term="Triptych" type="British Equivalent"/>
+				<alt-term term="010204" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="Polyptychon" type="Descriptor">
+				<alt-term term="Polyptych" type="British Equivalent"/>
+				<alt-term term="010202" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="Rundbild" type="Descriptor">
+				<alt-term term="Circular painting/Tondo" type="British Equivalent"/>
+				<alt-term term="010203" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="Einblatt" type="Descriptor">
+				<alt-term term="Single-leaf woodcut" type="British Equivalent"/>
+				<alt-term term="010205" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="Frontispiz" type="Descriptor">
+				<alt-term term="Frontispiece" type="British Equivalent"/>
+				<alt-term term="010207" type="dkult Term Identifier"/>
+				<alt-term term="300083021" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Illustriertes Buch" type="Descriptor">
+				<alt-term term="illustrated book" type="British Equivalent"/>
+				<alt-term term="010206" type="dkult Term Identifier"/>
+				<alt-term term="300311820" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Karte" type="Descriptor">
+				<alt-term term="map" type="British Equivalent"/>
+				<alt-term term="010208" type="dkult Term Identifier"/>
+				<alt-term term="300028094" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Miniatur" type="Descriptor">
+				<alt-term term="miniature" type="British Equivalent"/>
+				<alt-term term="010209" type="dkult Term Identifier"/>
+				<alt-term term="300033936" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Serie" type="Descriptor">
+				<alt-term term="series" type="British Equivalent"/>
+				<alt-term term="010212" type="dkult Term Identifier"/>
+				<alt-term term="300027349" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Skizzenbuch" type="Descriptor">
+				<alt-term term="sketchbook" type="British Equivalent"/>
+				<alt-term term="010213" type="dkult Term Identifier"/>
+				<alt-term term="300027354" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Stammbuch" type="Descriptor">
+				<alt-term term="alba amicorum" type="British Equivalent"/>
+				<alt-term term="010214" type="dkult Term Identifier"/>
+				<alt-term term="300374942" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Gebetbuch" type="Descriptor">
+				<alt-term term="prayer book" type="British Equivalent"/>
+				<alt-term term="010211" type="dkult Term Identifier"/>
+				<alt-term term="300026476" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Buch" type="Descriptor">
+				<alt-term term="Book" type="British Equivalent"/>
+				<alt-term term="010210" type="dkult Term Identifier"/>
+				<alt-term term="300028051" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="I. Zustand" type="Descriptor">
+				<alt-term term="1st state" type="British Equivalent"/>
+				<alt-term term="010215" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="II. Zustand" type="Descriptor">
+				<alt-term term="2nd state" type="British Equivalent"/>
+				<alt-term term="010216" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="III. Zustand" type="Descriptor">
+				<alt-term term="3rd state" type="British Equivalent"/>
+				<alt-term term="010217" type="dkult Term Identifier"/>
+			</term>
+		</term>
+		<term scopenote="false" term="Funktion" type="Descriptor">
+			<alt-term term="Function" type="British Equivalent"/>
+			<alt-term term="0101" type="dkult Term Identifier"/>
+			<term scopenote="true" term="Altarretabel" type="Descriptor">
+				<alt-term term="Altarpiece" type="British Equivalent"/>
+				<alt-term term="010101" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="Gegenstück" type="Descriptor">
+				<alt-term term="Pendant/Companion piece" type="British Equivalent"/>
+				<alt-term term="010103" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="Studie" type="Descriptor">
+				<alt-term term="study" type="British Equivalent"/>
+				<alt-term term="010105" type="dkult Term Identifier"/>
+				<alt-term term="300081053" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Gedächtnismal" type="Descriptor">
+				<alt-term term="Memorial/Commemorative image" type="British Equivalent"/>
+				<alt-term term="010102" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="Kopie" type="Descriptor">
+				<alt-term term="Copy" type="British Equivalent"/>
+				<alt-term term="010104" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="Flugblatt" type="Descriptor">
+				<alt-term term="Flier/Broadside" type="British Equivalent"/>
+				<alt-term term="010107" type="dkult Term Identifier"/>
+				<alt-term term="300224742" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Architekturzeichnung" type="Descriptor">
+				<alt-term term="architectural drawing" type="British Equivalent"/>
+				<alt-term term="010108" type="dkult Term Identifier"/>
+				<alt-term term="300034787" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Buchmalerei" type="Descriptor">
+				<alt-term term="illumination" type="British Equivalent"/>
+				<alt-term term="010110" type="dkult Term Identifier"/>
+				<alt-term term="300264522" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Chronik" type="Descriptor">
+				<alt-term term="chronicle" type="British Equivalent"/>
+				<alt-term term="010111" type="dkult Term Identifier"/>
+				<alt-term term="300026361" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Entwurfszeichnung" type="Descriptor">
+				<alt-term term="preliminary drawing" type="British Equivalent"/>
+				<alt-term term="010112" type="dkult Term Identifier"/>
+				<alt-term term="300034430" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Gedenkblatt/Erinnerungsblatt" type="Descriptor">
+				<alt-term term="commemorative print" type="British Equivalent"/>
+				<alt-term term="010113" type="dkult Term Identifier"/>
+				<alt-term term="300404230" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Presentationszeichnung" type="Descriptor">
+				<alt-term term="presentation drawing" type="British Equivalent"/>
+				<alt-term term="010114" type="dkult Term Identifier"/>
+				<alt-term term="300069416" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Politische Karikatur" type="Descriptor">
+				<alt-term term="political cartoon" type="British Equivalent"/>
+				<alt-term term="010115" type="dkult Term Identifier"/>
+				<alt-term term="300123224" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Probedruck" type="Descriptor">
+				<alt-term term="proof" type="British Equivalent"/>
+				<alt-term term="010116" type="dkult Term Identifier"/>
+				<alt-term term="300264637" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Vorzeichnung" type="Descriptor">
+				<alt-term term="preparatory drawing" type="British Equivalent"/>
+				<alt-term term="300068293" type="TermID des AAT"/>
+			</term>
+		</term>
+		<term scopenote="false" term="Bestandteile" type="Descriptor">
+			<alt-term term="Component parts" type="British Equivalent"/>
+			<alt-term term="0103" type="dkult Term Identifier"/>
+			<term scopenote="true" term="Flügel" type="Descriptor">
+				<alt-term term="Wing panel" type="British Equivalent"/>
+				<alt-term term="010301" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="Mitteltafel" type="Descriptor">
+				<alt-term term="Central panel" type="British Equivalent"/>
+				<alt-term term="010304" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="Predella" type="Descriptor">
+				<alt-term term="Predella" type="British Equivalent"/>
+				<alt-term term="010305" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="Fragment" type="Descriptor">
+				<alt-term term="Fragment" type="British Equivalent"/>
+				<alt-term term="010302" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="Retabelauszug" type="Descriptor">
+				<alt-term term="Superstructure" type="British Equivalent"/>
+				<alt-term term="010303" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="Originaler Rahmen" type="Descriptor">
+				<alt-term term="Original frame" type="British Equivalent"/>
+				<alt-term term="010306" type="dkult Term Identifier"/>
+			</term>
+			<term scopenote="true" term="Illustration" type="Descriptor">
+				<alt-term term="Illustration" type="British Equivalent"/>
+				<alt-term term="010307" type="dkult Term Identifier"/>
+				<alt-term term="300015578" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Titelblatt" type="Descriptor">
+				<alt-term term="title page" type="British Equivalent"/>
+				<alt-term term="010309" type="dkult Term Identifier"/>
+				<alt-term term="300055033" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Devise" type="Descriptor">
+				<alt-term term="symbol/motto" type="British Equivalent"/>
+				<alt-term term="010308" type="dkult Term Identifier"/>
+				<alt-term term="300028714" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Bucheinband" type="Descriptor">
+				<alt-term term="binding" type="British Equivalent"/>
+				<alt-term term="010310" type="dkult Term Identifier"/>
+				<alt-term term="300055023" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Initiale" type="Descriptor">
+				<alt-term term="initial" type="British Equivalent"/>
+				<alt-term term="010311" type="dkult Term Identifier"/>
+				<alt-term term="300168055" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Inschrift" type="Descriptor">
+				<alt-term term="Inscription" type="British Equivalent"/>
+				<alt-term term="010312" type="dkult Term Identifier"/>
+				<alt-term term="300028702" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Recto" type="Descriptor">
+				<alt-term term="recto" type="British Equivalent"/>
+				<alt-term term="010313" type="dkult Term Identifier"/>
+				<alt-term term="300078817" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Verso" type="Descriptor">
+				<alt-term term="verso" type="British Equivalent"/>
+				<alt-term term="010314" type="dkult Term Identifier"/>
+				<alt-term term="300010292" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Wappen" type="Descriptor">
+				<alt-term term="coat of arms" type="British Equivalent"/>
+				<alt-term term="010315" type="dkult Term Identifier"/>
+				<alt-term term="300126352" type="TermID des AAT"/>
+			</term>
+		</term>
+		<term scopenote="false" term="Technik" type="Descriptor">
+			<alt-term term="Technique" type="British Equivalent"/>
+			<alt-term term="0105" type="dkult Term Identifier"/>
+			<term scopenote="true" term="Holzschnitt" type="Descriptor">
+				<alt-term term="woodcut" type="British Equivalent"/>
+				<alt-term term="010501" type="dkult Term Identifier"/>
+				<alt-term term="300041405" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Kupferstich" type="Descriptor">
+				<alt-term term="engraving" type="British Equivalent"/>
+				<alt-term term="010502" type="dkult Term Identifier"/>
+				<alt-term term="300041340" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Zeichnung" type="Descriptor">
+				<alt-term term="Drawing" type="British Equivalent"/>
+				<alt-term term="010503" type="dkult Term Identifier"/>
+				<alt-term term="300033973" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Typendruck" type="Descriptor">
+				<alt-term term="Letterpress" type="British Equivalent"/>
+				<alt-term term="010504" type="dkult Term Identifier"/>
+				<alt-term term="300178926" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Handkoloriert" type="Descriptor">
+				<alt-term term="Hand-coloured" type="British Equivalent"/>
+				<alt-term term="010505" type="dkult Term Identifier"/>
+				<alt-term term="300248263" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Helldunkelschnitt" type="Descriptor">
+				<alt-term term="Chiaroscuro woodcut" type="British Equivalent"/>
+				<alt-term term="010506" type="dkult Term Identifier"/>
+				<alt-term term="300041410" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Federzeichnung" type="Descriptor">
+				<alt-term term="pen and ink drawing" type="British Equivalent"/>
+				<alt-term term="300404676" type="TermID des AAT"/>
+			</term>
+			<term scopenote="true" term="Lavierte Federzeichnung" type="Descriptor">
+				<alt-term term="pen and wash drawing" type="British Equivalent"/>
+				<alt-term term="300266219" type="TermID des AAT"/>
+			</term>
+		</term>
+	</root-term>
+</root>

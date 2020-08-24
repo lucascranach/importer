@@ -1,0 +1,139 @@
+
+CrystalReport
+	Group* # entspricht einer Grafik
+		GroupHeader # Enthält immer genau 22 Section-Elemente
+			Section[SectionNumber="1"] #-> Inventarnummer
+				Field[FieldName="{@Inventarnummer}"]
+					FormattedValue
+
+			Section[SectionNumber="2"] #-> Datiert
+				Field[FieldName="{OBJECTS.Dated}"]
+					FormattedValue #-> Deutsch u. Englisch durch #-Zeichen getrennt
+
+			Section[SectionNumber="3"] #-> Datumsanfang
+				Field[FieldName="{OBJECTS.DateBegin}"]
+					FormattedValue
+
+			Section[SectionNumber="4"] #-> Datumsende
+				Field[FieldName="{OBJECTS.DateEnd}"]
+					FormattedValue
+
+			Section[SectionNumber="5"] #-> Mehrsprachige Zusammenfassungen
+				Subreport[Name="Subreport6"]
+					Details*
+						Section[SectionNumber="0"] #-> DisplayOrder
+							Field[FieldName="{OBJTITLES.DisplayOrder}"]
+								FormattedValue
+
+						Section[SectionNumber="1"] #-> Titletype
+							Field[FieldName="{TITLETYPES.TitleType}"]
+								FormattedValue
+
+						Section[SectionNumber="2"] #-> Sprache
+							Field[FieldName="{LANGUAGES.Language}"]
+								FormattedValue #-> GERMAN, ENGLISH
+
+						Section[SectionNumber="3"] #-> Text / Zusammenfassung
+							Field[FieldName="{OBJTITLES.Title}"]
+								FormattedValue
+
+			Section[SectionNumber="6"] #-> Transkription
+				Field[FieldName="{OBJECTS.Description}"]
+					FormattedValue # (Formatted content)
+
+			Section[SectionNumber="7"] #-> Ort und Datum
+				Field[FieldName="{OBJECTS.PaperSupport}"]
+					FormattedValue #-> Deutsch u. Englisch durch #-Zeichen getrennt
+
+			Section[SectionNumber="8"] #-> Besitzer / Standort
+				Subreport
+					Details[0] #-> Besitzer in Deutsch (Besitzer)
+						Section[SectionNumber="0"] #-> DisplayOrder
+							Field[FieldName="{CONXREFS.DisplayOrder}"]
+								FormattedValue
+
+						Section[SectionNumber="1"] #-> Rolle
+							Field[FieldName="{@Rolle}"]
+								FormattedValueÅ
+
+						Section[SectionNumber="2"] #-> Displayname
+							Field[FieldName="{CONALTNAMES.DisplayName}"]
+								FormattedValue
+
+					Details[1] #-> Besitzer in Englisch (Repository)
+						Section[SectionNumber="0"] #-> DisplayOrder
+							Field[FieldName="{CONXREFS.DisplayOrder}"]
+								FormattedValue
+
+						Section[SectionNumber="1"] #-> Rolle
+							Field[FieldName="{@Rolle}"]
+								FormattedValue
+
+						Section[SectionNumber="2"] #-> Displayname
+							Field[FieldName="{CONALTNAMES.DisplayName}"]
+								FormattedValue
+
+			Section[SectionNumber="9"] #-> Vollständige Signatur
+				Field[FieldName="{OBJECTS.Signed}"]
+					FormattedValue
+
+			Section[SectionNumber="10"] #-> Kommentare
+				Field[FieldName="{OBJECTS.Notes}"]
+					FormattedValue #-> Deutsch u. Englisch durch #-Zeichen getrennt
+
+			Section[SectionNumber="11"] #-> Transkription von
+				Field[FieldName="{OBJCONTEXT.Culture}"]
+					FormattedValue
+
+			Section[SectionNumber="12"] #-> Transkriptionsdatum
+				Field[FieldName="{OBJECTS.ObjectName}"]
+					FormattedValue
+
+			Section[SectionNumber="13"] #-> Transkription nach (according to)
+				Field[FieldName="{OBJECTS.CatRais}"]
+					FormattedValue
+
+			Section[SectionNumber="14"] #-> Verifikation
+				Field[FieldName="{OBJECTS.Bibliography}"]
+					FormattedValue
+
+			Section[SectionNumber="15"] #-> Original-Scans
+				Field[FieldName="{OBJECTS.Markings}"]
+					FormattedValue
+
+			Section[SectionNumber="16"] #-> Dokumente
+				Field[FieldName="{OBJECTS.Inscribed}"]
+					FormattedValue #-> getrennt durch Newline-Zeichen
+
+			Section[SectionNumber="17"] #-> Umbenannte Scans
+				Field[FieldName="{OBJECTS.Medium}"]
+					FormattedValue #-> getrennt durch #-Zeichen (trimming)
+
+			Section[SectionNumber="18"] #-> Periode (?)
+				Field[FieldName="{OBJCONTEXT.Period}"]
+					FormattedValue
+
+			Section[SectionNumber="19"] #-> Quellen / Publikationen
+				Supreport
+					Details*
+						Section[SectionNumber="0"] #-> Titel
+							Field[FieldName="{REFERENCEMASTER.Heading}"]
+								FormattedValue
+						Section[SectionNumber="1"] #-> Seitennummer
+							Field[FieldName="{REFXREFS.PageNumber}"]
+								FormattedValue
+						Section[SectionNumber="2"] #-> Referenz-ID
+							Field[FieldName="{REFERENCEMASTER.ReferenceID}"]
+								FormattedValue
+
+			Section[SectionNumber="20"] #-> Nicht genutzt (?)
+				Subreport
+					Details
+
+			Section[SectionNumber="21"] #-> Nicht genutzt (?)
+				Subreport
+					Details
+
+			Section[SectionNumber="22"] #-> Nicht genutzt (?)
+				Subreport
+					Details
