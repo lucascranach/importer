@@ -494,7 +494,7 @@ class LiteratureReferencesInflator implements IInflator
             /* InventoryNumber */
             $inventoryNumberElement = self::findElementByXPath(
                 $detailElement,
-                'Section[@SectionNumber="0"]/Field[@FieldName="{@Inventarnummer}"]/FormattedValue',
+                'Section[@SectionNumber="0"]/Field[@FieldName="{@Inventanummer}"]/FormattedValue',
             );
 
             if ($inventoryNumberElement) {
