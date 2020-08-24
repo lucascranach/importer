@@ -7,33 +7,35 @@ use DOMDocument;
 use SimpleXMLElement;
 use XMLReader;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\LiteratureReference;
-use CranachDigitalArchive\Importer\Interfaces\Loaders\IFileLoader;
+use CranachDigitalArchive\Importer\Interfaces\Loaders\IMultipleFileLoader;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator;
 
 /**
  * LitereatureReferences loader on a xml file base
  */
-class LiteratureReferencesLoader extends Producer implements IFileLoader
+class LiteratureReferencesLoader extends Producer implements IMultipleFileLoader
 {
     private $xmlReader = null;
     private $rootElementName = 'CrystalReport';
     private $literatureReferenceElementName = 'Group';
-    private $sourceFilePath = '';
+    private $sourceFilePaths = [];
 
     public function __construct()
     {
     }
 
 
-    public static function withSourceAt(string $sourceFilePath)
+    public static function withSourcesAt(array $sourceFilePaths)
     {
         $loader = new self;
         $loader->xmlReader = new XMLReader();
-        $loader->sourceFilePath = $sourceFilePath;
+        $loader->sourceFilePaths = $sourceFilePaths;
 
-        if (!file_exists($sourceFilePath)) {
-            throw new Error('LiteratureReferences xml source file does not exit: ' . $sourceFilePath);
+        foreach ($sourceFilePaths as $sourceFilePath) {
+            if (!file_exists($sourceFilePath)) {
+                throw new Error('LiteratureReferences xml source file does not exit: ' . $sourceFilePath);
+            }
         }
 
         return $loader;
@@ -42,13 +44,32 @@ class LiteratureReferencesLoader extends Producer implements IFileLoader
 
     public function run()
     {
-        $this->checkXMlReaderInitialization();
+        /* We have to go through all given files */
+        foreach ($this->sourceFilePaths as $sourceFilePath) {
+            $this->loadNextFile($sourceFilePath);
+            $this->checkXMlReaderInitialization();
 
-        if (!$this->xmlReader->open($this->sourceFilePath)) {
-            throw new Error('Could\'t open literature reference xml source file: ' . $this->sourceFilePath);
+            echo 'Processing literature references file : ' . $sourceFilePath . "\n";
+
+            /* And process all items in a loaded file */
+            while ($this->processNextItem()) {
+            }
+
+            $this->closeXMLReader();
         }
 
-        echo 'Processing literature references file : ' . $this->sourceFilePath . "\n";
+        /* Signaling that we are done reading in the xml */
+        $this->notifyDone();
+    }
+
+    private function loadNextFile(string $sourceFilePath)
+    {
+        $this->xmlReader = new XMLReader();
+
+        if (!$this->xmlReader->open($sourceFilePath)) {
+            throw new Error('Could\'t open literatureReferences xml source file: ' . $sourceFilePath);
+        }
+
 
         $this->xmlReader->next();
 
@@ -59,12 +80,14 @@ class LiteratureReferencesLoader extends Producer implements IFileLoader
 
         /* Entering the root node */
         $this->xmlReader->read();
+    }
 
-        while ($this->processNextItem()) {
+    private function closeXMLReader()
+    {
+        if (!is_null($this->xmlReader)) {
+            $this->xmlReader->close();
+            $this->xmlReader = null;
         }
-
-        /* Signaling that we are done reading in the xml */
-        $this->notifyDone();
     }
 
 

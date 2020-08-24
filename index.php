@@ -26,20 +26,50 @@ use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 
-$date = '20200716';
+$date = '20200819';
 $inputDirectory = './input/' . $date;
 $destDirectory = './docs/' . $date;
+
+
+/* Inputfiles */
+$thesaurusInputFilepath = $inputDirectory . '/CDA_Thesaurus_' . $date . '.xml';
+$paintingsRestorationInputFilepaths = [
+    $inputDirectory . '/CDA_RestDokumente_P1_' . $date . '.xml',
+    $inputDirectory . '/CDA_RestDokumente_P2_' . $date . '.xml',
+    $inputDirectory . '/CDA_RestDokumente_P3_' . $date . '.xml',
+];
+$paintingsInputFilepaths = [
+    $inputDirectory . '/CDA_Datenübersicht_P1_' . $date . '.xml',
+    $inputDirectory . '/CDA_Datenübersicht_P2_' . $date . '.xml',
+    $inputDirectory . '/CDA_Datenübersicht_P3_' . $date . '.xml',
+];
+$graphicsRestorationInputFilepaths = [
+    $inputDirectory . '/CDA-GR_RestDokumente_' . $date . '.xml',
+];
+$graphicsInputFilepath = $inputDirectory . '/CDA-GR_Datenübersicht_' . $date . '.xml';
+$literatureInputFilepaths = [
+    $inputDirectory . '/CDA_Literaturverweise_P1_' . $date . '.xml',
+    $inputDirectory . '/CDA_Literaturverweise_P2_' . $date . '.xml',
+];
+$archivalsInputFilepath = $inputDirectory . '/CDA-A_Datenübersicht_' . $date . '.xml';
+
+
+/* Outputfiles */
+$thesaurusOutputFilepath = $destDirectory . '/cda-thesaurus-v2.json';
+$paintingsOutputFilepath = $destDirectory . '/cda-paintings-v2.json';
+$paintingsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-paintings-v2.bulk';
+$graphicsOutputFilepath = $destDirectory . '/cda-graphics-v2.json';
+$graphicsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-graphics-v2.bulk';
+$literatureReferenceOutputFilepath = $destDirectory . '/cda-literaturereferences-v2.json';
+$archivalsOutputFilepath = $destDirectory . '/cda-archivals-v2.json';
+
 
 
 /* Thesaurus */
 $thesaurusMemoryDestination = ThesaurusMemoryExporter::new(); /* needed later for graphics and paintings */
 
-ThesaurusLoader::withSourceAt(
-    $inputDirectory . '/CDA_Thesaurus_20200716.xml'
-)->pipe(
-    ThesaurusJSONExporter::withDestinationAt(
-        $destDirectory . '/cda-thesaurus-v2.json',
-    ),
+ThesaurusLoader::withSourceAt($thesaurusInputFilepath)->pipe(
+    ThesaurusJSONExporter::withDestinationAt($thesaurusOutputFilepath),
     $thesaurusMemoryDestination,
 )->run(); /* and we have to run it directly */
 
@@ -47,11 +77,7 @@ ThesaurusLoader::withSourceAt(
 /* PaintingsRestorations */
 $paintingsRestorationMemoryDestination = RestorationsMemoryExporter::new();
 
-RestorationsLoader::withSourcesAt([
-    $inputDirectory . '/CDA_RestDokumente_P1_20200716.xml',
-    $inputDirectory . '/CDA_RestDokumente_P2_20200716.xml',
-    $inputDirectory . '/CDA_RestDokumente_P3_20200716.xml',
-])->pipe(
+RestorationsLoader::withSourcesAt($paintingsRestorationInputFilepaths)->pipe(
     $paintingsRestorationMemoryDestination,
 )->run(); /* and we have to run it directly */
 
@@ -64,18 +90,12 @@ $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt
 );
 $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
 $paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination);
-$paintingsDestination = PaintingsJSONLangExporter::withDestinationAt(
-    $destDirectory . '/cda-paintings-v2.json',
-);
+$paintingsDestination = PaintingsJSONLangExporter::withDestinationAt($paintingsOutputFilepath);
 $paintingsElasticsearchBulkDestination = PaintingsElasticsearchLangExporter::withDestinationAt(
-    $destDirectory . '/elasticsearch/cda-paintings-v2.bulk',
+    $paintingsElasticsearchOutputFilepath
 );
 
-$paintingsLoader = PaintingsLoader::withSourcesAt([
-    $inputDirectory . '/CDA_Datenübersicht_P1_20200716.xml',
-    $inputDirectory . '/CDA_Datenübersicht_P2_20200716.xml',
-    $inputDirectory . '/CDA_Datenübersicht_P3_20200716.xml',
-])->pipe(
+$paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths)->pipe(
     $paintingsRemoteImageExistenceChecker->pipe(
         $paintingsRestorationExtender->pipe(
             $paintingsDestination,
@@ -90,9 +110,7 @@ $paintingsLoader = PaintingsLoader::withSourcesAt([
 /* GraphicRestorations */
 $graphicsRestorationMemoryDestination = RestorationsMemoryExporter::new();
 
-RestorationsLoader::withSourcesAt([
-    $inputDirectory . '/CDA-GR_RestDokumente_20200716.xml',
-])->pipe(
+RestorationsLoader::withSourcesAt($graphicsRestorationInputFilepaths)->pipe(
     $graphicsRestorationMemoryDestination,
 )->run(); /* and we have to run it directly */
 
@@ -106,16 +124,12 @@ $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
 $graphicsConditionDeterminer = ConditionDeterminer::new();
 $graphicsRestorationExtender = GraphicsExtenderWithRestorations::new($graphicsRestorationMemoryDestination);
 $graphicsThesaurusExtender = GraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination);
-$graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt(
-    $destDirectory . '/cda-graphics-v2.json',
-);
+$graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt($graphicsOutputFilepath);
 $graphicsElasticsearchBulkDestination = GraphicsElasticsearchLangExporter::withDestinationAt(
-    $destDirectory . '/elasticsearch/cda-graphics-v2.bulk',
+    $graphicsElasticsearchOutputFilepath
 );
 
-$graphicsLoader = GraphicsLoader::withSourceAt(
-    $inputDirectory . '/CDA-GR_Datenübersicht_20200716.xml',
-)->pipe(
+$graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath)->pipe(
     $graphicsRemoteImageExistenceChecker->pipe(
         $graphicsConditionDeterminer->pipe(
             $graphicsRestorationExtender->pipe(
@@ -130,22 +144,14 @@ $graphicsLoader = GraphicsLoader::withSourceAt(
 
 
 /* LiteratureReferences */
-$literatureReferencesLoader = LiteratureReferencesLoader::withSourceAt(
-    $inputDirectory . '/CDA_Literaturverweise_20200716.xml',
-)->pipe(
-    LiteratureReferencesJSONExporter::withDestinationAt(
-        $destDirectory . '/cda-literaturereferences-v2.json',
-    ),
+$literatureReferencesLoader = LiteratureReferencesLoader::withSourcesAt($literatureInputFilepaths)->pipe(
+    LiteratureReferencesJSONExporter::withDestinationAt($literatureReferenceOutputFilepath),
 );
 
 
 /* Archivals */
-$archivalsLoader = ArchivalsLoader::withSourceAt(
-    $inputDirectory . '/CDA-A_Datenübersicht_20200716.xml',
-)->pipe(
-    ArchivalsJSONLangExporter::withDestinationAt(
-        $destDirectory . '/cda-archivals-v2.json',
-    ),
+$archivalsLoader = ArchivalsLoader::withSourceAt($archivalsInputFilepath)->pipe(
+    ArchivalsJSONLangExporter::withDestinationAt($archivalsOutputFilepath),
 );
 
 
