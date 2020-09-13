@@ -1425,7 +1425,7 @@ class GraphicInflator implements IInflator
             /* Path */
             $locationPathElement = self::findElementByXPath(
                 $locationDetailElement,
-                'Section[@SectionNumber="3"]/Field[@FieldName="{THESXREFSPATH1.Path}"]/FormattedValue',
+                'Section[@SectionNumber="3"]/Field[@FieldName="{THESXREFSPATH2.Path}"]/FormattedValue',
             );
             if ($locationPathElement) {
                 $locationPathStr = trim($locationPathElement);
