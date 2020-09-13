@@ -14,10 +14,14 @@
         "ext-simplexml": "*"
     },
     "scripts": {
-         "import": "php index.php",
-         "lint": "php-cs-fixer fix --dry-run",
-         "lint:fix": "php-cs-fixer fix",
-         "analyse": "phpstan analyse -l 5 src"
+        "cghooks": "cghooks",
+        "import": "php index.php",
+        "lint": "php-cs-fixer fix --dry-run",
+        "lint:fix": "php-cs-fixer fix",
+        "analyse": "phpstan analyse -l 5 src",
+
+        "post-install-cmd": "cghooks add --ignore-lock",
+        "post-update-cmd": "cghooks update"
     },
     "autoload": {
         "psr-4": {
@@ -26,6 +30,20 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
-        "phpstan/phpstan": "^0.12.37"
+        "phpstan/phpstan": "^0.12.37",
+        "brainmaestro/composer-git-hooks": "^2.8"
+    },
+    "extra": {
+        "hooks": {
+            "pre-commit": [
+                "echo \"committing as $(git config user.name) ($(git config user.email))\"",
+                "composer lint:fix",
+                "composer analyse"
+            ],
+            "pre-push": [
+                "composer lint"
+            ],
+            "post-merge": "composer install"
+        }
     }
 }

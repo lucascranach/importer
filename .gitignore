@@ -9,3 +9,4 @@ devilbox/
 
 # PHP-CS-Fix
 .php_cs.cache
+cghooks.lock
