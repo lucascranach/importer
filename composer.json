@@ -44,7 +44,7 @@
                 "composer lint",
                 "composer analyse"
             ],
-            "post-merge": "composer install"
+            "post-merge": "composer update"
         }
     }
 }
