@@ -10,6 +10,7 @@ class MetaReference
     public $type = '';
     public $term = '';
     public $path = '';
+    public $url = '';
 
 
     public function __construct()
@@ -50,5 +51,17 @@ class MetaReference
     public function getPath(): string
     {
         return $this->path;
+    }
+
+
+    public function setURL(string $url)
+    {
+        $this->url = $url;
+    }
+
+
+    public function getURL(): string
+    {
+        return $this->url;
     }
 }

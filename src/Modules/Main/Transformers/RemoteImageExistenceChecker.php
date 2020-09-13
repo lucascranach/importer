@@ -86,7 +86,7 @@ class RemoteImageExistenceChecker extends Hybrid
 
         /* Fill cache to avoid unnecessary duplicate requests for the same resource */
         if (is_null($this->getCacheFor($id))) {
-            $url = $this->buildURLForImageID($id);
+            $url = $this->buildURLForInventoryNumber($id);
 
             $result = $this->getRemoteImageDataResource($url);
             $rawImagesData = null;
@@ -114,11 +114,11 @@ class RemoteImageExistenceChecker extends Hybrid
     }
 
 
-    private function buildURLForImageID(string $imageID): string
+    private function buildURLForInventoryNumber(string $inventoryNumber): string
     {
         $interpolatedRemoteImageDataPath = sprintf(
             $this->remoteImageDataPath,
-            $imageID,
+            $inventoryNumber,
         );
 
         return $this->serverHost . $interpolatedRemoteImageDataPath;

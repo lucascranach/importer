@@ -1331,6 +1331,16 @@ class PaintingInflator implements IInflator
                 $locationPathStr = trim($locationPathElement);
                 $metaReference->setPath($locationPathStr);
             }
+
+            /* URL */
+            $locationURLElement = self::findElementByXPath(
+                $locationDetailElement,
+                'Section[@SectionNumber="4"]/Field[@FieldName="{@URL TGN}"]/FormattedValue',
+            );
+            if ($locationURLElement) {
+                $locationURLStr = trim($locationURLElement);
+                $metaReference->setURL($locationURLStr);
+            }
         }
     }
 
