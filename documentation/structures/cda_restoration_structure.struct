@@ -74,7 +74,15 @@ CrystalReport
                 Field[FieldName="{@BearbeitungsdatEndFalse}"]
                     Value
 
-            Section[SectionNumber="11"] # Zeitstempel (???)
+            Section[SectionNumber="11"] # Bearbeitungsdatum Neu (Start)
+                Field[FieldName="{@BearbeitungsdatumNeu}"]
+                    Value
+
+            Section[SectionNumber="12"] # Bearbeitungsdatum Neu (Ende)
+                Field[FieldName="{@BearbeitungsdatEndNeu}"]
+                    Value
+
+            Section[SectionNumber="13"] # Zeitstempel (???)
                 Text[Name="Text31"]
                     TextValue
                 Text[Name="Text33"]
@@ -82,6 +90,6 @@ CrystalReport
                 Field[FieldName="{@:name}"] # Etwas unklar (:name Content von anderem Element?)
                     FormattedValue
 
-            Section[SectionNumber="12"] # (???)
+            Section[SectionNumber="14"] # (???)
                 Subreport[Name="Subreport3"]
                     Details

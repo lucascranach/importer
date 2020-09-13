@@ -374,6 +374,31 @@ class RestorationInflator implements IInflator
             $processingDates->setEndYear($endYearInt);
         }
 
+
+        /* Overwrite Begin- and End-Year, because of newly introduced year elements (2020-09-11) */
+
+        /* New BeginYear */
+        $beginYearElement = self::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="11"]/Field[@FieldName="{@BearbeitungsdatumNeu}"]/Value',
+        );
+        if ($beginYearElement) {
+            $beginYearInt = intval(trim($beginYearElement));
+
+            $processingDates->setBeginYear($beginYearInt);
+        }
+
+        /* New EndYear */
+        $endYearElement = self::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="12"]/Field[@FieldName="{@BearbeitungsdatEndNeu}"]/Value',
+        );
+        if ($endYearElement) {
+            $endYearInt = intval(trim($endYearElement));
+
+            $processingDates->setEndYear($endYearInt);
+        }
+
         /* Decide if we should use the processingDates instance */
         $hasValidBeginData = !empty($processingDates->getBeginDate())
             || !is_null($processingDates->getBeginYear());
@@ -396,7 +421,7 @@ class RestorationInflator implements IInflator
         /* Signature Date */
         $signatureDateElement = self::findElementByXPath(
             $node,
-            'Section[@SectionNumber="11"]/Text[@Name="Text31"]/TextValue',
+            'Section[@SectionNumber="13"]/Text[@Name="Text31"]/TextValue',
         );
         if ($signatureDateElement) {
             $signatureDateStr = trim($signatureDateElement);
@@ -407,7 +432,7 @@ class RestorationInflator implements IInflator
         /* Signature Name */
         $signatureNameElement = self::findElementByXPath(
             $node,
-            'Section[@SectionNumber="11"]/Field[@Name]/FormattedValue',
+            'Section[@SectionNumber="13"]/Field[@Name]/FormattedValue',
         );
         if ($signatureNameElement) {
             $signatureNameStr = trim($signatureNameElement);
