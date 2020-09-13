@@ -41,7 +41,8 @@
                 "composer analyse"
             ],
             "pre-push": [
-                "composer lint"
+                "composer lint",
+                "composer analyse"
             ],
             "post-merge": "composer install"
         }
