@@ -375,28 +375,28 @@ class RestorationInflator implements IInflator
         }
 
 
-        /* Overwrite Begin- and End-Year, because of newly introduced year elements (2020-09-11) */
+        /* Overwrite Begin- and End-Date, because of newly introduced date section-elements (2020-09-11) */
 
         /* New BeginYear */
-        $beginYearElement = self::findElementByXPath(
+        $beginDateNewElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="11"]/Field[@FieldName="{@BearbeitungsdatumNeu}"]/Value',
         );
-        if ($beginYearElement) {
-            $beginYearInt = intval(trim($beginYearElement));
+        if ($beginDateNewElement) {
+            $beginDateNew = trim($beginDateNewElement);
 
-            $processingDates->setBeginYear($beginYearInt);
+            $processingDates->setBeginDate($beginDateNew);
         }
 
         /* New EndYear */
-        $endYearElement = self::findElementByXPath(
+        $endDateNewElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="12"]/Field[@FieldName="{@BearbeitungsdatEndNeu}"]/Value',
         );
-        if ($endYearElement) {
-            $endYearInt = intval(trim($endYearElement));
+        if ($endDateNewElement) {
+            $endDateNew = trim($endDateNewElement);
 
-            $processingDates->setEndYear($endYearInt);
+            $processingDates->setEndDate($endDateNew);
         }
 
         /* Decide if we should use the processingDates instance */
