@@ -2,6 +2,7 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
+use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
@@ -10,7 +11,7 @@ use Error;
 class ConditionDeterminer extends Hybrid
 {
     private static $conditionLangMappings = [
-        'de' => [
+        Language::DE => [
             [
                 'patterns' => [
                     '/^I\.\s*zustand/i',
@@ -33,7 +34,7 @@ class ConditionDeterminer extends Hybrid
                 'value' => 3,
             ],
         ],
-        'en' => [
+        Language::EN => [
             [
                 'patterns' => [
                     '/^1st\s*state/i',

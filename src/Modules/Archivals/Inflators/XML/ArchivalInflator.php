@@ -2,10 +2,11 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Archivals\Inflators\XML;
 
-use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Dating;
-use CranachDigitalArchive\Importer\Modules\Main\Entities\Publication;
 use Error;
 use SimpleXMLElement;
+use CranachDigitalArchive\Importer\Language;
+use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Dating;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Publication;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
 use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Archival;
 
@@ -21,14 +22,14 @@ class ArchivalInflator implements IInflator
     private static $splitChar = '#';
 
     private static $titlesLanguageTypes = [
-        'de' => 'GERMAN',
-        'en' => 'ENGLISH',
+        Language::DE => 'GERMAN',
+        Language::EN => 'ENGLISH',
         'not_assigned' => '(not assigned)',
     ];
 
     private static $repositoryTypes = [
-        'de' => 'Besitzer',
-        'en' => 'Repository',
+        Language::DE => 'Besitzer',
+        Language::EN => 'Repository',
     ];
 
     private function __construct()
@@ -170,9 +171,9 @@ class ArchivalInflator implements IInflator
                 $langStr = trim($langElement);
                 $summaryStr = trim($summaryElement);
 
-                if (self::$titlesLanguageTypes['de'] === $langStr) {
+                if (self::$titlesLanguageTypes[Language::DE] === $langStr) {
                     $archivalDe->addSummary($summaryStr);
-                } elseif (self::$titlesLanguageTypes['en'] === $langStr) {
+                } elseif (self::$titlesLanguageTypes[Language::EN] === $langStr) {
                     $archivalEn->addSummary($summaryStr);
                 } elseif (self::$titlesLanguageTypes['not_assigned'] === $langStr) {
                     echo '  Unassigned summary lang for object ' . $archivalDe->getInventoryNumber() . "\n";
@@ -266,12 +267,12 @@ class ArchivalInflator implements IInflator
             $repositoryStr = trim($repositoryEl);
 
             switch ($roleName) {
-                case self::$repositoryTypes['de']:
+                case self::$repositoryTypes[Language::DE]:
                     /* de */
                     $archivalDe->setRepository($repositoryStr);
                     break;
 
-                case self::$repositoryTypes['en']:
+                case self::$repositoryTypes[Language::EN]:
                     /* en */
                     $archivalEn->setRepository($repositoryStr);
                     break;
