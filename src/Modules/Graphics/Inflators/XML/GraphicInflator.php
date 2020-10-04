@@ -4,6 +4,7 @@ namespace CranachDigitalArchive\Importer\Modules\Graphics\Inflators\XML;
 
 use Error;
 use SimpleXMLElement;
+use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Classification;
@@ -32,36 +33,44 @@ class GraphicInflator implements IInflator
     private static $langSplitChar = '#';
 
     private static $additionalTextLanguageTypes = [
-        'de' => 'Beschreibung/ Interpretation/ Kommentare',
-        'en' => 'Description/ Interpretation/ Comments',
+        Language::DE => 'Beschreibung/ Interpretation/ Kommentare',
+        Language::EN => 'Description/ Interpretation/ Comments',
         'not_assigned' => '(not assigned)',
     ];
 
     private static $locationLanguageTypes = [
-        'de' => 'Standort Cranach Objekt',
-        'en' => 'Location Cranach Object',
+        Language::DE => 'Standort Cranach Objekt',
+        Language::EN => 'Location Cranach Object',
         'not_assigned' => '(not assigned)',
     ];
 
     private static $titlesLanguageTypes = [
-        'de' => 'GERMAN',
-        'en' => 'ENGLISH',
+        Language::DE => 'GERMAN',
+        Language::EN => 'ENGLISH',
         'not_assigned' => '(not assigned)',
     ];
 
     private static $repositoryTypes = [
-        'de' => 'Besitzer',
-        'en' => 'Repository',
+        Language::DE => 'Besitzer',
+        Language::EN => 'Repository',
     ];
 
     private static $ownerTypes = [
-        'de' => 'Eigentümer',
-        'en' => 'Owner',
+        Language::DE => 'Eigentümer',
+        Language::EN => 'Owner',
     ];
 
     private static $referenceTypeValues = [
         'reprint' => 'Abzug A',
         'relatedWork' => 'Teil eines Werkes',
+    ];
+
+    private static $translations = [
+        /* classification */
+        'Druckgrafik' => [
+            Language::DE => 'Druckgrafik',
+            Language::EN => 'Prints',
+        ],
     ];
 
     private static $inventoryNumberReplaceRegExpArr = [
@@ -352,9 +361,9 @@ class GraphicInflator implements IInflator
             if ($langElement) {
                 $langStr = trim($langElement);
 
-                if (self::$titlesLanguageTypes['de'] === $langStr) {
+                if (self::$titlesLanguageTypes[Language::DE] === $langStr) {
                     $graphicDe->addTitle($title);
-                } elseif (self::$titlesLanguageTypes['en'] === $langStr) {
+                } elseif (self::$titlesLanguageTypes[Language::EN] === $langStr) {
                     $graphicEn->addTitle($title);
                 } elseif (self::$titlesLanguageTypes['not_assigned'] === $langStr) {
                     echo '  Unassigned title lang for object ' . $graphicDe->getInventoryNumber() . "\n";
@@ -425,9 +434,12 @@ class GraphicInflator implements IInflator
         if ($classificationElement) {
             $classificationStr = trim($classificationElement);
 
-            /* Using single german value for both language objects */
-            $classificationDe->setClassification($classificationStr);
-            $classificationEn->setClassification($classificationStr);
+            $classificationDe->setClassification(
+                Language::translate($classificationStr, self::$translations, Language::DE)
+            );
+            $classificationEn->setClassification(
+                Language::translate($classificationStr, self::$translations, Language::EN)
+            );
         }
 
         /* condition */
@@ -1182,9 +1194,9 @@ class GraphicInflator implements IInflator
                 $textTypeStr = trim($textTypeElement);
                 $additionalTextInformation->setType($textTypeStr);
 
-                if (self::$additionalTextLanguageTypes['de'] === $textTypeStr) {
+                if (self::$additionalTextLanguageTypes[Language::DE] === $textTypeStr) {
                     $graphicDe->addAdditionalTextInformation($additionalTextInformation);
-                } elseif (self::$additionalTextLanguageTypes['en'] === $textTypeStr) {
+                } elseif (self::$additionalTextLanguageTypes[Language::EN] === $textTypeStr) {
                     $graphicEn->addAdditionalTextInformation($additionalTextInformation);
                 } elseif (self::$additionalTextLanguageTypes['not_assigned'] === $textTypeStr) {
                     echo '  Unassigned additional text type for object \'' . $graphicDe->getInventoryNumber() . "'\n";
@@ -1394,9 +1406,9 @@ class GraphicInflator implements IInflator
                 $locationTypeStr = trim($locationTypeElement);
                 $metaReference->setType($locationTypeStr);
 
-                if (self::$locationLanguageTypes['de'] === $locationTypeStr) {
+                if (self::$locationLanguageTypes[Language::DE] === $locationTypeStr) {
                     $graphicDe->addLocation($metaReference);
-                } elseif (self::$locationLanguageTypes['en'] === $locationTypeStr) {
+                } elseif (self::$locationLanguageTypes[Language::EN] === $locationTypeStr) {
                     $graphicEn->addLocation($metaReference);
                 } elseif (self::$locationLanguageTypes['not_assigned'] === $locationTypeStr) {
                     echo '  Unassigned location type for object ' . $graphicDe->getInventoryNumber() . "\n";
@@ -1510,12 +1522,12 @@ class GraphicInflator implements IInflator
         $repositoryStr = trim($repositoryElement);
 
         switch ($roleName) {
-            case self::$repositoryTypes['de']:
+            case self::$repositoryTypes[Language::DE]:
                 /* de */
                 $graphicDe->setRepository($repositoryStr);
                 break;
 
-            case self::$repositoryTypes['en']:
+            case self::$repositoryTypes[Language::EN]:
                 /* en */
                 $graphicEn->setRepository($repositoryStr);
                 break;
@@ -1547,12 +1559,12 @@ class GraphicInflator implements IInflator
         $ownerStr = trim($ownerElement);
 
         switch ($roleName) {
-            case self::$ownerTypes['de']:
+            case self::$ownerTypes[Language::DE]:
                 /* de */
                 $graphicDe->setOwner($ownerStr);
                 break;
 
-            case self::$ownerTypes['en']:
+            case self::$ownerTypes[Language::EN]:
                 /* en */
                 $graphicEn->setOwner($ownerStr);
                 break;
