@@ -119,7 +119,15 @@ class GraphicInflator implements IInflator
         self::inflateInscription($subNode, $graphicDe, $graphicEn);
         self::inflateMarkings($subNode, $graphicDe, $graphicEn);
         self::inflateRelatedWorks($subNode, $graphicDe, $graphicEn);
-        self::inflateExhibitionHistory($subNode, $graphicDe, $graphicEn);
+
+        /* virtual graphic objects have to have their representative object
+            extracted form the exhibitionhistory field */
+        if ($graphicDe->getIsVirtual()) {
+            self::inflateRepresentativeObject($subNode, $graphicDe, $graphicEn);
+        } else {
+            self::inflateExhibitionHistory($subNode, $graphicDe, $graphicEn);
+        }
+
         self::inflateBibliography($subNode, $graphicDe, $graphicEn);
         self::inflateReferences($subNode, $graphicDe, $graphicEn);
         self::inflateAdditionalTextInformations($subNode, $graphicDe, $graphicEn);
@@ -948,6 +956,32 @@ class GraphicInflator implements IInflator
     }
 
 
+    /* */
+    private static function inflateRepresentativeObject(
+        SimpleXMLElement $node,
+        Graphic $graphicDe,
+        Graphic $graphicEn
+    ) {
+        /* For virtual graphics, the representative object is found
+            under the exhibitionHistory field */
+        $exhibitionHistorySectionElement = $node->{'Section'}[28];
+        $exhibitionHistoryElement = self::findElementByXPath(
+            $exhibitionHistorySectionElement,
+            'Field[@FieldName="{OBJECTS.Exhibitions}"]/FormattedValue',
+        );
+        if ($exhibitionHistoryElement) {
+            $representativeObjectStr = trim($exhibitionHistoryElement);
+            $cleanRepresentativeObjectStr = preg_replace(
+                self::$inventoryNumberReplaceRegExpArr,
+                '',
+                $representativeObjectStr,
+            );
+            $graphicDe->setRepresentativeObject($cleanRepresentativeObjectStr);
+            $graphicEn->setRepresentativeObject($cleanRepresentativeObjectStr);
+        }
+    }
+
+
     /* Exhibition history */
     private static function inflateExhibitionHistory(
         SimpleXMLElement $node,
@@ -962,12 +996,7 @@ class GraphicInflator implements IInflator
         );
         if ($exhibitionHistoryElement) {
             $exhibitionHistoryStr = trim($exhibitionHistoryElement);
-            $cleanExhibitionHistoryStr = preg_replace(
-                self::$inventoryNumberReplaceRegExpArr,
-                '',
-                $exhibitionHistoryStr,
-            );
-            $graphicDe->setExhibitionHistory($cleanExhibitionHistoryStr);
+            $graphicDe->setExhibitionHistory($exhibitionHistoryStr);
         }
 
         /* en */
@@ -978,12 +1007,7 @@ class GraphicInflator implements IInflator
         );
         if ($exhibitionHistoryElement) {
             $exhibitionHistoryStr = trim($exhibitionHistoryElement);
-            $cleanExhibitionHistoryStr = preg_replace(
-                self::$inventoryNumberReplaceRegExpArr,
-                '',
-                $exhibitionHistoryStr,
-            );
-            $graphicEn->setExhibitionHistory($cleanExhibitionHistoryStr);
+            $graphicEn->setExhibitionHistory($exhibitionHistoryStr);
         }
 
 

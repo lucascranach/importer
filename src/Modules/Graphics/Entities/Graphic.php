@@ -43,6 +43,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     public $markings = '';
     public $relatedWorks = '';
     public $exhibitionHistory = '';
+    public $representativeObject = '';
     public $bibliography = '';
     public $references = [
         'reprints' => [],
@@ -75,13 +76,9 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     {
         $id = $this->getId();
 
-        /* We want to use the exhibition history inventory number for virtual objects */
-        if ($this->getIsVirtual()) {
-            if (!empty($this->getExhibitionHistory())) {
-                $id = $this->getExhibitionHistory();
-            } else {
-                $id = '';
-            }
+        /* We want to use the representative object inventory number if one exists */
+        if (!empty($this->getRepresentativeObject())) {
+            $id = $this->getRepresentativeObject();
         }
 
         return empty($id) ? $id : 'G_' . $id;
@@ -325,6 +322,18 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     public function getExhibitionHistory(): string
     {
         return $this->exhibitionHistory;
+    }
+
+
+    public function setRepresentativeObject(string $representativeObject)
+    {
+        $this->representativeObject = $representativeObject;
+    }
+
+
+    public function getRepresentativeObject(): string
+    {
+        return $this->representativeObject;
     }
 
 
