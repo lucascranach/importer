@@ -26,7 +26,11 @@ use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 
+<<<<<<< HEAD
 $date = '20201009';
+=======
+$date = '20201002';
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
 $inputDirectory = './input/' . $date;
 $destDirectory = './docs/' . $date;
 

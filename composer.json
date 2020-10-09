@@ -19,6 +19,7 @@
         "lint": "php-cs-fixer fix --dry-run",
         "lint:fix": "php-cs-fixer fix",
         "analyse": "phpstan analyse -l 5 src",
+        "clear:cache": "rm -R .cache",
 
         "post-install-cmd": "cghooks add --ignore-lock",
         "post-update-cmd": "cghooks update"

@@ -4,6 +4,7 @@ namespace CranachDigitalArchive\Importer\Modules\Paintings\Inflators\XML;
 
 use Error;
 use SimpleXMLElement;
+use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Classification;
@@ -31,33 +32,33 @@ class PaintingInflator implements IInflator
     private static $langSplitChar = '#';
 
     private static $additionalTextLanguageTypes = [
-        'de' => 'Beschreibung/ Interpretation/ Kommentare',
-        'en' => 'Description/ Interpretation/ Comments',
+        Language::DE => 'Beschreibung/ Interpretation/ Kommentare',
+        Language::EN => 'Description/ Interpretation/ Comments',
         'author' => 'Autor', /* TODO: To be checked; has german values? */
         'letter' => 'Briefumschrift', /* TODO: To be checked; has english values? */
         'not_assigned' => '(not assigned)',
     ];
 
     private static $locationLanguageTypes = [
-        'de' => 'Standort Cranach Objekt',
-        'en' => 'Location Cranach Object',
+        Language::DE => 'Standort Cranach Objekt',
+        Language::EN => 'Location Cranach Object',
         'not_assigned' => '(not assigned)',
     ];
 
     private static $titlesLanguageTypes = [
-        'de' => 'GERMAN',
-        'en' => 'ENGLISH',
+        Language::DE => 'GERMAN',
+        Language::EN => 'ENGLISH',
         'not_assigned' => '(not assigned)',
     ];
 
     private static $repositoryTypes = [
-        'de' => 'Besitzer',
-        'en' => 'Repository',
+        Language::DE => 'Besitzer',
+        Language::EN => 'Repository',
     ];
 
     private static $ownerTypes = [
-        'de' => 'Eigentümer',
-        'en' => 'Owner',
+        Language::DE => 'Eigentümer',
+        Language::EN => 'Owner',
     ];
 
     private static $inventoryNumberReplaceRegExpArr = [
@@ -338,9 +339,9 @@ class PaintingInflator implements IInflator
             if ($langElement) {
                 $langStr = trim($langElement);
 
-                if (self::$titlesLanguageTypes['de'] === $langStr) {
+                if (self::$titlesLanguageTypes[Language::DE] === $langStr) {
                     $paintingDe->addTitle($title);
-                } elseif (self::$titlesLanguageTypes['en'] === $langStr) {
+                } elseif (self::$titlesLanguageTypes[Language::EN] === $langStr) {
                     $paintingEn->addTitle($title);
                 } elseif (self::$titlesLanguageTypes['not_assigned'] === $langStr) {
                     echo '  Unassigned title lang for object ' . $paintingDe->getInventoryNumber() . "\n";
@@ -1088,9 +1089,9 @@ class PaintingInflator implements IInflator
                 $textTypeStr = trim($textTypeElement);
                 $additionalTextInformation->setType($textTypeStr);
 
-                if (self::$additionalTextLanguageTypes['de'] === $textTypeStr) {
+                if (self::$additionalTextLanguageTypes[Language::DE] === $textTypeStr) {
                     $paintingDe->addAdditionalTextInformation($additionalTextInformation);
-                } elseif (self::$additionalTextLanguageTypes['en'] === $textTypeStr) {
+                } elseif (self::$additionalTextLanguageTypes[Language::EN] === $textTypeStr) {
                     $paintingEn->addAdditionalTextInformation($additionalTextInformation);
                 } elseif (self::$additionalTextLanguageTypes['author'] === $textTypeStr) {
                     $paintingDe->addAdditionalTextInformation($additionalTextInformation);
@@ -1294,9 +1295,9 @@ class PaintingInflator implements IInflator
                 $locationTypeStr = trim($locationTypeElement);
                 $metaReference->setType($locationTypeStr);
 
-                if (self::$locationLanguageTypes['de'] === $locationTypeStr) {
+                if (self::$locationLanguageTypes[Language::DE] === $locationTypeStr) {
                     $paintingDe->addLocation($metaReference);
-                } elseif (self::$locationLanguageTypes['en'] === $locationTypeStr) {
+                } elseif (self::$locationLanguageTypes[Language::EN] === $locationTypeStr) {
                     $paintingEn->addLocation($metaReference);
                 } elseif (self::$locationLanguageTypes['not_assigned'] === $locationTypeStr) {
                     echo '  Unassigned location type for object ' . $paintingDe->getInventoryNumber() . "\n";
@@ -1410,12 +1411,12 @@ class PaintingInflator implements IInflator
         $repositoryStr = trim($repositoryElement);
 
         switch ($roleName) {
-            case self::$repositoryTypes['de']:
+            case self::$repositoryTypes[Language::DE]:
                 /* de */
                 $paintingDe->setRepository($repositoryStr);
                 break;
 
-            case self::$repositoryTypes['en']:
+            case self::$repositoryTypes[Language::EN]:
                 /* en */
                 $paintingEn->setRepository($repositoryStr);
                 break;
@@ -1447,12 +1448,12 @@ class PaintingInflator implements IInflator
         $ownerStr = trim($ownerElement);
 
         switch ($roleName) {
-            case self::$ownerTypes['de']:
+            case self::$ownerTypes[Language::DE]:
                 /* de */
                 $paintingDe->setOwner($ownerStr);
                 break;
 
-            case self::$ownerTypes['en']:
+            case self::$ownerTypes[Language::EN]:
                 /* en */
                 $paintingEn->setOwner($ownerStr);
                 break;

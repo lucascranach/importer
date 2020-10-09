@@ -17,6 +17,7 @@ Um die Nutzung des Importers (aber auch die Entwicklung) zu vereinfachen, kommt 
 | lint | Auflistung von Dateien mit Linter-Problemen |
 | lint:fix | Auflistung von Dateien mit Linter-Problemen und automatische Behebung, sofern möglich |
 | analyse | Analyse der  im `src`-Ordner zu findenden PHP-Dateien |
+| clear:cache | Lösche den Cache-Ordner |
 | **import** | Starten des Import-Vorgangs; alternativ  `php index.php` ausführen |
 
 
