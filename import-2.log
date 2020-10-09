@@ -1,0 +1,75 @@
+Processing thesaurus file : ./input/20201002/CDA_Thesaurus_20201002.xml
+Processing restorations file : ./input/20201002/CDA_RestDokumente_P1_20201002.xml
+Processing restorations file : ./input/20201002/CDA_RestDokumente_P2_20201002.xml
+Processing restorations file : ./input/20201002/CDA_RestDokumente_P3_20201002.xml
+Processing restorations file : ./input/20201002/CDA-GR_RestDokumente_20201002.xml
+Processing paintings file : ./input/20201002/CDA_Datenübersicht_P1_20201002.xml
+Processing paintings file : ./input/20201002/CDA_Datenübersicht_P2_20201002.xml
+  Unassigned additional text type for object 'DE_MdbKL_607'
+  Unassigned additional text type for object 'DE_SPSG_GKI30029'
+  Unassigned additional text type for object 'DE_SHLM_1967-529'
+  Unknown additional text type: Beschreibung for object DE_MKM_NONE-MKM001A
+Processing paintings file : ./input/20201002/CDA_Datenübersicht_P3_20201002.xml
+Processing graphics file : ./input/20201002/CDA-GR_Datenübersicht_20201002.xml
+  Unassigned additional text type for object 'DE_SMBKSK_86-10'
+  Missing imageId for 'GWN_ANO_H-NONE-001'
+  Missing imageId for 'GWN_ANO_H-NONE-001'
+  Missing imageId for 'GWN_ANO_H-NONE-002'
+  Missing imageId for 'GWN_ANO_H-NONE-002'
+  Missing imageId for 'GWN_HBG_H-NONE-001'
+  Missing imageId for 'GWN_HBG_H-NONE-001'
+  Missing imageId for 'GWN_HBG_HII-154_270'
+  Missing imageId for 'GWN_HBG_HII-154_270'
+  Missing imageId for 'GWN_ANO_HVI-8_7-8'
+  Missing imageId for 'GWN_ANO_HVI-8_7-8'
+  Missing imageId for 'GWN_ANO_H-NONE-003'
+  Missing imageId for 'GWN_ANO_H-NONE-003'
+  Missing imageId for 'GWN_HH_HXV-238_69'
+  Missing imageId for 'GWN_HH_HXV-238_69'
+  Missing imageId for 'GWN_HSB_HIII-210'
+  Missing imageId for 'GWN_HSB_HIII-210'
+  Missing imageId for 'GWN_ANO_HVI-8_7-3'
+  Missing imageId for 'GWN_ANO_HVI-8_7-3'
+  Missing imageId for 'GWN_ANO_H-NONE-004'
+  Missing imageId for 'GWN_ANO_H-NONE-004'
+  Missing imageId for 'GWN_HBG_HVI-8_7-4'
+  Missing imageId for 'GWN_HBG_HVI-8_7-4'
+  Missing imageId for 'GWN_ANO_H-NONE-005'
+  Missing imageId for 'GWN_ANO_H-NONE-005'
+  Missing imageId for 'GWN_ANO_HVI-8_7-1'
+  Missing imageId for 'GWN_ANO_HVI-8_7-1'
+  Missing imageId for 'GWN_ANO_H-NONE-006'
+  Missing imageId for 'GWN_ANO_H-NONE-006'
+  Missing imageId for 'GWN_HSB_HIII-223'
+  Missing imageId for 'GWN_HSB_HIII-223'
+  Missing imageId for 'GWN_DH_HHo-96_I'
+  Missing imageId for 'GWN_DH_HHo-96_I'
+  Missing imageId for 'GWN_AA_HI-210_80'
+  Missing imageId for 'GWN_AA_HI-210_80'
+  Missing imageId for 'GWN_HB_HIV-595_259'
+  Missing imageId for 'GWN_HB_HIV-595_259'
+  Missing imageId for 'GWN_HB_HIV-259_596'
+  Missing imageId for 'GWN_HB_HIV-259_596'
+  Missing imageId for 'GWN_MIB_H-NONE-001'
+  Missing imageId for 'GWN_MIB_H-NONE-001'
+  Missing imageId for 'GWN_HHJ_HXIVb-27-113'
+  Missing imageId for 'GWN_HHJ_HXIVb-27-113'
+  Missing imageId for 'GWN_ANO_H-NONE-007'
+  Missing imageId for 'GWN_ANO_H-NONE-007'
+  Missing imageId for 'GWN_HSB_H-NONE-001'
+  Missing imageId for 'GWN_HSB_H-NONE-001'
+  Unknown title lang: UKENGLISH for object 'DE_SMKP_KA-FP-363D\'
+  Missing imageId for 'GWN_ANO_H-NONE-016'
+  Missing imageId for 'GWN_ANO_H-NONE-016'
+  Missing imageId for 'GWN_WM_H-NONE-001'
+  Missing imageId for 'GWN_WM_H-NONE-001'
+  Missing imageId for 'GWN_SAT_H-NONE-001'
+  Missing imageId for 'GWN_SAT_H-NONE-001'
+
+  Graphics with missing references: 
+
+      - No missing references!
+
+Processing literature references file : ./input/20201002/CDA_Literaturverweise_P1_20201002.xml
+Processing literature references file : ./input/20201002/CDA_Literaturverweise_P2_20201002.xml
+Processing archivals file : ./input/20201002/CDA-A_Datenübersicht_20201002.xml

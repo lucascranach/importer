@@ -26,7 +26,7 @@ use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 
-$date = '20200911';
+$date = '20201009';
 $inputDirectory = './input/' . $date;
 $destDirectory = './docs/' . $date;
 
