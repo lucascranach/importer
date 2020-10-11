@@ -87,7 +87,7 @@ class RemoteImageExistenceChecker extends Hybrid
         /* Fill cache to avoid unnecessary duplicate requests for the same resource */
         if (is_null($this->getCacheFor($id))) {
             $url = $this->buildURLForInventoryNumber($id);
-
+            print "$url ---\n";
             $result = $this->getRemoteImageDataResource($url);
             $rawImagesData = null;
 
@@ -212,7 +212,7 @@ class RemoteImageExistenceChecker extends Hybrid
         $baseStackItem = $imageStack[$this->remoteImageSubDirectoryName];
 
         if (!isset($baseStackItem)) {
-            throw new Error('Could not find base stack item ' . $this->remoteImageSubDirectoryName);
+           throw new Error('Could not find base stack item ' . $this->remoteImageSubDirectoryName);
         }
 
         $destinationStructure['infos']['maxDimensions'] = [
@@ -223,8 +223,7 @@ class RemoteImageExistenceChecker extends Hybrid
         foreach ($baseStackItem['images'] as $size => $image) {
             $dimensions = $image['dimensions'];
             $src = $this->serverHost .
-                sprintf($this->remoteImageBasePath, $inventoryNumber) .
-                $this->remoteImageSubDirectoryName . '/' . $image['src'];
+                sprintf($this->remoteImageBasePath, $inventoryNumber) . $image['src'];
 
             $destinationStructure['sizes'][$size] = [
                 'dimensions' => [
