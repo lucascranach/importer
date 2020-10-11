@@ -212,7 +212,7 @@ class RemoteImageExistenceChecker extends Hybrid
         $baseStackItem = $imageStack[$this->remoteImageSubDirectoryName];
 
         if (!isset($baseStackItem)) {
-           throw new Error('Could not find base stack item ' . $this->remoteImageSubDirectoryName);
+            throw new Error('Could not find base stack item ' . $this->remoteImageSubDirectoryName);
         }
 
         $destinationStructure['infos']['maxDimensions'] = [
