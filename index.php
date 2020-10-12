@@ -26,7 +26,7 @@ use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 
-$date = '20201002';
+$date = '20201009';
 $inputDirectory = './input/' . $date;
 $destDirectory = './docs/' . $date;
 
@@ -118,7 +118,15 @@ RestorationsLoader::withSourcesAt($graphicsRestorationInputFilepaths)->pipe(
 /* Graphics */
 $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     './.cache',
-    '01_Overall',
+    function($item) {
+        $imageType = 'overall';
+
+        if ($item->getIsVirtual()) {
+            return 'representative';
+        }
+
+        return $imageType;
+    },
     'graphicsRemoteImageExistenceChecker',
 );
 $graphicsConditionDeterminer = ConditionDeterminer::new();

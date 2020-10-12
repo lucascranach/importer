@@ -64,7 +64,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341"
             },
@@ -96,8 +104,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-75",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-75",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -249,6 +261,369 @@
                     "suffix": "",
                     "nameType": "Andere Suchform",
                     "alternativeName": "Lucas Cranach the Elder",
+<<<<<<< HEAD
+                    "remarks": "",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "32400",
+                    "details": [
+                        {
+                            "name": "Lucas Cranach der \u00c4ltere",
+                            "nameType": "Prim\u00e4rer Name"
+                        },
+                        {
+                            "name": "Lucas Cranach the Elder",
+                            "nameType": "Andere Suchform"
+                        },
+                        {
+                            "name": "Lucas Sunders",
+                            "nameType": "Falsche Namensform"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Martin Luther as Junker J\u00f6rg",
+                    "remarks": ""
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": "",
+                "printProcess": "Holzschnitt#Woodcut"
+            },
+            "conditionLevel": 0,
+            "objectName": "",
+            "inventoryNumber": "GWN_LC_HVI-107_132",
+            "objectId": 940712,
+            "isVirtual": true,
+            "dimensions": "Image: 285 x 206 mm (+- 2 mm)\n[cda 2019]",
+            "dating": {
+                "dated": "1522",
+                "begin": 1517,
+                "end": 1527,
+                "remarks": "[later editions dated]",
+                "historicEventInformations": []
+            },
+            "description": "This woodcut showing 'Luther as Junker J\u00f6rg' was Cranach's  last portrait of Luther in printed form. After leaving Worms on the 26 April, 1521, Luther was arrested near Altenburg on the 4th of May by two masked men (friends) and taken to the Wartburg where he remained in retreat dressed as a knight and letting his beard grow until the 3rd March 1522. During this time he paid a hasty visit to Wittenberg where he remained in complete seclusion seeing only Cranach who recognized him straight away.  Cranach portrayed him with a beard, looking out to the left and this image was to mark his return to the public stage in 1522. It was widely disseminated with at least four different textual variants and continued to be printed until late into the 16th century. The inscription celebrates Luther's return employing the island of Patmos (where St John wrote the Apocalypse) as a metaphor for his time at the Wartburg.",
+            "provenance": "",
+            "medium": "",
+            "signature": "None",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "AT_A_DG1929-242",
+            "bibliography": "",
+            "references": {
+                "reprints": [
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "AT_A_DG1929-242",
+                        "remark": "Hollstein VI.107.132c"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "BE_KBR_S-II20715",
+                        "remark": "Hollstein VI.107.132"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_GNMN_Mp14637a",
+                        "remark": "Hollstein VI.107.132c"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HAUMB_AB3-74",
+                        "remark": "Hollstein VI.107.132"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HAUMB_V3-1696",
+                        "remark": "Hollstein VI.107.132d"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SMBKSK_66-1898",
+                        "remark": "Hollstein VI.107.132c"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "US_MMANY_27-54-27",
+                        "remark": "Hollstein VI.107.132b"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "US_MMANY_41-1-163",
+                        "remark": "Hollstein VI.107.132"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "UK_BML_1895-0122-279",
+                        "remark": "Hollstein VI.107.132b"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "UK_BML_O-3-190",
+                        "remark": "Hollstein VI.107.132c"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SKD_A6645",
+                        "remark": "Hollstein VI.107.132"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_WSE_G1359",
+                        "remark": "Hollstein VI.107.132b"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "US_NGA_1943-3-2875",
+                        "remark": "Hollstein VI.107.132b"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_KSW_DK181-83",
+                        "remark": "Hollstein VI.107.132c"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SGSM_1912-997D",
+                        "remark": "Hollstein VI.107.132d"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "GWN_LC_HVI-107_132",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "PRIVATE_NONE-006",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_smbKK_66-1898",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SBB_PortrSlg-SlgLutherAII3",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "BE_KBR_S-II-20715",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "AU_NGVM_425-5",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HABW_II-3313",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SMBKSK_759-2",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HAUMB_LCranachdA-V-3-1696",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SGSM_191-997D",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_UBTue_Kg385a-4-R-104",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SBBa_IL44",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HAUMB_LCranachdA-AB-3-74",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "PRIVATE_NONE-007",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HABW_PortrII-3313",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SBB_PortrSlg-SlgLutherAII3-3",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "GWN_LC_HVI-107_132",
+                        "remark": ""
+                    }
+                ],
+                "relatedWorks": []
+            },
+            "additionalTextInformation": [
+                {
+                    "type": "Description\/ Interpretation\/ Comments",
+                    "text": "Two editions of the woodcut. The earlier reproduced by Lippmann is in Dresden; fine impression with broad margins; sheet size: 442 x 312 mm; old inscription in verse, in red chalk, running round the woodcut. It has above the portrait only the name \u2018Lutherus\u2019 (sic), and beneath it the four verses\u00b4, with different orthography. This edition must have appeared before Luther\u2019s final return to Wittenberg, to which allusion is made in the second edition. In the first edition there is no break in the outline of the r. shoulder.\n\n[Dodgson 1911, 317]",
+                    "date": "",
+                    "year": 1911,
+                    "author": ""
+                },
+                {
+                    "type": "Description\/ Interpretation\/ Comments",
+                    "text": "An early print in the Prints and Drawing Department in Dresden, which only has the name 'Lutherus' above the portrait and below the two couplets: Quaesitus-vale. \n[Schuchardt 1871,vol. III, 254, No. 179]",
+                    "date": "",
+                    "year": null,
+                    "author": ""
+                }
+            ],
+            "publications": [
+                {
+                    "title": "",
+                    "pageNumber": "18",
+                    "referenceId": "30162"
+                },
+                {
+                    "title": "Dodgson 1911",
+                    "pageNumber": "316",
+                    "referenceId": "346"
+                },
+                {
+                    "title": "Hollstein 1959",
+                    "pageNumber": "107",
+                    "referenceId": "736"
+                },
+                {
+                    "title": "Jahn, Bernhard 1972",
+                    "pageNumber": "405",
+                    "referenceId": "1939"
+                },
+                {
+                    "title": "Warnke 1984",
+                    "pageNumber": "49-51",
+                    "referenceId": "1445"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": "",
+                    "url": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010107",
+                    "path": "",
+                    "url": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "",
+                    "url": ""
+                }
+            ],
+            "locations": [],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "1522-0001",
+            "catalogWorkReferences": [
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "VI.107.132",
+                    "remarks": ""
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "28.50"
+            },
+            "restorationSurveys": [],
+            "images": {
+                "infos": {
+                    "maxDimensions": {
+                        "width": 1377,
+                        "height": 2233
+                    }
+                },
+                "sizes": {
+                    "xs": {
+                        "dimensions": {
+                            "width": 200,
+                            "height": 324
+                        },
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-xs.jpg"
+                    },
+                    "s": {
+                        "dimensions": {
+                            "width": 300,
+                            "height": 486
+                        },
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-s.jpg"
+                    },
+                    "m": {
+                        "dimensions": {
+                            "width": 800,
+                            "height": 1297
+                        },
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-m.jpg"
+                    },
+                    "l": {
+                        "dimensions": {
+                            "width": 1200,
+                            "height": 1946
+                        },
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-l.jpg"
+                    },
+                    "xl": {
+                        "dimensions": {
+                            "width": 1377,
+                            "height": 2233
+                        },
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-xl.jpg"
+                    }
+                }
+            }
+        },
+        {
+            "langCode": "en",
+            "involvedPersons": [
+                {
+                    "id": "",
+                    "role": "Inventor",
+                    "name": "Lucas Cranach the Elder",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Andere Suchform",
+                    "alternativeName": "Lucas Cranach the Elder",
+=======
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
                     "remarks": "[cda 2019]",
                     "date": "",
                     "isUnknown": false
@@ -281,7 +656,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -305,8 +688,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "- Amsterdam, Kunstsammlung Schloss Wolfegg, Salamander Fine Arts (second state)\n- Oxford (1st state)",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-98",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-98",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -484,7 +871,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -537,8 +932,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "DE_SMKP_KA-FP-352D",
+=======
             "exhibitionHistory": "",
             "representativeObject": "DE_SMKP_KA-FP-352D",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -728,7 +1127,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -802,8 +1209,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-127",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-127",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -1055,7 +1466,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -1129,8 +1548,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-129",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-129",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -1387,7 +1810,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -1461,8 +1892,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-131",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-131",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -1716,7 +2151,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -1790,8 +2233,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-130",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-130",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -2040,7 +2487,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -2079,8 +2534,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "- also in Amsterdam, Basel private collection, Bayerische Staatsbibliothek",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-82",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-82",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -2255,7 +2714,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -2294,8 +2761,12 @@
             "inscription": "in gothic type:\nOn the ladder on the l. upright: 'Messigkeit in gluckseligen dingen' \nOn the opposite upright, 'Gedult in widderwertigen dingen.'\nOn the rungs 'Demutige lieb gottes', 'Sein selbs kleinmechtigung', and 'Verschmehung der welt'\nBeneath and above: 'Furcht ewiger pein' and 'Lieb ewiger belonug'\n- on the circles: 'Heilig Heilig Heilig almechtiger hergot der do war ist vnd kunfftig sein wurt.\/ Sehent das ich allein vnd kein ander got sey dan ich. Ich bin der anfang vnd das End.'\n- on a scroll held above the Trinity by angels: 'Heilig, heilig, heilig Hergot der vil scharen\/ dein himele vn erde sein voll deiner gloria'\n- God the Father holds a scroll in his hands: 'Kubt all zu mir\/ die jr mit jrdischer angst seit belade Ich will euch widd mit hilischer spei\u00dfvn freud laben.'\n- on the scroll enfolding the groups either side of God the Father: 'Die welt haben wir gelassen vnd dise leittern gestigen all\/ darumb frewen wir vns ewigklich mit got jn himelischen jubelschall.'\n- below these groups is a flying angel bearing a scroll: (l.) 'Drenget euch hinein zu \/ gehn durch die ege pfort', (r.) 'Kument hyrauff wir wollen \/ vns frewen jn dem herren vnd \/ jubiliern gotte vnsrn heyl.'\n- above Friedrich the Wise is a scroll: 'O got mein herr fuhr gerad uber sich in deine angesicht meinen wegk'\n- above the women: 'hilff vns got vnser heyl' \n- on either side is a devil, on the l. : 'So got kein gefallen hat jn ewern\/ verterben\/ was arbeit jr so hart in \/ tugenden bi\u00df auff ewer sterben' - on the r.: 'Huth dich mensch vor harten dingen\/ der du asch bist vnd schwacher natur\/ Brauch in wollust weil du lebst gots\/ creatur'",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-187",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-187",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -2482,7 +2953,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -2514,8 +2993,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-188",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-188",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -2670,7 +3153,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -2694,8 +3185,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-85",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-85",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -2860,7 +3355,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -2920,8 +3423,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-158",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-158",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -3173,7 +3680,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341"
             },
@@ -3197,8 +3712,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-74",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-74",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -3381,7 +3900,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341"
             },
@@ -3413,8 +3940,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-72",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-72",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -3585,7 +4116,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341"
             },
@@ -3609,8 +4148,12 @@
             "inscription": "- top right: 'ALBERTVS MI DI SA SANC \/ ROMANE ECCLAE TI SAN \/ CHRYSOGONI PBR CARDINA \/ MAGVN AC MAGDE ARCHI \/ EPS ELECTOR IMPE PRIMAS \/ ADMINI HALBER MARCHI \/ BRANDEBVRGENSIS' \n- bottom: 'SIC OCVLOS SIC ILLE GENAS SIC \/ ORA FEREBAT \/ ANNO ETATIS SVE XXX \/ MDXX'",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-77",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-77",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -3780,7 +4323,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Kupferstich"
             },
@@ -3804,8 +4355,12 @@
             "inscription": "- bottom: 'AETHERNA IPSE SVAE MENTIS SIMVLACHRA LVTHERVS \/ EXPRIMIT . AT VVLTVS CERA LVCAE OCCIDVOS \/ .M.D.X.X.'",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-78",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-78",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -4120,7 +4675,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -4159,8 +4722,12 @@
             "inscription": "Cross titled 'INRI' in the block",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-83",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-83",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -4322,7 +4889,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -4346,8 +4921,12 @@
             "inscription": "The cross is titled 'IN R'I in the block",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-84",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-84",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -4536,7 +5115,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -4560,8 +5147,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-86",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-86",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -4725,7 +5316,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -4749,8 +5348,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-87",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-87",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -4920,7 +5523,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -4944,8 +5555,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-89",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-89",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -5110,7 +5725,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -5134,8 +5757,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-91",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-91",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -5305,7 +5932,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -5337,8 +5972,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-92",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-92",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -5490,7 +6129,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -5514,8 +6161,12 @@
             "inscription": "in the block on the right sleeve: 'KLVE'",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-93",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-93",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -5652,7 +6303,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -5676,8 +6335,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-94",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-94",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -5834,7 +6497,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -5858,8 +6529,12 @@
             "inscription": "-  in the block on the boy's chest band: 'AV'",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-95",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-95",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -6029,7 +6704,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -6061,8 +6744,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-96",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-96",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -6232,7 +6919,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -6256,8 +6951,12 @@
             "inscription": "on the knight in the lower right corner: 'A'",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-97",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-97",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -6435,7 +7134,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -6459,8 +7166,12 @@
             "inscription": "on the caparison of the horse, in the block: 'A'",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-100",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-100",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -6633,7 +7344,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -6657,8 +7376,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-101",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-101",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -6825,7 +7548,15 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -6849,8 +7580,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1927-128",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1927-128",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -6994,7 +7729,15 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -7040,8 +7783,12 @@
             "inscription": "in the block cross titled IRNI (R and N in reverse).",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-102",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-102",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -7211,7 +7958,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -7235,8 +7990,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-103",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-103",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -7421,7 +8180,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -7445,8 +8212,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-111",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-111",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -7652,7 +8423,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "H077"
             },
@@ -7684,8 +8463,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-112",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-112",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -7866,7 +8649,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -7912,8 +8703,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-114",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-114",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -8078,7 +8873,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -8110,8 +8913,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-115",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-115",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -8266,7 +9073,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -8298,8 +9113,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-116",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-116",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -8464,7 +9283,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -8488,8 +9315,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-117",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-117",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -8660,7 +9491,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -8684,8 +9523,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-118",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-118",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -8871,7 +9714,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -8895,8 +9746,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-122",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-122",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -9082,7 +9937,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -9106,8 +9969,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-123",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-123",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -9277,7 +10144,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -9301,8 +10176,12 @@
             "inscription": "- on the shabraque of the knight in the foreground at the right:\na repeat pattern incorporating the initial 'G'.",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-124",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-124",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -9472,7 +10351,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -9496,8 +10383,12 @@
             "inscription": "- on the shabraque of the knight in the foreground at the right: a repeat pattern with the initial 'G'.",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-125",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-125",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -9667,7 +10558,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -9691,8 +10590,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-126",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-126",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -9865,7 +10768,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -9939,8 +10850,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-132",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-132",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -10181,7 +11096,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -10255,8 +11178,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-133",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-133",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -10503,7 +11430,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -10577,8 +11512,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-134",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-134",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -10825,7 +11764,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -10899,8 +11846,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-135",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-135",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -11147,7 +12098,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -11221,8 +12180,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-136",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-136",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -11463,7 +12426,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -11537,8 +12508,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-137",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-137",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -11785,7 +12760,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -11859,8 +12842,12 @@
             "inscription": "- on the cross: 'INRI'",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-138",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-138",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -12107,7 +13094,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -12181,8 +13176,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-139",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-139",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -12429,7 +13428,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -12503,8 +13510,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-140",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-140",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -12751,7 +13762,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -12825,8 +13844,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-141",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-141",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -13073,7 +14096,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -13097,8 +14128,12 @@
             "inscription": "None",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "US_MMANY_27-54-3",
+=======
             "exhibitionHistory": "",
             "representativeObject": "US_MMANY_27-54-3",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -13204,7 +14239,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -13243,8 +14286,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-113",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-113",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -13414,7 +14461,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -13446,8 +14501,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-156",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-156",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -13617,7 +14676,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Kupferstich"
             },
@@ -13641,8 +14708,12 @@
             "inscription": "- bottom: 'AETHERNA IPSE SVAE MENTIS SIMVLACHRA LVTHERVS \/ EXPRIMIT . AT VVLTVS CERA LVCAE OCCIDVOS \/ .M.D.X.X.'",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-80",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-80",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -13832,7 +14903,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Kupferstich"
             },
@@ -13856,8 +14935,12 @@
             "inscription": "at the bottom in the plate: 'LVCAE . OPVS . EFFIGIES . HAEC . EST . MORITVRA . LVTHERI . \/ AETHERNAM . MENTIS . EXPRIMIT . IPSE . SVAE . M D X X I.'",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-81",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-81",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -14137,7 +15220,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -14197,8 +15288,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-159",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-159",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -14435,7 +15530,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -14495,8 +15598,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-161",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-161",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -14738,7 +15845,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -14798,8 +15913,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-162",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-162",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -15031,7 +16150,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -15091,8 +16218,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-163",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-163",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -15329,7 +16460,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -15389,8 +16528,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-164",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-164",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -15593,7 +16736,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -15653,8 +16804,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-165",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-165",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -15891,7 +17046,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -15951,8 +17114,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-166",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-166",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -16184,7 +17351,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -16244,8 +17419,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-167",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-167",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -16482,7 +17661,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -16542,8 +17729,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-168",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-168",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -16780,7 +17971,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -16840,8 +18039,12 @@
             "inscription": "- text in Hebrew above the altarpiece in the background",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-169",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-169",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -17078,7 +18281,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -17138,8 +18349,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-160",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-160",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -17381,7 +18596,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -17405,8 +18628,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-178",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-178",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -17571,7 +18798,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -17595,8 +18830,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-179",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-179",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -17761,7 +19000,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -17828,8 +19075,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-388",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-388",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -17950,7 +19201,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -17974,8 +19233,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-181",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-181",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -18140,7 +19403,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -18164,8 +19435,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-182",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-182",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -18330,7 +19605,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -18354,8 +19637,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-183",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-183",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -18520,7 +19807,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -18544,8 +19839,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-184",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-184",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -18715,7 +20014,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "- early impression",
                 "printProcess": "Holzschnitt"
             },
@@ -18739,8 +20046,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-185",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-185",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -18910,7 +20221,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -18942,8 +20261,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-190",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-190",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -19102,7 +20425,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -19126,8 +20457,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-191",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-191",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -19284,7 +20619,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -19308,8 +20651,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-193",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-193",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -19556,7 +20903,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -19580,8 +20935,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-194",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-194",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -19828,7 +21187,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -19852,8 +21219,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-195",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-195",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -20100,7 +21471,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -20124,8 +21503,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-196",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-196",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -20372,7 +21755,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -20396,8 +21787,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-197",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-197",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -20644,7 +22039,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -20668,8 +22071,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-198",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-198",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -20916,7 +22323,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -20940,8 +22355,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-199",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-199",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -21188,7 +22607,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -21212,8 +22639,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-200",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-200",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -21460,7 +22891,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -21484,8 +22923,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-201",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-201",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -21732,7 +23175,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -21756,8 +23207,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-202",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-202",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -22004,7 +23459,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -22028,8 +23491,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-203",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-203",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -22276,7 +23743,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -22300,8 +23775,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-204",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-204",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -22548,7 +24027,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -22572,8 +24059,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-205",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-205",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -22820,7 +24311,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -22844,8 +24343,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-206",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-206",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -23092,7 +24595,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -23116,8 +24627,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-235",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-235",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -23293,7 +24808,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -23317,8 +24840,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-236",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-236",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -23483,7 +25010,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -23515,8 +25050,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-237",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-237",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -23681,7 +25220,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -23713,8 +25260,12 @@
             "inscription": "in the block on the horse's caparison a pattern with the letter 'G'",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-238",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-238",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -23878,7 +25429,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -23902,8 +25461,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-240",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-240",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -24080,7 +25643,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -24104,8 +25675,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-241",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-241",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -24282,7 +25857,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -24306,8 +25889,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-253",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-253",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -24423,7 +26010,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -24455,8 +26050,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-254",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-254",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -24559,7 +26158,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -24584,7 +26191,10 @@
             "markings": "",
             "relatedWorks": "",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [],
@@ -24638,7 +26248,15 @@
             "involvedPersonsNames": [],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -24663,7 +26281,10 @@
             "markings": "",
             "relatedWorks": "",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -24733,7 +26354,15 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -24758,7 +26387,10 @@
             "markings": "",
             "relatedWorks": "",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -24828,7 +26460,15 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -24853,7 +26493,10 @@
             "markings": "",
             "relatedWorks": "",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -24948,7 +26591,15 @@
             "involvedPersonsNames": [],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -24973,7 +26624,10 @@
             "markings": "",
             "relatedWorks": "",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -25107,7 +26761,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -25132,7 +26794,10 @@
             "markings": "",
             "relatedWorks": "Nicht identisch mit dem bei Oldenbourg 1962, S. 128, unter L 200 erw\u00e4hnten Holzschnitt, s. dazu Reiter \"Nur in schriften auftretend",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -25202,7 +26867,15 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Radierung"
             },
@@ -25227,7 +26900,10 @@
             "markings": "",
             "relatedWorks": "",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -25366,7 +27042,15 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -25391,7 +27075,10 @@
             "markings": "",
             "relatedWorks": "Hollstein German III.210; \nGeisberg, Deutsche Buchillustration VI, Nr. 605; \nR\u00f6ttinger 1927, Erg\u00e4nzungen, Nr. 1112 \u00df; \nPauli 1911, Beham Nachtr\u00e4ge, Nr. 898  \u00df [als \"Ein Heiliger (Paulus?)\"]\nZschelletzschky 1975, S. 245-250\nSchottenloher, in: Zs. f\u00fcr B\u00fccherfreunde N. F. IV\/2, 1913, S. 224",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -25461,7 +27148,15 @@
             "involvedPersonsNames": [],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -25486,7 +27181,10 @@
             "markings": "",
             "relatedWorks": "vgl. Derschau-Becker, Bd. 2, Nr. B50 (3. Zustand)",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -25696,7 +27394,15 @@
             "involvedPersonsNames": [],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -25721,7 +27427,10 @@
             "markings": "",
             "relatedWorks": "Ficker 1920, S. 23, Anm. 3",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -25791,7 +27500,15 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -25816,7 +27533,10 @@
             "markings": "",
             "relatedWorks": "",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -25901,7 +27621,15 @@
             "involvedPersonsNames": [],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -25926,7 +27654,10 @@
             "markings": "",
             "relatedWorks": "",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -25996,7 +27727,15 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -26021,7 +27760,10 @@
             "markings": "",
             "relatedWorks": "Schuchardt, G\u00fcnter: \"Welcher Luther ging nach Worms\" 2017, In: Beitr\u00e4ge zur Residenzkultur. Festschrift f\u00fcr Bernd Sch\u00e4fer, Stiftung Schloss Friedenstein, S. 14-23.",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -26131,7 +27873,15 @@
             "involvedPersonsNames": [],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -26156,7 +27906,10 @@
             "markings": "",
             "relatedWorks": "",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -26290,7 +28043,15 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Woodcut"
             },
@@ -26315,7 +28076,10 @@
             "markings": "",
             "relatedWorks": "Ausst. N\u00fcrnberg 1983, Martin Luther, S. 204, Kat. Nr. 260; \nStrau\u00df-Geisberg 1974, G.302",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -26441,7 +28205,15 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Eisenradierung"
             },
@@ -26466,7 +28238,10 @@
             "markings": "",
             "relatedWorks": "Ausst.-Kat. Hopfer M\u00fcnchen 2009, Nr. 102 (mit weiterer Literatur); Eyssen 1904, 90; Vasel 1903, 2881.01; Bartsch 1802-1821, 86 I",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -26646,7 +28421,15 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Kupferstich"
             },
@@ -26671,7 +28454,10 @@
             "markings": "",
             "relatedWorks": "Winzinger 1963, 171; Vasel 1903, 108; Waldmann 42; Ausst.-Kat. Altdorfer und der fantastische Realismus in dser deutschen Kunst, Paris 1984, Nr. 153",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -26884,7 +28670,15 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -26909,7 +28703,10 @@
             "markings": "",
             "relatedWorks": "Koepplin Archiv; Lindell, 2011, S. 78f., Ausst.-Kat. Here I stand, S. 241, S. 233",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -26983,7 +28780,15 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -27008,7 +28813,10 @@
             "markings": "",
             "relatedWorks": "Sch\u00e4fer, Eydinger, Rekow 2016 - Fliegende Bl\u00e4tter, Nr. 122 mit weiterer Literatur",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -27113,7 +28921,15 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Kupferstich"
             },
@@ -27138,7 +28954,10 @@
             "markings": "",
             "relatedWorks": "Strauss, Bd. 16, S. 68, Nr. 9; Ausst. Hamburg 1983, K\u00f6pfe der Lutherzeit, S. 236, Kat. Nr. 105; Waldmann, Die N\u00fcrnberger Kleinmeister, 1910, Taf. 40; Abb. 176; Ausst.-Kat. Meister um Albrecht D\u00fcrer, GNM 1961, Nr. 280 (als Pencz); Singer, Allgemeiner Bildniskatalog, 1930-1936, Bd. 8, S. 84 und 88; Kat. Nr.: 57890 & 58037; Bartsch VIII.302.9 erw\u00e4hnt eine abweichende Kopie",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -27282,7 +29101,15 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -27307,7 +29134,10 @@
             "markings": "",
             "relatedWorks": "Ausst.-Kat. Oberrhein. Buchillu. 1984, Nr. 455A; M\u00fcller 1997, S. 171, Nr. 111",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -27377,7 +29207,15 @@
             "involvedPersonsNames": [],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -27402,7 +29240,10 @@
             "markings": "",
             "relatedWorks": "Ficker, 1920, S. 22, angebl. Schreckenbach und Neubert, o.O. S. 100; Julius von Pflugk-Harttung, 1915, \"Im Morgenrot der Reformation\", S. 358 (hier nach Ficker f\u00e4lschlich auf 1518 datiert)",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -27536,7 +29377,15 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -27561,7 +29410,10 @@
             "markings": "",
             "relatedWorks": "",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -27650,7 +29502,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -27696,8 +29556,12 @@
             "inscription": "",
             "markings": "",
             "relatedWorks": "",
+<<<<<<< HEAD
+            "exhibitionHistory": "AT_A_DG1929-256v",
+=======
             "exhibitionHistory": "",
             "representativeObject": "AT_A_DG1929-256v",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -27800,7 +29664,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "",
                 "printProcess": "Collotype"
             },
@@ -27825,7 +29697,10 @@
             "markings": "",
             "relatedWorks": "",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -27922,7 +29797,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "Photomechanical reproduction",
                 "printProcess": "Lithography"
             },
@@ -27947,7 +29830,10 @@
             "markings": "none",
             "relatedWorks": "",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [
@@ -28023,7 +29909,15 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Print",
+=======
+<<<<<<< HEAD
+                "classification": "Druckgrafik",
+=======
+                "classification": "Prints",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
+>>>>>>> b74e5c14d1a27002c82651d0d8e1b17f6dc41f28
                 "condition": "photomechanical reproduction",
                 "printProcess": "Collotype"
             },
@@ -28048,7 +29942,10 @@
             "markings": "",
             "relatedWorks": "",
             "exhibitionHistory": "",
+<<<<<<< HEAD
+=======
             "representativeObject": "",
+>>>>>>> 22b512e9f3a5d48f21d9390657f953b0e793de66
             "bibliography": "",
             "references": {
                 "reprints": [

@@ -13,6 +13,7 @@ class RemoteImageExistenceChecker extends Hybrid
     private $remoteImageBasePath = 'imageserver/%s/';
     private $remoteImageDataPath = 'imageserver/%s/imageData.json';
     private $remoteImageSubDirectoryName = null;
+    private $remoteImageTypeAccessorFunc = null;
     private $cacheDir = null;
     private $cacheFilename = 'remoteImageExistenceChecker';
     private $cacheFileSuffix = '.cache';
@@ -25,13 +26,20 @@ class RemoteImageExistenceChecker extends Hybrid
 
     public static function withCacheAt(
         string $cacheDir,
-        string $remoteImageSubDirectoryName,
+        $remoteImageTypeAccessorFunc,
         string $cacheFilename = ''
     ) {
         $checker = new self;
 
-        if (!empty($remoteImageSibDirectoryName)) {
-            $checker->remoteImageSubDirectoryName = $remoteImageSibDirectoryName;
+        if (is_string($remoteImageTypeAccessorFunc) && !empty($remoteImageTypeAccessorFunc)) {
+            $imageType = $remoteImageTypeAccessorFunc;
+            $checker->remoteImageTypeAccessorFunc = function() use($imageType) {
+                return $imageType;
+            };
+        }
+
+        if (is_callable($remoteImageTypeAccessorFunc)) {
+            $checker->remoteImageTypeAccessorFunc = $remoteImageTypeAccessorFunc;
         }
 
         if (is_string($cacheDir)) {
@@ -40,10 +48,6 @@ class RemoteImageExistenceChecker extends Hybrid
             }
 
             $checker->cacheDir = $cacheDir;
-
-            if (!empty($remoteImageSubDirectoryName)) {
-                $checker->remoteImageSubDirectoryName = $remoteImageSubDirectoryName;
-            }
 
             if (!empty($cacheFilename)) {
                 $checker->cacheFilename = $cacheFilename;
@@ -56,8 +60,8 @@ class RemoteImageExistenceChecker extends Hybrid
             throw new Error('RemoteImageExistenceChecker: Missing cache directory for');
         }
 
-        if (is_null($checker->remoteImageSubDirectoryName)) {
-            throw new Error('RemoteImageExistenceChecker: Missing remote image subdirectory name');
+        if (is_null($checker->remoteImageTypeAccessorFunc)) {
+            throw new Error('RemoteImageExistenceChecker: Missing remote image type accessor');
         }
 
         return $checker;
@@ -87,7 +91,6 @@ class RemoteImageExistenceChecker extends Hybrid
         /* Fill cache to avoid unnecessary duplicate requests for the same resource */
         if (is_null($this->getCacheFor($id))) {
             $url = $this->buildURLForInventoryNumber($id);
-
             $result = $this->getRemoteImageDataResource($url);
             $rawImagesData = null;
 
@@ -105,8 +108,15 @@ class RemoteImageExistenceChecker extends Hybrid
         $cachedImagesForObject = $cachedItem['rawImagesData'];
 
         if (!is_null($cachedImagesForObject)) {
-            $preparedImages = $this->prepareRawImages($id, $cachedImagesForObject);
-            $item->setImages($preparedImages);
+            $imageType = call_user_func_array(
+                $this->remoteImageTypeAccessorFunc,
+                array($item, $cachedImagesForObject)
+            );
+
+            if ($imageType) {
+                $preparedImages = $this->prepareRawImages($id, $imageType, $cachedImagesForObject);
+                $item->setImages($preparedImages);
+            }
         }
 
         $this->next($item);
@@ -178,7 +188,11 @@ class RemoteImageExistenceChecker extends Hybrid
     }
 
 
-    private function prepareRawImages(string $inventoryNumber, array $cachedImagesForObject): array
+    private function prepareRawImages(
+        string $inventoryNumber,
+        string $imageType,
+        array $cachedImagesForObject
+    ): array
     {
         $destinationStructure = [
             'infos' => [
@@ -209,11 +223,11 @@ class RemoteImageExistenceChecker extends Hybrid
         ];
 
         $imageStack = $cachedImagesForObject['imageStack'];
-        $baseStackItem = $imageStack[$this->remoteImageSubDirectoryName];
 
-        if (!isset($baseStackItem)) {
-            throw new Error('Could not find base stack item ' . $this->remoteImageSubDirectoryName);
+        if (!isset($imageStack[$imageType])) {
+            throw new Error('RemoteImageExistenceChecker: Could not find base stack item ' . $imageType);
         }
+        $baseStackItem = $imageStack[$imageType];
 
         $destinationStructure['infos']['maxDimensions'] = [
             'width' => intval($baseStackItem['maxDimensions']['width']),
@@ -223,8 +237,7 @@ class RemoteImageExistenceChecker extends Hybrid
         foreach ($baseStackItem['images'] as $size => $image) {
             $dimensions = $image['dimensions'];
             $src = $this->serverHost .
-                sprintf($this->remoteImageBasePath, $inventoryNumber) .
-                $this->remoteImageSubDirectoryName . '/' . $image['src'];
+                sprintf($this->remoteImageBasePath, $inventoryNumber) . $image['src'];
 
             $destinationStructure['sizes'][$size] = [
                 'dimensions' => [
