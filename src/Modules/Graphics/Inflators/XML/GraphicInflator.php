@@ -69,7 +69,11 @@ class GraphicInflator implements IInflator
         /* classification */
         'Druckgrafik' => [
             Language::DE => 'Druckgrafik',
-            Language::EN => 'Prints',
+            Language::EN => 'Print',
+        ],
+        'Zeichnung' => [
+            Language::DE => 'Zeichnung',
+            Language::EN => 'Drawing',
         ],
     ];
 

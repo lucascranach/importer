@@ -26763,7 +26763,7 @@
             "classification": {
                 "classification": "Druckgrafik",
                 "condition": "",
-                "printProcess": "Holzschnitt#Woodcut"
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
             "objectName": "",
@@ -28361,7 +28361,7 @@
             "classification": {
                 "classification": "Druckgrafik",
                 "condition": "Fotomechanische Reproduktion nach Vorlage eines sp\u00e4teren Abzugs von der Cranach-Platte\n[Thomas Klinke, KKL 2020]",
-                "printProcess": "Lichtdruck#Collotype"
+                "printProcess": "Lichtdruck"
             },
             "conditionLevel": 0,
             "objectName": "",
@@ -28483,7 +28483,7 @@
             "classification": {
                 "classification": "Druckgrafik",
                 "condition": "Fotomechanische Reproduktion",
-                "printProcess": "Lithographie#Lithography"
+                "printProcess": "Lithographie"
             },
             "conditionLevel": 0,
             "objectName": "",
@@ -28584,7 +28584,7 @@
             "classification": {
                 "classification": "Druckgrafik",
                 "condition": "Fotomechanische Reproduktion",
-                "printProcess": "Lichtdruck#Collotype"
+                "printProcess": "Lichtdruck"
             },
             "conditionLevel": 0,
             "objectName": "",
