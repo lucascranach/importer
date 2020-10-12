@@ -118,7 +118,7 @@ RestorationsLoader::withSourcesAt($graphicsRestorationInputFilepaths)->pipe(
 /* Graphics */
 $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     './.cache',
-    function($item) {
+    function ($item) {
         $imageType = 'overall';
 
         if ($item->getIsVirtual()) {

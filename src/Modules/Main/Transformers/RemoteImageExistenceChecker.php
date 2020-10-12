@@ -33,7 +33,7 @@ class RemoteImageExistenceChecker extends Hybrid
 
         if (is_string($remoteImageTypeAccessorFunc) && !empty($remoteImageTypeAccessorFunc)) {
             $imageType = $remoteImageTypeAccessorFunc;
-            $checker->remoteImageTypeAccessorFunc = function() use($imageType) {
+            $checker->remoteImageTypeAccessorFunc = function () use ($imageType) {
                 return $imageType;
             };
         }
@@ -110,7 +110,7 @@ class RemoteImageExistenceChecker extends Hybrid
         if (!is_null($cachedImagesForObject)) {
             $imageType = call_user_func_array(
                 $this->remoteImageTypeAccessorFunc,
-                array($item, $cachedImagesForObject)
+                [$item, $cachedImagesForObject]
             );
 
             if ($imageType) {
@@ -192,8 +192,7 @@ class RemoteImageExistenceChecker extends Hybrid
         string $inventoryNumber,
         string $imageType,
         array $cachedImagesForObject
-    ): array
-    {
+    ): array {
         $destinationStructure = [
             'infos' => [
                 'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
