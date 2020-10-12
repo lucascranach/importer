@@ -479,9 +479,15 @@ class GraphicInflator implements IInflator
         if ($objectNameElement) {
             $objectNameStr = trim($objectNameElement);
 
-            /* Using single german value for both language objects */
-            $classificationDe->setPrintProcess($objectNameStr);
-            $classificationEn->setPrintProcess($objectNameStr);
+            $splitObjectNameStr = self::splitLanguageString($objectNameStr);
+
+            if (isset($splitObjectNameStr[0])) {
+                $classificationDe->setPrintProcess($splitObjectNameStr[0]);
+            }
+
+            if (isset($splitObjectNameStr[1])) {
+                $classificationEn->setPrintProcess($splitObjectNameStr[1]);
+            }
         }
     }
 
