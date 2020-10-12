@@ -38,7 +38,7 @@
         "hooks": {
             "pre-commit": [
                 "echo \"committing as $(git config user.name) ($(git config user.email))\"",
-                "composer lint:fix",
+                "composer lint",
                 "composer analyse"
             ],
             "pre-push": [
