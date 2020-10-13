@@ -464,45 +464,45 @@
             "images": {
                 "infos": {
                     "maxDimensions": {
-                        "width": 1566,
-                        "height": 1754
+                        "width": 3172,
+                        "height": 3525
                     }
                 },
                 "sizes": {
                     "xs": {
                         "dimensions": {
                             "width": 200,
-                            "height": 224
+                            "height": 222
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-75\/G_AT_A_DG1929-75_Overall-002-xs.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-75\/G_AT_A_DG1929-75_2016_Overall-xs.jpg"
                     },
                     "s": {
                         "dimensions": {
                             "width": 300,
-                            "height": 336
+                            "height": 333
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-75\/G_AT_A_DG1929-75_Overall-002-s.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-75\/G_AT_A_DG1929-75_2016_Overall-s.jpg"
                     },
                     "m": {
                         "dimensions": {
                             "width": 800,
-                            "height": 896
+                            "height": 889
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-75\/G_AT_A_DG1929-75_Overall-002-m.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-75\/G_AT_A_DG1929-75_2016_Overall-m.jpg"
                     },
                     "l": {
                         "dimensions": {
                             "width": 1200,
-                            "height": 1344
+                            "height": 1334
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-75\/G_AT_A_DG1929-75_Overall-002-l.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-75\/G_AT_A_DG1929-75_2016_Overall-l.jpg"
                     },
                     "xl": {
                         "dimensions": {
-                            "width": 1566,
-                            "height": 1754
+                            "width": 3172,
+                            "height": 3525
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-75\/G_AT_A_DG1929-75_Overall-002-xl.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-75\/G_AT_A_DG1929-75_2016_Overall-xl.jpg"
                     }
                 }
             }
@@ -831,45 +831,45 @@
             "images": {
                 "infos": {
                     "maxDimensions": {
-                        "width": 6132,
-                        "height": 8176
+                        "width": 5396,
+                        "height": 7280
                     }
                 },
                 "sizes": {
                     "xs": {
                         "dimensions": {
                             "width": 200,
-                            "height": 267
+                            "height": 270
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_DE_SKD_A6645\/G_DE_SKD_A6645_Overall_003-xs.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_DE_SKD_A6645\/G_DE_SKD_A6645_Overall-xs.jpg"
                     },
                     "s": {
                         "dimensions": {
                             "width": 300,
-                            "height": 400
+                            "height": 405
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_DE_SKD_A6645\/G_DE_SKD_A6645_Overall_003-s.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_DE_SKD_A6645\/G_DE_SKD_A6645_Overall-s.jpg"
                     },
                     "m": {
                         "dimensions": {
                             "width": 800,
-                            "height": 1067
+                            "height": 1079
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_DE_SKD_A6645\/G_DE_SKD_A6645_Overall_003-m.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_DE_SKD_A6645\/G_DE_SKD_A6645_Overall-m.jpg"
                     },
                     "l": {
                         "dimensions": {
                             "width": 1200,
-                            "height": 1600
+                            "height": 1619
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_DE_SKD_A6645\/G_DE_SKD_A6645_Overall_003-l.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_DE_SKD_A6645\/G_DE_SKD_A6645_Overall-l.jpg"
                     },
                     "xl": {
                         "dimensions": {
-                            "width": 6132,
-                            "height": 8176
+                            "width": 5396,
+                            "height": 7280
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_DE_SKD_A6645\/G_DE_SKD_A6645_Overall_003-xl.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_DE_SKD_A6645\/G_DE_SKD_A6645_Overall-xl.jpg"
                     }
                 }
             }
@@ -1034,8 +1034,8 @@
             "images": {
                 "infos": {
                     "maxDimensions": {
-                        "width": 1983,
-                        "height": 1463
+                        "width": 3708,
+                        "height": 2746
                     }
                 },
                 "sizes": {
@@ -1044,35 +1044,35 @@
                             "width": 200,
                             "height": 148
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-98\/G_AT_A_DG1929-98_Overall-002-xs.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-98\/G_AT_A_DG1929-98_2010_Overall-xs.jpg"
                     },
                     "s": {
                         "dimensions": {
                             "width": 300,
-                            "height": 221
+                            "height": 222
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-98\/G_AT_A_DG1929-98_Overall-002-s.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-98\/G_AT_A_DG1929-98_2010_Overall-s.jpg"
                     },
                     "m": {
                         "dimensions": {
                             "width": 800,
-                            "height": 590
+                            "height": 592
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-98\/G_AT_A_DG1929-98_Overall-002-m.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-98\/G_AT_A_DG1929-98_2010_Overall-m.jpg"
                     },
                     "l": {
                         "dimensions": {
                             "width": 1200,
-                            "height": 885
+                            "height": 889
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-98\/G_AT_A_DG1929-98_Overall-002-l.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-98\/G_AT_A_DG1929-98_2010_Overall-l.jpg"
                     },
                     "xl": {
                         "dimensions": {
-                            "width": 1983,
-                            "height": 1463
+                            "width": 3708,
+                            "height": 2746
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-98\/G_AT_A_DG1929-98_Overall-002-xl.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-98\/G_AT_A_DG1929-98_2010_Overall-xl.jpg"
                     }
                 }
             }
@@ -3040,45 +3040,45 @@
             "images": {
                 "infos": {
                     "maxDimensions": {
-                        "width": 1449,
-                        "height": 1982
+                        "width": 2609,
+                        "height": 3543
                     }
                 },
                 "sizes": {
                     "xs": {
                         "dimensions": {
                             "width": 200,
-                            "height": 274
+                            "height": 272
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-187\/G_AT_A_DG1929-187_Overall-002-xs.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-187\/G_AT_A_DG1929-187_2016_Overall-xs.jpg"
                     },
                     "s": {
                         "dimensions": {
                             "width": 300,
-                            "height": 410
+                            "height": 407
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-187\/G_AT_A_DG1929-187_Overall-002-s.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-187\/G_AT_A_DG1929-187_2016_Overall-s.jpg"
                     },
                     "m": {
                         "dimensions": {
                             "width": 800,
-                            "height": 1094
+                            "height": 1086
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-187\/G_AT_A_DG1929-187_Overall-002-m.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-187\/G_AT_A_DG1929-187_2016_Overall-m.jpg"
                     },
                     "l": {
                         "dimensions": {
                             "width": 1200,
-                            "height": 1641
+                            "height": 1630
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-187\/G_AT_A_DG1929-187_Overall-002-l.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-187\/G_AT_A_DG1929-187_2016_Overall-l.jpg"
                     },
                     "xl": {
                         "dimensions": {
-                            "width": 1449,
-                            "height": 1982
+                            "width": 2609,
+                            "height": 3543
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-187\/G_AT_A_DG1929-187_Overall-002-xl.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-187\/G_AT_A_DG1929-187_2016_Overall-xl.jpg"
                     }
                 }
             }
@@ -3228,45 +3228,45 @@
             "images": {
                 "infos": {
                     "maxDimensions": {
-                        "width": 2438,
-                        "height": 1109
+                        "width": 3510,
+                        "height": 1610
                     }
                 },
                 "sizes": {
                     "xs": {
                         "dimensions": {
                             "width": 200,
-                            "height": 91
+                            "height": 92
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-188\/G_AT_A_DG1929-188_Overall-002-xs.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-188\/G_AT_A_DG1929-188_2016_Overall-xs.jpg"
                     },
                     "s": {
                         "dimensions": {
                             "width": 300,
-                            "height": 136
+                            "height": 138
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-188\/G_AT_A_DG1929-188_Overall-002-s.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-188\/G_AT_A_DG1929-188_2016_Overall-s.jpg"
                     },
                     "m": {
                         "dimensions": {
                             "width": 800,
-                            "height": 364
+                            "height": 367
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-188\/G_AT_A_DG1929-188_Overall-002-m.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-188\/G_AT_A_DG1929-188_2016_Overall-m.jpg"
                     },
                     "l": {
                         "dimensions": {
                             "width": 1200,
-                            "height": 546
+                            "height": 550
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-188\/G_AT_A_DG1929-188_Overall-002-l.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-188\/G_AT_A_DG1929-188_2016_Overall-l.jpg"
                     },
                     "xl": {
                         "dimensions": {
-                            "width": 2438,
-                            "height": 1109
+                            "width": 3510,
+                            "height": 1610
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-188\/G_AT_A_DG1929-188_Overall-002-xl.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-188\/G_AT_A_DG1929-188_2016_Overall-xl.jpg"
                     }
                 }
             }
@@ -4164,8 +4164,8 @@
             "images": {
                 "infos": {
                     "maxDimensions": {
-                        "width": 1564,
-                        "height": 1858
+                        "width": 3061,
+                        "height": 3640
                     }
                 },
                 "sizes": {
@@ -4174,35 +4174,35 @@
                             "width": 200,
                             "height": 238
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-72\/G_AT_A_DG1929-72_Overall-002-xs.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-72\/G_AT_A_DG1929-72_2016_Overall-xs.jpg"
                     },
                     "s": {
                         "dimensions": {
                             "width": 300,
-                            "height": 356
+                            "height": 357
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-72\/G_AT_A_DG1929-72_Overall-002-s.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-72\/G_AT_A_DG1929-72_2016_Overall-s.jpg"
                     },
                     "m": {
                         "dimensions": {
                             "width": 800,
-                            "height": 950
+                            "height": 951
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-72\/G_AT_A_DG1929-72_Overall-002-m.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-72\/G_AT_A_DG1929-72_2016_Overall-m.jpg"
                     },
                     "l": {
                         "dimensions": {
                             "width": 1200,
-                            "height": 1426
+                            "height": 1427
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-72\/G_AT_A_DG1929-72_Overall-002-l.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-72\/G_AT_A_DG1929-72_2016_Overall-l.jpg"
                     },
                     "xl": {
                         "dimensions": {
-                            "width": 1564,
-                            "height": 1858
+                            "width": 3061,
+                            "height": 3640
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-72\/G_AT_A_DG1929-72_Overall-002-xl.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-72\/G_AT_A_DG1929-72_2016_Overall-xl.jpg"
                     }
                 }
             }
@@ -4699,45 +4699,45 @@
             "images": {
                 "infos": {
                     "maxDimensions": {
-                        "width": 1363,
-                        "height": 1950
+                        "width": 1955,
+                        "height": 2763
                     }
                 },
                 "sizes": {
                     "xs": {
                         "dimensions": {
                             "width": 200,
-                            "height": 286
+                            "height": 283
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-78\/G_AT_A_DG1929-78_Overall-002-xs.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-78\/G_AT_A_DG1929-78_2007_Overall-xs.jpg"
                     },
                     "s": {
                         "dimensions": {
                             "width": 300,
-                            "height": 429
+                            "height": 424
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-78\/G_AT_A_DG1929-78_Overall-002-s.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-78\/G_AT_A_DG1929-78_2007_Overall-s.jpg"
                     },
                     "m": {
                         "dimensions": {
                             "width": 800,
-                            "height": 1145
+                            "height": 1131
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-78\/G_AT_A_DG1929-78_Overall-002-m.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-78\/G_AT_A_DG1929-78_2007_Overall-m.jpg"
                     },
                     "l": {
                         "dimensions": {
                             "width": 1200,
-                            "height": 1717
+                            "height": 1696
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-78\/G_AT_A_DG1929-78_Overall-002-l.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-78\/G_AT_A_DG1929-78_2007_Overall-l.jpg"
                     },
                     "xl": {
                         "dimensions": {
-                            "width": 1363,
-                            "height": 1950
+                            "width": 1955,
+                            "height": 2763
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-78\/G_AT_A_DG1929-78_Overall-002-xl.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-78\/G_AT_A_DG1929-78_2007_Overall-xl.jpg"
                     }
                 }
             }
@@ -8049,45 +8049,45 @@
             "images": {
                 "infos": {
                     "maxDimensions": {
-                        "width": 1456,
-                        "height": 2078
+                        "width": 2588,
+                        "height": 3661
                     }
                 },
                 "sizes": {
                     "xs": {
                         "dimensions": {
                             "width": 200,
-                            "height": 285
+                            "height": 283
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-103\/G_AT_A_DG1929-103_Overall-002-xs.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-103\/G_AT_A_DG1929-103_2016_Overall-xs.jpg"
                     },
                     "s": {
                         "dimensions": {
                             "width": 300,
-                            "height": 428
+                            "height": 424
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-103\/G_AT_A_DG1929-103_Overall-002-s.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-103\/G_AT_A_DG1929-103_2016_Overall-s.jpg"
                     },
                     "m": {
                         "dimensions": {
                             "width": 800,
-                            "height": 1142
+                            "height": 1132
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-103\/G_AT_A_DG1929-103_Overall-002-m.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-103\/G_AT_A_DG1929-103_2016_Overall-m.jpg"
                     },
                     "l": {
                         "dimensions": {
                             "width": 1200,
-                            "height": 1713
+                            "height": 1698
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-103\/G_AT_A_DG1929-103_Overall-002-l.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-103\/G_AT_A_DG1929-103_2016_Overall-l.jpg"
                     },
                     "xl": {
                         "dimensions": {
-                            "width": 1456,
-                            "height": 2078
+                            "width": 2588,
+                            "height": 3661
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-103\/G_AT_A_DG1929-103_Overall-002-xl.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-103\/G_AT_A_DG1929-103_2016_Overall-xl.jpg"
                     }
                 }
             }
@@ -14597,45 +14597,45 @@
             "images": {
                 "infos": {
                     "maxDimensions": {
-                        "width": 1397,
-                        "height": 2025
+                        "width": 2477,
+                        "height": 3581
                     }
                 },
                 "sizes": {
                     "xs": {
                         "dimensions": {
                             "width": 200,
-                            "height": 290
+                            "height": 289
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-80\/G_AT_A_DG1929-80_Overall-002-xs.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-80\/G_AT_A_DG1929-80_2014_Overall-xs.jpg"
                     },
                     "s": {
                         "dimensions": {
                             "width": 300,
-                            "height": 435
+                            "height": 434
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-80\/G_AT_A_DG1929-80_Overall-002-s.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-80\/G_AT_A_DG1929-80_2014_Overall-s.jpg"
                     },
                     "m": {
                         "dimensions": {
                             "width": 800,
-                            "height": 1160
+                            "height": 1157
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-80\/G_AT_A_DG1929-80_Overall-002-m.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-80\/G_AT_A_DG1929-80_2014_Overall-m.jpg"
                     },
                     "l": {
                         "dimensions": {
                             "width": 1200,
-                            "height": 1739
+                            "height": 1735
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-80\/G_AT_A_DG1929-80_Overall-002-l.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-80\/G_AT_A_DG1929-80_2014_Overall-l.jpg"
                     },
                     "xl": {
                         "dimensions": {
-                            "width": 1397,
-                            "height": 2025
+                            "width": 2477,
+                            "height": 3581
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-80\/G_AT_A_DG1929-80_Overall-002-xl.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-80\/G_AT_A_DG1929-80_2014_Overall-xl.jpg"
                     }
                 }
             }
@@ -19784,45 +19784,45 @@
             "images": {
                 "infos": {
                     "maxDimensions": {
-                        "width": 1451,
-                        "height": 2077
+                        "width": 2514,
+                        "height": 3608
                     }
                 },
                 "sizes": {
                     "xs": {
                         "dimensions": {
                             "width": 200,
-                            "height": 286
+                            "height": 287
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-185\/G_AT_A_DG1929-185_Overall-002-xs.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-185\/G_AT_A_DG1929-185_2016_Overall-xs.jpg"
                     },
                     "s": {
                         "dimensions": {
                             "width": 300,
-                            "height": 429
+                            "height": 431
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-185\/G_AT_A_DG1929-185_Overall-002-s.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-185\/G_AT_A_DG1929-185_2016_Overall-s.jpg"
                     },
                     "m": {
                         "dimensions": {
                             "width": 800,
-                            "height": 1145
+                            "height": 1148
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-185\/G_AT_A_DG1929-185_Overall-002-m.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-185\/G_AT_A_DG1929-185_2016_Overall-m.jpg"
                     },
                     "l": {
                         "dimensions": {
                             "width": 1200,
-                            "height": 1718
+                            "height": 1722
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-185\/G_AT_A_DG1929-185_Overall-002-l.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-185\/G_AT_A_DG1929-185_2016_Overall-l.jpg"
                     },
                     "xl": {
                         "dimensions": {
-                            "width": 1451,
-                            "height": 2077
+                            "width": 2514,
+                            "height": 3608
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-185\/G_AT_A_DG1929-185_Overall-002-xl.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-185\/G_AT_A_DG1929-185_2016_Overall-xl.jpg"
                     }
                 }
             }
@@ -20005,45 +20005,45 @@
             "images": {
                 "infos": {
                     "maxDimensions": {
-                        "width": 1901,
-                        "height": 1602
+                        "width": 3622,
+                        "height": 3034
                     }
                 },
                 "sizes": {
                     "xs": {
                         "dimensions": {
                             "width": 200,
-                            "height": 169
+                            "height": 168
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-190\/G_AT_A_DG1929-190_Overall-002-xs.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-190\/G_AT_A_DG1929-190_2010_Overall-xs.jpg"
                     },
                     "s": {
                         "dimensions": {
                             "width": 300,
-                            "height": 253
+                            "height": 251
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-190\/G_AT_A_DG1929-190_Overall-002-s.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-190\/G_AT_A_DG1929-190_2010_Overall-s.jpg"
                     },
                     "m": {
                         "dimensions": {
                             "width": 800,
-                            "height": 674
+                            "height": 670
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-190\/G_AT_A_DG1929-190_Overall-002-m.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-190\/G_AT_A_DG1929-190_2010_Overall-m.jpg"
                     },
                     "l": {
                         "dimensions": {
                             "width": 1200,
-                            "height": 1011
+                            "height": 1005
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-190\/G_AT_A_DG1929-190_Overall-002-l.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-190\/G_AT_A_DG1929-190_2010_Overall-l.jpg"
                     },
                     "xl": {
                         "dimensions": {
-                            "width": 1901,
-                            "height": 1602
+                            "width": 3622,
+                            "height": 3034
                         },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-190\/G_AT_A_DG1929-190_Overall-002-xl.jpg"
+                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-190\/G_AT_A_DG1929-190_2010_Overall-xl.jpg"
                     }
                 }
             }
