@@ -47,5 +47,8 @@
             ],
             "post-merge": "composer update"
         }
+    },
+    "config": {
+        "process-timeout": 0
     }
 }
