@@ -11,31 +11,39 @@ abstract class AbstractImagesItem
 
     /* Awaited images structure if images exist
         [
-            'infos' => [
-                'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
+            'overall' => [
+                'infos' => [
+                    'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
+                ],
+                'variants' => [
+                    [
+                        'xs' => [
+                            'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                            'src' => '',
+                        ],
+                        's' => [
+                            'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                            'src' => '',
+                        ],
+                        'm' => [
+                            'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                            'src' => '',
+                        ],
+                        'l' => [
+                            'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                            'src' => '',
+                        ],
+                        'xl' => [
+                            'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                            'src' => '',
+                        ],
+                    ],
+
+                    // ... multiple variants
+                ],
             ],
-            'sizes' => [
-                'xs' => [
-                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                    'src' => '',
-                ],
-                's' => [
-                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                    'src' => '',
-                ],
-                'm' => [
-                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                    'src' => '',
-                ],
-                'l' => [
-                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                    'src' => '',
-                ],
-                'xl' => [
-                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                    'src' => '',
-                ],
-            ],
+
+            // ... multiple image types possible, like 'representative' -> key-value pairs
         ]
     */
 

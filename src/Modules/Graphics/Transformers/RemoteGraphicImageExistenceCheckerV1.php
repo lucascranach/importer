@@ -1,21 +1,38 @@
 <?php
 
-namespace CranachDigitalArchive\Importer\Modules\Main\Transformers;
+namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
 use Error;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\AbstractImagesItem;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
-class RemoteImageExistenceChecker extends Hybrid
+class RemoteGraphicImageExistenceCheckerV1 extends Hybrid
 {
-    private $serverHost = 'http://lucascranach.org/';
-    private $remoteImageBasePath = 'imageserver/%s/';
-    private $remoteImageDataPath = 'imageserver/%s/imageData.json';
+    const REPRESENTATIVE = 'representative';
+    const OVERALL = 'overall';
+    const REVERSE = 'reverse';
+    const IRR = 'irr';
+    const X_RADIOGRAPH = 'x-radiograph';
+    const UV_LIGHT = 'uv-light';
+    const DETAIL = 'detail';
+    const PHOTOMICROGRAPH = 'photomicrograph';
+    const CONSERVATION = 'conservation';
+    const OTHER = 'other';
+    const ANALYSIS = 'analysis';
+    const RKD = 'rkd';
+    const KOE = 'koe';
+    const REFLECTED_LIGHT = 'reflected-light';
+    const TRANSMITTED_LIGHT = 'transmitted-light';
+
+
+    private $serverHost = 'http://lucascranach.org';
+    private $remoteImageBasePath = 'imageserver/%s/%s';
+    private $remoteImageDataPath = 'imageserver/%s/imageData-1.0.json';
     private $remoteImageSubDirectoryName = null;
     private $remoteImageTypeAccessorFunc = null;
     private $cacheDir = null;
-    private $cacheFilename = 'remoteImageExistenceChecker';
+    private $cacheFilename = 'remoteGraphicImageExistenceChecker-v1';
     private $cacheFileSuffix = '.cache';
     private $cache = [];
 
@@ -131,7 +148,10 @@ class RemoteImageExistenceChecker extends Hybrid
             $inventoryNumber,
         );
 
-        return $this->serverHost . $interpolatedRemoteImageDataPath;
+        return implode('/', [
+            $this->serverHost,
+            $interpolatedRemoteImageDataPath
+        ]);
     }
 
 
@@ -193,33 +213,7 @@ class RemoteImageExistenceChecker extends Hybrid
         string $imageType,
         array $cachedImagesForObject
     ): array {
-        $destinationStructure = [
-            'infos' => [
-                'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
-            ],
-            'sizes' => [
-                'xs' => [
-                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                    'src' => '',
-                ],
-                's' => [
-                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                    'src' => '',
-                ],
-                'm' => [
-                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                    'src' => '',
-                ],
-                'l' => [
-                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                    'src' => '',
-                ],
-                'xl' => [
-                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                    'src' => '',
-                ],
-            ],
-        ];
+        $imageTypes = [];
 
         $imageStack = $cachedImagesForObject['imageStack'];
 
@@ -228,17 +222,75 @@ class RemoteImageExistenceChecker extends Hybrid
         }
         $baseStackItem = $imageStack[$imageType];
 
-        $destinationStructure['infos']['maxDimensions'] = [
-            'width' => intval($baseStackItem['maxDimensions']['width']),
-            'height' => intval($baseStackItem['maxDimensions']['height']),
+        $imageTypes[$imageType] = $this->getPreparedImageType(
+            $baseStackItem,
+            $inventoryNumber,
+            $imageType,
+        );
+
+        return $imageTypes;
+    }
+
+
+    private function getPreparedImageType($stackItem, $inventoryNumber, $imageType)
+    {
+        $destinationTypeStructure = [
+            'infos' => [
+                'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
+            ],
+            'variants' => [],
         ];
 
-        foreach ($baseStackItem['images'] as $size => $image) {
-            $dimensions = $image['dimensions'];
-            $src = $this->serverHost .
-                sprintf($this->remoteImageBasePath, $inventoryNumber) . $image['src'];
+        $destinationTypeStructure['infos']['maxDimensions'] = [
+            'width' => intval($stackItem['maxDimensions']['width']),
+            'height' => intval($stackItem['maxDimensions']['height']),
+        ];
 
-            $destinationStructure['sizes'][$size] = [
+        $images = [];
+
+        if ($imageType === self::REPRESENTATIVE) {
+            /* representative images have no variants, so we have to wrap it in an array */
+            $images = [ $stackItem['images'] ];
+        } else {
+            $images = $stackItem['images'];
+        }
+
+        foreach ($images as $image) {
+            $destinationTypeStructure['variants'][] = $this->getPreparedImageVariant(
+                $image,
+                $inventoryNumber,
+                $imageType,
+            );
+        }
+
+        return $destinationTypeStructure;
+    }
+
+
+    private function getPreparedImageVariant($image, $inventoryNumber, $imageType)
+    {
+        /* Set default values for all supported sizes */
+        $variantSizes = array_reduce(
+            ['xs', 's', 'm', 'l', 'xl'],
+            function ($carry, $sizeCode) {
+                $carry[$sizeCode] = [
+                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                    'src' => '',
+                ];
+                return $carry;
+            },
+        );
+
+        foreach ($image as $size => $variant) {
+            $dimensions = $variant['dimensions'];
+            $imageTypePath = isset($variant['path']) ? $variant['path'] : $imageType;
+            $src = implode('/', [
+                $this->serverHost,
+                sprintf($this->remoteImageBasePath, $inventoryNumber, $imageTypePath),
+                $variant['src'],
+            ]);
+
+            $variantSizes[$size] = [
                 'dimensions' => [
                     'width' => intval($dimensions['width']),
                     'height' => intval($dimensions['height']),
@@ -247,7 +299,7 @@ class RemoteImageExistenceChecker extends Hybrid
             ];
         }
 
-        return $destinationStructure;
+        return $variantSizes;
     }
 
 

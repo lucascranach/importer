@@ -4,13 +4,13 @@ namespace CranachDigitalArchive\Importer;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsLoader;
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsJSONLangExistenceTypeExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterminer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithThesaurus as GraphicsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRestorations as GraphicsExtenderWithRestorations;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\RemoteGraphicImageExistenceCheckerV1;
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
 use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\LiteratureReferencesLoader;
@@ -20,6 +20,7 @@ use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsJSONLang
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithThesaurus as PaintingsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithRestorations as PaintingsExtenderWithRestorations;
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\RemotePaintingImageExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Archivals\Loaders\XML\ArchivalsLoader;
 use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader;
@@ -83,10 +84,9 @@ RestorationsLoader::withSourcesAt($paintingsRestorationInputFilepaths)->pipe(
 
 
 /* Paintings */
-$paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
+$paintingsRemoteImageExistenceChecker = RemotePaintingImageExistenceChecker::withCacheAt(
     './.cache',
-    'pyramid',
-    'paintingssRemoteImageExistenceChecker',
+    RemotePaintingImageExistenceChecker::PYRAMID,
 );
 $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
 $paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination);
@@ -116,18 +116,14 @@ RestorationsLoader::withSourcesAt($graphicsRestorationInputFilepaths)->pipe(
 
 
 /* Graphics */
-$graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
+$graphicsRemoteImageExistenceChecker = RemoteGraphicImageExistenceCheckerV1::withCacheAt(
     './.cache',
     function ($item) {
-        $imageType = 'overall';
-
-        if ($item->getIsVirtual()) {
-            return 'representative';
-        }
-
-        return $imageType;
+        /* We want the representative images for virtual objects */
+        return $item->getIsVirtual()
+            ? RemoteGraphicImageExistenceCheckerV1::REPRESENTATIVE
+            : RemoteGraphicImageExistenceCheckerV1::OVERALL;
     },
-    'graphicsRemoteImageExistenceChecker',
 );
 $graphicsConditionDeterminer = ConditionDeterminer::new();
 $graphicsRestorationExtender = GraphicsExtenderWithRestorations::new($graphicsRestorationMemoryDestination);
