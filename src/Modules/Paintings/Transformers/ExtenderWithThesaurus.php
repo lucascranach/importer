@@ -142,7 +142,10 @@ class ExtenderWithThesaurus extends Hybrid
             $id = $this->getDKultIdentifierForTerm($currTerm);
 
             $item = new ThesaurusItem();
-            $item->setId($id);
+
+            if (!is_null($id)) {
+                $item->setId($id);
+            }
 
             $term = $currTerm->getTerm();
 
@@ -157,7 +160,7 @@ class ExtenderWithThesaurus extends Hybrid
 
             $item->setTerm($term);
 
-            if ($i > 0) {
+            if ($i > 0 && !is_null($prevId)) {
                 $item->setParentId($prevId);
             }
 

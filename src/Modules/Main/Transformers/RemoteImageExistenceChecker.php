@@ -42,23 +42,17 @@ class RemoteImageExistenceChecker extends Hybrid
             $checker->remoteImageTypeAccessorFunc = $remoteImageTypeAccessorFunc;
         }
 
-        if (is_string($cacheDir)) {
-            if (!file_exists($cacheDir)) {
-                @mkdir($cacheDir, 0777, true);
-            }
-
-            $checker->cacheDir = $cacheDir;
-
-            if (!empty($cacheFilename)) {
-                $checker->cacheFilename = $cacheFilename;
-            }
-
-            $checker->restoreCache();
+        if (!file_exists($cacheDir)) {
+            @mkdir($cacheDir, 0777, true);
         }
 
-        if (is_null($checker->cacheDir)) {
-            throw new Error('RemoteImageExistenceChecker: Missing cache directory for');
+        $checker->cacheDir = $cacheDir;
+
+        if (!empty($cacheFilename)) {
+            $checker->cacheFilename = $cacheFilename;
         }
+
+        $checker->restoreCache();
 
         if (is_null($checker->remoteImageTypeAccessorFunc)) {
             throw new Error('RemoteImageExistenceChecker: Missing remote image type accessor');

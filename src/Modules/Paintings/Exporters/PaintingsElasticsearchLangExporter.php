@@ -41,8 +41,7 @@ class PaintingsElasticsearchLangExporter extends Consumer implements IFileExport
 
         $exporter->filename = $splitFilename[0];
 
-        if (is_null($exporter->dirname) || empty($exporter->dirname)
-            || is_null($exporter->filename) || empty($exporter->filename)) {
+        if (empty($exporter->dirname) || empty($exporter->filename)) {
             throw new Error('No filepath for JSON paintings export set!');
         }
 

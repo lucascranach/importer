@@ -60,9 +60,13 @@ class ThesaurusInflator implements IInflator
     {
         $thesaurusTerm = new ThesaurusTerm;
 
-        foreach ($termElement->attributes() as $attribute) {
-            if ($attribute->getName() === 'term') {
-                $thesaurusTerm->setTerm(strval($attribute));
+        $attributes = $termElement->attributes();
+
+        if (!is_null($attributes)) {
+            foreach ($attributes as $attribute) {
+                if ($attribute->getName() === 'term') {
+                    $thesaurusTerm->setTerm(strval($attribute));
+                }
             }
         }
 
@@ -84,15 +88,19 @@ class ThesaurusInflator implements IInflator
         $type = '';
         $term = '';
 
-        foreach ($altTermElement->attributes() as $name => $value) {
-            switch ($name) {
-                case 'type':
-                    $type = strval($value);
-                    break;
-                case 'term':
-                    $term = strval($value);
-                    break;
-                default:
+        $attributes = $altTermElement->attributes();
+
+        if (!is_null($attributes)) {
+            foreach ($attributes as $name => $value) {
+                switch ($name) {
+                    case 'type':
+                        $type = strval($value);
+                        break;
+                    case 'term':
+                        $term = strval($value);
+                        break;
+                    default:
+                }
             }
         }
 

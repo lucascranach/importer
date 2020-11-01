@@ -30,10 +30,6 @@ class GraphicsJSONExporter extends Consumer implements IFileExporter
         $exporter = new self;
         $exporter->destFilepath = $destFilepath;
 
-        if (is_null($exporter->destFilepath)) {
-            throw new \Error('No filepath for JSON graphics export set!');
-        }
-
         return $exporter;
     }
 

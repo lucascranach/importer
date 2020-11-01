@@ -8,8 +8,8 @@
         }
     ],
     "require": {
-      "ext-json": "*",
-      "ext-xmlreader": "*",
+        "ext-json": "*",
+        "ext-xmlreader": "*",
         "ext-dom": "*",
         "ext-simplexml": "*"
     },
@@ -18,7 +18,7 @@
         "import": "php index.php",
         "lint": "php-cs-fixer fix --dry-run -vvv",
         "lint:fix": "php-cs-fixer fix",
-        "analyse": "phpstan analyse -l 5 src",
+        "analyse": "psalm",
         "clear:cache": "rm -R .cache",
 
         "post-install-cmd": "cghooks add --ignore-lock",
@@ -31,8 +31,8 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
-        "phpstan/phpstan": "^0.12.37",
-        "brainmaestro/composer-git-hooks": "^2.8"
+        "brainmaestro/composer-git-hooks": "^2.8",
+        "vimeo/psalm": "^4.1"
     },
     "extra": {
         "hooks": {

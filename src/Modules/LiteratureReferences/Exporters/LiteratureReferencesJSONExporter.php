@@ -28,12 +28,7 @@ class LiteratureReferencesJSONExporter extends Consumer implements IFileExporter
     public static function withDestinationAt(string $destFilepath)
     {
         $exporter = new self;
-
         $exporter->destFilepath = $destFilepath;
-
-        if (is_null($exporter->destFilepath)) {
-            throw new \Error('No filepath for JSON literature references export set!');
-        }
 
         return $exporter;
     }
