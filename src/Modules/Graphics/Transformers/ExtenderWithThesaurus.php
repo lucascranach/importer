@@ -26,7 +26,7 @@ class ExtenderWithThesaurus extends Hybrid
     }
 
 
-    public static function new(ThesaurusMemoryExporter $thesaurusMemoryExporter)
+    public static function new(ThesaurusMemoryExporter $thesaurusMemoryExporter): self
     {
         $transformer = new self;
 
@@ -50,6 +50,9 @@ class ExtenderWithThesaurus extends Hybrid
     }
 
 
+    /**
+     * @return void
+     */
     public function done(ProducerInterface $producer)
     {
         parent::done($producer);
@@ -69,7 +72,7 @@ class ExtenderWithThesaurus extends Hybrid
     }
 
 
-    private function extendWithThesaurusData(SearchableGraphic $graphic)
+    private function extendWithThesaurusData(SearchableGraphic $graphic): void
     {
         foreach ($graphic->getKeywords() as $keyword) {
             if ($keyword->getType() !== $this->keywordType) {
@@ -84,7 +87,7 @@ class ExtenderWithThesaurus extends Hybrid
     }
 
 
-    private function findKeywordIdentifierInThesaurus(string $identifier)
+    private function findKeywordIdentifierInThesaurus(string $identifier): array
     {
         $foundFlattenedTermHierarchies = [];
 
@@ -130,7 +133,7 @@ class ExtenderWithThesaurus extends Hybrid
     }
 
 
-    private function mapThesaurusTermChainToThesaurusItemChain(array $terms, $langCode): array
+    private function mapThesaurusTermChainToThesaurusItemChain(array $terms, string $langCode): array
     {
         $items = [];
 
@@ -173,7 +176,7 @@ class ExtenderWithThesaurus extends Hybrid
     }
 
 
-    private function cleanUp()
+    private function cleanUp(): void
     {
         $this->thesaurus = null;
     }

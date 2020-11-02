@@ -26,6 +26,9 @@ class LiteratureReferencesLoader extends Producer implements IMultipleFileLoader
     }
 
 
+    /**
+     * @return self
+     */
     public static function withSourcesAt(array $sourceFilePaths)
     {
         $loader = new self;
@@ -42,6 +45,9 @@ class LiteratureReferencesLoader extends Producer implements IMultipleFileLoader
     }
 
 
+    /**
+     * @return void
+     */
     public function run()
     {
         /* We have to go through all given files */
@@ -62,7 +68,7 @@ class LiteratureReferencesLoader extends Producer implements IMultipleFileLoader
         $this->notifyDone();
     }
 
-    private function loadNextFile(string $sourceFilePath)
+    private function loadNextFile(string $sourceFilePath): void
     {
         $this->xmlReader = new XMLReader();
 
@@ -82,7 +88,7 @@ class LiteratureReferencesLoader extends Producer implements IMultipleFileLoader
         $this->xmlReader->read();
     }
 
-    private function closeXMLReader()
+    private function closeXMLReader(): void
     {
         if (!is_null($this->xmlReader)) {
             $this->xmlReader->close();
@@ -91,7 +97,7 @@ class LiteratureReferencesLoader extends Producer implements IMultipleFileLoader
     }
 
 
-    private function processNextItem()
+    private function processNextItem(): bool
     {
         /* Skipping empty text nodes */
         while ($this->xmlReader->next()
@@ -109,7 +115,7 @@ class LiteratureReferencesLoader extends Producer implements IMultipleFileLoader
     }
 
 
-    private function transformCurrentItem()
+    private function transformCurrentItem(): void
     {
         $literatureReference = new LiteratureReference;
 
@@ -135,7 +141,7 @@ class LiteratureReferencesLoader extends Producer implements IMultipleFileLoader
     }
 
 
-    private function checkXMlReaderInitialization()
+    private function checkXMlReaderInitialization(): void
     {
         if (is_null($this->xmlReader)) {
             throw new Error('LiteratureReference XML-Reader was not correctly initialized!');

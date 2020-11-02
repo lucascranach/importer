@@ -34,6 +34,9 @@ trait ProducerTrait
     }
 
 
+    /**
+     * @return void
+     */
     public function next($data)
     {
         foreach ($this->consumerNodes as $consumerNode) {
@@ -54,6 +57,9 @@ trait ProducerTrait
     }
 
 
+    /**
+     * @return void
+     */
     public function notifyError($error)
     {
         foreach ($this->consumerNodes as $consumerNode) {
@@ -62,6 +68,9 @@ trait ProducerTrait
     }
 
 
+    /**
+     * @return void
+     */
     public function notifyDone(ProducerInterface $producer = null)
     {
         $this->done = true;
@@ -73,7 +82,7 @@ trait ProducerTrait
     }
 
 
-    public function checkForCyclicChains(NodeInterface ...$nodes)
+    public function checkForCyclicChains(NodeInterface ...$nodes): void
     {
         /* Check for duplicate nodes and prevent cyclic pipe-chains */
         foreach ($nodes as $node) {
@@ -90,7 +99,7 @@ trait ProducerTrait
         }
     }
 
-    public function checkForExistingConnection(NodeInterface ...$nodes)
+    public function checkForExistingConnection(NodeInterface ...$nodes): void
     {
         $alreadyConnectedTo = array_search(
             $nodes[0],

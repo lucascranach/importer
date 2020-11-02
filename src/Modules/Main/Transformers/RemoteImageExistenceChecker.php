@@ -28,12 +28,12 @@ class RemoteImageExistenceChecker extends Hybrid
         string $cacheDir,
         $remoteImageTypeAccessorFunc,
         string $cacheFilename = ''
-    ) {
+    ): self {
         $checker = new self;
 
         if (is_string($remoteImageTypeAccessorFunc) && !empty($remoteImageTypeAccessorFunc)) {
             $imageType = $remoteImageTypeAccessorFunc;
-            $checker->remoteImageTypeAccessorFunc = function () use ($imageType) {
+            $checker->remoteImageTypeAccessorFunc = function () use ($imageType): string {
                 return $imageType;
             };
         }
@@ -129,6 +129,9 @@ class RemoteImageExistenceChecker extends Hybrid
     }
 
 
+    /**
+     * @return void
+     */
     public function done(ProducerInterface $producer)
     {
         parent::done($producer);
@@ -138,7 +141,12 @@ class RemoteImageExistenceChecker extends Hybrid
     }
 
 
-    private function createCacheData(?array $data)
+    /**
+     * @return (array|null)[]
+     *
+     * @psalm-return array{rawImagesData: array|null}
+     */
+    private function createCacheData(?array $data): array
     {
         return [
             'rawImagesData' => $data,
@@ -146,7 +154,10 @@ class RemoteImageExistenceChecker extends Hybrid
     }
 
 
-    private function updateCacheFor(string $key, $data)
+    /**
+     * @param (array|null)[] $data
+     */
+    private function updateCacheFor(string $key, array $data): void
     {
         $this->cache[$key] = $data;
     }
@@ -245,13 +256,16 @@ class RemoteImageExistenceChecker extends Hybrid
     }
 
 
-    private function storeCache()
+    private function storeCache(): void
     {
         $cacheAsJSON = json_encode($this->cache);
         file_put_contents($this->getCachePath(), $cacheAsJSON);
     }
 
 
+    /**
+     * @return void
+     */
     private function restoreCache()
     {
         $cacheFilepath = $this->getCachePath();
@@ -265,7 +279,7 @@ class RemoteImageExistenceChecker extends Hybrid
     }
 
 
-    private function cleanUp()
+    private function cleanUp(): void
     {
         $this->cache = [];
     }

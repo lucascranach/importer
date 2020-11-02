@@ -36,7 +36,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function setId(string $id)
+    public function setId(string $id): void
     {
         $this->id = $id;
     }
@@ -47,7 +47,7 @@ class LiteratureReference implements IBaseItem
         return $this->id;
     }
 
-    public function setReferenceId(string $referenceId)
+    public function setReferenceId(string $referenceId): void
     {
         $this->referenceId = $referenceId;
     }
@@ -59,7 +59,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function setReferenceNumber(string $referenceNumber)
+    public function setReferenceNumber(string $referenceNumber): void
     {
         $this->referenceNumber = $referenceNumber;
     }
@@ -71,7 +71,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function setTitle(string $title)
+    public function setTitle(string $title): void
     {
         $this->title = $title;
     }
@@ -83,7 +83,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function setSubtitle(string $subtitle)
+    public function setSubtitle(string $subtitle): void
     {
         $this->subtitle = $subtitle;
     }
@@ -95,7 +95,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function setShorttitle(string $shorttitle)
+    public function setShorttitle(string $shorttitle): void
     {
         $this->shorttitle = $shorttitle;
     }
@@ -107,7 +107,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function setJournal(string $journal)
+    public function setJournal(string $journal): void
     {
         $this->journal = $journal;
     }
@@ -119,7 +119,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function setSeries(string $series)
+    public function setSeries(string $series): void
     {
         $this->series = $series;
     }
@@ -131,7 +131,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function setVolume(string $volume)
+    public function setVolume(string $volume): void
     {
         $this->volume = $volume;
     }
@@ -143,7 +143,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function setEdition(string $edition)
+    public function setEdition(string $edition): void
     {
         $this->edition = $edition;
     }
@@ -155,7 +155,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function setPublishLocation(string $publishLocation)
+    public function setPublishLocation(string $publishLocation): void
     {
         $this->publishLocation = $publishLocation;
     }
@@ -167,7 +167,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function setPublishDate(string $publishDate)
+    public function setPublishDate(string $publishDate): void
     {
         $this->publishDate = $publishDate;
     }
@@ -179,7 +179,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function setPageNumbers(string $pageNumbers)
+    public function setPageNumbers(string $pageNumbers): void
     {
         $this->pageNumbers = $pageNumbers;
     }
@@ -191,7 +191,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function setDate(string $date)
+    public function setDate(string $date): void
     {
         $this->date = $date;
     }
@@ -202,7 +202,7 @@ class LiteratureReference implements IBaseItem
         return $this->date;
     }
 
-    public function addEvent(Event $event)
+    public function addEvent(Event $event): void
     {
         $this->events[] = $event;
     }
@@ -214,7 +214,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function setCopyright(string $copyright)
+    public function setCopyright(string $copyright): void
     {
         $this->copyright = $copyright;
     }
@@ -226,7 +226,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function addPerson(Person $person)
+    public function addPerson(Person $person): void
     {
         $this->persons[] = $person;
     }
@@ -238,7 +238,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function addPublication(Publication $publication)
+    public function addPublication(Publication $publication): void
     {
         $this->publications[] = $publication;
     }
@@ -250,7 +250,7 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function addConnectedObject(ConnectedObject $connectedObject)
+    public function addConnectedObject(ConnectedObject $connectedObject): void
     {
         $this->connectedObjects[] = $connectedObject;
     }

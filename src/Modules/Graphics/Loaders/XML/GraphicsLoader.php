@@ -26,6 +26,9 @@ class GraphicsLoader extends Producer implements IFileLoader
     {
     }
 
+    /**
+     * @return self
+     */
     public static function withSourceAt(string $sourceFilePath)
     {
         $loader = new self;
@@ -39,6 +42,9 @@ class GraphicsLoader extends Producer implements IFileLoader
         return $loader;
     }
 
+    /**
+     * @return void
+     */
     public function run()
     {
         $this->checkXMlReaderInitialization();
@@ -67,7 +73,7 @@ class GraphicsLoader extends Producer implements IFileLoader
     }
 
 
-    private function processNextItem()
+    private function processNextItem(): bool
     {
         /* Skipping empty text nodes */
         while ($this->xmlReader->next()
@@ -85,7 +91,7 @@ class GraphicsLoader extends Producer implements IFileLoader
     }
 
 
-    private function transformCurrentItem()
+    private function transformCurrentItem(): void
     {
         /* Preparing the graphic objects for the different languages */
         $graphicDe = new Graphic;
@@ -117,7 +123,7 @@ class GraphicsLoader extends Producer implements IFileLoader
     }
 
 
-    private function checkXMlReaderInitialization()
+    private function checkXMlReaderInitialization(): void
     {
         if (is_null($this->xmlReader)) {
             throw new Error('Graphics XML-Reader was not correctly initialized!');

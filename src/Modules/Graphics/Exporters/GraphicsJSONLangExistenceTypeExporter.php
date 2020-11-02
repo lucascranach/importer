@@ -30,6 +30,9 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
     }
 
 
+    /**
+     * @return self
+     */
     public static function withDestinationAt(string $destFilepath)
     {
         $exporter = new self;
@@ -68,7 +71,7 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
     }
 
 
-    private function addDataForReferenceCheck(Graphic $item)
+    private function addDataForReferenceCheck(Graphic $item): void
     {
         foreach ($item->getReprintReferences() as $reference) {
             if (!in_array($reference->getInventoryNumber(), $this->inventoryNumberList, true)) {
@@ -84,7 +87,7 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
     }
 
 
-    private function outputReferenceCheckResult()
+    private function outputReferenceCheckResult(): void
     {
         echo "\n  Graphics with missing references: \n\n";
 
@@ -98,6 +101,9 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
     }
 
 
+    /**
+     * @return void
+     */
     public function done(ProducerInterface $producer)
     {
         $this->closeAllOutputFiles();
@@ -110,6 +116,9 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
     }
 
 
+    /**
+     * @return void
+     */
     public function error($error)
     {
         echo get_class($this) . ": Error -> " . $error . "\n";

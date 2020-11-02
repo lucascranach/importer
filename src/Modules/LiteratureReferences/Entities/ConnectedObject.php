@@ -19,7 +19,7 @@ class ConnectedObject
     }
 
 
-    public function setInventoryNumber(string $inventoryNumber)
+    public function setInventoryNumber(string $inventoryNumber): void
     {
         $this->inventoryNumber = $inventoryNumber;
     }
@@ -31,7 +31,7 @@ class ConnectedObject
     }
 
 
-    public function setCatalogNumber(string $catalogNumber)
+    public function setCatalogNumber(string $catalogNumber): void
     {
         $this->catalogNumber = $catalogNumber;
     }
@@ -43,7 +43,7 @@ class ConnectedObject
     }
 
 
-    public function setPageNumber(string $pageNumber)
+    public function setPageNumber(string $pageNumber): void
     {
         $this->pageNumber = $pageNumber;
     }
@@ -54,7 +54,7 @@ class ConnectedObject
         return $this->pageNumber;
     }
 
-    public function setFigureNumber(string $figureNumber)
+    public function setFigureNumber(string $figureNumber): void
     {
         $this->figureNumber = $figureNumber;
     }
@@ -65,7 +65,7 @@ class ConnectedObject
         return $this->figureNumber;
     }
 
-    public function setRemarks(string $remarks)
+    public function setRemarks(string $remarks): void
     {
         $this->remarks = $remarks;
     }

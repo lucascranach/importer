@@ -26,6 +26,9 @@ class Restoration implements ILanguageBaseItem
     }
 
 
+    /**
+     * @return void
+     */
     public function setLangCode(string $langCode)
     {
         $this->langCode = $langCode;
@@ -38,7 +41,7 @@ class Restoration implements ILanguageBaseItem
     }
 
 
-    public function setInventoryNumber(string $inventoryNumber)
+    public function setInventoryNumber(string $inventoryNumber): void
     {
         $this->inventoryNumber = $inventoryNumber;
     }
@@ -50,7 +53,7 @@ class Restoration implements ILanguageBaseItem
     }
 
 
-    public function setObjectId(int $objectId)
+    public function setObjectId(int $objectId): void
     {
         $this->objectId = $objectId;
     }
@@ -62,7 +65,7 @@ class Restoration implements ILanguageBaseItem
     }
 
 
-    public function addSurvey(Survey $survey)
+    public function addSurvey(Survey $survey): void
     {
         $this->surveys[] = $survey;
     }

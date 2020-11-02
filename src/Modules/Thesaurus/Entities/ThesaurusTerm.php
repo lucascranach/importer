@@ -17,7 +17,7 @@ class ThesaurusTerm
     }
 
 
-    public function setTerm(string $term)
+    public function setTerm(string $term): void
     {
         $this->term = $term;
     }
@@ -29,7 +29,7 @@ class ThesaurusTerm
     }
 
 
-    public function addAlt(string $key, $value)
+    public function addAlt(string $key, string $value): void
     {
         $this->alt[$key] = $value;
     }
@@ -48,7 +48,7 @@ class ThesaurusTerm
     }
 
 
-    public function addSubTerm(ThesaurusTerm $term)
+    public function addSubTerm(ThesaurusTerm $term): void
     {
         $this->subTerms[] = $term;
     }

@@ -32,7 +32,7 @@ class ThesaurusInflator implements IInflator
     public static function inflate(
         SimpleXMLElement $node,
         Thesaurus $thesaurus
-    ) {
+    ): void {
         $subNode = $node->{self::$rootTermElement};
 
         self::inflateTerms($subNode, $thesaurus);
@@ -40,10 +40,15 @@ class ThesaurusInflator implements IInflator
 
 
     /* Term */
+    /**
+     * @return array
+     *
+     * @psalm-return array<empty, empty>
+     */
     private static function inflateTerms(
         SimpleXMLElement $node,
         Thesaurus $thesaurus
-    ) {
+    ): array {
         $mappedTerms = [];
 
         foreach ($node->children() as $termElement) {
@@ -84,7 +89,7 @@ class ThesaurusInflator implements IInflator
     private static function inflateTermAlt(
         SimpleXMLElement $altTermElement,
         ThesaurusTerm $thesaurusTerm
-    ) {
+    ): void {
         $type = '';
         $term = '';
 

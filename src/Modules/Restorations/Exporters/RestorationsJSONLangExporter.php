@@ -26,6 +26,9 @@ class RestorationsJSONLangExporter extends Consumer implements IFileExporter
     }
 
 
+    /**
+     * @return self
+     */
     public static function withDestinationAt(string $destFilepath)
     {
         $exporter = new self();
@@ -64,6 +67,9 @@ class RestorationsJSONLangExporter extends Consumer implements IFileExporter
 
 
 
+    /**
+     * @return void
+     */
     public function done(ProducerInterface $producer)
     {
         $this->closeAllOutputFiles();
@@ -72,6 +78,9 @@ class RestorationsJSONLangExporter extends Consumer implements IFileExporter
     }
 
 
+    /**
+     * @return void
+     */
     public function error($error)
     {
         echo get_class($this) . ": Error -> " . $error . "\n";

@@ -15,7 +15,7 @@ class Classification
     }
 
 
-    public function setClassification(string $classification)
+    public function setClassification(string $classification): void
     {
         $this->classification = $classification;
     }

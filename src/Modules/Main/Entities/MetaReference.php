@@ -18,7 +18,7 @@ class MetaReference
     }
 
 
-    public function setType(string $type)
+    public function setType(string $type): void
     {
         $this->type = $type;
     }
@@ -30,7 +30,7 @@ class MetaReference
     }
 
 
-    public function setTerm(string $term)
+    public function setTerm(string $term): void
     {
         $this->term = $term;
     }
@@ -42,7 +42,7 @@ class MetaReference
     }
 
 
-    public function setPath(string $path)
+    public function setPath(string $path): void
     {
         $this->path = $path;
     }
@@ -54,7 +54,7 @@ class MetaReference
     }
 
 
-    public function setURL(string $url)
+    public function setURL(string $url): void
     {
         $this->url = $url;
     }

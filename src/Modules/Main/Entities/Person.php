@@ -25,7 +25,7 @@ class Person
     }
 
 
-    public function setId(string $id)
+    public function setId(string $id): void
     {
         $this->id = $id;
     }
@@ -37,7 +37,7 @@ class Person
     }
 
 
-    public function setRole(string $role)
+    public function setRole(string $role): void
     {
         $this->role = $role;
     }
@@ -49,7 +49,7 @@ class Person
     }
 
 
-    public function setName(string $name)
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
@@ -61,7 +61,7 @@ class Person
     }
 
 
-    public function setPrefix(string $prefix)
+    public function setPrefix(string $prefix): void
     {
         $this->prefix = $prefix;
     }
@@ -73,7 +73,7 @@ class Person
     }
 
 
-    public function setSuffix(string $suffix)
+    public function setSuffix(string $suffix): void
     {
         $this->suffix = $suffix;
     }
@@ -85,7 +85,7 @@ class Person
     }
 
 
-    public function setNameType(string $nameType)
+    public function setNameType(string $nameType): void
     {
         $this->nameType = $nameType;
     }
@@ -97,7 +97,7 @@ class Person
     }
 
 
-    public function setAlternativeName(string $alternativeName)
+    public function setAlternativeName(string $alternativeName): void
     {
         $this->alternativeName = $alternativeName;
     }
@@ -109,7 +109,7 @@ class Person
     }
 
 
-    public function setRemarks(string $remarks)
+    public function setRemarks(string $remarks): void
     {
         $this->remarks = $remarks;
     }
@@ -121,7 +121,7 @@ class Person
     }
 
 
-    public function setDate(string $date)
+    public function setDate(string $date): void
     {
         $this->date = $date;
     }
@@ -133,7 +133,7 @@ class Person
     }
 
 
-    public function setIsUnknown(bool $isUnknown)
+    public function setIsUnknown(bool $isUnknown): void
     {
         $this->isUnknown = $isUnknown;
     }

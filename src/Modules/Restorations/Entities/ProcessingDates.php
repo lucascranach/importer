@@ -18,7 +18,7 @@ class ProcessingDates
     }
 
 
-    public function setBeginDate(string $beginDate)
+    public function setBeginDate(string $beginDate): void
     {
         $this->beginDate = $beginDate;
     }
@@ -30,7 +30,7 @@ class ProcessingDates
     }
 
 
-    public function setBeginYear(int $beginYear)
+    public function setBeginYear(int $beginYear): void
     {
         $this->beginYear = $beginYear;
     }
@@ -42,7 +42,7 @@ class ProcessingDates
     }
 
 
-    public function setEndDate(string $endDate)
+    public function setEndDate(string $endDate): void
     {
         $this->endDate = $endDate;
     }
@@ -54,7 +54,7 @@ class ProcessingDates
     }
 
 
-    public function setEndYear(int $endYear)
+    public function setEndYear(int $endYear): void
     {
         $this->endYear = $endYear;
     }

@@ -29,6 +29,9 @@ class RestorationsLoader extends Producer implements IMultipleFileLoader
     }
 
 
+    /**
+     * @return self
+     */
     public static function withSourcesAt(array $sourceFilePaths)
     {
         $loader = new self();
@@ -45,6 +48,9 @@ class RestorationsLoader extends Producer implements IMultipleFileLoader
     }
 
 
+    /**
+     * @return void
+     */
     public function run()
     {
         $this->checkXMlReaderInitialization();
@@ -68,7 +74,7 @@ class RestorationsLoader extends Producer implements IMultipleFileLoader
     }
 
 
-    public function loadNextFile(string $sourceFilePath)
+    public function loadNextFile(string $sourceFilePath): void
     {
         $this->xmlReader = new XMLReader();
 
@@ -89,7 +95,7 @@ class RestorationsLoader extends Producer implements IMultipleFileLoader
     }
 
 
-    public function closeXMLReader()
+    public function closeXMLReader(): void
     {
         if (!is_null($this->xmlReader)) {
             $this->xmlReader->close();
@@ -98,7 +104,7 @@ class RestorationsLoader extends Producer implements IMultipleFileLoader
     }
 
 
-    private function processNextItem()
+    private function processNextItem(): bool
     {
         /* Skipping empty text nodes */
         while ($this->xmlReader->next()
@@ -116,7 +122,7 @@ class RestorationsLoader extends Producer implements IMultipleFileLoader
     }
 
 
-    private function transformCurrentItem()
+    private function transformCurrentItem(): void
     {
         /* Preparing the restoration objects for the different languages */
         $restorationDe = new Restoration;
@@ -148,7 +154,7 @@ class RestorationsLoader extends Producer implements IMultipleFileLoader
     }
 
 
-    private function checkXMlReaderInitialization()
+    private function checkXMlReaderInitialization(): void
     {
         if (is_null($this->xmlReader)) {
             throw new Error('Restorations XML-Reader was not correctly initialized!');

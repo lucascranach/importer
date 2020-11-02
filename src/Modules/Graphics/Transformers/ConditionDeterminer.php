@@ -164,7 +164,7 @@ class ConditionDeterminer extends Hybrid
     }
 
 
-    public static function new()
+    public static function new(): self
     {
         return new self;
     }
@@ -191,7 +191,7 @@ class ConditionDeterminer extends Hybrid
     }
 
 
-    private function getConditionLevel(Graphic $graphic, $conditionLevel = 0): int
+    private function getConditionLevel(Graphic $graphic, int $conditionLevel = 0): int
     {
         $classification = $graphic->getClassification();
 
@@ -217,6 +217,9 @@ class ConditionDeterminer extends Hybrid
     }
 
 
+    /**
+     * @return void
+     */
     public function done(ProducerInterface $producer)
     {
         parent::done($producer);
@@ -224,7 +227,7 @@ class ConditionDeterminer extends Hybrid
     }
 
 
-    private function cleanUp()
+    private function cleanUp(): void
     {
         $this->conditionLevelCache = [];
     }

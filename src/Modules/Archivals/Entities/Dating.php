@@ -17,7 +17,7 @@ class Dating
     }
 
 
-    public function setDated(string $dated)
+    public function setDated(string $dated): void
     {
         $this->dated = $dated;
     }
@@ -29,7 +29,7 @@ class Dating
     }
 
 
-    public function setBegin(int $begin)
+    public function setBegin(int $begin): void
     {
         $this->begin = $begin;
     }
@@ -41,7 +41,7 @@ class Dating
     }
 
 
-    public function setEnd(int $end)
+    public function setEnd(int $end): void
     {
         $this->end = $end;
     }

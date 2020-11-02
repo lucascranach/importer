@@ -23,7 +23,7 @@ class ThesaurusMemoryExporter extends Consumer implements IMemoryExporter
     }
 
 
-    public static function new()
+    public static function new(): self
     {
         return new self();
     }
@@ -79,6 +79,9 @@ class ThesaurusMemoryExporter extends Consumer implements IMemoryExporter
     }
 
 
+    /**
+     * @return void
+     */
     public function cleanUp()
     {
         $this->item = null;
@@ -91,12 +94,18 @@ class ThesaurusMemoryExporter extends Consumer implements IMemoryExporter
     }
 
 
+    /**
+     * @return void
+     */
     public function done(ProducerInterface $producer)
     {
         $this->done = true;
     }
 
 
+    /**
+     * @return void
+     */
     public function error($error)
     {
         echo get_class($this) . ": Error -> " . $error . "\n";

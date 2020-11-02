@@ -8,11 +8,17 @@ trait ConsumerTrait
 {
     private $connectedProducers = [];
 
+    /**
+     * @return void
+     */
     public function registerProducerNode(ProducerInterface $producer)
     {
         $this->connectedProducers[] = $producer;
     }
 
+    /**
+     * @return void
+     */
     public function unregisterProducerNode(ProducerInterface $producer)
     {
         $this->connectedProducers = array_filter(

@@ -23,6 +23,9 @@ class ThesaurusLoader extends Producer implements IFileLoader
     }
 
 
+    /**
+     * @return self
+     */
     public static function withSourceAt(string $sourceFilePath)
     {
         $loader = new self;
@@ -37,6 +40,9 @@ class ThesaurusLoader extends Producer implements IFileLoader
     }
 
 
+    /**
+     * @return void
+     */
     public function run()
     {
         echo 'Processing thesaurus file : ' . $this->sourceFilePath . "\n";

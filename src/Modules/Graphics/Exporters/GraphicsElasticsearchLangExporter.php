@@ -26,6 +26,9 @@ class GraphicsElasticsearchLangExporter extends Consumer implements IFileExporte
     }
 
 
+    /**
+     * @return self
+     */
     public static function withDestinationAt(string $destFilepath)
     {
         $exporter = new self;
@@ -67,6 +70,9 @@ class GraphicsElasticsearchLangExporter extends Consumer implements IFileExporte
     }
 
 
+    /**
+     * @return void
+     */
     public function done(ProducerInterface $producer)
     {
         if (is_null($this->dirname) || empty($this->dirname)
@@ -122,6 +128,9 @@ class GraphicsElasticsearchLangExporter extends Consumer implements IFileExporte
     }
 
 
+    /**
+     * @return void
+     */
     public function error($error)
     {
         echo get_class($this) . ": Error -> " . $error . "\n";

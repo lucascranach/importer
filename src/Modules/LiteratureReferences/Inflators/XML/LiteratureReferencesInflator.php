@@ -28,7 +28,7 @@ class LiteratureReferencesInflator implements IInflator
     public static function inflate(
         SimpleXMLElement &$node,
         LiteratureReference &$literatureReference
-    ) {
+    ): void {
         $subNode = $node->{'GroupHeader'};
         $connectedObjectsSubNode = $node->{'Group'};
 
@@ -68,13 +68,13 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflateReferenceId(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $idElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="0"]/Field[@FieldName="{ReferenceMaster.ReferenceID}"]/FormattedValue',
         );
         if ($idElement) {
-            $idStr = trim($idElement);
+            $idStr = trim(strval($idElement));
             $literatureReference->setReferenceId($idStr);
         }
     }
@@ -84,13 +84,13 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflateReferenceNumber(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $numberElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="1"]/Field[@FieldName="{@Verweisnummer}"]/FormattedValue',
         );
         if ($numberElement) {
-            $numberStr = trim($numberElement);
+            $numberStr = trim(strval($numberElement));
             $literatureReference->setReferenceNumber($numberStr);
         }
     }
@@ -100,13 +100,13 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflateTitle(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $titleElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="2"]/Field[@FieldName="{ReferenceMaster.Title}"]/FormattedValue',
         );
         if ($titleElement) {
-            $titleStr = trim($titleElement);
+            $titleStr = trim(strval($titleElement));
             $literatureReference->setTitle($titleStr);
         }
     }
@@ -116,13 +116,13 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflateSubtitle(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $subtitleElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="3"]/Field[@FieldName="{ReferenceMaster.SubTitle}}"]/FormattedValue',
         );
         if ($subtitleElement) {
-            $subtitleStr = trim($subtitleElement);
+            $subtitleStr = trim(strval($subtitleElement));
             $literatureReference->setSubtitle($subtitleStr);
         }
     }
@@ -132,13 +132,13 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflateShorttitle(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $shorttitleElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="4"]/Field[@FieldName="{ReferenceMaster.Heading}"]/FormattedValue',
         );
         if ($shorttitleElement) {
-            $shorttitleStr = trim($shorttitleElement);
+            $shorttitleStr = trim(strval($shorttitleElement));
             $literatureReference->setShorttitle($shorttitleStr);
         }
     }
@@ -148,14 +148,14 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflateJournal(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $journalElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="5"]/Field[@FieldName="{ReferenceMaster.Journal}"]/FormattedValue',
         );
 
         if ($journalElement) {
-            $journalStr = trim($journalElement);
+            $journalStr = trim(strval($journalElement));
             $literatureReference->setJournal($journalStr);
         }
     }
@@ -165,13 +165,13 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflateSeries(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $seriesElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="6"]/Field[@FieldName="{ReferenceMaster.Series}"]/FormattedValue',
         );
         if ($seriesElement) {
-            $seriesStr = trim($seriesElement);
+            $seriesStr = trim(strval($seriesElement));
             $literatureReference->setSeries($seriesStr);
         }
     }
@@ -181,13 +181,13 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflateVolume(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $volumeElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="7"]/Field[@FieldName="{ReferenceMaster.Volume}"]/FormattedValue',
         );
         if ($volumeElement) {
-            $volumeStr = trim($volumeElement);
+            $volumeStr = trim(strval($volumeElement));
             $literatureReference->setVolume($volumeStr);
         }
     }
@@ -197,13 +197,13 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflateEdition(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $editionElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="8"]/Field[@FieldName="{ReferenceMaster.Edition}"]/FormattedValue',
         );
         if ($editionElement) {
-            $editionStr = trim($editionElement);
+            $editionStr = trim(strval($editionElement));
             $literatureReference->setEdition($editionStr);
         }
     }
@@ -213,13 +213,13 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflatePublishLocation(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $publishLocationElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="9"]/Field[@FieldName="{ReferenceMaster.PlacePublished}"]/FormattedValue',
         );
         if ($publishLocationElement) {
-            $publishLocationStr = trim($publishLocationElement);
+            $publishLocationStr = trim(strval($publishLocationElement));
             $literatureReference->setPublishLocation($publishLocationStr);
         }
     }
@@ -229,13 +229,13 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflatePublishDate(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $publishDateElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="10"]/Field[@FieldName="{ReferenceMaster.YearPublished}}"]/FormattedValue',
         );
         if ($publishDateElement) {
-            $publishDateStr = trim($publishDateElement);
+            $publishDateStr = trim(strval($publishDateElement));
             $literatureReference->setPublishDate($publishDateStr);
         }
     }
@@ -245,13 +245,13 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflatePageNumbers(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $pageNumbersElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="11"]/Field[@FieldName="{ReferenceMaster.NumOfPages}"]/FormattedValue',
         );
         if ($pageNumbersElement) {
-            $pageNumbersStr = trim($pageNumbersElement);
+            $pageNumbersStr = trim(strval($pageNumbersElement));
             $literatureReference->setPageNumbers($pageNumbersStr);
         }
     }
@@ -261,13 +261,13 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflateDate(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $dateElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="12"]/Field[@FieldName="{ReferenceMaster.DisplayDate}"]/FormattedValue',
         );
         if ($dateElement) {
-            $dateStr = trim($dateElement);
+            $dateStr = trim(strval($dateElement));
             $literatureReference->setDate($dateStr);
         }
     }
@@ -277,11 +277,15 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflateEvents(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $detailElements = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="13"]/Subreport',
         );
+
+        if (!$detailElements) {
+            return;
+        }
 
         foreach ($detailElements as $detailElement) {
             if ($detailElement->count() === 0) {
@@ -298,7 +302,7 @@ class LiteratureReferencesInflator implements IInflator
             );
 
             if ($eventTypeElement) {
-                $eventTypeStr = trim($eventTypeElement);
+                $eventTypeStr = trim(strval($eventTypeElement));
                 $event->setType($eventTypeStr);
             }
 
@@ -309,7 +313,7 @@ class LiteratureReferencesInflator implements IInflator
             );
 
             if ($dateTextElement) {
-                $dateTextStr = trim($dateTextElement);
+                $dateTextStr = trim(strval($dateTextElement));
                 $event->setDateText($dateTextStr);
             }
 
@@ -320,7 +324,7 @@ class LiteratureReferencesInflator implements IInflator
             );
 
             if ($dateBeginElement) {
-                $dateBeginStr = trim($dateBeginElement);
+                $dateBeginStr = trim(strval($dateBeginElement));
                 $event->setDateBegin($dateBeginStr);
             }
 
@@ -331,7 +335,7 @@ class LiteratureReferencesInflator implements IInflator
             );
 
             if ($dateEndElement) {
-                $dateEndStr = trim($dateEndElement);
+                $dateEndStr = trim(strval($dateEndElement));
                 $event->setDateEnd($dateEndStr);
             }
 
@@ -342,7 +346,7 @@ class LiteratureReferencesInflator implements IInflator
             );
 
             if ($remarksElement) {
-                $remarksStr = trim($remarksElement);
+                $remarksStr = trim(strval($remarksElement));
                 $event->setRemarks($remarksStr);
             }
         }
@@ -353,13 +357,13 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflateCopyright(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $copyrightElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="14"]/Field[@FieldName="{ReferenceMaster.Copyright}"]/FormattedValue',
         );
         if ($copyrightElement) {
-            $copyrightStr = trim($copyrightElement);
+            $copyrightStr = trim(strval($copyrightElement));
             $literatureReference->setCopyright($copyrightStr);
         }
     }
@@ -369,11 +373,15 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflatePersons(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $detailElements = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="15"]/Subreport',
         );
+
+        if (!$detailElements) {
+            return;
+        }
 
         foreach ($detailElements as $detailElement) {
             if ($detailElement->count() === 0) {
@@ -390,7 +398,7 @@ class LiteratureReferencesInflator implements IInflator
             );
 
             if ($roleElement) {
-                $roleStr = trim($roleElement);
+                $roleStr = trim(strval($roleElement));
                 $person->setRole($roleStr);
             }
 
@@ -401,7 +409,7 @@ class LiteratureReferencesInflator implements IInflator
             );
 
             if ($nameElement) {
-                $nameStr = trim($nameElement);
+                $nameStr = trim(strval($nameElement));
                 $person->setName($nameStr);
             }
         }
@@ -412,11 +420,15 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflatePublications(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $detailElements = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="16"]/Subreport',
         );
+
+        if (!$detailElements) {
+            return;
+        }
 
         foreach ($detailElements as $detailElement) {
             if ($detailElement->count() === 0) {
@@ -432,7 +444,7 @@ class LiteratureReferencesInflator implements IInflator
             );
 
             if ($typeElement) {
-                $typeStr = trim($typeElement);
+                $typeStr = trim(strval($typeElement));
                 $publication->setType($typeStr);
             }
 
@@ -443,7 +455,7 @@ class LiteratureReferencesInflator implements IInflator
             );
 
             if ($remarksElement) {
-                $remarksStr = trim($remarksElement);
+                $remarksStr = trim(strval($remarksElement));
                 $publication->setRemarks($remarksStr);
             }
 
@@ -459,13 +471,13 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflateId(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $idElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="17"]/Subreport/Details/Section[@SectionNumber="0"]/Field[@FieldName="{@AltNum}"]/FormattedValue',
         );
         if ($idElement) {
-            $idStr = trim($idElement);
+            $idStr = trim(strval($idElement));
             $literatureReference->setId($idStr);
         }
     }
@@ -475,11 +487,15 @@ class LiteratureReferencesInflator implements IInflator
     private static function inflateConnectedObjects(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
-    ) {
+    ): void {
         $detailElements = self::findElementByXPath(
             $node,
             'Details/Section/Subreport',
         );
+
+        if (!$detailElements) {
+            return;
+        }
 
         $skipElementName = 'ReportHeader';
 
@@ -498,7 +514,7 @@ class LiteratureReferencesInflator implements IInflator
             );
 
             if ($inventoryNumberElement) {
-                $inventoryNumberStr = trim($inventoryNumberElement);
+                $inventoryNumberStr = trim(strval($inventoryNumberElement));
                 $connectedObject->setInventoryNumber($inventoryNumberStr);
             }
 
@@ -509,7 +525,7 @@ class LiteratureReferencesInflator implements IInflator
             );
 
             if ($catalogNumberElement) {
-                $catalogNumberStr = trim($catalogNumberElement);
+                $catalogNumberStr = trim(strval($catalogNumberElement));
                 $connectedObject->setCatalogNumber($catalogNumberStr);
             }
 
@@ -520,7 +536,7 @@ class LiteratureReferencesInflator implements IInflator
             );
 
             if ($pageNumberElement) {
-                $pageNumberStr = trim($pageNumberElement);
+                $pageNumberStr = trim(strval($pageNumberElement));
                 $connectedObject->setPageNumber($pageNumberStr);
             }
 
@@ -531,7 +547,7 @@ class LiteratureReferencesInflator implements IInflator
             );
 
             if ($figureNumberElement) {
-                $figureNumberStr = trim($figureNumberElement);
+                $figureNumberStr = trim(strval(strval($figureNumberElement)));
                 $connectedObject->setFigureNumber($figureNumberStr);
             }
 
@@ -542,19 +558,24 @@ class LiteratureReferencesInflator implements IInflator
             );
 
             if ($remarksElement) {
-                $remarksStr = trim($remarksElement);
+                $remarksStr = trim(strval($remarksElement));
                 $connectedObject->setRemarks($remarksStr);
             }
         }
     }
 
 
-    private static function registerXPathNamespace(SimpleXMLElement $node)
+    private static function registerXPathNamespace(SimpleXMLElement $node): void
     {
         $node->registerXPathNamespace(self::$nsPrefix, self::$ns);
     }
 
 
+    /**
+     * @return SimpleXMLElement[]|false
+     *
+     * @psalm-return array<array-key, SimpleXMLElement>|false
+     */
     private static function findElementsByXPath(SimpleXMLElement $node, string $path)
     {
         self::registerXPathNamespace($node);
@@ -573,6 +594,9 @@ class LiteratureReferencesInflator implements IInflator
     }
 
 
+    /**
+     * @return SimpleXMLElement|false
+     */
     private static function findElementByXPath(SimpleXMLElement $node, string $path)
     {
         $result = self::findElementsByXPath($node, $path);

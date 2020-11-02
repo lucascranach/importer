@@ -19,7 +19,7 @@ class PersonName
     }
 
 
-    public function setConstituentId(string $constituentId)
+    public function setConstituentId(string $constituentId): void
     {
         $this->constituentId = $constituentId;
     }
@@ -31,7 +31,7 @@ class PersonName
     }
 
 
-    public function addDetail(PersonNameDetail $detail)
+    public function addDetail(PersonNameDetail $detail): void
     {
         $this->details[] = $detail;
     }

@@ -85,6 +85,9 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
+    /**
+     * @return void
+     */
     public function setLangCode(string $langCode)
     {
         $this->langCode = $langCode;
@@ -97,7 +100,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function addPerson(Person $person)
+    public function addPerson(Person $person): void
     {
         $this->involvedPersons[] = $person;
     }
@@ -109,7 +112,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function addPersonName(PersonName $personName)
+    public function addPersonName(PersonName $personName): void
     {
         $this->involvedPersonsNames[] = $personName;
     }
@@ -121,7 +124,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function addTitle(Title $title)
+    public function addTitle(Title $title): void
     {
         $this->titles[] = $title;
     }
@@ -133,7 +136,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setClassification(Classification $classification)
+    public function setClassification(Classification $classification): void
     {
         $this->classification = $classification;
     }
@@ -145,7 +148,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setConditionLevel(int $conditionLevel)
+    public function setConditionLevel(int $conditionLevel): void
     {
         $this->conditionLevel = $conditionLevel;
     }
@@ -157,7 +160,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setObjectName(string $objectName)
+    public function setObjectName(string $objectName): void
     {
         $this->objectName = $objectName;
     }
@@ -169,7 +172,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setInventoryNumber(string $inventoryNumber)
+    public function setInventoryNumber(string $inventoryNumber): void
     {
         $this->inventoryNumber = $inventoryNumber;
     }
@@ -181,7 +184,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setObjectId(int $objectId)
+    public function setObjectId(int $objectId): void
     {
         $this->objectId = $objectId;
     }
@@ -193,7 +196,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setIsVirtual(bool $isVirtual)
+    public function setIsVirtual(bool $isVirtual): void
     {
         $this->isVirtual = $isVirtual;
     }
@@ -205,7 +208,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setDimensions(string $dimensions)
+    public function setDimensions(string $dimensions): void
     {
         $this->dimensions = $dimensions;
     }
@@ -217,7 +220,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setDating(Dating $dating)
+    public function setDating(Dating $dating): void
     {
         $this->dating = $dating;
     }
@@ -229,7 +232,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setDescription(string $description)
+    public function setDescription(string $description): void
     {
         $this->description = $description;
     }
@@ -241,7 +244,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setProvenance(string $provenance)
+    public function setProvenance(string $provenance): void
     {
         $this->provenance = $provenance;
     }
@@ -253,7 +256,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setMedium(string $medium)
+    public function setMedium(string $medium): void
     {
         $this->medium = $medium;
     }
@@ -265,7 +268,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setSignature(string $signature)
+    public function setSignature(string $signature): void
     {
         $this->signature = $signature;
     }
@@ -277,7 +280,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setInscription(string $inscription)
+    public function setInscription(string $inscription): void
     {
         $this->inscription = $inscription;
     }
@@ -289,7 +292,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setMarkings(string $markings)
+    public function setMarkings(string $markings): void
     {
         $this->markings = $markings;
     }
@@ -301,7 +304,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setRelatedWorks(string $relatedWorks)
+    public function setRelatedWorks(string $relatedWorks): void
     {
         $this->relatedWorks = $relatedWorks;
     }
@@ -313,7 +316,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setExhibitionHistory(string $exhibitionHistory)
+    public function setExhibitionHistory(string $exhibitionHistory): void
     {
         $this->exhibitionHistory = $exhibitionHistory;
     }
@@ -325,7 +328,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setRepresentativeObject(string $representativeObject)
+    public function setRepresentativeObject(string $representativeObject): void
     {
         $this->representativeObject = $representativeObject;
     }
@@ -337,7 +340,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setBibliography(string $bibliography)
+    public function setBibliography(string $bibliography): void
     {
         $this->bibliography = $bibliography;
     }
@@ -349,13 +352,13 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function addReprintReference(ObjectReference $reference)
+    public function addReprintReference(ObjectReference $reference): void
     {
         $this->references['reprints'][] = $reference;
     }
 
 
-    public function setReprintReferences(array $references)
+    public function setReprintReferences(array $references): void
     {
         $this->references['reprints'] = $references;
     }
@@ -367,13 +370,13 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function addRelatedWorkReference(ObjectReference $reference)
+    public function addRelatedWorkReference(ObjectReference $reference): void
     {
         $this->references['relatedWorks'][] = $reference;
     }
 
 
-    public function setRelatedWorkReferences(array $references)
+    public function setRelatedWorkReferences(array $references): void
     {
         $this->references['relatedWorks'] = $references;
     }
@@ -385,7 +388,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function addAdditionalTextInformation(AdditionalTextInformation $additionalTextInformation)
+    public function addAdditionalTextInformation(AdditionalTextInformation $additionalTextInformation): void
     {
         $this->additionalTextInformation[] = $additionalTextInformation;
     }
@@ -397,7 +400,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function addPublication(Publication $publication)
+    public function addPublication(Publication $publication): void
     {
         $this->publications[] = $publication;
     }
@@ -409,7 +412,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function addKeyword(MetaReference $keyword)
+    public function addKeyword(MetaReference $keyword): void
     {
         $this->keywords[] = $keyword;
     }
@@ -421,7 +424,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function addLocation(MetaReference $location)
+    public function addLocation(MetaReference $location): void
     {
         $this->locations[] = $location;
     }
@@ -433,7 +436,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setRepository(string $repository)
+    public function setRepository(string $repository): void
     {
         $this->repository = $repository;
     }
@@ -445,7 +448,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setOwner(string $owner)
+    public function setOwner(string $owner): void
     {
         $this->owner = $owner;
     }
@@ -457,7 +460,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setSortingNumber(string $sortingNumber)
+    public function setSortingNumber(string $sortingNumber): void
     {
         $this->sortingNumber = $sortingNumber;
     }
@@ -469,7 +472,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function addCatalogWorkReference(CatalogWorkReference $catalogWorkReference)
+    public function addCatalogWorkReference(CatalogWorkReference $catalogWorkReference): void
     {
         $this->catalogWorkReferences[] = $catalogWorkReference;
     }
@@ -481,7 +484,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setStructuredDimension(StructuredDimension $structuredDimension)
+    public function setStructuredDimension(StructuredDimension $structuredDimension): void
     {
         $this->structuredDimension = $structuredDimension;
     }
@@ -493,7 +496,7 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setRestorationSurveys(array $restorationSurveys)
+    public function setRestorationSurveys(array $restorationSurveys): void
     {
         $this->restorationSurveys = $restorationSurveys;
     }

@@ -17,7 +17,7 @@ class Classification
     }
 
 
-    public function setClassification(string $classification)
+    public function setClassification(string $classification): void
     {
         $this->classification = $classification;
     }
@@ -29,7 +29,7 @@ class Classification
     }
 
 
-    public function setCondition(string $condition)
+    public function setCondition(string $condition): void
     {
         $this->condition = $condition;
     }
@@ -41,7 +41,7 @@ class Classification
     }
 
 
-    public function setPrintProcess(string $printProcess)
+    public function setPrintProcess(string $printProcess): void
     {
         $this->printProcess = $printProcess;
     }

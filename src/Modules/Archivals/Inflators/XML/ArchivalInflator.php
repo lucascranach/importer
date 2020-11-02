@@ -41,7 +41,7 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         Archival $archivalDe,
         Archival $archivalEn
-    ) {
+    ): void {
         $subNode = $node->{'GroupHeader'};
 
         self::registerXPathNamespace($subNode);
@@ -71,13 +71,13 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         Archival $archivalDe,
         Archival $archivalEn
-    ) {
+    ): void {
         $inventoryNumberElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="1"]/Field[@FieldName="{@Inventarnummer}"]/FormattedValue',
         );
         if ($inventoryNumberElement) {
-            $inventoryNumberStr = trim($inventoryNumberElement);
+            $inventoryNumberStr = trim(strval($inventoryNumberElement));
             $archivalDe->setInventoryNumber($inventoryNumberStr);
             $archivalEn->setInventoryNumber($inventoryNumberStr);
         }
@@ -89,7 +89,7 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         Archival $archivalDe,
         Archival $archivalEn
-    ) {
+    ): void {
         $datingDe = new Dating;
         $datingEn = new Dating;
 
@@ -102,7 +102,7 @@ class ArchivalInflator implements IInflator
             'Section[@SectionNumber="2"]/Field[@FieldName="{OBJECTS.Dated}"]/FormattedValue',
         );
         if ($datedElement) {
-            $datedStr = trim($datedElement);
+            $datedStr = trim(strval($datedElement));
 
             $splitDatedStr = self::splitLanguageString($datedStr);
 
@@ -121,7 +121,7 @@ class ArchivalInflator implements IInflator
             'Section[@SectionNumber="3"]/Field[@FieldName="{OBJECTS.DateBegin}"]/FormattedValue',
         );
         if ($dateBeginElement) {
-            $dateBeginStr = intval(trim($dateBeginElement));
+            $dateBeginStr = intval(trim(strval($dateBeginElement)));
 
             $datingDe->setBegin($dateBeginStr);
             $datingEn->setBegin($dateBeginStr);
@@ -133,7 +133,7 @@ class ArchivalInflator implements IInflator
             'Section[@SectionNumber="4"]/Field[@FieldName="{OBJECTS.DateEnd}"]/FormattedValue',
         );
         if ($dateEndElement) {
-            $dateEndStr = intval(trim($dateEndElement));
+            $dateEndStr = intval(trim(strval($dateEndElement)));
 
             $datingDe->setEnd($dateEndStr);
             $datingEn->setEnd($dateEndStr);
@@ -142,6 +142,9 @@ class ArchivalInflator implements IInflator
 
 
     /* Summary */
+    /**
+     * @return void
+     */
     private static function inflateSummary(
         SimpleXMLElement $node,
         Archival $archivalDe,
@@ -168,8 +171,8 @@ class ArchivalInflator implements IInflator
             );
 
             if ($langElement && $summaryElement) {
-                $langStr = trim($langElement);
-                $summaryStr = trim($summaryElement);
+                $langStr = trim(strval($langElement));
+                $summaryStr = trim(strval($summaryElement));
 
                 if (self::$titlesLanguageTypes[Language::DE] === $langStr) {
                     $archivalDe->addSummary($summaryStr);
@@ -193,13 +196,13 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         Archival $archivalDe,
         Archival $archivalEn
-    ) {
+    ): void {
         $transcriptionElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="6"]/Field[@FieldName="{OBJECTS.Description}"]/FormattedValue',
         );
         if ($transcriptionElement) {
-            $transcriptionStr = trim($transcriptionElement);
+            $transcriptionStr = trim(strval($transcriptionElement));
             $archivalDe->setTranscription($transcriptionStr);
             $archivalEn->setTranscription($transcriptionStr);
         }
@@ -211,13 +214,13 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         Archival $archivalDe,
         Archival $archivalEn
-    ) {
+    ): void {
         $locationAndDateElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="7"]/Field[@FieldName="{OBJECTS.PaperSupport}"]/FormattedValue',
         );
         if ($locationAndDateElement) {
-            $locationAndDateStr = trim($locationAndDateElement);
+            $locationAndDateStr = trim(strval($locationAndDateElement));
 
             $splitLocationAndDateStr = self::splitLanguageString($locationAndDateStr);
 
@@ -233,6 +236,9 @@ class ArchivalInflator implements IInflator
 
 
     /* Repository */
+    /**
+     * @return void
+     */
     private static function inflateRepository(
         SimpleXMLElement $node,
         Archival $archivalDe,
@@ -253,7 +259,7 @@ class ArchivalInflator implements IInflator
                 'Section[@SectionNumber="1"]/Field[@FieldName="{@Rolle}"]/FormattedValue',
             );
 
-            $roleName = trim($roleEl);
+            $roleName = trim(strval($roleEl));
 
             $repositoryEl = self::findElementByXPath(
                 $repositoryDetailElement,
@@ -264,7 +270,7 @@ class ArchivalInflator implements IInflator
                 continue;
             }
 
-            $repositoryStr = trim($repositoryEl);
+            $repositoryStr = trim(strval($repositoryEl));
 
             switch ($roleName) {
                 case self::$repositoryTypes[Language::DE]:
@@ -295,13 +301,13 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         Archival $archivalDe,
         Archival $archivalEn
-    ) {
+    ): void {
         $signatureElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="9"]/Field[@FieldName="{OBJECTS.Signed}"]/FormattedValue',
         );
         if ($signatureElement) {
-            $signatureStr = trim($signatureElement);
+            $signatureStr = trim(strval($signatureElement));
             $archivalDe->setSignature($signatureStr);
             $archivalEn->setSignature($signatureStr);
         }
@@ -313,13 +319,13 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         Archival $archivalDe,
         Archival $archivalEn
-    ) {
+    ): void {
         $commentsElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="10"]/Field[@FieldName="{OBJECTS.Notes}"]/FormattedValue',
         );
         if ($commentsElement) {
-            $commentsStr = trim($commentsElement);
+            $commentsStr = trim(strval($commentsElement));
 
             $splitCommentsStr = self::splitLanguageString($commentsStr);
 
@@ -339,13 +345,13 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         Archival $archivalDe,
         Archival $archivalEn
-    ) {
+    ): void {
         $transcribedByElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="11"]/Field[@FieldName="{OBJCONTEXT.Culture}"]/FormattedValue',
         );
         if ($transcribedByElement) {
-            $transcribedByStr = trim($transcribedByElement);
+            $transcribedByStr = trim(strval($transcribedByElement));
 
             $archivalDe->setTranscribedBy($transcribedByStr);
             $archivalEn->setTranscribedBy($transcribedByStr);
@@ -358,13 +364,13 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         Archival $archivalDe,
         Archival $archivalEn
-    ) {
+    ): void {
         $transcriptionDateElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="12"]/Field[@FieldName="{OBJECTS.ObjectName}"]/FormattedValue',
         );
         if ($transcriptionDateElement) {
-            $transcriptionDateStr = trim($transcriptionDateElement);
+            $transcriptionDateStr = trim(strval($transcriptionDateElement));
 
             $archivalDe->setTranscriptionDate($transcriptionDateStr);
             $archivalEn->setTranscriptionDate($transcriptionDateStr);
@@ -377,13 +383,13 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         Archival $archivalDe,
         Archival $archivalEn
-    ) {
+    ): void {
         $transcriptionAccordingToElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="13"]/Field[@FieldName="{OBJECTS.CatRais}"]/FormattedValue',
         );
         if ($transcriptionAccordingToElement) {
-            $transcriptionAccordingToStr = trim($transcriptionAccordingToElement);
+            $transcriptionAccordingToStr = trim(strval($transcriptionAccordingToElement));
 
             $archivalDe->setTranscriptionDate($transcriptionAccordingToStr);
             $archivalEn->setTranscriptionDate($transcriptionAccordingToStr);
@@ -396,13 +402,13 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         Archival $archivalDe,
         Archival $archivalEn
-    ) {
+    ): void {
         $verificationElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="14"]/Field[@FieldName="{OBJECTS.Bibliography}"]/FormattedValue',
         );
         if ($verificationElement) {
-            $verificationStr = trim($verificationElement);
+            $verificationStr = trim(strval($verificationElement));
 
             $archivalDe->setVerification($verificationStr);
             $archivalEn->setVerification($verificationStr);
@@ -415,13 +421,13 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         Archival $archivalDe,
         Archival $archivalEn
-    ) {
+    ): void {
         $scansElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="15"]/Field[@FieldName="{OBJECTS.Markings}"]/FormattedValue',
         );
         if ($scansElement) {
-            $scansStr = trim($scansElement);
+            $scansStr = trim(strval($scansElement));
 
             $archivalDe->setScans($scansStr);
             $archivalEn->setScans($scansStr);
@@ -434,13 +440,13 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         Archival $archivalDe,
         Archival $archivalEn
-    ) {
+    ): void {
         $documentsElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="16"]/Field[@FieldName="{OBJECTS.Inscribed}"]/FormattedValue',
         );
         if ($documentsElement) {
-            $documentsStr = trim($documentsElement);
+            $documentsStr = trim(strval($documentsElement));
 
             $archivalDe->setDocuments($documentsStr);
             $archivalEn->setDocuments($documentsStr);
@@ -453,13 +459,13 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         Archival $archivalDe,
         Archival $archivalEn
-    ) {
+    ): void {
         $scanNamesElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="17"]/Field[@FieldName="{OBJECTS.Medium}"]/FormattedValue',
         );
         if ($scanNamesElement) {
-            $scanNamesStr = trim($scanNamesElement);
+            $scanNamesStr = trim(strval($scanNamesElement));
 
             $scanNamesArr = array_map('trim', explode(self::$splitChar, $scanNamesStr));
 
@@ -474,13 +480,13 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         Archival $archivalDe,
         Archival $archivalEn
-    ) {
+    ): void {
         $periodElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="18"]/Field[@FieldName="{OBJCONTEXT.Period}"]/FormattedValue',
         );
         if ($periodElement) {
-            $periodStr = trim($periodElement);
+            $periodStr = trim(strval($periodElement));
 
             $archivalDe->setPeriod($periodStr);
             $archivalEn->setPeriod($periodStr);
@@ -489,6 +495,9 @@ class ArchivalInflator implements IInflator
 
 
     /* Publications */
+    /**
+     * @return void
+     */
     private static function inflatePublications(
         SimpleXMLElement $node,
         Archival $archivalDe,
@@ -513,7 +522,7 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         Archival $archivalDe,
         Archival $archivalEn
-    ) {
+    ): void {
         $publication = new Publication;
         $wasInflated = false;
 
@@ -524,7 +533,7 @@ class ArchivalInflator implements IInflator
         );
 
         if ($titleElement) {
-            $publication->setTitle(trim($titleElement));
+            $publication->setTitle(trim(strval($titleElement)));
             $wasInflated = true;
         }
 
@@ -535,7 +544,7 @@ class ArchivalInflator implements IInflator
         );
 
         if ($pageNumberElement) {
-            $publication->setPageNumber(trim($pageNumberElement));
+            $publication->setPageNumber(trim(strval($pageNumberElement)));
             $wasInflated = true;
         }
 
@@ -546,7 +555,7 @@ class ArchivalInflator implements IInflator
         );
 
         if ($referenceElement) {
-            $publication->setReferenceId(trim($referenceElement));
+            $publication->setReferenceId(trim(strval($referenceElement)));
             $wasInflated = true;
         }
 
@@ -558,12 +567,17 @@ class ArchivalInflator implements IInflator
     }
 
 
-    private static function registerXPathNamespace(SimpleXMLElement $node)
+    private static function registerXPathNamespace(SimpleXMLElement $node): void
     {
         $node->registerXPathNamespace(self::$nsPrefix, self::$ns);
     }
 
 
+    /**
+     * @return SimpleXMLElement[]|false
+     *
+     * @psalm-return array<array-key, SimpleXMLElement>|false
+     */
     private static function findElementsByXPath(SimpleXMLElement $node, string $path)
     {
         self::registerXPathNamespace($node);
@@ -582,6 +596,9 @@ class ArchivalInflator implements IInflator
     }
 
 
+    /**
+     * @return SimpleXMLElement|false
+     */
     private static function findElementByXPath(SimpleXMLElement $node, string $path)
     {
         $result = self::findElementsByXPath($node, $path);

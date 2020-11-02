@@ -16,7 +16,7 @@ class Signature
     }
 
 
-    public function setDate(string $date)
+    public function setDate(string $date): void
     {
         $this->date = $date;
     }
@@ -28,7 +28,7 @@ class Signature
     }
 
 
-    public function setName(string $name)
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
