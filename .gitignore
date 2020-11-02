@@ -11,4 +11,6 @@ devilbox/
 .php_cs.cache
 cghooks.lock
 
+# Blobs
+*.zip
 *.log
