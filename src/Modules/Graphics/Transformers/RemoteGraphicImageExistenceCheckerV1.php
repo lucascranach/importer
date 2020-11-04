@@ -45,12 +45,12 @@ class RemoteGraphicImageExistenceCheckerV1 extends Hybrid
         string $cacheDir,
         $remoteImageTypeAccessorFunc,
         string $cacheFilename = ''
-    ) {
+    ): self {
         $checker = new self;
 
         if (is_string($remoteImageTypeAccessorFunc) && !empty($remoteImageTypeAccessorFunc)) {
             $imageType = $remoteImageTypeAccessorFunc;
-            $checker->remoteImageTypeAccessorFunc = function () use ($imageType) {
+            $checker->remoteImageTypeAccessorFunc = function () use ($imageType): string {
                 return $imageType;
             };
         }
@@ -59,23 +59,17 @@ class RemoteGraphicImageExistenceCheckerV1 extends Hybrid
             $checker->remoteImageTypeAccessorFunc = $remoteImageTypeAccessorFunc;
         }
 
-        if (is_string($cacheDir)) {
-            if (!file_exists($cacheDir)) {
-                @mkdir($cacheDir, 0777, true);
-            }
-
-            $checker->cacheDir = $cacheDir;
-
-            if (!empty($cacheFilename)) {
-                $checker->cacheFilename = $cacheFilename;
-            }
-
-            $checker->restoreCache();
+        if (!file_exists($cacheDir)) {
+            @mkdir($cacheDir, 0777, true);
         }
 
-        if (is_null($checker->cacheDir)) {
-            throw new Error('RemoteImageExistenceChecker: Missing cache directory for');
+        $checker->cacheDir = $cacheDir;
+
+        if (!empty($cacheFilename)) {
+            $checker->cacheFilename = $cacheFilename;
         }
+
+        $checker->restoreCache();
 
         if (is_null($checker->remoteImageTypeAccessorFunc)) {
             throw new Error('RemoteImageExistenceChecker: Missing remote image type accessor');
@@ -164,7 +158,12 @@ class RemoteGraphicImageExistenceCheckerV1 extends Hybrid
     }
 
 
-    private function createCacheData(?array $data)
+    /**
+     * @return (array|null)[]
+     *
+     * @psalm-return array{rawImagesData: array|null}
+     */
+    private function createCacheData(?array $data): array
     {
         return [
             'rawImagesData' => $data,
@@ -172,7 +171,7 @@ class RemoteGraphicImageExistenceCheckerV1 extends Hybrid
     }
 
 
-    private function updateCacheFor(string $key, $data)
+    private function updateCacheFor(string $key, $data): void
     {
         $this->cache[$key] = $data;
     }
@@ -232,7 +231,12 @@ class RemoteGraphicImageExistenceCheckerV1 extends Hybrid
     }
 
 
-    private function getPreparedImageType($stackItem, $inventoryNumber, $imageType)
+    /**
+     * @return array[]
+     *
+     * @psalm-return array{infos: array{maxDimensions: array{width: int, height: int}}, variants: list<mixed>}
+     */
+    private function getPreparedImageType($stackItem, $inventoryNumber, $imageType): array
     {
         $destinationTypeStructure = [
             'infos' => [
@@ -303,13 +307,16 @@ class RemoteGraphicImageExistenceCheckerV1 extends Hybrid
     }
 
 
-    private function storeCache()
+    private function storeCache(): void
     {
         $cacheAsJSON = json_encode($this->cache);
         file_put_contents($this->getCachePath(), $cacheAsJSON);
     }
 
 
+    /**
+     * @return void
+     */
     private function restoreCache()
     {
         $cacheFilepath = $this->getCachePath();
@@ -323,7 +330,7 @@ class RemoteGraphicImageExistenceCheckerV1 extends Hybrid
     }
 
 
-    private function cleanUp()
+    private function cleanUp(): void
     {
         $this->cache = [];
     }

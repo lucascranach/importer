@@ -222,7 +222,12 @@ class RemotePaintingImageExistenceChecker extends Hybrid
     }
 
 
-    private function getPreparedImageType($stackItem, $inventoryNumber, $imageType)
+    /**
+     * @return array[]
+     *
+     * @psalm-return array{infos: array{maxDimensions: array{width: int, height: int}}, variants: list<mixed>}
+     */
+    private function getPreparedImageType($stackItem, $inventoryNumber, $imageType): array
     {
         $destinationTypeStructure = [
             'infos' => [
