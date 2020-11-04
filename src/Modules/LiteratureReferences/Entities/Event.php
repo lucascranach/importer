@@ -19,7 +19,7 @@ class Event
     }
 
 
-    public function setType(string $type)
+    public function setType(string $type): void
     {
         $this->type = $type;
     }
@@ -31,7 +31,7 @@ class Event
     }
 
 
-    public function setDateText(string $dateText)
+    public function setDateText(string $dateText): void
     {
         $this->dateText = $dateText;
     }
@@ -43,7 +43,7 @@ class Event
     }
 
 
-    public function setDateBegin(string $dateBegin)
+    public function setDateBegin(string $dateBegin): void
     {
         $this->dateBegin = $dateBegin;
     }
@@ -55,7 +55,7 @@ class Event
     }
 
 
-    public function setDateEnd(string $dateEnd)
+    public function setDateEnd(string $dateEnd): void
     {
         $this->dateEnd = $dateEnd;
     }
@@ -67,7 +67,7 @@ class Event
     }
 
 
-    public function setRemarks(string $remarks)
+    public function setRemarks(string $remarks): void
     {
         $this->remarks = $remarks;
     }

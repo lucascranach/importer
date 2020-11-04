@@ -16,7 +16,7 @@ class Person
     }
 
 
-    public function setRole(string $role)
+    public function setRole(string $role): void
     {
         $this->role = $role;
     }
@@ -28,7 +28,7 @@ class Person
     }
 
 
-    public function setName(string $name)
+    public function setName(string $name): void
     {
         $this->name = $name;
     }

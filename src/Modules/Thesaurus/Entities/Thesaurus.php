@@ -23,7 +23,7 @@ class Thesaurus implements IBaseItem
     }
 
 
-    public function addRootTerm(ThesaurusTerm $term)
+    public function addRootTerm(ThesaurusTerm $term): void
     {
         $this->rootTerms[] = $term;
     }

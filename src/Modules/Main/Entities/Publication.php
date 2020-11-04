@@ -17,7 +17,7 @@ class Publication
     }
 
 
-    public function setTitle(string $title)
+    public function setTitle(string $title): void
     {
         $this->title = $title;
     }
@@ -29,7 +29,7 @@ class Publication
     }
 
 
-    public function setPageNumber(string $pageNumber)
+    public function setPageNumber(string $pageNumber): void
     {
         $this->pageNumber = $pageNumber;
     }
@@ -41,7 +41,7 @@ class Publication
     }
 
 
-    public function setReferenceId(string $referenceId)
+    public function setReferenceId(string $referenceId): void
     {
         $this->referenceId = $referenceId;
     }

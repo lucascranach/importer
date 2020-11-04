@@ -45,7 +45,7 @@ class RestorationInflator implements IInflator
         SimpleXMLElement $node,
         Restoration $restorationDe,
         Restoration $restorationEn
-    ) {
+    ): void {
         $headerNode = $node->{'GroupHeader'};
         $detailsNodes = $node->{'Details'};
 
@@ -64,7 +64,7 @@ class RestorationInflator implements IInflator
         SimpleXMLElement $node,
         Restoration $restorationDe,
         Restoration $restorationEn
-    ) {
+    ): void {
         $inventoryNumberSectionElement = $node->{'Section'}[0];
 
         $inventoryNumberElement = self::findElementByXPath(
@@ -72,7 +72,7 @@ class RestorationInflator implements IInflator
             'Field[@FieldName="{@Inventarnummer}"]/FormattedValue',
         );
         if ($inventoryNumberElement) {
-            $inventoryNumberStr = trim($inventoryNumberElement);
+            $inventoryNumberStr = trim(strval($inventoryNumberElement));
 
             $cleanInventoryNumberStr = preg_replace(
                 self::$inventoryNumberReplaceRegExpArr,
@@ -91,7 +91,7 @@ class RestorationInflator implements IInflator
         SimpleXMLElement $node,
         Restoration $restorationDe,
         Restoration $restorationEn
-    ) {
+    ): void {
         $objectIdSectionElement = $node->{'Section'}[1];
 
         $objectIdElement = self::findElementByXPath(
@@ -99,7 +99,7 @@ class RestorationInflator implements IInflator
             'Field[@FieldName="{OBJECTS.ObjectID}"]/FormattedValue',
         );
         if ($objectIdElement) {
-            $objectIdNumberInt = intval(trim($objectIdElement));
+            $objectIdNumberInt = intval(trim(strval($objectIdElement)));
 
             $restorationDe->setObjectId($objectIdNumberInt);
             $restorationEn->setObjectId($objectIdNumberInt);
@@ -112,7 +112,7 @@ class RestorationInflator implements IInflator
         SimpleXMLElement $nodes,
         Restoration $restorationDe,
         Restoration $restorationEn
-    ) {
+    ): void {
         foreach ($nodes as $node) {
             self::inflateSurvey($node, $restorationDe, $restorationEn);
         }
@@ -124,7 +124,7 @@ class RestorationInflator implements IInflator
         SimpleXMLElement $node,
         Restoration $restorationDe,
         Restoration $restorationEn
-    ) {
+    ): void {
         $survey = new Survey();
 
         /* Type */
@@ -133,7 +133,7 @@ class RestorationInflator implements IInflator
             'Section[@SectionNumber="0"]/Field[@FieldName="{SURVEYTYPES.SurveyType}"]/FormattedValue',
         );
         if ($typeElement) {
-            $typeStr = trim($typeElement);
+            $typeStr = trim(strval($typeElement));
 
             $survey->setType($typeStr);
         }
@@ -144,7 +144,7 @@ class RestorationInflator implements IInflator
             'Section[@SectionNumber="1"]/Field[@FieldName="{CONDITIONS.Project}"]/FormattedValue',
         );
         if ($projectElement) {
-            $projectStr = trim($projectElement);
+            $projectStr = trim(strval($projectElement));
 
             $survey->setProject($projectStr);
         }
@@ -155,7 +155,7 @@ class RestorationInflator implements IInflator
             'Section[@SectionNumber="2"]/Field[@FieldName="{CONDITIONS.OverallAnalysis}"]/FormattedValue',
         );
         if ($overallAnalysisElement) {
-            $overallAnalysisStr = trim($overallAnalysisElement);
+            $overallAnalysisStr = trim(strval($overallAnalysisElement));
 
             $survey->setOverallAnalysis($overallAnalysisStr);
         }
@@ -166,7 +166,7 @@ class RestorationInflator implements IInflator
             'Section[@SectionNumber="3"]/Field[@FieldName="{CONDITIONS.Remarks}"]/FormattedValue',
         );
         if ($remarksElement) {
-            $remarksStr = trim($remarksElement);
+            $remarksStr = trim(strval($remarksElement));
 
             $survey->setRemarks($remarksStr);
         }
@@ -220,6 +220,9 @@ class RestorationInflator implements IInflator
 
 
     /* Survey Tests */
+    /**
+     * @return void
+     */
     private static function inflateSurveyTests(
         SimpleXMLElement $node,
         Survey $restorationSurvey
@@ -239,7 +242,7 @@ class RestorationInflator implements IInflator
                 'Section[@SectionNumber="0"]/Field[@FieldName="{@testart}"]/FormattedValue',
             );
             if ($testKindElement) {
-                $testKindStr = trim($testKindElement);
+                $testKindStr = trim(strval($testKindElement));
 
                 $surveyTest->setKind($testKindStr);
             }
@@ -250,7 +253,7 @@ class RestorationInflator implements IInflator
                 'Section[@SectionNumber="1"]/Field[@FieldName="{TEXTENTRIES.TextEntry}"]/FormattedValue',
             );
             if ($testTextElement) {
-                $testTextStr = trim($testTextElement);
+                $testTextStr = trim(strval($testTextElement));
 
                 $surveyTest->setText($testTextStr);
             }
@@ -261,7 +264,7 @@ class RestorationInflator implements IInflator
                 'Section[@SectionNumber="2"]/Field[@FieldName="{TEXTENTRIES.Purpose}"]/FormattedValue',
             );
             if ($testPurposeElement) {
-                $testPurposeStr = trim($testPurposeElement);
+                $testPurposeStr = trim(strval($testPurposeElement));
 
                 $surveyTest->setPurpose($testPurposeStr);
             }
@@ -272,7 +275,7 @@ class RestorationInflator implements IInflator
                 'Section[@SectionNumber="3"]/Field[@FieldName="{TEXTENTRIES.Remarks}"]/FormattedValue',
             );
             if ($testRemarksElement) {
-                $testRemarksStr = trim($testRemarksElement);
+                $testRemarksStr = trim(strval($testRemarksElement));
 
                 $surveyTest->setRemarks($testRemarksStr);
             }
@@ -283,6 +286,9 @@ class RestorationInflator implements IInflator
 
 
     /* Survey Persons */
+    /**
+     * @return void
+     */
     private static function inflateSurveyPersons(
         SimpleXMLElement $node,
         Survey $restorationSurvey
@@ -302,7 +308,7 @@ class RestorationInflator implements IInflator
                 'Section[@SectionNumber="0"]/Field[@FieldName="{ROLES.Role}"]/FormattedValue',
             );
             if ($personRoleElement) {
-                $personRoleStr = trim($personRoleElement);
+                $personRoleStr = trim(strval($personRoleElement));
 
                 $surveyPerson->setRole($personRoleStr);
             }
@@ -313,7 +319,7 @@ class RestorationInflator implements IInflator
                 'Section[@SectionNumber="1"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
             );
             if ($personNameElement) {
-                $personNameStr = trim($personNameElement);
+                $personNameStr = trim(strval($personNameElement));
 
                 $surveyPerson->setName($personNameStr);
             }
@@ -327,7 +333,7 @@ class RestorationInflator implements IInflator
     private static function inflateSurveyProcessingDates(
         SimpleXMLElement $node,
         Survey $survey
-    ) {
+    ): void {
         $processingDates = new ProcessingDates;
 
         /* BeginDate */
@@ -336,7 +342,7 @@ class RestorationInflator implements IInflator
             'Section[@SectionNumber="7"]/Field[@FieldName="{@BearbeitungsdatumTrue}"]/Value',
         );
         if ($beginDateElement) {
-            $beginDateStr = trim($beginDateElement);
+            $beginDateStr = trim(strval($beginDateElement));
 
             $processingDates->setBeginDate($beginDateStr);
         }
@@ -347,7 +353,7 @@ class RestorationInflator implements IInflator
             'Section[@SectionNumber="8"]/Field[@FieldName="{@BearbeitungsdatumFalse}"]/Value',
         );
         if ($beginYearElement) {
-            $beginYearInt = intval(trim($beginYearElement));
+            $beginYearInt = intval(trim(strval($beginYearElement)));
 
             $processingDates->setBeginYear($beginYearInt);
         }
@@ -358,7 +364,7 @@ class RestorationInflator implements IInflator
             'Section[@SectionNumber="9"]/Field[@FieldName="{@BearbeitungsdatEndTrue}"]/Value',
         );
         if ($endDateElement) {
-            $endDateStr = trim($endDateElement);
+            $endDateStr = trim(strval($endDateElement));
 
             $processingDates->setEndDate($endDateStr);
         }
@@ -369,7 +375,7 @@ class RestorationInflator implements IInflator
             'Section[@SectionNumber="10"]/Field[@FieldName="{@BearbeitungsdatEndFalse}"]/Value',
         );
         if ($endYearElement) {
-            $endYearInt = intval(trim($endYearElement));
+            $endYearInt = intval(trim(strval($endYearElement)));
 
             $processingDates->setEndYear($endYearInt);
         }
@@ -383,7 +389,7 @@ class RestorationInflator implements IInflator
             'Section[@SectionNumber="11"]/Field[@FieldName="{@BearbeitungsdatumNeu}"]/Value',
         );
         if ($beginDateNewElement) {
-            $beginDateNew = trim($beginDateNewElement);
+            $beginDateNew = trim(strval($beginDateNewElement));
 
             $processingDates->setBeginDate($beginDateNew);
         }
@@ -394,7 +400,7 @@ class RestorationInflator implements IInflator
             'Section[@SectionNumber="12"]/Field[@FieldName="{@BearbeitungsdatEndNeu}"]/Value',
         );
         if ($endDateNewElement) {
-            $endDateNew = trim($endDateNewElement);
+            $endDateNew = trim(strval($endDateNewElement));
 
             $processingDates->setEndDate($endDateNew);
         }
@@ -415,7 +421,7 @@ class RestorationInflator implements IInflator
     private static function inflateSurveySignature(
         SimpleXMLElement $node,
         Survey $survey
-    ) {
+    ): void {
         $signature = new Signature;
 
         /* Signature Date */
@@ -424,7 +430,7 @@ class RestorationInflator implements IInflator
             'Section[@SectionNumber="13"]/Text[@Name="Text31"]/TextValue',
         );
         if ($signatureDateElement) {
-            $signatureDateStr = trim($signatureDateElement);
+            $signatureDateStr = trim(strval($signatureDateElement));
 
             $signature->setDate($signatureDateStr);
         }
@@ -435,7 +441,7 @@ class RestorationInflator implements IInflator
             'Section[@SectionNumber="13"]/Field[@Name]/FormattedValue',
         );
         if ($signatureNameElement) {
-            $signatureNameStr = trim($signatureNameElement);
+            $signatureNameStr = trim(strval($signatureNameElement));
 
             $signature->setName($signatureNameStr);
         }
@@ -446,12 +452,17 @@ class RestorationInflator implements IInflator
     }
 
 
-    private static function registerXPathNamespace(SimpleXMLElement $node)
+    private static function registerXPathNamespace(SimpleXMLElement $node): void
     {
         $node->registerXPathNamespace(self::$nsPrefix, self::$ns);
     }
 
 
+    /**
+     * @return SimpleXMLElement[]|false
+     *
+     * @psalm-return array<array-key, SimpleXMLElement>|false
+     */
     private static function findElementsByXPath(SimpleXMLElement $node, string $path)
     {
         self::registerXPathNamespace($node);
@@ -470,6 +481,9 @@ class RestorationInflator implements IInflator
     }
 
 
+    /**
+     * @return SimpleXMLElement|false
+     */
     private static function findElementByXPath(SimpleXMLElement $node, string $path)
     {
         $result = self::findElementsByXPath($node, $path);

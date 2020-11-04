@@ -18,7 +18,7 @@ class ThesaurusItem
     }
 
 
-    public function setId(string $id)
+    public function setId(string $id): void
     {
         $this->id = $id;
     }
@@ -30,7 +30,7 @@ class ThesaurusItem
     }
 
 
-    public function setParentId(string $parentId)
+    public function setParentId(string $parentId): void
     {
         $this->parentId = $parentId;
     }
@@ -42,7 +42,7 @@ class ThesaurusItem
     }
 
 
-    public function setTerm(string $term)
+    public function setTerm(string $term): void
     {
         $this->term = $term;
     }

@@ -18,7 +18,7 @@ class AdditionalTextInformation
     {
     }
 
-    public function setType(string $type)
+    public function setType(string $type): void
     {
         $this->type = $type;
     }
@@ -30,7 +30,7 @@ class AdditionalTextInformation
     }
 
 
-    public function setText(string $text)
+    public function setText(string $text): void
     {
         $this->text = $text;
     }
@@ -42,7 +42,7 @@ class AdditionalTextInformation
     }
 
 
-    public function setDate(string $date)
+    public function setDate(string $date): void
     {
         $this->date = $date;
     }
@@ -54,7 +54,7 @@ class AdditionalTextInformation
     }
 
 
-    public function setYear(int $year)
+    public function setYear(int $year): void
     {
         $this->year = $year;
     }
@@ -66,7 +66,7 @@ class AdditionalTextInformation
     }
 
 
-    public function setAuthor(string $author)
+    public function setAuthor(string $author): void
     {
         $this->author = $author;
     }

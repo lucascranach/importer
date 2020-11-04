@@ -17,7 +17,7 @@ class CatalogWorkReference
     }
 
 
-    public function setDescription(string $description)
+    public function setDescription(string $description): void
     {
         $this->description = $description;
     }
@@ -29,7 +29,7 @@ class CatalogWorkReference
     }
 
 
-    public function setReferenceNumber(string $referenceNumber)
+    public function setReferenceNumber(string $referenceNumber): void
     {
         $this->referenceNumber = $referenceNumber;
     }
@@ -41,7 +41,7 @@ class CatalogWorkReference
     }
 
 
-    public function setRemarks(string $remarks)
+    public function setRemarks(string $remarks): void
     {
         $this->remarks = $remarks;
     }

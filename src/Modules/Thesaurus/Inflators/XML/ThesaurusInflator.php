@@ -32,7 +32,7 @@ class ThesaurusInflator implements IInflator
     public static function inflate(
         SimpleXMLElement $node,
         Thesaurus $thesaurus
-    ) {
+    ): void {
         $subNode = $node->{self::$rootTermElement};
 
         self::inflateTerms($subNode, $thesaurus);
@@ -40,10 +40,15 @@ class ThesaurusInflator implements IInflator
 
 
     /* Term */
+    /**
+     * @return array
+     *
+     * @psalm-return array<empty, empty>
+     */
     private static function inflateTerms(
         SimpleXMLElement $node,
         Thesaurus $thesaurus
-    ) {
+    ): array {
         $mappedTerms = [];
 
         foreach ($node->children() as $termElement) {
@@ -60,9 +65,13 @@ class ThesaurusInflator implements IInflator
     {
         $thesaurusTerm = new ThesaurusTerm;
 
-        foreach ($termElement->attributes() as $attribute) {
-            if ($attribute->getName() === 'term') {
-                $thesaurusTerm->setTerm(strval($attribute));
+        $attributes = $termElement->attributes();
+
+        if (!is_null($attributes)) {
+            foreach ($attributes as $attribute) {
+                if ($attribute->getName() === 'term') {
+                    $thesaurusTerm->setTerm(strval($attribute));
+                }
             }
         }
 
@@ -80,19 +89,23 @@ class ThesaurusInflator implements IInflator
     private static function inflateTermAlt(
         SimpleXMLElement $altTermElement,
         ThesaurusTerm $thesaurusTerm
-    ) {
+    ): void {
         $type = '';
         $term = '';
 
-        foreach ($altTermElement->attributes() as $name => $value) {
-            switch ($name) {
-                case 'type':
-                    $type = strval($value);
-                    break;
-                case 'term':
-                    $term = strval($value);
-                    break;
-                default:
+        $attributes = $altTermElement->attributes();
+
+        if (!is_null($attributes)) {
+            foreach ($attributes as $name => $value) {
+                switch ($name) {
+                    case 'type':
+                        $type = strval($value);
+                        break;
+                    case 'term':
+                        $term = strval($value);
+                        break;
+                    default:
+                }
             }
         }
 

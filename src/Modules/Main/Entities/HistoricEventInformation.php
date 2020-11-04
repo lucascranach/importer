@@ -20,7 +20,7 @@ class HistoricEventInformation
     }
 
 
-    public function setEventType(string $eventType)
+    public function setEventType(string $eventType): void
     {
         $this->eventType = $eventType;
     }
@@ -32,7 +32,7 @@ class HistoricEventInformation
     }
 
 
-    public function setText(string $text)
+    public function setText(string $text): void
     {
         $this->text = $text;
     }
@@ -44,7 +44,7 @@ class HistoricEventInformation
     }
 
 
-    public function setBegin(int $begin)
+    public function setBegin(int $begin): void
     {
         $this->begin = $begin;
     }
@@ -56,7 +56,7 @@ class HistoricEventInformation
     }
 
 
-    public function setEnd(int $end)
+    public function setEnd(int $end): void
     {
         $this->end = $end;
     }
@@ -68,7 +68,7 @@ class HistoricEventInformation
     }
 
 
-    public function setRemarks(string $remarks)
+    public function setRemarks(string $remarks): void
     {
         $this->remarks = $remarks;
     }

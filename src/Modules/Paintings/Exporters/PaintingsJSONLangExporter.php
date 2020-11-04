@@ -27,6 +27,9 @@ class PaintingsJSONLangExporter extends Consumer implements IFileExporter
     }
 
 
+    /**
+     * @return self
+     */
     public static function withDestinationAt(string $destFilepath)
     {
         $exporter = new self;
@@ -42,8 +45,7 @@ class PaintingsJSONLangExporter extends Consumer implements IFileExporter
 
         $exporter->filename = $splitFilename[0];
 
-        if (is_null($exporter->dirname) || empty($exporter->dirname)
-            || is_null($exporter->filename) || empty($exporter->filename)) {
+        if (empty($exporter->dirname) || empty($exporter->filename)) {
             throw new Error('No filepath for JSON paintings export set!');
         }
 
@@ -65,6 +67,9 @@ class PaintingsJSONLangExporter extends Consumer implements IFileExporter
     }
 
 
+    /**
+     * @return void
+     */
     public function done(ProducerInterface $producer)
     {
         $this->closeAllOutputFiles();
@@ -72,6 +77,9 @@ class PaintingsJSONLangExporter extends Consumer implements IFileExporter
         $this->outputFilesByLangCode = [];
     }
 
+    /**
+     * @return void
+     */
     public function error($error)
     {
         echo get_class($this) . ": Error -> " . $error . "\n";

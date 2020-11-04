@@ -20,7 +20,7 @@ class ExtenderWithRestorations extends Hybrid
     }
 
 
-    public static function new(RestorationsMemoryExporter $restorationMemoryExporter)
+    public static function new(RestorationsMemoryExporter $restorationMemoryExporter): self
     {
         $transformer = new self;
 
@@ -49,6 +49,9 @@ class ExtenderWithRestorations extends Hybrid
     }
 
 
+    /**
+     * @return void
+     */
     public function done(ProducerInterface $producer)
     {
         parent::done($producer);
@@ -56,7 +59,7 @@ class ExtenderWithRestorations extends Hybrid
     }
 
 
-    private function cleanUp()
+    private function cleanUp(): void
     {
         $this->restorationMemoryExporter = null;
     }

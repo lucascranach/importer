@@ -14,12 +14,18 @@ abstract class Hybrid implements ProducerInterface, ConsumerInterface
     use ConsumerTrait;
 
 
+    /**
+     * @return void
+     */
     public function error($error)
     {
         $this->notifyError($error);
     }
 
 
+    /**
+     * @return void
+     */
     public function done(ProducerInterface $producer)
     {
         $this->notifyDone($producer);

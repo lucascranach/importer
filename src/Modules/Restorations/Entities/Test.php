@@ -18,7 +18,7 @@ class Test
     }
 
 
-    public function setKind(string $kind)
+    public function setKind(string $kind): void
     {
         $this->kind = $kind;
     }
@@ -30,7 +30,7 @@ class Test
     }
 
 
-    public function setText(string $text)
+    public function setText(string $text): void
     {
         $this->text = $text;
     }
@@ -42,7 +42,7 @@ class Test
     }
 
 
-    public function setPurpose(string $purpose)
+    public function setPurpose(string $purpose): void
     {
         $this->purpose = $purpose;
     }
@@ -54,7 +54,7 @@ class Test
     }
 
 
-    public function setRemarks(string $remarks)
+    public function setRemarks(string $remarks): void
     {
         $this->remarks = $remarks;
     }

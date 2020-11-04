@@ -53,7 +53,7 @@ abstract class AbstractImagesItem
     abstract public function getImageId(): string;
 
 
-    public function setImages(?array $images)
+    public function setImages(?array $images): void
     {
         $this->images = $images;
     }

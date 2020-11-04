@@ -18,7 +18,7 @@ class PersonNameDetail
     }
 
 
-    public function setName(string $name)
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
@@ -30,7 +30,7 @@ class PersonNameDetail
     }
 
 
-    public function setNameType(string $nameType)
+    public function setNameType(string $nameType): void
     {
         $this->nameType = $nameType;
     }

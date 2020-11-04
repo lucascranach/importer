@@ -74,7 +74,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $subNode = $node->{'GroupHeader'};
 
         self::registerXPathNamespace($subNode);
@@ -116,7 +116,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $details = $node->{'Section'}[1]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($details); $i += 2) {
@@ -141,7 +141,7 @@ class PaintingInflator implements IInflator
                     'Field[@FieldName="{ROLES.Role}"]/FormattedValue',
                 );
                 if ($roleElement) {
-                    $roleStr = trim($roleElement);
+                    $roleStr = trim(strval($roleElement));
                     $personsArr[$j]->setRole($roleStr);
                 }
 
@@ -151,7 +151,7 @@ class PaintingInflator implements IInflator
                     'Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
                 );
                 if ($nameElement) {
-                    $nameStr = trim($nameElement);
+                    $nameStr = trim(strval($nameElement));
                     $personsArr[$j]->setName($nameStr);
                 }
 
@@ -161,7 +161,7 @@ class PaintingInflator implements IInflator
                     'Section[@SectionNumber="3"]//FormattedValue',
                 );
                 if ($prefixElement) {
-                    $prefixStr = trim($prefixElement);
+                    $prefixStr = trim(strval($prefixElement));
                     $personsArr[$j]->setPrefix($prefixStr);
                 }
 
@@ -171,7 +171,7 @@ class PaintingInflator implements IInflator
                     'Section[@SectionNumber="4"]//FormattedValue',
                 );
                 if ($suffixElement) {
-                    $suffixStr = trim($suffixElement);
+                    $suffixStr = trim(strval($suffixElement));
                     $personsArr[$j]->setSuffix($suffixStr);
                 }
 
@@ -185,7 +185,7 @@ class PaintingInflator implements IInflator
                         we can mark the person as 'unknown' */
                     $personsArr[$j]->setIsUnknown(true);
 
-                    $unknownPersonRoleStr = trim($unknownPersonRoleElement);
+                    $unknownPersonRoleStr = trim(strval($unknownPersonRoleElement));
                     $personsArr[$j]->setRole($unknownPersonRoleStr);
                 }
 
@@ -195,7 +195,7 @@ class PaintingInflator implements IInflator
                     'Section[@SectionNumber="7"]//FormattedValue',
                 );
                 if ($unknownPersonPrefixElement) {
-                    $unknownPersonPrefixStr = trim($unknownPersonPrefixElement);
+                    $unknownPersonPrefixStr = trim(strval($unknownPersonPrefixElement));
                     $personsArr[$j]->setPrefix($unknownPersonPrefixStr);
                 }
 
@@ -205,7 +205,7 @@ class PaintingInflator implements IInflator
                     'Section[@SectionNumber="8"]//FormattedValue',
                 );
                 if ($unknownPersonSuffixElement) {
-                    $unknownPersonSuffixStr = trim($unknownPersonSuffixElement);
+                    $unknownPersonSuffixStr = trim(strval($unknownPersonSuffixElement));
                     $personsArr[$j]->setSuffix($unknownPersonSuffixStr);
                 }
 
@@ -215,7 +215,7 @@ class PaintingInflator implements IInflator
                     'Field[@FieldName="{@Nametype}"]/FormattedValue',
                 );
                 if ($nameTypeElement) {
-                    $nameTypeStr = trim($nameTypeElement);
+                    $nameTypeStr = trim(strval($nameTypeElement));
                     $personsArr[$j]->setNameType($nameTypeStr);
                 }
 
@@ -225,7 +225,7 @@ class PaintingInflator implements IInflator
                     'Field[@FieldName="{@AndererName}"]/FormattedValue',
                 );
                 if ($alternativeNameElement) {
-                    $alternativeNameStr = trim($alternativeNameElement);
+                    $alternativeNameStr = trim(strval($alternativeNameElement));
                     $personsArr[$j]->setAlternativeName($alternativeNameStr);
                 }
 
@@ -235,7 +235,7 @@ class PaintingInflator implements IInflator
                     'Section[@SectionNumber="11"]//FormattedValue',
                 );
                 if ($remarksElement) {
-                    $remarksNameStr = trim($remarksElement);
+                    $remarksNameStr = trim(strval($remarksElement));
                     $personsArr[$j]->setRemarks($remarksNameStr);
                 }
 
@@ -245,7 +245,7 @@ class PaintingInflator implements IInflator
                     'Section[@SectionNumber="12"]//FormattedValue',
                 );
                 if ($dateElement) {
-                    $dateStr = trim($dateElement);
+                    $dateStr = trim(strval($dateElement));
                     $personsArr[$j]->setDate($dateStr);
                 }
             }
@@ -258,7 +258,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $groups = $node->{'Section'}[2]->{'Subreport'}->{'Group'};
 
         foreach ($groups as $group) {
@@ -273,7 +273,7 @@ class PaintingInflator implements IInflator
                 'Field[@FieldName="GroupName ({CONALTNAMES.ConstituentID})"]/FormattedValue',
             );
             if ($constituentIdElement) {
-                $constituentIdStr = trim($constituentIdElement);
+                $constituentIdStr = trim(strval($constituentIdElement));
                 $personName->setConstituentId($constituentIdStr);
             }
 
@@ -296,7 +296,7 @@ class PaintingInflator implements IInflator
                     'Field[@FieldName="GroupName ({CONALTNAMES.DisplayName})"]/FormattedValue',
                 );
                 if ($detailNameElement) {
-                    $detailNameStr = trim($detailNameElement);
+                    $detailNameStr = trim(strval($detailNameElement));
                     $personDetailName->setName($detailNameStr);
                 }
 
@@ -306,7 +306,7 @@ class PaintingInflator implements IInflator
                     'Field[@FieldName="GroupName ({CONALTNAMES.NameType})"]/FormattedValue',
                 );
                 if ($detailNameTypeElement) {
-                    $detailNameTypeStr = trim($detailNameTypeElement);
+                    $detailNameTypeStr = trim(strval($detailNameTypeElement));
                     $personDetailName->setNameType($detailNameTypeStr);
                 }
             }
@@ -319,7 +319,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $titleDetailElements = $node->{'Section'}[3]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($titleDetailElements); $i += 1) {
@@ -337,7 +337,7 @@ class PaintingInflator implements IInflator
                 'Field[@FieldName="{LANGUAGES.Language}"]/FormattedValue',
             );
             if ($langElement) {
-                $langStr = trim($langElement);
+                $langStr = trim(strval($langElement));
 
                 if (self::$titlesLanguageTypes[Language::DE] === $langStr) {
                     $paintingDe->addTitle($title);
@@ -363,7 +363,7 @@ class PaintingInflator implements IInflator
                 'Field[@FieldName="{TITLETYPES.TitleType}"]/FormattedValue',
             );
             if ($typeElement) {
-                $typeStr = trim($typeElement);
+                $typeStr = trim(strval($typeElement));
                 $title->setType($typeStr);
             }
 
@@ -373,7 +373,7 @@ class PaintingInflator implements IInflator
                 'Field[@FieldName="{OBJTITLES.Title}"]/FormattedValue',
             );
             if ($titleElement) {
-                $titleStr = trim($titleElement);
+                $titleStr = trim(strval($titleElement));
                 $title->setTitle($titleStr);
             }
 
@@ -383,7 +383,7 @@ class PaintingInflator implements IInflator
                 'Field[@FieldName="{OBJTITLES.Remarks}"]/FormattedValue',
             );
             if ($remarksElement) {
-                $remarksStr = trim($remarksElement);
+                $remarksStr = trim(strval($remarksElement));
                 $title->setRemarks($remarksStr);
             }
         }
@@ -395,7 +395,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $classificationSectionElement = $node->{'Section'}[4];
 
         $classificationDe = new Classification;
@@ -410,7 +410,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{@Klassifizierung}"]/FormattedValue',
         );
         if ($classificationElement) {
-            $classificationStr = trim($classificationElement);
+            $classificationStr = trim(strval($classificationElement));
 
             /* Using single german value for both language objects */
             $classificationDe->setClassification($classificationStr);
@@ -424,7 +424,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $objectNameSectionElement = $node->{'Section'}[5];
 
         $objectNameElement = self::findElementByXPath(
@@ -432,7 +432,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJECTS.ObjectName}"]/FormattedValue',
         );
         if ($objectNameElement) {
-            $objectNameStr = trim($objectNameElement);
+            $objectNameStr = trim(strval($objectNameElement));
 
             /* Using single german value for both language objects */
             $paintingDe->setObjectName($objectNameStr);
@@ -446,7 +446,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $inventoryNumberSectionElement = $node->{'Section'}[6];
 
         $inventoryNumberElement = self::findElementByXPath(
@@ -454,7 +454,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{@Inventarnummer}"]/FormattedValue',
         );
         if ($inventoryNumberElement) {
-            $inventoryNumberStr = trim($inventoryNumberElement);
+            $inventoryNumberStr = trim(strval($inventoryNumberElement));
             $cleanInventoryNumberStr = preg_replace(
                 self::$inventoryNumberReplaceRegExpArr,
                 '',
@@ -473,7 +473,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $metaSectionElement = $node->{'Section'}[7];
 
         /* object id */
@@ -482,7 +482,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJECTS.ObjectID}"]/Value',
         );
         if ($objectIdElement) {
-            $objectIdStr = intval(trim($objectIdElement));
+            $objectIdStr = intval(trim(strval($objectIdElement)));
 
             /* Using single german value for both language objects */
             $paintingDe->setObjectId($objectIdStr);
@@ -496,7 +496,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $metaSectionElement = $node->{'Section'}[8];
 
         /* object id */
@@ -505,7 +505,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJECTS.Dimensions}"]/FormattedValue',
         );
         if ($dimensionsElement) {
-            $dimensionsStr = trim($dimensionsElement);
+            $dimensionsStr = trim(strval($dimensionsElement));
 
             $splitDimensionsStr = self::splitLanguageString($dimensionsStr);
 
@@ -525,7 +525,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $datingDe = new Dating;
         $datingEn = new Dating;
 
@@ -541,7 +541,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJECTS.Dated}"]/FormattedValue',
         );
         if ($datedElement) {
-            $datedDateStr = trim($datedElement);
+            $datedDateStr = trim(strval($datedElement));
 
             $splitStateStr = self::splitLanguageString($datedDateStr);
 
@@ -562,7 +562,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJECTS.DateBegin}"]/FormattedValue',
         );
         if ($dateBeginElement) {
-            $dateBeginStr = intval(trim($dateBeginElement));
+            $dateBeginStr = intval(trim(strval($dateBeginElement)));
 
             $datingDe->setBegin($dateBeginStr);
             $datingEn->setBegin($dateBeginStr);
@@ -576,7 +576,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJECTS.DateEnd}"]/FormattedValue',
         );
         if ($dateEndElement) {
-            $dateEndStr = intval(trim($dateEndElement));
+            $dateEndStr = intval(trim(strval($dateEndElement)));
 
             $datingDe->setEnd($dateEndStr);
             $datingEn->setEnd($dateEndStr);
@@ -590,7 +590,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJECTS.DateRemarks}"]/FormattedValue',
         );
         if ($remarksElement) {
-            $remarksStr = trim($remarksElement);
+            $remarksStr = trim(strval($remarksElement));
 
             $splitRemarksStr = self::splitLanguageString($remarksStr);
 
@@ -638,7 +638,7 @@ class PaintingInflator implements IInflator
                     'Field[@FieldName="{OBJDATES.EventType}"]/FormattedValue',
                 );
                 if ($eventTypeElement) {
-                    $eventTypeStr = trim($eventTypeElement);
+                    $eventTypeStr = trim(strval($eventTypeElement));
                     $historicEventArr[$j]->setEventType($eventTypeStr);
                 }
 
@@ -648,7 +648,7 @@ class PaintingInflator implements IInflator
                     'Field[@FieldName="{OBJDATES.DateText}"]/FormattedValue',
                 );
                 if ($dateTextElement) {
-                    $dateTextStr = trim($dateTextElement);
+                    $dateTextStr = trim(strval($dateTextElement));
                     $historicEventArr[$j]->setText($dateTextStr);
                 }
 
@@ -658,7 +658,7 @@ class PaintingInflator implements IInflator
                     'Field[@FieldName="{@Anfangsdatum}"]/FormattedValue',
                 );
                 if ($dateBeginElement) {
-                    $dateBeginNumber = intval(trim($dateBeginElement));
+                    $dateBeginNumber = intval(trim(strval($dateBeginElement)));
                     $historicEventArr[$j]->setBegin($dateBeginNumber);
                 }
 
@@ -668,7 +668,7 @@ class PaintingInflator implements IInflator
                     'Field[@FieldName="{@Enddatum }"]/FormattedValue',
                 );
                 if ($dateEndElement) {
-                    $dateEndNumber = intval(trim($dateEndElement));
+                    $dateEndNumber = intval(trim(strval($dateEndElement)));
                     $historicEventArr[$j]->setEnd($dateEndNumber);
                 }
 
@@ -678,7 +678,7 @@ class PaintingInflator implements IInflator
                     'Field[@FieldName="{OBJDATES.Remarks}"]/FormattedValue',
                 );
                 if ($dateRemarksElement) {
-                    $dateRemarksNumber = trim($dateRemarksElement);
+                    $dateRemarksNumber = trim(strval($dateRemarksElement));
                     $historicEventArr[$j]->setRemarks($dateRemarksNumber);
                 }
             }
@@ -691,7 +691,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         /* de */
         $descriptionDeSectionElement = $node->{'Section'}[14];
         $descriptionElement = self::findElementByXPath(
@@ -699,7 +699,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJECTS.Description}"]/FormattedValue',
         );
         if ($descriptionElement) {
-            $descriptionStr = trim($descriptionElement);
+            $descriptionStr = trim(strval($descriptionElement));
             $paintingDe->setDescription($descriptionStr);
         }
 
@@ -710,7 +710,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJCONTEXT.LongText3}"]/FormattedValue',
         );
         if ($descriptionElement) {
-            $descriptionStr = trim($descriptionElement);
+            $descriptionStr = trim(strval($descriptionElement));
             $paintingEn->setDescription($descriptionStr);
         }
     }
@@ -721,7 +721,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         /* de */
         $provenanceDeSectionElement = $node->{'Section'}[16];
         $provenanceElement = self::findElementByXPath(
@@ -729,7 +729,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJECTS.Provenance}"]/FormattedValue',
         );
         if ($provenanceElement) {
-            $provenanceStr = trim($provenanceElement);
+            $provenanceStr = trim(strval($provenanceElement));
             $paintingDe->setProvenance($provenanceStr);
         }
 
@@ -740,7 +740,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJCONTEXT.LongText5}"]/FormattedValue',
         );
         if ($provenanceElement) {
-            $provenanceStr = trim($provenanceElement);
+            $provenanceStr = trim(strval($provenanceElement));
             $paintingEn->setProvenance($provenanceStr);
         }
     }
@@ -751,7 +751,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         /* de */
         $mediumDeSectionElement = $node->{'Section'}[18];
         $mediumElement = self::findElementByXPath(
@@ -759,7 +759,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJECTS.Medium}"]/FormattedValue',
         );
         if ($mediumElement) {
-            $mediumStr = trim($mediumElement);
+            $mediumStr = trim(strval($mediumElement));
             $paintingDe->setMedium($mediumStr);
         }
 
@@ -770,7 +770,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJCONTEXT.LongText4}"]/FormattedValue',
         );
         if ($mediumElement) {
-            $mediumStr = trim($mediumElement);
+            $mediumStr = trim(strval($mediumElement));
             $paintingEn->setMedium($mediumStr);
         }
     }
@@ -781,7 +781,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         /* de */
         $signatureDeSectionElement = $node->{'Section'}[20];
         $signatureElement = self::findElementByXPath(
@@ -789,7 +789,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJECTS.PaperSupport}"]/FormattedValue',
         );
         if ($signatureElement) {
-            $signatureStr = trim($signatureElement);
+            $signatureStr = trim(strval($signatureElement));
             $paintingDe->setSignature($signatureStr);
         }
 
@@ -800,7 +800,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJCONTEXT.ShortText6}"]/FormattedValue',
         );
         if ($signatureElement) {
-            $signatureStr = trim($signatureElement);
+            $signatureStr = trim(strval($signatureElement));
             $paintingEn->setSignature($signatureStr);
         }
     }
@@ -811,7 +811,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement &$node,
         Painting &$paintingDe,
         Painting &$paintingEn
-    ) {
+    ): void {
         /* de */
         $inscriptionDeSectionElement = $node->{'Section'}[22];
         $inscriptionElement = self::findElementByXPath(
@@ -819,7 +819,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJECTS.Inscribed}"]/FormattedValue',
         );
         if ($inscriptionElement) {
-            $inscriptionStr = trim($inscriptionElement);
+            $inscriptionStr = trim(strval($inscriptionElement));
             $paintingDe->setInscription($inscriptionStr);
         }
 
@@ -830,7 +830,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJCONTEXT.LongText7}"]/FormattedValue',
         );
         if ($inscriptionElement) {
-            $inscriptionStr = trim($inscriptionElement);
+            $inscriptionStr = trim(strval($inscriptionElement));
             $paintingEn->setInscription($inscriptionStr);
         }
     }
@@ -841,7 +841,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         /* de */
         $markingsDeSectionElement = $node->{'Section'}[24];
         $markingsElement = self::findElementByXPath(
@@ -849,7 +849,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJECTS.Markings}"]/FormattedValue',
         );
         if ($markingsElement) {
-            $markingsStr = trim($markingsElement);
+            $markingsStr = trim(strval($markingsElement));
             $paintingDe->setMarkings($markingsStr);
         }
 
@@ -860,7 +860,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJCONTEXT.LongText9}"]/FormattedValue',
         );
         if ($markingsElement) {
-            $markingsStr = trim($markingsElement);
+            $markingsStr = trim(strval($markingsElement));
             $paintingEn->setMarkings($markingsStr);
         }
     }
@@ -871,7 +871,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         /* de */
         $relatedWorksDeSectionElement = $node->{'Section'}[26];
         $relatedWorksElement = self::findElementByXPath(
@@ -879,7 +879,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJECTS.RelatedWorks}"]/FormattedValue',
         );
         if ($relatedWorksElement) {
-            $relatedWorksStr = trim($relatedWorksElement);
+            $relatedWorksStr = trim(strval($relatedWorksElement));
             $paintingDe->setRelatedWorks($relatedWorksStr);
         }
 
@@ -890,7 +890,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJCONTEXT.LongText6}"]/FormattedValue',
         );
         if ($relatedWorksElement) {
-            $relatedWorksStr = trim($relatedWorksElement);
+            $relatedWorksStr = trim(strval($relatedWorksElement));
             $paintingEn->setRelatedWorks($relatedWorksStr);
         }
     }
@@ -901,7 +901,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         /* de */
         $exhibitionHistoryDeSectionElement = $node->{'Section'}[28];
         $exhibitionHistoryElement = self::findElementByXPath(
@@ -909,7 +909,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJECTS.Exhibitions}"]/FormattedValue',
         );
         if ($exhibitionHistoryElement) {
-            $exhibitionHistoryStr = trim($exhibitionHistoryElement);
+            $exhibitionHistoryStr = trim(strval($exhibitionHistoryElement));
             $cleanExhibitionHistoryStr = preg_replace(
                 self::$inventoryNumberReplaceRegExpArr,
                 '',
@@ -925,7 +925,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJCONTEXT.LongText8}"]/FormattedValue',
         );
         if ($exhibitionHistoryElement) {
-            $exhibitionHistoryStr = trim($exhibitionHistoryElement);
+            $exhibitionHistoryStr = trim(strval($exhibitionHistoryElement));
             $cleanExhibitionHistoryStr = preg_replace(
                 self::$inventoryNumberReplaceRegExpArr,
                 '',
@@ -941,14 +941,14 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $bibliographySectionElement = $node->{'Section'}[30];
         $bibliographyElement = self::findElementByXPath(
             $bibliographySectionElement,
             'Field[@FieldName="{OBJECTS.Bibliography}"]/FormattedValue',
         );
         if ($bibliographyElement) {
-            $bibliographyStr = trim($bibliographyElement);
+            $bibliographyStr = trim(strval($bibliographyElement));
             $paintingDe->setBibliography($bibliographyStr);
             $paintingEn->setBibliography($bibliographyStr);
         }
@@ -960,7 +960,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $referenceDetailsElements = $node->{'Section'}[31]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($referenceDetailsElements); $i += 1) {
@@ -981,7 +981,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="0"]/Text[@Name="Text5"]/TextValue',
             );
             if ($textElement) {
-                $textStr = trim($textElement);
+                $textStr = trim(strval($textElement));
                 $reference->setText($textStr);
             }
 
@@ -991,7 +991,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="1"]/Field[@FieldName="{@Inventarnummer}"]/FormattedValue',
             );
             if ($inventoryNumberElement) {
-                $inventoryNumberStr = trim($inventoryNumberElement);
+                $inventoryNumberStr = trim(strval($inventoryNumberElement));
                 $reference->setInventoryNumber($inventoryNumberStr);
             }
 
@@ -1001,7 +1001,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="2"]/Field[@FieldName="{ASSOCIATIONS.Remarks}"]/FormattedValue',
             );
             if ($remarksElement) {
-                $remarksStr = trim($remarksElement);
+                $remarksStr = trim(strval($remarksElement));
                 $reference->setRemark($remarksStr);
             }
         }
@@ -1013,7 +1013,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $referenceDetailsElements = $node->{'Section'}[32]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($referenceDetailsElements); $i += 1) {
@@ -1034,7 +1034,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="0"]/Text[@Name="Text5"]/TextValue',
             );
             if ($textElement) {
-                $textStr = trim($textElement);
+                $textStr = trim(strval($textElement));
                 $reference->setText($textStr);
             }
 
@@ -1044,7 +1044,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="1"]/Field[@FieldName="{@Inventarnummer}"]/FormattedValue',
             );
             if ($inventoryNumberElement) {
-                $inventoryNumberStr = trim($inventoryNumberElement);
+                $inventoryNumberStr = trim(strval($inventoryNumberElement));
                 $reference->setInventoryNumber($inventoryNumberStr);
             }
 
@@ -1054,7 +1054,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="2"]/Field[@FieldName="{ASSOCIATIONS.Remarks}"]/FormattedValue',
             );
             if ($remarksElement) {
-                $remarksStr = trim($remarksElement);
+                $remarksStr = trim(strval($remarksElement));
                 $reference->setRemark($remarksStr);
             }
         }
@@ -1066,7 +1066,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $additionalTextsDetailsElements = $node->{'Section'}[33]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($additionalTextsDetailsElements); $i += 1) {
@@ -1086,7 +1086,7 @@ class PaintingInflator implements IInflator
 
             /* Language determination */
             if ($textTypeElement) {
-                $textTypeStr = trim($textTypeElement);
+                $textTypeStr = trim(strval($textTypeElement));
                 $additionalTextInformation->setType($textTypeStr);
 
                 if (self::$additionalTextLanguageTypes[Language::DE] === $textTypeStr) {
@@ -1117,7 +1117,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="1"]/Field[@FieldName="{TEXTENTRIES.TextEntry}"]/FormattedValue',
             );
             if ($textElement) {
-                $textStr = trim($textElement);
+                $textStr = trim(strval($textElement));
                 $additionalTextInformation->setText($textStr);
             }
 
@@ -1127,7 +1127,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="2"]/Text[@Name="Text21"]/TextValue',
             );
             if ($dateElement) {
-                $dateStr = trim($dateElement);
+                $dateStr = trim(strval($dateElement));
                 $additionalTextInformation->setDate($dateStr);
             }
 
@@ -1137,7 +1137,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="3"]/Text[@Name="Text1"]/TextValue',
             );
             if ($yearElement) {
-                $yearStr = trim($yearElement);
+                $yearStr = trim(strval($yearElement));
                 $year = intval($yearStr);
                 $additionalTextInformation->setYear($year);
             }
@@ -1148,7 +1148,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="4"]/Text[@Name="Text3"]/TextValue',
             );
             if ($authorElement) {
-                $authorStr = trim($authorElement);
+                $authorStr = trim(strval($authorElement));
                 $additionalTextInformation->setAuthor($authorStr);
             }
         }
@@ -1160,7 +1160,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $publicationDetailsElements = $node->{'Section'}[34]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($publicationDetailsElements); $i += 1) {
@@ -1181,7 +1181,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="0"]/Field[@FieldName="{REFERENCEMASTER.Heading}"]/FormattedValue',
             );
             if ($titleElement) {
-                $titleStr = trim($titleElement);
+                $titleStr = trim(strval($titleElement));
                 $publication->setTitle($titleStr);
             }
 
@@ -1191,7 +1191,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="1"]/Field[@FieldName="{REFXREFS.PageNumber}"]/FormattedValue',
             );
             if ($pageNumberElement) {
-                $pageNumberStr = trim($pageNumberElement);
+                $pageNumberStr = trim(strval($pageNumberElement));
                 $publication->setPageNumber($pageNumberStr);
             }
 
@@ -1201,7 +1201,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="2"]/Field[@FieldName="{REFERENCEMASTER.ReferenceID}"]/FormattedValue',
             );
             if ($referenceIdElement) {
-                $referenceIdStr = trim($referenceIdElement);
+                $referenceIdStr = trim(strval($referenceIdElement));
                 $publication->setReferenceId($referenceIdStr);
             }
         }
@@ -1213,7 +1213,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $keywordDetailsElements = $node->{'Section'}[35]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($keywordDetailsElements); $i += 1) {
@@ -1231,7 +1231,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="0"]/Field[@FieldName="{THESXREFTYPES.ThesXrefType}"]/FormattedValue',
             );
             if ($keywordTypeElement) {
-                $keywordTypeStr = trim($keywordTypeElement);
+                $keywordTypeStr = trim(strval($keywordTypeElement));
                 $metaReference->setType($keywordTypeStr);
             }
 
@@ -1241,7 +1241,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="1"]/Field[@FieldName="{TERMS.Term}"]/FormattedValue',
             );
             if ($keywordTermElement) {
-                $keywordTermStr = trim($keywordTermElement);
+                $keywordTermStr = trim(strval($keywordTermElement));
                 $metaReference->setTerm($keywordTermStr);
             }
 
@@ -1253,7 +1253,7 @@ class PaintingInflator implements IInflator
                     'Section[@SectionNumber="3"]/Field[@FieldName="' . $fieldname . '"]/FormattedValue',
                 );
                 if ($keywordPathElement) {
-                    $keywordPathStr = trim($keywordPathElement);
+                    $keywordPathStr = trim(strval($keywordPathElement));
                     $metaReference->setPath($keywordPathStr);
                 }
             }
@@ -1272,7 +1272,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $locationDetailsElements = $node->{'Section'}[36]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($locationDetailsElements); $i += 1) {
@@ -1292,7 +1292,7 @@ class PaintingInflator implements IInflator
 
             /* Language determination */
             if ($locationTypeElement) {
-                $locationTypeStr = trim($locationTypeElement);
+                $locationTypeStr = trim(strval($locationTypeElement));
                 $metaReference->setType($locationTypeStr);
 
                 if (self::$locationLanguageTypes[Language::DE] === $locationTypeStr) {
@@ -1319,7 +1319,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="1"]/Field[@FieldName="{TERMS.Term}"]/FormattedValue',
             );
             if ($locationTermElement) {
-                $locationTermStr = trim($locationTermElement);
+                $locationTermStr = trim(strval($locationTermElement));
                 $metaReference->setTerm($locationTermStr);
             }
 
@@ -1329,7 +1329,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="3"]/Field[@FieldName="{THESXREFSPATH2.Path}"]/FormattedValue',
             );
             if ($locationPathElement) {
-                $locationPathStr = trim($locationPathElement);
+                $locationPathStr = trim(strval($locationPathElement));
                 $metaReference->setPath($locationPathStr);
             }
 
@@ -1339,7 +1339,7 @@ class PaintingInflator implements IInflator
                 'Section[@SectionNumber="4"]/Field[@FieldName="{@URL TGN}"]/FormattedValue',
             );
             if ($locationURLElement) {
-                $locationURLStr = trim($locationURLElement);
+                $locationURLStr = trim(strval($locationURLElement));
                 $metaReference->setURL($locationURLStr);
             }
         }
@@ -1351,7 +1351,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $repositoryAndOwnerDetailsSubreport = $node->{'Section'}[37]->{'Subreport'};
         $details = $repositoryAndOwnerDetailsSubreport->{'Details'};
 
@@ -1366,7 +1366,7 @@ class PaintingInflator implements IInflator
                 continue;
             }
 
-            $roleName = trim($roleElement);
+            $roleName = trim(strval($roleElement));
 
             /* Passing the roleName to the infaltors for themself to decide if they are
               responsible for further value extraction */
@@ -1408,7 +1408,7 @@ class PaintingInflator implements IInflator
             throw new Error('Missing element with repository name!');
         }
 
-        $repositoryStr = trim($repositoryElement);
+        $repositoryStr = trim(strval($repositoryElement));
 
         switch ($roleName) {
             case self::$repositoryTypes[Language::DE]:
@@ -1445,7 +1445,7 @@ class PaintingInflator implements IInflator
             throw new Error('Missing element with owner name!');
         }
 
-        $ownerStr = trim($ownerElement);
+        $ownerStr = trim(strval($ownerElement));
 
         switch ($roleName) {
             case self::$ownerTypes[Language::DE]:
@@ -1471,7 +1471,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $sortingNumberSubreport = $node->{'Section'}[38];
 
         $sortingNumberElement = self::findElementByXPath(
@@ -1479,7 +1479,7 @@ class PaintingInflator implements IInflator
             'Field[@FieldName="{OBJCONTEXT.Period}"]/FormattedValue',
         );
         if ($sortingNumberElement) {
-            $sortingNumberStr = trim($sortingNumberElement);
+            $sortingNumberStr = trim(strval($sortingNumberElement));
 
             $paintingDe->setSortingNumber($sortingNumberStr);
             $paintingEn->setSortingNumber($sortingNumberStr);
@@ -1492,7 +1492,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $catalogWorkReferenceDetailsElements = $node->{'Section'}[39]->{'Subreport'}->{'Details'};
 
         foreach ($catalogWorkReferenceDetailsElements as $detailElement) {
@@ -1504,7 +1504,7 @@ class PaintingInflator implements IInflator
                 'Field[@FieldName="{AltNumDescriptions.AltNumDescription}"]/FormattedValue',
             );
             if ($descriptionElement) {
-                $descriptionStr = trim($descriptionElement);
+                $descriptionStr = trim(strval($descriptionElement));
 
                 $catalogWorkReference->setDescription($descriptionStr);
             }
@@ -1515,7 +1515,7 @@ class PaintingInflator implements IInflator
                 'Field[@FieldName="{AltNums.AltNum}"]/FormattedValue',
             );
             if ($referenceNumberElement) {
-                $referenceNumberStr = trim($referenceNumberElement);
+                $referenceNumberStr = trim(strval($referenceNumberElement));
 
                 $catalogWorkReference->setReferenceNumber($referenceNumberStr);
             }
@@ -1526,7 +1526,7 @@ class PaintingInflator implements IInflator
                 'Field[@FieldName="{AltNums.Remarks}"]/FormattedValue',
             );
             if ($remarksElement) {
-                $remarksStr = trim($remarksElement);
+                $remarksStr = trim(strval($remarksElement));
 
                 $catalogWorkReference->setRemarks($remarksStr);
             }
@@ -1546,7 +1546,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement $node,
         Painting $paintingDe,
         Painting $paintingEn
-    ) {
+    ): void {
         $catalogWorkReferenceSubreport = $node->{'Section'}[40]->{'Subreport'};
 
         $structuredDimension = new StructuredDimension;
@@ -1561,7 +1561,7 @@ class PaintingInflator implements IInflator
         );
 
         if ($elementElement) {
-            $elementStr = trim($elementElement);
+            $elementStr = trim(strval($elementElement));
 
             $structuredDimension->setElement($elementStr);
         }
@@ -1572,14 +1572,14 @@ class PaintingInflator implements IInflator
             $catalogWorkReferenceSubreport,
             'Details',
         );
-        if (count($detailsElements) === 2) {
+        if (is_array($detailsElements) && count($detailsElements) === 2) {
             /* height */
             $heightElement = self::findElementByXPath(
                 $detailsElements[0],
                 'Field[@FieldName="{DIMENSIONS.Dimension}"]/Value',
             );
             if ($heightElement) {
-                $heightNumber = trim($heightElement);
+                $heightNumber = trim(strval($heightElement));
 
                 $structuredDimension->setHeight($heightNumber);
             }
@@ -1590,7 +1590,7 @@ class PaintingInflator implements IInflator
                 'Field[@FieldName="{DIMENSIONS.Dimension}"]/Value',
             );
             if ($widthElement) {
-                $widthNumber = trim($widthElement);
+                $widthNumber = trim(strval($widthElement));
 
                 $structuredDimension->setWidth($widthNumber);
             }
@@ -1603,7 +1603,7 @@ class PaintingInflator implements IInflator
         SimpleXMLElement &$node,
         Painting &$paintingDe,
         Painting &$paintingEn
-    ) {
+    ): void {
         $isBestOf = isset($node->{'Section'}[41]);
 
         $paintingDe->setIsBestOf($isBestOf);
@@ -1611,12 +1611,17 @@ class PaintingInflator implements IInflator
     }
 
 
-    private static function registerXPathNamespace(SimpleXMLElement $node)
+    private static function registerXPathNamespace(SimpleXMLElement $node): void
     {
         $node->registerXPathNamespace(self::$nsPrefix, self::$ns);
     }
 
 
+    /**
+     * @return SimpleXMLElement[]|false
+     *
+     * @psalm-return array<array-key, SimpleXMLElement>|false
+     */
     private static function findElementsByXPath(SimpleXMLElement $node, string $path)
     {
         self::registerXPathNamespace($node);
@@ -1635,6 +1640,9 @@ class PaintingInflator implements IInflator
     }
 
 
+    /**
+     * @return SimpleXMLElement|false
+     */
     private static function findElementByXPath(SimpleXMLElement $node, string $path)
     {
         $result = self::findElementsByXPath($node, $path);

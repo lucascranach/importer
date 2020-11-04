@@ -19,7 +19,7 @@ class SearchablePainting extends Painting
     }
 
 
-    public function addThesaurusItems(array $thesaurusItems)
+    public function addThesaurusItems(array $thesaurusItems): void
     {
         $this->thesaurus = array_merge($this->thesaurus, $thesaurusItems);
     }

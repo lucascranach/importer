@@ -42,6 +42,9 @@ class Archival implements ILanguageBaseItem
     }
 
 
+    /**
+     * @return void
+     */
     public function setLangCode(string $langCode)
     {
         $this->langCode = $langCode;
@@ -54,7 +57,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function setInventoryNumber(string $inventoryNumber)
+    public function setInventoryNumber(string $inventoryNumber): void
     {
         $this->inventoryNumber = $inventoryNumber;
     }
@@ -66,7 +69,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function setDating(Dating $dating)
+    public function setDating(Dating $dating): void
     {
         $this->dating = $dating;
     }
@@ -78,7 +81,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function addSummary(string $summary)
+    public function addSummary(string $summary): void
     {
         $this->summaries[] = $summary;
     }
@@ -90,7 +93,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function setTranscription(string $transcription)
+    public function setTranscription(string $transcription): void
     {
         $this->transcription = $transcription;
     }
@@ -102,7 +105,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function setLocationAndDate(string $locationAndDate)
+    public function setLocationAndDate(string $locationAndDate): void
     {
         $this->locationAndDate = $locationAndDate;
     }
@@ -114,7 +117,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function setRepository(string $repository)
+    public function setRepository(string $repository): void
     {
         $this->repository = $repository;
     }
@@ -126,7 +129,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function setSignature(string $signature)
+    public function setSignature(string $signature): void
     {
         $this->signature = $signature;
     }
@@ -138,7 +141,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function setComments(string $comments)
+    public function setComments(string $comments): void
     {
         $this->comments = $comments;
     }
@@ -150,7 +153,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function setTranscribedBy(string $transcribedBy)
+    public function setTranscribedBy(string $transcribedBy): void
     {
         $this->transcribedBy = $transcribedBy;
     }
@@ -162,7 +165,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function setTranscriptionDate(string $transcriptionDate)
+    public function setTranscriptionDate(string $transcriptionDate): void
     {
         $this->transcriptionDate = $transcriptionDate;
     }
@@ -174,7 +177,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function setTranscribedAccordingTo(string $transcribedAccordingTo)
+    public function setTranscribedAccordingTo(string $transcribedAccordingTo): void
     {
         $this->transcribedAccordingTo = $transcribedAccordingTo;
     }
@@ -186,7 +189,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function setVerification(string $verification)
+    public function setVerification(string $verification): void
     {
         $this->verification = $verification;
     }
@@ -198,7 +201,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function setScans(string $scans)
+    public function setScans(string $scans): void
     {
         $this->scans = $scans;
     }
@@ -210,7 +213,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function setDocuments(string $documents)
+    public function setDocuments(string $documents): void
     {
         $this->documents = $documents;
     }
@@ -222,7 +225,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function setScanNames(array $scanNames)
+    public function setScanNames(array $scanNames): void
     {
         $this->scanNames = $scanNames;
     }
@@ -234,7 +237,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function setPeriod(string $period)
+    public function setPeriod(string $period): void
     {
         $this->period = $period;
     }
@@ -246,7 +249,7 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    public function addPublication(Publication $publication)
+    public function addPublication(Publication $publication): void
     {
         $this->publications[] = $publication;
     }

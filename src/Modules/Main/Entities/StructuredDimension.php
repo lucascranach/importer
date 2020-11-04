@@ -17,7 +17,7 @@ class StructuredDimension
     }
 
 
-    public function setElement(string $element)
+    public function setElement(string $element): void
     {
         $this->element = $element;
     }
@@ -29,7 +29,7 @@ class StructuredDimension
     }
 
 
-    public function setWidth(string $width)
+    public function setWidth(string $width): void
     {
         $this->width = $width;
     }
@@ -41,7 +41,7 @@ class StructuredDimension
     }
 
 
-    public function setHeight(string $height)
+    public function setHeight(string $height): void
     {
         $this->height = $height;
     }

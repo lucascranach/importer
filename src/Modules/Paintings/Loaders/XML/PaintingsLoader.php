@@ -28,6 +28,9 @@ class PaintingsLoader extends Producer implements IMultipleFileLoader
     }
 
 
+    /**
+     * @return self
+     */
     public static function withSourcesAt(array $sourceFilePaths)
     {
         $loader = new self;
@@ -43,6 +46,9 @@ class PaintingsLoader extends Producer implements IMultipleFileLoader
     }
 
 
+    /**
+     * @return void
+     */
     public function run()
     {
         /* We have to go through all given files */
@@ -64,7 +70,7 @@ class PaintingsLoader extends Producer implements IMultipleFileLoader
     }
 
 
-    public function loadNextFile(string $sourceFilePath)
+    public function loadNextFile(string $sourceFilePath): void
     {
         $this->xmlReader = new XMLReader();
 
@@ -85,7 +91,7 @@ class PaintingsLoader extends Producer implements IMultipleFileLoader
     }
 
 
-    public function closeXMLReader()
+    public function closeXMLReader(): void
     {
         if (!is_null($this->xmlReader)) {
             $this->xmlReader->close();
@@ -94,7 +100,7 @@ class PaintingsLoader extends Producer implements IMultipleFileLoader
     }
 
 
-    private function processNextItem()
+    private function processNextItem(): bool
     {
         /* Skipping empty text nodes */
         while ($this->xmlReader->next()
@@ -112,7 +118,7 @@ class PaintingsLoader extends Producer implements IMultipleFileLoader
     }
 
 
-    private function transformCurrentItem()
+    private function transformCurrentItem(): void
     {
         /* Preparing the painting objects for the different languages */
         $paintingDe = new Painting;
@@ -144,7 +150,7 @@ class PaintingsLoader extends Producer implements IMultipleFileLoader
     }
 
 
-    private function checkXMlReaderInitialization()
+    private function checkXMlReaderInitialization(): void
     {
         if (is_null($this->xmlReader)) {
             throw new Error('Paintings XML-Reader was not correctly initialized!');

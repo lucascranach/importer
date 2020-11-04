@@ -22,7 +22,7 @@ class Survey
     }
 
 
-    public function setType(string $type)
+    public function setType(string $type): void
     {
         $this->type = $type;
     }
@@ -34,7 +34,7 @@ class Survey
     }
 
 
-    public function setProject(string $project)
+    public function setProject(string $project): void
     {
         $this->project = $project;
     }
@@ -46,7 +46,7 @@ class Survey
     }
 
 
-    public function setOverallAnalysis(string $overallAnalysis)
+    public function setOverallAnalysis(string $overallAnalysis): void
     {
         $this->overallAnalysis = $overallAnalysis;
     }
@@ -58,7 +58,7 @@ class Survey
     }
 
 
-    public function setRemarks(string $remarks)
+    public function setRemarks(string $remarks): void
     {
         $this->remarks = $remarks;
     }
@@ -70,7 +70,7 @@ class Survey
     }
 
 
-    public function addTest(Test $test)
+    public function addTest(Test $test): void
     {
         $this->tests[] = $test;
     }
@@ -82,7 +82,7 @@ class Survey
     }
 
 
-    public function addInvolvedPerson(Person $involvedPerson)
+    public function addInvolvedPerson(Person $involvedPerson): void
     {
         $this->involvedPersons[] = $involvedPerson;
     }
@@ -94,7 +94,7 @@ class Survey
     }
 
 
-    public function setProcessingDates(ProcessingDates $processingDates)
+    public function setProcessingDates(ProcessingDates $processingDates): void
     {
         $this->processingDates = $processingDates;
     }
@@ -106,7 +106,7 @@ class Survey
     }
 
 
-    public function setSignature(Signature $signature)
+    public function setSignature(Signature $signature): void
     {
         $this->signature = $signature;
     }

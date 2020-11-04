@@ -33,4 +33,4 @@ Um die Nutzung des Importers (aber auch die Entwicklung) zu vereinfachen, kommt 
 Generell sollte immer der über Composer eingebundene Linter und Code-Analyser genutzt werden, um frühzeitig mögliche Formatierungs- und Code-Probleme erkennen und beheben zu können.
 
 Als Linter wird [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) mit den in der `.php_cs.dist`angegebenen Rules genutzt.  
-Als Analyser kommt hingegen [PHPStan](https://github.com/phpstan/phpstan) zum Einsatz (in [Rule Level 5](https://phpstan.org/user-guide/rule-levels)).
+Als Analyser kommt hingegen [Psalm](https://psalm.dev/) zum Einsatz (in [ErrorLevel 3](https://psalm.dev/docs/running_psalm/error_levels/).

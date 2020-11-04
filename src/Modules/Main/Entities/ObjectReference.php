@@ -17,7 +17,7 @@ class ObjectReference
     }
 
 
-    public function setText(string $text)
+    public function setText(string $text): void
     {
         $this->text = $text;
     }
@@ -29,7 +29,7 @@ class ObjectReference
     }
 
 
-    public function setInventoryNumber(string $inventoryNumber)
+    public function setInventoryNumber(string $inventoryNumber): void
     {
         $this->inventoryNumber = $inventoryNumber;
     }
@@ -41,7 +41,7 @@ class ObjectReference
     }
 
 
-    public function setRemark(string $remark)
+    public function setRemark(string $remark): void
     {
         $this->remark = $remark;
     }

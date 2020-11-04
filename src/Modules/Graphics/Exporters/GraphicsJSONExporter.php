@@ -25,14 +25,13 @@ class GraphicsJSONExporter extends Consumer implements IFileExporter
     }
 
 
+    /**
+     * @return self
+     */
     public static function withDestinationAt(string $destFilepath)
     {
         $exporter = new self;
         $exporter->destFilepath = $destFilepath;
-
-        if (is_null($exporter->destFilepath)) {
-            throw new \Error('No filepath for JSON graphics export set!');
-        }
 
         return $exporter;
     }
@@ -52,6 +51,9 @@ class GraphicsJSONExporter extends Consumer implements IFileExporter
     }
 
 
+    /**
+     * @return void
+     */
     public function done(ProducerInterface $producer)
     {
         $this->closeOutputFile();
@@ -61,6 +63,9 @@ class GraphicsJSONExporter extends Consumer implements IFileExporter
     }
 
 
+    /**
+     * @return void
+     */
     public function error($error)
     {
         echo get_class($this) . ": Error -> " . $error . "\n";

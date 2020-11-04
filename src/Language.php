@@ -16,7 +16,7 @@ final class Language
     {
     }
 
-    public static function translate(string $text, $translations, $destLangCode)
+    public static function translate(string $text, $translations, string $destLangCode): string
     {
         $translationKeys = array_keys($translations);
         $translationKeysAsPatterns = array_map(

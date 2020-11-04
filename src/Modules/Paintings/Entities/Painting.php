@@ -74,6 +74,9 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
+    /**
+     * @return void
+     */
     public function setLangCode(string $langCode)
     {
         $this->langCode = $langCode;
@@ -86,7 +89,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function addPerson(Person $person)
+    public function addPerson(Person $person): void
     {
         $this->involvedPersons[] = $person;
     }
@@ -98,7 +101,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function addPersonName(PersonName $personName)
+    public function addPersonName(PersonName $personName): void
     {
         $this->involvedPersonsNames[] = $personName;
     }
@@ -110,7 +113,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function addTitle(Title $title)
+    public function addTitle(Title $title): void
     {
         $this->titles[] = $title;
     }
@@ -122,7 +125,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setClassification(Classification $classification)
+    public function setClassification(Classification $classification): void
     {
         $this->classification = $classification;
     }
@@ -134,7 +137,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setObjectName(string $objectName)
+    public function setObjectName(string $objectName): void
     {
         $this->objectName = $objectName;
     }
@@ -146,7 +149,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setInventoryNumber(string $inventoryNumber)
+    public function setInventoryNumber(string $inventoryNumber): void
     {
         $this->inventoryNumber = $inventoryNumber;
     }
@@ -158,7 +161,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setObjectId(int $objectId)
+    public function setObjectId(int $objectId): void
     {
         $this->objectId = $objectId;
     }
@@ -169,7 +172,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
         return $this->objectId;
     }
 
-    public function setDimensions(string $dimensions)
+    public function setDimensions(string $dimensions): void
     {
         $this->dimensions = $dimensions;
     }
@@ -181,7 +184,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setDating(Dating $dating)
+    public function setDating(Dating $dating): void
     {
         $this->dating = $dating;
     }
@@ -193,7 +196,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setDescription(string $description)
+    public function setDescription(string $description): void
     {
         $this->description = $description;
     }
@@ -205,7 +208,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setProvenance(string $provenance)
+    public function setProvenance(string $provenance): void
     {
         $this->provenance = $provenance;
     }
@@ -217,7 +220,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setMedium(string $medium)
+    public function setMedium(string $medium): void
     {
         $this->medium = $medium;
     }
@@ -229,7 +232,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setSignature(string $signature)
+    public function setSignature(string $signature): void
     {
         $this->signature = $signature;
     }
@@ -241,7 +244,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setInscription(string $inscription)
+    public function setInscription(string $inscription): void
     {
         $this->inscription = $inscription;
     }
@@ -253,7 +256,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setMarkings(string $markings)
+    public function setMarkings(string $markings): void
     {
         $this->markings = $markings;
     }
@@ -264,7 +267,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
         return $this->markings;
     }
 
-    public function setRelatedWorks(string $relatedWorks)
+    public function setRelatedWorks(string $relatedWorks): void
     {
         $this->relatedWorks = $relatedWorks;
     }
@@ -276,7 +279,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setExhibitionHistory(string $exhibitionHistory)
+    public function setExhibitionHistory(string $exhibitionHistory): void
     {
         $this->exhibitionHistory = $exhibitionHistory;
     }
@@ -287,7 +290,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
         return $this->exhibitionHistory;
     }
 
-    public function setBibliography(string $bibliography)
+    public function setBibliography(string $bibliography): void
     {
         $this->bibliography = $bibliography;
     }
@@ -298,7 +301,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
         return $this->bibliography;
     }
 
-    public function addReference(ObjectReference $reference)
+    public function addReference(ObjectReference $reference): void
     {
         $this->references[] = $reference;
     }
@@ -309,7 +312,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
         return $this->references;
     }
 
-    public function addSecondaryReference(ObjectReference $reference)
+    public function addSecondaryReference(ObjectReference $reference): void
     {
         $this->secondaryReferences[] = $reference;
     }
@@ -323,7 +326,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
 
     public function addAdditionalTextInformation(
         AdditionalTextInformation $additonalTextInformation
-    ) {
+    ): void {
         $this->additionalTextInformation[] = $additonalTextInformation;
     }
 
@@ -334,7 +337,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function addPublication(Publication $publication)
+    public function addPublication(Publication $publication): void
     {
         $this->publications[] = $publication;
     }
@@ -346,7 +349,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function addKeyword(MetaReference $keyword)
+    public function addKeyword(MetaReference $keyword): void
     {
         $this->keywords[] = $keyword;
     }
@@ -358,7 +361,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function addLocation(MetaReference $location)
+    public function addLocation(MetaReference $location): void
     {
         $this->locations[] = $location;
     }
@@ -370,7 +373,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setRepository(string $repository)
+    public function setRepository(string $repository): void
     {
         $this->repository = $repository;
     }
@@ -382,7 +385,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setOwner(string $owner)
+    public function setOwner(string $owner): void
     {
         $this->owner = $owner;
     }
@@ -394,7 +397,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setSortingNumber(string $sortingNumber)
+    public function setSortingNumber(string $sortingNumber): void
     {
         $this->sortingNumber = $sortingNumber;
     }
@@ -408,7 +411,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
 
     public function addCatalogWorkReference(
         CatalogWorkReference $catalogWorkReference
-    ) {
+    ): void {
         $this->catalogWorkReferences[] = $catalogWorkReference;
     }
 
@@ -421,7 +424,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
 
     public function setStructuredDimension(
         StructuredDimension $structuredDimension
-    ) {
+    ): void {
         $this->structuredDimension = $structuredDimension;
     }
 
@@ -432,7 +435,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setIsBestOf(bool $isBestOf)
+    public function setIsBestOf(bool $isBestOf): void
     {
         $this->isBestOf = $isBestOf;
     }
@@ -444,7 +447,7 @@ class Painting extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    public function setRestorationSurveys(array $restorationSurveys)
+    public function setRestorationSurveys(array $restorationSurveys): void
     {
         $this->restorationSurveys = $restorationSurveys;
     }
