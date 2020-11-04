@@ -1,13 +1,13 @@
 <?php
 
-namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
+namespace CranachDigitalArchive\Importer\Modules\Main\Transformers;
 
 use Error;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\AbstractImagesItem;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
-class RemoteGraphicImageExistenceCheckerV1 extends Hybrid
+class RemoteImageExistenceChecker extends Hybrid
 {
     const REPRESENTATIVE = 'representative';
     const OVERALL = 'overall';
@@ -25,6 +25,8 @@ class RemoteGraphicImageExistenceCheckerV1 extends Hybrid
     const REFLECTED_LIGHT = 'reflected-light';
     const TRANSMITTED_LIGHT = 'transmitted-light';
 
+    const PYRAMID = 'pyramid';
+
 
     private $serverHost = 'http://lucascranach.org';
     private $remoteImageBasePath = 'imageserver/%s/%s';
@@ -32,7 +34,7 @@ class RemoteGraphicImageExistenceCheckerV1 extends Hybrid
     private $remoteImageSubDirectoryName = null;
     private $remoteImageTypeAccessorFunc = null;
     private $cacheDir = null;
-    private $cacheFilename = 'remoteGraphicImageExistenceChecker-v1';
+    private $cacheFilename = 'remoteImageExistenceChecker';
     private $cacheFileSuffix = '.cache';
     private $cache = [];
 
