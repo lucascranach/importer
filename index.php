@@ -4,13 +4,13 @@ namespace CranachDigitalArchive\Importer;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsLoader;
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsJSONLangExistenceTypeExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterminer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithThesaurus as GraphicsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRestorations as GraphicsExtenderWithRestorations;
+use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
 use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\LiteratureReferencesLoader;
@@ -85,8 +85,8 @@ RestorationsLoader::withSourcesAt($paintingsRestorationInputFilepaths)->pipe(
 /* Paintings */
 $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     './.cache',
-    'pyramid',
-    'paintingssRemoteImageExistenceChecker',
+    RemoteImageExistenceChecker::PYRAMID,
+    'remotePaintingsImageExistenceChecker'
 );
 $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
 $paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination);
@@ -119,15 +119,12 @@ RestorationsLoader::withSourcesAt($graphicsRestorationInputFilepaths)->pipe(
 $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     './.cache',
     function ($item) {
-        $imageType = 'overall';
-
-        if ($item->getIsVirtual()) {
-            return 'representative';
-        }
-
-        return $imageType;
+        /* We want the representative images for virtual objects */
+        return $item->getIsVirtual()
+            ? RemoteImageExistenceChecker::REPRESENTATIVE
+            : RemoteImageExistenceChecker::OVERALL;
     },
-    'graphicsRemoteImageExistenceChecker',
+    'remoteGraphicsImageExistenceChecker'
 );
 $graphicsConditionDeterminer = ConditionDeterminer::new();
 $graphicsRestorationExtender = GraphicsExtenderWithRestorations::new($graphicsRestorationMemoryDestination);
