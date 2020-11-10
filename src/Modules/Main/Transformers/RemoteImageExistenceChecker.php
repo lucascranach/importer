@@ -28,7 +28,7 @@ class RemoteImageExistenceChecker extends Hybrid
     const PYRAMID = 'pyramid';
 
 
-    private $serverHost = 'http://lucascranach.org';
+    private $serverHost = 'https://lucascranach.org';
     private $remoteImageBasePath = 'imageserver/%s/%s';
     private $remoteImageDataPath = 'imageserver/%s/imageData-1.0.json';
     private $remoteImageSubDirectoryName = null;
