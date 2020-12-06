@@ -95,10 +95,24 @@ $paintingsElasticsearchBulkDestination = PaintingsElasticsearchLangExporter::wit
     $paintingsElasticsearchOutputFilepath
 );
 
+/*
+    Pipeline-Graph
+
+    loader
+     └ imageExistenceChecker
+        └ restorationExtender
+           ├ JSON-Exporter
+           └ thesaurusExtender
+              └ ElasticSearch-Bulk-JSON-Exporter
+
+ */
 $paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths)->pipe(
     $paintingsRemoteImageExistenceChecker->pipe(
         $paintingsRestorationExtender->pipe(
+            /* first output branch */
             $paintingsDestination,
+
+            /* second output branch */
             $paintingsThesaurusExtender->pipe(
                 $paintingsElasticsearchBulkDestination,
             ),
@@ -134,11 +148,26 @@ $graphicsElasticsearchBulkDestination = GraphicsElasticsearchLangExporter::withD
     $graphicsElasticsearchOutputFilepath
 );
 
+/*
+    Pipeline-Graph
+
+    loader
+     └ imageExistenceChecker
+        └ conditionDeterminer
+           └ restorationExtender
+              ├ JSON-Exporter
+              └ thesaurusExtender
+                 └ ElasticSearch-Bulk-JSON-Exporter
+
+ */
 $graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath)->pipe(
     $graphicsRemoteImageExistenceChecker->pipe(
         $graphicsConditionDeterminer->pipe(
             $graphicsRestorationExtender->pipe(
+                /* first output branch */
                 $graphicsDestination,
+
+                /* second output branch */
                 $graphicsThesaurusExtender->pipe(
                     $graphicsElasticsearchBulkDestination,
                 ),
@@ -149,12 +178,26 @@ $graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath)->pipe(
 
 
 /* LiteratureReferences */
+/*
+    Pipeline-Graph
+
+    loader
+     └ JSON-Exporter
+
+ */
 $literatureReferencesLoader = LiteratureReferencesLoader::withSourcesAt($literatureInputFilepaths)->pipe(
     LiteratureReferencesJSONExporter::withDestinationAt($literatureReferenceOutputFilepath),
 );
 
 
 /* Archivals */
+/*
+    Pipeline-Graph
+
+    loader
+     └ JSON-Exporter
+
+ */
 $archivalsLoader = ArchivalsLoader::withSourceAt($archivalsInputFilepath)->pipe(
     ArchivalsJSONLangExporter::withDestinationAt($archivalsOutputFilepath),
 );
