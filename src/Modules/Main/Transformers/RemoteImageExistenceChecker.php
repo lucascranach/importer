@@ -37,6 +37,7 @@ class RemoteImageExistenceChecker extends Hybrid
     private $cacheFilename = 'remoteImageExistenceChecker';
     private $cacheFileSuffix = '.cache';
     private $cache = [];
+    private $objectIdsWithOccuredErrors = [];
 
 
     private function __construct()
@@ -94,6 +95,7 @@ class RemoteImageExistenceChecker extends Hybrid
         }
 
         $id = $item->getImageId();
+        $url = $this->buildURLForInventoryNumber($id);
 
         if (empty($id)) {
             echo '  Missing imageId for \'' . $item->getId() . "'\n";
@@ -101,9 +103,14 @@ class RemoteImageExistenceChecker extends Hybrid
             return false;
         }
 
+        /* We simply skip the object, if the same object (but in a different language) already triggered an error */
+        if (in_array($id, $this->objectIdsWithOccuredErrors)) {
+            $this->next($item);
+            return false;
+        }
+
         /* Fill cache to avoid unnecessary duplicate requests for the same resource */
         if (is_null($this->getCacheFor($id))) {
-            $url = $this->buildURLForInventoryNumber($id);
             $result = $this->getRemoteImageDataResource($url);
             $rawImagesData = null;
 
@@ -127,8 +134,14 @@ class RemoteImageExistenceChecker extends Hybrid
             );
 
             if ($imageType) {
-                $preparedImages = $this->prepareRawImages($id, $imageType, $cachedImagesForObject);
-                $item->setImages($preparedImages);
+                try {
+                    $preparedImages = $this->prepareRawImages($id, $imageType, $cachedImagesForObject);
+                    $item->setImages($preparedImages);
+                } catch(Error $e) {
+                    /* We need to keep track of the same object but in different languages, to prevent duplicate error outputs */
+                    echo $e->getMessage() . ' (' . $url . ")\n";
+                    $this->objectIdsWithOccuredErrors[] = $id;
+                }
             }
         }
 
@@ -250,6 +263,17 @@ class RemoteImageExistenceChecker extends Hybrid
             'variants' => [],
         ];
 
+        if (
+            is_null($stackItem['images'])
+            || !isset($stackItem['maxDimensions']['width'])
+            || !isset($stackItem['maxDimensions']['height'])
+        ) {
+            throw new Error(
+                'RemoteImageExistenceChecker: '
+                . 'Missing image data for \'' . $inventoryNumber . '\' in base stack item \'' . $imageType . '\''
+            );
+        }
+
         $destinationTypeStructure['infos']['maxDimensions'] = [
             'width' => intval($stackItem['maxDimensions']['width']),
             'height' => intval($stackItem['maxDimensions']['height']),
@@ -338,5 +362,6 @@ class RemoteImageExistenceChecker extends Hybrid
     private function cleanUp(): void
     {
         $this->cache = [];
+        $this->objectIdsWithOccuredErrors = [];
     }
 }
