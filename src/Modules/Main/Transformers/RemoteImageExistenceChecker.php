@@ -104,7 +104,7 @@ class RemoteImageExistenceChecker extends Hybrid
         }
 
         /* We simply skip the object, if the same object (but in a different language) already triggered an error */
-        if (in_array($id, $this->objectIdsWithOccuredErrors)) {
+        if (in_array($id, $this->objectIdsWithOccuredErrors, true)) {
             $this->next($item);
             return false;
         }
@@ -137,7 +137,7 @@ class RemoteImageExistenceChecker extends Hybrid
                 try {
                     $preparedImages = $this->prepareRawImages($id, $imageType, $cachedImagesForObject);
                     $item->setImages($preparedImages);
-                } catch(Error $e) {
+                } catch (Error $e) {
                     /* We need to keep track of the same object but in different languages, to prevent duplicate error outputs */
                     echo $e->getMessage() . ' (' . $url . ")\n";
                     $this->objectIdsWithOccuredErrors[] = $id;
@@ -218,7 +218,7 @@ class RemoteImageExistenceChecker extends Hybrid
 
         /* @TODO: Check content-type on response */
 
-        return (in_array($statusCode[0], ['2', '3'])) ? json_decode($content, true) : null;
+        return (in_array($statusCode[0], ['2', '3'], true)) ? json_decode($content, true) : null;
     }
 
 
