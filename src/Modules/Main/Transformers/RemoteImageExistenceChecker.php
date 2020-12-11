@@ -205,7 +205,7 @@ class RemoteImageExistenceChecker extends Hybrid
 
         /* @TODO: Check content-type on response */
 
-        return ($statusCode[0] === '2') ? json_decode($content, true) : null;
+        return (in_array($statusCode[0], ['2', '3'])) ? json_decode($content, true) : null;
     }
 
 
