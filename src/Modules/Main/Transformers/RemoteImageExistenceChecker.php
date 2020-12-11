@@ -110,7 +110,7 @@ class RemoteImageExistenceChecker extends Hybrid
             if (!is_null($result)) {
                 $rawImagesData = $result;
             } else {
-                echo '  Missing remote images for \'' . $id . "'\n";
+                echo '  Missing remote images for \'' . $id . "' (" . $url .")\n";
             }
 
             $dataToCache = $this->createCacheData($rawImagesData);
@@ -219,7 +219,10 @@ class RemoteImageExistenceChecker extends Hybrid
         $imageStack = $cachedImagesForObject['imageStack'];
 
         if (!isset($imageStack[$imageType])) {
-            throw new Error('RemoteImageExistenceChecker: Could not find base stack item ' . $imageType);
+            throw new Error(
+                'RemoteImageExistenceChecker: '
+                . 'Could not find base stack item ' . $imageType . ' for \'' . $inventoryNumber . '\''
+            );
         }
         $baseStackItem = $imageStack[$imageType];
 
