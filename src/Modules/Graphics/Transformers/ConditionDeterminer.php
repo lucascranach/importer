@@ -195,10 +195,9 @@ class ConditionDeterminer extends Hybrid
     {
         $classification = $graphic->getClassification();
 
-        if (
-            is_null($classification)
-            || !isset(self::$conditionLangMappings[$graphic->getLangCode()])
-        ) {
+        $conditionLangMappingExists = isset(self::$conditionLangMappings[$graphic->getLangCode()]);
+
+        if (is_null($classification) || !$conditionLangMappingExists) {
             return $conditionLevel;
         }
 

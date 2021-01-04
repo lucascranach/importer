@@ -2,6 +2,9 @@
 
 namespace CranachDigitalArchive\Importer;
 
+ini_set('memory_limit', '2048M');
+echo "MemoryLimit: " . ini_get('memory_limit') . "\n\n";
+
 require_once __DIR__ . '/vendor/autoload.php';
 
 use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsLoader;
@@ -26,7 +29,7 @@ use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 
-$date = '20201118';
+$date = '20201209';
 $inputDirectory = './input/' . $date;
 $destDirectory = './docs/' . $date;
 
@@ -85,7 +88,7 @@ RestorationsLoader::withSourcesAt($paintingsRestorationInputFilepaths)->pipe(
 /* Paintings */
 $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     './.cache',
-    RemoteImageExistenceChecker::PYRAMID,
+    RemoteImageExistenceChecker::REPRESENTATIVE,
     'remotePaintingsImageExistenceChecker'
 );
 $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
