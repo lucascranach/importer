@@ -3985,13 +3985,15 @@
                             "kind": "Bildtr\u00e4ger",
                             "text": "- Papier",
                             "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         },
                         {
                             "kind": "Prozess, Medium",
                             "text": "- Kupferstich",
                             "purpose": "",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         }
                     ],
                     "involvedPersons": [],
@@ -8084,13 +8086,15 @@
                             "kind": "Bildtr\u00e4ger",
                             "text": "- Papier",
                             "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         },
                         {
                             "kind": "Prozess, Medium",
                             "text": "- Holzschnitt, schwarze Tinte",
                             "purpose": "",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         }
                     ],
                     "involvedPersons": [],
@@ -8115,7 +8119,10 @@
                             "kind": "",
                             "text": "Wz verso (Cahier)\n[http:\/\/sammlungenonline.albertina.at\/?query=Inventarnummer=[DG1929\/103]&showtype=record]",
                             "purpose": "Technologische Untersuchung",
-                            "remarks": "Wasserzeichen"
+                            "remarks": "",
+                            "keywords": [
+                                "Wasserzeichen"
+                            ]
                         }
                     ],
                     "involvedPersons": [],
@@ -8378,13 +8385,15 @@
                             "kind": "Bildtr\u00e4ger",
                             "text": "- Papier",
                             "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         },
                         {
                             "kind": "Prozess, Medium",
                             "text": "- Holzschnitt, schwarze Farbe",
                             "purpose": "",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         }
                     ],
                     "involvedPersons": [],
@@ -8640,13 +8649,15 @@
                             "kind": "Bildtr\u00e4ger",
                             "text": "- Papier",
                             "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         },
                         {
                             "kind": "Prozess, Medium",
                             "text": "- Holzschnitt mit Typendruck: ein Druck vom schwarzen Linienblock\n[Exhib. Cat. D\u00fcsseldorf 2017, 170, No. 78]",
                             "purpose": "",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         }
                     ],
                     "involvedPersons": [],
@@ -9504,13 +9515,15 @@
                             "kind": "Bildtr\u00e4ger",
                             "text": "- Papier",
                             "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         },
                         {
                             "kind": "Prozess, Medium",
                             "text": "- Holzschnitt Druck: schwarzer Linienblock",
                             "purpose": "Technologische Untersuchung",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         }
                     ],
                     "involvedPersons": [],
@@ -10186,13 +10199,15 @@
                             "kind": "Bildtr\u00e4ger",
                             "text": "- Papier",
                             "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         },
                         {
                             "kind": "Prozess, Medium",
                             "text": "- Holzschnitt Druck: schwarzer Linienblock",
                             "purpose": "Technologische Untersuchung",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         }
                     ],
                     "involvedPersons": [],
@@ -14948,13 +14963,15 @@
                             "kind": "Bildtr\u00e4ger",
                             "text": "- Papier",
                             "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         },
                         {
                             "kind": "Prozess, Medium",
                             "text": "- Kupferstich",
                             "purpose": "",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         }
                     ],
                     "involvedPersons": [],
@@ -19059,13 +19076,15 @@
                             "kind": "Bildtr\u00e4ger",
                             "text": "- Papier",
                             "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         },
                         {
                             "kind": "Prozess, Medium",
                             "text": "- Holzschnitt Druck: schwarzer Linienblock",
                             "purpose": "Technologische Untersuchung",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         }
                     ],
                     "involvedPersons": [],
@@ -20096,13 +20115,15 @@
                             "kind": "Bildtr\u00e4ger",
                             "text": "- Papier",
                             "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         },
                         {
                             "kind": "Prozess, Medium",
                             "text": "- Holzschnitt Druck: schwarzer Linienblock",
                             "purpose": "Technologische Untersuchung",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         }
                     ],
                     "involvedPersons": [],
@@ -20334,13 +20355,15 @@
                             "kind": "Bildtr\u00e4ger",
                             "text": "- Papier",
                             "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         },
                         {
                             "kind": "Prozess, Medium",
                             "text": "- Holzschnitt, schwarze Tinte",
                             "purpose": "",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         }
                     ],
                     "involvedPersons": [],
@@ -20365,7 +20388,10 @@
                             "kind": "",
                             "text": "Wz verso (Cahier)\n[http:\/\/sammlungenonline.albertina.at\/?query=Inventarnummer=[DG1929\/103]&showtype=record]",
                             "purpose": "Technologische Untersuchung",
-                            "remarks": "Wasserzeichen"
+                            "remarks": "",
+                            "keywords": [
+                                "Wasserzeichen"
+                            ]
                         }
                     ],
                     "involvedPersons": [],
@@ -20594,13 +20620,15 @@
                             "kind": "Bildtr\u00e4ger",
                             "text": "- Papier",
                             "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         },
                         {
                             "kind": "Prozess, Medium",
                             "text": "- Holzschnitt mit Typendruck in Rot",
                             "purpose": "",
-                            "remarks": ""
+                            "remarks": "",
+                            "keywords": []
                         }
                     ],
                     "involvedPersons": [],
