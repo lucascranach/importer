@@ -7,16 +7,8 @@ namespace CranachDigitalArchive\Importer\Interfaces\Loaders;
  */
 interface ILoader
 {
-
     /**
-     * Binding a pipeline to the importer for item handling
-     *
-     * @param IPipeline $pipeline The pipeline instance
+     * Start the loader to read / fetch and import data
      */
-    // function registerPipeline(IPipeline $pipeline);
-
-    /**
-     * Start the job and trigger the data reading / fetching and import
-     */
-    // function start();
+    public function run();
 }
