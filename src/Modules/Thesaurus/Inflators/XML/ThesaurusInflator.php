@@ -52,7 +52,7 @@ class ThesaurusInflator implements IInflator
         $mappedTerms = [];
 
         foreach ($node->children() as $termElement) {
-            if ($termElement->getName() === self::$termElement) {
+            if (!is_null($termElement) && $termElement->getName() === self::$termElement) {
                 $thesaurus->addRootTerm(self::mapTerm($termElement));
             }
         }
@@ -69,13 +69,17 @@ class ThesaurusInflator implements IInflator
 
         if (!is_null($attributes)) {
             foreach ($attributes as $attribute) {
-                if ($attribute->getName() === 'term') {
+                if (!is_null($attribute) && $attribute->getName() === 'term') {
                     $thesaurusTerm->setTerm(strval($attribute));
                 }
             }
         }
 
         foreach ($termElement->children() as $subElement) {
+            if (is_null($subElement)) {
+                continue;
+            }
+
             if ($subElement->getName() === self::$altTermElement) {
                 self::inflateTermAlt($subElement, $thesaurusTerm);
             } else {
