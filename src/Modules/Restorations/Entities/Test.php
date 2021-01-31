@@ -11,6 +11,7 @@ class Test
     public $text = '';
     public $purpose = '';
     public $remarks = '';
+    public $keywords = [];
 
 
     public function __construct()
@@ -63,5 +64,17 @@ class Test
     public function getRemarks(): string
     {
         return $this->remarks;
+    }
+
+
+    public function addKeyword(string $keyword)
+    {
+        $this->keywords[] = $keyword;
+    }
+
+
+    public function getKeywords(): array
+    {
+        return $this->keywords;
     }
 }

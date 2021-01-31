@@ -80,7 +80,7 @@ ThesaurusLoader::withSourceAt($thesaurusInputFilepath)->pipe(
 /* PaintingsRestorations */
 $paintingsRestorationMemoryDestination = RestorationsMemoryExporter::new();
 
-RestorationsLoader::withSourcesAt($paintingsRestorationInputFilepaths)->pipe(
+RestorationsLoader::withSourcesForPaintingsAt($paintingsRestorationInputFilepaths)->pipe(
     $paintingsRestorationMemoryDestination,
 )->run(); /* and we have to run it directly */
 
@@ -113,7 +113,7 @@ $paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths)->pip
 /* GraphicRestorations */
 $graphicsRestorationMemoryDestination = RestorationsMemoryExporter::new();
 
-RestorationsLoader::withSourcesAt($graphicsRestorationInputFilepaths)->pipe(
+RestorationsLoader::withSourcesForGraphicsAt($graphicsRestorationInputFilepaths)->pipe(
     $graphicsRestorationMemoryDestination,
 )->run(); /* and we have to run it directly */
 

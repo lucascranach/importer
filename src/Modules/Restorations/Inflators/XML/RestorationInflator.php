@@ -49,25 +49,25 @@ class RestorationInflator implements IInflator
         $headerNode = $node->{'GroupHeader'};
         $detailsNodes = $node->{'Details'};
 
-        self::registerXPathNamespace($headerNode);
-        self::registerXPathNamespace($detailsNodes);
+        static::registerXPathNamespace($headerNode);
+        static::registerXPathNamespace($detailsNodes);
 
-        self::inflateInventoryNumber($headerNode, $restorationDe, $restorationEn);
-        self::inflateObjectId($headerNode, $restorationDe, $restorationEn);
+        static::inflateInventoryNumber($headerNode, $restorationDe, $restorationEn);
+        static::inflateObjectId($headerNode, $restorationDe, $restorationEn);
 
-        self::inflateSurveys($detailsNodes, $restorationDe, $restorationEn);
+        static::inflateSurveys($detailsNodes, $restorationDe, $restorationEn);
     }
 
 
     /* Inventory number */
-    private static function inflateInventoryNumber(
+    protected static function inflateInventoryNumber(
         SimpleXMLElement $node,
         Restoration $restorationDe,
         Restoration $restorationEn
     ): void {
         $inventoryNumberSectionElement = $node->{'Section'}[0];
 
-        $inventoryNumberElement = self::findElementByXPath(
+        $inventoryNumberElement = static::findElementByXPath(
             $inventoryNumberSectionElement,
             'Field[@FieldName="{@Inventarnummer}"]/FormattedValue',
         );
@@ -75,7 +75,7 @@ class RestorationInflator implements IInflator
             $inventoryNumberStr = trim(strval($inventoryNumberElement));
 
             $cleanInventoryNumberStr = preg_replace(
-                self::$inventoryNumberReplaceRegExpArr,
+                static::$inventoryNumberReplaceRegExpArr,
                 '',
                 $inventoryNumberStr,
             );
@@ -87,14 +87,14 @@ class RestorationInflator implements IInflator
 
 
     /* Object Id */
-    private static function inflateObjectId(
+    protected static function inflateObjectId(
         SimpleXMLElement $node,
         Restoration $restorationDe,
         Restoration $restorationEn
     ): void {
         $objectIdSectionElement = $node->{'Section'}[1];
 
-        $objectIdElement = self::findElementByXPath(
+        $objectIdElement = static::findElementByXPath(
             $objectIdSectionElement,
             'Field[@FieldName="{OBJECTS.ObjectID}"]/FormattedValue',
         );
@@ -108,19 +108,19 @@ class RestorationInflator implements IInflator
 
 
     /* Surveys */
-    private static function inflateSurveys(
+    protected static function inflateSurveys(
         SimpleXMLElement $nodes,
         Restoration $restorationDe,
         Restoration $restorationEn
     ): void {
         foreach ($nodes as $node) {
-            self::inflateSurvey($node, $restorationDe, $restorationEn);
+            static::inflateSurvey($node, $restorationDe, $restorationEn);
         }
     }
 
 
     /* Survey */
-    private static function inflateSurvey(
+    protected static function inflateSurvey(
         SimpleXMLElement $node,
         Restoration $restorationDe,
         Restoration $restorationEn
@@ -128,79 +128,37 @@ class RestorationInflator implements IInflator
         $survey = new Survey();
 
         /* Type */
-        $typeElement = self::findElementByXPath(
-            $node,
-            'Section[@SectionNumber="0"]/Field[@FieldName="{SURVEYTYPES.SurveyType}"]/FormattedValue',
-        );
-        if ($typeElement) {
-            $typeStr = trim(strval($typeElement));
-
-            $survey->setType($typeStr);
-        }
+        static::inflateSurveyType($node, $survey);
 
         /* Project */
-        $projectElement = self::findElementByXPath(
-            $node,
-            'Section[@SectionNumber="1"]/Field[@FieldName="{CONDITIONS.Project}"]/FormattedValue',
-        );
-        if ($projectElement) {
-            $projectStr = trim(strval($projectElement));
-
-            $survey->setProject($projectStr);
-        }
+        static::inflateSurveyProject($node, $survey);
 
         /* OverallAnalysis */
-        $overallAnalysisElement = self::findElementByXPath(
-            $node,
-            'Section[@SectionNumber="2"]/Field[@FieldName="{CONDITIONS.OverallAnalysis}"]/FormattedValue',
-        );
-        if ($overallAnalysisElement) {
-            $overallAnalysisStr = trim(strval($overallAnalysisElement));
-
-            $survey->setOverallAnalysis($overallAnalysisStr);
-        }
+        static::inflateSurveyOverallAnalysis($node, $survey);
 
         /* Remarks */
-        $remarksElement = self::findElementByXPath(
-            $node,
-            'Section[@SectionNumber="3"]/Field[@FieldName="{CONDITIONS.Remarks}"]/FormattedValue',
-        );
-        if ($remarksElement) {
-            $remarksStr = trim(strval($remarksElement));
-
-            $survey->setRemarks($remarksStr);
-        }
+        static::inflateSurveyRemarks($node, $survey);
 
         /* Skipping unknown fourth section element */
 
         /* Tests */
-        $testsElement = self::findElementByXPath(
-            $node,
-            'Section[@SectionNumber="5"]/Subreport',
-        );
-        if ($testsElement) {
-            self::inflateSurveyTests($testsElement, $survey);
-        }
+        static::inflateSurveyTests($node, $survey);
 
         /* Persons */
-        $personsElement = self::findElementByXPath(
-            $node,
-            'Section[@SectionNumber="6"]/Subreport',
-        );
-        if ($personsElement) {
-            self::inflateSurveyPersons($personsElement, $survey);
-        }
+        static::inflateSurveyPersons($node, $survey);
 
         /* ProcessingDates */
-        self::inflateSurveyProcessingDates($node, $survey);
+        static::inflateSurveyProcessingDates($node, $survey);
 
         /* Signature */
-        self::inflateSurveySignature($node, $survey);
+        static::inflateSurveySignature($node, $survey);
 
         $surveyType = $survey->getType();
 
-        $lang = isset(self::$surveyTypesLanguageTypes[$surveyType])
-            ? self::$surveyTypesLanguageTypes[$surveyType]
+        /* Determining the language of the survey
+            to assign it to the correct restoration */
+        $lang = isset(static::$surveyTypesLanguageTypes[$surveyType])
+            ? static::$surveyTypesLanguageTypes[$surveyType]
             : 'unknown' ;
 
         switch ($lang) {
@@ -219,17 +177,102 @@ class RestorationInflator implements IInflator
     }
 
 
+    protected static function inflateSurveyType(
+        SimpleXMLElement $node,
+        Survey $survey
+    ) {
+        $typeElement = static::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="0"]/Field[@FieldName="{SURVEYTYPES.SurveyType}"]/FormattedValue',
+        );
+        if ($typeElement) {
+            $typeStr = trim(strval($typeElement));
+
+            $survey->setType($typeStr);
+        }
+    }
+
+
+    protected static function inflateSurveyProject(
+        SimpleXMLElement $node,
+        Survey $survey
+    ) {
+        $projectElement = static::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="1"]/Field[@FieldName="{CONDITIONS.Project}"]/FormattedValue',
+        );
+        if ($projectElement) {
+            $projectStr = trim(strval($projectElement));
+
+            $survey->setProject($projectStr);
+        }
+    }
+
+
+    protected static function inflateSurveyOverallAnalysis(
+        SimpleXMLElement $node,
+        Survey $survey
+    ) {
+        $overallAnalysisElement = static::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="2"]/Field[@FieldName="{CONDITIONS.OverallAnalysis}"]/FormattedValue',
+        );
+        if ($overallAnalysisElement) {
+            $overallAnalysisStr = trim(strval($overallAnalysisElement));
+
+            $survey->setOverallAnalysis($overallAnalysisStr);
+        }
+    }
+
+
+    protected static function inflateSurveyRemarks(
+        SimpleXMLElement $node,
+        Survey $survey
+    ) {
+        $remarksElement = static::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="3"]/Field[@FieldName="{CONDITIONS.Remarks}"]/FormattedValue',
+        );
+        if ($remarksElement) {
+            $remarksStr = trim(strval($remarksElement));
+
+            $survey->setRemarks($remarksStr);
+        }
+    }
+
+
+    protected static function getSurveyTestNodes(
+        SimpleXMLElement $node
+    ): ?SimpleXMLElement {
+        $testsSubreportNode = static::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="5"]/Subreport',
+        );
+
+        if (!$testsSubreportNode) {
+            return null;
+        }
+
+        $testNodes = $testsSubreportNode->{'Details'};
+
+        if (is_null($testNodes) || $testNodes->children()->count() === 0) {
+            return null;
+        }
+
+        return $testNodes;
+    }
+
     /* Survey Tests */
     /**
      * @return void
      */
-    private static function inflateSurveyTests(
+    protected static function inflateSurveyTests(
         SimpleXMLElement $node,
         Survey $restorationSurvey
     ) {
-        $testNodes = $node->{'Details'};
+        $testNodes = static::getSurveyTestNodes($node);
 
-        if (is_null($testNodes) || $testNodes->children()->count() === 0) {
+        if (is_null($testNodes)) {
             return;
         }
 
@@ -237,50 +280,82 @@ class RestorationInflator implements IInflator
             $surveyTest = new Test;
 
             /* Type */
-            $testKindElement = self::findElementByXPath(
-                $testNode,
-                'Section[@SectionNumber="0"]/Field[@FieldName="{@testart}"]/FormattedValue',
-            );
-            if ($testKindElement) {
-                $testKindStr = trim(strval($testKindElement));
-
-                $surveyTest->setKind($testKindStr);
-            }
+            static::inflateSurveyTestType($testNode, $surveyTest);
 
             /* Text */
-            $testTextElement = self::findElementByXPath(
-                $testNode,
-                'Section[@SectionNumber="1"]/Field[@FieldName="{TEXTENTRIES.TextEntry}"]/FormattedValue',
-            );
-            if ($testTextElement) {
-                $testTextStr = trim(strval($testTextElement));
-
-                $surveyTest->setText($testTextStr);
-            }
+            static::inflateSurveyTestText($testNode, $surveyTest);
 
             /* Purpose */
-            $testPurposeElement = self::findElementByXPath(
-                $testNode,
-                'Section[@SectionNumber="2"]/Field[@FieldName="{TEXTENTRIES.Purpose}"]/FormattedValue',
-            );
-            if ($testPurposeElement) {
-                $testPurposeStr = trim(strval($testPurposeElement));
-
-                $surveyTest->setPurpose($testPurposeStr);
-            }
+            static::inflateSurveyTestPurpose($testNode, $surveyTest);
 
             /* Remarks */
-            $testRemarksElement = self::findElementByXPath(
-                $testNode,
-                'Section[@SectionNumber="3"]/Field[@FieldName="{TEXTENTRIES.Remarks}"]/FormattedValue',
-            );
-            if ($testRemarksElement) {
-                $testRemarksStr = trim(strval($testRemarksElement));
-
-                $surveyTest->setRemarks($testRemarksStr);
-            }
+            static::inflateSurveyTestRemarks($testNode, $surveyTest);
 
             $restorationSurvey->addTest($surveyTest);
+        }
+    }
+
+
+    protected static function inflateSurveyTestType(
+        SimpleXMLElement $node,
+        Test $surveyTest
+    ) {
+        $testKindElement = static::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="0"]/Field[@FieldName="{@testart}"]/FormattedValue',
+        );
+        if ($testKindElement) {
+            $testKindStr = trim(strval($testKindElement));
+
+            $surveyTest->setKind($testKindStr);
+        }
+    }
+
+
+    protected static function inflateSurveyTestText(
+        SimpleXMLElement $node,
+        Test $surveyTest
+    ) {
+        $testTextElement = static::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="1"]/Field[@FieldName="{TEXTENTRIES.TextEntry}"]/FormattedValue',
+        );
+        if ($testTextElement) {
+            $testTextStr = trim(strval($testTextElement));
+
+            $surveyTest->setText($testTextStr);
+        }
+    }
+
+
+    protected static function inflateSurveyTestPurpose(
+        SimpleXMLElement $node,
+        Test $surveyTest
+    ) {
+        $testPurposeElement = static::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="2"]/Field[@FieldName="{TEXTENTRIES.Purpose}"]/FormattedValue',
+        );
+        if ($testPurposeElement) {
+            $testPurposeStr = trim(strval($testPurposeElement));
+
+            $surveyTest->setPurpose($testPurposeStr);
+        }
+    }
+
+
+    protected static function inflateSurveyTestRemarks(
+        SimpleXMLElement $node,
+        Test $surveyTest
+    ) {
+        $testRemarksElement = static::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="3"]/Field[@FieldName="{TEXTENTRIES.Remarks}"]/FormattedValue',
+        );
+        if ($testRemarksElement) {
+            $testRemarksStr = trim(strval($testRemarksElement));
+
+            $surveyTest->setRemarks($testRemarksStr);
         }
     }
 
@@ -289,11 +364,19 @@ class RestorationInflator implements IInflator
     /**
      * @return void
      */
-    private static function inflateSurveyPersons(
+    protected static function inflateSurveyPersons(
         SimpleXMLElement $node,
         Survey $restorationSurvey
     ) {
-        $personNodes = $node->{'Details'};
+        $personsSubreportNode = static::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="6"]/Subreport',
+        );
+        if (!$personsSubreportNode) {
+            return;
+        }
+
+        $personNodes = $personsSubreportNode->{'Details'};
 
         if (is_null($personNodes) || $personNodes->children()->count() === 0) {
             return;
@@ -303,7 +386,7 @@ class RestorationInflator implements IInflator
             $surveyPerson = new Person;
 
             /* Role */
-            $personRoleElement = self::findElementByXPath(
+            $personRoleElement = static::findElementByXPath(
                 $personNode,
                 'Section[@SectionNumber="0"]/Field[@FieldName="{ROLES.Role}"]/FormattedValue',
             );
@@ -314,7 +397,7 @@ class RestorationInflator implements IInflator
             }
 
             /* Name */
-            $personNameElement = self::findElementByXPath(
+            $personNameElement = static::findElementByXPath(
                 $personNode,
                 'Section[@SectionNumber="1"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
             );
@@ -330,14 +413,14 @@ class RestorationInflator implements IInflator
 
 
     /* Survey ProcessingDates */
-    private static function inflateSurveyProcessingDates(
+    protected static function inflateSurveyProcessingDates(
         SimpleXMLElement $node,
         Survey $survey
     ): void {
         $processingDates = new ProcessingDates;
 
         /* BeginDate */
-        $beginDateElement = self::findElementByXPath(
+        $beginDateElement = static::findElementByXPath(
             $node,
             'Section[@SectionNumber="7"]/Field[@FieldName="{@BearbeitungsdatumTrue}"]/Value',
         );
@@ -348,7 +431,7 @@ class RestorationInflator implements IInflator
         }
 
         /* BeginYear */
-        $beginYearElement = self::findElementByXPath(
+        $beginYearElement = static::findElementByXPath(
             $node,
             'Section[@SectionNumber="8"]/Field[@FieldName="{@BearbeitungsdatumFalse}"]/Value',
         );
@@ -359,7 +442,7 @@ class RestorationInflator implements IInflator
         }
 
         /* EndDate */
-        $endDateElement = self::findElementByXPath(
+        $endDateElement = static::findElementByXPath(
             $node,
             'Section[@SectionNumber="9"]/Field[@FieldName="{@BearbeitungsdatEndTrue}"]/Value',
         );
@@ -370,7 +453,7 @@ class RestorationInflator implements IInflator
         }
 
         /* EndYear */
-        $endYearElement = self::findElementByXPath(
+        $endYearElement = static::findElementByXPath(
             $node,
             'Section[@SectionNumber="10"]/Field[@FieldName="{@BearbeitungsdatEndFalse}"]/Value',
         );
@@ -384,7 +467,7 @@ class RestorationInflator implements IInflator
         /* Overwrite Begin- and End-Date, because of newly introduced date section-elements (2020-09-11) */
 
         /* New BeginYear */
-        $beginDateNewElement = self::findElementByXPath(
+        $beginDateNewElement = static::findElementByXPath(
             $node,
             'Section[@SectionNumber="11"]/Field[@FieldName="{@BearbeitungsdatumNeu}"]/Value',
         );
@@ -395,7 +478,7 @@ class RestorationInflator implements IInflator
         }
 
         /* New EndYear */
-        $endDateNewElement = self::findElementByXPath(
+        $endDateNewElement = static::findElementByXPath(
             $node,
             'Section[@SectionNumber="12"]/Field[@FieldName="{@BearbeitungsdatEndNeu}"]/Value',
         );
@@ -418,14 +501,14 @@ class RestorationInflator implements IInflator
 
 
     /* Survey Signature */
-    private static function inflateSurveySignature(
+    protected static function inflateSurveySignature(
         SimpleXMLElement $node,
         Survey $survey
     ): void {
         $signature = new Signature;
 
         /* Signature Date */
-        $signatureDateElement = self::findElementByXPath(
+        $signatureDateElement = static::findElementByXPath(
             $node,
             'Section[@SectionNumber="13"]/Text[@Name="Text31"]/TextValue',
         );
@@ -436,7 +519,7 @@ class RestorationInflator implements IInflator
         }
 
         /* Signature Name */
-        $signatureNameElement = self::findElementByXPath(
+        $signatureNameElement = static::findElementByXPath(
             $node,
             'Section[@SectionNumber="13"]/Field[@Name]/FormattedValue',
         );
@@ -452,9 +535,9 @@ class RestorationInflator implements IInflator
     }
 
 
-    private static function registerXPathNamespace(SimpleXMLElement $node): void
+    protected static function registerXPathNamespace(SimpleXMLElement $node): void
     {
-        $node->registerXPathNamespace(self::$nsPrefix, self::$ns);
+        $node->registerXPathNamespace(static::$nsPrefix, static::$ns);
     }
 
 
@@ -463,13 +546,13 @@ class RestorationInflator implements IInflator
      *
      * @psalm-return array<array-key, SimpleXMLElement>|false
      */
-    private static function findElementsByXPath(SimpleXMLElement $node, string $path)
+    protected static function findElementsByXPath(SimpleXMLElement $node, string $path)
     {
-        self::registerXPathNamespace($node);
+        static::registerXPathNamespace($node);
 
         $splitPath = explode('/', $path);
 
-        $nsPrefix = self::$nsPrefix;
+        $nsPrefix = static::$nsPrefix;
         $xpathStr = './/' . implode('/', array_map(
             function ($val) use ($nsPrefix) {
                 return empty($val) ? $val : $nsPrefix . ':' . $val;
@@ -484,9 +567,9 @@ class RestorationInflator implements IInflator
     /**
      * @return SimpleXMLElement|false
      */
-    private static function findElementByXPath(SimpleXMLElement $node, string $path)
+    protected static function findElementByXPath(SimpleXMLElement $node, string $path)
     {
-        $result = self::findElementsByXPath($node, $path);
+        $result = static::findElementsByXPath($node, $path);
 
         if (is_array($result) && count($result) > 0) {
             return $result[0];
