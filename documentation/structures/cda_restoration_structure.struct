@@ -43,7 +43,7 @@ CrystalReport
                         Section[SectionNumber="2"] #-> Zweck
                             Field[FieldName="{TEXTENTRIES.Purpose}"]
                                 FormattedValue
-                        Section[SectionNumber="3"] #-> Bemerkungen
+                        Section[SectionNumber="3"] #-> Bemerkungen / enkodierte Keywords
                             Field[FieldName="{TEXTENTRIES.Remarks}"]
                                 FormattedValue
 
@@ -90,6 +90,9 @@ CrystalReport
                 Field[FieldName="{@:name}"] # Etwas unklar (:name Content von anderem Element?)
                     FormattedValue
 
-            Section[SectionNumber="14"] # (???)
+            Section[SectionNumber="14"] # Dateinamen / -pfade()
                 Subreport[Name="Subreport3"]
-                    Details
+                    Details[Level="1"]
+                        Section[SectionNumber="1"]
+                            Field[FieldName="{TEXTENTRIES.TextEntry}"]
+                                Value
