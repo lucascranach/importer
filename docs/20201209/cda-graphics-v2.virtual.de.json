@@ -3974,40 +3974,45 @@
                 "width": "0.00",
                 "height": "18.70"
             },
-            "restorationSurveys": [
-                {
-                    "type": "Material\/Technik",
-                    "project": "",
-                    "overallAnalysis": "",
-                    "remarks": "",
-                    "tests": [
-                        {
-                            "kind": "Bildtr\u00e4ger",
-                            "text": "- Papier",
-                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "keywords": []
+            "restorationSurveys": {
+                "artTechExaminations": [
+                    {
+                        "type": "Material\/Technik",
+                        "project": "",
+                        "overallAnalysis": "",
+                        "remarks": "",
+                        "tests": [
+                            {
+                                "kind": "Bildtr\u00e4ger",
+                                "text": "- Papier",
+                                "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                                "keywords": []
+                            },
+                            {
+                                "kind": "Prozess, Medium",
+                                "text": "- Kupferstich",
+                                "purpose": "",
+                                "keywords": []
+                            }
+                        ],
+                        "involvedPersons": [],
+                        "processingDates": {
+                            "beginDate": "2018",
+                            "beginYear": null,
+                            "endDate": "2018",
+                            "endYear": null
                         },
-                        {
-                            "kind": "Prozess, Medium",
-                            "text": "- Kupferstich",
-                            "purpose": "",
-                            "keywords": []
-                        }
-                    ],
-                    "involvedPersons": [],
-                    "processingDates": {
-                        "beginDate": "2018",
-                        "beginYear": null,
-                        "endDate": "2018",
-                        "endYear": null
-                    },
-                    "signature": {
-                        "date": "18. Januar 2019",
-                        "name": "Helen Smith,"
-                    },
-                    "filenames": []
-                }
-            ],
+                        "signature": {
+                            "date": "18. Januar 2019",
+                            "name": "Helen Smith,"
+                        },
+                        "filenames": []
+                    }
+                ],
+                "conditionReports": [],
+                "conservationReports": [],
+                "uncategorizedSurveys": []
+            },
             "images": {
                 "representative": {
                     "infos": {
@@ -8074,71 +8079,76 @@
                 "width": "0.00",
                 "height": "36.30"
             },
-            "restorationSurveys": [
-                {
-                    "type": "Material\/Technik",
-                    "project": "",
-                    "overallAnalysis": "",
-                    "remarks": "",
-                    "tests": [
-                        {
-                            "kind": "Bildtr\u00e4ger",
-                            "text": "- Papier",
-                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "keywords": []
+            "restorationSurveys": {
+                "artTechExaminations": [
+                    {
+                        "type": "Material\/Technik",
+                        "project": "",
+                        "overallAnalysis": "",
+                        "remarks": "",
+                        "tests": [
+                            {
+                                "kind": "Bildtr\u00e4ger",
+                                "text": "- Papier",
+                                "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                                "keywords": []
+                            },
+                            {
+                                "kind": "Prozess, Medium",
+                                "text": "- Holzschnitt, schwarze Tinte",
+                                "purpose": "",
+                                "keywords": []
+                            }
+                        ],
+                        "involvedPersons": [],
+                        "processingDates": {
+                            "beginDate": "2018",
+                            "beginYear": null,
+                            "endDate": "2018",
+                            "endYear": null
                         },
-                        {
-                            "kind": "Prozess, Medium",
-                            "text": "- Holzschnitt, schwarze Tinte",
-                            "purpose": "",
-                            "keywords": []
-                        }
-                    ],
-                    "involvedPersons": [],
-                    "processingDates": {
-                        "beginDate": "2018",
-                        "beginYear": null,
-                        "endDate": "2018",
-                        "endYear": null
+                        "signature": {
+                            "date": "30. Januar 2019",
+                            "name": "Helen Smith,"
+                        },
+                        "filenames": []
                     },
-                    "signature": {
-                        "date": "30. Januar 2019",
-                        "name": "Helen Smith,"
-                    },
-                    "filenames": []
-                },
-                {
-                    "type": "Material\/Technik",
-                    "project": "",
-                    "overallAnalysis": "",
-                    "remarks": "",
-                    "tests": [
-                        {
-                            "kind": "",
-                            "text": "Wz verso (Cahier)\n[http:\/\/sammlungenonline.albertina.at\/?query=Inventarnummer=[DG1929\/103]&showtype=record]",
-                            "purpose": "Technologische Untersuchung",
-                            "keywords": [
-                                {
-                                    "name": "Wasserzeichen",
-                                    "additonal": ""
-                                }
-                            ]
-                        }
-                    ],
-                    "involvedPersons": [],
-                    "processingDates": {
-                        "beginDate": "2018",
-                        "beginYear": null,
-                        "endDate": "2018",
-                        "endYear": null
-                    },
-                    "signature": {
-                        "date": "30. Januar 2019",
-                        "name": "Helen Smith,"
-                    },
-                    "filenames": []
-                }
-            ],
+                    {
+                        "type": "Material\/Technik",
+                        "project": "",
+                        "overallAnalysis": "",
+                        "remarks": "",
+                        "tests": [
+                            {
+                                "kind": "",
+                                "text": "Wz verso (Cahier)\n[http:\/\/sammlungenonline.albertina.at\/?query=Inventarnummer=[DG1929\/103]&showtype=record]",
+                                "purpose": "Technologische Untersuchung",
+                                "keywords": [
+                                    {
+                                        "name": "Wasserzeichen",
+                                        "additonal": ""
+                                    }
+                                ]
+                            }
+                        ],
+                        "involvedPersons": [],
+                        "processingDates": {
+                            "beginDate": "2018",
+                            "beginYear": null,
+                            "endDate": "2018",
+                            "endYear": null
+                        },
+                        "signature": {
+                            "date": "30. Januar 2019",
+                            "name": "Helen Smith,"
+                        },
+                        "filenames": []
+                    }
+                ],
+                "conditionReports": [],
+                "conservationReports": [],
+                "uncategorizedSurveys": []
+            },
             "images": {
                 "representative": {
                     "infos": {
@@ -8375,40 +8385,45 @@
                 "width": "0.00",
                 "height": "28.00"
             },
-            "restorationSurveys": [
-                {
-                    "type": "Material\/Technik",
-                    "project": "",
-                    "overallAnalysis": "",
-                    "remarks": "",
-                    "tests": [
-                        {
-                            "kind": "Bildtr\u00e4ger",
-                            "text": "- Papier",
-                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "keywords": []
+            "restorationSurveys": {
+                "artTechExaminations": [
+                    {
+                        "type": "Material\/Technik",
+                        "project": "",
+                        "overallAnalysis": "",
+                        "remarks": "",
+                        "tests": [
+                            {
+                                "kind": "Bildtr\u00e4ger",
+                                "text": "- Papier",
+                                "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                                "keywords": []
+                            },
+                            {
+                                "kind": "Prozess, Medium",
+                                "text": "- Holzschnitt, schwarze Farbe",
+                                "purpose": "",
+                                "keywords": []
+                            }
+                        ],
+                        "involvedPersons": [],
+                        "processingDates": {
+                            "beginDate": "2017",
+                            "beginYear": null,
+                            "endDate": "2017",
+                            "endYear": null
                         },
-                        {
-                            "kind": "Prozess, Medium",
-                            "text": "- Holzschnitt, schwarze Farbe",
-                            "purpose": "",
-                            "keywords": []
-                        }
-                    ],
-                    "involvedPersons": [],
-                    "processingDates": {
-                        "beginDate": "2017",
-                        "beginYear": null,
-                        "endDate": "2017",
-                        "endYear": null
-                    },
-                    "signature": {
-                        "date": "31. Januar 2019",
-                        "name": "Helen Smith,"
-                    },
-                    "filenames": []
-                }
-            ],
+                        "signature": {
+                            "date": "31. Januar 2019",
+                            "name": "Helen Smith,"
+                        },
+                        "filenames": []
+                    }
+                ],
+                "conditionReports": [],
+                "conservationReports": [],
+                "uncategorizedSurveys": []
+            },
             "images": {
                 "representative": {
                     "infos": {
@@ -8638,40 +8653,45 @@
                 "width": "0.00",
                 "height": "13.10"
             },
-            "restorationSurveys": [
-                {
-                    "type": "Material\/Technik",
-                    "project": "",
-                    "overallAnalysis": "",
-                    "remarks": "",
-                    "tests": [
-                        {
-                            "kind": "Bildtr\u00e4ger",
-                            "text": "- Papier",
-                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "keywords": []
+            "restorationSurveys": {
+                "artTechExaminations": [
+                    {
+                        "type": "Material\/Technik",
+                        "project": "",
+                        "overallAnalysis": "",
+                        "remarks": "",
+                        "tests": [
+                            {
+                                "kind": "Bildtr\u00e4ger",
+                                "text": "- Papier",
+                                "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                                "keywords": []
+                            },
+                            {
+                                "kind": "Prozess, Medium",
+                                "text": "- Holzschnitt mit Typendruck: ein Druck vom schwarzen Linienblock\n[Exhib. Cat. D\u00fcsseldorf 2017, 170, No. 78]",
+                                "purpose": "",
+                                "keywords": []
+                            }
+                        ],
+                        "involvedPersons": [],
+                        "processingDates": {
+                            "beginDate": "2017",
+                            "beginYear": null,
+                            "endDate": "2017",
+                            "endYear": null
                         },
-                        {
-                            "kind": "Prozess, Medium",
-                            "text": "- Holzschnitt mit Typendruck: ein Druck vom schwarzen Linienblock\n[Exhib. Cat. D\u00fcsseldorf 2017, 170, No. 78]",
-                            "purpose": "",
-                            "keywords": []
-                        }
-                    ],
-                    "involvedPersons": [],
-                    "processingDates": {
-                        "beginDate": "2017",
-                        "beginYear": null,
-                        "endDate": "2017",
-                        "endYear": null
-                    },
-                    "signature": {
-                        "date": "01. Februar 2019",
-                        "name": "Helen Smith,"
-                    },
-                    "filenames": []
-                }
-            ],
+                        "signature": {
+                            "date": "01. Februar 2019",
+                            "name": "Helen Smith,"
+                        },
+                        "filenames": []
+                    }
+                ],
+                "conditionReports": [],
+                "conservationReports": [],
+                "uncategorizedSurveys": []
+            },
             "images": {
                 "representative": {
                     "infos": {
@@ -9503,40 +9523,45 @@
                 "width": "0.00",
                 "height": "33.30"
             },
-            "restorationSurveys": [
-                {
-                    "type": "Material\/Technik",
-                    "project": "",
-                    "overallAnalysis": "",
-                    "remarks": "",
-                    "tests": [
-                        {
-                            "kind": "Bildtr\u00e4ger",
-                            "text": "- Papier",
-                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "keywords": []
+            "restorationSurveys": {
+                "artTechExaminations": [
+                    {
+                        "type": "Material\/Technik",
+                        "project": "",
+                        "overallAnalysis": "",
+                        "remarks": "",
+                        "tests": [
+                            {
+                                "kind": "Bildtr\u00e4ger",
+                                "text": "- Papier",
+                                "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                                "keywords": []
+                            },
+                            {
+                                "kind": "Prozess, Medium",
+                                "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                                "purpose": "Technologische Untersuchung",
+                                "keywords": []
+                            }
+                        ],
+                        "involvedPersons": [],
+                        "processingDates": {
+                            "beginDate": "05.02.2019",
+                            "beginYear": null,
+                            "endDate": "",
+                            "endYear": null
                         },
-                        {
-                            "kind": "Prozess, Medium",
-                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
-                            "purpose": "Technologische Untersuchung",
-                            "keywords": []
-                        }
-                    ],
-                    "involvedPersons": [],
-                    "processingDates": {
-                        "beginDate": "05.02.2019",
-                        "beginYear": null,
-                        "endDate": "",
-                        "endYear": null
-                    },
-                    "signature": {
-                        "date": "05. Februar 2019",
-                        "name": "Helen Smith,"
-                    },
-                    "filenames": []
-                }
-            ],
+                        "signature": {
+                            "date": "05. Februar 2019",
+                            "name": "Helen Smith,"
+                        },
+                        "filenames": []
+                    }
+                ],
+                "conditionReports": [],
+                "conservationReports": [],
+                "uncategorizedSurveys": []
+            },
             "images": {
                 "representative": {
                     "infos": {
@@ -10186,40 +10211,45 @@
                 "width": "0.00",
                 "height": "33.50"
             },
-            "restorationSurveys": [
-                {
-                    "type": "Material\/Technik",
-                    "project": "",
-                    "overallAnalysis": "",
-                    "remarks": "",
-                    "tests": [
-                        {
-                            "kind": "Bildtr\u00e4ger",
-                            "text": "- Papier",
-                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "keywords": []
+            "restorationSurveys": {
+                "artTechExaminations": [
+                    {
+                        "type": "Material\/Technik",
+                        "project": "",
+                        "overallAnalysis": "",
+                        "remarks": "",
+                        "tests": [
+                            {
+                                "kind": "Bildtr\u00e4ger",
+                                "text": "- Papier",
+                                "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                                "keywords": []
+                            },
+                            {
+                                "kind": "Prozess, Medium",
+                                "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                                "purpose": "Technologische Untersuchung",
+                                "keywords": []
+                            }
+                        ],
+                        "involvedPersons": [],
+                        "processingDates": {
+                            "beginDate": "06.02.2019",
+                            "beginYear": null,
+                            "endDate": "",
+                            "endYear": null
                         },
-                        {
-                            "kind": "Prozess, Medium",
-                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
-                            "purpose": "Technologische Untersuchung",
-                            "keywords": []
-                        }
-                    ],
-                    "involvedPersons": [],
-                    "processingDates": {
-                        "beginDate": "06.02.2019",
-                        "beginYear": null,
-                        "endDate": "",
-                        "endYear": null
-                    },
-                    "signature": {
-                        "date": "06. Februar 2019",
-                        "name": "Helen Smith,"
-                    },
-                    "filenames": []
-                }
-            ],
+                        "signature": {
+                            "date": "06. Februar 2019",
+                            "name": "Helen Smith,"
+                        },
+                        "filenames": []
+                    }
+                ],
+                "conditionReports": [],
+                "conservationReports": [],
+                "uncategorizedSurveys": []
+            },
             "images": {
                 "representative": {
                     "infos": {
@@ -14949,40 +14979,45 @@
                 "width": "0.00",
                 "height": "16.50"
             },
-            "restorationSurveys": [
-                {
-                    "type": "Material\/Technik",
-                    "project": "",
-                    "overallAnalysis": "",
-                    "remarks": "",
-                    "tests": [
-                        {
-                            "kind": "Bildtr\u00e4ger",
-                            "text": "- Papier",
-                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "keywords": []
+            "restorationSurveys": {
+                "artTechExaminations": [
+                    {
+                        "type": "Material\/Technik",
+                        "project": "",
+                        "overallAnalysis": "",
+                        "remarks": "",
+                        "tests": [
+                            {
+                                "kind": "Bildtr\u00e4ger",
+                                "text": "- Papier",
+                                "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                                "keywords": []
+                            },
+                            {
+                                "kind": "Prozess, Medium",
+                                "text": "- Kupferstich",
+                                "purpose": "",
+                                "keywords": []
+                            }
+                        ],
+                        "involvedPersons": [],
+                        "processingDates": {
+                            "beginDate": "2018",
+                            "beginYear": null,
+                            "endDate": "2018",
+                            "endYear": null
                         },
-                        {
-                            "kind": "Prozess, Medium",
-                            "text": "- Kupferstich",
-                            "purpose": "",
-                            "keywords": []
-                        }
-                    ],
-                    "involvedPersons": [],
-                    "processingDates": {
-                        "beginDate": "2018",
-                        "beginYear": null,
-                        "endDate": "2018",
-                        "endYear": null
-                    },
-                    "signature": {
-                        "date": "06. Mai 2019",
-                        "name": "Helen Smith,"
-                    },
-                    "filenames": []
-                }
-            ],
+                        "signature": {
+                            "date": "06. Mai 2019",
+                            "name": "Helen Smith,"
+                        },
+                        "filenames": []
+                    }
+                ],
+                "conditionReports": [],
+                "conservationReports": [],
+                "uncategorizedSurveys": []
+            },
             "images": {
                 "representative": {
                     "infos": {
@@ -19061,40 +19096,45 @@
                 "width": "0.00",
                 "height": "16.40"
             },
-            "restorationSurveys": [
-                {
-                    "type": "Material\/Technik",
-                    "project": "",
-                    "overallAnalysis": "",
-                    "remarks": "",
-                    "tests": [
-                        {
-                            "kind": "Bildtr\u00e4ger",
-                            "text": "- Papier",
-                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "keywords": []
+            "restorationSurveys": {
+                "artTechExaminations": [
+                    {
+                        "type": "Material\/Technik",
+                        "project": "",
+                        "overallAnalysis": "",
+                        "remarks": "",
+                        "tests": [
+                            {
+                                "kind": "Bildtr\u00e4ger",
+                                "text": "- Papier",
+                                "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                                "keywords": []
+                            },
+                            {
+                                "kind": "Prozess, Medium",
+                                "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                                "purpose": "Technologische Untersuchung",
+                                "keywords": []
+                            }
+                        ],
+                        "involvedPersons": [],
+                        "processingDates": {
+                            "beginDate": "17.05.2019",
+                            "beginYear": null,
+                            "endDate": "",
+                            "endYear": null
                         },
-                        {
-                            "kind": "Prozess, Medium",
-                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
-                            "purpose": "Technologische Untersuchung",
-                            "keywords": []
-                        }
-                    ],
-                    "involvedPersons": [],
-                    "processingDates": {
-                        "beginDate": "17.05.2019",
-                        "beginYear": null,
-                        "endDate": "",
-                        "endYear": null
-                    },
-                    "signature": {
-                        "date": "17. Mai 2019",
-                        "name": "Helen Smith,"
-                    },
-                    "filenames": []
-                }
-            ],
+                        "signature": {
+                            "date": "17. Mai 2019",
+                            "name": "Helen Smith,"
+                        },
+                        "filenames": []
+                    }
+                ],
+                "conditionReports": [],
+                "conservationReports": [],
+                "uncategorizedSurveys": []
+            },
             "images": {
                 "representative": {
                     "infos": {
@@ -20099,40 +20139,45 @@
                 "width": "0.00",
                 "height": "33.80"
             },
-            "restorationSurveys": [
-                {
-                    "type": "Material\/Technik",
-                    "project": "",
-                    "overallAnalysis": "",
-                    "remarks": "",
-                    "tests": [
-                        {
-                            "kind": "Bildtr\u00e4ger",
-                            "text": "- Papier",
-                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "keywords": []
+            "restorationSurveys": {
+                "artTechExaminations": [
+                    {
+                        "type": "Material\/Technik",
+                        "project": "",
+                        "overallAnalysis": "",
+                        "remarks": "",
+                        "tests": [
+                            {
+                                "kind": "Bildtr\u00e4ger",
+                                "text": "- Papier",
+                                "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                                "keywords": []
+                            },
+                            {
+                                "kind": "Prozess, Medium",
+                                "text": "- Holzschnitt Druck: schwarzer Linienblock",
+                                "purpose": "Technologische Untersuchung",
+                                "keywords": []
+                            }
+                        ],
+                        "involvedPersons": [],
+                        "processingDates": {
+                            "beginDate": "23.05.2019",
+                            "beginYear": null,
+                            "endDate": "",
+                            "endYear": null
                         },
-                        {
-                            "kind": "Prozess, Medium",
-                            "text": "- Holzschnitt Druck: schwarzer Linienblock",
-                            "purpose": "Technologische Untersuchung",
-                            "keywords": []
-                        }
-                    ],
-                    "involvedPersons": [],
-                    "processingDates": {
-                        "beginDate": "23.05.2019",
-                        "beginYear": null,
-                        "endDate": "",
-                        "endYear": null
-                    },
-                    "signature": {
-                        "date": "23. Mai 2019",
-                        "name": "Helen Smith,"
-                    },
-                    "filenames": []
-                }
-            ],
+                        "signature": {
+                            "date": "23. Mai 2019",
+                            "name": "Helen Smith,"
+                        },
+                        "filenames": []
+                    }
+                ],
+                "conditionReports": [],
+                "conservationReports": [],
+                "uncategorizedSurveys": []
+            },
             "images": {
                 "representative": {
                     "infos": {
@@ -20338,71 +20383,76 @@
                 "width": "0.00",
                 "height": "33.50"
             },
-            "restorationSurveys": [
-                {
-                    "type": "Material\/Technik",
-                    "project": "",
-                    "overallAnalysis": "",
-                    "remarks": "",
-                    "tests": [
-                        {
-                            "kind": "Bildtr\u00e4ger",
-                            "text": "- Papier",
-                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "keywords": []
+            "restorationSurveys": {
+                "artTechExaminations": [
+                    {
+                        "type": "Material\/Technik",
+                        "project": "",
+                        "overallAnalysis": "",
+                        "remarks": "",
+                        "tests": [
+                            {
+                                "kind": "Bildtr\u00e4ger",
+                                "text": "- Papier",
+                                "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                                "keywords": []
+                            },
+                            {
+                                "kind": "Prozess, Medium",
+                                "text": "- Holzschnitt, schwarze Tinte",
+                                "purpose": "",
+                                "keywords": []
+                            }
+                        ],
+                        "involvedPersons": [],
+                        "processingDates": {
+                            "beginDate": "2018",
+                            "beginYear": null,
+                            "endDate": "2018",
+                            "endYear": null
                         },
-                        {
-                            "kind": "Prozess, Medium",
-                            "text": "- Holzschnitt, schwarze Tinte",
-                            "purpose": "",
-                            "keywords": []
-                        }
-                    ],
-                    "involvedPersons": [],
-                    "processingDates": {
-                        "beginDate": "2018",
-                        "beginYear": null,
-                        "endDate": "2018",
-                        "endYear": null
+                        "signature": {
+                            "date": "23. Mai 2019",
+                            "name": "Helen Smith,"
+                        },
+                        "filenames": []
                     },
-                    "signature": {
-                        "date": "23. Mai 2019",
-                        "name": "Helen Smith,"
-                    },
-                    "filenames": []
-                },
-                {
-                    "type": "Material\/Technik",
-                    "project": "",
-                    "overallAnalysis": "",
-                    "remarks": "",
-                    "tests": [
-                        {
-                            "kind": "",
-                            "text": "Wz verso (Cahier)\n[http:\/\/sammlungenonline.albertina.at\/?query=Inventarnummer=[DG1929\/103]&showtype=record]",
-                            "purpose": "Technologische Untersuchung",
-                            "keywords": [
-                                {
-                                    "name": "Wasserzeichen",
-                                    "additonal": ""
-                                }
-                            ]
-                        }
-                    ],
-                    "involvedPersons": [],
-                    "processingDates": {
-                        "beginDate": "2018",
-                        "beginYear": null,
-                        "endDate": "2018",
-                        "endYear": null
-                    },
-                    "signature": {
-                        "date": "23. Mai 2019",
-                        "name": "Helen Smith,"
-                    },
-                    "filenames": []
-                }
-            ],
+                    {
+                        "type": "Material\/Technik",
+                        "project": "",
+                        "overallAnalysis": "",
+                        "remarks": "",
+                        "tests": [
+                            {
+                                "kind": "",
+                                "text": "Wz verso (Cahier)\n[http:\/\/sammlungenonline.albertina.at\/?query=Inventarnummer=[DG1929\/103]&showtype=record]",
+                                "purpose": "Technologische Untersuchung",
+                                "keywords": [
+                                    {
+                                        "name": "Wasserzeichen",
+                                        "additonal": ""
+                                    }
+                                ]
+                            }
+                        ],
+                        "involvedPersons": [],
+                        "processingDates": {
+                            "beginDate": "2018",
+                            "beginYear": null,
+                            "endDate": "2018",
+                            "endYear": null
+                        },
+                        "signature": {
+                            "date": "23. Mai 2019",
+                            "name": "Helen Smith,"
+                        },
+                        "filenames": []
+                    }
+                ],
+                "conditionReports": [],
+                "conservationReports": [],
+                "uncategorizedSurveys": []
+            },
             "images": {
                 "representative": {
                     "infos": {
@@ -20605,40 +20655,45 @@
                 "width": "0.00",
                 "height": "28.40"
             },
-            "restorationSurveys": [
-                {
-                    "type": "Material\/Technik",
-                    "project": "",
-                    "overallAnalysis": "",
-                    "remarks": "",
-                    "tests": [
-                        {
-                            "kind": "Bildtr\u00e4ger",
-                            "text": "- Papier",
-                            "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
-                            "keywords": []
+            "restorationSurveys": {
+                "artTechExaminations": [
+                    {
+                        "type": "Material\/Technik",
+                        "project": "",
+                        "overallAnalysis": "",
+                        "remarks": "",
+                        "tests": [
+                            {
+                                "kind": "Bildtr\u00e4ger",
+                                "text": "- Papier",
+                                "purpose": "Technologische Untersuchung \/ Naturwissenschaftliche Materialanalyse",
+                                "keywords": []
+                            },
+                            {
+                                "kind": "Prozess, Medium",
+                                "text": "- Holzschnitt mit Typendruck in Rot",
+                                "purpose": "",
+                                "keywords": []
+                            }
+                        ],
+                        "involvedPersons": [],
+                        "processingDates": {
+                            "beginDate": "2018",
+                            "beginYear": null,
+                            "endDate": "2018",
+                            "endYear": null
                         },
-                        {
-                            "kind": "Prozess, Medium",
-                            "text": "- Holzschnitt mit Typendruck in Rot",
-                            "purpose": "",
-                            "keywords": []
-                        }
-                    ],
-                    "involvedPersons": [],
-                    "processingDates": {
-                        "beginDate": "2018",
-                        "beginYear": null,
-                        "endDate": "2018",
-                        "endYear": null
-                    },
-                    "signature": {
-                        "date": "24. Mai 2019",
-                        "name": "Helen Smith,"
-                    },
-                    "filenames": []
-                }
-            ],
+                        "signature": {
+                            "date": "24. Mai 2019",
+                            "name": "Helen Smith,"
+                        },
+                        "filenames": []
+                    }
+                ],
+                "conditionReports": [],
+                "conservationReports": [],
+                "uncategorizedSurveys": []
+            },
             "images": {
                 "representative": {
                     "infos": {
