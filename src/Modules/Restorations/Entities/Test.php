@@ -10,7 +10,6 @@ class Test
     public $kind = '';
     public $text = '';
     public $purpose = '';
-    public $remarks = '';
     public $keywords = [];
 
 
@@ -55,19 +54,7 @@ class Test
     }
 
 
-    public function setRemarks(string $remarks): void
-    {
-        $this->remarks = $remarks;
-    }
-
-
-    public function getRemarks(): string
-    {
-        return $this->remarks;
-    }
-
-
-    public function addKeyword(string $keyword)
+    public function addKeyword(Keyword $keyword)
     {
         $this->keywords[] = $keyword;
     }

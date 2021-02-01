@@ -8,20 +8,16 @@ use XMLReader;
 use SimpleXMLElement;
 use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
-use CranachDigitalArchive\Importer\Interfaces\Loaders\ILoader;
+use CranachDigitalArchive\Importer\Interfaces\Loaders\IMultipleFileLoader;
 
 use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Restoration;
 use CranachDigitalArchive\Importer\Modules\Restorations\Inflators\XML\RestorationInflator;
-use CranachDigitalArchive\Importer\Modules\Restorations\Inflators\XML\GraphicsRestorationInflator;
 
 /**
  * Restoration loader on a xml file base
  */
-class RestorationsLoader extends Producer implements ILoader
+class RestorationsLoader extends Producer implements IMultipleFileLoader
 {
-    const GRAPHICS = 'graphics';
-    const PAINTINGS = 'paintings';
-
     private $sourceFilePaths = [];
     private $xmlReader = null;
     private $rootElementName = 'CrystalReport';
@@ -29,36 +25,17 @@ class RestorationsLoader extends Producer implements ILoader
     private $restorationObjectType;
 
 
-    public function __construct(string $restorationObjectType)
+    public function __construct()
     {
-        $this->restorationObjectType = $restorationObjectType;
     }
 
 
     /**
      * @return self
      */
-    public static function withSourcesForGraphicsAt(array $sourceFilePaths)
+    public static function withSourcesAt(array $sourceFilePaths)
     {
-        return self::withSourcesAt($sourceFilePaths, self::GRAPHICS);
-    }
-
-
-    /**
-     * @return self
-     */
-    public static function withSourcesForPaintingsAt(array $sourceFilePaths)
-    {
-        return self::withSourcesAt($sourceFilePaths, self::PAINTINGS);
-    }
-
-
-    /**
-     * @return self
-     */
-    private static function withSourcesAt(array $sourceFilePaths, $restorationObjectType)
-    {
-        $loader = new self($restorationObjectType);
+        $loader = new self();
         $loader->xmlReader = new XMLReader();
         $loader->sourceFilePaths = $sourceFilePaths;
 
@@ -158,20 +135,7 @@ class RestorationsLoader extends Producer implements ILoader
         $xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 
         /* Moved the inflation action(s) into its own class(es) */
-        switch ($this->restorationObjectType) {
-            case self::GRAPHICS:
-                /* Special RestorationInflator for graphics */
-                GraphicsRestorationInflator::inflate($xmlNode, $restorationDe, $restorationEn);
-                break;
-
-            case self::PAINTINGS:
-                /* Default RestorationInflator */
-                RestorationInflator::inflate($xmlNode, $restorationDe, $restorationEn);
-                break;
-
-            default:
-                throw new Error('Unknown restoration object type: ' . $this->restorationObjectType);
-        }
+        RestorationInflator::inflate($xmlNode, $restorationDe, $restorationEn);
 
         /* Passing the restoration objects to the pipeline */
         $this->next($restorationDe);
