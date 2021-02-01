@@ -15,6 +15,7 @@ class Survey
     public $involvedPersons = [];
     public $processingDates = null;
     public $signature = null;
+    public $filenames = [];
 
 
     public function __construct()
@@ -115,5 +116,17 @@ class Survey
     public function getSignature(): Signature
     {
         return $this->signature;
+    }
+
+
+    public function addFilename(string $filename)
+    {
+        $this->filenames[] = $filename;
+    }
+
+
+    public function getFilenames(): array
+    {
+        return $this->filenames;
     }
 }

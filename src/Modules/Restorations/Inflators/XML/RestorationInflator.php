@@ -156,6 +156,9 @@ class RestorationInflator implements IInflator
         /* Signature */
         self::inflateSurveySignature($node, $survey);
 
+        /* Filenames */
+        self::inflateSurveyFilenames($node, $survey);
+
         $surveyType = $survey->getType();
 
         /* Determining the language of the survey
@@ -552,6 +555,33 @@ class RestorationInflator implements IInflator
 
         if (!empty($signature->getDate()) && !empty($signature->getName())) {
             $survey->setSignature($signature);
+        }
+    }
+
+
+    protected static function inflateSurveyFilenames(
+        SimpleXMLElement $node,
+        Survey $survey
+    ): void {
+        $filenamesElement = self::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="14"]'
+            . '/Subreport[@Name="Subreport3"]'
+            . '/Details[@Level="1"]'
+            . '/Section[@SectionNumber="1"]'
+            . '/Field[@FieldName="{TEXTENTRIES.TextEntry}"]'
+            . '/Value',
+        );
+
+        if ($filenamesElement) {
+            $filenamesStr = strval($filenamesElement);
+
+            $filenames = explode(self::$splitChar, $filenamesStr);
+            $trimmedFilenames = array_map('trim', $filenames);
+
+            foreach ($trimmedFilenames as $trimmedFilename) {
+                $survey->addFilename($trimmedFilename);
+            }
         }
     }
 
