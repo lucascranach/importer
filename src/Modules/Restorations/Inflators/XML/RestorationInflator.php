@@ -19,6 +19,11 @@ use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Keyword;
  */
 class RestorationInflator implements IInflator
 {
+    private const ART_TECH_EXAMINATION = 'art_tech_examination';
+    private const CONDITION_REPORT = 'condition_report';
+    private const CONSERVATION_REPORT = 'conservation_report';
+    private const UNCATEGORIZED_SURVEY = 'uncategorized_survey';
+
     private static $nsPrefix = 'ns';
     private static $ns = 'urn:crystal-reports:schemas:report-detail';
     private static $splitChar = '#';
@@ -37,6 +42,16 @@ class RestorationInflator implements IInflator
         'Material/Technique' => Language::EN,
         'Condition Report' => Language::EN,
         'Conservation Report' => Language::EN,
+    ];
+
+    private static $surveyTypesCategoryTypes = [
+        'Material/Technik' => self::ART_TECH_EXAMINATION,
+        'Zustandsprotokoll' => self::CONDITION_REPORT,
+        'Restaurierungsdokumentation' => self::CONSERVATION_REPORT,
+
+        'Material/Technique' => self::ART_TECH_EXAMINATION,
+        'Condition Report' => self::CONDITION_REPORT,
+        'Conservation Report' => self::CONSERVATION_REPORT,
     ];
 
     private function __construct()
@@ -165,20 +180,45 @@ class RestorationInflator implements IInflator
             to assign it to the correct restoration */
         $lang = isset(self::$surveyTypesLanguageTypes[$surveyType])
             ? self::$surveyTypesLanguageTypes[$surveyType]
-            : 'unknown' ;
+            : 'unknown';
+
+        $selectedRestorations = [];
 
         switch ($lang) {
             case Language::DE:
-                $restorationDe->addSurvey($survey);
+                $selectedRestorations[] = $restorationDe;
                 break;
 
             case Language::EN:
-                $restorationEn->addSurvey($survey);
+                $selectedRestorations[] = $restorationEn;
                 break;
 
             default:
-                $restorationDe->addSurvey($survey);
-                $restorationEn->addSurvey($survey);
+                $selectedRestorations[] = $restorationDe;
+                $selectedRestorations[] = $restorationEn;
+        }
+
+        $surveyCategory = isset(self::$surveyTypesCategoryTypes[$surveyType])
+            ? self::$surveyTypesCategoryTypes[$surveyType]
+            : self::UNCATEGORIZED_SURVEY;
+
+        foreach ($selectedRestorations as $selectedRestoration) {
+            switch ($surveyCategory) {
+                case self::ART_TECH_EXAMINATION:
+                    $selectedRestoration->addArtTechExamination($survey);
+                    break;
+
+                case self::CONDITION_REPORT:
+                    $selectedRestoration->addConditionReport($survey);
+                    break;
+
+                case self::CONSERVATION_REPORT:
+                    $selectedRestoration->addConservationReport($survey);
+                    break;
+
+                default:
+                    $selectedRestoration->addUncategorizedSurvey($survey);
+            }
         }
     }
 
