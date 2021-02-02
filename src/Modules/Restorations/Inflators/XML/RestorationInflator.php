@@ -19,10 +19,10 @@ use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Keyword;
  */
 class RestorationInflator implements IInflator
 {
-    private const ART_TECH_EXAMINATION = 'art_tech_examination';
-    private const CONDITION_REPORT = 'condition_report';
-    private const CONSERVATION_REPORT = 'conservation_report';
-    private const UNCATEGORIZED_SURVEY = 'uncategorized_survey';
+    private const ART_TECH_EXAMINATION = 'ArtTechExamination';
+    private const CONDITION_REPORT = 'ConditionReport';
+    private const CONSERVATION_REPORT = 'ConservationReport';
+    private const UNCATEGORIZED_SURVEY = 'UncategorizedSurvey';
 
     private static $nsPrefix = 'ns';
     private static $ns = 'urn:crystal-reports:schemas:report-detail';
@@ -202,23 +202,11 @@ class RestorationInflator implements IInflator
             ? self::$surveyTypesCategoryTypes[$surveyType]
             : self::UNCATEGORIZED_SURVEY;
 
+        /* Overwriting the type with a language-independend value */
+        $survey->setType($surveyCategory);
+
         foreach ($selectedRestorations as $selectedRestoration) {
-            switch ($surveyCategory) {
-                case self::ART_TECH_EXAMINATION:
-                    $selectedRestoration->addArtTechExamination($survey);
-                    break;
-
-                case self::CONDITION_REPORT:
-                    $selectedRestoration->addConditionReport($survey);
-                    break;
-
-                case self::CONSERVATION_REPORT:
-                    $selectedRestoration->addConservationReport($survey);
-                    break;
-
-                default:
-                    $selectedRestoration->addUncategorizedSurvey($survey);
-            }
+            $selectedRestoration->addSurvey($survey);
         }
     }
 

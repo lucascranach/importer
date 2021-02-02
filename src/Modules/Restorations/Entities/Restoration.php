@@ -13,12 +13,7 @@ class Restoration implements ILanguageBaseItem
 
     public $inventoryNumber = '';
     public $objectId = '';
-    public $surveys = [
-        'artTechExaminations' => [],
-        'conditionReports' => [],
-        'conservationReports' => [],
-        'uncategorizedSurveys' => [],
-    ];
+    public $surveys = [];
 
 
     public function __construct()
@@ -70,56 +65,14 @@ class Restoration implements ILanguageBaseItem
     }
 
 
+    public function addSurvey(Survey $survey)
+    {
+        $this->surveys[] = $survey;
+    }
+
+
     public function getSurveys(): array
     {
         return $this->surveys;
-    }
-
-
-    public function addArtTechExamination(Survey $artTechExamination): void
-    {
-        $this->surveys['artTechExaminations'][] = $artTechExamination;
-    }
-
-
-    public function getArtTechExaminations(): array
-    {
-        return $this->surveys['artTechExaminations'];
-    }
-
-
-    public function addConditionReport(Survey $conditionReport): void
-    {
-        $this->surveys['conditionReports'][] = $conditionReport;
-    }
-
-
-    public function getConditionReports(): array
-    {
-        return $this->surveys['conditionReports'];
-    }
-
-
-    public function addConservationReport(Survey $conservationReport): void
-    {
-        $this->surveys['conservationReports'][] = $conservationReport;
-    }
-
-
-    public function getConservationReports(): array
-    {
-        return $this->surveys['conservationReports'];
-    }
-
-
-    public function addUncategorizedSurvey(Survey $uncategorizedSurvey): void
-    {
-        $this->surveys['uncategorizedSurveys'][] = $uncategorizedSurvey;
-    }
-
-
-    public function getUncategorizedSurveys(): array
-    {
-        return $this->surveys['uncategorizedSurveys'];
     }
 }
