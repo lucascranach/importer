@@ -8,7 +8,7 @@ namespace CranachDigitalArchive\Importer\Modules\Restorations\Entities;
 class Keyword
 {
     public $name = '';
-    public $additonal = '';
+    public $additional = '';
 
 
     public function __construct()
@@ -28,14 +28,14 @@ class Keyword
     }
 
 
-    public function setAdditional(string $additonal): void
+    public function setAdditional(string $additional): void
     {
-        $this->additonal = $additonal;
+        $this->additional = $additional;
     }
 
 
     public function getAdditional(): string
     {
-        return $this->additonal;
+        return $this->additional;
     }
 }
