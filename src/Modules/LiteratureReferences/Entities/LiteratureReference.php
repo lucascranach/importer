@@ -9,6 +9,7 @@ use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
  */
 class LiteratureReference implements IBaseItem
 {
+    public $entityType = 'LITERATURE_REFERENCE';
     public $referenceId = '';
     public $referenceNumber = '';
     public $title = '';

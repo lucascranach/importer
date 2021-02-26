@@ -21,6 +21,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\StructuredDimension;
  */
 class Painting extends AbstractImagesItem implements ILanguageBaseItem
 {
+    public $entityType = 'PAINTING';
     public $langCode = '<unknown language>';
 
     public $involvedPersons = [];

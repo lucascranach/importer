@@ -11,7 +11,6 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
  */
 class SearchableGraphic extends Graphic
 {
-    public $entityType = 'GRAPHIC';
     public $thesaurus = [];
 
 
