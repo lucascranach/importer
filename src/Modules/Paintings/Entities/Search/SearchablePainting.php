@@ -10,6 +10,7 @@ use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
  */
 class SearchablePainting extends Painting
 {
+    public $entityType = 'PAINTING';
     public $thesaurus = [];
 
 
