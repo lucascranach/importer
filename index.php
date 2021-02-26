@@ -25,6 +25,7 @@ use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithTh
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithRestorations as PaintingsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Archivals\Loaders\XML\ArchivalsLoader;
 use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsJSONLangExporter;
+use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
@@ -65,6 +66,7 @@ $graphicsOutputFilepath = $destDirectory . '/cda-graphics-v2.json';
 $graphicsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-graphics-v2.bulk';
 $literatureReferenceOutputFilepath = $destDirectory . '/cda-literaturereferences-v2.json';
 $archivalsOutputFilepath = $destDirectory . '/cda-archivals-v2.json';
+$archivalsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-archivals-v2.bulk';
 
 
 
@@ -158,8 +160,15 @@ $literatureReferencesLoader = LiteratureReferencesLoader::withSourcesAt($literat
 
 
 /* Archivals */
+$archivalsDestination = ArchivalsJSONLangExporter::withDestinationAt($archivalsOutputFilepath);
+
+$archivalsElasticsearchBulkDestination = ArchivalsElasticsearchLangExporter::withDestinationAt(
+    $archivalsElasticsearchOutputFilepath
+);
+
 $archivalsLoader = ArchivalsLoader::withSourceAt($archivalsInputFilepath)->pipe(
-    ArchivalsJSONLangExporter::withDestinationAt($archivalsOutputFilepath),
+    $archivalsDestination,
+    $archivalsElasticsearchBulkDestination,
 );
 
 

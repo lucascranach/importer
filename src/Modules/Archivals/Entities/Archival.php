@@ -10,6 +10,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\Publication;
  */
 class Archival implements ILanguageBaseItem
 {
+    public $entityType = 'ARCHIVAL';
     public $langCode = '<unknown language>';
 
     public $inventoryNumber = '';
