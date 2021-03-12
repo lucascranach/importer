@@ -107,9 +107,15 @@ CrystalReport
 
 			Section[SectionNumber="17"] # -> ID
 				Subreport
-					Details
+					Details*
 						Section[SectionNumber="0"]
-							Field[FieldName="{@AltNum}"]
+							Field[FieldName="{AltNumDescriptions.AltNumDescription}"]
+								FormattedValue
+						Section[SectionNumber="1"]
+							Field[FieldName="{AltNums.AltNum}"]
+								FormattedValue
+						Section[SectionNumber="2"]
+							Field[FieldName="{AltNums.Remarks}"]
 								FormattedValue
 
 

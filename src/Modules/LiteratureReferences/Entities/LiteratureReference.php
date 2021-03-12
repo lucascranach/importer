@@ -27,7 +27,7 @@ class LiteratureReference implements IBaseItem
     public $copyright = '';
     public $persons = [];
     public $publications = [];
-    public $id = ''; /* ? */
+    public $alternateNumbers = [];
 
     public $connectedObjects = [];
 
@@ -37,16 +37,11 @@ class LiteratureReference implements IBaseItem
     }
 
 
-    public function setId(string $id): void
-    {
-        $this->id = $id;
-    }
-
-
     public function getId(): string
     {
-        return $this->id;
+        return $this->getReferenceId();
     }
+
 
     public function setReferenceId(string $referenceId): void
     {
@@ -260,5 +255,17 @@ class LiteratureReference implements IBaseItem
     public function getConnectedObjects(): array
     {
         return $this->connectedObjects;
+    }
+
+
+    public function addAlternateNumber(AlternateNumber $alternateNumber): void
+    {
+        $this->alternateNumbers[] = $alternateNumber;
+    }
+
+
+    public function getAlternateNumbers(): array
+    {
+        return $this->alternateNumbers;
     }
 }

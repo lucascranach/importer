@@ -10,6 +10,7 @@ use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\Event;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\ConnectedObject;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\Publication;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\AlternateNumber;
 
 /**
  * LiteratureReferences inflator used to inflate literature reference instances
@@ -58,7 +59,7 @@ class LiteratureReferencesInflator implements IInflator
         self::inflatePersons($subNode, $literatureReference);
         self::inflatePublications($subNode, $literatureReference);
 
-        self::inflateId($subNode, $literatureReference);
+        self::inflateAlternateNumbers($subNode, $literatureReference);
 
         self::inflateConnectedObjects($connectedObjectsSubNode, $literatureReference);
     }
@@ -467,18 +468,60 @@ class LiteratureReferencesInflator implements IInflator
     }
 
 
-    /* Id */
-    private static function inflateId(
+    /* AlternateNumbers */
+    private static function inflateAlternateNumbers(
         SimpleXMLElement $node,
         LiteratureReference $literatureReference
     ): void {
-        $idElement = self::findElementByXPath(
+        $detailElements = self::findElementByXPath(
             $node,
-            'Section[@SectionNumber="17"]/Subreport/Details/Section[@SectionNumber="0"]/Field[@FieldName="{@AltNum}"]/FormattedValue',
+            'Section[@SectionNumber="17"]/Subreport'
         );
-        if ($idElement) {
-            $idStr = trim(strval($idElement));
-            $literatureReference->setId($idStr);
+
+        if (!$detailElements) {
+            return;
+        }
+
+        foreach ($detailElements as $detailElement) {
+            $alternateNumber = new AlternateNumber();
+
+            /* Description */
+            $descriptionElement = self::findElementByXPath(
+                $detailElement,
+                'Section[@SectionNumber="0"]/Field[@FieldName="{AltNumDescriptions.AltNumDescription}"]/FormattedValue',
+            );
+            if ($descriptionElement) {
+                $descriptionStr = trim(strval($descriptionElement));
+                $alternateNumber->setDescription($descriptionStr);
+            }
+
+            /* Number */
+            $numberElement = self::findElementByXPath(
+                $detailElement,
+                'Section[@SectionNumber="1"]/Field[@FieldName="{AltNums.AltNum}"]/FormattedValue',
+            );
+            if ($numberElement) {
+                $numberStr = trim(strval($numberElement));
+                $alternateNumber->setNumber($numberStr);
+            }
+
+            /* Remarks */
+            $remarksElement = self::findElementByXPath(
+                $detailElement,
+                'Section[@SectionNumber="2"]/Field[@FieldName="{AltNums.Remarks}"]/FormattedValue',
+            );
+            if ($remarksElement) {
+                $remarksStr = trim(strval($remarksElement));
+                $alternateNumber->setRemarks($remarksStr);
+            }
+
+            /* Addition to alternate numbers */
+            if (!empty($alternateNumber->getDescription())
+                || !empty($alternateNumber->getNumber())
+                || !empty($alternateNumber->getRemarks())
+            ) {
+                $literatureReference->addAlternateNumber($alternateNumber);
+            }
         }
     }
 
