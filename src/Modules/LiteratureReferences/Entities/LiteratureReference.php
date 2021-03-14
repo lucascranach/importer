@@ -2,14 +2,16 @@
 
 namespace CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities;
 
-use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
+use CranachDigitalArchive\Importer\Interfaces\Entities\ILanguageBaseItem;
 
 /**
  * Representing a single literature reference
  */
-class LiteratureReference implements IBaseItem
+class LiteratureReference implements ILanguageBaseItem
 {
     public $entityType = 'LITERATURE_REFERENCE';
+    public $langCode = '<unknown language>';
+
     public $referenceId = '';
     public $referenceNumber = '';
     public $title = '';
@@ -42,6 +44,20 @@ class LiteratureReference implements IBaseItem
         return $this->getReferenceId();
     }
 
+
+    /**
+     * @return void
+     */
+    public function setLangCode(string $langCode)
+    {
+        $this->langCode = $langCode;
+    }
+
+
+    public function getLangCode(): string
+    {
+        return $this->langCode;
+    }
 
     public function setReferenceId(string $referenceId): void
     {

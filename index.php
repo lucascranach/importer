@@ -17,7 +17,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenc
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
 use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\LiteratureReferencesLoader;
-use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\LiteratureReferencesJSONExporter;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\LiteratureReferencesJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsLoader;
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsElasticsearchLangExporter;
@@ -155,7 +155,7 @@ $graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath)->pipe(
 
 /* LiteratureReferences */
 $literatureReferencesLoader = LiteratureReferencesLoader::withSourcesAt($literatureInputFilepaths)->pipe(
-    LiteratureReferencesJSONExporter::withDestinationAt($literatureReferenceOutputFilepath),
+    LiteratureReferencesJSONLangExporter::withDestinationAt($literatureReferenceOutputFilepath),
 );
 
 

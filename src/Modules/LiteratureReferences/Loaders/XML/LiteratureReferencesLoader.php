@@ -6,6 +6,7 @@ use Error;
 use DOMDocument;
 use SimpleXMLElement;
 use XMLReader;
+use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\LiteratureReference;
 use CranachDigitalArchive\Importer\Interfaces\Loaders\IMultipleFileLoader;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
@@ -117,15 +118,26 @@ class LiteratureReferencesLoader extends Producer implements IMultipleFileLoader
 
     private function transformCurrentItem(): void
     {
-        $literatureReference = new LiteratureReference;
+        $literatureReferenceDe = new LiteratureReference;
+        $literatureReferenceDe->setLangCode(Language::DE);
+
+        $literatureReferenceEn = new LiteratureReference;
+        $literatureReferenceEn->setLangCode(Language::EN);
+
+
 
         $xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 
         /* Moved the inflation action(s) into its own class */
-        LiteratureReferencesInflator::inflate($xmlNode, $literatureReference);
+        LiteratureReferencesInflator::inflate(
+            $xmlNode,
+            $literatureReferenceDe,
+            $literatureReferenceEn
+        );
 
-        /* Passing the literature reference object to the next nodes in the pipeline */
-        $this->next($literatureReference);
+        /* Passing the literature reference objects to the next nodes in the pipeline */
+        $this->next($literatureReferenceDe);
+        $this->next($literatureReferenceEn);
     }
 
 
