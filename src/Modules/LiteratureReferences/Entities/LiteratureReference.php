@@ -14,9 +14,11 @@ class LiteratureReference implements ILanguageBaseItem
 
     public $referenceId = '';
     public $referenceNumber = '';
+    public $isPrimarySource = false;
     public $title = '';
     public $subtitle = '';
-    public $shorttitle = '';
+    public $shortTitle = '';
+    public $longTitle = '';
     public $journal = '';
     public $series = '';
     public $volume = '';
@@ -30,6 +32,8 @@ class LiteratureReference implements ILanguageBaseItem
     public $persons = [];
     public $publications = [];
     public $alternateNumbers = [];
+    public $physicalDescription = '';
+    public $mention = '';
 
     public $connectedObjects = [];
 
@@ -83,6 +87,18 @@ class LiteratureReference implements ILanguageBaseItem
     }
 
 
+    public function setIsPrimarySource(bool $isPrimarySource)
+    {
+        $this->isPrimarySource = $isPrimarySource;
+    }
+
+
+    public function getPrimarySource(): bool
+    {
+        return $this->isPrimarySource;
+    }
+
+
     public function setTitle(string $title): void
     {
         $this->title = $title;
@@ -107,15 +123,27 @@ class LiteratureReference implements ILanguageBaseItem
     }
 
 
-    public function setShorttitle(string $shorttitle): void
+    public function setShortTitle(string $shortTitle): void
     {
-        $this->shorttitle = $shorttitle;
+        $this->shortTitle = $shortTitle;
     }
 
 
-    public function getShorttitle(): string
+    public function getShortTitle(): string
     {
-        return $this->shorttitle;
+        return $this->shortTitle;
+    }
+
+
+    public function setLongTitle(string $longTitle): void
+    {
+        $this->longTitle = $longTitle;
+    }
+
+
+    public function getLongTitle(): string
+    {
+        return $this->longTitle;
     }
 
 
@@ -283,5 +311,29 @@ class LiteratureReference implements ILanguageBaseItem
     public function getAlternateNumbers(): array
     {
         return $this->alternateNumbers;
+    }
+
+
+    public function setPhysicalDescription(string $physicalDescription)
+    {
+        $this->physicalDescription = $physicalDescription;
+    }
+
+
+    public function getPhysicalDescription(): string
+    {
+        return $this->physicalDescription;
+    }
+
+
+    public function setMention(string $mention)
+    {
+        $this->mention = $mention;
+    }
+
+
+    public function getMention(): string
+    {
+        return $this->mention;
     }
 }

@@ -105,7 +105,7 @@ CrystalReport
 							Field[FieldName="{ThesXrefs.Remarks}"]
 								FormattedValue
 
-			Section[SectionNumber="17"] # -> ID
+			Section[SectionNumber="17"] # -> Alternate Numbers
 				Subreport
 					Details*
 						Section[SectionNumber="0"]
@@ -117,6 +117,21 @@ CrystalReport
 						Section[SectionNumber="2"]
 							Field[FieldName="{AltNums.Remarks}"]
 								FormattedValue
+
+			Section[SectionNumber="18"] # -> Additional Data
+				Subreport[Name="Subreport7"]
+					Details
+						Section[SectionNumber="0"] # -> Long title -> used for primary source
+							Field[FieldName="{TextEntries.TextEntry}"]
+								FormattedValue
+
+			Section[SectionNumber="19"] # -> Physikalische Beschreibung
+				Field[FieldName="{ReferenceMaster.PhysDescription}"]
+					FormattedValue
+
+			Section[SectionNumber="20"] # -> Erwähnungen
+				Field[FieldName="{ReferenceMaster.BoilerText}"]
+					FormattedValue
 
 
 		Group[Level="2"] # -> Verbundene Objekte

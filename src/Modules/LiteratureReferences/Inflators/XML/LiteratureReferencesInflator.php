@@ -22,6 +22,8 @@ class LiteratureReferencesInflator implements IInflator
     private static $ns = 'urn:crystal-reports:schemas:report-detail';
     private static $langSplitChar = '#';
 
+    private static $primarySourceKey = 'Primary source';
+
     private function __construct()
     {
     }
@@ -58,7 +60,12 @@ class LiteratureReferencesInflator implements IInflator
             $literatureReferenceDe,
             $literatureReferenceEn
         );
-        self::inflateShorttitle(
+        self::inflateShortTitle(
+            $subNode,
+            $literatureReferenceDe,
+            $literatureReferenceEn
+        );
+        self::inflateLongTitle(
             $subNode,
             $literatureReferenceDe,
             $literatureReferenceEn
@@ -135,8 +142,27 @@ class LiteratureReferencesInflator implements IInflator
             $literatureReferenceEn
         );
 
+        self::inflatePhysicalDescription(
+            $subNode,
+            $literatureReferenceDe,
+            $literatureReferenceEn
+        );
+
+        self::inflateMention(
+            $subNode,
+            $literatureReferenceDe,
+            $literatureReferenceEn
+        );
+
         self::inflateConnectedObjects(
             $connectedObjectsSubNode,
+            $literatureReferenceDe,
+            $literatureReferenceEn
+        );
+
+        /* we derive the primary source state from the publications (after they are inflated),
+            so we only need the literatureReference instances here */
+        self::inflatePrimarySource(
             $literatureReferenceDe,
             $literatureReferenceEn
         );
@@ -215,20 +241,38 @@ class LiteratureReferencesInflator implements IInflator
     }
 
 
-    /* Shorttitle */
-    private static function inflateShorttitle(
+    /* ShortTitle */
+    private static function inflateShortTitle(
         SimpleXMLElement $node,
         LiteratureReference $literatureReferenceDe,
         LiteratureReference $literatureReferenceEn
     ): void {
-        $shorttitleElement = self::findElementByXPath(
+        $shortTitleElement = self::findElementByXPath(
             $node,
             'Section[@SectionNumber="4"]/Field[@FieldName="{ReferenceMaster.Heading}"]/FormattedValue',
         );
-        if ($shorttitleElement) {
-            $shorttitleStr = trim(strval($shorttitleElement));
-            $literatureReferenceDe->setShorttitle($shorttitleStr);
-            $literatureReferenceEn->setShorttitle($shorttitleStr);
+        if ($shortTitleElement) {
+            $shortTitleStr = trim(strval($shortTitleElement));
+            $literatureReferenceDe->setShortTitle($shortTitleStr);
+            $literatureReferenceEn->setShortTitle($shortTitleStr);
+        }
+    }
+
+
+    /* ShortTitle */
+    private static function inflateLongTitle(
+        SimpleXMLElement $node,
+        LiteratureReference $literatureReferenceDe,
+        LiteratureReference $literatureReferenceEn
+    ): void {
+        $longTitleElement = self::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="18"]/Subreport/Details/Section[@SectionNumber="0"]/Field[@FieldName="{TextEntries.TextEntry}"]/FormattedValue',
+        );
+        if ($longTitleElement) {
+            $longTitleStr = trim(strval($longTitleElement));
+            $literatureReferenceDe->setLongTitle($longTitleStr);
+            $literatureReferenceEn->setLongTitle($longTitleStr);
         }
     }
 
@@ -670,6 +714,53 @@ class LiteratureReferencesInflator implements IInflator
     }
 
 
+    /* Physical Description */
+    private static function inflatePhysicalDescription(
+        SimpleXMLElement $node,
+        LiteratureReference $literatureReferenceDe,
+        LiteratureReference $literatureReferenceEn
+    ) {
+        $physicalDescriptionElement = self::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="19"]/Field[@FieldName="{ReferenceMaster.PhysDescription}"]/FormattedValue'
+        );
+
+        if ($physicalDescriptionElement) {
+            $physicalDescriptionStr = trim(strval($physicalDescriptionElement));
+
+            $splitPhysicalDescriptionStr = self::splitLanguageString($physicalDescriptionStr);
+
+            if (isset($splitPhysicalDescriptionStr[0])) {
+                $literatureReferenceDe->setPhysicalDescription($splitPhysicalDescriptionStr[0]);
+            }
+
+            if (isset($splitPhysicalDescriptionStr[1])) {
+                $literatureReferenceEn->setPhysicalDescription($splitPhysicalDescriptionStr[1]);
+            }
+        }
+    }
+
+
+    /* Mention */
+    private static function inflateMention(
+        SimpleXMLElement $node,
+        LiteratureReference $literatureReferenceDe,
+        LiteratureReference $literatureReferenceEn
+    ) {
+        $mentionElement = self::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="20"]/Field[@FieldName="{ReferenceMaster.BoilerText}"]/FormattedValue'
+        );
+
+        if ($mentionElement) {
+            $mentionStr = trim(strval($mentionElement));
+
+            $literatureReferenceDe->setMention($mentionStr);
+            $literatureReferenceEn->setMention($mentionStr);
+        }
+    }
+
+
     /* ConnectedObjects */
     private static function inflateConnectedObjects(
         SimpleXMLElement $node,
@@ -782,6 +873,26 @@ class LiteratureReferencesInflator implements IInflator
                 }
             }
         }
+    }
+
+
+    /* Primary source */
+    private static function inflatePrimarySource(
+        LiteratureReference $literatureReferenceDe,
+        LiteratureReference $literatureReferenceEn
+    ) {
+        $isPrimarySource = false;
+
+        /* publications should be the same for each language,
+            so we use the publications list of the german literatureReference */
+        foreach ($literatureReferenceDe->getPublications() as $publication) {
+            if ($isPrimarySource = ($publication->getType() == self::$primarySourceKey)) {
+                break;
+            }
+        }
+
+        $literatureReferenceDe->setIsPrimarySource($isPrimarySource);
+        $literatureReferenceEn->setIsPrimarySource($isPrimarySource);
     }
 
 
