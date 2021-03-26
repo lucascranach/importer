@@ -2,8 +2,9 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Entities;
 
-use CranachDigitalArchive\Importer\Interfaces\Entities\ILanguageBaseItem;
+use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\AbstractImagesItem;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\PersonName;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Title;
@@ -19,11 +20,11 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\StructuredDimension;
  * Representing a single graphic and all its data
  * 	One instance containing only data for one language
  */
-class Graphic extends AbstractImagesItem implements ILanguageBaseItem
+class Graphic extends AbstractImagesItem implements IBaseItem
 {
-    public $entityType = 'GRAPHIC';
-    public $langCode = '<unknown language>';
+    const ENTITY_TYPE = 'GRAPHIC';
 
+    public $metadata = null;
     public $involvedPersons = [];
     public $involvedPersonsNames = []; // Evtl. Umbau notwendig
 
@@ -86,18 +87,15 @@ class Graphic extends AbstractImagesItem implements ILanguageBaseItem
     }
 
 
-    /**
-     * @return void
-     */
-    public function setLangCode(string $langCode)
+    public function setMetadata(Metadata $metadata)
     {
-        $this->langCode = $langCode;
+        $this->metadata = $metadata;
     }
 
 
-    public function getLangCode(): string
+    public function getMetadata(): ?Metadata
     {
-        return $this->langCode;
+        return $this->metadata;
     }
 
 

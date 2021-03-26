@@ -2,17 +2,18 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Archivals\Entities;
 
-use CranachDigitalArchive\Importer\Interfaces\Entities\ILanguageBaseItem;
+use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Publication;
 
 /**
  * Representing a single archival and all its data
  */
-class Archival implements ILanguageBaseItem
+class Archival implements IBaseItem
 {
-    public $entityType = 'ARCHIVAL';
-    public $langCode = '<unknown language>';
+    const ENTITY_TYPE = 'ARCHIVAL';
 
+    public $metadata = null;
     public $inventoryNumber = '';
     public $dating = null;
     public $summaries = [];
@@ -43,18 +44,15 @@ class Archival implements ILanguageBaseItem
     }
 
 
-    /**
-     * @return void
-     */
-    public function setLangCode(string $langCode)
+    public function setMetadata(Metadata $metadata)
     {
-        $this->langCode = $langCode;
+        $this->metadata = $metadata;
     }
 
 
-    public function getLangCode(): string
+    public function getMetadata(): ?Metadata
     {
-        return $this->langCode;
+        return $this->metadata;
     }
 
 

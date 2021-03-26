@@ -89,7 +89,8 @@ class LiteratureReferencesJSONLangExporter extends Consumer implements IFileExpo
 
     private function appendItemToOutputFile(LiteratureReference $item): bool
     {
-        $key = $item->getLangCode();
+        $metadata = $item->getMetadata();
+        $key = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
 
         if (!isset($this->outputFilesByLangCode[$key])) {
             $this->outputFilesByLangCode[$key] = [

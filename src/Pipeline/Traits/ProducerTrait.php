@@ -1,6 +1,6 @@
 <?php
 
-namespace CranachDigitalArchive\Importer\Traits\Pipeline;
+namespace CranachDigitalArchive\Importer\Pipeline\Traits;
 
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\NodeInterface;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ConsumerInterface;

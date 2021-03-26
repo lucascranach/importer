@@ -195,14 +195,17 @@ class ConditionDeterminer extends Hybrid
     {
         $classification = $graphic->getClassification();
 
-        $conditionLangMappingExists = isset(self::$conditionLangMappings[$graphic->getLangCode()]);
+        $metadata = $graphic->getMetadata();
+        $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
+
+        $conditionLangMappingExists = isset(self::$conditionLangMappings[$langCode]);
 
         if (is_null($classification) || !$conditionLangMappingExists) {
             return $conditionLevel;
         }
 
         $condition = trim($classification->getCondition());
-        $conditionMappings = self::$conditionLangMappings[$graphic->getLangCode()];
+        $conditionMappings = self::$conditionLangMappings[$langCode];
 
         foreach ($conditionMappings as $conditionMapping) {
             foreach ($conditionMapping['patterns'] as $pattern) {

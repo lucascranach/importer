@@ -11,6 +11,7 @@ use CranachDigitalArchive\Importer\Interfaces\Loaders\IMultipleFileLoader;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Modules\Paintings\Inflators\XML\PaintingInflator;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
 
 /**
  * Paintings loader on a xml file base
@@ -120,12 +121,18 @@ class PaintingsLoader extends Producer implements IMultipleFileLoader
 
     private function transformCurrentItem(): void
     {
+        $metadata = new Metadata;
+
         /* Preparing the painting objects for the different languages */
         $paintingDe = new Painting;
-        $paintingDe->setLangCode(Language::DE);
+        $metadata->setLangCode(Language::DE);
+        $paintingDe->setMetadata($metadata);
+
+        $metadata = clone $metadata;
 
         $paintingEn = new Painting;
-        $paintingEn->setLangCode(Language::EN);
+        $metadata->setLangCode(Language::EN);
+        $paintingEn->setMetadata($metadata);
 
         $xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 

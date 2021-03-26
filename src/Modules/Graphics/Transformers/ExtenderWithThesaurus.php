@@ -81,7 +81,10 @@ class ExtenderWithThesaurus extends Hybrid
 
             $res = $this->findKeywordIdentifierInThesaurus($keyword->getTerm());
 
-            $mappedItems = $this->mapThesaurusTermChainToThesaurusItemChain($res, $graphic->getLangCode());
+            $metadata = $graphic->getMetadata();
+            $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
+
+            $mappedItems = $this->mapThesaurusTermChainToThesaurusItemChain($res, $langCode);
             $graphic->addThesaurusItems($mappedItems);
         }
     }

@@ -127,7 +127,8 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
     private function appendItemToOutputFile(Graphic $item): bool
     {
         $existenceTypes = $item->getIsVirtual() ? 'virtual' : 'real';
-        $langCode = $item->getLangCode();
+        $metadata = $item->getMetadata();
+        $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
         $key = $existenceTypes . '.' . $langCode;
 
         if (!isset($this->outputFilesByLangCode[$key])) {

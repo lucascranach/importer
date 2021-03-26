@@ -4,6 +4,7 @@ namespace CranachDigitalArchive\Importer\Interfaces\Pipeline;
 
 interface ProducerInterface extends NodeInterface
 {
+    public function run();
     public function isReady(): bool;
     public function pipe(ConsumerInterface ...$nodes): ProducerInterface;
     public function getConsumerNodes(): array;

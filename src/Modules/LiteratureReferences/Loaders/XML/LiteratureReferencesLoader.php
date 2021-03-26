@@ -11,6 +11,7 @@ use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\Literat
 use CranachDigitalArchive\Importer\Interfaces\Loaders\IMultipleFileLoader;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
 
 /**
  * LitereatureReferences loader on a xml file base
@@ -118,11 +119,18 @@ class LiteratureReferencesLoader extends Producer implements IMultipleFileLoader
 
     private function transformCurrentItem(): void
     {
+        $metadata = new Metadata;
+        $metadata->setEntityType(LiteratureReference::ENTITY_TYPE);
+
         $literatureReferenceDe = new LiteratureReference;
-        $literatureReferenceDe->setLangCode(Language::DE);
+        $metadata->setLangCode(Language::DE);
+        $literatureReferenceDe->setMetadata($metadata);
+
+        $metadata = clone $metadata;
 
         $literatureReferenceEn = new LiteratureReference;
-        $literatureReferenceEn->setLangCode(Language::EN);
+        $metadata->setLangCode(Language::EN);
+        $literatureReferenceEn->setMetadata($metadata);
 
 
 

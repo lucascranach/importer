@@ -13,6 +13,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsElasticsea
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterminer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithThesaurus as GraphicsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRestorations as GraphicsExtenderWithRestorations;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MetadataFiller as GraphicsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
 use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsMemoryExporter;
@@ -23,9 +24,11 @@ use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsJSONLang
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithThesaurus as PaintingsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithRestorations as PaintingsExtenderWithRestorations;
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MetadataFiller as PaintingsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Archivals\Loaders\XML\ArchivalsLoader;
 use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsElasticsearchLangExporter;
+use CranachDigitalArchive\Importer\Modules\Archivals\Transformers\MetadataFiller as ArchivalsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
@@ -95,6 +98,7 @@ $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt
 );
 $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
 $paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination);
+$paintingsMetadataFiller = PaintingsMetadataFiller::new();
 $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt($paintingsOutputFilepath);
 $paintingsElasticsearchBulkDestination = PaintingsElasticsearchLangExporter::withDestinationAt(
     $paintingsElasticsearchOutputFilepath
@@ -103,9 +107,11 @@ $paintingsElasticsearchBulkDestination = PaintingsElasticsearchLangExporter::wit
 $paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths)->pipe(
     $paintingsRemoteImageExistenceChecker->pipe(
         $paintingsRestorationExtender->pipe(
-            $paintingsDestination,
-            $paintingsThesaurusExtender->pipe(
-                $paintingsElasticsearchBulkDestination,
+            $paintingsMetadataFiller->pipe(
+                $paintingsDestination,
+                $paintingsThesaurusExtender->pipe(
+                    $paintingsElasticsearchBulkDestination,
+                ),
             ),
         ),
     ),
@@ -134,6 +140,7 @@ $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
 $graphicsConditionDeterminer = ConditionDeterminer::new();
 $graphicsRestorationExtender = GraphicsExtenderWithRestorations::new($graphicsRestorationMemoryDestination);
 $graphicsThesaurusExtender = GraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination);
+$graphicsMetadataFiller = GraphicsMetadataFiller::new();
 $graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt($graphicsOutputFilepath);
 $graphicsElasticsearchBulkDestination = GraphicsElasticsearchLangExporter::withDestinationAt(
     $graphicsElasticsearchOutputFilepath
@@ -143,9 +150,11 @@ $graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath)->pipe(
     $graphicsRemoteImageExistenceChecker->pipe(
         $graphicsConditionDeterminer->pipe(
             $graphicsRestorationExtender->pipe(
-                $graphicsDestination,
-                $graphicsThesaurusExtender->pipe(
-                    $graphicsElasticsearchBulkDestination,
+                $graphicsMetadataFiller->pipe(
+                    $graphicsDestination,
+                    $graphicsThesaurusExtender->pipe(
+                        $graphicsElasticsearchBulkDestination,
+                    ),
                 ),
             ),
         ),
@@ -161,14 +170,17 @@ $literatureReferencesLoader = LiteratureReferencesLoader::withSourcesAt($literat
 
 /* Archivals */
 $archivalsDestination = ArchivalsJSONLangExporter::withDestinationAt($archivalsOutputFilepath);
+$archivalsMetadataFiller = ArchivalsMetadataFiller::new();
 
 $archivalsElasticsearchBulkDestination = ArchivalsElasticsearchLangExporter::withDestinationAt(
     $archivalsElasticsearchOutputFilepath
 );
 
 $archivalsLoader = ArchivalsLoader::withSourceAt($archivalsInputFilepath)->pipe(
-    $archivalsDestination,
-    $archivalsElasticsearchBulkDestination,
+    $archivalsMetadataFiller->pipe(
+        $archivalsDestination,
+        $archivalsElasticsearchBulkDestination,
+    ),
 );
 
 

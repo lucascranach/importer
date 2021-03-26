@@ -2,15 +2,14 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Restorations\Entities;
 
-use CranachDigitalArchive\Importer\Interfaces\Entities\ILanguageBaseItem;
+use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
 
 /**
  * Representing a single restoration overview and all its data
  */
-class Restoration implements ILanguageBaseItem
+class Restoration implements IBaseItem
 {
-    public $langCode = '<unknown language>';
-
+    public $langCode = '';
     public $inventoryNumber = '';
     public $objectId = '';
     public $surveys = [];
@@ -26,10 +25,7 @@ class Restoration implements ILanguageBaseItem
     }
 
 
-    /**
-     * @return void
-     */
-    public function setLangCode(string $langCode)
+    public function setLangCode(string $langCode): void
     {
         $this->langCode = $langCode;
     }

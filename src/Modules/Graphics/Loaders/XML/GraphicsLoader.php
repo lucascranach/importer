@@ -11,6 +11,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Interfaces\Loaders\IFileLoader;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Inflators\XML\GraphicInflator;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
 
 /**
  * Graphics loader on a xml file base
@@ -93,12 +94,19 @@ class GraphicsLoader extends Producer implements IFileLoader
 
     private function transformCurrentItem(): void
     {
+        $metadata = new Metadata;
+        $metadata->setEntityType(Graphic::ENTITY_TYPE);
+
         /* Preparing the graphic objects for the different languages */
         $graphicDe = new Graphic;
-        $graphicDe->setLangCode(Language::DE);
+        $metadata->setLangCode(Language::DE);
+        $graphicDe->setMetadata($metadata);
+
+        $metadata = clone $metadata;
 
         $graphicEn = new Graphic;
-        $graphicEn->setLangCode(Language::EN);
+        $metadata->setLangCode(Language::EN);
+        $graphicEn->setMetadata($metadata);
 
         $xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 

@@ -58,13 +58,16 @@ class ArchivalsElasticsearchLangExporter extends Consumer implements IFileExport
             throw new Error('Can\'t push more items after done() was called!');
         }
 
-        if (!isset($this->langBuckets[$item->getLangCode()])) {
-            $this->langBuckets[$item->getLangCode()] = (object) [
+        $metadata = $item->getMetadata();
+        $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
+
+        if (!isset($this->langBuckets[$langCode])) {
+            $this->langBuckets[$langCode] = (object) [
                 'items' => [],
             ];
         }
 
-        $this->langBuckets[$item->getLangCode()]->items[] = $item;
+        $this->langBuckets[$langCode]->items[] = $item;
 
         return true;
     }

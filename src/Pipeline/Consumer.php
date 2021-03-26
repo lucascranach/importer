@@ -4,7 +4,7 @@ namespace CranachDigitalArchive\Importer\Pipeline;
 
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ConsumerInterface;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
-use CranachDigitalArchive\Importer\Traits\Pipeline\ConsumerTrait;
+use CranachDigitalArchive\Importer\Pipeline\Traits\ConsumerTrait;
 
 abstract class Consumer implements ConsumerInterface
 {

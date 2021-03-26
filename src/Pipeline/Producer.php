@@ -3,7 +3,7 @@
 namespace CranachDigitalArchive\Importer\Pipeline;
 
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
-use CranachDigitalArchive\Importer\Traits\Pipeline\ProducerTrait;
+use CranachDigitalArchive\Importer\Pipeline\Traits\ProducerTrait;
 
 abstract class Producer implements ProducerInterface
 {

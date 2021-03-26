@@ -11,6 +11,7 @@ use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Loaders\IFileLoader;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Modules\Archivals\Inflators\XML\ArchivalInflator;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
 
 /**
  * Archivals loader on a xml file base
@@ -93,12 +94,19 @@ class ArchivalsLoader extends Producer implements IFileLoader
 
     private function transformCurrentItem(): void
     {
+        $metadata = new Metadata;
+        $metadata->setEntityType(Archival::ENTITY_TYPE);
+
         /* Preparing the graphic objects for the different languages */
         $archivalDe = new Archival;
-        $archivalDe->setLangCode(Language::DE);
+        $metadata->setLangCode(Language::DE);
+        $archivalDe->setMetadata($metadata);
+
+        $metadata = clone $metadata;
 
         $archivalEn = new Archival;
-        $archivalEn->setLangCode(Language::EN);
+        $metadata->setLangCode(Language::EN);
+        $archivalEn->setMetadata($metadata);
 
         $xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 

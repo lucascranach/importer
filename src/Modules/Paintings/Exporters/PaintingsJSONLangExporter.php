@@ -88,7 +88,8 @@ class PaintingsJSONLangExporter extends Consumer implements IFileExporter
 
     private function appendItemToOutputFile(Painting $item): bool
     {
-        $langCode = $item->getLangCode();
+        $metadata = $item->getMetadata();
+        $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
 
         if (!isset($this->outputFilesByLangCode[$langCode])) {
             $this->outputFilesByLangCode[$langCode] = [

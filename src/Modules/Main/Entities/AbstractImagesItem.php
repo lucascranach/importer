@@ -59,7 +59,7 @@ abstract class AbstractImagesItem
     }
 
 
-    public function getImages(): array
+    public function getImages(): ?array
     {
         return $this->images;
     }

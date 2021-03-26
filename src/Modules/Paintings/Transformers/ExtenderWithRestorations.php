@@ -35,9 +35,12 @@ class ExtenderWithRestorations extends Hybrid
             throw new Error('Pushed item is not of expected class \'Painting\'');
         }
 
+        $metadata = $item->getMetadata();
+        $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
+
         $restoration = $this->restorationMemoryExporter->findByFields([
             'inventoryNumber' => $item->getInventoryNumber(),
-            'langCode' => $item->getLangCode(),
+            'langCode' => $langCode,
         ]);
 
         if (!is_null($restoration) && $restoration instanceof Restoration) {
