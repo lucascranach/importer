@@ -1,8 +1,20 @@
 {
     "items": [
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-4_3",
+                "title": "Portrait of Elector Friedrich the Wise and his brother Duke John the Steadfast of Saxony",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1510",
+                "additionalInfos": [
+                    "Print, Engraving",
+                    "Image: 132 x 118 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-75\/01_Overall\/G_AT_A_DG1929-75_2016_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -251,8 +263,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-107_132",
+                "title": "Martin Luther als \u201eJunker J\u00f6rg\u201c, Brustbild, nach links gewandt, vor Wolken",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "after 16th April 1522",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 285 x 206 mm (+- 2 mm)\n[KKL 2020]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -589,8 +613,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-92_115",
+                "title": "A Stag Hunt",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1506",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 379 x 513 mm (using 2 blocks) (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-98\/01_Overall\/G_AT_A_DG1929-98_2010_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -804,8 +840,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-56_79",
+                "title": "St Christopher",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1506",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 281 x 197 mm (+ - 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_DE_SMKP_KA-FP-352D\/01_Overall\/G_DE_SMKP_KA-FP-352D_2017_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -1060,8 +1108,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-19-21_10",
+                "title": "The Agony in the Garden (from the Passion Christi, series of 14 woodcuts)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-127\/01_Overall\/G_AT_A_DG1929-127_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -1399,8 +1459,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-19-21_11",
+                "title": "The Capture of Christ (from the Passion Christi, series of 14 woodcuts)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-129\/01_Overall\/G_AT_A_DG1929-129_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -1738,8 +1810,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-19-21_13",
+                "title": "Christ before Annas (from the Passion Christi, series of 14 woodcuts)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-131\/01_Overall\/G_AT_A_DG1929-131_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -2079,8 +2163,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-19-21_12",
+                "title": "Christ before Caiphas (from the Passion Christi, series of 14 woodcuts)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-130\/01_Overall\/G_AT_A_DG1929-130_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -2420,8 +2516,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-66_89",
+                "title": "St Stephen",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1502",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 215 x 149 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-82\/01_Overall\/G_AT_A_DG1929-82_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -2647,8 +2755,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-54_78a",
+                "title": "The Celestial Ladder of  St Bonaventura",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1513",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 389 x 292 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-187\/01_Overall\/G_AT_A_DG1929-187_2016_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -2886,8 +3006,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-55_78b",
+                "title": "Hell",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1513",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 120 x 290 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-188\/01_Overall\/G_AT_A_DG1929-188_2016_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -3086,8 +3218,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-52_76",
+                "title": "The Temptation of St Antony",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1506",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 400 x 268 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-85\/01_Overall\/G_AT_A_DG1929-85_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -3288,8 +3432,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-36-37_53",
+                "title": "The Martyrdom of St Peter (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1512",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 163 x 126 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-158\/01_Overall\/G_AT_A_DG1929-158_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -3613,8 +3769,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-1_2",
+                "title": "The penance of St John Chrysostom",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Engraving",
+                    "Image: 256 x 200 mm"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-74\/01_Overall\/G_AT_A_DG1929-74_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -3833,8 +4001,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-5_4",
+                "title": "Friedrich the Wise, Elector of Saxony in Adoration of St Bartholomew",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "after 1510",
+                "additionalInfos": [
+                    "Print, Engraving",
+                    "Image: 187 x 165 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-72\/01_Overall\/G_AT_A_DG1929-72_2016_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -4049,8 +4229,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-3_2",
+                "title": "Cardinal Albrecht of Brandenburg, Archbishop and Elector of Mainz",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1520",
+                "additionalInfos": [
+                    "Print, Engraving",
+                    "Image: 168 x 115 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-77\/01_Overall\/G_AT_A_DG1929-77_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -4256,8 +4448,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-7_6",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Brustst\u00fcck nach links gewandt",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1520",
+                "additionalInfos": [
+                    "Print, Engraving",
+                    "Image: 140 x 97 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-78\/01_Overall\/G_AT_A_DG1929-78_2007_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -4628,8 +4832,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-27_29",
+                "title": "The Virgin and St John beneath the Cross",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1502 - 1503",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 220 x 154 mm \n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-83\/01_Overall\/G_AT_A_DG1929-83_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -4866,8 +5082,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-44_69",
+                "title": "Four Saints Adoring Christ crucified on the Sacred Heart",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1505",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 380 x 284 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-84\/01_Overall\/G_AT_A_DG1929-84_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -5092,8 +5320,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-86_109",
+                "title": "Footsoldier with Halberd, Lady holding Pansies",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1504",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image (from 2 blocks) each: 243 x 92 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-86\/01_Overall\/G_AT_A_DG1929-86_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -5293,8 +5533,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-65_88",
+                "title": "The Archangel Michael weighing a Soul",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1506",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 245 x 143 mm (+- 3 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-87\/01_Overall\/G_AT_A_DG1929-87_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -5500,8 +5752,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-70_94",
+                "title": "The Ecstacy of St Mary Magdalen",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1506",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 245 x 143 mm (+- 4 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-89\/01_Overall\/G_AT_A_DG1929-89_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -5702,8 +5966,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-60_83",
+                "title": "St George standing, with Two Angels",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1506",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 378 x 278 mm (+- 3 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-91\/01_Overall\/G_AT_A_DG1929-91_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -5909,8 +6185,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-57_80",
+                "title": "The Martyrdom of St Erasmus",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1506",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 228 x 158 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-92\/01_Overall\/G_AT_A_DG1929-92_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -6106,8 +6394,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-88_111",
+                "title": "Knight on Horseback riding towards the right",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1506",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 174 x 118 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-93\/01_Overall\/G_AT_A_DG1929-93_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -6280,8 +6580,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-91_114",
+                "title": "Gentleman and Lady riding to the Hunt",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1506",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 175 \u00d7 123 mm (+- 4 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-94\/01_Overall\/G_AT_A_DG1929-94_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -6474,8 +6786,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-87_110",
+                "title": "A Saxon Prince on Horseback",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1506",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 182 x 122 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-95\/01_Overall\/G_AT_A_DG1929-95_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -6681,8 +7005,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-90_113",
+                "title": "Hunter on Horseback Hunting a Wild Boar",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1506",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 180 \u00d7 124 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-96\/01_Overall\/G_AT_A_DG1929-96_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -6896,8 +7232,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-93_116",
+                "title": "The First Tournament",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1506",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 256 x 372 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-97\/01_Overall\/G_AT_A_DG1929-97_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -7111,8 +7459,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-58_81",
+                "title": "St George on Horseback with the Dead Dragon",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "um 1507",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 233 \u00d7 159 mm\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-100\/01_Overall\/G_AT_A_DG1929-100_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -7321,8 +7681,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-82_106",
+                "title": "Marcus Curtius Plunging into the Chasm",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "um 1506",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 335 \u00d7 235 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-101\/01_Overall\/G_AT_A_DG1929-101_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -7531,8 +7903,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-26_28",
+                "title": "",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 215 \u00d7 150 mm (+- 3 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1927-128\/01_Overall\/G_AT_A_DG1927-128_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -7712,8 +8096,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-25_27",
+                "title": "",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1516",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 268 x 168 mm (+- 1 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-102\/01_Overall\/G_AT_A_DG1929-102_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -7935,8 +8331,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-80_104",
+                "title": "The Judgement of Paris",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1508",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 363 x 252 mm (+- 2 mm)\n[cda 2019]]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-103\/01_Overall\/G_AT_A_DG1929-103_2016_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -8157,8 +8565,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-81_105",
+                "title": "Venus and Cupid",
+                "subtitle": "Lucas Cranach der \u00c4ltere",
+                "date": "about 1509",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 280 x 194 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-111\/01_Overall\/G_AT_A_DG1929-111_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -8395,8 +8815,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-53_77",
+                "title": "St Augustine in Prayer with Christ as the Man of Sorrows",
+                "subtitle": "Lucas Cranach der \u00c4ltere",
+                "date": "about 1515 - 1518",
+                "additionalInfos": [
+                    "Print, H077",
+                    "Image: 131 x 108 mm (+- 3 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-112\/01_Overall\/G_AT_A_DG1929-112_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -8626,8 +9058,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-75_96-93",
+                "title": "St Peter",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 135 \u00d7 91 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-114\/01_Overall\/G_AT_A_DG1929-114_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -8850,8 +9294,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-76_96a",
+                "title": "Electoral Coat of Arms (Title page from the Wittenberger Heiltumsbuch, Wittenberg 1509)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 128 \u00d7 105 mm\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-115\/01_Overall\/G_AT_A_DG1929-115_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -9050,8 +9506,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-19_9",
+                "title": "Christ and the Woman of Samaria",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 230 \u00d7 162 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-116\/01_Overall\/G_AT_A_DG1929-116_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -9260,8 +9728,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-10_1",
+                "title": "Adam and Eve",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 333 x 230 cm (+- 1 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-117\/01_Overall\/G_AT_A_DG1929-117_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -9462,8 +9942,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-17_7",
+                "title": "The Rest on the Flight into Egypt",
+                "subtitle": "Lucas Cranach der \u00c4ltere",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 285 x 185 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-118\/01_Overall\/G_AT_A_DG1929-118_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -9685,8 +10177,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-12_3",
+                "title": "David and Abigail",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 243 x 172 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-122\/01_Overall\/G_AT_A_DG1929-122_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -9908,8 +10412,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-61_84",
+                "title": "The Penitence of St Jerome",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 335 x 226 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-123\/01_Overall\/G_AT_A_DG1929-123_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -10115,8 +10631,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-95_118",
+                "title": "The Third Tournament with Lances",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 292 x 416 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-124\/01_Overall\/G_AT_A_DG1929-124_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -10322,8 +10850,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-96_119",
+                "title": "The Fourth Tournament with Swords",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 296 x 418 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-125\/01_Overall\/G_AT_A_DG1929-125_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -10529,8 +11069,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-94_117",
+                "title": "The Second Tournament with the Tapestry",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 295 x 419 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-126\/01_Overall\/G_AT_A_DG1929-126_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -10739,8 +11291,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-19-21_14",
+                "title": "Christ before Herod (from the Passion Christi, series of 14 woodcuts)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-132\/01_Overall\/G_AT_A_DG1929-132_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -11067,8 +11631,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-19-21_15",
+                "title": "The Flagellation (from the Passion Christi, series of 14 woodcuts)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-133\/01_Overall\/G_AT_A_DG1929-133_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -11401,8 +11977,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-19-21_16",
+                "title": "Christ crowned with Thorns (from the Passion Christi, series of 14 woodcuts)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-134\/01_Overall\/G_AT_A_DG1929-134_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -11735,8 +12323,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-19-21_17",
+                "title": "Ecce Homo (from the Passion Christi, series of 14 woodcuts)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-135\/01_Overall\/G_AT_A_DG1929-135_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -12069,8 +12669,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-19-21_18",
+                "title": "Pilate washing his hands (from the Passion Christi, series of 14 woodcuts)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-136\/01_Overall\/G_AT_A_DG1929-136_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -12397,8 +13009,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-19-21_19",
+                "title": "Christ bearing the Cross (from the Passion Christi, series of 14 woodcuts)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-137\/01_Overall\/G_AT_A_DG1929-137_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -12731,8 +13355,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-19-21_20",
+                "title": "The Crucifixion (from the Passion Christi, series of 14 woodcuts)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-138\/01_Overall\/G_AT_A_DG1929-138_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -13065,8 +13701,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-19-21_21",
+                "title": "The Lamentation (from the Passion Christi, series of 14 woodcuts)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-139\/01_Overall\/G_AT_A_DG1929-139_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -13399,8 +14047,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-19-21_22",
+                "title": "The Entombment (from the Passion Christi, series of 14 woodcuts)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-140\/01_Overall\/G_AT_A_DG1929-140_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -13733,8 +14393,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-19-21_23",
+                "title": "The Resurrection (from the Passion Christi, series of 14 woodcuts)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-141\/01_Overall\/G_AT_A_DG1929-141_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -14067,8 +14739,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-22_24",
+                "title": "Christ on the Mount of Olives",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1503",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 389 x 281 mm (+- 1mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -14206,8 +14890,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-75_96-90",
+                "title": "St Paul",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 135 \u00d7 111 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-113\/01_Overall\/G_AT_A_DG1929-113_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -14428,8 +15124,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-67_91",
+                "title": "The Martyrdom of St Barbara",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1509",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image:  248 \u00d7 168 mm (+- 3 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-156\/01_Overall\/G_AT_A_DG1929-156_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -14643,8 +15351,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-8_7",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur, nach links gewandt, mit Buch, vor einer halbrunden Nische",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1520",
+                "additionalInfos": [
+                    "Print, Engraving",
+                    "Image: 165 x 116 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-80\/01_Overall\/G_AT_A_DG1929-80_2014_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -14880,8 +15600,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-9_8",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, mit Doktorhut, Schulterst\u00fcck, im Profil nach links",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1521",
+                "additionalInfos": [
+                    "Print, Engraving",
+                    "Image: 209 \u00d7 150 mm (+- 1 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-81\/01_Overall\/G_AT_A_DG1929-81_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -15202,8 +15934,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-36-37_54",
+                "title": "The Martyrdom of St Andrew (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1512",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 163 x 126 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-159\/01_Overall\/G_AT_A_DG1929-159_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -15512,8 +16256,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-36-37_56",
+                "title": "The Martyrdom of St John (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1512",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-161\/01_Overall\/G_AT_A_DG1929-161_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -15827,8 +16583,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-36-37_57",
+                "title": "The Martyrdom of St Philip (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1512",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-162\/01_Overall\/G_AT_A_DG1929-162_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -16132,8 +16900,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-36-37_58",
+                "title": "The Martyrdom of St Bartholomew (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1512",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-163\/01_Overall\/G_AT_A_DG1929-163_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -16442,8 +17222,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-36-37_59",
+                "title": "The Martyrdom of St Thomas (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1512",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -16709,8 +17501,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-36-37_60",
+                "title": "The Martyrdom of St Paul (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1512",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-165\/01_Overall\/G_AT_A_DG1929-165_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -17024,8 +17828,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-36-37_61",
+                "title": "The Martyrdom of St James the Less (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1512",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-166\/01_Overall\/G_AT_A_DG1929-166_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -17329,8 +18145,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-36-37_62",
+                "title": "The Martyrdom of St Simon (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1512",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-167\/01_Overall\/G_AT_A_DG1929-167_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -17639,8 +18467,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-36-37_64",
+                "title": "The Martyrdom of St Matthias (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1512",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-168\/01_Overall\/G_AT_A_DG1929-168_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -17949,8 +18789,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-36-37_63",
+                "title": "The Martyrdom of St Judas Thaddeus (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1512",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-169\/01_Overall\/G_AT_A_DG1929-169_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -18259,8 +19111,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-36-37_55",
+                "title": "The Martyrdom of St James the Greater (from the Martyrdom of the Twelve Apostles, a series of 12 prints)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1512",
+                "additionalInfos": [
+                    "Print, Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+                    "Image: 163 x 126 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-160\/01_Overall\/G_AT_A_DG1929-160_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -18574,8 +19438,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-83_107",
+                "title": "The Werewolf",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1512",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 162 \u00d7 126 mm\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-178\/01_Overall\/G_AT_A_DG1929-178_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -18776,8 +19652,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-59_82",
+                "title": "St George on Horseback slaying the Dragon",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "before 1511",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 164 x 128 mm\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-179\/01_Overall\/G_AT_A_DG1929-179_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -18978,8 +19866,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LG_HVI-39_65e",
+                "title": "The Crucifixion (Woodcut illustration to  Adam von Fulda, Ein ser andechtig Cristenlich Buchlein ..., Wittenberg 1512)",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1512",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 112 \u00d7 75 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -19175,8 +20075,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-46_71",
+                "title": "The Holy Kinship",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1509",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 225 \u00d7 325 cm (+- 1 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-181\/01_Overall\/G_AT_A_DG1929-181_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -19377,8 +20289,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-51_75",
+                "title": "St Anne and the Virgin with the Child",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1511",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 247 \u00d7 168 mm\n (+- 1 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-182\/01_Overall\/G_AT_A_DG1929-182_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -19579,8 +20503,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-45_70",
+                "title": "The Infant as Redeemer",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1515",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 243 \u00d7 165 mm (+- 1 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-183\/01_Overall\/G_AT_A_DG1929-183_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -19781,8 +20717,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-18_8",
+                "title": "The Holy Family with Dancing Angels",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1513",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 338 x 236 mm\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-184\/01_Overall\/G_AT_A_DG1929-184_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -19988,8 +20936,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-62_85",
+                "title": "The Sermon of St John the Baptist",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1516",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 335 x 236 mm\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-185\/01_Overall\/G_AT_A_DG1929-185_2016_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -20195,8 +21155,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-99_122",
+                "title": "Astronomical Chart of Bonifacius of Czorbegk",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1513",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 284 x 367 mm\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-190\/01_Overall\/G_AT_A_DG1929-190_2010_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -20399,8 +21371,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-16_6",
+                "title": "The Annunciation",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1513",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 245 \u00d7 168 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-191\/01_Overall\/G_AT_A_DG1929-191_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -20593,8 +21577,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-30_31",
+                "title": "Christ as Saviour (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1510 - 1515",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 329 x 184 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-193\/01_Overall\/G_AT_A_DG1929-193_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -20877,8 +21873,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-30_32",
+                "title": "St Peter (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1510 - 1515",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 309 x 182 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-194\/01_Overall\/G_AT_A_DG1929-194_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -21161,8 +22169,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-30_33",
+                "title": "St Andrew (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1510 - 1515",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 312 x 187 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-195\/01_Overall\/G_AT_A_DG1929-195_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -21445,8 +22465,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-30_34",
+                "title": "St James the Greater (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1510 - 1515",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 313 x 185 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-196\/01_Overall\/G_AT_A_DG1929-196_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -21729,8 +22761,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-30_35",
+                "title": "St John the Evangelist (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1510 - 1515",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 302 x 182 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-197\/01_Overall\/G_AT_A_DG1929-197_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -22013,8 +23057,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-30_36",
+                "title": "St Philip (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1510 - 1515",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 310 x 186 mm (+- 4 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-198\/01_Overall\/G_AT_A_DG1929-198_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -22297,8 +23353,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-30_37",
+                "title": "St Bartholomew (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1510 - 1515",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 314 x 188 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-199\/01_Overall\/G_AT_A_DG1929-199_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -22581,8 +23649,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-30_38",
+                "title": "St Thomas (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1510 - 1515",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 312 x 189 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-200\/01_Overall\/G_AT_A_DG1929-200_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -22865,8 +23945,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-30_39",
+                "title": "St Matthew (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1510 - 1515",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 312 x 187 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-201\/01_Overall\/G_AT_A_DG1929-201_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -23149,8 +24241,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-30_40",
+                "title": "St James the Less (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1510 - 1515",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 313 x 187 mm (+- 4 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-202\/01_Overall\/G_AT_A_DG1929-202_2019-05_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -23433,8 +24537,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-30_41",
+                "title": "St Simon (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1510 - 1515",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 315 x 187 mm (+- 3 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-203\/01_Overall\/G_AT_A_DG1929-203_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -23717,8 +24833,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-30_42",
+                "title": "St Judas Thaddaeus  (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1510 - 1515",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 311 x 185 mm (+- 3 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-204\/01_Overall\/G_AT_A_DG1929-204_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -24001,8 +25129,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-30_43",
+                "title": "St Matthias  (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1510 - 1515",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image:  310 x 185 mm (+- 3 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-205\/01_Overall\/G_AT_A_DG1929-205_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -24285,8 +25425,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-30_44",
+                "title": "St Paul (part of a Christ, Apostles and St Paul series, consisting of fourteen sheets).",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1510 - 1515",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 314 x 188 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-206\/01_Overall\/G_AT_A_DG1929-206_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -24569,8 +25721,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-47_72",
+                "title": "The Virgin and Child adored by Friedrich the Wise of Saxony",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1513",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 367 \u00d7 228 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-235\/01_Overall\/G_AT_A_DG1929-235_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -24782,8 +25946,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-63_86",
+                "title": "The Beheading of St John the Baptist",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1508",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 402 \u00d7 278 mm (+- 1 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-236\/01_Overall\/G_AT_A_DG1929-236_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -24984,8 +26160,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-64_87",
+                "title": "The Beheading of St John the Baptist",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1509",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 332 \u00d7 233 mm (+- 1 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-237\/01_Overall\/G_AT_A_DG1929-237_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -25194,8 +26382,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-89_112",
+                "title": "Armed Knight Riding to the Left",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1506",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 247 \u00d7 165 mm (+- 1 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-238\/01_Overall\/G_AT_A_DG1929-238_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -25403,8 +26603,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-68_92",
+                "title": "St Barbara",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1519",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 215 \u00d7 126 mm\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-240\/01_Overall\/G_AT_A_DG1929-240_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -25617,8 +26829,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-69_93",
+                "title": "St Catherine",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1519",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 214 \u00d7 125 mm\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-241\/01_Overall\/G_AT_A_DG1929-241_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -25831,8 +27055,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-104_129",
+                "title": "Friedrich the Wise, Elector of Saxony",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1525",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 275 \u00d7 220 mm\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -25980,8 +27216,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-75_96-75",
+                "title": "St Sebastian",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 128 \u00d7 65 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -26142,8 +27390,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-001",
+                "title": "Martin Luther als Augustinerm\u00f6nch mit Doktorhut im Ordenshabit, Halbfigur nach links gewandt, in zweikonturigem Rund, mit Inschrift und Luther-Rose",
+                "subtitle": "",
+                "date": "1519",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -26498,8 +27758,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-002",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Schulterst\u00fcck nach links gewandt",
+                "subtitle": "",
+                "date": "1522",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -26704,8 +27976,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_HBG_H-NONE-001",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach rechts, im Strahlenkranz, mit Buch und Taube",
+                "subtitle": "Hans Baldung Grien",
+                "date": "",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 154 x 115 mm [http:\/\/diglib.hab.de?grafik=bibel-s-4f-258-00001]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -26813,8 +28097,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_HBG_HII-154_270",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach rechts gewandt, im Strahlenkranz, mit Buch, Nimbus und Taube",
+                "subtitle": "Hans Baldung Grien",
+                "date": "1521",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -28077,8 +29373,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_HVI-8_7-8",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach rechts gewandt, mit Buch, Nimbus, Strahlenkranz und Taube",
+                "subtitle": "",
+                "date": "nach 1534(?)",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -28201,8 +29509,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-003",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach rechts gewandt, mit Buch, Nimbus, Strahlenkranz und Taube",
+                "subtitle": "",
+                "date": "after 1534 (?)",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -28347,8 +29667,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_HH_HXV-238_69",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach rechts gewandt, mit Buch, Nimbus und Taube im Strahlenkranz",
+                "subtitle": "Hieronymus Hopfer",
+                "date": "between 1529 and 1550",
+                "additionalInfos": [
+                    "Print, Eisenradierung",
+                    "Image: 214 x 156 mm [Ausst.-Kat. Eisenach, 2015, Abb. 13]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -28461,8 +29793,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_HSB_HIII-210",
+                "title": "Martin Luther mit Doktorhut, Ganzfigur im Profil nach rechts, am Schreibpult sitzend und schreibend, im Strahlenkranz, mit Taube und Kruzifix",
+                "subtitle": "Hans Sebald Beham",
+                "date": "1520 (?)\n1524",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "108 x 76 mm (image?) [Hollstein German III.210]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -28679,8 +30023,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_HVI-8_7-3",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach rechts gewandt, mit Buch, vor einer Bogenlaibung mit K\u00e4mpfergesims",
+                "subtitle": "",
+                "date": "",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 205 x 123 mm"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -29658,8 +31014,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-004",
+                "title": "Martin Luther als Augustinerm\u00f6nch, Schulterst\u00fcck, nach rechts gewandt, im Ornamentrahmen mit Grotesken",
+                "subtitle": "",
+                "date": "",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -29757,8 +31125,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_HBG_HVI-8_7-4",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach rechts gewandt, mit Buch, vor einer Bogenlaibung",
+                "subtitle": "Hans Baldung Grien",
+                "date": "",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -30336,8 +31716,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-005",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach links gewandt, mit Buch, vor einer Bogenlaibung",
+                "subtitle": "",
+                "date": "",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -30575,8 +31967,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_HVI-8_7-1",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach rechts gewandt, mit Buch, vor einer halbrunden Nische, unter gestaffelten Rundbogen, mit K\u00e4mpfergesimsen und Ornamentpilastern",
+                "subtitle": "Hans Weiditz",
+                "date": "",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -31374,8 +32778,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-006",
+                "title": "",
+                "subtitle": "",
+                "date": "",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "130 x 100 mm"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -31467,8 +32883,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_HSB_HIII-223",
+                "title": "Martin Luther als \u201eJunker J\u00f6rg\u201c, Halbfigur, nach rechts gewandt, mit Schwert",
+                "subtitle": "Hans Sebald Beham",
+                "date": "1522",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image:  366 (+\/-3) x 176 (+\/-1) mm\n[Thomas Klinke, KKL 2020]\n394 x 279 mm (= Berlin) [Strau\u00df-Geisberg 1974, G.302]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_DE_SMBKSK_857-2\/01_Overall\/G_DE_SMBKSK_857-2_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -31749,8 +33177,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_DH_HHo-96_I",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, mit Doktorhut, Schulterst\u00fcck, im Profil nach rechts, im Strahlenkranz",
+                "subtitle": "Daniel Hopfer",
+                "date": "",
+                "additionalInfos": [
+                    "Print, Eisenradierung",
+                    "Image: 229 x 156 \/157 mm [Ausst.-Kat. Hopfer M\u00fcnchen 2009, Nr. 102]\nPlate marks: 230 x 155 mm [https:\/\/skd-online-collection.skd.museum\/Details\/Index\/965636]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -32018,8 +33458,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_AA_HI-210_80",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, mit Doktorhut, Schulterst\u00fcck, im Profil nach rechts, in Ornamentrahmung",
+                "subtitle": "Albrecht Altdorfer",
+                "date": "1523 or later",
+                "additionalInfos": [
+                    "Print, Engraving",
+                    "Image: 61 x 40 mm \n[http:\/\/kk.haum-bs.de\/?id=a-altdorfer-ab3-0029]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -32293,8 +33745,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_HB_HIV-595_259",
+                "title": "Martin Luther mit Barett und Schaube, Halbfigur nach links gewandt",
+                "subtitle": "Hans Brosamer",
+                "date": "1530-1540",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "359 x 254 mm"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -32431,8 +33895,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_HB_HBroIII-175_1312",
+                "title": "Martin Luther mit Barett und Schaube, Brustst\u00fcck, nach links gewandt",
+                "subtitle": "Hans Brosamer",
+                "date": "1530",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 356 x 284 mm (without text block) [New Holl., Nr. 1312]\nBlock marks: 368 x 290 mm; Image: 356 x 290 mm [Sch\u00e4fer, Eydinger, Rekow 2016 - Fliegende Bl\u00e4tter, Nr. 122]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -32589,8 +34065,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_MIB_H-NONE-001",
+                "title": "Martin Luther mit Barett und Schaube, Brustst\u00fcck nach links gewandt",
+                "subtitle": "Monogrammist IB",
+                "date": "1530",
+                "additionalInfos": [
+                    "Print, Engraving",
+                    "Image: 90 x 73 mm [http:\/\/www.portraitindex.de\/documents\/obj\/33900061]\nImage: 88 x 69 mm [http:\/\/www.portraitindex.de\/documents\/obj\/34701250]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -32798,8 +34286,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_HHJ_HXIVb-27-113",
+                "title": "Martin Luther mit Schaube, Brustst\u00fcck nach links gewandt, Rundbildnis mit Inschrift",
+                "subtitle": "Hans Holbein the Younger",
+                "date": "um 1532 [M\u00fcller 1997, S. 171, Nr. 111]",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 65 mm diameter"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -32921,8 +34421,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-007",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach rechts, mit Buch, im zweikonturigen Rund, mit Inschrift und Taube",
+                "subtitle": "Erhard Sch\u00f6n",
+                "date": "1519\/1520 [Ficker 1920]",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "?"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -33058,8 +34570,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_HSB_H-NONE-001",
+                "title": "",
+                "subtitle": "",
+                "date": "",
+                "additionalInfos": [
+                    "Print",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -33162,8 +34686,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-76_96-107",
+                "title": "Adam and Eve",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1509",
+                "additionalInfos": [
+                    "Print, Holzschnitt",
+                    "Image: 132 \u00d7 67 mm (+- 2 mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -33338,8 +34874,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-016",
+                "title": "Martin Luther als \u201eJunker J\u00f6rg\u201c, Brustst\u00fcck, nach links gewandt, vor Wolken",
+                "subtitle": "",
+                "date": "after 1856",
+                "additionalInfos": [
+                    "Print, Collotype",
+                    "Image: 281\/280 x 206\/205 mm\n[KKL 2020]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -33463,8 +35011,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_HVI-132-107-Copy",
+                "title": "Martin Luther als \u201eJunker J\u00f6rg\u201c, Brustst\u00fcck, nach links gewandt, vor Wolken",
+                "subtitle": "",
+                "date": "after 1522",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 253\/252 x (196\/192) mm\n[KKL 2020]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_UK_BML_1870-0625-561\/01_Overall\/G_UK_BML_1870-0625-561_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -33627,8 +35187,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_WM_H-NONE-001",
+                "title": "Martin Luther als \u201eJunker J\u00f6rg\u201c, Brustst\u00fcck, nach links gewandt, vor Wolken",
+                "subtitle": "W. M\u00fcller",
+                "date": "after 1798",
+                "additionalInfos": [
+                    "Print, Lithography",
+                    "Image: 284\/283 x 203 mm\n[KKL 2020]"
+                ],
+                "classification": "Print",
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver\/G_UK_BML_1876-0510-491\/01_Overall\/G_UK_BML_1876-0510-491_Overall-s.jpg"
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -33784,8 +35356,20 @@
             }
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_SAT_H-NONE-001",
+                "title": "Martin Luther als \u201eJunker J\u00f6rg\u201c, Brustst\u00fcck, nach links gewandt, vor Wolken",
+                "subtitle": "Sixtus Armin Thon",
+                "date": "after 1856",
+                "additionalInfos": [
+                    "Print, Collotype",
+                    "Image: 286\/285 x 210\/208 mm\n[KKL 2020]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -33903,8 +35487,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-008",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Schulterst\u00fcck, nach links gewandt, vor Pilastern mit K\u00e4mpfergesims und Taube",
+                "subtitle": "",
+                "date": "after 27.12.1520",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -34037,8 +35633,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_HVI-7-5",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach rechts gewandt, mit Buch, vor einer Bogenlaibung",
+                "subtitle": "",
+                "date": "after November 1520",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "?"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -34311,8 +35919,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_HVI-7-6",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach rechts gewandt, mit Buch",
+                "subtitle": "",
+                "date": "about 1520\/1521",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -34475,8 +36095,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-009",
+                "title": "Martin Luther (?) als Augustinerm\u00f6nch im Ordenshabit, Ganzfigur, stehend nach links gewandt, die H\u00e4nde ausgestreckt, mit ornamentierten Zwickelfeldern",
+                "subtitle": "",
+                "date": "1522",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -34574,8 +36206,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-010",
+                "title": "Martin Luther (?) als Augustinerm\u00f6nch im Ordenshabit, Ganzfigur, stehend nach links gewandt, die H\u00e4nde ausgestreckt, mit ornamentierten Zwickelfeldern",
+                "subtitle": "",
+                "date": "after 31.08.1522",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -34698,8 +36342,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-011",
+                "title": "Martin Luther (?) als Augustinerm\u00f6nch im Ordenshabit, Ganzfigur, stehend, nach rechts gewandt, nach links blickend, mit Buch",
+                "subtitle": "",
+                "date": "after November 1521",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -34877,8 +36533,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-012",
+                "title": "Martin Luther (?) als Augustinerm\u00f6nch im Ordenshabit, Ganzfigur, stehend, nach rechts gewandt",
+                "subtitle": "",
+                "date": "after 16.11.1520",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -34986,8 +36654,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-013",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Ganzfigur, stehend, frontal, mit Buch",
+                "subtitle": "",
+                "date": "after early year 1521",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -35445,8 +37125,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_HBG_HII-156_272-1",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Ganzfigur, stehend, leicht nach rechts gewandt, mit Buch",
+                "subtitle": "Hans Baldung Grien",
+                "date": "1521",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -35929,8 +37621,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-015",
+                "title": "",
+                "subtitle": "",
+                "date": "",
+                "additionalInfos": [
+                    "Print",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -36038,8 +37742,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-23_25",
+                "title": "The Crucifixion",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "1502",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 405 x 292 mm (+- 1mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -36176,8 +37892,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_LC_HVI-24_26",
+                "title": "The Crucifixion",
+                "subtitle": "Lucas Cranach the Elder",
+                "date": "about 1503",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 398 x 284 mm (+- 1mm)\n[cda 2019]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -36320,8 +38048,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-017",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach rechts gewandt, mit Buch, vor einer Bogenlaibung mit K\u00e4mpfergesims",
+                "subtitle": "",
+                "date": "",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 205 x 123 mm"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -36444,8 +38184,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_MIB_H-NONE-002",
+                "title": "Philipp Melanchthon mit Schaube und Barett, Brustbild nach rechts, mit Inschrift",
+                "subtitle": "Monogrammist IB",
+                "date": "1530",
+                "additionalInfos": [
+                    "Print, Engraving",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -36572,8 +38324,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_HBG_H-NONE-002",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach rechts, im Strahlenkranz, mit Buch und Taube",
+                "subtitle": "Hans Baldung Grien",
+                "date": "",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 154 x 115 mm [http:\/\/diglib.hab.de?grafik=bibel-s-4f-258-00001]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -36681,8 +38445,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-018",
+                "title": "",
+                "subtitle": "",
+                "date": "after 6 October 1520",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "?"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -36784,8 +38560,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-019",
+                "title": "Ulrich von Hutten im Harnisch, Halbfigur nach links, mit Schwert, vor Wand\u00f6ffnung, hinter Br\u00fcstung",
+                "subtitle": "",
+                "date": "",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -36877,8 +38665,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_HB_HBroIII-176_1313",
+                "title": "Katharina von Bora mit Haarnetz, Brustbild, nach rechts, mit Inschrift",
+                "subtitle": "Hans Brosamer",
+                "date": "1530",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image: 359 x 289 mm (without text block)\n[New Hollstein German Brosamer III, 176, No. 1313]"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -36994,8 +38794,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-020",
+                "title": "Ulrich von Hutten im Harnisch, Halbfigur nach links, mit Schwert, vor Wand\u00f6ffnung, hinter Br\u00fcstung",
+                "subtitle": "",
+                "date": "",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -37087,8 +38899,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_HB_H-NONE-001",
+                "title": "Philipp Melanchthon mit Schaube, Brustbild, nach rechts, mit Inschrift",
+                "subtitle": "Hans Brosamer",
+                "date": "1530 (?)",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    "Image:"
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
@@ -37199,8 +39023,20 @@
             "images": null
         },
         {
-            "entityType": "GRAPHIC",
-            "langCode": "en",
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "en",
+                "id": "GWN_ANO_H-NONE-021",
+                "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach rechts gewandt, mit Buch",
+                "subtitle": "",
+                "date": "after 11 July 1523",
+                "additionalInfos": [
+                    "Print, Woodcut",
+                    ""
+                ],
+                "classification": "Print",
+                "imgSrc": ""
+            },
             "involvedPersons": [
                 {
                     "id": "",
