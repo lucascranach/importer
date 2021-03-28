@@ -122,6 +122,7 @@ class PaintingsLoader extends Producer implements IMultipleFileLoader
     private function transformCurrentItem(): void
     {
         $metadata = new Metadata;
+        $metadata->setEntityType(Painting::ENTITY_TYPE);
 
         /* Preparing the painting objects for the different languages */
         $paintingDe = new Painting;
