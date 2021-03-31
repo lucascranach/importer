@@ -231,7 +231,7 @@ class LiteratureReferencesInflator implements IInflator
     ): void {
         $subtitleElement = self::findElementByXPath(
             $node,
-            'Section[@SectionNumber="3"]/Field[@FieldName="{ReferenceMaster.SubTitle}}"]/FormattedValue',
+            'Section[@SectionNumber="3"]/Field[@FieldName="{ReferenceMaster.SubTitle}"]/FormattedValue',
         );
         if ($subtitleElement) {
             $subtitleStr = trim(strval($subtitleElement));
@@ -376,7 +376,7 @@ class LiteratureReferencesInflator implements IInflator
     ): void {
         $publishDateElement = self::findElementByXPath(
             $node,
-            'Section[@SectionNumber="10"]/Field[@FieldName="{ReferenceMaster.YearPublished}}"]/FormattedValue',
+            'Section[@SectionNumber="10"]/Field[@FieldName="{ReferenceMaster.YearPublished}"]/FormattedValue',
         );
         if ($publishDateElement) {
             $publishDateStr = trim(strval($publishDateElement));
