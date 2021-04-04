@@ -93,7 +93,7 @@ RestorationsLoader::withSourcesAt($paintingsRestorationInputFilepaths)->pipe(
 /* Paintings */
 $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     './.cache',
-    RemoteImageExistenceChecker::REPRESENTATIVE,
+    RemoteImageExistenceChecker::OVERALL,
     'remotePaintingsImageExistenceChecker'
 );
 $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
@@ -131,9 +131,7 @@ $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     './.cache',
     function ($item) {
         /* We want the representative images for virtual objects */
-        return $item->getIsVirtual()
-            ? RemoteImageExistenceChecker::REPRESENTATIVE
-            : RemoteImageExistenceChecker::OVERALL;
+        return RemoteImageExistenceChecker::OVERALL;
     },
     'remoteGraphicsImageExistenceChecker'
 );
@@ -186,10 +184,10 @@ $archivalsLoader = ArchivalsLoader::withSourceAt($archivalsInputFilepath)->pipe(
 
 /* Trigger loaders and final exit routines */
 $loaders = [
-    $paintingsLoader,
+    // $paintingsLoader,
     $graphicsLoader,
-    $literatureReferencesLoader,
-    $archivalsLoader,
+    // $literatureReferencesLoader,
+    // $archivalsLoader,
 ];
 
 foreach ($loaders as $loader) {

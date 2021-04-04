@@ -9,7 +9,7 @@ use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class RemoteImageExistenceChecker extends Hybrid
 {
-    const REPRESENTATIVE = 'representative';
+    // const REPRESENTATIVE = 'representative';
     const OVERALL = 'overall';
     const REVERSE = 'reverse';
     const IRR = 'irr';
@@ -29,8 +29,8 @@ class RemoteImageExistenceChecker extends Hybrid
 
 
     private $serverHost = 'https://lucascranach.org';
-    private $remoteImageBasePath = 'imageserver/%s/%s';
-    private $remoteImageDataPath = 'imageserver/%s/imageData-1.0.json';
+    private $remoteImageBasePath = 'imageserver-2021/%s/%s';
+    private $remoteImageDataPath = 'imageserver-2021/%s/imageData-1.1.json';
     private $remoteImageSubDirectoryName = null;
     private $remoteImageTypeAccessorFunc = null;
     private $cacheDir = null;
@@ -281,12 +281,13 @@ class RemoteImageExistenceChecker extends Hybrid
 
         $images = [];
 
-        if ($imageType === self::REPRESENTATIVE) {
-            /* representative images have no variants, so we have to wrap it in an array */
-            $images = [ $stackItem['images'] ];
-        } else {
-            $images = $stackItem['images'];
-        }
+        // if ($imageType === self::REPRESENTATIVE) {
+        //     /* representative images have no variants, so we have to wrap it in an array */
+        //     $images = [ $stackItem['images'] ];
+        // } else {
+        //     $images = $stackItem['images'];
+        // }
+        $images = $stackItem['images'];
 
         foreach ($images as $image) {
             $destinationTypeStructure['variants'][] = $this->getPreparedImageVariant(
@@ -304,7 +305,7 @@ class RemoteImageExistenceChecker extends Hybrid
     {
         /* Set default values for all supported sizes */
         $variantSizes = array_reduce(
-            ['xs', 's', 'm', 'l', 'xl'],
+            ['xs', 's', 'm', 'origin'],
             function ($carry, $sizeCode) {
                 $carry[$sizeCode] = [
                     'dimensions' => [ 'width' => 0, 'height' => 0 ],
