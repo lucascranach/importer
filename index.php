@@ -184,10 +184,10 @@ $archivalsLoader = ArchivalsLoader::withSourceAt($archivalsInputFilepath)->pipe(
 
 /* Trigger loaders and final exit routines */
 $loaders = [
-    // $paintingsLoader,
+    $paintingsLoader,
     $graphicsLoader,
-    // $literatureReferencesLoader,
-    // $archivalsLoader,
+    $literatureReferencesLoader,
+    $archivalsLoader,
 ];
 
 foreach ($loaders as $loader) {

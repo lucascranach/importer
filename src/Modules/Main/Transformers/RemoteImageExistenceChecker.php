@@ -305,7 +305,7 @@ class RemoteImageExistenceChecker extends Hybrid
     {
         /* Set default values for all supported sizes */
         $variantSizes = array_reduce(
-            ['xs', 's', 'm', 'origin'],
+            ['xsmall', 'small', 'medium', 'origin'],
             function ($carry, $sizeCode) {
                 $carry[$sizeCode] = [
                     'dimensions' => [ 'width' => 0, 'height' => 0 ],
