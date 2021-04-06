@@ -27,7 +27,7 @@ class RemoteImageExistenceChecker extends Hybrid
     const PYRAMID = 'pyramid';
 
 
-    private $serverHost = 'https://lucascranach.org';
+    private $serverHost = 'https://lucascranach.org/';
     private $remoteImageBasePath = 'imageserver-2021/%s/%s';
     private $remoteImageDataPath = 'imageserver-2021/%s/imageData-1.1.json';
     private $remoteImageTypeAccessorFunc = null;
@@ -100,7 +100,7 @@ class RemoteImageExistenceChecker extends Hybrid
             return false;
         }
 
-        $url = $this->buildURLForId($id);
+        $imageDataURL = $this->buildImageDataURL($id);
 
         /* We simply skip the object, if the same object (but in a different language) already triggered an error */
         if (in_array($id, $this->objectIdsWithOccuredErrors, true)) {
@@ -110,13 +110,13 @@ class RemoteImageExistenceChecker extends Hybrid
 
         /* Fill cache to avoid unnecessary duplicate requests for the same resource */
         if (is_null($this->getCacheFor($id))) {
-            $result = $this->getRemoteImageDataResource($url);
+            $result = $this->getRemoteImageDataResource($imageDataURL);
             $rawImagesData = null;
 
             if (!is_null($result)) {
                 $rawImagesData = $result;
             } else {
-                echo '  Missing remote images for \'' . $id . "' (" . $url .")\n";
+                echo '  Missing remote images for \'' . $id . "' (" . $imageDataURL .")\n";
             }
 
             $dataToCache = $this->createCacheData($rawImagesData);
@@ -138,7 +138,7 @@ class RemoteImageExistenceChecker extends Hybrid
                     $item->setImages($preparedImages);
                 } catch (Error $e) {
                     /* We need to keep track of the same object but in different languages, to prevent duplicate error outputs */
-                    echo $e->getMessage() . ' (' . $url . ")\n";
+                    echo $e->getMessage() . ' (' . $imageDataURL . ")\n";
                     $this->objectIdsWithOccuredErrors[] = $id;
                 }
             }
@@ -149,17 +149,14 @@ class RemoteImageExistenceChecker extends Hybrid
     }
 
 
-    private function buildURLForId(string $id): string
+    private function buildImageDataURL(string $id): string
     {
         $interpolatedRemoteImageDataPath = sprintf(
             $this->remoteImageDataPath,
             $id,
         );
 
-        return implode('/', [
-            $this->serverHost,
-            $interpolatedRemoteImageDataPath
-        ]);
+        return $this->serverHost . $interpolatedRemoteImageDataPath;
     }
 
 
@@ -292,33 +289,29 @@ class RemoteImageExistenceChecker extends Hybrid
     {
         $variantSizes = [];
 
-        foreach ($image as $size => $variant) {
+        foreach ($image as $sizeName => $size) {
             $baseVariant = [
                 'dimensions' => [
                     'width' => 0,
                     'height' => 0,
                 ],
                 'src' => '',
-                'type' => isset($variant['type']) ? $variant['type'] : 'plain',
+                'type' => isset($size['type']) ? $size['type'] : 'plain',
             ];
 
-            if (isset($variant['dimensions']) && !empty($variant['dimensions'])) {
+            if (isset($size['dimensions']) && !empty($size['dimensions'])) {
                 $baseVariant['dimensions'] = [
-                    'width' => isset($variant['dimensions']['width']) ? intval($variant['dimensions']['width']) : 0,
-                    'height' => isset($variant['dimensions']['height']) ? intval($variant['dimensions']['height']) : 0,
+                    'width' => isset($size['dimensions']['width']) ? intval($size['dimensions']['width']) : 0,
+                    'height' => isset($size['dimensions']['height']) ? intval($size['dimensions']['height']) : 0,
                 ];
             }
 
-            $imageTypePath = isset($variant['path']) ? $variant['path'] : $imageType;
-            $src = implode('/', [
-                $this->serverHost,
-                sprintf($this->remoteImageBasePath, $id, $imageTypePath),
-                $variant['src'],
-            ]);
+            $imageTypePath = isset($size['path']) ? $size['path'] : $imageType;
+            $filepath = $imageTypePath . '/' . $size['src'];
 
-            $baseVariant['src'] = $src;
+            $baseVariant['src'] = $this->serverHost . sprintf($this->remoteImageBasePath, $id, $filepath);
 
-            $variantSizes[$size] = $baseVariant;
+            $variantSizes[$sizeName] = $baseVariant;
         }
 
         return $variantSizes;
