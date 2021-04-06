@@ -222,7 +222,7 @@ class RemoteImageExistenceChecker extends Hybrid
 
 
     private function prepareRawImages(
-        string $inventoryNumber,
+        string $id,
         string $imageType,
         array $cachedImagesForObject
     ): array {
@@ -233,14 +233,14 @@ class RemoteImageExistenceChecker extends Hybrid
         if (!isset($imageStack[$imageType])) {
             throw new Error(
                 'RemoteImageExistenceChecker: '
-                . 'Could not find base stack item ' . $imageType . ' for \'' . $inventoryNumber . '\''
+                . 'Could not find base stack item ' . $imageType . ' for \'' . $id . '\''
             );
         }
         $baseStackItem = $imageStack[$imageType];
 
         $imageTypes[$imageType] = $this->getPreparedImageType(
             $baseStackItem,
-            $inventoryNumber,
+            $id,
             $imageType,
         );
 
@@ -253,7 +253,7 @@ class RemoteImageExistenceChecker extends Hybrid
      *
      * @psalm-return array{infos: array{maxDimensions: array{width: int, height: int}}, variants: list<mixed>}
      */
-    private function getPreparedImageType($stackItem, $inventoryNumber, $imageType): array
+    private function getPreparedImageType($stackItem, $id, $imageType): array
     {
         $destinationTypeStructure = [
             'infos' => [
@@ -265,7 +265,7 @@ class RemoteImageExistenceChecker extends Hybrid
         if (is_null($stackItem['images'])) {
             throw new Error(
                 'RemoteImageExistenceChecker: '
-                . 'Missing image data for \'' . $inventoryNumber . '\' in base stack item \'' . $imageType . '\''
+                . 'Missing image data for \'' . $id . '\' in base stack item \'' . $imageType . '\''
             );
         }
 
@@ -279,7 +279,7 @@ class RemoteImageExistenceChecker extends Hybrid
         foreach ($images as $image) {
             $destinationTypeStructure['variants'][] = $this->getPreparedImageVariant(
                 $image,
-                $inventoryNumber,
+                $id,
                 $imageType,
             );
         }
@@ -288,7 +288,7 @@ class RemoteImageExistenceChecker extends Hybrid
     }
 
 
-    private function getPreparedImageVariant($image, $inventoryNumber, $imageType)
+    private function getPreparedImageVariant($image, $id, $imageType)
     {
         $variantSizes = [];
 
@@ -312,7 +312,7 @@ class RemoteImageExistenceChecker extends Hybrid
             $imageTypePath = isset($variant['path']) ? $variant['path'] : $imageType;
             $src = implode('/', [
                 $this->serverHost,
-                sprintf($this->remoteImageBasePath, $inventoryNumber, $imageTypePath),
+                sprintf($this->remoteImageBasePath, $id, $imageTypePath),
                 $variant['src'],
             ]);
 
