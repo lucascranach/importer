@@ -253,6 +253,7 @@ class RemoteImageExistenceChecker extends Hybrid
     private function getPreparedImageType($stackItem, $id, $imageType): array
     {
         $destinationTypeStructure = [
+            'dataJsonSrc' => $this->buildImageDataURL($id),
             'infos' => [
                 'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
             ],
