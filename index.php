@@ -93,7 +93,7 @@ RestorationsLoader::withSourcesAt($paintingsRestorationInputFilepaths)->pipe(
 /* Paintings */
 $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     './.cache',
-    RemoteImageExistenceChecker::REPRESENTATIVE,
+    RemoteImageExistenceChecker::OVERALL,
     'remotePaintingsImageExistenceChecker'
 );
 $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
@@ -129,12 +129,7 @@ RestorationsLoader::withSourcesAt($graphicsRestorationInputFilepaths)->pipe(
 /* Graphics */
 $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     './.cache',
-    function ($item) {
-        /* We want the representative images for virtual objects */
-        return $item->getIsVirtual()
-            ? RemoteImageExistenceChecker::REPRESENTATIVE
-            : RemoteImageExistenceChecker::OVERALL;
-    },
+    RemoteImageExistenceChecker::OVERALL,
     'remoteGraphicsImageExistenceChecker'
 );
 $graphicsConditionDeterminer = ConditionDeterminer::new();

@@ -133,7 +133,6 @@ class GraphicInflator implements IInflator
         } else {
             self::inflateExhibitionHistory($subNode, $graphicDe, $graphicEn);
         }
-
         self::inflateBibliography($subNode, $graphicDe, $graphicEn);
         self::inflateReferences($subNode, $graphicDe, $graphicEn);
         self::inflateAdditionalTextInformations($subNode, $graphicDe, $graphicEn);
@@ -145,7 +144,6 @@ class GraphicInflator implements IInflator
         self::inflateCatalogWorkReference($subNode, $graphicDe, $graphicEn);
         self::inflateStructuredDimension($subNode, $graphicDe, $graphicEn);
     }
-
 
     /* Involved persons */
     private static function inflateInvolvedPersons(
@@ -981,6 +979,7 @@ class GraphicInflator implements IInflator
             $exhibitionHistorySectionElement,
             'Field[@FieldName="{OBJECTS.Exhibitions}"]/FormattedValue',
         );
+
         if ($exhibitionHistoryElement) {
             $representativeObjectStr = trim(strval($exhibitionHistoryElement));
             $cleanRepresentativeObjectStr = preg_replace(
