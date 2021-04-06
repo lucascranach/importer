@@ -9,7 +9,6 @@ use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class RemoteImageExistenceChecker extends Hybrid
 {
-    // const REPRESENTATIVE = 'representative';
     const OVERALL = 'overall';
     const REVERSE = 'reverse';
     const IRR = 'irr';
@@ -281,12 +280,6 @@ class RemoteImageExistenceChecker extends Hybrid
 
         $images = [];
 
-        // if ($imageType === self::REPRESENTATIVE) {
-        //     /* representative images have no variants, so we have to wrap it in an array */
-        //     $images = [ $stackItem['images'] ];
-        // } else {
-        //     $images = $stackItem['images'];
-        // }
         $images = $stackItem['images'];
 
         foreach ($images as $image) {

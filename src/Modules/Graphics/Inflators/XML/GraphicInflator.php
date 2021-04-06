@@ -111,7 +111,6 @@ class GraphicInflator implements IInflator
         self::registerXPathNamespace($subNode);
 
         self::inflateInventoryNumber($subNode, $graphicDe, $graphicEn);
-
         self::inflateInvolvedPersons($subNode, $graphicDe, $graphicEn);
         self::inflatePersonNames($subNode, $graphicDe, $graphicEn);
         self::inflateTitles($subNode, $graphicDe, $graphicEn);
@@ -134,7 +133,6 @@ class GraphicInflator implements IInflator
         } else {
             self::inflateExhibitionHistory($subNode, $graphicDe, $graphicEn);
         }
-        // if( $graphicDe->inventoryNumber === "GWN_LC_HVI-107_132"){ self::debug($graphicDe); }
         self::inflateBibliography($subNode, $graphicDe, $graphicEn);
         self::inflateReferences($subNode, $graphicDe, $graphicEn);
         self::inflateAdditionalTextInformations($subNode, $graphicDe, $graphicEn);
@@ -145,13 +143,6 @@ class GraphicInflator implements IInflator
         self::inflateSortingNumber($subNode, $graphicDe, $graphicEn);
         self::inflateCatalogWorkReference($subNode, $graphicDe, $graphicEn);
         self::inflateStructuredDimension($subNode, $graphicDe, $graphicEn);
-
-
-
-    }
-
-    private static function debug(Graphic $graphicDe){
-        exit;
     }
 
     /* Involved persons */
