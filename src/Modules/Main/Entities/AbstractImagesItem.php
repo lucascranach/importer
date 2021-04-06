@@ -17,25 +17,30 @@ abstract class AbstractImagesItem
                 ],
                 'variants' => [
                     [
-                        'xs' => [
+                        'xsmall' => [
                             'dimensions' => [ 'width' => 0, 'height' => 0 ],
                             'src' => '',
+                            'type' => 'plain',
                         ],
-                        's' => [
+                        'small' => [
                             'dimensions' => [ 'width' => 0, 'height' => 0 ],
                             'src' => '',
+                            'type' => 'plain',
                         ],
-                        'm' => [
+                        'medium' => [
                             'dimensions' => [ 'width' => 0, 'height' => 0 ],
                             'src' => '',
+                            'type' => 'plain',
                         ],
-                        'l' => [
+                        'origin' => [
                             'dimensions' => [ 'width' => 0, 'height' => 0 ],
                             'src' => '',
+                            'type' => 'plain',
                         ],
-                        'xl' => [
+                        'tiles' => [
                             'dimensions' => [ 'width' => 0, 'height' => 0 ],
                             'src' => '',
+                            'type' => 'dzi',
                         ],
                     ],
 
@@ -43,7 +48,7 @@ abstract class AbstractImagesItem
                 ],
             ],
 
-            // ... multiple image types possible, like 'representative' -> key-value pairs
+            // ... multiple image types possible
         ]
     */
 
