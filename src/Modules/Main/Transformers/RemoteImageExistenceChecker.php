@@ -30,7 +30,6 @@ class RemoteImageExistenceChecker extends Hybrid
     private $serverHost = 'https://lucascranach.org';
     private $remoteImageBasePath = 'imageserver-2021/%s/%s';
     private $remoteImageDataPath = 'imageserver-2021/%s/imageData-1.1.json';
-    private $remoteImageSubDirectoryName = null;
     private $remoteImageTypeAccessorFunc = null;
     private $cacheDir = null;
     private $cacheFilename = 'remoteImageExistenceChecker';
@@ -94,13 +93,14 @@ class RemoteImageExistenceChecker extends Hybrid
         }
 
         $id = $item->getImageId();
-        $url = $this->buildURLForInventoryNumber($id);
 
         if (empty($id)) {
             echo '  Missing imageId for \'' . $item->getId() . "'\n";
             $this->next($item);
             return false;
         }
+
+        $url = $this->buildURLForId($id);
 
         /* We simply skip the object, if the same object (but in a different language) already triggered an error */
         if (in_array($id, $this->objectIdsWithOccuredErrors, true)) {
@@ -149,11 +149,11 @@ class RemoteImageExistenceChecker extends Hybrid
     }
 
 
-    private function buildURLForInventoryNumber(string $inventoryNumber): string
+    private function buildURLForId(string $id): string
     {
         $interpolatedRemoteImageDataPath = sprintf(
             $this->remoteImageDataPath,
-            $inventoryNumber,
+            $id,
         );
 
         return implode('/', [
@@ -262,11 +262,7 @@ class RemoteImageExistenceChecker extends Hybrid
             'variants' => [],
         ];
 
-        if (
-            is_null($stackItem['images'])
-            || !isset($stackItem['maxDimensions']['width'])
-            || !isset($stackItem['maxDimensions']['height'])
-        ) {
+        if (is_null($stackItem['images'])) {
             throw new Error(
                 'RemoteImageExistenceChecker: '
                 . 'Missing image data for \'' . $inventoryNumber . '\' in base stack item \'' . $imageType . '\''
@@ -274,11 +270,9 @@ class RemoteImageExistenceChecker extends Hybrid
         }
 
         $destinationTypeStructure['infos']['maxDimensions'] = [
-            'width' => intval($stackItem['maxDimensions']['width']),
-            'height' => intval($stackItem['maxDimensions']['height']),
+            'width' => isset($stackItem['maxDimensions']['width']) ? intval($stackItem['maxDimensions']['width']) : 0,
+            'height' => isset($stackItem['maxDimensions']['height']) ? intval($stackItem['maxDimensions']['height']) : 0,
         ];
-
-        $images = [];
 
         $images = $stackItem['images'];
 
@@ -296,20 +290,25 @@ class RemoteImageExistenceChecker extends Hybrid
 
     private function getPreparedImageVariant($image, $inventoryNumber, $imageType)
     {
-        /* Set default values for all supported sizes */
-        $variantSizes = array_reduce(
-            ['xsmall', 'small', 'medium', 'origin'],
-            function ($carry, $sizeCode) {
-                $carry[$sizeCode] = [
-                    'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                    'src' => '',
-                ];
-                return $carry;
-            },
-        );
+        $variantSizes = [];
 
         foreach ($image as $size => $variant) {
-            $dimensions = $variant['dimensions'];
+            $baseVariant = [
+                'dimensions' => [
+                    'width' => 0,
+                    'height' => 0,
+                ],
+                'src' => '',
+                'type' => isset($variant['type']) ? $variant['type'] : 'plain',
+            ];
+
+            if (isset($variant['dimensions']) && !empty($variant['dimensions'])) {
+                $baseVariant['dimensions'] = [
+                    'width' => isset($variant['dimensions']['width']) ? intval($variant['dimensions']['width']) : 0,
+                    'height' => isset($variant['dimensions']['height']) ? intval($variant['dimensions']['height']) : 0,
+                ];
+            }
+
             $imageTypePath = isset($variant['path']) ? $variant['path'] : $imageType;
             $src = implode('/', [
                 $this->serverHost,
@@ -317,13 +316,9 @@ class RemoteImageExistenceChecker extends Hybrid
                 $variant['src'],
             ]);
 
-            $variantSizes[$size] = [
-                'dimensions' => [
-                    'width' => intval($dimensions['width']),
-                    'height' => intval($dimensions['height']),
-                ],
-                'src' => $src,
-            ];
+            $baseVariant['src'] = $src;
+
+            $variantSizes[$size] = $baseVariant;
         }
 
         return $variantSizes;
