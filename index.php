@@ -129,10 +129,7 @@ RestorationsLoader::withSourcesAt($graphicsRestorationInputFilepaths)->pipe(
 /* Graphics */
 $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     './.cache',
-    function ($item) {
-        /* We want the representative images for virtual objects */
-        return RemoteImageExistenceChecker::OVERALL;
-    },
+    RemoteImageExistenceChecker::OVERALL,
     'remoteGraphicsImageExistenceChecker'
 );
 $graphicsConditionDeterminer = ConditionDeterminer::new();
