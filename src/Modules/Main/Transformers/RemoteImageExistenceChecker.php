@@ -279,7 +279,7 @@ class RemoteImageExistenceChecker extends Hybrid
                 $imageType,
             );
 
-            if (!empty($preparedImageType['variants'])) {
+            if (!empty($preparedImageType['images'])) {
                 $mappedImageTypes[$imageType] = $preparedImageType;
             }
         }
@@ -290,8 +290,6 @@ class RemoteImageExistenceChecker extends Hybrid
 
     /**
      * @return array[]
-     *
-     * @psalm-return array{infos: array{maxDimensions: array{width: int, height: int}}, variants: list<mixed>}
      */
     private function getPreparedImageType($imageTypeValue, $id, $imageType): array
     {
@@ -301,7 +299,7 @@ class RemoteImageExistenceChecker extends Hybrid
             'infos' => [
                 'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
             ],
-            'variants' => [],
+            'images' => [],
         ];
 
         if (is_null($imageTypeValue['images'])) {
@@ -317,7 +315,7 @@ class RemoteImageExistenceChecker extends Hybrid
         ];
 
         foreach ($images as $image) {
-            $destinationTypeStructure['variants'][] = $this->getPreparedImageVariant(
+            $destinationTypeStructure['images'][] = $this->getPreparedImageVariant(
                 $image,
                 $id,
                 $imageType,
