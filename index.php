@@ -93,7 +93,7 @@ RestorationsLoader::withSourcesAt($paintingsRestorationInputFilepaths)->pipe(
 /* Paintings */
 $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     './.cache',
-    RemoteImageExistenceChecker::OVERALL,
+    RemoteImageExistenceChecker::ALL_IMAGE_TYPES,
     'remotePaintingsImageExistenceChecker'
 );
 $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
@@ -129,7 +129,7 @@ RestorationsLoader::withSourcesAt($graphicsRestorationInputFilepaths)->pipe(
 /* Graphics */
 $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     './.cache',
-    RemoteImageExistenceChecker::OVERALL,
+    RemoteImageExistenceChecker::ALL_IMAGE_TYPES,
     'remoteGraphicsImageExistenceChecker'
 );
 $graphicsConditionDeterminer = ConditionDeterminer::new();

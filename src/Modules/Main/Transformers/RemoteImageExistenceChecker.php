@@ -26,6 +26,8 @@ class RemoteImageExistenceChecker extends Hybrid
 
     const PYRAMID = 'pyramid';
 
+    const ALL_IMAGE_TYPES = 'all-image-types';
+
 
     private $serverHost = 'https://lucascranach.org/';
     private $remoteImageBasePath = 'imageserver-2021/%s/%s';
@@ -36,15 +38,34 @@ class RemoteImageExistenceChecker extends Hybrid
     private $cacheFileSuffix = '.cache';
     private $cache = [];
     private $objectIdsWithOccuredErrors = [];
+    private $allowedImageTypes = [];
 
 
     private function __construct()
     {
+        $this->allowedImageTypes = [
+            self::OVERALL,
+            self::REVERSE,
+            self::IRR,
+            self::X_RADIOGRAPH,
+            self::UV_LIGHT,
+            self::DETAIL,
+            self::PHOTOMICROGRAPH,
+            self::CONSERVATION,
+            self::OTHER,
+            self::ANALYSIS,
+            self::RKD,
+            self::KOE,
+            self::REFLECTED_LIGHT,
+            self::TRANSMITTED_LIGHT,
+
+            self::PYRAMID,
+        ];
     }
 
     public static function withCacheAt(
         string $cacheDir,
-        $remoteImageTypeAccessorFunc,
+        $remoteImageTypeAccessorFunc = null,
         string $cacheFilename = ''
     ): self {
         $checker = new self;
@@ -127,14 +148,20 @@ class RemoteImageExistenceChecker extends Hybrid
         $cachedImagesForObject = $cachedItem['rawImagesData'];
 
         if (!is_null($cachedImagesForObject)) {
-            $imageType = call_user_func_array(
+            $selectedImageTypes = (array) call_user_func_array(
                 $this->remoteImageTypeAccessorFunc,
                 [$item, $cachedImagesForObject]
             );
 
-            if ($imageType) {
+            $containsAllSelection = in_array(self::ALL_IMAGE_TYPES, $selectedImageTypes, true);
+            $selectedImageTypes = ($containsAllSelection) ? $this->allowedImageTypes : $selectedImageTypes;
+
+            $selectedImageTypesAreEmpty = empty($selectedImageTypes);
+            $selectedImageTypesAreAllSupported = count(array_intersect($selectedImageTypes, $this->allowedImageTypes)) === count($this->allowedImageTypes);
+
+            if (!$selectedImageTypesAreEmpty && $selectedImageTypesAreAllSupported) {
                 try {
-                    $preparedImages = $this->prepareRawImages($id, $imageType, $cachedImagesForObject);
+                    $preparedImages = $this->prepareRawImages($id, $selectedImageTypes, $cachedImagesForObject);
                     $item->setImages($preparedImages);
                 } catch (Error $e) {
                     /* We need to keep track of the same object but in different languages, to prevent duplicate error outputs */
@@ -220,28 +247,44 @@ class RemoteImageExistenceChecker extends Hybrid
 
     private function prepareRawImages(
         string $id,
-        string $imageType,
+        array $selectedImageTypes,
         array $cachedImagesForObject
     ): array {
-        $imageTypes = [];
+        $mappedImageTypes = [];
 
         $imageStack = $cachedImagesForObject['imageStack'];
 
-        if (!isset($imageStack[$imageType])) {
-            throw new Error(
-                'RemoteImageExistenceChecker: '
-                . 'Could not find base stack item ' . $imageType . ' for \'' . $id . '\''
+        foreach ($imageStack as $imageType => $imageTypeValue) {
+            $toBeSkipped = !in_array($imageType, $selectedImageTypes, true);
+            $isUnknown = !in_array($imageType, $this->allowedImageTypes, true);
+
+            if ($toBeSkipped || $isUnknown) {
+                if ($isUnknown) {
+                    echo "    " . $id . ": ImageType '" . $imageType . "' is unknown\n";
+                }
+
+                continue;
+            }
+
+            if (!isset($imageStack[$imageType])) {
+                throw new Error(
+                    'RemoteImageExistenceChecker: '
+                    . 'Could not find stack item ' . $imageType . ' for \'' . $id . '\''
+                );
+            }
+
+            $preparedImageType = $this->getPreparedImageType(
+                $imageTypeValue,
+                $id,
+                $imageType,
             );
+
+            if (!empty($preparedImageType['variants'])) {
+                $mappedImageTypes[$imageType] = $preparedImageType;
+            }
         }
-        $baseStackItem = $imageStack[$imageType];
 
-        $imageTypes[$imageType] = $this->getPreparedImageType(
-            $baseStackItem,
-            $id,
-            $imageType,
-        );
-
-        return $imageTypes;
+        return $mappedImageTypes;
     }
 
 
@@ -250,17 +293,18 @@ class RemoteImageExistenceChecker extends Hybrid
      *
      * @psalm-return array{infos: array{maxDimensions: array{width: int, height: int}}, variants: list<mixed>}
      */
-    private function getPreparedImageType($stackItem, $id, $imageType): array
+    private function getPreparedImageType($imageTypeValue, $id, $imageType): array
     {
+        $images = $imageTypeValue['images'];
+
         $destinationTypeStructure = [
-            'dataJsonSrc' => $this->buildImageDataURL($id),
             'infos' => [
                 'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
             ],
             'variants' => [],
         ];
 
-        if (is_null($stackItem['images'])) {
+        if (is_null($imageTypeValue['images'])) {
             throw new Error(
                 'RemoteImageExistenceChecker: '
                 . 'Missing image data for \'' . $id . '\' in base stack item \'' . $imageType . '\''
@@ -268,11 +312,9 @@ class RemoteImageExistenceChecker extends Hybrid
         }
 
         $destinationTypeStructure['infos']['maxDimensions'] = [
-            'width' => isset($stackItem['maxDimensions']['width']) ? intval($stackItem['maxDimensions']['width']) : 0,
-            'height' => isset($stackItem['maxDimensions']['height']) ? intval($stackItem['maxDimensions']['height']) : 0,
+            'width' => isset($imageTypeValue['maxDimensions']['width']) ? intval($imageTypeValue['maxDimensions']['width']) : 0,
+            'height' => isset($imageTypeValue['maxDimensions']['height']) ? intval($imageTypeValue['maxDimensions']['height']) : 0,
         ];
-
-        $images = $stackItem['images'];
 
         foreach ($images as $image) {
             $destinationTypeStructure['variants'][] = $this->getPreparedImageVariant(
