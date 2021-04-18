@@ -29,6 +29,15 @@ Um die Nutzung des Importers (aber auch die Entwicklung) zu vereinfachen, kommt 
 3. Ggf. diverse Bereiche mit Loader-Initialisierungen in der `index.php` auskommentieren, wenn die dafür notwendigen XML-Dateien nicht vorliegen
 4. `composer run-script import` ausführen
 
+### In-/ und Output Verzeichnisse
+Die Input und Output Verzeichnisse sind jetzt nicht mehr Teil des Repos. Daten bitte hierher beziehen, bzw. ablegen:
+
+- Input `~/sciebo/cranach/exporte`
+- Output `~/sciebo/cranach/json-output`
+
+Bereitgestellte Daten werden bei Bedarf über den Zweig `legacy-exchange` bereit gestellt. 
+
+
 ### Entwicklung
 Generell sollte immer der über Composer eingebundene Linter und Code-Analyser genutzt werden, um frühzeitig mögliche Formatierungs- und Code-Probleme erkennen und beheben zu können.
 
