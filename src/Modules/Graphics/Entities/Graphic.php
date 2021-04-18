@@ -84,11 +84,7 @@ class Graphic extends AbstractImagesItem implements IBaseItem
             $id = $this->getRepresentativeObject();
         }
 
-        foreach ($this->clearingPatterns as $clearingPattern) {
-            $find = '=' . $clearingPattern['find'] . '=';
-            $replaceWith = $clearingPattern['replaceWith'];
-            $id = preg_replace($find, $replaceWith, $id);
-        }
+
 
         return empty($id) ? $id : 'G_' . $id;
     }
@@ -165,6 +161,11 @@ class Graphic extends AbstractImagesItem implements IBaseItem
 
     public function setInventoryNumber(string $inventoryNumber): void
     {
+        foreach ($this->clearingPatterns as $clearingPattern) {
+            $find = '=' . $clearingPattern['find'] . '=';
+            $replaceWith = $clearingPattern['replaceWith'];
+            $inventoryNumber = preg_replace($find, $replaceWith, $inventoryNumber);
+        }
         $this->inventoryNumber = $inventoryNumber;
     }
 
