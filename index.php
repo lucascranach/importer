@@ -33,7 +33,7 @@ use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 
-$date = '20210305';
+$date = '20210408';
 $inputDirectory = './input/' . $date;
 $destDirectory = './docs/' . $date;
 
@@ -46,19 +46,19 @@ $paintingsRestorationInputFilepaths = [
     $inputDirectory . '/CDA_RestDokumente_P3_' . $date . '.xml',
 ];
 $paintingsInputFilepaths = [
-    $inputDirectory . '/CDA_Datenübersicht_P1_' . $date . '.xml',
-    $inputDirectory . '/CDA_Datenübersicht_P2_' . $date . '.xml',
-    $inputDirectory . '/CDA_Datenübersicht_P3_' . $date . '.xml',
+    $inputDirectory . '/CDA_Datenuebersicht_P1_' . $date . '.xml',
+    $inputDirectory . '/CDA_Datenuebersicht_P2_' . $date . '.xml',
+    $inputDirectory . '/CDA_Datenuebersicht_P3_' . $date . '.xml',
 ];
 $graphicsRestorationInputFilepaths = [
     $inputDirectory . '/CDA-GR_RestDokumente_' . $date . '.xml',
 ];
-$graphicsInputFilepath = $inputDirectory . '/CDA-GR_Datenübersicht_' . $date . '.xml';
+$graphicsInputFilepath = $inputDirectory . '/CDA-GR_Datenuebersicht_' . $date . '.xml';
 $literatureInputFilepaths = [
     $inputDirectory . '/CDA_Literaturverweise_P1_' . $date . '.xml',
     $inputDirectory . '/CDA_Literaturverweise_P2_' . $date . '.xml',
 ];
-$archivalsInputFilepath = $inputDirectory . '/CDA-A_Datenübersicht_' . $date . '.xml';
+$archivalsInputFilepath = $inputDirectory . '/CDA-A_Datenuebersicht_' . $date . '.xml';
 
 
 /* Outputfiles */
@@ -181,10 +181,10 @@ $archivalsLoader = ArchivalsLoader::withSourceAt($archivalsInputFilepath)->pipe(
 
 /* Trigger loaders and final exit routines */
 $loaders = [
-    $paintingsLoader,
+    # $paintingsLoader,
     $graphicsLoader,
-    $literatureReferencesLoader,
-    $archivalsLoader,
+    # $literatureReferencesLoader,
+    # $archivalsLoader,
 ];
 
 foreach ($loaders as $loader) {
