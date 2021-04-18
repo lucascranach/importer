@@ -45,7 +45,6 @@ class Graphic extends AbstractImagesItem implements IBaseItem
     public $markings = '';
     public $relatedWorks = '';
     public $exhibitionHistory = '';
-    public $representativeObject = '';
     public $bibliography = '';
     public $references = [
         'reprints' => [],
@@ -78,13 +77,6 @@ class Graphic extends AbstractImagesItem implements IBaseItem
     public function getImageId(): string
     {
         $id = $this->getId();
-
-        /* We want to use the representative object inventory number if one exists */
-        if (!empty($this->getRepresentativeObject())) {
-            $id = $this->getRepresentativeObject();
-        }
-
-
 
         return empty($id) ? $id : 'G_' . $id;
     }
@@ -292,16 +284,6 @@ class Graphic extends AbstractImagesItem implements IBaseItem
     public function getExhibitionHistory(): string
     {
         return $this->exhibitionHistory;
-    }
-
-    public function setRepresentativeObject(string $representativeObject): void
-    {
-        $this->representativeObject = $representativeObject;
-    }
-
-    public function getRepresentativeObject(): string
-    {
-        return $this->representativeObject;
     }
 
     public function setBibliography(string $bibliography): void
