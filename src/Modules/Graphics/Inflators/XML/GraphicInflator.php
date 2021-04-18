@@ -126,11 +126,8 @@ class GraphicInflator implements IInflator
         self::inflateMarkings($subNode, $graphicDe, $graphicEn);
         self::inflateRelatedWorks($subNode, $graphicDe, $graphicEn);
 
-        /* virtual graphic objects have to have their representative object
-            extracted form the exhibitionhistory field */
-        if ($graphicDe->getIsVirtual()) {
-            self::inflateRepresentativeObject($subNode, $graphicDe, $graphicEn);
-        } else {
+        /* only "real" graphics do have an exhibition history, so we skip virtual ones */
+        if (!$graphicDe->getIsVirtual()) {
             self::inflateExhibitionHistory($subNode, $graphicDe, $graphicEn);
         }
         self::inflateBibliography($subNode, $graphicDe, $graphicEn);
@@ -962,33 +959,6 @@ class GraphicInflator implements IInflator
         if ($relatedWorksElement) {
             $relatedWorksStr = trim(strval($relatedWorksElement));
             $graphicEn->setRelatedWorks($relatedWorksStr);
-        }
-    }
-
-
-    /* */
-    private static function inflateRepresentativeObject(
-        SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
-    ): void {
-        /* For virtual graphics, the representative object is found
-            under the exhibitionHistory field */
-        $exhibitionHistorySectionElement = $node->{'Section'}[28];
-        $exhibitionHistoryElement = self::findElementByXPath(
-            $exhibitionHistorySectionElement,
-            'Field[@FieldName="{OBJECTS.Exhibitions}"]/FormattedValue',
-        );
-
-        if ($exhibitionHistoryElement) {
-            $representativeObjectStr = trim(strval($exhibitionHistoryElement));
-            $cleanRepresentativeObjectStr = preg_replace(
-                self::$inventoryNumberReplaceRegExpArr,
-                '',
-                $representativeObjectStr,
-            );
-            $graphicDe->setRepresentativeObject($cleanRepresentativeObjectStr);
-            $graphicEn->setRepresentativeObject($cleanRepresentativeObjectStr);
         }
     }
 
