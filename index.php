@@ -15,6 +15,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithThe
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRestorations as GraphicsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MetadataFiller as GraphicsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
+use CranachDigitalArchive\Importer\Modules\Main\Collectors\MetaReferenceCollector;
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
 use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\LiteratureReferencesLoader;
@@ -29,7 +30,8 @@ use CranachDigitalArchive\Importer\Modules\Archivals\Loaders\XML\ArchivalsLoader
 use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Archivals\Transformers\MetadataFiller as ArchivalsMetadataFiller;
-use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader;
+use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader as ThesaurusXMLLoader;
+use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\Memory\ThesaurusLoader as ThesaurusMemoryLoader;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 
@@ -63,6 +65,7 @@ $archivalsInputFilepath = $inputDirectory . '/CDA-A_Datenuebersicht_' . $date . 
 
 /* Outputfiles */
 $thesaurusOutputFilepath = $destDirectory . '/cda-thesaurus-v2.json';
+$reducedThesaurusOutputFilepath = $destDirectory . '/cda-reduced-thesaurus-v2.json';
 $paintingsOutputFilepath = $destDirectory . '/cda-paintings-v2.json';
 $paintingsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-paintings-v2.bulk';
 $graphicsOutputFilepath = $destDirectory . '/cda-graphics-v2.json';
@@ -72,11 +75,14 @@ $archivalsOutputFilepath = $destDirectory . '/cda-archivals-v2.json';
 $archivalsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-archivals-v2.bulk';
 
 
+/* MetaReferences -> Thesaurus-Links */
+$metaReferenceCollector = MetaReferenceCollector::new();
+
 
 /* Thesaurus */
 $thesaurusMemoryDestination = ThesaurusMemoryExporter::new(); /* needed later for graphics and paintings */
 
-ThesaurusLoader::withSourceAt($thesaurusInputFilepath)->pipe(
+ThesaurusXMLLoader::withSourceAt($thesaurusInputFilepath)->pipe(
     ThesaurusJSONExporter::withDestinationAt($thesaurusOutputFilepath),
     $thesaurusMemoryDestination,
 )->run(); /* and we have to run it directly */
@@ -115,6 +121,7 @@ $paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths)->pip
             ),
         ),
     ),
+    $metaReferenceCollector,
 );
 
 
@@ -154,6 +161,7 @@ $graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath)->pipe(
             ),
         ),
     ),
+    $metaReferenceCollector,
 );
 
 
@@ -191,6 +199,25 @@ foreach ($loaders as $loader) {
     $loader->run();
 }
 
+
+$restrictedTermIds = array_map(
+    function ($metaReference) {
+        return $metaReference->getTerm();
+    },
+    array_values($metaReferenceCollector->getCollection()),
+);
+
+ThesaurusMemoryLoader::withMemory($thesaurusMemoryDestination)->pipe(
+    ThesaurusJSONExporter::withDestinationAt(
+        $reducedThesaurusOutputFilepath,
+        $restrictedTermIds,
+    ),
+)->run();
+
+
 $thesaurusMemoryDestination->cleanUp();
 $paintingsRestorationMemoryDestination->cleanUp();
 $graphicsRestorationMemoryDestination->cleanUp();
+
+
+$metaReferenceCollector->cleanUp();
