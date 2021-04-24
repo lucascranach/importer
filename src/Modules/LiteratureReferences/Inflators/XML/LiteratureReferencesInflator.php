@@ -22,6 +22,21 @@ class LiteratureReferencesInflator implements IInflator
     private static $ns = 'urn:crystal-reports:schemas:report-detail';
     private static $langSplitChar = '#';
 
+    private static $personRolesMapping = [
+        'Autor' => 'AUTHOR',
+        'Herausgeber' => 'PUBLISHER',
+        'Redaktion' => 'EDITORIAL_STAFF',
+        'Bearbeitung' => 'EDITING',
+        'Illustrator' => 'ILLUSTRATOR',
+        'Verlag' => 'PUBLISHING_HOUSE',
+        'unter Mitarbeit' => 'IN_COLLABORATION',
+        'Abbildungen' => 'ILLUSTRATIONS',
+        'Übersetzung' => 'TRANSLATION',
+        'Druck' => 'PRINT',
+        'Offizin' => 'OFFICIN',
+        'default' => 'UNKNOWN',
+    ];
+
     private static $primarySourceKey = 'Primary source';
 
     private function __construct()
@@ -570,7 +585,12 @@ class LiteratureReferencesInflator implements IInflator
 
             if ($roleElement) {
                 $roleStr = trim(strval($roleElement));
-                $person->setRole($roleStr);
+
+                $mappedRole = isset(self::$personRolesMapping[$roleStr])
+                    ? self::$personRolesMapping[$roleStr]
+                    : self::$personRolesMapping['default'];
+
+                $person->setRole($mappedRole);
             }
 
             /* Name */
