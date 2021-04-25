@@ -22,6 +22,12 @@ class LiteratureReferencesInflator implements IInflator
     private static $ns = 'urn:crystal-reports:schemas:report-detail';
     private static $langSplitChar = '#';
 
+    private static $inventoryNumberReplaceRegExpArr = [
+        '/^CDA\./',
+        '/^G_G_/',
+        '/^G_/',
+    ];
+
     private static $personRolesMapping = [
         'Autor' => 'AUTHOR',
         'Herausgeber' => 'PUBLISHER',
@@ -817,8 +823,15 @@ class LiteratureReferencesInflator implements IInflator
 
             if ($inventoryNumberElement) {
                 $inventoryNumberStr = trim(strval($inventoryNumberElement));
-                $connectedObjectDe->setInventoryNumber($inventoryNumberStr);
-                $connectedObjectEn->setInventoryNumber($inventoryNumberStr);
+
+                $cleanInventoryNumberStr = preg_replace(
+                    self::$inventoryNumberReplaceRegExpArr,
+                    '',
+                    $inventoryNumberStr,
+                );
+
+                $connectedObjectDe->setInventoryNumber($cleanInventoryNumberStr);
+                $connectedObjectEn->setInventoryNumber($cleanInventoryNumberStr);
             }
 
             /* CatalogNumber */
