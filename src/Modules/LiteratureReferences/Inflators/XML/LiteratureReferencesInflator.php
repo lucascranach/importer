@@ -4,6 +4,7 @@ namespace CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\
 
 use Error;
 use SimpleXMLElement;
+use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\LiteratureReference;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\Event;
@@ -41,6 +42,13 @@ class LiteratureReferencesInflator implements IInflator
         'Druck' => 'PRINT',
         'Offizin' => 'OFFICIN',
         'default' => 'UNKNOWN',
+    ];
+
+    private static $eventTypesLangMapping = [
+        'entstehungszeitraum' => [Language::DE, 'PERIOD_OF_ORIGIN'],
+        'period of origin' => [Language::EN, 'PERIOD_OF_ORIGIN'],
+        'second edition' => [Language::EN, 'SECOND_EDITION'],
+        'revised edition' => [Language::EN, 'REVISED_EDITION'],
     ];
 
     private static $primarySourceKey = 'Primary source';
@@ -472,8 +480,6 @@ class LiteratureReferencesInflator implements IInflator
             }
 
             $event = new Event;
-            $literatureReferenceDe->addEvent($event);
-            $literatureReferenceEn->addEvent($event);
 
             /* EventType */
             $eventTypeElement = self::findElementByXPath(
@@ -528,6 +534,28 @@ class LiteratureReferencesInflator implements IInflator
             if ($remarksElement) {
                 $remarksStr = trim(strval($remarksElement));
                 $event->setRemarks($remarksStr);
+            }
+
+
+            $eventType = strtolower($event->getType());
+
+            if (isset(self::$eventTypesLangMapping[$eventType])) {
+                $mappedEventType = self::$eventTypesLangMapping[$eventType];
+
+                $event->setType($mappedEventType[1]);
+
+                switch ($mappedEventType[0]) {
+                    case Language::DE:
+                        $literatureReferenceDe->addEvent($event);
+                        break;
+
+                    case Language::EN:
+                        $literatureReferenceEn->addEvent($event);
+                        break;
+                }
+            } else {
+                $literatureReferenceDe->addEvent($event);
+                $literatureReferenceEn->addEvent($event);
             }
         }
     }
