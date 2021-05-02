@@ -61,6 +61,15 @@ class PaintingInflator implements IInflator
         Language::EN => 'Owner',
     ];
 
+    private static $historicEventTypesLangMapping = [
+        'datierung' => [Language::DE, 'DATING'],
+        'dating' => [Language::EN, 'DATING'],
+        'auflage' => [Language::DE, 'EDITION'],
+        'edition' => [Language::EN, 'EDITION'],
+    ];
+
+    private static $historicEventTypeNotEntered = '[not entered]';
+
     private static $inventoryNumberReplaceRegExpArr = [
         '/^CDA\./',
     ];
@@ -606,81 +615,83 @@ class PaintingInflator implements IInflator
         /* HistoricEventInformation */
         $historicEventDetailElements = $node->{'Section'}[13]->{'Subreport'}->{'Details'};
 
-        for ($i = 0; $i < count($historicEventDetailElements); $i += 2) {
-            $historicEventArr = [];
+        foreach ($historicEventDetailElements as $historicEventDetailElement) {
+            $historicEventInformation = new HistoricEventInformation;
 
-            // de
-            $detailDeElement = $historicEventDetailElements[$i];
-            if (!is_null($detailDeElement) && $detailDeElement->count() > 0) {
-                $historicEventInformation = new HistoricEventInformation;
-                $historicEventArr[] = $historicEventInformation;
+            /* event type */
+            $eventTypeElement = self::findElementByXPath(
+                $historicEventDetailElement,
+                'Field[@FieldName="{OBJDATES.EventType}"]/FormattedValue',
+            );
+            if ($eventTypeElement) {
+                $eventTypeStr = trim(strval($eventTypeElement));
+                $historicEventInformation->setEventType($eventTypeStr);
+            }
+
+            /* date text */
+            $dateTextElement = self::findElementByXPath(
+                $historicEventDetailElement,
+                'Field[@FieldName="{OBJDATES.DateText}"]/FormattedValue',
+            );
+            if ($dateTextElement) {
+                $dateTextStr = trim(strval($dateTextElement));
+                $historicEventInformation->setText($dateTextStr);
+            }
+
+            /* begin date */
+            $dateBeginElement = self::findElementByXPath(
+                $historicEventDetailElement,
+                'Field[@FieldName="{@Anfangsdatum}"]/FormattedValue',
+            );
+            if ($dateBeginElement) {
+                $dateBeginNumber = trim(strval($dateBeginElement));
+                $historicEventInformation->setBegin($dateBeginNumber);
+            }
+
+            /* end date */
+            $dateEndElement = self::findElementByXPath(
+                $historicEventDetailElement,
+                'Field[@FieldName="{@Enddatum }"]/FormattedValue',
+            );
+            if ($dateEndElement) {
+                $dateEndNumber = trim(strval($dateEndElement));
+                $historicEventInformation->setEnd($dateEndNumber);
+            }
+
+            /* remarks */
+            $dateRemarksElement = self::findElementByXPath(
+                $historicEventDetailElement,
+                'Field[@FieldName="{OBJDATES.Remarks}"]/FormattedValue',
+            );
+            if ($dateRemarksElement) {
+                $dateRemarksNumber = trim(strval($dateRemarksElement));
+                $historicEventInformation->setRemarks($dateRemarksNumber);
+            }
+
+
+            $eventType = strtolower($historicEventInformation->getEventType());
+
+            if (empty($eventType) || $eventType === self::$historicEventTypeNotEntered) {
+                continue;
+            }
+
+            if (isset(self::$historicEventTypesLangMapping[$eventType])) {
+                $mappedEventType = self::$historicEventTypesLangMapping[$eventType];
+
+                $historicEventInformation->setEventType($mappedEventType[1]);
+
+                switch ($mappedEventType[0]) {
+                    case Language::DE:
+                        $datingDe->addHistoricEventInformation($historicEventInformation);
+                        break;
+
+                    case Language::EN:
+                        $datingEn->addHistoricEventInformation($historicEventInformation);
+                        break;
+                }
+            } else {
                 $datingDe->addHistoricEventInformation($historicEventInformation);
-            }
-
-            // en
-            $detailEnElement = $historicEventDetailElements[$i + 1];
-            if (!is_null($detailEnElement) && $detailEnElement->count() > 0) {
-                $historicEventInformation = new HistoricEventInformation;
-                $historicEventArr[] = $historicEventInformation;
                 $datingEn->addHistoricEventInformation($historicEventInformation);
-            }
-
-            for ($j = 0; $j < count($historicEventArr); $j += 1) {
-                $historicEventDetailElement = $historicEventDetailElements[$i + $j];
-
-                if (is_null($historicEventDetailElement) || !isset($historicEventArr[$j])) {
-                    continue;
-                }
-
-                /* event type */
-                $eventTypeElement = self::findElementByXPath(
-                    $historicEventDetailElement,
-                    'Field[@FieldName="{OBJDATES.EventType}"]/FormattedValue',
-                );
-                if ($eventTypeElement) {
-                    $eventTypeStr = trim(strval($eventTypeElement));
-                    $historicEventArr[$j]->setEventType($eventTypeStr);
-                }
-
-                /* date text */
-                $dateTextElement = self::findElementByXPath(
-                    $historicEventDetailElement,
-                    'Field[@FieldName="{OBJDATES.DateText}"]/FormattedValue',
-                );
-                if ($dateTextElement) {
-                    $dateTextStr = trim(strval($dateTextElement));
-                    $historicEventArr[$j]->setText($dateTextStr);
-                }
-
-                /* begin date */
-                $dateBeginElement = self::findElementByXPath(
-                    $historicEventDetailElement,
-                    'Field[@FieldName="{@Anfangsdatum}"]/FormattedValue',
-                );
-                if ($dateBeginElement) {
-                    $dateBeginNumber = intval(trim(strval($dateBeginElement)));
-                    $historicEventArr[$j]->setBegin($dateBeginNumber);
-                }
-
-                /* end date */
-                $dateEndElement = self::findElementByXPath(
-                    $historicEventDetailElement,
-                    'Field[@FieldName="{@Enddatum }"]/FormattedValue',
-                );
-                if ($dateEndElement) {
-                    $dateEndNumber = intval(trim(strval($dateEndElement)));
-                    $historicEventArr[$j]->setEnd($dateEndNumber);
-                }
-
-                /* remarks */
-                $dateRemarksElement = self::findElementByXPath(
-                    $historicEventDetailElement,
-                    'Field[@FieldName="{OBJDATES.Remarks}"]/FormattedValue',
-                );
-                if ($dateRemarksElement) {
-                    $dateRemarksNumber = trim(strval($dateRemarksElement));
-                    $historicEventArr[$j]->setRemarks($dateRemarksNumber);
-                }
             }
         }
     }
