@@ -24,6 +24,7 @@ class LiteratureReferencesInflator implements IInflator
     private static $langSplitChar = '#';
 
     private static $inventoryNumberReplaceRegExpArr = [
+        '/^GWN_/',
         '/^CDA\./',
         '/^G_G_/',
         '/^G_/',
