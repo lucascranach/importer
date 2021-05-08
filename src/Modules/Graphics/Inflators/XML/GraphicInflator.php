@@ -175,6 +175,16 @@ class GraphicInflator implements IInflator
                     continue;
                 }
 
+                /* displayOrder */
+                $displayOrderElement = self::findElementByXPath(
+                    $currDetails,
+                    'Field[@FieldName="{CONXREFS.DisplayOrder}"]/FormattedValue',
+                );
+                if ($displayOrderElement) {
+                    $displayOrder = intval(strval($displayOrderElement));
+                    $personsArr[$j]->setDisplayOrder($displayOrder);
+                }
+
                 /* role */
                 $roleElement = self::findElementByXPath(
                     $currDetails,
