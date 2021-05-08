@@ -137,7 +137,7 @@ class RemoteImageExistenceChecker extends Hybrid
             if (!is_null($result)) {
                 $rawImagesData = $result;
             } else {
-                echo '  Missing remote images for \'' . $id . "' (" . $imageDataURL .")\n";
+                echo '  Missing remote images for \'' . $id . "' (" . $imageDataURL .")\n\tCheck via https://lucascranach.org/admin/image-browser/index.html?artefact=" . $id . "\n";
             }
 
             $dataToCache = $this->createCacheData($rawImagesData);
