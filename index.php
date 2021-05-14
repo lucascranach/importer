@@ -11,6 +11,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsLoader;
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsJSONLangExistenceTypeExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterminer;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MapToSearchableGraphic;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithThesaurus as GraphicsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRestorations as GraphicsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MetadataFiller as GraphicsMetadataFiller;
@@ -23,6 +24,7 @@ use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\Litera
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsLoader;
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsElasticsearchLangExporter;
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MapToSearchablePainting;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithThesaurus as PaintingsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithRestorations as PaintingsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MetadataFiller as PaintingsMetadataFiller;
@@ -103,6 +105,7 @@ $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt
     'remotePaintingsImageExistenceChecker'
 );
 $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
+$paintingsMapToSearchablePainting = MapToSearchablePainting::new();
 $paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $paintingsMetadataFiller = PaintingsMetadataFiller::new();
 $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt($paintingsOutputFilepath);
@@ -115,8 +118,10 @@ $paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths)->pip
         $paintingsRestorationExtender->pipe(
             $paintingsMetadataFiller->pipe(
                 $paintingsDestination,
-                $paintingsThesaurusExtender->pipe(
-                    $paintingsElasticsearchBulkDestination,
+                $paintingsMapToSearchablePainting->pipe(
+                    $paintingsThesaurusExtender->pipe(
+                        $paintingsElasticsearchBulkDestination,
+                    ),
                 ),
             ),
         ),
@@ -141,6 +146,7 @@ $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
 );
 $graphicsConditionDeterminer = ConditionDeterminer::new();
 $graphicsRestorationExtender = GraphicsExtenderWithRestorations::new($graphicsRestorationMemoryDestination);
+$graphicsMapToSearchableGraphic = MapToSearchableGraphic::new();
 $graphicsThesaurusExtender = GraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $graphicsMetadataFiller = GraphicsMetadataFiller::new();
 $graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt($graphicsOutputFilepath);
@@ -154,8 +160,10 @@ $graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath)->pipe(
             $graphicsRestorationExtender->pipe(
                 $graphicsMetadataFiller->pipe(
                     $graphicsDestination,
-                    $graphicsThesaurusExtender->pipe(
-                        $graphicsElasticsearchBulkDestination,
+                    $graphicsMapToSearchableGraphic->pipe(
+                        $graphicsThesaurusExtender->pipe(
+                            $graphicsElasticsearchBulkDestination,
+                        ),
                     ),
                 ),
             ),

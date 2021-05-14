@@ -5,7 +5,6 @@ namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 use Error;
 use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\ThesaurusItem;
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Search\SearchableGraphic;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Entities\ThesaurusTerm;
@@ -35,17 +34,16 @@ class ExtenderWithThesaurus extends Hybrid
         return $transformer;
     }
 
+
     public function handleItem($item): bool
     {
-        if (!($item instanceof Graphic)) {
-            throw new Error('Pushed item is not of expected class \'Graphic\'');
+        if (!($item instanceof SearchableGraphic)) {
+            throw new Error('Pushed item is not of expected class \'SearchableGraphic\'');
         }
 
-        $newItem = $this->mapToSearchableGraphic($item);
+        $this->extendWithThesaurusData($item);
 
-        $this->extendWithThesaurusData($newItem);
-
-        $this->next($newItem);
+        $this->next($item);
         return true;
     }
 
@@ -57,18 +55,6 @@ class ExtenderWithThesaurus extends Hybrid
     {
         parent::done($producer);
         $this->cleanUp();
-    }
-
-
-    private function mapToSearchableGraphic(Graphic $graphic): SearchableGraphic
-    {
-        $searchableGraphic = new SearchableGraphic();
-
-        foreach (get_object_vars($graphic) as $key => $value) {
-            $searchableGraphic->$key = $value;
-        }
-
-        return $searchableGraphic;
     }
 
 
