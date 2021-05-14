@@ -26,6 +26,7 @@ use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsJSONLang
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MapToSearchablePainting;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithThesaurus as PaintingsExtenderWithThesaurus;
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithBasicFilterValues as PaintingsExtenderWithBasicFilterValues;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithRestorations as PaintingsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MetadataFiller as PaintingsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Archivals\Loaders\XML\ArchivalsLoader;
@@ -106,6 +107,7 @@ $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt
 );
 $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
 $paintingsMapToSearchablePainting = MapToSearchablePainting::new();
+$paintingsBasicFilterValues = PaintingsExtenderWithBasicFilterValues::new();
 $paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $paintingsMetadataFiller = PaintingsMetadataFiller::new();
 $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt($paintingsOutputFilepath);
@@ -120,7 +122,9 @@ $paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths)->pip
                 $paintingsDestination,
                 $paintingsMapToSearchablePainting->pipe(
                     $paintingsThesaurusExtender->pipe(
-                        $paintingsElasticsearchBulkDestination,
+                        $paintingsBasicFilterValues->pipe(
+                            $paintingsElasticsearchBulkDestination,
+                        ),
                     ),
                 ),
             ),
