@@ -56,6 +56,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
         $basicFilters = [];
 
         $this->extendBasicFiltersForAttribution($item, $basicFilters);
+        $this->extendBasicFiltersForCollectionAndRepository($item, $basicFilters);
 
         $item->addBasicFilters($basicFilters);
     }
@@ -127,6 +128,36 @@ class ExtenderWithBasicFilterValues extends Hybrid
         }
 
         return !!preg_match($ruleValue, $value);
+    }
+
+
+    private function extendBasicFiltersForCollectionAndRepository(
+        SearchablePainting $item,
+        array &$basicFilters
+    ):void {
+        $collectionAndRepositoryCheckItems = array_filter(
+            $this->filters[self::COLLECTION_REPOSITORY],
+            function ($item) {
+                return isset($item['filters']);
+            },
+        );
+
+        foreach ($collectionAndRepositoryCheckItems as $checkItem) {
+            foreach ($checkItem['filters'] as $matchFilterRule) {
+                if (!isset($matchFilterRule['collection_repository'])) {
+                    continue;
+                }
+
+                $regExp = $matchFilterRule['collection_repository'];
+
+                $matchingRepository = !!preg_match($regExp, $item->getRepository());
+                $matchingOwner = !!preg_match($regExp, $item->getOwner());
+
+                if ($matchingRepository || $matchingOwner) {
+                    $basicFilters[$checkItem['id']] = true;
+                }
+            }
+        }
     }
 
 
