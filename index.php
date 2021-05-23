@@ -41,6 +41,7 @@ use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryEx
 $date = '20210408';
 $inputDirectory = './input/' . $date;
 $destDirectory = './docs/' . $date;
+$filtersDirectory = './filters';
 
 
 /* Inputfiles */
@@ -64,6 +65,8 @@ $literatureInputFilepaths = [
     $inputDirectory . '/CDA_Literaturverweise_P2_' . $date . '.xml',
 ];
 $archivalsInputFilepath = $inputDirectory . '/CDA-A_Datenuebersicht_' . $date . '.xml';
+
+$filterDefinitionsFilepath = $filtersDirectory . '/custom_filters.json';
 
 
 /* Outputfiles */
@@ -107,7 +110,7 @@ $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt
 );
 $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
 $paintingsMapToSearchablePainting = MapToSearchablePainting::new();
-$paintingsBasicFilterValues = PaintingsExtenderWithBasicFilterValues::new();
+$paintingsBasicFilterValues = PaintingsExtenderWithBasicFilterValues::withCustomFilterDefinitionsAt($filterDefinitionsFilepath);
 $paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $paintingsMetadataFiller = PaintingsMetadataFiller::new();
 $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt($paintingsOutputFilepath);
