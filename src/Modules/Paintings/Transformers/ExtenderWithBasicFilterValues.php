@@ -57,6 +57,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
         $this->extendBasicFiltersForAttribution($item, $basicFilters);
         $this->extendBasicFiltersForCollectionAndRepository($item, $basicFilters);
+        $this->extendBasicFiltersForExaminationAnalysis($item, $basicFilters);
 
         $item->addBasicFilters($basicFilters);
     }
@@ -155,6 +156,61 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
                 if ($matchingRepository || $matchingOwner) {
                     $basicFilters[$checkItem['id']] = true;
+                }
+            }
+        }
+    }
+
+
+    private function extendBasicFiltersForExaminationAnalysis(
+        SearchablePainting $item,
+        array &$basicFilters
+    ):void {
+        $metadata = $item->getMetadata();
+        if (is_null($metadata)) {
+            return;
+        }
+
+        $langCode = $metadata->getLangCode();
+
+        $examinationAnalysisCheckItems = array_filter(
+            $this->filters[self::EXAMINATION_ANALYSIS],
+            function ($item) {
+                return isset($item['filters']);
+            },
+        );
+
+        $keywords = array_reduce(
+            $item->getRestorationSurveys(),
+            function ($acc, $survey) {
+                return array_reduce(
+                    $survey->getTests(),
+                    function ($testAcc, $test) {
+                        foreach ($test->getKeywords() as $keyword) {
+                            $testAcc[] = $keyword->getName();
+                        }
+
+                        return $testAcc;
+                    },
+                    $acc,
+                );
+            },
+            [],
+        );
+
+        foreach ($keywords as $keyword) {
+            foreach ($examinationAnalysisCheckItems as $checkItem) {
+                foreach ($checkItem['filters'] as $matchFilterRule) {
+                    if (!isset($matchFilterRule['keyword'])
+                        || !isset($matchFilterRule['keyword'][$langCode])) {
+                        continue;
+                    }
+
+                    $regExp = $matchFilterRule['keyword'][$langCode];
+
+                    if (!!preg_match($regExp, $keyword)) {
+                        $basicFilters[$checkItem['id']] = true;
+                    }
                 }
             }
         }
