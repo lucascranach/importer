@@ -82,10 +82,11 @@ class ExtenderWithBasicFilterValues extends Hybrid
         );
 
         foreach ($item->getPersons() as $person) {
-            foreach ($attributionCheckItems as $attributionCheckItem) {
-                foreach ($attributionCheckItem['filters'] as $matchFilterRule) {
+            foreach ($attributionCheckItems as $checkItem) {
+                foreach ($checkItem['filters'] as $matchFilterRule) {
                     if ($this->matchesAttributionFilterRule($person, $matchFilterRule, $langCode)) {
-                        $basicFilters[$attributionCheckItem['id']] = true;
+                        // $basicFilters[$checkItem['id']] = true;
+                        self::addBasicFilter($basicFilters, $checkItem['id']);
                     }
                 }
             }
@@ -155,7 +156,8 @@ class ExtenderWithBasicFilterValues extends Hybrid
                 $matchingOwner = !!preg_match($regExp, $item->getOwner());
 
                 if ($matchingRepository || $matchingOwner) {
-                    $basicFilters[$checkItem['id']] = true;
+                    // $basicFilters[$checkItem['id']] = true;
+                    self::addBasicFilter($basicFilters, $checkItem['id']);
                 }
             }
         }
@@ -209,7 +211,8 @@ class ExtenderWithBasicFilterValues extends Hybrid
                     $regExp = $matchFilterRule['keyword'][$langCode];
 
                     if (!!preg_match($regExp, $keyword)) {
-                        $basicFilters[$checkItem['id']] = true;
+                        // $basicFilters[$checkItem['id']] = true;
+                        self::addBasicFilter($basicFilters, $checkItem['id']);
                     }
                 }
             }
@@ -280,5 +283,25 @@ class ExtenderWithBasicFilterValues extends Hybrid
         array_unshift($arr, $item);
 
         return $arr;
+    }
+
+
+    private static function addBasicFilter(array &$basicFilters, string $filterId)
+    {
+        $splitFilterId = explode('.', $filterId, 2);
+
+        if (count($splitFilterId) !== 2) {
+            return;
+        }
+
+        list($category, $remainingFilterId) = $splitFilterId;
+
+        if (!isset($basicFilters[$category])) {
+            $basicFilters[$category] = [];
+        }
+
+        if (!in_array($remainingFilterId, $basicFilters[$category], true)) {
+            $basicFilters[$category][] = $remainingFilterId;
+        }
     }
 }
