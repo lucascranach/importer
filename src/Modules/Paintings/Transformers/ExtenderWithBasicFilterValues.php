@@ -53,7 +53,12 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
     private function extendWithBasicFilterValues(SearchablePainting $item): void
     {
-        $basicFilters = [];
+        $basicFilters = [
+            self::ATTRIBUTION => [],
+            self::DATING => [],
+            self::COLLECTION_REPOSITORY => [],
+            self::EXAMINATION_ANALYSIS => [],
+        ];
 
         $this->extendBasicFiltersForAttribution($item, $basicFilters);
         $this->extendBasicFiltersForCollectionAndRepository($item, $basicFilters);
