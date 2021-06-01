@@ -7,7 +7,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Search\SearchableGraphic;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
-class mapToSearchableGraphic extends Hybrid
+class MapToSearchableGraphic extends Hybrid
 {
     private function __construct()
     {

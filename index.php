@@ -36,7 +36,12 @@ use CranachDigitalArchive\Importer\Modules\Archivals\Transformers\MetadataFiller
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader as ThesaurusXMLLoader;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\Memory\ThesaurusLoader as ThesaurusMemoryLoader;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
+use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ReducedThesaurusMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
+use CranachDigitalArchive\Importer\Modules\Filters\Loaders\JSON\CustomFiltersLoader;
+use CranachDigitalArchive\Importer\Modules\Filters\Exporters\FilterExporter;
+use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
+use CranachDigitalArchive\Importer\Modules\Filters\Loaders\Memory\CustomFiltersAndThesaurusLoader;
 
 $date = '20210408';
 $inputDirectory = './input/' . $date;
@@ -66,12 +71,11 @@ $literatureInputFilepaths = [
 ];
 $archivalsInputFilepath = $inputDirectory . '/CDA-A_Datenuebersicht_' . $date . '.xml';
 
-$filterDefinitionsFilepath = $filtersDirectory . '/custom_filters.json';
+$customFilterDefinitionsFilepath = $filtersDirectory . '/custom_filters.json';
 
 
 /* Outputfiles */
 $thesaurusOutputFilepath = $destDirectory . '/cda-thesaurus-v2.json';
-$reducedThesaurusOutputFilepath = $destDirectory . '/cda-reduced-thesaurus-v2.json';
 $paintingsOutputFilepath = $destDirectory . '/cda-paintings-v2.json';
 $paintingsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-paintings-v2.bulk';
 $graphicsOutputFilepath = $destDirectory . '/cda-graphics-v2.json';
@@ -79,6 +83,7 @@ $graphicsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-grap
 $literatureReferenceOutputFilepath = $destDirectory . '/cda-literaturereferences-v2.json';
 $archivalsOutputFilepath = $destDirectory . '/cda-archivals-v2.json';
 $archivalsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-archivals-v2.bulk';
+$filtersOutputFilepath = $destDirectory . '/cda-filters.json';
 
 
 /* MetaReferences -> Thesaurus-Links */
@@ -87,11 +92,21 @@ $metaReferenceCollector = MetaReferenceCollector::new();
 
 /* Thesaurus */
 $thesaurusMemoryDestination = ThesaurusMemoryExporter::new(); /* needed later for graphics and paintings */
+$thesaurusMemoryLoader = ThesaurusMemoryLoader::withMemory($thesaurusMemoryDestination);
 
 ThesaurusXMLLoader::withSourceAt($thesaurusInputFilepath)->pipe(
     ThesaurusJSONExporter::withDestinationAt($thesaurusOutputFilepath),
     $thesaurusMemoryDestination,
 )->run(); /* and we have to run it directly */
+
+
+/* Filters */
+$customFiltersLoader = CustomFiltersLoader::withSourceAt($customFilterDefinitionsFilepath);
+$customFiltersMemoryDestination = CustomFiltersMemoryExporter::new(); /* needed later for graphics and paintings */
+
+$customFiltersLoader->pipe(
+    $customFiltersMemoryDestination,
+)->run();
 
 
 /* PaintingsRestorations */
@@ -110,7 +125,7 @@ $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt
 );
 $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
 $paintingsMapToSearchablePainting = MapToSearchablePainting::new();
-$paintingsBasicFilterValues = PaintingsExtenderWithBasicFilterValues::withCustomFilterDefinitionsAt($filterDefinitionsFilepath);
+$paintingsBasicFilterValues = PaintingsExtenderWithBasicFilterValues::new($customFiltersMemoryDestination);
 $paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $paintingsMetadataFiller = PaintingsMetadataFiller::new();
 $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt($paintingsOutputFilepath);
@@ -222,14 +237,15 @@ $restrictedTermIds = array_map(
     array_values($metaReferenceCollector->getCollection()),
 );
 
-ThesaurusMemoryLoader::withMemory($thesaurusMemoryDestination)->pipe(
-    ThesaurusJSONExporter::withDestinationAt(
-        $reducedThesaurusOutputFilepath,
-        $restrictedTermIds,
-    ),
+CustomFiltersAndThesaurusLoader::withMemory(
+    $customFiltersMemoryDestination,
+    ReducedThesaurusMemoryExporter::new($thesaurusMemoryDestination, $restrictedTermIds),
+)->pipe(
+    FilterExporter::withDestinationAt($filtersOutputFilepath),
 )->run();
 
 
+$customFiltersMemoryDestination->cleanUp();
 $thesaurusMemoryDestination->cleanUp();
 $paintingsRestorationMemoryDestination->cleanUp();
 $graphicsRestorationMemoryDestination->cleanUp();

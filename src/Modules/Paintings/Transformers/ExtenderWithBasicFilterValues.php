@@ -4,12 +4,13 @@ namespace CranachDigitalArchive\Importer\Modules\Paintings\Transformers;
 
 use Error;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search\SearchablePainting;
+use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class ExtenderWithBasicFilterValues extends Hybrid
 {
     const ATTRIBUTION = 'attribution';
-    const DATING = 'dating';
     const COLLECTION_REPOSITORY = 'collection_repository';
     const EXAMINATION_ANALYSIS = 'examination_analysis';
 
@@ -22,18 +23,15 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    public static function withCustomFilterDefinitionsAt(string $pathToFilterDefinitionsFile): self
+    public static function new(CustomFiltersMemoryExporter $memoryExporter): self
     {
         $transformer = new self;
 
-        if (!file_exists($pathToFilterDefinitionsFile)) {
-            throw new Error('Custom filter definitions not found at: ' . $pathToFilterDefinitionsFile);
-        }
+        $customFiltersFromMemory = $memoryExporter->getData();
 
-        $rawFilters = json_decode(file_get_contents($pathToFilterDefinitionsFile), true);
-
-        $transformer->filters = self::prepareFilterItems($rawFilters);
-
+        $transformer->filters = !is_null($customFiltersFromMemory)
+            ? self::prepareFilterItems($customFiltersFromMemory)
+            : [];
         return $transformer;
     }
 
@@ -55,7 +53,6 @@ class ExtenderWithBasicFilterValues extends Hybrid
     {
         $basicFilters = [
             self::ATTRIBUTION => [],
-            self::DATING => [],
             self::COLLECTION_REPOSITORY => [],
             self::EXAMINATION_ANALYSIS => [],
         ];
@@ -82,16 +79,15 @@ class ExtenderWithBasicFilterValues extends Hybrid
         $attributionCheckItems = array_filter(
             $this->filters[self::ATTRIBUTION],
             function ($item) {
-                return isset($item['filters']);
+                return $item->hasFilters();
             },
         );
 
         foreach ($item->getPersons() as $person) {
             foreach ($attributionCheckItems as $checkItem) {
-                foreach ($checkItem['filters'] as $matchFilterRule) {
+                foreach ($checkItem->getFilters() as $matchFilterRule) {
                     if ($this->matchesAttributionFilterRule($person, $matchFilterRule, $langCode)) {
-                        // $basicFilters[$checkItem['id']] = true;
-                        self::addBasicFilter($basicFilters, $checkItem['id']);
+                        self::addBasicFilter($basicFilters, $checkItem->getId());
                     }
                 }
             }
@@ -99,7 +95,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private function matchesAttributionFilterRule($person, $matchFilterRule, $langCode): bool
+    private function matchesAttributionFilterRule(Person $person, array $matchFilterRule, string $langCode): bool
     {
         $isAMatch = false;
 
@@ -145,12 +141,12 @@ class ExtenderWithBasicFilterValues extends Hybrid
         $collectionAndRepositoryCheckItems = array_filter(
             $this->filters[self::COLLECTION_REPOSITORY],
             function ($item) {
-                return isset($item['filters']);
+                return $item->hasFilters();
             },
         );
 
         foreach ($collectionAndRepositoryCheckItems as $checkItem) {
-            foreach ($checkItem['filters'] as $matchFilterRule) {
+            foreach ($checkItem->getFilters() as $matchFilterRule) {
                 if (!isset($matchFilterRule['collection_repository'])) {
                     continue;
                 }
@@ -161,8 +157,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
                 $matchingOwner = !!preg_match($regExp, $item->getOwner());
 
                 if ($matchingRepository || $matchingOwner) {
-                    // $basicFilters[$checkItem['id']] = true;
-                    self::addBasicFilter($basicFilters, $checkItem['id']);
+                    self::addBasicFilter($basicFilters, $checkItem->getId());
                 }
             }
         }
@@ -183,7 +178,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
         $examinationAnalysisCheckItems = array_filter(
             $this->filters[self::EXAMINATION_ANALYSIS],
             function ($item) {
-                return isset($item['filters']);
+                return $item->hasFilters();
             },
         );
 
@@ -207,7 +202,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
         foreach ($keywords as $keyword) {
             foreach ($examinationAnalysisCheckItems as $checkItem) {
-                foreach ($checkItem['filters'] as $matchFilterRule) {
+                foreach ($checkItem->getFilters() as $matchFilterRule) {
                     if (!isset($matchFilterRule['keyword'])
                         || !isset($matchFilterRule['keyword'][$langCode])) {
                         continue;
@@ -216,8 +211,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
                     $regExp = $matchFilterRule['keyword'][$langCode];
 
                     if (!!preg_match($regExp, $keyword)) {
-                        // $basicFilters[$checkItem['id']] = true;
-                        self::addBasicFilter($basicFilters, $checkItem['id']);
+                        self::addBasicFilter($basicFilters, $checkItem->getId());
                     }
                 }
             }
@@ -230,13 +224,9 @@ class ExtenderWithBasicFilterValues extends Hybrid
         $filters = [];
 
         foreach ($items as $item) {
-            switch ($item['id']) {
+            switch ($item->getId()) {
                 case self::ATTRIBUTION:
                     $filters[self::ATTRIBUTION] = self::flattenFilterItemHierarchy($item);
-                    break;
-
-                case self::DATING:
-                    $filters[self::DATING] = self::flattenFilterItemHierarchy($item);
                     break;
 
                 case self::COLLECTION_REPOSITORY:
@@ -248,16 +238,12 @@ class ExtenderWithBasicFilterValues extends Hybrid
                     break;
 
                 default:
-                    echo 'Unknown filter category: ' . $item['id'] . "\n";
+                    echo 'Unknown filter category: ' . $item->getId() . "\n";
             }
         }
 
         if (!isset($filters[self::ATTRIBUTION])) {
             throw new Error('Missing custom attribution filters!');
-        }
-
-        if (!isset($filters[self::DATING])) {
-            throw new Error('Missing custom dating filters!');
         }
 
         if (!isset($filters[self::COLLECTION_REPOSITORY])) {
@@ -276,13 +262,10 @@ class ExtenderWithBasicFilterValues extends Hybrid
     {
         $arr = [];
 
-        if (isset($item['children'])) {
-            foreach ($item['children'] as $childItem) {
-                $subArr = self::flattenFilterItemHierarchy($childItem);
+        foreach ($item->getChildren() as $childItem) {
+            $subArr = self::flattenFilterItemHierarchy($childItem);
 
-                $arr = array_merge($arr, $subArr);
-            }
-            unset($item['children']);
+            $arr = array_merge($arr, $subArr);
         }
 
         array_unshift($arr, $item);

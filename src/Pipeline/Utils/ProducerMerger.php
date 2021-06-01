@@ -33,6 +33,7 @@ final class ProducerMerger extends Hybrid
         return $nodeMerger;
     }
 
+
     public function handleItem($item): bool
     {
         $this->next($item);
@@ -54,7 +55,7 @@ final class ProducerMerger extends Hybrid
         }
 
         if (count($this->doneProducers) === count($this->producersToForward)) {
-            $this->notifyDone($producer);
+            $this->notifyDone($this);
         }
     }
 }
