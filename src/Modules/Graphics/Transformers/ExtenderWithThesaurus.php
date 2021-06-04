@@ -96,7 +96,7 @@ class ExtenderWithThesaurus extends Hybrid
     {
         $termList = [];
 
-        $dKultIdentifier = $this->getDKultIdentifierForTerm($term);
+        $dKultIdentifier = $this->getIdForTerm($term);
 
         if (!is_null($dKultIdentifier) && $dKultIdentifier === $identifier) {
             $termList = [$term];
@@ -115,10 +115,9 @@ class ExtenderWithThesaurus extends Hybrid
     }
 
 
-    private function getDKultIdentifierForTerm(ThesaurusTerm $term): ?string
+    private function getIdForTerm(ThesaurusTerm $term): ?string
     {
-        $idKey = 'dkultTermIdentifier';
-        return $term->getAlt($idKey);
+        return $term->getAlt(ThesaurusTerm::ALT_DKULT_TERM_IDENTIFIER);
     }
 
 
@@ -131,7 +130,7 @@ class ExtenderWithThesaurus extends Hybrid
         for ($i = 0; $i < count($terms); $i += 1) {
             $currTerm = $terms[$i];
 
-            $id = $this->getDKultIdentifierForTerm($currTerm);
+            $id = $this->getIdForTerm($currTerm);
 
             $item = new FilterInfoItem();
 
