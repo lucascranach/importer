@@ -10,8 +10,7 @@ use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
  */
 class SearchablePainting extends Painting
 {
-    public $basicFilters = [];
-    public $thesaurus = [];
+    public $filterInfos = [];
 
 
     public function __construct()
@@ -20,26 +19,14 @@ class SearchablePainting extends Painting
     }
 
 
-    public function addBasicFilters(array $basicFilters): void
+    public function addFilterInfoItems(array $filterInfoItems): void
     {
-        $this->basicFilters = $basicFilters;
+        $this->filterInfos = array_merge($this->filterInfos, $filterInfoItems);
     }
 
 
-    public function getBasicFilters(): array
+    public function getFilterInfoItems(): array
     {
-        return $this->basicFilters;
-    }
-
-
-    public function addThesaurusItems(array $thesaurusItems): void
-    {
-        $this->thesaurus = array_merge($this->thesaurus, $thesaurusItems);
-    }
-
-
-    public function getThesaurusItems(): array
-    {
-        return $this->thesaurus;
+        return $this->filterInfos;
     }
 }

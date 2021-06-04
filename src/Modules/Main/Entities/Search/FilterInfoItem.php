@@ -3,13 +3,13 @@
 namespace CranachDigitalArchive\Importer\Modules\Main\Entities\Search;
 
 /**
- * Representing a single searchable thesaurus item
+ * Representing a single filter info item
  */
-class ThesaurusItem
+class FilterInfoItem
 {
     public $id = null;
     public $parentId = null;
-    public $term = '';
+    public $text = '';
 
 
     public function __construct()
@@ -29,7 +29,7 @@ class ThesaurusItem
     }
 
 
-    public function setParentId(string $parentId): void
+    public function setParentId(?string $parentId): void
     {
         $this->parentId = $parentId;
     }
@@ -41,14 +41,14 @@ class ThesaurusItem
     }
 
 
-    public function setTerm(string $term): void
+    public function setText(string $text): void
     {
-        $this->term = $term;
+        $this->text = $text;
     }
 
 
-    public function getTerm(): string
+    public function getText(): string
     {
-        return $this->term;
+        return $this->text;
     }
 }

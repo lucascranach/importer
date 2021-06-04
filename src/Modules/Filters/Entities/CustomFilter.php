@@ -16,6 +16,7 @@ class CustomFilter
     ];
     public $children = [];
     public $filters = [];
+    public $parentId = null;
 
 
     public function __construct()
@@ -92,5 +93,17 @@ class CustomFilter
     public function hasFilters(): bool
     {
         return count($this->filters) > 0;
+    }
+
+
+    public function setParentId(?string $parentId): void
+    {
+        $this->parentId = $parentId;
+    }
+
+
+    public function getParentId(): ?string
+    {
+        return $this->parentId;
     }
 }

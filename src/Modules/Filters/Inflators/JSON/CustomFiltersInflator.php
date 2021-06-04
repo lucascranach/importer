@@ -21,8 +21,10 @@ class CustomFiltersInflator implements IInflator
     public static function inflate(
         array $item,
         CustomFilter $customFilter,
+        ?string $parentId = null,
     ): void {
         $customFilter->setId($item['id']);
+        $customFilter->setParentId($parentId);
 
         foreach ($item['text'] as $langCode => $langText) {
             if (!Language::isSupportedLanguage($langCode)) {
@@ -41,7 +43,7 @@ class CustomFiltersInflator implements IInflator
         if (isset($item['children'])) {
             foreach ($item['children'] as $child) {
                 $childCustomFilter = new CustomFilter();
-                self::inflate($child, $childCustomFilter);
+                self::inflate($child, $childCustomFilter, $item['id']);
                 $customFilter->addChild($childCustomFilter);
             }
         }

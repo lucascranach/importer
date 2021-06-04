@@ -4,7 +4,7 @@ namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
 use Error;
 use CranachDigitalArchive\Importer\Language;
-use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\ThesaurusItem;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\FilterInfoItem;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Search\SearchableGraphic;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Entities\ThesaurusTerm;
@@ -41,7 +41,7 @@ class ExtenderWithThesaurus extends Hybrid
             throw new Error('Pushed item is not of expected class \'SearchableGraphic\'');
         }
 
-        $this->extendWithThesaurusData($item);
+        $this->extendWithThesaurusFilterInfos($item);
 
         $this->next($item);
         return true;
@@ -58,7 +58,7 @@ class ExtenderWithThesaurus extends Hybrid
     }
 
 
-    private function extendWithThesaurusData(SearchableGraphic $graphic): void
+    private function extendWithThesaurusFilterInfos(SearchableGraphic $graphic): void
     {
         foreach ($graphic->getKeywords() as $keyword) {
             if ($keyword->getType() !== $this->keywordType) {
@@ -70,8 +70,8 @@ class ExtenderWithThesaurus extends Hybrid
             $metadata = $graphic->getMetadata();
             $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
 
-            $mappedItems = $this->mapThesaurusTermChainToThesaurusItemChain($res, $langCode);
-            $graphic->addThesaurusItems($mappedItems);
+            $mappedItems = $this->mapThesaurusTermChainToFilterInfoChain($res, $langCode);
+            $graphic->addFilterInfoItems($mappedItems);
         }
     }
 
@@ -122,7 +122,7 @@ class ExtenderWithThesaurus extends Hybrid
     }
 
 
-    private function mapThesaurusTermChainToThesaurusItemChain(array $terms, string $langCode): array
+    private function mapThesaurusTermChainToFilterInfoChain(array $terms, string $langCode): array
     {
         $items = [];
 
@@ -133,7 +133,7 @@ class ExtenderWithThesaurus extends Hybrid
 
             $id = $this->getDKultIdentifierForTerm($currTerm);
 
-            $item = new ThesaurusItem();
+            $item = new FilterInfoItem();
 
             if (!is_null($id)) {
                 $item->setId($id);
@@ -150,7 +150,7 @@ class ExtenderWithThesaurus extends Hybrid
                 }
             }
 
-            $item->setTerm($term);
+            $item->setText($term);
 
             if ($i > 0 && !is_null($prevId)) {
                 $item->setParentId($prevId);

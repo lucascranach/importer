@@ -5,7 +5,9 @@ namespace CranachDigitalArchive\Importer\Modules\Paintings\Transformers;
 use Error;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search\SearchablePainting;
 use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
+use CranachDigitalArchive\Importer\Modules\Filters\Entities\CustomFilter;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\FilterInfoItem;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class ExtenderWithBasicFilterValues extends Hybrid
@@ -51,23 +53,19 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
     private function extendWithBasicFilterValues(SearchablePainting $item): void
     {
-        $basicFilters = [
-            self::ATTRIBUTION => [],
-            self::COLLECTION_REPOSITORY => [],
-            self::EXAMINATION_ANALYSIS => [],
-        ];
+        $basicFilterInfos = [];
 
-        $this->extendBasicFiltersForAttribution($item, $basicFilters);
-        $this->extendBasicFiltersForCollectionAndRepository($item, $basicFilters);
-        $this->extendBasicFiltersForExaminationAnalysis($item, $basicFilters);
+        $this->extendBasicFiltersForAttribution($item, $basicFilterInfos);
+        $this->extendBasicFiltersForCollectionAndRepository($item, $basicFilterInfos);
+        $this->extendBasicFiltersForExaminationAnalysis($item, $basicFilterInfos);
 
-        $item->addBasicFilters($basicFilters);
+        $item->addFilterInfoItems($basicFilterInfos);
     }
 
 
     private function extendBasicFiltersForAttribution(
         SearchablePainting $item,
-        array &$basicFilters
+        array &$basicFilterInfos
     ):void {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {
@@ -87,7 +85,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
             foreach ($attributionCheckItems as $checkItem) {
                 foreach ($checkItem->getFilters() as $matchFilterRule) {
                     if ($this->matchesAttributionFilterRule($person, $matchFilterRule, $langCode)) {
-                        self::addBasicFilter($basicFilters, $checkItem->getId());
+                        self::addBasicFilter($basicFilterInfos, $checkItem, $langCode);
                     }
                 }
             }
@@ -136,8 +134,15 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
     private function extendBasicFiltersForCollectionAndRepository(
         SearchablePainting $item,
-        array &$basicFilters
+        array &$basicFilterInfos
     ):void {
+        $metadata = $item->getMetadata();
+        if (is_null($metadata)) {
+            return;
+        }
+
+        $langCode = $metadata->getLangCode();
+
         $collectionAndRepositoryCheckItems = array_filter(
             $this->filters[self::COLLECTION_REPOSITORY],
             function ($item) {
@@ -157,7 +162,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
                 $matchingOwner = !!preg_match($regExp, $item->getOwner());
 
                 if ($matchingRepository || $matchingOwner) {
-                    self::addBasicFilter($basicFilters, $checkItem->getId());
+                    self::addBasicFilter($basicFilterInfos, $checkItem, $langCode);
                 }
             }
         }
@@ -166,7 +171,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
     private function extendBasicFiltersForExaminationAnalysis(
         SearchablePainting $item,
-        array &$basicFilters
+        array &$basicFilterInfos
     ):void {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {
@@ -211,7 +216,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
                     $regExp = $matchFilterRule['keyword'][$langCode];
 
                     if (!!preg_match($regExp, $keyword)) {
-                        self::addBasicFilter($basicFilters, $checkItem->getId());
+                        self::addBasicFilter($basicFilterInfos, $checkItem, $langCode);
                     }
                 }
             }
@@ -274,22 +279,35 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private static function addBasicFilter(array &$basicFilters, string $filterId)
+    private static function addBasicFilter(array &$basicFilterInfos, CustomFilter $checkItem, string $langCode)
     {
-        $splitFilterId = explode('.', $filterId, 2);
+        $id = $checkItem->getId();
+        $text = $checkItem->getLangText($langCode);
 
-        if (count($splitFilterId) !== 2) {
-            return;
+        if (is_null($text)) {
+            throw new Error('Missing localized text for: ' . $langCode);
         }
 
-        list($category, $remainingFilterId) = $splitFilterId;
+        if (!self::basicFilterInfoAlreadyExists($basicFilterInfos, $id)) {
+            $newFilterInfo = new FilterInfoItem();
+            $newFilterInfo->setId($id);
+            $newFilterInfo->setText($text);
+            $newFilterInfo->setParentId($checkItem->getParentId());
 
-        if (!isset($basicFilters[$category])) {
-            $basicFilters[$category] = [];
+            $basicFilterInfos[] = $newFilterInfo;
         }
+    }
 
-        if (!in_array($remainingFilterId, $basicFilters[$category], true)) {
-            $basicFilters[$category][] = $remainingFilterId;
-        }
+
+    private static function basicFilterInfoAlreadyExists(array $basicFilterInfos, string $filterId)
+    {
+        $matchingFilterInfos = array_filter(
+            $basicFilterInfos,
+            function ($filterInfo) use ($filterId) {
+                return $filterInfo->getId() === $filterId;
+            },
+        );
+
+        return count($matchingFilterInfos) > 0;
     }
 }
