@@ -3,8 +3,7 @@
 namespace CranachDigitalArchive\Importer\Modules\Main\Entities\Search;
 
 /**
- * Representing a single searchable graphic and all flattened and embedded related data
- * 	One instance containing only data for one language
+ * Representing a single searchable thesaurus item
  */
 class ThesaurusItem
 {
