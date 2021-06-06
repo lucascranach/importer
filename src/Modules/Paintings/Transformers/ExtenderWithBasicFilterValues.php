@@ -86,6 +86,12 @@ class ExtenderWithBasicFilterValues extends Hybrid
                 foreach ($checkItem->getFilters() as $matchFilterRule) {
                     if ($this->matchesAttributionFilterRule($person, $matchFilterRule, $langCode)) {
                         self::addBasicFilter($basicFilterInfos, $checkItem, $langCode);
+                        self::addAncestorsBasicFilter(
+                            $basicFilterInfos,
+                            $checkItem,
+                            $this->filters[self::ATTRIBUTION],
+                            $langCode,
+                        );
                     }
                 }
             }
@@ -173,6 +179,12 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
                 if ($matchingRepository || $matchingOwner) {
                     self::addBasicFilter($basicFilterInfos, $checkItem, $langCode);
+                    self::addAncestorsBasicFilter(
+                        $basicFilterInfos,
+                        $checkItem,
+                        $this->filters[self::COLLECTION_REPOSITORY],
+                        $langCode,
+                    );
                 }
             }
         }
@@ -227,6 +239,12 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
                     if (!!preg_match($regExp, $keyword)) {
                         self::addBasicFilter($basicFilterInfos, $checkItem, $langCode);
+                        self::addAncestorsBasicFilter(
+                            $basicFilterInfos,
+                            $checkItem,
+                            $this->filters[self::EXAMINATION_ANALYSIS],
+                            $langCode,
+                        );
                     }
                 }
             }
@@ -306,6 +324,21 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
             $basicFilterInfos[] = $newFilterInfo;
         }
+    }
+
+
+    private static function addAncestorsBasicFilter(array &$basicFilterInfos, CustomFilter $checkItem, array $items, string $langCode)
+    {
+        $parentId = $checkItem->getParentId();
+
+        if (is_null($parentId) || !isset($items[$parentId])) {
+            return;
+        }
+
+        $parentItem = $items[$parentId];
+
+        self::addBasicFilter($basicFilterInfos, $parentItem, $langCode);
+        self::addAncestorsBasicFilter($basicFilterInfos, $parentItem, $items, $langCode);
     }
 
 
