@@ -244,8 +244,8 @@
             "matchers": [
               {
                 "name": {
-                  "de": "/Meister.Monogrammist I.W./i",
-                  "en": "/Master.Monogramist I.W./i"
+                  "de": "/(Meister|Monogrammist) IW/i",
+                  "en": "/(Master|Monogramist) IW/i"
                 }
               }
             ]
@@ -3778,7 +3778,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/museo e real bosco die? capodimonte, naples/i"
+                    "collection_repository": "/museo e real bosco die? capodimonte, (naples|neapel)/i"
                   }
                 ]
               },
@@ -3938,7 +3938,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/museo nacional de san carlos.insituto nacional de bellas artes/i"
+                        "collection_repository": "/museo nacional de san carlos.+instituto nacional de bellas artes, mexico city/i"
                       }
                     ]
                   },
