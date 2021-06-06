@@ -95,30 +95,40 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
     private function matchesAttributionFilterRule(Person $person, array $matchFilterRule, string $langCode): bool
     {
-        $isAMatch = false;
+        $givenRuleParts = 0;
+        $matchingRuleParts = 0;
 
         if (isset($matchFilterRule['name']) && isset($matchFilterRule['name'][$langCode])) {
-            $isAMatch = $this->matchesFieldValue(
+            $givenRuleParts += 1;
+            if ($this->matchesFieldValue(
                 $matchFilterRule['name'][$langCode],
                 $person->getName(),
-            );
+            )) {
+                $matchingRuleParts += 1;
+            }
         }
 
         if (isset($matchFilterRule['suffix']) && isset($matchFilterRule['suffix'][$langCode])) {
-            $isAMatch = $this->matchesFieldValue(
+            $givenRuleParts += 1;
+            if ($this->matchesFieldValue(
                 $matchFilterRule['suffix'][$langCode],
                 $person->getSuffix(),
-            );
+            )) {
+                $matchingRuleParts += 1;
+            }
         }
 
         if (isset($matchFilterRule['prefix']) && isset($matchFilterRule['prefix'][$langCode])) {
-            $isAMatch = $this->matchesFieldValue(
+            $givenRuleParts += 1;
+            if ($this->matchesFieldValue(
                 $matchFilterRule['prefix'][$langCode],
                 $person->getPrefix(),
-            );
+            )) {
+                $matchingRuleParts += 1;
+            }
         }
 
-        return $isAMatch;
+        return $givenRuleParts > 0 && $givenRuleParts === $matchingRuleParts;
     }
 
 
@@ -265,15 +275,15 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
     private static function flattenFilterItemHierarchy($item): array
     {
-        $arr = [];
+        $arr = [
+            $item->getId() => $item,
+        ];
 
         foreach ($item->getChildren() as $childItem) {
             $subArr = self::flattenFilterItemHierarchy($childItem);
 
             $arr = array_merge($arr, $subArr);
         }
-
-        array_unshift($arr, $item);
 
         return $arr;
     }
