@@ -7,7 +7,6 @@ use Error;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Entities\Thesaurus;
-use CranachDigitalArchive\Importer\Modules\Thesaurus\Entities\ThesaurusTerm;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 /**
@@ -16,11 +15,8 @@ use CranachDigitalArchive\Importer\Pipeline\Consumer;
 class ThesaurusJSONExporter extends Consumer implements IFileExporter
 {
     private $destFilepath = null;
-    private $reducedTermIds = [];
     private $item = null;
     private $done = false;
-    private $thesaurusTermCounter = 0;
-    private $skippedThesaurusTermCounter = 0;
 
 
     private function __construct()
@@ -31,11 +27,10 @@ class ThesaurusJSONExporter extends Consumer implements IFileExporter
     /**
      * @return self
      */
-    public static function withDestinationAt(string $destFilepath, $reducedTermIds = [])
+    public static function withDestinationAt(string $destFilepath)
     {
         $exporter = new self();
         $exporter->destFilepath = $destFilepath;
-        $exporter->reducedTermIds = $reducedTermIds;
         return $exporter;
     }
 
@@ -50,7 +45,7 @@ class ThesaurusJSONExporter extends Consumer implements IFileExporter
             throw new \Error('Can\'t push more items after done() was called!');
         }
 
-        $this->item = $this->applyRestrictions($item);
+        $this->item = $item;
 
         return true;
     }
@@ -82,10 +77,6 @@ class ThesaurusJSONExporter extends Consumer implements IFileExporter
 
         $this->done = true;
         $this->item = null;
-
-        if ($this->thesaurusTermCounter !== 0) {
-            echo "Skipped " . $this->skippedThesaurusTermCounter . " of " . $this->thesaurusTermCounter . " thesaurus terms for the reduced thesaurus!\n";
-        }
     }
 
 
@@ -95,63 +86,5 @@ class ThesaurusJSONExporter extends Consumer implements IFileExporter
     public function error($error)
     {
         echo get_class($this) . ": Error -> " . $error . "\n";
-    }
-
-
-    private function applyRestrictions(Thesaurus $item)
-    {
-        if (empty($this->reducedTermIds)) {
-            return $item;
-        }
-
-        $newItem = new Thesaurus();
-        $restrictedRootTerms = $this->reduceTermList($item->getRootTerms(), $this->reducedTermIds);
-        foreach ($restrictedRootTerms as $rootTerm) {
-            $newItem->addRootTerm($rootTerm);
-        }
-
-        return $newItem;
-    }
-
-
-    private function reduceTermList($terms, $metaReferenceIds): array
-    {
-        $newTerms = [];
-
-        foreach ($terms as $term) {
-            $this->thesaurusTermCounter += 1;
-            $termId = $this->getTermId($term);
-
-            $newTermSubTerms = $this->reduceTermList($term->getSubTerms(), $metaReferenceIds);
-
-            if (empty($newTermSubTerms) && (is_null($termId) || !in_array($termId, $metaReferenceIds, true))) {
-                $this->skippedThesaurusTermCounter += 1;
-                continue;
-            }
-
-            $newTerm = new ThesaurusTerm();
-            $newTerm->setTerm($term->getTerm());
-
-            foreach ($term->getAlts() as $altKey => $altValue) {
-                $newTerm->addAlt($altKey, $altValue);
-            }
-
-            foreach ($newTermSubTerms as $newTermSubTerm) {
-                $newTerm->addSubTerm($newTermSubTerm);
-            }
-
-            $newTerms[] = $newTerm;
-        }
-
-        return $newTerms;
-    }
-
-
-    private function getTermId(ThesaurusTerm $term)
-    {
-        $idFieldName = 'dkultTermIdentifier';
-        $alts = $term->getAlts();
-
-        return isset($alts[$idFieldName]) ? $alts[$idFieldName] : null;
     }
 }

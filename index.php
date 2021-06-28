@@ -11,6 +11,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsLoader;
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsJSONLangExistenceTypeExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterminer;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MapToSearchableGraphic;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithThesaurus as GraphicsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRestorations as GraphicsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MetadataFiller as GraphicsMetadataFiller;
@@ -23,7 +24,9 @@ use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\Litera
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsLoader;
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsElasticsearchLangExporter;
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MapToSearchablePainting;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithThesaurus as PaintingsExtenderWithThesaurus;
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithBasicFilterValues as PaintingsExtenderWithBasicFilterValues;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithRestorations as PaintingsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MetadataFiller as PaintingsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Archivals\Loaders\XML\ArchivalsLoader;
@@ -33,11 +36,17 @@ use CranachDigitalArchive\Importer\Modules\Archivals\Transformers\MetadataFiller
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader as ThesaurusXMLLoader;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\Memory\ThesaurusLoader as ThesaurusMemoryLoader;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
+use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ReducedThesaurusMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
+use CranachDigitalArchive\Importer\Modules\Filters\Loaders\JSON\CustomFiltersLoader;
+use CranachDigitalArchive\Importer\Modules\Filters\Exporters\FilterExporter;
+use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
+use CranachDigitalArchive\Importer\Modules\Filters\Loaders\Memory\CustomFiltersAndThesaurusLoader;
 
 $date = '20210408';
 $inputDirectory = './input/' . $date;
 $destDirectory = './docs/' . $date;
+$filtersDirectory = './filters';
 
 
 /* Inputfiles */
@@ -62,10 +71,11 @@ $literatureInputFilepaths = [
 ];
 $archivalsInputFilepath = $inputDirectory . '/CDA-A_Datenuebersicht_' . $date . '.xml';
 
+$customFilterDefinitionsFilepath = $filtersDirectory . '/custom_filters.json';
+
 
 /* Outputfiles */
 $thesaurusOutputFilepath = $destDirectory . '/cda-thesaurus-v2.json';
-$reducedThesaurusOutputFilepath = $destDirectory . '/cda-reduced-thesaurus-v2.json';
 $paintingsOutputFilepath = $destDirectory . '/cda-paintings-v2.json';
 $paintingsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-paintings-v2.bulk';
 $graphicsOutputFilepath = $destDirectory . '/cda-graphics-v2.json';
@@ -73,6 +83,7 @@ $graphicsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-grap
 $literatureReferenceOutputFilepath = $destDirectory . '/cda-literaturereferences-v2.json';
 $archivalsOutputFilepath = $destDirectory . '/cda-archivals-v2.json';
 $archivalsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-archivals-v2.bulk';
+$filtersOutputFilepath = $destDirectory . '/cda-filters.json';
 
 
 /* MetaReferences -> Thesaurus-Links */
@@ -81,11 +92,21 @@ $metaReferenceCollector = MetaReferenceCollector::new();
 
 /* Thesaurus */
 $thesaurusMemoryDestination = ThesaurusMemoryExporter::new(); /* needed later for graphics and paintings */
+$thesaurusMemoryLoader = ThesaurusMemoryLoader::withMemory($thesaurusMemoryDestination);
 
 ThesaurusXMLLoader::withSourceAt($thesaurusInputFilepath)->pipe(
     ThesaurusJSONExporter::withDestinationAt($thesaurusOutputFilepath),
     $thesaurusMemoryDestination,
 )->run(); /* and we have to run it directly */
+
+
+/* Filters */
+$customFiltersLoader = CustomFiltersLoader::withSourceAt($customFilterDefinitionsFilepath);
+$customFiltersMemoryDestination = CustomFiltersMemoryExporter::new(); /* needed later for graphics and paintings */
+
+$customFiltersLoader->pipe(
+    $customFiltersMemoryDestination,
+)->run();
 
 
 /* PaintingsRestorations */
@@ -103,6 +124,8 @@ $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt
     'remotePaintingsImageExistenceChecker'
 );
 $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
+$paintingsMapToSearchablePainting = MapToSearchablePainting::new();
+$paintingsBasicFilterValues = PaintingsExtenderWithBasicFilterValues::new($customFiltersMemoryDestination);
 $paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $paintingsMetadataFiller = PaintingsMetadataFiller::new();
 $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt($paintingsOutputFilepath);
@@ -115,8 +138,12 @@ $paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths)->pip
         $paintingsRestorationExtender->pipe(
             $paintingsMetadataFiller->pipe(
                 $paintingsDestination,
-                $paintingsThesaurusExtender->pipe(
-                    $paintingsElasticsearchBulkDestination,
+                $paintingsMapToSearchablePainting->pipe(
+                    $paintingsThesaurusExtender->pipe(
+                        $paintingsBasicFilterValues->pipe(
+                            $paintingsElasticsearchBulkDestination,
+                        ),
+                    ),
                 ),
             ),
         ),
@@ -141,6 +168,7 @@ $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
 );
 $graphicsConditionDeterminer = ConditionDeterminer::new();
 $graphicsRestorationExtender = GraphicsExtenderWithRestorations::new($graphicsRestorationMemoryDestination);
+$graphicsMapToSearchableGraphic = MapToSearchableGraphic::new();
 $graphicsThesaurusExtender = GraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $graphicsMetadataFiller = GraphicsMetadataFiller::new();
 $graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt($graphicsOutputFilepath);
@@ -154,8 +182,10 @@ $graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath)->pipe(
             $graphicsRestorationExtender->pipe(
                 $graphicsMetadataFiller->pipe(
                     $graphicsDestination,
-                    $graphicsThesaurusExtender->pipe(
-                        $graphicsElasticsearchBulkDestination,
+                    $graphicsMapToSearchableGraphic->pipe(
+                        $graphicsThesaurusExtender->pipe(
+                            $graphicsElasticsearchBulkDestination,
+                        ),
                     ),
                 ),
             ),
@@ -207,14 +237,15 @@ $restrictedTermIds = array_map(
     array_values($metaReferenceCollector->getCollection()),
 );
 
-ThesaurusMemoryLoader::withMemory($thesaurusMemoryDestination)->pipe(
-    ThesaurusJSONExporter::withDestinationAt(
-        $reducedThesaurusOutputFilepath,
-        $restrictedTermIds,
-    ),
+CustomFiltersAndThesaurusLoader::withMemory(
+    $customFiltersMemoryDestination,
+    ReducedThesaurusMemoryExporter::new($thesaurusMemoryDestination, $restrictedTermIds),
+)->pipe(
+    FilterExporter::withDestinationAt($filtersOutputFilepath),
 )->run();
 
 
+$customFiltersMemoryDestination->cleanUp();
 $thesaurusMemoryDestination->cleanUp();
 $paintingsRestorationMemoryDestination->cleanUp();
 $graphicsRestorationMemoryDestination->cleanUp();

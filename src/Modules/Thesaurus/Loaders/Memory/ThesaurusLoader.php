@@ -3,10 +3,10 @@
 namespace CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\Memory;
 
 use CranachDigitalArchive\Importer\Pipeline\Producer;
-use CranachDigitalArchive\Importer\Interfaces\Exporters\IMemoryExporter;
+use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 
 /**
- * Paintings loader on a xml file base
+ * Thesaurus loader on a memory base
  */
 class ThesaurusLoader extends Producer
 {
@@ -20,7 +20,7 @@ class ThesaurusLoader extends Producer
     /**
      * @return self
      */
-    public static function withMemory(IMemoryExporter $thesaurusMemory)
+    public static function withMemory(ThesaurusMemoryExporter $thesaurusMemory)
     {
         $loader = new self;
         $loader->thesaurusMemory = $thesaurusMemory;

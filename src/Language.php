@@ -40,4 +40,11 @@ final class Language
 
         return is_null($result) ? $text : $result;
     }
+
+
+    public static function isSupportedLanguage(string $langCode)
+    {
+        $supportedLangs = [self::DE, self::EN];
+        return in_array($langCode, $supportedLangs, true);
+    }
 }

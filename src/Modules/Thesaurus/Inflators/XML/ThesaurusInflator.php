@@ -19,9 +19,9 @@ class ThesaurusInflator implements IInflator
     private static $altTermElement = 'alt-term';
 
     private static $altTermAttributeKeyMapping = [
-        'British Equivalent' => 'britishEquivalent',
-        'dkult Term Identifier' => 'dkultTermIdentifier',
-        'TermID des AAT' => 'aatTermId',
+        'British Equivalent' => ThesaurusTerm::ALT_BRITISH_EQUIVALENT,
+        'dkult Term Identifier' => ThesaurusTerm::ALT_DKULT_TERM_IDENTIFIER,
+        'TermID des AAT' => ThesaurusTerm::ALT_AAT_TERM_ID,
     ];
 
     private function __construct()

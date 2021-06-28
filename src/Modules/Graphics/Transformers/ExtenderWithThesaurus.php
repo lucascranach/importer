@@ -4,8 +4,7 @@ namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
 use Error;
 use CranachDigitalArchive\Importer\Language;
-use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\ThesaurusItem;
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\FilterInfoItem;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Search\SearchableGraphic;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Entities\ThesaurusTerm;
@@ -35,17 +34,16 @@ class ExtenderWithThesaurus extends Hybrid
         return $transformer;
     }
 
+
     public function handleItem($item): bool
     {
-        if (!($item instanceof Graphic)) {
-            throw new Error('Pushed item is not of expected class \'Graphic\'');
+        if (!($item instanceof SearchableGraphic)) {
+            throw new Error('Pushed item is not of expected class \'SearchableGraphic\'');
         }
 
-        $newItem = $this->mapToSearchableGraphic($item);
+        $this->extendWithThesaurusFilterInfos($item);
 
-        $this->extendWithThesaurusData($newItem);
-
-        $this->next($newItem);
+        $this->next($item);
         return true;
     }
 
@@ -60,19 +58,7 @@ class ExtenderWithThesaurus extends Hybrid
     }
 
 
-    private function mapToSearchableGraphic(Graphic $graphic): SearchableGraphic
-    {
-        $searchableGraphic = new SearchableGraphic();
-
-        foreach (get_object_vars($graphic) as $key => $value) {
-            $searchableGraphic->$key = $value;
-        }
-
-        return $searchableGraphic;
-    }
-
-
-    private function extendWithThesaurusData(SearchableGraphic $graphic): void
+    private function extendWithThesaurusFilterInfos(SearchableGraphic $graphic): void
     {
         foreach ($graphic->getKeywords() as $keyword) {
             if ($keyword->getType() !== $this->keywordType) {
@@ -84,8 +70,8 @@ class ExtenderWithThesaurus extends Hybrid
             $metadata = $graphic->getMetadata();
             $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
 
-            $mappedItems = $this->mapThesaurusTermChainToThesaurusItemChain($res, $langCode);
-            $graphic->addThesaurusItems($mappedItems);
+            $mappedItems = $this->mapThesaurusTermChainToFilterInfoChain($res, $langCode);
+            $graphic->addFilterInfoItems($mappedItems);
         }
     }
 
@@ -110,7 +96,7 @@ class ExtenderWithThesaurus extends Hybrid
     {
         $termList = [];
 
-        $dKultIdentifier = $this->getDKultIdentifierForTerm($term);
+        $dKultIdentifier = $this->getIdForTerm($term);
 
         if (!is_null($dKultIdentifier) && $dKultIdentifier === $identifier) {
             $termList = [$term];
@@ -129,14 +115,13 @@ class ExtenderWithThesaurus extends Hybrid
     }
 
 
-    private function getDKultIdentifierForTerm(ThesaurusTerm $term): ?string
+    private function getIdForTerm(ThesaurusTerm $term): ?string
     {
-        $idKey = 'dkultTermIdentifier';
-        return $term->getAlt($idKey);
+        return $term->getAlt(ThesaurusTerm::ALT_DKULT_TERM_IDENTIFIER);
     }
 
 
-    private function mapThesaurusTermChainToThesaurusItemChain(array $terms, string $langCode): array
+    private function mapThesaurusTermChainToFilterInfoChain(array $terms, string $langCode): array
     {
         $items = [];
 
@@ -145,9 +130,9 @@ class ExtenderWithThesaurus extends Hybrid
         for ($i = 0; $i < count($terms); $i += 1) {
             $currTerm = $terms[$i];
 
-            $id = $this->getDKultIdentifierForTerm($currTerm);
+            $id = $this->getIdForTerm($currTerm);
 
-            $item = new ThesaurusItem();
+            $item = new FilterInfoItem();
 
             if (!is_null($id)) {
                 $item->setId($id);
@@ -164,7 +149,7 @@ class ExtenderWithThesaurus extends Hybrid
                 }
             }
 
-            $item->setTerm($term);
+            $item->setText($term);
 
             if ($i > 0 && !is_null($prevId)) {
                 $item->setParentId($prevId);

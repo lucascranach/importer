@@ -11,7 +11,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
  */
 class SearchableGraphic extends Graphic
 {
-    public $thesaurus = [];
+    public $filterInfos = [];
 
 
     public function __construct()
@@ -20,14 +20,14 @@ class SearchableGraphic extends Graphic
     }
 
 
-    public function addThesaurusItems(array $thesaurusItems): void
+    public function addFilterInfoItems(array $filterInfoItems): void
     {
-        $this->thesaurus = array_merge($this->thesaurus, $thesaurusItems);
+        $this->filterInfos = array_merge($this->filterInfos, $filterInfoItems);
     }
 
 
-    public function getThesaurusItems(): array
+    public function getFilterInfoItems(): array
     {
-        return $this->thesaurus;
+        return $this->filterInfos;
     }
 }
