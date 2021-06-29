@@ -137,7 +137,7 @@ class RemoteImageExistenceChecker extends Hybrid
             if (!is_null($result)) {
                 $rawImagesData = $result;
             } else {
-                echo '  Missing remote images for \'' . $id . "' (" . $imageDataURL .")\n\tCheck via https://lucascranach.org/admin/image-browser/index.html?artefact=" . $id . "\n";
+                $this->echoObjectWithMissingImages($id, $imageDataURL);
             }
 
             $dataToCache = $this->createCacheData($rawImagesData);
@@ -162,7 +162,12 @@ class RemoteImageExistenceChecker extends Hybrid
             if (!$selectedImageTypesAreEmpty && $selectedImageTypesAreAllSupported) {
                 try {
                     $preparedImages = $this->prepareRawImages($id, $selectedImageTypes, $cachedImagesForObject);
-                    $item->setImages($preparedImages);
+
+                    if (!empty($preparedImages)) {
+                        $item->setImages($preparedImages);
+                    } else {
+                        $this->echoObjectWithMissingImages($id, $imageDataURL);
+                    }
                 } catch (Error $e) {
                     /* We need to keep track of the same object but in different languages, to prevent duplicate error outputs */
                     echo $e->getMessage() . ' (' . $imageDataURL . ")\n";
@@ -386,5 +391,11 @@ class RemoteImageExistenceChecker extends Hybrid
     {
         $this->cache = [];
         $this->objectIdsWithOccuredErrors = [];
+    }
+
+
+    private function echoObjectWithMissingImages($id, $imageDataURL)
+    {
+        echo '  Missing remote images for \'' . $id . "' (" . $imageDataURL .")\n\tCheck via https://lucascranach.org/admin/image-browser/index.html?artefact=" . $id . "\n";
     }
 }
