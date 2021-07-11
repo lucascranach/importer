@@ -43,7 +43,7 @@ use CranachDigitalArchive\Importer\Modules\Filters\Exporters\FilterExporter;
 use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Filters\Loaders\Memory\CustomFiltersAndThesaurusLoader;
 
-$date = '20210408';
+$date = '20210630';
 $inputDirectory = './input/' . $date;
 $destDirectory = './docs/' . $date;
 $filtersDirectory = './filters';
