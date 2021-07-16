@@ -19,6 +19,7 @@ Um die Nutzung des Importers (aber auch die Entwicklung) zu vereinfachen, kommt 
 | analyse | Analyse der  im `src`-Ordner zu findenden PHP-Dateien |
 | clear:cache | Lösche den Cache-Ordner |
 | **import** | Starten des Import-Vorgangs; alternativ  `php index.php` ausführen |
+| import:skip-deleted | Starten des Import-Vorgangs und überspringt als gelöscht markierten Artefakte; alternativ  `php index.php -x` ausführen |
 
 
 ## Getting started

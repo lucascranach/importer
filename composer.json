@@ -16,6 +16,7 @@
     "scripts": {
         "cghooks": "cghooks",
         "import": "php index.php",
+        "import:skip-deleted": "php index.php -x",
         "lint": "php-cs-fixer fix --dry-run -vvv",
         "lint:fix": "php-cs-fixer fix",
         "analyse": "psalm",

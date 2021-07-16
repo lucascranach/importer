@@ -17,6 +17,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRes
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MetadataFiller as GraphicsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Main\Collectors\MetaReferenceCollector;
+use CranachDigitalArchive\Importer\Modules\Main\Gates\SoftDeletedArtefactGate;
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
 use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\LiteratureReferencesLoader;
@@ -86,6 +87,11 @@ $archivalsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-arc
 $filtersOutputFilepath = $destDirectory . '/cda-filters.json';
 
 
+$opts = getopt('x');
+
+$skipSoftDeletedArterfacts = isset($opts['x']);
+
+
 /* MetaReferences -> Thesaurus-Links */
 $metaReferenceCollector = MetaReferenceCollector::new();
 
@@ -133,7 +139,18 @@ $paintingsElasticsearchBulkDestination = PaintingsElasticsearchLangExporter::wit
     $paintingsElasticsearchOutputFilepath
 );
 
-$paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths)->pipe(
+$paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths);
+
+$inbetweenNode = $paintingsLoader;
+
+if ($skipSoftDeletedArterfacts) {
+    $gate = SoftDeletedArtefactGate::new('Paintings');
+
+    $inbetweenNode ->pipe($gate);
+    $inbetweenNode  = $gate;
+}
+
+$inbetweenNode->pipe(
     $paintingsRemoteImageExistenceChecker->pipe(
         $paintingsRestorationExtender->pipe(
             $paintingsMetadataFiller->pipe(
@@ -176,7 +193,17 @@ $graphicsElasticsearchBulkDestination = GraphicsElasticsearchLangExporter::withD
     $graphicsElasticsearchOutputFilepath
 );
 
-$graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath)->pipe(
+$graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath);
+
+$inbetweenNode = $graphicsLoader;
+if ($skipSoftDeletedArterfacts) {
+    $gate = SoftDeletedArtefactGate::new('Graphics');
+
+    $inbetweenNode ->pipe($gate);
+    $inbetweenNode  = $gate;
+}
+
+$inbetweenNode->pipe(
     $graphicsRemoteImageExistenceChecker->pipe(
         $graphicsConditionDeterminer->pipe(
             $graphicsRestorationExtender->pipe(
