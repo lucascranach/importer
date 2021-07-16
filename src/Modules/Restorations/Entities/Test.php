@@ -7,6 +7,7 @@ namespace CranachDigitalArchive\Importer\Modules\Restorations\Entities;
  */
 class Test
 {
+    public $order = 0;
     public $kind = '';
     public $text = '';
     public $purpose = '';
@@ -15,6 +16,18 @@ class Test
 
     public function __construct()
     {
+    }
+
+
+    public function setOrder(int $order): void
+    {
+        $this->order = $order;
+    }
+
+
+    public function getOrder(): int
+    {
+        return $this->order;
     }
 
 

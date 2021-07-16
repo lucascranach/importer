@@ -28,6 +28,7 @@ class RestorationInflator implements IInflator
     private static $ns = 'urn:crystal-reports:schemas:report-detail';
     private static $splitChar = '#';
     private static $keywordBasedSplitChar = ',';
+    private static $kindOrderRegExp = '/(\d{1,}\.\d{1,})(\s|$)/';
 
     private static $inventoryNumberReplaceRegExpArr = [
         '/^CDA\./',
@@ -336,11 +337,21 @@ class RestorationInflator implements IInflator
     ) {
         $testKindElement = self::findElementByXPath(
             $node,
-            'Section[@SectionNumber="0"]/Field[@FieldName="{@testart}"]/FormattedValue',
+            'Section[@SectionNumber="0"]/Field[@FieldName="{TEXTTYPES.TextType}"]/FormattedValue',
         );
         if ($testKindElement) {
             $testKindStr = trim(strval($testKindElement));
 
+            $order = 0;
+
+            $matches = [];
+            if (preg_match(self::$kindOrderRegExp, $testKindStr, $matches)) {
+                $order = intval(floatval($matches[1]) * 100);
+            }
+
+            $testKindStr = preg_replace(self::$kindOrderRegExp, '', $testKindStr);
+
+            $surveyTest->setOrder($order);
             $surveyTest->setKind($testKindStr);
         }
     }

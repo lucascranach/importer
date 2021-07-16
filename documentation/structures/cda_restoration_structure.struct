@@ -35,7 +35,7 @@ CrystalReport
                 Subreport[Name="Subreport2"]
                     Details*
                         Section[SectionNumber="0"] #-> Testart
-                            Field[FieldName="{@testart}"]
+                            Field[FieldName="{TEXTTYPES.TextType}"]
                                 FormattedValue
                         Section[SectionNumber="1"] #-> Text
                             Field[FieldName="{TEXTENTRIES.TextEntry}"]
