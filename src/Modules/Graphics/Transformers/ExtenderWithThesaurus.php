@@ -71,7 +71,11 @@ class ExtenderWithThesaurus extends Hybrid
             $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
 
             $mappedItems = $this->mapThesaurusTermChainToFilterInfoChain($res, $langCode);
-            $graphic->addFilterInfoItems($mappedItems);
+            $firstItem = array_shift($mappedItems);
+
+            if (!is_null($firstItem)) {
+                $graphic->addFilterInfoCategoryItems($firstItem->getId(), $mappedItems);
+            }
         }
     }
 

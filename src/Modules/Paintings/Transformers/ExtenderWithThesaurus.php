@@ -18,6 +18,13 @@ class ExtenderWithThesaurus extends Hybrid
         Language::EN => 'britishEquivalent',
     ];
     private $keywordType = 'Schlagwort';
+    private $numericIdToGeneralIdMap = [
+        '0101' => 'function',
+        '0102' => 'form',
+        '0103' => 'component_parts',
+        '0104' => 'subject',
+        '0105' => 'technique',
+    ];
 
 
     private function __construct()
@@ -71,7 +78,11 @@ class ExtenderWithThesaurus extends Hybrid
             $langCode = !is_null($metadata) ? $metadata->getLangCode() : '';
 
             $mappedItems = $this->mapThesaurusTermChainToFilterInfoChain($res, $langCode);
-            $painting->addFilterInfoItems($mappedItems);
+            $firstItem = array_shift($mappedItems);
+
+            if (!is_null($firstItem)) {
+                $painting->addFilterInfoCategoryItems($firstItem->getId(), $mappedItems);
+            }
         }
     }
 

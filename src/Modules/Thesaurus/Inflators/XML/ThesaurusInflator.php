@@ -24,6 +24,14 @@ class ThesaurusInflator implements IInflator
         'TermID des AAT' => ThesaurusTerm::ALT_AAT_TERM_ID,
     ];
 
+    private static $dkultIdentifierToGeneralIdMap = [
+        '0101' => 'function',
+        '0102' => 'form',
+        '0103' => 'component_parts',
+        '0104' => 'subject',
+        '0105' => 'technique',
+    ];
+
     private function __construct()
     {
     }
@@ -114,7 +122,22 @@ class ThesaurusInflator implements IInflator
         }
 
         if (isset(self::$altTermAttributeKeyMapping[$type])) {
-            $thesaurusTerm->addAlt(self::$altTermAttributeKeyMapping[$type], $term);
+            $altKey = self::$altTermAttributeKeyMapping[$type];
+
+            if ($altKey === ThesaurusTerm::ALT_DKULT_TERM_IDENTIFIER) {
+                $term = static::mapDKultIdentifierToNamedID($term);
+            }
+
+            $thesaurusTerm->addAlt($altKey, $term);
         }
+    }
+
+    private static function mapDKultIdentifierToNamedID($term): string
+    {
+        if (isset(self::$dkultIdentifierToGeneralIdMap[$term])) {
+            return self::$dkultIdentifierToGeneralIdMap[$term];
+        }
+
+        return $term;
     }
 }

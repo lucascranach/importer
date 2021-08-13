@@ -62,7 +62,8 @@ class FilterExporter extends Consumer implements IFileExporter
     public function done(ProducerInterface $producer)
     {
         $this->done = true;
-        $this->outputToFile($this->items);
+        $categorizedItems = $this->categorizeItems($this->items);
+        $this->outputToFile($categorizedItems);
     }
 
     /**
@@ -80,5 +81,15 @@ class FilterExporter extends Consumer implements IFileExporter
 
         file_put_contents($this->destFilepath, $data);
         return true;
+    }
+
+
+    private function categorizeItems(array $items): array
+    {
+        return array_reduce($items, function ($acc, $item) {
+            $acc[$item->getId()] = $item->getChildren();
+
+            return $acc;
+        }, []);
     }
 }

@@ -20,9 +20,26 @@ class SearchableGraphic extends Graphic
     }
 
 
-    public function addFilterInfoItems(array $filterInfoItems): void
+    public function addFilterInfoCategoryItems(string $categoryId, array $filterInfoItems): void
     {
-        $this->filterInfos = array_merge($this->filterInfos, $filterInfoItems);
+        if (!isset($this->filterInfos[$categoryId])) {
+            $this->filterInfos[$categoryId] = [];
+        }
+
+        $this->filterInfos[$categoryId] = array_merge(
+            $this->filterInfos[$categoryId],
+            $filterInfoItems
+        );
+    }
+
+
+    public function getFilterInfoCategoryItems(string $categoryId): ?array
+    {
+        if (!isset($this->filterInfos[$categoryId])) {
+            return null;
+        }
+
+        return $this->filterInfos[$categoryId];
     }
 
 

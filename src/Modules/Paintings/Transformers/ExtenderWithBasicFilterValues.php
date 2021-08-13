@@ -53,26 +53,21 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
     private function extendWithBasicFilterValues(SearchablePainting $item): void
     {
-        $basicFilterInfos = [];
-
-        $this->extendBasicFiltersForAttribution($item, $basicFilterInfos);
-        $this->extendBasicFiltersForCollectionAndRepository($item, $basicFilterInfos);
-        $this->extendBasicFiltersForExaminationAnalysis($item, $basicFilterInfos);
-
-        $item->addFilterInfoItems($basicFilterInfos);
+        $this->extendBasicFiltersForAttribution($item);
+        $this->extendBasicFiltersForCollectionAndRepository($item);
+        $this->extendBasicFiltersForExaminationAnalysis($item);
     }
 
 
-    private function extendBasicFiltersForAttribution(
-        SearchablePainting $item,
-        array &$basicFilterInfos
-    ):void {
+    private function extendBasicFiltersForAttribution(SearchablePainting $item):void
+    {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {
             return;
         }
 
         $langCode = $metadata->getLangCode();
+        $basicFilterInfos = [];
 
         $attributionCheckItems = array_filter(
             $this->filters[self::ATTRIBUTION],
@@ -96,6 +91,8 @@ class ExtenderWithBasicFilterValues extends Hybrid
                 }
             }
         }
+
+        $item->addFilterInfoCategoryItems(self::ATTRIBUTION, $basicFilterInfos);
     }
 
 
@@ -148,16 +145,15 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private function extendBasicFiltersForCollectionAndRepository(
-        SearchablePainting $item,
-        array &$basicFilterInfos
-    ):void {
+    private function extendBasicFiltersForCollectionAndRepository(SearchablePainting $item):void
+    {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {
             return;
         }
 
         $langCode = $metadata->getLangCode();
+        $basicFilterInfos = [];
 
         $collectionAndRepositoryCheckItems = array_filter(
             $this->filters[self::COLLECTION_REPOSITORY],
@@ -188,19 +184,20 @@ class ExtenderWithBasicFilterValues extends Hybrid
                 }
             }
         }
+
+        $item->addFilterInfoCategoryItems(self::COLLECTION_REPOSITORY, $basicFilterInfos);
     }
 
 
-    private function extendBasicFiltersForExaminationAnalysis(
-        SearchablePainting $item,
-        array &$basicFilterInfos
-    ):void {
+    private function extendBasicFiltersForExaminationAnalysis(SearchablePainting $item):void
+    {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {
             return;
         }
 
         $langCode = $metadata->getLangCode();
+        $basicFilterInfos = [];
 
         $examinationAnalysisCheckItems = array_filter(
             $this->filters[self::EXAMINATION_ANALYSIS],
@@ -249,6 +246,8 @@ class ExtenderWithBasicFilterValues extends Hybrid
                 }
             }
         }
+
+        $item->addFilterInfoCategoryItems(self::EXAMINATION_ANALYSIS, $basicFilterInfos);
     }
 
 
