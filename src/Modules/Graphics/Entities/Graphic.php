@@ -24,6 +24,14 @@ class Graphic extends AbstractImagesItem implements IBaseItem
 {
     const ENTITY_TYPE = 'GRAPHIC';
 
+    const INVENTORY_NUMBER_PREFIX_PATTERNS = [
+        '/^GWN_/' => 'GWN_',
+        '/^CDA\./' => 'CDA.',
+        '/^CDA_/' => 'CDA_',
+        '/^G_G_/' => 'G_G_',
+        '/^G_/' => 'G_',
+    ];
+
     public $metadata = null;
     public $involvedPersons = [];
     public $involvedPersonsNames = []; // Evtl. Umbau notwendig
@@ -32,6 +40,7 @@ class Graphic extends AbstractImagesItem implements IBaseItem
     public $classification = null;
     public $conditionLevel = 0;
     public $objectName = '';
+    public $inventoryNumberPrefix = '';
     public $inventoryNumber = '';
     public $objectId = null;
     public $isVirtual = false;
@@ -60,10 +69,6 @@ class Graphic extends AbstractImagesItem implements IBaseItem
     public $catalogWorkReferences = [];
     public $structuredDimension = null;
     public $restorationSurveys = [];
-    private $clearingPatterns = [
-        ['find' => 'GWN_', 'replaceWith' => ''],
-        ['find' => 'G_G_', 'replaceWith' => ''],
-    ];
 
     public function __construct()
     {
@@ -76,9 +81,9 @@ class Graphic extends AbstractImagesItem implements IBaseItem
 
     public function getImageId(): string
     {
-        $id = $this->getId();
+        $id = $this->getInventoryNumber();
 
-        return empty($id) ? $id : 'G_' . $id;
+        return empty($id) ? $id : $this->getInventoryNumberPrefix() . $id;
     }
 
     public function setMetadata(Metadata $metadata)
@@ -151,14 +156,30 @@ class Graphic extends AbstractImagesItem implements IBaseItem
         return $this->objectName;
     }
 
+    public function getInventoryNumberPrefix(): string
+    {
+        return $this->inventoryNumberPrefix;
+    }
+
+    public function setInventoryNumberPrefix(string $inventoryNumberPrefix)
+    {
+        $this->inventoryNumberPrefix = $inventoryNumberPrefix;
+    }
+
     public function setInventoryNumber(string $inventoryNumber): void
     {
-        foreach ($this->clearingPatterns as $clearingPattern) {
-            $find = '=' . $clearingPattern['find'] . '=';
-            $replaceWith = $clearingPattern['replaceWith'];
-            $inventoryNumber = preg_replace($find, $replaceWith, $inventoryNumber);
-        }
         $this->inventoryNumber = $inventoryNumber;
+
+        foreach (self::INVENTORY_NUMBER_PREFIX_PATTERNS as $pattern => $value) {
+            $counter = 0;
+
+            $this->inventoryNumber = preg_replace($pattern, '', $this->inventoryNumber, -1, $counter);
+
+            if ($counter > 0) {
+                $this->setInventoryNumberPrefix($value);
+                break;
+            }
+        }
     }
 
     public function getInventoryNumber(): string

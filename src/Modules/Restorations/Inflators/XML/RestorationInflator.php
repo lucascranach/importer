@@ -30,11 +30,6 @@ class RestorationInflator implements IInflator
     private static $keywordBasedSplitChar = ',';
     private static $kindOrderRegExp = '/(\d{1,}\.\d{1,})(\s|$)/';
 
-    private static $inventoryNumberReplaceRegExpArr = [
-        '/^CDA\./',
-        '/^G_/',
-    ];
-
     private static $surveyTypesLanguageTypes = [
         'Material/Technik' => Language::DE,
         'Zustandsprotokoll' => Language::DE,
@@ -93,14 +88,8 @@ class RestorationInflator implements IInflator
         if ($inventoryNumberElement) {
             $inventoryNumberStr = trim(strval($inventoryNumberElement));
 
-            $cleanInventoryNumberStr = preg_replace(
-                self::$inventoryNumberReplaceRegExpArr,
-                '',
-                $inventoryNumberStr,
-            );
-
-            $restorationDe->setInventoryNumber($cleanInventoryNumberStr);
-            $restorationEn->setInventoryNumber($cleanInventoryNumberStr);
+            $restorationDe->setInventoryNumber($inventoryNumberStr);
+            $restorationEn->setInventoryNumber($inventoryNumberStr);
         }
     }
 

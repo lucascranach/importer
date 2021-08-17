@@ -86,11 +86,6 @@ class GraphicInflator implements IInflator
         ],
     ];
 
-    private static $inventoryNumberReplaceRegExpArr = [
-        '/^CDA\./',
-        '/^G_/',
-    ];
-
     private static $catalogWrokReferenceReplaceArr = [
         '-Nummer',
     ];
@@ -526,15 +521,10 @@ class GraphicInflator implements IInflator
         );
         if ($inventoryNumberElement) {
             $inventoryNumberStr = trim(strval($inventoryNumberElement));
-            $cleanInventoryNumberStr = preg_replace(
-                self::$inventoryNumberReplaceRegExpArr,
-                '',
-                $inventoryNumberStr,
-            );
 
             /* Using single german value for both language objects */
-            $graphicDe->setInventoryNumber($cleanInventoryNumberStr);
-            $graphicEn->setInventoryNumber($cleanInventoryNumberStr);
+            $graphicDe->setInventoryNumber($inventoryNumberStr);
+            $graphicEn->setInventoryNumber($inventoryNumberStr);
         }
     }
 
@@ -1665,7 +1655,7 @@ class GraphicInflator implements IInflator
                 $referenceNumberStr = trim(strval($referenceNumberElement));
 
                 $cleanReferenceNumberStr = preg_replace(
-                    self::$inventoryNumberReplaceRegExpArr,
+                    array_keys(Graphic::INVENTORY_NUMBER_PREFIX_PATTERNS),
                     '',
                     $referenceNumberStr,
                 );
