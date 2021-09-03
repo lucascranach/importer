@@ -51,7 +51,7 @@ class MetadataFiller extends Hybrid
         $imageSrc = '';
 
         if ($images && count($images['images']) > 0) {
-            $imageSrc = $images['images'][count($images['images']) - 1]['small']['src'];
+            $imageSrc = $images['images'][0]['small']['src'];
 
             if (is_null($imageSrc)) {
                 $imageSrc = '';
