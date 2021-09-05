@@ -9,6 +9,8 @@ use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class ExtenderWithIds extends Hybrid
 {
+    const ATTRIBUTION = 'attribution';
+    const COLLECTION_REPOSITORY = 'collection_repository';
     const EXAMINATION_ANALYSIS = 'examination_analysis';
 
 
@@ -102,6 +104,11 @@ class ExtenderWithIds extends Hybrid
 
         foreach ($items as $item) {
             switch ($item->getId()) {
+                case self::ATTRIBUTION:
+                case self::COLLECTION_REPOSITORY:
+                    // Skipped because of its only use in the paintings id extender
+                    break;
+
                 case self::EXAMINATION_ANALYSIS:
                     $filters[self::EXAMINATION_ANALYSIS] = self::flattenFilterItemHierarchy($item);
                     break;
