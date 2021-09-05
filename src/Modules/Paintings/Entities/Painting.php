@@ -52,6 +52,7 @@ class Painting extends AbstractImagesItem implements IBaseItem
     public $locations = [];
     public $repository = '';
     public $owner = '';
+    public $collectionRepositoryId = '';
     public $sortingNumber = '';
     public $catalogWorkReferences = [];
     public $structuredDimension = null;
@@ -393,6 +394,18 @@ class Painting extends AbstractImagesItem implements IBaseItem
     public function getOwner(): string
     {
         return $this->owner;
+    }
+
+
+    public function setCollectionRepositoryId(string $id): void
+    {
+        $this->collectionRepositoryId = $id;
+    }
+
+
+    public function getCollectionId(): string
+    {
+        return $this->collectionRepositoryId;
     }
 
 

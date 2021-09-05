@@ -8,6 +8,7 @@ namespace CranachDigitalArchive\Importer\Modules\Main\Entities;
 class Person
 {
     public $displayOrder = 0;
+    public $id = '';
     public $role = '';
     public $name = '';
     public $prefix = '';
@@ -34,6 +35,18 @@ class Person
     public function getDisplayOrder(): int
     {
         return $this->displayOrder;
+    }
+
+
+    public function setId(string $id): void
+    {
+        $this->id = $id;
+    }
+
+
+    public function getId(): string
+    {
+        return $this->id;
     }
 
 

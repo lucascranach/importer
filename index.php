@@ -20,6 +20,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Collectors\MetaReferenceCollecto
 use CranachDigitalArchive\Importer\Modules\Main\Gates\SoftDeletedArtefactGate;
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
 use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsMemoryExporter;
+use CranachDigitalArchive\Importer\Modules\Restorations\Transformers\ExtenderWithIds as RestorationsExtenderWithIds;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\LiteratureReferencesLoader;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\LiteratureReferencesJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsLoader;
@@ -28,6 +29,7 @@ use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsElastics
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MapToSearchablePainting;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithThesaurus as PaintingsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithBasicFilterValues as PaintingsExtenderWithBasicFilterValues;
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithIds as PaintingsExtenderWithIds;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithRestorations as PaintingsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MetadataFiller as PaintingsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Archivals\Loaders\XML\ArchivalsLoader;
@@ -117,9 +119,12 @@ $customFiltersLoader->pipe(
 
 /* PaintingsRestorations */
 $paintingsRestorationMemoryDestination = RestorationsMemoryExporter::new();
+$paintingsRestorationsIdAdder = RestorationsExtenderWithIds::new($customFiltersMemoryDestination);
 
 RestorationsLoader::withSourcesAt($paintingsRestorationInputFilepaths)->pipe(
-    $paintingsRestorationMemoryDestination,
+    $paintingsRestorationsIdAdder->pipe(
+        $paintingsRestorationMemoryDestination,
+    ),
 )->run(); /* and we have to run it directly */
 
 
@@ -130,6 +135,7 @@ $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt
     'remotePaintingsImageExistenceChecker'
 );
 $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
+$paintingsIdAdder = PaintingsExtenderWithIds::new($customFiltersMemoryDestination);
 $paintingsMapToSearchablePainting = MapToSearchablePainting::new();
 $paintingsBasicFilterValues = PaintingsExtenderWithBasicFilterValues::new($customFiltersMemoryDestination);
 $paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination);
@@ -153,12 +159,14 @@ if ($skipSoftDeletedArterfacts) {
 $inbetweenNode->pipe(
     $paintingsRemoteImageExistenceChecker->pipe(
         $paintingsRestorationExtender->pipe(
-            $paintingsMetadataFiller->pipe(
-                $paintingsDestination,
-                $paintingsMapToSearchablePainting->pipe(
-                    $paintingsThesaurusExtender->pipe(
-                        $paintingsBasicFilterValues->pipe(
-                            $paintingsElasticsearchBulkDestination,
+            $paintingsIdAdder->pipe(
+                $paintingsMetadataFiller->pipe(
+                    $paintingsDestination,
+                    $paintingsMapToSearchablePainting->pipe(
+                        $paintingsThesaurusExtender->pipe(
+                            $paintingsBasicFilterValues->pipe(
+                                $paintingsElasticsearchBulkDestination,
+                            ),
                         ),
                     ),
                 ),

@@ -7,12 +7,25 @@ namespace CranachDigitalArchive\Importer\Modules\Restorations\Entities;
  */
 class Keyword
 {
+    public $id = '';
     public $name = '';
     public $additional = '';
 
 
     public function __construct()
     {
+    }
+
+
+    public function setId(string $id): void
+    {
+        $this->id = $id;
+    }
+
+
+    public function getId(): string
+    {
+        return $this->id;
     }
 
 
