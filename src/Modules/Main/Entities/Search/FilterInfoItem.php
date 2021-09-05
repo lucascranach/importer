@@ -10,6 +10,7 @@ class FilterInfoItem
     public $id = null;
     public $parentId = null;
     public $text = '';
+    public $order = 0;
 
 
     public function __construct()
@@ -50,5 +51,16 @@ class FilterInfoItem
     public function getText(): string
     {
         return $this->text;
+    }
+
+    public function setOrder(int $order): void
+    {
+        $this->order = $order;
+    }
+
+
+    public function getOrder(): int
+    {
+        return $this->order;
     }
 }

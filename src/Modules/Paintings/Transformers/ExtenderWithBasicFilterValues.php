@@ -80,12 +80,12 @@ class ExtenderWithBasicFilterValues extends Hybrid
             foreach ($attributionCheckItems as $checkItem) {
                 foreach ($checkItem->getFilters() as $matchFilterRule) {
                     if ($this->matchesAttributionFilterRule($person, $matchFilterRule, $langCode)) {
-                        self::addBasicFilter($basicFilterInfos, $checkItem, $langCode);
+                        self::addBasicFilter($basicFilterInfos, $checkItem, $langCode, $person->getDisplayOrder());
                         self::addAncestorsBasicFilter(
                             $basicFilterInfos,
                             $checkItem,
                             $this->filters[self::ATTRIBUTION],
-                            $langCode,
+                            $langCode
                         );
                     }
                 }
@@ -306,7 +306,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private static function addBasicFilter(array &$basicFilterInfos, CustomFilter $checkItem, string $langCode)
+    private static function addBasicFilter(array &$basicFilterInfos, CustomFilter $checkItem, string $langCode, int $order = 0)
     {
         $id = $checkItem->getId();
         $text = $checkItem->getLangText($langCode);
@@ -320,6 +320,10 @@ class ExtenderWithBasicFilterValues extends Hybrid
             $newFilterInfo->setId($id);
             $newFilterInfo->setText($text);
             $newFilterInfo->setParentId($checkItem->getParentId());
+
+            if ($order > 0) {
+                $newFilterInfo->setOrder($order);
+            }
 
             $basicFilterInfos[] = $newFilterInfo;
         }
