@@ -15,35 +15,37 @@ abstract class AbstractImagesItem
                 'infos' => [
                     'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
                 ],
-                'variants' => [
+                'images' => [
                     [
-                        'xsmall' => [
-                            'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                            'src' => '',
-                            'type' => 'plain',
-                        ],
-                        'small' => [
-                            'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                            'src' => '',
-                            'type' => 'plain',
-                        ],
-                        'medium' => [
-                            'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                            'src' => '',
-                            'type' => 'plain',
-                        ],
-                        'origin' => [
-                            'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                            'src' => '',
-                            'type' => 'plain',
-                        ],
-                        'tiles' => [
-                            'dimensions' => [ 'width' => 0, 'height' => 0 ],
-                            'src' => '',
-                            'type' => 'dzi',
+                        'id' => ''
+                        'sizes' => [
+                            'xsmall' => [
+                                'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                                'src' => '',
+                                'type' => 'plain',
+                            ],
+                            'small' => [
+                                'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                                'src' => '',
+                                'type' => 'plain',
+                            ],
+                            'medium' => [
+                                'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                                'src' => '',
+                                'type' => 'plain',
+                            ],
+                            'origin' => [
+                                'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                                'src' => '',
+                                'type' => 'plain',
+                            ],
+                            'tiles' => [
+                                'dimensions' => [ 'width' => 0, 'height' => 0 ],
+                                'src' => '',
+                                'type' => 'dzi',
+                            ],
                         ],
                     ],
-
                     // ... multiple variants
                 ],
             ],

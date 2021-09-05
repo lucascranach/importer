@@ -5,6 +5,7 @@ namespace CranachDigitalArchive\Importer\Modules\Restorations\Inflators\XML;
 use SimpleXMLElement;
 use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\ImageFileReference;
 use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Restoration;
 use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Survey;
 use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Test;
@@ -608,9 +609,31 @@ class RestorationInflator implements IInflator
             $trimmedFilenames = array_map('trim', $filenames);
 
             foreach ($trimmedFilenames as $trimmedFilename) {
-                $survey->addFilename($trimmedFilename);
+                $basename = basename($trimmedFilename);
+
+                $type = self::determineFileType($trimmedFilename);
+
+                $id = $basename;
+
+                $dotPos = strrpos($id, '.');
+                if ($dotPos !== false) {
+                    $id = substr($id, 0, $dotPos);
+                }
+
+                $fileRef = new ImageFileReference();
+                $fileRef->setType($type);
+                $fileRef->setId($id);
+
+                $survey->addFileReference($fileRef);
             }
         }
+    }
+
+
+    protected static function determineFileType($filepath): string
+    {
+        $dirname = explode('/', $filepath)[0];
+        return strtolower(preg_replace('/\d+_/', '', $dirname));
     }
 
 

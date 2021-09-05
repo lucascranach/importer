@@ -2,6 +2,8 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Restorations\Entities;
 
+use CranachDigitalArchive\Importer\Modules\Main\Entities\ImageFileReference;
+
 /**
  * Representing a single graphic restoration survey
  */
@@ -15,7 +17,7 @@ class Survey
     public $involvedPersons = [];
     public $processingDates = null;
     public $signature = null;
-    public $filenames = [];
+    public $fileReferences = [];
 
 
     public function __construct()
@@ -119,14 +121,14 @@ class Survey
     }
 
 
-    public function addFilename(string $filename)
+    public function addFileReference(ImageFileReference $fileReference)
     {
-        $this->filenames[] = $filename;
+        $this->fileReferences[] = $fileReference;
     }
 
 
-    public function getFilenames(): array
+    public function getFileReferences(): array
     {
-        return $this->filenames;
+        return $this->fileReferences;
     }
 }

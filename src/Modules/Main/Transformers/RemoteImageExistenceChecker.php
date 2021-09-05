@@ -29,6 +29,7 @@ class RemoteImageExistenceChecker extends Hybrid
     const ALL_IMAGE_TYPES = 'all-image-types';
 
 
+    private $imageVariantIdPattern = '%s/%s';
     private $serverHost = 'https://lucascranach.org/';
     private $remoteImageBasePath = 'imageserver-2021/%s/%s';
     private $remoteImageDataPath = 'imageserver-2021/%s/imageData-1.1.json';
@@ -320,14 +321,37 @@ class RemoteImageExistenceChecker extends Hybrid
         ];
 
         foreach ($images as $image) {
-            $destinationTypeStructure['images'][] = $this->getPreparedImageVariant(
-                $image,
-                $id,
-                $imageType,
-            );
+            $destinationTypeStructure['images'][] = [
+                'id' => $this->getImageVariantId($image),
+                'sizes' => $this->getPreparedImageVariant(
+                    $image,
+                    $id,
+                    $imageType,
+                )
+            ];
         }
 
         return $destinationTypeStructure;
+    }
+
+
+    private function getImageVariantId(array $image): string
+    {
+        $variantId = '';
+
+        if (isset($image['tiles'])) {
+            $tilesImage = $image['tiles'];
+            $basename = basename($tilesImage['src']);
+
+            $variantId = $basename;
+
+            $dotPos = strrpos($variantId, '.');
+            if ($dotPos !== false) {
+                $variantId = substr($variantId, 0, $dotPos);
+            }
+        }
+
+        return $variantId;
     }
 
 
