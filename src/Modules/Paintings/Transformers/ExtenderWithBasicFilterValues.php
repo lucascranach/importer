@@ -334,7 +334,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
     {
         $parentId = $checkItem->getParentId();
 
-        if (is_null($parentId) || !isset($items[$parentId])) {
+        if (is_null($parentId) || !isset($items[$parentId]) || is_null($items[$parentId]->getParentId())) {
             return;
         }
 
