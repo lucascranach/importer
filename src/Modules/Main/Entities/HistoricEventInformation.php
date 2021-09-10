@@ -44,25 +44,25 @@ class HistoricEventInformation
     }
 
 
-    public function setBegin(string $begin): void
+    public function setBegin(int $begin): void
     {
         $this->begin = $begin;
     }
 
 
-    public function getBegin(): ?string
+    public function getBegin(): ?int
     {
         return $this->begin;
     }
 
 
-    public function setEnd(string $end): void
+    public function setEnd(int $end): void
     {
         $this->end = $end;
     }
 
 
-    public function getEnd(): ?string
+    public function getEnd(): ?int
     {
         return $this->end;
     }

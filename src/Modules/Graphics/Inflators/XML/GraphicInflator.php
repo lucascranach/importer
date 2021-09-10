@@ -711,7 +711,7 @@ class GraphicInflator implements IInflator
                 'Field[@FieldName="{@Anfangsdatum}"]/FormattedValue',
             );
             if ($dateBeginElement) {
-                $dateBeginNumber = trim(strval($dateBeginElement));
+                $dateBeginNumber = intval($dateBeginElement);
                 $historicEventInformation->setBegin($dateBeginNumber);
             }
 
@@ -721,7 +721,7 @@ class GraphicInflator implements IInflator
                 'Field[@FieldName="{@Enddatum }"]/FormattedValue',
             );
             if ($dateEndElement) {
-                $dateEndNumber = trim(strval($dateEndElement));
+                $dateEndNumber = intval($dateEndElement);
                 $historicEventInformation->setEnd($dateEndNumber);
             }
 
