@@ -633,7 +633,8 @@ class RestorationInflator implements IInflator
     protected static function determineFileType($filepath): string
     {
         $dirname = explode('/', $filepath)[0];
-        return strtolower(preg_replace('/\d+_/', '', $dirname));
+        $imageType = strtolower(preg_replace('/\d+_/', '', $dirname));
+        return str_replace(['-'], '_', $imageType);
     }
 
 

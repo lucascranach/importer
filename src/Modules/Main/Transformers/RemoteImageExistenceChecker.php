@@ -286,11 +286,18 @@ class RemoteImageExistenceChecker extends Hybrid
             );
 
             if (!empty($preparedImageType['images'])) {
-                $mappedImageTypes[$imageType] = $preparedImageType;
+                $cleanImageType = $this->getCleanImageType($imageType);
+                $mappedImageTypes[$cleanImageType] = $preparedImageType;
             }
         }
 
         return $mappedImageTypes;
+    }
+
+
+    private function getCleanImageType($imageType)
+    {
+        return str_replace(['-'], '_', $imageType);
     }
 
 
