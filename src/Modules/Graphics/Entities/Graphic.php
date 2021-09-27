@@ -65,6 +65,7 @@ class Graphic extends AbstractImagesItem implements IBaseItem
     public $locations = [];
     public $repository = '';
     public $owner = '';
+    public $collectionRepositoryId = null;
     public $sortingNumber = '';
     public $catalogWorkReferences = [];
     public $structuredDimension = null;
@@ -405,6 +406,11 @@ class Graphic extends AbstractImagesItem implements IBaseItem
     public function getOwner(): string
     {
         return $this->owner;
+    }
+
+    public function setCollectionRepositoryId(string $id): void
+    {
+        $this->collectionRepositoryId = $id;
     }
 
     public function setSortingNumber(string $sortingNumber): void

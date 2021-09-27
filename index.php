@@ -13,6 +13,8 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsElasticsea
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterminer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MapToSearchableGraphic;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithThesaurus as GraphicsExtenderWithThesaurus;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithBasicFilterValues as GraphicsExtenderWithBasicFilterValues;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithIds as GraphicsExtenderWithIds;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRestorations as GraphicsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MetadataFiller as GraphicsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
@@ -194,6 +196,8 @@ $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
 $graphicsConditionDeterminer = ConditionDeterminer::new();
 $graphicsRestorationExtender = GraphicsExtenderWithRestorations::new($graphicsRestorationMemoryDestination);
 $graphicsMapToSearchableGraphic = MapToSearchableGraphic::new();
+$graphicsIdAdder = GraphicsExtenderWithIds::new($customFiltersMemoryDestination);
+$graphicsBasicFilterValues = GraphicsExtenderWithBasicFilterValues::new($customFiltersMemoryDestination);
 $graphicsThesaurusExtender = GraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $graphicsMetadataFiller = GraphicsMetadataFiller::new();
 $graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt($graphicsOutputFilepath);
@@ -213,13 +217,17 @@ if ($skipSoftDeletedArterfacts) {
 
 $inbetweenNode->pipe(
     $graphicsRemoteImageExistenceChecker->pipe(
-        $graphicsConditionDeterminer->pipe(
-            $graphicsRestorationExtender->pipe(
-                $graphicsMetadataFiller->pipe(
-                    $graphicsDestination,
-                    $graphicsMapToSearchableGraphic->pipe(
-                        $graphicsThesaurusExtender->pipe(
-                            $graphicsElasticsearchBulkDestination,
+        $graphicsIdAdder->pipe(
+            $graphicsConditionDeterminer->pipe(
+                $graphicsRestorationExtender->pipe(
+                    $graphicsMetadataFiller->pipe(
+                        $graphicsDestination,
+                        $graphicsMapToSearchableGraphic->pipe(
+                            $graphicsThesaurusExtender->pipe(
+                                $graphicsBasicFilterValues->pipe(
+                                    $graphicsElasticsearchBulkDestination,
+                                ),
+                            ),
                         ),
                     ),
                 ),
