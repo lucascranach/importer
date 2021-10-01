@@ -90,6 +90,8 @@ class GraphicInflator implements IInflator
         '-Nummer',
     ];
 
+    private static $sortingNumberFallbackValue = '?';
+
     private static $activeLoggingOfWronglyCategorizedReferences = false;
 
     private function __construct()
@@ -1607,6 +1609,10 @@ class GraphicInflator implements IInflator
         );
         if ($sortingNumberElement) {
             $sortingNumberStr = trim(strval($sortingNumberElement));
+
+            if (empty($sortingNumberStr)) {
+                $sortingNumberStr = self::$sortingNumberFallbackValue;
+            }
 
             $graphicDe->setSortingNumber($sortingNumberStr);
             $graphicEn->setSortingNumber($sortingNumberStr);

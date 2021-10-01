@@ -74,6 +74,9 @@ class PaintingInflator implements IInflator
         '/^CDA\./',
     ];
 
+    private static $sortingNumberFallbackValue = '?';
+
+
     private function __construct()
     {
     }
@@ -1501,6 +1504,10 @@ class PaintingInflator implements IInflator
         );
         if ($sortingNumberElement) {
             $sortingNumberStr = trim(strval($sortingNumberElement));
+
+            if (empty($sortingNumberStr)) {
+                $sortingNumberStr = self::$sortingNumberFallbackValue;
+            }
 
             $paintingDe->setSortingNumber($sortingNumberStr);
             $paintingEn->setSortingNumber($sortingNumberStr);
