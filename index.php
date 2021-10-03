@@ -53,6 +53,17 @@ $inputDirectory = './input/' . $date;
 $destDirectory = './docs/' . $date;
 $filtersDirectory = './filters';
 
+/* Read .env file */
+$dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
+
+try {
+    $dotenv->load();
+} catch (\Throwable $e) {
+    echo "Missing .env file!\nSee README.md for more.\n\n";
+    exit();
+}
+
+$imagesAPIKey = $_ENV['IMAGES_API_KEY'];
 
 /* Inputfiles */
 $thesaurusInputFilepath = $inputDirectory . '/CDA_Thesaurus_' . $date . '.xml';
@@ -132,6 +143,7 @@ RestorationsLoader::withSourcesAt($paintingsRestorationInputFilepaths)->pipe(
 
 /* Paintings */
 $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
+    $imagesAPIKey,
     './.cache',
     RemoteImageExistenceChecker::ALL_IMAGE_TYPES,
     'remotePaintingsImageExistenceChecker'
@@ -189,6 +201,7 @@ RestorationsLoader::withSourcesAt($graphicsRestorationInputFilepaths)->pipe(
 
 /* Graphics */
 $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
+    $imagesAPIKey,
     './.cache',
     RemoteImageExistenceChecker::ALL_IMAGE_TYPES,
     'remoteGraphicsImageExistenceChecker'

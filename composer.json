@@ -11,7 +11,8 @@
         "ext-json": "*",
         "ext-xmlreader": "*",
         "ext-dom": "*",
-        "ext-simplexml": "*"
+        "ext-simplexml": "*",
+        "vlucas/phpdotenv": "^5.3"
     },
     "scripts": {
         "cghooks": "cghooks",

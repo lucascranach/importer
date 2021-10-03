@@ -24,6 +24,15 @@ Um die Nutzung des Importers (aber auch die Entwicklung) zu vereinfachen, kommt 
 
 ## Getting started
 
+### Umgebungsvariablen
+Für den Importvorgang müssen bestimmte Umgebungsvariablen gesetzt sein. Darunter u.a. ein Access-Key für die entfernt liegenden Bildinformationen.
+Der Importer geht davon aus, dass im Wurzelverzeichnis eine `.env`-Datei existiert, die als Basis für die Durchreichung von u.a. sensiblen Daten dient.
+Die `.env` sollte am besten von der existierenden `.env.example` abgeleitet und anschließend angepasst werden:
+
+```bash
+cp .env.example .env
+```
+
 ### Importierung
 1. Um neue XML-Dateien importieren zu können, sollten diese im `input`-Ordner unter einem eigenen Ordner nach dem Muster `yyyymmdd` abgelegt werden
 2. In der `index.php` den Import- und Output-Pfad aktualisieren, damit auch die neuen Dateien für den Import berücksichtigt werden

@@ -668,7 +668,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/albertina, vienna/i"
+                        "collection_repository": "/albertina, (vienna|wien)/i"
                       }
                     ]
                   },
@@ -1763,7 +1763,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/kupferstichkabinett, staatliche museen zu berlin preu\u00dfischer kulturbesitz/i"
+                        "collection_repository": "/(Kupferstichkabinett,\\s+)?staatliche museen zu berlin\\s+(-\\s+)preu\u00dfischer kulturbesitz(,\\s+Kupferstichkabinett)?/i"
                       }
                     ]
                   },
@@ -2883,6 +2883,18 @@
                     "matchers": [
                       {
                         "collection_repository": "/bayerisches nationalmuseum/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.munich.munich_3",
+                    "text": {
+                      "de": "Staatliche Graphische Sammlung M\u00fcnchen",
+                      "en": "Staatliche Graphische Sammlung M\u00fcnchen"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/staatliche graphische sammlung m\u00fcnchen/i"
                       }
                     ]
                   }

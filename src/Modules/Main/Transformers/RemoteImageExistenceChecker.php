@@ -6,6 +6,7 @@ use Error;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\AbstractImagesItem;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
+use stdClass;
 
 class RemoteImageExistenceChecker extends Hybrid
 {
@@ -29,10 +30,10 @@ class RemoteImageExistenceChecker extends Hybrid
     const ALL_IMAGE_TYPES = 'all-image-types';
 
 
-    private $imageVariantIdPattern = '%s/%s';
     private $serverHost = 'https://lucascranach.org/';
     private $remoteImageBasePath = 'imageserver-2021/%s/%s';
-    private $remoteImageDataPath = 'imageserver-2021/%s/imageData-1.1.json';
+    private $remoteImageDataPath = 'data-proxy/image-data.php?obj=%s';
+    private $accessKey = '';
     private $remoteImageTypeAccessorFunc = null;
     private $cacheDir = null;
     private $cacheFilename = 'remoteImageExistenceChecker';
@@ -42,8 +43,9 @@ class RemoteImageExistenceChecker extends Hybrid
     private $allowedImageTypes = [];
 
 
-    private function __construct()
+    private function __construct(string $accessKey)
     {
+        $this->accessKey = $accessKey;
         $this->allowedImageTypes = [
             self::OVERALL,
             self::REVERSE,
@@ -65,11 +67,12 @@ class RemoteImageExistenceChecker extends Hybrid
     }
 
     public static function withCacheAt(
+        string $accessKey,
         string $cacheDir,
         $remoteImageTypeAccessorFunc = null,
         string $cacheFilename = ''
     ): self {
-        $checker = new self;
+        $checker = new self($accessKey);
 
         if (is_string($remoteImageTypeAccessorFunc) && !empty($remoteImageTypeAccessorFunc)) {
             $imageType = $remoteImageTypeAccessorFunc;
@@ -229,7 +232,15 @@ class RemoteImageExistenceChecker extends Hybrid
 
     private function getRemoteImageDataResource(string $url): ?array
     {
-        $content = @file_get_contents($url);
+        $opts = [
+            'http' => [
+                'header' => "X-API-KEY: " . $this->accessKey,
+            ]
+        ];
+
+        $context = stream_context_create($opts);
+
+        $content = @file_get_contents($url, false, $context);
 
         if ($content === false) {
             return null;
@@ -257,6 +268,13 @@ class RemoteImageExistenceChecker extends Hybrid
         array $cachedImagesForObject
     ): array {
         $mappedImageTypes = [];
+
+        if (!isset($cachedImagesForObject['imageStack'])) {
+            throw new Error(
+                'RemoteImageExistenceChecker: '
+                . 'Could not find stack for \'' . $id . '\''
+            );
+        }
 
         $imageStack = $cachedImagesForObject['imageStack'];
 
@@ -330,6 +348,7 @@ class RemoteImageExistenceChecker extends Hybrid
         foreach ($images as $image) {
             $destinationTypeStructure['images'][] = [
                 'id' => $this->getImageVariantId($image),
+                'metadata' => $this->getPreparedImageMetadata($image),
                 'sizes' => $this->getPreparedImageVariant(
                     $image,
                     $id,
@@ -362,11 +381,52 @@ class RemoteImageExistenceChecker extends Hybrid
     }
 
 
+    private function getPreparedImageMetadata($image)
+    {
+        if (!isset($image['metadata']) || empty($image['metadata'])) {
+            return null;
+        }
+
+        $langs = ['de', 'en'];
+        $metadata = $image['metadata'];
+
+        return array_reduce($langs, function ($acc, $lang) use ($metadata) {
+            $fileType = isset($metadata['file-type-' . $lang]) ? $metadata['file-type-' . $lang] : '';
+            $description = isset($metadata['image-description-' . $lang]) ? $metadata['image-description-' . $lang] : '';
+            $created = isset($metadata['image-created-' . $lang]) ? $metadata['image-created-' . $lang] : '';
+            $date = isset($metadata['image-date-' . $lang]) ? $metadata['image-date-' . $lang] : '';
+            $source = isset($metadata['image-source-' . $lang]) ? $metadata['image-source-' . $lang] : '';
+
+            if (
+                   !empty($fileType)
+                || !empty($description)
+                || !empty($created)
+                || !empty($date)
+                || !empty($source)
+            ) {
+                $acc[$lang] = [
+                'fileType' => $fileType,
+                'description' => $description,
+                'created' => $created,
+                'date' => $date,
+                'source' => $source,
+                ];
+            }
+
+            return $acc;
+        }, []);
+    }
+
+
     private function getPreparedImageVariant($image, $id, $imageType)
     {
         $variantSizes = [];
 
         foreach ($image as $sizeName => $size) {
+            if ($sizeName === 'metadata') {
+                continue;
+            }
+
             $baseVariant = [
                 'dimensions' => [
                     'width' => 0,

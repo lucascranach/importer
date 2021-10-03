@@ -17,3 +17,4 @@ cghooks.lock
 # Blobs
 *.zip
 *.log
+.env
