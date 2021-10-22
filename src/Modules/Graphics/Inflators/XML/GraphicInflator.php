@@ -1155,6 +1155,14 @@ class GraphicInflator implements IInflator
             if ($textElement) {
                 $textStr = trim(strval($textElement));
                 $reference->setText($textStr);
+
+                $kind = ObjectReference::getKindFromText($textStr);
+
+                if ($kind !== false) {
+                    $reference->setKind($kind);
+                } else {
+                    echo 'PaintingInflator: Unknown text for kind determination "' . $textStr . '"';
+                }
             }
 
             /* Inventory number */
@@ -1174,7 +1182,7 @@ class GraphicInflator implements IInflator
             );
             if ($remarksElement) {
                 $remarksStr = trim(strval($remarksElement));
-                $reference->setRemark($remarksStr);
+                $reference->addRemark($remarksStr);
             }
 
             $references[] = $reference;

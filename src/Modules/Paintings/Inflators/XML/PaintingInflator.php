@@ -3,6 +3,7 @@
 namespace CranachDigitalArchive\Importer\Modules\Paintings\Inflators\XML;
 
 use Error;
+use Throwable;
 use SimpleXMLElement;
 use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
@@ -20,6 +21,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\Publication;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\CatalogWorkReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\StructuredDimension;
+use PDO;
 
 /**
  * Paintingss inflator used to inflate german and english painting instances
@@ -994,10 +996,11 @@ class PaintingInflator implements IInflator
                 continue;
             }
 
-            $reference = new ObjectReference;
+            $referenceDe = new ObjectReference;
+            $referenceEn = new ObjectReference;
 
-            $paintingDe->addReference($reference);
-            $paintingEn->addReference($reference);
+            $paintingDe->addReference($referenceDe);
+            $paintingEn->addReference($referenceEn);
 
             /* Text */
             $textElement = self::findElementByXPath(
@@ -1006,7 +1009,17 @@ class PaintingInflator implements IInflator
             );
             if ($textElement) {
                 $textStr = trim(strval($textElement));
-                $reference->setText($textStr);
+                $referenceDe->setText($textStr);
+                $referenceEn->setText($textStr);
+
+                $kind = ObjectReference::getKindFromText($textStr);
+
+                if ($kind !== false) {
+                    $referenceDe->setKind($kind);
+                    $referenceEn->setKind($kind);
+                } else {
+                    echo 'PaintingInflator: Unknown text for kind determination "' . $textStr . '"\n';
+                }
             }
 
             /* Inventory number */
@@ -1016,7 +1029,8 @@ class PaintingInflator implements IInflator
             );
             if ($inventoryNumberElement) {
                 $inventoryNumberStr = trim(strval($inventoryNumberElement));
-                $reference->setInventoryNumber($inventoryNumberStr);
+                $referenceDe->setInventoryNumber($inventoryNumberStr);
+                $referenceEn->setInventoryNumber($inventoryNumberStr);
             }
 
             /* Remarks */
@@ -1026,7 +1040,8 @@ class PaintingInflator implements IInflator
             );
             if ($remarksElement) {
                 $remarksStr = trim(strval($remarksElement));
-                $reference->setRemark($remarksStr);
+
+                self::inflateReferenceRemarks($paintingDe->getInventoryNumber(), $remarksStr, $referenceDe, $referenceEn);
             }
         }
     }
@@ -1038,7 +1053,7 @@ class PaintingInflator implements IInflator
         Painting $paintingDe,
         Painting $paintingEn
     ): void {
-        $referenceDetailsElements = $node->{'Section'}[32]->{'Subreport'}->{'Details'};
+        $referenceDetailsElements = $node->{'Section'}[32]->{'Subreport'}->{':Details'};
 
         for ($i = 0; $i < count($referenceDetailsElements); $i += 1) {
             $referenceDetailElement = $referenceDetailsElements[$i];
@@ -1047,10 +1062,11 @@ class PaintingInflator implements IInflator
                 continue;
             }
 
-            $reference = new ObjectReference;
+            $referenceDe = new ObjectReference;
+            $referenceEn = new ObjectReference;
 
-            $paintingDe->addSecondaryReference($reference);
-            $paintingEn->addSecondaryReference($reference);
+            $paintingDe->addSecondaryReference($referenceDe);
+            $paintingEn->addSecondaryReference($referenceEn);
 
             /* Text */
             $textElement = self::findElementByXPath(
@@ -1059,7 +1075,8 @@ class PaintingInflator implements IInflator
             );
             if ($textElement) {
                 $textStr = trim(strval($textElement));
-                $reference->setText($textStr);
+                $referenceDe->setText($textStr);
+                $referenceEn->setText($textStr);
             }
 
             /* Inventory number */
@@ -1069,7 +1086,8 @@ class PaintingInflator implements IInflator
             );
             if ($inventoryNumberElement) {
                 $inventoryNumberStr = trim(strval($inventoryNumberElement));
-                $reference->setInventoryNumber($inventoryNumberStr);
+                $referenceDe->setInventoryNumber($inventoryNumberStr);
+                $referenceEn->setInventoryNumber($inventoryNumberStr);
             }
 
             /* Remarks */
@@ -1079,7 +1097,65 @@ class PaintingInflator implements IInflator
             );
             if ($remarksElement) {
                 $remarksStr = trim(strval($remarksElement));
-                $reference->setRemark($remarksStr);
+
+                self::inflateReferenceRemarks($paintingDe->getInventoryNumber(), $remarksStr, $referenceDe, $referenceEn);
+            }
+        }
+    }
+
+
+    private static function inflateReferenceRemarks(
+        string $inventoryNumber,
+        string $value,
+        ObjectReference $referenceDe,
+        ObjectReference $referenceEn
+    ): void {
+        $splitValues = array_values(array_filter(array_map('trim', explode('#', $value))));
+
+        for ($i = 0; $i < count($splitValues); $i++) {
+            $currVal = $splitValues[$i];
+            $nextVal = isset($splitValues[$i + 1]) ? $splitValues[$i + 1] : false;
+            $nextNextVal = isset($splitValues[$i + 2]) ? $splitValues[$i + 2] : false;
+
+            if (is_numeric($currVal)) {
+                if ($currVal === '00') {
+                    if ($nextVal) {
+                        $referenceDe->addRemark($nextVal);
+                    }
+
+                    if ($nextNextVal) {
+                        $referenceEn->addRemark($nextNextVal);
+                        $i = $i + 2;
+                    } elseif ($nextVal) {
+                        $referenceEn->addRemark($nextVal);
+                        $i++;
+                    }
+                } else {
+                    $remark = ObjectReference::getRemarkMappingForLangAndCode(Language::DE, $currVal);
+
+                    if ($remark === false) {
+                        echo 'PaintingInflator: Unknown reference remark code "' . $currVal . '" for "' . $inventoryNumber . '"' . "\n";
+                        $remark = $currVal;
+                    }
+                    $referenceDe->addRemark($remark);
+
+                    $remark = ObjectReference::getRemarkMappingForLangAndCode(Language::EN, $currVal);
+
+                    if ($remark === false) {
+                        echo 'PaintingInflator: Unknown reference remark code "' . $currVal . '" for "' . $inventoryNumber . '"' . "\n";
+                        $remark = $currVal;
+                    }
+                    $referenceEn->addRemark($remark);
+                }
+            } else {
+                $referenceDe->addRemark($currVal);
+
+                if ($nextVal) {
+                    $referenceEn->addRemark($nextVal);
+                    $i += 1;
+                } else {
+                    $referenceEn->addRemark($currVal);
+                }
             }
         }
     }
