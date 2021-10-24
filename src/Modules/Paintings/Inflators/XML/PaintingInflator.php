@@ -3,7 +3,6 @@
 namespace CranachDigitalArchive\Importer\Modules\Paintings\Inflators\XML;
 
 use Error;
-use Throwable;
 use SimpleXMLElement;
 use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
@@ -21,7 +20,6 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\Publication;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\CatalogWorkReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\StructuredDimension;
-use PDO;
 
 /**
  * Paintingss inflator used to inflate german and english painting instances
@@ -708,6 +706,15 @@ class PaintingInflator implements IInflator
                 $datingDe->addHistoricEventInformation($historicEventInformation);
                 $datingEn->addHistoricEventInformation($historicEventInformation);
             }
+        }
+
+        /* IsDated */
+        if (!empty($remarks = $datingDe->getRemarks())) {
+            $datingDe->setIsDated(Dating::determineIsDated(Language::DE, $remarks));
+        }
+
+        if (!empty($remarks = $datingEn->getRemarks())) {
+            $datingEn->setIsDated(Dating::determineIsDated(Language::EN, $remarks));
         }
     }
 

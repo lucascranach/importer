@@ -763,6 +763,15 @@ class GraphicInflator implements IInflator
                 $datingEn->addHistoricEventInformation($historicEventInformation);
             }
         }
+
+        /* IsDated */
+        if (!empty($remarks = $datingDe->getRemarks())) {
+            $datingDe->setIsDated(Dating::determineIsDated(Language::DE, $remarks));
+        }
+
+        if (!empty($remarks = $datingEn->getRemarks())) {
+            $datingEn->setIsDated(Dating::determineIsDated(Language::EN, $remarks));
+        }
     }
 
 
