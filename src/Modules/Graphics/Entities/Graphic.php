@@ -2,7 +2,6 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Entities;
 
-use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\AbstractImagesItem;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\AdditionalTextInformation;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\CatalogWorkReference;
@@ -20,7 +19,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\Title;
  * Representing a single graphic and all its data
  *     One instance containing only data for one language
  */
-class Graphic extends AbstractImagesItem implements IBaseItem
+class Graphic extends AbstractImagesItem
 {
     const ENTITY_TYPE = 'GRAPHIC';
 

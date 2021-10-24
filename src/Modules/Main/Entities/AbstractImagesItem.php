@@ -2,10 +2,12 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Main\Entities;
 
+use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
+
 /**
  * Representing an item with multiple images
  */
-abstract class AbstractImagesItem
+abstract class AbstractImagesItem implements IBaseItem
 {
     public $images = null;
 
@@ -56,6 +58,8 @@ abstract class AbstractImagesItem
 
 
     abstract public function getId(): string;
+
+    abstract public function getMetadata(): ?Metadata;
 
     abstract public function getImageId(): string;
 

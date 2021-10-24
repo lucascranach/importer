@@ -2,7 +2,6 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Paintings\Entities;
 
-use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\AbstractImagesItem;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
@@ -20,7 +19,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\StructuredDimension;
  * Representing a single graphic and all its data
  * 	One instance containing only data for one language
  */
-class Painting extends AbstractImagesItem implements IBaseItem
+class Painting extends AbstractImagesItem
 {
     const ENTITY_TYPE = 'PAINTING';
 

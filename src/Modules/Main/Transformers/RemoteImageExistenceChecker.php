@@ -6,7 +6,6 @@ use Error;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\AbstractImagesItem;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
-use stdClass;
 
 class RemoteImageExistenceChecker extends Hybrid
 {
@@ -163,9 +162,11 @@ class RemoteImageExistenceChecker extends Hybrid
             $selectedImageTypesAreEmpty = empty($selectedImageTypes);
             $selectedImageTypesAreAllSupported = count(array_intersect($selectedImageTypes, $this->allowedImageTypes)) === count($this->allowedImageTypes);
 
+            $itemLang = $item->getMetadata()?->getLangCode() ?? '';
+
             if (!$selectedImageTypesAreEmpty && $selectedImageTypesAreAllSupported) {
                 try {
-                    $preparedImages = $this->prepareRawImages($id, $selectedImageTypes, $cachedImagesForObject);
+                    $preparedImages = $this->prepareRawImages($id, $itemLang, $selectedImageTypes, $cachedImagesForObject);
 
                     if (!empty($preparedImages)) {
                         $item->setImages($preparedImages);
@@ -264,6 +265,7 @@ class RemoteImageExistenceChecker extends Hybrid
 
     private function prepareRawImages(
         string $id,
+        string $langCode,
         array $selectedImageTypes,
         array $cachedImagesForObject
     ): array {
@@ -300,6 +302,7 @@ class RemoteImageExistenceChecker extends Hybrid
             $preparedImageType = $this->getPreparedImageType(
                 $imageTypeValue,
                 $id,
+                $langCode,
                 $imageType,
             );
 
@@ -322,7 +325,7 @@ class RemoteImageExistenceChecker extends Hybrid
     /**
      * @return array[]
      */
-    private function getPreparedImageType($imageTypeValue, $id, $imageType): array
+    private function getPreparedImageType($imageTypeValue, $id, $langCode, $imageType): array
     {
         $images = $imageTypeValue['images'];
 
@@ -348,7 +351,7 @@ class RemoteImageExistenceChecker extends Hybrid
         foreach ($images as $image) {
             $destinationTypeStructure['images'][] = [
                 'id' => $this->getImageVariantId($image),
-                'metadata' => $this->getPreparedImageMetadata($image),
+                'metadata' => $this->getPreparedImageMetadata($image, $langCode),
                 'sizes' => $this->getPreparedImageVariant(
                     $image,
                     $id,
@@ -381,40 +384,37 @@ class RemoteImageExistenceChecker extends Hybrid
     }
 
 
-    private function getPreparedImageMetadata($image)
+    private function getPreparedImageMetadata($image, $langCode)
     {
         if (!isset($image['metadata']) || empty($image['metadata'])) {
             return null;
         }
 
-        $langs = ['de', 'en'];
         $metadata = $image['metadata'];
 
-        return array_reduce($langs, function ($acc, $lang) use ($metadata) {
-            $fileType = isset($metadata['file-type-' . $lang]) ? $metadata['file-type-' . $lang] : '';
-            $description = isset($metadata['image-description-' . $lang]) ? $metadata['image-description-' . $lang] : '';
-            $created = isset($metadata['image-created-' . $lang]) ? $metadata['image-created-' . $lang] : '';
-            $date = isset($metadata['image-date-' . $lang]) ? $metadata['image-date-' . $lang] : '';
-            $source = isset($metadata['image-source-' . $lang]) ? $metadata['image-source-' . $lang] : '';
+        $fileType = isset($metadata['file-type-' . $langCode]) ? $metadata['file-type-' . $langCode] : '';
+        $description = isset($metadata['image-description-' . $langCode]) ? $metadata['image-description-' . $langCode] : '';
+        $created = isset($metadata['image-created-' . $langCode]) ? $metadata['image-created-' . $langCode] : '';
+        $date = isset($metadata['image-date-' . $langCode]) ? $metadata['image-date-' . $langCode] : '';
+        $source = isset($metadata['image-source-' . $langCode]) ? $metadata['image-source-' . $langCode] : '';
 
-            if (
-                   !empty($fileType)
-                || !empty($description)
-                || !empty($created)
-                || !empty($date)
-                || !empty($source)
-            ) {
-                $acc[$lang] = [
+        if (
+               !empty($fileType)
+            || !empty($description)
+            || !empty($created)
+            || !empty($date)
+            || !empty($source)
+        ) {
+            return [
                 'fileType' => $fileType,
                 'description' => $description,
                 'created' => $created,
                 'date' => $date,
                 'source' => $source,
-                ];
-            }
+            ];
+        }
 
-            return $acc;
-        }, []);
+        return null;
     }
 
 

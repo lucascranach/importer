@@ -34,10 +34,10 @@ class SoftDeletedArtefactGate extends Hybrid
             throw new Error('Pushed item expected to implement \'IBaseItem\' interface');
         }
 
-        if (!$this->isSoftDeleted($item->getID())) {
+        if (!$this->isSoftDeleted($item->getId())) {
             $this->next($item);
         } else {
-            $this->removedSoftDeletedArtefactIds[$item->getID()] = true;
+            $this->removedSoftDeletedArtefactIds[$item->getId()] = true;
         }
 
         return true;
