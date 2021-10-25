@@ -766,11 +766,11 @@ class GraphicInflator implements IInflator
 
         /* IsDated */
         if (!empty($remarks = $datingDe->getRemarks())) {
-            $datingDe->setIsDated(Dating::determineIsDated(Language::DE, $remarks));
+            $datingDe->setIsDated(Dating::determineIfIsDated($remarks));
         }
 
         if (!empty($remarks = $datingEn->getRemarks())) {
-            $datingEn->setIsDated(Dating::determineIsDated(Language::EN, $remarks));
+            $datingEn->setIsDated(Dating::determineIfIsDated($remarks));
         }
     }
 

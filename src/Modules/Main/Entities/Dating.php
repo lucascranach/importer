@@ -10,8 +10,8 @@ use CranachDigitalArchive\Importer\Language;
 class Dating
 {
     private static $isDatedCodes = [
-        Language::DE => '[datiert]',
-        Language::EN => '[dated]',
+        '[datiert]',
+        '[dated]',
     ];
 
     public $dated = '';
@@ -99,8 +99,8 @@ class Dating
     }
 
 
-    public static function determineIsDated(string $lang, string $value): bool
+    public static function determineIfIsDated(string $value): bool
     {
-        return self::$isDatedCodes[$lang] === $value;
+        return in_array($value, self::$isDatedCodes, true);
     }
 }
