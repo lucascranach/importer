@@ -18,6 +18,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithIds
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRestorations as GraphicsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MetadataFiller as GraphicsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
+use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteDocumentExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Main\Collectors\MetaReferenceCollector;
 use CranachDigitalArchive\Importer\Modules\Main\Gates\SoftDeletedArtefactGate;
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
@@ -142,6 +143,12 @@ RestorationsLoader::withSourcesAt($paintingsRestorationInputFilepaths)->pipe(
 
 
 /* Paintings */
+$paintingsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::withCacheAt(
+    $imagesAPIKey,
+    './.cache',
+    RemoteDocumentExistenceChecker::ALL_EXAMINATION_TYPES,
+    'remotePaintingsDocumentExistenceChecker'
+);
 $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     $imagesAPIKey,
     './.cache',
@@ -171,15 +178,17 @@ if ($skipSoftDeletedArterfacts) {
 }
 
 $inbetweenNode->pipe(
-    $paintingsRemoteImageExistenceChecker->pipe(
-        $paintingsRestorationExtender->pipe(
-            $paintingsIdAdder->pipe(
-                $paintingsMetadataFiller->pipe(
-                    $paintingsDestination,
-                    $paintingsMapToSearchablePainting->pipe(
-                        $paintingsThesaurusExtender->pipe(
-                            $paintingsBasicFilterValues->pipe(
-                                $paintingsElasticsearchBulkDestination,
+    $paintingsRemoteDocumentExistenceChecker->pipe(
+        $paintingsRemoteImageExistenceChecker->pipe(
+            $paintingsRestorationExtender->pipe(
+                $paintingsIdAdder->pipe(
+                    $paintingsMetadataFiller->pipe(
+                        $paintingsDestination,
+                        $paintingsMapToSearchablePainting->pipe(
+                            $paintingsThesaurusExtender->pipe(
+                                $paintingsBasicFilterValues->pipe(
+                                    $paintingsElasticsearchBulkDestination,
+                                ),
                             ),
                         ),
                     ),
@@ -200,6 +209,12 @@ RestorationsLoader::withSourcesAt($graphicsRestorationInputFilepaths)->pipe(
 
 
 /* Graphics */
+$graphicsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::withCacheAt(
+    $imagesAPIKey,
+    './.cache',
+    RemoteDocumentExistenceChecker::ALL_EXAMINATION_TYPES,
+    'remoteGraphicsDocumentExistenceChecker'
+);
 $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     $imagesAPIKey,
     './.cache',
@@ -229,16 +244,18 @@ if ($skipSoftDeletedArterfacts) {
 }
 
 $inbetweenNode->pipe(
-    $graphicsRemoteImageExistenceChecker->pipe(
-        $graphicsIdAdder->pipe(
-            $graphicsConditionDeterminer->pipe(
-                $graphicsRestorationExtender->pipe(
-                    $graphicsMetadataFiller->pipe(
-                        $graphicsDestination,
-                        $graphicsMapToSearchableGraphic->pipe(
-                            $graphicsThesaurusExtender->pipe(
-                                $graphicsBasicFilterValues->pipe(
-                                    $graphicsElasticsearchBulkDestination,
+    $graphicsRemoteDocumentExistenceChecker->pipe(
+        $graphicsRemoteImageExistenceChecker->pipe(
+            $graphicsIdAdder->pipe(
+                $graphicsConditionDeterminer->pipe(
+                    $graphicsRestorationExtender->pipe(
+                        $graphicsMetadataFiller->pipe(
+                            $graphicsDestination,
+                            $graphicsMapToSearchableGraphic->pipe(
+                                $graphicsThesaurusExtender->pipe(
+                                    $graphicsBasicFilterValues->pipe(
+                                        $graphicsElasticsearchBulkDestination,
+                                    ),
                                 ),
                             ),
                         ),

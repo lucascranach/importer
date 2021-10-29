@@ -56,12 +56,14 @@ abstract class AbstractImagesItem implements IBaseItem
         ]
     */
 
+    public $documents = null;
+
 
     abstract public function getId(): string;
 
     abstract public function getMetadata(): ?Metadata;
 
-    abstract public function getImageId(): string;
+    abstract public function getRemoteId(): string;
 
 
     public function setImages(?array $images): void
@@ -73,5 +75,17 @@ abstract class AbstractImagesItem implements IBaseItem
     public function getImages(): ?array
     {
         return $this->images;
+    }
+
+
+    public function setDocuments(?array $documents): void
+    {
+        $this->documents = $documents;
+    }
+
+
+    public function getDocuments(): ?array
+    {
+        return $this->documents;
     }
 }

@@ -116,10 +116,10 @@ class RemoteImageExistenceChecker extends Hybrid
             throw new Error('Pushed item is not of expected class \'AbstractImagesItem\'');
         }
 
-        $id = $item->getImageId();
+        $id = $item->getRemoteId();
 
         if (empty($id)) {
-            echo '  Missing imageId for \'' . $item->getId() . "'\n";
+            echo '  Missing remoteId for \'' . $item->getId() . "'\n";
             $this->next($item);
             return false;
         }

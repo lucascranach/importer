@@ -79,7 +79,7 @@ class Graphic extends AbstractImagesItem
         return $this->getInventoryNumber();
     }
 
-    public function getImageId(): string
+    public function getRemoteId(): string
     {
         $id = $this->getInventoryNumber();
 

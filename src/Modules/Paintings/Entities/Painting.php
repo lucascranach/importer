@@ -64,7 +64,7 @@ class Painting extends AbstractImagesItem
     }
 
 
-    public function getImageId(): string
+    public function getRemoteId(): string
     {
         return $this->getId() . '_' . $this->getObjectName();
     }
