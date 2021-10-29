@@ -427,7 +427,7 @@ class GraphicInflator implements IInflator
             /* remark */
             $remarksElement = self::findElementByXPath(
                 $titleDetailElement,
-                'Field[@FieldName="{OBJTITLES.Remarks}"]/FormattedValue',
+                'Field[@FieldName="{@ObjTitlesRemarks}"]/FormattedValue',
             );
             if ($remarksElement) {
                 $remarksStr = trim(strval($remarksElement));
