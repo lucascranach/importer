@@ -51,12 +51,12 @@ class GraphicInflator implements IInflator
     ];
 
     private static $repositoryTypes = [
-        Language::DE => 'Besitzer',
+        Language::DE => 'Besitzer*in',
         Language::EN => 'Repository',
     ];
 
     private static $ownerTypes = [
-        Language::DE => 'Eigentümer',
+        Language::DE => 'Eigentümer*in',
         Language::EN => 'Owner',
     ];
 
