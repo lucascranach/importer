@@ -53,7 +53,11 @@ class MetadataFiller extends Hybrid
         }
 
         $images = $item->getImages();
-        $images = $images['representative'] ?? $images['overall'] ?? false;
+        if (is_array($images)) {
+            $images = $images['representative'] ?? $images['overall'] ?? false;
+        } else {
+            $images = false;
+        }
         $imageSrc = '';
 
         if ($images && count($images['images']) > 0) {

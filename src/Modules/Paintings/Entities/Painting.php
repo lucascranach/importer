@@ -61,6 +61,7 @@ class Painting extends AbstractImagesItem
 
     public function __construct()
     {
+        parent::__construct();
     }
 
 

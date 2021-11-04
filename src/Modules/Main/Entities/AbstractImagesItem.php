@@ -3,13 +3,14 @@
 namespace CranachDigitalArchive\Importer\Modules\Main\Entities;
 
 use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
+use stdClass;
 
 /**
  * Representing an item with multiple images
  */
 abstract class AbstractImagesItem implements IBaseItem
 {
-    public $images = null;
+    public $images;
 
     /* Awaited images structure if images exist
         [
@@ -56,7 +57,14 @@ abstract class AbstractImagesItem implements IBaseItem
         ]
     */
 
-    public $documents = null;
+    public $documents;
+
+
+    public function __construct()
+    {
+        $this->images = new stdClass;
+        $this->documents = new stdClass;
+    }
 
 
     abstract public function getId(): string;
@@ -66,25 +74,25 @@ abstract class AbstractImagesItem implements IBaseItem
     abstract public function getRemoteId(): string;
 
 
-    public function setImages(?array $images): void
+    public function setImages(array $images): void
     {
         $this->images = $images;
     }
 
 
-    public function getImages(): ?array
+    public function getImages()
     {
         return $this->images;
     }
 
 
-    public function setDocuments(?array $documents): void
+    public function setDocuments(array $documents): void
     {
         $this->documents = $documents;
     }
 
 
-    public function getDocuments(): ?array
+    public function getDocuments()
     {
         return $this->documents;
     }
