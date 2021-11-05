@@ -7,9 +7,25 @@ namespace CranachDigitalArchive\Importer\Modules\Main\Entities;
  */
 class Person
 {
+    const ROLE_INVENTOR = 'INVENTOR';
+    const ROLE_ARTIST = 'ARTIST';
+    const ROLE_PRINTMAKER = 'PRINTMAKER';
+    const ROLE_PRINTER = 'PRINTER';
+    const ROLE_PUBLISHER = 'PUBLISHER';
+    const ROLE_UNKNOWN = 'UNKNOWN';
+
+    private static $rolesMapping = [
+        '/inventor/' => self::ROLE_INVENTOR,
+        '/künstler|artist|absender/i' => self::ROLE_ARTIST, /* TODO: remove '|absender' when fixed in data */
+        '/formschneider|printmaker/i' => self::ROLE_PRINTMAKER,
+        '/drucker|printer/i' => self::ROLE_PRINTER,
+        '/verleger|publisher/i' => self::ROLE_PUBLISHER,
+    ];
+
     public $displayOrder = 0;
     public $id = '';
     public $role = '';
+    public $roleType = self::ROLE_UNKNOWN;
     public $name = '';
     public $prefix = '';
     public $suffix = '';
@@ -53,12 +69,26 @@ class Person
     public function setRole(string $role): void
     {
         $this->role = $role;
+
+        $this->setRoleType(self::determineRoleTypeForRole($role));
     }
 
 
     public function getRole(): string
     {
         return $this->role;
+    }
+
+
+    public function setRoleType(string $roleType): void
+    {
+        $this->roleType = $roleType;
+    }
+
+
+    public function getRoleType(): string
+    {
+        return $this->roleType;
     }
 
 
@@ -155,5 +185,20 @@ class Person
     public function getIsUnknown(): bool
     {
         return $this->isUnknown;
+    }
+
+
+    public static function determineRoleTypeForRole(string $role): string
+    {
+        $roleType = self::ROLE_UNKNOWN;
+
+        foreach (self::$rolesMapping as $roleMappingPattern => $mappingRoleType) {
+            if (preg_match($roleMappingPattern, $role)) {
+                $roleType = $mappingRoleType;
+                break;
+            }
+        }
+
+        return $roleType;
     }
 }
