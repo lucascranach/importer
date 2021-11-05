@@ -359,7 +359,7 @@
         "matchers": [
           {
             "suffix": {
-              "de": "/nachahmer/i",
+              "de": "/nachahmer|nachfolger/i",
               "en": "/followe/i"
             }
           }
