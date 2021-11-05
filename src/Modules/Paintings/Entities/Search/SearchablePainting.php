@@ -11,6 +11,7 @@ use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
 class SearchablePainting extends Painting
 {
     public $filterInfos = [];
+    public $involvedPersonsFullnames = [];
 
 
     public function __construct()
@@ -45,5 +46,17 @@ class SearchablePainting extends Painting
     public function getFilterInfoItems(): array
     {
         return $this->filterInfos;
+    }
+
+
+    public function addInvolvedPersonsFullname(string $fullname): void
+    {
+        $this->involvedPersonsFullnames[] = $fullname;
+    }
+
+
+    public function getInvolvedPersonsFullnames(): array
+    {
+        return $this->involvedPersonsFullnames;
     }
 }

@@ -14,6 +14,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterm
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MapToSearchableGraphic;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithThesaurus as GraphicsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithBasicFilterValues as GraphicsExtenderWithBasicFilterValues;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithInvolvedPersonsFullnames as GraphicsExtenderWithInvolvedPersonsFullnames;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithIds as GraphicsExtenderWithIds;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRestorations as GraphicsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MetadataFiller as GraphicsMetadataFiller;
@@ -32,6 +33,7 @@ use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsElastics
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MapToSearchablePainting;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithThesaurus as PaintingsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithBasicFilterValues as PaintingsExtenderWithBasicFilterValues;
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithInvolvedPersonsFullnames as PaintingsExtenderWithInvolvedPersonsFullnames;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithIds as PaintingsExtenderWithIds;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithRestorations as PaintingsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MetadataFiller as PaintingsMetadataFiller;
@@ -159,6 +161,7 @@ $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($painting
 $paintingsIdAdder = PaintingsExtenderWithIds::new($customFiltersMemoryDestination);
 $paintingsMapToSearchablePainting = MapToSearchablePainting::new();
 $paintingsBasicFilterValues = PaintingsExtenderWithBasicFilterValues::new($customFiltersMemoryDestination);
+$paintingsInvolvedPersonsFullnames = PaintingsExtenderWithInvolvedPersonsFullnames::new();
 $paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $paintingsMetadataFiller = PaintingsMetadataFiller::new();
 $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt($paintingsOutputFilepath);
@@ -187,7 +190,9 @@ $inbetweenNode->pipe(
                         $paintingsMapToSearchablePainting->pipe(
                             $paintingsThesaurusExtender->pipe(
                                 $paintingsBasicFilterValues->pipe(
-                                    $paintingsElasticsearchBulkDestination,
+                                    $paintingsInvolvedPersonsFullnames->pipe(
+                                        $paintingsElasticsearchBulkDestination,
+                                    ),
                                 ),
                             ),
                         ),
@@ -226,6 +231,7 @@ $graphicsRestorationExtender = GraphicsExtenderWithRestorations::new($graphicsRe
 $graphicsMapToSearchableGraphic = MapToSearchableGraphic::new();
 $graphicsIdAdder = GraphicsExtenderWithIds::new($customFiltersMemoryDestination);
 $graphicsBasicFilterValues = GraphicsExtenderWithBasicFilterValues::new($customFiltersMemoryDestination);
+$graphicsInvolvedPersonsFullnames = GraphicsExtenderWithInvolvedPersonsFullnames::new();
 $graphicsThesaurusExtender = GraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $graphicsMetadataFiller = GraphicsMetadataFiller::new();
 $graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt($graphicsOutputFilepath);
@@ -254,7 +260,9 @@ $inbetweenNode->pipe(
                             $graphicsMapToSearchableGraphic->pipe(
                                 $graphicsThesaurusExtender->pipe(
                                     $graphicsBasicFilterValues->pipe(
-                                        $graphicsElasticsearchBulkDestination,
+                                        $graphicsInvolvedPersonsFullnames->pipe(
+                                            $graphicsElasticsearchBulkDestination,
+                                        ),
                                     ),
                                 ),
                             ),

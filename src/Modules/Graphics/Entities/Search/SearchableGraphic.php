@@ -12,6 +12,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 class SearchableGraphic extends Graphic
 {
     public $filterInfos = [];
+    public $involvedPersonsFullnames = [];
 
 
     public function __construct()
@@ -46,5 +47,17 @@ class SearchableGraphic extends Graphic
     public function getFilterInfoItems(): array
     {
         return $this->filterInfos;
+    }
+
+
+    public function addInvolvedPersonsFullname(string $fullname): void
+    {
+        $this->involvedPersonsFullnames[] = $fullname;
+    }
+
+
+    public function getInvolvedPersonsFullnames(): array
+    {
+        return $this->involvedPersonsFullnames;
     }
 }
