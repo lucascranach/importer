@@ -15,7 +15,7 @@ class Person
     const ROLE_UNKNOWN = 'UNKNOWN';
 
     private static $rolesMapping = [
-        '/inventor/' => self::ROLE_INVENTOR,
+        '/inventor/i' => self::ROLE_INVENTOR,
         '/künstler|artist|absender/i' => self::ROLE_ARTIST, /* TODO: remove '|absender' when fixed in data */
         '/formschneider|printmaker/i' => self::ROLE_PRINTMAKER,
         '/drucker|printer/i' => self::ROLE_PRINTER,
