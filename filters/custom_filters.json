@@ -5476,5 +5476,118 @@
         ]
       }
     ]
+  },
+  {
+    "id": "catalog",
+    "text": {
+      "de": "Kataloge",
+      "en": "Catalogs"
+    },
+    "children": [
+      {
+        "id": "catalog.KKL",
+        "text": {
+          "de": "KKL",
+          "en": "KKL"
+        },
+        "children": [
+          {
+            "id": "catalog.KKL.I",
+            "text": {
+              "de": "I.",
+              "en": "I."
+            },
+            "matchers": [
+              {
+                "description": {
+                  "de": "/kkl\\-ordnungsnummer/i",
+                  "en": "/kkl\\-ordnungsnummer/i"
+                },
+                "referenceNumber": {
+                  "de": "/^I\\./i",
+                  "en": "/^I\\./i"
+                }
+              }
+            ]
+          },
+          {
+            "id": "catalog.KKL.II",
+            "text": {
+              "de": "II.",
+              "en": "II."
+            },
+            "matchers": [
+              {
+                "description": {
+                  "de": "/kkl\\-ordnungsnummer/i",
+                  "en": "/kkl\\-ordnungsnummer/i"
+                },
+                "referenceNumber": {
+                  "de": "/^II\\./i",
+                  "en": "/^II\\./i"
+                }
+              }
+            ]
+          },
+          {
+            "id": "catalog.KKL.III",
+            "text": {
+              "de": "III.",
+              "en": "III."
+            },
+            "matchers": [
+              {
+                "description": {
+                  "de": "/kkl\\-ordnungsnummer/i",
+                  "en": "/kkl\\-ordnungsnummer/i"
+                },
+                "referenceNumber": {
+                  "de": "/^III\\./i",
+                  "en": "/^III\\./i"
+                }
+              }
+            ]
+          },
+          {
+            "id": "catalog.KKL.IV",
+            "text": {
+              "de": "IV.",
+              "en": "IV."
+            },
+            "matchers": [
+              {
+                "description": {
+                  "de": "/kkl\\-ordnungsnummer/i",
+                  "en": "/kkl\\-ordnungsnummer/i"
+                },
+                "referenceNumber": {
+                  "de": "/^IV\\./i",
+                  "en": "/^IV\\./i"
+                }
+              }
+            ]
+          },
+          {
+            "id": "catalog.KKL.V",
+            "text": {
+              "de": "V.",
+              "en": "V."
+            },
+            "matchers": [
+              {
+                "description": {
+                  "de": "/kkl\\-ordnungsnummer/i",
+                  "en": "/kkl\\-ordnungsnummer/i"
+                },
+                "referenceNumber": {
+                  "de": "/^V\\./i",
+                  "en": "/^V\\./i"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

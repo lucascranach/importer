@@ -13,6 +13,7 @@ class ExtenderWithIds extends Hybrid
     const ATTRIBUTION = 'attribution';
     const COLLECTION_REPOSITORY = 'collection_repository';
     const EXAMINATION_ANALYSIS = 'examination_analysis';
+    const CATALOG = 'catalog';
 
 
     private $filters = null;
@@ -180,6 +181,7 @@ class ExtenderWithIds extends Hybrid
                     $filters[self::COLLECTION_REPOSITORY] = self::flattenFilterItemHierarchy($item);
                     break;
 
+                case self::CATALOG:
                 case self::EXAMINATION_ANALYSIS:
                     // Skipped because of its only use in the restoration id extender
                     break;

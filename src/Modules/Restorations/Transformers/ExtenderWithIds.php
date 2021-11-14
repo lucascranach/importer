@@ -12,6 +12,7 @@ class ExtenderWithIds extends Hybrid
     const ATTRIBUTION = 'attribution';
     const COLLECTION_REPOSITORY = 'collection_repository';
     const EXAMINATION_ANALYSIS = 'examination_analysis';
+    const CATALOG = 'catalog';
 
 
     private $filters = null;
@@ -106,6 +107,7 @@ class ExtenderWithIds extends Hybrid
             switch ($item->getId()) {
                 case self::ATTRIBUTION:
                 case self::COLLECTION_REPOSITORY:
+                case self::CATALOG:
                     // Skipped because of its only use in the paintings id extender
                     break;
 

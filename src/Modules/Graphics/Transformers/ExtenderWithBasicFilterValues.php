@@ -6,6 +6,7 @@ use Error;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Search\SearchableGraphic;
 use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Filters\Entities\CustomFilter;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\CatalogWorkReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\FilterInfoItem;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
@@ -15,6 +16,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
     const ATTRIBUTION = 'attribution';
     const COLLECTION_REPOSITORY = 'collection_repository';
     const EXAMINATION_ANALYSIS = 'examination_analysis';
+    const CATALOG = 'catalog';
 
 
     private $filters = null;
@@ -56,6 +58,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
         $this->extendBasicFiltersForAttribution($item);
         $this->extendBasicFiltersForCollectionAndRepository($item);
         $this->extendBasicFiltersForExaminationAnalysis($item);
+        $this->extendBasicFiltersForAssocation($item);
     }
 
 
@@ -251,26 +254,72 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
+    private function extendBasicFiltersForAssocation(SearchableGraphic $item):void
+    {
+        $metadata = $item->getMetadata();
+        if (is_null($metadata)) {
+            return;
+        }
+
+        $langCode = $metadata->getLangCode();
+        $basicFilterInfos = [];
+
+        $catalogCheckItems = array_filter(
+            $this->filters[self::CATALOG],
+            function ($item) {
+                return $item->hasFilters();
+            },
+        );
+
+        foreach ($item->getCatalogWorkReferences() as $catalogWorkReference) {
+            foreach ($catalogCheckItems as $checkItem) {
+                foreach ($checkItem->getFilters() as $matchFilterRule) {
+                    if ($this->matchesCatalogWorkReferenceFilterRule($catalogWorkReference, $matchFilterRule, $langCode)) {
+                        self::addBasicFilter($basicFilterInfos, $checkItem, $langCode);
+                        self::addAncestorsBasicFilter(
+                            $basicFilterInfos,
+                            $checkItem,
+                            $this->filters[self::CATALOG],
+                            $langCode,
+                        );
+                    }
+                }
+            }
+        }
+
+        $item->addFilterInfoCategoryItems(self::CATALOG, $basicFilterInfos);
+    }
+
+
+    private function matchesCatalogWorkReferenceFilterRule(CatalogWorkReference $catalogWorkReference, array $matchFilterRule, string $langCode): bool
+    {
+        if (!isset($matchFilterRule['description'])
+            || !isset($matchFilterRule['description'][$langCode])
+            || !isset($matchFilterRule['referenceNumber'])
+            || !isset($matchFilterRule['referenceNumber'][$langCode])) {
+            return false;
+        }
+
+        return preg_match($matchFilterRule['description'][$langCode], $catalogWorkReference->getDescription())
+            && preg_match($matchFilterRule['referenceNumber'][$langCode], $catalogWorkReference->getReferenceNumber());
+    }
+
+
     private static function prepareFilterItems(array $items)
     {
         $filters = [];
+        $filterItemKindsToPrepare = [
+            self::ATTRIBUTION,
+            self::COLLECTION_REPOSITORY,
+            self::EXAMINATION_ANALYSIS,
+            self::CATALOG,
+        ];
 
         foreach ($items as $item) {
-            switch ($item->getId()) {
-                case self::ATTRIBUTION:
-                    $filters[self::ATTRIBUTION] = self::flattenFilterItemHierarchy($item);
-                    break;
-
-                case self::COLLECTION_REPOSITORY:
-                    $filters[self::COLLECTION_REPOSITORY] = self::flattenFilterItemHierarchy($item);
-                    break;
-
-                case self::EXAMINATION_ANALYSIS:
-                    $filters[self::EXAMINATION_ANALYSIS] = self::flattenFilterItemHierarchy($item);
-                    break;
-
-                default:
-                    echo 'Unknown filter category: ' . $item->getId() . "\n";
+            if (in_array($item->getId(), $filterItemKindsToPrepare, true)) {
+                $filters[$item->getId()] = self::flattenFilterItemHierarchy($item);
+            } else {
+                echo 'Unknown filter category: ' . $item->getId() . "\n";
             }
         }
 
@@ -284,6 +333,10 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
         if (!isset($filters[self::EXAMINATION_ANALYSIS])) {
             throw new Error('Missing custom examination analysis filters!');
+        }
+
+        if (!isset($filters[self::CATALOG])) {
+            throw new Error('Missing custom catalog filters!');
         }
 
         return $filters;
