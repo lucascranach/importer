@@ -301,6 +301,13 @@ class Painting extends AbstractImagesItem
         return $this->bibliography;
     }
 
+
+    public function setReferences(array $references): void
+    {
+        $this->references = $references;
+    }
+
+
     public function addReference(ObjectReference $reference): void
     {
         $this->references[] = $reference;

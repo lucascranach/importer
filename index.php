@@ -28,6 +28,8 @@ use CranachDigitalArchive\Importer\Modules\Restorations\Transformers\ExtenderWit
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\LiteratureReferencesLoader;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\LiteratureReferencesJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsLoader;
+use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsPreLoader;
+use CranachDigitalArchive\Importer\Modules\Paintings\Collectors\ReferencesCollector as PaintingsReferencesCollector;
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MapToSearchablePainting;
@@ -36,6 +38,7 @@ use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithBa
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithInvolvedPersonsFullnames as PaintingsExtenderWithInvolvedPersonsFullnames;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithIds as PaintingsExtenderWithIds;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithRestorations as PaintingsExtenderWithRestorations;
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithReferences as PaintingsExtenderWithReferences;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MetadataFiller as PaintingsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Archivals\Loaders\XML\ArchivalsLoader;
 use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsJSONLangExporter;
@@ -144,6 +147,13 @@ RestorationsLoader::withSourcesAt($paintingsRestorationInputFilepaths)->pipe(
 )->run(); /* and we have to run it directly */
 
 
+/* Paintings - Infos */
+$paintingsPreLoader = PaintingsPreLoader::withSourcesAt($paintingsInputFilepaths);
+$paintingsReferencesCollector = PaintingsReferencesCollector::new();
+$paintingsPreLoader->pipe($paintingsReferencesCollector);
+$paintingsPreLoader->run();
+
+
 /* Paintings */
 $paintingsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::withCacheAt(
     $imagesAPIKey,
@@ -164,6 +174,7 @@ $paintingsBasicFilterValues = PaintingsExtenderWithBasicFilterValues::new($custo
 $paintingsInvolvedPersonsFullnames = PaintingsExtenderWithInvolvedPersonsFullnames::new();
 $paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $paintingsMetadataFiller = PaintingsMetadataFiller::new();
+$paintingsReferencesExtender = PaintingsExtenderWithReferences::new($paintingsReferencesCollector);
 $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt($paintingsOutputFilepath);
 $paintingsElasticsearchBulkDestination = PaintingsElasticsearchLangExporter::withDestinationAt(
     $paintingsElasticsearchOutputFilepath
@@ -176,22 +187,24 @@ $inbetweenNode = $paintingsLoader;
 if ($skipSoftDeletedArterfacts) {
     $gate = SoftDeletedArtefactGate::new('Paintings');
 
-    $inbetweenNode ->pipe($gate);
-    $inbetweenNode  = $gate;
+    $inbetweenNode->pipe($gate);
+    $inbetweenNode = $gate;
 }
 
 $inbetweenNode->pipe(
-    $paintingsRemoteDocumentExistenceChecker->pipe(
-        $paintingsRemoteImageExistenceChecker->pipe(
-            $paintingsRestorationExtender->pipe(
-                $paintingsIdAdder->pipe(
-                    $paintingsMetadataFiller->pipe(
-                        $paintingsDestination,
-                        $paintingsMapToSearchablePainting->pipe(
-                            $paintingsThesaurusExtender->pipe(
-                                $paintingsBasicFilterValues->pipe(
-                                    $paintingsInvolvedPersonsFullnames->pipe(
-                                        $paintingsElasticsearchBulkDestination,
+    $paintingsReferencesExtender->pipe(
+        $paintingsRemoteDocumentExistenceChecker->pipe(
+            $paintingsRemoteImageExistenceChecker->pipe(
+                $paintingsRestorationExtender->pipe(
+                    $paintingsIdAdder->pipe(
+                        $paintingsMetadataFiller->pipe(
+                            $paintingsDestination,
+                            $paintingsMapToSearchablePainting->pipe(
+                                $paintingsThesaurusExtender->pipe(
+                                    $paintingsBasicFilterValues->pipe(
+                                        $paintingsInvolvedPersonsFullnames->pipe(
+                                            $paintingsElasticsearchBulkDestination,
+                                        ),
                                     ),
                                 ),
                             ),
@@ -330,6 +343,7 @@ $customFiltersMemoryDestination->cleanUp();
 $thesaurusMemoryDestination->cleanUp();
 $paintingsRestorationMemoryDestination->cleanUp();
 $graphicsRestorationMemoryDestination->cleanUp();
+$paintingsReferencesCollector->cleanUp();
 
 
 $metaReferenceCollector->cleanUp();
