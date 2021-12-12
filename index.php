@@ -54,7 +54,7 @@ use CranachDigitalArchive\Importer\Modules\Filters\Exporters\FilterExporter;
 use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Filters\Loaders\Memory\CustomFiltersAndThesaurusLoader;
 
-$date = '20211102';
+$date = '20211115';
 $inputDirectory = './input/' . $date;
 $destDirectory = './docs/' . $date;
 $filtersDirectory = './filters';
