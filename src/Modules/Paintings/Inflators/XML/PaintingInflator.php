@@ -436,7 +436,7 @@ class PaintingInflator implements IInflator
 
             /* Using single german value for both language objects */
             $classificationDe->setClassification($classificationStr);
-            $classificationEn->setClassification($classificationStr);
+            $classificationEn->setClassification('Painting');
         }
     }
 
