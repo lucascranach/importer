@@ -16,7 +16,7 @@
           {
             "name": {
               "de": "/^Lucas Cranach der \u00c4ltere$/i",
-              "en": "/^Lucas Cranach the Elder$/"
+              "en": "/^Lucas Cranach the Elder$/i"
             },
             "suffix": {
               "de": "",
@@ -692,7 +692,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/\u00f6sterreichische galerie belvedere.*/iu"
+                        "collection_repository": "/.* belvedere.*/i"
                       }
                     ]
                   },
@@ -704,7 +704,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/the paintings gallery of the academy of fine arts vienna/i"
+                        "collection_repository": "/the paintings gallery of the academy of fine arts vienna|gem\u00e4ldegalerie der akademie der bildenden k\u00fcnste wien/i"
                       }
                     ]
                   },
@@ -716,7 +716,28 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/kunsthistorisches museum, vienna/i"
+                        "collection_repository": "/kunsthistorisches museum, (vienna|wien)/i"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.austria.lower_austria",
+                "text": {
+                  "de": "Niederösterreich",
+                  "en": "Lower Austria"
+                },
+                "children": [
+                  {
+                    "id": "collection_repository.country.austria.lower_austria.zwettl",
+                    "text": {
+                      "de": "Zisterzienserstift Zwettl, Niederösterreich",
+                      "en": "Zisterzienserstift Zwettl, Niederösterreich"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/zisterzienserstift zwettl/i"
                       }
                     ]
                   }
@@ -1056,6 +1077,18 @@
                 ]
               },
               {
+                "id": "collection_repository.country.czech.plzni",
+                "text": {
+                  "de": "Z\u00e1padocesk\u00e1 galerie v Plzni",
+                  "en": "Z\u00e1padocesk\u00e1 galerie v Plzni"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/z\u00e1padocesk\u00e1 galerie v plzni.*/i"
+                  }
+                ]
+              },
+              {
                 "id": "collection_repository.country.czech.prague",
                 "text": {
                   "de": "Prag",
@@ -1178,6 +1211,18 @@
                 "matchers": [
                   {
                     "collection_repository": "/s\u00f8nderborg slot, s\u00f8nderborg/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.denmark.nationalmuseet",
+                "text": {
+                  "de": "Nationalmuseet, Dänemark",
+                  "en": "Nationalmuseet, Denmark"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/nationalmuseet, denmark/i"
                   }
                 ]
               }
@@ -1763,7 +1808,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/(Kupferstichkabinett,\\s+)?staatliche museen zu berlin\\s+(-\\s+)preu\u00dfischer kulturbesitz(,\\s+Kupferstichkabinett)?/i"
+                        "collection_repository": "/(kupferstichkabinett,\\s+)?staatliche museen zu berlin\\s+(-\\s+)?preu\u00dfischer kulturbesitz(,\\s+kupferstichkabinett)?/i"
                       }
                     ]
                   },
@@ -1863,6 +1908,18 @@
                 ]
               },
               {
+                "id": "collection_repository.country.germany.bretten",
+                "text": {
+                  "de": "Melanchthonhaus, Bretten",
+                  "en": "Melanchthonhaus, Bretten"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/melanchthonhaus, bretten/i"
+                  }
+                ]
+              },
+              {
                 "id": "collection_repository.country.germany.chemnitz",
                 "text": {
                   "de": "Chemnitz",
@@ -1910,7 +1967,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/kunstsammlungen der veste coburg/i"
+                        "collection_repository": "/veste coburg/i"
                       }
                     ]
                   },
@@ -2073,6 +2130,18 @@
                     "matchers": [
                       {
                         "collection_repository": "/stadtmuseum dresden/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.dresden.dresden_3",
+                    "text": {
+                      "de": "Militärhistorisches Museum der Bundeswehr, Dresden",
+                      "en": "Militärhistorisches Museum der Bundeswehr, Dresden"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/milit\u00e4rhistorisches museum der bundeswehr, dresden/i"
                       }
                     ]
                   }
@@ -3042,6 +3111,42 @@
                 ]
               },
               {
+                "id": "collection_repository.country.germany.oschatz",
+                "text": {
+                  "de": "Stadt- und Waagenmuseum Oschatz",
+                  "en": "Stadt- und Waagenmuseum Oschatz"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/stadt- und waagenmuseum oschatz/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.germany.penig",
+                "text": {
+                  "de": "Kirche Unser Lieben Frauen Auf Dem Berge, Penig",
+                  "en": "Kirche Unser Lieben Frauen Auf Dem Berge, Penig"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/kirche unser lieben frauen auf dem berge, penig/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.germany.pulsnitz",
+                "text": {
+                  "de": "Ev.-Luth. Kirchgemeinde St. Nicolai, Pulsnitz",
+                  "en": "Ev.-Luth. Kirchgemeinde St. Nicolai, Pulsnitz"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/ev\\.-luth\\. kirchgemeinde st\\. nikolai, pulsnitz/i"
+                  }
+                ]
+              },
+              {
                 "id": "collection_repository.country.germany.regensburg",
                 "text": {
                   "de": "Regensburg, Historisches Museum",
@@ -3260,6 +3365,18 @@
                 "matchers": [
                   {
                     "collection_repository": "/museum wiesbaden/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.germany.bad_windsheim",
+                "text": {
+                  "de": "Stadtarchiv und historische Stadtbibliothek Bad Windsheim",
+                  "en": "Stadtarchiv und historische Stadtbibliothek Bad Windsheim"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/stadtbibliothek bad windsheim/i"
                   }
                 ]
               },
@@ -3566,6 +3683,18 @@
                         "collection_repository": "/the royal collection, london/i"
                       }
                     ]
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.britain.longleat",
+                "text": {
+                  "de": "Collection of the Marquess of Bath, Longleat, Wiltshire",
+                  "en": "Collection of the Marquess of Bath, Longleat, Wiltshire"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/collection of the marquess of bath, longleat, wiltshire/i"
                   }
                 ]
               },
@@ -4197,6 +4326,18 @@
                 ]
               },
               {
+                "id": "collection_repository.country.poland.nysie",
+                "text": {
+                  "de": "muzeum powiatowe w nysie",
+                  "en": "muzeum powiatowe w nysie"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/muzeum powiatowe w nysie/i"
+                  }
+                ]
+              },
+              {
                 "id": "collection_repository.country.poland.poznan",
                 "text": {
                   "de": "Pozna\u0144, Nationalmuseum",
@@ -4378,7 +4519,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/(the pushkin state museum of fine arts, moscow|staatliches museum f\u00fcr bildende k\u00fcnste a. s. pushkin, moskau)/i"
+                    "collection_repository": "/(the pushkin state museum of fine arts, moscow|staatliches museum f\u00fcr bildende k\u00fcnste a. s. pus(c?)hkin, moskau)/i"
                   }
                 ]
               },
@@ -4583,6 +4724,30 @@
                         "collection_repository": "/skoklosters slott, stockholm/i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.sweden.stockholm.stockholm_4",
+                    "text": {
+                      "de": "Thielska Galleriet",
+                      "en": "Thielska Galleriet"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/thielska galleriet, stockholm/i"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.sweden.sverige",
+                "text": {
+                  "de": "B\u00e4rbo kyrka, Sverige",
+                  "en": "B\u00e4rbo kyrka, Sverige"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/b\u00e4rbo kyrka, sverige/i"
                   }
                 ]
               }
@@ -4603,7 +4768,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/\u00f6ffentliche kunstsammlung basel.*/iu"
+                    "collection_repository": "/(\u00f6ffentliche kunstsammlung basel.*|kunstmuseum basel)/iu"
                   }
                 ]
               },
@@ -4706,6 +4871,18 @@
                 "matchers": [
                   {
                     "collection_repository": "/allentown art museum/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.america.atlanta",
+                "text": {
+                  "de": "Atlanta, High Museum of Art",
+                  "en": "Atlanta, High Museum of Art"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/high museum of art, atlanta/i"
                   }
                 ]
               },
@@ -4954,7 +5131,19 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/the j. paul getty museum, los angeles/i"
+                    "collection_repository": "/the j\\. paul getty museum, los angeles/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.america.louiseville",
+                "text": {
+                  "de": "Louisville, The Speed Art Museum",
+                  "en": "Louisville, The Speed Art Museum"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/the speed art museum, louisville/i"
                   }
                 ]
               },
@@ -4991,6 +5180,18 @@
                 "matchers": [
                   {
                     "collection_repository": "/the muskegon museum of art, muskegon, michigan/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.america.norfolk",
+                "text": {
+                  "de": "Norfolk, Chrysler Museum of Art",
+                  "en": "Norfolk, Chrysler Museum of Art"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/chrysler museum of art, norfolk, virginia/i"
                   }
                 ]
               },
@@ -5141,6 +5342,18 @@
                 "matchers": [
                   {
                     "collection_repository": "/north carolina museum of art, raleigh/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.america.richmond",
+                "text": {
+                  "de": "Richmond, Virginia Museum of Fine Arts",
+                  "en": "Richmond, Virginia Museum of Fine Arts"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/virginia museum of fine arts, richmond/i"
                   }
                 ]
               },
@@ -5300,7 +5513,7 @@
         },
         "matchers": [
           {
-            "collection_repository": "/private collection/i"
+            "collection_repository": "/(private collection|privatbesitz)/i"
           }
         ]
       },
