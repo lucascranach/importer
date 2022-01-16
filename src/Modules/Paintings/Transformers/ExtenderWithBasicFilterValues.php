@@ -10,6 +10,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\CatalogWorkReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\FilterInfoItem;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 
 class ExtenderWithBasicFilterValues extends Hybrid
 {
@@ -21,9 +22,17 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
     private $filters = null;
 
+    private $objectsWithoutFilterConnections = [];
+
 
     private function __construct()
     {
+        $this->objectsWithoutFilterConnections = [
+            self::ATTRIBUTION => [],
+            self::COLLECTION_REPOSITORY => [],
+            self::EXAMINATION_ANALYSIS => [],
+            self::CATALOG => [],
+        ];
     }
 
 
@@ -50,6 +59,20 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
         $this->next($item);
         return true;
+    }
+
+
+    public function done(ProducerInterface $producer)
+    {
+        parent::done($producer);
+
+        echo "== Painting objects with missing filter connections: \n";
+
+        foreach ([self::ATTRIBUTION, self::COLLECTION_REPOSITORY, self::EXAMINATION_ANALYSIS] as $type) {
+            echo "=== " . $type . "\n";
+            echo json_encode($this->objectsWithoutFilterConnections[$type]);
+            echo "\n\n";
+        }
     }
 
 
@@ -93,6 +116,10 @@ class ExtenderWithBasicFilterValues extends Hybrid
                     }
                 }
             }
+        }
+
+        if (empty($basicFilterInfos)) {
+            $this->keepTrackOfMissingFilterConnection(self::ATTRIBUTION, $metadata->getId());
         }
 
         $item->addFilterInfoCategoryItems(self::ATTRIBUTION, $basicFilterInfos);
@@ -188,6 +215,10 @@ class ExtenderWithBasicFilterValues extends Hybrid
             }
         }
 
+        if (empty($basicFilterInfos)) {
+            $this->keepTrackOfMissingFilterConnection(self::COLLECTION_REPOSITORY, $metadata->getId());
+        }
+
         $item->addFilterInfoCategoryItems(self::COLLECTION_REPOSITORY, $basicFilterInfos);
     }
 
@@ -250,6 +281,10 @@ class ExtenderWithBasicFilterValues extends Hybrid
             }
         }
 
+        if (empty($basicFilterInfos)) {
+            $this->keepTrackOfMissingFilterConnection(self::EXAMINATION_ANALYSIS, $metadata->getId());
+        }
+
         $item->addFilterInfoCategoryItems(self::EXAMINATION_ANALYSIS, $basicFilterInfos);
     }
 
@@ -274,7 +309,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
         foreach ($item->getCatalogWorkReferences() as $catalogWorkReference) {
             foreach ($catalogCheckItems as $checkItem) {
                 foreach ($checkItem->getFilters() as $matchFilterRule) {
-                    if ($this->matchesCatalogWorkReferenceFilterRule($catalogWorkReference, $matchFilterRule, $langCode)) {
+                    if (self::matchesCatalogWorkReferenceFilterRule($catalogWorkReference, $matchFilterRule, $langCode)) {
                         self::addBasicFilter($basicFilterInfos, $checkItem, $langCode);
                         self::addAncestorsBasicFilter(
                             $basicFilterInfos,
@@ -287,11 +322,23 @@ class ExtenderWithBasicFilterValues extends Hybrid
             }
         }
 
+        if (empty($basicFilterInfos)) {
+            $this->keepTrackOfMissingFilterConnection(self::CATALOG, $metadata->getId());
+        }
+
         $item->addFilterInfoCategoryItems(self::CATALOG, $basicFilterInfos);
     }
 
 
-    private function matchesCatalogWorkReferenceFilterRule(CatalogWorkReference $catalogWorkReference, array $matchFilterRule, string $langCode): bool
+    private function keepTrackOfMissingFilterConnection(string $type, string $id)
+    {
+        if (!in_array($id, $this->objectsWithoutFilterConnections[$type], true)) {
+            $this->objectsWithoutFilterConnections[$type][] = $id;
+        }
+    }
+
+
+    private static function matchesCatalogWorkReferenceFilterRule(CatalogWorkReference $catalogWorkReference, array $matchFilterRule, string $langCode): bool
     {
         if (!isset($matchFilterRule['description'])
             || !isset($matchFilterRule['description'][$langCode])
