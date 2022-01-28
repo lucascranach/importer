@@ -11,7 +11,7 @@ devilbox/
 /vendor/
 
 # PHP-CS-Fix
-.php_cs.cache
+.php-cs-fixer.cache
 cghooks.lock
 
 # Blobs
