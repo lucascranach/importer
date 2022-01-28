@@ -33,6 +33,12 @@ class MetaReferenceCollector extends Consumer
         }
 
         // TODO: REMOVE ME FOR ALL KEYWORD - LINKS
+        // Skip on objects with some specific ids
+        $metadata = $item->getMetadata();
+        if (!is_null($metadata) && in_array($metadata->getId(), ['UEBERSCHREIBEN', 'UEBERSCHREIBEN01'], true)) {
+            return true;
+        }
+
         // Skip objects without overall image category
         if (($item instanceof Graphic)) {
             $isVirtual = $item->getIsVirtual();
