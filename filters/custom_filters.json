@@ -5614,21 +5614,6 @@
         ]
       },
       {
-        "id": "examination_analysis.light_microscopy",
-        "text": {
-          "de": "Lichtmikroskopie",
-          "en": "Light microscopy"
-        },
-        "matchers": [
-          {
-            "keyword": {
-              "de": "/Lichtmikroskopie/i",
-              "en": "/Light microscopy/i"
-            }
-          }
-        ]
-      },
-      {
         "id": "examination_analysis.instrumental_material_analysis",
         "text": {
           "de": "Instrumentelle Materialanalyse",
@@ -5682,8 +5667,8 @@
         "matchers": [
           {
             "keyword": {
-              "de": "/Lichtmikroskopische Oberfl\u00e4chenuntersuchung/i",
-              "en": "/Stereomicroscopy/i"
+              "de": "/(Lichtmikroskopische Oberfl\u00e4chenuntersuchung|Lichtmikroskopie)/i",
+              "en": "/(Stereomicroscopy|Light microscopy)/i"
             }
           }
         ]
