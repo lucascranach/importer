@@ -32,6 +32,23 @@ class MetaReferenceCollector extends Consumer
             throw new Error('Pushed item is not of the expected class \'Graphic\' or \'Painting\'');
         }
 
+        // TODO: REMOVE ME FOR ALL KEYWORD - LINKS
+        // Skip objects without overall image category
+        if (($item instanceof Graphic)) {
+            $isVirtual = $item->getIsVirtual();
+
+            // For graphics we only need the keywords for virtual graphics
+            if (!$isVirtual) {
+                return true;
+            }
+
+            $images = (array)$item->getImages();
+            if (!isset($images['overall'])) {
+                return true;
+            }
+        }
+        // TODO: END
+
         foreach ($item->getKeywords() as $keyword) {
             $this->collection[$keyword->getTerm()] = $keyword;
         }
