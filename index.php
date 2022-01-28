@@ -202,6 +202,7 @@ $inbetweenNode->pipe(
                     $paintingsIdAdder->pipe(
                         $paintingsMetadataFiller->pipe(
                             $paintingsDestination,
+                            $metaReferenceCollector,
                             $paintingsMapToSearchablePainting->pipe(
                                 $paintingsThesaurusExtender->pipe(
                                     $paintingsBasicFilterValues->pipe(
@@ -219,7 +220,6 @@ $inbetweenNode->pipe(
             ),
         ),
     ),
-    $metaReferenceCollector,
 );
 
 
@@ -276,6 +276,7 @@ $inbetweenNode->pipe(
                     $graphicsRestorationExtender->pipe(
                         $graphicsMetadataFiller->pipe(
                             $graphicsDestination,
+                            $metaReferenceCollector,
                             $graphicsMapToSearchableGraphic->pipe(
                                 $graphicsThesaurusExtender->pipe(
                                     $graphicsBasicFilterValues->pipe(
@@ -293,7 +294,6 @@ $inbetweenNode->pipe(
             ),
         ),
     ),
-    $metaReferenceCollector,
 );
 
 
