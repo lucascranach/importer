@@ -5702,8 +5702,8 @@
                   "en": "/kkl\\-ordnungsnummer/i"
                 },
                 "referenceNumber": {
-                  "de": "/^I\\./i",
-                  "en": "/^I\\./i"
+                  "de": "/^(?:I\\.|(?!-Sup).)*$/i",
+                  "en": "/^(?:I\\.|(?!-Sup).)*$/i"
                 }
               }
             ]
@@ -5721,8 +5721,8 @@
                   "en": "/kkl\\-ordnungsnummer/i"
                 },
                 "referenceNumber": {
-                  "de": "/^II\\./i",
-                  "en": "/^II\\./i"
+                  "de": "/^(?:II\\.|(?!-Sup).)*$/i",
+                  "en": "/^(?:II\\.|(?!-Sup).)*$/i"
                 }
               }
             ]
@@ -5740,8 +5740,8 @@
                   "en": "/kkl\\-ordnungsnummer/i"
                 },
                 "referenceNumber": {
-                  "de": "/^III\\./i",
-                  "en": "/^III\\./i"
+                  "de": "/^(?:III\\.|(?!-Sup).)*$/i",
+                  "en": "/^(?:III\\.|(?!-Sup).)*$/i"
                 }
               }
             ]
@@ -5759,8 +5759,8 @@
                   "en": "/kkl\\-ordnungsnummer/i"
                 },
                 "referenceNumber": {
-                  "de": "/^IV\\./i",
-                  "en": "/^IV\\./i"
+                  "de": "/^(?:IV\\.|(?!-Sup).)*$/i",
+                  "en": "/^(?:IV\\.|(?!-Sup).)*$/i"
                 }
               }
             ]
@@ -5778,8 +5778,27 @@
                   "en": "/kkl\\-ordnungsnummer/i"
                 },
                 "referenceNumber": {
-                  "de": "/^V\\./i",
-                  "en": "/^V\\./i"
+                  "de": "/^(?:V\\.|(?!-Sup).)*$/i",
+                  "en": "/^(?:V\\.|(?!-Sup).)*$/i"
+                }
+              }
+            ]
+          },
+          {
+            "id": "catalog.KKL.APPENDIX",
+            "text": {
+              "de": "Anhang",
+              "en": "Appendix"
+            },
+            "matchers": [
+              {
+                "description": {
+                  "de": "/kkl\\-ordnungsnummer/i",
+                  "en": "/kkl\\-ordnungsnummer/i"
+                },
+                "referenceNumber": {
+                  "de": "/-Sup/i",
+                  "en": "/-Sup/i"
                 }
               }
             ]
