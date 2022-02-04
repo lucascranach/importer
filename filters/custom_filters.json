@@ -5702,8 +5702,8 @@
                   "en": "/kkl\\-ordnungsnummer/i"
                 },
                 "referenceNumber": {
-                  "de": "/^(?:I\\.|(?!-Sup).)*$/i",
-                  "en": "/^(?:I\\.|(?!-Sup).)*$/i"
+                  "de": "/^I\\.(?:(?!-Sup).)*/i",
+                  "en": "/^I\\.(?:(?!-Sup).)*/i"
                 }
               }
             ]
@@ -5721,8 +5721,8 @@
                   "en": "/kkl\\-ordnungsnummer/i"
                 },
                 "referenceNumber": {
-                  "de": "/^(?:II\\.|(?!-Sup).)*$/i",
-                  "en": "/^(?:II\\.|(?!-Sup).)*$/i"
+                  "de": "/^II\\.(?:(?!-Sup).)*/i",
+                  "en": "/^II\\.(?:(?!-Sup).)*/i"
                 }
               }
             ]
@@ -5740,8 +5740,8 @@
                   "en": "/kkl\\-ordnungsnummer/i"
                 },
                 "referenceNumber": {
-                  "de": "/^(?:III\\.|(?!-Sup).)*$/i",
-                  "en": "/^(?:III\\.|(?!-Sup).)*$/i"
+                  "de": "/^III\\.(?:(?!-Sup).)*/i",
+                  "en": "/^III\\.(?:(?!-Sup).)*/i"
                 }
               }
             ]
@@ -5759,8 +5759,8 @@
                   "en": "/kkl\\-ordnungsnummer/i"
                 },
                 "referenceNumber": {
-                  "de": "/^(?:IV\\.|(?!-Sup).)*$/i",
-                  "en": "/^(?:IV\\.|(?!-Sup).)*$/i"
+                  "de": "/^IV\\.(?:(?!-Sup).)*/i",
+                  "en": "/^IV\\.(?:(?!-Sup).)*/i"
                 }
               }
             ]
@@ -5778,8 +5778,8 @@
                   "en": "/kkl\\-ordnungsnummer/i"
                 },
                 "referenceNumber": {
-                  "de": "/^(?:V\\.|(?!-Sup).)*$/i",
-                  "en": "/^(?:V\\.|(?!-Sup).)*$/i"
+                  "de": "/^V\\.(?:(?!-Sup).)*/i",
+                  "en": "/^V\\.(?:(?!-Sup).)*/i"
                 }
               }
             ]
