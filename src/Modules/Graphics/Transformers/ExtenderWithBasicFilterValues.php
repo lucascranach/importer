@@ -346,8 +346,26 @@ class ExtenderWithBasicFilterValues extends Hybrid
             return false;
         }
 
-        return preg_match($matchFilterRule['description'][$langCode], $catalogWorkReference->getDescription())
-            && preg_match($matchFilterRule['referenceNumber'][$langCode], $catalogWorkReference->getReferenceNumber());
+        $descriptionRules = (array)$matchFilterRule['description'][$langCode];
+        $referenceNumberRules = (array)$matchFilterRule['referenceNumber'][$langCode];
+
+        $matchingDescription = array_reduce(
+            $descriptionRules,
+            function ($acc, $rule) use ($catalogWorkReference) {
+                return $acc && preg_match($rule, $catalogWorkReference->getDescription()) === 1;
+            },
+            true
+        );
+
+        $matchingReferenceNumber = array_reduce(
+            $referenceNumberRules,
+            function ($acc, $rule) use ($catalogWorkReference) {
+                return $acc && preg_match($rule, $catalogWorkReference->getReferenceNumber()) === 1;
+            },
+            true
+        );
+
+        return $matchingDescription && $matchingReferenceNumber;
     }
 
 
