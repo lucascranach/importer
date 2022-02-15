@@ -30,7 +30,7 @@ class RemoteImageExistenceChecker extends Hybrid
 
 
     private $serverHost = 'https://lucascranach.org/';
-    private $remoteImageBasePath = 'imageserver-2021/%s/%s';
+    private $remoteImageBasePath = 'imageserver-2022/%s/%s';
     private $remoteImageDataPath = 'data-proxy/image-data.php?obj=%s';
     private $accessKey = '';
     private $remoteImageTypeAccessorFunc = null;
