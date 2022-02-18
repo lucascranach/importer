@@ -69,6 +69,11 @@ class Graphic extends AbstractImagesItem
     public $catalogWorkReferences = [];
     public $structuredDimension = null;
     public $restorationSurveys = [];
+    public $sortingInfo = [
+        'year' => 0,
+        'position' => 0,
+    ];
+
 
     public function __construct()
     {
@@ -451,5 +456,17 @@ class Graphic extends AbstractImagesItem
     public function getRestorationSurveys(): array
     {
         return $this->restorationSurveys;
+    }
+
+    public function setSortingInfo(int $year = 0, int $position = 0): void
+    {
+        $this->sortingInfo['year'] = $year;
+        $this->sortingInfo['position'] = $position;
+    }
+
+
+    public function getSortingInfo(): array
+    {
+        return $this->sortingInfo;
     }
 }
