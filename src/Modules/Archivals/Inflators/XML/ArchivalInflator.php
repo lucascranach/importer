@@ -448,8 +448,8 @@ class ArchivalInflator implements IInflator
         if ($documentsElement) {
             $documentsStr = trim(strval($documentsElement));
 
-            $archivalDe->setDocuments($documentsStr);
-            $archivalEn->setDocuments($documentsStr);
+            $archivalDe->setDocumentReferences($documentsStr);
+            $archivalEn->setDocumentReferences($documentsStr);
         }
     }
 

@@ -2,14 +2,14 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Archivals\Entities;
 
-use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\AbstractImagesItem;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Publication;
 
 /**
  * Representing a single archival and all its data
  */
-class Archival implements IBaseItem
+class Archival extends AbstractImagesItem
 {
     const ENTITY_TYPE = 'ARCHIVAL';
 
@@ -27,7 +27,7 @@ class Archival implements IBaseItem
     public $transcribedAccordingTo = '';
     public $verification = '';
     public $scans = '';
-    public $documents = '';
+    public $documentReferences = '';
     public $scanNames = [];
     public $period = '';
     public $publications = [];
@@ -39,6 +39,12 @@ class Archival implements IBaseItem
 
 
     public function getId(): string
+    {
+        return $this->getInventoryNumber();
+    }
+
+
+    public function getRemoteId(): string
     {
         return $this->getInventoryNumber();
     }
@@ -212,15 +218,15 @@ class Archival implements IBaseItem
     }
 
 
-    public function setDocuments(string $documents): void
+    public function setDocumentReferences(string $documentReferences): void
     {
-        $this->documents = $documents;
+        $this->documentReferences = $documentReferences;
     }
 
 
-    public function getDocuments(): string
+    public function getDocumentReferences(): string
     {
-        return $this->documents;
+        return $this->documentReferences;
     }
 
 

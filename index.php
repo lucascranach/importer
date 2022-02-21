@@ -307,14 +307,23 @@ $literatureReferencesLoader = LiteratureReferencesLoader::withSourcesAt($literat
 $archivalsDestination = ArchivalsJSONLangExporter::withDestinationAt($archivalsOutputFilepath);
 $archivalsMetadataFiller = ArchivalsMetadataFiller::new();
 
+$archivalsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
+    $imagesAPIKey,
+    './.cache',
+    RemoteImageExistenceChecker::ALL_IMAGE_TYPES,
+    'remoteArchivalsImageExistenceChecker'
+);
+
 $archivalsElasticsearchBulkDestination = ArchivalsElasticsearchLangExporter::withDestinationAt(
     $archivalsElasticsearchOutputFilepath
 );
 
 $archivalsLoader = ArchivalsLoader::withSourceAt($archivalsInputFilepath)->pipe(
     $archivalsMetadataFiller->pipe(
-        $archivalsDestination,
-        $archivalsElasticsearchBulkDestination,
+        $archivalsRemoteImageExistenceChecker->pipe(
+            $archivalsDestination,
+            $archivalsElasticsearchBulkDestination,
+        ),
     ),
 );
 
