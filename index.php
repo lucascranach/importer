@@ -319,8 +319,8 @@ $archivalsElasticsearchBulkDestination = ArchivalsElasticsearchLangExporter::wit
 );
 
 $archivalsLoader = ArchivalsLoader::withSourceAt($archivalsInputFilepath)->pipe(
-    $archivalsMetadataFiller->pipe(
-        $archivalsRemoteImageExistenceChecker->pipe(
+    $archivalsRemoteImageExistenceChecker->pipe(
+        $archivalsMetadataFiller->pipe(
             $archivalsDestination,
             $archivalsElasticsearchBulkDestination,
         ),

@@ -32,6 +32,22 @@ class MetadataFiller extends Hybrid
             return true;
         }
 
+        $images = $item->getImages();
+        if (is_array($images)) {
+            $images = $images['representative'] ?? $images['overall'] ?? false;
+        } else {
+            $images = false;
+        }
+        $imageSrc = '';
+
+        if ($images && count($images['images']) > 0) {
+            $imageSrc = $images['images'][0]['sizes']['small']['src'];
+
+            if (is_null($imageSrc)) {
+                $imageSrc = '';
+            }
+        }
+
         $summaries = $item->getSummaries();
         $summary = $summaries[0] ?? '';
         $dating = $item->getDating();
@@ -42,7 +58,7 @@ class MetadataFiller extends Hybrid
         $metadata->setSubtitle('');
         $metadata->setDate($dated);
         $metadata->setClassification('');
-        $metadata->setImgSrc('');
+        $metadata->setImgSrc($imageSrc);
 
         $this->next($item);
         return true;
