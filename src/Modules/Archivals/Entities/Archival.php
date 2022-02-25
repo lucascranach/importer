@@ -27,7 +27,7 @@ class Archival extends AbstractImagesItem
     public $transcribedAccordingTo = '';
     public $verification = '';
     public $scans = '';
-    public $documentReferences = '';
+    public $documentReferences = [];
     public $scanNames = [];
     public $period = '';
     public $publications = [];
@@ -218,13 +218,13 @@ class Archival extends AbstractImagesItem
     }
 
 
-    public function setDocumentReferences(string $documentReferences): void
+    public function setDocumentReferences(array$documentReferences): void
     {
         $this->documentReferences = $documentReferences;
     }
 
 
-    public function getDocumentReferences(): string
+    public function getDocumentReferences(): array
     {
         return $this->documentReferences;
     }

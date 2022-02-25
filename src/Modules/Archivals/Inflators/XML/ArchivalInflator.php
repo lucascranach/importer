@@ -447,9 +447,10 @@ class ArchivalInflator implements IInflator
         );
         if ($documentsElement) {
             $documentsStr = trim(strval($documentsElement));
+            $documentArr = array_map('trim', explode("\n", $documentsStr));
 
-            $archivalDe->setDocumentReferences($documentsStr);
-            $archivalEn->setDocumentReferences($documentsStr);
+            $archivalDe->setDocumentReferences($documentArr);
+            $archivalEn->setDocumentReferences($documentArr);
         }
     }
 
