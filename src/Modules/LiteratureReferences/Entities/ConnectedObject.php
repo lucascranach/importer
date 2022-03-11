@@ -7,6 +7,15 @@ namespace CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities;
  */
 class ConnectedObject
 {
+    private static $inventoryNumberPrefixPatterns = [
+        '/^GWN_/' => 'GWN_',
+        '/^CDA\./' => 'CDA.',
+        '/^CDA_/' => 'CDA_',
+        '/^G_G_/' => 'G_G_',
+        '/^G_/' => 'G_',
+    ];
+
+    public $inventoryNumberPrefix = '';
     public $inventoryNumber = '';
     public $catalogNumber = '';
     public $pageNumber = '';
@@ -19,9 +28,32 @@ class ConnectedObject
     }
 
 
+    public function setInventoryNumberPrefix(string $inventoryNumberPrefix): void
+    {
+        $this->inventoryNumberPrefix = $inventoryNumberPrefix;
+    }
+
+
+    public function getInventoryNumberPrefix(): string
+    {
+        return $this->inventoryNumberPrefix;
+    }
+
+
     public function setInventoryNumber(string $inventoryNumber): void
     {
         $this->inventoryNumber = $inventoryNumber;
+
+        foreach (self::$inventoryNumberPrefixPatterns as $pattern => $value) {
+            $count = 0;
+
+            $this->inventoryNumber = preg_replace($pattern, '', $this->inventoryNumber, -1, $count);
+
+            if ($count > 0) {
+                $this->setInventoryNumberPrefix($value);
+                break;
+            }
+        }
     }
 
 
