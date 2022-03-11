@@ -9,6 +9,14 @@ use CranachDigitalArchive\Importer\Language;
  */
 class ObjectReference
 {
+    private static $inventoryNumberPrefixPatterns = [
+        '/^GWN_/' => 'GWN_',
+        '/^CDA\./' => 'CDA.',
+        '/^CDA_/' => 'CDA_',
+        '/^G_G_/' => 'G_G_',
+        '/^G_/' => 'G_',
+    ];
+
     private static $kindPatternMappings = [
         '/(inhaltlich\s+verwandt\s+mit|version)/i' => 'RELATED_IN_CONTENT_TO',
         '/gehört\s+thematisch\s+zu/i' => 'SIMILAR_TO',
@@ -100,6 +108,7 @@ class ObjectReference
 
     public $text = '';
     public $kind = 'UNKNOWN';
+    public $inventoryNumberPrefix = '';
     public $inventoryNumber = '';
     public $remarks = [];
 
@@ -133,9 +142,32 @@ class ObjectReference
     }
 
 
+    public function setInventoryNumberPrefix(string $inventoryNumberPrefix): void
+    {
+        $this->inventoryNumberPrefix = $inventoryNumberPrefix;
+    }
+
+
+    public function getInventoryNumberPrefix(): string
+    {
+        return $this->inventoryNumberPrefix;
+    }
+
+
     public function setInventoryNumber(string $inventoryNumber): void
     {
         $this->inventoryNumber = $inventoryNumber;
+
+        foreach (self::$inventoryNumberPrefixPatterns as $pattern => $value) {
+            $count = 0;
+
+            $this->inventoryNumber = preg_replace($pattern, '', $this->inventoryNumber, -1, $count);
+
+            if ($count > 0) {
+                $this->setInventoryNumberPrefix($value);
+                break;
+            }
+        }
     }
 
 
