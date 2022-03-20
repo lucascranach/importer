@@ -22,6 +22,7 @@ class ThesaurusInflator implements IInflator
         'British Equivalent' => ThesaurusTerm::ALT_BRITISH_EQUIVALENT,
         'dkult Term Identifier' => ThesaurusTerm::ALT_DKULT_TERM_IDENTIFIER,
         'TermID des AAT' => ThesaurusTerm::ALT_AAT_TERM_ID,
+        'Alternate Term' => ThesaurusTerm::ALT_ALTERNATIVE_TERM,
     ];
 
     private static $dkultIdentifierToGeneralIdMap = [

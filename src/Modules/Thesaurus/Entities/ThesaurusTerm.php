@@ -8,6 +8,7 @@ namespace CranachDigitalArchive\Importer\Modules\Thesaurus\Entities;
 class ThesaurusTerm
 {
     const ALT_BRITISH_EQUIVALENT = 'britishEquivalent';
+    const ALT_ALTERNATIVE_TERM = 'alternateTerm';
     const ALT_DKULT_TERM_IDENTIFIER = 'dkultTermIdentifier';
     const ALT_AAT_TERM_ID = 'aatTermId';
 

@@ -112,7 +112,11 @@ class CustomFiltersAndThesaurusLoader extends Producer
                     $newFilter->setText($term->getTerm());
                     break;
                 case Language::EN:
-                    $enText = $term->getAlt(ThesaurusTerm::ALT_BRITISH_EQUIVALENT);
+                    $enBritishText = $term->getAlt(ThesaurusTerm::ALT_BRITISH_EQUIVALENT);
+                    $enAlternativeText = $term->getAlt(ThesaurusTerm::ALT_ALTERNATIVE_TERM);
+
+                    $enTexts = array_filter([$enBritishText, $enAlternativeText]);
+                    $enText = array_shift($enTexts);
 
                     $newFilter->setText((!is_null($enText)) ? $enText : '');
                     break;
