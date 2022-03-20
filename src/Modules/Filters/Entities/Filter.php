@@ -2,18 +2,13 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Filters\Entities;
 
-use CranachDigitalArchive\Importer\Language;
-
 /**
  * Representing a single filter item
  */
 class Filter
 {
     public $id = '';
-    public $text = [
-        Language::DE => '',
-        Language::EN => '',
-    ];
+    public $text = '';
     public $children = [];
 
 
@@ -34,28 +29,15 @@ class Filter
     }
 
 
-    public function getText(): array
+    public function getText(): string
     {
         return $this->text;
     }
 
 
-    public function setText(array $text)
+    public function setText(string $text)
     {
         $this->text = $text;
-    }
-
-
-
-    public function getLangText(string $langCode): ?string
-    {
-        return isset($this->text[$langCode]) ? $this->text[$langCode] : null;
-    }
-
-
-    public function setLangText(string $langCode, string $text)
-    {
-        $this->text[$langCode] = $text;
     }
 
 

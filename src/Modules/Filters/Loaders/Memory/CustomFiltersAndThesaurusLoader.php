@@ -6,6 +6,7 @@ use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Modules\Filters\Entities\Filter;
 use CranachDigitalArchive\Importer\Modules\Filters\Entities\CustomFilter;
+use CranachDigitalArchive\Importer\Modules\Filters\Entities\LangFilterContainer;
 use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Entities\ThesaurusTerm;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ReducedThesaurusMemoryExporter;
@@ -15,6 +16,7 @@ use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ReducedThesaurusM
  */
 class CustomFiltersAndThesaurusLoader extends Producer
 {
+    private $supportedLangs = [Language::DE, Language::EN];
     private $customFiltersMemory = null;
     private $thesaurusMemory = null;
 
@@ -46,11 +48,21 @@ class CustomFiltersAndThesaurusLoader extends Producer
         echo "Processing memory custom filters\n";
 
         foreach ($this->customFiltersMemory->getData() as $item) {
-            $this->next(self::mapCustomFilterToFilter($item));
+            $langFilters = self::mapCustomFilterToLangSeperatedFilters($item, $this->supportedLangs);
+
+            foreach ($langFilters as $lang => $filter) {
+                $container = new LangFilterContainer($lang, $filter);
+                $this->next($container);
+            }
         }
 
         foreach ($this->thesaurusMemory->getData()->getRootTerms() as $term) {
-            $this->next(self::mapThesaurusTermToFilter($term));
+            $langFilters = self::mapThesaurusTermToLangSeperatedFilters($term, $this->supportedLangs);
+
+            foreach ($langFilters as $lang => $filter) {
+                $container = new LangFilterContainer($lang, $filter);
+                $this->next($container);
+            }
         }
 
         /* Signaling that we are done reading the memory exporter */
@@ -58,44 +70,66 @@ class CustomFiltersAndThesaurusLoader extends Producer
     }
 
 
-    private static function mapCustomFilterToFilter(CustomFilter $customFilter): Filter
+    private static function mapCustomFilterToLangSeperatedFilters(CustomFilter $customFilter, array $langs): array
     {
-        $newFilter = new Filter();
+        $newLangFilters = array_reduce($langs, function ($acc, $lang) use ($customFilter) {
+            $newFilter = new Filter();
 
-        $newFilter->setId($customFilter->getId());
-        $newFilter->setText($customFilter->getText());
+            $text = $customFilter->getLangText($lang);
+
+            $newFilter->setId($customFilter->getId());
+            $newFilter->setText(!is_null($text) ? $text: '');
+
+            $acc[$lang] = $newFilter;
+            return $acc;
+        }, []);
 
         foreach ($customFilter->getChildren() as $child) {
-            $newFilter->addChild(self::mapCustomFilterToFilter($child));
+            $childrenLangFilters = self::mapCustomFilterToLangSeperatedFilters($child, $langs);
+
+            foreach ($childrenLangFilters as $lang => $children) {
+                $newLangFilters[$lang]->addChild($children);
+            }
         }
 
-        return $newFilter;
+        return $newLangFilters;
     }
 
 
-    private static function mapThesaurusTermToFilter(ThesaurusTerm $term): Filter
+    private static function mapThesaurusTermToLangSeperatedFilters(ThesaurusTerm $term, array $langs): array
     {
-        $newFilter = new Filter();
+        $newLangFilters = array_reduce($langs, function ($acc, $lang) use ($term) {
+            $newFilter = new Filter();
 
-        $id = $term->getAlt(ThesaurusTerm::ALT_DKULT_TERM_IDENTIFIER);
+            $id = $term->getAlt(ThesaurusTerm::ALT_DKULT_TERM_IDENTIFIER);
 
-        if (!is_null($id)) {
-            $newFilter->setId($id);
-        }
+            if (!is_null($id)) {
+                $newFilter->setId($id);
+            }
 
-        $enText = $term->getAlt(ThesaurusTerm::ALT_BRITISH_EQUIVALENT);
+            switch ($lang) {
+                case Language::DE:
+                    $newFilter->setText($term->getTerm());
+                    break;
+                case Language::EN:
+                    $enText = $term->getAlt(ThesaurusTerm::ALT_BRITISH_EQUIVALENT);
 
-        $text = [
-            Language::DE => $term->getTerm(),
-            Language::EN => !is_null($enText) ? $enText : '',
-        ];
+                    $newFilter->setText((!is_null($enText)) ? $enText : '');
+                    break;
+            }
 
-        $newFilter->setText($text);
+            $acc[$lang] = $newFilter;
+            return $acc;
+        }, []);
 
         foreach ($term->getSubTerms() as $subTerm) {
-            $newFilter->addChild(self::mapThesaurusTermToFilter($subTerm));
+            $childrenLangFilters = self::mapThesaurusTermToLangSeperatedFilters($subTerm, $langs);
+
+            foreach ($childrenLangFilters as $lang => $children) {
+                $newLangFilters[$lang]->addChild($children);
+            }
         }
 
-        return $newFilter;
+        return $newLangFilters;
     }
 }

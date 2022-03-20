@@ -52,9 +52,10 @@ use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExpo
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ReducedThesaurusMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Filters\Loaders\JSON\CustomFiltersLoader;
-use CranachDigitalArchive\Importer\Modules\Filters\Exporters\FilterExporter;
+use CranachDigitalArchive\Importer\Modules\Filters\Exporters\FilterJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Filters\Loaders\Memory\CustomFiltersAndThesaurusLoader;
+use CranachDigitalArchive\Importer\Modules\Filters\Transformers\AlphabeticSorter;
 
 $date = '20220203';
 $inputDirectory = './input/' . $date;
@@ -360,7 +361,9 @@ CustomFiltersAndThesaurusLoader::withMemory(
     $customFiltersMemoryDestination,
     ReducedThesaurusMemoryExporter::new($thesaurusMemoryDestination, $restrictedTermIds),
 )->pipe(
-    FilterExporter::withDestinationAt($filtersOutputFilepath),
+    AlphabeticSorter::new()->pipe(
+        FilterJSONLangExporter::withDestinationAt($filtersOutputFilepath),
+    )
 )->run();
 
 
