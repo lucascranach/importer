@@ -18,6 +18,10 @@ class AlphabeticSorter extends Hybrid
         ['subject', '010402', '01040202', '0104020201'], // Portraits > Female > Public Personalities
     ];
 
+    private $recursivePaths = [
+        ['collection_repository', 'collection_repository.country'],
+    ];
+
     private function __construct()
     {
     }
@@ -41,22 +45,34 @@ class AlphabeticSorter extends Hybrid
     private function sortFilters(LangFilterContainer $container): LangFilterContainer
     {
         foreach ($this->paths as $path) {
-            $container = $this->sortItemChildren($container, $path);
+            $this->sortItemChildren($container, $path);
+        }
+
+        foreach ($this->recursivePaths as $path) {
+            $this->sortItemChildrenRecursively($container, $path);
         }
 
         return $container;
     }
 
 
-    private function sortItemChildren(LangFilterContainer $container, array $path): LangFilterContainer
+    private function sortItemChildren(LangFilterContainer $container, array $path)
     {
         $matchingFilter = $this->findMatchingFilter($container->getFilter(), $path);
 
         if (!is_null($matchingFilter)) {
             $matchingFilter->setChildren($this->sortByText($matchingFilter->getChildren()));
         }
+    }
 
-        return $container;
+
+    private function sortItemChildrenRecursively(LangFilterContainer $container, array $path)
+    {
+        $matchingFilter = $this->findMatchingFilter($container->getFilter(), $path);
+
+        if (!is_null($matchingFilter)) {
+            $matchingFilter = $this->sortRecursively($matchingFilter);
+        }
     }
 
 
@@ -95,10 +111,27 @@ class AlphabeticSorter extends Hybrid
         }
     }
 
+    private function sortRecursively(Filter $filter): Filter
+    {
+        $filter->setChildren($this->sortByText($filter->getChildren()));
+
+        foreach ($filter->getChildren() as $child) {
+            $this->sortRecursively($child);
+        }
+
+        return $filter;
+    }
+
     private function sortByText(array $items)
     {
-        usort($items, function ($a, $b) {
-            return strcasecmp($a->getText(), $b->getText());
+        $toBeReplaced = ['ä', 'Ä', 'ö', 'Ö', 'ü', 'Ü', 'ß'];
+        $replacements = ['ae', 'Ae', 'oe', 'Oe', 'ue', 'Ue', 'ss'];
+
+        usort($items, function ($a, $b) use ($toBeReplaced, $replacements) {
+            $aText = str_replace($toBeReplaced, $replacements, $a->getText());
+            $bText = str_replace($toBeReplaced, $replacements, $b->getText());
+
+            return strcasecmp($aText, $bText);
         });
 
         return $items;
