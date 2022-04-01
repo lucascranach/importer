@@ -44,7 +44,7 @@ class ExtenderWithSortingInfo extends Hybrid
         $year = intval(array_shift($splitSortingNumber));
 
         $position = 3;
-        $factors = [1000, 100, 10, 1];
+        $factors = [10000, 100, 10, 1];
 
         for ($i = 0; $i < count($splitSortingNumber); $i++) {
             $position += intval($splitSortingNumber[$i]) * $factors[$i];
