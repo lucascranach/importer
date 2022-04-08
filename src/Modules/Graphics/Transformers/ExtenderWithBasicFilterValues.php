@@ -200,9 +200,8 @@ class ExtenderWithBasicFilterValues extends Hybrid
                 $regExp = $matchFilterRule['collection_repository'];
 
                 $matchingRepository = !!preg_match($regExp, $item->getRepository());
-                $matchingOwner = !!preg_match($regExp, $item->getOwner());
 
-                if ($matchingRepository || $matchingOwner) {
+                if ($matchingRepository) {
                     self::addBasicFilter($basicFilterInfos, $checkItem, $langCode);
                     self::addAncestorsBasicFilter(
                         $basicFilterInfos,
