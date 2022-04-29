@@ -157,9 +157,8 @@ class ExtenderWithIds extends Hybrid
                 $regExp = $matchFilterRule['collection_repository'];
 
                 $matchingRepository = !!preg_match($regExp, $item->getRepository());
-                $matchingOwner = !!preg_match($regExp, $item->getOwner());
 
-                if ($matchingRepository || $matchingOwner) {
+                if ($matchingRepository) {
                     $item->setCollectionRepositoryId($checkItem->getId());
                 }
             }
