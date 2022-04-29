@@ -372,9 +372,25 @@ class Painting extends AbstractImagesItem
     }
 
 
+    public function setLocations(array $locations): void
+    {
+        $this->locations = $locations;
+    }
+
+
     public function addLocation(MetaReference $location): void
     {
-        $this->locations[] = $location;
+        $matchingExistingLocations = array_filter(
+            $this->locations,
+            function (MetaReference $existingLocation) use ($location) {
+                return MetaReference::equal($existingLocation, $location);
+            },
+            ARRAY_FILTER_USE_BOTH
+        );
+
+        if (count($matchingExistingLocations) === 0) {
+            $this->locations[] = $location;
+        }
     }
 
 

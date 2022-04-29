@@ -8,6 +8,8 @@ echo "MemoryLimit: " . ini_get('memory_limit') . "\n\n";
 require_once __DIR__ . '/vendor/autoload.php';
 
 use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsLoader;
+use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsPreLoader;
+use CranachDigitalArchive\Importer\Modules\Graphics\Collectors\LocationsCollector as GraphicsLocationsCollector;
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsJSONLangExistenceTypeExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterminer;
@@ -18,6 +20,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithInv
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithSortingInfo as GraphicsExtenderWithSortingInfo;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithIds as GraphicsExtenderWithIds;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRestorations as GraphicsExtenderWithRestorations;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithLocations as GraphicsExtenderWithLocations;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MetadataFiller as GraphicsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteDocumentExistenceChecker;
@@ -231,6 +234,11 @@ RestorationsLoader::withSourcesAt($graphicsRestorationInputFilepaths)->pipe(
     $graphicsRestorationMemoryDestination,
 )->run(); /* and we have to run it directly */
 
+/* Graphics - Infos */
+$graphicsPreLoader = GraphicsPreLoader::withSourceAt($graphicsInputFilepath);
+$graphicsLocationsCollector = GraphicsLocationsCollector::new();
+$graphicsPreLoader->pipe($graphicsLocationsCollector);
+$graphicsPreLoader->run();
 
 /* Graphics */
 $graphicsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::withCacheAt(
@@ -254,6 +262,7 @@ $graphicsInvolvedPersonsFullnames = GraphicsExtenderWithInvolvedPersonsFullnames
 $graphicsSortingInfo = GraphicsExtenderWithSortingInfo::new();
 $graphicsThesaurusExtender = GraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $graphicsMetadataFiller = GraphicsMetadataFiller::new();
+$graphicsLocationsExtender = GraphicsExtenderWithLocations::new($graphicsLocationsCollector, true);
 $graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt($graphicsOutputFilepath);
 $graphicsElasticsearchBulkDestination = GraphicsElasticsearchLangExporter::withDestinationAt(
     $graphicsElasticsearchOutputFilepath
@@ -276,14 +285,16 @@ $inbetweenNode->pipe(
                 $graphicsConditionDeterminer->pipe(
                     $graphicsRestorationExtender->pipe(
                         $graphicsMetadataFiller->pipe(
-                            $graphicsSortingInfo->pipe(
-                                $graphicsDestination,
-                                $metaReferenceCollector,
-                                $graphicsMapToSearchableGraphic->pipe(
-                                    $graphicsThesaurusExtender->pipe(
-                                        $graphicsBasicFilterValues->pipe(
-                                            $graphicsInvolvedPersonsFullnames->pipe(
-                                                $graphicsElasticsearchBulkDestination,
+                            $graphicsLocationsExtender->pipe(
+                                $graphicsSortingInfo->pipe(
+                                    $graphicsDestination,
+                                    $metaReferenceCollector,
+                                    $graphicsMapToSearchableGraphic->pipe(
+                                        $graphicsThesaurusExtender->pipe(
+                                            $graphicsBasicFilterValues->pipe(
+                                                $graphicsInvolvedPersonsFullnames->pipe(
+                                                    $graphicsElasticsearchBulkDestination,
+                                                ),
                                             ),
                                         ),
                                     ),
@@ -372,6 +383,7 @@ $thesaurusMemoryDestination->cleanUp();
 $paintingsRestorationMemoryDestination->cleanUp();
 $graphicsRestorationMemoryDestination->cleanUp();
 $paintingsReferencesCollector->cleanUp();
+$graphicsLocationsCollector->cleanUp();
 
 
 $metaReferenceCollector->cleanUp();

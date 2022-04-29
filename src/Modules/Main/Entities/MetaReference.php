@@ -64,4 +64,9 @@ class MetaReference
     {
         return $this->url;
     }
+
+    public static function equal(MetaReference $a, MetaReference $b)
+    {
+        return $a->getTerm() === $b->getTerm() && $a->getPath() === $b->getPath();
+    }
 }
