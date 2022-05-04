@@ -60,7 +60,7 @@ use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemory
 use CranachDigitalArchive\Importer\Modules\Filters\Loaders\Memory\CustomFiltersAndThesaurusLoader;
 use CranachDigitalArchive\Importer\Modules\Filters\Transformers\AlphabeticSorter;
 
-$date = '20220203';
+$date = '20220504';
 $inputDirectory = './input/' . $date;
 $destDirectory = './docs/' . $date;
 $filtersDirectory = './filters';
