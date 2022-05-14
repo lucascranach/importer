@@ -719,6 +719,18 @@
                         "collection_repository": "/kunsthistorisches museum, (vienna|wien)/i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.austria.vienna.vienna_6",
+                    "text": {
+                      "de": "\u00d6sterreichische Nationalbibliothek",
+                      "en": "\u00d6sterreichische Nationalbibliothek"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/\u00d6sterreichische nationalbibliothek, (vienna|wien)/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -1445,12 +1457,45 @@
               {
                 "id": "collection_repository.country.france.strasbourg",
                 "text": {
-                  "de": "Strasbourg, Mus\u00e9e des Beaux-Arts",
-                  "en": "Strasbourg, Mus\u00e9e des Beaux-Arts"
+                  "de": "Strasbourg",
+                  "en": "Strasbourg"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/mus\u00e9e des beaux-arts strasbourg/i"
+                    "id": "collection_repository.country.france.strasbourg_1",
+                    "text": {
+                      "de": "Mus\u00e9e des Beaux-Arts",
+                      "en": "Mus\u00e9e des Beaux-Arts"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/mus\u00e9e des beaux-arts strasbourg/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.france.strasbourg_2",
+                    "text": {
+                      "de": "Biblioth\u00e8que nationale et universitaire",
+                      "en": "Biblioth\u00e8que nationale et universitaire"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/biblioth\u00e8que nationale et universitaire/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.france.strasbourg_3",
+                    "text": {
+                      "de": "Cabinet des estampes et dessins",
+                      "en": "Cabinet des estampes et dessins"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/cabinet des estampes et dessins/i"
+                      }
+                    ]
                   }
                 ]
               }
@@ -1652,6 +1697,18 @@
                         "collection_repository": "/staatsgalerie augsburg, katharinenkirche/i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.augsburg.augsburg_5",
+                    "text": {
+                      "de": "Staats- und Stadtbibliothek",
+                      "en": "Staats- und Stadtbibliothek"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/staats- und stadtbibliothek augsburg/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -1728,6 +1785,18 @@
                     "matchers": [
                       {
                         "collection_repository": "/staatsgalerie in der neuen residenz bamberg/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.bamberg.bamberg_3",
+                    "text": {
+                      "de": "Staatsbibliothek",
+                      "en": "Staatsbibliothek"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/staatsbibliothek bamberg/i"
                       }
                     ]
                   }
@@ -1982,6 +2051,18 @@
                         "collection_repository": "/stiftung der herzog von sachsen-coburg und gotha'schen familie/i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.coburg.coburg_3",
+                    "text": {
+                      "de": "Landesbibliothek",
+                      "en": "Landesbibliothek"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/landesbibliothek coburg/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2144,6 +2225,18 @@
                         "collection_repository": "/milit\u00e4rhistorisches museum der bundeswehr, dresden/i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.dresden.dresden_4",
+                    "text": {
+                      "de": "Sächsische Landesbibliothek – Staats- und Universitätsbibliothek",
+                      "en": "Sächsische Landesbibliothek – Staats- und Universitätsbibliothek"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/s\u00e4chsische Landesbibliothek .* staats- und universit\u00e4tsbibliothek dresden/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2174,12 +2267,33 @@
               {
                 "id": "collection_repository.country.germany.eichstaett",
                 "text": {
-                  "de": "Eichst\u00e4tt, Bisch\u00f6flicher Stuhl",
-                  "en": "Eichst\u00e4tt, Bisch\u00f6flicher Stuhl"
+                  "de": "Eichst\u00e4tt",
+                  "en": "Eichst\u00e4tt"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/bisch\u00f6flicher stuhl, eichst\u00e4tt/i"
+                    "id": "collection_repository.country.germany.eichstaett_1",
+                    "text": {
+                      "de": "Bisch\u00f6flicher Stuhl",
+                      "en": "Bisch\u00f6flicher Stuhl"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/bisch\u00f6flicher stuhl, eichst\u00e4tt/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.eichstaett_2",
+                    "text": {
+                      "de": "Eichst\u00e4tt, Universit\u00e4tsbibliothek Eichst\u00e4tt-Ingolstadt",
+                      "en": "Eichst\u00e4tt, Universit\u00e4tsbibliothek Eichst\u00e4tt-Ingolstadt"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/universit\u00e4tsbibliothek eichst\u00e4tt-ingolstadt/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2237,18 +2351,51 @@
                         "collection_repository": "/dom st. marien, erfurt/i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.erfurt.erfurt_3",
+                    "text": {
+                      "de": "Forschungsbibliothek der Universität Erfurt",
+                      "en": "Forschungsbibliothek der Universität Erfurt"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/forschungsbibliothek gotha der universit\u00e4t erfurt/i"
+                      }
+                    ]
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.germany.frankfurt",
                 "text": {
-                  "de": "Frankfurt, St\u00e4del Museum",
-                  "en": "Frankfurt, St\u00e4del Museum"
+                  "de": "Frankfurt a.M.",
+                  "en": "Frankfurt a.M."
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/st\u00e4del museum frankfurt a.m./i"
+                    "id": "collection_repository.country.germany.frankfurt_1",
+                    "text": {
+                      "de": "St\u00e4del Museum",
+                      "en": "St\u00e4del Museum"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/st\u00e4del museum frankfurt a.m./i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.frankfurt_2",
+                    "text": {
+                      "de": "Philosophisch-Theologische Hochschule Sankt Georgen",
+                      "en": "Philosophisch-Theologische Hochschule Sankt Georgen"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/philosophisch-theologische hochschule sankt georgen, frankfurt a. m./i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2315,12 +2462,33 @@
               {
                 "id": "collection_repository.country.germany.goerlitz",
                 "text": {
-                  "de": "G\u00f6rlitz, Kulturhistorisches Museum G\u00f6rlitzer, Kunstsammlung",
-                  "en": "G\u00f6rlitz, Kulturhistorisches Museum G\u00f6rlitzer, Kunstsammlung"
+                  "de": "G\u00f6rlitz",
+                  "en": "G\u00f6rlitz"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/kulturhistorisches museum g\u00f6rlitz/i"
+                    "id": "collection_repository.country.germany.goerlitz_1",
+                    "text": {
+                      "de": "Kulturhistorisches Museum G\u00f6rlitzer, Kunstsammlung",
+                      "en": "Kulturhistorisches Museum G\u00f6rlitzer, Kunstsammlung"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/kulturhistorisches museum g\u00f6rlitz/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.goerlitz_2",
+                    "text": {
+                      "de": "Oberlausitzische Bibliothek der Wissenschaften bei den St\u00e4dtischen Sammlungen f\u00fcr Geschichte und Kultur",
+                      "en": "Oberlausitzische Bibliothek der Wissenschaften bei den St\u00e4dtischen Sammlungen f\u00fcr Geschichte und Kultur"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/oberlausitzische bibliothek der wissenschaften bei den st\u00e4dtischen sammlungen f\u00fcr geschichte und kultur, g\u00f6rlitz/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2333,6 +2501,18 @@
                 "matchers": [
                   {
                     "collection_repository": "/stiftung schloss friedenstein, gotha/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.germany.goettingen",
+                "text": {
+                  "de": "G\u00f6ttingen, Nieders\u00e4chsische Staats- und Universit\u00e4tsbibliothek",
+                  "en": "G\u00f6ttingen, Nieders\u00e4chsische Staats- und Universit\u00e4tsbibliothek"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/nieders\u00e4chsische staats- und universit\u00e4tsbibliothek g\u00f6ttingen/i"
                   }
                 ]
               },
@@ -2400,6 +2580,30 @@
                     "matchers": [
                       {
                         "collection_repository": "/kulturstiftung sachsen-anhalt - kunstmuseum moritzburg/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.halle.halle_3",
+                    "text": {
+                      "de": "Frankesche Stiftungen",
+                      "en": "Frankesche Stiftungen"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/frankesche stiftungen, halle/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.halle.halle_4",
+                    "text": {
+                      "de": "Universit\u00e4ts- und Landesbibliothek Sachsen-Anhalt",
+                      "en": "Universit\u00e4ts- und Landesbibliothek Sachsen-Anhalt"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/universit\u00e4ts- und landesbibliothek sachsen-anhalt, halle/i"
                       }
                     ]
                   }
@@ -2522,7 +2726,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/universit\u00e4tsmuseum, heidelberg/i"
+                        "collection_repository": "/(universit\u00e4tsmuseum, heidelberg|universit\u00e4tsbibliothek heidelberg)/i"
                       }
                     ]
                   }
@@ -2588,12 +2792,33 @@
               {
                 "id": "collection_repository.country.germany.karlsruhe",
                 "text": {
-                  "de": "Karlsruhe, Staatliche Kunsthalle",
-                  "en": "Karlsruhe, Staatliche Kunsthalle"
+                  "de": "Karlsruhe",
+                  "en": "Karlsruhe"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/staatliche kunsthalle karlsruhe/i"
+                    "id": "collection_repository.country.germany.karlsruhe_1",
+                    "text": {
+                      "de": "Staatliche Kunsthalle",
+                      "en": "Staatliche Kunsthalle"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/staatliche kunsthalle karlsruhe/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.karlsruhe_2",
+                    "text": {
+                      "de": "Landesbibliothek",
+                      "en": "Landesbibliothek"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/landesbibliothek karlsruhe/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2795,6 +3020,18 @@
                         "collection_repository": "/stadtgeschichtliches museum, leipzig/i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.leipzig.leipzig_5",
+                    "text": {
+                      "de": "Universit\u00e4tsbibliothek",
+                      "en": "Universit\u00e4tsbibliothek"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/universit\u00e4tsbibliothek leipzig/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2966,6 +3203,30 @@
                         "collection_repository": "/staatliche graphische sammlung m\u00fcnchen/i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.munich.munich_4",
+                    "text": {
+                      "de": "Bayerische Staatsbibliothek",
+                      "en": "Bayerische Staatsbibliothek"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/bayerische staatsbibliothek/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.munich.munich_5",
+                    "text": {
+                      "de": "Universit\u00e4tsbibliothek der LMU",
+                      "en": "Universit\u00e4tsbibliothek der LMU"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/universit\u00e4tsbibliothek der lmu, m\u00fcnchen/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -3113,8 +3374,8 @@
               {
                 "id": "collection_repository.country.germany.oschatz",
                 "text": {
-                  "de": "Stadt- und Waagenmuseum Oschatz",
-                  "en": "Stadt- und Waagenmuseum Oschatz"
+                  "de": "Oschatz, Stadt- und Waagenmuseum",
+                  "en": "Oschatz, Stadt- und Waagenmuseum"
                 },
                 "matchers": [
                   {
@@ -3149,12 +3410,33 @@
               {
                 "id": "collection_repository.country.germany.regensburg",
                 "text": {
-                  "de": "Regensburg, Historisches Museum",
-                  "en": "Regensburg, Historisches Museum"
+                  "de": "Regensburg",
+                  "en": "Regensburg"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/historisches museum der stadt regensburg/i"
+                    "id": "collection_repository.country.germany.regensburg_1",
+                    "text": {
+                      "de": "Historisches Museum",
+                      "en": "Historisches Museum"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/historisches museum der stadt regensburg/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.regensburg_2",
+                    "text": {
+                      "de": "Staatliche Bibliothek",
+                      "en": "Staatliche Bibliothek"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/staatliche bibliothek regensburg/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -3179,6 +3461,18 @@
                 "matchers": [
                   {
                     "collection_repository": "/st. kunigundenkirche rochlitz/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.germany.rostock",
+                "text": {
+                  "de": "Rostock, Universit\u00e4tsbibliothek",
+                  "en": "Rostock, Universit\u00e4tsbibliothek"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/universit\u00e4tsbibliothek rostock/i"
                   }
                 ]
               },
@@ -3257,12 +3551,33 @@
               {
                 "id": "collection_repository.country.germany.stuttgart",
                 "text": {
-                  "de": "Stuttgart, Staatsgalerie",
-                  "en": "Stuttgart, Staatsgalerie"
+                  "de": "Stuttgart",
+                  "en": "Stuttgart"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/staatsgalerie stuttgart/i"
+                    "id": "collection_repository.country.germany.stuttgart_1",
+                    "text": {
+                      "de": "Staatsgalerie",
+                      "en": "Staatsgalerie"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/staatsgalerie stuttgart/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.stuttgart_2",
+                    "text": {
+                      "de": "Württembergische Landesbibliothek",
+                      "en": "Württembergische Landesbibliothek"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/w\u00fcrttembergische landesbibliothek stuttgart/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -3341,6 +3656,18 @@
                         "collection_repository": "/klassik stiftung weimar, (museums|museen)/i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.weimar.weimar_3",
+                    "text": {
+                      "de": "Herzogin Anna Amalia Bibliothek",
+                      "en": "Herzogin Anna Amalia Bibliothek"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/herzogin anna amalia bibliothek, weimar/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -3376,7 +3703,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/stadtbibliothek bad windsheim/i"
+                    "collection_repository": "/(stadtbibliothek bad windsheim|stadtarchiv und historische stadtbibliothek bad windsheim)/i"
                   }
                 ]
               },
@@ -3422,6 +3749,30 @@
                         "collection_repository": "/lutherhaus wittenberg/i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.wittenberg.wittenberg_4",
+                    "text": {
+                      "de": "Reformationsgeschichtliche Forschungsbibliothek",
+                      "en": "Reformationsgeschichtliche Forschungsbibliothek"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/reformationsgeschichtliche forschungsbibliothek, wittenberg/i"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.germany.wolfegg",
+                "text": {
+                  "de": "Wolfegg, Kunstsammlungen der F\u00fcrsten zu Waldburg-Wolfegg",
+                  "en": "Wolfegg, Kunstsammlungen der F\u00fcrsten zu Waldburg-Wolfegg"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/kunstsammlungen der f\u00fcrsten zu waldburg-wolfegg/i"
                   }
                 ]
               },
@@ -3569,6 +3920,18 @@
                         "collection_repository": "/kunstsammlungen zwickau/i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.zwickau.zwickau_4",
+                    "text": {
+                      "de": "Ratsschulbibliothek",
+                      "en": "Ratsschulbibliothek"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/ratsschulbibliothek zwickau/i"
+                      }
+                    ]
                   }
                 ]
               }
@@ -3681,6 +4044,18 @@
                     "matchers": [
                       {
                         "collection_repository": "/the royal collection, london/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.britain.london.london_5",
+                    "text": {
+                      "de": "British Museum",
+                      "en": "British Museum"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/british museum/i"
                       }
                     ]
                   }
@@ -4121,12 +4496,33 @@
               {
                 "id": "collection_repository.country.netherlands.amsterdam",
                 "text": {
-                  "de": "Amsterdam, Rijksmuseum",
-                  "en": "Amsterdam, Rijksmuseum"
+                  "de": "Amsterdam",
+                  "en": "Amsterdam"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/rijksmuseum, amsterdam/i"
+                    "id": "collection_repository.country.netherlands.amsterdam_1",
+                    "text": {
+                      "de": "Rijksmuseum",
+                      "en": "Rijksmuseum"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/rijksmuseum, amsterdam/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.netherlands.amsterdam_2",
+                    "text": {
+                      "de": "Vrije Universiteit Bibliotheek Amsterdam",
+                      "en": "Vrije Universiteit Bibliotheek Amsterdam"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/vrije universiteit bibliotheek amsterdam/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -4775,12 +5171,45 @@
               {
                 "id": "collection_repository.country.switzerland.bern",
                 "text": {
-                  "de": "Bern, Kunstmuseum",
-                  "en": "Bern, Kunstmuseum"
+                  "de": "Bern",
+                  "en": "Bern"
+                },
+                "children": [
+                  {
+                    "id": "collection_repository.country.switzerland.bern_1",
+                    "text": {
+                      "de": "Kunstmuseum",
+                      "en": "Kunstmuseum"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/kunstmuseum bern/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.switzerland.bern_2",
+                    "text": {
+                      "de": "Universit\u00e4tsbibliothek - Bibliothek M\u00fcnstergasse",
+                      "en": "Universit\u00e4tsbibliothek - Bibliothek M\u00fcnstergasse"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/universit\u00e4tsbibliothek - bibliothek m\u00fcnstergasse bern/i"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.switzerland.chur",
+                "text": {
+                  "de": "Chur, Kantonsbibliothek",
+                  "en": "Chur, Kantonsbibliothek"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/kunstmuseum bern/i"
+                    "collection_repository": "/kantonsbibliothek chur/i"
                   }
                 ]
               },
@@ -4805,6 +5234,18 @@
                 "matchers": [
                   {
                     "collection_repository": "/museum zu allerheiligen schaffhausen/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.switzerland.st_gallen",
+                "text": {
+                  "de": "St. Gallen, Kantonsbibliothek",
+                  "en": "St. Gallen, Kantonsbibliothek"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/kantonsbibliothek st. gallen/i"
                   }
                 ]
               },
@@ -4844,12 +5285,45 @@
               {
                 "id": "collection_repository.country.switzerland.zurich",
                 "text": {
-                  "de": "Z\u00fcrich, Kunsthaus",
-                  "en": "Z\u00fcrich, Kunsthaus"
+                  "de": "Z\u00fcrich",
+                  "en": "Z\u00fcrich"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/kunsthaus z\u00fcrich/i"
+                    "id": "collection_repository.country.switzerland.zurich_1",
+                    "text": {
+                      "de": "Kunsthaus",
+                      "en": "Kunsthaus"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/kunsthaus z\u00fcrich/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.switzerland.zurich_2",
+                    "text": {
+                      "de": "Eidgen\u00f6ssische Technische Hochschule",
+                      "en": "Eidgen\u00f6ssische Technische Hochschule"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/eidgen\u00f6ssische technische hochschule z\u00fcrich/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.switzerland.zurich_3",
+                    "text": {
+                      "de": "Zentralbibliothek",
+                      "en": "Zentralbibliothek"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/zentralbibliothek z\u00fcrich/i"
+                      }
+                    ]
                   }
                 ]
               }
@@ -4877,12 +5351,33 @@
               {
                 "id": "collection_repository.country.america.atlanta",
                 "text": {
-                  "de": "Atlanta, High Museum of Art",
-                  "en": "Atlanta, High Museum of Art"
+                  "de": "Atlanta",
+                  "en": "Atlanta"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/high museum of art, atlanta/i"
+                    "id": "collection_repository.country.america.atlanta_1",
+                    "text": {
+                      "de": "High Museum of Art",
+                      "en": "High Museum of Art"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/high museum of art, atlanta/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.america.atlanta_2",
+                    "text": {
+                      "de": "Pitts Theology Library, Emory University",
+                      "en": "Pitts Theology Library, Emory University"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/pitts theology library, emory university, atlanta/i"
+                      }
+                    ]
                   }
                 ]
               },
