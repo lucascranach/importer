@@ -1193,12 +1193,33 @@
               {
                 "id": "collection_repository.country.denmark.copenhagen",
                 "text": {
-                  "de": "Kopenhagen, Statens Museum for Kunst",
-                  "en": "Copenhagen, Statens Museum for Kunst"
+                  "de": "Kopenhagen",
+                  "en": "Copenhagen"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/statens museum for kunst, [c|k]openhagen/i"
+                    "id": "collection_repository.country.denmark.copenhagen_1",
+                    "text": {
+                      "de": "Statens Museum for Kunst",
+                      "en": "Statens Museum for Kunst"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/statens museum for kunst, [c|k]openhagen/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.denmark.copenhagen_2",
+                    "text": {
+                      "de": "Königliche Bibliothek",
+                      "en": "Royal Library"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/royal library, [c|k]openhagen/i"
+                      }
+                    ]
                   }
                 ]
               },
