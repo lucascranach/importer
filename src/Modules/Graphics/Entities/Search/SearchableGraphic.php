@@ -14,6 +14,7 @@ class SearchableGraphic extends Graphic
     public $filterInfos = [];
     public $involvedPersonsFullnames = [];
     public $filterDating = 0;
+    public $childRepositories = [];
 
 
     public function __construct()
@@ -72,5 +73,22 @@ class SearchableGraphic extends Graphic
     public function setFilterDating(int $dating): void
     {
         $this->filterDating = $dating;
+    }
+
+
+    public function getChildRepositories(): array
+    {
+        return $this->childRepositories;
+    }
+
+
+    public function setChildRepositories(array $childRepositories): void
+    {
+        $this->childRepositories = $childRepositories;
+    }
+
+    public function addChildRepository(string $childRepository): void
+    {
+        $this->childRepositories[] = $childRepository;
     }
 }

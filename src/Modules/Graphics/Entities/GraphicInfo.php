@@ -25,6 +25,7 @@ class GraphicInfo
     public $isVirtual = false;
     public $reprintReferences = [];
     public $locations = [];
+    public $repository = '';
 
 
     public function __construct()
@@ -133,5 +134,17 @@ class GraphicInfo
     public function getLocations(): array
     {
         return $this->locations;
+    }
+
+
+    public function setRepository(string $repository): void
+    {
+        $this->repository = $repository;
+    }
+
+
+    public function getRepository(): string
+    {
+        return $this->repository;
     }
 }

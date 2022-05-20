@@ -10,6 +10,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsLoader;
 use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsPreLoader;
 use CranachDigitalArchive\Importer\Modules\Graphics\Collectors\LocationsCollector as GraphicsLocationsCollector;
+use CranachDigitalArchive\Importer\Modules\Graphics\Collectors\RepositoriesCollector as GraphicsRepositoriesCollector;
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsJSONLangExistenceTypeExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterminer;
@@ -21,6 +22,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithSor
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithIds as GraphicsExtenderWithIds;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRestorations as GraphicsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithLocations as GraphicsExtenderWithLocations;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRepositories as GraphicsExtenderWithRepositories;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MetadataFiller as GraphicsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteDocumentExistenceChecker;
@@ -237,8 +239,11 @@ RestorationsLoader::withSourcesAt($graphicsRestorationInputFilepaths)->pipe(
 /* Graphics - Infos */
 $graphicsPreLoader = GraphicsPreLoader::withSourceAt($graphicsInputFilepath);
 $graphicsLocationsCollector = GraphicsLocationsCollector::new();
+$graphicsRepositoriesCollector = GraphicsRepositoriesCollector::new();
 $graphicsPreLoader->pipe($graphicsLocationsCollector);
+$graphicsPreLoader->pipe($graphicsRepositoriesCollector);
 $graphicsPreLoader->run();
+
 
 /* Graphics */
 $graphicsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::withCacheAt(
@@ -263,6 +268,7 @@ $graphicsSortingInfo = GraphicsExtenderWithSortingInfo::new();
 $graphicsThesaurusExtender = GraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination);
 $graphicsMetadataFiller = GraphicsMetadataFiller::new();
 $graphicsLocationsExtender = GraphicsExtenderWithLocations::new($graphicsLocationsCollector, true);
+$graphicsRepositoriesExtender = GraphicsExtenderWithRepositories::new($graphicsRepositoriesCollector, true);
 $graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt($graphicsOutputFilepath);
 $graphicsElasticsearchBulkDestination = GraphicsElasticsearchLangExporter::withDestinationAt(
     $graphicsElasticsearchOutputFilepath
@@ -290,10 +296,12 @@ $inbetweenNode->pipe(
                                     $graphicsDestination,
                                     $metaReferenceCollector,
                                     $graphicsMapToSearchableGraphic->pipe(
-                                        $graphicsThesaurusExtender->pipe(
-                                            $graphicsBasicFilterValues->pipe(
-                                                $graphicsInvolvedPersonsFullnames->pipe(
-                                                    $graphicsElasticsearchBulkDestination,
+                                        $graphicsRepositoriesExtender->pipe(
+                                            $graphicsThesaurusExtender->pipe(
+                                                $graphicsBasicFilterValues->pipe(
+                                                    $graphicsInvolvedPersonsFullnames->pipe(
+                                                        $graphicsElasticsearchBulkDestination,
+                                                    ),
                                                 ),
                                             ),
                                         ),

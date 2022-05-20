@@ -2,6 +2,7 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Inflators\XML;
 
+use Error;
 use SimpleXMLElement;
 use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
@@ -28,6 +29,12 @@ class GraphicPreInflator implements IInflator
     private static $referenceTypeValues = [
         'reprint' => 'Abzug A',
     ];
+
+    private static $repositoryTypes = [
+        Language::DE => 'Besitzer*in',
+        Language::EN => 'Repository',
+    ];
+
 
     private function __construct()
     {
@@ -59,6 +66,10 @@ class GraphicPreInflator implements IInflator
         }
 
         self::inflateLocations($subNode, $graphicInfoDe, $graphicInfoEn);
+
+        if (!$graphicInfoDe->getIsVirtual()) {
+            self::inflateRepository($subNode, $graphicInfoDe, $graphicInfoEn);
+        }
     }
 
 
@@ -269,6 +280,76 @@ class GraphicPreInflator implements IInflator
                 $metaReference->setURL($locationURLStr);
             }
         }
+    }
+
+
+    /* Repository */
+    private static function inflateRepository(
+        SimpleXMLElement $node,
+        GraphicInfo $graphicInfoDe,
+        GraphicInfo $graphicInfoEn
+    ): void {
+        $repositoryAndOwnerDetailsSubreport = $node->{'Section'}[37]->{'Subreport'};
+        $details = $repositoryAndOwnerDetailsSubreport->{'Details'};
+
+        foreach ($details as $detail) {
+            /* We have to extract the role */
+            $roleElement = self::findElementByXPath(
+                $detail,
+                'Section[@SectionNumber="1"]/Field[@FieldName="{@Rolle}"]/FormattedValue',
+            );
+
+            if (!$roleElement) {
+                continue;
+            }
+
+            $roleName = trim(strval($roleElement));
+
+            /* Passing the roleName to the infaltors for themself to decide if they are
+              responsible for further value extraction */
+            try {
+                self::inflateRepositorySub($detail, $roleName, $graphicInfoDe, $graphicInfoEn);
+            } catch (Error $e) {
+                echo '  ' . $e->getMessage() . "\n";
+            }
+        }
+    }
+
+
+    /* Repository - Section */
+    private static function inflateRepositorySub(
+        SimpleXMLElement $detail,
+        string $roleName,
+        GraphicInfo $graphicInfoDe,
+        GraphicInfo $graphicInfoEn
+    ): bool {
+        $repositoryElement = self::findElementByXPath(
+            $detail,
+            'Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
+        );
+
+        if (!$repositoryElement) {
+            throw new Error('Missing element with repository name!');
+        }
+
+        $repositoryStr = trim(strval($repositoryElement));
+
+        switch ($roleName) {
+            case self::$repositoryTypes[Language::DE]:
+                /* de */
+                $graphicInfoDe->setRepository($repositoryStr);
+                break;
+
+            case self::$repositoryTypes[Language::EN]:
+                /* en */
+                $graphicInfoEn->setRepository($repositoryStr);
+                break;
+
+            default:
+                return false;
+        }
+
+        return true;
     }
 
 
