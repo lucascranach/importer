@@ -1217,7 +1217,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/royal library, [c|k]openhagen/i"
+                        "collection_repository": "/(k\u00f6nigliche bibliothek, [c|k]openhagen|royal library, [c|k]openhagen)/i"
                       }
                     ]
                   }
