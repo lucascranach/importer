@@ -25,31 +25,26 @@ class ExtenderWithSortingInfo extends Hybrid
             throw new Error('Pushed item is not of expected class \'Painting\'');
         }
 
-        [$year, $position] = $this->extractSortingInfo($item);
-        $item->setSortingInfo($year, $position);
+        $item->setSearchSortingNumber($this->extractSortingInfo($item));
 
         $this->next($item);
         return true;
     }
 
-    private function extractSortingInfo(Painting $item): array
+    private function extractSortingInfo(Painting $item): string
     {
         $sortingNumber = $item->getSortingNumber();
-        $splitSortingNumber = array_filter(explode('-', $sortingNumber));
+        $splitSortingNumber = array_filter(
+            array_map(
+                'trim',
+                explode('-', $sortingNumber)
+            )
+        );
 
         if (count($splitSortingNumber) === 0) {
-            return [0, 0];
+            return '3000';
         }
 
-        $year = intval(array_shift($splitSortingNumber));
-
-        $position = 3;
-        $factors = [1000, 100, 10, 1];
-
-        for ($i = 0; $i < count($splitSortingNumber); $i++) {
-            $position += intval($splitSortingNumber[$i]) * $factors[$i];
-        }
-
-        return [$year, $position];
+        return $sortingNumber;
     }
 }

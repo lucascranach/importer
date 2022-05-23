@@ -57,10 +57,7 @@ class Painting extends AbstractImagesItem
     public $structuredDimension = null;
     public $isBestOf = false;
     public $restorationSurveys = [];
-    public $sortingInfo = [
-        'year' => 0,
-        'position' => 0,
-    ];
+    public $searchSortingNumber = '';
 
 
     public function __construct()
@@ -497,15 +494,14 @@ class Painting extends AbstractImagesItem
         return $this->restorationSurveys;
     }
 
-    public function setSortingInfo(int $year = 0, int $position = 0): void
+    public function setSearchSortingNumber(string $searchSortingNumber): void
     {
-        $this->sortingInfo['year'] = $year;
-        $this->sortingInfo['position'] = $position;
+        $this->searchSortingNumber = $searchSortingNumber;
     }
 
 
-    public function getSortingInfo(): array
+    public function getSearchSortingNumber(): string
     {
-        return $this->sortingInfo;
+        return $this->searchSortingNumber;
     }
 }
