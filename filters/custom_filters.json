@@ -5237,12 +5237,33 @@
               {
                 "id": "collection_repository.country.switzerland.geneva",
                 "text": {
-                  "de": "Genf, Mus\u00e9e d'Art et d'Histoire",
-                  "en": "Geneva, Mus\u00e9e d'Art et d'Histoire"
+                  "de": "Genf",
+                  "en": "Geneva"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/mus\u00e9e d'art et d'histoire, gen\u00e8ve/i"
+                    "id": "collection_repository.country.switzerland.geneva_1",
+                    "text": {
+                      "de": "Mus\u00e9e d'Art et d'Histoire",
+                      "en": "Mus\u00e9e d'Art et d'Histoire"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/mus\u00e9e d'art et d'histoire, (gen\u00e8ve|genf)/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.switzerland.geneva_2",
+                    "text": {
+                      "de": "Mus\u00e9e international de la R\u00e9forme",
+                      "en": "Mus\u00e9e international de la R\u00e9forme"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/mus\u00e9e international de la r\u00e9forme, (gen\u00e8ve|genf)/i"
+                      }
+                    ]
                   }
                 ]
               },
