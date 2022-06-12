@@ -65,7 +65,7 @@ use CranachDigitalArchive\Importer\Modules\Filters\Transformers\AlphabeticSorter
 $date = '20220520';
 $inputDirectory = './input/' . $date;
 $destDirectory = './docs/' . $date;
-$filtersDirectory = './filters';
+$resourcesDirectory = './resources';
 
 /* Read .env file */
 $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
@@ -101,7 +101,7 @@ $literatureInputFilepaths = [
 ];
 $archivalsInputFilepath = $inputDirectory . '/CDA-A_Datenuebersicht_' . $date . '.xml';
 
-$customFilterDefinitionsFilepath = $filtersDirectory . '/custom_filters.json';
+$customFilterDefinitionsFilepath = $resourcesDirectory . '/custom_filters.json';
 
 
 /* Outputfiles */
