@@ -12,7 +12,8 @@
         "ext-xmlreader": "*",
         "ext-dom": "*",
         "ext-simplexml": "*",
-        "vlucas/phpdotenv": "^5.3"
+        "vlucas/phpdotenv": "5.4.1",
+        "guzzlehttp/guzzle": "7.4.4"
     },
     "scripts": {
         "cghooks": "cghooks",

@@ -7,6 +7,8 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\AbstractImagesItem;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
+use GuzzleHttp\Client;
+
 class RemoteDocumentExistenceChecker extends Hybrid
 {
     const OVERALL = 'overall';
@@ -26,6 +28,7 @@ class RemoteDocumentExistenceChecker extends Hybrid
 
     const ALL_EXAMINATION_TYPES = 'all-examination-types';
 
+    private $client;
 
     private $serverHost = 'https://lucascranach.org/';
     private $remoteDocumentBasePath = 'documents/%s/%s';
@@ -61,6 +64,8 @@ class RemoteDocumentExistenceChecker extends Hybrid
 
             self::ALL_EXAMINATION_TYPES,
         ];
+
+        $this->client = new Client();
     }
 
     public static function withCacheAt(
@@ -225,33 +230,17 @@ class RemoteDocumentExistenceChecker extends Hybrid
 
     private function getRemoteDocumentDataResource(string $url): ?array
     {
-        $opts = [
-            'http' => [
-                'header' => "X-API-KEY: " . $this->accessKey,
-            ]
-        ];
-
-        $context = stream_context_create($opts);
-
-        $content = @file_get_contents($url, false, $context);
-
-        if ($content === false) {
-            return null;
-        }
-
-        $statusHeader = $http_response_header[0];
-
-        $splitStatusLine = explode(' ', $statusHeader, 3);
-
-        if (count($splitStatusLine) !== 3) {
-            throw new Error('Could not get status code for request!');
-        }
-
-        $statusCode = $splitStatusLine[1];
+        $resp = $this->client->request('GET', $url, [
+            'headers' => [
+                'X-API-KEY' => $this->accessKey,
+            ],
+        ]);
 
         /* @TODO: Check content-type on response */
 
-        return (in_array($statusCode[0], ['2', '3'], true)) ? json_decode($content, true) : null;
+        return $resp->getReasonPhrase() == 'OK'
+            ? json_decode($resp->getBody(), true)
+            : null;
     }
 
 
