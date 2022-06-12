@@ -3,7 +3,7 @@
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Entities;
 
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
-use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaReference;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaLocationReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\ObjectReference;
 
 /**
@@ -115,12 +115,12 @@ class GraphicInfo
     }
 
 
-    public function addLocation(MetaReference $location): void
+    public function addLocation(MetaLocationReference $location): void
     {
         $matchingExistingLocations = array_filter(
             $this->locations,
-            function (MetaReference $existingLocation) use ($location) {
-                return MetaReference::equal($existingLocation, $location);
+            function (MetaLocationReference $existingLocation) use ($location) {
+                return MetaLocationReference::equal($existingLocation, $location);
             },
             ARRAY_FILTER_USE_BOTH
         );

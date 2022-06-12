@@ -18,6 +18,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\ObjectReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\AdditionalTextInformation;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Publication;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaReference;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaLocationReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\CatalogWorkReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\StructuredDimension;
 
@@ -72,6 +73,14 @@ class PaintingInflator implements IInflator
 
     private static $inventoryNumberReplaceRegExpArr = [
         '/^CDA\./',
+    ];
+
+    private static $locationsURLMappings = [
+        'http://vocab.getty.edu/page/tgn/1036687' => 'http://vocab.getty.edu/page/tgn/7024031', // Erfurt
+        'http://vocab.getty.edu/page/tgn/7004458' => 'http://vocab.getty.edu/page/tgn/7024031', // Erfurt
+        'http://vocab.getty.edu/page/tgn/1100464' => 'http://vocab.getty.edu/page/tgn/7032029', // Longleat
+        'http://vocab.getty.edu/page/tgn/7012806' => 'http://vocab.getty.edu/page/tgn/1036645', // Eisleben
+        'http://vocab.getty.edu/page/tgn/7003694' => 'http://vocab.getty.edu/page/tgn/7012700', // Schleswig
     ];
 
     private static $sortingNumberFallbackValue = '?';
@@ -1389,36 +1398,13 @@ class PaintingInflator implements IInflator
                 continue;
             }
 
-            $metaReference = new MetaReference;
+            $metaReference = new MetaLocationReference;
 
             /* Type */
             $locationTypeElement = self::findElementByXPath(
                 $locationDetailElement,
                 'Section[@SectionNumber="0"]/Field[@FieldName="{THESXREFTYPES.ThesXrefType}"]/FormattedValue',
             );
-
-            /* Language determination */
-            if ($locationTypeElement) {
-                $locationTypeStr = trim(strval($locationTypeElement));
-                $metaReference->setType($locationTypeStr);
-
-                if (self::$locationLanguageTypes[Language::DE] === $locationTypeStr) {
-                    $paintingDe->addLocation($metaReference);
-                } elseif (self::$locationLanguageTypes[Language::EN] === $locationTypeStr) {
-                    $paintingEn->addLocation($metaReference);
-                } elseif (self::$locationLanguageTypes['not_assigned'] === $locationTypeStr) {
-                    echo '  Unassigned location type for object ' . $paintingDe->getInventoryNumber() . "\n";
-                    $paintingDe->addLocation($metaReference);
-                    $paintingEn->addLocation($metaReference);
-                } else {
-                    echo '  Unknown location type: ' . $locationTypeStr . ' for object ' . $paintingDe->getInventoryNumber() . "\n";
-                    $paintingDe->addLocation($metaReference);
-                    $paintingEn->addLocation($metaReference);
-                }
-            } else {
-                $paintingDe->addLocation($metaReference);
-                $paintingEn->addLocation($metaReference);
-            }
 
             /* Term */
             $locationTermElement = self::findElementByXPath(
@@ -1447,7 +1433,34 @@ class PaintingInflator implements IInflator
             );
             if ($locationURLElement) {
                 $locationURLStr = trim(strval($locationURLElement));
+
+                if (isset(self::$locationsURLMappings[$locationURLStr])) {
+                    $locationURLStr = self::$locationsURLMappings[$locationURLStr];
+                }
+
                 $metaReference->setURL($locationURLStr);
+            }
+
+            /* Language determination */
+            if ($locationTypeElement) {
+                $locationTypeStr = trim(strval($locationTypeElement));
+                $metaReference->setType($locationTypeStr);
+
+                if (!empty($locationTypeStr)) {
+                    if (self::$locationLanguageTypes[Language::DE] === $locationTypeStr) {
+                        $paintingDe->addLocation($metaReference);
+                    } elseif (self::$locationLanguageTypes[Language::EN] === $locationTypeStr) {
+                        $paintingEn->addLocation($metaReference);
+                    } elseif (self::$locationLanguageTypes['not_assigned'] === $locationTypeStr) {
+                        echo '  Unassigned location type for object ' . $paintingDe->getInventoryNumber() . "\n";
+                        $paintingDe->addLocation($metaReference);
+                        $paintingEn->addLocation($metaReference);
+                    } else {
+                        echo '  Unknown location type: ' . $locationTypeStr . ' for object ' . $paintingDe->getInventoryNumber() . "\n";
+                        $paintingDe->addLocation($metaReference);
+                        $paintingEn->addLocation($metaReference);
+                    }
+                }
             }
         }
     }

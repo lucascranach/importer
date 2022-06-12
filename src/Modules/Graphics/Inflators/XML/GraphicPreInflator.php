@@ -8,7 +8,7 @@ use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicInfo;
 
-use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaReference;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaLocationReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\ObjectReference;
 
 /**
@@ -219,7 +219,7 @@ class GraphicPreInflator implements IInflator
                 continue;
             }
 
-            $metaReference = new MetaReference;
+            $metaReference = new MetaLocationReference;
 
             /* Type */
             $locationTypeElement = self::findElementByXPath(

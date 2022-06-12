@@ -1,0 +1,1437 @@
+{
+    "5001887": {
+        "name": "Stolzenfels",
+        "latitude": "50.304167",
+        "longitude": "7.593056"
+    },
+    "1000063": {
+        "name": "Belgi\u00eb",
+        "latitude": "50.8333",
+        "longitude": "4"
+    },
+    "1003262": {
+        "name": "Stuttgart",
+        "latitude": "48.6667",
+        "longitude": "9.3333"
+    },
+    "1004572": {
+        "name": "Grunewald",
+        "latitude": "52.483333",
+        "longitude": "13.266667"
+    },
+    "1025641": {
+        "name": "Hall in Tirol",
+        "latitude": "47.2833",
+        "longitude": "11.5167"
+    },
+    "1026021": {
+        "name": "Sankt Gallen",
+        "latitude": "47.6833",
+        "longitude": "14.6167"
+    },
+    "1027132": {
+        "name": "Chomutov",
+        "latitude": "50.45",
+        "longitude": "13.4333"
+    },
+    "1027230": {
+        "name": "J\u00e1chymov",
+        "latitude": "50.3667",
+        "longitude": "12.9167"
+    },
+    "1034037": {
+        "name": "Libourne",
+        "latitude": "44.916667",
+        "longitude": "-.233333"
+    },
+    "1036362": {
+        "name": "Aschersleben",
+        "latitude": "51.75",
+        "longitude": "11.466667"
+    },
+    "1036422": {
+        "name": "Beelitz",
+        "latitude": "52.233333",
+        "longitude": "12.966667"
+    },
+    "1036448": {
+        "name": "Bernau bei Berlin",
+        "latitude": "52.6667",
+        "longitude": "13.5833"
+    },
+    "1036645": {
+        "name": "Eisleben",
+        "latitude": "52.15",
+        "longitude": "11.216667"
+    },
+    "1036769": {
+        "name": "Genthin",
+        "latitude": "52.4",
+        "longitude": "12.166667"
+    },
+    "1036841": {
+        "name": "Grimma",
+        "latitude": "51.233333",
+        "longitude": "12.716667"
+    },
+    "1036864": {
+        "name": "Grossdubrau",
+        "latitude": "51.25",
+        "longitude": "14.4667"
+    },
+    "1036898": {
+        "name": "Halle",
+        "latitude": "51.5",
+        "longitude": "12"
+    },
+    "1036996": {
+        "name": "J\u00fcterbog",
+        "latitude": "51.983333",
+        "longitude": "13.083333"
+    },
+    "1037055": {
+        "name": "Kemberg",
+        "latitude": "51.783333",
+        "longitude": "12.633333"
+    },
+    "1037093": {
+        "name": "Klitten",
+        "latitude": "51.35",
+        "longitude": "14.6"
+    },
+    "1037315": {
+        "name": "Mittenwalde",
+        "latitude": "52.266667",
+        "longitude": "13.533333"
+    },
+    "1037375": {
+        "name": "Neustadt",
+        "latitude": "50.733333",
+        "longitude": "11.75"
+    },
+    "1037394": {
+        "name": "Nienburg",
+        "latitude": "51.833333",
+        "longitude": "11.75"
+    },
+    "1037420": {
+        "name": "Oelsnitz",
+        "latitude": "50.716667",
+        "longitude": "12.7"
+    },
+    "1037435": {
+        "name": "Oschatz",
+        "latitude": "51.3",
+        "longitude": "13.116667"
+    },
+    "1037476": {
+        "name": "Penig",
+        "latitude": "50.933333",
+        "longitude": "12.716667"
+    },
+    "1037527": {
+        "name": "Pulsnitz",
+        "latitude": "51.183333",
+        "longitude": "14.016667"
+    },
+    "1037595": {
+        "name": "Rochlitz",
+        "latitude": "51.05",
+        "longitude": "12.8"
+    },
+    "1037635": {
+        "name": "Salzwedel",
+        "latitude": "52.85",
+        "longitude": "11.15"
+    },
+    "1037840": {
+        "name": "Thallwitz",
+        "latitude": "51.433333",
+        "longitude": "12.683333"
+    },
+    "1037949": {
+        "name": "Weissenfels",
+        "latitude": "51.2",
+        "longitude": "11.9667"
+    },
+    "1048631": {
+        "name": "Larvik",
+        "latitude": "59.0667",
+        "longitude": "10.0333"
+    },
+    "1049039": {
+        "name": "G\u0142og\u00f3w Ma\u0142opolski",
+        "latitude": "50.15",
+        "longitude": "21.9667"
+    },
+    "1049304": {
+        "name": "Nysa",
+        "latitude": "50.473",
+        "longitude": "17.334"
+    },
+    "1051112": {
+        "name": "Thornhill",
+        "latitude": "55.233333",
+        "longitude": "-3.766667"
+    },
+    "1063438": {
+        "name": "Nyk\u00f6ping",
+        "latitude": "58.75",
+        "longitude": "17"
+    },
+    "1064865": {
+        "name": "\u010cakovec",
+        "latitude": "46.4",
+        "longitude": "16.4333"
+    },
+    "1100262": {
+        "name": "Eltz, Burg",
+        "latitude": "50.2",
+        "longitude": "7.333333"
+    },
+    "1136825": {
+        "name": "Coswig",
+        "latitude": "51.883333",
+        "longitude": "12.45"
+    },
+    "2052117": {
+        "name": "Hamburg",
+        "latitude": "42.4333",
+        "longitude": "-83.8"
+    },
+    "2054147": {
+        "name": "Cleveland",
+        "latitude": "44.3167",
+        "longitude": "-93.8333"
+    },
+    "2054588": {
+        "name": "Hamburg",
+        "latitude": "44.7333",
+        "longitude": "-93.9667"
+    },
+    "2058117": {
+        "name": "Boston",
+        "latitude": "37.4",
+        "longitude": "-94.2667"
+    },
+    "2059134": {
+        "name": "Houston",
+        "latitude": "37.3167",
+        "longitude": "-91.95"
+    },
+    "2215680": {
+        "name": "Cambridge",
+        "latitude": "42.2333",
+        "longitude": "-71.8"
+    },
+    "2525696": {
+        "name": "Moscow",
+        "latitude": "45.0667",
+        "longitude": "-69.8833"
+    },
+    "4004402": {
+        "name": "Go\u0142uch\u00f3w",
+        "latitude": "52.2167",
+        "longitude": "17.9"
+    },
+    "4007736": {
+        "name": "Nelahozeves",
+        "latitude": "50.2833",
+        "longitude": "15.7833"
+    },
+    "7000457": {
+        "name": "Firenze",
+        "latitude": "43.766667",
+        "longitude": "11.25"
+    },
+    "7000874": {
+        "name": "Roma",
+        "latitude": "41.9",
+        "longitude": "12.483333"
+    },
+    "7001306": {
+        "name": "Dublin",
+        "latitude": "53.333056",
+        "longitude": "-6.248889"
+    },
+    "7001371": {
+        "name": "Yerushalayim",
+        "latitude": "31.7667",
+        "longitude": "35.2333"
+    },
+    "7001911": {
+        "name": "Brisbane",
+        "latitude": "-27.47101",
+        "longitude": "153.024292"
+    },
+    "7001933": {
+        "name": "Melbourne",
+        "latitude": "-37.813938",
+        "longitude": "144.963425"
+    },
+    "7003056": {
+        "name": "Eisenstadt",
+        "latitude": "47.8333",
+        "longitude": "16.5333"
+    },
+    "7003097": {
+        "name": "Graz",
+        "latitude": "47.0833",
+        "longitude": "15.3667"
+    },
+    "7003169": {
+        "name": "Zwettl",
+        "latitude": "48.6167",
+        "longitude": "15.1667"
+    },
+    "7003186": {
+        "name": "Lilienfeld",
+        "latitude": "48.0167",
+        "longitude": "15.6"
+    },
+    "7003187": {
+        "name": "Klosterneuburg",
+        "latitude": "48.3167",
+        "longitude": "16.3333"
+    },
+    "7003249": {
+        "name": "Innsbruck",
+        "latitude": "47.2667",
+        "longitude": "11.4"
+    },
+    "7003321": {
+        "name": "Wien",
+        "latitude": "48.2167",
+        "longitude": "16.3667"
+    },
+    "7003430": {
+        "name": "S\u00f8nderborg",
+        "latitude": "54.9167",
+        "longitude": "9.8"
+    },
+    "7003474": {
+        "name": "K\u00f8benhavn",
+        "latitude": "55.7167",
+        "longitude": "12.5667"
+    },
+    "7003694": {
+        "name": "Schleswig",
+        "latitude": "54.51494",
+        "longitude": "9.56679"
+    },
+    "7003712": {
+        "name": "Berlin",
+        "latitude": "52.516667",
+        "longitude": "13.4"
+    },
+    "7003719": {
+        "name": "Chemnitz",
+        "latitude": "50.8333",
+        "longitude": "12.9167"
+    },
+    "7003721": {
+        "name": "Dresden",
+        "latitude": "51.166667",
+        "longitude": "14.083333"
+    },
+    "7003724": {
+        "name": "Gera",
+        "latitude": "50.8667",
+        "longitude": "12.0833"
+    },
+    "7003726": {
+        "name": "Magdeburg",
+        "latitude": "52.250833",
+        "longitude": "11.502222"
+    },
+    "7004070": {
+        "name": "Niv\u00e5",
+        "latitude": "55.9333",
+        "longitude": "12.5167"
+    },
+    "7004269": {
+        "name": "Sibiu",
+        "latitude": "45.7667",
+        "longitude": "24.15"
+    },
+    "7004322": {
+        "name": "Aschaffenburg",
+        "latitude": "49.973889",
+        "longitude": "9.149167"
+    },
+    "7004324": {
+        "name": "Augsburg",
+        "latitude": "48.366667",
+        "longitude": "10.883333"
+    },
+    "7004325": {
+        "name": "Bamberg",
+        "latitude": "49.866667",
+        "longitude": "10.866667"
+    },
+    "7004327": {
+        "name": "Berchtesgaden",
+        "latitude": "47.633333",
+        "longitude": "13"
+    },
+    "7004330": {
+        "name": "Coburg",
+        "latitude": "50.25",
+        "longitude": "10.966667"
+    },
+    "7004332": {
+        "name": "Erlangen",
+        "latitude": "49.589722",
+        "longitude": "11.003889"
+    },
+    "7004333": {
+        "name": "M\u00fcnchen",
+        "latitude": "48.15",
+        "longitude": "11.583333"
+    },
+    "7004334": {
+        "name": "N\u00fcrnberg",
+        "latitude": "49.447778",
+        "longitude": "11.068333"
+    },
+    "7004335": {
+        "name": "W\u00fcrzburg",
+        "latitude": "49.787778",
+        "longitude": "9.936111"
+    },
+    "7004423": {
+        "name": "Freiburg im Breisgau",
+        "latitude": "48",
+        "longitude": "7.85"
+    },
+    "7004424": {
+        "name": "Karlsruhe",
+        "latitude": "49.004722",
+        "longitude": "8.385833"
+    },
+    "7004425": {
+        "name": "Stuttgart",
+        "latitude": "48.766667",
+        "longitude": "9.183333"
+    },
+    "7004428": {
+        "name": "Darmstadt",
+        "latitude": "49.870556",
+        "longitude": "8.649444"
+    },
+    "7004429": {
+        "name": "Giessen",
+        "latitude": "50.583333",
+        "longitude": "8.65"
+    },
+    "7004431": {
+        "name": "Kassel",
+        "latitude": "51.316667",
+        "longitude": "9.5"
+    },
+    "7004432": {
+        "name": "Wiesbaden",
+        "latitude": "50.083333",
+        "longitude": "8.25"
+    },
+    "7004433": {
+        "name": "Schwerin",
+        "latitude": "53.633333",
+        "longitude": "11.383333"
+    },
+    "7004434": {
+        "name": "Braunschweig",
+        "latitude": "52.266667",
+        "longitude": "10.533333"
+    },
+    "7004436": {
+        "name": "L\u00fcneburg",
+        "latitude": "53.25",
+        "longitude": "10.4"
+    },
+    "7004439": {
+        "name": "Oldenburg",
+        "latitude": "53",
+        "longitude": "8"
+    },
+    "7004443": {
+        "name": "D\u00fcsseldorf",
+        "latitude": "51.216667",
+        "longitude": "6.766667"
+    },
+    "7004445": {
+        "name": "M\u00fcnster",
+        "latitude": "51.966667",
+        "longitude": "7.633333"
+    },
+    "7004446": {
+        "name": "K\u00f6ln",
+        "latitude": "50.933333",
+        "longitude": "6.95"
+    },
+    "7004449": {
+        "name": "Mainz",
+        "latitude": "50",
+        "longitude": "8.271111"
+    },
+    "7004455": {
+        "name": "Dresden",
+        "latitude": "51.05",
+        "longitude": "13.75"
+    },
+    "7004456": {
+        "name": "Magdeburg",
+        "latitude": "52.166667",
+        "longitude": "11.666667"
+    },
+    "7004462": {
+        "name": "Brandenburg",
+        "latitude": "52.416667",
+        "longitude": "12.55"
+    },
+    "7004472": {
+        "name": "T\u014dky\u014d",
+        "latitude": "35.75",
+        "longitude": "139.5"
+    },
+    "7004474": {
+        "name": "Napoli",
+        "latitude": "40.833333",
+        "longitude": "14.25"
+    },
+    "7004613": {
+        "name": "Eichst\u00e4tt",
+        "latitude": "48.883333",
+        "longitude": "11.183333"
+    },
+    "7004717": {
+        "name": "Rostock",
+        "latitude": "54.083333",
+        "longitude": "12.133333"
+    },
+    "7004797": {
+        "name": "G\u00fcstrow",
+        "latitude": "53.8",
+        "longitude": "12.166667"
+    },
+    "7004799": {
+        "name": "Aachen",
+        "latitude": "50.770833",
+        "longitude": "6.105278"
+    },
+    "7004923": {
+        "name": "Duisburg",
+        "latitude": "51.433333",
+        "longitude": "6.75"
+    },
+    "7005172": {
+        "name": "Baden-Baden",
+        "latitude": "48.75",
+        "longitude": "8.25"
+    },
+    "7005174": {
+        "name": "Konstanz",
+        "latitude": "47.666667",
+        "longitude": "9.183333"
+    },
+    "7005177": {
+        "name": "Heidelberg",
+        "latitude": "49.416667",
+        "longitude": "8.7"
+    },
+    "7005246": {
+        "name": "G\u00f6ttingen",
+        "latitude": "51.533333",
+        "longitude": "9.933333"
+    },
+    "7005253": {
+        "name": "Wolfenb\u00fcttel",
+        "latitude": "52.166667",
+        "longitude": "10.55"
+    },
+    "7005286": {
+        "name": "Bremen",
+        "latitude": "53.083333",
+        "longitude": "8.8"
+    },
+    "7005289": {
+        "name": "Hamburg",
+        "latitude": "53.55",
+        "longitude": "10"
+    },
+    "7005293": {
+        "name": "Frankfurt am Main",
+        "latitude": "50.116667",
+        "longitude": "8.683333"
+    },
+    "7005294": {
+        "name": "Fulda",
+        "latitude": "50.55",
+        "longitude": "9.666667"
+    },
+    "7005433": {
+        "name": "Bressanone",
+        "latitude": "46.716667",
+        "longitude": "11.65"
+    },
+    "7005539": {
+        "name": "Trieste",
+        "latitude": "45.648611",
+        "longitude": "13.78"
+    },
+    "7005857": {
+        "name": "Ponce",
+        "latitude": "18.016667",
+        "longitude": "-66.6"
+    },
+    "7005903": {
+        "name": "Milano",
+        "latitude": "45.466667",
+        "longitude": "9.2"
+    },
+    "7005938": {
+        "name": "Gotha",
+        "latitude": "50.95",
+        "longitude": "10.716667"
+    },
+    "7005969": {
+        "name": "Eisenach",
+        "latitude": "50.983333",
+        "longitude": "10.316667"
+    },
+    "7005973": {
+        "name": "Jena",
+        "latitude": "50.933333",
+        "longitude": "11.583333"
+    },
+    "7005980": {
+        "name": "Krefeld",
+        "latitude": "51.333333",
+        "longitude": "6.566667"
+    },
+    "7006254": {
+        "name": "Luxembourg",
+        "latitude": "49.6167",
+        "longitude": "6.1333"
+    },
+    "7006280": {
+        "name": "Budapest",
+        "latitude": "47.5",
+        "longitude": "19.05"
+    },
+    "7006287": {
+        "name": "Buenos Aires",
+        "latitude": "-34.6667",
+        "longitude": "-58.5"
+    },
+    "7006453": {
+        "name": "La Habana",
+        "latitude": "23.1167",
+        "longitude": "-82.35"
+    },
+    "7006464": {
+        "name": "Praha",
+        "latitude": "50.1",
+        "longitude": "14.4333"
+    },
+    "7006629": {
+        "name": "Tallinn",
+        "latitude": "59.433",
+        "longitude": "24.728"
+    },
+    "7006792": {
+        "name": "Rotterdam",
+        "latitude": "51.916667",
+        "longitude": "4.5"
+    },
+    "7006810": {
+        "name": "'s-Gravenhage",
+        "latitude": "52.083333",
+        "longitude": "4.3"
+    },
+    "7006862": {
+        "name": "Maastricht",
+        "latitude": "50.85",
+        "longitude": "5.683333"
+    },
+    "7006891": {
+        "name": "s Heerenberg",
+        "latitude": "51.883333",
+        "longitude": "6.25"
+    },
+    "7006900": {
+        "name": "Otterlo",
+        "latitude": "52.1",
+        "longitude": "5.783333"
+    },
+    "7006926": {
+        "name": "Utrecht",
+        "latitude": "52.083333",
+        "longitude": "5.133333"
+    },
+    "7006952": {
+        "name": "Amsterdam",
+        "latitude": "52.35",
+        "longitude": "4.916667"
+    },
+    "7007059": {
+        "name": "Bergen",
+        "latitude": "60.3833",
+        "longitude": "5.3333"
+    },
+    "7007068": {
+        "name": "Enschede",
+        "latitude": "52.216667",
+        "longitude": "6.9"
+    },
+    "7007227": {
+        "name": "Ciudad de M\u00e9xico",
+        "latitude": "19.434167",
+        "longitude": "-99.138611"
+    },
+    "7007269": {
+        "name": "Basel",
+        "latitude": "47.558395",
+        "longitude": "7.573271"
+    },
+    "7007276": {
+        "name": "Chur",
+        "latitude": "46.856753",
+        "longitude": "9.526918"
+    },
+    "7007279": {
+        "name": "Gen\u00e8ve",
+        "latitude": "46.195602",
+        "longitude": "6.148113"
+    },
+    "7007301": {
+        "name": "Winterthur",
+        "latitude": "47.50564",
+        "longitude": "8.72413"
+    },
+    "7007302": {
+        "name": "Z\u00fcrich",
+        "latitude": "47.366667",
+        "longitude": "8.55"
+    },
+    "7007426": {
+        "name": "Barcelona",
+        "latitude": "41.398371",
+        "longitude": "2.1741"
+    },
+    "7007462": {
+        "name": "Schaffhausen",
+        "latitude": "47.697316",
+        "longitude": "8.634929"
+    },
+    "7007483": {
+        "name": "Bilbao",
+        "latitude": "43.260919",
+        "longitude": "-2.938764"
+    },
+    "7007557": {
+        "name": "Bern",
+        "latitude": "46.916667",
+        "longitude": "7.466667"
+    },
+    "7007567": {
+        "name": "New York",
+        "latitude": "40.7",
+        "longitude": "-74"
+    },
+    "7007601": {
+        "name": "Wroc\u0142aw",
+        "latitude": "51.1",
+        "longitude": "17"
+    },
+    "7007652": {
+        "name": "Krak\u00f3w",
+        "latitude": "50.05",
+        "longitude": "19.9167"
+    },
+    "7007756": {
+        "name": "Pozna\u0144",
+        "latitude": "52.4167",
+        "longitude": "16.8833"
+    },
+    "7007809": {
+        "name": "Szczecin",
+        "latitude": "53.4167",
+        "longitude": "14.5333"
+    },
+    "7007833": {
+        "name": "Warszawa",
+        "latitude": "52.25",
+        "longitude": "21"
+    },
+    "7007856": {
+        "name": "Antwerpen",
+        "latitude": "51.213886",
+        "longitude": "4.401514"
+    },
+    "7007868": {
+        "name": "Bruxelles",
+        "latitude": "50.833333",
+        "longitude": "4.333333"
+    },
+    "7007945": {
+        "name": "Li\u00e8ge",
+        "latitude": "50.638674",
+        "longitude": "5.570228"
+    },
+    "7008038": {
+        "name": "Paris",
+        "latitude": "48.866667",
+        "longitude": "2.333333"
+    },
+    "7008119": {
+        "name": "Colmar",
+        "latitude": "48.078708",
+        "longitude": "7.355401"
+    },
+    "7008178": {
+        "name": "Warwickshire",
+        "latitude": "52.2",
+        "longitude": "-1.6167"
+    },
+    "7008198": {
+        "name": "Moulins",
+        "latitude": "46.566667",
+        "longitude": "3.333333"
+    },
+    "7008211": {
+        "name": "Cherbourg",
+        "latitude": "49.639971",
+        "longitude": "-1.615505"
+    },
+    "7008356": {
+        "name": "Besan\u00e7on",
+        "latitude": "47.248778",
+        "longitude": "6.018152"
+    },
+    "7008441": {
+        "name": "Toulouse",
+        "latitude": "43.599516",
+        "longitude": "1.433188"
+    },
+    "7008461": {
+        "name": "Lille",
+        "latitude": "50.632971",
+        "longitude": "3.058585"
+    },
+    "7008676": {
+        "name": "Sevilla",
+        "latitude": "37.377222",
+        "longitude": "-5.986944"
+    },
+    "7008772": {
+        "name": "Lyon",
+        "latitude": "45.748457",
+        "longitude": "4.846711"
+    },
+    "7009264": {
+        "name": "La Rochelle",
+        "latitude": "46.166667",
+        "longitude": "-1.15"
+    },
+    "7009546": {
+        "name": "Edinburgh",
+        "latitude": "55.95",
+        "longitude": "-3.2"
+    },
+    "7009573": {
+        "name": "Oslo",
+        "latitude": "59.9333",
+        "longitude": "10.75"
+    },
+    "7009861": {
+        "name": "Stockholm",
+        "latitude": "59.3333",
+        "longitude": "18.0833"
+    },
+    "7009880": {
+        "name": "Helsinki",
+        "latitude": "60.1333",
+        "longitude": "25"
+    },
+    "7009951": {
+        "name": "Link\u00f6ping",
+        "latitude": "58.4167",
+        "longitude": "15.6167"
+    },
+    "7009954": {
+        "name": "G\u00f6teborg",
+        "latitude": "57.7167",
+        "longitude": "11.9667"
+    },
+    "7009964": {
+        "name": "Vaasa",
+        "latitude": "63.1",
+        "longitude": "21.6"
+    },
+    "7010273": {
+        "name": "Sankt-Peterburg",
+        "latitude": "59.8833",
+        "longitude": "30.25"
+    },
+    "7010413": {
+        "name": "Madrid",
+        "latitude": "40.4",
+        "longitude": "-3.683333"
+    },
+    "7010539": {
+        "name": "Esztergom",
+        "latitude": "47.7667",
+        "longitude": "18.7"
+    },
+    "7010597": {
+        "name": "Liverpool",
+        "latitude": "53.416667",
+        "longitude": "-3"
+    },
+    "7010978": {
+        "name": "Lisbon",
+        "latitude": "38.716667",
+        "longitude": "-9.133333"
+    },
+    "7011179": {
+        "name": "Siena",
+        "latitude": "43.318",
+        "longitude": "11.33"
+    },
+    "7011198": {
+        "name": "Bristol",
+        "latitude": "51.45",
+        "longitude": "-2.583333"
+    },
+    "7011328": {
+        "name": "Truro",
+        "latitude": "50.261667",
+        "longitude": "-5.043333"
+    },
+    "7011483": {
+        "name": "Brighton",
+        "latitude": "50.833333",
+        "longitude": "-.15"
+    },
+    "7011579": {
+        "name": "Nizhniy Novgorod",
+        "latitude": "56.3333",
+        "longitude": "44"
+    },
+    "7011637": {
+        "name": "Krom\u011b\u0159\u00ed\u017e",
+        "latitude": "49.3167",
+        "longitude": "17.45"
+    },
+    "7011695": {
+        "name": "Litom\u011b\u0159ice",
+        "latitude": "50.55",
+        "longitude": "14.1667"
+    },
+    "7011712": {
+        "name": "Most",
+        "latitude": "50.5167",
+        "longitude": "13.65"
+    },
+    "7011781": {
+        "name": "London",
+        "latitude": "51.514248",
+        "longitude": "-.093145"
+    },
+    "7011806": {
+        "name": "Teplice",
+        "latitude": "50.6667",
+        "longitude": "13.8167"
+    },
+    "7011840": {
+        "name": "Brno",
+        "latitude": "49.2167",
+        "longitude": "16.6667"
+    },
+    "7011892": {
+        "name": "Waddesdon",
+        "latitude": "51.833333",
+        "longitude": "-.916667"
+    },
+    "7012016": {
+        "name": "Tiverton",
+        "latitude": "50.9",
+        "longitude": "-3.483333"
+    },
+    "7012268": {
+        "name": "Tbilisi",
+        "latitude": "41.694113",
+        "longitude": "44.833682"
+    },
+    "7012305": {
+        "name": "Bautzen",
+        "latitude": "51.183333",
+        "longitude": "14.433333"
+    },
+    "7012313": {
+        "name": "Kleve",
+        "latitude": "51.783333",
+        "longitude": "6.15"
+    },
+    "7012327": {
+        "name": "L\u00fcbeck",
+        "latitude": "53.866667",
+        "longitude": "10.7"
+    },
+    "7012329": {
+        "name": "Leipzig",
+        "latitude": "51.3333",
+        "longitude": "12.4167"
+    },
+    "7012330": {
+        "name": "Marburg",
+        "latitude": "50.816667",
+        "longitude": "8.766667"
+    },
+    "7012334": {
+        "name": "N\u00f6rdlingen (Swabia)",
+        "latitude": "48.85",
+        "longitude": "10.5"
+    },
+    "7012346": {
+        "name": "Strasbourg",
+        "latitude": "48.600381",
+        "longitude": "7.787355"
+    },
+    "7012349": {
+        "name": "Wittenberg",
+        "latitude": "51.8833",
+        "longitude": "12.65"
+    },
+    "7012354": {
+        "name": "Zwickau",
+        "latitude": "50.733333",
+        "longitude": "12.5"
+    },
+    "7012382": {
+        "name": "Bad Windsheim",
+        "latitude": "49.5",
+        "longitude": "10.416667"
+    },
+    "7012415": {
+        "name": "Bretten",
+        "latitude": "49.039167",
+        "longitude": "8.702778"
+    },
+    "7012543": {
+        "name": "Kronach",
+        "latitude": "50.233333",
+        "longitude": "11.316667"
+    },
+    "7012669": {
+        "name": "Remagen",
+        "latitude": "50.566667",
+        "longitude": "7.233333"
+    },
+    "7012700": {
+        "name": "Schleswig",
+        "latitude": "54.516667",
+        "longitude": "9.55"
+    },
+    "7012708": {
+        "name": "Schw\u00e4bisch Hall",
+        "latitude": "49.105833",
+        "longitude": "9.734167"
+    },
+    "7012744": {
+        "name": "Unna",
+        "latitude": "51.533333",
+        "longitude": "7.683333"
+    },
+    "7012782": {
+        "name": "Wolfegg",
+        "latitude": "47.816667",
+        "longitude": "9.8"
+    },
+    "7012790": {
+        "name": "Altenburg",
+        "latitude": "50.983333",
+        "longitude": "12.45"
+    },
+    "7012791": {
+        "name": "Annaberg-Buchholz",
+        "latitude": "50.566667",
+        "longitude": "13"
+    },
+    "7012793": {
+        "name": "Augustusburg",
+        "latitude": "50.816667",
+        "longitude": "13.1"
+    },
+    "7012804": {
+        "name": "Dessau",
+        "latitude": "51.833333",
+        "longitude": "12.25"
+    },
+    "7012805": {
+        "name": "D\u00f6beln",
+        "latitude": "51.116667",
+        "longitude": "13.116667"
+    },
+    "7012813": {
+        "name": "G\u00f6rlitz",
+        "latitude": "51.166667",
+        "longitude": "15"
+    },
+    "7012821": {
+        "name": "Haldensleben",
+        "latitude": "52.3",
+        "longitude": "11.416667"
+    },
+    "7012829": {
+        "name": "Kamenz",
+        "latitude": "51.266667",
+        "longitude": "14.1"
+    },
+    "7012832": {
+        "name": "K\u00f6then",
+        "latitude": "51.75",
+        "longitude": "11.966667"
+    },
+    "7012844": {
+        "name": "Meissen",
+        "latitude": "51.1667",
+        "longitude": "13.4167"
+    },
+    "7012845": {
+        "name": "Merseburg",
+        "latitude": "51.366667",
+        "longitude": "12"
+    },
+    "7012847": {
+        "name": "Naumburg",
+        "latitude": "51.15",
+        "longitude": "11.816667"
+    },
+    "7012868": {
+        "name": "Schneeberg",
+        "latitude": "50.6",
+        "longitude": "12.633333"
+    },
+    "7012881": {
+        "name": "Torgau",
+        "latitude": "51.566667",
+        "longitude": "13"
+    },
+    "7012886": {
+        "name": "Weimar",
+        "latitude": "50.983333",
+        "longitude": "11.316667"
+    },
+    "7012887": {
+        "name": "W\u00f6rlitz",
+        "latitude": "51.833333",
+        "longitude": "12.416667"
+    },
+    "7012892": {
+        "name": "Zerbst",
+        "latitude": "51.966667",
+        "longitude": "12.083333"
+    },
+    "7012924": {
+        "name": "Indianapolis",
+        "latitude": "39.7667",
+        "longitude": "-86.15"
+    },
+    "7012974": {
+        "name": "Moskva",
+        "latitude": "55.75",
+        "longitude": "37.7"
+    },
+    "7013041": {
+        "name": "Fredericton",
+        "latitude": "45.95",
+        "longitude": "-66.6667"
+    },
+    "7013088": {
+        "name": "Ottawa",
+        "latitude": "45.4167",
+        "longitude": "-75.7167"
+    },
+    "7013143": {
+        "name": "Winnipeg",
+        "latitude": "49.8833",
+        "longitude": "-97.1667"
+    },
+    "7013226": {
+        "name": "Freiberg",
+        "latitude": "50.916667",
+        "longitude": "13.366667"
+    },
+    "7013260": {
+        "name": "Hannover",
+        "latitude": "52.366667",
+        "longitude": "9.716667"
+    },
+    "7013273": {
+        "name": "Allentown",
+        "latitude": "40.6",
+        "longitude": "-75.4667"
+    },
+    "7013284": {
+        "name": "Toronto",
+        "latitude": "43.7",
+        "longitude": "-79.4167"
+    },
+    "7013331": {
+        "name": "Atlanta",
+        "latitude": "33.7333",
+        "longitude": "-84.3833"
+    },
+    "7013338": {
+        "name": "Freising",
+        "latitude": "48.4",
+        "longitude": "11.733333"
+    },
+    "7013352": {
+        "name": "Baltimore",
+        "latitude": "39.2833",
+        "longitude": "-76.6"
+    },
+    "7013445": {
+        "name": "Boston",
+        "latitude": "42.35",
+        "longitude": "-71.05"
+    },
+    "7013496": {
+        "name": "Regensburg",
+        "latitude": "49.015",
+        "longitude": "12.095556"
+    },
+    "7013527": {
+        "name": "Cambridge",
+        "latitude": "42.3667",
+        "longitude": "-71.1"
+    },
+    "7013547": {
+        "name": "Detroit",
+        "latitude": "42.3167",
+        "longitude": "-83.0333"
+    },
+    "7013578": {
+        "name": "Chapel Hill",
+        "latitude": "35.9",
+        "longitude": "-79.05"
+    },
+    "7013596": {
+        "name": "Chicago",
+        "latitude": "41.85",
+        "longitude": "-87.65"
+    },
+    "7013604": {
+        "name": "Cincinnati",
+        "latitude": "39.15",
+        "longitude": "-84.45"
+    },
+    "7013608": {
+        "name": "Cleveland",
+        "latitude": "41.4833",
+        "longitude": "-81.6833"
+    },
+    "7013695": {
+        "name": "Hartford",
+        "latitude": "41.75",
+        "longitude": "-72.6833"
+    },
+    "7013730": {
+        "name": "Huntington",
+        "latitude": "40.8667",
+        "longitude": "-73.4167"
+    },
+    "7013792": {
+        "name": "Kronberg",
+        "latitude": "50.183333",
+        "longitude": "8.5"
+    },
+    "7013804": {
+        "name": "Jacksonville",
+        "latitude": "30.3167",
+        "longitude": "-81.65"
+    },
+    "7013820": {
+        "name": "Kansas City",
+        "latitude": "39.0833",
+        "longitude": "-94.5667"
+    },
+    "7013915": {
+        "name": "Louisville",
+        "latitude": "38.25",
+        "longitude": "-85.75"
+    },
+    "7013927": {
+        "name": "Pittsburgh",
+        "latitude": "40.4333",
+        "longitude": "-79.9833"
+    },
+    "7013934": {
+        "name": "Fort Worth",
+        "latitude": "32.7167",
+        "longitude": "-97.3167"
+    },
+    "7013949": {
+        "name": "Raleigh",
+        "latitude": "35.7667",
+        "longitude": "-78.6333"
+    },
+    "7013962": {
+        "name": "Washington",
+        "latitude": "38.8833",
+        "longitude": "-77.0333"
+    },
+    "7014044": {
+        "name": "Miami",
+        "latitude": "25.7667",
+        "longitude": "-80.1833"
+    },
+    "7014080": {
+        "name": "Minneapolis",
+        "latitude": "44.9667",
+        "longitude": "-93.25"
+    },
+    "7014143": {
+        "name": "Greenville",
+        "latitude": "34.85",
+        "longitude": "-82.3833"
+    },
+    "7014210": {
+        "name": "New Haven",
+        "latitude": "41.3",
+        "longitude": "-72.9167"
+    },
+    "7014231": {
+        "name": "Norfolk",
+        "latitude": "36.8333",
+        "longitude": "-76.2833"
+    },
+    "7014273": {
+        "name": "Portland",
+        "latitude": "45.5167",
+        "longitude": "-122.6667"
+    },
+    "7014378": {
+        "name": "Toledo",
+        "latitude": "41.65",
+        "longitude": "-83.55"
+    },
+    "7014389": {
+        "name": "Pasadena",
+        "latitude": "34.1667",
+        "longitude": "-118.15"
+    },
+    "7014406": {
+        "name": "Philadelphia",
+        "latitude": "39.95",
+        "longitude": "-75.15"
+    },
+    "7014444": {
+        "name": "Saint Louis",
+        "latitude": "38.6167",
+        "longitude": "-90.1833"
+    },
+    "7014455": {
+        "name": "San Diego",
+        "latitude": "32.7",
+        "longitude": "-117.15"
+    },
+    "7014456": {
+        "name": "San Francisco",
+        "latitude": "37.7667",
+        "longitude": "-122.4167"
+    },
+    "7014483": {
+        "name": "Sarasota",
+        "latitude": "27.3333",
+        "longitude": "-82.5167"
+    },
+    "7014494": {
+        "name": "Seattle",
+        "latitude": "47.6",
+        "longitude": "-122.3167"
+    },
+    "7014608": {
+        "name": "West Palm Beach",
+        "latitude": "26.7",
+        "longitude": "-80.05"
+    },
+    "7014661": {
+        "name": "Tucson",
+        "latitude": "32.2167",
+        "longitude": "-110.9167"
+    },
+    "7016055": {
+        "name": "Muskegon",
+        "latitude": "43.2333",
+        "longitude": "-86.2333"
+    },
+    "7016190": {
+        "name": "Princeton",
+        "latitude": "40.3667",
+        "longitude": "-74.6667"
+    },
+    "7016236": {
+        "name": "Coral Gables",
+        "latitude": "25.7167",
+        "longitude": "-80.2667"
+    },
+    "7017121": {
+        "name": "S\u00e3o Paulo",
+        "latitude": "-23.55",
+        "longitude": "-46.65"
+    },
+    "7017168": {
+        "name": "Halle",
+        "latitude": "52.45",
+        "longitude": "6.9167"
+    },
+    "7017177": {
+        "name": "Zittau",
+        "latitude": "50.9",
+        "longitude": "14.833333"
+    },
+    "7017283": {
+        "name": "Glasgow",
+        "latitude": "55.833333",
+        "longitude": "-4.25"
+    },
+    "7017902": {
+        "name": "Sacramento",
+        "latitude": "38.5667",
+        "longitude": "-121.4833"
+    },
+    "7018159": {
+        "name": "Venezia",
+        "latitude": "45.438611",
+        "longitude": "12.326667"
+    },
+    "7019097": {
+        "name": "Glasgow",
+        "latitude": "55.9167",
+        "longitude": "-4.25"
+    },
+    "7022211": {
+        "name": "Richmond",
+        "latitude": "37.548869",
+        "longitude": "-77.44740"
+    },
+    "7023900": {
+        "name": "Los Angeles",
+        "latitude": "34.05",
+        "longitude": "-118.2333"
+    },
+    "7024031": {
+        "name": "Erfurt",
+        "latitude": "50.983333",
+        "longitude": "11.033333"
+    },
+    "7032029": {
+        "name": "Longleat",
+        "latitude": "51.2",
+        "longitude": "-2.2833"
+    }
+}

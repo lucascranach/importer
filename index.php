@@ -61,6 +61,8 @@ use CranachDigitalArchive\Importer\Modules\Filters\Exporters\FilterJSONLangExpor
 use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Filters\Loaders\Memory\CustomFiltersAndThesaurusLoader;
 use CranachDigitalArchive\Importer\Modules\Filters\Transformers\AlphabeticSorter;
+use CranachDigitalArchive\Importer\Modules\Locations\Sources\LocationsSource;
+use CranachDigitalArchive\Importer\Modules\Main\Transformers\LocationsGeoPositionExtender;
 
 $date = '20220520';
 $inputDirectory = './input/' . $date;
@@ -102,6 +104,7 @@ $literatureInputFilepaths = [
 $archivalsInputFilepath = $inputDirectory . '/CDA-A_Datenuebersicht_' . $date . '.xml';
 
 $customFilterDefinitionsFilepath = $resourcesDirectory . '/custom_filters.json';
+$locationsFilepath = $resourcesDirectory . '/locations.json';
 
 
 /* Outputfiles */
@@ -119,6 +122,9 @@ $filtersOutputFilepath = $destDirectory . '/cda-filters.json';
 $opts = getopt('x');
 
 $skipSoftDeletedArterfacts = isset($opts['x']);
+
+/* Locations */
+$locationsSource = LocationsSource::withSourceAt($locationsFilepath);
 
 
 /* MetaReferences -> Thesaurus-Links */
@@ -188,6 +194,7 @@ $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt($paintingsO
 $paintingsElasticsearchBulkDestination = PaintingsElasticsearchLangExporter::withDestinationAt(
     $paintingsElasticsearchOutputFilepath
 );
+$paintingsLocationExtender = LocationsGeoPositionExtender::new($locationsSource);
 
 $paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths);
 
@@ -208,13 +215,15 @@ $inbetweenNode->pipe(
                     $paintingsIdAdder->pipe(
                         $paintingsMetadataFiller->pipe(
                             $paintingsSortingInfo->pipe(
-                                $paintingsDestination,
-                                $metaReferenceCollector,
-                                $paintingsMapToSearchablePainting->pipe(
-                                    $paintingsThesaurusExtender->pipe(
-                                        $paintingsBasicFilterValues->pipe(
-                                            $paintingsInvolvedPersonsFullnames->pipe(
-                                                $paintingsElasticsearchBulkDestination,
+                                $paintingsLocationExtender->pipe(
+                                    $paintingsDestination,
+                                    $metaReferenceCollector,
+                                    $paintingsMapToSearchablePainting->pipe(
+                                        $paintingsThesaurusExtender->pipe(
+                                            $paintingsBasicFilterValues->pipe(
+                                                $paintingsInvolvedPersonsFullnames->pipe(
+                                                    $paintingsElasticsearchBulkDestination,
+                                                ),
                                             ),
                                         ),
                                     ),
@@ -273,6 +282,7 @@ $graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt(
 $graphicsElasticsearchBulkDestination = GraphicsElasticsearchLangExporter::withDestinationAt(
     $graphicsElasticsearchOutputFilepath
 );
+$graphicsLocationExtender = LocationsGeoPositionExtender::new($locationsSource);
 
 $graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath);
 
@@ -293,14 +303,16 @@ $inbetweenNode->pipe(
                         $graphicsMetadataFiller->pipe(
                             $graphicsLocationsExtender->pipe(
                                 $graphicsSortingInfo->pipe(
-                                    $graphicsDestination,
-                                    $metaReferenceCollector,
-                                    $graphicsMapToSearchableGraphic->pipe(
-                                        $graphicsRepositoriesExtender->pipe(
-                                            $graphicsThesaurusExtender->pipe(
-                                                $graphicsBasicFilterValues->pipe(
-                                                    $graphicsInvolvedPersonsFullnames->pipe(
-                                                        $graphicsElasticsearchBulkDestination,
+                                    $graphicsLocationExtender->pipe(
+                                        $graphicsDestination,
+                                        $metaReferenceCollector,
+                                        $graphicsMapToSearchableGraphic->pipe(
+                                            $graphicsRepositoriesExtender->pipe(
+                                                $graphicsThesaurusExtender->pipe(
+                                                    $graphicsBasicFilterValues->pipe(
+                                                        $graphicsInvolvedPersonsFullnames->pipe(
+                                                            $graphicsElasticsearchBulkDestination,
+                                                        ),
                                                     ),
                                                 ),
                                             ),
@@ -386,6 +398,8 @@ CustomFiltersAndThesaurusLoader::withMemory(
 )->run();
 
 
+$locationsSource->store();
+
 $customFiltersMemoryDestination->cleanUp();
 $thesaurusMemoryDestination->cleanUp();
 $paintingsRestorationMemoryDestination->cleanUp();
@@ -395,3 +409,4 @@ $graphicsLocationsCollector->cleanUp();
 
 
 $metaReferenceCollector->cleanUp();
+$locationsSource->cleanUp();

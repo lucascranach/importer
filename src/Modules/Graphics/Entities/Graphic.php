@@ -8,18 +8,20 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\CatalogWorkReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Dating;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaReference;
+use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaLocationReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\ObjectReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\PersonName;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Publication;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\StructuredDimension;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Title;
+use CranachDigitalArchive\Importer\Interfaces\Entities\ILocations;
 
 /**
  * Representing a single graphic and all its data
  *     One instance containing only data for one language
  */
-class Graphic extends AbstractImagesItem
+class Graphic extends AbstractImagesItem implements ILocations
 {
     const ENTITY_TYPE = 'GRAPHIC';
 
@@ -385,12 +387,12 @@ class Graphic extends AbstractImagesItem
         $this->locations = $locations;
     }
 
-    public function addLocation(MetaReference $location): void
+    public function addLocation(MetaLocationReference $location): void
     {
         $matchingExistingLocations = array_filter(
             $this->locations,
-            function (MetaReference $existingLocation) use ($location) {
-                return MetaReference::equal($existingLocation, $location);
+            function (MetaLocationReference $existingLocation) use ($location) {
+                return MetaLocationReference::equal($existingLocation, $location);
             },
             ARRAY_FILTER_USE_BOTH
         );
