@@ -97,6 +97,7 @@ class GraphicInflator implements IInflator
         'http://vocab.getty.edu/page/tgn/1100464' => 'http://vocab.getty.edu/page/tgn/7032029', // Longleat
         'http://vocab.getty.edu/page/tgn/7012806' => 'http://vocab.getty.edu/page/tgn/1036645', // Eisleben
         'http://vocab.getty.edu/page/tgn/7003694' => 'http://vocab.getty.edu/page/tgn/7012700', // Schleswig
+        'http://vocab.getty.edu/page/tgn/7022211' => 'http://vocab.getty.edu/page/tgn/7013964', // Richmond
     ];
 
     private static $sortingNumberFallbackValue = '?';

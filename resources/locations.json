@@ -1414,11 +1414,6 @@
         "latitude": "55.9167",
         "longitude": "-4.25"
     },
-    "7022211": {
-        "name": "Richmond",
-        "latitude": "37.548869",
-        "longitude": "-77.44740"
-    },
     "7023900": {
         "name": "Los Angeles",
         "latitude": "34.05",
@@ -1433,5 +1428,10 @@
         "name": "Longleat",
         "latitude": "51.2",
         "longitude": "-2.2833"
+    },
+    "7013964": {
+        "name": "Richmond",
+        "latitude": "37.55",
+        "longitude": "-77.45"
     }
 }
