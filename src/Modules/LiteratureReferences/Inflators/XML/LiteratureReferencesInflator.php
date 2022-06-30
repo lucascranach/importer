@@ -31,8 +31,8 @@ class LiteratureReferencesInflator implements IInflator
     ];
 
     private static $personRolesMapping = [
-        'Autor' => 'AUTHOR',
-        'Herausgeber' => 'PUBLISHER',
+        'Autor*in' => 'AUTHOR',
+        'Herausgeber*in' => 'PUBLISHER',
         'Redaktion' => 'EDITORIAL_STAFF',
         'Bearbeitung' => 'EDITING',
         'Illustrator' => 'ILLUSTRATOR',
