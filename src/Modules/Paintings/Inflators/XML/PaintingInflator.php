@@ -75,15 +75,6 @@ class PaintingInflator implements IInflator
         '/^CDA\./',
     ];
 
-    private static $locationsURLMappings = [
-        'http://vocab.getty.edu/page/tgn/1036687' => 'http://vocab.getty.edu/page/tgn/7024031', // Erfurt
-        'http://vocab.getty.edu/page/tgn/7004458' => 'http://vocab.getty.edu/page/tgn/7024031', // Erfurt
-        'http://vocab.getty.edu/page/tgn/1100464' => 'http://vocab.getty.edu/page/tgn/7032029', // Longleat
-        'http://vocab.getty.edu/page/tgn/7012806' => 'http://vocab.getty.edu/page/tgn/1036645', // Eisleben
-        'http://vocab.getty.edu/page/tgn/7003694' => 'http://vocab.getty.edu/page/tgn/7012700', // Schleswig
-        'http://vocab.getty.edu/page/tgn/7022211' => 'http://vocab.getty.edu/page/tgn/7013964', // Richmond
-    ];
-
     private static $sortingNumberFallbackValue = '?';
 
 
@@ -1434,11 +1425,6 @@ class PaintingInflator implements IInflator
             );
             if ($locationURLElement) {
                 $locationURLStr = trim(strval($locationURLElement));
-
-                if (isset(self::$locationsURLMappings[$locationURLStr])) {
-                    $locationURLStr = self::$locationsURLMappings[$locationURLStr];
-                }
-
                 $metaReference->setURL($locationURLStr);
             }
 
