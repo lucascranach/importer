@@ -1,9 +1,4 @@
 {
-    "5001887": {
-        "name": "Stolzenfels",
-        "latitude": "50.304167",
-        "longitude": "7.593056"
-    },
     "1000063": {
         "name": "Belgi\u00eb",
         "latitude": "50.8333",
@@ -1433,5 +1428,15 @@
         "name": "Richmond",
         "latitude": "37.55",
         "longitude": "-77.45"
+    },
+    "8712255": {
+        "name": "Schloss Stolzenfels",
+        "latitude": "50.303323",
+        "longitude": "7.59243"
+    },
+    "7001804": {
+        "name": "Bucure\u0219ti",
+        "latitude": "44.4333",
+        "longitude": "26.1"
     }
 }
