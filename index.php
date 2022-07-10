@@ -64,7 +64,7 @@ use CranachDigitalArchive\Importer\Modules\Filters\Transformers\AlphabeticSorter
 use CranachDigitalArchive\Importer\Modules\Locations\Sources\LocationsSource;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\LocationsGeoPositionExtender;
 
-$date = '20220520';
+$date = '20220708';
 $inputDirectory = './input/' . $date;
 $destDirectory = './docs/' . $date;
 $resourcesDirectory = './resources';
