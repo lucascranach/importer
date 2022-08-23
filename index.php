@@ -61,6 +61,7 @@ use CranachDigitalArchive\Importer\Modules\Filters\Exporters\FilterJSONLangExpor
 use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Filters\Loaders\Memory\CustomFiltersAndThesaurusLoader;
 use CranachDigitalArchive\Importer\Modules\Filters\Transformers\AlphabeticSorter;
+use CranachDigitalArchive\Importer\Modules\Filters\Transformers\NumericalSorter;
 use CranachDigitalArchive\Importer\Modules\Locations\Sources\LocationsSource;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\LocationsGeoPositionExtender;
 
@@ -392,8 +393,10 @@ CustomFiltersAndThesaurusLoader::withMemory(
     $customFiltersMemoryDestination,
     ReducedThesaurusMemoryExporter::new($thesaurusMemoryDestination, $restrictedTermIds),
 )->pipe(
-    AlphabeticSorter::new()->pipe(
-        FilterJSONLangExporter::withDestinationAt($filtersOutputFilepath),
+    NumericalSorter::new()->pipe(
+        AlphabeticSorter::new()->pipe(
+            FilterJSONLangExporter::withDestinationAt($filtersOutputFilepath),
+        )
     )
 )->run();
 
