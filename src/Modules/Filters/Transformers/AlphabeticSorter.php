@@ -12,6 +12,8 @@ class AlphabeticSorter extends Hybrid
     private $paths = [
         ['subject'], // Subject
         ['subject', '010405'], // Subject > Classical Mythology and Ancient History
+        ['subject', '010403', '01040303', '0104030301'], // Subject > Christian Religion / Bible > Saints, apostles, prophets > Male Saints
+        ['subject', '010403', '01040303', '0104030302'], // Subject > Christian Religion / Bible > Saints, apostles, prophets > Female Saints
         ['subject', '010402', '01040201', '0104020102'], // Portraits > Male > Nobility
         ['subject', '010402', '01040201', '0104020101'], // Portraits > Male > Public Personalities
         ['subject', '010402', '01040202', '0104020202'], // Portraits > Female > Nobility
