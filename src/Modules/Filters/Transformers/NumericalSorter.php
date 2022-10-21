@@ -13,6 +13,7 @@ class NumericalSorter extends Hybrid
     ];
 
     private $recursivePaths = [
+        ['subject', '010403', '01040301'], // Subject > Christian Religion / Bible > The Old Testament
         ['subject', '010403', '01040302'], // Subject > Christian Religion / Bible > The New Testament
     ];
 
