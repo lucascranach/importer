@@ -51,6 +51,8 @@ use CranachDigitalArchive\Importer\Modules\Archivals\Loaders\XML\ArchivalsLoader
 use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Archivals\Transformers\MetadataFiller as ArchivalsMetadataFiller;
+use CranachDigitalArchive\Importer\Modules\Archivals\Transformers\MapToSearchableArchival;
+use CranachDigitalArchive\Importer\Modules\Archivals\Transformers\ExtenderWithRepositoryId;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader as ThesaurusXMLLoader;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\Memory\ThesaurusLoader as ThesaurusMemoryLoader;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
@@ -353,6 +355,9 @@ $archivalsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt
     'remoteArchivalsImageExistenceChecker'
 );
 
+$archivalsMapToSearchableArchival = MapToSearchableArchival::new();
+$archivalsExtenderWithRepositoryId = ExtenderWithRepositoryId::new();
+
 $archivalsElasticsearchBulkDestination = ArchivalsElasticsearchLangExporter::withDestinationAt(
     $archivalsElasticsearchOutputFilepath
 );
@@ -362,7 +367,11 @@ $archivalsLoader = ArchivalsLoader::withSourceAt($archivalsInputFilepath)->pipe(
         $archivalsRemoteImageExistenceChecker->pipe(
             $archivalsMetadataFiller->pipe(
                 $archivalsDestination,
-                $archivalsElasticsearchBulkDestination,
+                $archivalsMapToSearchableArchival->pipe(
+                    $archivalsExtenderWithRepositoryId->pipe(
+                        $archivalsElasticsearchBulkDestination
+                    )
+                )
             ),
         ),
     ),
