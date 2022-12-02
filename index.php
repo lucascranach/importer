@@ -33,6 +33,7 @@ use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsMe
 use CranachDigitalArchive\Importer\Modules\Restorations\Transformers\ExtenderWithIds as RestorationsExtenderWithIds;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\LiteratureReferencesLoader;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\LiteratureReferencesJSONLangExporter;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Transformers\MetadataFiller as LiteratureReferencesMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsLoader;
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsPreLoader;
 use CranachDigitalArchive\Importer\Modules\Paintings\Collectors\ReferencesCollector as PaintingsReferencesCollector;
@@ -333,8 +334,11 @@ $inbetweenNode->pipe(
 
 
 /* LiteratureReferences */
+$literatureReferencesMetadataFiller = LiteratureReferencesMetadataFiller::new();
 $literatureReferencesLoader = LiteratureReferencesLoader::withSourcesAt($literatureInputFilepaths)->pipe(
-    LiteratureReferencesJSONLangExporter::withDestinationAt($literatureReferenceOutputFilepath),
+    $literatureReferencesMetadataFiller->pipe(
+        LiteratureReferencesJSONLangExporter::withDestinationAt($literatureReferenceOutputFilepath),
+    ),
 );
 
 
