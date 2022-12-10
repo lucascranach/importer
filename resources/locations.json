@@ -1438,5 +1438,40 @@
         "name": "Bucure\u0219ti",
         "latitude": "44.4333",
         "longitude": "26.1"
+    },
+    "7005317": {
+        "name": "Celle",
+        "latitude": "52.616667",
+        "longitude": "10.083333"
+    },
+    "4001064": {
+        "name": "Bad Bocklet",
+        "latitude": "50.266667",
+        "longitude": "10.083333"
+    },
+    "7012840": {
+        "name": "Mansfeld",
+        "latitude": "51.583333",
+        "longitude": "11.466667"
+    },
+    "7012535": {
+        "name": "Kitzingen",
+        "latitude": "49.733333",
+        "longitude": "10.166667"
+    },
+    "1040174": {
+        "name": "Lunden",
+        "latitude": "54.333333",
+        "longitude": "9.016667"
+    },
+    "7014060": {
+        "name": "Gettysburg",
+        "latitude": "39.8167",
+        "longitude": "-77.2167"
+    },
+    "1000141": {
+        "name": "Chung-hua Min-kuo",
+        "latitude": "24",
+        "longitude": "121"
     }
 }
