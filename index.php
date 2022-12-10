@@ -33,6 +33,7 @@ use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsMe
 use CranachDigitalArchive\Importer\Modules\Restorations\Transformers\ExtenderWithIds as RestorationsExtenderWithIds;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\LiteratureReferencesLoader;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\LiteratureReferencesJSONLangExporter;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\LiteratureReferencesElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Transformers\MetadataFiller as LiteratureReferencesMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsLoader;
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsPreLoader;
@@ -118,6 +119,7 @@ $paintingsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-pai
 $graphicsOutputFilepath = $destDirectory . '/cda-graphics-v2.json';
 $graphicsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-graphics-v2.bulk';
 $literatureReferenceOutputFilepath = $destDirectory . '/cda-literaturereferences-v2.json';
+$literatureReferenceElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-literaturereferences-v2.bulk';
 $archivalsOutputFilepath = $destDirectory . '/cda-archivals-v2.json';
 $archivalsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-archivals-v2.bulk';
 $filtersOutputFilepath = $destDirectory . '/cda-filters.json';
@@ -338,6 +340,9 @@ $literatureReferencesMetadataFiller = LiteratureReferencesMetadataFiller::new();
 $literatureReferencesLoader = LiteratureReferencesLoader::withSourcesAt($literatureInputFilepaths)->pipe(
     $literatureReferencesMetadataFiller->pipe(
         LiteratureReferencesJSONLangExporter::withDestinationAt($literatureReferenceOutputFilepath),
+        LiteratureReferencesElasticsearchLangExporter::withDestinationAt(
+            $literatureReferenceElasticsearchOutputFilepath
+        ),
     ),
 );
 
