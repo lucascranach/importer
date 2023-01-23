@@ -388,7 +388,7 @@ class RemoteImageExistenceChecker extends Hybrid
         $source = isset($metadata['image-source-' . $langCode]) ? $metadata['image-source-' . $langCode] : '';
 
         if (
-               !empty($fileType)
+            !empty($fileType)
             || !empty($description)
             || !empty($created)
             || !empty($date)

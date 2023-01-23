@@ -3,7 +3,7 @@
 namespace CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML;
 
 use Error;
-use DomDocument;
+use DOMDocument;
 use XMLReader;
 use SimpleXMLElement;
 use CranachDigitalArchive\Importer\Language;
@@ -22,7 +22,6 @@ class RestorationsLoader extends Producer implements IMultipleFileLoader
     private $xmlReader = null;
     private $rootElementName = 'CrystalReport';
     private $restorationElementName = 'Group';
-    private $restorationObjectType;
 
 
     public function __construct()
@@ -147,7 +146,7 @@ class RestorationsLoader extends Producer implements IMultipleFileLoader
     {
         $element = $this->xmlReader->expand();
 
-        $doc = new DomDocument();
+        $doc = new DOMDocument();
         $node = $doc->importNode($element, true);
         $doc->appendChild($node);
 

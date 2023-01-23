@@ -9,7 +9,6 @@ use CranachDigitalArchive\Importer\Interfaces\Entities\ILocations;
 
 class LocationsGeoPositionExtender extends Hybrid
 {
-
     /** @var LocationsSource */
     private $locationsSource;
 
