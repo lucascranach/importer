@@ -35,6 +35,7 @@ use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\Lite
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\LiteratureReferencesJSONLangExporter;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\LiteratureReferencesElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Transformers\MetadataFiller as LiteratureReferencesMetadataFiller;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Transformers\ExtenderWithAggregatedData;
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsLoader;
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsPreLoader;
 use CranachDigitalArchive\Importer\Modules\Paintings\Collectors\ReferencesCollector as PaintingsReferencesCollector;
@@ -337,11 +338,14 @@ $inbetweenNode->pipe(
 
 /* LiteratureReferences */
 $literatureReferencesMetadataFiller = LiteratureReferencesMetadataFiller::new();
+$literatureReferencesExtenderWithAggregatedData = ExtenderWithAggregatedData::new();
 $literatureReferencesLoader = LiteratureReferencesLoader::withSourcesAt($literatureInputFilepaths)->pipe(
     $literatureReferencesMetadataFiller->pipe(
-        LiteratureReferencesJSONLangExporter::withDestinationAt($literatureReferenceOutputFilepath),
-        LiteratureReferencesElasticsearchLangExporter::withDestinationAt(
-            $literatureReferenceElasticsearchOutputFilepath
+        $literatureReferencesExtenderWithAggregatedData->pipe(
+            LiteratureReferencesJSONLangExporter::withDestinationAt($literatureReferenceOutputFilepath),
+            LiteratureReferencesElasticsearchLangExporter::withDestinationAt(
+                $literatureReferenceElasticsearchOutputFilepath
+            ),
         ),
     ),
 );
