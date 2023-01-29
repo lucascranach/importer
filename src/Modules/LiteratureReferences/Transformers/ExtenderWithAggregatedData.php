@@ -10,16 +10,20 @@ use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class ExtenderWithAggregatedData extends Hybrid
 {
+    private const TEXT_CATEGORY_TYPE_JOURNAL = 'JOURNAL';
+    private const TEXT_CATEGORY_TYPE_ARTICLE = 'ARTICLE';
+    private const TEXT_CATEGORY_TYPE_MONOGRAPHY = 'MONOGRAPHY';
+
     private static $textCategoyTranslations = [
         Language::DE => [
-            'journal' => 'Zeitschrift',
-            'article' => 'Aufsatz',
-            'monography' => 'Monographie / Sammelband',
+            self::TEXT_CATEGORY_TYPE_JOURNAL => 'Zeitschrift',
+            self::TEXT_CATEGORY_TYPE_ARTICLE => 'Aufsatz',
+            self::TEXT_CATEGORY_TYPE_MONOGRAPHY => 'Monographie / Sammelband',
         ],
         Language::EN => [
-            'journal' => 'Journal',
-            'article' => 'Article',
-            'monography' => 'Monography / Miscellany',
+            self::TEXT_CATEGORY_TYPE_JOURNAL => 'Journal',
+            self::TEXT_CATEGORY_TYPE_ARTICLE => 'Article',
+            self::TEXT_CATEGORY_TYPE_MONOGRAPHY => 'Monography / Miscellany',
         ],
     ];
 
@@ -41,6 +45,7 @@ class ExtenderWithAggregatedData extends Hybrid
         }
 
         $item->setAuthors($this->getAuthors($item));
+        $item->setTextCategoryType($this->getTextCategoryType($item));
         $item->setTextCategory($this->getTextCategory($item));
 
         $this->next($item);
@@ -55,6 +60,17 @@ class ExtenderWithAggregatedData extends Hybrid
         return implode(', ', $personNames);
     }
 
+    private function getTextCategoryType(LiteratureReference $item): string
+    {
+        if ($item->journal) {
+            return self::TEXT_CATEGORY_TYPE_JOURNAL;
+        } elseif ($item->subtitle) {
+            return self::TEXT_CATEGORY_TYPE_ARTICLE;
+        } else {
+            return self::TEXT_CATEGORY_TYPE_MONOGRAPHY;
+        }
+    }
+
     private function getTextCategory(LiteratureReference $item): string
     {
         $metadata = $item->getMetadata();
@@ -65,12 +81,7 @@ class ExtenderWithAggregatedData extends Hybrid
 
         $langCode = $metadata->getLangCode();
 
-        if ($item->journal) {
-            return self::$textCategoyTranslations[$langCode]['journal'];
-        } elseif ($item->subtitle) {
-            return self::$textCategoyTranslations[$langCode]['article'];
-        } else {
-            return self::$textCategoyTranslations[$langCode]['monography'];
-        }
+        $textCategoryType = $this->getTextCategoryType($item);
+        return self::$textCategoyTranslations[$langCode][$textCategoryType];
     }
 }

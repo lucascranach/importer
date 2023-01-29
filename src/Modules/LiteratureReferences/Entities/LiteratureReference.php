@@ -38,6 +38,7 @@ class LiteratureReference implements IBaseItem
     public $mention = '';
 
     public $authors = '';
+    public $textCategoryType = '';
     public $textCategory = '';
 
     public $connectedObjects = [];
@@ -350,6 +351,18 @@ class LiteratureReference implements IBaseItem
     public function getAuthors(): string
     {
         return $this->authors;
+    }
+
+
+    public function setTextCategoryType(string $textCategoryType)
+    {
+        $this->textCategoryType = $textCategoryType;
+    }
+
+
+    public function getTextCategoryType(): string
+    {
+        return $this->textCategoryType;
     }
 
 
