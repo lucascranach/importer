@@ -514,6 +514,18 @@
                     "collection_repository": "/the national gallery of victoria, melbourne/i"
                   }
                 ]
+              },
+              {
+                "id": "collection_repository.country.australia.brisbane",
+                "text": {
+                  "de": "Brisbane, Queensland Art Gallery",
+                  "en": "Brisbane, Queensland Art Gallery"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/queensland art gallery, brisbane/i"
+                  }
+                ]
               }
             ]
           },
@@ -1820,6 +1832,18 @@
                         "collection_repository": "/staatsbibliothek bamberg/i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.bamberg.bamberg_4",
+                    "text": {
+                      "de": "Historisches Museum",
+                      "en": "Historisches Museum"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/museen der stadt bamberg/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2774,6 +2798,18 @@
                 "matchers": [
                   {
                     "collection_repository": "/ev. st. nikolaigemeinde j\u00fcterbog/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.germany.kade",
+                "text": {
+                  "de": "Kade, Dorfkirche",
+                  "en": "Kade, Dorfkirche"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/dorfkirche, gemeinde kade/i"
                   }
                 ]
               },
@@ -4908,7 +4944,7 @@
             },
             "children": [
               {
-                "id": "collection_repository.country.romania.brukethal",
+                "id": "collection_repository.country.romania.brukenthal",
                 "text": {
                   "de": "Brukethal, Muzeul National",
                   "en": "Brukethal, Muzeul National"
@@ -4916,6 +4952,18 @@
                 "matchers": [
                   {
                     "collection_repository": "/muzeul national brukenthal/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.romania.bucharest",
+                "text": {
+                  "de": "Bukarest, Muzeul Na\u021bional de Art\u0103 al Rom\u00e2niei",
+                  "en": "Bucharest, Muzeul Na\u021bional de Art\u0103 al Rom\u00e2niei"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/muzeul na\u021bional de art\u0103 al rom\u00e2niei/i"
                   }
                 ]
               }
