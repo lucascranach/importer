@@ -97,7 +97,7 @@ class FilterJSONLangExporter extends Consumer implements IFileExporter
                 @mkdir($this->dirname, 0777, true);
             }
 
-            $data = json_encode($items, JSON_PRETTY_PRINT);
+            $data = json_encode($items, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
             file_put_contents($destFilepath, $data);
         }
 

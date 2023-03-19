@@ -45,7 +45,7 @@ class CustomFiltersLoader extends Producer implements IFileLoader
         echo 'Processing custom filters file : ' . $this->sourceFilePath . "\n";
 
         $customFiltersContentRaw = file_get_contents($this->sourceFilePath);
-        $customFiltersContent = json_decode($customFiltersContentRaw, true);
+        $customFiltersContent = json_decode($customFiltersContentRaw, true, 512, JSON_UNESCAPED_UNICODE);
 
         foreach ($customFiltersContent as $customFilterCategoryItem) {
             $customfilterItem = new CustomFilter();

@@ -247,7 +247,7 @@ class RemoteImageExistenceChecker extends Hybrid
         /* @TODO: Check content-type on response */
 
         return $resp->getReasonPhrase() == 'OK'
-            ? json_decode($resp->getBody(), true)
+            ? json_decode($resp->getBody(), true, 512, JSON_UNESCAPED_UNICODE)
             : null;
     }
 
@@ -463,7 +463,7 @@ class RemoteImageExistenceChecker extends Hybrid
 
         $cacheAsJSON = file_get_contents($cacheFilepath);
 
-        $this->cache = json_decode($cacheAsJSON, true);
+        $this->cache = json_decode($cacheAsJSON, true, 512, JSON_UNESCAPED_UNICODE);
     }
 
 

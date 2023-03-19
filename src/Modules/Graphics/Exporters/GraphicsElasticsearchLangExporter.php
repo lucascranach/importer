@@ -115,8 +115,8 @@ class GraphicsElasticsearchLangExporter extends Consumer implements IFileExporte
                             '_id' => $existenceTypeItem->getInventoryNumber(),
                         ],
                     ];
-                    $indexStringified = json_encode($index);
-                    $itemStringified = json_encode($existenceTypeItem);
+                    $indexStringified = json_encode($index, JSON_UNESCAPED_UNICODE);
+                    $itemStringified = json_encode($existenceTypeItem, JSON_UNESCAPED_UNICODE);
 
                     $itemBundleStringified = $indexStringified . "\n" . $itemStringified . "\n";
 

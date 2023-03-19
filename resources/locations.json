@@ -1,6 +1,6 @@
 {
     "1000063": {
-        "name": "Belgi\u00eb",
+        "name": "België",
         "latitude": "50.8333",
         "longitude": "4"
     },
@@ -30,7 +30,7 @@
         "longitude": "13.4333"
     },
     "1027230": {
-        "name": "J\u00e1chymov",
+        "name": "Jáchymov",
         "latitude": "50.3667",
         "longitude": "12.9167"
     },
@@ -80,7 +80,7 @@
         "longitude": "12"
     },
     "1036996": {
-        "name": "J\u00fcterbog",
+        "name": "Jüterbog",
         "latitude": "51.983333",
         "longitude": "13.083333"
     },
@@ -155,7 +155,7 @@
         "longitude": "10.0333"
     },
     "1049039": {
-        "name": "G\u0142og\u00f3w Ma\u0142opolski",
+        "name": "Głogów Małopolski",
         "latitude": "50.15",
         "longitude": "21.9667"
     },
@@ -170,12 +170,12 @@
         "longitude": "-3.766667"
     },
     "1063438": {
-        "name": "Nyk\u00f6ping",
+        "name": "Nyköping",
         "latitude": "58.75",
         "longitude": "17"
     },
     "1064865": {
-        "name": "\u010cakovec",
+        "name": "Čakovec",
         "latitude": "46.4",
         "longitude": "16.4333"
     },
@@ -225,7 +225,7 @@
         "longitude": "-69.8833"
     },
     "4004402": {
-        "name": "Go\u0142uch\u00f3w",
+        "name": "Gołuchów",
         "latitude": "52.2167",
         "longitude": "17.9"
     },
@@ -300,12 +300,12 @@
         "longitude": "16.3667"
     },
     "7003430": {
-        "name": "S\u00f8nderborg",
+        "name": "Sønderborg",
         "latitude": "54.9167",
         "longitude": "9.8"
     },
     "7003474": {
-        "name": "K\u00f8benhavn",
+        "name": "København",
         "latitude": "55.7167",
         "longitude": "12.5667"
     },
@@ -340,7 +340,7 @@
         "longitude": "11.502222"
     },
     "7004070": {
-        "name": "Niv\u00e5",
+        "name": "Nivå",
         "latitude": "55.9333",
         "longitude": "12.5167"
     },
@@ -380,17 +380,17 @@
         "longitude": "11.003889"
     },
     "7004333": {
-        "name": "M\u00fcnchen",
+        "name": "München",
         "latitude": "48.15",
         "longitude": "11.583333"
     },
     "7004334": {
-        "name": "N\u00fcrnberg",
+        "name": "Nürnberg",
         "latitude": "49.447778",
         "longitude": "11.068333"
     },
     "7004335": {
-        "name": "W\u00fcrzburg",
+        "name": "Würzburg",
         "latitude": "49.787778",
         "longitude": "9.936111"
     },
@@ -440,7 +440,7 @@
         "longitude": "10.533333"
     },
     "7004436": {
-        "name": "L\u00fcneburg",
+        "name": "Lüneburg",
         "latitude": "53.25",
         "longitude": "10.4"
     },
@@ -450,17 +450,17 @@
         "longitude": "8"
     },
     "7004443": {
-        "name": "D\u00fcsseldorf",
+        "name": "Düsseldorf",
         "latitude": "51.216667",
         "longitude": "6.766667"
     },
     "7004445": {
-        "name": "M\u00fcnster",
+        "name": "Münster",
         "latitude": "51.966667",
         "longitude": "7.633333"
     },
     "7004446": {
-        "name": "K\u00f6ln",
+        "name": "Köln",
         "latitude": "50.933333",
         "longitude": "6.95"
     },
@@ -485,7 +485,7 @@
         "longitude": "12.55"
     },
     "7004472": {
-        "name": "T\u014dky\u014d",
+        "name": "Tōkyō",
         "latitude": "35.75",
         "longitude": "139.5"
     },
@@ -495,7 +495,7 @@
         "longitude": "14.25"
     },
     "7004613": {
-        "name": "Eichst\u00e4tt",
+        "name": "Eichstätt",
         "latitude": "48.883333",
         "longitude": "11.183333"
     },
@@ -505,7 +505,7 @@
         "longitude": "12.133333"
     },
     "7004797": {
-        "name": "G\u00fcstrow",
+        "name": "Güstrow",
         "latitude": "53.8",
         "longitude": "12.166667"
     },
@@ -535,12 +535,12 @@
         "longitude": "8.7"
     },
     "7005246": {
-        "name": "G\u00f6ttingen",
+        "name": "Göttingen",
         "latitude": "51.533333",
         "longitude": "9.933333"
     },
     "7005253": {
-        "name": "Wolfenb\u00fcttel",
+        "name": "Wolfenbüttel",
         "latitude": "52.166667",
         "longitude": "10.55"
     },
@@ -680,7 +680,7 @@
         "longitude": "6.9"
     },
     "7007227": {
-        "name": "Ciudad de M\u00e9xico",
+        "name": "Ciudad de México",
         "latitude": "19.434167",
         "longitude": "-99.138611"
     },
@@ -695,7 +695,7 @@
         "longitude": "9.526918"
     },
     "7007279": {
-        "name": "Gen\u00e8ve",
+        "name": "Genève",
         "latitude": "46.195602",
         "longitude": "6.148113"
     },
@@ -705,7 +705,7 @@
         "longitude": "8.72413"
     },
     "7007302": {
-        "name": "Z\u00fcrich",
+        "name": "Zürich",
         "latitude": "47.366667",
         "longitude": "8.55"
     },
@@ -735,17 +735,17 @@
         "longitude": "-74"
     },
     "7007601": {
-        "name": "Wroc\u0142aw",
+        "name": "Wrocław",
         "latitude": "51.1",
         "longitude": "17"
     },
     "7007652": {
-        "name": "Krak\u00f3w",
+        "name": "Kraków",
         "latitude": "50.05",
         "longitude": "19.9167"
     },
     "7007756": {
-        "name": "Pozna\u0144",
+        "name": "Poznań",
         "latitude": "52.4167",
         "longitude": "16.8833"
     },
@@ -770,7 +770,7 @@
         "longitude": "4.333333"
     },
     "7007945": {
-        "name": "Li\u00e8ge",
+        "name": "Liège",
         "latitude": "50.638674",
         "longitude": "5.570228"
     },
@@ -800,7 +800,7 @@
         "longitude": "-1.615505"
     },
     "7008356": {
-        "name": "Besan\u00e7on",
+        "name": "Besançon",
         "latitude": "47.248778",
         "longitude": "6.018152"
     },
@@ -850,12 +850,12 @@
         "longitude": "25"
     },
     "7009951": {
-        "name": "Link\u00f6ping",
+        "name": "Linköping",
         "latitude": "58.4167",
         "longitude": "15.6167"
     },
     "7009954": {
-        "name": "G\u00f6teborg",
+        "name": "Göteborg",
         "latitude": "57.7167",
         "longitude": "11.9667"
     },
@@ -915,12 +915,12 @@
         "longitude": "44"
     },
     "7011637": {
-        "name": "Krom\u011b\u0159\u00ed\u017e",
+        "name": "Kroměříž",
         "latitude": "49.3167",
         "longitude": "17.45"
     },
     "7011695": {
-        "name": "Litom\u011b\u0159ice",
+        "name": "Litoměřice",
         "latitude": "50.55",
         "longitude": "14.1667"
     },
@@ -970,7 +970,7 @@
         "longitude": "6.15"
     },
     "7012327": {
-        "name": "L\u00fcbeck",
+        "name": "Lübeck",
         "latitude": "53.866667",
         "longitude": "10.7"
     },
@@ -985,7 +985,7 @@
         "longitude": "8.766667"
     },
     "7012334": {
-        "name": "N\u00f6rdlingen (Swabia)",
+        "name": "Nördlingen (Swabia)",
         "latitude": "48.85",
         "longitude": "10.5"
     },
@@ -1030,7 +1030,7 @@
         "longitude": "9.55"
     },
     "7012708": {
-        "name": "Schw\u00e4bisch Hall",
+        "name": "Schwäbisch Hall",
         "latitude": "49.105833",
         "longitude": "9.734167"
     },
@@ -1065,12 +1065,12 @@
         "longitude": "12.25"
     },
     "7012805": {
-        "name": "D\u00f6beln",
+        "name": "Döbeln",
         "latitude": "51.116667",
         "longitude": "13.116667"
     },
     "7012813": {
-        "name": "G\u00f6rlitz",
+        "name": "Görlitz",
         "latitude": "51.166667",
         "longitude": "15"
     },
@@ -1085,7 +1085,7 @@
         "longitude": "14.1"
     },
     "7012832": {
-        "name": "K\u00f6then",
+        "name": "Köthen",
         "latitude": "51.75",
         "longitude": "11.966667"
     },
@@ -1120,7 +1120,7 @@
         "longitude": "11.316667"
     },
     "7012887": {
-        "name": "W\u00f6rlitz",
+        "name": "Wörlitz",
         "latitude": "51.833333",
         "longitude": "12.416667"
     },
@@ -1375,7 +1375,7 @@
         "longitude": "-80.2667"
     },
     "7017121": {
-        "name": "S\u00e3o Paulo",
+        "name": "São Paulo",
         "latitude": "-23.55",
         "longitude": "-46.65"
     },
@@ -1435,7 +1435,7 @@
         "longitude": "7.59243"
     },
     "7001804": {
-        "name": "Bucure\u0219ti",
+        "name": "București",
         "latitude": "44.4333",
         "longitude": "26.1"
     },

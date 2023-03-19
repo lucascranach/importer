@@ -43,7 +43,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
         foreach ([self::ATTRIBUTION, self::COLLECTION_REPOSITORY, self::EXAMINATION_ANALYSIS] as $type) {
             echo "=== " . $type . "\n";
-            echo json_encode($this->objectsWithoutFilterConnections[$type]);
+            echo json_encode($this->objectsWithoutFilterConnections[$type], JSON_UNESCAPED_UNICODE);
             echo "\n\n";
         }
     }

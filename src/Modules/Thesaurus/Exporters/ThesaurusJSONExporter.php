@@ -66,7 +66,7 @@ class ThesaurusJSONExporter extends Consumer implements IFileExporter
             throw new \Error('No filepath for JSON thesaurus export set!');
         }
 
-        $data = json_encode($this->item, JSON_PRETTY_PRINT);
+        $data = json_encode($this->item, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
         $dirname = dirname($this->destFilepath);
 
         if (!file_exists($dirname)) {

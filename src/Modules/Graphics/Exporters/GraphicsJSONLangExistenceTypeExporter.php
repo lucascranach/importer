@@ -145,7 +145,7 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
             $this->outputFilesByLangCode[$key]['isFirstItem'] = false;
         }
 
-        $data = json_encode($item, JSON_PRETTY_PRINT);
+        $data = json_encode($item, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
         $data = implode(
             "\n",
             array_map(

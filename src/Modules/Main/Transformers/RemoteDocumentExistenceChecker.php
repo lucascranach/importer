@@ -239,7 +239,7 @@ class RemoteDocumentExistenceChecker extends Hybrid
         /* @TODO: Check content-type on response */
 
         return $resp->getReasonPhrase() == 'OK'
-            ? json_decode($resp->getBody(), true)
+            ? json_decode($resp->getBody(), true, 512, JSON_UNESCAPED_UNICODE)
             : null;
     }
 
@@ -333,7 +333,7 @@ class RemoteDocumentExistenceChecker extends Hybrid
 
     private function storeCache(): void
     {
-        $cacheAsJSON = json_encode($this->cache);
+        $cacheAsJSON = json_encode($this->cache, JSON_UNESCAPED_UNICODE);
         file_put_contents($this->getCachePath(), $cacheAsJSON);
     }
 
@@ -350,7 +350,7 @@ class RemoteDocumentExistenceChecker extends Hybrid
 
         $cacheAsJSON = file_get_contents($cacheFilepath);
 
-        $this->cache = json_decode($cacheAsJSON, true);
+        $this->cache = json_decode($cacheAsJSON, true, 512, JSON_UNESCAPED_UNICODE);
     }
 
 

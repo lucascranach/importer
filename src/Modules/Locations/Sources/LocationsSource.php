@@ -56,7 +56,7 @@ HEREDOC;
         echo 'Processing locations source file : ' . $this->sourceFilePath . "\n";
 
         $locationsSourceContentRaw = file_get_contents($this->sourceFilePath);
-        $locationsSourceContent = json_decode($locationsSourceContentRaw, true);
+        $locationsSourceContent = json_decode($locationsSourceContentRaw, true, 512, JSON_UNESCAPED_UNICODE);
 
         foreach ($locationsSourceContent as $id => $storedLocationDataset) {
             $this->locations[$id] = Location::fromStoredDataset($storedLocationDataset);
@@ -96,7 +96,7 @@ HEREDOC;
             return;
         }
 
-        file_put_contents($this->sourceFilePath, json_encode($this->locations, JSON_PRETTY_PRINT));
+        file_put_contents($this->sourceFilePath, json_encode($this->locations, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
     }
 
     public function cleanUp()
@@ -138,7 +138,7 @@ HEREDOC;
         }
 
         $bodyRaw = $resp->getBody();
-        $body = json_decode($bodyRaw, true);
+        $body = json_decode($bodyRaw, true, 512, JSON_UNESCAPED_UNICODE);
 
         if (count($body['results']['bindings']) !== 1) {
             return null;

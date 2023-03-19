@@ -103,8 +103,8 @@ class LiteratureReferencesElasticsearchLangExporter extends Consumer implements 
                         '_id' => $item->getReferenceId(),
                     ],
                 ];
-                $indexStringified = json_encode($index);
-                $itemStringified = json_encode($item);
+                $indexStringified = json_encode($index, JSON_UNESCAPED_UNICODE);
+                $itemStringified = json_encode($item, JSON_UNESCAPED_UNICODE);
 
                 $itemBundleStringified = $indexStringified . "\n" . $itemStringified . "\n";
 

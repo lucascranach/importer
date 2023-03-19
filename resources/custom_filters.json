@@ -9,13 +9,13 @@
       {
         "id": "attribution.lucas_cranach_the_elder",
         "text": {
-          "de": "Lucas Cranach der \u00c4ltere",
+          "de": "Lucas Cranach der Ältere",
           "en": "Lucas Cranach the Elder"
         },
         "matchers": [
           {
             "name": {
-              "de": "/^Lucas Cranach der \u00c4ltere$/i",
+              "de": "/^Lucas Cranach der Ältere$/i",
               "en": "/^Lucas Cranach the Elder$/i"
             },
             "suffix": {
@@ -32,13 +32,13 @@
       {
         "id": "attribution.lucas_cranach_the_elder_and_workshop",
         "text": {
-          "de": "Lucas Cranach der \u00c4ltere und Werkstatt",
+          "de": "Lucas Cranach der Ältere und Werkstatt",
           "en": "Lucas Cranach the Elder and Workshop"
         },
         "matchers": [
           {
             "name": {
-              "de": "/Lucas Cranach der \u00c4ltere/i",
+              "de": "/Lucas Cranach der Ältere/i",
               "en": "/Lucas Cranach the Elder/i"
             },
             "suffix": {
@@ -51,13 +51,13 @@
       {
         "id": "attribution.workshop_of_lucas_cranach_the_elder",
         "text": {
-          "de": "Werkstatt Lucas Cranach d. \u00c4.",
+          "de": "Werkstatt Lucas Cranach d. Ä.",
           "en": "Workshop of Lucas Cranach the Elder"
         },
         "matchers": [
           {
             "name": {
-              "de": "/Werkstatt Lucas Cranach der \u00c4ltere/i",
+              "de": "/Werkstatt Lucas Cranach der Ältere/i",
               "en": "/Workshop Lucas Cranach the Elder/i"
             }
           }
@@ -103,14 +103,14 @@
           {
             "id": "attribution.named_masters_from_the_cranach_workshop.hans_doering",
             "text": {
-              "de": "Hans D\u00f6ring",
-              "en": "Hans D\u00f6ring"
+              "de": "Hans Döring",
+              "en": "Hans Döring"
             },
             "matchers": [
               {
                 "name": {
-                  "de": "/Hans D\u00f6ring/i",
-                  "en": "/Hans D\u00f6ring/i"
+                  "de": "/Hans Döring/i",
+                  "en": "/Hans Döring/i"
                 }
               }
             ]
@@ -208,14 +208,14 @@
           {
             "id": "attribution.named_masters_from_the_cranach_workshop.master_of_the_doebeln_altarpiece",
             "text": {
-              "de": "Meister des D\u00f6belner Hochaltars",
-              "en": "Master of the D\u00f6beln Altarpiece"
+              "de": "Meister des Döbelner Hochaltars",
+              "en": "Master of the Döbeln Altarpiece"
             },
             "matchers": [
               {
                 "name": {
-                  "de": "/Meister des D\u00f6belner Hochaltars/i",
-                  "en": "/Master of the D\u00f6beln Altarpiece/i"
+                  "de": "/Meister des Döbelner Hochaltars/i",
+                  "en": "/Master of the Döbeln Altarpiece/i"
                 }
               }
             ]
@@ -253,14 +253,14 @@
           {
             "id": "attribution.named_masters_from_the_cranach_workshop.matthias_gruenewald",
             "text": {
-              "de": "Matthias Gr\u00fcnewald",
-              "en": "Matthias Gr\u00fcnewald"
+              "de": "Matthias Grünewald",
+              "en": "Matthias Grünewald"
             },
             "matchers": [
               {
                 "name": {
-                  "de": "/Matthias Gr\u00fcnewald/i",
-                  "en": "/Matthias Gr\u00fcnewald/i"
+                  "de": "/Matthias Grünewald/i",
+                  "en": "/Matthias Grünewald/i"
                 },
                 "prefix": {
                   "de": "",
@@ -287,14 +287,14 @@
           {
             "id": "attribution.named_masters_from_the_cranach_workshop.pseudo_matthias_gruenewald",
             "text": {
-              "de": "Pseudo-Matthias Gr\u00fcnewald",
-              "en": "Pseudo-Matthias Gr\u00fcnewald"
+              "de": "Pseudo-Matthias Grünewald",
+              "en": "Pseudo-Matthias Grünewald"
             },
             "matchers": [
               {
                 "name": {
-                  "de": "/Matthias Gr\u00fcnewald/i",
-                  "en": "/Matthias Gr\u00fcnewald/i"
+                  "de": "/Matthias Grünewald/i",
+                  "en": "/Matthias Grünewald/i"
                 },
                 "prefix": {
                   "de": "/Pseudo-/i",
@@ -321,13 +321,13 @@
           {
             "id": "attribution.named_masters_from_the_cranach_workshop.wolfgang_krodel_the_elder",
             "text": {
-              "de": "Wolfgang Krodel d. \u00c4.",
+              "de": "Wolfgang Krodel d. Ä.",
               "en": "Wolfgang Krodel the Elder"
             },
             "matchers": [
               {
                 "name": {
-                  "de": "/Wolfgang Krodel d\\. \u00c4\\./i",
+                  "de": "/Wolfgang Krodel d\\. Ä\\./i",
                   "en": "/Wolfgang Krodel the Elder/i"
                 }
               }
@@ -353,7 +353,7 @@
       {
         "id": "attribution.follower_of_lucas_cranach_the_elder",
         "text": {
-          "de": "Nachahmer von Lucas Cranach d. \u00c4.",
+          "de": "Nachahmer von Lucas Cranach d. Ä.",
           "en": "Follower of Lucas Cranach the Elder"
         },
         "matchers": [
@@ -368,13 +368,13 @@
       {
         "id": "attribution.circle_of_lucas_cranach_the_elder",
         "text": {
-          "de": "Umkreis von Lucas Cranach d. \u00c4.",
+          "de": "Umkreis von Lucas Cranach d. Ä.",
           "en": "Circle of Lucas Cranach the Elder"
         },
         "matchers": [
           {
             "suffix": {
-              "de": "/umkreis.+\u00e4ltere/iu",
+              "de": "/umkreis.+ältere/iu",
               "en": "/circle.+elder/i"
             }
           }
@@ -383,13 +383,13 @@
       {
         "id": "attribution.copy_after_lucas_cranach_the_elder",
         "text": {
-          "de": "Kopie nach Lucas Cranach d. \u00c4.",
+          "de": "Kopie nach Lucas Cranach d. Ä.",
           "en": "Copy after Lucas Cranach the Elder"
         },
         "matchers": [
           {
             "suffix": {
-              "de": "/kopie.+\u00e4ltere/iu",
+              "de": "/kopie.+ältere/iu",
               "en": "/copy.+elder/i"
             }
           }
@@ -398,13 +398,13 @@
       {
         "id": "attribution.lucas_cranach_the_younger",
         "text": {
-          "de": "Lucas Cranach der J\u00fcngere",
+          "de": "Lucas Cranach der Jüngere",
           "en": "Lucas Cranach the Younger"
         },
         "matchers": [
           {
             "name": {
-              "de": "/Lucas Cranach der J\u00fcngere/i",
+              "de": "/Lucas Cranach der Jüngere/i",
               "en": "/Lucas Cranach the Younger/i"
             }
           }
@@ -413,13 +413,13 @@
       {
         "id": "attribution.lucas_cranach_the_younger_and_workshop",
         "text": {
-          "de": "Lucas Cranach der J\u00fcngere und Werkstatt",
+          "de": "Lucas Cranach der Jüngere und Werkstatt",
           "en": "Lucas Cranach the Younger and Workshop"
         },
         "matchers": [
           {
             "name": {
-              "de": "/Lucas Cranach der J\u00fcngere/i",
+              "de": "/Lucas Cranach der Jüngere/i",
               "en": "/Lucas Cranach the Younger/i"
             },
             "suffix": {
@@ -432,13 +432,13 @@
       {
         "id": "attribution.workshop_of_lucas_cranach_the_younger",
         "text": {
-          "de": "Werkstatt Lucas Cranach der J\u00fcngere",
+          "de": "Werkstatt Lucas Cranach der Jüngere",
           "en": "Workshop of Lucas Cranach the Younger"
         },
         "matchers": [
           {
             "name": {
-              "de": "/werk.+j\u00fcng/i",
+              "de": "/werk.+jüng/i",
               "en": "/work.+younger/i"
             }
           }
@@ -471,7 +471,7 @@
       {
         "id": "collection_repository.country",
         "text": {
-          "de": "L\u00e4nder",
+          "de": "Länder",
           "en": "Countries"
         },
         "children": [
@@ -532,7 +532,7 @@
           {
             "id": "collection_repository.country.austria",
             "text": {
-              "de": "\u00d6sterreich",
+              "de": "Österreich",
               "en": "Austria"
             },
             "children": [
@@ -587,7 +587,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/dompfarrei st. jakob, innsbruck/i"
+                        "collection_repository": "/dompfarrei st\\. jakob, innsbruck/i"
                       }
                     ]
                   },
@@ -611,7 +611,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/servitenkonvent st. josef, innsbruck/i"
+                        "collection_repository": "/servitenkonvent st\\. josef, innsbruck/i"
                       }
                     ]
                   },
@@ -699,8 +699,8 @@
                   {
                     "id": "collection_repository.country.austria.vienna.vienna_3",
                     "text": {
-                      "de": "\u00d6sterreichische Galerie Belvedere",
-                      "en": "\u00d6sterreichische Galerie Belvedere"
+                      "de": "Österreichische Galerie Belvedere",
+                      "en": "Österreichische Galerie Belvedere"
                     },
                     "matchers": [
                       {
@@ -711,12 +711,12 @@
                   {
                     "id": "collection_repository.country.austria.vienna.vienna_4",
                     "text": {
-                      "de": "Gem\u00e4ldegalerie der Akademie der K\u00fcnste",
-                      "en": "Gem\u00e4ldegalerie der Akademie der K\u00fcnste"
+                      "de": "Gemäldegalerie der Akademie der Künste",
+                      "en": "Gemäldegalerie der Akademie der Künste"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/the paintings gallery of the academy of fine arts vienna|gem\u00e4ldegalerie der akademie der bildenden k\u00fcnste wien/i"
+                        "collection_repository": "/the paintings gallery of the academy of fine arts vienna|gemäldegalerie der akademie der bildenden künste wien/i"
                       }
                     ]
                   },
@@ -735,12 +735,12 @@
                   {
                     "id": "collection_repository.country.austria.vienna.vienna_6",
                     "text": {
-                      "de": "\u00d6sterreichische Nationalbibliothek",
-                      "en": "\u00d6sterreichische Nationalbibliothek"
+                      "de": "Österreichische Nationalbibliothek",
+                      "en": "Österreichische Nationalbibliothek"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/\u00d6sterreichische nationalbibliothek, (vienna|wien)/i"
+                        "collection_repository": "/Österreichische nationalbibliothek, (vienna|wien)/i"
                       }
                     ]
                   }
@@ -812,12 +812,12 @@
               {
                 "id": "collection_repository.country.belgium.brussels",
                 "text": {
-                  "de": "Br\u00fcssel, Mus\u00e9es royaux des Beaux-Arts",
-                  "en": "Brussels, Mus\u00e9es royaux des Beaux-Arts"
+                  "de": "Brüssel, Musées royaux des Beaux-Arts",
+                  "en": "Brussels, Musées royaux des Beaux-Arts"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/mus\u00e9es royaux des beaux-arts de belgique, (brussels|br\u00fcssel)/i"
+                    "collection_repository": "/musées royaux des beaux-arts de belgique, (brussels|brüssel)/i"
                   }
                 ]
               },
@@ -836,12 +836,12 @@
               {
                 "id": "collection_repository.country.belgium.liege",
                 "text": {
-                  "de": "L\u00fcttich, Collections artistiques de l'Universit\u00e9 de Li\u00e8ge - Galerie Wittert",
-                  "en": "Li\u00e9ge, Collections artistiques de l'Universit\u00e9 de Li\u00e8ge - Wittert Gallery"
+                  "de": "Lüttich, Collections artistiques de l'Université de Liège - Galerie Wittert",
+                  "en": "Liége, Collections artistiques de l'Université de Liège - Wittert Gallery"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/collections artistiques de l'universit\u00e9 de li\u00e8ge - galerie wittert/i"
+                    "collection_repository": "/collections artistiques de l'université de liège - galerie wittert/i"
                   }
                 ]
               }
@@ -857,12 +857,12 @@
               {
                 "id": "collection_repository.country.brazil.sao_paulo",
                 "text": {
-                  "de": "S\u00e3o Paulo, Museu de Arte",
-                  "en": "S\u00e3o Paulo, Museu de Arte"
+                  "de": "São Paulo, Museu de Arte",
+                  "en": "São Paulo, Museu de Arte"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/museu de arte de s\u00e3o paulo/i"
+                    "collection_repository": "/museu de arte de são paulo/i"
                   }
                 ]
               }
@@ -890,12 +890,12 @@
               {
                 "id": "collection_repository.country.canada.ottawa",
                 "text": {
-                  "de": "Ottawa, Mus\u00e9e des beaux-arts du Canada/National Gallery of Canada",
-                  "en": "Ottawa, Mus\u00e9e des beaux-arts du Canada/National Gallery of Canada"
+                  "de": "Ottawa, Musée des beaux-arts du Canada/National Gallery of Canada",
+                  "en": "Ottawa, Musée des beaux-arts du Canada/National Gallery of Canada"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/mus\u00e9e des beaux-arts du canada\\/national gallery of canada, ottawa.*/iu"
+                    "collection_repository": "/musée des beaux-arts du canada\\/national gallery of canada, ottawa.*/iu"
                   }
                 ]
               },
@@ -935,12 +935,12 @@
               {
                 "id": "collection_repository.country.croatia.cakovec",
                 "text": {
-                  "de": "\u010cakovec, Franciscan Church of St. Nicolas Bishop",
-                  "en": "\u010cakovec, Franzikanerkirche zum hl. Bischof Nikolaus"
+                  "de": "Čakovec, Franciscan Church of St. Nicolas Bishop",
+                  "en": "Čakovec, Franzikanerkirche zum hl. Bischof Nikolaus"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/\u017eupna crkva i franjevacki samostan svetog nikole.*/iu"
+                    "collection_repository": "/župna crkva i franjevacki samostan svetog nikole.*/iu"
                   }
                 ]
               }
@@ -977,12 +977,12 @@
               {
                 "id": "collection_repository.country.czech.brno",
                 "text": {
-                  "de": "Brno, M\u00e4hrische Galerie",
+                  "de": "Brno, Mährische Galerie",
                   "en": "Brno, Moravian Gallery"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/moravsk\u00e1 galerie v brne/i"
+                    "collection_repository": "/moravská galerie v brne/i"
                   }
                 ]
               },
@@ -994,15 +994,15 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/oblastn\u00ed muzeum, chomutov.*/iu"
+                    "collection_repository": "/oblastní muzeum, chomutov.*/iu"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.czech.jachymov",
                 "text": {
-                  "de": "J\u00e1chymov",
-                  "en": "J\u00e1chymov"
+                  "de": "Jáchymov",
+                  "en": "Jáchymov"
                 },
                 "children": [
                   {
@@ -1013,19 +1013,19 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/kostel svat\u00e9ho j\u00e1chyma a svat\u00e9 anny/i"
+                        "collection_repository": "/kostel svatého jáchyma a svaté anny/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.czech.jachymov.jachymov_2",
                     "text": {
-                      "de": "Museum der k\u00f6niglichen M\u00fcnze",
+                      "de": "Museum der königlichen Münze",
                       "en": "Museum Royal Mint"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/muzeum kr\u00e1lovsk\u00e1 mincovna j\u00e1chymov/i"
+                        "collection_repository": "/muzeum královská mincovna jáchymov/i"
                       }
                     ]
                   }
@@ -1034,43 +1034,43 @@
               {
                 "id": "collection_repository.country.czech.kromeriz",
                 "text": {
-                  "de": "Kromer\u00edz, Erzbisch\u00f6flicher Palast und G\u00e4rten",
+                  "de": "Kromeríz, Erzbischöflicher Palast und Gärten",
                   "en": "Kromeriz, Archbishop's Palace and Gardens"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/(archbishop's castle and gardens kromer\u00edz|erzbisch\u00f6fliches schloss und g\u00e4rten kromer\u00edz).*/i"
+                    "collection_repository": "/(archbishop's castle and gardens kromeríz|erzbischöfliches schloss und gärten kromeríz).*/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.czech.litomerice",
                 "text": {
-                  "de": "Litom\u011b\u0159ice",
-                  "en": "Litom\u011b\u0159ice"
+                  "de": "Litoměřice",
+                  "en": "Litoměřice"
                 },
                 "children": [
                   {
                     "id": "collection_repository.country.czech.litomerice.litomerice_1",
                     "text": {
-                      "de": "Di\u00f6zesangalerie und -museum",
+                      "de": "Diözesangalerie und -museum",
                       "en": "Museum and Gallery of the Dioceses"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/diec\u00e9zn\u00ed galerie a muzeum, litomerice.*/iu"
+                        "collection_repository": "/diecézní galerie a muzeum, litomerice.*/iu"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.czech.litomerice.litomerice_2",
                     "text": {
-                      "de": "Nordb\u00f6hmische Galerie der Bildenden K\u00fcnste",
+                      "de": "Nordböhmische Galerie der Bildenden Künste",
                       "en": "North Bohemian Gallery of Fine Arts"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/severocesk\u00e1 galerie v\u00fdtvarn\u00e9ho umen\u00ed, litomerice.*/iu"
+                        "collection_repository": "/severoceská galerie výtvarného umení, litomerice.*/iu"
                       }
                     ]
                   }
@@ -1079,12 +1079,12 @@
               {
                 "id": "collection_repository.country.czech.most",
                 "text": {
-                  "de": "Most, Kostel Nanebevzet\u00ed Panny Marie",
+                  "de": "Most, Kostel Nanebevzetí Panny Marie",
                   "en": "Most, Kirche Maria Himmelfahrt"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/kostel nanebevzet\u00ed panny marie .*?, most/i"
+                    "collection_repository": "/kostel nanebevzetí panny marie .*?, most/i"
                   }
                 ]
               },
@@ -1096,19 +1096,19 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/z\u00e1mek nelahozeves/i"
+                    "collection_repository": "/zámek nelahozeves/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.czech.plzni",
                 "text": {
-                  "de": "Z\u00e1padocesk\u00e1 galerie v Plzni",
-                  "en": "Z\u00e1padocesk\u00e1 galerie v Plzni"
+                  "de": "Západoceská galerie v Plzni",
+                  "en": "Západoceská galerie v Plzni"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/z\u00e1padocesk\u00e1 galerie v plzni.*/i"
+                    "collection_repository": "/západoceská galerie v plzni.*/i"
                   }
                 ]
               },
@@ -1127,7 +1127,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/lobkowiczk\u00fd pal\u00e1c na pra\u017esk\u00e9m hrade/i"
+                        "collection_repository": "/lobkowiczký palác na pražském hrade/i"
                       }
                     ]
                   },
@@ -1139,7 +1139,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/n\u00e1rodn\u00ed galerie v praze/i"
+                        "collection_repository": "/národní galerie v praze/i"
                       }
                     ]
                   },
@@ -1151,31 +1151,31 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/n\u00e1rodn\u00ed galerie v praze, ane\u017esk\u00fd kl\u00e1\u0161ter/i"
+                        "collection_repository": "/národní galerie v praze, anežský klášter/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.czech.prague.prague_4",
                     "text": {
-                      "de": "Gem\u00e4ldegalerie der Prager Burg",
+                      "de": "Gemäldegalerie der Prager Burg",
                       "en": "Prague Castle Picture Gallery"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/obraz\u00e1rna pra\u017esk\u00e9ho hradu/i"
+                        "collection_repository": "/obrazárna pražského hradu/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.czech.prague.prague_5",
                     "text": {
-                      "de": "K\u00f6nigl. Kanonikat der Pr\u00e4monstratenser zu Strahov",
+                      "de": "Königl. Kanonikat der Prämonstratenser zu Strahov",
                       "en": "Royal Canonry of Premonstratensians at Strahov"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/kr\u00e1lovsk\u00e1 kanonie premonstr\u00e1tu na strahove, praha/i"
+                        "collection_repository": "/královská kanonie premonstrátu na strahove, praha/i"
                       }
                     ]
                   }
@@ -1189,7 +1189,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/region\u00e1ln\u00ed muzeum v teplic\u00edch/i"
+                    "collection_repository": "/regionální muzeum v teplicích/i"
                   }
                 ]
               }
@@ -1198,7 +1198,7 @@
           {
             "id": "collection_repository.country.denmark",
             "text": {
-              "de": "D\u00e4nemark",
+              "de": "Dänemark",
               "en": "Denmark"
             },
             "children": [
@@ -1229,7 +1229,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/(k\u00f6nigliche bibliothek, [c|k]openhagen|royal library, [c|k]openhagen)/i"
+                        "collection_repository": "/(königliche bibliothek, [c|k]openhagen|royal library, [c|k]openhagen)/i"
                       }
                     ]
                   }
@@ -1238,24 +1238,24 @@
               {
                 "id": "collection_repository.country.denmark.niva",
                 "text": {
-                  "de": "Niv\u00e5, Nivaagaards Malerisamling",
-                  "en": "Niv\u00e5, Nivaagaards Malerisamling"
+                  "de": "Nivå, Nivaagaards Malerisamling",
+                  "en": "Nivå, Nivaagaards Malerisamling"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/nivaagaards malerisamling, niv\u00e5/i"
+                    "collection_repository": "/nivaagaards malerisamling, nivå/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.denmark.sonderborg",
                 "text": {
-                  "de": "S\u00f8nderborg, Castle",
-                  "en": "S\u00f8nderborg, Schloss"
+                  "de": "Sønderborg, Castle",
+                  "en": "Sønderborg, Schloss"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/s\u00f8nderborg slot, s\u00f8nderborg/i"
+                    "collection_repository": "/sønderborg slot, sønderborg/i"
                   }
                 ]
               },
@@ -1316,12 +1316,12 @@
               {
                 "id": "collection_repository.country.finland.vaasa",
                 "text": {
-                  "de": "Vaasa, \u00d6sterbottens Museum",
-                  "en": "Vaasa, \u00d6sterbottens Museum"
+                  "de": "Vaasa, Österbottens Museum",
+                  "en": "Vaasa, Österbottens Museum"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/\u00f6sterbottens museum, vaasa/iu"
+                    "collection_repository": "/österbottens museum, vaasa/iu"
                   }
                 ]
               }
@@ -1337,60 +1337,60 @@
               {
                 "id": "collection_repository.country.france.besancon",
                 "text": {
-                  "de": "Besan\u00e7on, Mus\u00e9e des Beaux-Arts et d'Arch\u00e9ologie",
-                  "en": "Besan\u00e7on, Mus\u00e9e des Beaux-Arts et d'Arch\u00e9ologie"
+                  "de": "Besançon, Musée des Beaux-Arts et d'Archéologie",
+                  "en": "Besançon, Musée des Beaux-Arts et d'Archéologie"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/mus\u00e9e des beaux-arts et d'arch\u00e9ologie besan\u00e7on/i"
+                    "collection_repository": "/musée des beaux-arts et d'archéologie besançon/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.france.cherbourg",
                 "text": {
-                  "de": "Cherbourg, Mus\u00e9e d'Art",
-                  "en": "Cherbourg, Mus\u00e9e d'Art"
+                  "de": "Cherbourg, Musée d'Art",
+                  "en": "Cherbourg, Musée d'Art"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/mus\u00e9e d'art thomas henry, cherbourg/i"
+                    "collection_repository": "/musée d'art thomas henry, cherbourg/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.france.colmar",
                 "text": {
-                  "de": "Colmar, Mus\u00e9e d'Unterlinden",
-                  "en": "Colmar, Mus\u00e9e d'Unterlinden"
+                  "de": "Colmar, Musée d'Unterlinden",
+                  "en": "Colmar, Musée d'Unterlinden"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/mus\u00e9e d'unterlinden, colmar/i"
+                    "collection_repository": "/musée d'unterlinden, colmar/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.france.la_rochelle",
                 "text": {
-                  "de": "La Rochelle, Mus\u00e9e des Beaux-Arts",
-                  "en": "La Rochelle, Mus\u00e9e des Beaux-Arts"
+                  "de": "La Rochelle, Musée des Beaux-Arts",
+                  "en": "La Rochelle, Musée des Beaux-Arts"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/mus\u00e9e des beaux-arts, la rochelle/i"
+                    "collection_repository": "/musée des beaux-arts, la rochelle/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.france.libourne",
                 "text": {
-                  "de": "Libourne, Mus\u00e9e des Beaux-arts et d'Arch\u00e9ologie",
-                  "en": "Libourne, Mus\u00e9e des Beaux-arts et d'Arch\u00e9ologie"
+                  "de": "Libourne, Musée des Beaux-arts et d'Archéologie",
+                  "en": "Libourne, Musée des Beaux-arts et d'Archéologie"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/mus\u00e9e des beaux-arts et d'arch\u00e9ologie, libourne/i"
+                    "collection_repository": "/musée des beaux-arts et d'archéologie, libourne/i"
                   }
                 ]
               },
@@ -1409,24 +1409,24 @@
               {
                 "id": "collection_repository.country.france.lyon",
                 "text": {
-                  "de": "Lyon, Mus\u00e9e des Beaux-Arts",
-                  "en": "Lyon, Mus\u00e9e des Beaux-Arts"
+                  "de": "Lyon, Musée des Beaux-Arts",
+                  "en": "Lyon, Musée des Beaux-Arts"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/mus\u00e9e des beaux-arts de lyon/i"
+                    "collection_repository": "/musée des beaux-arts de lyon/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.france.moulins",
                 "text": {
-                  "de": "Moulins, Mus\u00e9e Anne-de-Beaujeu et Maison Mantin",
-                  "en": "Moulins, Mus\u00e9e Anne-de-Beaujeu et Maison Mantin"
+                  "de": "Moulins, Musée Anne-de-Beaujeu et Maison Mantin",
+                  "en": "Moulins, Musée Anne-de-Beaujeu et Maison Mantin"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/mus\u00e9e anne-de-beaujeu & maison mantin, moulins/i"
+                    "collection_repository": "/musée anne-de-beaujeu & maison mantin, moulins/i"
                   }
                 ]
               },
@@ -1440,36 +1440,36 @@
                   {
                     "id": "collection_repository.country.france.paris.paris_1",
                     "text": {
-                      "de": "Mus\u00e9e de la Chasse et de la Nature",
-                      "en": "Mus\u00e9e de la Chasse et de la Nature"
+                      "de": "Musée de la Chasse et de la Nature",
+                      "en": "Musée de la Chasse et de la Nature"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/mus\u00e9e de la chasse et de la nature, paris/i"
+                        "collection_repository": "/musée de la chasse et de la nature, paris/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.france.paris.paris_2",
                     "text": {
-                      "de": "Mus\u00e9e du Louvre",
-                      "en": "Mus\u00e9e du Louvre"
+                      "de": "Musée du Louvre",
+                      "en": "Musée du Louvre"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/mus\u00e9e du louvre, paris/i"
+                        "collection_repository": "/musée du louvre, paris/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.france.paris.paris_3",
                     "text": {
-                      "de": "Petit Palais, Mus\u00e9e des Beaux-Arts de la Ville des Paris",
-                      "en": "Petit Palais, Mus\u00e9e des Beaux-Arts de la Ville des Paris"
+                      "de": "Petit Palais, Musée des Beaux-Arts de la Ville des Paris",
+                      "en": "Petit Palais, Musée des Beaux-Arts de la Ville des Paris"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/petit palais, mus\u00e9e des beaux-arts de la ville des paris/i"
+                        "collection_repository": "/petit palais, musée des beaux-arts de la ville des paris/i"
                       }
                     ]
                   }
@@ -1497,24 +1497,24 @@
                   {
                     "id": "collection_repository.country.france.strasbourg_1",
                     "text": {
-                      "de": "Mus\u00e9e des Beaux-Arts",
-                      "en": "Mus\u00e9e des Beaux-Arts"
+                      "de": "Musée des Beaux-Arts",
+                      "en": "Musée des Beaux-Arts"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/mus\u00e9e des beaux-arts strasbourg/i"
+                        "collection_repository": "/musée des beaux-arts strasbourg/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.france.strasbourg_2",
                     "text": {
-                      "de": "Biblioth\u00e8que nationale et universitaire",
-                      "en": "Biblioth\u00e8que nationale et universitaire"
+                      "de": "Bibliothèque nationale et universitaire",
+                      "en": "Bibliothèque nationale et universitaire"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/biblioth\u00e8que nationale et universitaire/i"
+                        "collection_repository": "/bibliothèque nationale et universitaire/i"
                       }
                     ]
                   },
@@ -1544,12 +1544,12 @@
               {
                 "id": "collection_repository.country.georgia.tbilisi",
                 "text": {
-                  "de": "Tiflis, Shalva Amiranashvili Museum der Bildenden K\u00fcnste",
+                  "de": "Tiflis, Shalva Amiranashvili Museum der Bildenden Künste",
                   "en": "Tbilisi, The Shalva Amiranashvili Fine Arts Museum"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/(the shalva amiranashvili fine arts museum|shalva amiranashvili museum der bildenden k\u00fcnste), tbilisi/i"
+                    "collection_repository": "/(the shalva amiranashvili fine arts museum|shalva amiranashvili museum der bildenden künste), tbilisi/i"
                   }
                 ]
               }
@@ -1613,7 +1613,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/st. annenkirche, annaberg-buchholz/i"
+                        "collection_repository": "/st\\. annenkirche, annaberg-buchholz/i"
                       }
                     ]
                   }
@@ -1658,7 +1658,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/stiftspfarrei st. peter und alexander, aschaffenburg/i"
+                        "collection_repository": "/stiftspfarrei st\\. peter und alexander, aschaffenburg/i"
                       }
                     ]
                   }
@@ -1672,7 +1672,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/st. stephani kirche, aschersleben/i"
+                    "collection_repository": "/st\\. stephani kirche, aschersleben/i"
                   }
                 ]
               },
@@ -1691,7 +1691,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/st. anna kirche, augsburg/i"
+                        "collection_repository": "/st\\. anna kirche, augsburg/i"
                       }
                     ]
                   },
@@ -1805,7 +1805,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/bamberger dom st. peter und st. georg/i"
+                        "collection_repository": "/bamberger dom st\\. peter und st\\. georg/i"
                       }
                     ]
                   },
@@ -1862,12 +1862,12 @@
               {
                 "id": "collection_repository.country.germany.berchtesgaden",
                 "text": {
-                  "de": "Berchtesgaden, K\u00f6nigliches Schloss",
-                  "en": "Berchtesgaden, K\u00f6nigliches Schloss"
+                  "de": "Berchtesgaden, Königliches Schloss",
+                  "en": "Berchtesgaden, Königliches Schloss"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/k\u00f6nigliches schloss berchtesgaden/i"
+                    "collection_repository": "/königliches schloss berchtesgaden/i"
                   }
                 ]
               },
@@ -1898,43 +1898,43 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/evangelische kirchengemeinde st. petri - st. marien, berlin/i"
+                        "collection_repository": "/evangelische kirchengemeinde st\\. petri - st\\. marien, berlin/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.germany.berlin.berlin_3",
                     "text": {
-                      "de": "Gem\u00e4ldegalerie der Staatlichen Museen",
-                      "en": "Gem\u00e4ldegalerie der Staatlichen Museen"
+                      "de": "Gemäldegalerie der Staatlichen Museen",
+                      "en": "Gemäldegalerie der Staatlichen Museen"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/staatliche museen zu berlin, gem\u00e4ldegalerie/i"
+                        "collection_repository": "/staatliche museen zu berlin, gemäldegalerie/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.germany.berlin.berlin_4",
                     "text": {
-                      "de": "Kupferstichkabinett der Staatlichen Museen, Preu\u00dfischer Kulturbesitz",
-                      "en": "Kupferstichkabinett der Staatlichen Museen, Preu\u00dfischer Kulturbesitz"
+                      "de": "Kupferstichkabinett der Staatlichen Museen, Preußischer Kulturbesitz",
+                      "en": "Kupferstichkabinett der Staatlichen Museen, Preußischer Kulturbesitz"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/(kupferstichkabinett,\\s+)?staatliche museen zu berlin\\s+(-\\s+)?preu\u00dfischer kulturbesitz(,\\s+kupferstichkabinett)?/i"
+                        "collection_repository": "/(kupferstichkabinett,\\s+)?staatliche museen zu berlin\\s+(-\\s+)?preußischer kulturbesitz(,\\s+kupferstichkabinett)?/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.germany.berlin.berlin_5",
                     "text": {
-                      "de": "Staatsbibliothek - Preu\u00dfischer Kulturbesitz, Abt. Historische Drucke",
-                      "en": "Staatsbibliothek - Preu\u00dfischer Kulturbesitz, Abt. Historische Drucke"
+                      "de": "Staatsbibliothek - Preußischer Kulturbesitz, Abt. Historische Drucke",
+                      "en": "Staatsbibliothek - Preußischer Kulturbesitz, Abt. Historische Drucke"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/staatsbibliothek zu berlin - preu\u00dfischer kulturbesitz, abt. historische drucke/i"
+                        "collection_repository": "/staatsbibliothek zu berlin - preußischer kulturbesitz, abt. historische drucke/i"
                       }
                     ]
                   },
@@ -1960,7 +1960,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/st. marien zu bernau/i"
+                    "collection_repository": "/st\\. marien zu bernau/i"
                   }
                 ]
               },
@@ -2015,7 +2015,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/kunstsammlungen boettcherstra\u00dfe, bremen/i"
+                        "collection_repository": "/kunstsammlungen boettcherstraße, bremen/i"
                       }
                     ]
                   }
@@ -2114,12 +2114,12 @@
               {
                 "id": "collection_repository.country.germany.cologne",
                 "text": {
-                  "de": "K\u00f6ln, Wallraf-Richartz-Museum - Fondation Corboud",
+                  "de": "Köln, Wallraf-Richartz-Museum - Fondation Corboud",
                   "en": "Cologne, Wallraf-Richartz-Museum - Fondation Corboud"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/wallraf-richartz-museum - fondation corboud, k\u00f6ln/i"
+                    "collection_repository": "/wallraf-richartz-museum - fondation corboud, köln/i"
                   }
                 ]
               },
@@ -2131,7 +2131,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/ev.-luth. kirchgemeinde st. nikolai, weistropp-constappel/i"
+                    "collection_repository": "/ev\\.-luth\\. kirchgemeinde st\\. nikolai, weistropp-constappel/i"
                   }
                 ]
               },
@@ -2169,24 +2169,24 @@
                   {
                     "id": "collection_repository.country.germany.dessau.dessau_1",
                     "text": {
-                      "de": "Anhaltische Gem\u00e4lde-Galerie",
-                      "en": "Anhaltische Gem\u00e4lde-Galerie"
+                      "de": "Anhaltische Gemälde-Galerie",
+                      "en": "Anhaltische Gemälde-Galerie"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/anhaltische gem\u00e4lde-galerie, dessau/i"
+                        "collection_repository": "/anhaltische gemälde-galerie, dessau/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.germany.dessau.dessau_2",
                     "text": {
-                      "de": "Anhaltische Landesb\u00fccherei",
-                      "en": "Anhaltische Landesb\u00fccherei"
+                      "de": "Anhaltische Landesbücherei",
+                      "en": "Anhaltische Landesbücherei"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/anhaltische landesb\u00fccherei dessau/i"
+                        "collection_repository": "/anhaltische landesbücherei dessau/i"
                       }
                     ]
                   },
@@ -2198,19 +2198,19 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/ev. kirchgemeinde st. johannis und st. marien, dessau/i"
+                        "collection_repository": "/ev\\. kirchgemeinde st\\. johannis und st\\. marien, dessau/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.germany.dessau.dessau_4",
                     "text": {
-                      "de": "Kulturstiftung Dessau W\u00f6rlitz",
-                      "en": "Kulturstiftung Dessau W\u00f6rlitz"
+                      "de": "Kulturstiftung Dessau Wörlitz",
+                      "en": "Kulturstiftung Dessau Wörlitz"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/kulturstiftung dessau w\u00f6rlitz, gotisches haus/i"
+                        "collection_repository": "/kulturstiftung dessau wörlitz, gotisches haus/i"
                       }
                     ]
                   }
@@ -2219,12 +2219,12 @@
               {
                 "id": "collection_repository.country.germany.doebeln",
                 "text": {
-                  "de": "D\u00f6beln, Ev.-Luth. Kirchengemeinde",
-                  "en": "D\u00f6beln, Ev.-Luth. Kirchengemeinde"
+                  "de": "Döbeln, Ev.-Luth. Kirchengemeinde",
+                  "en": "Döbeln, Ev.-Luth. Kirchengemeinde"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/st. nicolaikirche d\u00f6beln/i"
+                    "collection_repository": "/st\\. nicolaikirche döbeln/i"
                   }
                 ]
               },
@@ -2238,8 +2238,8 @@
                   {
                     "id": "collection_repository.country.germany.dresden.dresden_1",
                     "text": {
-                      "de": "Gem\u00e4ldegalerie Alte Meister",
-                      "en": "Gem\u00e4ldegalerie Alte Meister"
+                      "de": "Gemäldegalerie Alte Meister",
+                      "en": "Gemäldegalerie Alte Meister"
                     },
                     "matchers": [
                       {
@@ -2267,7 +2267,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/milit\u00e4rhistorisches museum der bundeswehr, dresden/i"
+                        "collection_repository": "/militärhistorisches museum der bundeswehr, dresden/i"
                       }
                     ]
                   },
@@ -2279,7 +2279,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/s\u00e4chsische Landesbibliothek .* staats- und universit\u00e4tsbibliothek dresden/i"
+                        "collection_repository": "/sächsische Landesbibliothek .* staats- und universitätsbibliothek dresden/i"
                       }
                     ]
                   }
@@ -2300,43 +2300,43 @@
               {
                 "id": "collection_repository.country.germany.duesseldorf",
                 "text": {
-                  "de": "D\u00fcsseldorf, Stiftung Museum Kunstpalast",
-                  "en": "D\u00fcsseldorf, Stiftung Museum Kunstpalast"
+                  "de": "Düsseldorf, Stiftung Museum Kunstpalast",
+                  "en": "Düsseldorf, Stiftung Museum Kunstpalast"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/museum kunstpalast, d\u00fcsseldorf/i"
+                    "collection_repository": "/museum kunstpalast, düsseldorf/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.germany.eichstaett",
                 "text": {
-                  "de": "Eichst\u00e4tt",
-                  "en": "Eichst\u00e4tt"
+                  "de": "Eichstätt",
+                  "en": "Eichstätt"
                 },
                 "children": [
                   {
                     "id": "collection_repository.country.germany.eichstaett_1",
                     "text": {
-                      "de": "Bisch\u00f6flicher Stuhl",
-                      "en": "Bisch\u00f6flicher Stuhl"
+                      "de": "Bischöflicher Stuhl",
+                      "en": "Bischöflicher Stuhl"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/bisch\u00f6flicher stuhl, eichst\u00e4tt/i"
+                        "collection_repository": "/bischöflicher stuhl, eichstätt/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.germany.eichstaett_2",
                     "text": {
-                      "de": "Eichst\u00e4tt, Universit\u00e4tsbibliothek Eichst\u00e4tt-Ingolstadt",
-                      "en": "Eichst\u00e4tt, Universit\u00e4tsbibliothek Eichst\u00e4tt-Ingolstadt"
+                      "de": "Eichstätt, Universitätsbibliothek Eichstätt-Ingolstadt",
+                      "en": "Eichstätt, Universitätsbibliothek Eichstätt-Ingolstadt"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/universit\u00e4tsbibliothek eichst\u00e4tt-ingolstadt/i"
+                        "collection_repository": "/universitätsbibliothek eichstätt-ingolstadt/i"
                       }
                     ]
                   }
@@ -2393,7 +2393,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/dom st. marien, erfurt/i"
+                        "collection_repository": "/dom st\\. marien, erfurt/i"
                       }
                     ]
                   },
@@ -2405,7 +2405,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/forschungsbibliothek gotha der universit\u00e4t erfurt/i"
+                        "collection_repository": "/forschungsbibliothek gotha der universität erfurt/i"
                       }
                     ]
                   }
@@ -2421,12 +2421,12 @@
                   {
                     "id": "collection_repository.country.germany.frankfurt_1",
                     "text": {
-                      "de": "St\u00e4del Museum",
-                      "en": "St\u00e4del Museum"
+                      "de": "Städel Museum",
+                      "en": "Städel Museum"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/st\u00e4del museum frankfurt a.m./i"
+                        "collection_repository": "/städel museum frankfurt a.m./i"
                       }
                     ]
                   },
@@ -2471,12 +2471,12 @@
               {
                 "id": "collection_repository.country.germany.freising",
                 "text": {
-                  "de": "Freising, Di\u00f6zesanmuseum",
-                  "en": "Freising, Di\u00f6zesanmuseum"
+                  "de": "Freising, Diözesanmuseum",
+                  "en": "Freising, Diözesanmuseum"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/di\u00f6zesanmuseum freising/i"
+                    "collection_repository": "/diözesanmuseum freising/i"
                   }
                 ]
               },
@@ -2507,31 +2507,31 @@
               {
                 "id": "collection_repository.country.germany.goerlitz",
                 "text": {
-                  "de": "G\u00f6rlitz",
-                  "en": "G\u00f6rlitz"
+                  "de": "Görlitz",
+                  "en": "Görlitz"
                 },
                 "children": [
                   {
                     "id": "collection_repository.country.germany.goerlitz_1",
                     "text": {
-                      "de": "Kulturhistorisches Museum G\u00f6rlitzer, Kunstsammlung",
-                      "en": "Kulturhistorisches Museum G\u00f6rlitzer, Kunstsammlung"
+                      "de": "Kulturhistorisches Museum Görlitzer, Kunstsammlung",
+                      "en": "Kulturhistorisches Museum Görlitzer, Kunstsammlung"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/kulturhistorisches museum g\u00f6rlitz/i"
+                        "collection_repository": "/kulturhistorisches museum görlitz/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.germany.goerlitz_2",
                     "text": {
-                      "de": "Oberlausitzische Bibliothek der Wissenschaften bei den St\u00e4dtischen Sammlungen f\u00fcr Geschichte und Kultur",
-                      "en": "Oberlausitzische Bibliothek der Wissenschaften bei den St\u00e4dtischen Sammlungen f\u00fcr Geschichte und Kultur"
+                      "de": "Oberlausitzische Bibliothek der Wissenschaften bei den Städtischen Sammlungen für Geschichte und Kultur",
+                      "en": "Oberlausitzische Bibliothek der Wissenschaften bei den Städtischen Sammlungen für Geschichte und Kultur"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/oberlausitzische bibliothek der wissenschaften bei den st\u00e4dtischen sammlungen f\u00fcr geschichte und kultur, g\u00f6rlitz/i"
+                        "collection_repository": "/oberlausitzische bibliothek der wissenschaften bei den städtischen sammlungen für geschichte und kultur, görlitz/i"
                       }
                     ]
                   }
@@ -2552,12 +2552,12 @@
               {
                 "id": "collection_repository.country.germany.goettingen",
                 "text": {
-                  "de": "G\u00f6ttingen, Nieders\u00e4chsische Staats- und Universit\u00e4tsbibliothek",
-                  "en": "G\u00f6ttingen, Nieders\u00e4chsische Staats- und Universit\u00e4tsbibliothek"
+                  "de": "Göttingen, Niedersächsische Staats- und Universitätsbibliothek",
+                  "en": "Göttingen, Niedersächsische Staats- und Universitätsbibliothek"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/nieders\u00e4chsische staats- und universit\u00e4tsbibliothek g\u00f6ttingen/i"
+                    "collection_repository": "/niedersächsische staats- und universitätsbibliothek göttingen/i"
                   }
                 ]
               },
@@ -2576,12 +2576,12 @@
               {
                 "id": "collection_repository.country.germany.guestrow",
                 "text": {
-                  "de": "G\u00fcstrow, Staatliches Museum Schwerin, Museum Schloss G\u00fcstrow",
-                  "en": "G\u00fcstrow, Staatliches Museum Schwerin, Museum Schloss G\u00fcstrow"
+                  "de": "Güstrow, Staatliches Museum Schwerin, Museum Schloss Güstrow",
+                  "en": "Güstrow, Staatliches Museum Schwerin, Museum Schloss Güstrow"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/staatliches museum schwerin, museum schloss g\u00fcstrow/i"
+                    "collection_repository": "/staatliches museum schwerin, museum schloss güstrow/i"
                   }
                 ]
               },
@@ -2643,12 +2643,12 @@
                   {
                     "id": "collection_repository.country.germany.halle.halle_4",
                     "text": {
-                      "de": "Universit\u00e4ts- und Landesbibliothek Sachsen-Anhalt",
-                      "en": "Universit\u00e4ts- und Landesbibliothek Sachsen-Anhalt"
+                      "de": "Universitäts- und Landesbibliothek Sachsen-Anhalt",
+                      "en": "Universitäts- und Landesbibliothek Sachsen-Anhalt"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/universit\u00e4ts- und landesbibliothek sachsen-anhalt, halle/i"
+                        "collection_repository": "/universitäts- und landesbibliothek sachsen-anhalt, halle/i"
                       }
                     ]
                   }
@@ -2669,7 +2669,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/ev.-luth. kirchengemeinde niendorf, hamburg/i"
+                        "collection_repository": "/ev\\.-luth\\. kirchengemeinde niendorf, hamburg/i"
                       }
                     ]
                   },
@@ -2693,7 +2693,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/hauptkirche st. nikolai, hamburg/i"
+                        "collection_repository": "/hauptkirche st\\. nikolai, hamburg/i"
                       }
                     ]
                   },
@@ -2726,19 +2726,19 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/ev.-luth. marktkirchgemeinde hannover/i"
+                        "collection_repository": "/ev\\.-luth\\. marktkirchgemeinde hannover/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.germany.hannover.hannover_2",
                     "text": {
-                      "de": "Nieders\u00e4chsisches Landesmuseum",
-                      "en": "Nieders\u00e4chsisches Landesmuseum"
+                      "de": "Niedersächsisches Landesmuseum",
+                      "en": "Niedersächsisches Landesmuseum"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/nieders\u00e4chsisches landesmuseum hannover/i"
+                        "collection_repository": "/niedersächsisches landesmuseum hannover/i"
                       }
                     ]
                   }
@@ -2754,24 +2754,24 @@
                   {
                     "id": "collection_repository.country.germany.heidelberg.heidelberg_1",
                     "text": {
-                      "de": "Kurpf\u00e4lzisches Museum",
-                      "en": "Kurpf\u00e4lzisches Museum"
+                      "de": "Kurpfälzisches Museum",
+                      "en": "Kurpfälzisches Museum"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/kurpf\u00e4lzisches museum heidelberg/i"
+                        "collection_repository": "/kurpfälzisches museum heidelberg/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.germany.heidelberg.heidelberg_2",
                     "text": {
-                      "de": "Universit\u00e4tsmuseum",
-                      "en": "Universit\u00e4tsmuseum"
+                      "de": "Universitätsmuseum",
+                      "en": "Universitätsmuseum"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/(universit\u00e4tsmuseum, heidelberg|universit\u00e4tsbibliothek heidelberg)/i"
+                        "collection_repository": "/(universitätsmuseum, heidelberg|universitätsbibliothek heidelberg)/i"
                       }
                     ]
                   }
@@ -2780,24 +2780,24 @@
               {
                 "id": "collection_repository.country.germany.jena",
                 "text": {
-                  "de": "Jena, Th\u00fcringer Universit\u00e4ts- und Landesbibliothek",
-                  "en": "Jena, Th\u00fcringer Universit\u00e4ts- und Landesbibliothek"
+                  "de": "Jena, Thüringer Universitäts- und Landesbibliothek",
+                  "en": "Jena, Thüringer Universitäts- und Landesbibliothek"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/th\u00fcringer universit\u00e4ts- und landesbibliothek jena/i"
+                    "collection_repository": "/thüringer universitäts- und landesbibliothek jena/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.germany.jueterbog",
                 "text": {
-                  "de": "J\u00fcterbog, Ev. St. Nikolaigemeinde",
-                  "en": "J\u00fcterbog, Ev. St. Nikolaigemeinde"
+                  "de": "Jüterbog, Ev. St. Nikolaigemeinde",
+                  "en": "Jüterbog, Ev. St. Nikolaigemeinde"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/ev. st. nikolaigemeinde j\u00fcterbog/i"
+                    "collection_repository": "/ev\\. st\\. nikolaigemeinde jüterbog/i"
                   }
                 ]
               },
@@ -2828,7 +2828,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/klosterkirche und sakralmuseum st. annen/i"
+                        "collection_repository": "/klosterkirche und sakralmuseum st\\. annen/i"
                       }
                     ]
                   },
@@ -2840,7 +2840,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/st. marienkirche, kamenz/i"
+                        "collection_repository": "/st\\. marienkirche, kamenz/i"
                       }
                     ]
                   }
@@ -2882,12 +2882,12 @@
               {
                 "id": "collection_repository.country.germany.kassel",
                 "text": {
-                  "de": "Kassel, Gem\u00e4ldegalerie Alte Meister",
-                  "en": "Kassel, Gem\u00e4ldegalerie Alte Meister"
+                  "de": "Kassel, Gemäldegalerie Alte Meister",
+                  "en": "Kassel, Gemäldegalerie Alte Meister"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/gem\u00e4ldegalerie alte meister, kassel/i"
+                    "collection_repository": "/gemäldegalerie alte meister, kassel/i"
                   }
                 ]
               },
@@ -2935,7 +2935,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/ev. kirchengemeinde klitten/i"
+                    "collection_repository": "/ev\\. kirchengemeinde klitten/i"
                   }
                 ]
               },
@@ -2966,12 +2966,12 @@
               {
                 "id": "collection_repository.country.germany.koethen",
                 "text": {
-                  "de": "K\u00f6then, Ev. Kirche St. Agnus",
-                  "en": "K\u00f6then, Ev. Kirche St. Agnus"
+                  "de": "Köthen, Ev. Kirche St. Agnus",
+                  "en": "Köthen, Ev. Kirche St. Agnus"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/ev. kirche st. agnus, k\u00f6then/i"
+                    "collection_repository": "/ev\\. kirche st\\. agnus, köthen/i"
                   }
                 ]
               },
@@ -3002,12 +3002,12 @@
               {
                 "id": "collection_repository.country.germany.kronach",
                 "text": {
-                  "de": "Kronach, Fr\u00e4nkische Galerie",
-                  "en": "Kronach, Fr\u00e4nkische Galerie"
+                  "de": "Kronach, Fränkische Galerie",
+                  "en": "Kronach, Fränkische Galerie"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/fr\u00e4nkische galerie, kronach/i"
+                    "collection_repository": "/fränkische galerie, kronach/i"
                   }
                 ]
               },
@@ -3033,24 +3033,24 @@
                   {
                     "id": "collection_repository.country.germany.leipzig.leipzig_1",
                     "text": {
-                      "de": "Kunstsammlung der Universit\u00e4t",
-                      "en": "Kunstsammlung der Universit\u00e4t"
+                      "de": "Kunstsammlung der Universität",
+                      "en": "Kunstsammlung der Universität"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/kunstsammlung der universit\u00e4t leipzig/i"
+                        "collection_repository": "/kunstsammlung der universität leipzig/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.germany.leipzig.leipzig_2",
                     "text": {
-                      "de": "Museum der bildenden K\u00fcnste",
-                      "en": "Museum der bildenden K\u00fcnste"
+                      "de": "Museum der bildenden Künste",
+                      "en": "Museum der bildenden Künste"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/museum der bildenden k\u00fcnste, leipzig/i"
+                        "collection_repository": "/museum der bildenden künste, leipzig/i"
                       }
                     ]
                   },
@@ -3062,7 +3062,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/evangelisch-lutherische kirchgemeinde st. nikolai, leipzig/i"
+                        "collection_repository": "/evangelisch-lutherische kirchgemeinde st\\. nikolai, leipzig/i"
                       }
                     ]
                   },
@@ -3081,12 +3081,12 @@
                   {
                     "id": "collection_repository.country.germany.leipzig.leipzig_5",
                     "text": {
-                      "de": "Universit\u00e4tsbibliothek",
-                      "en": "Universit\u00e4tsbibliothek"
+                      "de": "Universitätsbibliothek",
+                      "en": "Universitätsbibliothek"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/universit\u00e4tsbibliothek leipzig/i"
+                        "collection_repository": "/universitätsbibliothek leipzig/i"
                       }
                     ]
                   }
@@ -3095,24 +3095,24 @@
               {
                 "id": "collection_repository.country.germany.luebeck",
                 "text": {
-                  "de": "L\u00fcbeck, St. Annen-Museum",
-                  "en": "L\u00fcbeck, St. Annen-Museum"
+                  "de": "Lübeck, St. Annen-Museum",
+                  "en": "Lübeck, St. Annen-Museum"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/st. annen-museum, l\u00fcbeck/i"
+                    "collection_repository": "/st\\. annen-museum, lübeck/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.germany.lueneburg",
                 "text": {
-                  "de": "L\u00fcneburg, Ostpreu\u00dfisches Landesmuseum",
-                  "en": "L\u00fcneburg, Ostpreu\u00dfisches Landesmuseum"
+                  "de": "Lüneburg, Ostpreußisches Landesmuseum",
+                  "en": "Lüneburg, Ostpreußisches Landesmuseum"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/ostpreu\u00dfisches landesmuseum, l\u00fcneburg/i"
+                    "collection_repository": "/ostpreußisches landesmuseum, lüneburg/i"
                   }
                 ]
               },
@@ -3138,12 +3138,12 @@
                   {
                     "id": "collection_repository.country.germany.mainz.mainz_1",
                     "text": {
-                      "de": "Bisch\u00f6fliches Dom- und Di\u00f6zesanmuseum",
-                      "en": "Bisch\u00f6fliches Dom- und Di\u00f6zesanmuseum"
+                      "de": "Bischöfliches Dom- und Diözesanmuseum",
+                      "en": "Bischöfliches Dom- und Diözesanmuseum"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/bisch\u00f6fliches dom- und di\u00f6zesanmuseum mainz/i"
+                        "collection_repository": "/bischöfliches dom- und diözesanmuseum mainz/i"
                       }
                     ]
                   },
@@ -3176,7 +3176,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/dom zu mei\u00dfen/i"
+                        "collection_repository": "/dom zu meißen/i"
                       }
                     ]
                   },
@@ -3188,7 +3188,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/stadtmuseum mei\u00dfen/i"
+                        "collection_repository": "/stadtmuseum meißen/i"
                       }
                     ]
                   }
@@ -3214,14 +3214,14 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/st. moritzkirche mittenwalde/i"
+                    "collection_repository": "/st\\. moritzkirche mittenwalde/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.germany.munich",
                 "text": {
-                  "de": "M\u00fcnchen",
+                  "de": "München",
                   "en": "Munich"
                 },
                 "children": [
@@ -3233,7 +3233,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/alte pinakothek, (munich|m\u00fcnchen)/i"
+                        "collection_repository": "/alte pinakothek, (munich|münchen)/i"
                       }
                     ]
                   },
@@ -3252,12 +3252,12 @@
                   {
                     "id": "collection_repository.country.germany.munich.munich_3",
                     "text": {
-                      "de": "Staatliche Graphische Sammlung M\u00fcnchen",
-                      "en": "Staatliche Graphische Sammlung M\u00fcnchen"
+                      "de": "Staatliche Graphische Sammlung München",
+                      "en": "Staatliche Graphische Sammlung München"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/staatliche graphische sammlung m\u00fcnchen/i"
+                        "collection_repository": "/staatliche graphische sammlung münchen/i"
                       }
                     ]
                   },
@@ -3276,12 +3276,12 @@
                   {
                     "id": "collection_repository.country.germany.munich.munich_5",
                     "text": {
-                      "de": "Universit\u00e4tsbibliothek der LMU",
-                      "en": "Universit\u00e4tsbibliothek der LMU"
+                      "de": "Universitätsbibliothek der LMU",
+                      "en": "Universitätsbibliothek der LMU"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/universit\u00e4tsbibliothek der lmu, m\u00fcnchen/i"
+                        "collection_repository": "/universitätsbibliothek der lmu, münchen/i"
                       }
                     ]
                   }
@@ -3290,20 +3290,20 @@
               {
                 "id": "collection_repository.country.germany.muenster",
                 "text": {
-                  "de": "M\u00fcnster, LWL-Museum f\u00fcr Kunst und Kultur",
-                  "en": "M\u00fcnster, LWL-Museum f\u00fcr Kunst und Kultur"
+                  "de": "Münster, LWL-Museum für Kunst und Kultur",
+                  "en": "Münster, LWL-Museum für Kunst und Kultur"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/lwl-museum f\u00fcr kunst und kultur m\u00fcnster/i"
+                    "collection_repository": "/lwl-museum für kunst und kultur münster/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.germany.muenstermaifeld",
                 "text": {
-                  "de": "M\u00fcnstermaifeld, Burg Eltz",
-                  "en": "M\u00fcnstermaifeld, Burg Eltz"
+                  "de": "Münstermaifeld, Burg Eltz",
+                  "en": "Münstermaifeld, Burg Eltz"
                 },
                 "matchers": [
                   {
@@ -3338,7 +3338,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/stadtkirche st. wenzel, naumburg/i"
+                        "collection_repository": "/stadtkirche st\\. wenzel, naumburg/i"
                       }
                     ]
                   }
@@ -3352,7 +3352,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/evangelische stadtkirche st. johannis zu neustadt\\/orla/i"
+                    "collection_repository": "/evangelische stadtkirche st\\. johannis zu neustadt\\/orla/i"
                   }
                 ]
               },
@@ -3364,7 +3364,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/evangelische kirchengemeinde st. johannis und st. marien, nienburg/i"
+                    "collection_repository": "/evangelische kirchengemeinde st\\. johannis und st\\. marien, nienburg/i"
                   }
                 ]
               },
@@ -3376,31 +3376,31 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/ev.-luth. kirchgemeinde thallwitz-nischwitz/i"
+                    "collection_repository": "/ev\\.-luth\\. kirchgemeinde thallwitz-nischwitz/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.germany.noerdlingen",
                 "text": {
-                  "de": "N\u00f6rdlingen, Stadtmuseum",
-                  "en": "N\u00f6rdlingen, Stadtmuseum"
+                  "de": "Nördlingen, Stadtmuseum",
+                  "en": "Nördlingen, Stadtmuseum"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/stadtmuseum n\u00f6rdlingen/i"
+                    "collection_repository": "/stadtmuseum nördlingen/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.germany.nuremberg",
                 "text": {
-                  "de": "N\u00fcrnberg, Germanisches Nationalmuseum",
+                  "de": "Nürnberg, Germanisches Nationalmuseum",
                   "en": "Nuremberg, Germanisches Nationalmuseum"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/germanisches nationalmuseum, (nuremberg|n\u00fcrnberg)/i"
+                    "collection_repository": "/germanisches nationalmuseum, (nuremberg|nürnberg)/i"
                   }
                 ]
               },
@@ -3412,19 +3412,19 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/museen schlo\u00df voigtsberg/i"
+                    "collection_repository": "/museen schloß voigtsberg/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.germany.oldenburg",
                 "text": {
-                  "de": "Oldenburg, Landesmuseum f\u00fcr Kunst und Kulturgeschichte",
-                  "en": "Oldenburg, Landesmuseum f\u00fcr Kunst und Kulturgeschichte"
+                  "de": "Oldenburg, Landesmuseum für Kunst und Kulturgeschichte",
+                  "en": "Oldenburg, Landesmuseum für Kunst und Kulturgeschichte"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/landesmuseum f\u00fcr kunst und kulturgeschichte oldenburg/i"
+                    "collection_repository": "/landesmuseum für kunst und kulturgeschichte oldenburg/i"
                   }
                 ]
               },
@@ -3500,8 +3500,8 @@
               {
                 "id": "collection_repository.country.germany.remagen",
                 "text": {
-                  "de": "Remagen, Sammlung Rau f\u00fcr UNICEF (Arp Museum Bahnhof Rolandseck)",
-                  "en": "Remagen, Sammlung Rau f\u00fcr UNICEF (Arp Museum Bahnhof Rolandseck)"
+                  "de": "Remagen, Sammlung Rau für UNICEF (Arp Museum Bahnhof Rolandseck)",
+                  "en": "Remagen, Sammlung Rau für UNICEF (Arp Museum Bahnhof Rolandseck)"
                 },
                 "matchers": [
                   {
@@ -3517,19 +3517,19 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/st. kunigundenkirche rochlitz/i"
+                    "collection_repository": "/st\\. kunigundenkirche rochlitz/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.germany.rostock",
                 "text": {
-                  "de": "Rostock, Universit\u00e4tsbibliothek",
-                  "en": "Rostock, Universit\u00e4tsbibliothek"
+                  "de": "Rostock, Universitätsbibliothek",
+                  "en": "Rostock, Universitätsbibliothek"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/universit\u00e4tsbibliothek rostock/i"
+                    "collection_repository": "/universitätsbibliothek rostock/i"
                   }
                 ]
               },
@@ -3553,7 +3553,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/schloss gottorf, landesmuseum f\u00fcr kunst- und kulturgeschichte, schleswig/i"
+                    "collection_repository": "/schloss gottorf, landesmuseum für kunst- und kulturgeschichte, schleswig/i"
                   }
                 ]
               },
@@ -3565,19 +3565,19 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/ev.-luth. kirchgemeinde st. wolfgang, schneeberg/i"
+                    "collection_repository": "/ev\\.-luth\\. kirchgemeinde st\\. wolfgang, schneeberg/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.germany.schwaebisch_hall",
                 "text": {
-                  "de": "Schw\u00e4bisch Hall, Johanniterkirche - Sammlung W\u00fcrth",
-                  "en": "Schw\u00e4bisch Hall, Johanniterkirche - Sammlung W\u00fcrth"
+                  "de": "Schwäbisch Hall, Johanniterkirche - Sammlung Würth",
+                  "en": "Schwäbisch Hall, Johanniterkirche - Sammlung Würth"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/sammlung w\u00fcrth/i"
+                    "collection_repository": "/sammlung würth/i"
                   }
                 ]
               },
@@ -3632,7 +3632,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/w\u00fcrttembergische landesbibliothek stuttgart/i"
+                        "collection_repository": "/württembergische landesbibliothek stuttgart/i"
                       }
                     ]
                   }
@@ -3653,7 +3653,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/ev. kirchgemeinde st. marien, torgau/i"
+                        "collection_repository": "/ev\\. kirchgemeinde st\\. marien, torgau/i"
                       }
                     ]
                   },
@@ -3698,7 +3698,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/ev.-luth. kirchgemeinde st. peter und paul, weimar/i"
+                        "collection_repository": "/ev\\.-luth\\. kirchgemeinde st\\. peter und paul, weimar/i"
                       }
                     ]
                   },
@@ -3731,12 +3731,12 @@
               {
                 "id": "collection_repository.country.germany.weissenfels",
                 "text": {
-                  "de": "Wei\u00dfenfels, Museum Wei\u00dfenfels-Schloss Neu-Augustusburg",
-                  "en": "Wei\u00dfenfels, Museum Wei\u00dfenfels-Schloss Neu-Augustusburg"
+                  "de": "Weißenfels, Museum Weißenfels-Schloss Neu-Augustusburg",
+                  "en": "Weißenfels, Museum Weißenfels-Schloss Neu-Augustusburg"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/museum wei\u00dfenfels - schloss neu-augustusburg/i"
+                    "collection_repository": "/museum weißenfels - schloss neu-augustusburg/i"
                   }
                 ]
               },
@@ -3791,7 +3791,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/evangelische stadtkirche st. marien, wittenberg/i"
+                        "collection_repository": "/evangelische stadtkirche st\\. marien, wittenberg/i"
                       }
                     ]
                   },
@@ -3824,32 +3824,32 @@
               {
                 "id": "collection_repository.country.germany.wolfegg",
                 "text": {
-                  "de": "Wolfegg, Kunstsammlungen der F\u00fcrsten zu Waldburg-Wolfegg",
-                  "en": "Wolfegg, Kunstsammlungen der F\u00fcrsten zu Waldburg-Wolfegg"
+                  "de": "Wolfegg, Kunstsammlungen der Fürsten zu Waldburg-Wolfegg",
+                  "en": "Wolfegg, Kunstsammlungen der Fürsten zu Waldburg-Wolfegg"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/kunstsammlungen der f\u00fcrsten zu waldburg-wolfegg/i"
+                    "collection_repository": "/kunstsammlungen der fürsten zu waldburg-wolfegg/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.germany.wolfenbuettel",
                 "text": {
-                  "de": "Wolfenb\u00fcttel, Herzog August Bibliothek",
-                  "en": "Wolfenb\u00fcttel, Herzog August Bibliothek"
+                  "de": "Wolfenbüttel, Herzog August Bibliothek",
+                  "en": "Wolfenbüttel, Herzog August Bibliothek"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/herzog august bibliothek wolfenb\u00fcttel/i"
+                    "collection_repository": "/herzog august bibliothek wolfenbüttel/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.germany.woerlitz",
                 "text": {
-                  "de": "W\u00f6rlitz",
-                  "en": "W\u00f6rlitz"
+                  "de": "Wörlitz",
+                  "en": "Wörlitz"
                 },
                 "children": [
                   {
@@ -3860,7 +3860,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/evangelische kirchgemeinde w\u00f6rlitz/i"
+                        "collection_repository": "/evangelische kirchgemeinde wörlitz/i"
                       }
                     ]
                   },
@@ -3872,7 +3872,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/kulturstiftung dessau w\u00f6rlitz, gotisches haus/i"
+                        "collection_repository": "/kulturstiftung dessau wörlitz, gotisches haus/i"
                       }
                     ]
                   }
@@ -3881,31 +3881,31 @@
               {
                 "id": "collection_repository.country.germany.wuerzburg",
                 "text": {
-                  "de": "W\u00fcrzburg",
-                  "en": "W\u00fcrzburg"
+                  "de": "Würzburg",
+                  "en": "Würzburg"
                 },
                 "children": [
                   {
                     "id": "collection_repository.country.germany.wuerzburg.wuerzburg_1",
                     "text": {
-                      "de": "Museum f\u00fcr Franken - Staatliches Museum f\u00fcr Kunst- und Kulturgeschichte",
-                      "en": "Museum f\u00fcr Franken - Staatliches Museum f\u00fcr Kunst- und Kulturgeschichte"
+                      "de": "Museum für Franken - Staatliches Museum für Kunst- und Kulturgeschichte",
+                      "en": "Museum für Franken - Staatliches Museum für Kunst- und Kulturgeschichte"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/museum f\u00fcr franken, staatliches museum f\u00fcr kunst- und kulturgeschichte, w\u00fcrzburg/i"
+                        "collection_repository": "/museum für franken, staatliches museum für kunst- und kulturgeschichte, würzburg/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.germany.wuerzburg.wuerzburg_2",
                     "text": {
-                      "de": "Martin von Wagner Museum der Universit\u00e4t",
-                      "en": "Martin von Wagner Museum der Universit\u00e4t"
+                      "de": "Martin von Wagner Museum der Universität",
+                      "en": "Martin von Wagner Museum der Universität"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/martin von wagner museum der universit\u00e4t w\u00fcrzburg/i"
+                        "collection_repository": "/martin von wagner museum der universität würzburg/i"
                       }
                     ]
                   }
@@ -3914,24 +3914,24 @@
               {
                 "id": "collection_repository.country.germany.zerbst",
                 "text": {
-                  "de": "Zerbst, Ev. Kirchengemeinde St. Bartholom\u00e4i",
-                  "en": "Zerbst, Ev. Kirchengemeinde St. Bartholom\u00e4i"
+                  "de": "Zerbst, Ev. Kirchengemeinde St. Bartholomäi",
+                  "en": "Zerbst, Ev. Kirchengemeinde St. Bartholomäi"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/evangelische kirchengemeinde st. bartholom\u00e4i, zerbst/i"
+                    "collection_repository": "/evangelische kirchengemeinde st\\. bartholomäi, zerbst/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.germany.zittau",
                 "text": {
-                  "de": "Zittau, St\u00e4dtische Museen",
-                  "en": "Zittau, St\u00e4dtische Museen"
+                  "de": "Zittau, Städtische Museen",
+                  "en": "Zittau, Städtische Museen"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/st\u00e4dtische museen zittau/i"
+                    "collection_repository": "/städtische museen zittau/i"
                   }
                 ]
               },
@@ -3950,7 +3950,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/dom st. marien, zwickau/i"
+                        "collection_repository": "/dom st\\. marien, zwickau/i"
                       }
                     ]
                   },
@@ -3962,7 +3962,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/st. katharinen-kirche, zwickau/i"
+                        "collection_repository": "/st\\. katharinen-kirche, zwickau/i"
                       }
                     ]
                   },
@@ -3997,7 +3997,7 @@
           {
             "id": "collection_repository.country.britain",
             "text": {
-              "de": "Vereinigtes K\u00f6nigreich",
+              "de": "Vereinigtes Königreich",
               "en": "United Kingdom"
             },
             "children": [
@@ -4221,24 +4221,24 @@
                   {
                     "id": "collection_repository.country.hungary.budapest.budapest_1",
                     "text": {
-                      "de": "R\u00e1day-Bibliothek der Reformierten Kirche",
-                      "en": "R\u00e1day Library of the Reformed Church"
+                      "de": "Ráday-Bibliothek der Reformierten Kirche",
+                      "en": "Ráday Library of the Reformed Church"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/(r\u00e1day library of the reformed church|r\u00e1day bibliothek der reformierten kirche), budapest/i"
+                        "collection_repository": "/(ráday library of the reformed church|ráday bibliothek der reformierten kirche), budapest/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.hungary.budapest.budapest_2",
                     "text": {
-                      "de": "Museum der bildenden K\u00fcnste",
+                      "de": "Museum der bildenden Künste",
                       "en": "Museum of Fine Arts"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/sz\u00e9pmuv\u00e9szeti m\u00fazeum, budapest/i"
+                        "collection_repository": "/szépmuvészeti múzeum, budapest/i"
                       }
                     ]
                   }
@@ -4247,12 +4247,12 @@
               {
                 "id": "collection_repository.country.hungary.esztergom",
                 "text": {
-                  "de": "Esztergom, Kereszt\u00e9ny M\u00fazeum",
-                  "en": "Esztergom, Kereszt\u00e9ny M\u00fazeum"
+                  "de": "Esztergom, Keresztény Múzeum",
+                  "en": "Esztergom, Keresztény Múzeum"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/kereszt\u00e9ny m\u00fazeum, esztergom/i"
+                    "collection_repository": "/keresztény múzeum, esztergom/i"
                   }
                 ]
               }
@@ -4310,12 +4310,12 @@
               {
                 "id": "collection_repository.country.italy.brixen",
                 "text": {
-                  "de": "Brixen, Di\u00f6zesanmuseum Hofburg",
-                  "en": "Brixen, Di\u00f6zesanmuseum Hofburg"
+                  "de": "Brixen, Diözesanmuseum Hofburg",
+                  "en": "Brixen, Diözesanmuseum Hofburg"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/di\u00f6zesanmuseum hofburg brixen/i"
+                    "collection_repository": "/diözesanmuseum hofburg brixen/i"
                   }
                 ]
               },
@@ -4478,12 +4478,12 @@
               {
                 "id": "collection_repository.country.luxembourg.luxembourg_city",
                 "text": {
-                  "de": "Luxemburg, Mus\u00e9e National d'Histoire et d'Art",
-                  "en": "Luxembourg, Mus\u00e9e National d'Histoire et d'Art"
+                  "de": "Luxemburg, Musée National d'Histoire et d'Art",
+                  "en": "Luxembourg, Musée National d'Histoire et d'Art"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/mus\u00e9e national d'histoire et d'art, luxembourg/i"
+                    "collection_repository": "/musée national d'histoire et d'art, luxembourg/i"
                   }
                 ]
               }
@@ -4530,12 +4530,12 @@
                   {
                     "id": "collection_repository.country.mexico.mexico_city.mexico_city_3",
                     "text": {
-                      "de": "P\u00e9rez Sim\u00f3n Collection",
-                      "en": "P\u00e9rez Sim\u00f3n Collection"
+                      "de": "Pérez Simón Collection",
+                      "en": "Pérez Simón Collection"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/p\u00e9rez sim\u00f3n collection, mexico city/i"
+                        "collection_repository": "/pérez simón collection, mexico city/i"
                       }
                     ]
                   }
@@ -4634,12 +4634,12 @@
               {
                 "id": "collection_repository.country.netherlands.otterlo",
                 "text": {
-                  "de": "Otterlo, Kr\u00f6ller-M\u00fcller Museum",
-                  "en": "Otterlo, Kr\u00f6ller-M\u00fcller Museum"
+                  "de": "Otterlo, Kröller-Müller Museum",
+                  "en": "Otterlo, Kröller-Müller Museum"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/kr\u00f6ller-m\u00fcller museum, otterlo/i"
+                    "collection_repository": "/kröller-müller museum, otterlo/i"
                   }
                 ]
               },
@@ -4724,8 +4724,8 @@
               {
                 "id": "collection_repository.country.poland.goluchow",
                 "text": {
-                  "de": "Go\u0142uch\u00f3w, Schlossmuseum",
-                  "en": "Go\u0142uch\u00f3w, Palace Museum"
+                  "de": "Gołuchów, Schlossmuseum",
+                  "en": "Gołuchów, Palace Museum"
                 },
                 "matchers": [
                   {
@@ -4736,8 +4736,8 @@
               {
                 "id": "collection_repository.country.poland.krakow",
                 "text": {
-                  "de": "Krak\u00f3w",
-                  "en": "Krak\u00f3w"
+                  "de": "Kraków",
+                  "en": "Kraków"
                 },
                 "children": [
                   {
@@ -4767,12 +4767,12 @@
                   {
                     "id": "collection_repository.country.poland.krakow.krakow_3",
                     "text": {
-                      "de": "K\u00f6nigliches Schloss Wawel",
+                      "de": "Königliches Schloss Wawel",
                       "en": "Royal Castle Wawel"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/zamek kr\u00f3lewski na wawelu/i"
+                        "collection_repository": "/zamek królewski na wawelu/i"
                       }
                     ]
                   }
@@ -4793,8 +4793,8 @@
               {
                 "id": "collection_repository.country.poland.poznan",
                 "text": {
-                  "de": "Pozna\u0144, Nationalmuseum",
-                  "en": "Pozna\u0144, National Museum"
+                  "de": "Poznań, Nationalmuseum",
+                  "en": "Poznań, National Museum"
                 },
                 "matchers": [
                   {
@@ -4848,12 +4848,12 @@
                   {
                     "id": "collection_repository.country.poland.warsaw.warsaw_3",
                     "text": {
-                      "de": "Palastmuseum Kr\u00f3la Jana III w Wilanowie",
-                      "en": "Palace Museum Kr\u00f3la Jana III w Wilanowie"
+                      "de": "Palastmuseum Króla Jana III w Wilanowie",
+                      "en": "Palace Museum Króla Jana III w Wilanowie"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/muzeum palacu kr\u00f3la jana iii w wilanowie/i"
+                        "collection_repository": "/muzeum palacu króla jana iii w wilanowie/i"
                       }
                     ]
                   }
@@ -4862,14 +4862,14 @@
               {
                 "id": "collection_repository.country.poland.wroclaw",
                 "text": {
-                  "de": "Wroc\u0142aw",
-                  "en": "Wroc\u0142aw"
+                  "de": "Wrocław",
+                  "en": "Wrocław"
                 },
                 "children": [
                   {
                     "id": "collection_repository.country.poland.wroclaw.wroclaw_1",
                     "text": {
-                      "de": "Museum der Erzdi\u00f6zese",
+                      "de": "Museum der Erzdiözese",
                       "en": "Museum of the Archdiocese"
                     },
                     "matchers": [
@@ -4939,7 +4939,7 @@
           {
             "id": "collection_repository.country.romania",
             "text": {
-              "de": "Rum\u00e4nien",
+              "de": "Rumänien",
               "en": "Romania"
             },
             "children": [
@@ -4958,12 +4958,12 @@
               {
                 "id": "collection_repository.country.romania.bucharest",
                 "text": {
-                  "de": "Bukarest, Muzeul Na\u021bional de Art\u0103 al Rom\u00e2niei",
-                  "en": "Bucharest, Muzeul Na\u021bional de Art\u0103 al Rom\u00e2niei"
+                  "de": "Bukarest, Muzeul Național de Artă al României",
+                  "en": "Bucharest, Muzeul Național de Artă al României"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/muzeul na\u021bional de art\u0103 al rom\u00e2niei/i"
+                    "collection_repository": "/muzeul național de artă al româniei/i"
                   }
                 ]
               }
@@ -4979,12 +4979,12 @@
               {
                 "id": "collection_repository.country.russia.moscow",
                 "text": {
-                  "de": "Moskau, Staatliches Museum f\u00fcr Bildende K\u00fcnste A. S. Puschkin",
+                  "de": "Moskau, Staatliches Museum für Bildende Künste A. S. Puschkin",
                   "en": "Moscow, The Pushkin State Museum of Fine Arts"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/(the pushkin state museum of fine arts, moscow|staatliches museum f\u00fcr bildende k\u00fcnste a. s. pus(c?)hkin, moskau)/i"
+                    "collection_repository": "/(the pushkin state museum of fine arts, moscow|staatliches museum für bildende künste a. s. pus(c?)hkin, moskau)/i"
                   }
                 ]
               },
@@ -5008,7 +5008,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/(the state hermitage museum, st. petersburg|staatliche eremitage, st. petersburg)/i"
+                    "collection_repository": "/(the state hermitage museum, st\\. petersburg|staatliche eremitage, st\\. petersburg)/i"
                   }
                 ]
               }
@@ -5055,24 +5055,24 @@
                   {
                     "id": "collection_repository.country.spain.madrid.madrid_1",
                     "text": {
-                      "de": "Fundaci\u00f3n Banco Santander",
-                      "en": "Fundaci\u00f3n Banco Santander"
+                      "de": "Fundación Banco Santander",
+                      "en": "Fundación Banco Santander"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/fundaci\u00f3n banco santander, madrid/i"
+                        "collection_repository": "/fundación banco santander, madrid/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.spain.madrid.madrid_2",
                     "text": {
-                      "de": "Museo L\u00e1zaro Galdiano",
-                      "en": "Museo L\u00e1zaro Galdiano"
+                      "de": "Museo Lázaro Galdiano",
+                      "en": "Museo Lázaro Galdiano"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/museo l\u00e1zaro galdiano, madrid/i"
+                        "collection_repository": "/museo lázaro galdiano, madrid/i"
                       }
                     ]
                   },
@@ -5126,24 +5126,24 @@
               {
                 "id": "collection_repository.country.sweden.goeteborg",
                 "text": {
-                  "de": "G\u00f6teborg, Konstmuseum",
+                  "de": "Göteborg, Konstmuseum",
                   "en": "Gothenburg, Konstmuseum"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/g\u00f6teborgs konstmuseum/i"
+                    "collection_repository": "/göteborgs konstmuseum/i"
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.sweden.linkoeping",
                 "text": {
-                  "de": "Link\u00f6ping, \u00d6sterg\u00f6tlands Museum",
-                  "en": "Link\u00f6ping, \u00d6sterg\u00f6tlands Museum"
+                  "de": "Linköping, Östergötlands Museum",
+                  "en": "Linköping, Östergötlands Museum"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/\u00f6sterg\u00f6tlands museum, link\u00f6ping.*/iu"
+                    "collection_repository": "/östergötlands museum, linköping.*/iu"
                   }
                 ]
               },
@@ -5207,12 +5207,12 @@
               {
                 "id": "collection_repository.country.sweden.sverige",
                 "text": {
-                  "de": "B\u00e4rbo kyrka, Sverige",
-                  "en": "B\u00e4rbo kyrka, Sverige"
+                  "de": "Bärbo kyrka, Sverige",
+                  "en": "Bärbo kyrka, Sverige"
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/b\u00e4rbo kyrka, sverige/i"
+                    "collection_repository": "/bärbo kyrka, sverige/i"
                   }
                 ]
               }
@@ -5233,7 +5233,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/(\u00f6ffentliche kunstsammlung basel.*|kunstmuseum basel)/iu"
+                    "collection_repository": "/(öffentliche kunstsammlung basel.*|kunstmuseum basel)/iu"
                   }
                 ]
               },
@@ -5259,12 +5259,12 @@
                   {
                     "id": "collection_repository.country.switzerland.bern_2",
                     "text": {
-                      "de": "Universit\u00e4tsbibliothek - Bibliothek M\u00fcnstergasse",
-                      "en": "Universit\u00e4tsbibliothek - Bibliothek M\u00fcnstergasse"
+                      "de": "Universitätsbibliothek - Bibliothek Münstergasse",
+                      "en": "Universitätsbibliothek - Bibliothek Münstergasse"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/universit\u00e4tsbibliothek - bibliothek m\u00fcnstergasse bern/i"
+                        "collection_repository": "/universitätsbibliothek - bibliothek münstergasse bern/i"
                       }
                     ]
                   }
@@ -5292,24 +5292,24 @@
                   {
                     "id": "collection_repository.country.switzerland.geneva_1",
                     "text": {
-                      "de": "Mus\u00e9e d'Art et d'Histoire",
-                      "en": "Mus\u00e9e d'Art et d'Histoire"
+                      "de": "Musée d'Art et d'Histoire",
+                      "en": "Musée d'Art et d'Histoire"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/mus\u00e9e d'art et d'histoire, (gen\u00e8ve|genf)/i"
+                        "collection_repository": "/musée d'art et d'histoire, (genève|genf)/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.switzerland.geneva_2",
                     "text": {
-                      "de": "Mus\u00e9e international de la R\u00e9forme",
-                      "en": "Mus\u00e9e international de la R\u00e9forme"
+                      "de": "Musée international de la Réforme",
+                      "en": "Musée international de la Réforme"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/mus\u00e9e international de la r\u00e9forme, (gen\u00e8ve|genf)/i"
+                        "collection_repository": "/musée international de la réforme, (genève|genf)/i"
                       }
                     ]
                   }
@@ -5335,7 +5335,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/kantonsbibliothek st. gallen/i"
+                    "collection_repository": "/kantonsbibliothek st\\. gallen/i"
                   }
                 ]
               },
@@ -5375,8 +5375,8 @@
               {
                 "id": "collection_repository.country.switzerland.zurich",
                 "text": {
-                  "de": "Z\u00fcrich",
-                  "en": "Z\u00fcrich"
+                  "de": "Zürich",
+                  "en": "Zürich"
                 },
                 "children": [
                   {
@@ -5387,19 +5387,19 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/kunsthaus z\u00fcrich/i"
+                        "collection_repository": "/kunsthaus zürich/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.switzerland.zurich_2",
                     "text": {
-                      "de": "Eidgen\u00f6ssische Technische Hochschule",
-                      "en": "Eidgen\u00f6ssische Technische Hochschule"
+                      "de": "Eidgenössische Technische Hochschule",
+                      "en": "Eidgenössische Technische Hochschule"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/eidgen\u00f6ssische technische hochschule z\u00fcrich/i"
+                        "collection_repository": "/eidgenössische technische hochschule zürich/i"
                       }
                     ]
                   },
@@ -5411,7 +5411,7 @@
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/zentralbibliothek z\u00fcrich/i"
+                        "collection_repository": "/zentralbibliothek zürich/i"
                       }
                     ]
                   }
@@ -6010,7 +6010,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/st. louis art museum/i"
+                    "collection_repository": "/st\\. louis art museum/i"
                   }
                 ]
               },
@@ -6086,7 +6086,7 @@
         },
         "matchers": [
           {
-            "collection_repository": "/(painting not preserved|gem\u00e4lde nicht erhalten)/i"
+            "collection_repository": "/(painting not preserved|gemälde nicht erhalten)/i"
           }
         ]
       },
@@ -6156,13 +6156,13 @@
       {
         "id": "examination_analysis.x_radiography",
         "text": {
-          "de": "R\u00f6ntgengrobstrukturanalyse",
+          "de": "Röntgengrobstrukturanalyse",
           "en": "X-radiography"
         },
         "matchers": [
           {
             "keyword": {
-              "de": "/R\u00f6ntgengrobstrukturanalyse/i",
+              "de": "/Röntgengrobstrukturanalyse/i",
               "en": "/X-radiography/i"
             }
           }
@@ -6186,13 +6186,13 @@
       {
         "id": "examination_analysis.other_imaging_techniques",
         "text": {
-          "de": "Andere strahlendiagnostische Fl\u00e4chenuntersuchungen",
+          "de": "Andere strahlendiagnostische Flächenuntersuchungen",
           "en": "Other imaging techniques"
         },
         "matchers": [
           {
             "keyword": {
-              "de": "/Andere strahlendiagnostische Fl\u00e4chenuntersuchungen/i",
+              "de": "/Andere strahlendiagnostische Flächenuntersuchungen/i",
               "en": "/Other imaging techniques/i"
             }
           }
@@ -6246,13 +6246,13 @@
       {
         "id": "examination_analysis.stereomicroscopy",
         "text": {
-          "de": "Lichtmikroskopische Oberfl\u00e4chenuntersuchung",
+          "de": "Lichtmikroskopische Oberflächenuntersuchung",
           "en": "Stereomicroscopy"
         },
         "matchers": [
           {
             "keyword": {
-              "de": "/(Lichtmikroskopische Oberfl\u00e4chenuntersuchung|Lichtmikroskopie)/i",
+              "de": "/(Lichtmikroskopische Oberflächenuntersuchung|Lichtmikroskopie)/i",
               "en": "/(Stereomicroscopy|Light microscopy)/i"
             }
           }
@@ -6287,8 +6287,14 @@
                   "en": "/kkl\\-ordnungsnummer/i"
                 },
                 "referenceNumber": {
-                  "de": ["/^I\\./i", "/^(?!.*-Sup)/i"],
-                  "en": ["/^I\\..*/i", "/^(?!.*-Sup)/i"]
+                  "de": [
+                    "/^I\\./i",
+                    "/^(?!.*-Sup)/i"
+                  ],
+                  "en": [
+                    "/^I\\..*/i",
+                    "/^(?!.*-Sup)/i"
+                  ]
                 }
               }
             ]
@@ -6306,8 +6312,14 @@
                   "en": "/kkl\\-ordnungsnummer/i"
                 },
                 "referenceNumber": {
-                  "de": ["/^II\\./i", "/^(?!.*-Sup)/i"],
-                  "en": ["/^II\\./i", "/^(?!.*-Sup)/i"]
+                  "de": [
+                    "/^II\\./i",
+                    "/^(?!.*-Sup)/i"
+                  ],
+                  "en": [
+                    "/^II\\./i",
+                    "/^(?!.*-Sup)/i"
+                  ]
                 }
               }
             ]
@@ -6325,8 +6337,14 @@
                   "en": "/kkl\\-ordnungsnummer/i"
                 },
                 "referenceNumber": {
-                  "de": ["/^III\\./i", "/^(?!.*-Sup)/i"],
-                  "en": ["/^III\\./i", "/^(?!.*-Sup)/i"]
+                  "de": [
+                    "/^III\\./i",
+                    "/^(?!.*-Sup)/i"
+                  ],
+                  "en": [
+                    "/^III\\./i",
+                    "/^(?!.*-Sup)/i"
+                  ]
                 }
               }
             ]
@@ -6344,8 +6362,14 @@
                   "en": "/kkl\\-ordnungsnummer/i"
                 },
                 "referenceNumber": {
-                  "de": ["/^IV\\./i", "/^(?!.*-Sup)/i"],
-                  "en": ["/^IV\\./i", "/^(?!.*-Sup)/i"]
+                  "de": [
+                    "/^IV\\./i",
+                    "/^(?!.*-Sup)/i"
+                  ],
+                  "en": [
+                    "/^IV\\./i",
+                    "/^(?!.*-Sup)/i"
+                  ]
                 }
               }
             ]
@@ -6363,8 +6387,14 @@
                   "en": "/kkl\\-ordnungsnummer/i"
                 },
                 "referenceNumber": {
-                  "de": ["/^V\\./i", "/^(?!.*-Sup)/i"],
-                  "en": ["/^V\\./i", "/^(?!.*-Sup)/i"]
+                  "de": [
+                    "/^V\\./i",
+                    "/^(?!.*-Sup)/i"
+                  ],
+                  "en": [
+                    "/^V\\./i",
+                    "/^(?!.*-Sup)/i"
+                  ]
                 }
               }
             ]
