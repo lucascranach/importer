@@ -54,6 +54,105 @@ class LiteratureReferencesInflator implements IInflator
 
     private static $primarySourceKey = 'Primary source';
 
+    private const PUBLICATION_TYPE_ARTICLE_ARTICLE = 'article';
+    private const PUBLICATION_TYPE_ARTICLE_ARTICLES = 'articles';
+    private const PUBLICATION_TYPE_ARTICLE_AUCTION_CATALOGS = 'auction catalogs';
+    private const PUBLICATION_TYPE_ARTICLE_AUCTION_CATALOGUE = 'auction catalogue';
+    private const PUBLICATION_TYPE_ARTICLE_AUCTION_CATALOGUES = 'auction catalogues';
+    private const PUBLICATION_TYPE_ARTICLE_CATALOGUE = 'catalogue';
+    private const PUBLICATION_TYPE_ARTICLE_CATALOGUES = 'catalogues';
+    private const PUBLICATION_TYPE_ARTICLE_CATALOGUES__EXHIBITION = 'catalogues, exhibition';
+    private const PUBLICATION_TYPE_ARTICLE_CONFERENCE_PROCEEDINGS = 'conference proceedings';
+    private const PUBLICATION_TYPE_ARTICLE_DISSERTATION = 'dissertation';
+    private const PUBLICATION_TYPE_ARTICLE_DISSERTATIONS = 'dissertations';
+    private const PUBLICATION_TYPE_ARTICLE_EXHIBITION_CATALOGS = 'exhibition catalogs';
+    private const PUBLICATION_TYPE_ARTICLE_EXHIBITION_CATALOGUE = 'exhibition catalogue';
+    private const PUBLICATION_TYPE_ARTICLE_EXHIBITION_CATALOGUES = 'exhibition catalogues';
+    private const PUBLICATION_TYPE_ARTICLE_FESTSCHRIFT = 'festschrift';
+    private const PUBLICATION_TYPE_ARTICLE_GREY_LITERATURE = 'grey literature';
+    private const PUBLICATION_TYPE_ARTICLE_GUIDEBOOK = 'guidebook';
+    private const PUBLICATION_TYPE_ARTICLE_GUIDEBOOKS = 'guidebooks';
+    private const PUBLICATION_TYPE_ARTICLE_LEXICON = 'lexicon';
+    private const PUBLICATION_TYPE_ARTICLE_LEXICONS = 'lexicons';
+    private const PUBLICATION_TYPE_ARTICLE_MANUSCRIPT = 'manuscript';
+    private const PUBLICATION_TYPE_ARTICLE_MANUSCRIPTS = 'manuscripts';
+    private const PUBLICATION_TYPE_ARTICLE_MONOGRAPH = 'monograph';
+    private const PUBLICATION_TYPE_ARTICLE_MONOGRAPHS = 'monographs';
+    private const PUBLICATION_TYPE_ARTICLE_NEWSPAPER = 'newspaper';
+    private const PUBLICATION_TYPE_ARTICLE_PAMPHLET = 'pamphlet';
+    private const PUBLICATION_TYPE_ARTICLE_PRIMARY_SOURCE = 'Primary source';
+    private const PUBLICATION_TYPE_ARTICLE_REFERENCE_BOOK = 'reference book';
+    private const PUBLICATION_TYPE_ARTICLE_THESIS = 'thesis';
+    private const PUBLICATION_TYPE_ARTICLE_UNPUBLISHED_MATERIALS = 'unpublished materials';
+
+
+    private static $publicationLanguageTypes = [
+        Language::DE => [
+            self::PUBLICATION_TYPE_ARTICLE_ARTICLE => 'Artikel',
+            self::PUBLICATION_TYPE_ARTICLE_ARTICLES => 'Artikel',
+            self::PUBLICATION_TYPE_ARTICLE_AUCTION_CATALOGS => 'Auktionskataloge',
+            self::PUBLICATION_TYPE_ARTICLE_AUCTION_CATALOGUE => 'Auktionskatalog',
+            self::PUBLICATION_TYPE_ARTICLE_AUCTION_CATALOGUES => 'Auktionskataloge',
+            self::PUBLICATION_TYPE_ARTICLE_CATALOGUE => 'Katalog',
+            self::PUBLICATION_TYPE_ARTICLE_CATALOGUES => 'Kataloge',
+            self::PUBLICATION_TYPE_ARTICLE_CATALOGUES__EXHIBITION => 'Ausstellungskataloge',
+            self::PUBLICATION_TYPE_ARTICLE_CONFERENCE_PROCEEDINGS => 'Tagungsband',
+            self::PUBLICATION_TYPE_ARTICLE_DISSERTATION => 'Dissertation',
+            self::PUBLICATION_TYPE_ARTICLE_DISSERTATIONS => 'Dissertationen',
+            self::PUBLICATION_TYPE_ARTICLE_EXHIBITION_CATALOGS => 'Ausstellungskataloge',
+            self::PUBLICATION_TYPE_ARTICLE_EXHIBITION_CATALOGUE => 'Ausstellungskatalog',
+            self::PUBLICATION_TYPE_ARTICLE_EXHIBITION_CATALOGUES => 'Ausstellungskataloge',
+            self::PUBLICATION_TYPE_ARTICLE_FESTSCHRIFT => 'Festschrift',
+            self::PUBLICATION_TYPE_ARTICLE_GREY_LITERATURE => 'Graue Literatur',
+            self::PUBLICATION_TYPE_ARTICLE_GUIDEBOOK => 'Reiseführer',
+            self::PUBLICATION_TYPE_ARTICLE_GUIDEBOOKS => 'Reiseführer',
+            self::PUBLICATION_TYPE_ARTICLE_LEXICON => 'Lexikon',
+            self::PUBLICATION_TYPE_ARTICLE_LEXICONS => 'Lexika',
+            self::PUBLICATION_TYPE_ARTICLE_MANUSCRIPT => 'Manuskript',
+            self::PUBLICATION_TYPE_ARTICLE_MANUSCRIPTS => 'Manuskripte',
+            self::PUBLICATION_TYPE_ARTICLE_MONOGRAPH => 'Monografie',
+            self::PUBLICATION_TYPE_ARTICLE_MONOGRAPHS => 'Monografien',
+            self::PUBLICATION_TYPE_ARTICLE_NEWSPAPER => 'Zeitung',
+            self::PUBLICATION_TYPE_ARTICLE_PAMPHLET => 'Pamphlet',
+            self::PUBLICATION_TYPE_ARTICLE_PRIMARY_SOURCE => 'Primärliteratur',
+            self::PUBLICATION_TYPE_ARTICLE_REFERENCE_BOOK => 'Referenzbuch',
+            self::PUBLICATION_TYPE_ARTICLE_THESIS => 'Thesis',
+            self::PUBLICATION_TYPE_ARTICLE_UNPUBLISHED_MATERIALS => 'Unveröffentlichtes Material',
+        ],
+        Language::EN => [
+            self::PUBLICATION_TYPE_ARTICLE_ARTICLE => 'Article',
+            self::PUBLICATION_TYPE_ARTICLE_ARTICLES => 'Articles',
+            self::PUBLICATION_TYPE_ARTICLE_AUCTION_CATALOGS => 'Auction catalogs',
+            self::PUBLICATION_TYPE_ARTICLE_AUCTION_CATALOGUE => 'Auction catalogue',
+            self::PUBLICATION_TYPE_ARTICLE_AUCTION_CATALOGUES => 'Auction catalogues',
+            self::PUBLICATION_TYPE_ARTICLE_CATALOGUE => 'Catalogue',
+            self::PUBLICATION_TYPE_ARTICLE_CATALOGUES => 'Catalogues',
+            self::PUBLICATION_TYPE_ARTICLE_CATALOGUES__EXHIBITION => 'Catalogues, exhibition',
+            self::PUBLICATION_TYPE_ARTICLE_CONFERENCE_PROCEEDINGS => 'Conference proceedings',
+            self::PUBLICATION_TYPE_ARTICLE_DISSERTATION => 'Dissertation',
+            self::PUBLICATION_TYPE_ARTICLE_DISSERTATIONS => 'Dissertations',
+            self::PUBLICATION_TYPE_ARTICLE_EXHIBITION_CATALOGS => 'Exhibition catalogs',
+            self::PUBLICATION_TYPE_ARTICLE_EXHIBITION_CATALOGUE => 'Exhibition catalogue',
+            self::PUBLICATION_TYPE_ARTICLE_EXHIBITION_CATALOGUES => 'Exhibition catalogues',
+            self::PUBLICATION_TYPE_ARTICLE_FESTSCHRIFT => 'Festschrift',
+            self::PUBLICATION_TYPE_ARTICLE_GREY_LITERATURE => 'Grey literature',
+            self::PUBLICATION_TYPE_ARTICLE_GUIDEBOOK => 'Guidebook',
+            self::PUBLICATION_TYPE_ARTICLE_GUIDEBOOKS => 'Guidebooks',
+            self::PUBLICATION_TYPE_ARTICLE_LEXICON => 'Lexicon',
+            self::PUBLICATION_TYPE_ARTICLE_LEXICONS => 'Lexicons',
+            self::PUBLICATION_TYPE_ARTICLE_MANUSCRIPT => 'Manuscript',
+            self::PUBLICATION_TYPE_ARTICLE_MANUSCRIPTS => 'Manuscripts',
+            self::PUBLICATION_TYPE_ARTICLE_MONOGRAPH => 'Monograph',
+            self::PUBLICATION_TYPE_ARTICLE_MONOGRAPHS => 'Monographs',
+            self::PUBLICATION_TYPE_ARTICLE_NEWSPAPER => 'Newspaper',
+            self::PUBLICATION_TYPE_ARTICLE_PAMPHLET => 'Pamphlet',
+            self::PUBLICATION_TYPE_ARTICLE_PRIMARY_SOURCE => 'Primary source',
+            self::PUBLICATION_TYPE_ARTICLE_REFERENCE_BOOK => 'Reference book',
+            self::PUBLICATION_TYPE_ARTICLE_THESIS => 'Thesis',
+            self::PUBLICATION_TYPE_ARTICLE_UNPUBLISHED_MATERIALS => 'Unpublished materials'
+        ],
+    ];
+
     private function __construct()
     {
     }
@@ -675,6 +774,11 @@ class LiteratureReferencesInflator implements IInflator
                 $typeStr = trim(strval($typeElement));
                 $publicationDe->setType($typeStr);
                 $publicationEn->setType($typeStr);
+
+                if (strlen($typeStr) > 0) {
+                    $publicationDe->setText(self::$publicationLanguageTypes[Language::DE][$typeStr]);
+                    $publicationEn->setText(self::$publicationLanguageTypes[Language::EN][$typeStr]);
+                }
             }
 
             /* Remarks */

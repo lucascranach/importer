@@ -8,6 +8,7 @@ namespace CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities;
 class Publication
 {
     public $type = '';
+    public $text = '';
     public $remarks = '';
 
 
@@ -25,6 +26,18 @@ class Publication
     public function getType(): string
     {
         return $this->type;
+    }
+
+
+    public function setText(string $text): void
+    {
+        $this->text = $text;
+    }
+
+
+    public function getText(): string
+    {
+        return $this->text;
     }
 
 
