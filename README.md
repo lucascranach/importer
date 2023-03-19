@@ -18,8 +18,8 @@ Um die Nutzung des Importers (aber auch die Entwicklung) zu vereinfachen, kommt 
 | lint:fix | Auflistung von Dateien mit Linter-Problemen und automatische Behebung, sofern möglich |
 | analyse | Analyse der  im `src`-Ordner zu findenden PHP-Dateien |
 | clear:cache | Lösche den Cache-Ordner |
-| **import** | Starten des Import-Vorgangs; alternativ  `php index.php` ausführen |
-| import:skip-deleted | Starten des Import-Vorgangs und überspringt als gelöscht markierten Artefakte; alternativ  `php index.php -x` ausführen |
+| **import** | Starten des Import-Vorgangs. Als gelöscht markierte Artefakte **werden übersprungen**; alternativ  `php index.php -x` ausführen |
+| import:keep-deleted | Starten des Import-Vorgangs. Als gelöscht markierte Artefakte **bleiben erhalten**; alternativ  `php index.php` ausführen |
 
 
 ## Getting started
