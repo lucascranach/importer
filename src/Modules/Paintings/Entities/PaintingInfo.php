@@ -4,11 +4,12 @@ namespace CranachDigitalArchive\Importer\Modules\Paintings\Entities;
 
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\ObjectReference;
+use CranachDigitalArchive\Importer\Modules\Paintings\Interfaces\IPaintingInfo;
 
 /**
  * Representing a single painting info
  */
-class PaintingInfo
+class PaintingInfo implements IPaintingInfo
 {
     public $metadata = null;
 

@@ -15,13 +15,13 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaLocationReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\CatalogWorkReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\StructuredDimension;
-use CranachDigitalArchive\Importer\Interfaces\Entities\ILocations;
+use CranachDigitalArchive\Importer\Modules\Paintings\Interfaces\IPainting;
 
 /**
  * Representing a single graphic and all its data
  * 	One instance containing only data for one language
  */
-class Painting extends AbstractImagesItem implements ILocations
+class Painting extends AbstractImagesItem implements IPainting
 {
     const ENTITY_TYPE = 'PAINTING';
 

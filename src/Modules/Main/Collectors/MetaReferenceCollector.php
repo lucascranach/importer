@@ -6,6 +6,7 @@ use Error;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 class MetaReferenceCollector extends Consumer
@@ -27,37 +28,19 @@ class MetaReferenceCollector extends Consumer
 
     public function handleItem($item): bool
     {
+        if ($item instanceof PaintingLanguageCollection) {
+            foreach ($item as $subItem) {
+                $this->collectAllKeywordsForItem($subItem);
+            }
+            return true;
+        }
+
         if (!($item instanceof Graphic) && !($item instanceof Painting)) {
             echo get_class($item);
             throw new Error('Pushed item is not of the expected class \'Graphic\' or \'Painting\'');
         }
 
-        // TODO: REMOVE ME FOR ALL KEYWORD - LINKS
-        // Skip on objects with some specific ids
-        $metadata = $item->getMetadata();
-        if (!is_null($metadata) && in_array($metadata->getId(), ['UEBERSCHREIBEN', 'UEBERSCHREIBEN01'], true)) {
-            return true;
-        }
-
-        // Skip objects without overall image category
-        if (($item instanceof Graphic)) {
-            $isVirtual = $item->getIsVirtual();
-
-            // For graphics we only need the keywords for virtual graphics
-            if (!$isVirtual) {
-                return true;
-            }
-
-            $images = (array)$item->getImages();
-            if (!isset($images['overall'])) {
-                return true;
-            }
-        }
-        // TODO: END
-
-        foreach ($item->getKeywords() as $keyword) {
-            $this->collection[$keyword->getTerm()] = $keyword;
-        }
+        $this->collectAllKeywordsForItem($item);
 
         return true;
     }
@@ -84,5 +67,36 @@ class MetaReferenceCollector extends Consumer
     public function getCollection(): array
     {
         return $this->collection;
+    }
+
+
+    private function collectAllKeywordsForItem($item): void
+    {
+        // TODO: REMOVE ME FOR ALL KEYWORD - LINKS
+        // Skip on objects with some specific ids
+        $metadata = $item->getMetadata();
+        if (!is_null($metadata) && in_array($metadata->getId(), ['UEBERSCHREIBEN', 'UEBERSCHREIBEN01'], true)) {
+            return;
+        }
+
+        // Skip objects without overall image category
+        if (($item instanceof Graphic)) {
+            $isVirtual = $item->getIsVirtual();
+
+            // For graphics we only need the keywords for virtual graphics
+            if (!$isVirtual) {
+                return;
+            }
+
+            $images = (array)$item->getImages();
+            if (!isset($images['overall'])) {
+                return;
+            }
+        }
+        // TODO: END
+
+        foreach ($item->getKeywords() as $keyword) {
+            $this->collection[$keyword->getTerm()] = $keyword;
+        }
     }
 }

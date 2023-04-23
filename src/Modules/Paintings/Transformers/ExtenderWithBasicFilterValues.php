@@ -11,6 +11,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\FilterInfoItem;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search\SearchablePaintingLanguageCollection;
 
 class ExtenderWithBasicFilterValues extends Hybrid
 {
@@ -51,11 +52,11 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof SearchablePainting)) {
-            throw new Error('Pushed item is not of expected class \'SearchablePainting\'');
+        if (!($item instanceof SearchablePaintingLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'SearchablePaintingLanguageCollection\'');
         }
 
-        $this->extendWithBasicFilterValues($item);
+        $this->extendCollectionWithBasicFilterValues($item);
 
         $this->next($item);
         return true;
@@ -76,12 +77,14 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private function extendWithBasicFilterValues(SearchablePainting $item): void
+    private function extendCollectionWithBasicFilterValues(SearchablePaintingLanguageCollection $collection): void
     {
-        $this->extendBasicFiltersForAttribution($item);
-        $this->extendBasicFiltersForCollectionAndRepository($item);
-        $this->extendBasicFiltersForExaminationAnalysis($item);
-        $this->extendBasicFiltersForAssocation($item);
+        foreach ($collection as $item) {
+            $this->extendBasicFiltersForAttribution($item);
+            $this->extendBasicFiltersForCollectionAndRepository($item);
+            $this->extendBasicFiltersForExaminationAnalysis($item);
+            $this->extendBasicFiltersForAssocation($item);
+        }
     }
 
 

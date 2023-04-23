@@ -3,8 +3,8 @@
 namespace CranachDigitalArchive\Importer\Modules\Paintings\Transformers;
 
 use Error;
-use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
-use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search\SearchablePainting;
+use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
+use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search\SearchablePaintingLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class MapToSearchablePainting extends Hybrid
@@ -24,8 +24,8 @@ class MapToSearchablePainting extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Painting)) {
-            throw new Error('Pushed item is not of expected class \'Painting\'');
+        if (!($item instanceof PaintingLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'PaintingLanguageCollection\'');
         }
 
         $this->next($this->mapToSearchablePainting($item));
@@ -33,14 +33,18 @@ class MapToSearchablePainting extends Hybrid
     }
 
 
-    private function mapToSearchablePainting(Painting $painting): SearchablePainting
+    private function mapToSearchablePainting(PaintingLanguageCollection $paintingCollection): SearchablePaintingLanguageCollection
     {
-        $searchablePainting = new SearchablePainting();
+        $searchablePaintingCollection = SearchablePaintingLanguageCollection::create();
 
-        foreach (get_object_vars($painting) as $key => $value) {
-            $searchablePainting->$key = $value;
+        foreach ($paintingCollection as $langCode => $painting) {
+            $searchablePainting = $searchablePaintingCollection->get($langCode);
+
+            foreach (get_object_vars($painting) as $key => $value) {
+                $searchablePainting->$key = $value;
+            }
         }
 
-        return $searchablePainting;
+        return $searchablePaintingCollection;
     }
 }

@@ -6,12 +6,12 @@ use Error;
 use DOMDocument;
 use XMLReader;
 use SimpleXMLElement;
-use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Loaders\IMultipleFileLoader;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Modules\Paintings\Inflators\XML\PaintingInflator;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
+use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
 
 /**
  * Paintings loader on a xml file base
@@ -121,28 +121,24 @@ class PaintingsLoader extends Producer implements IMultipleFileLoader
 
     private function transformCurrentItem(): void
     {
-        $metadata = new Metadata;
-        $metadata->setEntityType(Painting::ENTITY_TYPE);
-
         /* Preparing the painting objects for the different languages */
-        $paintingDe = new Painting;
-        $metadata->setLangCode(Language::DE);
-        $paintingDe->setMetadata($metadata);
+        $paintingsCollection = PaintingLanguageCollection::create();
 
-        $metadata = clone $metadata;
+        foreach ($paintingsCollection as $langCode => $painting) {
+            $metadata = new Metadata;
+            $metadata->setEntityType(Painting::ENTITY_TYPE);
+            $metadata->setLangCode($langCode);
 
-        $paintingEn = new Painting;
-        $metadata->setLangCode(Language::EN);
-        $paintingEn->setMetadata($metadata);
+            $painting->setMetadata($metadata);
+        }
 
         $xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 
         /* Moved the inflation action(s) into its own class */
-        PaintingInflator::inflate($xmlNode, $paintingDe, $paintingEn);
+        PaintingInflator::inflate($xmlNode, $paintingsCollection);
 
         /* Passing the graphic objects to the next nodes in the pipeline */
-        $this->next($paintingDe);
-        $this->next($paintingEn);
+        $this->next($paintingsCollection);
     }
 
 

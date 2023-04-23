@@ -6,6 +6,7 @@ use Error;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
 use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
+use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class ExtenderWithIds extends Hybrid
@@ -39,21 +40,23 @@ class ExtenderWithIds extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Painting)) {
-            throw new Error('Pushed item is not of expected class \'Painting\'');
+        if (!($item instanceof PaintingLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'PaintingLanguageCollection\'');
         }
 
-        $this->extendWithBasicFilterValues($item);
+        $this->extendCollectionWithBasicFilterValues($item);
 
         $this->next($item);
         return true;
     }
 
 
-    private function extendWithBasicFilterValues(Painting $item): void
+    private function extendCollectionWithBasicFilterValues(PaintingLanguageCollection $collection): void
     {
-        $this->extendWithAttributionIds($item);
-        $this->extendWithCollectionAndRepositoryIds($item);
+        foreach ($collection as $item) {
+            $this->extendWithAttributionIds($item);
+            $this->extendWithCollectionAndRepositoryIds($item);
+        }
     }
 
 

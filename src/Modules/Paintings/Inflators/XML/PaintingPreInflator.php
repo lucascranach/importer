@@ -6,6 +6,7 @@ use SimpleXMLElement;
 use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingInfo;
+use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingInfoLanguageCollection;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\ObjectReference;
 
 /**
@@ -28,23 +29,21 @@ class PaintingPreInflator implements IInflator
 
     public static function inflate(
         SimpleXMLElement $node,
-        PaintingInfo $paintingInfoDe,
-        PaintingInfo $paintingInfoEn
+        PaintingInfoLanguageCollection $paintingInfoCollection,
     ): void {
         $subNode = $node->{'GroupHeader'};
 
         self::registerXPathNamespace($subNode);
 
-        self::inflateInventoryNumber($subNode, $paintingInfoDe, $paintingInfoEn);
-        self::inflateReferences($subNode, $paintingInfoDe, $paintingInfoEn);
+        self::inflateInventoryNumber($subNode, $paintingInfoCollection);
+        self::inflateReferences($subNode, $paintingInfoCollection);
     }
 
 
     /* Inventory number */
     private static function inflateInventoryNumber(
         SimpleXMLElement $node,
-        PaintingInfo $paintingDe,
-        PaintingInfo $paintingEn
+        PaintingInfoLanguageCollection $paintingInfoCollection,
     ): void {
         $inventoryNumberSectionElement = $node->{'Section'}[6];
 
@@ -60,9 +59,8 @@ class PaintingPreInflator implements IInflator
                 $inventoryNumberStr,
             );
 
-            /* Using single german value for both language objects */
-            $paintingDe->setInventoryNumber($cleanInventoryNumberStr);
-            $paintingEn->setInventoryNumber($cleanInventoryNumberStr);
+            /* Using single german value for all items in the collection */
+            $paintingInfoCollection->setInventoryNumber($cleanInventoryNumberStr);
         }
     }
 
@@ -70,8 +68,7 @@ class PaintingPreInflator implements IInflator
     /* References */
     private static function inflateReferences(
         SimpleXMLElement $node,
-        PaintingInfo $paintingInfoDe,
-        PaintingInfo $paintingInfoEn
+        PaintingInfoLanguageCollection $paintingInfoCollection,
     ): void {
         $referenceDetailsElements = $node->{'Section'}[31]->{'Subreport'}->{'Details'};
 
@@ -85,8 +82,8 @@ class PaintingPreInflator implements IInflator
             $referenceDe = new ObjectReference;
             $referenceEn = new ObjectReference;
 
-            $paintingInfoDe->addReference($referenceDe);
-            $paintingInfoEn->addReference($referenceEn);
+            $paintingInfoCollection->get(Language::DE)->addReference($referenceDe);
+            $paintingInfoCollection->get(Language::EN)->addReference($referenceEn);
 
             /* Text */
             $textElement = self::findElementByXPath(
@@ -127,7 +124,12 @@ class PaintingPreInflator implements IInflator
             if ($remarksElement) {
                 $remarksStr = trim(strval($remarksElement));
 
-                self::inflateReferenceRemarks($paintingInfoDe->getInventoryNumber(), $remarksStr, $referenceDe, $referenceEn);
+                self::inflateReferenceRemarks(
+                    $paintingInfoCollection->get(Language::DE)->getInventoryNumber(),
+                    $remarksStr,
+                    $referenceDe,
+                    $referenceEn,
+                );
             }
         }
     }

@@ -2,13 +2,13 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Main\Entities;
 
-use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
+use CranachDigitalArchive\Importer\Interfaces\Entities\IImagesItem;
 use stdClass;
 
 /**
  * Representing an item with multiple images
  */
-abstract class AbstractImagesItem implements IBaseItem
+abstract class AbstractImagesItem implements IImagesItem
 {
     public $images;
 

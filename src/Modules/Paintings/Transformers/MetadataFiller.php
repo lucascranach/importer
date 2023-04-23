@@ -2,8 +2,9 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Paintings\Transformers;
 
-use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
+use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 use Error;
 
@@ -21,15 +22,24 @@ class MetadataFiller extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Painting)) {
-            throw new Error('Pushed item is not of expected class \'Painting\'');
+        if (!($item instanceof PaintingLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'PaintingLanguageCollection\'');
         }
 
+        foreach ($item as $subItem) {
+            $this->extendMetadata($subItem);
+        }
+
+        $this->next($item);
+        return true;
+    }
+
+    private function extendMetadata(Painting $item): void
+    {
         $metadata = $item->getMetadata();
 
         if (is_null($metadata)) {
-            $this->next($item);
-            return true;
+            return;
         }
 
         $titles = $item->getTitles();
@@ -70,11 +80,7 @@ class MetadataFiller extends Hybrid
         $metadata->addAdditionalInfo($item->getDimensions());
         $metadata->setClassification($classificationName);
         $metadata->setImgSrc($imageSrc);
-
-        $this->next($item);
-        return true;
     }
-
 
     /**
      * @return void

@@ -5,10 +5,10 @@ namespace CranachDigitalArchive\Importer\Modules\Paintings\Transformers;
 use Error;
 use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\FilterInfoItem;
-use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search\SearchablePainting;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Entities\ThesaurusTerm;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search\SearchablePaintingLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class ExtenderWithThesaurus extends Hybrid
@@ -44,11 +44,11 @@ class ExtenderWithThesaurus extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof SearchablePainting)) {
-            throw new Error('Pushed item is not of expected class \'SearchablePainting\'');
+        if (!($item instanceof SearchablePaintingLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'SearchablePaintingLanguageCollection\'');
         }
 
-        $this->extendWithThesaurusFilterInfos($item);
+        $this->extendCollectionWithThesaurusFilterInfos($item);
 
         $this->next($item);
         return true;
@@ -65,23 +65,25 @@ class ExtenderWithThesaurus extends Hybrid
     }
 
 
-    private function extendWithThesaurusFilterInfos(SearchablePainting $painting): void
+    private function extendCollectionWithThesaurusFilterInfos(SearchablePaintingLanguageCollection $collection): void
     {
-        foreach ($painting->getKeywords() as $keyword) {
-            if ($keyword->getType() !== $this->keywordType) {
-                continue;
-            }
+        foreach ($collection as $painting) {
+            foreach ($painting->getKeywords() as $keyword) {
+                if ($keyword->getType() !== $this->keywordType) {
+                    continue;
+                }
 
-            $res = $this->findKeywordIdentifierInThesaurus($keyword->getTerm());
+                $res = $this->findKeywordIdentifierInThesaurus($keyword->getTerm());
 
-            $metadata = $painting->getMetadata();
-            $langCode = !is_null($metadata) ? $metadata->getLangCode() : '';
+                $metadata = $painting->getMetadata();
+                $langCode = !is_null($metadata) ? $metadata->getLangCode() : '';
 
-            $mappedItems = $this->mapThesaurusTermChainToFilterInfoChain($res, $langCode);
-            $firstItem = array_shift($mappedItems);
+                $mappedItems = $this->mapThesaurusTermChainToFilterInfoChain($res, $langCode);
+                $firstItem = array_shift($mappedItems);
 
-            if (!is_null($firstItem)) {
-                $painting->addFilterInfoCategoryItems($firstItem->getId(), $mappedItems);
+                if (!is_null($firstItem)) {
+                    $painting->addFilterInfoCategoryItems($firstItem->getId(), $mappedItems);
+                }
             }
         }
     }

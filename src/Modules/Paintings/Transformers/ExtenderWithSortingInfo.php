@@ -4,6 +4,7 @@ namespace CranachDigitalArchive\Importer\Modules\Paintings\Transformers;
 
 use Error;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
+use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class ExtenderWithSortingInfo extends Hybrid
@@ -21,11 +22,13 @@ class ExtenderWithSortingInfo extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Painting)) {
-            throw new Error('Pushed item is not of expected class \'Painting\'');
+        if (!($item instanceof PaintingLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'PaintingLanguageCollection\'');
         }
 
-        $item->setSearchSortingNumber($this->extractSortingInfo($item));
+        foreach ($item as $subItem) {
+            $subItem->setSearchSortingNumber($this->extractSortingInfo($subItem));
+        }
 
         $this->next($item);
         return true;

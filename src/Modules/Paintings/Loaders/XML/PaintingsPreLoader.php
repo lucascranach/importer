@@ -6,10 +6,9 @@ use Error;
 use DOMDocument;
 use XMLReader;
 use SimpleXMLElement;
-use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Loaders\IMultipleFileLoader;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
-use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingInfo;
+use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingInfoLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Modules\Paintings\Inflators\XML\PaintingPreInflator;
 
@@ -121,26 +120,22 @@ class PaintingsPreLoader extends Producer implements IMultipleFileLoader
 
     private function transformCurrentItem(): void
     {
-        $metadataDe = new Metadata;
+        $paintingInfoCollection = PaintingInfoLanguageCollection::create();
 
-        $paintingInfoDe = new PaintingInfo;
-        $metadataDe->setLangCode(Language::DE);
-        $paintingInfoDe->setMetadata($metadataDe);
+        foreach ($paintingInfoCollection as $langCode => $paintingInfo) {
+            $metadata = new Metadata;
+            $metadata->setLangCode($langCode);
 
-        $metadataEn = new Metadata;
-
-        $paintingInfoEn = new PaintingInfo;
-        $metadataEn->setLangCode(Language::EN);
-        $paintingInfoEn->setMetadata($metadataEn);
+            $paintingInfo->setMetadata($metadata);
+        }
 
         $xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 
         /* Moved the inflation action(s) into its own class */
-        PaintingPreInflator::inflate($xmlNode, $paintingInfoDe, $paintingInfoEn);
+        PaintingPreInflator::inflate($xmlNode, $paintingInfoCollection);
 
-        /* Passing the painting info objects to the next node in the pipeline */
-        $this->next($paintingInfoDe);
-        $this->next($paintingInfoEn);
+        /* Passing the painting collection object to the next node in the pipeline */
+        $this->next($paintingInfoCollection);
     }
 
 

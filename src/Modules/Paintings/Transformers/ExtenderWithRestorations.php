@@ -4,8 +4,8 @@
 namespace CranachDigitalArchive\Importer\Modules\Paintings\Transformers;
 
 use Error;
-use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
 use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Restoration;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
@@ -31,20 +31,22 @@ class ExtenderWithRestorations extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Painting)) {
-            throw new Error('Pushed item is not of expected class \'Painting\'');
+        if (!($item instanceof PaintingLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'PaintingLanguageCollection\'');
         }
 
-        $metadata = $item->getMetadata();
-        $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
+        foreach ($item as $subItem) {
+            $metadata = $subItem->getMetadata();
+            $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
 
-        $restoration = $this->restorationMemoryExporter->findByFields([
-            'inventoryNumber' => $item->getInventoryNumber(),
-            'langCode' => $langCode,
-        ]);
+            $restoration = $this->restorationMemoryExporter->findByFields([
+                'inventoryNumber' => $subItem->getInventoryNumber(),
+                'langCode' => $langCode,
+            ]);
 
-        if (!is_null($restoration) && $restoration instanceof Restoration) {
-            $item->setRestorationSurveys($restoration->getSurveys());
+            if (!is_null($restoration) && $restoration instanceof Restoration) {
+                $subItem->setRestorationSurveys($restoration->getSurveys());
+            }
         }
 
         $this->next($item);

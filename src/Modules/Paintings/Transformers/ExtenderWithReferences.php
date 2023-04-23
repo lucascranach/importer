@@ -2,9 +2,9 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Paintings\Transformers;
 
-use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Modules\Paintings\Collectors\ReferencesCollector;
+use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 use Error;
 
@@ -26,25 +26,27 @@ class ExtenderWithReferences extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Painting)) {
-            throw new Error('Pushed item is not of expected class \'Painting\'');
+        if (!($item instanceof PaintingLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'PaintingLanguageCollection\'');
         }
 
-        $metadata = $item->getMetadata();
+        foreach ($item as $subItem) {
+            $metadata = $subItem->getMetadata();
 
-        if (is_null($metadata)) {
-            $this->next($item);
-            return true;
-        }
+            if (is_null($metadata)) {
+                $this->next($subItem);
+                return true;
+            }
 
-        $foundReferences = $this->referenceCollector->getItem(
-            $metadata->getLangCode(),
-            $item->getInventoryNumber()
-        );
+            $foundReferences = $this->referenceCollector->getItem(
+                $metadata->getLangCode(),
+                $subItem->getInventoryNumber()
+            );
 
 
-        if (!is_null($foundReferences) && count($foundReferences) > 0) {
-            $item->setReferences($foundReferences);
+            if (!is_null($foundReferences) && count($foundReferences) > 0) {
+                $subItem->setReferences($foundReferences);
+            }
         }
 
         $this->next($item);

@@ -25,7 +25,9 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithLoc
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRepositories as GraphicsExtenderWithRepositories;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MetadataFiller as GraphicsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
+use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageCollectionExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteDocumentExistenceChecker;
+use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteDocumentCollectionExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Main\Collectors\MetaReferenceCollector;
 use CranachDigitalArchive\Importer\Modules\Main\Gates\SkipSoftDeletedArtefactGate;
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
@@ -69,6 +71,7 @@ use CranachDigitalArchive\Importer\Modules\Filters\Transformers\AlphabeticSorter
 use CranachDigitalArchive\Importer\Modules\Filters\Transformers\NumericalSorter;
 use CranachDigitalArchive\Importer\Modules\Locations\Sources\LocationsSource;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\LocationsGeoPositionExtender;
+use CranachDigitalArchive\Importer\Modules\Main\Transformers\LocationsGeoPositionCollectionExtender;
 
 $date = '20230315';
 $inputDirectory = './input/' . $date;
@@ -226,13 +229,13 @@ $paintingsPreLoader->run();
 
 
 /* Paintings */
-$paintingsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::withCacheAt(
+$paintingsRemoteDocumentExistenceChecker = RemoteDocumentCollectionExistenceChecker::withCacheAt(
     'remotePaintingsDocumentExistenceChecker',
     $cacheDir,
     $imagesAPIKey,
-    $remoteDocumentsCachesToRefresh['paintings']
+    $remoteDocumentsCachesToRefresh['paintings'],
 );
-$paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
+$paintingsRemoteImageExistenceChecker = RemoteImageCollectionExistenceChecker::withCacheAt(
     'remotePaintingsImageExistenceChecker',
     $cacheDir,
     $imagesAPIKey,
@@ -251,7 +254,7 @@ $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt($paintingsO
 $paintingsElasticsearchBulkDestination = PaintingsElasticsearchLangExporter::withDestinationAt(
     $paintingsElasticsearchOutputFilepath
 );
-$paintingsLocationExtender = LocationsGeoPositionExtender::new($locationsSource);
+$paintingsLocationExtender = LocationsGeoPositionCollectionExtender::new($locationsSource);
 
 $paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths);
 

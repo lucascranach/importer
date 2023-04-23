@@ -6,7 +6,6 @@ use Error;
 use SimpleXMLElement;
 use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
-use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Classification;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\PersonName;
@@ -21,6 +20,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaLocationReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\CatalogWorkReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\StructuredDimension;
+use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
 
 /**
  * Paintingss inflator used to inflate german and english painting instances
@@ -85,50 +85,48 @@ class PaintingInflator implements IInflator
 
     public static function inflate(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $subNode = $node->{'GroupHeader'};
 
         self::registerXPathNamespace($subNode);
 
-        self::inflateInventoryNumber($subNode, $paintingDe, $paintingEn);
-        self::inflateInvolvedPersons($subNode, $paintingDe, $paintingEn);
-        self::inflatePersonNames($subNode, $paintingDe, $paintingEn);
-        self::inflateTitles($subNode, $paintingDe, $paintingEn);
-        self::inflateClassification($subNode, $paintingDe, $paintingEn);
-        self::inflateObjectName($subNode, $paintingDe, $paintingEn);
-        self::inflateObjectMeta($subNode, $paintingDe, $paintingEn);
-        self::inflateDimensions($subNode, $paintingDe, $paintingEn);
-        self::inflateDating($subNode, $paintingDe, $paintingEn);
-        self::inflateDescription($subNode, $paintingDe, $paintingEn);
-        self::inflateProvenance($subNode, $paintingDe, $paintingEn);
-        self::inflateMedium($subNode, $paintingDe, $paintingEn);
-        self::inflateSignature($subNode, $paintingDe, $paintingEn);
-        self::inflateInscription($subNode, $paintingDe, $paintingEn);
-        self::inflateMarkings($subNode, $paintingDe, $paintingEn);
-        self::inflateRelatedWorks($subNode, $paintingDe, $paintingEn);
-        self::inflateExhibitionHistory($subNode, $paintingDe, $paintingEn);
-        self::inflateBibliography($subNode, $paintingDe, $paintingEn);
-        self::inflateReferences($subNode, $paintingDe, $paintingEn);
-        self::inflateSecondaryReferences($subNode, $paintingDe, $paintingEn);
-        self::inflateAdditionalTextInformations($subNode, $paintingDe, $paintingEn);
-        self::inflatePublications($subNode, $paintingDe, $paintingEn);
-        self::inflateKeywords($subNode, $paintingDe, $paintingEn);
-        self::inflateLocations($subNode, $paintingDe, $paintingEn);
-        self::inflateRepositoryAndOwner($subNode, $paintingDe, $paintingEn);
-        self::inflateSortingNumber($subNode, $paintingDe, $paintingEn);
-        self::inflateCatalogWorkReference($subNode, $paintingDe, $paintingEn);
-        self::inflateStructuredDimension($subNode, $paintingDe, $paintingEn);
-        self::inflateIsBestOf($subNode, $paintingDe, $paintingEn);
+        self::inflateInventoryNumber($subNode, $paintingCollection);
+        self::inflateInvolvedPersons($subNode, $paintingCollection);
+        self::inflatePersonNames($subNode, $paintingCollection);
+        self::inflateTitles($subNode, $paintingCollection);
+        self::inflateClassification($subNode, $paintingCollection);
+        self::inflateObjectName($subNode, $paintingCollection);
+        self::inflateObjectMeta($subNode, $paintingCollection);
+        self::inflateDimensions($subNode, $paintingCollection);
+        self::inflateDating($subNode, $paintingCollection);
+        self::inflateDescription($subNode, $paintingCollection);
+        self::inflateProvenance($subNode, $paintingCollection);
+        self::inflateMedium($subNode, $paintingCollection);
+        self::inflateSignature($subNode, $paintingCollection);
+        self::inflateInscription($subNode, $paintingCollection);
+        self::inflateMarkings($subNode, $paintingCollection);
+        self::inflateRelatedWorks($subNode, $paintingCollection);
+        self::inflateExhibitionHistory($subNode, $paintingCollection);
+        self::inflateBibliography($subNode, $paintingCollection);
+        self::inflateReferences($subNode, $paintingCollection);
+        self::inflateSecondaryReferences($subNode, $paintingCollection);
+        self::inflateAdditionalTextInformations($subNode, $paintingCollection);
+        self::inflatePublications($subNode, $paintingCollection);
+        self::inflateKeywords($subNode, $paintingCollection);
+        self::inflateLocations($subNode, $paintingCollection);
+        self::inflateRepositoryAndOwner($subNode, $paintingCollection);
+        self::inflateSortingNumber($subNode, $paintingCollection);
+        self::inflateCatalogWorkReference($subNode, $paintingCollection);
+        self::inflateStructuredDimension($subNode, $paintingCollection);
+        self::inflateIsBestOf($subNode, $paintingCollection);
     }
 
 
     /* Involved persons */
     private static function inflateInvolvedPersons(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $details = $node->{'Section'}[1]->{'Subreport'}->{'Details'};
 
@@ -138,8 +136,8 @@ class PaintingInflator implements IInflator
                 new Person, // en
             ];
 
-            $paintingDe->addPerson($personsArr[0]);
-            $paintingEn->addPerson($personsArr[1]);
+            $paintingCollection->get(Language::DE)->addPerson($personsArr[0]);
+            $paintingCollection->get(Language::EN)->addPerson($personsArr[1]);
 
             for ($j = 0; $j < count($personsArr); $j += 1) {
                 $currDetails = $details[$i + $j];
@@ -279,16 +277,14 @@ class PaintingInflator implements IInflator
     /* Person names */
     private static function inflatePersonNames(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $groups = $node->{'Section'}[2]->{'Subreport'}->{'Group'};
 
         foreach ($groups as $group) {
             $personName = new PersonName;
 
-            $paintingDe->addPersonName($personName);
-            $paintingEn->addPersonName($personName);
+            $paintingCollection->addPersonName($personName);
 
             /* constituent id */
             $constituentIdElement = self::findElementByXPath(
@@ -340,8 +336,7 @@ class PaintingInflator implements IInflator
     /* Titles */
     private static function inflateTitles(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $titleDetailElements = $node->{'Section'}[3]->{'Subreport'}->{'Details'};
 
@@ -363,21 +358,19 @@ class PaintingInflator implements IInflator
                 $langStr = trim(strval($langElement));
 
                 if (self::$titlesLanguageTypes[Language::DE] === $langStr) {
-                    $paintingDe->addTitle($title);
+                    $paintingCollection->get(Language::DE)->addTitle($title);
                 } elseif (self::$titlesLanguageTypes[Language::EN] === $langStr) {
-                    $paintingEn->addTitle($title);
+                    $paintingCollection->get(Language::EN)->addTitle($title);
                 } elseif (self::$titlesLanguageTypes['not_assigned'] === $langStr) {
-                    echo '  Unassigned title lang for object ' . $paintingDe->getInventoryNumber() . "\n";
+                    echo '  Unassigned title lang for object ' . $paintingCollection->get(Language::DE)->getInventoryNumber() . "\n";
                 } else {
-                    echo '  Unknown title lang: ' . $langStr . ' for object \'' . $paintingDe->getInventoryNumber() . "'\n";
-                    /* Bind title to both languages to prevent loss */
-                    $paintingDe->addTitle($title);
-                    $paintingEn->addTitle($title);
+                    echo '  Unknown title lang: ' . $langStr . ' for object \'' . $paintingCollection->get(Language::DE)->getInventoryNumber() . "'\n";
+                    /* Bind the title to all paintings in the collection to prevent loss */
+                    $paintingCollection->addTitle($title);
                 }
             } else {
-                /* Bind title to both languages to prevent loss */
-                $paintingDe->addTitle($title);
-                $paintingEn->addTitle($title);
+                /* Bind the title to all paintings in the collection to prevent loss */
+                $paintingCollection->addTitle($title);
             }
 
             /* title type */
@@ -416,16 +409,15 @@ class PaintingInflator implements IInflator
     /* Classification */
     private static function inflateClassification(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $classificationSectionElement = $node->{'Section'}[4];
 
         $classificationDe = new Classification;
         $classificationEn = new Classification;
 
-        $paintingDe->setClassification($classificationDe);
-        $paintingEn->setClassification($classificationEn);
+        $paintingCollection->get(Language::DE)->setClassification($classificationDe);
+        $paintingCollection->get(Language::EN)->setClassification($classificationEn);
 
         /* classification */
         $classificationElement = self::findElementByXPath(
@@ -445,8 +437,7 @@ class PaintingInflator implements IInflator
     /* Object name */
     private static function inflateObjectName(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $objectNameSectionElement = $node->{'Section'}[5];
 
@@ -457,9 +448,8 @@ class PaintingInflator implements IInflator
         if ($objectNameElement) {
             $objectNameStr = trim(strval($objectNameElement));
 
-            /* Using single german value for both language objects */
-            $paintingDe->setObjectName($objectNameStr);
-            $paintingEn->setObjectName($objectNameStr);
+            /* Using single german value for all language paintings in the collection */
+            $paintingCollection->setObjectName($objectNameStr);
         }
     }
 
@@ -467,8 +457,7 @@ class PaintingInflator implements IInflator
     /* Inventory number */
     private static function inflateInventoryNumber(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $inventoryNumberSectionElement = $node->{'Section'}[6];
 
@@ -484,9 +473,8 @@ class PaintingInflator implements IInflator
                 $inventoryNumberStr,
             );
 
-            /* Using single german value for both language objects */
-            $paintingDe->setInventoryNumber($cleanInventoryNumberStr);
-            $paintingEn->setInventoryNumber($cleanInventoryNumberStr);
+            /* Using single german value for all language paintings in the collection */
+            $paintingCollection->setInventoryNumber($cleanInventoryNumberStr);
         }
     }
 
@@ -494,8 +482,7 @@ class PaintingInflator implements IInflator
     /* Object id & virtual (meta) */
     private static function inflateObjectMeta(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $metaSectionElement = $node->{'Section'}[7];
 
@@ -507,9 +494,8 @@ class PaintingInflator implements IInflator
         if ($objectIdElement) {
             $objectIdStr = intval(trim(strval($objectIdElement)));
 
-            /* Using single german value for both language objects */
-            $paintingDe->setObjectId($objectIdStr);
-            $paintingEn->setObjectId($objectIdStr);
+            /* Using single german value for all language paintings in the collection */
+            $paintingCollection->setObjectId($objectIdStr);
         }
     }
 
@@ -517,8 +503,7 @@ class PaintingInflator implements IInflator
     /* Dimensions */
     private static function inflateDimensions(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $metaSectionElement = $node->{'Section'}[8];
 
@@ -533,11 +518,11 @@ class PaintingInflator implements IInflator
             $splitDimensionsStr = self::splitLanguageString($dimensionsStr);
 
             if (isset($splitDimensionsStr[0])) {
-                $paintingDe->setDimensions($splitDimensionsStr[0]);
+                $paintingCollection->get(Language::DE)->setDimensions($splitDimensionsStr[0]);
             }
 
             if (isset($splitDimensionsStr[1])) {
-                $paintingEn->setDimensions($splitDimensionsStr[1]);
+                $paintingCollection->get(Language::EN)->setDimensions($splitDimensionsStr[1]);
             }
         }
     }
@@ -546,15 +531,14 @@ class PaintingInflator implements IInflator
     /* Dating */
     private static function inflateDating(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $datingDe = new Dating;
         $datingEn = new Dating;
 
         /* Using single german value for both language objects */
-        $paintingDe->setDating($datingDe);
-        $paintingEn->setDating($datingEn);
+        $paintingCollection->get(Language::DE)->setDating($datingDe);
+        $paintingCollection->get(Language::EN)->setDating($datingEn);
 
         /* Dated (string) */
         $datedSectionElement = $node->{'Section'}[9];
@@ -723,8 +707,7 @@ class PaintingInflator implements IInflator
     /* Description */
     private static function inflateDescription(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         /* de */
         $descriptionDeSectionElement = $node->{'Section'}[14];
@@ -734,7 +717,7 @@ class PaintingInflator implements IInflator
         );
         if ($descriptionElement) {
             $descriptionStr = trim(strval($descriptionElement));
-            $paintingDe->setDescription($descriptionStr);
+            $paintingCollection->get(Language::DE)->setDescription($descriptionStr);
         }
 
         /* en */
@@ -745,7 +728,7 @@ class PaintingInflator implements IInflator
         );
         if ($descriptionElement) {
             $descriptionStr = trim(strval($descriptionElement));
-            $paintingEn->setDescription($descriptionStr);
+            $paintingCollection->get(Language::EN)->setDescription($descriptionStr);
         }
     }
 
@@ -753,8 +736,7 @@ class PaintingInflator implements IInflator
     /* Provenance */
     private static function inflateProvenance(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         /* de */
         $provenanceDeSectionElement = $node->{'Section'}[16];
@@ -764,7 +746,7 @@ class PaintingInflator implements IInflator
         );
         if ($provenanceElement) {
             $provenanceStr = trim(strval($provenanceElement));
-            $paintingDe->setProvenance($provenanceStr);
+            $paintingCollection->get(Language::DE)->setProvenance($provenanceStr);
         }
 
         /* en */
@@ -775,7 +757,7 @@ class PaintingInflator implements IInflator
         );
         if ($provenanceElement) {
             $provenanceStr = trim(strval($provenanceElement));
-            $paintingEn->setProvenance($provenanceStr);
+            $paintingCollection->get(Language::EN)->setProvenance($provenanceStr);
         }
     }
 
@@ -783,8 +765,7 @@ class PaintingInflator implements IInflator
     /* Medium */
     private static function inflateMedium(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         /* de */
         $mediumDeSectionElement = $node->{'Section'}[18];
@@ -794,7 +775,7 @@ class PaintingInflator implements IInflator
         );
         if ($mediumElement) {
             $mediumStr = trim(strval($mediumElement));
-            $paintingDe->setMedium($mediumStr);
+            $paintingCollection->get(Language::DE)->setMedium($mediumStr);
         }
 
         /* en */
@@ -805,7 +786,7 @@ class PaintingInflator implements IInflator
         );
         if ($mediumElement) {
             $mediumStr = trim(strval($mediumElement));
-            $paintingEn->setMedium($mediumStr);
+            $paintingCollection->get(Language::EN)->setMedium($mediumStr);
         }
     }
 
@@ -813,8 +794,7 @@ class PaintingInflator implements IInflator
     /* Signature */
     private static function inflateSignature(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         /* de */
         $signatureDeSectionElement = $node->{'Section'}[20];
@@ -824,7 +804,7 @@ class PaintingInflator implements IInflator
         );
         if ($signatureElement) {
             $signatureStr = trim(strval($signatureElement));
-            $paintingDe->setSignature($signatureStr);
+            $paintingCollection->get(Language::DE)->setSignature($signatureStr);
         }
 
         /* en */
@@ -835,7 +815,7 @@ class PaintingInflator implements IInflator
         );
         if ($signatureElement) {
             $signatureStr = trim(strval($signatureElement));
-            $paintingEn->setSignature($signatureStr);
+            $paintingCollection->get(Language::EN)->setSignature($signatureStr);
         }
     }
 
@@ -843,8 +823,7 @@ class PaintingInflator implements IInflator
     /* Inscription */
     private static function inflateInscription(
         SimpleXMLElement &$node,
-        Painting &$paintingDe,
-        Painting &$paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         /* de */
         $inscriptionDeSectionElement = $node->{'Section'}[22];
@@ -854,7 +833,7 @@ class PaintingInflator implements IInflator
         );
         if ($inscriptionElement) {
             $inscriptionStr = trim(strval($inscriptionElement));
-            $paintingDe->setInscription($inscriptionStr);
+            $paintingCollection->get(Language::DE)->setInscription($inscriptionStr);
         }
 
         /* en */
@@ -865,7 +844,7 @@ class PaintingInflator implements IInflator
         );
         if ($inscriptionElement) {
             $inscriptionStr = trim(strval($inscriptionElement));
-            $paintingEn->setInscription($inscriptionStr);
+            $paintingCollection->get(Language::EN)->setInscription($inscriptionStr);
         }
     }
 
@@ -873,8 +852,7 @@ class PaintingInflator implements IInflator
     /* Markings */
     private static function inflateMarkings(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         /* de */
         $markingsDeSectionElement = $node->{'Section'}[24];
@@ -884,7 +862,7 @@ class PaintingInflator implements IInflator
         );
         if ($markingsElement) {
             $markingsStr = trim(strval($markingsElement));
-            $paintingDe->setMarkings($markingsStr);
+            $paintingCollection->get(Language::DE)->setMarkings($markingsStr);
         }
 
         /* en */
@@ -895,7 +873,7 @@ class PaintingInflator implements IInflator
         );
         if ($markingsElement) {
             $markingsStr = trim(strval($markingsElement));
-            $paintingEn->setMarkings($markingsStr);
+            $paintingCollection->get(Language::EN)->setMarkings($markingsStr);
         }
     }
 
@@ -903,8 +881,7 @@ class PaintingInflator implements IInflator
     /* Related works */
     private static function inflateRelatedWorks(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         /* de */
         $relatedWorksDeSectionElement = $node->{'Section'}[26];
@@ -914,7 +891,7 @@ class PaintingInflator implements IInflator
         );
         if ($relatedWorksElement) {
             $relatedWorksStr = trim(strval($relatedWorksElement));
-            $paintingDe->setRelatedWorks($relatedWorksStr);
+            $paintingCollection->get(Language::DE)->setRelatedWorks($relatedWorksStr);
         }
 
         /* en */
@@ -925,7 +902,7 @@ class PaintingInflator implements IInflator
         );
         if ($relatedWorksElement) {
             $relatedWorksStr = trim(strval($relatedWorksElement));
-            $paintingEn->setRelatedWorks($relatedWorksStr);
+            $paintingCollection->get(Language::EN)->setRelatedWorks($relatedWorksStr);
         }
     }
 
@@ -933,8 +910,7 @@ class PaintingInflator implements IInflator
     /* Exhibition history */
     private static function inflateExhibitionHistory(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         /* de */
         $exhibitionHistoryDeSectionElement = $node->{'Section'}[28];
@@ -949,7 +925,7 @@ class PaintingInflator implements IInflator
                 '',
                 $exhibitionHistoryStr,
             );
-            $paintingDe->setExhibitionHistory($cleanExhibitionHistoryStr);
+            $paintingCollection->get(Language::DE)->setExhibitionHistory($cleanExhibitionHistoryStr);
         }
 
         /* en */
@@ -965,7 +941,7 @@ class PaintingInflator implements IInflator
                 '',
                 $exhibitionHistoryStr,
             );
-            $paintingEn->setExhibitionHistory($cleanExhibitionHistoryStr);
+            $paintingCollection->get(Language::EN)->setExhibitionHistory($cleanExhibitionHistoryStr);
         }
     }
 
@@ -973,8 +949,7 @@ class PaintingInflator implements IInflator
     /* Bibliography */
     private static function inflateBibliography(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $bibliographySectionElement = $node->{'Section'}[30];
         $bibliographyElement = self::findElementByXPath(
@@ -983,8 +958,8 @@ class PaintingInflator implements IInflator
         );
         if ($bibliographyElement) {
             $bibliographyStr = trim(strval($bibliographyElement));
-            $paintingDe->setBibliography($bibliographyStr);
-            $paintingEn->setBibliography($bibliographyStr);
+
+            $paintingCollection->setBibliography($bibliographyStr);
         }
     }
 
@@ -992,8 +967,7 @@ class PaintingInflator implements IInflator
     /* References */
     private static function inflateReferences(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $referenceDetailsElements = $node->{'Section'}[31]->{'Subreport'}->{'Details'};
 
@@ -1007,8 +981,8 @@ class PaintingInflator implements IInflator
             $referenceDe = new ObjectReference;
             $referenceEn = new ObjectReference;
 
-            $paintingDe->addReference($referenceDe);
-            $paintingEn->addReference($referenceEn);
+            $paintingCollection->get(Language::DE)->addReference($referenceDe);
+            $paintingCollection->get(Language::EN)->addReference($referenceEn);
 
             /* Text */
             $textElement = self::findElementByXPath(
@@ -1049,7 +1023,12 @@ class PaintingInflator implements IInflator
             if ($remarksElement) {
                 $remarksStr = trim(strval($remarksElement));
 
-                self::inflateReferenceRemarks($paintingDe->getInventoryNumber(), $remarksStr, $referenceDe, $referenceEn);
+                self::inflateReferenceRemarks(
+                    $paintingCollection->get(Language::DE)->getInventoryNumber(),
+                    $remarksStr,
+                    $referenceDe,
+                    $referenceEn,
+                );
             }
         }
     }
@@ -1058,8 +1037,7 @@ class PaintingInflator implements IInflator
     /* Secondary References */
     private static function inflateSecondaryReferences(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $referenceDetailsElements = $node->{'Section'}[32]->{'Subreport'}->{':Details'};
 
@@ -1073,8 +1051,8 @@ class PaintingInflator implements IInflator
             $referenceDe = new ObjectReference;
             $referenceEn = new ObjectReference;
 
-            $paintingDe->addSecondaryReference($referenceDe);
-            $paintingEn->addSecondaryReference($referenceEn);
+            $paintingCollection->get(Language::DE)->addReference($referenceDe);
+            $paintingCollection->get(Language::EN)->addReference($referenceEn);
 
             /* Text */
             $textElement = self::findElementByXPath(
@@ -1106,7 +1084,12 @@ class PaintingInflator implements IInflator
             if ($remarksElement) {
                 $remarksStr = trim(strval($remarksElement));
 
-                self::inflateReferenceRemarks($paintingDe->getInventoryNumber(), $remarksStr, $referenceDe, $referenceEn);
+                self::inflateReferenceRemarks(
+                    $paintingCollection->get(Language::DE)->getInventoryNumber(),
+                    $remarksStr,
+                    $referenceDe,
+                    $referenceEn,
+                );
             }
         }
     }
@@ -1116,7 +1099,7 @@ class PaintingInflator implements IInflator
         string $inventoryNumber,
         string $value,
         ObjectReference $referenceDe,
-        ObjectReference $referenceEn
+        ObjectReference $referenceEn,
     ): void {
         $splitValues = array_values(array_filter(array_map('trim', explode('#', $value))));
 
@@ -1172,9 +1155,11 @@ class PaintingInflator implements IInflator
     /* Additional text informations */
     private static function inflateAdditionalTextInformations(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
+        $paintingDe = $paintingCollection->get(Language::DE);
+        $paintingEn = $paintingCollection->get(Language::EN);
+
         $additionalTextsDetailsElements = $node->{'Section'}[33]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($additionalTextsDetailsElements); $i += 1) {
@@ -1211,12 +1196,10 @@ class PaintingInflator implements IInflator
                     $paintingEn->addAdditionalTextInformation($additionalTextInformation);
                 } else {
                     echo '  Unknown additional text type: ' . $textTypeStr . ' for object ' . $paintingDe->getInventoryNumber() . "\n";
-                    $paintingDe->addAdditionalTextInformation($additionalTextInformation);
-                    $paintingEn->addAdditionalTextInformation($additionalTextInformation);
+                    $paintingCollection->addAdditionalTextInformation($additionalTextInformation);
                 }
             } else {
-                $paintingDe->addAdditionalTextInformation($additionalTextInformation);
-                $paintingEn->addAdditionalTextInformation($additionalTextInformation);
+                $paintingCollection->addAdditionalTextInformation($additionalTextInformation);
             }
 
             /* Text */
@@ -1266,9 +1249,11 @@ class PaintingInflator implements IInflator
     /* Publications */
     private static function inflatePublications(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
+        $paintingDe = $paintingCollection->get(Language::DE);
+        $paintingEn = $paintingCollection->get(Language::EN);
+
         $publicationDetailsElements = $node->{'Section'}[34]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($publicationDetailsElements); $i += 1) {
@@ -1319,8 +1304,7 @@ class PaintingInflator implements IInflator
     /* Keywords */
     private static function inflateKeywords(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $keywordDetailsElements = $node->{'Section'}[35]->{'Subreport'}->{'Details'};
 
@@ -1368,8 +1352,7 @@ class PaintingInflator implements IInflator
 
             /* Decide if keyword is valid */
             if (!empty($metaReference->getTerm())) {
-                $paintingDe->addKeyword($metaReference);
-                $paintingEn->addKeyword($metaReference);
+                $paintingCollection->addKeyword($metaReference);
             }
         }
     }
@@ -1378,9 +1361,11 @@ class PaintingInflator implements IInflator
     /* Locations */
     private static function inflateLocations(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
+        $paintingDe = $paintingCollection->get(Language::DE);
+        $paintingEn = $paintingCollection->get(Language::EN);
+
         $locationDetailsElements = $node->{'Section'}[36]->{'Subreport'}->{'Details'};
 
         for ($i = 0; $i < count($locationDetailsElements); $i += 1) {
@@ -1440,12 +1425,10 @@ class PaintingInflator implements IInflator
                         $paintingEn->addLocation($metaReference);
                     } elseif (self::$locationLanguageTypes['not_assigned'] === $locationTypeStr) {
                         echo '  Unassigned location type for object ' . $paintingDe->getInventoryNumber() . "\n";
-                        $paintingDe->addLocation($metaReference);
-                        $paintingEn->addLocation($metaReference);
+                        $paintingCollection->addLocation($metaReference);
                     } else {
                         echo '  Unknown location type: ' . $locationTypeStr . ' for object ' . $paintingDe->getInventoryNumber() . "\n";
-                        $paintingDe->addLocation($metaReference);
-                        $paintingEn->addLocation($metaReference);
+                        $paintingCollection->addLocation($metaReference);
                     }
                 }
             }
@@ -1456,8 +1439,7 @@ class PaintingInflator implements IInflator
     /* Repository and Owner */
     private static function inflateRepositoryAndOwner(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $repositoryAndOwnerDetailsSubreport = $node->{'Section'}[37]->{'Subreport'};
         $details = $repositoryAndOwnerDetailsSubreport->{'Details'};
@@ -1481,13 +1463,13 @@ class PaintingInflator implements IInflator
             $isOwner = false;
 
             try {
-                $isRepository = self::inflateRepository($detail, $roleName, $paintingDe, $paintingEn);
+                $isRepository = self::inflateRepository($detail, $roleName, $paintingCollection);
             } catch (Error $e) {
                 echo '  ' . $e->getMessage() . "\n";
             }
 
             try {
-                $isOwner = self::inflateOwner($detail, $roleName, $paintingDe, $paintingEn);
+                $isOwner = self::inflateOwner($detail, $roleName, $paintingCollection);
             } catch (Error $e) {
                 echo '  ' . $e->getMessage() . "\n";
             }
@@ -1503,9 +1485,11 @@ class PaintingInflator implements IInflator
     private static function inflateRepository(
         SimpleXMLElement &$detail,
         string $roleName,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): bool {
+        $paintingDe = $paintingCollection->get(Language::DE);
+        $paintingEn = $paintingCollection->get(Language::EN);
+
         $repositoryElement = self::findElementByXPath(
             $detail,
             'Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
@@ -1518,13 +1502,11 @@ class PaintingInflator implements IInflator
         $repositoryStr = trim(strval($repositoryElement));
 
         switch ($roleName) {
-            case self::$repositoryTypes[Language::DE]:
-                /* de */
+            case self::$repositoryTypes[Language::DE]: /* de */
                 $paintingDe->setRepository($repositoryStr);
                 break;
 
-            case self::$repositoryTypes[Language::EN]:
-                /* en */
+            case self::$repositoryTypes[Language::EN]: /* en */
                 $paintingEn->setRepository($repositoryStr);
                 break;
 
@@ -1540,9 +1522,11 @@ class PaintingInflator implements IInflator
     private static function inflateOwner(
         SimpleXMLElement $detail,
         string $roleName,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): bool {
+        $paintingDe = $paintingCollection->get(Language::DE);
+        $paintingEn = $paintingCollection->get(Language::EN);
+
         $ownerElement = self::findElementByXPath(
             $detail,
             'Section[@SectionNumber="3"]/Field[@FieldName="{CONALTNAMES.DisplayName}"]/FormattedValue',
@@ -1576,8 +1560,7 @@ class PaintingInflator implements IInflator
     /* Sorting number */
     private static function inflateSortingNumber(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $sortingNumberSubreport = $node->{'Section'}[38];
 
@@ -1592,8 +1575,7 @@ class PaintingInflator implements IInflator
                 $sortingNumberStr = self::$sortingNumberFallbackValue;
             }
 
-            $paintingDe->setSortingNumber($sortingNumberStr);
-            $paintingEn->setSortingNumber($sortingNumberStr);
+            $paintingCollection->setSortingNumber($sortingNumberStr);
         }
     }
 
@@ -1601,8 +1583,7 @@ class PaintingInflator implements IInflator
     /* Catalog work reference */
     private static function inflateCatalogWorkReference(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $catalogWorkReferenceDetailsElements = $node->{'Section'}[39]->{'Subreport'}->{'Details'};
 
@@ -1645,8 +1626,7 @@ class PaintingInflator implements IInflator
 
             /* Decide if reference should be added */
             if (!empty($catalogWorkReference->getReferenceNumber())) {
-                $paintingDe->addCatalogWorkReference($catalogWorkReference);
-                $paintingEn->addCatalogWorkReference($catalogWorkReference);
+                $paintingCollection->addCatalogWorkReference($catalogWorkReference);
             }
         }
     }
@@ -1655,15 +1635,13 @@ class PaintingInflator implements IInflator
     /* Structured dimension */
     private static function inflateStructuredDimension(
         SimpleXMLElement $node,
-        Painting $paintingDe,
-        Painting $paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $catalogWorkReferenceSubreport = $node->{'Section'}[40]->{'Subreport'};
 
         $structuredDimension = new StructuredDimension;
 
-        $paintingDe->setStructuredDimension($structuredDimension);
-        $paintingEn->setStructuredDimension($structuredDimension);
+        $paintingCollection->setStructuredDimension($structuredDimension);
 
         /* element */
         $elementElement = self::findElementByXPath(
@@ -1712,13 +1690,11 @@ class PaintingInflator implements IInflator
     /* Structured dimension */
     private static function inflateIsBestOf(
         SimpleXMLElement &$node,
-        Painting &$paintingDe,
-        Painting &$paintingEn
+        PaintingLanguageCollection $paintingCollection,
     ): void {
         $isBestOf = isset($node->{'Section'}[41]);
 
-        $paintingDe->setIsBestOf($isBestOf);
-        $paintingEn->setIsBestOf($isBestOf);
+        $paintingCollection->setIsBestOf($isBestOf);
     }
 
 

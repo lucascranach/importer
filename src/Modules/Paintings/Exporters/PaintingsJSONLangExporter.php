@@ -6,6 +6,7 @@ use Error;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
+use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 /**
@@ -55,15 +56,15 @@ class PaintingsJSONLangExporter extends Consumer implements IFileExporter
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Painting)) {
-            throw new Error('Pushed item is not of expected class \'Painting\'');
+        if (!($item instanceof PaintingLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'PaintingLanguageCollection\'');
         }
 
         if ($this->done) {
             throw new Error('Can\'t push more items after done() was called!');
         }
 
-        return $this->appendItemToOutputFile($item);
+        return $this->handleCollection($item);
     }
 
 
@@ -86,11 +87,20 @@ class PaintingsJSONLangExporter extends Consumer implements IFileExporter
     }
 
 
-    private function appendItemToOutputFile(Painting $item): bool
+    private function handleCollection(PaintingLanguageCollection $collection): bool
     {
-        $metadata = $item->getMetadata();
-        $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
+        $retVal = true;
 
+        foreach ($collection as $langCode => $painting) {
+            $retVal = $retVal && $this->appendItemToOutputFile($langCode, $painting);
+        }
+
+        return $retVal;
+    }
+
+
+    private function appendItemToOutputFile(string $langCode, Painting $item): bool
+    {
         if (!isset($this->outputFilesByLangCode[$langCode])) {
             $this->outputFilesByLangCode[$langCode] = [
                 "path" => $this->initializeOutputFileForLangCode($langCode),

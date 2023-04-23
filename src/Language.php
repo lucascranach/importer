@@ -2,6 +2,8 @@
 
 namespace CranachDigitalArchive\Importer;
 
+use \ReflectionClass;
+
 /**
  * Language helper and class for kind of enum language code encoding
  */
@@ -9,8 +11,6 @@ final class Language
 {
     const DE = 'de';
     const EN = 'en';
-
-    private $translations;
 
     private function __construct()
     {
@@ -42,9 +42,14 @@ final class Language
     }
 
 
+    public static function getSupportedLanguages(): array
+    {
+        return array_values((new ReflectionClass(self::class))->getConstants());
+    }
+
+
     public static function isSupportedLanguage(string $langCode)
     {
-        $supportedLangs = [self::DE, self::EN];
-        return in_array($langCode, $supportedLangs, true);
+        return in_array($langCode, self::getSupportedLanguages(), true);
     }
 }
