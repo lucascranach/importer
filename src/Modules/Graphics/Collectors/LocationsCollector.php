@@ -3,18 +3,15 @@
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Collectors;
 
 use Error;
-use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicInfo;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicInfoLanguageCollection;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaReference;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 class LocationsCollector extends Consumer
 {
-    private $graphicInfos = [
-        Language::DE => [],
-        Language::EN => [],
-    ];
+    private $graphicInfoCollections = [];
 
 
     private function __construct()
@@ -31,26 +28,17 @@ class LocationsCollector extends Consumer
 
     public function getAllGraphicInfos(): array
     {
-        return $this->graphicInfos;
+        return $this->graphicInfoCollections;
     }
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof GraphicInfo)) {
+        if (!($item instanceof GraphicInfoLanguageCollection)) {
             echo get_class($item);
-            throw new Error('Pushed item is not of the expected class \'GraphicInfo\'');
+            throw new Error('Pushed item is not of the expected class \'GraphicInfoLanguageCollection\'');
         }
 
-        $metadata = $item->getMetadata();
-
-        if (is_null($metadata)) {
-            return false;
-        }
-
-        $langCode = $metadata->getLangCode();
-        $inventoryNumber = $item->getInventoryNumber();
-
-        $this->graphicInfos[$langCode][$inventoryNumber] = $item;
+        $this->graphicInfoCollections[$item->getInventoryNumber()] = $item;
 
         return true;
     }
@@ -58,25 +46,25 @@ class LocationsCollector extends Consumer
 
     public function getLocations(string $langCode, string $inventoryNumber): ?array
     {
-        if (!isset($this->graphicInfos[$langCode][$inventoryNumber])) {
+        if (!isset($this->graphicInfoCollections[$inventoryNumber])) {
             return null;
         }
 
         $locations = [];
 
         /** @var GraphicInfo */
-        $item = $this->graphicInfos[$langCode][$inventoryNumber];
+        $item = $this->graphicInfoCollections[$inventoryNumber]->get($langCode);
 
         /** @var \CranachDigitalArchive\Importer\Modules\Main\Entities\ObjectReference */
         foreach ($item->getReprintReferences() as $reprintReference) {
             $reprintInventoryNumber = $reprintReference->getInventoryNumber();
 
-            if (!isset($this->graphicInfos[$langCode][$reprintInventoryNumber])) {
+            if (!isset($this->graphicInfoCollections[$reprintInventoryNumber])) {
                 continue;
             }
 
             /** @var GraphicInfo */
-            $reprintItem = $this->graphicInfos[$langCode][$reprintInventoryNumber];
+            $reprintItem = $this->graphicInfoCollections[$reprintInventoryNumber]->get($langCode);
 
             /** @var MetaReference */
             foreach ($reprintItem->getLocations() as $location) {
@@ -112,6 +100,6 @@ class LocationsCollector extends Consumer
 
     public function cleanUp()
     {
-        $this->graphicInfos = [];
+        $this->graphicInfoCollections = [];
     }
 }

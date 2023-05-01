@@ -6,6 +6,7 @@ namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 use Error;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
 use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Restoration;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
@@ -31,20 +32,19 @@ class ExtenderWithRestorations extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Graphic)) {
-            throw new Error('Pushed item is not of expected class \'Graphic\'');
+        if (!($item instanceof GraphicLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'GraphicLanguageCollection\'');
         }
 
-        $metadata = $item->getMetadata();
-        $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
+        foreach ($item as $langCode => $graphic) {
+            $restoration = $this->restorationMemoryExporter->findByFields([
+                'inventoryNumber' => $graphic->getInventoryNumber(),
+                'langCode' => $langCode,
+            ]);
 
-        $restoration = $this->restorationMemoryExporter->findByFields([
-            'inventoryNumber' => $item->getInventoryNumber(),
-            'langCode' => $langCode,
-        ]);
-
-        if (!is_null($restoration) && $restoration instanceof Restoration) {
-            $item->setRestorationSurveys($restoration->getSurveys());
+            if (!is_null($restoration) && $restoration instanceof Restoration) {
+                $graphic->setRestorationSurveys($restoration->getSurveys());
+            }
         }
 
         $this->next($item);

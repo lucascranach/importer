@@ -7,6 +7,8 @@ use Error;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
+use CranachDigitalArchive\Importer\Modules\Graphics\Interfaces\IGraphic;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 /**
@@ -39,15 +41,15 @@ class GraphicsJSONExporter extends Consumer implements IFileExporter
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Graphic)) {
-            throw new Error('Pushed item is not of expected class \'Graphic\'');
+        if (!($item instanceof GraphicLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'GraphicLanguageCollection\'');
         }
 
         if ($this->done) {
             throw new Error('Can\'t push more items after done() was called!');
         }
 
-        return $this->appendItemToOutputFile($item);
+        return $this->handleCollection($item);
     }
 
 
@@ -72,7 +74,19 @@ class GraphicsJSONExporter extends Consumer implements IFileExporter
     }
 
 
-    private function appendItemToOutputFile(Graphic $item): bool
+    private function handleCollection(GraphicLanguageCollection $collection): bool
+    {
+        $retVal = true;
+
+        foreach ($collection as $graphic) {
+            $retVal = $retVal && $this->appendItemToOutputFile($graphic);
+        }
+
+        return $retVal;
+    }
+
+
+    private function appendItemToOutputFile(IGraphic $item): bool
     {
         if (!$this->destFileInitialized) {
             $this->initializeOutputFile();

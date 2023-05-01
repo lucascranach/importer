@@ -5,10 +5,10 @@ namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 use Error;
 use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\FilterInfoItem;
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Search\SearchableGraphic;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Entities\ThesaurusTerm;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Search\SearchableGraphicLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class ExtenderWithThesaurus extends Hybrid
@@ -37,8 +37,8 @@ class ExtenderWithThesaurus extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof SearchableGraphic)) {
-            throw new Error('Pushed item is not of expected class \'SearchableGraphic\'');
+        if (!($item instanceof SearchableGraphicLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'SearchableGraphicLanguageCollection\'');
         }
 
         $this->extendWithThesaurusFilterInfos($item);
@@ -58,23 +58,26 @@ class ExtenderWithThesaurus extends Hybrid
     }
 
 
-    private function extendWithThesaurusFilterInfos(SearchableGraphic $graphic): void
+    private function extendWithThesaurusFilterInfos(SearchableGraphicLanguageCollection $collection): void
     {
-        foreach ($graphic->getKeywords() as $keyword) {
-            if ($keyword->getType() !== $this->keywordType) {
-                continue;
-            }
+        /**
+         * @var string $langCode
+         * @var \CranachDigitalArchive\Importer\Modules\Graphics\Interfaces\ISearchableGraphic $searchableGraphic
+         */
+        foreach ($collection as $langCode => $searchableGraphic) {
+            foreach ($searchableGraphic->getKeywords() as $keyword) {
+                if ($keyword->getType() !== $this->keywordType) {
+                    continue;
+                }
 
-            $res = $this->findKeywordIdentifierInThesaurus($keyword->getTerm());
+                $res = $this->findKeywordIdentifierInThesaurus($keyword->getTerm());
 
-            $metadata = $graphic->getMetadata();
-            $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
+                $mappedItems = $this->mapThesaurusTermChainToFilterInfoChain($res, $langCode);
+                $firstItem = array_shift($mappedItems);
 
-            $mappedItems = $this->mapThesaurusTermChainToFilterInfoChain($res, $langCode);
-            $firstItem = array_shift($mappedItems);
-
-            if (!is_null($firstItem)) {
-                $graphic->addFilterInfoCategoryItems($firstItem->getId(), $mappedItems);
+                if (!is_null($firstItem)) {
+                    $searchableGraphic->addFilterInfoCategoryItems($firstItem->getId(), $mappedItems);
+                }
             }
         }
     }

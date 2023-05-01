@@ -6,8 +6,7 @@ use Error;
 use SimpleXMLElement;
 use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicInfo;
-
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicInfoLanguageCollection;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaLocationReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\ObjectReference;
 
@@ -44,31 +43,29 @@ class GraphicPreInflator implements IInflator
      * Inflates the passed graphic objects
      *
      * @param SimpleXMLElement $node Current graphics element node
-     * @param GraphicInfo $graphicInfoDe Graphic object holding the german informations
-     * @param GraphicInfo $graphicInfoEn Graphic object holding the english informations
+     * @param GraphicInfoLanguageCollection $graphicInfoCollection Graphic collection
      *
      * @return void
      */
     public static function inflate(
         SimpleXMLElement $node,
-        GraphicInfo $graphicInfoDe,
-        GraphicInfo $graphicInfoEn
+        GraphicInfoLanguageCollection $graphicInfoCollection,
     ): void {
         $subNode = $node->{'GroupHeader'};
 
         self::registerXPathNamespace($subNode);
 
-        self::inflateInventoryNumber($subNode, $graphicInfoDe, $graphicInfoEn);
-        self::inflateObjectMeta($subNode, $graphicInfoDe, $graphicInfoEn);
+        self::inflateInventoryNumber($subNode, $graphicInfoCollection);
+        self::inflateObjectMeta($subNode, $graphicInfoCollection);
 
-        if ($graphicInfoDe->getIsVirtual()) {
-            self::inflateReprintReferences($subNode, $graphicInfoDe, $graphicInfoEn);
+        if ($graphicInfoCollection->getIsVirtual()) {
+            self::inflateReprintReferences($subNode, $graphicInfoCollection);
         }
 
-        self::inflateLocations($subNode, $graphicInfoDe, $graphicInfoEn);
+        self::inflateLocations($subNode, $graphicInfoCollection);
 
-        if (!$graphicInfoDe->getIsVirtual()) {
-            self::inflateRepository($subNode, $graphicInfoDe, $graphicInfoEn);
+        if (!$graphicInfoCollection->getIsVirtual()) {
+            self::inflateRepository($subNode, $graphicInfoCollection);
         }
     }
 
@@ -76,8 +73,7 @@ class GraphicPreInflator implements IInflator
     /* Inventory number */
     private static function inflateInventoryNumber(
         SimpleXMLElement $node,
-        GraphicInfo $graphicInfoDe,
-        GraphicInfo $graphicInfoEn
+        GraphicInfoLanguageCollection $graphicInfoCollection,
     ): void {
         $inventoryNumberSectionElement = $node->{'Section'}[6];
 
@@ -88,9 +84,8 @@ class GraphicPreInflator implements IInflator
         if ($inventoryNumberElement) {
             $inventoryNumberStr = trim(strval($inventoryNumberElement));
 
-            /* Using single german value for both language objects */
-            $graphicInfoDe->setInventoryNumber($inventoryNumberStr);
-            $graphicInfoEn->setInventoryNumber($inventoryNumberStr);
+            /* Using single german value for all language objects in the collection */
+            $graphicInfoCollection->setInventoryNumber($inventoryNumberStr);
         }
     }
 
@@ -98,8 +93,7 @@ class GraphicPreInflator implements IInflator
     /* Object id & virtual (meta) */
     private static function inflateObjectMeta(
         SimpleXMLElement $node,
-        GraphicInfo $graphicInfoDe,
-        GraphicInfo $graphicInfoEn
+        GraphicInfoLanguageCollection $graphicInfoCollection,
     ): void {
         $metaSectionElement = $node->{'Section'}[7];
 
@@ -113,9 +107,8 @@ class GraphicPreInflator implements IInflator
 
             $isVirtual = ($virtualStr === '1');
 
-            /* Using single german value for both language objects */
-            $graphicInfoDe->setIsVirtual($isVirtual);
-            $graphicInfoEn->setIsVirtual($isVirtual);
+            /* Using single german value for all language objects in the collection */
+            $graphicInfoCollection->setIsVirtual($isVirtual);
         }
     }
 
@@ -123,8 +116,7 @@ class GraphicPreInflator implements IInflator
     /* Reprint references */
     private static function inflateReprintReferences(
         SimpleXMLElement $node,
-        GraphicInfo $graphicInfoDe,
-        GraphicInfo $graphicInfoEn
+        GraphicInfoLanguageCollection $graphicInfoCollection,
     ): void {
         /* Reprints References */
         $referenceReprintDetailsElements = $node->{'Section'}[31]->{'Subreport'}->{'Details'};
@@ -139,8 +131,7 @@ class GraphicPreInflator implements IInflator
             }),
         );
 
-        $graphicInfoDe->setReprintReferences($filteredReprintReferences);
-        $graphicInfoEn->setReprintReferences($filteredReprintReferences);
+        $graphicInfoCollection->setReprintReferences($filteredReprintReferences);
     }
 
 
@@ -207,8 +198,7 @@ class GraphicPreInflator implements IInflator
     /* Locations */
     private static function inflateLocations(
         SimpleXMLElement $node,
-        GraphicInfo $graphicInfoDe,
-        GraphicInfo $graphicInfoEn
+        GraphicInfoLanguageCollection $graphicInfoCollection,
     ): void {
         $locationDetailsElements = $node->{'Section'}[36]->{'Subreport'}->{'Details'};
 
@@ -233,21 +223,18 @@ class GraphicPreInflator implements IInflator
                 $metaReference->setType($locationTypeStr);
 
                 if (self::$locationLanguageTypes[Language::DE] === $locationTypeStr) {
-                    $graphicInfoDe->addLocation($metaReference);
+                    $graphicInfoCollection->get(Language::DE)->addLocation($metaReference);
                 } elseif (self::$locationLanguageTypes[Language::EN] === $locationTypeStr) {
-                    $graphicInfoEn->addLocation($metaReference);
+                    $graphicInfoCollection->get(Language::EN)->addLocation($metaReference);
                 } elseif (self::$locationLanguageTypes['not_assigned'] === $locationTypeStr) {
-                    echo '  Unassigned location type for object ' . $graphicInfoDe->getInventoryNumber() . "\n";
-                    $graphicInfoDe->addLocation($metaReference);
-                    $graphicInfoEn->addLocation($metaReference);
+                    echo '  Unassigned location type for object ' . $graphicInfoCollection->getInventoryNumber() . "\n";
+                    $graphicInfoCollection->addLocation($metaReference);
                 } else {
-                    echo '  Unknown location type: ' . $locationTypeStr . ' for object ' . $graphicInfoDe->getInventoryNumber() . "\n";
-                    $graphicInfoDe->addLocation($metaReference);
-                    $graphicInfoEn->addLocation($metaReference);
+                    echo '  Unknown location type: ' . $locationTypeStr . ' for object ' . $graphicInfoCollection->getInventoryNumber() . "\n";
+                    $graphicInfoCollection->addLocation($metaReference);
                 }
             } else {
-                $graphicInfoDe->addLocation($metaReference);
-                $graphicInfoEn->addLocation($metaReference);
+                $graphicInfoCollection->addLocation($metaReference);
             }
 
             /* Term */
@@ -286,8 +273,7 @@ class GraphicPreInflator implements IInflator
     /* Repository */
     private static function inflateRepository(
         SimpleXMLElement $node,
-        GraphicInfo $graphicInfoDe,
-        GraphicInfo $graphicInfoEn
+        GraphicInfoLanguageCollection $graphicInfoCollection,
     ): void {
         $repositoryAndOwnerDetailsSubreport = $node->{'Section'}[37]->{'Subreport'};
         $details = $repositoryAndOwnerDetailsSubreport->{'Details'};
@@ -308,7 +294,7 @@ class GraphicPreInflator implements IInflator
             /* Passing the roleName to the infaltors for themself to decide if they are
               responsible for further value extraction */
             try {
-                self::inflateRepositorySub($detail, $roleName, $graphicInfoDe, $graphicInfoEn);
+                self::inflateRepositorySub($detail, $roleName, $graphicInfoCollection, );
             } catch (Error $e) {
                 echo '  ' . $e->getMessage() . "\n";
             }
@@ -320,8 +306,7 @@ class GraphicPreInflator implements IInflator
     private static function inflateRepositorySub(
         SimpleXMLElement $detail,
         string $roleName,
-        GraphicInfo $graphicInfoDe,
-        GraphicInfo $graphicInfoEn
+        GraphicInfoLanguageCollection $graphicInfoCollection,
     ): bool {
         $repositoryElement = self::findElementByXPath(
             $detail,
@@ -337,12 +322,12 @@ class GraphicPreInflator implements IInflator
         switch ($roleName) {
             case self::$repositoryTypes[Language::DE]:
                 /* de */
-                $graphicInfoDe->setRepository($repositoryStr);
+                $graphicInfoCollection->get(Language::DE)->setRepository($repositoryStr);
                 break;
 
             case self::$repositoryTypes[Language::EN]:
                 /* en */
-                $graphicInfoEn->setRepository($repositoryStr);
+                $graphicInfoCollection->get(Language::EN)->setRepository($repositoryStr);
                 break;
 
             default:

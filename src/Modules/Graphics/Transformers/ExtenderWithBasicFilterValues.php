@@ -11,6 +11,8 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\FilterInfoItem;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Search\SearchableGraphicLanguageCollection;
+use CranachDigitalArchive\Importer\Modules\Graphics\Interfaces\ISearchableGraphic;
 
 class ExtenderWithBasicFilterValues extends Hybrid
 {
@@ -64,8 +66,8 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof SearchableGraphic)) {
-            throw new Error('Pushed item is not of expected class \'SearchableGraphic\'');
+        if (!($item instanceof SearchableGraphicLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'SearchableGraphicLanguageCollection\'');
         }
 
         $this->extendWithBasicFilterValues($item);
@@ -75,16 +77,19 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private function extendWithBasicFilterValues(SearchableGraphic $item): void
+    private function extendWithBasicFilterValues(SearchableGraphicLanguageCollection $collection): void
     {
-        $this->extendBasicFiltersForAttribution($item);
-        $this->extendBasicFiltersForCollectionAndRepository($item);
-        $this->extendBasicFiltersForExaminationAnalysis($item);
-        $this->extendBasicFiltersForAssocation($item);
+        /** @var ISearchableGraphic */
+        foreach ($collection as $item) {
+            $this->extendBasicFiltersForAttribution($item);
+            $this->extendBasicFiltersForCollectionAndRepository($item);
+            $this->extendBasicFiltersForExaminationAnalysis($item);
+            $this->extendBasicFiltersForAssocation($item);
+        }
     }
 
 
-    private function extendBasicFiltersForAttribution(SearchableGraphic $item):void
+    private function extendBasicFiltersForAttribution(ISearchableGraphic $item):void
     {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {
@@ -174,7 +179,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private function extendBasicFiltersForCollectionAndRepository(SearchableGraphic $item):void
+    private function extendBasicFiltersForCollectionAndRepository(ISearchableGraphic $item):void
     {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {
@@ -225,7 +230,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private function extendBasicFiltersForExaminationAnalysis(SearchableGraphic $item):void
+    private function extendBasicFiltersForExaminationAnalysis(ISearchableGraphic $item):void
     {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {
@@ -291,7 +296,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private function extendBasicFiltersForAssocation(SearchableGraphic $item):void
+    private function extendBasicFiltersForAssocation(ISearchableGraphic $item):void
     {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {

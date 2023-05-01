@@ -2,6 +2,7 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Entities;
 
+use CranachDigitalArchive\Importer\Modules\Graphics\Interfaces\IGraphicInfo;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaLocationReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\ObjectReference;
@@ -9,7 +10,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\ObjectReference;
 /**
  * Representing a single painting info
  */
-class GraphicInfo
+class GraphicInfo implements IGraphicInfo
 {
     const INVENTORY_NUMBER_PREFIX_PATTERNS = [
         '/^GWN_/' => 'GWN_',

@@ -6,6 +6,7 @@ use Error;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
@@ -28,19 +29,14 @@ class MetaReferenceCollector extends Consumer
 
     public function handleItem($item): bool
     {
-        if ($item instanceof PaintingLanguageCollection) {
-            foreach ($item as $subItem) {
-                $this->collectAllKeywordsForItem($subItem);
-            }
-            return true;
-        }
-
-        if (!($item instanceof Graphic) && !($item instanceof Painting)) {
+        if (!($item instanceof GraphicLanguageCollection) && !($item instanceof PaintingLanguageCollection)) {
             echo get_class($item);
-            throw new Error('Pushed item is not of the expected class \'Graphic\' or \'Painting\'');
+            throw new Error('Pushed item is not of the expected class \'GraphicLanguageCollection\' or \'PaintingLanguageCollection\'');
         }
 
-        $this->collectAllKeywordsForItem($item);
+        foreach ($item as $subItem) {
+            $this->collectAllKeywordsForItem($subItem);
+        }
 
         return true;
     }

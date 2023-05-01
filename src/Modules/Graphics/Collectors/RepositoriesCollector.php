@@ -3,17 +3,14 @@
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Collectors;
 
 use Error;
-use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicInfo;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicInfoLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 class RepositoriesCollector extends Consumer
 {
-    private $graphicInfos = [
-        Language::DE => [],
-        Language::EN => [],
-    ];
+    private $graphicInfosCollections = [];
 
 
     private function __construct()
@@ -30,26 +27,19 @@ class RepositoriesCollector extends Consumer
 
     public function getAllGraphicInfos(): array
     {
-        return $this->graphicInfos;
+        return $this->graphicInfosCollections;
     }
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof GraphicInfo)) {
+        if (!($item instanceof GraphicInfoLanguageCollection)) {
             echo get_class($item);
-            throw new Error('Pushed item is not of the expected class \'GraphicInfo\'');
+            throw new Error('Pushed item is not of the expected class \'GraphicInfoLanguageCollection\'');
         }
 
-        $metadata = $item->getMetadata();
-
-        if (is_null($metadata)) {
-            return false;
+        foreach ($item as $graphicInfo) {
+            $this->graphicInfosCollections[$graphicInfo->getInventoryNumber()] = $item;
         }
-
-        $langCode = $metadata->getLangCode();
-        $inventoryNumber = $item->getInventoryNumber();
-
-        $this->graphicInfos[$langCode][$inventoryNumber] = $item;
 
         return true;
     }
@@ -57,23 +47,23 @@ class RepositoriesCollector extends Consumer
 
     public function getRepositories(string $langCode, string $inventoryNumber): ?array
     {
-        if (!isset($this->graphicInfos[$langCode][$inventoryNumber])) {
+        if (!isset($this->graphicInfosCollections[$inventoryNumber])) {
             return null;
         }
 
         $repositories = [];
 
         /** @var GraphicInfo */
-        $item = $this->graphicInfos[$langCode][$inventoryNumber];
+        $item = $this->graphicInfosCollections[$inventoryNumber]->get($langCode);
 
         foreach ($item->getReprintReferences() as $reprintReference) {
             $reprintInventoryNumber = $reprintReference->getInventoryNumber();
 
-            if (!isset($this->graphicInfos[$langCode][$reprintInventoryNumber])) {
+            if (!isset($this->graphicInfosCollections[$reprintInventoryNumber])) {
                 continue;
             }
 
-            $reprintItem = $this->graphicInfos[$langCode][$reprintInventoryNumber];
+            $reprintItem = $this->graphicInfosCollections[$reprintInventoryNumber]->get($langCode);
             $repositories[] = $reprintItem->getRepository();
         }
 
@@ -95,6 +85,6 @@ class RepositoriesCollector extends Consumer
 
     public function cleanUp()
     {
-        $this->graphicInfos = [];
+        $this->graphicInfosCollections = [];
     }
 }

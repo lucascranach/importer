@@ -6,9 +6,8 @@ use Error;
 use DOMDocument;
 use SimpleXMLElement;
 use XMLReader;
-use CranachDigitalArchive\Importer\Language;
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicInfo;
 use CranachDigitalArchive\Importer\Interfaces\Loaders\IFileLoader;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicInfoLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Inflators\XML\GraphicPreInflator;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
@@ -94,27 +93,22 @@ class GraphicsPreLoader extends Producer implements IFileLoader
 
     private function transformCurrentItem(): void
     {
-        $metadata = new Metadata;
+        $graphicInfoCollection = GraphicInfoLanguageCollection::create();
 
-        /* Preparing the graphic objects for the different languages */
-        $graphicInfoDe = new GraphicInfo;
-        $metadata->setLangCode(Language::DE);
-        $graphicInfoDe->setMetadata($metadata);
+        foreach ($graphicInfoCollection as $langCode => $graphicInfo) {
+            $metadata = new Metadata;
+            $metadata->setLangCode($langCode);
 
-        $metadata = clone $metadata;
-
-        $graphicInfoEn = new GraphicInfo;
-        $metadata->setLangCode(Language::EN);
-        $graphicInfoEn->setMetadata($metadata);
+            $graphicInfo->setMetadata($metadata);
+        }
 
         $xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 
         /* Moved the inflation action(s) into its own class */
-        GraphicPreInflator::inflate($xmlNode, $graphicInfoDe, $graphicInfoEn);
+        GraphicPreInflator::inflate($xmlNode, $graphicInfoCollection);
 
-        /* Passing the graphic objects to the next nodes in the pipeline */
-        $this->next($graphicInfoDe);
-        $this->next($graphicInfoEn);
+        /* Passing the graphic info collection to the next nodes in the pipeline */
+        $this->next($graphicInfoCollection);
     }
 
 

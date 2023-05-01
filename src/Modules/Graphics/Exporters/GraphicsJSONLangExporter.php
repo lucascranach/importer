@@ -6,7 +6,8 @@ use Error;
 
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
+use CranachDigitalArchive\Importer\Modules\Graphics\Interfaces\IGraphic;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 /**
@@ -54,15 +55,15 @@ class GraphicsJSONLangExporter extends Consumer implements IFileExporter
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Graphic)) {
-            throw new Error('Pushed item is not of expected class \'Graphic\'!');
+        if (!($item instanceof GraphicLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'GraphicLanguageCollection\'!');
         }
 
         if ($this->done) {
             throw new Error('Can\'t push more items after done() was called!');
         }
 
-        return $this->appendItemToOutputFile($item);
+        return $this->handleCollection($item);
     }
 
 
@@ -86,11 +87,19 @@ class GraphicsJSONLangExporter extends Consumer implements IFileExporter
     }
 
 
-    private function appendItemToOutputFile(Graphic $item): bool
+    private function handleCollection(GraphicLanguageCollection $collection): bool
     {
-        $metadata = $item->getMetadata();
-        $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
+        $retVal = true;
 
+        foreach ($collection as $langCode => $graphic) {
+            $retVal = $retVal && $this->appendItemToOutputFile($langCode, $graphic);
+        }
+
+        return $retVal;
+    }
+
+    private function appendItemToOutputFile(string $langCode, IGraphic $item): bool
+    {
         if (!isset($this->outputFilesByLangCode[$langCode])) {
             $this->outputFilesByLangCode[$langCode] = [
                 "path" => $this->initializeOutputFileForLangCode($langCode),

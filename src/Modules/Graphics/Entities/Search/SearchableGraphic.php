@@ -4,12 +4,13 @@
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Entities\Search;
 
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
+use CranachDigitalArchive\Importer\Modules\Graphics\Interfaces\ISearchableGraphic;
 
 /**
  * Representing a single searchable graphic and all flattened and embedded related data
  *    One instance containing only data for one language
  */
-class SearchableGraphic extends Graphic
+class SearchableGraphic extends Graphic implements ISearchableGraphic
 {
     public $filterInfos = [];
     public $involvedPersonsFullnames = [];

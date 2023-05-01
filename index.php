@@ -71,7 +71,6 @@ use CranachDigitalArchive\Importer\Modules\Filters\Transformers\AlphabeticSorter
 use CranachDigitalArchive\Importer\Modules\Filters\Transformers\NumericalSorter;
 use CranachDigitalArchive\Importer\Modules\Locations\Sources\LocationsSource;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\LocationsGeoPositionExtender;
-use CranachDigitalArchive\Importer\Modules\Main\Transformers\LocationsGeoPositionCollectionExtender;
 
 $date = '20230315';
 $inputDirectory = './input/' . $date;
@@ -254,7 +253,7 @@ $paintingsDestination = PaintingsJSONLangExporter::withDestinationAt($paintingsO
 $paintingsElasticsearchBulkDestination = PaintingsElasticsearchLangExporter::withDestinationAt(
     $paintingsElasticsearchOutputFilepath
 );
-$paintingsLocationExtender = LocationsGeoPositionCollectionExtender::new($locationsSource);
+$paintingsLocationExtender = LocationsGeoPositionExtender::new($locationsSource);
 
 $paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths);
 
@@ -316,13 +315,13 @@ $graphicsPreLoader->run();
 
 
 /* Graphics */
-$graphicsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::withCacheAt(
+$graphicsRemoteDocumentExistenceChecker = RemoteDocumentCollectionExistenceChecker::withCacheAt(
     'remoteGraphicsDocumentExistenceChecker',
     $cacheDir,
     $imagesAPIKey,
     $remoteDocumentsCachesToRefresh['graphics']
 );
-$graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
+$graphicsRemoteImageExistenceChecker = RemoteImageCollectionExistenceChecker::withCacheAt(
     'remoteGraphicsImageExistenceChecker',
     $cacheDir,
     $imagesAPIKey,
@@ -343,7 +342,7 @@ $graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt(
 $graphicsElasticsearchBulkDestination = GraphicsElasticsearchLangExporter::withDestinationAt(
     $graphicsElasticsearchOutputFilepath
 );
-$graphicsLocationExtender = LocationsGeoPositionExtender::new($locationsSource);
+$graphicsLocationsGeoPositionExtender = LocationsGeoPositionExtender::new($locationsSource);
 
 $graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath);
 
@@ -365,7 +364,7 @@ $inbetweenNode->pipe(
                         $graphicsMetadataFiller->pipe(
                             $graphicsLocationsExtender->pipe(
                                 $graphicsSortingInfo->pipe(
-                                    $graphicsLocationExtender->pipe(
+                                    $graphicsLocationsGeoPositionExtender->pipe(
                                         $graphicsDestination,
                                         $metaReferenceCollector,
                                         $graphicsMapToSearchableGraphic->pipe(

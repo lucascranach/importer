@@ -7,6 +7,7 @@ use Error;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 /**
@@ -50,24 +51,23 @@ class GraphicsElasticsearchLangExporter extends Consumer implements IFileExporte
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Graphic)) {
-            throw new Error('Pushed item is not of expected class \'Graphic\'!');
+        if (!($item instanceof GraphicLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'GraphicLanguageCollection\'!');
         }
 
         if ($this->done) {
             throw new Error('Can\'t push more items after done() was called!');
         }
 
-        $metadata = $item->getMetadata();
-        $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
+        foreach ($item as $langCode => $graphic) {
+            if (!isset($this->langBuckets[$langCode])) {
+                $this->langBuckets[$langCode] = (object) [
+                    'items' => [],
+                ];
+            }
 
-        if (!isset($this->langBuckets[$langCode])) {
-            $this->langBuckets[$langCode] = (object) [
-                'items' => [],
-            ];
+            $this->langBuckets[$langCode]->items[] = $graphic;
         }
-
-        $this->langBuckets[$langCode]->items[] = $item;
 
         return true;
     }

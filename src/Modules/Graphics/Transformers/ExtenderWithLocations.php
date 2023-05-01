@@ -2,11 +2,12 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
-use CranachDigitalArchive\Importer\Modules\Graphics\Collectors\LocationsCollector;
-use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 use Error;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Language;
+use CranachDigitalArchive\Importer\Modules\Graphics\Collectors\LocationsCollector;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
+use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class ExtenderWithLocations extends Hybrid
 {
@@ -31,8 +32,8 @@ class ExtenderWithLocations extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Graphic)) {
-            throw new Error('Pushed item is not of expected class \'Graphic\'');
+        if (!($item instanceof GraphicLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'GraphicLanguageCollection\'');
         }
 
         /* Skip non-virtual items*/
@@ -41,19 +42,12 @@ class ExtenderWithLocations extends Hybrid
             return true;
         }
 
-        $metadata = $item->getMetadata();
+        foreach ($item as $langCode => $graphic) {
+            $locations = $this->locationsCollector->getLocations($langCode, $item->getInventoryNumber());
 
-        if (is_null($metadata)) {
-            $this->next($item);
-            return true;
-        }
-
-        $metadata->getLangCode();
-
-        $locations = $this->locationsCollector->getLocations($metadata->getLangCode(), $item->getInventoryNumber());
-
-        if (!is_null($locations)) {
-            $item->setLocations($locations);
+            if (!is_null($locations)) {
+                $graphic->setLocations($locations);
+            }
         }
 
         $this->next($item);

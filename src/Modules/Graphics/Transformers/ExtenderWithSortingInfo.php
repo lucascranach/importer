@@ -3,7 +3,7 @@
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
 use Error;
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class ExtenderWithSortingInfo extends Hybrid
@@ -21,8 +21,8 @@ class ExtenderWithSortingInfo extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Graphic)) {
-            throw new Error('Pushed item is not of expected class \'Graphic\'');
+        if (!($item instanceof GraphicLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'GraphicLanguageCollection\'');
         }
 
         $item->setSearchSortingNumber($this->extractSortingInfo($item));
@@ -31,9 +31,9 @@ class ExtenderWithSortingInfo extends Hybrid
         return true;
     }
 
-    private function extractSortingInfo(Graphic $item): string
+    private function extractSortingInfo(GraphicLanguageCollection $collection): string
     {
-        $sortingNumber = $item->getSortingNumber();
+        $sortingNumber = $collection->getSortingNumber();
         $splitSortingNumber = array_filter(
             array_map(
                 'trim',

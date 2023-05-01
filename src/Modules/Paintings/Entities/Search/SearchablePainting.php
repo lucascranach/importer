@@ -3,12 +3,13 @@
 namespace CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search;
 
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
+use CranachDigitalArchive\Importer\Modules\Paintings\Interfaces\ISearchablePainting;
 
 /**
  * Representing a single searchable painting and all flattened and embedded related data
  * 	One instance containing only data for one language
  */
-class SearchablePainting extends Painting
+class SearchablePainting extends Painting implements ISearchablePainting
 {
     public $filterInfos = [];
     public $involvedPersonsFullnames = [];

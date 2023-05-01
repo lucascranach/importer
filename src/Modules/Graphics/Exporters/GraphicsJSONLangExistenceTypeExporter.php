@@ -6,7 +6,8 @@ use Error;
 
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
+use CranachDigitalArchive\Importer\Modules\Graphics\Interfaces\IGraphic;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 /**
@@ -58,20 +59,35 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Graphic)) {
-            throw new Error('Pushed item is not of expected class \'Graphic\'');
+        if (!($item instanceof GraphicLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'GraphicLanguageCollection\'');
         }
 
         if ($this->done) {
             throw new Error('Can\'t push more items after done() was called!');
         }
 
-        $this->addDataForReferenceCheck($item);
-        return $this->appendItemToOutputFile($item);
+        foreach ($item as $graphic) {
+            $this->addDataForReferenceCheck($graphic);
+        }
+
+        return $this->handleCollection($item);
     }
 
 
-    private function addDataForReferenceCheck(Graphic $item): void
+     private function handleCollection(GraphicLanguageCollection $collection): bool
+     {
+         $retVal = true;
+
+         foreach ($collection as $langCode => $graphic) {
+             $retVal = $retVal && $this->appendItemToOutputFile($langCode, $graphic);
+         }
+
+         return $retVal;
+     }
+
+
+    private function addDataForReferenceCheck(IGraphic $item): void
     {
         foreach ($item->getReprintReferences() as $reference) {
             if (!in_array($reference->getInventoryNumber(), $this->inventoryNumberList, true)) {
@@ -124,7 +140,7 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
         echo get_class($this) . ": Error -> " . $error . "\n";
     }
 
-    private function appendItemToOutputFile(Graphic $item): bool
+    private function appendItemToOutputFile(string $langCode, IGraphic $item): bool
     {
         $existenceTypes = $item->getIsVirtual() ? 'virtual' : 'real';
         $metadata = $item->getMetadata();

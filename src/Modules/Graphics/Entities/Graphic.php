@@ -15,13 +15,13 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\PersonName;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Publication;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\StructuredDimension;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Title;
-use CranachDigitalArchive\Importer\Interfaces\Entities\ILocations;
+use CranachDigitalArchive\Importer\Modules\Graphics\Interfaces\IGraphic;
 
 /**
  * Representing a single graphic and all its data
  *     One instance containing only data for one language
  */
-class Graphic extends AbstractImagesItem implements ILocations
+class Graphic extends AbstractImagesItem implements IGraphic
 {
     const ENTITY_TYPE = 'GRAPHIC';
 

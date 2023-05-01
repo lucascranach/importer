@@ -8,7 +8,7 @@ use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Classification;
-
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\PersonName;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\PersonNameDetail;
@@ -103,57 +103,54 @@ class GraphicInflator implements IInflator
      * Inflates the passed graphic objects
      *
      * @param SimpleXMLElement $node Current graphics element node
-     * @param Graphic $graphicDe Graphic object holding the german informations
-     * @param Graphic $graphicEn Graphic object holding the english informations
+     * @param GraphicLanguageCollection $graphicCollection Graphic collection
      *
      * @return void
      */
     public static function inflate(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $subNode = $node->{'GroupHeader'};
 
         self::registerXPathNamespace($subNode);
 
-        self::inflateInventoryNumber($subNode, $graphicDe, $graphicEn);
-        self::inflateInvolvedPersons($subNode, $graphicDe, $graphicEn);
-        self::inflatePersonNames($subNode, $graphicDe, $graphicEn);
-        self::inflateTitles($subNode, $graphicDe, $graphicEn);
-        self::inflateClassification($subNode, $graphicDe, $graphicEn);
-        self::inflateObjectMeta($subNode, $graphicDe, $graphicEn);
-        self::inflateDimensions($subNode, $graphicDe, $graphicEn);
-        self::inflateDating($subNode, $graphicDe, $graphicEn);
-        self::inflateDescription($subNode, $graphicDe, $graphicEn);
-        self::inflateProvenance($subNode, $graphicDe, $graphicEn);
-        self::inflateMedium($subNode, $graphicDe, $graphicEn);
-        self::inflateSignature($subNode, $graphicDe, $graphicEn);
-        self::inflateInscription($subNode, $graphicDe, $graphicEn);
-        self::inflateMarkings($subNode, $graphicDe, $graphicEn);
-        self::inflateRelatedWorks($subNode, $graphicDe, $graphicEn);
+        self::inflateInventoryNumber($subNode, $graphicCollection);
+        self::inflateInvolvedPersons($subNode, $graphicCollection);
+        self::inflatePersonNames($subNode, $graphicCollection);
+        self::inflateTitles($subNode, $graphicCollection);
+        self::inflateClassification($subNode, $graphicCollection);
+        self::inflateObjectMeta($subNode, $graphicCollection);
+        self::inflateDimensions($subNode, $graphicCollection);
+        self::inflateDating($subNode, $graphicCollection);
+        self::inflateDescription($subNode, $graphicCollection);
+        self::inflateProvenance($subNode, $graphicCollection);
+        self::inflateMedium($subNode, $graphicCollection);
+        self::inflateSignature($subNode, $graphicCollection);
+        self::inflateInscription($subNode, $graphicCollection);
+        self::inflateMarkings($subNode, $graphicCollection);
+        self::inflateRelatedWorks($subNode, $graphicCollection);
 
         /* only "real" graphics do have an exhibition history, so we skip virtual ones */
-        if (!$graphicDe->getIsVirtual()) {
-            self::inflateExhibitionHistory($subNode, $graphicDe, $graphicEn);
+        if (!$graphicCollection->getIsVirtual()) {
+            self::inflateExhibitionHistory($subNode, $graphicCollection);
         }
-        self::inflateBibliography($subNode, $graphicDe, $graphicEn);
-        self::inflateReferences($subNode, $graphicDe, $graphicEn);
-        self::inflateAdditionalTextInformations($subNode, $graphicDe, $graphicEn);
-        self::inflatePublications($subNode, $graphicDe, $graphicEn);
-        self::inflateKeywords($subNode, $graphicDe, $graphicEn);
-        self::inflateLocations($subNode, $graphicDe, $graphicEn);
-        self::inflateRepositoryAndOwner($subNode, $graphicDe, $graphicEn);
-        self::inflateSortingNumber($subNode, $graphicDe, $graphicEn);
-        self::inflateCatalogWorkReference($subNode, $graphicDe, $graphicEn);
-        self::inflateStructuredDimension($subNode, $graphicDe, $graphicEn);
+        self::inflateBibliography($subNode, $graphicCollection);
+        self::inflateReferences($subNode, $graphicCollection);
+        self::inflateAdditionalTextInformations($subNode, $graphicCollection);
+        self::inflatePublications($subNode, $graphicCollection);
+        self::inflateKeywords($subNode, $graphicCollection);
+        self::inflateLocations($subNode, $graphicCollection);
+        self::inflateRepositoryAndOwner($subNode, $graphicCollection);
+        self::inflateSortingNumber($subNode, $graphicCollection);
+        self::inflateCatalogWorkReference($subNode, $graphicCollection);
+        self::inflateStructuredDimension($subNode, $graphicCollection);
     }
 
     /* Involved persons */
     private static function inflateInvolvedPersons(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $details = $node->{'Section'}[1]->{'Subreport'}->{'Details'};
 
@@ -163,8 +160,8 @@ class GraphicInflator implements IInflator
                 new Person, // en
             ];
 
-            $graphicDe->addPerson($personsArr[0]);
-            $graphicEn->addPerson($personsArr[1]);
+            $graphicCollection->get(Language::DE)->addPerson($personsArr[0]);
+            $graphicCollection->get(Language::EN)->addPerson($personsArr[1]);
 
             for ($j = 0; $j < count($personsArr); $j += 1) {
                 $currDetails = $details[$i + $j];
@@ -304,16 +301,14 @@ class GraphicInflator implements IInflator
     /* Person names */
     private static function inflatePersonNames(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $groups = $node->{'Section'}[2]->{'Subreport'}->{'Group'};
 
         foreach ($groups as $group) {
             $personName = new PersonName;
 
-            $graphicDe->addPersonName($personName);
-            $graphicEn->addPersonName($personName);
+            $graphicCollection->addPersonName($personName);
 
             /* constituent id */
             $constituentIdElement = self::findElementByXPath(
@@ -365,8 +360,7 @@ class GraphicInflator implements IInflator
     /* Titles */
     private static function inflateTitles(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $titleDetailElements = $node->{'Section'}[3]->{'Subreport'}->{'Details'};
 
@@ -388,21 +382,19 @@ class GraphicInflator implements IInflator
                 $langStr = trim(strval($langElement));
 
                 if (self::$titlesLanguageTypes[Language::DE] === $langStr) {
-                    $graphicDe->addTitle($title);
+                    $graphicCollection->get(Language::DE)->addTitle($title);
                 } elseif (self::$titlesLanguageTypes[Language::EN] === $langStr) {
-                    $graphicEn->addTitle($title);
+                    $graphicCollection->get(Language::EN)->addTitle($title);
                 } elseif (self::$titlesLanguageTypes['not_assigned'] === $langStr) {
-                    echo '  Unassigned title lang for object ' . $graphicDe->getInventoryNumber() . "\n";
+                    echo '  Unassigned title lang for object ' . $graphicCollection->getInventoryNumber() . "\n";
                 } else {
-                    echo '  Unknown title lang: ' . $langStr . ' for object \'' . $graphicDe->getInventoryNumber() . "\'\n";
-                    /* Bind title to both languages to prevent loss */
-                    $graphicDe->addTitle($title);
-                    $graphicEn->addTitle($title);
+                    echo '  Unknown title lang: ' . $langStr . ' for object \'' . $graphicCollection->getInventoryNumber() . "\'\n";
+                    /* Bind title to all languages to prevent loss */
+                    $graphicCollection->addTitle($title);
                 }
             } else {
-                /* Bind title to both languages to prevent loss */
-                $graphicDe->addTitle($title);
-                $graphicEn->addTitle($title);
+                /* Bind title to all languages to prevent loss */
+                $graphicCollection->addTitle($title);
             }
 
             /* title type */
@@ -441,16 +433,15 @@ class GraphicInflator implements IInflator
     /* Classification */
     private static function inflateClassification(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $classificationSectionElement = $node->{'Section'}[4];
 
         $classificationDe = new Classification;
         $classificationEn = new Classification;
 
-        $graphicDe->setClassification($classificationDe);
-        $graphicEn->setClassification($classificationEn);
+        $graphicCollection->get(Language::DE)->setClassification($classificationDe);
+        $graphicCollection->get(Language::EN)->setClassification($classificationEn);
 
         /* classification */
         $classificationElement = self::findElementByXPath(
@@ -513,8 +504,7 @@ class GraphicInflator implements IInflator
     /* Inventory number */
     private static function inflateInventoryNumber(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $inventoryNumberSectionElement = $node->{'Section'}[6];
 
@@ -525,9 +515,8 @@ class GraphicInflator implements IInflator
         if ($inventoryNumberElement) {
             $inventoryNumberStr = trim(strval($inventoryNumberElement));
 
-            /* Using single german value for both language objects */
-            $graphicDe->setInventoryNumber($inventoryNumberStr);
-            $graphicEn->setInventoryNumber($inventoryNumberStr);
+            /* Using single german value for all language objects */
+            $graphicCollection->setInventoryNumber($inventoryNumberStr);
         }
     }
 
@@ -535,8 +524,7 @@ class GraphicInflator implements IInflator
     /* Object id & virtual (meta) */
     private static function inflateObjectMeta(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $metaSectionElement = $node->{'Section'}[7];
 
@@ -548,9 +536,8 @@ class GraphicInflator implements IInflator
         if ($objectIdElement) {
             $objectIdStr = intval(trim(strval($objectIdElement)));
 
-            /* Using single german value for both language objects */
-            $graphicDe->setObjectId($objectIdStr);
-            $graphicEn->setObjectId($objectIdStr);
+            /* Using single german value for all language objects */
+            $graphicCollection->setObjectId($objectIdStr);
         }
 
         /* virtual*/
@@ -563,9 +550,8 @@ class GraphicInflator implements IInflator
 
             $isVirtual = ($virtualStr === '1');
 
-            /* Using single german value for both language objects */
-            $graphicDe->setIsVirtual($isVirtual);
-            $graphicEn->setIsVirtual($isVirtual);
+            /* Using single german value for all language objects */
+            $graphicCollection->setIsVirtual($isVirtual);
         }
     }
 
@@ -573,8 +559,7 @@ class GraphicInflator implements IInflator
     /* Dimensions */
     private static function inflateDimensions(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $metaSectionElement = $node->{'Section'}[8];
 
@@ -589,11 +574,11 @@ class GraphicInflator implements IInflator
             $splitDimensionsStr = self::splitLanguageString($dimensionsStr);
 
             if (isset($splitDimensionsStr[0])) {
-                $graphicDe->setDimensions($splitDimensionsStr[0]);
+                $graphicCollection->get(Language::DE)->setDimensions($splitDimensionsStr[0]);
             }
 
             if (isset($splitDimensionsStr[1])) {
-                $graphicEn->setDimensions($splitDimensionsStr[1]);
+                $graphicCollection->get(Language::EN)->setDimensions($splitDimensionsStr[1]);
             }
         }
     }
@@ -602,15 +587,13 @@ class GraphicInflator implements IInflator
     /* Dating */
     private static function inflateDating(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $datingDe = new Dating;
         $datingEn = new Dating;
 
-        /* Using single german value for both language objects */
-        $graphicDe->setDating($datingDe);
-        $graphicEn->setDating($datingEn);
+        $graphicCollection->get(Language::DE)->setDating($datingDe);
+        $graphicCollection->get(Language::EN)->setDating($datingEn);
 
         /* Dated (string) */
         $datedSectionElement = $node->{'Section'}[9];
@@ -779,8 +762,7 @@ class GraphicInflator implements IInflator
     /* Description */
     private static function inflateDescription(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         /* de */
         $descriptionDeSectionElement = $node->{'Section'}[14];
@@ -790,7 +772,7 @@ class GraphicInflator implements IInflator
         );
         if ($descriptionElement) {
             $descriptionStr = trim(strval($descriptionElement));
-            $graphicDe->setDescription($descriptionStr);
+            $graphicCollection->get(Language::DE)->setDescription($descriptionStr);
         }
 
         /* en */
@@ -801,7 +783,7 @@ class GraphicInflator implements IInflator
         );
         if ($descriptionElement) {
             $descriptionStr = trim(strval($descriptionElement));
-            $graphicEn->setDescription($descriptionStr);
+            $graphicCollection->get(Language::EN)->setDescription($descriptionStr);
         }
     }
 
@@ -809,8 +791,7 @@ class GraphicInflator implements IInflator
     /* Provenance */
     private static function inflateProvenance(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         /* de */
         $provenanceDeSectionElement = $node->{'Section'}[16];
@@ -820,7 +801,7 @@ class GraphicInflator implements IInflator
         );
         if ($provenanceElement) {
             $provenanceStr = trim(strval($provenanceElement));
-            $graphicDe->setProvenance($provenanceStr);
+            $graphicCollection->get(Language::DE)->setProvenance($provenanceStr);
         }
 
         /* en */
@@ -831,7 +812,7 @@ class GraphicInflator implements IInflator
         );
         if ($provenanceElement) {
             $provenanceStr = trim(strval($provenanceElement));
-            $graphicEn->setProvenance($provenanceStr);
+            $graphicCollection->get(Language::EN)->setProvenance($provenanceStr);
         }
     }
 
@@ -839,8 +820,7 @@ class GraphicInflator implements IInflator
     /* Medium */
     private static function inflateMedium(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         /* de */
         $mediumDeSectionElement = $node->{'Section'}[18];
@@ -850,7 +830,7 @@ class GraphicInflator implements IInflator
         );
         if ($mediumElement) {
             $mediumStr = trim(strval($mediumElement));
-            $graphicDe->setMedium($mediumStr);
+            $graphicCollection->get(Language::DE)->setMedium($mediumStr);
         }
 
         /* en */
@@ -861,7 +841,7 @@ class GraphicInflator implements IInflator
         );
         if ($mediumElement) {
             $mediumStr = trim(strval($mediumElement));
-            $graphicEn->setMedium($mediumStr);
+            $graphicCollection->get(Language::EN)->setMedium($mediumStr);
         }
     }
 
@@ -869,8 +849,7 @@ class GraphicInflator implements IInflator
     /* Signature */
     private static function inflateSignature(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         /* de */
         $signatureDeSectionElement = $node->{'Section'}[20];
@@ -880,7 +859,7 @@ class GraphicInflator implements IInflator
         );
         if ($signatureElement) {
             $signatureStr = trim(strval($signatureElement));
-            $graphicDe->setSignature($signatureStr);
+            $graphicCollection->get(Language::DE)->setSignature($signatureStr);
         }
 
         /* en */
@@ -891,7 +870,7 @@ class GraphicInflator implements IInflator
         );
         if ($signatureElement) {
             $signatureStr = trim(strval($signatureElement));
-            $graphicEn->setSignature($signatureStr);
+            $graphicCollection->get(Language::EN)->setSignature($signatureStr);
         }
     }
 
@@ -899,8 +878,7 @@ class GraphicInflator implements IInflator
     /* Inscription */
     private static function inflateInscription(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         /* de */
         $inscriptionDeSectionElement = $node->{'Section'}[22];
@@ -910,7 +888,7 @@ class GraphicInflator implements IInflator
         );
         if ($inscriptionElement) {
             $inscriptionStr = trim(strval($inscriptionElement));
-            $graphicDe->setInscription($inscriptionStr);
+            $graphicCollection->get(Language::DE)->setInscription($inscriptionStr);
         }
 
         /* en */
@@ -921,7 +899,7 @@ class GraphicInflator implements IInflator
         );
         if ($inscriptionElement) {
             $inscriptionStr = trim(strval($inscriptionElement));
-            $graphicEn->setInscription($inscriptionStr);
+            $graphicCollection->get(Language::EN)->setInscription($inscriptionStr);
         }
     }
 
@@ -929,8 +907,7 @@ class GraphicInflator implements IInflator
     /* Markings */
     private static function inflateMarkings(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         /* de */
         $markingsDeSectionElement = $node->{'Section'}[24];
@@ -940,7 +917,7 @@ class GraphicInflator implements IInflator
         );
         if ($markingsElement) {
             $markingsStr = trim(strval($markingsElement));
-            $graphicDe->setMarkings($markingsStr);
+            $graphicCollection->get(Language::DE)->setMarkings($markingsStr);
         }
 
         /* en */
@@ -951,7 +928,7 @@ class GraphicInflator implements IInflator
         );
         if ($markingsElement) {
             $markingsStr = trim(strval($markingsElement));
-            $graphicEn->setMarkings($markingsStr);
+            $graphicCollection->get(Language::EN)->setMarkings($markingsStr);
         }
     }
 
@@ -959,8 +936,7 @@ class GraphicInflator implements IInflator
     /* Related works */
     private static function inflateRelatedWorks(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         /* de */
         $relatedWorksDeSectionElement = $node->{'Section'}[26];
@@ -970,7 +946,7 @@ class GraphicInflator implements IInflator
         );
         if ($relatedWorksElement) {
             $relatedWorksStr = trim(strval($relatedWorksElement));
-            $graphicDe->setRelatedWorks($relatedWorksStr);
+            $graphicCollection->get(Language::DE)->setRelatedWorks($relatedWorksStr);
         }
 
         /* en */
@@ -981,7 +957,7 @@ class GraphicInflator implements IInflator
         );
         if ($relatedWorksElement) {
             $relatedWorksStr = trim(strval($relatedWorksElement));
-            $graphicEn->setRelatedWorks($relatedWorksStr);
+            $graphicCollection->get(Language::EN)->setRelatedWorks($relatedWorksStr);
         }
     }
 
@@ -989,8 +965,7 @@ class GraphicInflator implements IInflator
     /* Exhibition history */
     private static function inflateExhibitionHistory(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         /* de */
         $exhibitionHistoryDeSectionElement = $node->{'Section'}[28];
@@ -1000,7 +975,7 @@ class GraphicInflator implements IInflator
         );
         if ($exhibitionHistoryElement) {
             $exhibitionHistoryStr = trim(strval($exhibitionHistoryElement));
-            $graphicDe->setExhibitionHistory($exhibitionHistoryStr);
+            $graphicCollection->get(Language::DE)->setExhibitionHistory($exhibitionHistoryStr);
         }
 
         /* en */
@@ -1011,13 +986,15 @@ class GraphicInflator implements IInflator
         );
         if ($exhibitionHistoryElement) {
             $exhibitionHistoryStr = trim(strval($exhibitionHistoryElement));
-            $graphicEn->setExhibitionHistory($exhibitionHistoryStr);
+            $graphicCollection->get(Language::EN)->setExhibitionHistory($exhibitionHistoryStr);
         }
 
 
         /* Use the german exhibition history if none is set for the english one */
-        if (empty($graphicEn->getExhibitionHistory())) {
-            $graphicEn->setExhibitionHistory($graphicDe->getExhibitionHistory());
+        if (empty($graphicCollection->get(Language::EN)->getExhibitionHistory())) {
+            $graphicCollection->get(Language::EN)->setExhibitionHistory(
+                $graphicCollection->get(Language::DE)->getExhibitionHistory()
+            );
         }
     }
 
@@ -1025,8 +1002,7 @@ class GraphicInflator implements IInflator
     /* Bibliography */
     private static function inflateBibliography(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $bibliographySectionElement = $node->{'Section'}[30];
         $bibliographyElement = self::findElementByXPath(
@@ -1035,8 +1011,7 @@ class GraphicInflator implements IInflator
         );
         if ($bibliographyElement) {
             $bibliographyStr = trim(strval($bibliographyElement));
-            $graphicDe->setBibliography($bibliographyStr);
-            $graphicEn->setBibliography($bibliographyStr);
+            $graphicCollection->setBibliography($bibliographyStr);
         }
     }
 
@@ -1044,8 +1019,7 @@ class GraphicInflator implements IInflator
     /* References */
     private static function inflateReferences(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         /* Reprints References */
         $referenceReprintDetailsElements = $node->{'Section'}[31]->{'Subreport'}->{'Details'};
@@ -1075,7 +1049,7 @@ class GraphicInflator implements IInflator
 
         if (self::$activeLoggingOfWronglyCategorizedReferences) {
             self::logWronglyCategorizedReferences(
-                $graphicDe,
+                $graphicCollection,
                 $wrongReprintReferences,
                 $wrongRelatedWorkReferences,
             );
@@ -1097,22 +1071,20 @@ class GraphicInflator implements IInflator
             }),
         );
 
-        $graphicDe->setReprintReferences($filteredReprintReferences);
-        $graphicEn->setReprintReferences($filteredReprintReferences);
+        $graphicCollection->setReprintReferences($filteredReprintReferences);
 
-        $graphicDe->setRelatedWorkReferences($filteredRelatedWorkReferences);
-        $graphicEn->setRelatedWorkReferences($filteredRelatedWorkReferences);
+        $graphicCollection->setRelatedWorkReferences($filteredRelatedWorkReferences);
     }
 
 
     /* Helper function for logging graphics with wrongly categorized references */
     private static function logWronglyCategorizedReferences(
-        Graphic $graphic,
+        GraphicLanguageCollection $graphicCollection,
         array $reprintRefs,
         array $relatedWorkRefs
     ): void {
         if (count($reprintRefs) > 0 || count($relatedWorkRefs) > 0) {
-            echo '  > ' . $graphic->getInventoryNumber() . (($graphic->getIsVirtual()) ? ' (isVirtual)' : '') . "\n";
+            echo '  > ' . $graphicCollection->getInventoryNumber() . (($graphicCollection->getIsVirtual()) ? ' (isVirtual)' : '') . "\n";
 
             if (count($reprintRefs) > 0) {
                 echo "  wrong reprint refs:\n";
@@ -1205,8 +1177,7 @@ class GraphicInflator implements IInflator
     /* Additional text informations */
     private static function inflateAdditionalTextInformations(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $additionalTextsDetailsElements = $node->{'Section'}[33]->{'Subreport'}->{'Details'};
 
@@ -1231,21 +1202,18 @@ class GraphicInflator implements IInflator
                 $additionalTextInformation->setType($textTypeStr);
 
                 if (self::$additionalTextLanguageTypes[Language::DE] === $textTypeStr) {
-                    $graphicDe->addAdditionalTextInformation($additionalTextInformation);
+                    $graphicCollection->get(Language::DE)->addAdditionalTextInformation($additionalTextInformation);
                 } elseif (self::$additionalTextLanguageTypes[Language::EN] === $textTypeStr) {
-                    $graphicEn->addAdditionalTextInformation($additionalTextInformation);
+                    $graphicCollection->get(Language::EN)->addAdditionalTextInformation($additionalTextInformation);
                 } elseif (self::$additionalTextLanguageTypes['not_assigned'] === $textTypeStr) {
-                    echo '  Unassigned additional text type for object \'' . $graphicDe->getInventoryNumber() . "'\n";
-                    $graphicDe->addAdditionalTextInformation($additionalTextInformation);
-                    $graphicEn->addAdditionalTextInformation($additionalTextInformation);
+                    echo '  Unassigned additional text type for object \'' . $graphicCollection->getInventoryNumber() . "'\n";
+                    $graphicCollection->addAdditionalTextInformation($additionalTextInformation);
                 } else {
-                    echo '  Unknown additional text type: ' . $textTypeStr . ' for object \'' . $graphicDe->getInventoryNumber() . "'\n";
-                    $graphicDe->addAdditionalTextInformation($additionalTextInformation);
-                    $graphicEn->addAdditionalTextInformation($additionalTextInformation);
+                    echo '  Unknown additional text type: ' . $textTypeStr . ' for object \'' . $graphicCollection->getInventoryNumber() . "'\n";
+                    $graphicCollection->addAdditionalTextInformation($additionalTextInformation);
                 }
             } else {
-                $graphicDe->addAdditionalTextInformation($additionalTextInformation);
-                $graphicEn->addAdditionalTextInformation($additionalTextInformation);
+                $graphicCollection->addAdditionalTextInformation($additionalTextInformation);
             }
 
             /* Text */
@@ -1295,8 +1263,7 @@ class GraphicInflator implements IInflator
     /* Publications */
     private static function inflatePublications(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $publicationDetailsElements = $node->{'Section'}[34]->{'Subreport'}->{'Details'};
 
@@ -1310,8 +1277,8 @@ class GraphicInflator implements IInflator
             $publicationDe = new Publication;
             $publicationEn = new Publication;
 
-            $graphicDe->addPublication($publicationDe);
-            $graphicEn->addPublication($publicationEn);
+            $graphicCollection->get(Language::DE)->addPublication($publicationDe);
+            $graphicCollection->get(Language::EN)->addPublication($publicationEn);
 
             /* Title */
             $titleElement = self::findElementByXPath(
@@ -1360,8 +1327,7 @@ class GraphicInflator implements IInflator
     /* Keywords */
     private static function inflateKeywords(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $keywordDetailsElements = $node->{'Section'}[35]->{'Subreport'}->{'Details'};
 
@@ -1407,8 +1373,7 @@ class GraphicInflator implements IInflator
 
             /* Decide if keyword is valid */
             if (!empty($metaReference->getTerm())) {
-                $graphicDe->addKeyword($metaReference);
-                $graphicEn->addKeyword($metaReference);
+                $graphicCollection->addKeyword($metaReference);
             }
         }
     }
@@ -1417,8 +1382,7 @@ class GraphicInflator implements IInflator
     /* Locations */
     private static function inflateLocations(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $locationDetailsElements = $node->{'Section'}[36]->{'Subreport'}->{'Details'};
 
@@ -1475,17 +1439,15 @@ class GraphicInflator implements IInflator
 
                 if (!empty($locationTypeStr)) {
                     if (self::$locationLanguageTypes[Language::DE] === $locationTypeStr) {
-                        $graphicDe->addLocation($metaReference);
+                        $graphicCollection->get(Language::DE)->addLocation($metaReference);
                     } elseif (self::$locationLanguageTypes[Language::EN] === $locationTypeStr) {
-                        $graphicEn->addLocation($metaReference);
+                        $graphicCollection->get(Language::EN)->addLocation($metaReference);
                     } elseif (self::$locationLanguageTypes['not_assigned'] === $locationTypeStr) {
-                        echo '  Unassigned location type for object ' . $graphicDe->getInventoryNumber() . "\n";
-                        $graphicDe->addLocation($metaReference);
-                        $graphicEn->addLocation($metaReference);
+                        echo '  Unassigned location type for object ' . $graphicCollection->getInventoryNumber() . "\n";
+                        $graphicCollection->addLocation($metaReference);
                     } else {
-                        echo '  Unknown location type: ' . $locationTypeStr . ' for object ' . $graphicDe->getInventoryNumber() . "\n";
-                        $graphicDe->addLocation($metaReference);
-                        $graphicEn->addLocation($metaReference);
+                        echo '  Unknown location type: ' . $locationTypeStr . ' for object ' . $graphicCollection->getInventoryNumber() . "\n";
+                        $graphicCollection->addLocation($metaReference);
                     }
                 }
             }
@@ -1496,8 +1458,7 @@ class GraphicInflator implements IInflator
     /* Repository and Owner */
     private static function inflateRepositoryAndOwner(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $repositoryAndOwnerDetailsSubreport = $node->{'Section'}[37]->{'Subreport'};
         $details = $repositoryAndOwnerDetailsSubreport->{'Details'};
@@ -1521,13 +1482,13 @@ class GraphicInflator implements IInflator
             $isOwner = false;
 
             try {
-                $isRepository = self::inflateRepository($detail, $roleName, $graphicDe, $graphicEn);
+                $isRepository = self::inflateRepository($detail, $roleName, $graphicCollection);
             } catch (Error $e) {
                 echo '  ' . $e->getMessage() . "\n";
             }
 
             try {
-                $isOwner = self::inflateOwner($detail, $roleName, $graphicDe, $graphicEn);
+                $isOwner = self::inflateOwner($detail, $roleName, $graphicCollection);
             } catch (Error $e) {
                 echo '  ' . $e->getMessage() . "\n";
             }
@@ -1543,8 +1504,7 @@ class GraphicInflator implements IInflator
     private static function inflateRepository(
         SimpleXMLElement $detail,
         string $roleName,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): bool {
         $repositoryElement = self::findElementByXPath(
             $detail,
@@ -1560,12 +1520,12 @@ class GraphicInflator implements IInflator
         switch ($roleName) {
             case self::$repositoryTypes[Language::DE]:
                 /* de */
-                $graphicDe->setRepository($repositoryStr);
+                $graphicCollection->get(Language::DE)->setRepository($repositoryStr);
                 break;
 
             case self::$repositoryTypes[Language::EN]:
                 /* en */
-                $graphicEn->setRepository($repositoryStr);
+                $graphicCollection->get(Language::EN)->setRepository($repositoryStr);
                 break;
 
             default:
@@ -1580,8 +1540,7 @@ class GraphicInflator implements IInflator
     private static function inflateOwner(
         SimpleXMLElement $detail,
         string $roleName,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): bool {
         $ownerElement = self::findElementByXPath(
             $detail,
@@ -1597,12 +1556,12 @@ class GraphicInflator implements IInflator
         switch ($roleName) {
             case self::$ownerTypes[Language::DE]:
                 /* de */
-                $graphicDe->setOwner($ownerStr);
+                $graphicCollection->get(Language::DE)->setOwner($ownerStr);
                 break;
 
             case self::$ownerTypes[Language::EN]:
                 /* en */
-                $graphicEn->setOwner($ownerStr);
+                $graphicCollection->get(Language::EN)->setOwner($ownerStr);
                 break;
 
             default:
@@ -1616,8 +1575,7 @@ class GraphicInflator implements IInflator
     /* Sorting number */
     private static function inflateSortingNumber(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $sortingNumberSubreport = $node->{'Section'}[38];
 
@@ -1632,8 +1590,7 @@ class GraphicInflator implements IInflator
                 $sortingNumberStr = self::$sortingNumberFallbackValue;
             }
 
-            $graphicDe->setSortingNumber($sortingNumberStr);
-            $graphicEn->setSortingNumber($sortingNumberStr);
+            $graphicCollection->setSortingNumber($sortingNumberStr);
         }
     }
 
@@ -1641,8 +1598,7 @@ class GraphicInflator implements IInflator
     /* Catalog work reference */
     private static function inflateCatalogWorkReference(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic $graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $catalogWorkReferenceDetailsElements = $node->{'Section'}[39]->{'Subreport'}->{'Details'};
 
@@ -1701,8 +1657,7 @@ class GraphicInflator implements IInflator
 
             /* Decide if reference should be added */
             if (!empty($catalogWorkReference->getReferenceNumber())) {
-                $graphicDe->addCatalogWorkReference($catalogWorkReference);
-                $graphicEn->addCatalogWorkReference($catalogWorkReference);
+                $graphicCollection->addCatalogWorkReference($catalogWorkReference);
             }
         }
     }
@@ -1711,15 +1666,14 @@ class GraphicInflator implements IInflator
     /* Structured dimension */
     private static function inflateStructuredDimension(
         SimpleXMLElement $node,
-        Graphic $graphicDe,
-        Graphic &$graphicEn
+        GraphicLanguageCollection $graphicCollection,
     ): void {
         $catalogWorkReferenceSubreport = $node->{'Section'}[40]->{'Subreport'};
 
         $structuredDimension = new StructuredDimension;
 
-        $graphicDe->setStructuredDimension($structuredDimension);
-        $graphicEn->setStructuredDimension($structuredDimension);
+        $graphicCollection->get(Language::DE)->setStructuredDimension($structuredDimension);
+        $graphicCollection->get(Language::EN)->setStructuredDimension($structuredDimension);
 
         /* element */
         $elementElement = self::findElementByXPath(

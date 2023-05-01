@@ -3,8 +3,9 @@
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
 use Error;
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
+use CranachDigitalArchive\Importer\Modules\Graphics\Interfaces\IGraphic;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
@@ -39,8 +40,8 @@ class ExtenderWithIds extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Graphic)) {
-            throw new Error('Pushed item is not of expected class \'Graphic\'');
+        if (!($item instanceof GraphicLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'GraphicLanguageCollection\'');
         }
 
         $this->extendWithBasicFilterValues($item);
@@ -50,14 +51,16 @@ class ExtenderWithIds extends Hybrid
     }
 
 
-    private function extendWithBasicFilterValues(Graphic $item): void
+    private function extendWithBasicFilterValues(GraphicLanguageCollection $collection): void
     {
-        $this->extendWithAttributionIds($item);
-        $this->extendWithCollectionAndRepositoryIds($item);
+        foreach ($collection as $item) {
+            $this->extendWithAttributionIds($item);
+            $this->extendWithCollectionAndRepositoryIds($item);
+        }
     }
 
 
-    private function extendWithAttributionIds(Graphic $item):void
+    private function extendWithAttributionIds(IGraphic $item):void
     {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {
@@ -134,7 +137,7 @@ class ExtenderWithIds extends Hybrid
     }
 
 
-    private function extendWithCollectionAndRepositoryIds(Graphic $item):void
+    private function extendWithCollectionAndRepositoryIds(IGraphic $item):void
     {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {

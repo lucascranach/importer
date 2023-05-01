@@ -2,8 +2,9 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
+use CranachDigitalArchive\Importer\Modules\Graphics\Interfaces\IGraphic;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 use Error;
 
@@ -21,15 +22,25 @@ class MetadataFiller extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Graphic)) {
-            throw new Error('Pushed item is not of expected class \'Graphic\'');
+        if (!($item instanceof GraphicLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'GraphicLanguageCollection\'');
         }
 
+        foreach ($item as $subItem) {
+            $this->extendMetadata($subItem);
+        }
+
+        $this->next($item);
+        return true;
+    }
+
+    private function extendMetadata(IGraphic $item): void
+    {
         $metadata = $item->getMetadata();
 
         if (is_null($metadata)) {
-            $this->next($item);
-            return true;
+            ;
+            return;
         }
 
         $titles = $item->getTitles();
@@ -76,9 +87,6 @@ class MetadataFiller extends Hybrid
         $metadata->addAdditionalInfo($item->getDimensions());
         $metadata->setClassification($classificationName);
         $metadata->setImgSrc($imageSrc);
-
-        $this->next($item);
-        return true;
     }
 
 

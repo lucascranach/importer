@@ -3,160 +3,75 @@
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
 use CranachDigitalArchive\Importer\Language;
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 use Error;
 
 class ConditionDeterminer extends Hybrid
 {
-    private static $conditionLangMappings = [
-        Language::DE => [
-            [
-                'patterns' => [
-                    '/^I\.\s*zustand/i',
-                    '/^1\.\s*auflage/i',
-                ],
-                'value' =>  1,
+    private static $conditionGermanMappings = [
+        [
+            'patterns' => [
+                '/^I\.?\s*(zustand|auflage)/i',
             ],
-            [
-                'patterns' => [
-                    '/^II\.\s*zustand/i',
-                    '/^2\.\s*auflage/i',
-                ],
-                'value' => 2,
-            ],
-            [
-                'patterns' => [
-                    '/^III\.\s*zustand/i',
-                    '/^3\.\s*auflage/i',
-                ],
-                'value' => 3,
-            ],
-            [
-                'patterns' => [
-                    '/^IV\.\s*zustand/i',
-                    '/^4\.\s*auflage/i',
-                ],
-                'value' => 4,
-            ],
-            [
-                'patterns' => [
-                    '/^V\.\s*zustand/i',
-                    '/^5\.\s*auflage/i',
-                ],
-                'value' => 5,
-            ],
-            [
-                'patterns' => [
-                    '/^VI\.\s*zustand/i',
-                    '/^6\.\s*auflage/i',
-                ],
-                'value' => 6,
-            ],
-            [
-                'patterns' => [
-                    '/^VII\.\s*zustand/i',
-                    '/^7\.\s*auflage/i',
-                ],
-                'value' => 7,
-            ],
-            [
-                'patterns' => [
-                    '/^VIII\.\s*zustand/i',
-                    '/^8\.\s*auflage/i',
-                ],
-                'value' => 8,
-            ],
-            [
-                'patterns' => [
-                    '/^IX\.\s*zustand/i',
-                    '/^9\.\s*auflage/i',
-                ],
-                'value' => 9,
-            ],
-            [
-                'patterns' => [
-                    '/^X\.\s*zustand/i',
-                    '/^10\.\s*auflage/i',
-                ],
-                'value' => 10,
-            ],
+            'value' =>  1,
         ],
-        Language::EN => [
-            [
-                'patterns' => [
-                    '/^1st\s*state/i',
-                    '/^1st\s*edition/i',
-                ],
-                'value' =>  1,
+        [
+            'patterns' => [
+                '/^II\.?\s*(zustand|auflage)/i',
             ],
-            [
-                'patterns' => [
-                    '/^2nd\s*state/i',
-                    '/^2nd\s*edition/i',
-                ],
-                'value' => 2,
+            'value' => 2,
+        ],
+        [
+            'patterns' => [
+                '/^III\.?\s*(zustand|auflage)/i',
             ],
-            [
-                'patterns' => [
-                    '/^3rd\s*state/i',
-                    '/^3rd\s*edition/i',
-                ],
-                'value' => 3,
+            'value' => 3,
+        ],
+        [
+            'patterns' => [
+                '/^IV\.?\s*(zustand|auflage)/i',
             ],
-            [
-                'patterns' => [
-                    '/^4th\s*state/i',
-                    '/^4th\s*edition/i',
-                ],
-                'value' => 4,
+            'value' => 4,
+        ],
+        [
+            'patterns' => [
+                '/^V\.?\s*(zustand|auflage)/i',
             ],
-            [
-                'patterns' => [
-                    '/^5th\s*state/i',
-                    '/^5th\s*edition/i',
-                ],
-                'value' => 5,
+            'value' => 5,
+        ],
+        [
+            'patterns' => [
+                '/^VI\.?\s*(zustand|auflage)/i',
             ],
-            [
-                'patterns' => [
-                    '/^6th\s*state/i',
-                    '/^6th\s*edition/i',
-                ],
-                'value' => 6,
+            'value' => 6,
+        ],
+        [
+            'patterns' => [
+                '/^VII\.?\s*(zustand|auflage)/i',
             ],
-            [
-                'patterns' => [
-                    '/^7th\s*state/i',
-                    '/^7th\s*edition/i',
-                ],
-                'value' => 7,
+            'value' => 7,
+        ],
+        [
+            'patterns' => [
+                '/^VIII\.?\s*(zustand|auflage)/i',
             ],
-            [
-                'patterns' => [
-                    '/^8th\s*state/i',
-                    '/^8th\s*edition/i',
-                ],
-                'value' => 8,
+            'value' => 8,
+        ],
+        [
+            'patterns' => [
+                '/^IX\.?\s*(zustand|auflage)/i',
             ],
-            [
-                'patterns' => [
-                    '/^9th\s*state/i',
-                    '/^9th\s*edition/i',
-                ],
-                'value' => 9,
+            'value' => 9,
+        ],
+        [
+            'patterns' => [
+                '/^X\.?\s*(zustand|auflage)/i',
             ],
-            [
-                'patterns' => [
-                    '/^10th\s*state/i',
-                    '/^10th\s*edition/i',
-                ],
-                'value' => 10,
-            ],
+            'value' => 10,
         ],
     ];
-    private $conditionLevelCache = [];
 
 
     private function __construct()
@@ -171,43 +86,31 @@ class ConditionDeterminer extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Graphic)) {
-            throw new Error('Pushed item is not of expected class \'Graphic\'');
+        if (!($item instanceof GraphicLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'GraphicLanguageCollection\'');
         }
 
-        $inventoryNumber = $item->getInventoryNumber();
-
-        if (!isset($this->conditionLevelCache[$inventoryNumber])) {
-            $this->conditionLevelCache[$inventoryNumber] = $this->getConditionLevel(
-                $item,
-                $item->getConditionLevel(),
-            );
-        }
-
-        $item->setConditionLevel($this->conditionLevelCache[$inventoryNumber]);
+        $item->setConditionLevel($this->getConditionLevel($item));
 
         $this->next($item);
         return true;
     }
 
 
-    private function getConditionLevel(Graphic $graphic, int $conditionLevel = 0): int
+    private function getConditionLevel(GraphicLanguageCollection $graphicCollection, int $conditionLevel = 0): int
     {
-        $classification = $graphic->getClassification();
+        /* We derive the condition level from the german condition text */
+        $germanGraphic = $graphicCollection->get(Language::DE);
 
-        $metadata = $graphic->getMetadata();
-        $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
+        $classification = $germanGraphic->getClassification();
 
-        $conditionLangMappingExists = isset(self::$conditionLangMappings[$langCode]);
-
-        if (is_null($classification) || !$conditionLangMappingExists) {
+        if (is_null($classification)) {
             return $conditionLevel;
         }
 
         $condition = trim($classification->getCondition());
-        $conditionMappings = self::$conditionLangMappings[$langCode];
 
-        foreach ($conditionMappings as $conditionMapping) {
+        foreach (self::$conditionGermanMappings as $conditionMapping) {
             foreach ($conditionMapping['patterns'] as $pattern) {
                 if (preg_match($pattern, $condition) === 1) {
                     return $conditionMapping['value'];
@@ -225,12 +128,5 @@ class ConditionDeterminer extends Hybrid
     public function done(ProducerInterface $producer)
     {
         parent::done($producer);
-        $this->cleanUp();
-    }
-
-
-    private function cleanUp(): void
-    {
-        $this->conditionLevelCache = [];
     }
 }
