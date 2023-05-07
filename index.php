@@ -27,7 +27,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MetadataFiller 
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteDocumentExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Main\Collectors\MetaReferenceCollector;
-use CranachDigitalArchive\Importer\Modules\Main\Gates\SoftDeletedArtefactGate;
+use CranachDigitalArchive\Importer\Modules\Main\Gates\SkipSoftDeletedArtefactGate;
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
 use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Restorations\Transformers\ExtenderWithIds as RestorationsExtenderWithIds;
@@ -86,6 +86,7 @@ try {
 }
 
 $imagesAPIKey = $_ENV['IMAGES_API_KEY'];
+$cacheDir = $_ENV['CACHE_DIR'] ?? './.cache';
 
 /* Inputfiles */
 $thesaurusInputFilepath = $inputDirectory . '/CDA_Thesaurus_' . $date . '.xml';
@@ -126,9 +127,58 @@ $archivalsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-arc
 $filtersOutputFilepath = $destDirectory . '/cda-filters.json';
 
 
-$opts = getopt('x');
+/* Parameters */
+$longOpts = [
+    'keep-soft-deleted-artefacts',      /* optional */
 
-$skipSoftDeletedArterfacts = isset($opts['x']);
+    'refresh-remote-images-cache::',    /* optional value; default is 'all' */
+    'refresh-remote-documents-cache::', /* optional value; default is 'all' */
+    'refresh-all-remote-caches',        /* optional */
+];
+
+$opts = getopt('', $longOpts);
+
+$keepSoftDeletedArterfacts = false;
+
+$supportedCachesKeys = ['paintings', 'graphics', 'archivals'];
+$remoteImagesCachesToRefresh = array_fill_keys($supportedCachesKeys, false);
+$remoteDocumentsCachesToRefresh = array_fill_keys($supportedCachesKeys, false);
+
+foreach ($opts as $opt => $value) {
+    switch ($opt) {
+        case 'keep-soft-deleted-artefacts':
+            $keepSoftDeletedArterfacts = true;
+            break;
+
+        case 'refresh-remote-images-cache':
+        case 'refresh-remote-documents-cache':
+            $cachesToRefresh = $value === false ? ['all'] : explode(',', $value);
+            $refreshAllCaches = in_array('all', $cachesToRefresh, true);
+
+            $remoteCachesToRefresh = array_reduce(
+                $supportedCachesKeys,
+                function ($arr, $key) use ($refreshAllCaches, $cachesToRefresh) {
+                    $arr[$key] = $refreshAllCaches || in_array($key, $cachesToRefresh, true);
+                    return $arr;
+                },
+                [],
+            );
+
+            if ($opt === 'refresh-remote-images-cache') {
+                $remoteImagesCachesToRefresh = $remoteCachesToRefresh;
+            } elseif ($opt === 'refresh-remote-documents-cache') {
+                $remoteDocumentsCachesToRefresh = $remoteCachesToRefresh;
+            }
+            break;
+
+        case 'refresh-all-remote-caches':
+            $remoteImagesCachesToRefresh = array_fill_keys($supportedCachesKeys, true);
+            $remoteDocumentsCachesToRefresh = array_fill_keys($supportedCachesKeys, true);
+            break;
+
+        default:
+    }
+}
 
 /* Locations */
 $locationsSource = LocationsSource::withSourceAt($locationsFilepath);
@@ -177,16 +227,16 @@ $paintingsPreLoader->run();
 
 /* Paintings */
 $paintingsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::withCacheAt(
+    'remotePaintingsDocumentExistenceChecker',
+    $cacheDir,
     $imagesAPIKey,
-    './.cache',
-    RemoteDocumentExistenceChecker::ALL_EXAMINATION_TYPES,
-    'remotePaintingsDocumentExistenceChecker'
+    $remoteDocumentsCachesToRefresh['paintings']
 );
 $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
+    'remotePaintingsImageExistenceChecker',
+    $cacheDir,
     $imagesAPIKey,
-    './.cache',
-    RemoteImageExistenceChecker::ALL_IMAGE_TYPES,
-    'remotePaintingsImageExistenceChecker'
+    $remoteImagesCachesToRefresh['paintings']
 );
 $paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
 $paintingsIdAdder = PaintingsExtenderWithIds::new($customFiltersMemoryDestination);
@@ -207,8 +257,9 @@ $paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths);
 
 $inbetweenNode = $paintingsLoader;
 
-if ($skipSoftDeletedArterfacts) {
-    $gate = SoftDeletedArtefactGate::new('Paintings');
+if (!$keepSoftDeletedArterfacts) {
+    /* We skip the soft deleted artefact */
+    $gate = SkipSoftDeletedArtefactGate::new('Paintings');
 
     $inbetweenNode->pipe($gate);
     $inbetweenNode = $gate;
@@ -263,16 +314,16 @@ $graphicsPreLoader->run();
 
 /* Graphics */
 $graphicsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::withCacheAt(
+    'remoteGraphicsDocumentExistenceChecker',
+    $cacheDir,
     $imagesAPIKey,
-    './.cache',
-    RemoteDocumentExistenceChecker::ALL_EXAMINATION_TYPES,
-    'remoteGraphicsDocumentExistenceChecker'
+    $remoteDocumentsCachesToRefresh['graphics']
 );
 $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
+    'remoteGraphicsImageExistenceChecker',
+    $cacheDir,
     $imagesAPIKey,
-    './.cache',
-    RemoteImageExistenceChecker::ALL_IMAGE_TYPES,
-    'remoteGraphicsImageExistenceChecker'
+    $remoteImagesCachesToRefresh['graphics']
 );
 $graphicsConditionDeterminer = ConditionDeterminer::new();
 $graphicsRestorationExtender = GraphicsExtenderWithRestorations::new($graphicsRestorationMemoryDestination);
@@ -294,8 +345,9 @@ $graphicsLocationExtender = LocationsGeoPositionExtender::new($locationsSource);
 $graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath);
 
 $inbetweenNode = $graphicsLoader;
-if ($skipSoftDeletedArterfacts) {
-    $gate = SoftDeletedArtefactGate::new('Graphics');
+if (!$keepSoftDeletedArterfacts) {
+    /* We skip the soft deleted artefact */
+    $gate = SkipSoftDeletedArtefactGate::new('Graphics');
 
     $inbetweenNode ->pipe($gate);
     $inbetweenNode  = $gate;
@@ -355,17 +407,17 @@ $literatureReferencesLoader = LiteratureReferencesLoader::withSourcesAt($literat
 $archivalsDestination = ArchivalsJSONLangExporter::withDestinationAt($archivalsOutputFilepath);
 $archivalsMetadataFiller = ArchivalsMetadataFiller::new();
 $archivalsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::withCacheAt(
+    'remoteArchivalsDocumentExistenceChecker',
+    $cacheDir,
     $imagesAPIKey,
-    './.cache',
-    RemoteDocumentExistenceChecker::ALL_EXAMINATION_TYPES,
-    'remoteArchivalsDocumentExistenceChecker'
+    $remoteDocumentsCachesToRefresh['archivals']
 );
 
 $archivalsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
+    'remoteArchivalsImageExistenceChecker',
+    $cacheDir,
     $imagesAPIKey,
-    './.cache',
-    RemoteImageExistenceChecker::ALL_IMAGE_TYPES,
-    'remoteArchivalsImageExistenceChecker'
+    $remoteImagesCachesToRefresh['archivals']
 );
 
 $archivalsMapToSearchableArchival = MapToSearchableArchival::new();

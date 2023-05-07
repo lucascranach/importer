@@ -21,6 +21,23 @@ Um die Nutzung des Importers (aber auch die Entwicklung) zu vereinfachen, kommt 
 | **import** | Starten des Import-Vorgangs. Als gelöscht markierte Artefakte **werden übersprungen**; alternativ  `php index.php -x` ausführen |
 | import:keep-deleted | Starten des Import-Vorgangs. Als gelöscht markierte Artefakte **bleiben erhalten**; alternativ  `php index.php` ausführen |
 
+### Import Parameters
+Das Import-Script unterstützt die Durchgabe einiger weiterer Parameter.
+
+| Parametername | Beschreibung |
+| :-- | :-- |
+| keep-soft-deleted-artefacts | Alle Artefakte behalten, die als 'Soft-Deleted' markiert sind |
+| refresh-remote-images-cache | Den Remote-**Image** Cache gezielt auffrischen; aktuell unterstützte Werte: `all`, `paintings`, `graphics` und `archivals`; ist kein Wert gegeben, wird standardmäßig auf `all` zurückgefallen |
+| refresh-remote-documents-cache | Den Remote-**Document** Cache gezielt auffrischen; unterstützte Werte: `all`, `paintings`, `graphics` und `archivals`; ist kein Wert gegeben, wird standardmäßig auf `all` zurückgefallen |
+| refresh-all-remote-caches | Alle Remote Caches auffrischen |
+
+
+Auf Aufruf mit einem der Paramter würde wie folgt aussehen:
+
+```sh
+composer run-script import -- --refresh-remote-images-cache=archivals --refresh-remote-documents-cache=archivals
+```
+
 
 ## Getting started
 

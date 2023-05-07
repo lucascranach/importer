@@ -8,6 +8,7 @@ use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 use GuzzleHttp\Client;
+use PDO;
 
 class RemoteDocumentExistenceChecker extends Hybrid
 {
@@ -69,22 +70,26 @@ class RemoteDocumentExistenceChecker extends Hybrid
     }
 
     public static function withCacheAt(
-        string $accessKey,
+        string $cacheFilename,
         string $cacheDir,
+        string $accessKey,
+        bool $withFreshCache,
         $remoteDocumentTypeAccessorFunc = null,
-        string $cacheFilename = ''
     ): self {
         $checker = new self($accessKey);
 
-        if (is_string($remoteDocumentTypeAccessorFunc) && !empty($remoteDocumentTypeAccessorFunc)) {
-            $examinationType = $remoteDocumentTypeAccessorFunc;
+        if (is_callable($remoteDocumentTypeAccessorFunc)) {
+            $checker->remoteDocumentTypeAccessorFunc = $remoteDocumentTypeAccessorFunc;
+        } else {
+            $examinationType = self::ALL_EXAMINATION_TYPES;
+
+            if (is_string($remoteDocumentTypeAccessorFunc) && !empty($remoteDocumentTypeAccessorFunc)) {
+                $examinationType = $remoteDocumentTypeAccessorFunc;
+            }
+
             $checker->remoteDocumentTypeAccessorFunc = function () use ($examinationType): string {
                 return $examinationType;
             };
-        }
-
-        if (is_callable($remoteDocumentTypeAccessorFunc)) {
-            $checker->remoteDocumentTypeAccessorFunc = $remoteDocumentTypeAccessorFunc;
         }
 
         if (!file_exists($cacheDir)) {
@@ -97,10 +102,8 @@ class RemoteDocumentExistenceChecker extends Hybrid
             $checker->cacheFilename = $cacheFilename;
         }
 
-        $checker->restoreCache();
-
-        if (is_null($checker->remoteDocumentTypeAccessorFunc)) {
-            throw new Error('RemoteDocumentExistenceChecker: Missing remote document type accessor');
+        if (!$withFreshCache) {
+            $checker->restoreCache();
         }
 
         return $checker;

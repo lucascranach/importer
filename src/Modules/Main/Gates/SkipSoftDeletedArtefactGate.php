@@ -7,7 +7,7 @@ use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
-class SoftDeletedArtefactGate extends Hybrid
+class SkipSoftDeletedArtefactGate extends Hybrid
 {
     private $idDeletedChar = 'X';
 

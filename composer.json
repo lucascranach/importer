@@ -17,8 +17,8 @@
     },
     "scripts": {
         "cghooks": "cghooks",
-        "import": "php index.php -x",
-        "import:keep-deleted": "php index.php",
+        "import": "php index.php",
+        "import:keep-deleted": "php index.php --keep-soft-deleted-artefacts",
         "lint": "php-cs-fixer fix --dry-run -vvv",
         "lint:fix": "php-cs-fixer fix",
         "analyse": "psalm",
