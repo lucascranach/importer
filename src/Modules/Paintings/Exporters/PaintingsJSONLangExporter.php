@@ -5,7 +5,7 @@ namespace CranachDigitalArchive\Importer\Modules\Paintings\Exporters;
 use Error;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
-use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
+use CranachDigitalArchive\Importer\Modules\Paintings\Interfaces\IPainting;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
@@ -91,6 +91,8 @@ class PaintingsJSONLangExporter extends Consumer implements IFileExporter
     {
         $retVal = true;
 
+        /** @var string $langCode */
+        /** @var IPainting $painting */
         foreach ($collection as $langCode => $painting) {
             $retVal = $retVal && $this->appendItemToOutputFile($langCode, $painting);
         }
@@ -99,7 +101,7 @@ class PaintingsJSONLangExporter extends Consumer implements IFileExporter
     }
 
 
-    private function appendItemToOutputFile(string $langCode, Painting $item): bool
+    private function appendItemToOutputFile(string $langCode, IPainting $item): bool
     {
         if (!isset($this->outputFilesByLangCode[$langCode])) {
             $this->outputFilesByLangCode[$langCode] = [

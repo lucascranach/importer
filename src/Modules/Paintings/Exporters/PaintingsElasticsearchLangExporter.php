@@ -5,7 +5,7 @@ namespace CranachDigitalArchive\Importer\Modules\Paintings\Exporters;
 use Error;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
-use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
+use CranachDigitalArchive\Importer\Modules\Paintings\Interfaces\ISearchablePainting;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search\SearchablePaintingLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
@@ -90,6 +90,8 @@ class PaintingsElasticsearchLangExporter extends Consumer implements IFileExport
     {
         $retVal = true;
 
+        /** @var string $langCode */
+        /** @var ISearchablePainting $painting */
         foreach ($collection as $langCode => $painting) {
             $retVal = $retVal && $this->appendItemToOutputFile($langCode, $painting);
         }
@@ -98,7 +100,7 @@ class PaintingsElasticsearchLangExporter extends Consumer implements IFileExport
     }
 
 
-    private function appendItemToOutputFile(string $langCode, Painting $item): bool
+    private function appendItemToOutputFile(string $langCode, ISearchablePainting $item): bool
     {
         if (!isset($this->outputFilesByLangCode[$langCode])) {
             $this->outputFilesByLangCode[$langCode] = [

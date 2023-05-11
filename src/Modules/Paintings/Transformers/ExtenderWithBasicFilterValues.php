@@ -3,7 +3,6 @@
 namespace CranachDigitalArchive\Importer\Modules\Paintings\Transformers;
 
 use Error;
-use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search\SearchablePainting;
 use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Filters\Entities\CustomFilter;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\CatalogWorkReference;
@@ -11,6 +10,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\FilterInfoItem;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Modules\Paintings\Interfaces\ISearchablePainting;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search\SearchablePaintingLanguageCollection;
 
 class ExtenderWithBasicFilterValues extends Hybrid
@@ -79,6 +79,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
     private function extendCollectionWithBasicFilterValues(SearchablePaintingLanguageCollection $collection): void
     {
+        /** @var ISearchablePainting $item */
         foreach ($collection as $item) {
             $this->extendBasicFiltersForAttribution($item);
             $this->extendBasicFiltersForCollectionAndRepository($item);
@@ -88,7 +89,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private function extendBasicFiltersForAttribution(SearchablePainting $item):void
+    private function extendBasicFiltersForAttribution(ISearchablePainting $item):void
     {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {
@@ -178,7 +179,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private function extendBasicFiltersForCollectionAndRepository(SearchablePainting $item):void
+    private function extendBasicFiltersForCollectionAndRepository(ISearchablePainting $item):void
     {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {
@@ -225,7 +226,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private function extendBasicFiltersForExaminationAnalysis(SearchablePainting $item):void
+    private function extendBasicFiltersForExaminationAnalysis(ISearchablePainting $item):void
     {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {
@@ -291,7 +292,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private function extendBasicFiltersForAssocation(SearchablePainting $item):void
+    private function extendBasicFiltersForAssocation(ISearchablePainting $item):void
     {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {

@@ -3,10 +3,10 @@
 namespace CranachDigitalArchive\Importer\Modules\Paintings\Transformers;
 
 use Error;
-use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
 use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
+use CranachDigitalArchive\Importer\Modules\Paintings\Interfaces\IPainting;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class ExtenderWithIds extends Hybrid
@@ -53,22 +53,17 @@ class ExtenderWithIds extends Hybrid
 
     private function extendCollectionWithBasicFilterValues(PaintingLanguageCollection $collection): void
     {
-        foreach ($collection as $item) {
-            $this->extendWithAttributionIds($item);
+        /** @var string $langCode */
+        /** @var IPainting $item */
+        foreach ($collection as $langCode => $item) {
+            $this->extendWithAttributionIds($langCode, $item);
             $this->extendWithCollectionAndRepositoryIds($item);
         }
     }
 
 
-    private function extendWithAttributionIds(Painting $item):void
+    private function extendWithAttributionIds(string $langCode, IPainting $item):void
     {
-        $metadata = $item->getMetadata();
-        if (is_null($metadata)) {
-            return;
-        }
-
-        $langCode = $metadata->getLangCode();
-
         $attributionCheckItems = array_filter(
             $this->filters[self::ATTRIBUTION],
             function ($item) {
@@ -137,7 +132,7 @@ class ExtenderWithIds extends Hybrid
     }
 
 
-    private function extendWithCollectionAndRepositoryIds(Painting $item):void
+    private function extendWithCollectionAndRepositoryIds(IPainting $item):void
     {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {

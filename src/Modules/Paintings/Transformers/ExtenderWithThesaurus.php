@@ -67,16 +67,15 @@ class ExtenderWithThesaurus extends Hybrid
 
     private function extendCollectionWithThesaurusFilterInfos(SearchablePaintingLanguageCollection $collection): void
     {
-        foreach ($collection as $painting) {
+        /** @var string $langCode */
+        /** @var \CranachDigitalArchive\Importer\Modules\Paintings\Interfaces\ISearchablePainting $painting */
+        foreach ($collection as $langCode => $painting) {
             foreach ($painting->getKeywords() as $keyword) {
                 if ($keyword->getType() !== $this->keywordType) {
                     continue;
                 }
 
                 $res = $this->findKeywordIdentifierInThesaurus($keyword->getTerm());
-
-                $metadata = $painting->getMetadata();
-                $langCode = !is_null($metadata) ? $metadata->getLangCode() : '';
 
                 $mappedItems = $this->mapThesaurusTermChainToFilterInfoChain($res, $langCode);
                 $firstItem = array_shift($mappedItems);

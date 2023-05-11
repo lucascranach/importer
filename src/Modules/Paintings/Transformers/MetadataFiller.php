@@ -3,7 +3,7 @@
 namespace CranachDigitalArchive\Importer\Modules\Paintings\Transformers;
 
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
-use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
+use CranachDigitalArchive\Importer\Modules\Paintings\Interfaces\IPainting;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 use Error;
@@ -26,7 +26,9 @@ class MetadataFiller extends Hybrid
             throw new Error('Pushed item is not of expected class \'PaintingLanguageCollection\'');
         }
 
-        foreach ($item as $subItem) {
+        /** @var string $langCode
+        /** @var IPainting $subItem */
+        foreach ($item as $langCode => $subItem) {
             $this->extendMetadata($subItem);
         }
 
@@ -34,7 +36,7 @@ class MetadataFiller extends Hybrid
         return true;
     }
 
-    private function extendMetadata(Painting $item): void
+    private function extendMetadata(IPainting $item): void
     {
         $metadata = $item->getMetadata();
 

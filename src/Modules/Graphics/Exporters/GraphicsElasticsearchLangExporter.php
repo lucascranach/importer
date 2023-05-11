@@ -6,8 +6,7 @@ use Error;
 
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
+use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Search\SearchableGraphicLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 /**
@@ -51,8 +50,8 @@ class GraphicsElasticsearchLangExporter extends Consumer implements IFileExporte
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof GraphicLanguageCollection)) {
-            throw new Error('Pushed item is not of expected class \'GraphicLanguageCollection\'!');
+        if (!($item instanceof SearchableGraphicLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'SearchableGraphicLanguageCollection\'!');
         }
 
         if ($this->done) {

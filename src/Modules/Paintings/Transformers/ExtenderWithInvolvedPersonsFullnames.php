@@ -25,6 +25,7 @@ class ExtenderWithInvolvedPersonsFullnames extends Hybrid
             throw new Error('Pushed item is not of expected class \'SearchablePaintingLanguageCollection\'');
         }
 
+        /** @var \CranachDigitalArchive\Importer\Modules\Paintings\Interfaces\ISearchablePainting $subItem */
         foreach ($item as $subItem) {
             /** @var \CranachDigitalArchive\Importer\Modules\Main\Entities\Person */
             foreach ($subItem->getPersons() as $person) {
