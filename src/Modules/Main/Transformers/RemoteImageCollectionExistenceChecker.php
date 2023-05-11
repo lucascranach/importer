@@ -72,22 +72,25 @@ class RemoteImageCollectionExistenceChecker extends Hybrid
     }
 
     public static function withCacheAt(
-        string $accessKey,
+        string $cacheFilename,
         string $cacheDir,
+        string $accessKey,
         $remoteImageTypeAccessorFunc = null,
-        string $cacheFilename = ''
     ): self {
         $checker = new self($accessKey);
 
-        if (is_string($remoteImageTypeAccessorFunc) && !empty($remoteImageTypeAccessorFunc)) {
-            $imageType = $remoteImageTypeAccessorFunc;
+        if (is_callable($remoteImageTypeAccessorFunc)) {
+            $checker->remoteImageTypeAccessorFunc = $remoteImageTypeAccessorFunc;
+        } else {
+            $imageType = self::ALL_IMAGE_TYPES;
+
+            if (is_string($remoteImageTypeAccessorFunc) && !empty($remoteImageTypeAccessorFunc)) {
+                $imageType = $remoteImageTypeAccessorFunc;
+            }
+
             $checker->remoteImageTypeAccessorFunc = function () use ($imageType): string {
                 return $imageType;
             };
-        }
-
-        if (is_callable($remoteImageTypeAccessorFunc)) {
-            $checker->remoteImageTypeAccessorFunc = $remoteImageTypeAccessorFunc;
         }
 
         if (!file_exists($cacheDir)) {
@@ -101,10 +104,6 @@ class RemoteImageCollectionExistenceChecker extends Hybrid
         }
 
         $checker->restoreCache();
-
-        if (is_null($checker->remoteImageTypeAccessorFunc)) {
-            throw new Error('RemoteImageExistenceChecker: Missing remote image type accessor');
-        }
 
         return $checker;
     }
