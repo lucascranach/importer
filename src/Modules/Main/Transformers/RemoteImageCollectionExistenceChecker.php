@@ -75,6 +75,7 @@ class RemoteImageCollectionExistenceChecker extends Hybrid
         string $cacheFilename,
         string $cacheDir,
         string $accessKey,
+        bool $withFreshCache = false,
         $remoteImageTypeAccessorFunc = null,
     ): self {
         $checker = new self($accessKey);
@@ -103,7 +104,9 @@ class RemoteImageCollectionExistenceChecker extends Hybrid
             $checker->cacheFilename = $cacheFilename;
         }
 
-        $checker->restoreCache();
+        if (!$withFreshCache) {
+            $checker->restoreCache();
+        }
 
         return $checker;
     }

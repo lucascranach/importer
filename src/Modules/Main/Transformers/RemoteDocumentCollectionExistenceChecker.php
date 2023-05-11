@@ -72,6 +72,7 @@ class RemoteDocumentCollectionExistenceChecker extends Hybrid
         string $cacheFilename,
         string $cacheDir,
         string $accessKey,
+        bool $withFreshCache = false,
         $remoteDocumentTypeAccessorFunc = null,
     ): self {
         $checker = new self($accessKey);
@@ -100,7 +101,9 @@ class RemoteDocumentCollectionExistenceChecker extends Hybrid
             $checker->cacheFilename = $cacheFilename;
         }
 
-        $checker->restoreCache();
+        if (!$withFreshCache) {
+            $checker->restoreCache();
+        }
 
         return $checker;
     }
