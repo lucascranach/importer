@@ -25,9 +25,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithLoc
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRepositories as GraphicsExtenderWithRepositories;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MetadataFiller as GraphicsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
-use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageCollectionExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteDocumentExistenceChecker;
-use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteDocumentCollectionExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Main\Collectors\MetaReferenceCollector;
 use CranachDigitalArchive\Importer\Modules\Main\Gates\SkipSoftDeletedArtefactGate;
 use CranachDigitalArchive\Importer\Modules\Restorations\Loaders\XML\RestorationsLoader;
@@ -228,13 +226,13 @@ $paintingsPreLoader->run();
 
 
 /* Paintings */
-$paintingsRemoteDocumentExistenceChecker = RemoteDocumentCollectionExistenceChecker::withCacheAt(
+$paintingsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::withCacheAt(
     'remotePaintingsDocumentExistenceChecker',
     $cacheDir,
     $imagesAPIKey,
     $remoteDocumentsCachesToRefresh['paintings'],
 );
-$paintingsRemoteImageExistenceChecker = RemoteImageCollectionExistenceChecker::withCacheAt(
+$paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     'remotePaintingsImageExistenceChecker',
     $cacheDir,
     $imagesAPIKey,
@@ -315,13 +313,13 @@ $graphicsPreLoader->run();
 
 
 /* Graphics */
-$graphicsRemoteDocumentExistenceChecker = RemoteDocumentCollectionExistenceChecker::withCacheAt(
+$graphicsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::withCacheAt(
     'remoteGraphicsDocumentExistenceChecker',
     $cacheDir,
     $imagesAPIKey,
     $remoteDocumentsCachesToRefresh['graphics']
 );
-$graphicsRemoteImageExistenceChecker = RemoteImageCollectionExistenceChecker::withCacheAt(
+$graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     'remoteGraphicsImageExistenceChecker',
     $cacheDir,
     $imagesAPIKey,

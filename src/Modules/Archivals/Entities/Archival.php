@@ -5,11 +5,12 @@ namespace CranachDigitalArchive\Importer\Modules\Archivals\Entities;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\AbstractImagesItem;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Publication;
+use CranachDigitalArchive\Importer\Modules\Archivals\Interfaces\IArchival;
 
 /**
  * Representing a single archival and all its data
  */
-class Archival extends AbstractImagesItem
+class Archival extends AbstractImagesItem implements IArchival
 {
     const ENTITY_TYPE = 'ARCHIVAL';
 

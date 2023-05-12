@@ -4,6 +4,8 @@ namespace CranachDigitalArchive\Importer\Modules\Archivals\Transformers;
 
 use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Archival;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Modules\Archivals\Entities\ArchivalLanguageCollection;
+use CranachDigitalArchive\Importer\Modules\Archivals\Interfaces\IArchival;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 use Error;
 
@@ -21,15 +23,26 @@ class MetadataFiller extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Archival)) {
-            throw new Error('Pushed item is not of expected class \'Archival\'');
+        if (!($item instanceof ArchivalLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'ArchivalLanguageCollection\'');
         }
 
+        foreach ($item as $subItem) {
+            $this->extendMetadata($subItem);
+        }
+
+        $this->next($item);
+        return true;
+    }
+
+
+    private function extendMetadata(IArchival $item): void
+    {
         $metadata = $item->getMetadata();
 
         if (is_null($metadata)) {
             $this->next($item);
-            return true;
+            return;
         }
 
         $images = $item->getImages();
@@ -59,9 +72,6 @@ class MetadataFiller extends Hybrid
         $metadata->setDate($dated);
         $metadata->setClassification('');
         $metadata->setImgSrc($imageSrc);
-
-        $this->next($item);
-        return true;
     }
 
 

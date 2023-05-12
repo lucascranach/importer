@@ -2,13 +2,13 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Archivals\Inflators\XML;
 
-use Error;
 use SimpleXMLElement;
 use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Dating;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Publication;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
 use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Archival;
+use CranachDigitalArchive\Importer\Modules\Archivals\Entities\ArchivalLanguageCollection;
 
 /**
  * Archivals inflator used to inflate archival instances
@@ -39,38 +39,36 @@ class ArchivalInflator implements IInflator
 
     public static function inflate(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ): void {
         $subNode = $node->{'GroupHeader'};
 
         self::registerXPathNamespace($subNode);
 
-        self::inflateReferenceId($subNode, $archivalDe, $archivalEn);
-        self::inflateDating($subNode, $archivalDe, $archivalEn);
-        self::inflateSummary($subNode, $archivalDe, $archivalEn);
-        self::inflateTranscription($subNode, $archivalDe, $archivalEn);
-        self::inflateLocationAndDate($subNode, $archivalDe, $archivalEn);
-        self::inflateRepository($subNode, $archivalDe, $archivalEn);
-        self::inflateSignature($subNode, $archivalDe, $archivalEn);
-        self::inflateComments($subNode, $archivalDe, $archivalEn);
-        self::inflateTranscribedBy($subNode, $archivalDe, $archivalEn);
-        self::inflateTranscriptionDate($subNode, $archivalDe, $archivalEn);
-        self::inflateTranscriptionAccordingTo($subNode, $archivalDe, $archivalEn);
-        self::inflateVerification($subNode, $archivalDe, $archivalEn);
-        self::inflateScans($subNode, $archivalDe, $archivalEn);
-        self::inflateDocuments($subNode, $archivalDe, $archivalEn);
-        self::inflateScanNames($subNode, $archivalDe, $archivalEn);
-        self::inflatePeriod($subNode, $archivalDe, $archivalEn);
-        self::inflatePublications($subNode, $archivalDe, $archivalEn);
+        self::inflateReferenceId($subNode, $archivalCollection);
+        self::inflateDating($subNode, $archivalCollection);
+        self::inflateSummary($subNode, $archivalCollection);
+        self::inflateTranscription($subNode, $archivalCollection);
+        self::inflateLocationAndDate($subNode, $archivalCollection);
+        self::inflateRepository($subNode, $archivalCollection);
+        self::inflateSignature($subNode, $archivalCollection);
+        self::inflateComments($subNode, $archivalCollection);
+        self::inflateTranscribedBy($subNode, $archivalCollection);
+        self::inflateTranscriptionDate($subNode, $archivalCollection);
+        self::inflateTranscriptionAccordingTo($subNode, $archivalCollection);
+        self::inflateVerification($subNode, $archivalCollection);
+        self::inflateScans($subNode, $archivalCollection);
+        self::inflateDocuments($subNode, $archivalCollection);
+        self::inflateScanNames($subNode, $archivalCollection);
+        self::inflatePeriod($subNode, $archivalCollection);
+        self::inflatePublications($subNode, $archivalCollection);
     }
 
 
     /* InventoryNumber */
     private static function inflateReferenceId(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ): void {
         $inventoryNumberElement = self::findElementByXPath(
             $node,
@@ -78,8 +76,7 @@ class ArchivalInflator implements IInflator
         );
         if ($inventoryNumberElement) {
             $inventoryNumberStr = trim(strval($inventoryNumberElement));
-            $archivalDe->setInventoryNumber($inventoryNumberStr);
-            $archivalEn->setInventoryNumber($inventoryNumberStr);
+            $archivalCollection->setInventoryNumber($inventoryNumberStr);
         }
     }
 
@@ -87,14 +84,13 @@ class ArchivalInflator implements IInflator
     /* Dating */
     private static function inflateDating(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ): void {
         $datingDe = new Dating;
         $datingEn = new Dating;
 
-        $archivalDe->setDating($datingDe);
-        $archivalEn->setDating($datingEn);
+        $archivalCollection->get(Language::DE)->setDating($datingDe);
+        $archivalCollection->get(Language::EN)->setDating($datingEn);
 
         /* Dated */
         $datedElement = self::findElementByXPath(
@@ -147,8 +143,7 @@ class ArchivalInflator implements IInflator
      */
     private static function inflateSummary(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ) {
         $summaryDetailElements = self::findElementByXPath(
             $node,
@@ -175,16 +170,15 @@ class ArchivalInflator implements IInflator
                 $summaryStr = trim(strval($summaryElement));
 
                 if (self::$titlesLanguageTypes[Language::DE] === $langStr) {
-                    $archivalDe->addSummary($summaryStr);
+                    $archivalCollection->get(Language::DE)->addSummary($summaryStr);
                 } elseif (self::$titlesLanguageTypes[Language::EN] === $langStr) {
-                    $archivalEn->addSummary($summaryStr);
+                    $archivalCollection->get(Language::EN)->addSummary($summaryStr);
                 } elseif (self::$titlesLanguageTypes['not_assigned'] === $langStr) {
-                    echo '  Unassigned summary lang for object ' . $archivalDe->getInventoryNumber() . "\n";
+                    echo '  Unassigned summary lang for object ' . $archivalCollection->getInventoryNumber() . "\n";
                 } else {
-                    echo '  Unknown summary lang: ' . $langStr . ' for object ' . $archivalDe->getInventoryNumber() . "\n";
-                    /* Bind title to both languages to prevent loss */
-                    $archivalDe->addSummary($summaryStr);
-                    $archivalEn->addSummary($summaryStr);
+                    echo '  Unknown summary lang: ' . $langStr . ' for object ' . $archivalCollection->getInventoryNumber() . "\n";
+                    /* Bind title to all languages to prevent loss */
+                    $archivalCollection->addSummary($summaryStr);
                 }
             }
         }
@@ -194,8 +188,7 @@ class ArchivalInflator implements IInflator
     /* Transcription */
     private static function inflateTranscription(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ): void {
         $transcriptionElement = self::findElementByXPath(
             $node,
@@ -203,8 +196,7 @@ class ArchivalInflator implements IInflator
         );
         if ($transcriptionElement) {
             $transcriptionStr = trim(strval($transcriptionElement));
-            $archivalDe->setTranscription($transcriptionStr);
-            $archivalEn->setTranscription($transcriptionStr);
+            $archivalCollection->setTranscription($transcriptionStr);
         }
     }
 
@@ -212,8 +204,7 @@ class ArchivalInflator implements IInflator
     /* Location and Date */
     private static function inflateLocationAndDate(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ): void {
         $locationAndDateElement = self::findElementByXPath(
             $node,
@@ -225,11 +216,11 @@ class ArchivalInflator implements IInflator
             $splitLocationAndDateStr = self::splitLanguageString($locationAndDateStr);
 
             if (isset($splitLocationAndDateStr[0])) {
-                $archivalDe->setLocationAndDate($splitLocationAndDateStr[0]);
+                $archivalCollection->get(Language::DE)->setLocationAndDate($splitLocationAndDateStr[0]);
             }
 
             if (isset($splitLocationAndDateStr[1])) {
-                $archivalEn->setLocationAndDate($splitLocationAndDateStr[1]);
+                $archivalCollection->get(Language::EN)->setLocationAndDate($splitLocationAndDateStr[1]);
             }
         }
     }
@@ -241,8 +232,7 @@ class ArchivalInflator implements IInflator
      */
     private static function inflateRepository(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ) {
         $repositoryDetailElements = self::findElementByXPath(
             $node,
@@ -275,23 +265,24 @@ class ArchivalInflator implements IInflator
             switch ($roleName) {
                 case self::$repositoryTypes[Language::DE]:
                     /* de */
-                    $archivalDe->setRepository($repositoryStr);
+                    $archivalCollection->get(Language::DE)->setRepository($repositoryStr);
                     break;
 
                 case self::$repositoryTypes[Language::EN]:
                     /* en */
-                    $archivalEn->setRepository($repositoryStr);
+                    $archivalCollection->get(Language::EN)->setRepository($repositoryStr);
                     break;
 
                 default:
-                    $archivalDe->setRepository($repositoryStr);
-                    $archivalEn->setRepository($repositoryStr);
+                    $archivalCollection->setRepository($repositoryStr);
                     return ;
             }
         }
 
-        if (empty($archivalEn->getRepository())) {
-            $archivalEn->setRepository($archivalDe->getRepository());
+        if (empty($archivalCollection->get(Language::EN)->getRepository())) {
+            $archivalCollection->get(Language::EN)->setRepository(
+                $archivalCollection->get(Language::DE)->getRepository()
+            );
         }
     }
 
@@ -299,8 +290,7 @@ class ArchivalInflator implements IInflator
     /* Signature */
     private static function inflateSignature(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ): void {
         $signatureElement = self::findElementByXPath(
             $node,
@@ -308,8 +298,7 @@ class ArchivalInflator implements IInflator
         );
         if ($signatureElement) {
             $signatureStr = trim(strval($signatureElement));
-            $archivalDe->setSignature($signatureStr);
-            $archivalEn->setSignature($signatureStr);
+            $archivalCollection->setSignature($signatureStr);
         }
     }
 
@@ -317,8 +306,7 @@ class ArchivalInflator implements IInflator
     /* Comments */
     private static function inflateComments(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ): void {
         $commentsElement = self::findElementByXPath(
             $node,
@@ -330,11 +318,11 @@ class ArchivalInflator implements IInflator
             $splitCommentsStr = self::splitLanguageString($commentsStr);
 
             if (isset($splitCommentsStr[0])) {
-                $archivalDe->setComments($splitCommentsStr[0]);
+                $archivalCollection->get(Language::DE)->setComments($splitCommentsStr[0]);
             }
 
             if (isset($splitCommentsStr[1])) {
-                $archivalEn->setComments($splitCommentsStr[1]);
+                $archivalCollection->get(Language::EN)->setComments($splitCommentsStr[1]);
             }
         }
     }
@@ -343,8 +331,7 @@ class ArchivalInflator implements IInflator
     /* Transcribed by */
     private static function inflateTranscribedBy(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ): void {
         $transcribedByElement = self::findElementByXPath(
             $node,
@@ -353,8 +340,7 @@ class ArchivalInflator implements IInflator
         if ($transcribedByElement) {
             $transcribedByStr = trim(strval($transcribedByElement));
 
-            $archivalDe->setTranscribedBy($transcribedByStr);
-            $archivalEn->setTranscribedBy($transcribedByStr);
+            $archivalCollection->setTranscribedBy($transcribedByStr);
         }
     }
 
@@ -362,8 +348,7 @@ class ArchivalInflator implements IInflator
     /* Transcription date */
     private static function inflateTranscriptionDate(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ): void {
         $transcriptionDateElement = self::findElementByXPath(
             $node,
@@ -372,8 +357,7 @@ class ArchivalInflator implements IInflator
         if ($transcriptionDateElement) {
             $transcriptionDateStr = trim(strval($transcriptionDateElement));
 
-            $archivalDe->setTranscriptionDate($transcriptionDateStr);
-            $archivalEn->setTranscriptionDate($transcriptionDateStr);
+            $archivalCollection->setTranscriptionDate($transcriptionDateStr);
         }
     }
 
@@ -381,8 +365,7 @@ class ArchivalInflator implements IInflator
     /* Transcription according to */
     private static function inflateTranscriptionAccordingTo(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ): void {
         $transcriptionAccordingToElement = self::findElementByXPath(
             $node,
@@ -391,8 +374,7 @@ class ArchivalInflator implements IInflator
         if ($transcriptionAccordingToElement) {
             $transcriptionAccordingToStr = trim(strval($transcriptionAccordingToElement));
 
-            $archivalDe->setTranscriptionDate($transcriptionAccordingToStr);
-            $archivalEn->setTranscriptionDate($transcriptionAccordingToStr);
+            $archivalCollection->setTranscriptionDate($transcriptionAccordingToStr);
         }
     }
 
@@ -400,8 +382,7 @@ class ArchivalInflator implements IInflator
     /* Verification */
     private static function inflateVerification(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ): void {
         $verificationElement = self::findElementByXPath(
             $node,
@@ -410,8 +391,7 @@ class ArchivalInflator implements IInflator
         if ($verificationElement) {
             $verificationStr = trim(strval($verificationElement));
 
-            $archivalDe->setVerification($verificationStr);
-            $archivalEn->setVerification($verificationStr);
+            $archivalCollection->setVerification($verificationStr);
         }
     }
 
@@ -419,8 +399,7 @@ class ArchivalInflator implements IInflator
     /* Scans */
     private static function inflateScans(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ): void {
         $scansElement = self::findElementByXPath(
             $node,
@@ -429,8 +408,7 @@ class ArchivalInflator implements IInflator
         if ($scansElement) {
             $scansStr = trim(strval($scansElement));
 
-            $archivalDe->setScans($scansStr);
-            $archivalEn->setScans($scansStr);
+            $archivalCollection->setScans($scansStr);
         }
     }
 
@@ -438,8 +416,7 @@ class ArchivalInflator implements IInflator
     /* Documents */
     private static function inflateDocuments(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ): void {
         $documentsElement = self::findElementByXPath(
             $node,
@@ -449,8 +426,7 @@ class ArchivalInflator implements IInflator
             $documentsStr = trim(strval($documentsElement));
             $documentArr = array_map('trim', explode("\n", $documentsStr));
 
-            $archivalDe->setDocumentReferences($documentArr);
-            $archivalEn->setDocumentReferences($documentArr);
+            $archivalCollection->setDocumentReferences($documentArr);
         }
     }
 
@@ -458,8 +434,7 @@ class ArchivalInflator implements IInflator
     /* Scan names */
     private static function inflateScanNames(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ): void {
         $scanNamesElement = self::findElementByXPath(
             $node,
@@ -470,8 +445,7 @@ class ArchivalInflator implements IInflator
 
             $scanNamesArr = array_map('trim', explode(self::$splitChar, $scanNamesStr));
 
-            $archivalDe->setScanNames($scanNamesArr);
-            $archivalEn->setScanNames($scanNamesArr);
+            $archivalCollection->setScanNames($scanNamesArr);
         }
     }
 
@@ -479,8 +453,7 @@ class ArchivalInflator implements IInflator
     /* Period */
     private static function inflatePeriod(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ): void {
         $periodElement = self::findElementByXPath(
             $node,
@@ -489,8 +462,7 @@ class ArchivalInflator implements IInflator
         if ($periodElement) {
             $periodStr = trim(strval($periodElement));
 
-            $archivalDe->setPeriod($periodStr);
-            $archivalEn->setPeriod($periodStr);
+            $archivalCollection->setPeriod($periodStr);
         }
     }
 
@@ -501,8 +473,7 @@ class ArchivalInflator implements IInflator
      */
     private static function inflatePublications(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ) {
         $publicationDetailElements = self::findElementByXPath(
             $node,
@@ -514,15 +485,14 @@ class ArchivalInflator implements IInflator
         }
 
         foreach ($publicationDetailElements as $publicationDetailElement) {
-            self::inflatePublication($publicationDetailElement, $archivalDe, $archivalEn);
+            self::inflatePublication($publicationDetailElement, $archivalCollection);
         }
     }
 
     /* Publication */
     private static function inflatePublication(
         SimpleXMLElement $node,
-        Archival $archivalDe,
-        Archival $archivalEn
+        ArchivalLanguageCollection $archivalCollection,
     ): void {
         $publication = new Publication;
         $wasInflated = false;
@@ -562,8 +532,7 @@ class ArchivalInflator implements IInflator
 
 
         if ($wasInflated) {
-            $archivalDe->addPublication($publication);
-            $archivalEn->addPublication($publication);
+            $archivalCollection->addPublication($publication);
         }
     }
 

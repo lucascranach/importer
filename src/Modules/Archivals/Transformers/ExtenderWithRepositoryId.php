@@ -2,8 +2,9 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Archivals\Transformers;
 
-use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Search\SearchableArchival;
+use CranachDigitalArchive\Importer\Modules\Archivals\Interfaces\ISearchableArchival;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Search\SearchableArchivalLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 use Error;
 
@@ -21,13 +22,16 @@ class ExtenderWithRepositoryId extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof SearchableArchival)) {
-            throw new Error('Pushed item is not of expected class \'SearchableArchival\'');
+        if (!($item instanceof SearchableArchivalLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'SearchableArchivalLanguageCollection\'');
         }
 
-        $repository = $item->getRepository();
-
-        $item->setRepositoryId(self::getSlug($repository));
+        /** @var ISearchableArchival */
+        foreach ($item as $subItem) {
+            // We need to handle the repository id generation for an archival in each language
+            $repositoryId = self::getSlug($item->getRepository());
+            $subItem->setRepositoryId($repositoryId);
+        }
 
         $this->next($item);
         return true;

@@ -9,6 +9,7 @@ use XMLReader;
 use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Archival;
 use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Loaders\IFileLoader;
+use CranachDigitalArchive\Importer\Modules\Archivals\Entities\ArchivalLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Modules\Archivals\Inflators\XML\ArchivalInflator;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
@@ -94,28 +95,23 @@ class ArchivalsLoader extends Producer implements IFileLoader
 
     private function transformCurrentItem(): void
     {
-        $metadata = new Metadata;
-        $metadata->setEntityType(Archival::ENTITY_TYPE);
+        $archivalCollection = ArchivalLanguageCollection::create();
 
-        /* Preparing the graphic objects for the different languages */
-        $archivalDe = new Archival;
-        $metadata->setLangCode(Language::DE);
-        $archivalDe->setMetadata($metadata);
+        foreach ($archivalCollection as $langCode => $archival) {
+            $metadata = new Metadata();
+            $metadata->setEntityType(Archival::ENTITY_TYPE);
+            $metadata->setLangCode($langCode);
 
-        $metadata = clone $metadata;
-
-        $archivalEn = new Archival;
-        $metadata->setLangCode(Language::EN);
-        $archivalEn->setMetadata($metadata);
+            $archival->setMetadata($metadata);
+        }
 
         $xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 
         /* Moved the inflation action(s) into its own class */
-        ArchivalInflator::inflate($xmlNode, $archivalDe, $archivalEn);
+        ArchivalInflator::inflate($xmlNode, $archivalCollection);
 
         /* Passing the archival objects to the next nodes in the pipeline */
-        $this->next($archivalDe);
-        $this->next($archivalEn);
+        $this->next($archivalCollection);
     }
 
 

@@ -3,8 +3,8 @@
 namespace CranachDigitalArchive\Importer\Modules\Archivals\Transformers;
 
 use Error;
-use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Archival;
-use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Search\SearchableArchival;
+use CranachDigitalArchive\Importer\Modules\Archivals\Entities\ArchivalLanguageCollection;
+use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Search\SearchableArchivalLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class MapToSearchableArchival extends Hybrid
@@ -24,8 +24,8 @@ class MapToSearchableArchival extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Archival)) {
-            throw new Error('Pushed item is not of expected class \'Archival\'');
+        if (!($item instanceof ArchivalLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'ArchivalLanguageCollection\'');
         }
 
         $this->next($this->mapToSearchableArchival($item));
@@ -33,14 +33,18 @@ class MapToSearchableArchival extends Hybrid
     }
 
 
-    private function mapToSearchableArchival(Archival $archival): SearchableArchival
+    private function mapToSearchableArchival(ArchivalLanguageCollection $archivalCollection): SearchableArchivalLanguageCollection
     {
-        $searchableArchival = new SearchableArchival();
+        $searchableArchivalCollection = SearchableArchivalLanguageCollection::create();
 
-        foreach (get_object_vars($archival) as $key => $value) {
-            $searchableArchival->$key = $value;
+        foreach ($archivalCollection as $langCode => $archival) {
+            $searchableArchival = $searchableArchivalCollection->get($langCode);
+
+            foreach (get_object_vars($archival) as $key => $value) {
+                $searchableArchival->$key = $value;
+            }
         }
 
-        return $searchableArchival;
+        return $searchableArchivalCollection;
     }
 }

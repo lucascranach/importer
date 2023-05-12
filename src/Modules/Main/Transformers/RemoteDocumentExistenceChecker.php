@@ -3,12 +3,11 @@
 namespace CranachDigitalArchive\Importer\Modules\Main\Transformers;
 
 use Error;
-use CranachDigitalArchive\Importer\Modules\Main\Entities\AbstractImagesItem;
+use CranachDigitalArchive\Importer\Interfaces\Entities\IImagesItem;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 use GuzzleHttp\Client;
-use PDO;
 
 class RemoteDocumentExistenceChecker extends Hybrid
 {
@@ -73,7 +72,7 @@ class RemoteDocumentExistenceChecker extends Hybrid
         string $cacheFilename,
         string $cacheDir,
         string $accessKey,
-        bool $withFreshCache,
+        bool $withFreshCache = false,
         $remoteDocumentTypeAccessorFunc = null,
     ): self {
         $checker = new self($accessKey);
@@ -118,24 +117,33 @@ class RemoteDocumentExistenceChecker extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof AbstractImagesItem)) {
-            throw new Error('Pushed item is not of expected class \'AbstractImagesItem\'');
+        foreach ($item as $subItem) {
+            $this->extendSubItem($subItem);
+        }
+
+        $this->next($item);
+        return true;
+    }
+
+
+    private function extendSubItem($item): void
+    {
+        if (!($item instanceof IImagesItem)) {
+            throw new Error('Item is not an instance of interface \'IImagesItem\'');
         }
 
         $id = $item->getRemoteId();
 
         if (empty($id)) {
             echo '  Missing remoteId for \'' . $item->getId() . "'\n";
-            $this->next($item);
-            return false;
+            return;
         }
 
         $documentDataURL = $this->buildDocumentDataURL($id);
 
         /* We simply skip the object, if the same object (but in a different language) already triggered an error */
         if (in_array($id, $this->objectIdsWithOccuredErrors, true)) {
-            $this->next($item);
-            return false;
+            return;
         }
 
         /* Fill cache to avoid unnecessary duplicate requests for the same resource */
@@ -180,11 +188,7 @@ class RemoteDocumentExistenceChecker extends Hybrid
                 }
             }
         }
-
-        $this->next($item);
-        return true;
     }
-
 
     private function buildDocumentDataURL(string $id): string
     {

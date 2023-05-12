@@ -4,12 +4,13 @@
 namespace CranachDigitalArchive\Importer\Modules\Archivals\Entities\Search;
 
 use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Archival;
+use CranachDigitalArchive\Importer\Modules\Archivals\Interfaces\ISearchableArchival;
 
 /**
  * Representing a single searchable artchival and all flattened and embedded related data
  *    One instance containing only data for one language
  */
-class SearchableArchival extends Archival
+class SearchableArchival extends Archival implements ISearchableArchival
 {
     public $repositoryId = '';
 

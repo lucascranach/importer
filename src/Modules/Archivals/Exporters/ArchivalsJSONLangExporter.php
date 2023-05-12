@@ -7,6 +7,7 @@ use Error;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Archival;
+use CranachDigitalArchive\Importer\Modules\Archivals\Entities\ArchivalLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 /**
@@ -54,15 +55,15 @@ class ArchivalsJSONLangExporter extends Consumer implements IFileExporter
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Archival)) {
-            throw new Error('Pushed item is not of expected class \'Archival\'!');
+        if (!($item instanceof ArchivalLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'ArchivalLanguageCollection\'!');
         }
 
         if ($this->done) {
             throw new Error('Can\'t push more items after done() was called!');
         }
 
-        return $this->appendItemToOutputFile($item);
+        return $this->handleCollection($item);
     }
 
 
@@ -86,7 +87,19 @@ class ArchivalsJSONLangExporter extends Consumer implements IFileExporter
     }
 
 
-    private function appendItemToOutputFile(Archival $item): bool
+    private function handleCollection(ArchivalLanguageCollection $collection): bool
+    {
+        $retVal = true;
+
+        foreach ($collection as $langCode => $archival) {
+            $retVal = $retVal && $this->appendItemToOutputFile($langCode, $archival);
+        }
+
+        return $retVal;
+    }
+
+
+    private function appendItemToOutputFile(string $langCode, Archival $item): bool
     {
         $metadata = $item->getMetadata();
         $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
