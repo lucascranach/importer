@@ -11,6 +11,7 @@ use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Interfaces\Loaders\IMultipleFileLoader;
 
 use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Restoration;
+use CranachDigitalArchive\Importer\Modules\Restorations\Entities\RestorationLanguageCollection;
 use CranachDigitalArchive\Importer\Modules\Restorations\Inflators\XML\RestorationInflator;
 
 /**
@@ -124,21 +125,19 @@ class RestorationsLoader extends Producer implements IMultipleFileLoader
 
     private function transformCurrentItem(): void
     {
-        /* Preparing the restoration objects for the different languages */
-        $restorationDe = new Restoration;
-        $restorationDe->setLangCode(Language::DE);
+        $restorationCollection = RestorationLanguageCollection::create();
 
-        $restorationEn = new Restoration;
-        $restorationEn->setLangCode(Language::EN);
+        foreach ($restorationCollection as $langCode => $restoration) {
+            $restoration->setLangCode($langCode);
+        }
 
         $xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 
         /* Moved the inflation action(s) into its own class(es) */
-        RestorationInflator::inflate($xmlNode, $restorationDe, $restorationEn);
+        RestorationInflator::inflate($xmlNode, $restorationCollection);
 
-        /* Passing the restoration objects to the pipeline */
-        $this->next($restorationDe);
-        $this->next($restorationEn);
+        /* Passing the collection with restoration instances (language dependent) to the pipeline */
+        $this->next($restorationCollection);
     }
 
 

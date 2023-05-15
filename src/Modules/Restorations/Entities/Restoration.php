@@ -2,12 +2,12 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Restorations\Entities;
 
-use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
+use CranachDigitalArchive\Importer\Modules\Restorations\Interfaces\IRestoration;
 
 /**
  * Representing a single restoration overview and all its data
  */
-class Restoration implements IBaseItem
+class Restoration implements IRestoration
 {
     const INVENTORY_NUMBER_PREFIX_PATTERNS = [
         '/^GWN_/' => 'GWN_',

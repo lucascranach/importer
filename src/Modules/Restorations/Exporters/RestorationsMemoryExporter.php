@@ -7,6 +7,7 @@ use Error;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IMemoryExporter;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Restoration;
+use CranachDigitalArchive\Importer\Modules\Restorations\Entities\RestorationLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 /**
@@ -31,15 +32,17 @@ class RestorationsMemoryExporter extends Consumer implements IMemoryExporter
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Restoration)) {
-            throw new Error('Pushed item is not of expected class \'Restoration\'');
+        if (!($item instanceof RestorationLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'RestorationLanguageCollection\'');
         }
 
         if ($this->done) {
             throw new \Error('Can\'t push more items after done() was called!');
         }
 
-        $this->items[] = $item;
+        foreach ($item as $restoration) {
+            $this->items[] = $restoration;
+        }
 
         return true;
     }

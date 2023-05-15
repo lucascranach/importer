@@ -7,6 +7,7 @@ use Error;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Restoration;
+use CranachDigitalArchive\Importer\Modules\Restorations\Entities\RestorationLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 /**
@@ -54,15 +55,15 @@ class RestorationsJSONLangExporter extends Consumer implements IFileExporter
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Restoration)) {
-            throw new Error('Pushed item is not of expected class \'Restoration\'');
+        if (!($item instanceof RestorationLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'RestorationLanguageCollection\'');
         }
 
         if ($this->done) {
             throw new Error('Can\'t push more items after done() was called!');
         }
 
-        return $this->appendItemToOutputFile($item);
+        return $this->handleCollection($item);
     }
 
 
@@ -86,10 +87,21 @@ class RestorationsJSONLangExporter extends Consumer implements IFileExporter
         echo get_class($this) . ": Error -> " . $error . "\n";
     }
 
-    private function appendItemToOutputFile(Restoration $item): bool
-    {
-        $langCode = $item->getLangCode();
 
+    private function handleCollection($collection): bool
+    {
+        $retVal = true;
+
+        foreach ($collection as $langCode => $restoration) {
+            $retVal = $retVal && $this->appendItemToOutputFile($langCode, $restoration);
+        }
+
+        return $retVal;
+    }
+
+
+    private function appendItemToOutputFile(string $langCode, Restoration $item): bool
+    {
         if (!isset($this->outputFilesByLangCode[$langCode])) {
             $this->outputFilesByLangCode[$langCode] = [
                 "path" => $this->initializeOutputFileForLangCode($langCode),

@@ -3,8 +3,9 @@
 namespace CranachDigitalArchive\Importer\Modules\Restorations\Transformers;
 
 use Error;
-use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Restoration;
 use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
+use CranachDigitalArchive\Importer\Modules\Restorations\Entities\RestorationLanguageCollection;
+use CranachDigitalArchive\Importer\Modules\Restorations\Interfaces\IRestoration;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class ExtenderWithIds extends Hybrid
@@ -38,27 +39,27 @@ class ExtenderWithIds extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof Restoration)) {
-            throw new Error('Pushed item is not of expected class \'Restoration\'');
+        if (!($item instanceof RestorationLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'RestorationLanguageCollection\'');
         }
 
-        $this->extendWithBasicFilterValues($item);
+        foreach ($item as $langCode => $restoration) {
+            $this->extendWithBasicFilterValues($langCode, $restoration);
+        }
 
         $this->next($item);
         return true;
     }
 
 
-    private function extendWithBasicFilterValues(Restoration $item): void
+    private function extendWithBasicFilterValues(string $langCode, IRestoration $item): void
     {
-        $this->extendWithExaminationAnalysisIds($item);
+        $this->extendWithExaminationAnalysisIds($langCode, $item);
     }
 
 
-    private function extendWithExaminationAnalysisIds(Restoration $item):void
+    private function extendWithExaminationAnalysisIds(string $langCode, IRestoration $item):void
     {
-        $langCode = $item->getLangCode();
-
         $examinationAnalysisCheckItems = array_filter(
             $this->filters[self::EXAMINATION_ANALYSIS],
             function ($item) {

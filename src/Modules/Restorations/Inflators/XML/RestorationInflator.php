@@ -13,6 +13,7 @@ use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\Restorations\Entities\ProcessingDates;
 use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Signature;
 use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Keyword;
+use CranachDigitalArchive\Importer\Modules\Restorations\Entities\RestorationLanguageCollection;
 
 /**
  * Restoration inflator used to inflate restoration instances
@@ -58,8 +59,7 @@ class RestorationInflator implements IInflator
 
     public static function inflate(
         SimpleXMLElement $node,
-        Restoration $restorationDe,
-        Restoration $restorationEn
+        RestorationLanguageCollection $restorationCollection,
     ): void {
         $headerNode = $node->{'GroupHeader'};
         $detailsNodes = $node->{'Details'};
@@ -67,18 +67,17 @@ class RestorationInflator implements IInflator
         self::registerXPathNamespace($headerNode);
         self::registerXPathNamespace($detailsNodes);
 
-        self::inflateInventoryNumber($headerNode, $restorationDe, $restorationEn);
-        self::inflateObjectId($headerNode, $restorationDe, $restorationEn);
+        self::inflateInventoryNumber($headerNode, $restorationCollection);
+        self::inflateObjectId($headerNode, $restorationCollection);
 
-        self::inflateSurveys($detailsNodes, $restorationDe, $restorationEn);
+        self::inflateSurveys($detailsNodes, $restorationCollection);
     }
 
 
     /* Inventory number */
     protected static function inflateInventoryNumber(
         SimpleXMLElement $node,
-        Restoration $restorationDe,
-        Restoration $restorationEn
+        RestorationLanguageCollection $restorationCollection,
     ): void {
         $inventoryNumberSectionElement = $node->{'Section'}[0];
 
@@ -89,8 +88,7 @@ class RestorationInflator implements IInflator
         if ($inventoryNumberElement) {
             $inventoryNumberStr = trim(strval($inventoryNumberElement));
 
-            $restorationDe->setInventoryNumber($inventoryNumberStr);
-            $restorationEn->setInventoryNumber($inventoryNumberStr);
+            $restorationCollection->setInventoryNumber($inventoryNumberStr);
         }
     }
 
@@ -98,8 +96,7 @@ class RestorationInflator implements IInflator
     /* Object Id */
     protected static function inflateObjectId(
         SimpleXMLElement $node,
-        Restoration $restorationDe,
-        Restoration $restorationEn
+        RestorationLanguageCollection $restorationCollection,
     ): void {
         $objectIdSectionElement = $node->{'Section'}[1];
 
@@ -110,8 +107,7 @@ class RestorationInflator implements IInflator
         if ($objectIdElement) {
             $objectIdNumberInt = intval(trim(strval($objectIdElement)));
 
-            $restorationDe->setObjectId($objectIdNumberInt);
-            $restorationEn->setObjectId($objectIdNumberInt);
+            $restorationCollection->setObjectId($objectIdNumberInt);
         }
     }
 
@@ -119,11 +115,10 @@ class RestorationInflator implements IInflator
     /* Surveys */
     protected static function inflateSurveys(
         SimpleXMLElement $nodes,
-        Restoration $restorationDe,
-        Restoration $restorationEn
+        RestorationLanguageCollection $restorationCollection,
     ): void {
         foreach ($nodes as $node) {
-            self::inflateSurvey($node, $restorationDe, $restorationEn);
+            self::inflateSurvey($node, $restorationCollection);
         }
     }
 
@@ -131,8 +126,7 @@ class RestorationInflator implements IInflator
     /* Survey */
     protected static function inflateSurvey(
         SimpleXMLElement $node,
-        Restoration $restorationDe,
-        Restoration $restorationEn
+        RestorationLanguageCollection $restorationCollection,
     ): void {
         $survey = new Survey();
 
@@ -169,25 +163,9 @@ class RestorationInflator implements IInflator
 
         /* Determining the language of the survey
             to assign it to the correct restoration */
-        $lang = isset(self::$surveyTypesLanguageTypes[$surveyType])
+        $targetLang = isset(self::$surveyTypesLanguageTypes[$surveyType])
             ? self::$surveyTypesLanguageTypes[$surveyType]
             : 'unknown';
-
-        $selectedRestorations = [];
-
-        switch ($lang) {
-            case Language::DE:
-                $selectedRestorations[] = $restorationDe;
-                break;
-
-            case Language::EN:
-                $selectedRestorations[] = $restorationEn;
-                break;
-
-            default:
-                $selectedRestorations[] = $restorationDe;
-                $selectedRestorations[] = $restorationEn;
-        }
 
         $surveyCategory = isset(self::$surveyTypesCategoryTypes[$surveyType])
             ? self::$surveyTypesCategoryTypes[$surveyType]
@@ -196,8 +174,11 @@ class RestorationInflator implements IInflator
         /* Overwriting the type with a language-independend value */
         $survey->setType($surveyCategory);
 
-        foreach ($selectedRestorations as $selectedRestoration) {
-            $selectedRestoration->addSurvey($survey);
+        if ($restorationCollection->supportsLanguageCode($targetLang)) {
+            $restorationCollection->get($targetLang)->addSurvey($survey);
+        } else {
+            /* Add the survey to all resotrations on an unknown / unsupported target language */
+            $restorationCollection->addSurvey($survey);
         }
     }
 

@@ -93,6 +93,19 @@ abstract class AbstractItemLanguageCollection implements Iterator
         return current($this->collection);
     }
 
+
+    /**
+     * Check if a given language code is supported
+     *
+     * @param      string  $langCode  The language code to be checked
+     *
+     * @return     bool    The language code is supported
+     */
+    public function supportsLanguageCode(string $langCode): bool
+    {
+        return in_array($langCode, $this->langCodeKeys, true);
+    }
+
     /* Iterator methods */
 
     /**
