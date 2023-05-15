@@ -3,7 +3,7 @@
 namespace CranachDigitalArchive\Importer\Pipeline\Utils;
 
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use Error;
 
 /* Pipeline node to merge multiple producer nodes into one */
@@ -17,7 +17,7 @@ final class ProducerMerger extends Hybrid
     {
     }
 
-    public static function merge(ProducerInterface ...$producers): self
+    public static function merge(IProducer ...$producers): self
     {
         if (count($producers) === 0) {
             throw new Error('No producers passed to ' . get_called_class());
@@ -44,7 +44,7 @@ final class ProducerMerger extends Hybrid
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         if (!in_array($producer, $this->producersToForward, true)) {
             throw new Error('Unexpected producer passed for done trigger: ' . get_class($producer));

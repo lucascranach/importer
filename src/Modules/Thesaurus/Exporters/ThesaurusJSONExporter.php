@@ -5,7 +5,7 @@ namespace CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters;
 use Error;
 
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Entities\Thesaurus;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
@@ -60,7 +60,7 @@ class ThesaurusJSONExporter extends Consumer implements IFileExporter
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         if (is_null($this->destFilepath)) {
             throw new \Error('No filepath for JSON thesaurus export set!');

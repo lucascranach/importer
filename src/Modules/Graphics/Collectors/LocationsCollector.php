@@ -4,7 +4,7 @@ namespace CranachDigitalArchive\Importer\Modules\Graphics\Collectors;
 
 use Error;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicInfo;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicInfoLanguageCollection;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\MetaReference;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
@@ -92,7 +92,7 @@ class LocationsCollector extends Consumer
     }
 
 
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         /* should never trigger an action on done */
     }

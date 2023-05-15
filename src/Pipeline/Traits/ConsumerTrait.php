@@ -2,7 +2,7 @@
 
 namespace CranachDigitalArchive\Importer\Pipeline\Traits;
 
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 
 trait ConsumerTrait
 {
@@ -11,7 +11,7 @@ trait ConsumerTrait
     /**
      * @return void
      */
-    public function registerProducerNode(ProducerInterface $producer)
+    public function registerProducerNode(IProducer $producer)
     {
         $this->connectedProducers[] = $producer;
     }
@@ -19,7 +19,7 @@ trait ConsumerTrait
     /**
      * @return void
      */
-    public function unregisterProducerNode(ProducerInterface $producer)
+    public function unregisterProducerNode(IProducer $producer)
     {
         $this->connectedProducers = array_filter(
             $$this->connectedProducers,

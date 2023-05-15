@@ -5,7 +5,7 @@ namespace CranachDigitalArchive\Importer\Modules\Archivals\Exporters;
 use Error;
 
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Search\SearchableArchivalLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
@@ -75,7 +75,7 @@ class ArchivalsElasticsearchLangExporter extends Consumer implements IFileExport
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         if (is_null($this->dirname) || empty($this->dirname)
          || is_null($this->filename) || empty($this->filename)) {

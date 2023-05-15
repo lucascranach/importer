@@ -3,14 +3,13 @@
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
 use Error;
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Search\SearchableGraphic;
 use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Filters\Entities\CustomFilter;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\CatalogWorkReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\FilterInfoItem;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Search\SearchableGraphicLanguageCollection;
 use CranachDigitalArchive\Importer\Modules\Graphics\Interfaces\ISearchableGraphic;
 
@@ -37,7 +36,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
         ];
     }
 
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         parent::done($producer);
 

@@ -3,13 +3,13 @@
 namespace CranachDigitalArchive\Importer\Pipeline;
 
 use Error;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ConsumerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IConsumer;
 use CranachDigitalArchive\Importer\Pipeline\Traits\ProducerTrait;
 use CranachDigitalArchive\Importer\Pipeline\Traits\ConsumerTrait;
 
 /* Describing a hybrid node being producer and consumer in one, usable as base for transformer nodes  */
-abstract class Hybrid implements ProducerInterface, ConsumerInterface
+abstract class Hybrid implements IProducer, IConsumer
 {
     use ProducerTrait;
     use ConsumerTrait;
@@ -33,7 +33,7 @@ abstract class Hybrid implements ProducerInterface, ConsumerInterface
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         $this->notifyDone($producer);
     }

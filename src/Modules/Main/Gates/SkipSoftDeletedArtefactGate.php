@@ -4,7 +4,7 @@ namespace CranachDigitalArchive\Importer\Modules\Main\Gates;
 
 use Error;
 use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class SkipSoftDeletedArtefactGate extends Hybrid
@@ -44,7 +44,7 @@ class SkipSoftDeletedArtefactGate extends Hybrid
     }
 
 
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         $typeDescriptionStr = (!empty($this->typeDescription)) ? ' (' . $this->typeDescription . ')' : '';
         echo "\n  Skipped soft-deleted Artefacts" . $typeDescriptionStr . ": \n";

@@ -5,10 +5,9 @@ namespace CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters;
 use Error;
 
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\LiteratureReference;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\LiteratureReferenceLanguageCollection;
-use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Interfaces\ILiteratureReference;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 /**
@@ -72,7 +71,7 @@ class LiteratureReferencesJSONLangExporter extends Consumer implements IFileExpo
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         $this->closeAllOutputFiles();
         $this->done = true;

@@ -4,8 +4,7 @@
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
 use Error;
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
 use CranachDigitalArchive\Importer\Modules\Restorations\Exporters\RestorationsMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Restorations\Entities\Restoration;
@@ -55,7 +54,7 @@ class ExtenderWithRestorations extends Hybrid
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         parent::done($producer);
         $this->cleanUp();

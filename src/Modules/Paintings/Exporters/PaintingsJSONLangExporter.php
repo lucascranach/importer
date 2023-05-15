@@ -3,7 +3,7 @@
 namespace CranachDigitalArchive\Importer\Modules\Paintings\Exporters;
 
 use Error;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Interfaces\IPainting;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
@@ -71,7 +71,7 @@ class PaintingsJSONLangExporter extends Consumer implements IFileExporter
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         $this->closeAllOutputFiles();
         $this->done = true;

@@ -2,8 +2,7 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
-use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Search\SearchableGraphic;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Collectors\RepositoriesCollector;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Search\SearchableGraphicLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
@@ -62,7 +61,7 @@ class ExtenderWithRepositories extends Hybrid
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         parent::done($producer);
     }

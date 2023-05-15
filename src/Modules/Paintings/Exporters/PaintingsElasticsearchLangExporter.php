@@ -3,7 +3,7 @@
 namespace CranachDigitalArchive\Importer\Modules\Paintings\Exporters;
 
 use Error;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Interfaces\ISearchablePainting;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search\SearchablePaintingLanguageCollection;
@@ -70,7 +70,7 @@ class PaintingsElasticsearchLangExporter extends Consumer implements IFileExport
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         $this->done = true;
         $this->outputFilesByLangCode = [];

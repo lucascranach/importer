@@ -9,7 +9,7 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\CatalogWorkReference;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Search\FilterInfoItem;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Paintings\Interfaces\ISearchablePainting;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Search\SearchablePaintingLanguageCollection;
 
@@ -63,7 +63,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         parent::done($producer);
 

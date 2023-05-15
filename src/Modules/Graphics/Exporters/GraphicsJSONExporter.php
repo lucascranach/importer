@@ -5,7 +5,7 @@ namespace CranachDigitalArchive\Importer\Modules\Graphics\Exporters;
 use Error;
 
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
 use CranachDigitalArchive\Importer\Modules\Graphics\Interfaces\IGraphic;
@@ -56,7 +56,7 @@ class GraphicsJSONExporter extends Consumer implements IFileExporter
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         $this->closeOutputFile();
         $this->done = true;

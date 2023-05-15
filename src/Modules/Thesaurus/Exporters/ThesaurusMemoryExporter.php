@@ -5,7 +5,7 @@ namespace CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters;
 use Error;
 
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IMemoryExporter;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Entities\Thesaurus;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
@@ -97,7 +97,7 @@ class ThesaurusMemoryExporter extends Consumer implements IMemoryExporter
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         $this->done = true;
     }

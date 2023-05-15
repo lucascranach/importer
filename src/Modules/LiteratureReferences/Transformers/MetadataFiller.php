@@ -3,7 +3,7 @@
 namespace CranachDigitalArchive\Importer\Modules\LiteratureReferences\Transformers;
 
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Interfaces\ILiteratureReference;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 use Error;
 
@@ -46,7 +46,7 @@ class MetadataFiller extends Hybrid
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         parent::done($producer);
     }

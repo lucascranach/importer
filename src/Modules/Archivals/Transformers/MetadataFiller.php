@@ -2,8 +2,7 @@
 
 namespace CranachDigitalArchive\Importer\Modules\Archivals\Transformers;
 
-use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Archival;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Archivals\Entities\ArchivalLanguageCollection;
 use CranachDigitalArchive\Importer\Modules\Archivals\Interfaces\IArchival;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
@@ -78,7 +77,7 @@ class MetadataFiller extends Hybrid
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         parent::done($producer);
     }

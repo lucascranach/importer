@@ -4,8 +4,7 @@ namespace CranachDigitalArchive\Importer\Modules\Main\Collectors;
 
 use Error;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
-use CranachDigitalArchive\Importer\Modules\Paintings\Entities\Painting;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
@@ -48,7 +47,7 @@ class MetaReferenceCollector extends Consumer
     }
 
 
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         /* should never trigger an action on done */
     }

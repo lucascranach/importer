@@ -5,7 +5,7 @@ namespace CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters;
 use Error;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\LiteratureReferenceLanguageCollection;
 
 /**
@@ -74,7 +74,7 @@ class LiteratureReferencesElasticsearchLangExporter extends Consumer implements 
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         if (is_null($this->dirname) || empty($this->dirname)
          || is_null($this->filename) || empty($this->filename)) {

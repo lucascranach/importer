@@ -5,7 +5,7 @@ namespace CranachDigitalArchive\Importer\Modules\Graphics\Exporters;
 use Error;
 
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Search\SearchableGraphicLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
@@ -75,7 +75,7 @@ class GraphicsElasticsearchLangExporter extends Consumer implements IFileExporte
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         if (is_null($this->dirname) || empty($this->dirname)
          || is_null($this->filename) || empty($this->filename)) {

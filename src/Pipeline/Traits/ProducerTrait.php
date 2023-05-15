@@ -2,9 +2,9 @@
 
 namespace CranachDigitalArchive\Importer\Pipeline\Traits;
 
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\NodeInterface;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ConsumerInterface;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\INode;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IConsumer;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use Error;
 
 trait ProducerTrait
@@ -17,7 +17,7 @@ trait ProducerTrait
         return true;
     }
 
-    public function pipe(ConsumerInterface ...$nodes): ProducerInterface
+    public function pipe(IConsumer ...$nodes): IProducer
     {
         if (count($nodes) === 0) {
             throw new Error('At least one node expected to build the pipe up');
@@ -71,7 +71,7 @@ trait ProducerTrait
     /**
      * @return void
      */
-    public function notifyDone(ProducerInterface $producer = null)
+    public function notifyDone(IProducer $producer = null)
     {
         $this->done = true;
         $srcProducer = !is_null($producer) ? $producer : $this;
@@ -82,7 +82,7 @@ trait ProducerTrait
     }
 
 
-    public function checkForCyclicChains(NodeInterface ...$nodes): void
+    public function checkForCyclicChains(INode ...$nodes): void
     {
         /* Check for duplicate nodes and prevent cyclic pipe-chains */
         foreach ($nodes as $node) {
@@ -99,7 +99,7 @@ trait ProducerTrait
         }
     }
 
-    public function checkForExistingConnection(NodeInterface ...$nodes): void
+    public function checkForExistingConnection(INode ...$nodes): void
     {
         $alreadyConnectedTo = array_search(
             $nodes[0],

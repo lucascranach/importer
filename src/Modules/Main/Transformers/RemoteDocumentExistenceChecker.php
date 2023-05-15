@@ -4,7 +4,7 @@ namespace CranachDigitalArchive\Importer\Modules\Main\Transformers;
 
 use Error;
 use CranachDigitalArchive\Importer\Interfaces\Entities\IImagesItem;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 use GuzzleHttp\Client;
@@ -201,7 +201,7 @@ class RemoteDocumentExistenceChecker extends Hybrid
     }
 
 
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         parent::done($producer);
 

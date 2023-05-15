@@ -3,7 +3,7 @@
 namespace CranachDigitalArchive\Importer\Modules\Filters\Exporters;
 
 use Error;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
 use CranachDigitalArchive\Importer\Modules\Filters\Entities\LangFilterContainer;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
@@ -70,7 +70,7 @@ class FilterJSONLangExporter extends Consumer implements IFileExporter
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         $this->done = true;
         $categorizedItems = $this->categorizeItemsByLangCode($this->langFiltetContainers);

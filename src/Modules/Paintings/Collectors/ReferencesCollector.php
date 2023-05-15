@@ -4,8 +4,7 @@ namespace CranachDigitalArchive\Importer\Modules\Paintings\Collectors;
 
 use Error;
 use CranachDigitalArchive\Importer\Language;
-use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingInfo;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingInfoLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
@@ -91,7 +90,7 @@ class ReferencesCollector extends Consumer
     }
 
 
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         /* should never trigger an action on done */
     }

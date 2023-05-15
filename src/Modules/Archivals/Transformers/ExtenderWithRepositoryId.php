@@ -3,7 +3,7 @@
 namespace CranachDigitalArchive\Importer\Modules\Archivals\Transformers;
 
 use CranachDigitalArchive\Importer\Modules\Archivals\Interfaces\ISearchableArchival;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Search\SearchableArchivalLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 use Error;
@@ -40,7 +40,7 @@ class ExtenderWithRepositoryId extends Hybrid
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         parent::done($producer);
     }

@@ -3,8 +3,7 @@
 namespace CranachDigitalArchive\Importer\Modules\Graphics\Transformers;
 
 use Error;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
-use CranachDigitalArchive\Importer\Language;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Collectors\LocationsCollector;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
@@ -58,7 +57,7 @@ class ExtenderWithLocations extends Hybrid
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         parent::done($producer);
     }

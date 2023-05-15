@@ -5,7 +5,7 @@ namespace CranachDigitalArchive\Importer\Modules\Archivals\Exporters;
 use Error;
 
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
-use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
+use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Archival;
 use CranachDigitalArchive\Importer\Modules\Archivals\Entities\ArchivalLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
@@ -70,7 +70,7 @@ class ArchivalsJSONLangExporter extends Consumer implements IFileExporter
     /**
      * @return void
      */
-    public function done(ProducerInterface $producer)
+    public function done(IProducer $producer)
     {
         $this->closeAllOutputFiles();
         $this->done = true;
