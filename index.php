@@ -12,17 +12,17 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsPreLoade
 use CranachDigitalArchive\Importer\Modules\Graphics\Collectors\LocationsCollector as GraphicsLocationsCollector;
 use CranachDigitalArchive\Importer\Modules\Graphics\Collectors\RepositoriesCollector as GraphicsRepositoriesCollector;
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsJSONLangExistenceTypeExporter;
-use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsElasticsearchLangExporter;
+use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsElasticsearchLangExporter as SearchableGraphicsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterminer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MapToSearchableGraphic;
-use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithThesaurus as GraphicsExtenderWithThesaurus;
-use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithBasicFilterValues as GraphicsExtenderWithBasicFilterValues;
-use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithInvolvedPersonsFullnames as GraphicsExtenderWithInvolvedPersonsFullnames;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithThesaurus as SearchableGraphicsExtenderWithThesaurus;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithBasicFilterValues as SearchableGraphicsExtenderWithBasicFilterValues;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithInvolvedPersonsFullnames as SearchableGraphicsExtenderWithInvolvedPersonsFullnames;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithSortingInfo as GraphicsExtenderWithSortingInfo;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithIds as GraphicsExtenderWithIds;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRestorations as GraphicsExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithLocations as GraphicsExtenderWithLocations;
-use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRepositories as GraphicsExtenderWithRepositories;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRepositories as SearchableGraphicsExtenderWithRepositories;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MetadataFiller as GraphicsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteDocumentExistenceChecker;
@@ -40,11 +40,11 @@ use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsLoader
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsPreLoader;
 use CranachDigitalArchive\Importer\Modules\Paintings\Collectors\ReferencesCollector as PaintingsReferencesCollector;
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsJSONLangExporter;
-use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsElasticsearchLangExporter;
+use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsElasticsearchLangExporter as SearchablePaintingsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MapToSearchablePainting;
-use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithThesaurus as PaintingsExtenderWithThesaurus;
-use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithBasicFilterValues as PaintingsExtenderWithBasicFilterValues;
-use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithInvolvedPersonsFullnames as PaintingsExtenderWithInvolvedPersonsFullnames;
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithThesaurus as SearchablePaintingsExtenderWithThesaurus;
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithBasicFilterValues as SearchablePaintingsExtenderWithBasicFilterValues;
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithInvolvedPersonsFullnames as SearchablePaintingsExtenderWithInvolvedPersonsFullnames;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithSortingInfo as PaintingsExtenderWithSortingInfo;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithIds as PaintingsExtenderWithIds;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithRestorations as PaintingsExtenderWithRestorations;
@@ -52,10 +52,10 @@ use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithRe
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MetadataFiller as PaintingsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Archivals\Loaders\XML\ArchivalsLoader;
 use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsJSONLangExporter;
-use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsElasticsearchLangExporter;
+use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsElasticsearchLangExporter as SearchableArchivalsElasticsearchLangExporter;
 use CranachDigitalArchive\Importer\Modules\Archivals\Transformers\MetadataFiller as ArchivalsMetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Archivals\Transformers\MapToSearchableArchival;
-use CranachDigitalArchive\Importer\Modules\Archivals\Transformers\ExtenderWithRepositoryId;
+use CranachDigitalArchive\Importer\Modules\Archivals\Transformers\ExtenderWithRepositoryId as SearchableArchivalsExtenderWithRepositoryId;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\XML\ThesaurusLoader as ThesaurusXMLLoader;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Loaders\Memory\ThesaurusLoader as ThesaurusMemoryLoader;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ThesaurusJSONExporter;
@@ -258,11 +258,11 @@ $paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths)->pip
         /* Map Paintings to SearchablePaintings */
         ->pipeline(
             MapToSearchablePainting::new()->pipeline(
-                PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination),
-                PaintingsExtenderWithBasicFilterValues::new($customFiltersMemoryDestination),
-                PaintingsExtenderWithInvolvedPersonsFullnames::new(),
+                SearchablePaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination),
+                SearchablePaintingsExtenderWithBasicFilterValues::new($customFiltersMemoryDestination),
+                SearchablePaintingsExtenderWithInvolvedPersonsFullnames::new(),
                 /* Exporting the paintings for Elasticsearch bulk import */
-                PaintingsElasticsearchLangExporter::withDestinationAt($paintingsElasticsearchOutputFilepath),
+                SearchablePaintingsElasticsearchLangExporter::withDestinationAt($paintingsElasticsearchOutputFilepath),
             ),
         ),
 );
@@ -316,12 +316,12 @@ $graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath)->pipeline
         /* Map Graphics to SearchableGraphics */
         ->pipeline(
             MapToSearchableGraphic::new()->pipeline(
-                GraphicsExtenderWithRepositories::new($graphicsRepositoriesCollector, true),
-                GraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination),
-                GraphicsExtenderWithBasicFilterValues::new($customFiltersMemoryDestination),
-                GraphicsExtenderWithInvolvedPersonsFullnames::new(),
+                SearchableGraphicsExtenderWithRepositories::new($graphicsRepositoriesCollector, true),
+                SearchableGraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination),
+                SearchableGraphicsExtenderWithBasicFilterValues::new($customFiltersMemoryDestination),
+                SearchableGraphicsExtenderWithInvolvedPersonsFullnames::new(),
                 /* Exporting the graphics for Elasticsearch bulk import */
-                GraphicsElasticsearchLangExporter::withDestinationAt($graphicsElasticsearchOutputFilepath),
+                SearchableGraphicsElasticsearchLangExporter::withDestinationAt($graphicsElasticsearchOutputFilepath),
             ),
         ),
 );
@@ -365,9 +365,9 @@ $archivalsLoader = ArchivalsLoader::withSourceAt($archivalsInputFilepath)->pipel
         /* Map Archivals to SearchableArchivals */
         ->pipeline(
             MapToSearchableArchival::new()->pipeline(
-                ExtenderWithRepositoryId::new(),
+                SearchableArchivalsExtenderWithRepositoryId::new(),
                 /* Exporting the archivals for Elasticsearch bulk import */
-                ArchivalsElasticsearchLangExporter::withDestinationAt($archivalsElasticsearchOutputFilepath),
+                SearchableArchivalsElasticsearchLangExporter::withDestinationAt($archivalsElasticsearchOutputFilepath),
             )
         )
 );
