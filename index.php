@@ -7,6 +7,7 @@ echo "MemoryLimit: " . ini_get('memory_limit') . "\n\n";
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+use CranachDigitalArchive\Importer\InputExportsOverview;
 use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsLoader;
 use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsPreLoader;
 use CranachDigitalArchive\Importer\Modules\Graphics\Collectors\LocationsCollector as GraphicsLocationsCollector;
@@ -70,61 +71,11 @@ use CranachDigitalArchive\Importer\Modules\Filters\Transformers\NumericalSorter;
 use CranachDigitalArchive\Importer\Modules\Locations\Sources\LocationsSource;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\LocationsGeoPositionExtender;
 
-$date = '20230315';
-$inputDirectory = './input/' . $date;
-$destDirectory = './docs/' . $date;
-$resourcesDirectory = './resources';
+$scriptDirectory = __DIR__;
 
-/* Read .env file */
-$dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
+$inputBaseDirectory = $scriptDirectory . '/input/';
 
-try {
-    $dotenv->load();
-} catch (\Throwable $e) {
-    echo "Missing .env file!\nSee README.md for more.\n\n";
-    exit();
-}
-
-$imagesAPIKey = $_ENV['IMAGES_API_KEY'];
-$cacheDir = $_ENV['CACHE_DIR'] ?? './.cache';
-
-/* Inputfiles */
-$thesaurusInputFilepath = $inputDirectory . '/CDA_Thesaurus_' . $date . '.xml';
-$paintingsRestorationInputFilepaths = [
-    $inputDirectory . '/CDA_RestDokumente_P1_' . $date . '.xml',
-    $inputDirectory . '/CDA_RestDokumente_P2_' . $date . '.xml',
-    $inputDirectory . '/CDA_RestDokumente_P3_' . $date . '.xml',
-];
-$paintingsInputFilepaths = [
-    $inputDirectory . '/CDA_Datenuebersicht_P1_' . $date . '.xml',
-    $inputDirectory . '/CDA_Datenuebersicht_P2_' . $date . '.xml',
-    $inputDirectory . '/CDA_Datenuebersicht_P3_' . $date . '.xml',
-];
-$graphicsRestorationInputFilepaths = [
-    $inputDirectory . '/CDA-GR_RestDokumente_' . $date . '.xml',
-];
-$graphicsInputFilepath = $inputDirectory . '/CDA-GR_Datenuebersicht_' . $date . '.xml';
-$literatureInputFilepaths = [
-    $inputDirectory . '/CDA_Literaturverweise_P1_' . $date . '.xml',
-    $inputDirectory . '/CDA_Literaturverweise_P2_' . $date . '.xml',
-];
-$archivalsInputFilepath = $inputDirectory . '/CDA-A_Datenuebersicht_' . $date . '.xml';
-
-$customFilterDefinitionsFilepath = $resourcesDirectory . '/custom_filters.json';
-$locationsFilepath = $resourcesDirectory . '/locations.json';
-
-
-/* Outputfiles */
-$thesaurusOutputFilepath = $destDirectory . '/cda-thesaurus-v2.json';
-$paintingsOutputFilepath = $destDirectory . '/cda-paintings-v2.json';
-$paintingsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-paintings-v2.bulk';
-$graphicsOutputFilepath = $destDirectory . '/cda-graphics-v2.json';
-$graphicsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-graphics-v2.bulk';
-$literatureReferenceOutputFilepath = $destDirectory . '/cda-literaturereferences-v2.json';
-$literatureReferenceElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-literaturereferences-v2.bulk';
-$archivalsOutputFilepath = $destDirectory . '/cda-archivals-v2.json';
-$archivalsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-archivals-v2.bulk';
-$filtersOutputFilepath = $destDirectory . '/cda-filters.json';
+$inputExportsOverview = InputExportsOverview::new($inputBaseDirectory);
 
 
 /* Parameters */
@@ -134,6 +85,8 @@ $longOpts = [
     'refresh-remote-images-cache::',    /* optional value; default is 'all' */
     'refresh-remote-documents-cache::', /* optional value; default is 'all' */
     'refresh-all-remote-caches',        /* optional */
+
+    'use-export:'                       /* required value */,
 ];
 
 $opts = getopt('', $longOpts);
@@ -143,6 +96,8 @@ $keepSoftDeletedArterfacts = false;
 $supportedCachesKeys = ['paintings', 'graphics', 'archivals'];
 $remoteImagesCachesToRefresh = array_fill_keys($supportedCachesKeys, false);
 $remoteDocumentsCachesToRefresh = array_fill_keys($supportedCachesKeys, false);
+
+$selectedDate = null;
 
 foreach ($opts as $opt => $value) {
     switch ($opt) {
@@ -176,9 +131,89 @@ foreach ($opts as $opt => $value) {
             $remoteDocumentsCachesToRefresh = array_fill_keys($supportedCachesKeys, true);
             break;
 
+        case 'use-export':
+            $foundDirectoryEntry = $inputExportsOverview->getDirectoryEntryWithName($value);
+
+            if (is_null($foundDirectoryEntry)) {
+                exit('Unknown export with name \'' . $value . '\'' . "\n\n");
+            }
+
+            $selectedDate = $value;
+            break;
+
         default:
     }
 }
+
+
+/* Read .env file */
+$dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
+
+try {
+    $dotenv->load();
+} catch (\Throwable $e) {
+    echo "Missing .env file!\nSee README.md for more.\n\n";
+    exit();
+}
+
+$imagesAPIKey = $_ENV['IMAGES_API_KEY'];
+$cacheDir = $_ENV['CACHE_DIR'] ?? './.cache';
+
+if (is_null($selectedDate)) {
+    $latestInputExportEntry = $inputExportsOverview->getLatestDirectoryEntry();
+
+    if (!is_null($latestInputExportEntry)) {
+        $selectedDate = $latestInputExportEntry->getFilename();
+    } else {
+        exit('No possible export found in \'' . $inputExportsOverview->getSearchPath() . '\'!');
+    }
+}
+
+echo 'Selected Export : ' . $selectedDate . "\n\n\n";
+
+$inputDirectory = $inputBaseDirectory . $selectedDate;
+$destDirectory = $scriptDirectory .'/docs/' . $selectedDate;
+$resourcesDirectory = $scriptDirectory . '/resources';
+
+/* Inputfiles */
+$thesaurusInputFilepath = $inputDirectory . '/CDA_Thesaurus_' . $selectedDate . '.xml';
+$paintingsRestorationInputFilepaths = [
+    $inputDirectory . '/CDA_RestDokumente_P1_' . $selectedDate . '.xml',
+    $inputDirectory . '/CDA_RestDokumente_P2_' . $selectedDate . '.xml',
+    $inputDirectory . '/CDA_RestDokumente_P3_' . $selectedDate . '.xml',
+];
+$paintingsInputFilepaths = [
+    $inputDirectory . '/CDA_Datenuebersicht_P1_' . $selectedDate . '.xml',
+    $inputDirectory . '/CDA_Datenuebersicht_P2_' . $selectedDate . '.xml',
+    $inputDirectory . '/CDA_Datenuebersicht_P3_' . $selectedDate . '.xml',
+];
+$graphicsRestorationInputFilepaths = [
+    $inputDirectory . '/CDA-GR_RestDokumente_' . $selectedDate . '.xml',
+];
+$graphicsInputFilepath = $inputDirectory . '/CDA-GR_Datenuebersicht_' . $selectedDate . '.xml';
+$literatureInputFilepaths = [
+    $inputDirectory . '/CDA_Literaturverweise_P1_' . $selectedDate . '.xml',
+    $inputDirectory . '/CDA_Literaturverweise_P2_' . $selectedDate . '.xml',
+];
+$archivalsInputFilepath = $inputDirectory . '/CDA-A_Datenuebersicht_' . $selectedDate . '.xml';
+
+$customFilterDefinitionsFilepath = $resourcesDirectory . '/custom_filters.json';
+$locationsFilepath = $resourcesDirectory . '/locations.json';
+
+
+/* Outputfiles */
+$thesaurusOutputFilepath = $destDirectory . '/cda-thesaurus-v2.json';
+$paintingsOutputFilepath = $destDirectory . '/cda-paintings-v2.json';
+$paintingsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-paintings-v2.bulk';
+$graphicsOutputFilepath = $destDirectory . '/cda-graphics-v2.json';
+$graphicsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-graphics-v2.bulk';
+$literatureReferenceOutputFilepath = $destDirectory . '/cda-literaturereferences-v2.json';
+$literatureReferenceElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-literaturereferences-v2.bulk';
+$archivalsOutputFilepath = $destDirectory . '/cda-archivals-v2.json';
+$archivalsElasticsearchOutputFilepath = $destDirectory . '/elasticsearch/cda-archivals-v2.bulk';
+$filtersOutputFilepath = $destDirectory . '/cda-filters.json';
+
+
 
 /* Locations */
 $locationsSource = LocationsSource::withSourceAt($locationsFilepath);

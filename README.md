@@ -30,6 +30,7 @@ Das Import-Script unterstützt die Durchgabe einiger weiterer Parameter.
 | refresh-remote-images-cache | Den Remote-**Image** Cache gezielt auffrischen; aktuell unterstützte Werte: `all`, `paintings`, `graphics` und `archivals`; ist kein Wert gegeben, wird standardmäßig auf `all` zurückgefallen |
 | refresh-remote-documents-cache | Den Remote-**Document** Cache gezielt auffrischen; unterstützte Werte: `all`, `paintings`, `graphics` und `archivals`; ist kein Wert gegeben, wird standardmäßig auf `all` zurückgefallen |
 | refresh-all-remote-caches | Alle Remote Caches auffrischen |
+| use-export | Spezifischen Export als Basis für den Import verwenden; z. B. `composer run-script import -- --use-export=20230301` |
 
 
 Auf Aufruf mit einem der Paramter würde wie folgt aussehen:
