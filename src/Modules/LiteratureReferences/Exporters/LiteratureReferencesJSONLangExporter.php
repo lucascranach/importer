@@ -7,6 +7,8 @@ use Error;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\LiteratureReference;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\LiteratureReferenceLanguageCollection;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Interfaces\ILiteratureReference;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 /**
@@ -55,15 +57,15 @@ class LiteratureReferencesJSONLangExporter extends Consumer implements IFileExpo
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof LiteratureReference)) {
-            throw new Error('Pushed item is not of expected class \'LiteratureReference\'');
+        if (!($item instanceof LiteratureReferenceLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'LiteratureReferenceLanguageCollection\'');
         }
 
         if ($this->done) {
             throw new \Error('Can\'t push more items after done() was called!');
         }
 
-        return $this->appendItemToOutputFile($item);
+        return $this->handleCollection($item);
     }
 
 
@@ -87,10 +89,21 @@ class LiteratureReferencesJSONLangExporter extends Consumer implements IFileExpo
     }
 
 
-    private function appendItemToOutputFile(LiteratureReference $item): bool
+    private function handleCollection(LiteratureReferenceLanguageCollection $collection): bool
     {
-        $metadata = $item->getMetadata();
-        $key = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
+        $retVal = true;
+
+        foreach ($collection as $langCode => $literatureReference) {
+            $retVal = $retVal && $this->appendItemToOutputFile($langCode, $literatureReference);
+        }
+
+        return $retVal;
+    }
+
+
+    private function appendItemToOutputFile(string $langCode, LiteratureReference $item): bool
+    {
+        $key = $langCode;
 
         if (!isset($this->outputFilesByLangCode[$key])) {
             $this->outputFilesByLangCode[$key] = [

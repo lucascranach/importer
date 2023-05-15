@@ -3,13 +3,12 @@
 namespace CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities;
 
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
-
-use CranachDigitalArchive\Importer\Interfaces\Entities\IBaseItem;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Interfaces\ILiteratureReference;
 
 /**
  * Representing a single literature reference
  */
-class LiteratureReference implements IBaseItem
+class LiteratureReference implements ILiteratureReference
 {
     const ENTITY_TYPE = 'LITERATURE_REFERENCE';
 

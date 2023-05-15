@@ -2,11 +2,10 @@
 
 namespace CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML;
 
-use Error;
 use SimpleXMLElement;
 use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
-use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\LiteratureReference;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\LiteratureReferenceLanguageCollection;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\Event;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\ConnectedObject;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\Person;
@@ -159,150 +158,57 @@ class LiteratureReferencesInflator implements IInflator
 
 
     public static function inflate(
-        SimpleXMLElement &$node,
-        LiteratureReference &$literatureReferenceDe,
-        LiteratureReference &$literatureReferenceEn
+        SimpleXMLElement $node,
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $subNode = $node->{'GroupHeader'};
         $connectedObjectsSubNode = $node->{'Group'};
 
         self::registerXPathNamespace($subNode);
 
-        self::inflateReferenceId(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
-        self::inflateReferenceNumber(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
+        self::inflateReferenceId($subNode, $literatureReferenceCollection);
+        self::inflateReferenceNumber($subNode, $literatureReferenceCollection);
 
-        self::inflateTitle(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
-        self::inflateSubtitle(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
-        self::inflateShortTitle(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
-        self::inflateLongTitle(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
+        self::inflateTitle($subNode, $literatureReferenceCollection);
+        self::inflateSubtitle($subNode, $literatureReferenceCollection);
+        self::inflateShortTitle($subNode, $literatureReferenceCollection);
+        self::inflateLongTitle($subNode, $literatureReferenceCollection);
 
-        self::inflateJournal(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
-        self::inflateSeries(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
-        self::inflateVolume(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
-        self::inflateEdition(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
+        self::inflateJournal($subNode, $literatureReferenceCollection);
+        self::inflateSeries($subNode, $literatureReferenceCollection);
+        self::inflateVolume($subNode, $literatureReferenceCollection);
+        self::inflateEdition($subNode, $literatureReferenceCollection);
 
-        self::inflatePublishLocation(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
-        self::inflatePublishDate(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
-        self::inflatePageNumbers(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
-        self::inflateDate(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
+        self::inflatePublishLocation($subNode, $literatureReferenceCollection);
+        self::inflatePublishDate($subNode, $literatureReferenceCollection);
+        self::inflatePageNumbers($subNode, $literatureReferenceCollection);
+        self::inflateDate($subNode, $literatureReferenceCollection);
 
-        self::inflateEvents(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
+        self::inflateEvents($subNode, $literatureReferenceCollection);
 
-        self::inflateCopyright(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
+        self::inflateCopyright($subNode, $literatureReferenceCollection);
 
-        self::inflatePersons(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
-        self::inflatePublications(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
+        self::inflatePersons($subNode, $literatureReferenceCollection);
+        self::inflatePublications($subNode, $literatureReferenceCollection);
 
-        self::inflateAlternateNumbers(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
+        self::inflateAlternateNumbers($subNode, $literatureReferenceCollection);
 
-        self::inflatePhysicalDescription(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
+        self::inflatePhysicalDescription($subNode, $literatureReferenceCollection);
 
-        self::inflateMention(
-            $subNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
+        self::inflateMention($subNode, $literatureReferenceCollection);
 
-        self::inflateConnectedObjects(
-            $connectedObjectsSubNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
+        self::inflateConnectedObjects($connectedObjectsSubNode, $literatureReferenceCollection);
 
         /* we derive the primary source state from the publications (after they are inflated),
             so we only need the literatureReference instances here */
-        self::inflatePrimarySource(
-            $literatureReferenceDe,
-            $literatureReferenceEn
-        );
+        self::inflatePrimarySource($literatureReferenceCollection);
     }
 
 
     /* ReferenceId */
     private static function inflateReferenceId(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $idElement = self::findElementByXPath(
             $node,
@@ -310,8 +216,7 @@ class LiteratureReferencesInflator implements IInflator
         );
         if ($idElement) {
             $idStr = trim(strval($idElement));
-            $literatureReferenceDe->setReferenceId($idStr);
-            $literatureReferenceEn->setReferenceId($idStr);
+            $literatureReferenceCollection->setReferenceId($idStr);
         }
     }
 
@@ -319,8 +224,7 @@ class LiteratureReferencesInflator implements IInflator
     /* ReferenceNumber */
     private static function inflateReferenceNumber(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $numberElement = self::findElementByXPath(
             $node,
@@ -328,8 +232,7 @@ class LiteratureReferencesInflator implements IInflator
         );
         if ($numberElement) {
             $numberStr = trim(strval($numberElement));
-            $literatureReferenceDe->setReferenceNumber($numberStr);
-            $literatureReferenceEn->setReferenceNumber($numberStr);
+            $literatureReferenceCollection->setReferenceNumber($numberStr);
         }
     }
 
@@ -337,8 +240,7 @@ class LiteratureReferencesInflator implements IInflator
     /* Title */
     private static function inflateTitle(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $titleElement = self::findElementByXPath(
             $node,
@@ -346,8 +248,7 @@ class LiteratureReferencesInflator implements IInflator
         );
         if ($titleElement) {
             $titleStr = trim(strval($titleElement));
-            $literatureReferenceDe->setTitle($titleStr);
-            $literatureReferenceEn->setTitle($titleStr);
+            $literatureReferenceCollection->setTitle($titleStr);
         }
     }
 
@@ -355,8 +256,7 @@ class LiteratureReferencesInflator implements IInflator
     /* Subtitle */
     private static function inflateSubtitle(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $subtitleElement = self::findElementByXPath(
             $node,
@@ -364,8 +264,7 @@ class LiteratureReferencesInflator implements IInflator
         );
         if ($subtitleElement) {
             $subtitleStr = trim(strval($subtitleElement));
-            $literatureReferenceDe->setSubtitle($subtitleStr);
-            $literatureReferenceEn->setSubtitle($subtitleStr);
+            $literatureReferenceCollection->setSubtitle($subtitleStr);
         }
     }
 
@@ -373,8 +272,7 @@ class LiteratureReferencesInflator implements IInflator
     /* ShortTitle */
     private static function inflateShortTitle(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $shortTitleElement = self::findElementByXPath(
             $node,
@@ -382,8 +280,7 @@ class LiteratureReferencesInflator implements IInflator
         );
         if ($shortTitleElement) {
             $shortTitleStr = trim(strval($shortTitleElement));
-            $literatureReferenceDe->setShortTitle($shortTitleStr);
-            $literatureReferenceEn->setShortTitle($shortTitleStr);
+            $literatureReferenceCollection->setShortTitle($shortTitleStr);
         }
     }
 
@@ -391,8 +288,7 @@ class LiteratureReferencesInflator implements IInflator
     /* ShortTitle */
     private static function inflateLongTitle(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $longTitleElement = self::findElementByXPath(
             $node,
@@ -400,8 +296,7 @@ class LiteratureReferencesInflator implements IInflator
         );
         if ($longTitleElement) {
             $longTitleStr = trim(strval($longTitleElement));
-            $literatureReferenceDe->setLongTitle($longTitleStr);
-            $literatureReferenceEn->setLongTitle($longTitleStr);
+            $literatureReferenceCollection->setLongTitle($longTitleStr);
         }
     }
 
@@ -409,8 +304,7 @@ class LiteratureReferencesInflator implements IInflator
     /* Journal */
     private static function inflateJournal(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $journalElement = self::findElementByXPath(
             $node,
@@ -419,8 +313,7 @@ class LiteratureReferencesInflator implements IInflator
 
         if ($journalElement) {
             $journalStr = trim(strval($journalElement));
-            $literatureReferenceDe->setJournal($journalStr);
-            $literatureReferenceEn->setJournal($journalStr);
+            $literatureReferenceCollection->setJournal($journalStr);
         }
     }
 
@@ -428,8 +321,7 @@ class LiteratureReferencesInflator implements IInflator
     /* Series */
     private static function inflateSeries(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $seriesElement = self::findElementByXPath(
             $node,
@@ -437,8 +329,7 @@ class LiteratureReferencesInflator implements IInflator
         );
         if ($seriesElement) {
             $seriesStr = trim(strval($seriesElement));
-            $literatureReferenceDe->setSeries($seriesStr);
-            $literatureReferenceEn->setSeries($seriesStr);
+            $literatureReferenceCollection->setSeries($seriesStr);
         }
     }
 
@@ -446,8 +337,7 @@ class LiteratureReferencesInflator implements IInflator
     /* Volume */
     private static function inflateVolume(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $volumeElement = self::findElementByXPath(
             $node,
@@ -455,8 +345,7 @@ class LiteratureReferencesInflator implements IInflator
         );
         if ($volumeElement) {
             $volumeStr = trim(strval($volumeElement));
-            $literatureReferenceDe->setVolume($volumeStr);
-            $literatureReferenceEn->setVolume($volumeStr);
+            $literatureReferenceCollection->setVolume($volumeStr);
         }
     }
 
@@ -464,8 +353,7 @@ class LiteratureReferencesInflator implements IInflator
     /* Edition */
     private static function inflateEdition(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $editionElement = self::findElementByXPath(
             $node,
@@ -473,8 +361,7 @@ class LiteratureReferencesInflator implements IInflator
         );
         if ($editionElement) {
             $editionStr = trim(strval($editionElement));
-            $literatureReferenceDe->setEdition($editionStr);
-            $literatureReferenceEn->setEdition($editionStr);
+            $literatureReferenceCollection->setEdition($editionStr);
         }
     }
 
@@ -482,8 +369,7 @@ class LiteratureReferencesInflator implements IInflator
     /* PublishLocation */
     private static function inflatePublishLocation(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $publishLocationElement = self::findElementByXPath(
             $node,
@@ -491,8 +377,7 @@ class LiteratureReferencesInflator implements IInflator
         );
         if ($publishLocationElement) {
             $publishLocationStr = trim(strval($publishLocationElement));
-            $literatureReferenceDe->setPublishLocation($publishLocationStr);
-            $literatureReferenceEn->setPublishLocation($publishLocationStr);
+            $literatureReferenceCollection->setPublishLocation($publishLocationStr);
         }
     }
 
@@ -500,8 +385,7 @@ class LiteratureReferencesInflator implements IInflator
     /* PublishDate */
     private static function inflatePublishDate(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $publishDateElement = self::findElementByXPath(
             $node,
@@ -509,8 +393,7 @@ class LiteratureReferencesInflator implements IInflator
         );
         if ($publishDateElement) {
             $publishDateStr = trim(strval($publishDateElement));
-            $literatureReferenceDe->setPublishDate($publishDateStr);
-            $literatureReferenceEn->setPublishDate($publishDateStr);
+            $literatureReferenceCollection->setPublishDate($publishDateStr);
         }
     }
 
@@ -518,8 +401,7 @@ class LiteratureReferencesInflator implements IInflator
     /* PageNumbers */
     private static function inflatePageNumbers(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $pageNumbersElement = self::findElementByXPath(
             $node,
@@ -531,11 +413,11 @@ class LiteratureReferencesInflator implements IInflator
             $splitPageNumbers = self::splitLanguageString($pageNumbersStr);
 
             if (isset($splitPageNumbers[0])) {
-                $literatureReferenceDe->setPageNumbers($splitPageNumbers[0]);
+                $literatureReferenceCollection->get(Language::DE)->setPageNumbers($splitPageNumbers[0]);
             }
 
             if (isset($splitPageNumbers[1])) {
-                $literatureReferenceEn->setPageNumbers($splitPageNumbers[1]);
+                $literatureReferenceCollection->get(Language::EN)->setPageNumbers($splitPageNumbers[1]);
             }
         }
     }
@@ -544,8 +426,7 @@ class LiteratureReferencesInflator implements IInflator
     /* Date */
     private static function inflateDate(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $dateElement = self::findElementByXPath(
             $node,
@@ -553,8 +434,7 @@ class LiteratureReferencesInflator implements IInflator
         );
         if ($dateElement) {
             $dateStr = trim(strval($dateElement));
-            $literatureReferenceDe->setDate($dateStr);
-            $literatureReferenceEn->setDate($dateStr);
+            $literatureReferenceCollection->setDate($dateStr);
         }
     }
 
@@ -562,8 +442,7 @@ class LiteratureReferencesInflator implements IInflator
     /* Events */
     private static function inflateEvents(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $detailElements = self::findElementByXPath(
             $node,
@@ -646,16 +525,15 @@ class LiteratureReferencesInflator implements IInflator
 
                 switch ($mappedEventType[0]) {
                     case Language::DE:
-                        $literatureReferenceDe->addEvent($event);
+                        $literatureReferenceCollection->get(Language::DE)->addEvent($event);
                         break;
 
                     case Language::EN:
-                        $literatureReferenceEn->addEvent($event);
+                        $literatureReferenceCollection->get(Language::EN)->addEvent($event);
                         break;
                 }
             } else {
-                $literatureReferenceDe->addEvent($event);
-                $literatureReferenceEn->addEvent($event);
+                $literatureReferenceCollection->addEvent($event);
             }
         }
     }
@@ -664,8 +542,7 @@ class LiteratureReferencesInflator implements IInflator
     /* Copyright */
     private static function inflateCopyright(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $copyrightElement = self::findElementByXPath(
             $node,
@@ -677,11 +554,11 @@ class LiteratureReferencesInflator implements IInflator
             $splitCopyrightStr = self::splitLanguageString($copyrightStr);
 
             if (isset($splitCopyrightStr[0])) {
-                $literatureReferenceDe->setCopyright($splitCopyrightStr[0]);
+                $literatureReferenceCollection->get(Language::DE)->setCopyright($splitCopyrightStr[0]);
             }
 
             if (isset($splitCopyrightStr[1])) {
-                $literatureReferenceEn->setCopyright($splitCopyrightStr[1]);
+                $literatureReferenceCollection->get(Language::EN)->setCopyright($splitCopyrightStr[1]);
             }
         }
     }
@@ -690,8 +567,7 @@ class LiteratureReferencesInflator implements IInflator
     /* Persons */
     private static function inflatePersons(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $detailElements = self::findElementByXPath(
             $node,
@@ -708,8 +584,7 @@ class LiteratureReferencesInflator implements IInflator
             }
 
             $person = new Person;
-            $literatureReferenceDe->addPerson($person);
-            $literatureReferenceEn->addPerson($person);
+            $literatureReferenceCollection->addPerson($person);
 
             /* Role */
             $roleElement = self::findElementByXPath(
@@ -744,8 +619,7 @@ class LiteratureReferencesInflator implements IInflator
     /* Publications */
     private static function inflatePublications(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $detailElements = self::findElementByXPath(
             $node,
@@ -803,11 +677,11 @@ class LiteratureReferencesInflator implements IInflator
 
 
             if (!empty($publicationDe->getType())) {
-                $literatureReferenceDe->addPublication($publicationDe);
+                $literatureReferenceCollection->get(Language::DE)->addPublication($publicationDe);
             }
 
             if (!empty($publicationEn->getType())) {
-                $literatureReferenceEn->addPublication($publicationEn);
+                $literatureReferenceCollection->get(Language::EN)->addPublication($publicationEn);
             }
         }
     }
@@ -816,8 +690,7 @@ class LiteratureReferencesInflator implements IInflator
     /* AlternateNumbers */
     private static function inflateAlternateNumbers(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $detailElements = self::findElementByXPath(
             $node,
@@ -866,8 +739,7 @@ class LiteratureReferencesInflator implements IInflator
                 || !empty($alternateNumber->getNumber())
                 || !empty($alternateNumber->getRemarks())
             ) {
-                $literatureReferenceDe->addAlternateNumber($alternateNumber);
-                $literatureReferenceEn->addAlternateNumber($alternateNumber);
+                $literatureReferenceCollection->addAlternateNumber($alternateNumber);
             }
         }
     }
@@ -876,8 +748,7 @@ class LiteratureReferencesInflator implements IInflator
     /* Physical Description */
     private static function inflatePhysicalDescription(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ) {
         $physicalDescriptionElement = self::findElementByXPath(
             $node,
@@ -890,11 +761,11 @@ class LiteratureReferencesInflator implements IInflator
             $splitPhysicalDescriptionStr = self::splitLanguageString($physicalDescriptionStr);
 
             if (isset($splitPhysicalDescriptionStr[0])) {
-                $literatureReferenceDe->setPhysicalDescription($splitPhysicalDescriptionStr[0]);
+                $literatureReferenceCollection->get(Language::DE)->setPhysicalDescription($splitPhysicalDescriptionStr[0]);
             }
 
             if (isset($splitPhysicalDescriptionStr[1])) {
-                $literatureReferenceEn->setPhysicalDescription($splitPhysicalDescriptionStr[1]);
+                $literatureReferenceCollection->get(Language::EN)->setPhysicalDescription($splitPhysicalDescriptionStr[1]);
             }
         }
     }
@@ -903,8 +774,7 @@ class LiteratureReferencesInflator implements IInflator
     /* Mention */
     private static function inflateMention(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ) {
         $mentionElement = self::findElementByXPath(
             $node,
@@ -914,8 +784,7 @@ class LiteratureReferencesInflator implements IInflator
         if ($mentionElement) {
             $mentionStr = trim(strval($mentionElement));
 
-            $literatureReferenceDe->setMention($mentionStr);
-            $literatureReferenceEn->setMention($mentionStr);
+            $literatureReferenceCollection->setMention($mentionStr);
         }
     }
 
@@ -923,8 +792,7 @@ class LiteratureReferencesInflator implements IInflator
     /* ConnectedObjects */
     private static function inflateConnectedObjects(
         SimpleXMLElement $node,
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ): void {
         $detailElements = self::findElementByXPath(
             $node,
@@ -945,8 +813,8 @@ class LiteratureReferencesInflator implements IInflator
             $connectedObjectDe = new ConnectedObject;
             $connectedObjectEn = new ConnectedObject;
 
-            $literatureReferenceDe->addConnectedObject($connectedObjectDe);
-            $literatureReferenceEn->addConnectedObject($connectedObjectEn);
+            $literatureReferenceCollection->get(Language::DE)->addConnectedObject($connectedObjectDe);
+            $literatureReferenceCollection->get(Language::EN)->addConnectedObject($connectedObjectEn);
 
             /* InventoryNumber */
             $inventoryNumberElement = self::findElementByXPath(
@@ -1044,21 +912,19 @@ class LiteratureReferencesInflator implements IInflator
 
     /* Primary source */
     private static function inflatePrimarySource(
-        LiteratureReference $literatureReferenceDe,
-        LiteratureReference $literatureReferenceEn
+        LiteratureReferenceLanguageCollection $literatureReferenceCollection,
     ) {
         $isPrimarySource = false;
 
         /* publications should be the same for each language,
             so we use the publications list of the german literatureReference */
-        foreach ($literatureReferenceDe->getPublications() as $publication) {
+        foreach ($literatureReferenceCollection->getPublications() as $publication) {
             if ($isPrimarySource = ($publication->getType() == self::$primarySourceKey)) {
                 break;
             }
         }
 
-        $literatureReferenceDe->setIsPrimarySource($isPrimarySource);
-        $literatureReferenceEn->setIsPrimarySource($isPrimarySource);
+        $literatureReferenceCollection->setIsPrimarySource($isPrimarySource);
     }
 
 

@@ -6,9 +6,9 @@ use Error;
 use DOMDocument;
 use SimpleXMLElement;
 use XMLReader;
-use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\LiteratureReference;
 use CranachDigitalArchive\Importer\Interfaces\Loaders\IMultipleFileLoader;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\LiteratureReferenceLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
@@ -119,33 +119,26 @@ class LiteratureReferencesLoader extends Producer implements IMultipleFileLoader
 
     private function transformCurrentItem(): void
     {
-        $metadata = new Metadata;
-        $metadata->setEntityType(LiteratureReference::ENTITY_TYPE);
+        $literatureReferenceCollection = LiteratureReferenceLanguageCollection::create();
 
-        $literatureReferenceDe = new LiteratureReference;
-        $metadata->setLangCode(Language::DE);
-        $literatureReferenceDe->setMetadata($metadata);
+        foreach ($literatureReferenceCollection as $langCode => $literatureReference) {
+            $metadata = new Metadata;
+            $metadata->setEntityType(LiteratureReference::ENTITY_TYPE);
+            $metadata->setLangCode($langCode);
 
-        $metadata = clone $metadata;
-
-        $literatureReferenceEn = new LiteratureReference;
-        $metadata->setLangCode(Language::EN);
-        $literatureReferenceEn->setMetadata($metadata);
-
-
+            $literatureReference->setMetadata($metadata);
+        }
 
         $xmlNode = $this->convertCurrentItemToSimpleXMLElement();
 
         /* Moved the inflation action(s) into its own class */
         LiteratureReferencesInflator::inflate(
             $xmlNode,
-            $literatureReferenceDe,
-            $literatureReferenceEn
+            $literatureReferenceCollection,
         );
 
         /* Passing the literature reference objects to the next nodes in the pipeline */
-        $this->next($literatureReferenceDe);
-        $this->next($literatureReferenceEn);
+        $this->next($literatureReferenceCollection);
     }
 
 

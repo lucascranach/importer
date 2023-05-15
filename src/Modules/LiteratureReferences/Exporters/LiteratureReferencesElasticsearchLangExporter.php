@@ -3,11 +3,10 @@
 namespace CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters;
 
 use Error;
-
+use CranachDigitalArchive\Importer\Pipeline\Consumer;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\ProducerInterface;
-use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\LiteratureReference;
-use CranachDigitalArchive\Importer\Pipeline\Consumer;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\LiteratureReferenceLanguageCollection;
 
 /**
  * LiteratureReferences exporter on a json flat file base (one file per language)
@@ -50,24 +49,23 @@ class LiteratureReferencesElasticsearchLangExporter extends Consumer implements 
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof LiteratureReference)) {
-            throw new Error('Pushed item is not of expected class \'LiteratureReference\'!');
+        if (!($item instanceof LiteratureReferenceLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'LiteratureReferenceLanguageCollection\'!');
         }
 
         if ($this->done) {
             throw new Error('Can\'t push more items after done() was called!');
         }
 
-        $metadata = $item->getMetadata();
-        $langCode = !is_null($metadata) ? $metadata->getLangCode() : 'unknown';
+        foreach ($item as $langCode => $literatureReference) {
+            if (!isset($this->langBuckets[$langCode])) {
+                $this->langBuckets[$langCode] = (object) [
+                    'items' => [],
+                ];
+            }
 
-        if (!isset($this->langBuckets[$langCode])) {
-            $this->langBuckets[$langCode] = (object) [
-                'items' => [],
-            ];
+            $this->langBuckets[$langCode]->items[] = $literatureReference;
         }
-
-        $this->langBuckets[$langCode]->items[] = $item;
 
         return true;
     }

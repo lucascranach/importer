@@ -6,6 +6,7 @@ use Error;
 use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\Person;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\LiteratureReference;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Interfaces\ILiteratureReference;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 class ExtenderWithAggregatedData extends Hybrid
@@ -40,19 +41,21 @@ class ExtenderWithAggregatedData extends Hybrid
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof LiteratureReference)) {
-            throw new Error('Pushed item is not of expected class \'LiteratureReference\'');
+        if (!($item instanceof ILiteratureReference)) {
+            throw new Error('Pushed item is not of expected interface \'ILiteratureReference\'');
         }
 
-        $item->setAuthors($this->getAuthors($item));
-        $item->setTextCategoryType($this->getTextCategoryType($item));
-        $item->setTextCategory($this->getTextCategory($item));
+        foreach ($item as $literatureReference) {
+            $literatureReference->setAuthors(self::getAuthors($literatureReference));
+            $literatureReference->setTextCategoryType(self::getTextCategoryType($literatureReference));
+            $literatureReference->setTextCategory(self::getTextCategory($literatureReference));
+        }
 
         $this->next($item);
         return true;
     }
 
-    private function getAuthors(LiteratureReference $item): string
+    private static function getAuthors(LiteratureReference $item): string
     {
         $personNames = array_map(function (Person $person) {
             return $person->getName();
@@ -60,7 +63,7 @@ class ExtenderWithAggregatedData extends Hybrid
         return implode(', ', $personNames);
     }
 
-    private function getTextCategoryType(LiteratureReference $item): string
+    private static function getTextCategoryType(LiteratureReference $item): string
     {
         if ($item->journal) {
             return self::TEXT_CATEGORY_TYPE_JOURNAL;
@@ -71,7 +74,7 @@ class ExtenderWithAggregatedData extends Hybrid
         }
     }
 
-    private function getTextCategory(LiteratureReference $item): string
+    private static function getTextCategory(LiteratureReference $item): string
     {
         $metadata = $item->getMetadata();
 
@@ -81,7 +84,7 @@ class ExtenderWithAggregatedData extends Hybrid
 
         $langCode = $metadata->getLangCode();
 
-        $textCategoryType = $this->getTextCategoryType($item);
+        $textCategoryType = self::getTextCategoryType($item);
         return self::$textCategoyTranslations[$langCode][$textCategoryType];
     }
 }
