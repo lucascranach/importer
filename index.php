@@ -192,37 +192,39 @@ $metaReferenceCollector = MetaReferenceCollector::new();
 $thesaurusMemoryDestination = ThesaurusMemoryExporter::new(); /* needed later for graphics and paintings */
 $thesaurusMemoryLoader = ThesaurusMemoryLoader::withMemory($thesaurusMemoryDestination);
 
-ThesaurusXMLLoader::withSourceAt($thesaurusInputFilepath)->pipe(
-    ThesaurusJSONExporter::withDestinationAt($thesaurusOutputFilepath),
-    $thesaurusMemoryDestination,
-)->run(); /* and we have to run it directly */
+ThesaurusXMLLoader::withSourceAt($thesaurusInputFilepath)
+    ->pipeline(ThesaurusJSONExporter::withDestinationAt($thesaurusOutputFilepath))
+    ->pipeline($thesaurusMemoryDestination)
+    ->run(); /* and we have to run it directly */
 
 
 /* Filters */
 $customFiltersLoader = CustomFiltersLoader::withSourceAt($customFilterDefinitionsFilepath);
 $customFiltersMemoryDestination = CustomFiltersMemoryExporter::new(); /* needed later for graphics and paintings */
 
-$customFiltersLoader->pipe(
-    $customFiltersMemoryDestination,
-)->run();
+$customFiltersLoader
+    ->pipeline($customFiltersMemoryDestination)
+    ->run();
 
 
 /* PaintingsRestorations */
 $paintingsRestorationMemoryDestination = RestorationsMemoryExporter::new();
 $paintingsRestorationsIdAdder = RestorationsExtenderWithIds::new($customFiltersMemoryDestination);
 
-RestorationsLoader::withSourcesAt($paintingsRestorationInputFilepaths)->pipe(
-    $paintingsRestorationsIdAdder->pipe(
-        $paintingsRestorationMemoryDestination,
-    ),
-)->run(); /* and we have to run it directly */
+RestorationsLoader::withSourcesAt($paintingsRestorationInputFilepaths)
+    ->pipeline(
+        $paintingsRestorationsIdAdder,
+        $paintingsRestorationMemoryDestination
+    )
+    ->run(); /* and we have to run it directly */
 
 
 /* Paintings - Infos */
 $paintingsPreLoader = PaintingsPreLoader::withSourcesAt($paintingsInputFilepaths);
 $paintingsReferencesCollector = PaintingsReferencesCollector::new();
-$paintingsPreLoader->pipe($paintingsReferencesCollector);
-$paintingsPreLoader->run();
+$paintingsPreLoader
+    ->pipeline($paintingsReferencesCollector)
+    ->run();
 
 
 /* Paintings */
@@ -238,78 +240,48 @@ $paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt
     $imagesAPIKey,
     $remoteImagesCachesToRefresh['paintings']
 );
-$paintingsRestorationExtender = PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination);
-$paintingsIdAdder = PaintingsExtenderWithIds::new($customFiltersMemoryDestination);
-$paintingsMapToSearchablePainting = MapToSearchablePainting::new();
-$paintingsBasicFilterValues = PaintingsExtenderWithBasicFilterValues::new($customFiltersMemoryDestination);
-$paintingsInvolvedPersonsFullnames = PaintingsExtenderWithInvolvedPersonsFullnames::new();
-$paintingsSortingInfo = PaintingsExtenderWithSortingInfo::new();
-$paintingsThesaurusExtender = PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination);
-$paintingsMetadataFiller = PaintingsMetadataFiller::new();
-$paintingsReferencesExtender = PaintingsExtenderWithReferences::new($paintingsReferencesCollector);
-$paintingsDestination = PaintingsJSONLangExporter::withDestinationAt($paintingsOutputFilepath);
-$paintingsElasticsearchBulkDestination = PaintingsElasticsearchLangExporter::withDestinationAt(
-    $paintingsElasticsearchOutputFilepath
-);
-$paintingsLocationExtender = LocationsGeoPositionExtender::new($locationsSource);
 
-$paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths);
-
-$inbetweenNode = $paintingsLoader;
-
-if (!$keepSoftDeletedArterfacts) {
-    /* We skip the soft deleted artefact */
-    $gate = SkipSoftDeletedArtefactGate::new('Paintings');
-
-    $inbetweenNode->pipe($gate);
-    $inbetweenNode = $gate;
-}
-
-$inbetweenNode->pipe(
-    $paintingsReferencesExtender->pipe(
-        $paintingsRemoteDocumentExistenceChecker->pipe(
-            $paintingsRemoteImageExistenceChecker->pipe(
-                $paintingsRestorationExtender->pipe(
-                    $paintingsIdAdder->pipe(
-                        $paintingsMetadataFiller->pipe(
-                            $paintingsSortingInfo->pipe(
-                                $paintingsLocationExtender->pipe(
-                                    $paintingsDestination,
-                                    $metaReferenceCollector,
-                                    $paintingsMapToSearchablePainting->pipe(
-                                        $paintingsThesaurusExtender->pipe(
-                                            $paintingsBasicFilterValues->pipe(
-                                                $paintingsInvolvedPersonsFullnames->pipe(
-                                                    $paintingsElasticsearchBulkDestination,
-                                                ),
-                                            ),
-                                        ),
-                                    ),
-                                ),
-                            ),
-                        ),
-                    ),
-                ),
+$paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths)->pipeline(
+    (!$keepSoftDeletedArterfacts) ? SkipSoftDeletedArtefactGate::new('Paintings'): null,
+    PaintingsExtenderWithReferences::new($paintingsReferencesCollector),
+    $paintingsRemoteDocumentExistenceChecker,
+    $paintingsRemoteImageExistenceChecker,
+    PaintingsExtenderWithRestorations::new($paintingsRestorationMemoryDestination),
+    PaintingsExtenderWithIds::new($customFiltersMemoryDestination),
+    PaintingsMetadataFiller::new(),
+    PaintingsExtenderWithSortingInfo::new(),
+    LocationsGeoPositionExtender::new($locationsSource)
+        /* Exporting the paintings as JSON */
+        ->pipeline(PaintingsJSONLangExporter::withDestinationAt($paintingsOutputFilepath))
+        /* Collecting all meta references / keywords found in paintings */
+        ->pipeline($metaReferenceCollector)
+        /* Map Paintings to SearchablePaintings */
+        ->pipeline(
+            MapToSearchablePainting::new()->pipeline(
+                PaintingsExtenderWithThesaurus::new($thesaurusMemoryDestination),
+                PaintingsExtenderWithBasicFilterValues::new($customFiltersMemoryDestination),
+                PaintingsExtenderWithInvolvedPersonsFullnames::new(),
+                /* Exporting the paintings for Elasticsearch bulk import */
+                PaintingsElasticsearchLangExporter::withDestinationAt($paintingsElasticsearchOutputFilepath),
             ),
         ),
-    ),
 );
-
 
 /* GraphicRestorations */
 $graphicsRestorationMemoryDestination = RestorationsMemoryExporter::new();
 
-RestorationsLoader::withSourcesAt($graphicsRestorationInputFilepaths)->pipe(
-    $graphicsRestorationMemoryDestination,
-)->run(); /* and we have to run it directly */
+RestorationsLoader::withSourcesAt($graphicsRestorationInputFilepaths)
+    ->pipeline($graphicsRestorationMemoryDestination)
+    ->run(); /* and we have to run it directly */
 
 /* Graphics - Infos */
 $graphicsPreLoader = GraphicsPreLoader::withSourceAt($graphicsInputFilepath);
 $graphicsLocationsCollector = GraphicsLocationsCollector::new();
 $graphicsRepositoriesCollector = GraphicsRepositoriesCollector::new();
-$graphicsPreLoader->pipe($graphicsLocationsCollector);
-$graphicsPreLoader->pipe($graphicsRepositoriesCollector);
-$graphicsPreLoader->run();
+$graphicsPreLoader
+    ->pipeline($graphicsLocationsCollector)
+    ->pipeline($graphicsRepositoriesCollector)
+    ->run();
 
 
 /* Graphics */
@@ -325,94 +297,58 @@ $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     $imagesAPIKey,
     $remoteImagesCachesToRefresh['graphics']
 );
-$graphicsConditionDeterminer = ConditionDeterminer::new();
-$graphicsRestorationExtender = GraphicsExtenderWithRestorations::new($graphicsRestorationMemoryDestination);
-$graphicsMapToSearchableGraphic = MapToSearchableGraphic::new();
-$graphicsIdAdder = GraphicsExtenderWithIds::new($customFiltersMemoryDestination);
-$graphicsBasicFilterValues = GraphicsExtenderWithBasicFilterValues::new($customFiltersMemoryDestination);
-$graphicsInvolvedPersonsFullnames = GraphicsExtenderWithInvolvedPersonsFullnames::new();
-$graphicsSortingInfo = GraphicsExtenderWithSortingInfo::new();
-$graphicsThesaurusExtender = GraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination);
-$graphicsMetadataFiller = GraphicsMetadataFiller::new();
-$graphicsLocationsExtender = GraphicsExtenderWithLocations::new($graphicsLocationsCollector, true);
-$graphicsRepositoriesExtender = GraphicsExtenderWithRepositories::new($graphicsRepositoriesCollector, true);
-$graphicsDestination = GraphicsJSONLangExistenceTypeExporter::withDestinationAt($graphicsOutputFilepath);
-$graphicsElasticsearchBulkDestination = GraphicsElasticsearchLangExporter::withDestinationAt(
-    $graphicsElasticsearchOutputFilepath
-);
-$graphicsLocationsGeoPositionExtender = LocationsGeoPositionExtender::new($locationsSource);
 
-$graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath);
-
-$inbetweenNode = $graphicsLoader;
-if (!$keepSoftDeletedArterfacts) {
-    /* We skip the soft deleted artefact */
-    $gate = SkipSoftDeletedArtefactGate::new('Graphics');
-
-    $inbetweenNode ->pipe($gate);
-    $inbetweenNode  = $gate;
-}
-
-$inbetweenNode->pipe(
-    $graphicsRemoteDocumentExistenceChecker->pipe(
-        $graphicsRemoteImageExistenceChecker->pipe(
-            $graphicsIdAdder->pipe(
-                $graphicsConditionDeterminer->pipe(
-                    $graphicsRestorationExtender->pipe(
-                        $graphicsMetadataFiller->pipe(
-                            $graphicsLocationsExtender->pipe(
-                                $graphicsSortingInfo->pipe(
-                                    $graphicsLocationsGeoPositionExtender->pipe(
-                                        $graphicsDestination,
-                                        $metaReferenceCollector,
-                                        $graphicsMapToSearchableGraphic->pipe(
-                                            $graphicsRepositoriesExtender->pipe(
-                                                $graphicsThesaurusExtender->pipe(
-                                                    $graphicsBasicFilterValues->pipe(
-                                                        $graphicsInvolvedPersonsFullnames->pipe(
-                                                            $graphicsElasticsearchBulkDestination,
-                                                        ),
-                                                    ),
-                                                ),
-                                            ),
-                                        ),
-                                    ),
-                                ),
-                            ),
-                        ),
-                    ),
-                ),
+$graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath)->pipeline(
+    (!$keepSoftDeletedArterfacts) ? SkipSoftDeletedArtefactGate::new('Graphics') : null,
+    $graphicsRemoteDocumentExistenceChecker,
+    $graphicsRemoteImageExistenceChecker,
+    GraphicsExtenderWithIds::new($customFiltersMemoryDestination),
+    ConditionDeterminer::new(),
+    GraphicsExtenderWithRestorations::new($graphicsRestorationMemoryDestination),
+    GraphicsMetadataFiller::new(),
+    GraphicsExtenderWithLocations::new($graphicsLocationsCollector, true),
+    GraphicsExtenderWithSortingInfo::new(),
+    LocationsGeoPositionExtender::new($locationsSource)
+        /* Exporting the graphics as JSON */
+        ->pipeline(GraphicsJSONLangExistenceTypeExporter::withDestinationAt($graphicsOutputFilepath))
+        /* Collecting all meta references / keywords found in graphics */
+        ->pipeline($metaReferenceCollector)
+        /* Map Graphics to SearchableGraphics */
+        ->pipeline(
+            MapToSearchableGraphic::new()->pipeline(
+                GraphicsExtenderWithRepositories::new($graphicsRepositoriesCollector, true),
+                GraphicsExtenderWithThesaurus::new($thesaurusMemoryDestination),
+                GraphicsExtenderWithBasicFilterValues::new($customFiltersMemoryDestination),
+                GraphicsExtenderWithInvolvedPersonsFullnames::new(),
+                /* Exporting the graphics for Elasticsearch bulk import */
+                GraphicsElasticsearchLangExporter::withDestinationAt($graphicsElasticsearchOutputFilepath),
             ),
         ),
-    ),
 );
 
 
 /* LiteratureReferences */
-$literatureReferencesMetadataFiller = LiteratureReferencesMetadataFiller::new();
-$literatureReferencesExtenderWithAggregatedData = ExtenderWithAggregatedData::new();
-$literatureReferencesLoader = LiteratureReferencesLoader::withSourcesAt($literatureInputFilepaths)->pipe(
-    $literatureReferencesMetadataFiller->pipe(
-        $literatureReferencesExtenderWithAggregatedData->pipe(
+$literatureReferencesLoader = LiteratureReferencesLoader::withSourcesAt($literatureInputFilepaths)->pipeline(
+    LiteratureReferencesMetadataFiller::new(),
+    ExtenderWithAggregatedData::new()
+        /* Exporting the literatureReferences as JSON */
+        ->pipeline(
             LiteratureReferencesJSONLangExporter::withDestinationAt($literatureReferenceOutputFilepath),
-            LiteratureReferencesElasticsearchLangExporter::withDestinationAt(
-                $literatureReferenceElasticsearchOutputFilepath
-            ),
-        ),
-    ),
+        )
+        /* Exporting the literatureReferences for Elasticsearch bulk import */
+        ->pipeline(
+            LiteratureReferencesElasticsearchLangExporter::withDestinationAt($literatureReferenceElasticsearchOutputFilepath),
+        )
 );
 
 
 /* Archivals */
-$archivalsDestination = ArchivalsJSONLangExporter::withDestinationAt($archivalsOutputFilepath);
-$archivalsMetadataFiller = ArchivalsMetadataFiller::new();
 $archivalsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::withCacheAt(
     'remoteArchivalsDocumentExistenceChecker',
     $cacheDir,
     $imagesAPIKey,
     $remoteDocumentsCachesToRefresh['archivals']
 );
-
 $archivalsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
     'remoteArchivalsImageExistenceChecker',
     $cacheDir,
@@ -420,26 +356,20 @@ $archivalsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt
     $remoteImagesCachesToRefresh['archivals']
 );
 
-$archivalsMapToSearchableArchival = MapToSearchableArchival::new();
-$archivalsExtenderWithRepositoryId = ExtenderWithRepositoryId::new();
-
-$archivalsElasticsearchBulkDestination = ArchivalsElasticsearchLangExporter::withDestinationAt(
-    $archivalsElasticsearchOutputFilepath
-);
-
-$archivalsLoader = ArchivalsLoader::withSourceAt($archivalsInputFilepath)->pipe(
-    $archivalsRemoteDocumentExistenceChecker->pipe(
-        $archivalsRemoteImageExistenceChecker->pipe(
-            $archivalsMetadataFiller->pipe(
-                $archivalsDestination,
-                $archivalsMapToSearchableArchival->pipe(
-                    $archivalsExtenderWithRepositoryId->pipe(
-                        $archivalsElasticsearchBulkDestination
-                    )
-                )
-            ),
-        ),
-    ),
+$archivalsLoader = ArchivalsLoader::withSourceAt($archivalsInputFilepath)->pipeline(
+    $archivalsRemoteDocumentExistenceChecker,
+    $archivalsRemoteImageExistenceChecker,
+    ArchivalsMetadataFiller::new()
+        /* Exporting the archivals as JSON */
+        ->pipeline(ArchivalsJSONLangExporter::withDestinationAt($archivalsOutputFilepath))
+        /* Map Archivals to SearchableArchivals */
+        ->pipeline(
+            MapToSearchableArchival::new()->pipeline(
+                ExtenderWithRepositoryId::new(),
+                /* Exporting the archivals for Elasticsearch bulk import */
+                ArchivalsElasticsearchLangExporter::withDestinationAt($archivalsElasticsearchOutputFilepath),
+            )
+        )
 );
 
 
@@ -466,13 +396,13 @@ $restrictedTermIds = array_map(
 CustomFiltersAndThesaurusLoader::withMemory(
     $customFiltersMemoryDestination,
     ReducedThesaurusMemoryExporter::new($thesaurusMemoryDestination, $restrictedTermIds),
-)->pipe(
-    NumericalSorter::new()->pipe(
-        AlphabeticSorter::new()->pipe(
-            FilterJSONLangExporter::withDestinationAt($filtersOutputFilepath),
-        )
+)
+    ->pipeline(
+        NumericalSorter::new(),
+        AlphabeticSorter::new(),
+        FilterJSONLangExporter::withDestinationAt($filtersOutputFilepath),
     )
-)->run();
+    ->run();
 
 
 $locationsSource->store();

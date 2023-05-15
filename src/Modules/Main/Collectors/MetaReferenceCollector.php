@@ -29,7 +29,6 @@ class MetaReferenceCollector extends Consumer
     public function handleItem($item): bool
     {
         if (!($item instanceof GraphicLanguageCollection) && !($item instanceof PaintingLanguageCollection)) {
-            echo get_class($item);
             throw new Error('Pushed item is not of the expected class \'GraphicLanguageCollection\' or \'PaintingLanguageCollection\'');
         }
 
@@ -83,6 +82,7 @@ class MetaReferenceCollector extends Consumer
                 return;
             }
 
+            // TODO: identify hidden or not shown artefacts by some other characteristic
             $images = (array)$item->getImages();
             if (!isset($images['overall'])) {
                 return;

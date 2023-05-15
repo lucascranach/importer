@@ -27,7 +27,7 @@ final class ProducerMerger extends Hybrid
         $nodeMerger->producersToForward = $producers;
 
         foreach ($producers as $producer) {
-            $producer->pipe($nodeMerger);
+            $producer->pipeline($nodeMerger);
         }
 
         return $nodeMerger;

@@ -17,18 +17,26 @@ trait ProducerTrait
         return true;
     }
 
-    public function pipe(IConsumer ...$nodes): IProducer
+    public function pipeline(IProducer|IConsumer|null ...$nodes): IProducer
     {
-        if (count($nodes) === 0) {
-            throw new Error('At least one node expected to build the pipe up');
-        }
-        $this->checkForCyclicChains(...$nodes);
-        $this->checkForExistingConnection(...$nodes);
+        $nodes = array_filter($nodes);
 
-        foreach ($nodes as $node) {
-            $this->consumerNodes[] = $node;
-            $node->registerProducerNode($this);
+        if (count($nodes) === 0) {
+            throw new Error('At least one node expected to build up the pipeline of consumers');
         }
+
+        $this->consumerNodes[] = $nodes[0];
+
+        /* Creating the pipeline by piping each node into each following node */
+        array_reduce($nodes, function ($acc, $currentNode) {
+            if (is_null($acc)) {
+                return $currentNode;
+            }
+
+            $acc->pipeline($currentNode);
+
+            return $currentNode;
+        }, null);
 
         return $this;
     }

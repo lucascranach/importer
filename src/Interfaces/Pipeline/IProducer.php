@@ -6,7 +6,7 @@ interface IProducer extends INode
 {
     public function run();
     public function isReady(): bool;
-    public function pipe(IConsumer ...$nodes): IProducer;
+    public function pipeline(IProducer|IConsumer|null ...$nodes): IProducer;
     public function getConsumerNodes(): array;
     public function next($data);
     public function isDone(): bool;
