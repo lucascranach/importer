@@ -7,6 +7,7 @@ echo "MemoryLimit: " . ini_get('memory_limit') . "\n\n";
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+use CranachDigitalArchive\Importer\Caches\FileCache;
 use CranachDigitalArchive\Importer\InputExportsOverview;
 use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsLoader;
 use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsPreLoader;
@@ -263,18 +264,20 @@ $paintingsPreLoader
 
 
 /* Paintings */
-$paintingsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::withCacheAt(
+$paintingsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::new(
+    $imagesAPIKey,
+)->withCache(FileCache::new(
     'remotePaintingsDocumentExistenceChecker',
     $cacheDir,
+    $remoteDocumentsCachesToRefresh['paintings']
+));
+$paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::new(
     $imagesAPIKey,
-    $remoteDocumentsCachesToRefresh['paintings'],
-);
-$paintingsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
+)->withCache(FileCache::new(
     'remotePaintingsImageExistenceChecker',
     $cacheDir,
-    $imagesAPIKey,
     $remoteImagesCachesToRefresh['paintings']
-);
+));
 
 $paintingsLoader = PaintingsLoader::withSourcesAt($paintingsInputFilepaths)->pipeline(
     (!$keepSoftDeletedArterfacts) ? SkipSoftDeletedArtefactGate::new('Paintings'): null,
@@ -320,18 +323,20 @@ $graphicsPreLoader
 
 
 /* Graphics */
-$graphicsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::withCacheAt(
+$graphicsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::new(
+    $imagesAPIKey,
+)->withCache(FileCache::new(
     'remoteGraphicsDocumentExistenceChecker',
     $cacheDir,
+    $remoteDocumentsCachesToRefresh['graphics'],
+));
+$graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::new(
     $imagesAPIKey,
-    $remoteDocumentsCachesToRefresh['graphics']
-);
-$graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
+)->withCache(FileCache::new(
     'remoteGraphicsImageExistenceChecker',
     $cacheDir,
-    $imagesAPIKey,
     $remoteImagesCachesToRefresh['graphics']
-);
+));
 
 $graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath)->pipeline(
     (!$keepSoftDeletedArterfacts) ? SkipSoftDeletedArtefactGate::new('Graphics') : null,
@@ -378,18 +383,20 @@ $literatureReferencesLoader = LiteratureReferencesLoader::withSourcesAt($literat
 
 
 /* Archivals */
-$archivalsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::withCacheAt(
+$archivalsRemoteDocumentExistenceChecker = RemoteDocumentExistenceChecker::new(
+    $imagesAPIKey,
+)->withCache(FileCache::new(
     'remoteArchivalsDocumentExistenceChecker',
     $cacheDir,
-    $imagesAPIKey,
     $remoteDocumentsCachesToRefresh['archivals']
-);
-$archivalsRemoteImageExistenceChecker = RemoteImageExistenceChecker::withCacheAt(
+));
+$archivalsRemoteImageExistenceChecker = RemoteImageExistenceChecker::new(
+    $imagesAPIKey,
+)->withCache(FileCache::new(
     'remoteArchivalsImageExistenceChecker',
     $cacheDir,
-    $imagesAPIKey,
     $remoteImagesCachesToRefresh['archivals']
-);
+));
 
 $archivalsLoader = ArchivalsLoader::withSourceAt($archivalsInputFilepath)->pipeline(
     $archivalsRemoteDocumentExistenceChecker,

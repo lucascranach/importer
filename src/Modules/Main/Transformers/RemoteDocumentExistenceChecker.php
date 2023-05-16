@@ -4,6 +4,7 @@ namespace CranachDigitalArchive\Importer\Modules\Main\Transformers;
 
 use Error;
 use CranachDigitalArchive\Importer\Interfaces\Entities\IImagesItem;
+use CranachDigitalArchive\Importer\Interfaces\ICache;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
@@ -35,12 +36,9 @@ class RemoteDocumentExistenceChecker extends Hybrid
     private $remoteDocumentDataPath = 'data-proxy/document-data.php?obj=%s';
     private $accessKey = '';
     private $remoteDocumentTypeAccessorFunc = null;
-    private $cacheDir = null;
-    private $cacheFilename = 'remoteDocumentExistenceChecker';
-    private $cacheFileSuffix = '.cache';
-    private $cache = [];
     private $objectIdsWithOccuredErrors = [];
     private $allowedExaminationKindTypes = [];
+    private ICache | null $cache = null;
 
 
     private function __construct(string $accessKey)
@@ -68,11 +66,8 @@ class RemoteDocumentExistenceChecker extends Hybrid
         $this->client = new Client();
     }
 
-    public static function withCacheAt(
-        string $cacheFilename,
-        string $cacheDir,
+    public static function new(
         string $accessKey,
-        bool $withFreshCache = false,
         $remoteDocumentTypeAccessorFunc = null,
     ): self {
         $checker = new self($accessKey);
@@ -91,27 +86,14 @@ class RemoteDocumentExistenceChecker extends Hybrid
             };
         }
 
-        if (!file_exists($cacheDir)) {
-            @mkdir($cacheDir, 0777, true);
-        }
-
-        $checker->cacheDir = $cacheDir;
-
-        if (!empty($cacheFilename)) {
-            $checker->cacheFilename = $cacheFilename;
-        }
-
-        if (!$withFreshCache) {
-            $checker->restoreCache();
-        }
-
         return $checker;
     }
 
 
-    private function getCachePath(): string
+    public function withCache(ICache $cache): self
     {
-        return $this->cacheDir . DIRECTORY_SEPARATOR . $this->cacheFilename . $this->cacheFileSuffix;
+        $this->cache = $cache;
+        return $this;
     }
 
 
@@ -225,13 +207,17 @@ class RemoteDocumentExistenceChecker extends Hybrid
 
     private function updateCacheFor(string $key, $data): void
     {
-        $this->cache[$key] = $data;
+        if (!is_null($this->cache)) {
+            $this->cache->set($key, $data);
+        }
     }
 
 
     private function getCacheFor(string $key, $orElse = null)
     {
-        return isset($this->cache[$key]) ? $this->cache[$key]: $orElse;
+        return !is_null($this->cache)
+            ? $this->cache->get($key, $orElse)
+            : null;
     }
 
 
@@ -340,30 +326,14 @@ class RemoteDocumentExistenceChecker extends Hybrid
 
     private function storeCache(): void
     {
-        $cacheAsJSON = json_encode($this->cache, JSON_UNESCAPED_UNICODE);
-        file_put_contents($this->getCachePath(), $cacheAsJSON);
-    }
-
-
-    /**
-     * @return void
-     */
-    private function restoreCache()
-    {
-        $cacheFilepath = $this->getCachePath();
-        if (!file_exists($cacheFilepath)) {
-            return;
+        if (!is_null($this->cache)) {
+            $this->cache->store();
         }
-
-        $cacheAsJSON = file_get_contents($cacheFilepath);
-
-        $this->cache = json_decode($cacheAsJSON, true, 512, JSON_UNESCAPED_UNICODE);
     }
 
 
     private function cleanUp(): void
     {
-        $this->cache = [];
         $this->objectIdsWithOccuredErrors = [];
     }
 }
