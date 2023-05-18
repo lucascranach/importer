@@ -9,6 +9,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use CranachDigitalArchive\Importer\Caches\FileCache;
 use CranachDigitalArchive\Importer\InputExportsOverview;
+use CranachDigitalArchive\Importer\Modules\Archivals\ArchivalsFileProbe;
 use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsLoader;
 use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsPreLoader;
 use CranachDigitalArchive\Importer\Modules\Graphics\Collectors\LocationsCollector as GraphicsLocationsCollector;
@@ -69,8 +70,14 @@ use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemory
 use CranachDigitalArchive\Importer\Modules\Filters\Loaders\Memory\CustomFiltersAndThesaurusLoader;
 use CranachDigitalArchive\Importer\Modules\Filters\Transformers\AlphabeticSorter;
 use CranachDigitalArchive\Importer\Modules\Filters\Transformers\NumericalSorter;
+use CranachDigitalArchive\Importer\Modules\Graphics\GraphicsFileProbe;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\LiteratureReferencesFileProbe;
 use CranachDigitalArchive\Importer\Modules\Locations\Sources\LocationsSource;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\LocationsGeoPositionExtender;
+use CranachDigitalArchive\Importer\Modules\Paintings\PaintingsFileProbe;
+use CranachDigitalArchive\Importer\Modules\Restorations\GraphicsRestorationsFileProbe;
+use CranachDigitalArchive\Importer\Modules\Restorations\PaintingsRestorationsFileProbe;
+use CranachDigitalArchive\Importer\Modules\Thesaurus\ThesaurusFileProbe;
 
 $scriptDirectory = __DIR__;
 
@@ -133,12 +140,6 @@ foreach ($opts as $opt => $value) {
             break;
 
         case 'use-export':
-            $foundDirectoryEntry = $inputExportsOverview->getDirectoryEntryWithName($value);
-
-            if (is_null($foundDirectoryEntry)) {
-                exit('Unknown export with name \'' . $value . '\'' . "\n\n");
-            }
-
             $selectedDate = $value;
             break;
 
@@ -172,31 +173,67 @@ if (is_null($selectedDate)) {
 
 echo 'Selected Export : ' . $selectedDate . "\n\n\n";
 
+
+$selectedDateDirectory = $inputExportsOverview->getDirectoryEntryWithName($selectedDate);
+if (is_null($selectedDateDirectory)) {
+    exit('Unknown export with name \'' . $value . '\'' . "\n\n");
+}
+
+$fileIdentifier = InputExportFilesIdentifier::new($selectedDateDirectory->getPathname())
+    ->registerProbes(
+        ArchivalsFileProbe::new(),
+        GraphicsFileProbe::new(),
+        LiteratureReferencesFileProbe::new(),
+        PaintingsFileProbe::new(),
+        GraphicsRestorationsFileProbe::new(),
+        PaintingsRestorationsFileProbe::new(),
+        ThesaurusFileProbe::new(),
+    );
+$fileIdentifier->run();
+
+if ($fileIdentifier->hasReminingFilePaths() || $fileIdentifier->hasUnusedProbes()) {
+    /** @var string[] */
+    $lines = [];
+
+    if ($fileIdentifier->hasReminingFilePaths()) {
+        $lines[] = "Remaining input file(s) not associable with a registered probe:";
+        foreach ($fileIdentifier->getRemainingFilePaths() as $remainingFilePath) {
+            $lines[] = "\t- " . basename($remainingFilePath);
+        }
+    }
+
+    if (count($lines) > 0) {
+        $lines[] = "";
+    }
+
+    if ($fileIdentifier->hasUnusedProbes()) {
+        $lines[] = "Unused registered probe(s):";
+        foreach ($fileIdentifier->getUnusedProbeClasses() as $unusedProbeClasses) {
+            $lines[] = "\t- " . $unusedProbeClasses ;
+        }
+    }
+
+    $lines[] = "\n";
+
+    echo implode("\n", $lines);
+
+    exit();
+}
+
+
 $inputDirectory = $inputBaseDirectory . $selectedDate;
 $destDirectory = $scriptDirectory .'/docs/' . $selectedDate;
 $resourcesDirectory = $scriptDirectory . '/resources';
 
 /* Inputfiles */
-$thesaurusInputFilepath = $inputDirectory . '/CDA_Thesaurus_' . $selectedDate . '.xml';
-$paintingsRestorationInputFilepaths = [
-    $inputDirectory . '/CDA_RestDokumente_P1_' . $selectedDate . '.xml',
-    $inputDirectory . '/CDA_RestDokumente_P2_' . $selectedDate . '.xml',
-    $inputDirectory . '/CDA_RestDokumente_P3_' . $selectedDate . '.xml',
-];
-$paintingsInputFilepaths = [
-    $inputDirectory . '/CDA_Datenuebersicht_P1_' . $selectedDate . '.xml',
-    $inputDirectory . '/CDA_Datenuebersicht_P2_' . $selectedDate . '.xml',
-    $inputDirectory . '/CDA_Datenuebersicht_P3_' . $selectedDate . '.xml',
-];
-$graphicsRestorationInputFilepaths = [
-    $inputDirectory . '/CDA-GR_RestDokumente_' . $selectedDate . '.xml',
-];
-$graphicsInputFilepath = $inputDirectory . '/CDA-GR_Datenuebersicht_' . $selectedDate . '.xml';
-$literatureInputFilepaths = [
-    $inputDirectory . '/CDA_Literaturverweise_P1_' . $selectedDate . '.xml',
-    $inputDirectory . '/CDA_Literaturverweise_P2_' . $selectedDate . '.xml',
-];
-$archivalsInputFilepath = $inputDirectory . '/CDA-A_Datenuebersicht_' . $selectedDate . '.xml';
+$thesaurusInputFilepaths = $fileIdentifier->getFilePathsAssociatedWithProbeClass(ThesaurusFileProbe::class);
+$paintingsRestorationInputFilepaths = $fileIdentifier->getFilePathsAssociatedWithProbeClass(PaintingsRestorationsFileProbe::class);
+$paintingsInputFilepaths = $fileIdentifier->getFilePathsAssociatedWithProbeClass(PaintingsFileProbe::class);
+$graphicsRestorationInputFilepaths = $fileIdentifier->getFilePathsAssociatedWithProbeClass(GraphicsRestorationsFileProbe::class);
+$graphicsInputFilepaths = $fileIdentifier->getFilePathsAssociatedWithProbeClass(GraphicsFileProbe::class);
+$literatureInputFilepaths = $fileIdentifier->getFilePathsAssociatedWithProbeClass(LiteratureReferencesFileProbe::class);
+
+$archivalsInputFilepaths = $fileIdentifier->getFilePathsAssociatedWithProbeClass(ArchivalsFileProbe::class);
 
 $customFilterDefinitionsFilepath = $resourcesDirectory . '/custom_filters.json';
 $locationsFilepath = $resourcesDirectory . '/locations.json';
@@ -228,7 +265,7 @@ $metaReferenceCollector = MetaReferenceCollector::new();
 $thesaurusMemoryDestination = ThesaurusMemoryExporter::new(); /* needed later for graphics and paintings */
 $thesaurusMemoryLoader = ThesaurusMemoryLoader::withMemory($thesaurusMemoryDestination);
 
-ThesaurusXMLLoader::withSourceAt($thesaurusInputFilepath)
+ThesaurusXMLLoader::withSourcesAt($thesaurusInputFilepaths)
     ->pipeline(ThesaurusJSONExporter::withDestinationAt($thesaurusOutputFilepath))
     ->pipeline($thesaurusMemoryDestination)
     ->run(); /* and we have to run it directly */
@@ -313,7 +350,7 @@ RestorationsLoader::withSourcesAt($graphicsRestorationInputFilepaths)
     ->run(); /* and we have to run it directly */
 
 /* Graphics - Infos */
-$graphicsPreLoader = GraphicsPreLoader::withSourceAt($graphicsInputFilepath);
+$graphicsPreLoader = GraphicsPreLoader::withSourcesAt($graphicsInputFilepaths);
 $graphicsLocationsCollector = GraphicsLocationsCollector::new();
 $graphicsRepositoriesCollector = GraphicsRepositoriesCollector::new();
 $graphicsPreLoader
@@ -338,7 +375,7 @@ $graphicsRemoteImageExistenceChecker = RemoteImageExistenceChecker::new(
     $remoteImagesCachesToRefresh['graphics']
 ));
 
-$graphicsLoader = GraphicsLoader::withSourceAt($graphicsInputFilepath)->pipeline(
+$graphicsLoader = GraphicsLoader::withSourcesAt($graphicsInputFilepaths)->pipeline(
     (!$keepSoftDeletedArterfacts) ? SkipSoftDeletedArtefactGate::new('Graphics') : null,
     $graphicsRemoteDocumentExistenceChecker,
     $graphicsRemoteImageExistenceChecker,
@@ -398,7 +435,7 @@ $archivalsRemoteImageExistenceChecker = RemoteImageExistenceChecker::new(
     $remoteImagesCachesToRefresh['archivals']
 ));
 
-$archivalsLoader = ArchivalsLoader::withSourceAt($archivalsInputFilepath)->pipeline(
+$archivalsLoader = ArchivalsLoader::withSourcesAt($archivalsInputFilepaths)->pipeline(
     $archivalsRemoteDocumentExistenceChecker,
     $archivalsRemoteImageExistenceChecker,
     ArchivalsMetadataFiller::new()

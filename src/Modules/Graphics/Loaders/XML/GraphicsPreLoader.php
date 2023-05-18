@@ -6,7 +6,7 @@ use Error;
 use DOMDocument;
 use SimpleXMLElement;
 use XMLReader;
-use CranachDigitalArchive\Importer\Interfaces\Loaders\IFileLoader;
+use CranachDigitalArchive\Importer\Interfaces\Loaders\IMultipleFileLoader;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicInfoLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Producer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Inflators\XML\GraphicPreInflator;
@@ -15,12 +15,12 @@ use CranachDigitalArchive\Importer\Modules\Main\Entities\Metadata;
 /**
  * Graphics loader on a xml file base
  */
-class GraphicsPreLoader extends Producer implements IFileLoader
+class GraphicsPreLoader extends Producer implements IMultipleFileLoader
 {
     private $xmlReader = null;
     private $rootElementName = 'CrystalReport';
     private $graphicElementName = 'Group';
-    private $sourceFilePath = '';
+    private $sourceFilePaths = [];
 
     private function __construct()
     {
@@ -29,14 +29,16 @@ class GraphicsPreLoader extends Producer implements IFileLoader
     /**
      * @return self
      */
-    public static function withSourceAt(string $sourceFilePath)
+    public static function withSourcesAt(array $sourceFilePaths)
     {
         $loader = new self;
         $loader->xmlReader = new XMLReader();
-        $loader->sourceFilePath = $sourceFilePath;
+        $loader->sourceFilePaths = $sourceFilePaths;
 
-        if (!file_exists($sourceFilePath)) {
-            throw new Error('Graphics xml source file does not exit: ' . $sourceFilePath);
+        foreach ($sourceFilePaths as $sourceFilePath) {
+            if (!file_exists($sourceFilePath)) {
+                throw new Error('Graphics xml source file does not exit: ' . $sourceFilePath);
+            }
         }
 
         return $loader;
@@ -47,25 +49,28 @@ class GraphicsPreLoader extends Producer implements IFileLoader
      */
     public function run()
     {
-        $this->checkXMlReaderInitialization();
+        /* We have to go through all given files */
+        foreach ($this->sourceFilePaths as $sourceFilePath) {
+            $this->checkXMlReaderInitialization();
 
-        if (!$this->xmlReader->open($this->sourceFilePath)) {
-            throw new Error('Could\'t open graphics xml source file: ' . $this->sourceFilePath);
-        }
+            if (!$this->xmlReader->open($sourceFilePath)) {
+                throw new Error('Could\'t open graphics xml source file: ' . $sourceFilePath);
+            }
 
-        echo 'Processing graphics file : ' . $this->sourceFilePath . "\n";
+            echo 'Processing graphics file : ' . $sourceFilePath . "\n";
 
-        $this->xmlReader->next();
+            $this->xmlReader->next();
 
-        if ($this->xmlReader->nodeType !== XMLReader::ELEMENT
-            || $this->xmlReader->name !== $this->rootElementName) {
-            throw new Error('First element is not expected \'' . $this->rootElementName . '\'');
-        }
+            if ($this->xmlReader->nodeType !== XMLReader::ELEMENT
+                || $this->xmlReader->name !== $this->rootElementName) {
+                throw new Error('First element is not expected \'' . $this->rootElementName . '\'');
+            }
 
-        /* Entering the root node */
-        $this->xmlReader->read();
+            /* Entering the root node */
+            $this->xmlReader->read();
 
-        while ($this->processNextItem()) {
+            while ($this->processNextItem()) {
+            }
         }
 
         /* Signaling that we are done reading in the xml */
