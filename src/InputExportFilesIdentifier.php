@@ -55,7 +55,7 @@ class InputExportFilesIdentifier
         return $this->probeClassTofilePathsMap[$probeClassName] ?? [];
     }
 
-    public function hasReminingFilePaths(): bool
+    public function hasRemainingFilePaths(): bool
     {
         return count($this->getRemainingFilePaths()) > 0;
     }

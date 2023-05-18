@@ -191,11 +191,11 @@ $fileIdentifier = InputExportFilesIdentifier::new($selectedDateDirectory->getPat
     );
 $fileIdentifier->run();
 
-if ($fileIdentifier->hasReminingFilePaths() || $fileIdentifier->hasUnusedProbes()) {
+if ($fileIdentifier->hasRemainingFilePaths() || $fileIdentifier->hasUnusedProbes()) {
     /** @var string[] */
     $lines = [];
 
-    if ($fileIdentifier->hasReminingFilePaths()) {
+    if ($fileIdentifier->hasRemainingFilePaths()) {
         $lines[] = "Remaining input file(s) not associable with a registered probe:";
         foreach ($fileIdentifier->getRemainingFilePaths() as $remainingFilePath) {
             $lines[] = "\t- " . basename($remainingFilePath);
@@ -221,7 +221,6 @@ if ($fileIdentifier->hasReminingFilePaths() || $fileIdentifier->hasUnusedProbes(
 }
 
 
-$inputDirectory = $inputBaseDirectory . $selectedDate;
 $destDirectory = $scriptDirectory .'/docs/' . $selectedDate;
 $resourcesDirectory = $scriptDirectory . '/resources';
 
