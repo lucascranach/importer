@@ -176,7 +176,7 @@ echo 'Selected Export : ' . $selectedDate . "\n\n\n";
 
 $selectedDateDirectory = $inputExportsOverview->getDirectoryEntryWithName($selectedDate);
 if (is_null($selectedDateDirectory)) {
-    exit('Unknown export with name \'' . $value . '\'' . "\n\n");
+    exit('Unknown export with name \'' . $selectedDate . '\'' . "\n\n");
 }
 
 $fileIdentifier = InputExportFilesIdentifier::new($selectedDateDirectory->getPathname())

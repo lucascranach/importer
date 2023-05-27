@@ -17,7 +17,7 @@ class InputExportFilesIdentifier
     private array $remainingFilePaths = [];
     private array $unusedProbeClasses = [];
 
-    private function __construct($inputDirectoryPath)
+    private function __construct(string $inputDirectoryPath)
     {
         $this->inputDirectoryPath = $inputDirectoryPath;
     }
@@ -78,6 +78,18 @@ class InputExportFilesIdentifier
     public function run(): void
     {
         $this->probeFilesInInputDirectory();
+    }
+
+    public static function getFilePathsForProbeClass(string $inputDirectoryPath, string $probeClassName): array | false
+    {
+        $instance = (new self($inputDirectoryPath))->registerProbes(
+            $probeClassName::class,
+        );
+        $instance->run();
+
+        return $instance->hasUnusedProbes()
+            ? false
+            : $instance->getFilePathsAssociatedWithProbeClass($probeClassName);
     }
 
     private function probeFilesInInputDirectory(): void
