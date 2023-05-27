@@ -75,6 +75,7 @@ class LiteratureReferencesInflator implements IInflator
     private const PUBLICATION_TYPE_ARTICLE_LEXICONS = 'lexicons';
     private const PUBLICATION_TYPE_ARTICLE_MANUSCRIPT = 'manuscript';
     private const PUBLICATION_TYPE_ARTICLE_MANUSCRIPTS = 'manuscripts';
+    private const PUBLICATION_TYPE_ARTICLE_MANUSCRIPT_GENRE = 'manuscript (document genre)';
     private const PUBLICATION_TYPE_ARTICLE_MONOGRAPH = 'monograph';
     private const PUBLICATION_TYPE_ARTICLE_MONOGRAPHS = 'monographs';
     private const PUBLICATION_TYPE_ARTICLE_NEWSPAPER = 'newspaper';
@@ -83,6 +84,7 @@ class LiteratureReferencesInflator implements IInflator
     private const PUBLICATION_TYPE_ARTICLE_REFERENCE_BOOK = 'reference book';
     private const PUBLICATION_TYPE_ARTICLE_THESIS = 'thesis';
     private const PUBLICATION_TYPE_ARTICLE_UNPUBLISHED_MATERIALS = 'unpublished materials';
+    private const PUBLICATION_TYPE_ARTICLE_ANTHOLOGY = 'anthology';
 
 
     private static $publicationLanguageTypes = [
@@ -109,6 +111,7 @@ class LiteratureReferencesInflator implements IInflator
             self::PUBLICATION_TYPE_ARTICLE_LEXICONS => 'Lexika',
             self::PUBLICATION_TYPE_ARTICLE_MANUSCRIPT => 'Manuskript',
             self::PUBLICATION_TYPE_ARTICLE_MANUSCRIPTS => 'Manuskripte',
+            self::PUBLICATION_TYPE_ARTICLE_MANUSCRIPT_GENRE => 'Manuskript (Dokumentgenre)',
             self::PUBLICATION_TYPE_ARTICLE_MONOGRAPH => 'Monografie',
             self::PUBLICATION_TYPE_ARTICLE_MONOGRAPHS => 'Monografien',
             self::PUBLICATION_TYPE_ARTICLE_NEWSPAPER => 'Zeitung',
@@ -117,6 +120,7 @@ class LiteratureReferencesInflator implements IInflator
             self::PUBLICATION_TYPE_ARTICLE_REFERENCE_BOOK => 'Referenzbuch',
             self::PUBLICATION_TYPE_ARTICLE_THESIS => 'Thesis',
             self::PUBLICATION_TYPE_ARTICLE_UNPUBLISHED_MATERIALS => 'Unveröffentlichtes Material',
+            self::PUBLICATION_TYPE_ARTICLE_ANTHOLOGY => 'Sammelband',
         ],
         Language::EN => [
             self::PUBLICATION_TYPE_ARTICLE_ARTICLE => 'Article',
@@ -141,6 +145,7 @@ class LiteratureReferencesInflator implements IInflator
             self::PUBLICATION_TYPE_ARTICLE_LEXICONS => 'Lexicons',
             self::PUBLICATION_TYPE_ARTICLE_MANUSCRIPT => 'Manuscript',
             self::PUBLICATION_TYPE_ARTICLE_MANUSCRIPTS => 'Manuscripts',
+            self::PUBLICATION_TYPE_ARTICLE_MANUSCRIPT_GENRE => 'Manuscript (document genre)',
             self::PUBLICATION_TYPE_ARTICLE_MONOGRAPH => 'Monograph',
             self::PUBLICATION_TYPE_ARTICLE_MONOGRAPHS => 'Monographs',
             self::PUBLICATION_TYPE_ARTICLE_NEWSPAPER => 'Newspaper',
@@ -148,7 +153,8 @@ class LiteratureReferencesInflator implements IInflator
             self::PUBLICATION_TYPE_ARTICLE_PRIMARY_SOURCE => 'Primary source',
             self::PUBLICATION_TYPE_ARTICLE_REFERENCE_BOOK => 'Reference book',
             self::PUBLICATION_TYPE_ARTICLE_THESIS => 'Thesis',
-            self::PUBLICATION_TYPE_ARTICLE_UNPUBLISHED_MATERIALS => 'Unpublished materials'
+            self::PUBLICATION_TYPE_ARTICLE_UNPUBLISHED_MATERIALS => 'Unpublished materials',
+            self::PUBLICATION_TYPE_ARTICLE_ANTHOLOGY => 'Anthology',
         ],
     ];
 
@@ -650,6 +656,7 @@ class LiteratureReferencesInflator implements IInflator
                 $publicationEn->setType($typeStr);
 
                 if (strlen($typeStr) > 0) {
+                    // TODO: Handle missing publication type and translation
                     $publicationDe->setText(self::$publicationLanguageTypes[Language::DE][$typeStr]);
                     $publicationEn->setText(self::$publicationLanguageTypes[Language::EN][$typeStr]);
                 }
