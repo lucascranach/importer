@@ -17,6 +17,6 @@ final class PaintingsRestorationsFileProbe implements IFileProbe
 
     public function probe(string $filepath): bool
     {
-        return preg_match("/^cda[_-]restdokumente/i", basename($filepath)) !== 0;
+        return preg_match("/^cda([_-]export)?[_-]restdokumente?/i", basename($filepath)) !== 0;
     }
 }
