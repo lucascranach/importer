@@ -16,7 +16,7 @@ Um die Nutzung des Importers (aber auch die Entwicklung) zu vereinfachen, kommt 
 | :-- | :-- |
 | lint | Auflistung von Dateien mit Linter-Problemen |
 | lint:fix | Auflistung von Dateien mit Linter-Problemen und automatische Behebung, sofern möglich |
-| analyse | Analyse der  im `src`-Ordner zu findenden PHP-Dateien |
+| analyse | Analyse der  im `src`-Ordner zu findenden PHP-Dateien; der Analyse-Cache wird über folgenden Befehl geleert: `composer run-script analyse -- --clear-cache` |
 | clear:cache | Lösche den Cache-Ordner |
 | **import** | Starten des Import-Vorgangs. Als gelöscht markierte Artefakte **werden übersprungen**; alternativ  `php index.php -x` ausführen |
 | import:keep-deleted | Starten des Import-Vorgangs. Als gelöscht markierte Artefakte **bleiben erhalten**; alternativ  `php index.php` ausführen |
@@ -70,4 +70,4 @@ Bereitgestellte Daten werden bei Bedarf über den Zweig `legacy-exchange` bereit
 Generell sollte immer der über Composer eingebundene Linter und Code-Analyser genutzt werden, um frühzeitig mögliche Formatierungs- und Code-Probleme erkennen und beheben zu können.
 
 Als Linter wird [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) mit den in der `.php_cs.dist`angegebenen Rules genutzt.  
-Als Analyser kommt hingegen [Psalm](https://psalm.dev/) zum Einsatz (in [ErrorLevel 3](https://psalm.dev/docs/running_psalm/error_levels/).
+Als Analyser kommt hingegen [Psalm](https://psalm.dev/) zum Einsatz (in [ErrorLevel 3](https://psalm.dev/docs/running_psalm/error_levels/). Siehe `psalm.xml`.
