@@ -73,7 +73,7 @@ class Parameters
         return $this->keepSoftDeletedArterfacts;
     }
 
-    public function setSelectedExportId(string | null $selectedExportId): self
+    public function setSelectedExportId(string $selectedExportId): self
     {
         $this->selectedExportId = $selectedExportId;
         return $this;

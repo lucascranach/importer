@@ -43,7 +43,20 @@ class Paths
 
         /* Input folder identification helper */
         $this->inputExportsOverview = InputExportsOverview::new($this->getInputBasePath());
-        $this->selectedExportId = $this->determineSelectedExportId();
+
+        /* We need to fall back to the latest export id found in the input directory,
+         * if no id was given as parameter */
+        $selectedExportIdParameter = $this->parameters->getSelectedExportId();
+        $this->selectedExportId = is_null($selectedExportIdParameter)
+            ? $this->getLatestExportId()
+            : $selectedExportIdParameter;
+
+        /* Does the input directory exist?
+         * Can only be checked after determining the final selectedExportId. */
+        if(!$this->inputDirectoryExists()) {
+            exit('Source input directory not found for selected export id \'' . $this->getSelectedExportId() . '\': ' . $this->getInputPath() . "\n\n");
+        }
+
         $this->filesIdentifier = $this->createFilesIdentifier();
 
         self::checkFilesIdentifier($this->filesIdentifier);
@@ -86,6 +99,11 @@ class Paths
             $this->getSelectedExportId(),
             ...$additional,
         );
+    }
+
+    private function inputDirectoryExists(): bool
+    {
+        return file_exists($this->getInputPath());
     }
 
     public function getResourcesPath(string ...$additional): string
@@ -180,20 +198,15 @@ class Paths
         return rtrim(trim($path), DIRECTORY_SEPARATOR);
     }
 
-    private function determineSelectedExportId(): string
+    private function getLatestExportId(): string
     {
-        $selectedExportId = $this->parameters->getSelectedExportId();
-        if (is_null($selectedExportId)) {
-            $latestInputExportEntry = $this->inputExportsOverview->getLatestDirectoryEntry();
+        $latestInputExportEntry = $this->inputExportsOverview->getLatestDirectoryEntry();
 
-            if (!is_null($latestInputExportEntry)) {
-                return $latestInputExportEntry->getFilename();
-            } else {
-                exit('No possible export found in \'' . $this->inputExportsOverview->getSearchPath() . '\'!');
-            }
+        if (!is_null($latestInputExportEntry)) {
+            return $latestInputExportEntry->getFilename();
+        } else {
+            exit('No possible export found in \'' . $this->inputExportsOverview->getSearchPath() . '\'!');
         }
-
-        return $selectedExportId;
     }
 
     private function createFilesIdentifier(): InputExportFilesIdentifier
