@@ -284,6 +284,14 @@ class LiteratureReferenceLanguageCollection extends AbstractItemLanguageCollecti
     }
 
 
+    public function setPublications(array $publications): void
+    {
+        foreach ($this as $literatureReference) {
+            $literatureReference->publications = $publications;
+        }
+    }
+
+
     public function addPublication(Publication $publication): void
     {
         foreach ($this as $literatureReference) {
@@ -365,33 +373,5 @@ class LiteratureReferenceLanguageCollection extends AbstractItemLanguageCollecti
     public function getAuthors(): string
     {
         return $this->first()->authors;
-    }
-
-
-    public function setTextCategoryType(string $textCategoryType)
-    {
-        foreach ($this as $literatureReference) {
-            $literatureReference->setTextCategoryType($textCategoryType);
-        }
-    }
-
-
-    public function getTextCategoryType(): string
-    {
-        return $this->first()->textCategoryType;
-    }
-
-
-    public function setTextCategory(string $textCategory)
-    {
-        foreach ($this as $literatureReference) {
-            $literatureReference->setTextCategory($textCategory);
-        }
-    }
-
-
-    public function getTextCategory(): string
-    {
-        return $this->first()->textCategory;
     }
 }

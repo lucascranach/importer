@@ -88,6 +88,8 @@ interface ILiteratureReference extends IBaseItem
 
     public function getPersons(): array;
 
+    public function setPublications(array $publications): void;
+
     public function addPublication(Publication $publication): void;
 
     public function getPublications(): array;
@@ -111,12 +113,4 @@ interface ILiteratureReference extends IBaseItem
     public function setAuthors(string $authors);
 
     public function getAuthors(): string;
-
-    public function setTextCategoryType(string $textCategoryType);
-
-    public function getTextCategoryType(): string;
-
-    public function setTextCategory(string $textCategory);
-
-    public function getTextCategory(): string;
 }

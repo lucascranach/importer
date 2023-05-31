@@ -7,6 +7,7 @@ use CranachDigitalArchive\Importer\Pipeline\Consumer;
 use CranachDigitalArchive\Importer\Interfaces\Exporters\IFileExporter;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\LiteratureReferenceLanguageCollection;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Entities\Search\SearchableLiteratureReferenceLanguageCollection;
 
 /**
  * LiteratureReferences exporter on a json flat file base (one file per language)
@@ -49,8 +50,8 @@ class LiteratureReferencesElasticsearchLangExporter extends Consumer implements 
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof LiteratureReferenceLanguageCollection)) {
-            throw new Error('Pushed item is not of expected class \'LiteratureReferenceLanguageCollection\'!');
+        if (!($item instanceof SearchableLiteratureReferenceLanguageCollection)) {
+            throw new Error('Pushed item is not of expected class \'SearchableLiteratureReferenceLanguageCollection\'!');
         }
 
         if ($this->done) {

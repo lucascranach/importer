@@ -8,6 +8,9 @@ use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Exporters\Litera
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\LiteratureReferencesLoader;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Transformers\MetadataFiller;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Transformers\ExtenderWithAggregatedData;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Transformers\ExtenderWithAggregatedSearchableData;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Transformers\ExtenderWithSubPublications;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Transformers\MapToSearchableLiteratureReference;
 
 final class LiteratureReferences
 {
@@ -21,15 +24,20 @@ final class LiteratureReferences
         $this->loader = LiteratureReferencesLoader::withSourcesAt($paths->getLiteratureReferencesInputFilePaths());
         $this->loader->pipeline(
             MetadataFiller::new(),
-            ExtenderWithAggregatedData::new()
+            ExtenderWithAggregatedData::new(),
+            ExtenderWithSubPublications::new()
                 /* Exporting the literatureReferences as JSON */
                 ->pipeline(
                     LiteratureReferencesJSONLangExporter::withDestinationAt($literatureReferenceOutputFilepath),
                 )
                 /* Exporting the literatureReferences for Elasticsearch bulk import */
                 ->pipeline(
-                    LiteratureReferencesElasticsearchLangExporter::withDestinationAt($literatureReferenceElasticsearchOutputFilepath),
-                )
+                    MapToSearchableLiteratureReference::new()
+                        ->pipeline(
+                            ExtenderWithAggregatedSearchableData::new(),
+                            LiteratureReferencesElasticsearchLangExporter::withDestinationAt($literatureReferenceElasticsearchOutputFilepath),
+                        ),
+                ),
         );
     }
 

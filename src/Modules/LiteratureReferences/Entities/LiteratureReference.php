@@ -37,8 +37,6 @@ class LiteratureReference implements ILiteratureReference
     public $mention = '';
 
     public $authors = '';
-    public $textCategoryType = '';
-    public $textCategory = '';
 
     public $connectedObjects = [];
 
@@ -281,6 +279,12 @@ class LiteratureReference implements ILiteratureReference
     }
 
 
+    public function setPublications(array $publications): void
+    {
+        $this->publications = $publications;
+    }
+
+
     public function addPublication(Publication $publication): void
     {
         $this->publications[] = $publication;
@@ -350,29 +354,5 @@ class LiteratureReference implements ILiteratureReference
     public function getAuthors(): string
     {
         return $this->authors;
-    }
-
-
-    public function setTextCategoryType(string $textCategoryType)
-    {
-        $this->textCategoryType = $textCategoryType;
-    }
-
-
-    public function getTextCategoryType(): string
-    {
-        return $this->textCategoryType;
-    }
-
-
-    public function setTextCategory(string $textCategory)
-    {
-        $this->textCategory = $textCategory;
-    }
-
-
-    public function getTextCategory(): string
-    {
-        return $this->textCategory;
     }
 }

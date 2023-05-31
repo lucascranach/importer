@@ -53,27 +53,27 @@ class LiteratureReferencesInflator implements IInflator
 
     private static $primarySourceKey = 'Primary source';
 
-        private const PUBLICATION_TYPE_ARTICLE = 'article';
-        private const PUBLICATION_TYPE_AUCTION_CATALOGUE = 'auction catalogue';
-        private const PUBLICATION_TYPE_CATALOGUE = 'catalogue';
-        private const PUBLICATION_TYPE_CONFERENCE_PROCEEDINGS = 'conference proceedings';
-        private const PUBLICATION_TYPE_DISSERTATION = 'dissertation';
-        private const PUBLICATION_TYPE_EXHIBITION_CATALOGS = 'exhibition catalogs';
-        private const PUBLICATION_TYPE_EXHIBITION_CATALOGUE = 'exhibition catalogue';
-        private const PUBLICATION_TYPE_FESTSCHRIFT = 'festschrift';
-        private const PUBLICATION_TYPE_GREY_LITERATURE = 'grey literature';
-        private const PUBLICATION_TYPE_GUIDEBOOK = 'guidebook';
-        private const PUBLICATION_TYPE_GUIDEBOOKS = 'guidebooks';
-        private const PUBLICATION_TYPE_MANUSCRIPT = 'manuscript';
-        private const PUBLICATION_TYPE_MANUSCRIPT_GENRE = 'manuscript (document genre)';
-        private const PUBLICATION_TYPE_MONOGRAPH = 'monograph';
-        private const PUBLICATION_TYPE_NEWSPAPER = 'newspaper';
-        private const PUBLICATION_TYPE_PAMPHLET = 'pamphlet';
-        private const PUBLICATION_TYPE_PRIMARY_SOURCE = 'Primary source';
-        private const PUBLICATION_TYPE_REFERENCE_BOOK = 'reference book';
-        private const PUBLICATION_TYPE_THESIS = 'thesis';
-        private const PUBLICATION_TYPE_UNPUBLISHED_MATERIALS = 'unpublished materials';
-        private const PUBLICATION_TYPE_ANTHOLOGY = 'anthology';
+    private const PUBLICATION_TYPE_ARTICLE = 'article';
+    private const PUBLICATION_TYPE_AUCTION_CATALOGUE = 'auction catalogue';
+    private const PUBLICATION_TYPE_CATALOGUE = 'catalogue';
+    private const PUBLICATION_TYPE_CONFERENCE_PROCEEDINGS = 'conference proceedings';
+    private const PUBLICATION_TYPE_DISSERTATION = 'dissertation';
+    private const PUBLICATION_TYPE_EXHIBITION_CATALOGS = 'exhibition catalogs';
+    private const PUBLICATION_TYPE_EXHIBITION_CATALOGUE = 'exhibition catalogue';
+    private const PUBLICATION_TYPE_FESTSCHRIFT = 'festschrift';
+    private const PUBLICATION_TYPE_GREY_LITERATURE = 'grey literature';
+    private const PUBLICATION_TYPE_GUIDEBOOK = 'guidebook';
+    private const PUBLICATION_TYPE_GUIDEBOOKS = 'guidebooks';
+    private const PUBLICATION_TYPE_MANUSCRIPT = 'manuscript';
+    private const PUBLICATION_TYPE_MANUSCRIPT_GENRE = 'manuscript (document genre)';
+    private const PUBLICATION_TYPE_MONOGRAPH = 'monograph';
+    private const PUBLICATION_TYPE_NEWSPAPER = 'newspaper';
+    private const PUBLICATION_TYPE_PAMPHLET = 'pamphlet';
+    private const PUBLICATION_TYPE_PRIMARY_SOURCE = 'Primary source';
+    private const PUBLICATION_TYPE_REFERENCE_BOOK = 'reference book';
+    private const PUBLICATION_TYPE_THESIS = 'thesis';
+    private const PUBLICATION_TYPE_UNPUBLISHED_MATERIALS = 'unpublished materials';
+    private const PUBLICATION_TYPE_ANTHOLOGY = 'anthology';
 
 
     private static $publicationLanguageTypes = [

@@ -10,6 +10,8 @@ class Publication
     public $type = '';
     public $text = '';
     public $remarks = '';
+    /* @var Publication[] */
+    public $subPublications = [];
 
 
     public function __construct()
@@ -50,5 +52,23 @@ class Publication
     public function getRemarks(): string
     {
         return $this->remarks;
+    }
+
+
+    public function setSubPublications(array $subPublications): void
+    {
+        $this->subPublications = $subPublications;
+    }
+
+
+    public function addSubPublication(Publication $subPublication): void
+    {
+        $this->subPublications[] = $subPublication;
+    }
+
+
+    public function getSubPublications(): array
+    {
+        return $this->subPublications;
     }
 }
