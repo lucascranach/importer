@@ -33,9 +33,9 @@
         }
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.5.0",
-        "brainmaestro/composer-git-hooks": "^2.8",
-        "vimeo/psalm": "^4.1"
+        "friendsofphp/php-cs-fixer": "3.*",
+        "brainmaestro/composer-git-hooks": "2.*",
+        "vimeo/psalm": "4.*"
     },
     "extra": {
         "hooks": {
@@ -50,6 +50,9 @@
         }
     },
     "config": {
-        "process-timeout": 0
+        "process-timeout": 0,
+        "platform": {
+            "php": "8.2"
+        }
     }
 }
