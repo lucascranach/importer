@@ -15,7 +15,7 @@
         "matchers": [
           {
             "name": {
-              "de": "/^Lucas Cranach der Ältere$/i",
+              "de": "/^Lucas Cranach \\<?der Ältere\\>?$/i",
               "en": "/^Lucas Cranach the Elder$/i"
             },
             "suffix": {
@@ -38,7 +38,7 @@
         "matchers": [
           {
             "name": {
-              "de": "/Lucas Cranach der Ältere/i",
+              "de": "/Lucas Cranach \\<?der Ältere\\>?/i",
               "en": "/Lucas Cranach the Elder/i"
             },
             "suffix": {
