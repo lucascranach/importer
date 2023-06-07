@@ -9,6 +9,8 @@ Da dieses Projekt auf Composer für das Package-Management setzt, muss dies im e
 Dazu sei auf die [Installationsanweisungen](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos) von Composer verwiesen.
 Unter MacOS kann für eine schnelle Installation auch `brew install composer` genutzt werden, sofern `brew` installiert ist.
 
+Aktuell setzt der Importer PHP in Version 8.2 voraus.
+
 ## Scripts
 Um die Nutzung des Importers (aber auch die Entwicklung) zu vereinfachen, kommt das Projekt mit einige Composer-Scripts:
 
@@ -53,9 +55,8 @@ cp .env.example .env
 
 ### Importierung
 1. Um neue XML-Dateien importieren zu können, sollten diese im `input`-Ordner unter einem eigenen Ordner nach dem Muster `yyyymmdd` abgelegt werden
-2. In der `index.php` den Import- und Output-Pfad aktualisieren, damit auch die neuen Dateien für den Import berücksichtigt werden
-3. Ggf. diverse Bereiche mit Loader-Initialisierungen in der `index.php` auskommentieren, wenn die dafür notwendigen XML-Dateien nicht vorliegen
-4. `composer run-script import` ausführen
+2. `composer run-script import` ausführen
+3. Sofern im vorherigen Punkt der User darauf hingewiesen wird, dass bestimmte Dateien keiner Artefaktgruppe oder für eine Artefaktgruppe keine Datei gefunden werden konnten, müssen die betroffenen XML-Dateien evtl. umbenannt werden. 
 
 ### In-/ und Output Verzeichnisse
 Die Input und Output Verzeichnisse sind jetzt nicht mehr Teil des Repos. Daten bitte hierher beziehen, bzw. ablegen:
