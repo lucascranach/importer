@@ -29,6 +29,7 @@ Das Import-Script unterstützt die Durchgabe einiger weiterer Parameter.
 | Parametername | Beschreibung |
 | :-- | :-- |
 | keep-soft-deleted-artefacts | Alle Artefakte behalten, die als 'Soft-Deleted' markiert sind |
+| refresh-remote-all-cache | Den kompletten Remote Cache (Bild- und Dokument-Daten) gezielt auffrischen; aktuell unterstützte Werte: `all`, `paintings`, `graphics` und `archivals`; ist kein Wert gegeben, wird standardmäßig auf `all` zurückgefallen |
 | refresh-remote-images-cache | Den Remote-**Image** Cache gezielt auffrischen; aktuell unterstützte Werte: `all`, `paintings`, `graphics` und `archivals`; ist kein Wert gegeben, wird standardmäßig auf `all` zurückgefallen |
 | refresh-remote-documents-cache | Den Remote-**Document** Cache gezielt auffrischen; unterstützte Werte: `all`, `paintings`, `graphics` und `archivals`; ist kein Wert gegeben, wird standardmäßig auf `all` zurückgefallen |
 | refresh-all-remote-caches | Alle Remote Caches auffrischen |

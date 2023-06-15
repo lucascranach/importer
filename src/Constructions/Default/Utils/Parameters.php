@@ -10,6 +10,8 @@ class Parameters
         'longOpts' => [
             'keep-soft-deleted-artefacts',      /* optional */
 
+            'refresh-remote-all-cache::',       /* optional value; default is 'all' */
+
             'refresh-remote-images-cache::',    /* optional value; default is 'all' */
             'refresh-remote-documents-cache::', /* optional value; default is 'all' */
             'refresh-all-remote-caches',        /* optional */
@@ -103,6 +105,7 @@ class Parameters
                     $this->setKeepSoftDeletedAretefacts(true);
                     break;
 
+                case 'refresh-remote-all-cache':
                 case 'refresh-remote-images-cache':
                 case 'refresh-remote-documents-cache':
                     $valueList = is_array($value) ? $value : explode(',', strval($value));
@@ -119,11 +122,19 @@ class Parameters
                         [],
                     );
 
-                    if ($opt === 'refresh-remote-images-cache') {
-                        $this->setRemoteImagesCachesToRefresh($remoteCachesToRefresh);
-                    }
-                    if ($opt === 'refresh-remote-documents-cache') {
-                        $this->setRemoteDocumentsCachesToRefresh($remoteCachesToRefresh);
+                    switch ($opt) {
+                        case 'refresh-remote-all-cache':
+                            $this->setRemoteImagesCachesToRefresh($remoteCachesToRefresh);
+                            $this->setRemoteDocumentsCachesToRefresh($remoteCachesToRefresh);
+                            break;
+
+                        case 'refresh-remote-images-cache':
+                            $this->setRemoteImagesCachesToRefresh($remoteCachesToRefresh);
+                            break;
+
+                        case 'refresh-remote-documents-cache':
+                            $this->setRemoteDocumentsCachesToRefresh($remoteCachesToRefresh);
+                            break;
                     }
                     break;
 
