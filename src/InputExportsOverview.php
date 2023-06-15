@@ -91,7 +91,7 @@ class InputExportsOverview
         }
 
         usort($directoryEntries, function ($entryA, $entryB) {
-            return $entryA->getMTime() - $entryB->getMTime();
+            return strcmp($entryA->getBasename(), $entryB->getBasename());
         });
 
         /** @var array<SplFileInfo> */
