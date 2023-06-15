@@ -17,6 +17,6 @@ final class LiteratureReferencesFileProbe implements IFileProbe
 
     public function probe(string $filepath): bool
     {
-        return preg_match("/^cda([_-]export)[_-]literatur/i", basename($filepath)) !== 0;
+        return preg_match("/^cda([_-]export)?[_-]literatur/i", basename($filepath)) !== 0;
     }
 }
