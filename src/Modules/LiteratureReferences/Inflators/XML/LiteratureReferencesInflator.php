@@ -55,7 +55,7 @@ class LiteratureReferencesInflator implements IInflator
 
     private const PUBLICATION_TYPE_ARTICLE = 'article';
     private const PUBLICATION_TYPE_AUCTION_CATALOGUE = 'auction catalogue';
-    private const PUBLICATION_TYPE_CATALOGUE = 'catalogue';
+    private const PUBLICATION_TYPE_COLLECTION_CATALOGUE = 'catalogue';
     private const PUBLICATION_TYPE_CONFERENCE_PROCEEDINGS = 'conference proceedings';
     private const PUBLICATION_TYPE_DISSERTATION = 'dissertation';
     private const PUBLICATION_TYPE_EXHIBITION_CATALOGS = 'exhibition catalogs';
@@ -80,7 +80,7 @@ class LiteratureReferencesInflator implements IInflator
         Language::DE => [
             self::PUBLICATION_TYPE_ARTICLE => 'Artikel',
             self::PUBLICATION_TYPE_AUCTION_CATALOGUE => 'Auktionskatalog',
-            self::PUBLICATION_TYPE_CATALOGUE => 'Katalog',
+            self::PUBLICATION_TYPE_COLLECTION_CATALOGUE => 'Bestandskatalog',
             self::PUBLICATION_TYPE_CONFERENCE_PROCEEDINGS => 'Tagungsband',
             self::PUBLICATION_TYPE_DISSERTATION => 'Dissertation',
             self::PUBLICATION_TYPE_EXHIBITION_CATALOGS => 'Ausstellungskataloge',
@@ -103,7 +103,7 @@ class LiteratureReferencesInflator implements IInflator
         Language::EN => [
             self::PUBLICATION_TYPE_ARTICLE => 'Article',
             self::PUBLICATION_TYPE_AUCTION_CATALOGUE => 'Auction catalogue',
-            self::PUBLICATION_TYPE_CATALOGUE => 'Catalogue',
+            self::PUBLICATION_TYPE_COLLECTION_CATALOGUE => 'Collection catalogue',
             self::PUBLICATION_TYPE_CONFERENCE_PROCEEDINGS => 'Conference proceedings',
             self::PUBLICATION_TYPE_DISSERTATION => 'Dissertation',
             self::PUBLICATION_TYPE_EXHIBITION_CATALOGS => 'Exhibition catalogues',
