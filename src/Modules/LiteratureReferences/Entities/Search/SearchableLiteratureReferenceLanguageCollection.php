@@ -12,6 +12,28 @@ class SearchableLiteratureReferenceLanguageCollection extends LiteratureReferenc
         return new SearchableLiteratureReference();
     }
 
+    public function addFilterInfoCategoryItems(string $categoryId, array $filterInfoItems): void
+    {
+        /** @var ISearchableLiteratureReference */
+        foreach ($this as $searchablePainting) {
+            $searchablePainting->addFilterInfoCategoryItems($categoryId, $filterInfoItems);
+        }
+    }
+
+    public function getFilterInfoCategoryItems(string $categoryId): ?array
+    {
+        /** @var ISearchableLiteratureReference */
+        $first = $this->first();
+        return $first->getFilterInfoCategoryItems($categoryId);
+    }
+
+    public function getFilterInfoItems(): array
+    {
+        /** @var ISearchableLiteratureReference */
+        $first = $this->first();
+        return $first->getFilterInfoItems();
+    }
+
     public function setPublicationsLine(string $publicationsLine): void
     {
         foreach ($this as $searchableLiteratureReference) {

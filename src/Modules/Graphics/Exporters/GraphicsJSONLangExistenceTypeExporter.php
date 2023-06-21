@@ -75,16 +75,16 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
     }
 
 
-     private function handleCollection(GraphicLanguageCollection $collection): bool
-     {
-         $retVal = true;
+    private function handleCollection(GraphicLanguageCollection $collection): bool
+    {
+        $retVal = true;
 
-         foreach ($collection as $langCode => $graphic) {
-             $retVal = $retVal && $this->appendItemToOutputFile($langCode, $graphic);
-         }
+        foreach ($collection as $langCode => $graphic) {
+            $retVal = $retVal && $this->appendItemToOutputFile($langCode, $graphic);
+        }
 
-         return $retVal;
-     }
+        return $retVal;
+    }
 
 
     private function addDataForReferenceCheck(IGraphic $item): void

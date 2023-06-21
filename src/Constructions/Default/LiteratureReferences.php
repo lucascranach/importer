@@ -9,6 +9,7 @@ use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Loaders\XML\Lite
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Transformers\MetadataFiller;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Transformers\ExtenderWithAggregatedData;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Transformers\ExtenderWithAggregatedSearchableData;
+use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Transformers\ExtenderWithBasicFilterValues;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Transformers\ExtenderWithSubPublications;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Transformers\MapToSearchableLiteratureReference;
 
@@ -16,7 +17,7 @@ final class LiteratureReferences
 {
     private LiteratureReferencesLoader $loader;
 
-    private function __construct(Paths $paths)
+    private function __construct(Paths $paths, MemoryFilters $memoryFilters)
     {
         $literatureReferenceOutputFilepath = $paths->getOutputPath('cda-literaturereferences-v2.json');
         $literatureReferenceElasticsearchOutputFilepath = $paths->getElasticsearchOutputPath('cda-literaturereferences-v2.bulk');
@@ -34,6 +35,7 @@ final class LiteratureReferences
                 ->pipeline(
                     MapToSearchableLiteratureReference::new()
                         ->pipeline(
+                            ExtenderWithBasicFilterValues::new($memoryFilters->getLiteratureReferenceMemoryExporter()),
                             ExtenderWithAggregatedSearchableData::new(),
                             LiteratureReferencesElasticsearchLangExporter::withDestinationAt($literatureReferenceElasticsearchOutputFilepath),
                         ),
@@ -41,9 +43,9 @@ final class LiteratureReferences
         );
     }
 
-    public static function new(Paths $paths): self
+    public static function new(Paths $paths, MemoryFilters $memoryFilters): self
     {
-        return new self($paths);
+        return new self($paths, $memoryFilters);
     }
 
     public function run(): self

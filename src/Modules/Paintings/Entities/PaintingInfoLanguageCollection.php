@@ -18,12 +18,12 @@ class PaintingInfoLanguageCollection extends AbstractItemLanguageCollection impl
     }
 
 
-     public function setMetadata(Metadata $metadata)
-     {
-         foreach ($this as $paintingInfo) {
-             $paintingInfo->setMetadata($metadata);
-         }
-     }
+    public function setMetadata(Metadata $metadata)
+    {
+        foreach ($this as $paintingInfo) {
+            $paintingInfo->setMetadata($metadata);
+        }
+    }
 
 
     public function getMetadata(): ?Metadata

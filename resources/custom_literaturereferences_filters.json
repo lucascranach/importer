@@ -1,130 +1,154 @@
 [
   {
-    "id": "mediatype",
+    "id": "media_type",
     "text": {
       "de": "Medientyp",
       "en": "Media type"
     },
     "children": [
       {
-        "id": "mediatype.article",
+        "id": "media_type.article",
         "text": {
           "de": "Aufsatz",
           "en": "Article"
         },
-        "matchers": {
-          "publication": "article"
-        }
+        "matchers": [
+          {
+            "publication": "article"
+          }
+        ]
       },
       {
-        "id": "mediatype.anthology",
+        "id": "media_type.anthology",
         "text": {
           "de": "Aufsatzsammlung",
           "en": "Essay collection"
         },
-        "matchers": {
-          "publication": "anthology"
-        }
+        "matchers": [
+          {
+            "publication": "anthology"
+          }
+        ]
       },
       {
-        "id": "mediatype.auction_catalogue",
+        "id": "media_type.auction_catalogue",
         "text": {
           "de": "Auktionskatalog",
           "en": "Auction catalogue"
         },
-        "matchers": {
-          "publication": "auction catalogue"
-        }
+        "matchers": [
+          {
+            "publication": "auction catalogue"
+          }
+        ]
       },
       {
-        "id": "mediatype.exhibition_catalogue",
+        "id": "media_type.exhibition_catalogue",
         "text": {
           "de": "Ausstellungskatalog",
           "en": "Exhibition catalogue"
         },
-        "matchers": {
-          "publication": "exhibition catalogue"
-        }
+        "matchers": [
+          {
+            "publication": "exhibition catalogue"
+          }
+        ]
       },
       {
-        "id": "mediatype.catalogue",
+        "id": "media_type.catalogue",
         "text": {
           "de": "Bestandskatalog",
           "en": "Collection catalogue"
         },
-        "matchers": {
-          "publication": "catalogue"
-        }
+        "matchers": [
+          {
+            "publication": "catalogue"
+          }
+        ]
       },
       {
-        "id": "mediatype.festschrift",
+        "id": "media_type.festschrift",
         "text": {
           "de": "FestschriftFestschrift",
           "en": "Festschrift"
         },
-        "matchers": {
-          "publication": "festschrift"
-        }
+        "matchers": [
+          {
+            "publication": "festschrift"
+          }
+        ]
       },
       {
-        "id": "mediatype.grey_literature",
+        "id": "media_type.grey_literature",
         "text": {
           "de": "Graue Literatur",
           "en": "Grey literature"
         },
-        "matchers": {
-          "publication": "grey literature"
-        }
+        "matchers": [
+          {
+            "publication": "grey literature"
+          }
+        ]
       },
       {
-        "id": "mediatype.monograph",
+        "id": "media_type.monograph",
         "text": {
           "de": "Monografie",
           "en": "Monograph"
         },
-        "matchers": {
-          "publication": "monograph"
-        }
+        "matchers": [
+          {
+            "publication": "monograph"
+          }
+        ]
       },
       {
-        "id": "mediatype.primary_source",
+        "id": "media_type.primary_source",
         "text": {
           "de": "Primärliteratur",
           "en": "Primary source"
         },
-        "matchers": {
-          "publication": "Primary source"
-        }
+        "matchers": [
+          {
+            "publication": "Primary source"
+          }
+        ]
       },
       {
-        "id": "mediatype.guidebook",
+        "id": "media_type.guidebook",
         "text": {
           "de": "Sammlungsführer",
           "en": "Guidebook"
         },
-        "matchers": {
-          "publication": "guidebook"
-        }
+        "matchers": [
+          {
+            "publication": "guidebook"
+          }
+        ]
       },
       {
-        "id": "mediatype.conference_proceedings",
+        "id": "media_type.conference_proceedings",
         "text": {
           "de": "Tagungsband",
           "en": "Conference proceedings"
         },
-        "matchers": {
-          "publication": "conference proceedings"
-        }
+        "matchers": [
+          {
+            "publication": "conference proceedings"
+          }
+        ]
       },
       {
-        "id": "mediatype.newspaper",
+        "id": "media_type.newspaper",
         "text": {
           "de": "Zeitungsartikel",
           "en": "Newspaper article"
         },
-        "matchers": {
-          "publication": "newspaper"
-        }
+        "matchers": [
+          {
+            "publication": "newspaper"
+          }
+        ]
       }
     ]
   }

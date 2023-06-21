@@ -7,14 +7,21 @@ use CranachDigitalArchive\Importer\Modules\Filters\Entities\LangFilterContainer;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 use Error;
 
-class NumericalSorter extends Hybrid
+class ArtefactAlphabeticSorter extends Hybrid
 {
     private $paths = [
+        ['subject'], // Subject
+        ['subject', '010405'], // Subject > Classical Mythology and Ancient History
+        ['subject', '010403', '01040303', '0104030301'], // Subject > Christian Religion / Bible > Saints, apostles, prophets > Male Saints
+        ['subject', '010403', '01040303', '0104030302'], // Subject > Christian Religion / Bible > Saints, apostles, prophets > Female Saints
+        ['subject', '010402', '01040201', '0104020102'], // Portraits > Male > Nobility
+        ['subject', '010402', '01040201', '0104020101'], // Portraits > Male > Public Personalities
+        ['subject', '010402', '01040202', '0104020202'], // Portraits > Female > Nobility
+        ['subject', '010402', '01040202', '0104020201'], // Portraits > Female > Public Personalities
     ];
 
     private $recursivePaths = [
-        ['subject', '010403', '01040301'], // Subject > Christian Religion / Bible > The Old Testament
-        ['subject', '010403', '01040302'], // Subject > Christian Religion / Bible > The New Testament
+        ['collection_repository', 'collection_repository.country'],
     ];
 
     private function __construct()
@@ -56,7 +63,7 @@ class NumericalSorter extends Hybrid
         $matchingFilter = $this->findMatchingFilter($container->getFilter(), $path);
 
         if (!is_null($matchingFilter)) {
-            $matchingFilter->setChildren($this->sortById($matchingFilter->getChildren()));
+            $matchingFilter->setChildren($this->sortByText($matchingFilter->getChildren()));
         }
     }
 
@@ -108,7 +115,7 @@ class NumericalSorter extends Hybrid
 
     private function sortRecursively(Filter $filter): Filter
     {
-        $filter->setChildren($this->sortById($filter->getChildren()));
+        $filter->setChildren($this->sortByText($filter->getChildren()));
 
         foreach ($filter->getChildren() as $child) {
             $this->sortRecursively($child);
@@ -117,10 +124,16 @@ class NumericalSorter extends Hybrid
         return $filter;
     }
 
-    private function sortById(array $items)
+    private function sortByText(array $items)
     {
-        usort($items, function ($a, $b) {
-            return intval($a->getId()) - intval($b->getId());
+        $toBeReplaced = ['ä', 'Ä', 'ö', 'Ö', 'ü', 'Ü', 'ß'];
+        $replacements = ['ae', 'Ae', 'oe', 'Oe', 'ue', 'Ue', 'ss'];
+
+        usort($items, function ($a, $b) use ($toBeReplaced, $replacements) {
+            $aText = str_replace($toBeReplaced, $replacements, $a->getText());
+            $bText = str_replace($toBeReplaced, $replacements, $b->getText());
+
+            return strcasecmp($aText, $bText);
         });
 
         return $items;

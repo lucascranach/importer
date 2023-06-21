@@ -12,12 +12,39 @@ use CranachDigitalArchive\Importer\Modules\LiteratureReferences\Interfaces\ISear
  */
 class SearchableLiteratureReference extends LiteratureReference implements ISearchableLiteratureReference
 {
+    public $filterInfos = [];
     public $publicationsLine = '';
 
 
     public function __construct()
     {
         parent::__construct();
+    }
+
+    public function addFilterInfoCategoryItems(string $categoryId, array $filterInfoItems): void
+    {
+        if (!isset($this->filterInfos[$categoryId])) {
+            $this->filterInfos[$categoryId] = [];
+        }
+
+        $this->filterInfos[$categoryId] = array_merge(
+            $this->filterInfos[$categoryId],
+            $filterInfoItems
+        );
+    }
+
+    public function getFilterInfoCategoryItems(string $categoryId): ?array
+    {
+        if (!isset($this->filterInfos[$categoryId])) {
+            return null;
+        }
+
+        return $this->filterInfos[$categoryId];
+    }
+
+    public function getFilterInfoItems(): array
+    {
+        return $this->filterInfos;
     }
 
     public function setPublicationsLine(string $publicationsLine): void
