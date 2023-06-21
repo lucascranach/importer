@@ -78,7 +78,7 @@ class LiteratureReferencesInflator implements IInflator
 
     private static $publicationLanguageTypes = [
         Language::DE => [
-            self::PUBLICATION_TYPE_ARTICLE => 'Artikel',
+            self::PUBLICATION_TYPE_ARTICLE => 'Aufsatz',
             self::PUBLICATION_TYPE_AUCTION_CATALOGUE => 'Auktionskatalog',
             self::PUBLICATION_TYPE_COLLECTION_CATALOGUE => 'Bestandskatalog',
             self::PUBLICATION_TYPE_CONFERENCE_PROCEEDINGS => 'Tagungsband',
