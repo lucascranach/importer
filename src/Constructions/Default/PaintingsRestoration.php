@@ -12,10 +12,10 @@ final class PaintingsRestoration
     private RestorationsMemoryExporter $restorationsMemoryExporter;
     private RestorationsLoader $loader;
 
-    private function __construct(Paths $paths, MemoryFilters $memoryFilters)
+    private function __construct(Paths $paths, MemoryArtefactFilters $memoryArtefactFilters)
     {
         $this->restorationsMemoryExporter = RestorationsMemoryExporter::new();
-        $restorationsIdAdder = ExtenderWithIds::new($memoryFilters->getMemoryExporter());
+        $restorationsIdAdder = ExtenderWithIds::new($memoryArtefactFilters->getMemoryExporter());
 
         $this->loader = RestorationsLoader::withSourcesAt($paths->getPaintingsRestorationInputFilePaths());
         $this->loader->pipeline(
@@ -24,9 +24,9 @@ final class PaintingsRestoration
         );
     }
 
-    public static function new(Paths $paths, MemoryFilters $memoryFilters): self
+    public static function new(Paths $paths, MemoryArtefactFilters $memoryArtefactFilters): self
     {
-        return new self($paths, $memoryFilters);
+        return new self($paths, $memoryArtefactFilters);
     }
 
     public function getMemoryExporter(): RestorationsMemoryExporter

@@ -33,7 +33,7 @@ final class Paintings
         Paths $paths,
         Parameters $parameters,
         Base $base,
-        MemoryFilters $memoryFilters,
+        MemoryArtefactFilters $memoryArtefactFilters,
         Thesaurus $thesaurus,
         PaintingsRestoration $paintingsRestoration,
     ) {
@@ -71,7 +71,7 @@ final class Paintings
             $paintingsRemoteDocumentExistenceChecker,
             $paintingsRemoteImageExistenceChecker,
             ExtenderWithRestorations::new($paintingsRestoration->getMemoryExporter()),
-            ExtenderWithIds::new($memoryFilters->getMemoryExporter()),
+            ExtenderWithIds::new($memoryArtefactFilters->getMemoryExporter()),
             MetadataFiller::new(),
             ExtenderWithSortingInfo::new(),
             LocationsGeoPositionExtender::new($base->getLocationsSource())
@@ -83,7 +83,7 @@ final class Paintings
                 ->pipeline(
                     MapToSearchablePainting::new()->pipeline(
                         SearchablePaintingsExtenderWithThesaurus::new($thesaurus->getMemoryExporter()),
-                        SearchablePaintingsExtenderWithBasicFilterValues::new($memoryFilters->getMemoryExporter()),
+                        SearchablePaintingsExtenderWithBasicFilterValues::new($memoryArtefactFilters->getMemoryExporter()),
                         SearchablePaintingsExtenderWithInvolvedPersonsFullnames::new(),
                         /* Exporting the paintings for Elasticsearch bulk import */
                         SearchablePaintingsElasticsearchLangExporter::withDestinationAt($paintingsElasticsearchOutputFilepath),
@@ -96,7 +96,7 @@ final class Paintings
         Paths $paths,
         Parameters $parameters,
         Base $base,
-        MemoryFilters $memoryFilters,
+        MemoryArtefactFilters $memoryArtefactFilters,
         Thesaurus $thesaurus,
         PaintingsRestoration $paintingsRestoration,
     ): self {
@@ -104,7 +104,7 @@ final class Paintings
             $paths,
             $parameters,
             $base,
-            $memoryFilters,
+            $memoryArtefactFilters,
             $thesaurus,
             $paintingsRestoration,
         );

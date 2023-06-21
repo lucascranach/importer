@@ -6,7 +6,7 @@ use CranachDigitalArchive\Importer\Constructions\Default\Utils\Paths;
 use CranachDigitalArchive\Importer\Modules\Filters\Exporters\CustomFiltersMemoryExporter;
 use CranachDigitalArchive\Importer\Modules\Filters\Loaders\JSON\CustomFiltersLoader;
 
-final class MemoryFilters
+final class MemoryArtefactFilters
 {
     private CustomFiltersMemoryExporter $memoryExporter;
     private CustomFiltersLoader $loader;
@@ -16,7 +16,7 @@ final class MemoryFilters
         /* Loading filters into memory */
         $this->memoryExporter = CustomFiltersMemoryExporter::new(); /* needed later for graphics and paintings */
 
-        $this->loader = CustomFiltersLoader::withSourceAt($paths->getResourcesPath('custom_filters.json'));
+        $this->loader = CustomFiltersLoader::withSourceAt($paths->getResourcesPath('custom_artefact_filters.json'));
         $this->loader->pipeline($this->memoryExporter);
     }
 

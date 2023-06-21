@@ -37,7 +37,7 @@ final class Graphics
         Paths $paths,
         Parameters $parameters,
         Base $base,
-        MemoryFilters $memoryFilters,
+        MemoryArtefactFilters $memoryArtefactFilters,
         Thesaurus $thesaurus,
         GraphicsRestoration $graphicssRestoration,
     ) {
@@ -75,7 +75,7 @@ final class Graphics
             (!$parameters->getKeepSoftDeletedAretefacts()) ? SkipSoftDeletedArtefactGate::new('Graphics') : null,
             $graphicsRemoteDocumentExistenceChecker,
             $graphicsRemoteImageExistenceChecker,
-            ExtenderWithIds::new($memoryFilters->getMemoryExporter()),
+            ExtenderWithIds::new($memoryArtefactFilters->getMemoryExporter()),
             ConditionDeterminer::new(),
             ExtenderWithRestorations::new($graphicssRestoration->getMemoryExporter()),
             MetadataFiller::new(),
@@ -91,7 +91,7 @@ final class Graphics
                     MapToSearchableGraphic::new()->pipeline(
                         SearchableGraphicsExtenderWithRepositories::new($this->graphicsRepositoriesCollector, true),
                         SearchableGraphicsExtenderWithThesaurus::new($thesaurus->getMemoryExporter()),
-                        SearchableGraphicsExtenderWithBasicFilterValues::new($memoryFilters->getMemoryExporter()),
+                        SearchableGraphicsExtenderWithBasicFilterValues::new($memoryArtefactFilters->getMemoryExporter()),
                         SearchableGraphicsExtenderWithInvolvedPersonsFullnames::new(),
                         /* Exporting the graphics for Elasticsearch bulk import */
                         SearchableGraphicsGraphicsElasticsearchLangExporter::withDestinationAt($graphicsElasticsearchOutputFilepath),
@@ -104,7 +104,7 @@ final class Graphics
         Paths $paths,
         Parameters $parameters,
         Base $base,
-        MemoryFilters $memoryFilters,
+        MemoryArtefactFilters $memoryArtefactFilters,
         Thesaurus $thesaurus,
         GraphicsRestoration $graphicssRestoration,
     ): self {
@@ -112,7 +112,7 @@ final class Graphics
             $paths,
             $parameters,
             $base,
-            $memoryFilters,
+            $memoryArtefactFilters,
             $thesaurus,
             $graphicssRestoration,
         );

@@ -9,14 +9,14 @@ final class Init
 {
     private Base $base;
     private Thesaurus $thesaurus;
-    private MemoryFilters $memoryFilters;
+    private MemoryArtefactFilters $memoryArtefactFilters;
     private PaintingsRestoration $paintingsRestoration;
     private Paintings $paintings;
     private GraphicsRestoration $graphicsRestoration;
     private Graphics $graphics;
     private LiteratureReferences $literatureReferences;
     private Archivals $archivals;
-    private Filters $filters;
+    private ArtefactFilters $artefactFilters;
 
     private function __construct(Parameters $parameters, Paths $paths)
     {
@@ -25,15 +25,15 @@ final class Init
         /* Initialization of submodules */
         $this->base = Base::new($paths)->run(); /* LocationsSource and MetaReferenceCollector */
         $this->thesaurus = Thesaurus::new($paths)->run(); /* ThesaurusMemoryExporter */
-        $this->memoryFilters = MemoryFilters::new($paths)->run(); /* CustomFiltersMemoryExporter */
+        $this->memoryArtefactFilters = MemoryArtefactFilters::new($paths)->run(); /* CustomFiltersMemoryExporter */
 
-        $this->paintingsRestoration = PaintingsRestoration::new($paths, $this->memoryFilters); /* (Paintings)-RestorationsMemoryExporter */
+        $this->paintingsRestoration = PaintingsRestoration::new($paths, $this->memoryArtefactFilters); /* (Paintings)-RestorationsMemoryExporter */
 
         $this->paintings = Paintings::new(
             $paths,
             $parameters,
             $this->base,
-            $this->memoryFilters,
+            $this->memoryArtefactFilters,
             $this->thesaurus,
             $this->paintingsRestoration,
         );
@@ -43,7 +43,7 @@ final class Init
             $paths,
             $parameters,
             $this->base,
-            $this->memoryFilters,
+            $this->memoryArtefactFilters,
             $this->thesaurus,
             $this->graphicsRestoration,
         );
@@ -52,11 +52,11 @@ final class Init
 
         $this->archivals = Archivals::new($paths, $parameters);
 
-        $this->filters = Filters::new(
+        $this->artefactFilters = ArtefactFilters::new(
             $paths,
             $this->base,
             $this->thesaurus,
-            $this->memoryFilters,
+            $this->memoryArtefactFilters,
         );
     }
 
@@ -73,7 +73,7 @@ final class Init
         $this->graphics->run();
         $this->literatureReferences->run();
         $this->archivals->run();
-        $this->filters->run();
+        $this->artefactFilters->run();
 
         /* Wraping up the import process */
         $this->base->getLocationsSource()->store();
@@ -85,7 +85,7 @@ final class Init
     {
         $this->base->cleanUp();
         $this->thesaurus->cleanUp();
-        $this->memoryFilters->cleanUp();
+        $this->memoryArtefactFilters->cleanUp();
         $this->paintingsRestoration->cleanUp();
         $this->paintings->cleanUp();
         $this->graphicsRestoration->cleanUp();

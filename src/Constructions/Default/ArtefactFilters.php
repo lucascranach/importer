@@ -10,26 +10,26 @@ use CranachDigitalArchive\Importer\Modules\Filters\Transformers\AlphabeticSorter
 use CranachDigitalArchive\Importer\Modules\Filters\Transformers\NumericalSorter;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\Exporters\ReducedThesaurusMemoryExporter;
 
-final class Filters
+final class ArtefactFilters
 {
     private string $filtersOutputFilepath;
     private Base $base;
     private Thesaurus $thesaurus;
-    private MemoryFilters $memoryFilters;
+    private MemoryArtefactFilters $memoryArtefactFilters;
     private CustomFiltersMemoryExporter $memoryExporter;
 
-    private function __construct(Paths $paths, Base $base, Thesaurus $thesaurus, MemoryFilters $memoryFilters)
+    private function __construct(Paths $paths, Base $base, Thesaurus $thesaurus, MemoryArtefactFilters $memoryArtefactFilters)
     {
-        $this->filtersOutputFilepath = $paths->getOutputPath('cda-filters.json');
+        $this->filtersOutputFilepath = $paths->getOutputPath('cda-artefact-filters.json');
 
         $this->base = $base;
         $this->thesaurus = $thesaurus;
-        $this->memoryFilters = $memoryFilters;
+        $this->memoryArtefactFilters = $memoryArtefactFilters;
     }
 
-    public static function new(Paths $paths, Base $base, Thesaurus $thesaurus, MemoryFilters $memoryFilters): self
+    public static function new(Paths $paths, Base $base, Thesaurus $thesaurus, MemoryArtefactFilters $memoryArtefactFilters): self
     {
-        return new self($paths, $base, $thesaurus, $memoryFilters);
+        return new self($paths, $base, $thesaurus, $memoryArtefactFilters);
     }
 
     public function getMemoryExporter(): CustomFiltersMemoryExporter
@@ -50,7 +50,7 @@ final class Filters
         );
 
         MemoryCustomFiltersAndThesaurusLoader::withMemory(
-            $this->memoryFilters->getMemoryExporter(),
+            $this->memoryArtefactFilters->getMemoryExporter(),
             ReducedThesaurusMemoryExporter::new($this->thesaurus->getMemoryExporter(), $restrictedTermIds),
         )->pipeline(
             NumericalSorter::new(),
