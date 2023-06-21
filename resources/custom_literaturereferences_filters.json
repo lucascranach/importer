@@ -1,0 +1,131 @@
+[
+  {
+    "id": "mediatype",
+    "text": {
+      "de": "Medientyp",
+      "en": "Media type"
+    },
+    "children": [
+      {
+        "id": "mediatype.article",
+        "text": {
+          "de": "Aufsatz",
+          "en": "Article"
+        },
+        "matchers": {
+          "publication": "article"
+        }
+      },
+      {
+        "id": "mediatype.anthology",
+        "text": {
+          "de": "Aufsatzsammlung",
+          "en": "Essay collection"
+        },
+        "matchers": {
+          "publication": "anthology"
+        }
+      },
+      {
+        "id": "mediatype.auction_catalogue",
+        "text": {
+          "de": "Auktionskatalog",
+          "en": "Auction catalogue"
+        },
+        "matchers": {
+          "publication": "auction catalogue"
+        }
+      },
+      {
+        "id": "mediatype.exhibition_catalogue",
+        "text": {
+          "de": "Ausstellungskatalog",
+          "en": "Exhibition catalogue"
+        },
+        "matchers": {
+          "publication": "exhibition catalogue"
+        }
+      },
+      {
+        "id": "mediatype.catalogue",
+        "text": {
+          "de": "Bestandskatalog",
+          "en": "Collection catalogue"
+        },
+        "matchers": {
+          "publication": "catalogue"
+        }
+      },
+      {
+        "id": "mediatype.festschrift",
+        "text": {
+          "de": "FestschriftFestschrift",
+          "en": "Festschrift"
+        },
+        "matchers": {
+          "publication": "festschrift"
+        }
+      },
+      {
+        "id": "mediatype.grey_literature",
+        "text": {
+          "de": "Graue Literatur",
+          "en": "Grey literature"
+        },
+        "matchers": {
+          "publication": "grey literature"
+        }
+      },
+      {
+        "id": "mediatype.monograph",
+        "text": {
+          "de": "Monografie",
+          "en": "Monograph"
+        },
+        "matchers": {
+          "publication": "monograph"
+        }
+      },
+      {
+        "id": "mediatype.primary_source",
+        "text": {
+          "de": "Primärliteratur",
+          "en": "Primary source"
+        },
+        "matchers": {
+          "publication": "Primary source"
+        }
+      },
+      {
+        "id": "mediatype.guidebook",
+        "text": {
+          "de": "Sammlungsführer",
+          "en": "Guidebook"
+        },
+        "matchers": {
+          "publication": "guidebook"
+        }
+      },
+      {
+        "id": "mediatype.conference_proceedings",
+        "text": {
+          "de": "Tagungsband",
+          "en": "Conference proceedings"
+        },
+        "matchers": {
+          "publication": "conference proceedings"
+        }
+      },
+      {
+        "id": "mediatype.newspaper",
+        "text": {
+          "de": "Zeitungsartikel",
+          "en": "Newspaper article"
+        },
+        "matchers": {
+          "publication": "newspaper"
+        }
+      }
+    ]
+  }
+]
