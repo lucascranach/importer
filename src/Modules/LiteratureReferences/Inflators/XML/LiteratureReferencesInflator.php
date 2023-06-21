@@ -87,7 +87,6 @@ class LiteratureReferencesInflator implements IInflator
             self::PUBLICATION_TYPE_FESTSCHRIFT => 'Festschrift',
             self::PUBLICATION_TYPE_GREY_LITERATURE => 'Graue Literatur',
             self::PUBLICATION_TYPE_GUIDEBOOK => 'Sammlungsführer',
-            self::PUBLICATION_TYPE_GUIDEBOOKS => 'Sammlungsführer',
             self::PUBLICATION_TYPE_MANUSCRIPT => 'Manuskript',
             self::PUBLICATION_TYPE_MANUSCRIPT_GENRE => 'Manuskript (Dokumentgenre)',
             self::PUBLICATION_TYPE_MONOGRAPH => 'Monografie',
@@ -100,6 +99,7 @@ class LiteratureReferencesInflator implements IInflator
             self::PUBLICATION_TYPE_EXHIBITION_CATALOGS => 'Ausstellungskataloge',
             self::PUBLICATION_TYPE_REFERENCE_BOOK => 'Referenzbuch',
             self::PUBLICATION_TYPE_PAMPHLET => 'Pamphlet',
+            self::PUBLICATION_TYPE_GUIDEBOOKS => 'Sammlungsführer',
         ],
         Language::EN => [
             self::PUBLICATION_TYPE_ARTICLE => 'Article',
@@ -111,7 +111,6 @@ class LiteratureReferencesInflator implements IInflator
             self::PUBLICATION_TYPE_FESTSCHRIFT => 'Festschrift',
             self::PUBLICATION_TYPE_GREY_LITERATURE => 'Grey literature',
             self::PUBLICATION_TYPE_GUIDEBOOK => 'Guidebook',
-            self::PUBLICATION_TYPE_GUIDEBOOKS => 'Guidebooks',
             self::PUBLICATION_TYPE_MANUSCRIPT => 'Manuscript',
             self::PUBLICATION_TYPE_MANUSCRIPT_GENRE => 'Manuscript (document genre)',
             self::PUBLICATION_TYPE_MONOGRAPH => 'Monograph',
@@ -124,6 +123,7 @@ class LiteratureReferencesInflator implements IInflator
             self::PUBLICATION_TYPE_EXHIBITION_CATALOGS => 'Exhibition catalogues',
             self::PUBLICATION_TYPE_REFERENCE_BOOK => 'Reference book',
             self::PUBLICATION_TYPE_PAMPHLET => 'Pamphlet',
+            self::PUBLICATION_TYPE_GUIDEBOOKS => 'Guidebooks',
         ],
     ];
 
