@@ -24,7 +24,7 @@ final class Filters
         Thesaurus $thesaurus,
         MemoryFilters $memoryFilters,
     ) {
-        $this->artefactFiltersOutputFilepath = $paths->getOutputPath('filters/cda-artefact-filters.json');
+        $this->artefactFiltersOutputFilepath = $paths->getOutputPath('filters/cda-filters.json');
         $this->literatureReferenceFiltersOutputFilepath = $paths->getOutputPath('filters/cda-literaturereference-filters.json');
 
         $this->base = $base;
