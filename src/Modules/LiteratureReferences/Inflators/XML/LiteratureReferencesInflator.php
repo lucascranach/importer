@@ -95,11 +95,11 @@ class LiteratureReferencesInflator implements IInflator
             self::PUBLICATION_TYPE_THESIS => 'Thesis',
             self::PUBLICATION_TYPE_UNPUBLISHED_MATERIALS => 'Unveröffentlichtes Material',
             self::PUBLICATION_TYPE_ANTHOLOGY => 'Aufsatzsammlung',
+            self::PUBLICATION_TYPE_GUIDEBOOKS => 'Sammlungsführer',
 
             self::PUBLICATION_TYPE_EXHIBITION_CATALOGS => 'Ausstellungskataloge',
             self::PUBLICATION_TYPE_REFERENCE_BOOK => 'Referenzbuch',
             self::PUBLICATION_TYPE_PAMPHLET => 'Pamphlet',
-            self::PUBLICATION_TYPE_GUIDEBOOKS => 'Sammlungsführer',
         ],
         Language::EN => [
             self::PUBLICATION_TYPE_ARTICLE => 'Article',
@@ -119,11 +119,11 @@ class LiteratureReferencesInflator implements IInflator
             self::PUBLICATION_TYPE_THESIS => 'Thesis',
             self::PUBLICATION_TYPE_UNPUBLISHED_MATERIALS => 'Unpublished materials',
             self::PUBLICATION_TYPE_ANTHOLOGY => 'Essay collection',
+            self::PUBLICATION_TYPE_GUIDEBOOKS => 'Guidebooks',
 
             self::PUBLICATION_TYPE_EXHIBITION_CATALOGS => 'Exhibition catalogues',
             self::PUBLICATION_TYPE_REFERENCE_BOOK => 'Reference book',
             self::PUBLICATION_TYPE_PAMPHLET => 'Pamphlet',
-            self::PUBLICATION_TYPE_GUIDEBOOKS => 'Guidebooks',
         ],
     ];
 
