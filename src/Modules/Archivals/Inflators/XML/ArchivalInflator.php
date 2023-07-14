@@ -7,7 +7,7 @@ use CranachDigitalArchive\Importer\Language;
 use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Dating;
 use CranachDigitalArchive\Importer\Modules\Main\Entities\Publication;
 use CranachDigitalArchive\Importer\Interfaces\Inflators\IInflator;
-use CranachDigitalArchive\Importer\Modules\Archivals\Entities\Archival;
+use CranachDigitalArchive\Importer\Modules\Archivals\Interfaces\IArchival;
 use CranachDigitalArchive\Importer\Modules\Archivals\Entities\ArchivalLanguageCollection;
 
 /**
@@ -31,6 +31,9 @@ class ArchivalInflator implements IInflator
         Language::DE => 'Besitzer',
         Language::EN => 'Repository',
     ];
+
+    private static $isPublishedString = 'CDA Online-Freigabe';
+
 
     private function __construct()
     {
@@ -62,6 +65,7 @@ class ArchivalInflator implements IInflator
         self::inflateScanNames($subNode, $archivalCollection);
         self::inflatePeriod($subNode, $archivalCollection);
         self::inflatePublications($subNode, $archivalCollection);
+        self::inflateIsPublished($subNode, $archivalCollection);
     }
 
 
@@ -533,6 +537,24 @@ class ArchivalInflator implements IInflator
 
         if ($wasInflated) {
             $archivalCollection->addPublication($publication);
+        }
+    }
+
+
+    private static function inflateIsPublished(
+        SimpleXMLElement &$node,
+        ArchivalLanguageCollection $archivalCollection,
+    ): void {
+        $isPublishedElement = self::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="23"]/Field[@FieldName="{@CDA Online-Freigabe}"]/Value',
+        );
+
+        $isPublished = $isPublishedElement !== false && strval($isPublishedElement) === self::$isPublishedString;
+
+        /** @var IArchival */
+        foreach ($archivalCollection as $archival) {
+            $archival->getMetadata()?->setIsPublished($isPublished);
         }
     }
 

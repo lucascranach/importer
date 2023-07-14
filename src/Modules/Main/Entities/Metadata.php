@@ -16,6 +16,7 @@ class Metadata
     public $additionalInfos = [];
     public $classification = '';
     public $imgSrc = '';
+    public $isPublished = false;
 
 
     public function __construct()
@@ -182,5 +183,17 @@ class Metadata
     public function setImgSrc(string $imgSrc)
     {
         $this->imgSrc = $imgSrc;
+    }
+
+
+    public function setIsPublished(bool $isPublished): void
+    {
+        $this->isPublished = $isPublished;
+    }
+
+
+    public function getIsPublished(): bool
+    {
+        return $this->isPublished;
     }
 }

@@ -91,6 +91,8 @@ class GraphicInflator implements IInflator
         '-Nummer',
     ];
 
+    private static $isPublishedString = 'CDA Online-Freigabe';
+
     private static $sortingNumberFallbackValue = '?';
 
     private static $activeLoggingOfWronglyCategorizedReferences = false;
@@ -145,6 +147,7 @@ class GraphicInflator implements IInflator
         self::inflateSortingNumber($subNode, $graphicCollection);
         self::inflateCatalogWorkReference($subNode, $graphicCollection);
         self::inflateStructuredDimension($subNode, $graphicCollection);
+        self::inflateIsPublished($subNode, $graphicCollection);
     }
 
     /* Involved persons */
@@ -1715,6 +1718,23 @@ class GraphicInflator implements IInflator
 
                 $structuredDimension->setWidth($widthNumber);
             }
+        }
+    }
+
+
+    private static function inflateIsPublished(
+        SimpleXMLElement &$node,
+        GraphicLanguageCollection $graphicCollection,
+    ): void {
+        $isPublishedElement = self::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="41"]/Field[@FieldName="{@CDA Online-Freigabe}"]/Value',
+        );
+
+        $isPublished = $isPublishedElement !== false && strval($isPublishedElement) === self::$isPublishedString;
+
+        foreach ($graphicCollection as $graphic) {
+            $graphic->getMetadata()?->setIsPublished($isPublished);
         }
     }
 
