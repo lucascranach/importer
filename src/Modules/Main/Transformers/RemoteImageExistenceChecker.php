@@ -9,6 +9,7 @@ use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\RequestException;
 
 class RemoteImageExistenceChecker extends Hybrid
 {
@@ -232,11 +233,15 @@ class RemoteImageExistenceChecker extends Hybrid
 
     private function getRemoteImageDataResource(string $url): ?array
     {
-        $resp = $this->client->request('GET', $url, [
-            'headers' => [
-                'X-API-KEY' => $this->accessKey,
-            ],
-        ]);
+        try {
+            $resp = $this->client->request('GET', $url, [
+                'headers' => [
+                    'X-API-KEY' => $this->accessKey,
+                ],
+            ]);
+        } catch (RequestException $e) {
+            return null;
+        }
 
         /* @TODO: Check content-type on response */
 
