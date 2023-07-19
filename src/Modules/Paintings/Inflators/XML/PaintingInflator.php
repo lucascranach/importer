@@ -75,6 +75,8 @@ class PaintingInflator implements IInflator
         '/^CDA\./',
     ];
 
+    private static $isPublishedString = 'CDA Online-Freigabe';
+
     private static $sortingNumberFallbackValue = '?';
 
 
@@ -120,6 +122,7 @@ class PaintingInflator implements IInflator
         self::inflateCatalogWorkReference($subNode, $paintingCollection);
         self::inflateStructuredDimension($subNode, $paintingCollection);
         self::inflateIsBestOf($subNode, $paintingCollection);
+        self::inflateIsPublished($subNode, $paintingCollection);
     }
 
 
@@ -1692,9 +1695,31 @@ class PaintingInflator implements IInflator
         SimpleXMLElement &$node,
         PaintingLanguageCollection $paintingCollection,
     ): void {
-        $isBestOf = isset($node->{'Section'}[41]);
+        $isBestOfElement = self::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="41"]',
+        );
+
+        $isBestOf = $isBestOfElement !== false;
 
         $paintingCollection->setIsBestOf($isBestOf);
+    }
+
+
+    private static function inflateIsPublished(
+        SimpleXMLElement &$node,
+        PaintingLanguageCollection $paintingCollection,
+    ): void {
+        $isPublishedElement = self::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="42"]/Field[@FieldName="{@CDA Online-Freigabe}"]/Value',
+        );
+
+        $isPublished = $isPublishedElement !== false && strval($isPublishedElement) === self::$isPublishedString;
+
+        foreach ($paintingCollection as $painting) {
+            $painting->getMetadata()?->setIsPublished($isPublished);
+        }
     }
 
 
