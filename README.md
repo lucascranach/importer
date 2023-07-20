@@ -9,31 +9,41 @@ Da dieses Projekt auf Composer für das Package-Management setzt, muss dies im e
 Dazu sei auf die [Installationsanweisungen](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos) von Composer verwiesen.
 Unter MacOS kann für eine schnelle Installation auch `brew install composer` genutzt werden, sofern `brew` installiert ist.
 
+Ist composer installiert, sollten im nächsten Schritt die Abhängigkeiten installiert werden:
+
+```shell
+composer install
+```
+
+
+
 Aktuell setzt der Importer PHP in Version 8.2 voraus.
+
+
 
 ## Scripts
 Um die Nutzung des Importers (aber auch die Entwicklung) zu vereinfachen, kommt das Projekt mit einige Composer-Scripts:
 
 | Name | Beschreibung |
 | :-- | :-- |
-| lint | Auflistung von Dateien mit Linter-Problemen |
-| lint:fix | Auflistung von Dateien mit Linter-Problemen und automatische Behebung, sofern möglich |
-| analyse | Analyse der  im `src`-Ordner zu findenden PHP-Dateien; der Analyse-Cache wird über folgenden Befehl geleert: `composer run-script analyse -- --clear-cache` |
-| clear:cache | Lösche den Cache-Ordner |
-| **import** | Starten des Import-Vorgangs. Als gelöscht markierte Artefakte **werden übersprungen**; alternativ  `php index.php -x` ausführen |
-| import:keep-deleted | Starten des Import-Vorgangs. Als gelöscht markierte Artefakte **bleiben erhalten**; alternativ  `php index.php` ausführen |
+| `lint` | Auflistung von Dateien mit Linter-Problemen |
+| `lint:fix` | Auflistung von Dateien mit Linter-Problemen und automatische Behebung, sofern möglich |
+| `analyse` | Analyse der  im `src`-Ordner zu findenden PHP-Dateien; der Analyse-Cache wird über folgenden Befehl geleert: `composer run-script analyse -- --clear-cache` |
+| `clear:cache` | Lösche den Cache-Ordner |
+| **`import`** | Starten des Import-Vorgangs. Als gelöscht markierte Artefakte **werden übersprungen**; alternativ  `php index.php -x` ausführen |
+| `import:keep-deleted` | Starten des Import-Vorgangs. Als gelöscht markierte Artefakte **bleiben erhalten**; alternativ  `php index.php` ausführen |
 
 ### Import Parameters
 Das Import-Script unterstützt die Durchgabe einiger weiterer Parameter.
 
 | Parametername | Beschreibung |
 | :-- | :-- |
-| keep-soft-deleted-artefacts | Alle Artefakte behalten, die als 'Soft-Deleted' markiert sind |
-| refresh-remote-all-cache | Den kompletten Remote Cache (Bild- und Dokument-Daten) gezielt auffrischen; aktuell unterstützte Werte: `all`, `paintings`, `graphics` und `archivals`; ist kein Wert gegeben, wird standardmäßig auf `all` zurückgefallen |
-| refresh-remote-images-cache | Den Remote-**Image** Cache gezielt auffrischen; aktuell unterstützte Werte: `all`, `paintings`, `graphics` und `archivals`; ist kein Wert gegeben, wird standardmäßig auf `all` zurückgefallen |
-| refresh-remote-documents-cache | Den Remote-**Document** Cache gezielt auffrischen; unterstützte Werte: `all`, `paintings`, `graphics` und `archivals`; ist kein Wert gegeben, wird standardmäßig auf `all` zurückgefallen |
-| refresh-all-remote-caches | Alle Remote Caches auffrischen |
-| use-export | Spezifischen Export als Basis für den Import verwenden; z. B. `composer run-script import -- --use-export=20230301` |
+| `keep-soft-deleted-artefacts` | Alle Artefakte behalten, die als 'Soft-Deleted' markiert sind |
+| `refresh-remote-all-cache` | Den kompletten Remote Cache (Bild- und Dokument-Daten) gezielt auffrischen; aktuell unterstützte Werte: `all`, `paintings`, `graphics` und `archivals`; ist kein Wert gegeben, wird standardmäßig auf `all` zurückgefallen |
+| `refresh-remote-images-cache` | Den Remote-**Image** Cache gezielt auffrischen; aktuell unterstützte Werte: `all`, `paintings`, `graphics` und `archivals`; ist kein Wert gegeben, wird standardmäßig auf `all` zurückgefallen |
+| `refresh-remote-documents-cache` | Den Remote-**Document** Cache gezielt auffrischen; unterstützte Werte: `all`, `paintings`, `graphics` und `archivals`; ist kein Wert gegeben, wird standardmäßig auf `all` zurückgefallen |
+| `refresh-all-remote-caches` | Alle Remote Caches auffrischen |
+| `use-export` | Spezifischen Export als Basis für den Import verwenden; z. B. `composer run-script import -- --use-export=20230301` |
 
 
 Auf Aufruf mit einem der Paramter würde wie folgt aussehen:
