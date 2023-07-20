@@ -177,6 +177,7 @@ class LiteratureReferencesInflator implements IInflator
         /* we derive the primary source state from the publications (after they are inflated),
             so we only need the literatureReference instances here */
         self::inflatePrimarySource($literatureReferenceCollection);
+        self::inflateIsPublished($subNode, $literatureReferenceCollection);
     }
 
 
@@ -915,6 +916,19 @@ class LiteratureReferencesInflator implements IInflator
         }
 
         $literatureReferenceCollection->setIsPrimarySource($isPrimarySource);
+    }
+
+
+    private static function inflateIsPublished(
+        SimpleXMLElement &$node,
+        LiteratureReferenceLanguageCollection $graphicCollection,
+    ): void {
+        /* all literature references are published by default */
+        $isPublished = true;
+
+        foreach ($graphicCollection as $graphic) {
+            $graphic->getMetadata()?->setIsPublished($isPublished);
+        }
     }
 
 
