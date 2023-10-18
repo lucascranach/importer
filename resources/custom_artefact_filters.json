@@ -573,6 +573,30 @@
                 ]
               },
               {
+                "id": "collection_repository.country.austria.heiligenkreuz",
+                "text": {
+                  "de": "Heiligenkreuz, Stiftsmuseum",
+                  "en": "Heiligenkreuz, Stiftsmuseum"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Stiftsmuseum Heiligenkreuz/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.austria.hall",
+                "text": {
+                  "de": "Hall,Salesianerinnenkloster Thurnfeld",
+                  "en": "Hall,Salesianerinnenkloster Thurnfeld"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/salesianerinnenkloster thurnfeld/i"
+                  }
+                ]
+              },
+              {
                 "id": "collection_repository.country.austria.innsbruck",
                 "text": {
                   "de": "Innsbruck",
@@ -1232,6 +1256,18 @@
                         "collection_repository": "/(königliche bibliothek, [c|k]openhagen|royal library, [c|k]openhagen)/i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.denmark.copenhagen_3",
+                    "text": {
+                      "de": "Nationalmuseet",
+                      "en": "Nationalmuseet"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Nationalmuseet, Denmark/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -1256,18 +1292,6 @@
                 "matchers": [
                   {
                     "collection_repository": "/sønderborg slot, sønderborg/i"
-                  }
-                ]
-              },
-              {
-                "id": "collection_repository.country.denmark.nationalmuseet",
-                "text": {
-                  "de": "Nationalmuseet, Dänemark",
-                  "en": "Nationalmuseet, Denmark"
-                },
-                "matchers": [
-                  {
-                    "collection_repository": "/nationalmuseet, denmark/i"
                   }
                 ]
               }
@@ -1452,6 +1476,18 @@
                   {
                     "id": "collection_repository.country.france.paris.paris_2",
                     "text": {
+                      "de": "Musée des Arts Décoratifs",
+                      "en": "Musée des Arts Décoratifs"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Musée des Arts Décoratifs/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.france.paris.paris_3",
+                    "text": {
                       "de": "Musée du Louvre",
                       "en": "Musée du Louvre"
                     },
@@ -1462,7 +1498,7 @@
                     ]
                   },
                   {
-                    "id": "collection_repository.country.france.paris.paris_3",
+                    "id": "collection_repository.country.france.paris.paris_4",
                     "text": {
                       "de": "Petit Palais, Musée des Beaux-Arts de la Ville des Paris",
                       "en": "Petit Palais, Musée des Beaux-Arts de la Ville des Paris"
@@ -1758,6 +1794,18 @@
                 ]
               },
               {
+                "id": "collection_repository.country.germany.bad_bocklet",
+                "text": {
+                  "de": "Bad Bocklet, Museen Schloss Aschach",
+                  "en": "Bad Bocklet, Museen Schloss Aschach"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Museen Schloss Aschach/i"
+                  }
+                ]
+              },
+              {
                 "id": "collection_repository.country.germany.baden-baden",
                 "text": {
                   "de": "Baden-Baden",
@@ -2018,6 +2066,18 @@
                         "collection_repository": "/kunstsammlungen boettcherstraße, bremen/i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.bremen.bremen_3",
+                    "text": {
+                      "de": "Dommuseum",
+                      "en": "Dommuseum"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Dommuseum Bremen/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2106,6 +2166,18 @@
                     "matchers": [
                       {
                         "collection_repository": "/landesbibliothek coburg/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.coburg.coburg_4",
+                    "text": {
+                      "de": "Schloss Ehrenburg",
+                      "en": "Schloss Ehrenburg"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Schloss Ehrenburg/i"
                       }
                     ]
                   }
@@ -2904,6 +2976,18 @@
                 ]
               },
               {
+                "id": "collection_repository.country.germany.kitzingen",
+                "text": {
+                  "de": "Kitzingen, Städtische Sammlung",
+                  "en": "Kitzingen, Municipal collection"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Stadt Kitzingen/i"
+                  }
+                ]
+              },
+              {
                 "id": "collection_repository.country.germany.kleve",
                 "text": {
                   "de": "Kleve, Museum Kurhaus",
@@ -3105,6 +3189,18 @@
                 ]
               },
               {
+                "id": "collection_repository.country.germany.lunden",
+                "text": {
+                  "de": "Lunden, St. Laurentius Kirche",
+                  "en": "Lunden, St. Laurentius Kirche"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/St. Laurentius Kirche/i"
+                  }
+                ]
+              },
+              {
                 "id": "collection_repository.country.germany.lueneburg",
                 "text": {
                   "de": "Lüneburg, Ostpreußisches Landesmuseum",
@@ -3158,6 +3254,18 @@
                         "collection_repository": "/landesmuseum mainz/i"
                       }
                     ]
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.germany.mansfeld",
+                "text": {
+                  "de": "Mansfeld, Stadtkirche St Georg",
+                  "en": "Mansfeld, Stadtkirche St Georg"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Stadtkirche St Georg/i"
                   }
                 ]
               },
@@ -4332,6 +4440,18 @@
                 ]
               },
               {
+                "id": "collection_repository.country.italy.la_spezia",
+                "text": {
+                  "de": "La Spezia, Museo Civico Amedeo Lia",
+                  "en": "La Spezia, Museo Civico Amedeo Lia"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Museo Civico Amedeo Lia/i"
+                  }
+                ]
+              },
+              {
                 "id": "collection_repository.country.italy.milan",
                 "text": {
                   "de": "Mailand, Museo Poldi Pezzoli",
@@ -4376,6 +4496,18 @@
                   },
                   {
                     "id": "collection_repository.country.italy.rome.rome_2",
+                    "text": {
+                      "de": "Palazzo Venezia",
+                      "en": "Palazzo Venezia"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Palazzo Venezia/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.italy.rome.rome_3",
                     "text": {
                       "de": "Pinacoteca Vaticana",
                       "en": "Pinacoteca Vaticana"
@@ -4436,16 +4568,36 @@
               {
                 "id": "collection_repository.country.japan.tokyo",
                 "text": {
-                  "de": "Tokio, The National Museum of Western Art",
-                  "en": "Tokyo, The National Museum of Western Art"
+                  "de": "Tokio",
+                  "en": "Tokyo"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/the national museum of western art, tokyo/i"
+                    "id": "collection_repository.country.japan.tokyo.tokyo_1",
+                    "text": {
+                      "de": "Fuji Art Museum",
+                      "en": "Fuji Art Museum"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Fuji Art Museum/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.italy.tokyo.tokyo_2",
+                    "text": {
+                      "de": "The National Museum of Western Art",
+                      "en": "The National Museum of Western Art"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/the national museum of western art, tokyo/i"
+                      }
+                    ]
                   }
                 ]
-              }
-            ]
+              }]
           },
           {
             "id": "collection_repository.country.liechtenstein",
@@ -4775,6 +4927,17 @@
                         "collection_repository": "/zamek królewski na wawelu/i"
                       }
                     ]
+                  }]
+              },
+              {
+                "id": "collection_repository.country.poland.niepołomice",
+                "text": {
+                  "de": "Niepołomice, Muzeum Niepołomickie w Zamku Królewskim",
+                  "en": "Niepołomice, Muzeum Niepołomickie w Zamku Królewskim"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Muzeum Niepołomickie w Zamku Królewskim/i"
                   }
                 ]
               },
@@ -5420,6 +5583,27 @@
             ]
           },
           {
+            "id": "collection_repository.country.taiwan",
+            "text": {
+              "de": "Taiwan/China",
+              "en": "Taiwan/China"
+            },
+            "children": [
+              {
+                "id": "collection_repository.country.taiwan.tainan",
+                "text": {
+                  "de": "Tainan, Chimei Museum",
+                  "en": "Tainan, Chimei Museum"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Chimei Museum/i"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "id": "collection_repository.country.america",
             "text": {
               "de": "Vereinigte Staaten von Amerika",
@@ -5600,6 +5784,18 @@
                 "matchers": [
                   {
                     "collection_repository": "/kimbell art museum, fort worth/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.america.gettysburg",
+                "text": {
+                  "de": "Gettysburg, Musselman Library, Gettysburg College",
+                  "en": "Gettysburg, Musselman Library, Gettysburg College"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Gettysburg, Musselman Library, Gettysburg College/i"
                   }
                 ]
               },
@@ -5790,18 +5986,6 @@
                   {
                     "id": "collection_repository.country.america.ny.ny_1",
                     "text": {
-                      "de": "Brooklyn Museum",
-                      "en": "Brooklyn Museum"
-                    },
-                    "matchers": [
-                      {
-                        "collection_repository": "/brooklyn museum, new york/i"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "collection_repository.country.america.ny.ny_2",
-                    "text": {
                       "de": "The Metropolitan Museum",
                       "en": "The Metropolitan Museum"
                     },
@@ -5812,7 +5996,7 @@
                     ]
                   },
                   {
-                    "id": "collection_repository.country.america.ny.ny_3",
+                    "id": "collection_repository.country.america.ny.ny_2",
                     "text": {
                       "de": "The Morgan Library and Museum",
                       "en": "The Morgan Library and Museum"
@@ -5824,7 +6008,7 @@
                     ]
                   },
                   {
-                    "id": "collection_repository.country.america.ny.ny_4",
+                    "id": "collection_repository.country.america.ny.ny_3",
                     "text": {
                       "de": "Syracuse University Art Galleries",
                       "en": "Syracuse University Art Galleries"
