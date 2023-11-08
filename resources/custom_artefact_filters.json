@@ -338,7 +338,7 @@
       {
         "id": "attribution.anonymous_master_from_the_cranach_workshop",
         "text": {
-          "de": "Anonymer Meister der Cranach-Werkstatt",
+          "de": "Anonymer Meister der Cranach-Werkstatt. TEST.",
           "en": "Anonymous Master from the Cranach Workshop"
         },
         "matchers": [
