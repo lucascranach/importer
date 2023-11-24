@@ -77,7 +77,15 @@ class Dating
 
     public function addHistoricEventInformation(HistoricEventInformation $historicEventInformation): void
     {
-        $this->historicEventInformations[] = $historicEventInformation;
+        if($historicEventInformation->editionNumber>0) {
+            $this->historicEventInformations[$historicEventInformation->editionNumber-1]=$historicEventInformation;
+        } else {
+            $this->historicEventInformations[] = $historicEventInformation;
+        }
+        /*        if($historicEventInformation->editionNumber>0) {
+                    usort($this->historicEventInformations, function ($a, $b) {return strcmp($a->editionNumber, $b->editionNumber);});
+                }
+        */
     }
 
 
