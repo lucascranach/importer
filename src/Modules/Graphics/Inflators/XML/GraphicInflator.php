@@ -62,10 +62,34 @@ class GraphicInflator implements IInflator
     ];
 
     private static $historicEventTypesLangMapping = [
-        'datierung' => [Language::DE, 'DATING'],
-        'dating' => [Language::EN, 'DATING'],
-        'auflage' => [Language::DE, 'EDITION'],
-        'edition' => [Language::EN, 'EDITION'],
+        'datierung' => [Language::DE, 'DATING', 0],
+        'dating' => [Language::EN, 'DATING', 0],
+        'auflage' => [Language::DE, 'EDITION', 0],
+        'edition' => [Language::EN, 'EDITION', 0],
+        '1. auflage' => [Language::DE, 'EDITION', 1],
+        '2. auflage' => [Language::DE, 'EDITION', 2],
+        '3. auflage' => [Language::DE, 'EDITION', 3],
+        '4. auflage' => [Language::DE, 'EDITION', 4],
+        '5. auflage' => [Language::DE, 'EDITION', 5],
+        '6. auflage' => [Language::DE, 'EDITION', 6],
+        '7. auflage' => [Language::DE, 'EDITION', 7],
+        '8. auflage' => [Language::DE, 'EDITION', 8],
+        '9. auflage' => [Language::DE, 'EDITION', 9],
+        '10. auflage' => [Language::DE, 'EDITION', 10],
+        '11. auflage' => [Language::DE, 'EDITION', 11],
+        '12. auflage' => [Language::DE, 'EDITION', 12],
+        '1st edition' => [Language::EN, 'EDITION', 1],
+        '2nd edition' => [Language::EN, 'EDITION', 2],
+        '3rd edition' => [Language::EN, 'EDITION', 3],
+        '4th edition' => [Language::EN, 'EDITION', 4],
+        '5th edition' => [Language::EN, 'EDITION', 5],
+        '6th edition' => [Language::EN, 'EDITION', 6],
+        '7th edition' => [Language::EN, 'EDITION', 7],
+        '8th edition' => [Language::EN, 'EDITION', 8],
+        '9th edition' => [Language::EN, 'EDITION', 9],
+        '10th edition' => [Language::EN, 'EDITION', 10],
+        '11th edition' => [Language::EN, 'EDITION', 11],
+        '12th edition' => [Language::EN, 'EDITION', 12],
     ];
 
     private static $historicEventTypeNotEntered = '[not entered]';
@@ -727,6 +751,7 @@ class GraphicInflator implements IInflator
 
             $eventType = strtolower($historicEventInformation->getEventType());
 
+
             if (empty($eventType) || $eventType === self::$historicEventTypeNotEntered) {
                 continue;
             }
@@ -735,6 +760,7 @@ class GraphicInflator implements IInflator
                 $mappedEventType = self::$historicEventTypesLangMapping[$eventType];
 
                 $historicEventInformation->setEventType($mappedEventType[1]);
+                $historicEventInformation->setEditionNumber($mappedEventType[2]);
 
                 switch ($mappedEventType[0]) {
                     case Language::DE:
