@@ -34,6 +34,8 @@ class ArchivalInflator implements IInflator
 
     private static $isPublishedString = 'CDA Online-Freigabe';
 
+    private static $sortingNumberFallbackValue = '?';
+
 
     private function __construct()
     {
@@ -66,6 +68,7 @@ class ArchivalInflator implements IInflator
         self::inflatePeriod($subNode, $archivalCollection);
         self::inflatePublications($subNode, $archivalCollection);
         self::inflateIsPublished($subNode, $archivalCollection);
+        self::inflateSortingNumber($subNode, $archivalCollection);
     }
 
 
@@ -467,6 +470,27 @@ class ArchivalInflator implements IInflator
             $periodStr = trim(strval($periodElement));
 
             $archivalCollection->setPeriod($periodStr);
+            //$archivalCollection->setSortingNumber($periodStr);
+        }
+    }
+
+    /* Sorting number */
+    private static function inflateSortingNumber(
+        SimpleXMLElement $node,
+        ArchivalLanguageCollection $archivalCollection,
+    ): void {
+        $sortingNumberElement = self::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="18"]/Field[@FieldName="{OBJCONTEXT.Period}"]/FormattedValue',
+        );
+        if ($sortingNumberElement) {
+            $sortingNumberStr = trim(strval($sortingNumberElement));
+
+            if (empty($sortingNumberStr)) {
+                $sortingNumberStr = self::$sortingNumberFallbackValue;
+            }
+
+            $archivalCollection->setSortingNumber($sortingNumberStr);
         }
     }
 
