@@ -33,6 +33,7 @@ class Archival extends AbstractImagesItem implements IArchival
     public $period = '';
     public $publications = [];
     public $sortingNumber = '';
+    public $searchSortingNumber='';
 
 
     public function __construct()
@@ -273,6 +274,16 @@ class Archival extends AbstractImagesItem implements IArchival
     }
 
     public function getSortingNumber(): string
+    {
+        return $this->sortingNumber;
+    }
+
+    public function setSearchSortingNumber(string $searchSortingNumber): void
+    {
+        $this->searchSortingNumber = $searchSortingNumber;
+    }
+
+    public function getSearchSortingNumber(): string
     {
         return $this->sortingNumber;
     }

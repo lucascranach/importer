@@ -88,4 +88,8 @@ interface IArchival extends IImagesItem
     public function setSortingNumber(string $sortingNumber): void;
 
     public function getSortingNumber(): string;
+
+    public function setSearchSortingNumber(string $searchSortingNumber): void;
+
+    public function getSearchSortingNumber(): string;
 }

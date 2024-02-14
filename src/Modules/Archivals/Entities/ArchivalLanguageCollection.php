@@ -272,9 +272,20 @@ class ArchivalLanguageCollection extends AbstractItemLanguageCollection implemen
         }
     }
 
-
     public function getSortingNumber(): string
     {
         return $this->first()->getSortingNumber();
+    }
+
+    public function setSearchSortingNumber(string $searchSortingNumber): void
+    {
+        foreach ($this as $archival) {
+            $archival->setSearchSortingNumber($searchSortingNumber);
+        }
+    }
+
+    public function getSearchSortingNumber(): string
+    {
+        return $this->first()->getSearchSortingNumber();
     }
 }
