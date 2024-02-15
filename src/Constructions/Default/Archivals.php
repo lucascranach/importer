@@ -12,6 +12,7 @@ use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsJSONLang
 use CranachDigitalArchive\Importer\Modules\Archivals\Transformers\MapToSearchableArchival;
 use CranachDigitalArchive\Importer\Modules\Archivals\Transformers\MetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Archivals\Transformers\ExtenderWithRepositoryId as SearchableArchivalsExtenderWithRepositoryId;
+use CranachDigitalArchive\Importer\Modules\Archivals\Transformers\ExtenderWithSortingInfo;
 use CranachDigitalArchive\Importer\Modules\Archivals\Exporters\ArchivalsElasticsearchLangExporter as SearchableArchivalsElasticsearchLangExporter;
 
 final class Archivals
@@ -45,7 +46,8 @@ final class Archivals
         $this->loader->pipeline(
             $archivalsRemoteDocumentExistenceChecker,
             $archivalsRemoteImageExistenceChecker,
-            MetadataFiller::new()
+            MetadataFiller::new(),
+            ExtenderWithSortingInfo::new()
                 /* Exporting the archivals as JSON */
                 ->pipeline(ArchivalsJSONLangExporter::withDestinationAt($archivalsOutputFilepath))
                 /* Map Archivals to SearchableArchivals */
