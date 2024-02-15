@@ -1473,5 +1473,20 @@
         "name": "Chung-hua Min-kuo",
         "latitude": "24",
         "longitude": "121"
+    },
+    "7005362": {
+        "name": "La Spezia",
+        "latitude": "44.116667",
+        "longitude": "9.833333"
+    },
+    "7007745": {
+        "name": "Niepołomice",
+        "latitude": "50.0333",
+        "longitude": "20.2167"
+    },
+    "7010786": {
+        "name": "Aix-en-Provence",
+        "latitude": "43.528695",
+        "longitude": "5.448791"
     }
 }

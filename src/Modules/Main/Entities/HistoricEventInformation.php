@@ -9,6 +9,7 @@ namespace CranachDigitalArchive\Importer\Modules\Main\Entities;
 class HistoricEventInformation
 {
     public $eventType = '';
+    public $editionNumber = 0;
     public $text = '';
     public $begin = null;
     public $end = null;
@@ -29,6 +30,17 @@ class HistoricEventInformation
     public function getEventType(): string
     {
         return $this->eventType;
+    }
+
+    public function setEditionNumber(int $editionNumber): void
+    {
+        $this->editionNumber = $editionNumber;
+    }
+
+
+    public function getEditionNumber(): string
+    {
+        return $this->editionNumber;
     }
 
 
