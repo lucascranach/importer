@@ -1488,5 +1488,10 @@
         "name": "Aix-en-Provence",
         "latitude": "43.528695",
         "longitude": "5.448791"
+    },
+    "1100363": {
+        "name": "Versailles, Château de",
+        "latitude": "48.8",
+        "longitude": "2.1167"
     }
 }
