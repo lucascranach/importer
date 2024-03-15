@@ -319,10 +319,14 @@ class RemoteImageExistenceChecker extends Hybrid
 
         $destinationTypeStructure = [
             'infos' => [
-                'maxDimensions' => [ 'width' => 0, 'height' => 0 ],
+                'maxDimensions' => [ 'width' => 0, 'height' => 0 ]
             ],
             'images' => [],
         ];
+
+        if($imageType === 'overall') {
+            $destinationTypeStructure['infos']['hasOverallOverview'] = isset($imageTypeValue['hasOverallOverview']) ? $imageTypeValue['hasOverallOverview'] : false;
+        }
 
         if (is_null($imageTypeValue['images'])) {
             throw new Error(
@@ -335,6 +339,7 @@ class RemoteImageExistenceChecker extends Hybrid
             'width' => isset($imageTypeValue['maxDimensions']['width']) ? intval($imageTypeValue['maxDimensions']['width']) : 0,
             'height' => isset($imageTypeValue['maxDimensions']['height']) ? intval($imageTypeValue['maxDimensions']['height']) : 0,
         ];
+
 
         foreach ($images as $image) {
             $destinationTypeStructure['images'][] = [
