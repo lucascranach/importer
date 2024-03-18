@@ -44,6 +44,10 @@ interface IGraphic extends IImagesItem, ILocations
 
     public function getConditionLevel(): int;
 
+    public function setEditionNumber(int $editionNumber): void;
+
+    public function getEditionNumber(): int;
+
     public function setObjectName(string $objectName): void;
 
     public function getObjectName(): string;

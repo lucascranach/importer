@@ -123,6 +123,17 @@ class GraphicLanguageCollection extends AbstractItemLanguageCollection implement
         return $this->first()->getConditionLevel();
     }
 
+    public function setEditionNumber(int $editionNumber): void
+    {
+        foreach ($this as $graphic) {
+            $graphic->setEditionNumber($editionNumber);
+        }
+    }
+
+    public function getEditionNumber(): int
+    {
+        return $this->first()->getEditionNumber();
+    }
 
     public function setObjectName(string $objectName): void
     {
