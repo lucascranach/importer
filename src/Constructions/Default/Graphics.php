@@ -16,6 +16,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsJSONLangEx
 use CranachDigitalArchive\Importer\Modules\Graphics\Loaders\XML\GraphicsLoader;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithIds;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ConditionDeterminer;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\EditionDeterminer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\MetadataFiller;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithLocations;
@@ -77,6 +78,7 @@ final class Graphics
             $graphicsRemoteImageExistenceChecker,
             ExtenderWithIds::new($memoryFilters->getArtefactMemoryExporter()),
             ConditionDeterminer::new(),
+            EditionDeterminer::new(),
             ExtenderWithRestorations::new($graphicssRestoration->getMemoryExporter()),
             MetadataFiller::new(),
             ExtenderWithLocations::new($this->graphicsLocationsCollector, true),

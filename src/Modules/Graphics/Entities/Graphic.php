@@ -40,6 +40,7 @@ class Graphic extends AbstractImagesItem implements IGraphic
     public $titles = [];
     public $classification = null;
     public $conditionLevel = 0;
+    public $editionNumber = 0;
     public $objectName = '';
     public $inventoryNumberPrefix = '';
     public $inventoryNumber = '';
@@ -149,6 +150,16 @@ class Graphic extends AbstractImagesItem implements IGraphic
     public function getConditionLevel(): int
     {
         return $this->conditionLevel;
+    }
+
+    public function setEditionNumber(int $editionNumber): void
+    {
+        $this->editionNumber = $editionNumber;
+    }
+
+    public function getEditionNumber(): int
+    {
+        return $this->editionNumber;
     }
 
     public function setObjectName(string $objectName): void
