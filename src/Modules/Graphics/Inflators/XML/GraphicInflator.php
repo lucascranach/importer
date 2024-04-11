@@ -96,7 +96,7 @@ class GraphicInflator implements IInflator
 
     private static $referenceTypeValues = [
         'reprint' => 'Abzug A',
-        'relatedWork' => 'Teil eines Werkes',
+        'relatedWork' => 'Teil einer Serie'
     ];
 
     private static $translations = [
@@ -1099,6 +1099,7 @@ class GraphicInflator implements IInflator
                 return $reference->getText() === self::$referenceTypeValues['relatedWork'];
             }),
         );
+
 
         $graphicCollection->setReprintReferences($filteredReprintReferences);
 
