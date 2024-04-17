@@ -344,7 +344,7 @@
         "matchers": [
           {
             "name": {
-              "de": "/Anonymer Meister der Cranach-Werkstatt/i",
+              "de": "Unbekannter Meister der Cranach-Werkstatt",
               "en": "/Anonymous Master from the Cranach Workshop/i"
             }
           }
