@@ -124,6 +124,18 @@ interface IGraphic extends IImagesItem, ILocations
 
     public function getRelatedWorkReferences(): array;
 
+    public function addSameSheetReference(ObjectReference $reference): void;
+
+    public function setSameSheetReferences(array $references): void;
+
+    public function getSameSheetReferences(): array;
+
+    public function addWatermarkReference(ObjectReference $reference): void;
+
+    public function setWatermarkReferences(array $references): void;
+
+    public function getWatermarkReferences(): array;
+
     public function addAdditionalTextInformation(AdditionalTextInformation $additionalTextInformation): void;
 
     public function getAdditionalTextInformations(): array;
