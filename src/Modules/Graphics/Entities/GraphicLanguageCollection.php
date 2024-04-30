@@ -403,6 +403,50 @@ class GraphicLanguageCollection extends AbstractItemLanguageCollection implement
     }
 
 
+    public function addSameSheetReference(ObjectReference $reference): void
+    {
+        foreach ($this as $graphic) {
+            $graphic->addSameSheetReference($reference);
+        }
+    }
+
+
+    public function setSameSheetReferences(array $references): void
+    {
+        foreach ($this as $graphic) {
+            $graphic->setSameSheetReferences($references);
+        }
+    }
+
+
+    public function getSameSheetReferences(): array
+    {
+        return $this->first()->getSameSheetReferences();
+    }
+
+
+    public function addWatermarkReference(ObjectReference $reference): void
+    {
+        foreach ($this as $graphic) {
+            $graphic->addWatermarkReference($reference);
+        }
+    }
+
+
+    public function setWatermarkReferences(array $references): void
+    {
+        foreach ($this as $graphic) {
+            $graphic->setWatermarkReferences($references);
+        }
+    }
+
+
+    public function getWatermarkReferences(): array
+    {
+        return $this->first()->getWatermarkReferences();
+    }
+
+
     public function addAdditionalTextInformation(AdditionalTextInformation $additionalTextInformation): void
     {
         foreach ($this as $graphic) {

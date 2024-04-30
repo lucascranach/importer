@@ -60,6 +60,8 @@ class Graphic extends AbstractImagesItem implements IGraphic
     public $references = [
         'reprints' => [],
         'relatedWorks' => [],
+        'sameSheet' => [],
+        'watermark' => []
     ];
     public $additionalTextInformation = [];
     public $publications = [];
@@ -361,6 +363,36 @@ class Graphic extends AbstractImagesItem implements IGraphic
     public function getRelatedWorkReferences(): array
     {
         return $this->references['relatedWorks'];
+    }
+
+    public function addSameSheetReference(ObjectReference $reference): void
+    {
+        $this->references['sameSheet'][] = $reference;
+    }
+
+    public function setSameSheetReferences(array $references): void
+    {
+        $this->references['sameSheet'] = $references;
+    }
+
+    public function getSameSheetReferences(): array
+    {
+        return $this->references['samesheet'];
+    }
+
+    public function addWatermarkReference(ObjectReference $reference): void
+    {
+        $this->references['watermark'][] = $reference;
+    }
+
+    public function setWatermarkReferences(array $references): void
+    {
+        $this->references['watermark'] = $references;
+    }
+
+    public function getWatermarkReferences(): array
+    {
+        return $this->references['watermark'];
     }
 
     public function addAdditionalTextInformation(AdditionalTextInformation $additionalTextInformation): void
