@@ -176,7 +176,7 @@
             ]
           },
           {
-            "id": "attribution.named_masters_from_the_cranach_workshop.master_h_b__with_a_griffin_s_head",
+            "id": "attribution.named_masters_from_the_cranach_workshop.master_h_b_with_a_griffin_s_head",
             "text": {
               "de": "Meister H.B. mit dem Greifenkopf",
               "en": "Master H.B. with a griffin's head"
@@ -5146,7 +5146,7 @@
                   {
                     "id": "collection_repository.country.poland.warsaw.warsaw_4",
                     "text": {
-                      "de": "Museumsdes Königlichen Schlosses",
+                      "de": "Museums des Königlichen Schlosses",
                       "en": "Museum of the Royal Castle"
                     },
                     "matchers": [
