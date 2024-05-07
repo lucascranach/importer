@@ -3641,8 +3641,8 @@
               {
                 "id": "collection_repository.country.germany.penig",
                 "text": {
-                  "de": "Kirche Unser Lieben Frauen Auf Dem Berge, Penig",
-                  "en": "Kirche Unser Lieben Frauen Auf Dem Berge, Penig"
+                  "de": "Penig, Kirche Unser Lieben Frauen Auf Dem Berge",
+                  "en": "Penig, Kirche Unser Lieben Frauen Auf Dem Berge"
                 },
                 "matchers": [
                   {
@@ -3653,8 +3653,8 @@
               {
                 "id": "collection_repository.country.germany.pulsnitz",
                 "text": {
-                  "de": "Ev.-Luth. Kirchgemeinde St. Nicolai, Pulsnitz",
-                  "en": "Ev.-Luth. Kirchgemeinde St. Nicolai, Pulsnitz"
+                  "de": "Pulsnitz, Ev.-Luth. Kirchgemeinde St. Nicolai",
+                  "en": "Pulsnitz, Ev.-Luth. Kirchgemeinde St. Nicolai"
                 },
                 "matchers": [
                   {
@@ -3953,8 +3953,8 @@
               {
                 "id": "collection_repository.country.germany.bad_windsheim",
                 "text": {
-                  "de": "Stadtarchiv und historische Stadtbibliothek Bad Windsheim",
-                  "en": "Stadtarchiv und historische Stadtbibliothek Bad Windsheim"
+                  "de": "Bad Windsheim, Stadtarchiv und historische Stadtbibliothek",
+                  "en": "Bad Windsheim, Stadtarchiv und historische Stadtbibliothek"
                 },
                 "matchers": [
                   {
