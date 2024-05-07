@@ -116,6 +116,21 @@
             ]
           },
           {
+            "id": "attribution.named_masters_from_the_cranach_workshop.franz_timmermann",
+            "text": {
+              "de": "Franz Timmermann",
+              "en": "Franz Timmermann"
+            },
+            "matchers": [
+              {
+                "name": {
+                  "de": "/Franz Timmermann/i",
+                  "en": "/Franz Timmermann/i"
+                }
+              }
+            ]
+          },
+          {
             "id": "attribution.named_masters_from_the_cranach_workshop.hans_kemmer",
             "text": {
               "de": "Hans Kemmer",
@@ -169,8 +184,8 @@
             "matchers": [
               {
                 "name": {
-                  "de": "/Meister H\\.B\\. mit dem Greifenkopf/i",
-                  "en": "/Master H\\.B\\. with a griffin's head/i"
+                  "de": "/Meister HB (mit dem Greifenkopf)/i",
+                  "en": "/Master HB (with a griffin's head)/i"
                 }
               }
             ]
@@ -186,6 +201,21 @@
                 "name": {
                   "de": "/Meister I\\.S\\./i",
                   "en": "/Master I\\.S\\./i"
+                }
+              }
+            ]
+          },
+          {
+            "id": "attribution.named_masters_from_the_cranach_workshop.master_h_s_",
+            "text": {
+              "de": "Monogrammist H.S.",
+              "en": "Monogrammist H.S."
+            },
+            "matchers": [
+              {
+                "name": {
+                  "de": "/Monogrammist HS/i",
+                  "en": "/Monogrammist HS/i"
                 }
               }
             ]
@@ -344,7 +374,7 @@
         "matchers": [
           {
             "name": {
-              "de": "Unbekannter Meister der Cranach-Werkstatt",
+              "de": "/Unbekannter Meister der Cranach-Werkstatt/i",
               "en": "/Anonymous Master from the Cranach Workshop/i"
             }
           }
@@ -765,6 +795,18 @@
                     "matchers": [
                       {
                         "collection_repository": "/Österreichische nationalbibliothek, (vienna|wien)/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.austria.vienna.vienna_7",
+                    "text": {
+                      "de": "Kapuzinerkloster",
+                      "en": "Kapuzinerkloster"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Kapuzinerkloster Wien/i"
                       }
                     ]
                   }
@@ -1359,6 +1401,18 @@
             },
             "children": [
               {
+                "id": "collection_repository.country.france.aix-en-provence",
+                "text": {
+                  "de": "Aix-en-Provence, Musée Granet",
+                  "en": "Aix-en-Provence, Musée Granet"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Musée Granet, Aix-en-Provence/i"
+                  }
+                ]
+              },
+              {
                 "id": "collection_repository.country.france.besancon",
                 "text": {
                   "de": "Besançon, Musée des Beaux-Arts et d'Archéologie",
@@ -1565,6 +1619,18 @@
                         "collection_repository": "/cabinet des estampes et dessins/i"
                       }
                     ]
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.france.versaille",
+                "text": {
+                  "de": "Versailles, Châteaux de Versailles",
+                  "en": "Versailles, Châteaux de Versailles"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Château de Versailles/i"
                   }
                 ]
               }
@@ -2513,6 +2579,18 @@
                         "collection_repository": "/philosophisch-theologische hochschule sankt georgen, frankfurt a. m./i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.frankfurt_3",
+                    "text": {
+                      "de": "Historisches Museum",
+                      "en": "Historisches Museum"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Historisches Museum Frankfurt a.M./i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -3266,6 +3344,18 @@
                 "matchers": [
                   {
                     "collection_repository": "/Stadtkirche St Georg/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.germany.marburg",
+                "text": {
+                  "de": "Marburg, Kunstmuseum",
+                  "en": "Marburg, Kunstmuseum"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Kunstmuseum Marburg/i"
                   }
                 ]
               },
@@ -4430,12 +4520,45 @@
               {
                 "id": "collection_repository.country.italy.florence",
                 "text": {
-                  "de": "Florenz, Uffizien",
-                  "en": "Florence, Uffizi Gallery"
+                  "de": "Florenz",
+                  "en": "Florence"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/galleria uffizi, firenze/i"
+                    "id": "collection_repository.country.italy.florence_1",
+                    "text": {
+                      "de": "Uffizien",
+                      "en": "Uffizi Gallery"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/galleria uffizi, firenze/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.italy.florence.florence_2",
+                    "text": {
+                      "de": "Museo Bardini",
+                      "en": "Museo Bardini"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Museo Bardini/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.italy.florence.florence_3",
+                    "text": {
+                      "de": "Palazzo Pitti",
+                      "en": "Palazzo Pitti"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Palazzo Pitti, Firenze/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -5017,6 +5140,18 @@
                     "matchers": [
                       {
                         "collection_repository": "/muzeum palacu króla jana iii w wilanowie/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.poland.warsaw.warsaw_4",
+                    "text": {
+                      "de": "Museumsdes Königlichen Schlosses",
+                      "en": "Museum of the Royal Castle"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Zamek Królewski w Warszawie, Muzeum/i"
                       }
                     ]
                   }
