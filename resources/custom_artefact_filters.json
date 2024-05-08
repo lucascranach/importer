@@ -184,8 +184,8 @@
             "matchers": [
               {
                 "name": {
-                  "de": "/Meister HB (mit dem Greifenkopf)/i",
-                  "en": "/Master HB (with a griffin's head)/i"
+                  "de": "/Meister HB \\(mit dem Greifenkopf\\)/i",
+                  "en": "/Master HB \\(with a griffin's head\\)/i"
                 }
               }
             ]
