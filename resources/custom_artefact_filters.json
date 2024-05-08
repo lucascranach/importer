@@ -116,6 +116,21 @@
             ]
           },
           {
+            "id": "attribution.named_masters_from_the_cranach_workshop.franz_timmermann",
+            "text": {
+              "de": "Franz Timmermann",
+              "en": "Franz Timmermann"
+            },
+            "matchers": [
+              {
+                "name": {
+                  "de": "/Franz Timmermann/i",
+                  "en": "/Franz Timmermann/i"
+                }
+              }
+            ]
+          },
+          {
             "id": "attribution.named_masters_from_the_cranach_workshop.hans_kemmer",
             "text": {
               "de": "Hans Kemmer",
@@ -161,7 +176,7 @@
             ]
           },
           {
-            "id": "attribution.named_masters_from_the_cranach_workshop.master_h_b__with_a_griffin_s_head",
+            "id": "attribution.named_masters_from_the_cranach_workshop.master_h_b_with_a_griffin_s_head",
             "text": {
               "de": "Meister H.B. mit dem Greifenkopf",
               "en": "Master H.B. with a griffin's head"
@@ -169,8 +184,8 @@
             "matchers": [
               {
                 "name": {
-                  "de": "/Meister H\\.B\\. mit dem Greifenkopf/i",
-                  "en": "/Master H\\.B\\. with a griffin's head/i"
+                  "de": "/Meister HB (mit dem Greifenkopf)/i",
+                  "en": "/Master HB (with a griffin's head)/i"
                 }
               }
             ]
@@ -186,6 +201,21 @@
                 "name": {
                   "de": "/Meister I\\.S\\./i",
                   "en": "/Master I\\.S\\./i"
+                }
+              }
+            ]
+          },
+          {
+            "id": "attribution.named_masters_from_the_cranach_workshop.master_h_s_",
+            "text": {
+              "de": "Monogrammist H.S.",
+              "en": "Monogrammist H.S."
+            },
+            "matchers": [
+              {
+                "name": {
+                  "de": "/Monogrammist HS/i",
+                  "en": "/Monogrammist HS/i"
                 }
               }
             ]
@@ -344,7 +374,7 @@
         "matchers": [
           {
             "name": {
-              "de": "Unbekannter Meister der Cranach-Werkstatt",
+              "de": "/Unbekannter Meister der Cranach-Werkstatt/i",
               "en": "/Anonymous Master from the Cranach Workshop/i"
             }
           }
@@ -765,6 +795,18 @@
                     "matchers": [
                       {
                         "collection_repository": "/Österreichische nationalbibliothek, (vienna|wien)/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.austria.vienna.vienna_7",
+                    "text": {
+                      "de": "Kapuzinerkloster",
+                      "en": "Kapuzinerkloster"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Kapuzinerkloster Wien/i"
                       }
                     ]
                   }
@@ -1359,6 +1401,18 @@
             },
             "children": [
               {
+                "id": "collection_repository.country.france.aix-en-provence",
+                "text": {
+                  "de": "Aix-en-Provence, Musée Granet",
+                  "en": "Aix-en-Provence, Musée Granet"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Musée Granet, Aix-en-Provence/i"
+                  }
+                ]
+              },
+              {
                 "id": "collection_repository.country.france.besancon",
                 "text": {
                   "de": "Besançon, Musée des Beaux-Arts et d'Archéologie",
@@ -1567,6 +1621,18 @@
                     ]
                   }
                 ]
+              },
+              {
+                "id": "collection_repository.country.france.versaille",
+                "text": {
+                  "de": "Versailles, Châteaux de Versailles",
+                  "en": "Versailles, Châteaux de Versailles"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Château de Versailles/i"
+                  }
+                ]
               }
             ]
           },
@@ -1689,7 +1755,7 @@
                   {
                     "id": "collection_repository.country.germany.aschaffenburg.aschaffenburg_3",
                     "text": {
-                      "de": "Stiftspfarrei St. Peter und Alexander, Aschaffenburg",
+                      "de": "Stiftspfarrei St. Peter und Alexander",
                       "en": "Stiftspfarrei St. Peter und Alexander"
                     },
                     "matchers": [
@@ -1734,8 +1800,8 @@
                   {
                     "id": "collection_repository.country.germany.augsburg.augsburg_2",
                     "text": {
-                      "de": "Kunstsammlungen und Museen der Stadt Augsburg",
-                      "en": "Kunstsammlungen und Museen der Stadt Augsburg"
+                      "de": "Kunstsammlungen und Museen der Stadt",
+                      "en": "Kunstsammlungen und Museen der Stadt"
                     },
                     "matchers": [
                       {
@@ -1758,8 +1824,8 @@
                   {
                     "id": "collection_repository.country.germany.augsburg.augsburg_4",
                     "text": {
-                      "de": "Staatsgalerie Augsburg, Katharinenkirche",
-                      "en": "Staatsgalerie Augsburg, Katharinenkirche"
+                      "de": "Staatsgalerie, Katharinenkirche",
+                      "en": "Staatsgalerie, Katharinenkirche"
                     },
                     "matchers": [
                       {
@@ -2403,8 +2469,8 @@
                   {
                     "id": "collection_repository.country.germany.eichstaett_2",
                     "text": {
-                      "de": "Eichstätt, Universitätsbibliothek Eichstätt-Ingolstadt",
-                      "en": "Eichstätt, Universitätsbibliothek Eichstätt-Ingolstadt"
+                      "de": "Universitätsbibliothek Eichstätt-Ingolstadt",
+                      "en": "Universitätsbibliothek Eichstätt-Ingolstadt"
                     },
                     "matchers": [
                       {
@@ -2468,26 +2534,14 @@
                         "collection_repository": "/dom st\\. marien, erfurt/i"
                       }
                     ]
-                  },
-                  {
-                    "id": "collection_repository.country.germany.erfurt.erfurt_3",
-                    "text": {
-                      "de": "Forschungsbibliothek der Universität Erfurt",
-                      "en": "Forschungsbibliothek der Universität Erfurt"
-                    },
-                    "matchers": [
-                      {
-                        "collection_repository": "/forschungsbibliothek gotha der universität erfurt/i"
-                      }
-                    ]
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.germany.frankfurt",
                 "text": {
-                  "de": "Frankfurt a.M.",
-                  "en": "Frankfurt a.M."
+                  "de": "Frankfurt a. M.",
+                  "en": "Frankfurt a. M."
                 },
                 "children": [
                   {
@@ -2511,6 +2565,18 @@
                     "matchers": [
                       {
                         "collection_repository": "/philosophisch-theologische hochschule sankt georgen, frankfurt a. m./i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.frankfurt_3",
+                    "text": {
+                      "de": "Historisches Museum",
+                      "en": "Historisches Museum"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Historisches Museum Frankfurt a.M./i"
                       }
                     ]
                   }
@@ -2584,7 +2650,7 @@
                 },
                 "children": [
                   {
-                    "id": "collection_repository.country.germany.goerlitz_1",
+                    "id": "collection_repository.country.germany.goerlitz.goerlitz_1",
                     "text": {
                       "de": "Kulturhistorisches Museum Görlitzer, Kunstsammlung",
                       "en": "Kulturhistorisches Museum Görlitzer, Kunstsammlung"
@@ -2596,7 +2662,7 @@
                     ]
                   },
                   {
-                    "id": "collection_repository.country.germany.goerlitz_2",
+                    "id": "collection_repository.country.germany.goerlitz.goerlitz_2",
                     "text": {
                       "de": "Oberlausitzische Bibliothek der Wissenschaften bei den Städtischen Sammlungen für Geschichte und Kultur",
                       "en": "Oberlausitzische Bibliothek der Wissenschaften bei den Städtischen Sammlungen für Geschichte und Kultur"
@@ -2612,12 +2678,33 @@
               {
                 "id": "collection_repository.country.germany.gotha",
                 "text": {
-                  "de": "Gotha, Stiftung Schloss Friedenstein",
-                  "en": "Gotha, Stiftung Schloss Friedenstein"
+                  "de": "Gotha",
+                  "en": "Gotha"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/stiftung schloss friedenstein, gotha/i"
+                    "id": "collection_repository.country.germany.gotha.gotha_1",
+                    "text": {
+                      "de": "Stiftung Schloss Friedenstein",
+                      "en": "Stiftung Schloss Friedenstein"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/stiftung schloss friedenstein, gotha/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.gotha.gotha_2",
+                    "text": {
+                      "de": "Forschungsbibliothek Gotha der Universität Erfurt",
+                      "en": "Forschungsbibliothek Gotha der Universität Erfurt"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/forschungsbibliothek gotha der universität erfurt/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2736,12 +2823,12 @@
                   {
                     "id": "collection_repository.country.germany.hamburg.hamburg_1",
                     "text": {
-                      "de": "Ev.-Luth. Kirchengemeinde Niendorf",
-                      "en": "Ev.-Luth. Kirchengemeinde Niendorf"
+                      "de": "Ev.-Luth. Kirchengemeinde Nienstedten",
+                      "en": "Ev.-Luth. Kirchengemeinde Nienstedten"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/ev\\.-luth\\. kirchengemeinde niendorf, hamburg/i"
+                        "collection_repository": "/Ev.-Luth. Kirchengemeinde Nienstedten, Hamburg/i"
                       }
                     ]
                   },
@@ -3270,6 +3357,18 @@
                 ]
               },
               {
+                "id": "collection_repository.country.germany.marburg",
+                "text": {
+                  "de": "Marburg, Kunstmuseum",
+                  "en": "Marburg, Kunstmuseum"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Kunstmuseum Marburg/i"
+                  }
+                ]
+              },
+              {
                 "id": "collection_repository.country.germany.meissen",
                 "text": {
                   "de": "Meissen",
@@ -3347,18 +3446,6 @@
                   },
                   {
                     "id": "collection_repository.country.germany.munich.munich_2",
-                    "text": {
-                      "de": "Bayerisches Nationalmuseum",
-                      "en": "Bayerisches Nationalmuseum"
-                    },
-                    "matchers": [
-                      {
-                        "collection_repository": "/bayerisches nationalmuseum/i"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "collection_repository.country.germany.munich.munich_3",
                     "text": {
                       "de": "Staatliche Graphische Sammlung München",
                       "en": "Staatliche Graphische Sammlung München"
@@ -3551,8 +3638,8 @@
               {
                 "id": "collection_repository.country.germany.penig",
                 "text": {
-                  "de": "Kirche Unser Lieben Frauen Auf Dem Berge, Penig",
-                  "en": "Kirche Unser Lieben Frauen Auf Dem Berge, Penig"
+                  "de": "Penig, Kirche Unser Lieben Frauen Auf Dem Berge",
+                  "en": "Penig, Kirche Unser Lieben Frauen Auf Dem Berge"
                 },
                 "matchers": [
                   {
@@ -3563,8 +3650,8 @@
               {
                 "id": "collection_repository.country.germany.pulsnitz",
                 "text": {
-                  "de": "Ev.-Luth. Kirchgemeinde St. Nicolai, Pulsnitz",
-                  "en": "Ev.-Luth. Kirchgemeinde St. Nicolai, Pulsnitz"
+                  "de": "Pulsnitz, Ev.-Luth. Kirchgemeinde St. Nicolai",
+                  "en": "Pulsnitz, Ev.-Luth. Kirchgemeinde St. Nicolai"
                 },
                 "matchers": [
                   {
@@ -3863,8 +3950,8 @@
               {
                 "id": "collection_repository.country.germany.bad_windsheim",
                 "text": {
-                  "de": "Stadtarchiv und historische Stadtbibliothek Bad Windsheim",
-                  "en": "Stadtarchiv und historische Stadtbibliothek Bad Windsheim"
+                  "de": "Bad Windsheim, Stadtarchiv und historische Stadtbibliothek",
+                  "en": "Bad Windsheim, Stadtarchiv und historische Stadtbibliothek"
                 },
                 "matchers": [
                   {
@@ -4430,12 +4517,45 @@
               {
                 "id": "collection_repository.country.italy.florence",
                 "text": {
-                  "de": "Florenz, Uffizien",
-                  "en": "Florence, Uffizi Gallery"
+                  "de": "Florenz",
+                  "en": "Florence"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/galleria uffizi, firenze/i"
+                    "id": "collection_repository.country.italy.florence_1",
+                    "text": {
+                      "de": "Uffizien",
+                      "en": "Uffizi Gallery"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/galleria uffizi, firenze/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.italy.florence.florence_2",
+                    "text": {
+                      "de": "Museo Bardini",
+                      "en": "Museo Bardini"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Museo Bardini/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.italy.florence.florence_3",
+                    "text": {
+                      "de": "Palazzo Pitti",
+                      "en": "Palazzo Pitti"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Palazzo Pitti, Firenze/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -5019,6 +5139,18 @@
                         "collection_repository": "/muzeum palacu króla jana iii w wilanowie/i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.poland.warsaw.warsaw_4",
+                    "text": {
+                      "de": "Museums des Königlichen Schlosses",
+                      "en": "Museum of the Royal Castle"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Zamek Królewski w Warszawie, Muzeum/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -5166,7 +5298,7 @@
               {
                 "id": "collection_repository.country.russia.st_petersburg",
                 "text": {
-                  "de": "St Petersburg, Staatliche Eremitage",
+                  "de": "St. Petersburg, Staatliche Eremitage",
                   "en": "St. Petersburg, State Hermitage"
                 },
                 "matchers": [
@@ -5795,7 +5927,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/Gettysburg, Musselman Library, Gettysburg College/i"
+                    "collection_repository": "/Musselman Library, Gettysburg College, Pennsylvania, United States of America/i"
                   }
                 ]
               },
