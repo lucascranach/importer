@@ -1755,7 +1755,7 @@
                   {
                     "id": "collection_repository.country.germany.aschaffenburg.aschaffenburg_3",
                     "text": {
-                      "de": "Stiftspfarrei St. Peter und Alexander, Aschaffenburg",
+                      "de": "Stiftspfarrei St. Peter und Alexander",
                       "en": "Stiftspfarrei St. Peter und Alexander"
                     },
                     "matchers": [
@@ -1800,8 +1800,8 @@
                   {
                     "id": "collection_repository.country.germany.augsburg.augsburg_2",
                     "text": {
-                      "de": "Kunstsammlungen und Museen der Stadt Augsburg",
-                      "en": "Kunstsammlungen und Museen der Stadt Augsburg"
+                      "de": "Kunstsammlungen und Museen der Stadt",
+                      "en": "Kunstsammlungen und Museen der Stadt"
                     },
                     "matchers": [
                       {
@@ -1824,8 +1824,8 @@
                   {
                     "id": "collection_repository.country.germany.augsburg.augsburg_4",
                     "text": {
-                      "de": "Staatsgalerie Augsburg, Katharinenkirche",
-                      "en": "Staatsgalerie Augsburg, Katharinenkirche"
+                      "de": "Staatsgalerie, Katharinenkirche",
+                      "en": "Staatsgalerie, Katharinenkirche"
                     },
                     "matchers": [
                       {
@@ -2469,8 +2469,8 @@
                   {
                     "id": "collection_repository.country.germany.eichstaett_2",
                     "text": {
-                      "de": "Eichstätt, Universitätsbibliothek Eichstätt-Ingolstadt",
-                      "en": "Eichstätt, Universitätsbibliothek Eichstätt-Ingolstadt"
+                      "de": "Universitätsbibliothek Eichstätt-Ingolstadt",
+                      "en": "Universitätsbibliothek Eichstätt-Ingolstadt"
                     },
                     "matchers": [
                       {
@@ -2534,26 +2534,14 @@
                         "collection_repository": "/dom st\\. marien, erfurt/i"
                       }
                     ]
-                  },
-                  {
-                    "id": "collection_repository.country.germany.erfurt.erfurt_3",
-                    "text": {
-                      "de": "Forschungsbibliothek der Universität Erfurt",
-                      "en": "Forschungsbibliothek der Universität Erfurt"
-                    },
-                    "matchers": [
-                      {
-                        "collection_repository": "/forschungsbibliothek gotha der universität erfurt/i"
-                      }
-                    ]
                   }
                 ]
               },
               {
                 "id": "collection_repository.country.germany.frankfurt",
                 "text": {
-                  "de": "Frankfurt a.M.",
-                  "en": "Frankfurt a.M."
+                  "de": "Frankfurt a. M.",
+                  "en": "Frankfurt a. M."
                 },
                 "children": [
                   {
@@ -2662,7 +2650,7 @@
                 },
                 "children": [
                   {
-                    "id": "collection_repository.country.germany.goerlitz_1",
+                    "id": "collection_repository.country.germany.goerlitz.goerlitz_1",
                     "text": {
                       "de": "Kulturhistorisches Museum Görlitzer, Kunstsammlung",
                       "en": "Kulturhistorisches Museum Görlitzer, Kunstsammlung"
@@ -2674,7 +2662,7 @@
                     ]
                   },
                   {
-                    "id": "collection_repository.country.germany.goerlitz_2",
+                    "id": "collection_repository.country.germany.goerlitz.goerlitz_2",
                     "text": {
                       "de": "Oberlausitzische Bibliothek der Wissenschaften bei den Städtischen Sammlungen für Geschichte und Kultur",
                       "en": "Oberlausitzische Bibliothek der Wissenschaften bei den Städtischen Sammlungen für Geschichte und Kultur"
@@ -2690,12 +2678,33 @@
               {
                 "id": "collection_repository.country.germany.gotha",
                 "text": {
-                  "de": "Gotha, Stiftung Schloss Friedenstein",
-                  "en": "Gotha, Stiftung Schloss Friedenstein"
+                  "de": "Gotha",
+                  "en": "Gotha"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/stiftung schloss friedenstein, gotha/i"
+                    "id": "collection_repository.country.germany.gotha.gotha_1",
+                    "text": {
+                      "de": "Stiftung Schloss Friedenstein",
+                      "en": "Stiftung Schloss Friedenstein"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/stiftung schloss friedenstein, gotha/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.gotha.gotha_2",
+                    "text": {
+                      "de": "Forschungsbibliothek Gotha der Universität Erfurt",
+                      "en": "Forschungsbibliothek Gotha der Universität Erfurt"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/forschungsbibliothek gotha der universität erfurt/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2814,12 +2823,12 @@
                   {
                     "id": "collection_repository.country.germany.hamburg.hamburg_1",
                     "text": {
-                      "de": "Ev.-Luth. Kirchengemeinde Niendorf",
-                      "en": "Ev.-Luth. Kirchengemeinde Niendorf"
+                      "de": "Ev.-Luth. Kirchengemeinde Nienstedten",
+                      "en": "Ev.-Luth. Kirchengemeinde Nienstedten"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/ev\\.-luth\\. kirchengemeinde niendorf, hamburg/i"
+                        "collection_repository": "/Ev.-Luth. Kirchengemeinde Nienstedten, Hamburg/i"
                       }
                     ]
                   },
@@ -3437,18 +3446,6 @@
                   },
                   {
                     "id": "collection_repository.country.germany.munich.munich_2",
-                    "text": {
-                      "de": "Bayerisches Nationalmuseum",
-                      "en": "Bayerisches Nationalmuseum"
-                    },
-                    "matchers": [
-                      {
-                        "collection_repository": "/bayerisches nationalmuseum/i"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "collection_repository.country.germany.munich.munich_3",
                     "text": {
                       "de": "Staatliche Graphische Sammlung München",
                       "en": "Staatliche Graphische Sammlung München"
@@ -5301,7 +5298,7 @@
               {
                 "id": "collection_repository.country.russia.st_petersburg",
                 "text": {
-                  "de": "St Petersburg, Staatliche Eremitage",
+                  "de": "St. Petersburg, Staatliche Eremitage",
                   "en": "St. Petersburg, State Hermitage"
                 },
                 "matchers": [
@@ -5930,7 +5927,7 @@
                 },
                 "matchers": [
                   {
-                    "collection_repository": "/Gettysburg, Musselman Library, Gettysburg College/i"
+                    "collection_repository": "/Musselman Library, Gettysburg College, Pennsylvania, United States of America/i"
                   }
                 ]
               },
