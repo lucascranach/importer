@@ -25,6 +25,9 @@ class ObjectReference
         '/teil\s+eines\s+werkes/i' => 'PART_OF_WORK',
         '/gegenstück\s*\/\s*pendant/i' => 'COUNTERPART_TO',
         '/abzug/i' => 'REPRINT_OF',
+        '/Teil\s+einer\s+Serie/i' => 'PART_OF_SERIES',
+        '/auf\s+demselben\s+Blatt/i' => 'ON_SAME_SHEET',
+        '/identisches\s+Wasserzeichen/i' => 'IDENTICAL_WATERMARK'
     ];
 
     private static $remarksMappings = [

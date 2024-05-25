@@ -96,7 +96,9 @@ class GraphicInflator implements IInflator
 
     private static $referenceTypeValues = [
         'reprint' => 'Abzug A',
-        'relatedWork' => 'Teil eines Werkes',
+        'sameSheet' => 'auf demselben Blatt',
+        'watermark' => 'identisches Wasserzeichen',
+        'relatedWork' => 'Teil einer Serie'
     ];
 
     private static $translations = [
@@ -1100,9 +1102,26 @@ class GraphicInflator implements IInflator
             }),
         );
 
+        $filteredSameSheetReferences = array_values(
+            array_filter($overallReferences, function ($reference) {
+                return $reference->getText() === self::$referenceTypeValues['sameSheet'];
+            }),
+        );
+
+        $filteredWatermarkReferences = array_values(
+            array_filter($overallReferences, function ($reference) {
+                return $reference->getText() === self::$referenceTypeValues['watermark'];
+            }),
+        );
+
+
         $graphicCollection->setReprintReferences($filteredReprintReferences);
 
         $graphicCollection->setRelatedWorkReferences($filteredRelatedWorkReferences);
+
+        $graphicCollection->setSameSheetReferences($filteredSameSheetReferences);
+
+        $graphicCollection->setWatermarkReferences($filteredWatermarkReferences);
     }
 
 
