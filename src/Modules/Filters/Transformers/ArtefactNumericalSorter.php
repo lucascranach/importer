@@ -10,6 +10,7 @@ use Error;
 class ArtefactNumericalSorter extends Hybrid
 {
     private $paths = [
+        ['component_parts']
     ];
 
     private $recursivePaths = [
