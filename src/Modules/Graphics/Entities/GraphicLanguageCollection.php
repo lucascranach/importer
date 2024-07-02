@@ -381,69 +381,91 @@ class GraphicLanguageCollection extends AbstractItemLanguageCollection implement
     }
 
 
-    public function addRelatedWorkReference(ObjectReference $reference): void
+    public function addPartOfWorkReference(ObjectReference $reference): void
     {
         foreach ($this as $graphic) {
-            $graphic->addRelatedWorkReference($reference);
+            $graphic->addPartOfWorkReference($reference);
         }
     }
 
 
-    public function setRelatedWorkReferences(array $references): void
+    public function setPartOfWorkReferences(array $references): void
     {
         foreach ($this as $graphic) {
-            $graphic->setRelatedWorkReferences($references);
+            $graphic->setPartOfWorkReferences($references);
         }
     }
 
 
-    public function getRelatedWorkReferences(): array
+    public function getPartOfWorkReferences(): array
     {
-        return $this->first()->getRelatedWorkReferences();
+        return $this->first()->getPartOfWorkReferences();
     }
 
 
-    public function addSameSheetReference(ObjectReference $reference): void
+    public function addPartOfSerieReference(ObjectReference $reference): void
     {
         foreach ($this as $graphic) {
-            $graphic->addSameSheetReference($reference);
+            $graphic->addPartOfSerieReference($reference);
         }
     }
 
 
-    public function setSameSheetReferences(array $references): void
+    public function setPartOfSerieReferences(array $references): void
     {
         foreach ($this as $graphic) {
-            $graphic->setSameSheetReferences($references);
+            $graphic->setPartOfSerieReferences($references);
         }
     }
 
 
-    public function getSameSheetReferences(): array
+    public function getPartOfSerieReferences(): array
     {
-        return $this->first()->getSameSheetReferences();
+        return $this->first()->getPartOfSerieReferences();
     }
 
 
-    public function addWatermarkReference(ObjectReference $reference): void
+    public function addOnSameSheetReference(ObjectReference $reference): void
     {
         foreach ($this as $graphic) {
-            $graphic->addWatermarkReference($reference);
+            $graphic->addOnSameSheetReference($reference);
         }
     }
 
 
-    public function setWatermarkReferences(array $references): void
+    public function setOnSameSheetReferences(array $references): void
     {
         foreach ($this as $graphic) {
-            $graphic->setWatermarkReferences($references);
+            $graphic->setOnSameSheetReferences($references);
         }
     }
 
 
-    public function getWatermarkReferences(): array
+    public function getOnSameSheetReferences(): array
     {
-        return $this->first()->getWatermarkReferences();
+        return $this->first()->getOnSameSheetReferences();
+    }
+
+
+    public function addIdenticalWatermarkReference(ObjectReference $reference): void
+    {
+        foreach ($this as $graphic) {
+            $graphic->addIdenticalWatermarkReference($reference);
+        }
+    }
+
+
+    public function setIdenticalWatermarkReferences(array $references): void
+    {
+        foreach ($this as $graphic) {
+            $graphic->setIdenticalWatermarkReferences($references);
+        }
+    }
+
+
+    public function getIdenticalWatermarkReferences(): array
+    {
+        return $this->first()->getIdenticalWatermarkReferences();
     }
 
 
