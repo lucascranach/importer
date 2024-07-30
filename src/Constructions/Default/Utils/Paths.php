@@ -8,8 +8,10 @@ use CranachDigitalArchive\Importer\Modules\Archivals\ArchivalsFileProbe;
 use CranachDigitalArchive\Importer\Modules\Graphics\GraphicsFileProbe;
 use CranachDigitalArchive\Importer\Modules\LiteratureReferences\LiteratureReferencesFileProbe;
 use CranachDigitalArchive\Importer\Modules\Paintings\PaintingsFileProbe;
+use CranachDigitalArchive\Importer\Modules\Drawings\DrawingsFileProbe;
 use CranachDigitalArchive\Importer\Modules\Restorations\GraphicsRestorationsFileProbe;
 use CranachDigitalArchive\Importer\Modules\Restorations\PaintingsRestorationsFileProbe;
+use CranachDigitalArchive\Importer\Modules\Restorations\DrawingsRestorationsFileProbe;
 use CranachDigitalArchive\Importer\Modules\Thesaurus\ThesaurusFileProbe;
 
 class Paths
@@ -173,6 +175,16 @@ class Paths
         return $this->filesIdentifier->getFilePathsAssociatedWithProbeClass(PaintingsFileProbe::class);
     }
 
+    public function getDrawingsRestorationInputFilePaths(): array
+    {
+        return $this->filesIdentifier->getFilePathsAssociatedWithProbeClass(DrawingsRestorationsFileProbe::class);
+    }
+
+    public function getDrawingsInputFilePaths(): array
+    {
+        return $this->filesIdentifier->getFilePathsAssociatedWithProbeClass(DrawingsFileProbe::class);
+    }
+
     public function getGraphicsRestorationInputFilePaths(): array
     {
         return $this->filesIdentifier->getFilePathsAssociatedWithProbeClass(GraphicsRestorationsFileProbe::class);
@@ -222,8 +234,10 @@ class Paths
             GraphicsFileProbe::new(),
             LiteratureReferencesFileProbe::new(),
             PaintingsFileProbe::new(),
+            DrawingsFileProbe::new(),
             GraphicsRestorationsFileProbe::new(),
             PaintingsRestorationsFileProbe::new(),
+            DrawingsRestorationsFileProbe::new(),
             ThesaurusFileProbe::new(),
         );
         $filesIdentifier->run();

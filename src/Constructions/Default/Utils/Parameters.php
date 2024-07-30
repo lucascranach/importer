@@ -19,7 +19,7 @@ class Parameters
             'use-export:'                       /* required value */,
         ],
     ];
-    private $supportedCachesKeys = ['paintings', 'graphics', 'archivals'];
+    private $supportedCachesKeys = ['paintings', 'graphics', 'archivals', 'drawings'];
 
     private array $remoteImagesCachesToRefresh = [];
     private array $remoteDocumentsCachesToRefresh = [];
