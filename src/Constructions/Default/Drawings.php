@@ -36,7 +36,7 @@ final class Drawings
         Base $base,
         MemoryFilters $memoryFilters,
         Thesaurus $thesaurus,
-        DrawingsRestoration $drawingsRestoration,
+        //DrawingsRestoration $drawingsRestoration,
     ) {
         $drawingsOutputFilepath = $paths->getOutputPath('cda-drawings-v2.json');
         $drawingsElasticsearchOutputFilepath = $paths->getElasticsearchOutputPath('cda-drawings-v2.bulk');
@@ -72,7 +72,7 @@ final class Drawings
             ReferenceDivider::new($this->drawingsReferencesCollector),
             $drawingsRemoteDocumentExistenceChecker,
             $drawingsRemoteImageExistenceChecker,
-            ExtenderWithRestorations::new($drawingsRestoration->getMemoryExporter()),
+            //ExtenderWithRestorations::new($drawingsRestoration->getMemoryExporter()),
             ExtenderWithIds::new($memoryFilters->getArtefactMemoryExporter()),
             MetadataFiller::new(),
             ExtenderWithSortingInfo::new(),
@@ -100,7 +100,7 @@ final class Drawings
         Base $base,
         MemoryFilters $memoryFilters,
         Thesaurus $thesaurus,
-        DrawingsRestoration $drawingsRestoration,
+        //DrawingsRestoration $drawingsRestoration,
     ): self {
         return new self(
             $paths,
@@ -108,7 +108,7 @@ final class Drawings
             $base,
             $memoryFilters,
             $thesaurus,
-            $drawingsRestoration,
+            //$drawingsRestoration,
         );
     }
 

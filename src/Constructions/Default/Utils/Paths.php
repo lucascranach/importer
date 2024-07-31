@@ -237,7 +237,7 @@ class Paths
             DrawingsFileProbe::new(),
             GraphicsRestorationsFileProbe::new(),
             PaintingsRestorationsFileProbe::new(),
-            DrawingsRestorationsFileProbe::new(),
+            //DrawingsRestorationsFileProbe::new(),      //Entkommentieren, wenn Restorationsdaten vorhanden sind
             ThesaurusFileProbe::new(),
         );
         $filesIdentifier->run();

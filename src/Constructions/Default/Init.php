@@ -12,7 +12,7 @@ final class Init
     private MemoryFilters $memoryFilters;
     private PaintingsRestoration $paintingsRestoration;
     private Paintings $paintings;
-    private DrawingsRestoration $drawingsRestoration;
+    //private DrawingsRestoration $drawingsRestoration;         //Entkommentieren, wenn Restorationsdaten vorhanden sind
     private Drawings $drawings;
     private GraphicsRestoration $graphicsRestoration;
     private Graphics $graphics;
@@ -40,15 +40,15 @@ final class Init
             $this->paintingsRestoration,
         );
 
-        $this->drawingsRestoration = DrawingsRestoration::new($paths, $this->memoryFilters); /* (Drawings)-RestorationsMemoryExporter */
+        //$this->drawingsRestoration = DrawingsRestoration::new($paths, $this->memoryFilters); /* (Drawings)-RestorationsMemoryExporter */  //Entkommentieren, wenn Restorationsdaten vorhanden sind
 
         $this->drawings = Drawings::new(
             $paths,
             $parameters,
             $this->base,
             $this->memoryFilters,
-            $this->thesaurus,
-            $this->drawingsRestoration,
+            $this->thesaurus
+            //$this->drawingsRestoration,   //Entkommentieren, wenn Restorationsdaten vorhanden sind
         );
 
         $this->graphicsRestoration = GraphicsRestoration::new($paths); /* CustomFiltersMemoryExporter */
@@ -82,7 +82,7 @@ final class Init
     {
         $this->paintingsRestoration->run();
         $this->paintings->run();
-        $this->drawingsRestoration->run();
+        //$this->drawingsRestoration->run();    //Entkommentieren, wenn Restorationsdaten vorhanden sind
         $this->drawings->run();
         $this->graphicsRestoration->run();
         $this->graphics->run();
@@ -102,7 +102,7 @@ final class Init
         $this->thesaurus->cleanUp();
         $this->paintingsRestoration->cleanUp();
         $this->paintings->cleanUp();
-        $this->drawingsRestoration->cleanUp();
+        //$this->drawingsRestoration->cleanUp();    //Entkommentieren, wenn Restorationsdaten vorhanden sind
         $this->drawings->cleanUp();
         $this->graphicsRestoration->cleanUp();
         $this->graphics->cleanUp();
