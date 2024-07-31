@@ -37,7 +37,10 @@ class ReferenceDivider extends Hybrid
             "belongsTo"=>[],
             "partOfWork"=>[],
             "counterpartTo"=>[],
-            "graphic"=>[]
+            "graphic"=>[],
+            "onSameSheet"=>[],
+            "identicalWatermark"=>[],
+            "partOfSerie"=>[]
         ];
 
         foreach ($item as $subItem) {
@@ -55,6 +58,12 @@ class ReferenceDivider extends Hybrid
                     $references['counterpartTo'][] = $referenceItem;
                 } elseif ($referenceItem->kind === 'GRAPHIC') {
                     $references['graphic'][] = $referenceItem;
+                } elseif ($referenceItem->kind === 'ON_SAME_SHEET') {
+                    $references['onSameSheet'][] = $referenceItem;
+                } elseif ($referenceItem->kind === 'IDENTICAL_WATERMARK') {
+                    $references['identicalWatermark'][] = $referenceItem;
+                } elseif ($referenceItem->kind === 'PART_OF_SERIES') {
+                    $references['partOfSerie'][] = $referenceItem;
                 }
             }
             $subItem->setReferences($references);
