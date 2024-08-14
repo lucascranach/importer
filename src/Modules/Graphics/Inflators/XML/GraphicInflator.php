@@ -96,9 +96,10 @@ class GraphicInflator implements IInflator
 
     private static $referenceTypeValues = [
         'reprint' => 'Abzug A',
-        'sameSheet' => 'auf demselben Blatt',
-        'watermark' => 'identisches Wasserzeichen',
-        'relatedWork' => 'Teil einer Serie'
+        'onSameSheet' => 'auf demselben Blatt',
+        'identicalWatermark' => 'identisches Wasserzeichen',
+        'partOfSerie' => 'Teil einer Serie',
+        'partOfWork' => 'Teil eines Werkes'
     ];
 
     private static $translations = [
@@ -1070,7 +1071,7 @@ class GraphicInflator implements IInflator
 
         $wrongReprintReferences = self::getWronglyCategorizedReferences(
             $reprintReferences,
-            self::$referenceTypeValues['relatedWork'],
+            self::$referenceTypeValues['partOfWork'],
         );
 
         $wrongRelatedWorkReferences = self::getWronglyCategorizedReferences(
@@ -1096,32 +1097,40 @@ class GraphicInflator implements IInflator
             }),
         );
 
-        $filteredRelatedWorkReferences = array_values(
+        $filteredPartOfWorkReferences = array_values(
             array_filter($overallReferences, function ($reference) {
-                return $reference->getText() === self::$referenceTypeValues['relatedWork'];
+                return $reference->getText() === self::$referenceTypeValues['partOfWork'];
             }),
         );
 
-        $filteredSameSheetReferences = array_values(
+        $filteredOnSameSheetReferences = array_values(
             array_filter($overallReferences, function ($reference) {
-                return $reference->getText() === self::$referenceTypeValues['sameSheet'];
+                return $reference->getText() === self::$referenceTypeValues['onSameSheet'];
             }),
         );
 
-        $filteredWatermarkReferences = array_values(
+        $filteredIdenticalWatermarkReferences = array_values(
             array_filter($overallReferences, function ($reference) {
-                return $reference->getText() === self::$referenceTypeValues['watermark'];
+                return $reference->getText() === self::$referenceTypeValues['identicalWatermark'];
+            }),
+        );
+
+        $filteredPartOfSerieReferences = array_values(
+            array_filter($overallReferences, function ($reference) {
+                return $reference->getText() === self::$referenceTypeValues['partOfSerie'];
             }),
         );
 
 
         $graphicCollection->setReprintReferences($filteredReprintReferences);
 
-        $graphicCollection->setRelatedWorkReferences($filteredRelatedWorkReferences);
+        $graphicCollection->setPartOfWorkReferences($filteredPartOfWorkReferences);
 
-        $graphicCollection->setSameSheetReferences($filteredSameSheetReferences);
+        $graphicCollection->setOnSameSheetReferences($filteredOnSameSheetReferences);
 
-        $graphicCollection->setWatermarkReferences($filteredWatermarkReferences);
+        $graphicCollection->setIdenticalWatermarkReferences($filteredIdenticalWatermarkReferences);
+
+        $graphicCollection->setPartOfSerieReferences($filteredPartOfSerieReferences);
     }
 
 

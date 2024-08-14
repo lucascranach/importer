@@ -118,23 +118,29 @@ interface IGraphic extends IImagesItem, ILocations
 
     public function getReprintReferences(): array;
 
-    public function addRelatedWorkReference(ObjectReference $reference): void;
+    public function addPartOfWorkReference(ObjectReference $reference): void;
 
-    public function setRelatedWorkReferences(array $references): void;
+    public function setPartOfWorkReferences(array $references): void;
 
-    public function getRelatedWorkReferences(): array;
+    public function getPartOfWorkReferences(): array;
 
-    public function addSameSheetReference(ObjectReference $reference): void;
+    public function addPartOfSerieReference(ObjectReference $reference): void;
 
-    public function setSameSheetReferences(array $references): void;
+    public function setPartOfSerieReferences(array $references): void;
 
-    public function getSameSheetReferences(): array;
+    public function getPartOfSerieReferences(): array;
 
-    public function addWatermarkReference(ObjectReference $reference): void;
+    public function addOnSameSheetReference(ObjectReference $reference): void;
 
-    public function setWatermarkReferences(array $references): void;
+    public function setOnSameSheetReferences(array $references): void;
 
-    public function getWatermarkReferences(): array;
+    public function getOnSameSheetReferences(): array;
+
+    public function addIdenticalWatermarkReference(ObjectReference $reference): void;
+
+    public function setIdenticalWatermarkReferences(array $references): void;
+
+    public function getIdenticalWatermarkReferences(): array;
 
     public function addAdditionalTextInformation(AdditionalTextInformation $additionalTextInformation): void;
 

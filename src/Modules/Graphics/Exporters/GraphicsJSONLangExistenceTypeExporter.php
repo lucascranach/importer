@@ -95,7 +95,7 @@ class GraphicsJSONLangExistenceTypeExporter extends Consumer implements IFileExp
             }
         }
 
-        foreach ($item->getRelatedWorkReferences() as $reference) {
+        foreach ($item->getPartOfWorkReferences() as $reference) {
             if (!in_array($reference->getInventoryNumber(), $this->inventoryNumberList, true)) {
                 $this->objectsWithMissingReferencesList[] = $item->getInventoryNumber();
             }

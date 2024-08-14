@@ -59,9 +59,10 @@ class Graphic extends AbstractImagesItem implements IGraphic
     public $bibliography = '';
     public $references = [
         'reprints' => [],
-        'relatedWorks' => [],
-        'sameSheet' => [],
-        'watermark' => []
+        'partOfWork' => [],
+        'partOfSerie' => [],
+        'onSameSheet' => [],
+        'identicalWatermark' => []
     ];
     public $additionalTextInformation = [];
     public $publications = [];
@@ -350,49 +351,64 @@ class Graphic extends AbstractImagesItem implements IGraphic
         return $this->references['reprints'];
     }
 
-    public function addRelatedWorkReference(ObjectReference $reference): void
+    public function addPartOfWorkReference(ObjectReference $reference): void
     {
-        $this->references['relatedWorks'][] = $reference;
+        $this->references['partOfWork'][] = $reference;
     }
 
-    public function setRelatedWorkReferences(array $references): void
+    public function setPartOfWorkReferences(array $references): void
     {
-        $this->references['relatedWorks'] = $references;
+        $this->references['partOfWork'] = $references;
     }
 
-    public function getRelatedWorkReferences(): array
+    public function getPartOfWorkReferences(): array
     {
-        return $this->references['relatedWorks'];
+        return $this->references['partOfWork'];
     }
 
-    public function addSameSheetReference(ObjectReference $reference): void
+    public function addPartOfSerieReference(ObjectReference $reference): void
     {
-        $this->references['sameSheet'][] = $reference;
+        $this->references['partOfSerie'][] = $reference;
     }
 
-    public function setSameSheetReferences(array $references): void
+    public function setPartOfSerieReferences(array $references): void
     {
-        $this->references['sameSheet'] = $references;
+        $this->references['partOfSerie'] = $references;
     }
 
-    public function getSameSheetReferences(): array
+    public function getPartOfSerieReferences(): array
     {
-        return $this->references['samesheet'];
+        return $this->references['partOfSerie'];
     }
 
-    public function addWatermarkReference(ObjectReference $reference): void
+    public function addOnSameSheetReference(ObjectReference $reference): void
     {
-        $this->references['watermark'][] = $reference;
+        $this->references['onSameSheet'][] = $reference;
     }
 
-    public function setWatermarkReferences(array $references): void
+    public function setOnSameSheetReferences(array $references): void
     {
-        $this->references['watermark'] = $references;
+        $this->references['onSameSheet'] = $references;
     }
 
-    public function getWatermarkReferences(): array
+    public function getOnSameSheetReferences(): array
     {
-        return $this->references['watermark'];
+        return $this->references['onSameSheet'];
+    }
+
+    public function addIdenticalWatermarkReference(ObjectReference $reference): void
+    {
+        $this->references['identicalWatermark'][] = $reference;
+    }
+
+    public function setIdenticalWatermarkReferences(array $references): void
+    {
+        $this->references['identicalWatermark'] = $references;
+    }
+
+    public function getIdenticalWatermarkReferences(): array
+    {
+        return $this->references['identicalWatermark'];
     }
 
     public function addAdditionalTextInformation(AdditionalTextInformation $additionalTextInformation): void
