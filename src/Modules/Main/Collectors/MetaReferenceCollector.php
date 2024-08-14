@@ -7,6 +7,7 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Entities\Graphic;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Modules\Graphics\Entities\GraphicLanguageCollection;
 use CranachDigitalArchive\Importer\Modules\Paintings\Entities\PaintingLanguageCollection;
+use CranachDigitalArchive\Importer\Modules\Drawings\Entities\DrawingLanguageCollection;
 use CranachDigitalArchive\Importer\Pipeline\Consumer;
 
 class MetaReferenceCollector extends Consumer
@@ -28,8 +29,8 @@ class MetaReferenceCollector extends Consumer
 
     public function handleItem($item): bool
     {
-        if (!($item instanceof GraphicLanguageCollection) && !($item instanceof PaintingLanguageCollection)) {
-            throw new Error('Pushed item is not of the expected class \'GraphicLanguageCollection\' or \'PaintingLanguageCollection\'');
+        if (!($item instanceof GraphicLanguageCollection) && !($item instanceof PaintingLanguageCollection) && !($item instanceof DrawingLanguageCollection)) {
+            throw new Error('Pushed item is not of the expected class \'GraphicLanguageCollection\' or \'PaintingLanguageCollection\' or \'DrawingLanguageCollection\'');
         }
 
         foreach ($item as $subItem) {
