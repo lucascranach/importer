@@ -12,6 +12,7 @@ use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsPreLoa
 use CranachDigitalArchive\Importer\Modules\Paintings\Collectors\ReferencesCollector;
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsLoader;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithReferences;
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ReferenceDivider;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithRestorations;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithIds;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MetadataFiller;
@@ -68,6 +69,7 @@ final class Paintings
         $this->loader->pipeline(
             (!$parameters->getKeepSoftDeletedAretefacts()) ? SkipSoftDeletedArtefactGate::new('Paintings'): null,
             ExtenderWithReferences::new($this->paintingsReferencesCollector),
+            ReferenceDivider::new($this->paintingsReferencesCollector),
             $paintingsRemoteDocumentExistenceChecker,
             $paintingsRemoteImageExistenceChecker,
             ExtenderWithRestorations::new($paintingsRestoration->getMemoryExporter()),
