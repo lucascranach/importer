@@ -2160,6 +2160,18 @@
                 ]
               },
               {
+                "id": "collection_repository.country.germany.celle",
+                "text": {
+                  "de": "Bomann-Museum, Celle",
+                  "en": "Bomann-Museum, Celle"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Bomann-Museum, Celle/i"
+                  }
+                ]
+              },
+              {
                 "id": "collection_repository.country.germany.chemnitz",
                 "text": {
                   "de": "Chemnitz",
