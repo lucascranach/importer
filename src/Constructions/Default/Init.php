@@ -30,36 +30,40 @@ final class Init
         $this->memoryFilters = MemoryFilters::new($paths)->run(); /* CustomFiltersMemoryExporter */
 
         $this->paintingsRestoration = PaintingsRestoration::new($paths, $this->memoryFilters); /* (Paintings)-RestorationsMemoryExporter */
-
-        $this->paintings = Paintings::new(
-            $paths,
-            $parameters,
-            $this->base,
-            $this->memoryFilters,
-            $this->thesaurus,
-            $this->paintingsRestoration,
-        );
-
+        if (in_array("paintings", $parameters->getImportTypes(), true)) {
+            $this->paintings = Paintings::new(
+                $paths,
+                $parameters,
+                $this->base,
+                $this->memoryFilters,
+                $this->thesaurus,
+                $this->paintingsRestoration,
+            );
+        }
+        
         //$this->drawingsRestoration = DrawingsRestoration::new($paths, $this->memoryFilters); /* (Drawings)-RestorationsMemoryExporter */  //Entkommentieren, wenn Restorationsdaten vorhanden sind
+        if (in_array("drawings", $parameters->getImportTypes(), true)) {
+            $this->drawings = Drawings::new(
+                $paths,
+                $parameters,
+                $this->base,
+                $this->memoryFilters,
+                $this->thesaurus
+                //$this->drawingsRestoration,   //Entkommentieren, wenn Restorationsdaten vorhanden sind
+            );
+        }
 
-        $this->drawings = Drawings::new(
-            $paths,
-            $parameters,
-            $this->base,
-            $this->memoryFilters,
-            $this->thesaurus
-            //$this->drawingsRestoration,   //Entkommentieren, wenn Restorationsdaten vorhanden sind
-        );
-
-        $this->graphicsRestoration = GraphicsRestoration::new($paths); /* CustomFiltersMemoryExporter */
-        $this->graphics = Graphics::new(
-            $paths,
-            $parameters,
-            $this->base,
-            $this->memoryFilters,
-            $this->thesaurus,
-            $this->graphicsRestoration,
-        );
+        if (in_array("drawings", $parameters->getImportTypes(), true)) {
+            $this->graphicsRestoration = GraphicsRestoration::new($paths); /* CustomFiltersMemoryExporter */
+            $this->graphics = Graphics::new(
+                $paths,
+                $parameters,
+                $this->base,
+                $this->memoryFilters,
+                $this->thesaurus,
+                $this->graphicsRestoration,
+            );
+        }
 
         $this->literatureReferences = LiteratureReferences::new($paths, $this->memoryFilters);
 
@@ -78,16 +82,28 @@ final class Init
         return new self($parameters, $paths);
     }
 
-    public function run(): self
+    public function run(Parameters $parameters): self
     {
-        $this->paintingsRestoration->run();
-        $this->paintings->run();
-        //$this->drawingsRestoration->run();    //Entkommentieren, wenn Restorationsdaten vorhanden sind
-        $this->drawings->run();
-        $this->graphicsRestoration->run();
-        $this->graphics->run();
+        if (in_array("paintings", $parameters->getImportTypes(), true)) {
+            $this->paintingsRestoration->run();
+            $this->paintings->run();
+        }
+
+        if (in_array("drawings", $parameters->getImportTypes(), true)) {
+            //$this->drawingsRestoration->run();    //Entkommentieren, wenn Restorationsdaten vorhanden sind
+            $this->drawings->run();
+        }
+
+        if (in_array("graphics", $parameters->getImportTypes(), true)) {
+            $this->graphicsRestoration->run();
+            $this->graphics->run();
+        }
+
+        if (in_array("archivals", $parameters->getImportTypes(), true)) {
+            $this->archivals->run();
+        }
         $this->literatureReferences->run();
-        $this->archivals->run();
+  
         $this->filters->run();
 
         /* Wraping up the import process */
@@ -96,15 +112,24 @@ final class Init
         return $this;
     }
 
-    public function cleanUp(): void
+    public function cleanUp(Parameters $parameters): void
     {
         $this->base->cleanUp();
         $this->thesaurus->cleanUp();
-        $this->paintingsRestoration->cleanUp();
-        $this->paintings->cleanUp();
-        //$this->drawingsRestoration->cleanUp();    //Entkommentieren, wenn Restorationsdaten vorhanden sind
-        $this->drawings->cleanUp();
-        $this->graphicsRestoration->cleanUp();
-        $this->graphics->cleanUp();
+
+        if (in_array("paintings", $parameters->getImportTypes(), true)) {
+            $this->paintingsRestoration->cleanUp();
+            $this->paintings->cleanUp();
+        }
+        
+        if (in_array("drawings", $parameters->getImportTypes(), true)) {
+            // $this->drawingsRestoration->cleanUp();    //Entkommentieren, wenn Restorationsdaten vorhanden sind
+            $this->drawings->cleanUp();
+        }
+
+        if (in_array("graphics", $parameters->getImportTypes(), true)) {
+            $this->graphicsRestoration->cleanUp();
+            $this->graphics->cleanUp();
+        }
     }
 }

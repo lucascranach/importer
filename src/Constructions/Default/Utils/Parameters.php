@@ -6,7 +6,9 @@ class Parameters
 {
     /* See: https://www.php.net/manual/de/function.getopt.php */
     private $cliParamsDefinition = [
-        'shortOpts' => [],
+        'shortOpts' => [
+
+        ],
         'longOpts' => [
             'keep-soft-deleted-artefacts',      /* optional */
 
@@ -16,14 +18,18 @@ class Parameters
             'refresh-remote-documents-cache::', /* optional value; default is 'all' */
             'refresh-all-remote-caches',        /* optional */
 
+            'only-paintings',
+
             'use-export:'                       /* required value */,
         ],
     ];
     private $supportedCachesKeys = ['paintings', 'graphics', 'archivals', 'drawings'];
+    private $importTypes = ['paintings', 'graphics', 'archivals', 'drawings'];
 
     private array $remoteImagesCachesToRefresh = [];
     private array $remoteDocumentsCachesToRefresh = [];
     private bool $keepSoftDeletedArterfacts = false;
+    private string | null $importType = null;
     private string | null $selectedExportId = null;
     private EnvironmentVariables $envVars;
 
@@ -57,6 +63,23 @@ class Parameters
     {
         $this->remoteDocumentsCachesToRefresh = $remoteDocumentsCachesToRefresh;
         return $this;
+    }
+
+    public function setImportType(string $importType): self
+    {
+        $this->importTypes = array_reduce($this->importTypes, function ($carry, $item) use ($importType) {
+            if ($item === $importType) {
+                return array($item);
+            }
+            return $carry;
+        }, null);
+    
+        return $this;
+    }
+
+    public function getImportTypes(): array
+    {
+        return $this->importTypes;
     }
 
     public function getRemoteDocumentsCachesToRefresh(): array
@@ -97,7 +120,6 @@ class Parameters
             implode('', $this->cliParamsDefinition['shortOpts']),
             $this->cliParamsDefinition['longOpts'],
         );
-
 
         foreach ($opts as $opt => $value) {
             switch ($opt) {
@@ -148,6 +170,10 @@ class Parameters
                     $this->setSelectedExportId($value);
                     break;
 
+                case 'only-paintings':
+                    $this->setImportType('paintings');
+
+                    // no break
                 default:
             }
         }

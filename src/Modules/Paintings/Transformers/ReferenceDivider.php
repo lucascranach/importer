@@ -37,12 +37,19 @@ class ReferenceDivider extends Hybrid
             "belongsTo"=>[],
             "partOfWork"=>[],
             "counterpartTo"=>[],
-            "graphic"=>[]
+            "graphic"=>[],
+            "all"=> []
         ];
 
         foreach ($item as $subItem) {
             $subItemReferences = $subItem->getReferences();
             foreach ($subItemReferences as $referenceItem) {
+                
+                if (in_array($referenceItem->getInventoryNumber(), $references['all'], true)) {
+                    continue;
+                }
+                $references['all'][] = $referenceItem->getInventoryNumber();
+
                 if ($referenceItem->kind === 'RELATED_IN_CONTENT_TO') {
                     $references['relatedInContentTo'][] = $referenceItem;
                 } elseif ($referenceItem->kind === 'SIMILAR_TO') {
@@ -57,6 +64,7 @@ class ReferenceDivider extends Hybrid
                     $references['graphic'][] = $referenceItem;
                 }
             }
+
             $subItem->setReferences($references);
         }
 

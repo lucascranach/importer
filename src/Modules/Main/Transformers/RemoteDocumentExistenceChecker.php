@@ -230,7 +230,7 @@ class RemoteDocumentExistenceChecker extends Hybrid
                     'X-API-KEY' => $this->accessKey,
                 ],
             ]);
-        } catch(RequestException $e) {
+        } catch (RequestException $e) {
             return null;
         }
 
