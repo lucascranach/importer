@@ -18,6 +18,7 @@
     "scripts": {
         "cghooks": "cghooks",
         "import": "php index.php",
+        "import:paintings": "php index.php --only-paintings",
         "import:keep-deleted": "php index.php --keep-soft-deleted-artefacts",
         "lint": "php-cs-fixer fix --dry-run -vvv",
         "lint:fix": "php-cs-fixer fix",

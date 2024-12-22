@@ -1,0 +1,78 @@
+MemoryLimit: 2048M
+
+Selected Export : 20241202
+
+
+Processing locations source file : /Users/cnoss/git/lucascranach/importer/resources/locations.json
+Processing thesaurus file : /Users/cnoss/git/lucascranach/importer/input/20241202/CDA_Thesaurus_202412.xml
+Processing custom filters file : /Users/cnoss/git/lucascranach/importer/resources/custom_artefact_filters.json
+Processing custom filters file : /Users/cnoss/git/lucascranach/importer/resources/custom_literaturereferences_filters.json
+Processing paintings file : /Users/cnoss/git/lucascranach/importer/input/20241202/CDA_DatenÅbersicht_P1_20241202.xml
+object(CranachDigitalArchive\Importer\Modules\Main\Entities\ObjectReference)#1387 (5) {
+  ["text"]=>
+  string(17) "Teil eines Werkes"
+  ["kind"]=>
+  string(12) "PART_OF_WORK"
+  ["inventoryNumberPrefix"]=>
+  string(0) ""
+  ["inventoryNumber"]=>
+  string(15) "CH_SORW_1925-1b"
+  ["remarks"]=>
+  array(0) {
+  }
+}
+object(CranachDigitalArchive\Importer\Modules\Main\Entities\ObjectReference)#1388 (5) {
+  ["text"]=>
+  string(17) "Teil eines Werkes"
+  ["kind"]=>
+  string(12) "PART_OF_WORK"
+  ["inventoryNumberPrefix"]=>
+  string(0) ""
+  ["inventoryNumber"]=>
+  string(15) "CH_SORW_1925-1b"
+  ["remarks"]=>
+  array(0) {
+  }
+}
+Processing restorations file : /Users/cnoss/git/lucascranach/importer/input/20241202/CDA_RestDokumente_P1_20241202.xml
+Processing paintings file : /Users/cnoss/git/lucascranach/importer/input/20241202/CDA_DatenÅbersicht_P1_20241202.xml
+
+  Skipped soft-deleted Artefacts (Paintings): 
+
+== Painting objects with missing filter connections: 
+=== attribution
+[]
+
+=== collection_repository
+[]
+
+=== examination_analysis
+[]
+
+Processing literature references file : /Users/cnoss/git/lucascranach/importer/input/20241202/CDA_Export_Literatur_P1_20241202.xml
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'Primärquelle'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'Primärquelle'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'Primärquelle'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'Primärquelle'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'Primärquelle'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'Primärquelle'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'Primärquelle'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'Primärquelle'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'Primärquelle'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'Primärquelle'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'Primärquelle'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'Primärquelle'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'Primärquelle'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'Primärquelle'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'dissertations'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'dissertations'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'monographs'.
+CranachDigitalArchive\Importer\Modules\LiteratureReferences\Inflators\XML\LiteratureReferencesInflator: Missing mapping for publication type: 'monographs'.
+Processing literature references file : /Users/cnoss/git/lucascranach/importer/input/20241202/CDA_Export_Literatur_P2_20241202.xml
+== LiteratureReference objects with missing filter connections: 
+=== media_type
+["27733","27775","27807","28543","28717","28883","28929","30567","30584","30842","31053","31062","31075","31076","31113","31119","31135","31136","31158","31239","31368","31389","342","362","442","561","597","599","678","926","1109","1112","1160","1215","1474","1830","1831","1867","1940","1942","2037","27589"]
+
+Skipped 428 of 440 thesaurus terms for the reduced thesaurus!
+Processing memory custom filters
+Processing memory custom filters

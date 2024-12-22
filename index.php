@@ -16,5 +16,5 @@ $parameters = Parameters::new(EnvironmentVariables::new(__DIR__));
 $paths = Paths::new(__DIR__, $parameters);
 
 Init::new($parameters, $paths)
-    ->run()
-    ->cleanUp();
+    ->run($parameters)
+    ->cleanUp($parameters);
