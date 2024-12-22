@@ -47,8 +47,8 @@ class PaintingInflator implements IInflator
     ];
 
     private static $titlesLanguageTypes = [
-        Language::DE => 'GERMAN',
-        Language::EN => 'ENGLISH',
+        Language::DE => 'German',
+        Language::EN => 'English',
         'not_assigned' => '(not assigned)',
     ];
 
@@ -357,6 +357,8 @@ class PaintingInflator implements IInflator
                 $titleDetailElement,
                 'Field[@FieldName="{LANGUAGES.Language}"]/FormattedValue',
             );
+
+
             if ($langElement) {
                 $langStr = trim(strval($langElement));
 

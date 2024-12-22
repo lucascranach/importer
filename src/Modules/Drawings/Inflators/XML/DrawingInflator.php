@@ -47,8 +47,8 @@ class DrawingInflator implements IInflator
     ];
 
     private static $titlesLanguageTypes = [
-        Language::DE => 'GERMAN',
-        Language::EN => 'ENGLISH',
+        Language::DE => 'German',
+        Language::EN => 'English',
         'not_assigned' => '(not assigned)',
     ];
 

@@ -1,9 +1,12 @@
 input/
+input-temp/
 docs/
+docs-temp/
 
 devilbox/
 .DS_Store
 .cache/
+cache/
 
 # IntelliJ
 .idea
