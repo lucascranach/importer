@@ -324,7 +324,7 @@ class RemoteImageExistenceChecker extends Hybrid
             'images' => [],
         ];
 
-        if($imageType === 'overall') {
+        if ($imageType === 'overall') {
             $destinationTypeStructure['infos']['hasOverallOverview'] = isset($imageTypeValue['hasOverallOverview']) ? $imageTypeValue['hasOverallOverview'] : false;
         }
 

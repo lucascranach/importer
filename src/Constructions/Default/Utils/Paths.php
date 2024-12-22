@@ -55,7 +55,7 @@ class Paths
 
         /* Does the input directory exist?
          * Can only be checked after determining the final selectedExportId. */
-        if(!$this->inputDirectoryExists()) {
+        if (!$this->inputDirectoryExists()) {
             exit('Source input directory not found for selected export id \'' . $this->getSelectedExportId() . '\': ' . $this->getInputPath() . "\n\n");
         }
 
