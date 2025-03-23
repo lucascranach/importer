@@ -5824,18 +5824,6 @@
                 ]
               },
               {
-                "id": "collection_repository.country.america.boston",
-                "text": {
-                  "de": "Boston, Museum of Fine Arts",
-                  "en": "Boston, Museum of Fine Arts"
-                },
-                "matchers": [
-                  {
-                    "collection_repository": "/museum of fine arts, boston/i"
-                  }
-                ]
-              },
-              {
                 "id": "collection_repository.country.america.beloit",
                 "text": {
                   "de": "Beloit, Wright Museum of Art, Beloit College",
@@ -5844,6 +5832,30 @@
                 "matchers": [
                   {
                     "collection_repository": "/wright museum of art, beloit college, beloit, wi/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.america.berkeley",
+                "text": {
+                  "de": "Berkeley, Art Museum and Pacific Film Archive, University of California",
+                  "en": "Berkeley, Art Museum and Pacific Film Archive, University of California"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/University of California, Berkeley Art Museum and Pacific Film Archive/i"
+                  }
+                ]
+              },
+              {
+                "id": "collection_repository.country.america.boston",
+                "text": {
+                  "de": "Boston, Museum of Fine Arts",
+                  "en": "Boston, Museum of Fine Arts"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/museum of fine arts, boston/i"
                   }
                 ]
               },
