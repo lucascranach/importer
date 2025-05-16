@@ -19,6 +19,9 @@ class Parameters
             'refresh-all-remote-caches',        /* optional */
 
             'only-paintings',
+            'only-graphics',
+            'only-drawings',
+            'only-archivals',
 
             'use-export:'                       /* required value */,
         ],
@@ -172,8 +175,20 @@ class Parameters
 
                 case 'only-paintings':
                     $this->setImportType('paintings');
+                    break;
 
-                    // no break
+                case 'only-graphics':
+                    $this->setImportType('graphics');
+                    break;
+
+                case 'only-drawings':
+                    $this->setImportType('drawings');
+                    break;
+
+                case 'only-archivals':
+                    $this->setImportType('archivals');
+                    break;
+                    
                 default:
             }
         }

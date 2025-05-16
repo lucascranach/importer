@@ -29,8 +29,8 @@ final class Init
         $this->thesaurus = Thesaurus::new($paths)->run(); /* ThesaurusMemoryExporter */
         $this->memoryFilters = MemoryFilters::new($paths)->run(); /* CustomFiltersMemoryExporter */
 
-        $this->paintingsRestoration = PaintingsRestoration::new($paths, $this->memoryFilters); /* (Paintings)-RestorationsMemoryExporter */
         if (in_array("paintings", $parameters->getImportTypes(), true)) {
+            $this->paintingsRestoration = PaintingsRestoration::new($paths, $this->memoryFilters);
             $this->paintings = Paintings::new(
                 $paths,
                 $parameters,
@@ -40,9 +40,9 @@ final class Init
                 $this->paintingsRestoration,
             );
         }
-
-        $this->drawingsRestoration = DrawingsRestoration::new($paths, $this->memoryFilters);
+        
         if (in_array("drawings", $parameters->getImportTypes(), true)) {
+            $this->drawingsRestoration = DrawingsRestoration::new($paths, $this->memoryFilters);
             $this->drawings = Drawings::new(
                 $paths,
                 $parameters,
@@ -53,8 +53,9 @@ final class Init
             );
         }
 
-        if (in_array("drawings", $parameters->getImportTypes(), true)) {
-            $this->graphicsRestoration = GraphicsRestoration::new($paths); /* CustomFiltersMemoryExporter */
+        
+        if (in_array("graphics", $parameters->getImportTypes(), true)) {
+            $this->graphicsRestoration = GraphicsRestoration::new($paths);
             $this->graphics = Graphics::new(
                 $paths,
                 $parameters,
@@ -67,7 +68,9 @@ final class Init
 
         $this->literatureReferences = LiteratureReferences::new($paths, $this->memoryFilters);
 
-        $this->archivals = Archivals::new($paths, $parameters);
+        if (in_array("archivals", $parameters->getImportTypes(), true)) {
+            $this->archivals = Archivals::new($paths, $parameters);
+        }
 
         $this->filters = Filters::new(
             $paths,
@@ -84,6 +87,7 @@ final class Init
 
     public function run(Parameters $parameters): self
     {
+        
         if (in_array("paintings", $parameters->getImportTypes(), true)) {
             $this->paintingsRestoration->run();
             $this->paintings->run();
