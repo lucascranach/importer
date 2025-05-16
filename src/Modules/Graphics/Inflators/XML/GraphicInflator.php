@@ -186,8 +186,8 @@ class GraphicInflator implements IInflator
 
         for ($i = 0; $i < count($details); $i += 2) {
             $personsArr = [
-                new Person, // de
-                new Person, // en
+                new Person(), // de
+                new Person(), // en
             ];
 
             $graphicCollection->get(Language::DE)->addPerson($personsArr[0]);
@@ -336,7 +336,7 @@ class GraphicInflator implements IInflator
         $groups = $node->{'Section'}[2]->{'Subreport'}->{'Group'};
 
         foreach ($groups as $group) {
-            $personName = new PersonName;
+            $personName = new PersonName();
 
             $graphicCollection->addPersonName($personName);
 
@@ -360,7 +360,7 @@ class GraphicInflator implements IInflator
             }
 
             foreach ($nameDetailGroups as $nameDetailGroup) {
-                $personDetailName = new PersonNameDetail;
+                $personDetailName = new PersonNameDetail();
                 $personName->addDetail($personDetailName);
 
                 /* name */
@@ -401,7 +401,7 @@ class GraphicInflator implements IInflator
                 continue;
             }
 
-            $title = new Title;
+            $title = new Title();
 
             /* title language */
             $langElement = self::findElementByXPath(
@@ -467,8 +467,8 @@ class GraphicInflator implements IInflator
     ): void {
         $classificationSectionElement = $node->{'Section'}[4];
 
-        $classificationDe = new Classification;
-        $classificationEn = new Classification;
+        $classificationDe = new Classification();
+        $classificationEn = new Classification();
 
         $graphicCollection->get(Language::DE)->setClassification($classificationDe);
         $graphicCollection->get(Language::EN)->setClassification($classificationEn);
@@ -619,8 +619,8 @@ class GraphicInflator implements IInflator
         SimpleXMLElement $node,
         GraphicLanguageCollection $graphicCollection,
     ): void {
-        $datingDe = new Dating;
-        $datingEn = new Dating;
+        $datingDe = new Dating();
+        $datingEn = new Dating();
 
         $graphicCollection->get(Language::DE)->setDating($datingDe);
         $graphicCollection->get(Language::EN)->setDating($datingEn);
@@ -699,7 +699,7 @@ class GraphicInflator implements IInflator
         $historicEventDetailElements = $node->{'Section'}[13]->{'Subreport'}->{'Details'};
 
         foreach ($historicEventDetailElements as $historicEventDetailElement) {
-            $historicEventInformation = new HistoricEventInformation;
+            $historicEventInformation = new HistoricEventInformation();
 
             /* event type */
             $eventTypeElement = self::findElementByXPath(
@@ -1184,7 +1184,7 @@ class GraphicInflator implements IInflator
                 continue;
             }
 
-            $reference = new ObjectReference;
+            $reference = new ObjectReference();
 
             /* Text */
             $textElement = self::findElementByXPath(
@@ -1245,7 +1245,7 @@ class GraphicInflator implements IInflator
                 continue;
             }
 
-            $additionalTextInformation = new AdditionalTextInformation;
+            $additionalTextInformation = new AdditionalTextInformation();
 
             /* Text type */
             $textTypeElement = self::findElementByXPath(
@@ -1331,8 +1331,8 @@ class GraphicInflator implements IInflator
                 continue;
             }
 
-            $publicationDe = new Publication;
-            $publicationEn = new Publication;
+            $publicationDe = new Publication();
+            $publicationEn = new Publication();
 
             $graphicCollection->get(Language::DE)->addPublication($publicationDe);
             $graphicCollection->get(Language::EN)->addPublication($publicationEn);
@@ -1395,7 +1395,7 @@ class GraphicInflator implements IInflator
                 continue;
             }
 
-            $metaReference = new MetaReference;
+            $metaReference = new MetaReference();
 
             /* Type */
             $keywordTypeElement = self::findElementByXPath(
@@ -1450,7 +1450,7 @@ class GraphicInflator implements IInflator
                 continue;
             }
 
-            $metaReference = new MetaLocationReference;
+            $metaReference = new MetaLocationReference();
 
             /* Type */
             $locationTypeElement = self::findElementByXPath(
@@ -1664,7 +1664,7 @@ class GraphicInflator implements IInflator
                 continue;
             }
 
-            $catalogWorkReference = new CatalogWorkReference;
+            $catalogWorkReference = new CatalogWorkReference();
 
             /* Description */
             $descriptionElement = self::findElementByXPath(
@@ -1727,7 +1727,7 @@ class GraphicInflator implements IInflator
     ): void {
         $catalogWorkReferenceSubreport = $node->{'Section'}[40]->{'Subreport'};
 
-        $structuredDimension = new StructuredDimension;
+        $structuredDimension = new StructuredDimension();
 
         $graphicCollection->get(Language::DE)->setStructuredDimension($structuredDimension);
         $graphicCollection->get(Language::EN)->setStructuredDimension($structuredDimension);

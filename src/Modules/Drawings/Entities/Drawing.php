@@ -23,7 +23,7 @@ use CranachDigitalArchive\Importer\Modules\Drawings\Interfaces\IDrawing;
  */
 class Drawing extends AbstractImagesItem implements IDrawing
 {
-    const ENTITY_TYPE = 'DRAWING';
+    public const ENTITY_TYPE = 'DRAWING';
 
     public $metadata = null;
     public $involvedPersons = [];
@@ -70,7 +70,7 @@ class Drawing extends AbstractImagesItem implements IDrawing
 
     public function getRemoteId(): string
     {
-        return $this->getId() . '_' . $this->getObjectName();
+        return $this->getId();
     }
 
 

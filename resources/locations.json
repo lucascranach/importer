@@ -1493,5 +1493,40 @@
         "name": "Versailles, Château de",
         "latitude": "48.8",
         "longitude": "2.1167"
+    },
+    "7128225": {
+        "name": "Nürnberg",
+        "latitude": "48.366667",
+        "longitude": "12.916667"
+    },
+    "2050214": {
+        "name": "Newton",
+        "latitude": "42.3333",
+        "longitude": "-71.2"
+    },
+    "7011980": {
+        "name": "Cambridgeshire",
+        "latitude": "52.5",
+        "longitude": ".1667"
+    },
+    "7010874": {
+        "name": "Cambridge",
+        "latitude": "52.2",
+        "longitude": ".116667"
+    },
+    "1126366": {
+        "name": "Los Angeles",
+        "latitude": "34.1833",
+        "longitude": "-118.6"
+    },
+    "7013495": {
+        "name": "Ottawa",
+        "latitude": "45.5167",
+        "longitude": "-74.3333"
+    },
+    "7011060": {
+        "name": "Reims",
+        "latitude": "49.25",
+        "longitude": "4.033333"
     }
 }

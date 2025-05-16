@@ -7,30 +7,29 @@ use CranachDigitalArchive\Importer\Interfaces\Entities\IImagesItem;
 use CranachDigitalArchive\Importer\Interfaces\ICache;
 use CranachDigitalArchive\Importer\Interfaces\Pipeline\IProducer;
 use CranachDigitalArchive\Importer\Pipeline\Hybrid;
-
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 
 class RemoteImageExistenceChecker extends Hybrid
 {
-    const OVERALL = 'overall';
-    const REVERSE = 'reverse';
-    const IRR = 'irr';
-    const X_RADIOGRAPH = 'x-radiograph';
-    const UV_LIGHT = 'uv-light';
-    const DETAIL = 'detail';
-    const PHOTOMICROGRAPH = 'photomicrograph';
-    const CONSERVATION = 'conservation';
-    const OTHER = 'other';
-    const ANALYSIS = 'analysis';
-    const RKD = 'rkd';
-    const KOE = 'koe';
-    const REFLECTED_LIGHT = 'reflected-light';
-    const TRANSMITTED_LIGHT = 'transmitted-light';
+    public const OVERALL = 'overall';
+    public const REVERSE = 'reverse';
+    public const IRR = 'irr';
+    public const X_RADIOGRAPH = 'x-radiograph';
+    public const UV_LIGHT = 'uv-light';
+    public const DETAIL = 'detail';
+    public const PHOTOMICROGRAPH = 'photomicrograph';
+    public const CONSERVATION = 'conservation';
+    public const OTHER = 'other';
+    public const ANALYSIS = 'analysis';
+    public const RKD = 'rkd';
+    public const KOE = 'koe';
+    public const REFLECTED_LIGHT = 'reflected-light';
+    public const TRANSMITTED_LIGHT = 'transmitted-light';
 
-    const PYRAMID = 'pyramid';
+    public const PYRAMID = 'pyramid';
 
-    const ALL_IMAGE_TYPES = 'all-image-types';
+    public const ALL_IMAGE_TYPES = 'all-image-types';
 
     private $client;
 
@@ -236,7 +235,7 @@ class RemoteImageExistenceChecker extends Hybrid
         try {
             $resp = $this->client->request('GET', $url, [
                 'headers' => [
-                    'X-API-KEY' => $this->accessKey,
+                    'Authorization' => 'Bearer ' . $this->accessKey,
                 ],
             ]);
         } catch (RequestException $e) {

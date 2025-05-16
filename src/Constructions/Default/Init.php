@@ -12,7 +12,7 @@ final class Init
     private MemoryFilters $memoryFilters;
     private PaintingsRestoration $paintingsRestoration;
     private Paintings $paintings;
-    //private DrawingsRestoration $drawingsRestoration;         //Entkommentieren, wenn Restorationsdaten vorhanden sind
+    private DrawingsRestoration $drawingsRestoration;
     private Drawings $drawings;
     private GraphicsRestoration $graphicsRestoration;
     private Graphics $graphics;
@@ -40,16 +40,16 @@ final class Init
                 $this->paintingsRestoration,
             );
         }
-        
-        //$this->drawingsRestoration = DrawingsRestoration::new($paths, $this->memoryFilters); /* (Drawings)-RestorationsMemoryExporter */  //Entkommentieren, wenn Restorationsdaten vorhanden sind
+
+        $this->drawingsRestoration = DrawingsRestoration::new($paths, $this->memoryFilters);
         if (in_array("drawings", $parameters->getImportTypes(), true)) {
             $this->drawings = Drawings::new(
                 $paths,
                 $parameters,
                 $this->base,
                 $this->memoryFilters,
-                $this->thesaurus
-                //$this->drawingsRestoration,   //Entkommentieren, wenn Restorationsdaten vorhanden sind
+                $this->thesaurus,
+                $this->drawingsRestoration,
             );
         }
 
@@ -90,7 +90,7 @@ final class Init
         }
 
         if (in_array("drawings", $parameters->getImportTypes(), true)) {
-            //$this->drawingsRestoration->run();    //Entkommentieren, wenn Restorationsdaten vorhanden sind
+            $this->drawingsRestoration->run();
             $this->drawings->run();
         }
 
@@ -103,7 +103,7 @@ final class Init
             $this->archivals->run();
         }
         $this->literatureReferences->run();
-  
+
         $this->filters->run();
 
         /* Wraping up the import process */
@@ -121,9 +121,9 @@ final class Init
             $this->paintingsRestoration->cleanUp();
             $this->paintings->cleanUp();
         }
-        
+
         if (in_array("drawings", $parameters->getImportTypes(), true)) {
-            // $this->drawingsRestoration->cleanUp();    //Entkommentieren, wenn Restorationsdaten vorhanden sind
+            $this->drawingsRestoration->cleanUp();
             $this->drawings->cleanUp();
         }
 
