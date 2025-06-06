@@ -93,7 +93,7 @@ class EditionDeterminer extends Hybrid
 
     public static function new(): self
     {
-        return new self;
+        return new self();
     }
 
     public function handleItem($item): bool
@@ -121,8 +121,13 @@ class EditionDeterminer extends Hybrid
         }
 
         $condition = trim($classification->getCondition());
+
+        /* We check the condition against the mappings */
+
         foreach (self::$editionGermanMappings as $editionMapping) {
+
             foreach ($editionMapping['patterns'] as $pattern) {
+
                 if (preg_match($pattern, $condition) === 1) {
                     return $editionMapping['value'];
                 }

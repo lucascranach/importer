@@ -1,0 +1,1987 @@
+DE_SMBKSK_66-1898; Einziger Zustand; 4. Auflage
+US_MMANY_27-54-27; Einziger Zustand; 4. Auflage
+US_MMANY_41-1-163; Einziger Zustand; 2. Auflage
+UK_BML_1895-0122-279; UK_BML_1895-0122-279; Einziger Zustand; 3. Auflage
+UK_BML_O-3-190; UK_BML_O-3-190; Einziger Zustand; 3. Auflage
+AT_A_DG1929-242; Einziger Zustand; 3. Auflage
+DE_GNMN_Mp14637a; DE_GNMN_Mp14637a; Einziger Zustand; 3. Auflage
+DE_SKD_A6645; Einziger Zustand; 1. Auflage
+DE_KSVC_H0064; DE_KSVC_H0064; Einziger Zustand
+DE_WSE_G1359; Einziger Zustand
+US_NGA_1943-3-2875; US_NGA_1943-3-2875; Einziger Zustand; 4. Auflage
+DE_KSW_DK181-83; DE_KSW_DK181-83; Einziger Zustand; 4. Auflage
+DE_SGSM_1912-997D; Einziger Zustand; 5. Auflage
+DE_SMBKSK_86-10; DE_SMBKSK_86-10; Einziger Zustand; Einzige Auflage
+DE_SMBKSK_89; DE_SMBKSK_89; Einziger Zustand; Auflage a)  [VD16 Z 250]
+DE_SMKP_KA-FP-352D; DE_SMKP_KA-FP-352D; I. Zustand; 1. Auflage
+DE_KSVC_I-43-64; DE_KSVC_I-43-64; II. Zustand; Auflage k)
+DE_SMKP_KA-FP-350D; DE_SMKP_KA-FP-350D; Einziger Zustand
+DE_SMKP_K-1958-12; DE_SMKP_K-1958-12; US_MMANY_27-54-3; US_MMANY_27-54-3; Einziger Zustand
+NL_RM_RP-P-2005-215; NL_RM_RP-P-2005-215; Missale Pataviense, Johannes Winterburger, Wien 1503 [VD 16 M 5606]
+AT_A_DG1929-82; AT_A_DG1929-82; Einziger Zustand; 2. (3.) Auflage 
+Missale Pataviense, Johannes Winterburger, Wien 1512 [VD16 M 5611]
+AT_A_DG1929-83; AT_A_DG1929-83; Einziger Zustand; Auflage a) / b)
+US_MMANY_27-54-23; US_MMANY_27-54-23; I. Zustand, 1. Auflage
+AT_A_DG1929-98; AT_A_DG1929-98; I.  Zustand; Auflage a)
+AT_A_DG1929-99; AT_A_DG1929-99; II. Zustand; Auflage c)
+DE_SKD_A6623; DE_SKD_A6623; II. Zustand
+DE_SKD_A6625; DE_SKD_A6625; DE_SKD_A6626; DE_SKD_A6626; DE_SKD_A6627; DE_SKD_A6627; AT_A_DG1929-76; AT_A_DG1929-76; Einziger Zustand
+DE_BSB_Rar99; DE_BSB_Rar99; AT_A_DG1929-72; AT_A_DG1929-72; US_MMANY_26-106-3; US_MMANY_26-106-3; DE_KSVC_I-42-20; DE_KSVC_I-42-20; Einziger Zustand; ? Auflage
+DE_KSVC_I-41-18; DE_KSVC_I-41-18; Einziger Zustand; Auflage unklar
+[VD16 C 5354]
+DE_KSVC_I-42-21; DE_KSVC_I-42-21; Einziger Zustand; ?  Auflage
+[VD16 C 5354]
+DE_KSVC_I-42-22a; DE_KSVC_I-42-22a; Einziger Zustand; ? Auflage
+[VD16 B 4780] [VD16 B 4786] or [VD16 C 5354]
+DE_KSVC_I-42-24; DE_KSVC_I-42-24; Einziger Zustand; ?  Auflage
+[VD16 C 5354]
+DE_KSVC_I-42-25; DE_KSVC_I-42-25; Einziger Zustand; Auflage
+[VD16 B 4786]
+DE_KSVC_I-42-28; DE_KSVC_I-42-28; Einziger Zustand;  Auflage ?)
+DE_HAUMB_3195; DE_HAUMB_3195; Einziger Zustand; 1. Auflage
+DE_HAUMB_AB3-14; DE_HAUMB_AB3-14; Einziger Zustand; Frühere Auflage
+DE_HAUMB_AB3-25; DE_HAUMB_AB3-25; Einziger Zustand; 1. Auflage
+DE_SKD_A1908-26; DE_SKD_A1908-26; Einziger Zustand; 1. Auflage
+DE_SKD_A1892-98; DE_SKD_A1892-98; Einziger Zustand; 1. Auflage
+DE_SMKP_KA-FP_349D; DE_SMKP_KA-FP_349D; Einziger Zustand; Frühere Auflage
+NL_RM_RP-P-1964-633; NL_RM_RP-P-1964-633; Einziger Zustand; 8. Auflage
+DE_SKD_A6618; DE_SKD_A6618; II. Zustand
+DE_SKD_A6617; DE_SKD_A6617; I. Zustand
+DE_SKD_A6616; DE_SKD_A6616; I. Zustand
+DE_SKD_A6519; DE_SKD_A6519; Einziger Zustand; 4. Auflage
+NL_RM_RP-P-OB-4474; NL_RM_RP-P-OB-4474; II. Zustand
+DE_SKD_A5394; DE_SKD_A5394; Einziger Zustand; Spätere Auflage
+DE_SGSM_1926-0172D; DE_SGSM_1926-0172D; Einziger Zustand; Auflage a)
+DE_SKD_A8523; DE_SKD_A8523; AT_A_DG1929-187; AT_A_DG1929-187; II. Zustand;  Auflage d)
+AT_A_DG1929-188; AT_A_DG1929-188; II. Zustand; 2. Auflage
+AT_A_DG1929-190; AT_A_DG1929-190; Einziger Zustand; Einzige Auflage
+DE_SKD_A5391; DE_SKD_A5391; Einziger Zustand
+DE_SMKP_KA-FP-360D; DE_SMKP_KA-FP-360D; II. Zustand
+AT_A_DG1929-103; AT_A_DG1929-103; Einziger Zustand; Auflage a)
+AT_A_DG1929-78; AT_A_DG1929-78; I. Zustand
+AT_A_DG1929-80; AT_A_DG1929-80; Einziger Zustand
+DE_SKD_A5389; DE_SKD_A5389; II. Zustand; 2. Auflage
+DE_ub_LMU_WaLuth-36; DE_ub_LMU_WaLuth-36; I. Zustand
+DE_EKW_EKW001; DE_EKW_EKW001; Einziger Zustand; 2. Auflage
+DE_ALD_Georg895e; DE_ALD_Georg895e; Verwendung in: Passional Christi und Antichristi, Johann Rhau-Grunenberg, Wittenberg 1521
+DE_ALD_Georg895f; DE_ALD_Georg895f; Verwendung in: Passional Christi und Antichristi, Johann Rhau-Grunenberg, Wittenberg 1521
+DE_SMKP_K-1928-2871; DE_SMKP_K-1928-2871; Verwendung in: Ein heylsams Buchlein [...] von der Beicht [...], Johann Rhau-Grunenberg, Wittenberg 1520 (Titelblatt)
+DE_SMKP_K-1928-2870; DE_SMKP_K-1928-2870; Verwendung in: Außlegung der Epistelln un[d] Evangelien [...], Johann Rhau-Grunenberg, Wittenberg 1522 (Titelblatt)
+DE_SMKP_K-1971-1624; DE_SMKP_K-1971-1624; Verwendung in: Uon men [sic!] menschen lere czu meyden, [...], Johann Rhau-Grunenberg, Wittenberg 1522 (Titelblatt)
+DE_SMKP_K-1928-2869; DE_SMKP_K-1928-2869; Verwendung in: Das diese wort Christi [...] widder die Schwerm geister, M. Lotter d. J., Wittenberg 1527 (Titelblatt)
+DE_SGSM_51979D; DE_SGSM_51979D; Verwendung in: Illvstrissimi Et Invictissimi Principis, [...] Responsio, M. Lotter 1524, Wittenberg/Leipzig (V. des Titelblatts)
+AT_A_DG1929-75; AT_A_DG1929-75; Einziger Zustand; Auflage a)  [VD16 Z 250]
+AT_A_DG1929-185; AT_A_DG1929-185; Einziger Zustand; 1. Auflage
+AT_A_DG1927-128; I. Zustand; ? Auflage
+AT_A_DG1929-73; AT_A_DG1929-73; Einziger Zustand; Auflage unklar
+AT_A_DG1929-74; AT_A_DG1929-74; Einziger Zustand; Auflage unklar
+AT_A_DG1929-77; AT_A_DG1929-77; Einziger Zustand
+AT_A_DG1929-79; AT_A_DG1929-79; III. Zustand
+AT_A_DG1929-81; II. Zustand; 2. Auflage
+AT_A_DG1929-84; AT_A_DG1929-84; II. Zustand; Auflage c)
+AT_A_DG1929-85; AT_A_DG1929-85; II. Zustand;  Auflage
+AT_A_DG1929-86; AT_A_DG1929-86; Einziger Zustand; 1. Auflage
+AT_A_DG1929-87; AT_A_DG1929-87; II. Zustand; Auflage b)
+AT_A_DG1929-88; AT_A_DG1929-88; II. Zustand; Auflage e)
+AT_A_DG1929-89; AT_A_DG1929-89; II. Zustand; 4. Auflage
+AT_A_DG1929-90; AT_A_DG1929-90; II. Zustand; 5. Auflage
+AT_A_DG1929-91; AT_A_DG1929-91; II. Zustand; Auflage b)
+AT_A_DG1929-92; AT_A_DG1929-92; I. Zustand;  Auflage a)
+AT_A_DG1929-93; AT_A_DG1929-93; II. Zustand; 3. Auflage
+AT_A_DG1929-94; AT_A_DG1929-94; II. Zustand; Auflage c)
+AT_A_DG1929-95; AT_A_DG1929-95; II. Zustand; 4. Auflage
+AT_A_DG1929-96; AT_A_DG1929-96; II.  Zustand; Auflage b)
+AT_A_DG1929-97; AT_A_DG1929-97; II. Zustand; Auflage e)
+AT_A_DG1929-100; AT_A_DG1929-100; II. Zustand; 4. Auflage
+AT_A_DG1929-101; AT_A_DG1929-101; Einziger Zustand, 1. Auflage
+AT_A_DG1929-102; AT_A_DG1929-102; Einziger Zustand; 1. Auflage
+AT_A_DG1929-104; AT_A_DG1929-104; I. Zustand; Auflage b)
+AT_A_DG1929-105; AT_A_DG1929-105; II. Zustand;  Auflage h)
+AT_A_DG1929-106; AT_A_DG1929-106; II. Zustand; Auflage k)
+AT_A_DG1929-107; AT_A_DG1929-107; II. Zustand; Auflage j)
+AT_A_DG1929-108; AT_A_DG1929-108; II. Zustand;  Auflage f)
+AT_A_DG1929-109; AT_A_DG1929-109; II. Zustand; Auflage e)
+AT_A_DG1929-110; AT_A_DG1929-110; II. Zustand; Auflage g)
+AT_A_DG1929-111; AT_A_DG1929-111; II. Zustand; Auflage g)
+AT_A_DG1929-112; AT_A_DG1929-112; AT_A_DG1929-113; AT_A_DG1929-113; Einziger Zustand; ? Auflage
+AT_A_DG1929-114; AT_A_DG1929-114; AT_A_DG1929-115; AT_A_DG1929-115; AT_A_DG1929-116; AT_A_DG1929-116; Einziger Zustand; Auflage d)
+AT_A_DG1929-117; AT_A_DG1929-117; Einziger Zustand; Auflage a)
+AT_A_DG1929-118; AT_A_DG1929-118; Einziger Zustand; Auflage c)
+AT_A_DG1929-119; AT_A_DG1929-119; Einziger Zustand; Auflage b)
+AT_A_DG1929-120; AT_A_DG1929-120; Einziger Zustand; Auflage b)
+AT_A_DG1929-121; AT_A_DG1929-121; Einziger Zustand; Auflage c)
+AT_A_DG1929-122; AT_A_DG1929-122; Einziger Zustand; Auflage c)
+AT_A_DG1929-123; AT_A_DG1929-123; Einziger Zustand; Auflage a)
+AT_A_DG1929-124; AT_A_DG1929-124; Einziger Zustand; 1. Auflage
+AT_A_DG1929-125; AT_A_DG1929-125; Einziger Zustand; Auflage a)
+AT_A_DG1929-126; AT_A_DG1929-126; Einziger Zustand;  Auflage b)
+AT_A_DG1929-127; AT_A_DG1929-127; Einziger Zustand; Frühere  Auflage
+AT_A_DG1929-128r; AT_A_DG1929-128r; Einziger Zustand; 2. Auflage
+AT_A_DG1929-128v; AT_A_DG1929-128v; Einziger Zustand; Auflage b)
+AT_A_DG1929-129; AT_A_DG1929-129; Einziger Zustand; Auflage unklar
+AT_A_DG1929-130; AT_A_DG1929-130; Einziger Zustand; Auflage a)
+AT_A_DG1929-131; AT_A_DG1929-131; Einziger Zustand; 1.  Auflage
+AT_A_DG1929-132; AT_A_DG1929-132; Einziger Zustand; Auflage unklar
+AT_A_DG1929-133; Einziger Zustand; 1. Auflage
+AT_A_DG1929-134; AT_A_DG1929-134; Einziger Zustand; 1. Auflage
+AT_A_DG1929-135; AT_A_DG1929-135; Einziger Zustand; 1. Auflage
+AT_A_DG1929-136; AT_A_DG1929-136; Einziger Zustand; 1. Auflage
+AT_A_DG1929-137; AT_A_DG1929-137; Einziger Zustand; Auflage a)
+AT_A_DG1929-138; AT_A_DG1929-138; Einziger Zustand; Auflage a)
+AT_A_DG1929-139; AT_A_DG1929-139; Einziger Zustand; Auflage a)
+AT_A_DG1929-140; AT_A_DG1929-140; Einziger Zustand; Dritte Auflage
+AT_A_DG1929-141; AT_A_DG1929-141; Einziger Zustand; Auflage c)
+AT_A_DG1929-142; AT_A_DG1929-142; Einziger Zustand; Spätere Auflage
+AT_A_DG1929-143; AT_A_DG1929-143; Einziger Zustand;  Auflage e)
+AT_A_DG1929-144; AT_A_DG1929-144; Einziger Zustand; Auflage unklar e)?
+AT_A_DG1929-145; AT_A_DG1929-145; Einziger Zustand; 5. Auflage
+AT_A_DG1929-146; AT_A_DG1929-146; Einziger Zustand; 5. Auflage
+AT_A_DG1929-147; AT_A_DG1929-147; Einziger Zustand; 5. Auflage
+AT_A_DG1929-148; Einziger Zustand; 5. Auflage
+AT_A_DG1929-149; AT_A_DG1929-149; Einziger Zustand; 5. Auflage
+AT_A_DG1929-150; AT_A_DG1929-150; Einziger Zustand; 5. Auflage
+AT_A_DG1929-151; AT_A_DG1929-151; Einziger Zustand; Auflage e)
+AT_A_DG1929-152; AT_A_DG1929-152; Einziger Zustand;  Auflage e)
+AT_A_DG1929-153; AT_A_DG1929-153; Einziger Zustand; Auflage e)
+AT_A_DG1929-154; AT_A_DG1929-154; Einziger Zustand; 5. Auflage
+AT_A_DG1929-155; AT_A_DG1929-155; Einziger Zustand;  Auflage e)
+AT_A_DG1929-156; AT_A_DG1929-156; Einziger Zustand; Auflage a)
+AT_A_DG1929-157; AT_A_DG1929-157; Einziger Zustand; Auflage c)
+AT_A_DG1929-158; AT_A_DG1929-158; Einziger Zustand; Auflage a)
+AT_A_DG1929-159; AT_A_DG1929-159; Einziger Zustand; Auflage a)
+AT_A_DG1929-160; AT_A_DG1929-160; Einziger Zustand;  Auflage a)
+AT_A_DG1929-161; AT_A_DG1929-161; Einziger Zustand; Auflage a)
+AT_A_DG1929-162; AT_A_DG1929-162; Einziger Zustand; Auflage a)
+AT_A_DG1929-163; AT_A_DG1929-163; Einziger Zustand; Auflage a)
+AT_A_DG1929-164; AT_A_DG1929-164; Einziger Zustand; Auflage a)
+AT_A_DG1929-165; AT_A_DG1929-165; Einziger Zustand;  Auflage a)
+AT_A_DG1929-166; AT_A_DG1929-166; Einziger Zustand; Auflage c)
+AT_A_DG1929-167; AT_A_DG1929-167; Einziger Zustand;  Auflage a)
+AT_A_DG1929-168; AT_A_DG1929-168; Einziger Zustand; Auflage a)
+AT_A_DG1929-169; AT_A_DG1929-169; Einziger Zustand; Auflage a)
+AT_A_DG1929-170; AT_A_DG1929-170; Einziger Zustand; Auflage unklar
+AT_A_DG1929-171; AT_A_DG1929-171; Einziger Zustand; Auflage unklar
+AT_A_DG1929-172; AT_A_DG1929-172; Einziger Zustand; Auflage unklar
+AT_A_DG1929-173; AT_A_DG1929-173; Einziger Zustand; Auflage unklar
+AT_A_DG1929-174; AT_A_DG1929-174; Einziger Zustand; Auflage unklar
+AT_A_DG1929-175; AT_A_DG1929-175; Einziger Zustand; Auflage unklar
+AT_A_DG1929-176; AT_A_DG1929-176; Einziger Zustand; Auflage unklar
+AT_A_DG1929-177; AT_A_DG1929-177; Einziger Zustand; Auflage unklar
+AT_A_DG1929-178; AT_A_DG1929-178; Einziger Zustand; Auflage a)
+AT_A_DG1929-179; AT_A_DG1929-179; Einziger Zustand; 4. Auflage
+AT_A_DG1929-180; AT_A_DG1929-180; Einziger Zustand; Auflage unklar
+AT_A_DG1929-181; AT_A_DG1929-181; Einziger Zustand; Auflage a)
+AT_A_DG1929-182; AT_A_DG1929-182; Einziger Zustand; 4. Auflage
+AT_A_DG1929-183; AT_A_DG1929-183; Einziger Zustand; Auflage c)
+AT_A_DG1929-184; AT_A_DG1929-184; Einziger Zustand; Auflage b)
+AT_A_DG1929-186; AT_A_DG1929-186; Einziger Zustand; 5. Auflage
+AT_A_DG1929-189; AT_A_DG1929-189; II. Zustand; Auflage g)
+AT_A_DG1929-191; AT_A_DG1929-191; Einziger Zustand; Auflage b)
+AT_A_DG1929-192; AT_A_DG1929-192; Einziger Zustand; Auflage b)
+AT_A_DG1929-193; AT_A_DG1929-193; Einziger Zustand; Auflage a)
+AT_A_DG1929-194; AT_A_DG1929-194; Einziger Zustand; 1. Auflage
+AT_A_DG1929-195; AT_A_DG1929-195; Einziger Zustand; 1. Auflage
+AT_A_DG1929-196; AT_A_DG1929-196; Einziger Zustand; 1. Auflage
+AT_A_DG1929-197; AT_A_DG1929-197; Einziger Zustand; 1. Auflage
+AT_A_DG1929-198; AT_A_DG1929-198; Einziger Zustand; 1. Auflage
+AT_A_DG1929-199; AT_A_DG1929-199; Einziger Zustand; 1. Auflage
+AT_A_DG1929-200; AT_A_DG1929-200; Einziger Zustand; 1. Auflage
+AT_A_DG1929-201; AT_A_DG1929-201; Einziger Zustand; 1. Auflage
+AT_A_DG1929-202; AT_A_DG1929-202; Einziger Zustand; 1. Auflage
+AT_A_DG1929-203; AT_A_DG1929-203; Einziger Zustand; 1. Auflage
+AT_A_DG1929-204; AT_A_DG1929-204; Einziger Zustand; 1. Auflage
+AT_A_DG1929-205; AT_A_DG1929-205; Einziger Zustand; 1. Auflage
+AT_A_DG1929-206; AT_A_DG1929-206; Einziger Zustand; Auflage unklar
+AT_A_DG1929-207; AT_A_DG1929-207; Einziger Zustand; Auflage e)
+AT_A_DG1929-208; AT_A_DG1929-208; Einziger Zustand; Auflage d)
+AT_A_DG1929-209; AT_A_DG1929-209; Einziger Zustand; 4. Auflage
+AT_A_DG1929-210; AT_A_DG1929-210; Einziger Zustand; 4. Auflage
+AT_A_DG1929-211; AT_A_DG1929-211; Einziger Zustand; 4. Auflage
+AT_A_DG1929-212; AT_A_DG1929-212; Einziger Zustand; 4. Auflage
+AT_A_DG1929-213; AT_A_DG1929-213; Einziger Zustand; 4. Auflage
+AT_A_DG1929-214; AT_A_DG1929-214; Einziger Zustand; 4. Auflage
+AT_A_DG1929-215; AT_A_DG1929-215; Einziger Zustand; 4. Auflage
+AT_A_DG1929-216; AT_A_DG1929-216; Einziger Zustand; 4. Auflage
+AT_A_DG1929-217; AT_A_DG1929-217; Einziger Zustand; 4. Auflage
+AT_A_DG1929-218; AT_A_DG1929-218; Einziger Zustand; 4. Auflage
+AT_A_DG1929-219; AT_A_DG1929-219; Einziger Zustand; 4. Auflage
+AT_A_DG1929-220; AT_A_DG1929-220; Einziger Zustand; 4. Auflage
+AT_A_DG1929-221; AT_A_DG1929-221; Einziger Zustand; Auflage f)
+AT_A_DG1929-222; AT_A_DG1929-222; Einziger Zustand; Auflage g)
+AT_A_DG1929-223; AT_A_DG1929-223; Einziger Zustand; 6. Auflage
+AT_A_DG1929-224; AT_A_DG1929-224; Einziger Zustand; 5. Auflage
+AT_A_DG1929-225; AT_A_DG1929-225; Einziger Zustand; 6. Auflage
+AT_A_DG1929-226; AT_A_DG1929-226; Einziger Zustand; 6. Auflage
+AT_A_DG1929-227; AT_A_DG1929-227; Einziger Zustand; 6. Auflage
+AT_A_DG1929-228; AT_A_DG1929-228; Einziger Zustand; 6. Auflage
+AT_A_DG1929-229; AT_A_DG1929-229; Einziger Zustand; 6. Auflage
+AT_A_DG1929-230; AT_A_DG1929-230; Einziger Zustand; 6. Auflage
+AT_A_DG1929-231; AT_A_DG1929-231; Einziger Zustand; 6. Auflage
+AT_A_DG1929-232; AT_A_DG1929-232; Einziger Zustand; 6. Auflage
+AT_A_DG1929-233; AT_A_DG1929-233; Einziger Zustand; 6. Auflage
+AT_A_DG1929-234; AT_A_DG1929-234; Einziger Zustand; 6. Auflage
+AT_A_DG1929-235; AT_A_DG1929-235; Einziger Zusatand; 1st Auflage
+AT_A_DG1929-236; AT_A_DG1929-236; II. Zustand; 3. Auflage
+AT_A_DG1929-237; AT_A_DG1929-237; Einziger Zustand; 1. Auflage
+AT_A_DG1929-238; AT_A_DG1929-238; Einziger Zustand; 1. Auflage
+AT_A_DG1929-239; AT_A_DG1929-239; Einziger Zustand; 2. Auflage
+AT_A_DG1929-240; AT_A_DG1929-240; Einziger Zustand; Auflage a)
+AT_A_DG1929-241; AT_A_DG1929-241; Einziger Zustand; Auflage a)
+AT_A_DG1929-253; AT_A_DG1929-253; Spätere Kopie; Hollstein 104.129.C.
+AT_A_DG1929-254; AT_A_DG1929-254; AT_A_DG1929-255; AT_A_DG1929-255; Einziger Zustand; ? Auflage VD16 R 1687?
+AT_A_DG1929-270; I. Zustand; Auflage c)
+AT_A_DG1929-294; Einziger Zustand; Auflage unlar
+AT_A_DG1929-295; AT_A_DG1929-296; Einziger Zustand; Auflage unklar
+AT_A_DG1929-297; AT_A_DG1929-297; Einziger Zustand; Auflage unklar
+AT_A_DG1929-298; AT_A_DG1929-298; Einziger Zustand; Auflage unklar
+AT_A_DG1929-299; AT_A_DG1929-299; Einziger Zustand; Auflage unklar aus VD16 R 1687?
+AT_A_DG1929-300; Einziger Zustand; Auflage  VD16 R 1687
+AT_A_DG1929-301; AT_A_DG1929-301; Einziger Zustand; Auflage unklar VD16 R 1687?
+AT_A_DG1929-302; Einziger Zustand;  Auflage VD16 R 1687?
+AT_A_DG1929-303; Einziger Zustand; Auflage unklar aus VD16 R 1687?
+AT_A_DG1929-304; AT_A_DG1929-304; Einziger Zustand; Auflage unklar  VD16 R 1687?
+AT_A_DG1929-305; Einziger Zustand; Auflage unklar aus VD16 R 1687?
+AT_A_DG1929-306; AT_A_DG1929-306; Einziger Zustand; Auflage unklar VD16 R 1687?
+AT_A_DG1929-307r; AT_A_DG1929-307v; AT_A_DG1929-307v; Einziger Zustand; Auflage unklar
+AT_A_DG1929-308; AT_A_DG1929-309r; AT_A_DG1929-309v; AT_A_DG1929-310; AT_A_DG1929-311; AT_A_DG1929-311; AT_A_DG1929-312; AT_A_DG1929-313; AT_A_DG1929-314v; AT_A_DG1929-376; AT_A_DG1929-377; III. Zustand; Auflage h)
+AT_A_DG1929-378; AT_A_DG1929-380; AT_A_DG1929-388; AT_A_DG1929-388; Einziger Zuatand; Auflage unklar
+AT_A_DG1929-409; AT_A_DG1929-423; II. Zustand; 6. Auflage
+AT_A_DG1929-424; II. Zustand; 6. Auflage
+AT_A_DG1929-425; III. Zustand; 8. Auflage
+AT_A_DG1929-447; AT_A_DG1929-459; Einziger Zustand; 2. Auflage
+AT_A_DG1929-481; I. Zustand; Auflage b)
+AT_A_DG1929-482; II. Zustand; Auflage d)
+AT_A_DG1929-501; Einziger Zustand; Auflage ?
+AT_A_DG1929-502; Einziger Zustand; Auflage ?
+AT_A_DG1961-86; Einziger Zustand; Auflage b)
+AT_A_DG1961-87; Einziger Zustand; Auflage b)
+AT_A_DG1961-88; Einziger Zustand; Auflage b)
+AT_A_DG1961-89; Einziger Zustand; Auflage b)
+AT_A_DG1961-90; Einziger Zustand; Auflage b)
+AT_A_DG1961-91; Einziger Zustand; Auflage b)
+AT_A_DG1961-92; Einziger Zustand; Auflage b)
+AT_A_DG1961-93; Einziger Zustand; Auflage b)
+AT_A_DG1961-94; Einziger Zustand; Auflage b)
+AT_A_DG1961-95; Einziger Zustand; Auflage b)
+AT_A_DG1961-96; Einziger Zustand; Auflage b)
+AT_A_DG1961-97; II. Zustand; Auflage b)
+AT_A_DG1961-98; Einziger Zustand; Auflage b)
+AT_A_DG1929-246; Einziger Zustand; Auflage a)
+AT_A_DG1929-247; Einziger Zustand; Auflage a)
+AT_A_DG1929-248; Einziger Zustand; Auflage d)
+AT_A_DG1929-293; Einziger Zustand; Auflage VD16 R 1687
+AT_A_DG1929-314r; Einziger Zustand; Auflage VD16 R 1691
+AT_A_DG1929-471; Einziger Zustand; Einziger Auflage
+AT_A_DG1929-472; AT_A_DG1929-474; Einziger Zustand; Auflage a)
+AT_A_DG1929-475; Einziger Zustand; Auflage b)
+AT_A_DG1929-476; II. Zustand ?; Auflage b)
+AT_A_DG1929-477; II. Zustand; Auflage b)
+AT_A_DG1929-478; II. Zustand; Auflage c)
+AT_A_DG1929-479; AT_A_DG1929-480; Einziger Zustand; Auflage b)
+AT_A_DG1929-483; AT_A_DG1929-484; Einziger Zustand; Auflage VD16 B 2719
+AT_A_DG1929-485; AT_A_DG1929-486; II. Zustand; Auflage e) ?
+AT_A_DG1929-487; Erster Zustand ?; Auflage a)
+AT_A_DG1929-488; II. Zustand ?; Auflage b)
+AT_A_DG1929-489; Einziger Zustand; Auflage a)
+AT_A_DG1929-490; II. Zustand; Auflage c)
+AT_A_DG1929-491; Einziger Zustand; Auflage a)
+AT_A_DG1929-492; AT_A_DG1929-493; Einziger Zustand; Auflage b)
+AT_A_DG1929-494; AT_A_DG1929-495; Einziger Zustand; Auflage b)
+AT_A_DG1929-496; II. Zustand ?; Auflage c)
+AT_A_DG1929-497; I. Zustand ?; Auflage b)
+AT_A_DG1929-498; Einziger Zustand; Auflage a)
+AT_A_DG1929-499; Einziger Zustand; Auflage b)
+AT_A_DG1929-500; Einziger Zustand; Auflage b)
+AT_A_DG1929-503; I. Zustand; Auflage ?
+AT_A_DG1929-504; I. Zustand; Auflage c) ?
+AT_A_DG1929-505; I. Zustand;  Auflage c) ?
+AT_A_DG1929-506; Einzige Zustand; Auflage a)
+AT_A_DG1929-507; AT_A_DG1929-508; Einziger Zustand; Auflage ?
+AT_A_DG1929-512; II. Zustand; Auflage b)
+AT_A_DG1929-515; Einziger Zustand; Auflage d)
+AT_A_DG1929-516; Einziger Zustand; Auflage ?
+AT_A_DG1929-517; Einziger Zustand; Auflage ?
+AT_A_DG1929-518; Einziger Zustand; Auflage ?
+ANO_H-NONE-007; US_NGA_1964-12-1; I. Zustand
+DE_KSW_DK36-79; II. Zustand
+DE_SMBKSK_565-2; III. Zustand
+DE_SBB_PortrSlg-SlgLutherAII21; III. Zustand
+DE_KHB_9024; III. Zustand
+DE_KSVC_I-41-8; Einziger Zustand
+DE_SKD_A5388; III. Zustand
+DE_WSE_G1293; III. Zustand
+US_TCRAM_85-17; III. Zustand
+NL_RM_RP-P-1919-1988; III. Zustand
+DE_SBBa_IM68a; III. Zustand
+DE_SGSM_165894D; III. Zustand
+US_MMANY_20-64-21; III. Zustand
+DE_GNMN_K868; III. Zustand
+DE_SGS_A2978; III. Zustand
+DE_KSW_DK37-81; III. Zustand
+AT_ONBW_PORT-00005003-01; III. Zustand
+DE_LHW_fl-IIIa-208; III. Zustand
+CH_ETHZ_D8510; III. Zustand
+DE_SBB_PortrSlg-SlgLutherAII29; Einziger Zustand; 2. Auflage
+DE_SBB_PortrSlg-SlgLutherAII22; Einziger Zustand
+DE_SBBa_IM68c; Einziger Zustand
+DE_SGSM_14448D; Einziger Zustand
+DE_HABW_Bibel-S4-258_InsideFrontCover; Einziger Zustand
+US_TCRAM_90-03; Einziger Zustand; Unklare Auflage
+DE_GNMN_Mp14682; Einziger Zustand; 5. Auflage
+DE_SGSM_138035D; Einziger Zustand
+DE_GNMN_K763; Einziger Zustand
+DE_SKD_A2100; Einziger Zustand; 3. Auflage
+DE_WSE_G1535; II. Zustand
+AT_ONBW_PORT-00005000-01; IV. Zustand
+DE_SuStBA_Graph-22-1; I. Zustand
+DE_KSW_Gr-2008-4626; I. Zustand
+DE_SMG_38-13a; I. Zustand; 5. Auflage
+DE_HABW_I-8262; I. Zustand
+DE_SKD_A6652; I. Zustand
+DE_WSE_G1486; I. Zustand
+DE_SBBa_IL74a; I. Zustand; 2. Auflage
+US_MMANY_20-65-6; I. Zustand
+DE_GNMN_H4885; I. Zustand; 3. Auflage
+CH_ETHZ_D14482; IV. Zustand; 9. Auflage
+DE_SBBa_IL74b; II. Zustand; 6. Auflage
+DE_GNMN_Mp14662a; I. Zustand
+DE_KSW_Gr-2008-4627; II. Zustand; 6. Auflage
+DE_DHM_1990-1090; III. Zustand; 8. Auflage
+DE_SMG_G43-101; II. Zustand; 6. Auflage
+DE_GNMN_Mp14664; II. Zustand; 7. Auflage
+DE_SMBKSK_819-2; Einziger Zustand
+DE_SBB_PortrSlg-SlgLutherAII34a; Einziger Zustand
+DE_KSW_Gr-2008-4835a; Einziger Zustand; 3. Auflage
+DE_SBBa_IVA3483; Einziger Zustand; 5. Auflage
+DE_GNMN_P27533; Einziger Zustand
+DE_KSW_Gr-2008-4834; Einziger Zustand; 3. Auflage
+DE_GNMN_P28973; Einziger Zustand
+DE_SGSM_82443D; I. Zustand; 1. Auflage
+DE_KSW_Gr-2008-4832; I. Zustand; 1. Auflage
+DE_WSE_G1487; II. Zustand
+DE_SBBa_IL90; II. Zustand; 2. Auflage
+DE_GNMN_Mp14636a; II. Zustand
+AT_ONBW_PORT-00005002-01; II. Zustand
+AT_ONBW_PORT-00005002-02; II. Zustand
+AT_ONBW_PORT-00005002-03; II. Zustand
+UK_BML_1870-0625-561; Einziger Zustand; Einzige Auflage
+DE_SBB_PortrSlg-SlgLutherAII3; DE_SBB_PortrSlg-SlgLutherAII3; Einziger Zustand; 3. Auflage
+AU_NGVM_425-5; Einziger Zustand
+DE_SMBKSK_759-2; Einziger Zustand; 5. Auflage
+DE_HAUMB_LCranachdAe-V3-1696; Einziger Zustand; 5. Auflage
+DE_SBBa_IL44; Einziger Zustand; 2. Auflage
+DE_HAUMB_LCranachdAe-AB3-74; Einziger Zustand; 6. Auflage
+HU_SMB_1346; II. Zustand; 2. Auflage
+DE_SMKP_KA-FP-363D; II. Zustand; 2. Auflage
+DE_SMG_45-40; II. Zustand; 2. Auflage
+DE_SBBa_IL49; II. Zustand; 2. Auflage
+DE_GNMN_H1933; II. Zustand; 2. Auflage
+DE_KSW_Gr-2008-4822; II. Zustand; 2. Auflage
+DE_KSVC_I-41-7; I. Zustand; 1. Auflage
+DE_FBG_Gym-5-Bl-Ir; I. Zustand; 1. Auflage
+FR_CEDS_77-005-0-79; I. Zustand; 1. Auflage
+DE_SGS_A2979; I. Zustand; 1. Auflage
+DE_SMBKSK_566-2; II. Zustand; 2. Auflage
+US_CMA_1925-55; II. Zustand; 2. Auflage
+DE_KSVC_I-41-6; II. Zustand; 2. Auflage
+DE_SMG_G43-112; II. Zustand; 2. Auflage
+US_TCRAM_97-01; II. Zustand; 3. Auflage
+NL_RM_RP-P-OB-4385; II. Zustand; 2. Auflage?
+US_MMANY_30-12-4; II. Zustand; 2. Auflage
+US_PMA_1985-52-7326; II. Zustand; 2. Auflage
+DE_KSW_DK182-83; Einziger Zustand
+DE_LHW_fl-IIIa-217; II. Zustand; 3. Auflage
+DE_SBB_PortrSlg-SlgLutherAII2-1; Einziger Zustand; 2. Auflage
+DE_DHM_Gr-54-1742; Einziger Zustand; 3. Auflage
+HU_SMB_3407; Einziger Zustand; 3. Auflage
+DE_SKD_A5151; Einziger Zustand; 1. Auflage
+DE_WSE_G1531; Einziger Zustand; 3. Auflage
+DE_SMG_60-108; Einziger Zustand; 2. Auflage
+US_MMANY_51-501-404; Einziger Zustand; 1. Auflage
+DE_GNMN_K722; Einziger Zustand; 1. Auflage
+DE_KSW_DK406-95; Einziger Zustand; 1. Auflage
+AT_ONBW_PORT-00005005-01; Einziger Zustand; 3. Auflage
+AU_NGVM_1278-632-3; Einziger Zustand; 3. Auflage
+DE_SGSM_15831D; Einziger Zustand; 1. Auflage
+US_CMA_1922-129; Einziger Zustand
+DE_SMG_5-37; Einziger Zustand
+NL_RM_RP-P-OB-2976; Einziger Zustand
+DE_SGSM_14931D; Einziger Zustand
+US_MMANY_20-64-18; Einziger Zustand
+DE_GNMN_K337; Einziger Zustand
+US_NGA_1943-3-394; Einziger Zustand; Späte Auflage
+AT_ONBW_PORT-00005005-02; Einziger Zustand
+CH_ETHZ_D8274; Einziger Zustand
+US_TCRAM_01-02; Einziger Zustand
+DE_SKD_A6654; II. Zustand
+DE_SMG_38-3; I. Zustand; 1. Auflage
+DE_SBBa_IVA3468; II. Zustand
+AT_ONBW_PORT-00005021-01; II. Zustand
+DE_SBB_PortrSlg-SlgLutherAII2-5; Einziger Zustand
+DE_KSVC_I-193-2; Einziger Zustand
+DE_WSE_G1292; Einziger Zustand
+NL_RM_RP-P-OB-3082; Einziger Zustand
+DE_SGSM_15228D; Einziger Zustand
+DE_GNMN_StN790; Einziger Zustand
+US_NGA_1943-3-5801; Einziger Zustand
+AT_ONBW_PORT-00005019-04; Einziger Zustand
+CH_ETHZ_D7825; Einziger Zustand
+DE_UBH_Graph-Slg_P_1021; Einziger Zustand; 2. Auflage
+CH_KBSG_VadSlg-Ms72-f67r; Einziger Zustand; 1. Auflage
+DE_LHW_fl-IIa-GR202; Einziger Zustand
+LC_HVI-76_96-107; LC_HVI-76_96-107; DE_HABW_PortrII-3313; Einziger Zustand; 3. Auflage
+DE_SBB_PortrSlg-SlgLutherAII3-3; DE_SBB_PortrSlg-SlgLutherAII3-3; Einziger Zustand; 2. Auflage
+DE_KSW_Reg-2010-874; DE_KSW_Reg-2010-874; Einziger Zustand
+DE_KSW_Reg-2010-873; DE_KSW_Reg-2010-873; Einziger Zustand
+UK_BML_1876-0510-491; UK_BML_1876-0510-491; Einziger Zustand; 1. Auflage
+DE_SMBKSK_857-2; I. Zustand; 1. Auflage
+DE_SMBKSK_858-2; DE_SMBKSK_858-2; II. Zustand; 2. Auflage
+AT_A_DI-21-fol57-1936-1133; II. Zustand; 2. Auflage
+DE_GNMN_StN365; DE_GNMN_StN365; II. Zustand; 2. Auflage
+DE_GNMN_Mp14642; DE_GNMN_Mp14642; II. Zustand; 2. Auflage
+DE_MKKM_C-601123PAD; DE_MKKM_C-601123PAD; Einziger Zustand
+NL_VUBA_XC_00111; Einziger Zustand; 1. Auflage
+NL_VUBA_XC_00074; II. Zustand; 6. Auflage
+NL_VUBA_XC_00108; Einziger Zustand; 2. Auflage
+US_PTLA_1523LuthAAAAA; Einziger Zustand; 1.. Auflage
+US_PTLA_1522LuthD; I. Zustand; 2. Auflage
+US_PTLA_1521LuthTTT; II. Zustand; 3. Auflage
+US_PTLA_1521LuthDDD; Einziger Zustand; 1. Auflage
+US_PTLA_1522Stif_fol1r; Einziger Zustand; 3. Auflage
+US_PTLA_1522LuthA_fol4v; Einziger Zustand; 8. Auflage
+US_PTLA_1520LuthUUU; Einziger Zustand; 4. Auflage
+US_PTLA_1521Musa; Einziger Zustand; 2. Auflage
+US_PTLA_1523LuthBBBBB; Einziger Zustand; 9. Auflage
+US_PTLA_1520LuthXXXX; Einziger Zustand; 1. Auflage
+US_PTLA_1519LuthU; Einziger Zustand; 2. Auflage
+US_PTLA_1525Stif; Einziger Zustand; 4. Auflage
+US_PTLA_1520LuthZZ; Einziger Zustand; 3. Auflage
+DE_SuStBA_4ThH1700-318_folA1v; I. Zustand; 2. Auflage
+DE_SuStBA_4ThH1700-307_folD4v; III. Zustand; 6. Auflage
+DE_SuStBA_4ThH1700-266_folA1r; II. Zustand; 3. Auflage
+DE_SuStBA_4ThH1744-449_folC3v; II. Zustand; 6. Auflage
+DE_SuStBA_NL284_Beiband6_Bl8r; Einziger Zustand; 4. Auflage
+DE_SuStBA_4-ThH1743; III. Zustand; 7. Auflage
+DE_SuStBA_4ThH2139_folD4v; Einziger Zustand; 2. Auflage
+DE_SuStBA_4ThH1744_folc1v; Einziger Zustand; 6. Auflage
+DE_SBBa_22-11F14_fol1v; I. Zustand; 4. Auflage
+DE_SBBa_22-11D18; II. Zustand; 3. Auflage
+DE_SBBa_22-JH-Inc-typ-IV-128; II. Zustand; 3. Auflage
+DE_SBBa_22-JH-Inc-typ-IV-242b; I. Zustand; 1. Auflage
+DE_SBBa_22-MvO-Theol-q-17; Einziger Zustand; 3. Auflage
+DE_SBBa_22-11D37; Einziger Zustand; 8. Auflage
+DE_SBBa_22-64B21; Einziger Zustand; 1. Auflage
+CHE_UBBe_MUE-AD-251; Einziger Zustand; 5. Auflage
+CHE_UBBe_MUE-AD-1043a; Einziger Zustand; 3. Auflage
+CHE_UBBe_MUE-AD-686; Einziger Zustand; 1. Auflage
+CHE_UBBe_MUE-AD-1621; Einziger Zustand; 1. Auflage
+DE_DHM_R-98-1804; III. Zustand; 5. Auflage
+DE_DHM_R-57-8161; Einziger Zustand; 1.. Auflage
+DE_DHM_R-95-792; III. Zustand; 5. Auflage
+DE_DHM_R-55-817; II. Zustand; 2. Auflage
+DE_DHM_R-55-882_fol2v; Einziger Zustand; 5. Auflage
+DE_DHM_R-55-882_fol1r; Einziger Zustand; 3. Auflage
+DE_DHM_R-55-882_fin-v; Einziger Zustand; 3. Auflage
+DE_DHM_R-57-8139; Einziger Zustand; 4. Auflage
+DE_DHM_R-92-2603; I. Zustand; 3. Auflage
+DE_DHM_R-91-1305_fin-r; Einziger Zustand
+DE_DHM_R-91-1305_fol4v; Einziger Zustand; 1. Auflage
+DE_DHM_R-91-1305_fol1r; Einziger Zustand; 1. Auflage
+DE_SBB_Luth1381; I. Zustand; 1. Auflage
+DE_SBB_Luth1375ter; Einziger Zustand; 1. Auflage
+DE_SBB_Cm7506RAR; II. Zustand; 3. Auflage
+DE_SBB_Cm7506aRAR; II. Zustand; 3. Auflage
+DE_SBB_Libri-impr-rari-qu190; III. Zustand; 5. Auflage
+DE_SBB_Cm7540RAR; Einziger Zustand; 4. Auflage
+DE_SBB_Cm7515RAR; Einziger Zustand; 1. Auflage
+DE_SBB_Cm7515aRAR; Einziger Zustand; 1. Auflage
+DE_SBB_Hymn3010_fin-v; EInziger Zustand; 3. Auflage
+DE_SBB_Hymn3010_fol1r; Einziger Zustand; 3. Auflage
+DE_SBB_Hymn3010_fol2v; EInziger Zustand; 5. Auflage
+DE_SBB_Hymn3010a_fol1r; Einziger Zustand; 3. Auflage
+DE_SBB_Hymn3010a_fol2v; Einziger Zustand; 5. Auflage
+DE_SBB_Luth681; Einziger Zustand; 1. Auflage
+DE_SBB_LynarS336; Einziger Zustand; 1. Auflage
+DE_SBB_Hymn3014_fin-r; Einziger Zustand; 1. Auflage
+DE_SBB_Hymn3018_fol2v; Einziger Zustand; 6. Auflage
+CH_KBGC_KBG_O_5363-16; III. Zustand; 5. Auflage
+DE_LBC_Lu-56-2059; Einziger Zustand; 1.. Auflage
+DE_LBC_Lu-Ia-1520-29; I. Zustand; 2. Auflage
+DE_LBC_Lu-Ia-1520-22; Einziger Zustand; 1. Auflage
+DE_LBC_Lu-Ia-1520-19; Einziger Zustand; 1. Auflage
+DE_LBC_P-I-5-4_fin-r; Einziger Zustand; 1. Auflage
+DE_LBC_Lu-Ia-1520-23; Einziger Zustand; 1. Auflage
+DE_LBC_Lu-57-322; Einziger Zustand; 3. Auflage
+DE_ALBD_Georg-991-2; Einziger Zustand; 1.. Auflage
+DE_ALBD_Georg-1078-1; Einziger Zustand; 3. Auflage
+DE_ALBD_Georg-1076-1; Einziger Zustand; 4. Auflage
+DE_ALBD_Georg-421-11; Einziger Zustand; 1. Auflage
+DE_ALBD_Georg-1580-5; Einziger Zustand; 1. Auflage
+DE_SLUBD_Hist-eccl-E-280-22; I. Zustand; 1. Auflage
+DE_SLUB_Hist-eccl-E-321-8; Einziger Zustand; 5. Auflage
+DE_SLUB_Lit-Graec-B-1971-b-misc-4; Einziger Zustand; 1. Auflage
+DE_SLUB_Hist-eccl-E-286-32; I. Zustand; 4. Auflage
+DE_SLUB_Hist-eccl-E-319-20; II. Zustand; 3. Auflage
+DE_SLUBD_Hist-eccl-E-302-22; II. Zustand; 6. Auflage
+DE_SLUB_Hist-eccl-E-288-18; III. Zustand; 5. Auflage
+DE_SLUB_Hist-eccl-E-319-22; I. Zustand; 1. Auflage
+DE_SLUB_Hist-eccl-E-321-6; III. Zustand; 7. Auflage
+DE_SLUB_Hist-eccl-E-301-28; Einziger Zustand; 2. Auflage
+DE_SLUB_Hist-eccl-E-280-18; Einziger Zustand; 3. Auflage
+DE_SLUB_Hist-eccl-E-298-14; I. Zustand; 3. Auflage
+DE_SLUB_Hist-eccl-E-280-20; Einziger Zustand; 4. Auflage
+DE_SLUB_Hist-eccl-E-278-12; Einziger Zustand; 1. Auflage
+DE_SLUB_Hist-eccl-E-289-5; Einziger Zustand; 2. Auflage
+DE_HABW_48-2Poet2; Einziger Zustand; 5. Auflage
+DE_HABW_104-5Theol11; Einziger Zustand; Einzige Auflage
+DE_HABW_131-2Theol12; Einziger Zustand; 1. Auflage
+DE_HABW_243Theol15; Einziger Zustand; 6. Auflage
+DE_HABW_MLi5704-4; Einziger Zustand; 7. Auflage
+DE_HABW_MLi5530SlgHardt19-203; Einziger Zustand; 1. Auflage
+DE_HABW_G505-4Helmst12; Einziger Zustand; 1. Auflage
+DE_HABW_118-4Quod13_fin-r; Einziger Zustand; 1. Auflage
+DE_HABW_127-2Quod14_fin-r; Einziger Zustand; 1. Auflage
+DE_HABW_127-6Theol17_fin-r; Einziger Zustand; 1. Auflage
+DE_HABW_420-3Theol12_fol1r; Einziger Zustand; 1. Auflage
+DE_HABW_H70-4Helmst4_fol1r; Einziger Zustand; 1. Auflage
+DE_HABW_T659b-4Helmst12_fin-r; Einziger Zustand; 1. Auflage
+DE_SLUB_Hist-eccl-E-289-10; Einziger Zustand; 3. Auflage
+DE_UBEI_04-1-B-X-548; II. Zustand; 4. Auflage
+DE_UBEI_18-1-B-X-213; Einziger Zustand; 2. Auflage
+DE_UBERL_H004-THL-V-2-19; Einziger Zustand; 1. Auflage
+DE_UBERL_H004-THL-V-2c-5; III. Zustand; 6. Auflage
+DE_UBERL_H004-THL-V-2s-19; II. Zustand; 6. Auflage
+DE_UBERL_H004-PHL-VIIII-6-d-28; Einziger Zustand; 5. Auflage
+DE_StGF_HMRA13; Einziger Zustand; 3. Auflage
+DE_StGF_HMRA425; Einziger Zustand; 1. Auflage
+DE_StGF_HMRA193; II. Zustand; 6. Auflage
+DE_StGF_HMRA134; I. Zustand; 1. Auflage
+DE_StGF_HMRA92; Einziger Zustand; 2. Auflage
+DE_StGF_HMRA83; Einziger Zustand; 1. Auflage
+DE_StGF_HMRA407; Einziger Zustand; 4. Auflage
+DE_UBG_Ink-W-23930_20; Einziger Zustand; 3. Auflage
+DE_UBG_Ink-W-23720_38; Einziger Zustand; 1.. Auflage
+DE_UBG_Ink-V-37489-201_2; Einziger Zustand; 3. Auflage
+DE_UBG_Ink-W-23930_28; Einziger Zustand; 4. Auflage
+DE_UBG_Ink-W-23930_38; Einziger Zustand; 1. Auflage
+DE_OLBG_AI425-19; Einziger Zustand; 1.. Auflage
+DE_OLBG_AI424-23; II. Zustand; 6. Auflage
+DE_OLBG_AI418-18; I. Zustand; 1. Auflage
+DE_OLBG_AI418-24; Einziger Zustand; 2. Auflage
+DE_SUBG_4-AUT-LUTH-84; Einziger Zustand; 4. Auflage
+DE_SUBG_8-MULERT-88-1; Einziger Zustand; 1. Auflage
+DE_FBG_Theol-4-00224-08-15; I. Zustand; 2. Auflage
+DE_FBG_Theol-4-00387-06; II. Zustand; 4. Auflage
+DE_FBG_Druck-8-00682-13; Einziger Zustand; 3. Auflage
+DE_FBG_Theol-4-00224-08-01; Einziger Zustand; 3. Auflage
+DE_FBG_Th-8-02980-06; Einziger Zustand; 1. Auflage
+DE_FBG_Theol-4-00224-II-09; Einziger Zustand; 1. Auflage
+DE_FBG_Theol-8-00250-251-01; Einziger Zustand; 1. Auflage
+DE_FBG_Theol-8-00250-251-02; Einziger Zustand; 6. Auflage
+DE_FBG_Theol-4-00224-08-31; Einziger Zustand; 3. Auflage
+DE_FSH_54D18; Einziger Zustand; 1. Auflage
+DE_FSH_62F6-5; Einziger Zustand; 6. Auflage
+DE_ULBH_Ib-3566-1; Einziger Zustand; 4. Auflage
+DE_ULBH_Vg-2317; Einziger Zustand; 1. Auflage
+DE_ULBH_1978-L-1051; Einziger Zustand; 6. Auflage
+DE_ULBH-Vg-459-QK; Einziger Zustand; 4. Auflage
+DE_ULBH_Ib-4187a-17; EInziger Zustand; 2. Auflage
+DE_ULBH_Vg-2317-QK; Einziger Zustand; 2. Auflage
+DE_UBH_Salem27_17_ARES; II. Zustand; 3. Auflage
+DE_UBH_Salem35-2RES; II. Zustand; 6. Auflage
+DE_UBH_Salem29-18RES; III. Zustand; 5. Auflage
+DE_UBH_Salem32-15a; Einziger Zustand; 1. Auflage
+DE_UBH_Sal118-31; III. Zustand; 7. Auflage
+DE_UBH_Sal118-32; III. Zustand; 7. Auflage
+DE_UBH_Salem69-5RES; Einziger Zustand; 4. Auflage
+DE_UBH_Salem87-14RES; Einziger Zustand; 5. Auflage
+DE_UBH_Salem29-13RES; Einziger Zustand; 7. Auflage
+DE_UBH_Sal27_16; Einziger Zustand; 4. Auflage
+DE_UBH_Salem33-14RES; Einziger Zustand; 9. Auflage
+DE_UBH_Salem69-3RES; Einziger Zustand; 1. Auflage
+DE_UBH_Salem23-11RES; Einziger Zustand; 3. Auflage
+DE_BLBK_113-E-4398-R; Einziger Zustand; 4. Auflage
+DE_BLBK_113-E-832-R; Einziger Zustand; 4. Auflage
+DE_BLBK_115-E-1861-R; Einziger Zustand; 6. Auflage
+DE_ThULBJ_8-MS-24386-5; I. Zustand; 2. Auflage
+DE_ThULBJ_4-Op-theol-V-9-20; Einziger Zustand; 1. Auflage
+DE_ThULBJ_8-MS-24-386-6; I. Zustand; 4. Auflage
+DE_ThULBJ_4-Bud-Hist-eccl-261-10; II. Zustand; 3. Auflage
+DE_ThULBJ_4-Op-theol-V-101-1; Einziger Zustand; 1.. Auflage
+DE_ThULBJ_4-Op-theol-V-5-1; Einziger Zustand; 3. Auflage
+DE_ThULBJ_4-Bud-Theol-158-17_fin; Einziger Zustand; 3. Auflage
+DE_ThULBJ_8-MS-25853-3; Einziger Zustand; 4. Auflage
+DE_ThULBJ_4-Bud-Theol-158-1_fin; Einziger Zustand; 1. Auflage
+DE_ThULBJ_8-MS-25853-2; Einziger Zustand; 1. Auflage
+DE_UBL_libri-sep-a-2013-2; I. Zustand; 4. Auflage
+DE_UBM_095-XIXc-B-597; Einziger Zustand; 1. Auflage
+DE_UBM_095-XIXc-B-726g; Einziger Zustand; 4. Auflage
+DE_BSBM_Res4Th-u103VIII12; Einziger Zustand; Einzige Auflage
+DE_BSBM_RE4Href801-29; Einziger Zustand; 5. Auflage
+DE_BSBM_Res4Th-u103I13; II. Zustand
+DE_BSBM_Res4Th-u104v1; I. Zustand; 2. Auflage
+DE_BSBM_4Hom1118; I. Zustand; 2. Auflage
+DE_BSBM_Res4Th-u-xviii9; Einziger Zustand; 1. Auflage
+DE_BSBM_Res4Polem1890; Einziger Zustand; 1. Auflage
+DE_BSBM_Res4Th-u104III25; Einziger Zustand; 2. Auflage
+DE_BSBM_Res4Th-u103XII10; III. Zustand; 6. Auflage
+DE_BSBM_4Hom1137; III. Zustand; 6. Auflage
+DE_BSBM_Res4Href722; I. Zustand; 3. Auflage
+DE_BSBM_Res4Th-u104II1; II. Zustand; 6. Auflage
+DE_BSBM_4Hom1232; III. Zustand; 5. Auflage
+DE_BSBM_Res4Hom1174Beibd3; III. Zustand; 5. Auflage
+DE_BSBM_Res4Th-u103XXVII26; III. Zustand; 5. Auflage
+DE_BSBM_ResHref755f; EInziger Zustand; 1. Auflage
+DE_BSBM_4Href479; II. Zustand; 2. Auflage
+DE_BSBM_Res4Th-u103I20; II. Zustand; 2. Auflage
+DE_BSBM_RE4Href801-29a; III. Zustand; 7. Auflage
+DE_BSBM_4Href598; Einziger Zustand; 2. Auflage
+DE_BSBM_4Polem1864; Einziger Zustand; 2. Auflage
+DE_BSBM_4Polem1866; Einziger Zustand; 2. Auflage
+DE_BSBM_4Asc1073_fol2v; Einziger Zustand; 5. Auflage
+DE_BSBM_Res4Hom1119-fol4v; Einziger Zustand; 8. Auflage
+DE_BSBM_Res4L-eleg-m251-24; Einziger Zustand; 1. Auflage
+DE_BSBM_Res4Th-u103VIII22; Einziger Zustand; 3. Auflage
+DE_BSBM_Res4Th-u103VIII21; Einziger Zustand; 1. Auflage
+DE_BSBM_Res_4Asc_855d_Beibd_9; I. Zustand; 3. Auflage
+DE_BSBM_Res4Hom1256; I. Zustand; 3. Auflage
+DE_BSBM_Res4L-eleg-m252-19; Einziger Zustand; 2. Auflage
+DE_BSBM_Res4Th-u103VIII15; Einziger Zustand; Einzige Auflage
+DE_BSBM_ResHref750k; Einziger Zustand; 2. Auflage
+DE_BSBM_4Polem1832_fol42r; Einziger Zustand; 7. Auflage
+DE_BSBM_4Hom1251; Einziger Zustand; 2. Auflage
+DE_BSBM_Rar1869_fol1r; Einziger Zustand; 1. Auflage
+DE_BSBM_Rar673; Einziger Zustand; 4. Auflage
+DE_BSBM_Res4Th-u103XVIII8; Einziger Zustand; 1. Auflage
+DE_BSBM_Res4Polem1889; Einziger Zustand; 1. Auflage
+DE_BSBM_4Asc1073a_fol1r; Einziger Zustand; 1. Auflage
+DE_BSBM_Res4Th-u103XXVII20a; Einziger Zustand; 3. Auflage
+DE_LMUM_4-Luth-91-folA1v; Einziger Zustand; 1. Auflage
+DE_LMUM_4-Luth-247-2-16-folA1v; I. Zustand; 4. Auflage
+DE_LMUM_4-Luth-247-1-10-folA1v; I. Zustand; 4. Auflage
+DE_LMUM_4-Luth-252-8-folA1v; I. Zustand; 1. Auflage
+DE_LMUM_4-Theol-2511-folA1v; III. Zustand; 7. Auflage
+DE_LMUM_W-4-Theol-2314-3-folD3v; Einziger Zustand; 2. Auflage
+DE_LMUM_W-4-Theol-4080-4-fola2v; Einziger Zustand; 5. Auflage
+DE_LMUM_4-Luth-36-fola4v; Einziger Zustand; 8. Auflage
+DE_LMUM_4-P-lat-rec-911-2-folC3v; Einziger Zustand; 5. Auflage
+DE_LMUM_4-Theol-5483-fin; Einziger Zustand; 1. Auflage
+DE_LMUM_4-Luth-209-10; Einziger Zustand; 4. Auflage
+DE_LMUM_4-Luth-250-2-fol4v; Einziger Zustand; 9. Auflage
+DE_LMUM_W-4-Luth-90-1-fola1v; Einziger Zustand; 1. Auflage
+DE_SBR_4-Theol-syst-758_133; I. Zustand; 1. Auflage
+DE_SBR_4-Theol-syst-758_25; I. Zustand; 4. Auflage
+DE_UBR_Ff-1511; Einziger Zustand; 5. Auflage
+DE_UBR_Fg-1830-8; I. Zustand; 4. Auflage
+DE_UBR_Ff-1282-1; Einziger Zustand; 2. Auflage
+DE_UBR_Fg-1784-2; Einziger Zustand; 3. Auflage
+FR_BNUS_R104-252_fol1v; Einziger Zustand; 5. Auflage
+FR_BNUS_R103-138; Einziger Zustand; 4. Auflage
+FR_BNUS_R103-279; Einziger Zustand; 1. Auflage
+FR_BNUS_R103-139; Einziger Zustand; 2. Auflage
+FR_BNUS_R104-251_fol1r; Einziger Zustand; 1. Auflage
+FR_BNUS_R103-238; Einziger Zustand; 3. Auflage
+DE_WLBS_Kirch-g-qt-1370; Einziger Zustand; 5. Auflage
+DE_WLBS_Theol-qt-K591; III. Zustand; 6. Auflage
+DE_WLBS_Theol-qt-K-631; I. Zustand; 3. Auflage
+DE_WLBS_R-16-Lut-3; Einziger Zustand; 2. Auflage
+DE_WLBS_Theol-qt-K655-2; Einziger Zustand; 7. Auflage
+DE_WLBS_Theol-qt-K669; Einziger Zustand; 9. Auflage
+DE_WLBS_Theol-qt-6892; Einziger Zustand; 1. Auflage
+DE_KSW_Aut-ben-AuthMarcellus12a; Einziger Zustand; 5. Auflage
+DE_KSW_Aut-Luther-1521-54; Einziger Zustand; 3. Auflage
+DE_KSW_Aut-Luther-1522-79; I. Zustand; 2. Auflage
+DE_KSW_Aut-Luther-1520-62; Einziger Zustand; 1. Auflage
+DE_KSW_Aut-Luther-1523-38; I. Zustand; 4. Auflage
+DE_KSW_Aut-Luther-1522-98; Einziger Zustand; 1. Auflage
+DE_KSW_Aut-Luther-1524-60; II. Zustand; 1. Auflage
+DE_KSW_Aut-Luther-1522-37; III. Zustand; 5. Auflage
+DE_KSW_Aut-V-III-10; Einziger Zustand; 2. Auflage
+DE_KSW_3-5-20-16; Einziger Zustand; 1. Auflage
+DE_KSW_Aut-ben-AutStifel-M69a_fol2v; Einziger Zustand; 5. Auflage
+DE_KSW_Aut-Luther-1520-63; Einziger Zustand; 3. Auflage
+DE_KSW_Aut-Luther-1523-58; I. Zustand; 3. Auflage
+DE_KSW_Aut-Luther-1520-64; Einziger Zustand; 4. Auflage
+DE_KSW_Aut-V-71b; Einziger Zustand; 2. Auflage
+DE_KSW_Aut-Luther-1522-84; Einziger Zustand; 6. Auflage
+DE_KSW_Aut-Luther-1520-60; Einziger Zustand; 1. Auflage
+DE_KSW_Aut-ben-AutStifel-M69_fol2v; Einziger Zustand; 6. Auflage
+DE_HABW_108-17Quod1; I. Zustand; 1. Auflage
+DE_HABW_151-42Theol18; Einziger Zustand; 5. Auflage
+DE_HABW_K262-4Helmst1; Einziger Zustand; 5. Auflage
+DE_HABW_MLi5530SlgHardt24-384; Einziger Zustand; 1.. Auflage
+DE_HABW_MLi5530SlgHardt22-310; I. Zustand; 2. Auflage
+DE_HABW_151-22Theol2; Einziger Zustand; 1. Auflage
+DE_HABW_MLi5530SlgHardt35-579; Einziger Zustand
+DE_HABW_AlvEe84_6_; I. Zustand; 4. Auflage
+DE_HABW_MLi5530SlgHardt22-325; Einziger Zustand; 1. Auflage
+DE_HABW_97-6Theol17; III. Zustand; 6. Auflage
+DE_HABW_127-6Theol4; I. Zustand; 3. Auflage
+DE_HABW_108-5Quod4-1; Einziger Zustand; 1. Auflage
+DE_HABW_382-2Theol9; Einziger Zustand; 2. Auflage
+DE_HABW_151-42Theol19; II. Zustand; 1. Auflage
+DE_HABW_236-51Theol8; II. Zustand; 6. Auflage
+DE_HABW_131-2Theol33; III. Zustand; 5. Auflage
+DE_HABW_151-30Theol3; III. Zustand; 5. Auflage
+DE_HABW_502-8Theol5; III. Zustand; 5. Auflage
+DE_HABW_544-20Quod8; Einziger Zustand; 4. Auflage
+DE_HABW_131-2Theol1; II. Zustand; 4. Auflage
+DE_HABW_148-21Theol8; II. Zustand; 2. Auflage
+DE_HABW_I-8264; II. Zustand; 2. Auflage
+DE_HABW_500-6Theol19; III. Zustand; 7. Auflage
+DE_HABW_127-2Quod1; Einziger Zustand; 2. Auflage
+DE_HABW_133-4Theol5; Einziger Zustand; 1. Auflage
+DE_HABW_104-3Theol26_fin-v; Einziger Zustand; 3. Auflage
+DE_HABW_151-35Theol29_fol2v; Einziger Zustand; 5. Auflage
+DE_HABW_511-29Theol1_fol1v; Einziger Zustand; 5. Auflage
+DE_HABW_99-4Theol8_fol2v; Einziger Zustand; 5. Auflage
+DE_HABW_H60-4Helmst1_fol2v; Einziger Zustand; 5. Auflage
+DE_HABW_140-15Theol1_fol4v; Einziger Zustand; 8. Auflage
+DE_HABW_G504-4Helmst2; Einziger Zustand
+DE_HABW_MLi5530SlgHardt9-144; Einziger Zustand; 8. Auflage
+DE_HABW_308Theol1; Einziger Zustand; 1. Auflage
+DE_HABW_133-4Theol22; Einziger Zustand; 3. Auflage
+DE_HABW_148-21Theol14; Einziger Zustand; 3. Auflage
+DE_HABW_97Theol5; III. Zustand
+DE_HABW_K241-4Helmst14; Einziger Zustand; 3. Auflage
+DE_HABW_MLi5530SlgHardt70-1426; Einziger Zustand; 3. Auflage
+DE_HABW_164-3Theol1; Einziger Zustand; 4. Auflage
+DE_HABW_MLi5530SlgHardt70-1425; Einziger Zustand; 4. Auflage
+DE_HABW_259Quod6; Einziger Zustand; 2. Auflage
+DE_HABW_H54-4Helmst13_fol14v; Einziger Zustand; 2. Auflage
+DE_HABW_H61-4Helmst3; Einziger Zustand; 2. Auflage
+DE_HABW_Yv728-8Helmst_fol1r; Einziger Zustand; 1. Auflage
+DE_HABW_Li5530-39-682; Einziger Zustand; 6. Auflage
+DE_HABW_151-12Theol1; Einziger Zustand; 9. Auflage
+DE_HABW_151-26Theol1; Einziger Zustand; 9. Auflage
+DE_HABW_MLi5530SlgHardt24-382; Einziger Zustand; 9. Auflage
+DE_HABW_MLi5530SlgHardt53-1024; Einziger Zustand; 9. Auflage
+DE_HABW_98Theol3; Einziger Zustand; 1. Auflage
+DE_HABW_171Theol2_fol1v; Einziger Zustand; 1. Auflage
+DE_HABW_136Theol4; Einziger Zustand; 1. Auflage
+DE_HABW_131-1Theol30; Einziger Zustand; 1. Auflage
+DE_HABW_86-7Theol32; Einziger Zustand; 1. Auflage
+DE_HABW_G702-4Helmst8; Einziger Zustand; 2. Auflage
+DE_HABW_K258-4Helmst6_fol1r; Einziger Zustand; 1. Auflage
+DE_HABW_149-14Theol8_fol2v; Einziger Zustand; 6. Auflage
+DE_HABW_96-20Theol2_fol2v; Einziger Zustand; 6. Auflage
+DE_HABW_G510-4Helmst11_fol2v; Einziger Zustand; 6. Auflage
+DE_HABW_97-9Theol15; Einziger Zustand; 3. Auflage
+DE_HABW_MLi5530SlgHardt20-282; Einziger Zustand; 3. Auflage
+AT_ONBW_35-R-199; Einziger Zustand; 1. Auflage
+AT_ONBW_77-Dd-181; Einziger Zustand; 1.. Auflage
+AT_ONBW_40-N-125; Einziger Zustand; 1. Auflage
+AT_ONBW_261930-B-Adl1FID; I. Zustand; 3. Auflage
+AT_ONBW_644-A-Alt; Einziger Zustand; 1. Auflage
+AT_ONBW_40-N-47; Einziger Zustand; 2. Auflage
+AT_ONBW_43-K-133; Einziger Zustand; 4. Auflage
+AT_ONBW_78-V-48; Einziger Zustand; 4. Auflage
+AT_ONBW_633-B_fol1r; III. Zustand; 7. Auflage
+AT_ONBW_20-Dd-1277; Einziger Zustand; 1. Auflage
+AT_ONBW_35-R-26_fol2v; Einziger Zustand; 5. Auflage
+AT_ONBW_43-V-82; Einziger Zustand; 2. Auflage
+AT_ONBW_77-Cc-171; Einziger Zustand; 1. Auflage
+AT_ONBW_31-W-72; Einziger Zustand; 2. Auflage
+AT_ONBW_35-R-181; Einziger Zustand; Einzige Auflage
+AT_ONBW_45-J-113; Einziger Zustand; 1. Auflage
+AT_ONBW_77-Cc-169; Einziger Zustand; 1. Auflage
+AT_ONBW_35-R-155_fol1r; Einziger Zustand; 1. Auflage
+DE_RFBW_Ag-4-191d; I. Zustand; 1. Auflage
+DE_RFBW_Ag-4-200i; Einziger Zustand; 1.. Auflage
+DE_RFBW_Ag-4-200n; I. Zustand; 4. Auflage
+DE_RFBW_Ag-4-303q; I. Zustand; 4. Auflage
+DE_RFBW_Ag-4-194d; II. Zustand; 3. Auflage
+DE_RFBW_Kn-K-12; EInziger Zustand; 2. Auflage
+DE_RFBW_Ag-4-194h; I. Zustand; 1. Auflage
+DE_RFBW_SS-1200; I. Zustand; 1. Auflage
+DE_RFBW_Kn-A-276-1919; III. Zustand; 7. Auflage
+DE_RFBW_Ag-4-190g; Einziger Zustand; 2. Auflage
+DE_RFBW_Kn-D-105; Einziger Zustand; 2. Auflage
+DE_RFBW_EKU-203; Einziger Zustand; 1. Auflage
+DE_RFBW_Ag-4-191e; Einziger Zustand; 3. Auflage
+DE_RFBW_Kn-K-57; I. Zustand; 3. Auflage
+DE_RFBW_Ag-4-191f; Einziger Zustand; 4. Auflage
+DE_RFBW_Kn-A-273-1872; Einziger Zustand; 2. Auflage
+DE_RFBW_Ag-4-191b; Einziger Zustand; 1. Auflage
+DE_RFBW_SS-1746; Einziger Zustand; 6. Auflage
+DE_RFBW_Kn-K-53; Einziger Zustand; 9. Auflage
+DE_RFBW_SS-2337; Einziger Zustand; 1. Auflage
+DE_RFBW_EKU-1109_fol1r; Einziger Zustand; 4. Auflage
+DE_RFBW_EKU-1109_fol2v; Einziger Zustand; 6. Auflage
+DE_RFBW_SS-3521; Einziger Zustand; 4. Auflage
+DE_LHW_4-fl-IIa-201; Einziger Zustand; 3. Auflage
+DE_RFBW_Ag-4-188u; Einziger Zustand; 3. Auflage
+DE_RFBW_Ag-4-194g; II. Zustand; 2. Auflage
+DE_LHW_MR-17-SS-3536_fol1r; Einziger Zustand; 1. Auflage
+CH_ZBZ_18_46_12; I. Zustand; 1. Auflage
+CH_ZBZ_III_M_163_24; Einziger Zustand; 5. Auflage
+CH_ZBZ_18_257_20; Einziger Zustand; 3. Auflage
+CH_ZBZ_Res_1016; Einziger Zustand; 1. Auflage
+CH_ZBZ_III_M_162_20; Einziger Zustand; 2. Auflage
+CH_ZBZ_Zwingli_MvKA74_28; III. Zustand; 6. Auflage
+CH_ZBZ_18_46_2; I. Zustand; 3. Auflage
+CH_ZBZ_III_N_152_15; Einziger Zustand; 1. Auflage
+CH_ZBZ_FF_1251_5; Einziger Zustand; 4. Auflage
+CH_ZBZ_18_46_10; II. Zustand; 2. Auflage
+CH_ZBZ_III_N_152_14; Einziger Zustand; 2. Auflage
+CH_ZBZ_III_M_155_9; EInziger Zustand; 1. Auflage
+CH_ZBZ_XVIII_207e_1; Einziger Zustand; 8. Auflage
+CH_ZBZ_3_169; Einziger Zustand; 1. Auflage
+CH_ZBZ_XVIII_1466_3; I. Zustand; 3. Auflage
+CH_ZBZ_IV_269_6; Einziger Zustand; 2. Auflage
+CH_ZBZ_III_N_150_4; Einziger Zustand; 2. Auflage
+CH_ZBZ_KK_405_1; Einziger Zustand; 1. Auflage
+DE_RSBZ_20-8-2-6; I. Zustand; 2. Auflage
+DE_RSBZ_20-8-2-9; I. Zustand; 3. Auflage
+DE_RSBZ_16-11-8-4; Einziger Zustand; 2. Auflage
+DE_RSBZ_2-5-29-10; Einziger Zustand; 3. Auflage
+DE_RSBZ_16-7-2-10; Einziger Zustand; 1. Auflage
+DE_RSBZ_19-8-15-16; Einziger Zustand; 2. Auflage
+DE_RSBZ_19-8-14-27; Einziger Zustand; 1. Auflage
+DE_RSBZ_20-8-1-1; Einziger Zustand; 2. Auflage
+LC_HVI-13_4a; LC_HVI-13_4a; DE_LMUM_4-Theol-5483-folA1r; Einziger Zustand; 1. Auflage
+DE_LMUM_W-4-Theol-4080-4-folA1r; Einziger Zustand; 3. Auflage
+DE_LMUM_W-4-Theol-4080-4-folh3v; Einziger Zustand; 3. Auflage
+ANO_H-NONE-017; ANO_H-NONE-017; US_HAM_46-1987; II. Zustand; 2. Auflage
+US_HAM_G4390; III. Zustand
+DE_KHB_9025; Einziger Zustand
+DE_KHB_12889; Einziger Zustand
+DE_KMG_A-I-18-4; II. Zustand; 2. Auflage
+US_PTLA_1519LuthC; Einziger Zustand; 1. Auflage
+US_PTLA_1522LuthA_fol73r; Einziger Zustand; 2. Auflage
+US_PTLA_1522Stif_fol2v; Einziger Zustand; 5. Auflage
+US_PTLA_1522Stif_fol31v; Einziger Zustand; 3. Auflage
+DE_GNMN_K21148; Einziger Zustand
+MIB_H-NONE-002; MIB_H-NONE-002; DE_GNMN_Mp14636; III. Zustand
+DE_GNMN_Mp14638a; Einziger Zustand; 1. Auflage
+DE_GNMN_Mp14639; Einziger Zustand; 1. Auflage
+DE_GNMN_Mp14661; I. Zustand; 3. Auflage
+DE_GNMN_Mp14670; Einziger Zustand
+DE_GNMN_Mp14671; Einziger Zustand
+DE_GNMN_Mp14708; Einziger Zustand
+DE_GNMN_P27529; Einziger Zustand; 5. Auflage
+DE_GNMN_StN255; Einziger Zustand
+DE_KSW_DK183-83; II. Zustand; 2. Auflage
+DE_KSW_DK202-90; Einziger Zustand; 4. Auflage
+DE_KSW_DK247-89; Einziger Zustand
+DE_KSW_DK457-89; II. Zustand
+DE_KSW_Gr-2008-1858; Einziger Zustand
+DE_KSW_Gr-2008-1859; Einziger Zustand
+DE_KSW_Gr-2008-4625; II. Zustand
+DE_GNMN_Mp14640; Einziger Zustand; 1. Auflage
+DE_KSVC_I-193-3; Einziger Zustand
+DE_KSVC_K-1227; Einziger Zustand
+DE_KSVC_XIII-2-52; Einziger Zustand; Unklare Auflage
+DE_KSW_Gr-2008-4851; III. Zustand; 3. Auflage
+DE_LHW_4-IIa-203; Einziger Zustand; 1. Auflage
+DE_LHW_4-IIa-250; Einziger Zustand; 2. Auflage
+DE_LHW_4-II-fl-II-224; Einziger Zustand; 1.. Auflage
+DE_LHW_4-II-fl-IIa-220; Einziger Zustand; 7. Auflage
+DE_LHW_4-II-fl-IIa-GR9308; Einziger Zustand; 5. Auflage
+DE_LHW_4-III-206; I. Zustand; 4. Auflage
+DE_LHW_4-III-223; III. Zustand; 6. Auflage
+DE_LHW_4-III-251; Einziger Zustand; 3. Auflage
+DE_LHW_4-III-9310; Einziger Zustand
+DE_LHW_4-III-fl-IIa-216-GR216; Einziger Zustand; 3. Auflage
+DE_LHW_4-III-fl-IIa-GR9312; II. Zustand
+DE_LHW_4-IVa-884; Einziger Zustand
+DE_LHW_4-IVb-210; Einziger Zustand
+DE_LHW_4-IVb-9327; Einziger Zustand
+DE_LHW_4-IV-fl-III-9366; Einziger Zustand; 3. Auflage
+DE_LHW_MR-17-SS-3536_fol24r; Einziger Zustand
+DE_MKKM_C-601121PAD; Einziger Zustand; 6. Auflage
+DE_MKKM_C-601122PAD; II. Zustand; 6. Auflage
+DE_SGS_A3061; II. Zustand
+DE_SGSM_15229D; Einziger Zustand
+DE_SGSM_238095; III. Zustand; 8. Auflage
+DE_SKD_A1874-17; Einziger Zustand
+DE_SKD_A1896-423; II. Zustand
+DE_SMBKSK_107-1887; Einziger Zustand; 3. Auflage
+DE_SMBKSK_208-1982; II. Zustand; 3. Auflage
+DE_SMBKSK_227-1889; Einziger Zustand
+DE_SMBKSK_237-1983; II. Zustand; 6. Auflage
+DE_SMBKSK_29-6; Einziger Zustand
+DE_SMBKSK_30-6; Einziger Zustand
+DE_SMBKSK_311-6; Einziger Zustand; 3. Auflage
+DE_SMBKSK_474-112; Einziger Zustand; Spätere Auflage
+DE_SMBKSK_53-1903; I. Zustand
+DE_SMBKSK_564-2; III. Zustand
+DE_SMBKSK_564-24; Einziger Zustand; Spätere Auflage
+DE_SMBKSK_632-24; Einziger Zustand; 3. Auflage
+DE_SMBKSK_708-63; Einziger Zustand; 3. Auflage
+DE_SMBKSK_816-2; Einziger Zustand; 1. Auflage
+DE_SMBKSK_817-2; I. Zustand; 2. Auflage
+DE_SMBKSK_818-2; II. Zustand
+DE_SMBKSK_82-1889; Einziger Zustand
+DE_SMBKSK_893-2; Einziger Zustand; 1.. Auflage
+DE_SMBKSK_894-2; Einziger Zustand; 1.. Auflage
+DE_SMG_38114; II. Zustand
+DE_SMG_38-2; I. Zustand; 1. Auflage
+UK_BML_1837-0616-363; III. Zustand
+UK_BML_1845-0809-1371; Einziger Zustand; 3. Auflage
+UK_BML_1845-0809-1486; Einziger Zustand
+UK_BML_1847-1009-61; Einziger Zustand
+UK_BML_1850-0612-382; Einziger Zustand
+UK_BML_1852-0612-49; I. Zustand
+UK_BML_1852-1009-205; III. Zustand; 8. Auflage
+UK_BML_1854-0513-35; II. Zustand; 2. Auflage
+UK_BML_1854-1113-174; Einziger Zustand; 5. Auflage
+UK_BML_1854-1113-232; Einziger Zustand
+UK_BML_1870-0625-521; Einziger Zustand; 4. Auflage
+UK_BML_1870-0625-535; I. Zustand; 1. Auflage
+UK_BML_1870-0625-566; II. Zustand
+UK_BML_1871-0812-1423; Einziger ; bekannte Auflage
+UK_BML_1875-0710-537; I. Zustand
+UK_BML_1903-0408-21; III. Zustand
+UK_BML_1927-0614-88; Einziger Zustand
+UK_BML_O-3-196; Einziger Zustand
+UK_BML_R-7-162; II. Zustand
+UK_BML_R-7-169; II. Zustand
+UK_BML_Z-13234; Einziger Zustand; 1.. Auflage
+DE_SKD_A3060; Einziger Zustand
+DE_SKD_A6653; I. Zustand
+DE_SKD_A6658a; II. Zustand; 2. Auflage
+DE_SGSM_81941D; I. Zustand
+DE_LHW_4-II-205; I. Zustand
+DE_LHW_4-II-fl-IIa-GR11352; Einziger Zustand; 1.. Auflage
+AT_A_DG1929-426; Einziger Zustand
+AT_A_DG1929-427; Einziger Zustand; 6. Auflage
+AT_A_DG1929-428; Einziger Zustand; 7. Auflage
+AT_A_DG1929-429; Einziger Zustand; 5. Auflage
+AT_A_DG1929-430; III. Zustand; 6. Auflage
+AT_A_DG1929-445; Einziger Zustand; 3. Auflage
+AT_A_DG1931-75; Einziger Zustand
+AT_A_DG2017-1-759; Einziger Zustand; 1. Auflage
+AT_A_DI-19a-fol64-400-1949; III. Zustand; 6. Auflage
+AT_A_DI-19a-fol64-401-1949; II. Zustand
+UK_BML_R-7-164; Einziger Zustand
+AT_A_DG1926-1746; Einziger Zustand
+AT_A_DG1929-243; I. Zustand
+AT_A_DG1929-249; I. Zustand; 1. Auflage
+AT_A_DG1929-250; II. Zustand; Spätere Auflage
+DE_HABW_Bibel-S4-258_InsideBackCover; Einziger Zustand
+HBG_H-NONE-002; HBG_H-NONE-002; ANO_H-NONE-018; ANO_H-NONE-018; DE_KSW_Gr-2008-4835b; Einziger Zustand
+ANO_H-NONE-019; ANO_H-NONE-019; HB_HBroIII-176_1313; HB_HBroIII-176_1313; AT_ONBW_17-L-257_fol1r; Einziger Zustand; 1. Auflage
+AT_ONBW_17-L-257_fin-r; Einziger Zustand; 1. Auflage
+AT_ONBW_35-R-155_fin-r; Einziger Zustand; 1. Auflage
+AT_ONBW_35-R-26_fol1r; Einziger Zustand; 3. Auflage
+AT_ONBW_35-R-26_fin-r; Einziger Zustand; 3. Auflage
+AT_ONBW_32-E-44; I. Zustand; 3. Auflage
+AT_ONBW_20-Dd-1029; Einziger Zustand; 2. Auflage
+AT_ONBW_20-Dd-87; III. Zustand; 5. Auflage
+DE_HABW_104-3Theol26_fol1r; Einziger Zustand; 3. Auflage
+DE_HABW_127-6Theol17_fol1r; Einziger Zustand; 1. Auflage
+DE_HABW_140-15Theol1_fin-r; Einziger Zustand; 2. Auflage
+DE_HABW_149-14Theol8_fol1r; Einziger Zustand; 4. Auflage
+DE_HABW_151-35Theol29_fol1r; Einziger Zustand; 3. Auflage
+DE_HABW_151-35Theol29_fin-v; Einziger Zustand; 3. Auflage
+DE_HABW_420-3Theol12_fin-r; Einziger Zustand; 1. Auflage
+DE_HABW_511-29Theol1_fol1r; Einziger Zustand; 3. Auflage
+DE_HABW_511-29Theol1_fin-v; Einziger Zustand; 3. Auflage
+DE_HABW_99-4Theol8_fol1r; Einziger Zustand; 3. Auflage
+DE_HABW_99-4Theol8_fin-v; Einziger Zustand; 3. Auflage
+DE_HABW_Yv728-8Helmst_fin-r; Einziger Zustand; 1. Auflage
+DE_HABW_T659b4Helmst12_fol1r; Einziger Zustand; 1. Auflage
+DE_HABW_K258-4Helmst6_fin-r; Einziger Zustand; 1. Auflage
+DE_HABW_H60-4Helmst1_fol1r; Einziger Zustand; 3. Auflage
+DE_HABW_H60-4Helmst1_fin-v; Einziger Zustand; 3. Auflage
+DE_HABW_G510-4Helmst11_fol1r; Einziger Zustand; 4. Auflage
+DE_HABW_118-4Quod13_fol1r; Einziger Zustand; 1. Auflage
+DE_SBB_Hymn3010a_fin-v; Einziger Zustand; 3. Auflage
+DE_SBB_Hymn3018_fol1r; Einziger Zustand; 4. Auflage
+DE_SBB_Hymn3018a_fol1r; Einziger Zustand; 4. Auflage
+DE_SBB_Hymn3018a_fol2v; Einziger Zustand; 5. Auflage
+DE_KSW_Aut-ben-AutHutten-U-14_fin-r; Einziger Zustand; 1. Auflage
+DE_KSW_Aut-ben-AutStifel-M69_fol1r; Einziger Zustand; 4. Auflage
+DE_KSW_Aut-ben-AutStifel-M69a_fol1r; Einziger Zustand; 3. Auflage
+DE_KSW_Aut-ben-AutStifel-M69a_fin-v; Einziger Zustand; 3. Auflage
+DE_SBBa_22-MvO-Theol-q-24_fol4v; Einziger Zustand; 8. Auflage
+FR_BNUS_R104-251_fin-r; Einziger Zustand; 1. Auflage
+FR_BNUS_R104-252_fol1r; Einziger Zustand; 3. Auflage
+DE_SBB_PortrSlg-SlgLutherAII34b; Einziger Zustand
+ANO_H-NONE-020; ANO_H-NONE-020; HB_H-NONE-001; HB_H-NONE-001; DE_HABW_CodGuelfExtrav226-1_fol108v; Einziger Zustand; 3. Auflage
+DE_SLUB_Mscr-Dresd-R96-25a; III. Zustand; 5. Auflage
+DE_SLUB_Mscr-Dresd-R96-239; III. Zustand
+DE_SLUB_Mscr-Dresd-R96-247; II. Zustand; 2.. Auflage
+DE_ALBD_Georg-1077-1; Einziger Zustand; 3. Auflage
+DE_BLBK_115-E-1861-R-TB; Einziger Zustand; 4. Auflage
+DE_ThULBJ_4-Bud-Theol-158-1-front; Einziger Zustand; 1. Auflage
+DE_ThULBJ_4-Bud-Theol-158-17; Einziger Zustand; 3. Auflage
+DK_KRL_KB19A007550; Einziger Zustand; 1. Auflage
+DE_BSBM_4Asc1073_fin-v; Einziger Zustand; 3. Auflage
+DE_BSBM_4Asc1073_fol1r; Einziger Zustand; 3. Auflage
+DE_BSBM_4Asc1073a_fin-r; Einziger Zustand; 1. Auflage
+DE_RFBW_Ag-4-276b1; Einziger Zustand; 1. Auflage
+DE_RFBW_Kn-A-163-936; Einziger Zustand; 3. Auflage
+DE_RFBW_Kn-A-230-1379; Einziger Zustand; 2. Auflage
+DE_SBB_Hymn3014_fol1r; Einziger Zustand; 1. Auflage
+DE_SBB_Hymn3014_fol51r; Einziger Zustand; 1. Auflage
+AT_ONBW_633-B_fol4r; III. Zustand; 7. Auflage
+DE_SMBKSK_795-2; Einziger Zustand; 1. Auflage
+AT_ONBW_PORT-00005000-02; I. Zustand
+DE_UBH_Salem26-5RES_fol61r; Einziger Zustand; 2. Auflage
+DE_DHM_R-55-886; Einziger Zustand; 1. Auflage
+DE_UBH_Salem69-6RES_fol1r; Einziger Zustand; 1. Auflage
+DE_UBH_Salem95-5RES; Einziger Zustand; Unklare Auflage
+DE_UBH_Salem95-5RES_fol2v; Einziger Zustand; Unklare Auflage
+DE_LBC_P-I-5-4_fol1r; Einziger Zustand; 1. Auflage
+DE_LBC_P-I-5-26_fin-r; Einziger Zustand; 1. Auflage
+DE_LBC_P-I-5-26_fol1r; Einziger Zustand; 1. Auflage
+DE_WLBS_B_deutsch_1526-04; Einziger Zustand; 2. Auflage
+FR_BNUS_R174-14; I. Zustand; 1. Auflage
+DE_KSVC_I-41-5; III. Zustand
+DE_LHW_4-II-215; Einziger Zustand; 1. Auflage
+DE_HABW_104-4Theol17; I. Zustand; 1. Auflage
+DE_HABW_104-4Theol7; Einziger Zustand; 1. Auflage
+DE_HABW_189-17Theol10; Einziger Zustand; 1. Auflage
+DE_HABW_71-4Theol; II. Zustand; 6. Auflage
+DE_HABW_86-12Theol11_fin-v; Einziger Zustand; 8. Auflage
+DE_HABW_CodGuelfExtrav226-1_fol101v; Einziger Zustand
+DE_BSBM_Res4Th-u103I12; Einziger Zustand; 3. Auflage
+ANO_H-NONE-022; ANO_H-NONE-022; DE_LMUM_4-Luth-36-folLXXIIIIr; Einziger Zustand; 2. Auflage
+DE_SBR_4-Theol-syst-758_120; Einziger Zustand; 9. Auflage
+DE_SBR_4-Theol-syst-758-102; III. Zustand; 5. Auflage
+HBG_H-NONE-003; HBG_H-NONE-003; SAT_H-NONE-002xxx; SAT_H-NONE-002xxx; DE_BSBM_4-H-eccl-826; Einziger Zustand
+DE_GNMN_8-Rl841; Einziger Zustand; 1. Auflage
+DE_BSBM_Res4-Polem-2457-Beibd34; Einziger Zustand; 3. Auflage
+DE_UBERL_H61-4-TREW-T-573; Einziger Zustand; 2. Auflage
+DE_WSE_G2450; Einziger Zustand; 3. Auflage
+US_PMA_1985-52-19261; Einziger Zustand
+DE_KFWW_K8-B61; Einziger Zustand
+DE_KFWW_K11-B86; Einziger Zustand; 1. Auflage
+DE_KFWW_K12-B9; Einziger Zustand
+DE_KFWW_K12-B10; Einziger Zustand
+DE_KFWW_K13-312; II. Zustand
+DE_KFWW_K13-311; II. Zustand; 2. Auflage
+DE_RSBZ_17-9-1-31_31v; Einziger Zustand; 3. Auflage
+DE_RSBZ_17-9-1-31-2r; Einziger Zustand; 7. Auflage
+DE_RSBZ_17-9-1-3_1r; Einziger Zustand
+CH_KBSG_VadSlg-Ms72-f587v; I. Zustand
+US_artic_1939-2078; Einziger Zustand
+US_MFA_M8890; I. Zustand
+AT_A_DG1929-252; I. Zustand
+DE_SMBKSK_44-1884; Einziger Zustand
+DE_KSVC_I-45-111; II. Zustand; 2. Auflage
+DE_KSVC_I-45-112; DE_KSVC_I-45-112; II. Zustand;  Auflage c)
+DE_KSVC_I-45-114; DE_KSVC_I-45-114; II. Zustand; 2. Auflage
+DE_KSVC_I-45-107; DE_KSVC_I-45-107; Einziger Zustand; 2. Auflage
+DE_KSVC_I-44-79; DE_KSVC_I-44-79; II. Zustand; Auflage c)
+DE_KSVC_I-42-31; DE_KSVC_I-42-31; Einziger Zustand; Auflage d)
+DE_KSVC_I-43-71; DE_KSVC_I-43-71; II. Zustand; Auflage b)
+DE_KSVC_I-44-78; DE_KSVC_I-44-78; II. Zustand;  Auflage b)
+DE_KSVC_I-44-75; DE_KSVC_I-44-75; II. Zustand; 2. Auflage
+DE_KSVC_I-44-76; DE_KSVC_I-44-76; II. Zustand; 5. Auflage
+DE_KSVC_VI-427-298; DE_KSVC_VI-427-298; II. Zustand; Auflage b)
+DE_KSVC_I-43-60; DE_KSVC_I-43-60; II. Zustand; Auflage c)
+DE_KSVC_I-43-61; DE_KSVC_I-43-61; I. Zustand;  Auflage a)? (vgl. Abzüge in Basel und Chicago)
+DE_KSVC_I-45-115; DE_KSVC_I-45-115; II. Zustand; Auflage b)
+DE_KSVC_I-45-118; DE_KSVC_I-45-118; II. Zustand; Auflage d)
+DE_KSVC_I-45-113; DE_KSVC_I-45-113; II. Zustand; 6. Auflage
+DE_KSVC_I-43-70; DE_KSVC_I-43-70; II. Zustand; 5. Auflage
+DE_KSVC_I-45-109; DE_KSVC_I-45-109; Einziger Zustand; Auflage a)
+DE_KSVC_I-41-9; DE_KSVC_I-41-9; Einziger Zustand; Auflage a)
+DE_KSVC_I-45-116; DE_KSVC_I-45-116; Einziger Zustand; Auflage c)
+DE_KSVC_I-41-13; DE_KSVC_I-41-13; Einziger Zustand; Auflage a)
+DE_KSVC_I-41-12; DE_KSVC_I-41-12; Einziger Zustand; Auflage b)
+DE_KSVC_I-43-68; DE_KSVC_I-43-68; Einziger Zustand; Auflage a)
+DE_KSVC_I-43-65; DE_KSVC_I-43-65; I. Zustand; Auflage a)
+DE_KSVC_I-45-108; DE_KSVC_I-45-108; II. Zustand; Auflage g)
+DE_KSVC_I-45-117; DE_KSVC_I-45-117; Einziger Zustand; 2. Auflage
+DE_KSVC_I-45-120; DE_KSVC_I-45-120; Einziger Zustand; Auflage b)
+DE_KSVC_I-45-119; DE_KSVC_I-45-119; Einziger Zustand; 2. Auflage
+DE_KSVC_I-45-121; DE_KSVC_I-45-121; Einziger Zustand; Auflage b)
+DE_KSVC_I-41-15; DE_KSVC_I-41-15; Einziger Zustand; Auflage f)
+DE_KSVC_I-44-74; DE_KSVC_I-44-74; Einziger Zustand; Auflage b)
+DE_KSVC_I-43-72; DE_KSVC_I-43-72; Einziger Zustand; 5. Auflage
+DE_KSVC_I-44-73; DE_KSVC_I-44-73; Einziger Zustand; ?  Auflage
+DE_KSVC_I-41-11; DE_KSVC_I-41-11; Einziger Zustand; Auflage b)
+DE_KSVC_I-41-14; DE_KSVC_I-41-14; Einziger Zustand; Auflage d)
+DE_KSVC_I-44-80; DE_KSVC_I-44-80; Einziger Zustand; 1. Auflage
+DE_KSVC_I-44-82; DE_KSVC_I-44-82; I. Zustand; Auflage a)
+DE_KSVC_I-41-16; DE_KSVC_I-41-16; III. Zustand;  Auflage h) (?) Fragment
+DE_KSVC_I-43-58; DE_KSVC_I-43-58; I. Zustand; 1. Auflage
+Vorlage; Vorlage; LC_HVI-11_2; LC_HVI-11_2; LC_HVI-50_74; LC_HVI-50_74; LC_HVI-50_74; DE_KSVC_I-43-67; DE_KSVC_I-43-67; Einziger Zustand; 3. Auflage
+LC_HVI-103_127; LC_HVI-103_127; LC_HVI-103_127; DE_KSVC_I-44-77; DE_KSVC_I-44-77; Einziger Zustand; Auflage c)
+LC_HVI-108_133; LC_HVI-108_133; LC_HVI-108_133; LC_HVI-100_123b; LC_HVI-100_123b; LC_HVI-100_123a; LC_HVI-100_123a; LC_HVI-100_123c; LC_HVI-100_123c; LC_HVI-100_123d; LC_HVI-100_123d; LC_HVI-100_123e; LC_HVI-100_123e; LC_HVI-100_123f; LC_HVI-100_123f; DE_KSVC_I-43-66; DE_KSVC_I-43-66; Einziger Zustand; 3. Auflage
+LC_HVI-97_120; LC_HVI-97_120; DE_KSVC_VI-427-297; DE_KSVC_VI-427-297; Einziger Zustand; 3. Auflage
+LC_HVI-71_95; LC_HVI-71_95; LC_HVI-161_14; LC_HVI-161_14; LC_HVI-161_15; LC_HVI-161_15; LC_HVI-102_125; LC_HVI-102_125; LC_HVI-101_124; LC_HVI-101_124; LC_H_NONE-001; LC_H_NONE-001; LC_H_NONE-002; LC_H_NONE-002; LC_HVI-105_130A; LC_HVI-105_130A; DE_KSVC_I-45-124; DE_KSVC_I-45-124; Einziger Zustand; 1. Auflage
+LC_HVI-43_67a; LC_HVI-43_67a; LC_HVI-43_67b; LC_HVI-43_67b; LC_HVI-43_67c; LC_HVI-43_67c; LC_HVI-43_67d; LC_HVI-43_67d; LC_HVI-43_67e; LC_HVI-43_67e; LC_HVI-43_67f; LC_HVI-43_67f; LC_HVI-43_67g; LC_HVI-43_67g; LC_HVI-43_67h; LC_HVI-43_67h; LC_HVI-43_68a; LC_HVI-43_68a; LC_HVI-43_68b; LC_HVI-43_68b; LC_HVI-43_68c; LC_HVI-43_68c; LC_HVI-43_68d; LC_HVI-43_68d; LC_HVI-43_68e; LC_HVI-43_68e; LC_HVI-43_68f; LC_HVI-43_68f; LC_HVI-43_68g; LC_HVI-43_68g; LC_HVI-43_68h; LC_HVI-43_68h; LC_HVI-43_68i; LC_HVI-43_68i; LC_HVI-43_68j; LC_HVI-43_68j; LC_HVI-124_14; LC_HVI-124_14; LC_H_NONE-003; LC_H_NONE-003; LC_HVI-98_121; LC_HVI-98_121; LC_HVI-160_6; LC_HVI-160_6; DE_KSVC_I-45-110; DE_KSVC_I-45-110; Einziger Zustand; 1. Auflage
+DE_KSVC_I-43-69; DE_KSVC_I-43-69; Einziger Zustand; 2. Auflage
+66-1898-noneKKL;   Unknown additional text type: Name laut Altdaten for object '66-1898-noneKKL'
+86-10; Einziger Zustand; Einzige Auflage
+88-65;   Unknown additional text type: Erhaltungszustand for object '88-65'
+  Unknown additional text type: Name laut Altdaten for object '88-65'
+KdZ4451;   Unknown additional text type: Gattung/Art (aus Altdaten) for object 'KdZ4451'
+KdZ4452;   Unknown additional text type: Gattung/Art (aus Altdaten) for object 'KdZ4452'
+DE_KSVC_H-0080; DE_KSVC_H-0080; Einziger Zustand; 1. Auflage
+DE_KSVC_I-41-10; DE_KSVC_I-41-10; Einziger Zustand; ? Auflage
+DE_KSVC_I-41-10a; DE_KSVC_I-41-10a; Einziger Zustand; ? Auflage
+DE_KSVC_H-1988; DE_KSVC_H-1988; Einziger Zustand; ? Auflage
+[VD16 B 2700]
+DE_KSVC_I-44-85; DE_KSVC_I-44-85; Einziger Zustand; ? Auflage
+[VD16 R1696]
+DE_KSVC_I-43-54; DE_KSVC_I-43-54; Einziger Zustand; ? Auflage
+[VD16 ZV 19356]
+DE_KSVC_I-41-17; DE_KSVC_I-41-17; Einziger Zustand; ? Auflage
+DE_KSVC_I-41-19; DE_KSVC_I-41-19; Einziger Zustand; Auflage
+[VD16 C 5354]
+DE_KSVC_I-42-32; DE_KSVC_I-42-32; Einziger Zustand; ? Auflage
+DE_KSVC_I-42-22; DE_KSVC_I-42-22; Einziger Zustand; ? Auflage
+DE_KSVC_I-42-23a; DE_KSVC_I-42-23a; Einziger Zustand; ? Auflage
+[VD16 B 4780] [VD16 B 4786] or [VD16 C 5354]
+DE_KSVC_I-42-23; DE_KSVC_I-42-23; Einziger Zustand; ? Auflage
+DE_KSVC_I-42-26; DE_KSVC_I-42-26; Einziger Zustand; ? Auflage
+[VD16 B 4786]
+DE_KSVC_I-42-27; DE_KSVC_I-42-27; Einziger Zustand;  Auflage b)
+[VD16 ZV 31527]
+DE_KSVC_I-42-30; DE_KSVC_I-42-30; Einziger Zustand;. Auflage unklar
+DE_KSVC_I-42-29; DE_KSVC_I-42-29; Einziger Zustand; ? Auflage
+[VD16 B 4786]
+DE_KSVC_I-42-35; DE_KSVC_I-42-35; Einziger Zustand; Auflage d) ?
+DE_KSVC_I-44-83; DE_KSVC_I-44-83; Einziger Zustand; ? Auflage
+DE_KSVC_I-44-94; DE_KSVC_I-44-94; Einziger Zustand; ? Auflage
+[VD16 R 1696] ?
+DE_KSVC_I-44-95; DE_KSVC_I-44-95; Einziger Zustand; ? Auflage
+[VD16 R 1696] ?
+DE_KSVC_I-43-50; DE_KSVC_I-43-50; Einziger Zustand; Auflage unklar
+DE_KSVC_I-43-55; DE_KSVC_I-43-55; Einziger Zustand;  Auflage unklar
+[VD16 ZV 19356] ?
+DE_KSVC_I-43-49; DE_KSVC_I-43-49; Einziger Zustand;  Auflage unklar
+DE_KSVC_I-43-51; DE_KSVC_I-43-51; Einziger Zustand; Auflage unklar
+DE_KSVC_I-43-52; DE_KSVC_I-43-52; Einziger Zustand; Auflage unklar
+DE_KSVC_I-43-53; DE_KSVC_I-43-53; Einziger Zustand; Auflage unklar
+DE_KSVC_I-41-2; DE_KSVC_I-41-2; Einziger Zustand; Auflage unklar
+DE_KSVC_I-41-1; DE_KSVC_I-41-1; Einziger Zustand; Auflage unklar
+DE_KSVC_I-43-62; DE_KSVC_I-43-62; Einziger Zustand; Auflage ?)
+[VD16 R 1691]?
+DE_KSVC_I-44-91; DE_KSVC_I-44-91; Einziger Zustand; ? Auflage
+[VD16 R 1696]
+DE_KSVC_I-44-87; DE_KSVC_I-44-87; Einziger Zustand; ? Auflage
+[VD16 R 1687] ?
+DE_KSVC_I-44-88; DE_KSVC_I-44-88; 3. Zustand; ? Auflage
+[VD16 R 1687] ?
+DE_KSVC_I-44-97; DE_KSVC_I-44-97; Einziger Zustand; ? Auflage
+[VD16 R 1687]
+DE_KSVC_I-45-131; DE_KSVC_I-45-131; Einziger Zustand; ? Auflage
+[VD16 R 1691]
+DE_KSVC_I-44-98; DE_KSVC_I-44-98; Einziger Zustand; ? Auflage
+[VD16 R 1696]
+DE_KSVC_I-43-63; DE_KSVC_I-43-63; Einziger Zustand; ? Auflage
+[VD16 R 1696]?
+DE_KSVC_I-44-84; DE_KSVC_I-44-84; Einziger Zustand; ? Auflage
+DE_KSVC_I-44-93; DE_KSVC_I-44-93; Einziger Zustand; ? Auflage
+[VD16 R 1696] ?
+DE_KSVC_I-44-96; DE_KSVC_I-44-96; Einziger Zustand; ? Auflage
+[VD16 R 1696] ?
+DE_KSVC_I-44-92; DE_KSVC_I-44-92; Einziger Zustand; ? Auflage
+[VD16 R 1696]
+DE_KSVC_I-44-101; DE_KSVC_I-44-101; Einziger Zustand; ? Auflage
+[VD16 R 1696] ?
+DE_KSVC_I-44-100; DE_KSVC_I-44-100; Einziger Zustand; ? Auflage
+[VD16 R 1696] ?
+DE_KSVC_I-44-89; DE_KSVC_I-44-89; Einziger Zustand; ? Auflage
+[VD16 R 1696] ?
+DE_KSVC_I-44-90; DE_KSVC_I-44-90; Einziger Zustand; ? Auflage
+[VD16 R 1687]
+DE_KSVC_I-41-4; DE_KSVC_I-41-4; Einziger Zustand; Auflage b)
+DE_KSVC_I-41-3; DE_KSVC_I-41-3; Einziger Zustand; Auflage b)
+DE_KSVC_XIII-3-98; DE_KSVC_XIII-3-98; Einziger Zustand; ? Auflage
+DE_KSVC_XIII-3-99; DE_KSVC_XIII-3-99; Einziger Zustand; ? Auflage
+DE_KSVC_XIII-3-100; DE_KSVC_XIII-3-100; Einziger Zustand; ? Auflage
+DE_KSVC_VI-427-299; DE_KSVC_VI-427-299; Einziger Zustand; ?  Auflage
+[VD16 L 3759]
+DE_KSVC_VI-427-300; DE_KSVC_VI-427-300; Einziger Zustand; ?  Auflage
+[VD16 L 4790]
+DE_KSVC_I-51-2B; DE_KSVC_I-51-2B; Einziger Zustand; ?  Auflage
+[VD16 L 3900]
+DE_KSVC_H-2516; DE_KSVC_H-2516; Einziger Zustand; ?  Auflage
+[VD16 L 5951/L 5952/L 5953]
+DE_KSVC_I-50-27; DE_KSVC_I-50-27; Einziger Zustand; ?  Auflage
+[VD16 B 4786]
+DE_KSVC_H-2507; DE_KSVC_H-2507; Einziger Zustand; ?  Auflage
+[VD16 L 5689]
+DE_KSVC_H-2506; DE_KSVC_H-2506; Einziger Zustand; ?  Auflage
+[VD16 L 4487]
+DE_KSVC_H-2510; DE_KSVC_H-2510; Einziger Zustand; ?  Auflage
+[VD16 L 4217]
+DE_KSVC_I-51-275; DE_KSVC_I-51-275; Einziger Zustand; ? Auflage
+DE_KSVC_I-51-273; DE_KSVC_I-51-273; Einziger Zustand; ? Auflage
+DE_KSVC_I-43-57; DE_KSVC_I-43-57; Einziger Zustand; ? Auflage
+DE_KSVC_I-43-56; DE_KSVC_I-43-56; Einziger Zustand; ? Auflage
+[VD16 B 2736]
+DE_KSVC_I-51-31; DE_KSVC_I-51-31; Einziger Zustand; ? Auflage
+[VD16 B 2617]
+DE_KSVC_VI-426-276; DE_KSVC_VI-426-276; Einziger Zustand; Auflage c) ?
+[VD16 B 4499]
+DE_KSVC_VI-426-277; DE_KSVC_VI-426-277; Einziger Zustand; Auflage c) ?
+[VD16 B 4499]
+DE_KSVC_VI-427-290; DE_KSVC_VI-427-290; Einziger Zustand; Auflage c) ?
+[VD16 B 4499]
+DE_KSVC_VI-426-289; DE_KSVC_VI-426-289; Einziger Zustand; Auflage c) ?
+[VD16 B 4499]
+DE_KSVC_VI-427-291; DE_KSVC_VI-427-291; II. Zustand; Auflage c) ? [VD16 B 4499]
+DE_KSVC_VI-426-284; DE_KSVC_VI-426-284; Einziger Zustand; Auflage c) ?
+[VD16 B 4499]
+DE_KSVC_VI-427-292; DE_KSVC_VI-427-292; II. Zustand; Auflage c) ?
+[VD16 B 4499]
+DE_KSVC_VI-427-293; DE_KSVC_VI-427-293; II. Zustand; Auflage c) ? [VD16 B 4499]
+DE_KSVC_VI-427-295; DE_KSVC_VI-427-295; Einziger Zustand; Auflage c) ? [VD16 B 4499]
+DE_KSVC_I-42-36; DE_KSVC_I-42-36; Einziger Zustand; Auflage ?
+DE_KSVC_I-42-37; DE_KSVC_I-42-37; Einziger Zustand; Auflage ?
+DE_KSVC_I-42-38; DE_KSVC_I-42-38; Einziger Zustand; Auflage ?
+DE_KSVC_I-42-39; DE_KSVC_I-42-39; Einziger Zustand; Auflage ?
+DE_KSVC_I-42-40; DE_KSVC_I-42-40; Einziger Zustand; Auflage ?
+DE_KSVC_I-42-41; DE_KSVC_I-42-41; Einziger Zustand; Auflage ?
+DE_KSVC_I-42-42; DE_KSVC_I-42-42; Einziger Zustand; Auflage ?
+DE_KSVC_I-42-43; DE_KSVC_I-42-43; Einziger Zustand; Auflage ?
+DE_KSVC_I-42-44; DE_KSVC_I-42-44; Einziger Zustand; Auflage ?
+DE_KSVC_I-42-45; DE_KSVC_I-42-45; Einziger Zustand; Auflage ?
+DE_KSVC_I-42-46; DE_KSVC_I-42-46; Einziger Zustand; Auflage ?
+DE_KSVC_I-43-47; DE_KSVC_I-43-47; Einziger Zustand; Auflage ?
+DE_KSVC_I-43-48; DE_KSVC_I-43-48; Einziger Zustand; Auflage ?
+DE_KSVC_I-50-2; DE_KSVC_I-50-2; Einziger Zustand; ? Auflage
+DE_KSVC_XIII-3-82; DE_KSVC_XIII-3-82; I. Zustand; Auflage a) VD16 ZV 26538
+DE_KSVC_I-45-129; DE_KSVC_I-45-129; Einziger Zustand; Auflage a) ?
+DE_KSVC_XIII-68-7; DE_KSVC_XIII-68-7; Einziger Zustand; ? Auflage
+DE_KSVC_I-46-136; DE_KSVC_I-46-136; Einziger Zustand; ? Auflage
+DE_KSVC_I-45-125; DE_KSVC_I-45-125; II. Zustand ?; Auflage b) ?
+DE_KSVC_I-45-130; DE_KSVC_I-45-130; Einziger Zustand; ? Auflage
+[VD16 R 1691]
+DE_KSVC_I-44-99; DE_KSVC_I-44-99; Einziger Zustand; ? Auflage
+[VD16 R 1696]
+DE_KSVC_VI-426-278; DE_KSVC_VI-426-278; Einziger Zustand; Auflage c) ?
+[VD16 B 4499]
+DE_KSVC_VI-426-279; DE_KSVC_VI-426-279; Einziger Zustand; Auflage c) ? 
+[VD16 B 4499]
+DE_KSVC_VI-426-280; DE_KSVC_VI-426-280; Einziger Zustand; Auflage c) ?
+[VD16 B 4499]
+DE_KSVC_VI-426-282; DE_KSVC_VI-426-282; Einziger Zustand; Auflage c) ?
+[VD16 B 4499]
+DE_KSVC_VI-426-283; DE_KSVC_VI-426-283; Einziger Zustand; Auflage c) ?
+[VD16 B 4499]
+DE_KSVC_VI-426-288; DE_KSVC_VI-426-288; Einziger Zustand; Auflage c) ?
+[VD16 B 4499]
+DE_KSVC_VI-426-286; DE_KSVC_VI-426-286; Einziger Zustand; Auflage c) ?
+[VD16 B 4499]
+DE_KSVC_VI-426-281; DE_KSVC_VI-426-281; Einziger Zustand; Auflage c) ?
+[VD16 B 4499]
+DE_KSVC_VI-426-287; DE_KSVC_VI-426-287; Einziger Zustand; Auflage c) ?
+[VD16 B 4499]
+DE_KSVC_VI-426-285; DE_KSVC_VI-426-285; Einziger Zustand; Auflage c) ?
+[VD16 B 4499]
+DE_KSVC_VI-427-294; DE_KSVC_VI-427-294; Einziger Zustand; Auflage c) ? [VD16 B 4499]
+DE_KSVC_VI-427-296; DE_KSVC_VI-427-296; Einziger Zustand; Auflage c) ? [VD16 B 4499]
+DE_KSVC_I-45-123; DE_KSVC_I-45-123; I. Zustand ?;  Auflage a)
+DE_KSVC_I-45-122; DE_KSVC_I-45-122; II. Zustand; Auflage d)
+DE_KSVC_I-46-140; DE_KSVC_I-46-140; II. Zustand; Auflage d)
+DE_KSVC_I-45-127; DE_KSVC_I-45-127; Einziger Zustand;  Auflage d)
+DE_KSVC_I-50-24; DE_KSVC_I-50-24; Einziger Zustand; Auflage nach 1600
+DE_KSVC_I-46-135; DE_KSVC_I-46-135; Einziger Zustand; Auflage ?
+DE_KSVC_I-50-4; DE_KSVC_I-50-4; Einziger Zustand; ? Auflage [VD16 G 1328]
+DE_KSVC_I-50-6; DE_KSVC_I-50-6; Einziger Zustand; Auflage a)
+DE_KSVC_I-45-133; DE_KSVC_I-45-133; Einziger Zustand; ? Auflage
+DE_KSVC_I-45-132a; DE_KSVC_I-45-132a; Einziger Zustand; Auflage VD16 M 2331
+DE_KSVC_I-45-132; DE_KSVC_I-45-132; Einziger Zustand; Auflage ? [Melanchthon 1564](https://mdz-nbn-resolving.de/details:bsb11059446)
+DE_KSVC_I-51-29; DE_KSVC_I-51-29; Einziger Zustand; ? Auflage [VD16 M 1823]
+DE_KSVC_I-51-30; DE_KSVC_I-51-30; Einziger Zustand; ? Auflage [VD16 M 1823]
+LC_HVI-85_108-21; DE_SKD_A1033; Einziger Zustand; 1. Auflage
+DE_SKD_A1055; Einziger Zustand; 1. Auflage
+DE_SKD_A115702; Einziger Zustand; 1. Auflage
+DE_SKD_A115805; Einziger Zustand; 1. Auflage
+DE_SKD_A116010; Einziger Zustand; 1. Auflage
+DE_SKD_A120483; Einziger Zustand; 1. Auflage
+DE_SKD_A120484; Einziger Zustand; 1. Auflage
+DE_SKD_A120485; Einziger Zustand; 1. Auflage
+DE_SKD_A120486; Einziger Zustand; 1. Auflage
+DE_SKD_A129766; Einziger Zustand; 1. Auflage
+DE_SKD_A129767; Einziger Zustand; 1. Auflage
+DE_SKD_A129768; Einziger Zustand; 1. Auflage
+DE_SKD_A129769; Einziger Zustand; 1. Auflage
+DE_SKD_A129770; Einziger Zustand; 1. Auflage
+DE_SKD_A129771; Einziger Zustand; 1. Auflage
+DE_SKD_A129772; Einziger Zustand; 1. Auflage
+DE_SKD_A129773; Einziger Zustand; 1. Auflage
+DE_SKD_A129774; Einziger Zustand; 1. Auflage
+DE_SKD_A129775; Einziger Zustand; 1. Auflage
+DE_SKD_A129776; Einziger Zustand; 1. Auflage
+DE_SKD_A129777; Einziger Zustand; 1. Auflage
+DE_SKD_A129778; Einziger Zustand; 1. Auflage
+DE_SKD_A129779; Einziger Zustand; 1. Auflage
+DE_SKD_A129780; Einziger Zustand; 1. Auflage
+DE_SKD_A129781; Einziger Zustand; 1. Auflage
+DE_SKD_A129782; Einziger Zustand; 1. Auflage
+DE_SKD_A129783; Einziger Zustand; 1. Auflage
+DE_SKD_A129784; Einziger Zustand; 1. Auflage
+DE_SKD_A129785; Einziger Zustand; 1. Auflage
+DE_SKD_A129786; Einziger Zustand; 1. Auflage
+DE_SKD_A129787; Einziger Zustand; 1. Auflage
+DE_SKD_A129788; Einziger Zustand; 1. Auflage
+DE_SKD_A129789; Einziger Zustand; 1. Auflage
+DE_SKD_A129790; Einziger Zustand; 1. Auflage
+DE_SKD_A129791; Einziger Zustand; 1. Auflage
+DE_SKD_A129792; Einziger Zustand; 1. Auflage
+DE_SKD_A142413; Einziger Zustand; 1. Auflage
+DE_SKD_A1876-53; Einziger Zustand; 1. Auflage
+DE_SKD_A1885-43; Einziger Zustand; 1. Auflage
+DE_SKD_A1885-44; Einziger Zustand; 1. Auflage
+DE_SKD_A1885-45; Einziger Zustand; 1. Auflage
+DE_SKD_A1886-19; Einziger Zustand; 1. Auflage
+DE_SKD_A1887-78; Zweiter Zustand; 1. Auflage
+DE_SKD_A1887-81; Einziger Zustand; 1. Auflage
+DE_SKD_A1888-74; Einziger Zustand; 1. Auflage
+DE_SKD_A1892-99; Einziger Zustand; 1. Auflage
+DE_SKD_A1893-182; Einziger Zustand; 1. Auflage
+DE_SKD_A1897-505; Einziger Zustand; 1. Auflage
+DE_SKD_A1897-506; Einziger Zustand; 1. Auflage
+DE_SKD_A1899-475; Einziger Zustand; 1. Auflage
+DE_SKD_A1899-476; Einziger Zustand; 1. Auflage
+DE_SKD_A1899-477; Einziger Zustand; 1. Auflage
+DE_SKD_A1899-478; Einziger Zustand; 1. Auflage
+DE_SKD_A1899-479; Einziger Zustand; 1. Auflage
+DE_SKD_A1899-480; Einziger Zustand; 1. Auflage
+DE_SKD_A1899-481; Einziger Zustand; 1. Auflage
+DE_SKD_A1899-482; Einziger Zustand; 1. Auflage
+DE_SKD_A1899-483; Einziger Zustand; 1. Auflage
+DE_SKD_A1899-484; Einziger Zustand; 1. Auflage
+DE_SKD_A1899-485; Einziger Zustand; 1. Auflage
+DE_SKD_A1899-486; Einziger Zustand; 1. Auflage
+DE_SKD_A1899-950; Einziger Zustand; 1. Auflage
+DE_SKD_A1900-662; Einziger Zustand; 1. Auflage
+DE_SKD_A1900-671; Einziger Zustand; 1. Auflage
+DE_SKD_A1905-370; Einziger Zustand; 1. Auflage
+DE_SKD_A1905-371; Einziger Zustand; 1. Auflage
+DE_SKD_A1905-372; Einziger Zustand; 1. Auflage
+DE_SKD_A1905-373; Einziger Zustand; 1. Auflage
+DE_SKD_A1905-374; Einziger Zustand; 1. Auflage
+DE_SKD_A1905-375; Einziger Zustand; 1. Auflage
+DE_SKD_A1905-376; Einziger Zustand; 1. Auflage
+DE_SKD_A1905-377; Einziger Zustand; 1. Auflage
+DE_SKD_A1905-378; Einziger Zustand; 1. Auflage
+DE_SKD_A1907-427; Einziger Zustand; 1. Auflage
+DE_SKD_A1907-465; Einziger Zustand; 1. Auflage
+DE_SKD_A1908-27; Einziger Zustand; 1. Auflage
+DE_SKD_A1909-689; Einziger Zustand; 1. Auflage
+DE_SKD_A1909-789; Einziger Zustand; 1. Auflage
+DE_SKD_A1909-790; Einziger Zustand; 1. Auflage
+DE_SKD_A1909-791; Einziger Zustand; 1. Auflage
+DE_SKD_A1910-310; Einziger Zustand; 1. Auflage
+DE_SKD_A1910-429; Einziger Zustand; 1. Auflage
+DE_SKD_A1911-147; Einziger Zustand; 1. Auflage
+DE_SKD_A1912-558; Einziger Zustand; 1. Auflage
+DE_SKD_A1912-559; Einziger Zustand; 1. Auflage
+DE_SKD_A1912-560; Einziger Zustand; 1. Auflage
+DE_SKD_A1912-561; Einziger Zustand; 1. Auflage
+DE_SKD_A1912-562; Einziger Zustand; 1. Auflage
+DE_SKD_A1912-603; Zweiter Zustand; 1. Auflage
+DE_SKD_A1924-280; Einziger Zustand; 1. Auflage
+DE_SKD_A1925-50; Einziger Zustand; 1. Auflage
+DE_SKD_A1961-148; Einziger Zustand; 1. Auflage
+DE_SKD_A1962-42; Einziger Zustand; 1. Auflage
+DE_SKD_A1962-43; Einziger Zustand; 1. Auflage
+DE_SKD_A5382; Einziger Zustand; 1. Auflage
+DE_SKD_A5387; Einziger Zustand; 1. Auflage
+DE_SKD_A5390; Einziger Zustand; 1. Auflage
+DE_SKD_A5392; Einziger Zustand; 1. Auflage
+DE_SKD_A5394_Doppelung; Einziger Zustand; 1. Auflage
+DE_SKD_A5395; Einziger Zustand; 1. Auflage
+DE_SKD_A5396; Einziger Zustand; 1. Auflage
+DE_SKD_A5397; Einziger Zustand; 1. Auflage
+DE_SKD_A5398; Einziger Zustand; 1. Auflage
+DE_SKD_A5399; Einziger Zustand; 1. Auflage
+DE_SKD_A5400; Einziger Zustand; 1. Auflage
+DE_SKD_A5401; Einziger Zustand; 1. Auflage
+DE_SKD_A5402; Einziger Zustand; 1. Auflage
+DE_SKD_A5403; Einziger Zustand; 1. Auflage
+DE_SKD_A5404; Einziger Zustand; 1. Auflage
+DE_SKD_A5405; Einziger Zustand; 1. Auflage
+DE_SKD_A5406; Einziger Zustand; 1. Auflage
+DE_SKD_A5407; Einziger Zustand; 1. Auflage
+DE_SKD_A5408; Einziger Zustand; 1. Auflage
+DE_SKD_A5409; Einziger Zustand; 1. Auflage
+DE_SKD_A5410; Einziger Zustand; 1. Auflage
+DE_SKD_A6411a; Einziger Zustand; 1. Auflage
+DE_SKD_A6412; Einziger Zustand; 1. Auflage
+DE_SKD_A6413; Einziger Zustand; 1. Auflage
+DE_SKD_A6414; Einziger Zustand; 1. Auflage
+DE_SKD_A6415; Einziger Zustand; 1. Auflage
+DE_SKD_A6416; Einziger Zustand; 1. Auflage
+DE_SKD_A6417; Einziger Zustand; 1. Auflage
+DE_SKD_A6418; Einziger Zustand; 1. Auflage
+DE_SKD_A6419; Einziger Zustand; 1. Auflage
+DE_SKD_A6420; Einziger Zustand; 1. Auflage
+DE_SKD_A6421; Einziger Zustand; 1. Auflage
+DE_SKD_A6422; Einziger Zustand; 1. Auflage
+DE_SKD_A6423; Einziger Zustand; 1. Auflage
+DE_SKD_A6424; Einziger Zustand; 1. Auflage
+DE_SKD_A6425; Einziger Zustand; 1. Auflage
+DE_SKD_A6426; Einziger Zustand; 1. Auflage
+DE_SKD_A6427; Einziger Zustand; 1. Auflage
+DE_SKD_A6428; Einziger Zustand; 1. Auflage
+DE_SKD_A6429; Einziger Zustand; 1. Auflage
+DE_SKD_A6430; Einziger Zustand; 1. Auflage
+DE_SKD_A6431; Einziger Zustand; 1. Auflage
+DE_SKD_A6432; Einziger Zustand; 1. Auflage
+DE_SKD_A6433; Einziger Zustand; 1. Auflage
+DE_SKD_A6434; Einziger Zustand; 1. Auflage
+DE_SKD_A6435; Einziger Zustand; 1. Auflage
+DE_SKD_A6436; Einziger Zustand; 1. Auflage
+DE_SKD_A6437; Einziger Zustand; 1. Auflage
+DE_SKD_A6438; Einziger Zustand; 1. Auflage
+DE_SKD_A6439; Einziger Zustand; 1. Auflage
+DE_SKD_A6440; Einziger Zustand; 1. Auflage
+DE_SKD_A6441; Einziger Zustand; 1. Auflage
+DE_SKD_A6442; Einziger Zustand; 1. Auflage
+DE_SKD_A6443; Einziger Zustand; 1. Auflage
+DE_SKD_A6444; Einziger Zustand; 1. Auflage
+DE_SKD_A6445; Einziger Zustand; 1. Auflage
+DE_SKD_A6446; Einziger Zustand; 1. Auflage
+DE_SKD_A6447; Erster Zustand; 1. Auflage
+DE_SKD_A6448; Einziger Zustand; 1. Auflage
+DE_SKD_A6450; Einziger Zustand; 1. Auflage
+DE_SKD_A6451; Einziger Zustand; 1. Auflage
+DE_SKD_A6452; Einziger Zustand; 1. Auflage
+DE_SKD_A6453; Einziger Zustand; 1. Auflage
+DE_SKD_A6454; Einziger Zustand; 1. Auflage
+DE_SKD_A6455; Einziger Zustand; 1. Auflage
+DE_SKD_A6456; Einziger Zustand; 1. Auflage
+DE_SKD_A6457; Einziger Zustand; 1. Auflage
+DE_SKD_A6458; Einziger Zustand; 1. Auflage
+DE_SKD_A6459; Einziger Zustand; 1. Auflage
+DE_SKD_A6460; Einziger Zustand; 1. Auflage
+DE_SKD_A6461; Einziger Zustand; 1. Auflage
+DE_SKD_A6462; Einziger Zustand; 1. Auflage
+DE_SKD_A6463; Einziger Zustand; 1. Auflage
+DE_SKD_A6464; Einziger Zustand; 1. Auflage
+DE_SKD_A6465; Einziger Zustand; 1. Auflage
+DE_SKD_A6466; Einziger Zustand; 1. Auflage
+DE_SKD_A6467; Einziger Zustand; 1. Auflage
+DE_SKD_A6468; Einziger Zustand; 1. Auflage
+DE_SKD_A6469; Einziger Zustand; 1. Auflage
+DE_SKD_A6470; Einziger Zustand; 1. Auflage
+DE_SKD_A6471; Einziger Zustand; 1. Auflage
+DE_SKD_A6472; Einziger Zustand; 1. Auflage
+DE_SKD_A6473; Einziger Zustand; 1. Auflage
+DE_SKD_A6474a; Einziger Zustand; 1. Auflage
+DE_SKD_A6474b; Einziger Zustand; 1. Auflage
+DE_SKD_A6475a; Einziger Zustand; 1. Auflage
+DE_SKD_A6475b; Einziger Zustand; 1. Auflage
+DE_SKD_A6476; Einziger Zustand; 1. Auflage
+DE_SKD_A6477; Einziger Zustand; 1. Auflage
+DE_SKD_A6478; Einziger Zustand; 1. Auflage
+DE_SKD_A6479; Einziger Zustand; 1. Auflage
+DE_SKD_A6480; Einziger Zustand; 1. Auflage
+DE_SKD_A6481; Einziger Zustand; 1. Auflage
+DE_SKD_A6482; Einziger Zustand; 1. Auflage
+DE_SKD_A6483; Einziger Zustand; 1. Auflage
+DE_SKD_A6485; Einziger Zustand; 1. Auflage
+DE_SKD_A6486; Einziger Zustand; 1. Auflage
+DE_SKD_A6487; Einziger Zustand; 1. Auflage
+DE_SKD_A6488; Einziger Zustand; 1. Auflage
+DE_SKD_A6489; Einziger Zustand; 1. Auflage
+DE_SKD_A6490; Einziger Zustand; 1. Auflage
+DE_SKD_A6491; Einziger Zustand; 1. Auflage
+DE_SKD_A6492; Einziger Zustand; 1. Auflage
+DE_SKD_A6493; Einziger Zustand; 1. Auflage
+DE_SKD_A6494; Einziger Zustand; 1. Auflage
+DE_SKD_A6495; Einziger Zustand; 1. Auflage
+DE_SKD_A6496; Einziger Zustand; 1. Auflage
+DE_SKD_A6497; Einziger Zustand; 1. Auflage
+DE_SKD_A6498; Einziger Zustand; 1. Auflage
+DE_SKD_A6499; Einziger Zustand; 1. Auflage
+DE_SKD_A6500; Einziger Zustand; 1. Auflage
+DE_SKD_A6501; Einziger Zustand; 1. Auflage
+DE_SKD_A6502; Einziger Zustand; 1. Auflage
+DE_SKD_A6503; Einziger Zustand; 1. Auflage
+DE_SKD_A6504; Einziger Zustand; 1. Auflage
+DE_SKD_A6505; Einziger Zustand; 1. Auflage
+DE_SKD_A6506; Einziger Zustand; 1. Auflage
+DE_SKD_A6507; Einziger Zustand; 1. Auflage
+DE_SKD_A6508; Einziger Zustand; 1. Auflage
+DE_SKD_A6509; Einziger Zustand; 1. Auflage
+DE_SKD_A6510; Einziger Zustand; 1. Auflage
+DE_SKD_A6511; Einziger Zustand; 1. Auflage
+DE_SKD_A6512; Einziger Zustand; 1. Auflage
+DE_SKD_A6513; Einziger Zustand; 1. Auflage
+DE_SKD_A6513a; Einziger Zustand; 1. Auflage
+DE_SKD_A6514; Einziger Zustand; 1. Auflage
+DE_SKD_A6515; Zweiter Zustand; 1. Auflage
+DE_SKD_A6517; Zweiter Zustand; 1. Auflage
+DE_SKD_A6518; Einziger Zustand; 1. Auflage
+DE_SKD_A6520; Zweiter Zustand; 1. Auflage
+DE_SKD_A6521; Einziger Zustand; 1. Auflage
+DE_SKD_A6522; Einziger Zustand; 1. Auflage
+DE_SKD_A6523; Einziger Zustand; 1. Auflage
+DE_SKD_A6524; Erster Zustand; 1. Auflage
+DE_SKD_A6525; Erster Zustand; 1. Auflage
+DE_SKD_A6526; Einziger Zustand; 1. Auflage
+DE_SKD_A6527; Einziger Zustand; 1. Auflage
+DE_SKD_A6528; Einziger Zustand; 1. Auflage
+DE_SKD_A6530; Einziger Zustand; 1. Auflage
+DE_SKD_A6530a; Einziger Zustand; 1. Auflage
+DE_SKD_A6531; Einziger Zustand; 1. Auflage
+DE_SKD_A6532; Zweiter Zustand; 1. Auflage
+DE_SKD_A6533; Einziger Zustand; 1. Auflage
+DE_SKD_A6534; Ia. Zustand; 1. Auflage
+DE_SKD_A6535; Erster Zustand; 1. Auflage
+DE_SKD_A6536; Einziger Zustand; 1. Auflage
+DE_SKD_A6537; Einziger Zustand; 1. Auflage
+DE_SKD_A6539; Einziger Zustand; 1. Auflage
+DE_SKD_A6540; Einziger Zustand; 1. Auflage
+DE_SKD_A6541; Einziger Zustand; 1. Auflage
+DE_SKD_A6542; Einziger Zustand; 1. Auflage
+DE_SKD_A6543; Einziger Zustand; 1. Auflage
+DE_SKD_A6544; Einziger Zustand; 1. Auflage
+DE_SKD_A6545; Einziger Zustand; 1. Auflage
+DE_SKD_A6547; Einziger Zustand; 1. Auflage
+DE_SKD_A6548; Einziger Zustand; 1. Auflage
+DE_SKD_A6549; Einziger Zustand; 1. Auflage
+DE_SKD_A6551; Einziger Zustand; 1. Auflage
+DE_SKD_A6552; Einziger Zustand; 1. Auflage
+DE_SKD_A6553; Einziger Zustand; 1. Auflage
+DE_SKD_A6554; Einziger Zustand; 1. Auflage
+DE_SKD_A6555; Einziger Zustand; 1. Auflage
+DE_SKD_A6556; Einziger Zustand; 1. Auflage
+DE_SKD_A6557; Einziger Zustand; 1. Auflage
+DE_SKD_A6558; Einziger Zustand; 1. Auflage
+DE_SKD_A6559; Einziger Zustand; 1. Auflage
+DE_SKD_A6560; Einziger Zustand; 1. Auflage
+DE_SKD_A6561; Einziger Zustand; 1. Auflage
+DE_SKD_A6562; Einziger Zustand; 1. Auflage
+DE_SKD_A6563; Einziger Zustand; 1. Auflage
+DE_SKD_A6564; Einziger Zustand; 1. Auflage
+DE_SKD_A6565; Einziger Zustand; 1. Auflage
+DE_SKD_A6566; Einziger Zustand; 1. Auflage
+DE_SKD_A6567; Einziger Zustand; 1. Auflage
+DE_SKD_A6568; Einziger Zustand; 1. Auflage
+DE_SKD_A6569; Einziger Zustand; 1. Auflage
+DE_SKD_A6570-01; Einziger Zustand; 1. Auflage
+DE_SKD_A6571; Einziger Zustand; 1. Auflage
+DE_SKD_A6585; Einziger Zustand; 1. Auflage
+DE_SKD_A6592; Einziger Zustand; 1. Auflage
+DE_SKD_A6605; Einziger Zustand; 1. Auflage
+DE_SKD_A6610; Einziger Zustand; 1. Auflage
+DE_SKD_A6611; Einziger Zustand; 1. Auflage
+DE_SKD_A6613; Einziger Zustand; 1. Auflage
+DE_SKD_A6614; Einziger Zustand; 1. Auflage
+DE_SKD_A6615; Einziger Zustand; 1. Auflage
+DE_SKD_A6619; Einziger Zustand; 1. Auflage
+DE_SKD_A6620; Einziger Zustand; 1. Auflage
+DE_SKD_A6621; Einziger Zustand; 1. Auflage
+DE_SKD_A6622; Einziger Zustand; 1. Auflage
+DE_SKD_A6624; Erster Zustand; 1. Auflage
+DE_SKD_A6628; Einziger Zustand; 1. Auflage
+DE_SKD_A6630; Einziger Zustand; 1. Auflage
+DE_SKD_A6631; Einziger Zustand; 1. Auflage
+DE_SKD_A6632; Einziger Zustand; 1. Auflage
+DE_SKD_A6633; Einziger Zustand; 1. Auflage
+DE_SKD_A6634; Einziger Zustand; 1. Auflage
+DE_SKD_A6635; Einziger Zustand; 1. Auflage
+DE_SKD_A6636; Einziger Zustand; 1. Auflage
+DE_SKD_A6637; Zweiter Zustand; 1. Auflage
+DE_SKD_A6638; Einziger Zustand; 1. Auflage
+DE_SKD_A6639; Einziger Zustand; 1. Auflage
+DE_SKD_A6640; Einziger Zustand; 1. Auflage
+DE_SKD_A6641; Einziger Zustand; 1. Auflage
+DE_SKD_A6642; Einziger Zustand; 1. Auflage
+DE_SKD_A6643; Einziger Zustand; 1. Auflage
+DE_SKD_A6644; Einziger Zustand; 1. Auflage
+DE_SKD_A6646; Einziger Zustand; 1. Auflage
+DE_SKD_A6647; Einziger Zustand; 1. Auflage
+DE_SKD_A6648; Einziger Zustand; 1. Auflage
+DE_SKD_A6649; Einziger Zustand; 1. Auflage
+DE_SKD_A6650; Erster Zustand; 1. Auflage
+DE_SKD_A6651; Erster Zustand; 1. Auflage
+DE_SKD_A6655; Einziger Zustand; 1. Auflage
+DE_SKD_A6658; Einziger Zustand; 1. Auflage
+DE_SKD_A6659; Einziger Zustand; 1. Auflage
+DE_SKD_A6661; Einziger Zustand; 1. Auflage
+DE_SKD_A6662; Einziger Zustand; 1. Auflage
+DE_SKD_A6664; Einziger Zustand; 1. Auflage
+DE_SKD_A6665; Einziger Zustand; 1. Auflage
+DE_SKD_A6667; Einziger Zustand; 1. Auflage
+DE_SKD_A6668; Einziger Zustand; 1. Auflage
+DE_SKD_A6671; Einziger Zustand; 1. Auflage
+DE_SKD_A6718; Einziger Zustand; 1. Auflage
+DE_SKD_A6719; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_10; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_11; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_18; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_20; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_21; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_22; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_32; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_34; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_35; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_36; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_37; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_38; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_39; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_40; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_46; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_48; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-I_8; Einziger Zustand; 1. Auflage
+DE_SKD_B371_1-II; Einziger Zustand; 1. Auflage
+DE_SKD_B373_1; Einziger Zustand; 1. Auflage
+DE_SKD_B373_1-315; Einziger Zustand; 1. Auflage
+DE_SKD_B374_2; Einziger Zustand; 1. Auflage
+DE_SKD_B374_2-10; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2-1; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2-10; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2-11; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2-12; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2-13; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2-14; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2-15; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2-16; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2-2; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2-3; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2-4; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2-5; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2-6; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2-7; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2-8; Einziger Zustand; 1. Auflage
+DE_SKD_B375_2-9; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-1; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-10; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-11; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-12; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-13; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-14; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-15; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-16; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-17; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-18; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-19; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-2; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-20; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-21; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-3; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-4; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-5; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-6; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-7; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-8; Einziger Zustand; 1. Auflage
+DE_SKD_B376_1-9; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-1; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-10; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-11; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-12; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-13; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-14; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-15; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-16; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-17; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-18; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-19; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-2; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-20; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-21; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-22; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-23; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-24; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-25; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-26; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-27; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-3; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-4; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-5; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-6; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-7; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-8; Einziger Zustand; 1. Auflage
+DE_SKD_B377f_1-9; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-1; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-10; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-11; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-12; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-13; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-14; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-15; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-16; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-17; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-18; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-19; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-2; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-20; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-21; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-22; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-23; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-24; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-25; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-26; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-27; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-28; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-29; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-3; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-30; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-31; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-32; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-33; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-34; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-35; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-36; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-37; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-38; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-4; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-5; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-6; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-7; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-8; Einziger Zustand; 1. Auflage
+DE_SKD_B378_1-9; Einziger Zustand; 1. Auflage
+DE_SKD_B380p_1; Einziger Zustand; 1. Auflage
+DE_SKD_B380p_1-1; Einziger Zustand; 1. Auflage
+DE_SKD_Kg10080; Einziger Zustand; 1. Auflage
+DE_SKD_Kg11871; Einziger Zustand; 1. Auflage
+DE_SKD_Kg12665; Einziger Zustand; 1. Auflage
+DE_SKD_Kg21138; Einziger Zustand; 1. Auflage
+DE_SKD_Kg21693; Einziger Zustand; 1. Auflage
+DE_SKD_Kg25741; Einziger Zustand; 1. Auflage
+DE_SKD_Kg29369; Einziger Zustand; 1. Auflage
+DE_SKD_Kg29428; Einziger Zustand; 1. Auflage
+DE_SKD_Kg29430; Einziger Zustand; 1. Auflage
+DE_SKD_Kg29431; Einziger Zustand; 1. Auflage
+DE_SKD_Kg29432; Einziger Zustand; 1. Auflage
+DE_SKD_Kg35497; Einziger Zustand; 1. Auflage
+DE_SKD_Kg35498; Einziger Zustand; 1. Auflage
+DE_SKD_Kg37838; Erster Zustand; 1. Auflage
+DE_SKD_Kg8415; Einziger Zustand; 1. Auflage
+DE_SKD_Kg8416; Einziger Zustand; 1. Auflage
+DE_SKD_Kg8417; Einziger Zustand; 1. Auflage
+DE_SKD_Kg8418; Einziger Zustand; 1. Auflage
+DE_GNMN_H1700; Einziger Zustand; 1. Auflage
+DE_GNMN_H419; Einziger Zustand; Auflage unklar
+DE_GNMN_H421; Einziger Zustand; 1. Auflage
+DE_GNMN_H422; Einziger Zustand; 1. Auflage
+DE_GNMN_H423; Einziger Zustand; 1. Auflage
+DE_GNMN_H424; Einziger Zustand; Auflage ?)
+DE_GNMN_H425; Einziger Zustand; 1. Auflage
+DE_GNMN_H426; Einziger Zustand; 1. Auflage
+DE_GNMN_H427; Einziger Zustand; 1. Auflage
+DE_GNMN_H428; Einziger Zustand; 1. Auflage
+DE_GNMN_H429; Einziger Zustand; 1. Auflage
+DE_GNMN_H430; Einziger Zustand; 1. Auflage
+DE_GNMN_H431; Einziger Zustand; 1. Auflage
+DE_GNMN_H432; Einziger Zustand; 1. Auflage
+DE_GNMN_H433; Einziger Zustand; 1. Auflage
+DE_GNMN_H434; Einziger Zustand; 1. Auflage
+DE_GNMN_H435; Einziger Zustand; 1. Auflage
+DE_GNMN_H436; Einziger Zustand; 1. Auflage
+DE_GNMN_H437; Einziger Zustand;  spätere Auflage
+DE_GNMN_H438; II. Zustand; ?  Auflage
+DE_GNMN_H439; Einziger Zustand; Auflage bb)
+DE_GNMN_H440; II.  Zustand (= Hollstein III); Auflage c)
+DE_GNMN_H441; Einziger Zustand; ?  Auflage
+DE_GNMN_H442; Einziger Zustand; 1. Auflage
+DE_GNMN_H444; Einziger Zustand; ?  Auflage
+DE_GNMN_H445; Einziger Zustand; 3. Auflage
+DE_GNMN_H446; II. Zustand; Auflage d)
+DE_GNMN_H447; II. Zustand; ?  Auflage
+DE_GNMN_H448; II. Zustand; Auflage unklar
+DE_GNMN_H449; Einziger Zustand; 1. Auflage
+DE_GNMN_H450; Einziger Zustand; ?  Auflage
+DE_GNMN_H451; II. Zustand; Auflage unklar
+DE_GNMN_H452; Einziger Zustand; ?  Auflage
+DE_GNMN_H453; Einziger Zustand; Auflage unklar
+DE_GNMN_H454; Einziger Zustand;  Auflage unklar
+DE_GNMN_H4713; II. Zustand; Auflage nicht bekannt
+DE_GNMN_H4716; Einziger Zustand; 1. Auflage
+DE_GNMN_H5567; II. Zustand; Auflage ?)
+DE_GNMN_H5568; Einziger Zustand;  Auflage ?)
+DE_GNMN_H5573; Einziger Zustand; Auflage c)
+DE_GNMN_H5579; Einziger Zustand; Auflage ?)
+DE_GNMN_H5592; Einziger Zustand; Auflage c)
+DE_GNMN_H5628; II. Zustand; Auflage ?)
+DE_GNMN_H5629; Einziger Zustand; Auflage ?)
+DE_GNMN_H5630; Einziger Zustand; Auflage ?)
+DE_GNMN_H5695; Einziger Zustand; Auflage unkklar
+DE_GNMN_H5732; I. Zustand; Auflage a)
+DE_GNMN_H5957; II. Zustand; Aufla)ge ?
+DE_GNMN_H5958; Einziger Zustand; Auflage ?)
+DE_GNMN_H5959; Einziger Zustand; Auflage ?)
+DE_GNMN_H5965; II. Zustand; Auflage c)
+DE_GNMN_H5966; Kopie 5b? [Armin Kunz 2023]
+DE_GNMN_H6050; II. Zustand; Auflage ?)
+DE_GNMN_H6061; Einziger Zustand; 1. Auflage
+DE_GNMN_H6176; Einziger Zustand; Auflage ?)
+DE_GNMN_H6177; Einziger Zustand; Auflage ?)
+DE_GNMN_H6178; Einziger Zustand; Auflage unklar
+DE_GNMN_H6230; Einziger Zustand; Auflage unklar
+DE_GNMN_H6251; Einziger Zustand; Auflage unklar
+DE_GNMN_H6252; Einziger Zustand; Auflage unklar
+DE_GNMN_H6253; Einziger Zustand;  Auflage unklar
+DE_GNMN_H6254; Einziger Zustand; Auflage unklar
+DE_GNMN_H6255; Einziger Zustand; Auflage unklar
+DE_GNMN_H6277; Einziger Zustand; Auflage unklar
+DE_GNMN_H6278; Einziger Zustand; Auflage unklar
+DE_GNMN_H6362; Einziger Zustand; Auflage a) ?
+DE_GNMN_H6408; II. Zustand; Auflage unklar
+DE_GNMN_H6472; Einziger Zustand; Auflage unklar
+DE_GNMN_H7044; Einziger Zustand; Auflage unklar
+DE_GNMN_H7101; II. Zustand; Auflage unklar
+DE_GNMN_H7322; II. Zustand; Auflage unklar
+DE_GNMN_H7324; II.  Zustand (= Hollstein III); Auflage c)
+DE_GNMN_H7336; Einziger Zustand; Auflage unklar
+DE_GNMN_H7349; II. Zustand; Auflage unklar
+DE_GNMN_H7361; Einziger Zustand; Auflage unklar
+DE_GNMN_H7363; Einziger Zustand; Auflage unklar
+DE_GNMN_H7399; Einziger Zustand; Auflage unklar
+DE_GNMN_H7400; Einziger Zustand; Auflage a)
+DE_GNMN_H7411; Einziger Zustand; 1. Auflage
+DE_GNMN_H7414; Einziger Zustand; Auflage ?
+DE_GNMN_H7482; Einziger Zustand; 1. Auflage
+DE_GNMN_H7494; Einziger Zustand; 1. Auflage
+DE_GNMN_H7497; Einziger Zustand; Auflage d)
+DE_GNMN_H7502; Einziger Zustand; Auflage a)
+DE_GNMN_H7649; Einziger Zustand; 1. Auflage
+DE_GNMN_HB2818; Einziger Zustand; 1. Auflage
+DE_GNMN_HB2819; Einziger Zustand; 1. Auflage
+DE_GNMN_K20396; Einziger Zustand; 1. Auflage
+DE_GNMN_K864; Einziger Zustand; Auflage unklar 
+eventuell nach 1580?
+DE_GNMN_K866; Einziger Zustand; Auflage unklar
+DE_GNMN_Mp21140; Einziger Zustand; 1. Auflage
+DE_GNMN_Mp21141; Einziger Zustand; 1. Auflage
+DE_GNMN_Mp5129; Einziger Zustand; 1. Auflage
+DE_GNMN_Mp7809; Einziger Zustand; Auflage unklar
+DE_GNMN_NONE-001; Einziger Zustand; 1. Auflage
+DE_GNMN_P1144; Einziger Zustand; 1. Auflage
+DE_GNMN_P1146a; II. Zustand;  Auflage ?
+DE_GNMN_P1176; Einziger Zustand; 1. Auflage
+DE_GNMN_StN1895a; Einziger Zustand; Auflage unklar
+DE_GNMN_StN1895b; Einziger Zustand; Auflage unklar
+DE_GNMN_StN1895c; Einziger Zustand; Auflage unklar
+DE_GNMN_StN1895d; Einziger Zustand; Auflage unklar
+DE_GNMN_StN1895e; Einziger Zustand; Auflage unklar
+DE_GNMN_StN1895f; Einziger Zustand; Auflage unklar
+DE_GNMN_StN1895g; Einziger Zustand;  Auflage unklar
+DE_GNMN_StN1895h; Einziger Zustand; Auflage unklar
+DE_GNMN_StN1895i; Einziger Zustand; Auflage unklar
+DE_GNMN_StN1895k; Einziger Zustand;  Auflage unklar
+DE_GNMN_StN1895l; Einziger Zustand;  Auflage unklar
+DE_GNMN_StN1895m; Einziger Zustand;  Auflage unklar
+DE_GNMN_StN1896; II. Zustand; Auflage unklar
+DE_GNMN_StN1897; II. Zustand; Auflage unklar
+DE_GNMN_StN1898; II. Zustand;  Auflage unklar
+DE_GNMN_StN1899; Einziger Zustand; Auflage unklar
+DE_GNMN_StN1900; Einziger Zustand; Auflage unklar
+DE_GNMN_SuD7125; Einziger Zustand; 1. Auflage
+DE_SMF_31202; Einziger Zustand; Auflage a)
+DE_SMF_31203; Einziger Zustand; Auflage a)
+DE_SMF_31204; Einziger Zustand; Auflage ?)
+DE_SMF_31205; Einziger Zustand; Auflage a)
+DE_SMF_31206; Einziger Zustand; Auflage a)
+DE_SMF_31207; Einziger Zustand; Auflage a)
+DE_SMF_31208; Einziger Zustand; Auflage a)
+DE_SMF_31209; Einziger Zustand; Auflage a)
+DE_SMF_31210; Einziger Zustand; Auflage a)
+DE_SMF_31211; Einziger Zustand; Auflage a)
+DE_SMF_31212; Only state; edition a)
+DE_SMF_31213; Einziger Zustand; Auflage a)
+DE_SMF_31214; Einziger Zustand; Auflage a)
+DE_SMF_31215; Einziger Zustand; Auflage a)
+DE_SMF_31216; Einziger Zustand; Auflage a)
+DE_SMF_31217; Einziger Zustand; Auflage a)
+DE_SMF_31218; Einziger Zustand; Auflage a)
+DE_SMF_31219; Einziger Zustand; Auflage a)
+DE_SMF_31220; Einziger Zustand; Auflage a)
+DE_SMF_31221; II Zustand; Auflage
+DE_SMF_31222; I Zustand; Auflage c)
+DE_SMF_31223; Einziger Zustand; Auflage a)
+DE_SMF_31224; Einziger Zustand; Auflage a)
+DE_SMF_31225; Einziger Zustand; Auflage a)
+DE_SMF_31226; Einziger Zustand; Auflage d) ?
+DE_SMF_31227; Einziger Zustand; Auflage a)
+DE_SMF_31228; Einziger Zustand; Auflage a)
+DE_SMF_31229; Einziger Zustand; Auflage a)
+DE_SMF_31230; Einziger Zustand; Auflage a)
+DE_SMF_31231; Einziger Zustand; Auflage a)
+DE_SMF_31232; Einziger Zustand; Auflage a)
+DE_SMF_31233; Einziger Zustand; Auflage a)
+DE_SMF_31234; Einziger Zustand; Auflage a)
+DE_SMF_31235; II Zustand; Auflage
+DE_SMF_31236; II Zustand; Auflage
+DE_SMF_31237; II Zustand; Auflage
+DE_SMF_31238; Einziger Zustand; Auflage a)
+DE_SMF_31239; Einziger Zustand; Auflage a)
+DE_SMF_31240; Einziger Zustand; Auflage a)
+DE_SMF_31241; II Zustand; Auflage
+DE_SMF_31242; II Zustand; Auflage c)
+DE_SMF_31243; Einziger Zustand; Auflage a)
+DE_SMF_31244; II Zustand; Auflage
+DE_SMF_31245; Einziger Zustand; Auflage a)
+DE_SMF_31246; II Zustand; Auflage
+DE_SMF_31247; Einziger Zustand; Auflage a)
+DE_SMF_31248; Einziger Zustand; Auflage a)
+DE_SMF_31249; Einziger Zustand; Auflage a)
+DE_SMF_31250; Einziger Zustand; Auflage a)
+DE_SMF_31251; Einziger Zustand; Auflage a)
+DE_SMF_31252; Einziger Zustand; Auflage a)
+DE_SMF_31253; Einziger Zustand; Auflage a)
+DE_SMF_31254; Einziger Zustand; Auflage a)
+DE_SMF_31255; Einziger Zustand; Auflage a)
+DE_SMF_31256; Einziger Zustand; Auflage a)
+DE_SMF_31257; Einziger Zustand; Auflage a)
+DE_SMF_31258; Einziger Zustand; Auflage a)
+DE_SMF_31259; Einziger Zustand; Auflage a)
+DE_SMF_31260; Einziger Zustand; Auflage a)
+DE_SMF_31261; Einziger Zustand; Auflage a)
+DE_SMF_31262; Einziger Zustand; Auflage a)
+DE_SMF_31263; Einziger Zustand; Auflage a)
+DE_SMF_31264; Einziger Zustand; Auflage a)
+DE_SMF_31265; Einziger Zustand; Auflage a)
+DE_SMF_31266; Einziger Zustand; Auflage a)
+DE_SMF_31267; Einziger Zustand; Auflage a)
+DE_SMF_31268; Einziger Zustand; Auflage a)
+DE_SMF_31269; Einziger Zustand; Auflage a)
+DE_SMF_31270; Einziger Zustand; Auflage a)
+DE_SMF_31271; Einziger Zustand; Auflage a)
+DE_SMF_31272; Einziger Zustand; Auflage a)
+DE_SMF_31273; Einziger Zustand; Auflage a)
+DE_SMF_31560; Einziger Zustand; Auflage a)
+DE_SMF_31861; Einziger Zustand; Auflage a)
+DE_SMF_32162; Einziger Zustand; Auflage a)
+DE_SMF_32463; Einziger Zustand; Auflage a)
+DE_SMF_32764; Einziger Zustand; Auflage a)
+DE_SMF_33065; Einziger Zustand; Auflage a)
+DE_SMF_33143; Einziger Zustand; Auflage a)
+DE_SMF_33366; Einziger Zustand; Auflage a)
+DE_SMF_33667; Einziger Zustand; Auflage a)
+DE_SMF_33968; Einziger Zustand; Auflage a)
+DE_SMF_34269; Einziger Zustand; Auflage a)
+DE_SMF_34570; Einziger Zustand; Auflage a)
+DE_SMF_34871; Einziger Zustand; Auflage a)
+DE_SMF_35172; Einziger Zustand; Auflage a)
+DE_SMF_38501; Einziger Zustand; Auflage a)
+DE_SMF_50643; III Zustand; Auflage
+DE_SMF_53362; II Zustand; Auflage
+DE_SMF_57177; Einziger Zustand; Auflage a)
+DE_SMF_60423; Einziger Zustand; Auflage a)
+DE_SMF_60424; Einziger Zustand; Auflage a)
+DE_SMF_60426; Einziger Zustand; Auflage a)
+DE_SMF_64694; Einziger Zustand; Auflage a)
+DE_SMF_64852; Einziger Zustand; Auflage a)
+DE_SMF_64919; II Zustand; Auflage
+DE_SMF_64963; Einziger Zustand; Auflage a)
+DE_SMF_64973; Einziger Zustand; Auflage a)
+DE_SMF_65483; III Zustand; Auflage
+DE_SMF_67012; Einziger Zustand; Auflage a)
+DE_SMF_68146D; Einziger Zustand; Auflage a)
+DE_UBERL_AH233; Einziger Zustand; 1. Auflage
+DE_UBERL_AH234; Einziger Zustand; 2. Auflage oder später
+DE_UBERL_AH235; Einziger Zustand; 2. Auflage oder später
+DE_UBERL_AH236; Einziger Zustand; 1. Auflage
+DE_UBERL_AH237; Zweiter Zustand (?); 1. Auflage (?)
+DE_UBERL_AH238; Einziger Zustand; 1. Auflage
+DE_UBERL_AH239; Einziger Zustand; 1. Auflage
+DE_UBERL_AH240; Einziger Zustand; 1. Auflage
+DE_UBERL_AH241; Einziger Zustand; 1. Auflage
+DE_UBERL_AH242; Einziger Zustand; 1. Auflage
+DE_UBERL_AH243; Einziger Zustand; 1. Auflage
+DE_UBERL_AH442; Einziger Zustand; 1. Auflage
+DE_UBERL_AH541; Einziger Zustand; 1. Auflage
+DE_UBERL_BH33; Einziger Zustand; 1. Auflage
