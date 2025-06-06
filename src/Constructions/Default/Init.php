@@ -40,7 +40,7 @@ final class Init
                 $this->paintingsRestoration,
             );
         }
-        
+
         if (in_array("drawings", $parameters->getImportTypes(), true)) {
             $this->drawingsRestoration = DrawingsRestoration::new($paths, $this->memoryFilters);
             $this->drawings = Drawings::new(
@@ -53,7 +53,7 @@ final class Init
             );
         }
 
-        
+
         if (in_array("graphics", $parameters->getImportTypes(), true)) {
             $this->graphicsRestoration = GraphicsRestoration::new($paths);
             $this->graphics = Graphics::new(
@@ -87,7 +87,7 @@ final class Init
 
     public function run(Parameters $parameters): self
     {
-        
+
         if (in_array("paintings", $parameters->getImportTypes(), true)) {
             $this->paintingsRestoration->run();
             $this->paintings->run();

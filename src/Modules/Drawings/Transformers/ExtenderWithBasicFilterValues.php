@@ -15,10 +15,10 @@ use CranachDigitalArchive\Importer\Modules\Drawings\Entities\Search\SearchableDr
 
 class ExtenderWithBasicFilterValues extends Hybrid
 {
-    const ATTRIBUTION = 'attribution';
-    const COLLECTION_REPOSITORY = 'collection_repository';
-    const EXAMINATION_ANALYSIS = 'examination_analysis';
-    const CATALOG = 'catalog';
+    public const ATTRIBUTION = 'attribution';
+    public const COLLECTION_REPOSITORY = 'collection_repository';
+    public const EXAMINATION_ANALYSIS = 'examination_analysis';
+    public const CATALOG = 'catalog';
 
 
     private $filters = null;
@@ -39,7 +39,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
 
     public static function new(CustomFiltersMemoryExporter $memoryExporter): self
     {
-        $transformer = new self;
+        $transformer = new self();
 
         $customFiltersFromMemory = $memoryExporter->getData();
 
@@ -89,7 +89,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private function extendBasicFiltersForAttribution(ISearchableDrawing $item):void
+    private function extendBasicFiltersForAttribution(ISearchableDrawing $item): void
     {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {
@@ -179,7 +179,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private function extendBasicFiltersForCollectionAndRepository(ISearchableDrawing $item):void
+    private function extendBasicFiltersForCollectionAndRepository(ISearchableDrawing $item): void
     {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {
@@ -226,7 +226,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private function extendBasicFiltersForExaminationAnalysis(ISearchableDrawing $item):void
+    private function extendBasicFiltersForExaminationAnalysis(ISearchableDrawing $item): void
     {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {
@@ -292,7 +292,7 @@ class ExtenderWithBasicFilterValues extends Hybrid
     }
 
 
-    private function extendBasicFiltersForAssocation(ISearchableDrawing $item):void
+    private function extendBasicFiltersForAssocation(ISearchableDrawing $item): void
     {
         $metadata = $item->getMetadata();
         if (is_null($metadata)) {

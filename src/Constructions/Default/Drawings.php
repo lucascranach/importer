@@ -67,12 +67,12 @@ final class Drawings
 
         $this->loader = DrawingsLoader::withSourcesAt($paths->getDrawingsInputFilePaths());
         $this->loader->pipeline(
-            (!$parameters->getKeepSoftDeletedAretefacts()) ? SkipSoftDeletedArtefactGate::new('Drawings'): null,
+            (!$parameters->getKeepSoftDeletedAretefacts()) ? SkipSoftDeletedArtefactGate::new('Drawings') : null,
             ExtenderWithReferences::new($this->drawingsReferencesCollector),
             ReferenceDivider::new($this->drawingsReferencesCollector),
             $drawingsRemoteDocumentExistenceChecker,
             $drawingsRemoteImageExistenceChecker,
-            //ExtenderWithRestorations::new($drawingsRestoration->getMemoryExporter()),
+            ExtenderWithRestorations::new($drawingsRestoration->getMemoryExporter()),
             ExtenderWithIds::new($memoryFilters->getArtefactMemoryExporter()),
             MetadataFiller::new(),
             ExtenderWithSortingInfo::new(),
