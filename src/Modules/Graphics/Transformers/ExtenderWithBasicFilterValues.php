@@ -39,6 +39,8 @@ class ExtenderWithBasicFilterValues extends Hybrid
     public function done(IProducer $producer)
     {
         parent::done($producer);
+        /* TODO: Need this to be configurable */
+        return;
 
         echo "== Graphic objects with missing filter connections: \n";
 

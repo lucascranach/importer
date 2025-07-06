@@ -71,6 +71,12 @@ class ConditionDeterminer extends Hybrid
             ],
             'value' => 10,
         ],
+        [
+            'patterns' => [
+                '/^Einziger\.?\s*(zustand|auflage)/i',
+            ],
+            'value' => 100,
+        ],
     ];
 
 
@@ -81,7 +87,7 @@ class ConditionDeterminer extends Hybrid
 
     public static function new(): self
     {
-        return new self;
+        return new self();
     }
 
     public function handleItem($item): bool
@@ -103,6 +109,7 @@ class ConditionDeterminer extends Hybrid
         $germanGraphic = $graphicCollection->get(Language::DE);
 
         $classification = $germanGraphic->getClassification();
+        $inventoryNumber = $germanGraphic->getInventoryNumber();
 
         if (is_null($classification)) {
             return $conditionLevel;
@@ -111,6 +118,7 @@ class ConditionDeterminer extends Hybrid
         $condition = trim($classification->getCondition());
 
         foreach (self::$conditionGermanMappings as $conditionMapping) {
+
             foreach ($conditionMapping['patterns'] as $pattern) {
                 if (preg_match($pattern, $condition) === 1) {
                     return $conditionMapping['value'];
