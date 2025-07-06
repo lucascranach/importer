@@ -276,13 +276,13 @@ class GraphicInflator implements IInflator
 
         self::inflateInventoryNumber($subNode, $graphicCollection);
 
-//// Debugging: only inflate for a specific graphic
-//$idForDebugSessions = $graphicCollection->getInventoryNumber();
-//if (preg_match('/DE_SMF_67012/', strval($idForDebugSessions), $matches)) {
-//    echo "$idForDebugSessions\n";
-//} else {
-//    return;
-//}
+        //// Debugging: only inflate for a specific graphic
+        //$idForDebugSessions = $graphicCollection->getInventoryNumber();
+        //if (preg_match('/DE_SMF_67012/', strval($idForDebugSessions), $matches)) {
+        //    echo "$idForDebugSessions\n";
+        //} else {
+        //    return;
+        //}
 
         self::inflateInvolvedPersons($subNode, $graphicCollection);
         self::inflatePersonNames($subNode, $graphicCollection);
@@ -633,18 +633,18 @@ class GraphicInflator implements IInflator
             $classificationSectionElement,
             'Field[@FieldName="{@Druckzustand}"]/FormattedValue',
         );
-//$inventoryNumberElement = self::findElementByXPath(
-//        $node,
-//        'Field[@FieldName="{@Inventarnummer}"]/FormattedValue',
-//);
-//
-//if(preg_match('/DE_SMF_67012/', strval($inventoryNumberElement), $matches)) {
-//        echo "$inventoryNumberElement\n";
-//        var_dump($stateElement);
-//
-//}else{
-//        return;
-//}
+        //$inventoryNumberElement = self::findElementByXPath(
+        //        $node,
+        //        'Field[@FieldName="{@Inventarnummer}"]/FormattedValue',
+        //);
+        //
+        //if(preg_match('/DE_SMF_67012/', strval($inventoryNumberElement), $matches)) {
+        //        echo "$inventoryNumberElement\n";
+        //        var_dump($stateElement);
+        //
+        //}else{
+        //        return;
+        //}
 
         if ($stateElement) {
             $stateStr = trim(strval($stateElement));
@@ -661,38 +661,38 @@ class GraphicInflator implements IInflator
 
             $edition = explode(";", $classificationDe->condition)[1] ?? null;
 
-            if($edition){
+            if ($edition) {
                 $edition = strtolower(trim($edition));
 
             }
         }
-//if(preg_match('/DE_SMF_67012/', strval($inventoryNumberElement), $matches)) {
-//    echo "Line 663 ->";
-//
-//
-//            if (isset(self::$historicEventTypesLangMapping[$edition])) {
-//                $mappedEventType = self::$historicEventTypesLangMapping[$edition];
-//                if($mappedEventType){
-//                    $language = $mappedEventType[0];
-//                    $eventType = $mappedEventType[1];
-//                    $editionNumber = $mappedEventType[2];
-//
-//                    if ($language === Language::DE) {
-//                        #$classificationDe->setEditionNumber(2000);
-//                        echo "Set $language edition number: $editionNumber eventType $eventType\n";
-//                    } elseif ($language === Language::EN) {
-//                        $graphicCollection->get(Language::DE)->setEditionNumber($editionNumber);
-//                    } else {
-//                        echo "Unknown language for edition: $language\n";
-//                    }
-//                } else {
-//                    echo "No mapping found for edition: $edition\n";
-//                }
-//            }
-//
-//}else{
-//        return;
-//}
+        //if(preg_match('/DE_SMF_67012/', strval($inventoryNumberElement), $matches)) {
+        //    echo "Line 663 ->";
+        //
+        //
+        //            if (isset(self::$historicEventTypesLangMapping[$edition])) {
+        //                $mappedEventType = self::$historicEventTypesLangMapping[$edition];
+        //                if($mappedEventType){
+        //                    $language = $mappedEventType[0];
+        //                    $eventType = $mappedEventType[1];
+        //                    $editionNumber = $mappedEventType[2];
+        //
+        //                    if ($language === Language::DE) {
+        //                        #$classificationDe->setEditionNumber(2000);
+        //                        echo "Set $language edition number: $editionNumber eventType $eventType\n";
+        //                    } elseif ($language === Language::EN) {
+        //                        $graphicCollection->get(Language::DE)->setEditionNumber($editionNumber);
+        //                    } else {
+        //                        echo "Unknown language for edition: $language\n";
+        //                    }
+        //                } else {
+        //                    echo "No mapping found for edition: $edition\n";
+        //                }
+        //            }
+        //
+        //}else{
+        //        return;
+        //}
         /* PrintProcess */
         $objectNameSectionElement = $node->{'Section'}[5];
 
@@ -943,26 +943,26 @@ class GraphicInflator implements IInflator
 
 
             $eventType = strtolower(trim($historicEventInformation->getEventType()));
-// if (!$graphicCollection->getIsVirtual()){
-//     print "Leute, das ist ein echtes Objekt!";
-//     //echo $graphicCollection->get(Language::DE)->getCondition() . "\n";
-// }
+            // if (!$graphicCollection->getIsVirtual()){
+            //     print "Leute, das ist ein echtes Objekt!";
+            //     //echo $graphicCollection->get(Language::DE)->getCondition() . "\n";
+            // }
 
-// Debug-Ausgabe hinzufügen
-//if(preg_match('/DE_SMF_67012/', strval($inventoryNumberElement), $matches)) {
-//    var_dump($historicEventInformation);
-//    echo "Raw EventType: '" . $historicEventInformation->getEventType() . "'\n";
-//    echo "Processed EventType: '" . $eventType . "'\n";
-//    echo "Mapping exists: " . (isset(self::$historicEventTypesLangMapping[$eventType]) ? 'YES' : 'NO') . "\n";
-//}
-//
-//            if (empty($eventType) || $eventType === self::$historicEventTypeNotEntered) {
-//                continue;
-//            }
-//
-//            /* Map event type to language */
-//print "------->EventType\n";
-//var_dump($eventType);
+            // Debug-Ausgabe hinzufügen
+            //if(preg_match('/DE_SMF_67012/', strval($inventoryNumberElement), $matches)) {
+            //    var_dump($historicEventInformation);
+            //    echo "Raw EventType: '" . $historicEventInformation->getEventType() . "'\n";
+            //    echo "Processed EventType: '" . $eventType . "'\n";
+            //    echo "Mapping exists: " . (isset(self::$historicEventTypesLangMapping[$eventType]) ? 'YES' : 'NO') . "\n";
+            //}
+            //
+            //            if (empty($eventType) || $eventType === self::$historicEventTypeNotEntered) {
+            //                continue;
+            //            }
+            //
+            //            /* Map event type to language */
+            //print "------->EventType\n";
+            //var_dump($eventType);
             if (isset(self::$historicEventTypesLangMapping[$eventType])) {
                 $mappedEventType = self::$historicEventTypesLangMapping[$eventType];
 
