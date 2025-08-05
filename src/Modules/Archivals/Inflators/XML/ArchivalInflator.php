@@ -22,8 +22,8 @@ class ArchivalInflator implements IInflator
     private static $splitChar = '#';
 
     private static $titlesLanguageTypes = [
-        Language::DE => 'German',
-        Language::EN => 'English',
+        Language::DE => 'GERMAN',
+        Language::EN => 'ENGLISH',
         'not_assigned' => '(not assigned)',
     ];
 
@@ -93,8 +93,8 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         ArchivalLanguageCollection $archivalCollection,
     ): void {
-        $datingDe = new Dating;
-        $datingEn = new Dating;
+        $datingDe = new Dating();
+        $datingEn = new Dating();
 
         $archivalCollection->get(Language::DE)->setDating($datingDe);
         $archivalCollection->get(Language::EN)->setDating($datingEn);
@@ -164,7 +164,7 @@ class ArchivalInflator implements IInflator
         foreach ($summaryDetailElements as $summaryDetailElement) {
             $langElement = self::findElementByXPath(
                 $summaryDetailElement,
-                'Section[@SectionNumber="2"]/Field[@FieldName="{LANGUAGES.Language}"]/FormattedValue',
+                'Section[@SectionNumber="2"]/Field[@FieldName="{@Language}"]/FormattedValue',
             );
 
             $summaryElement = self::findElementByXPath(
@@ -522,7 +522,7 @@ class ArchivalInflator implements IInflator
         SimpleXMLElement $node,
         ArchivalLanguageCollection $archivalCollection,
     ): void {
-        $publication = new Publication;
+        $publication = new Publication();
         $wasInflated = false;
 
         /* Title */
