@@ -1528,5 +1528,20 @@
         "name": "Reims",
         "latitude": "49.25",
         "longitude": "4.033333"
+    },
+    "7011931": {
+        "name": "Oxford",
+        "latitude": "51.75",
+        "longitude": "-1.25"
+    },
+    "7134067": {
+        "name": "München",
+        "latitude": "49.55",
+        "longitude": "11.583333"
+    },
+    "7003670": {
+        "name": "Berlin",
+        "latitude": "52.5",
+        "longitude": "13.4167"
     }
 }
