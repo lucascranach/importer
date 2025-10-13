@@ -350,6 +350,8 @@ class RemoteImageExistenceChecker extends Hybrid
                     $imageType,
                 )
             ];
+
+            $destinationTypeStructure['infos']['download'] = $image['origin']['download'] ?? false;
         }
 
         return $destinationTypeStructure;
@@ -426,6 +428,7 @@ class RemoteImageExistenceChecker extends Hybrid
                 ],
                 'src' => '',
                 'type' => isset($size['type']) ? $size['type'] : 'plain',
+                'download' => isset($size['download']) ? $size['download'] : false,
             ];
 
             if (isset($size['dimensions']) && !empty($size['dimensions'])) {
