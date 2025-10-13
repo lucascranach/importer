@@ -11,78 +11,60 @@ use Error;
 class EditionDeterminer extends Hybrid
 {
     private static $editionGermanMappings = [
-        [
-            'patterns' => [
-                '/\b(1\. Auflage)\b/',
-            ],
-            'value' =>  1,
-        ],
-        [
-            'patterns' => [
-                '/\b(2\. Auflage)\b/',
-            ],
-            'value' => 2,
-        ],
-        [
-            'patterns' => [
-                '/\b(3\. Auflage)\b/',
-            ],
-            'value' => 3,
-        ],
-        [
-            'patterns' => [
-                '/\b(4\. Auflage)\b/',
-            ],
-            'value' => 4,
-        ],
-        [
-            'patterns' => [
-                '/\b(5\. Auflage)\b/',
-            ],
-            'value' => 5,
-        ],
-        [
-            'patterns' => [
-                '/\b(6\. Auflage)\b/',
-            ],
-            'value' => 6,
-        ],
-        [
-            'patterns' => [
-                '/\b(7\. Auflage)\b/',
-            ],
-            'value' => 7,
-        ],
-        [
-            'patterns' => [
-                '/\b(8\. Auflage)\b/',
-            ],
-            'value' => 8,
-        ],
-        [
-            'patterns' => [
-                '/\b(9\. Auflage)\b/',
-            ],
-            'value' => 9,
-        ],
-        [
-            'patterns' => [
-                '/\b(10\. Auflage)\b/',
-            ],
-            'value' => 10,
-        ],
-        [
-            'patterns' => [
-                '/\b(11\. Auflage)\b/',
-            ],
-            'value' => 11,
-        ],
-        [
-            'patterns' => [
-                '/\b(12\. Auflage)\b/',
-            ],
-            'value' => 12,
-        ],
+        ['patterns' => ['/\bAuflage a\?\)/',], 'value' =>  100,],
+        ['patterns' => ['/\bAuflage b\?\)/',], 'value' =>  101,],
+        ['patterns' => ['/\bAuflage c\?\)/',], 'value' =>  102,],
+        ['patterns' => ['/\bAuflage d\?\)/',], 'value' =>  103,],
+        ['patterns' => ['/\bAuflage e\?\)/',], 'value' =>  104,],
+        ['patterns' => ['/\bAuflage f\?\)/',], 'value' =>  105,],
+        ['patterns' => ['/\bAuflage g\?\)/',], 'value' =>  106,],
+        ['patterns' => ['/\bAuflage h\?\)/',], 'value' =>  107,],
+        ['patterns' => ['/\bAuflage i\?\)/',], 'value' =>  108,],
+        ['patterns' => ['/\bAuflage j\?\)/',], 'value' =>  109,],
+        ['patterns' => ['/\bAuflage k\?\)/',], 'value' =>  110,],
+        ['patterns' => ['/\bAuflage l\?\)/',], 'value' =>  111,],
+        ['patterns' => ['/\bAuflage m\?\)/',], 'value' =>  112,],
+        ['patterns' => ['/\bAuflage n\?\)/',], 'value' =>  113,],
+        ['patterns' => ['/\bAuflage o\?\)/',], 'value' =>  114,],
+        ['patterns' => ['/\bAuflage p\?\)/',], 'value' =>  115,],
+        ['patterns' => ['/\bAuflage q\?\)/',], 'value' =>  116,],
+        ['patterns' => ['/\bAuflage r\?\)/',], 'value' =>  117,],
+        ['patterns' => ['/\bAuflage s\?\)/',], 'value' =>  118,],
+        ['patterns' => ['/\bAuflage t\?\)/',], 'value' =>  119,],
+        ['patterns' => ['/\bAuflage u\?\)/',], 'value' =>  120,],
+        ['patterns' => ['/\bAuflage v\?\)/',], 'value' =>  121,],
+        ['patterns' => ['/\bAuflage w\?\)/',], 'value' =>  122,],
+        ['patterns' => ['/\bAuflage x\?\)/',], 'value' =>  123,],
+        ['patterns' => ['/\bAuflage y\?\)/',], 'value' =>  124,],
+        ['patterns' => ['/\bAuflage z\?\)/',], 'value' =>  125,],
+
+        ['patterns' => ['/\bAuflage a\b/',], 'value' =>  0,],
+        ['patterns' => ['/\bAuflage b\b/',], 'value' =>  1,],
+        ['patterns' => ['/\bAuflage c\b/',], 'value' =>  2,],
+        ['patterns' => ['/\bAuflage d\b/',], 'value' =>  3,],
+        ['patterns' => ['/\bAuflage e\b/',], 'value' =>  4,],
+        ['patterns' => ['/\bAuflage f\b/',], 'value' =>  5,],
+        ['patterns' => ['/\bAuflage g\b/',], 'value' =>  6,],
+        ['patterns' => ['/\bAuflage h\b/',], 'value' =>  7,],
+        ['patterns' => ['/\bAuflage i\b/',], 'value' =>  8,],
+        ['patterns' => ['/\bAuflage j\b/',], 'value' =>  9,],
+        ['patterns' => ['/\bAuflage k\b/',], 'value' =>  10,],
+        ['patterns' => ['/\bAuflage l\b/',], 'value' =>  11,],
+        ['patterns' => ['/\bAuflage m\b/',], 'value' =>  12,],
+        ['patterns' => ['/\bAuflage n\b/',], 'value' =>  13,],
+        ['patterns' => ['/\bAuflage o\b/',], 'value' =>  14,],
+        ['patterns' => ['/\bAuflage p\b/',], 'value' =>  15,],
+        ['patterns' => ['/\bAuflage q\b/',], 'value' =>  16,],
+        ['patterns' => ['/\bAuflage r\b/',], 'value' =>  17,],
+        ['patterns' => ['/\bAuflage s\b/',], 'value' =>  18,],
+        ['patterns' => ['/\bAuflage t\b/',], 'value' =>  19,],
+        ['patterns' => ['/\bAuflage u\b/',], 'value' =>  20,],
+        ['patterns' => ['/\bAuflage v\b/',], 'value' =>  21,],
+        ['patterns' => ['/\bAuflage w\b/',], 'value' =>  22,],
+        ['patterns' => ['/\bAuflage x\b/',], 'value' =>  23,],
+        ['patterns' => ['/\bAuflage y\b/',], 'value' =>  24,],
+        ['patterns' => ['/\bAuflage z\b/',], 'value' =>  25,],
+        ['patterns' => ['/\bAuflage unklar\b/',], 'value' =>  26,],
     ];
 
 

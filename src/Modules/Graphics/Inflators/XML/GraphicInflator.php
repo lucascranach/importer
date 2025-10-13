@@ -65,25 +65,26 @@ class GraphicInflator implements IInflator
         'datierung' => [Language::DE, 'DATING', 0],
         'dating' => [Language::EN, 'DATING', 0],
 
-        'auflage' => [Language::DE, 'EDITION', 0],
+        // 'auflage' => [Language::DE, 'EDITION', 0],
+        // 'auflage a)' => [Language::DE, 'EDITION', 0],
+//
+        // 'edition' => [Language::EN, 'EDITION', 0],
+        // 'edition a)' => [Language::EN, 'EDITION', 0],
+//
+        // '1. auflage' => [Language::DE, 'EDITION', 1],
+        // '2. auflage' => [Language::DE, 'EDITION', 2],
+        // '3. auflage' => [Language::DE, 'EDITION', 3],
+        // '4. auflage' => [Language::DE, 'EDITION', 4],
+        // '5. auflage' => [Language::DE, 'EDITION', 5],
+        // '6. auflage' => [Language::DE, 'EDITION', 6],
+        // '7. auflage' => [Language::DE, 'EDITION', 7],
+        // '8. auflage' => [Language::DE, 'EDITION', 8],
+        // '9. auflage' => [Language::DE, 'EDITION', 9],
+        // '10. auflage' => [Language::DE, 'EDITION', 10],
+        // '11. auflage' => [Language::DE, 'EDITION', 11],
+        // '12. auflage' => [Language::DE, 'EDITION', 12],
+
         'auflage a)' => [Language::DE, 'EDITION', 0],
-
-        'edition' => [Language::EN, 'EDITION', 0],
-        'edition a)' => [Language::EN, 'EDITION', 0],
-
-        '1. auflage' => [Language::DE, 'EDITION', 1],
-        '2. auflage' => [Language::DE, 'EDITION', 2],
-        '3. auflage' => [Language::DE, 'EDITION', 3],
-        '4. auflage' => [Language::DE, 'EDITION', 4],
-        '5. auflage' => [Language::DE, 'EDITION', 5],
-        '6. auflage' => [Language::DE, 'EDITION', 6],
-        '7. auflage' => [Language::DE, 'EDITION', 7],
-        '8. auflage' => [Language::DE, 'EDITION', 8],
-        '9. auflage' => [Language::DE, 'EDITION', 9],
-        '10. auflage' => [Language::DE, 'EDITION', 10],
-        '11. auflage' => [Language::DE, 'EDITION', 11],
-        '12. auflage' => [Language::DE, 'EDITION', 12],
-
         'auflage b)' => [Language::DE, 'EDITION', 1],
         'auflage c)' => [Language::DE, 'EDITION', 2],
         'auflage d)' => [Language::DE, 'EDITION', 3],
@@ -96,20 +97,49 @@ class GraphicInflator implements IInflator
         'auflage k)' => [Language::DE, 'EDITION', 10],
         'auflage l)' => [Language::DE, 'EDITION', 11],
         'auflage m)' => [Language::DE, 'EDITION', 12],
+        'auflage n)' => [Language::DE, 'EDITION', 13],
+        'auflage o)' => [Language::DE, 'EDITION', 14],
+        'auflage p)' => [Language::DE, 'EDITION', 15],
+        'auflage q)' => [Language::DE, 'EDITION', 16],
+        'auflage r)' => [Language::DE, 'EDITION', 17],
+        'auflage s)' => [Language::DE, 'EDITION', 18],
+        'auflage t)' => [Language::DE, 'EDITION', 19],
+        'auflage u)' => [Language::DE, 'EDITION', 20],
+        'auflage v)' => [Language::DE, 'EDITION', 21],
+        'auflage w)' => [Language::DE, 'EDITION', 22],
+        'auflage x)' => [Language::DE, 'EDITION', 23],
+        'auflage y)' => [Language::DE, 'EDITION', 24],
+        'auflage z)' => [Language::DE, 'EDITION', 25],
+        'auflage unklar' => [Language::DE, 'EDITION', 26],
 
-        '1st edition' => [Language::EN, 'EDITION', 1],
-        '2nd edition' => [Language::EN, 'EDITION', 2],
-        '3rd edition' => [Language::EN, 'EDITION', 3],
-        '4th edition' => [Language::EN, 'EDITION', 4],
-        '5th edition' => [Language::EN, 'EDITION', 5],
-        '6th edition' => [Language::EN, 'EDITION', 6],
-        '7th edition' => [Language::EN, 'EDITION', 7],
-        '8th edition' => [Language::EN, 'EDITION', 8],
-        '9th edition' => [Language::EN, 'EDITION', 9],
-        '10th edition' => [Language::EN, 'EDITION', 10],
-        '11th edition' => [Language::EN, 'EDITION', 11],
-        '12th edition' => [Language::EN, 'EDITION', 12],
+        'auflage a?)' => [Language::DE, 'EDITION', 100],
+        'auflage b?)' => [Language::DE, 'EDITION', 101],
+        'auflage c?)' => [Language::DE, 'EDITION', 102],
+        'auflage d?)' => [Language::DE, 'EDITION', 103],
+        'auflage e?)' => [Language::DE, 'EDITION', 104],
+        'auflage f?)' => [Language::DE, 'EDITION', 105],
+        'auflage g?)' => [Language::DE, 'EDITION', 106],
+        'auflage h?)' => [Language::DE, 'EDITION', 107],
+        'auflage i?)' => [Language::DE, 'EDITION', 108],
+        'auflage j?)' => [Language::DE, 'EDITION', 109],
+        'auflage k?)' => [Language::DE, 'EDITION', 110],
+        'auflage l?)' => [Language::DE, 'EDITION', 111],
+        'auflage m?)' => [Language::DE, 'EDITION', 112],
+        'auflage n?)' => [Language::DE, 'EDITION', 113],
+        'auflage o?)' => [Language::DE, 'EDITION', 114],
+        'auflage p?)' => [Language::DE, 'EDITION', 115],
+        'auflage q?)' => [Language::DE, 'EDITION', 116],
+        'auflage r?)' => [Language::DE, 'EDITION', 117],
+        'auflage s?)' => [Language::DE, 'EDITION', 118],
+        'auflage t?)' => [Language::DE, 'EDITION', 119],
+        'auflage u?)' => [Language::DE, 'EDITION', 120],
+        'auflage v?)' => [Language::DE, 'EDITION', 121],
+        'auflage w?)' => [Language::DE, 'EDITION', 122],
+        'auflage x?)' => [Language::DE, 'EDITION', 123],
+        'auflage y?)' => [Language::DE, 'EDITION', 124],
+        'auflage z?)' => [Language::DE, 'EDITION', 125],
 
+        'edition a)' => [Language::EN, 'EDITION', 0],
         'edition b)' => [Language::EN, 'EDITION', 1],
         'edition c)' => [Language::EN, 'EDITION', 2],
         'edition d)' => [Language::EN, 'EDITION', 3],
@@ -122,6 +152,74 @@ class GraphicInflator implements IInflator
         'edition k)' => [Language::EN, 'EDITION', 10],
         'edition l)' => [Language::EN, 'EDITION', 11],
         'edition m)' => [Language::EN, 'EDITION', 12],
+        'edition n)' => [Language::EN, 'EDITION', 13],
+        'edition o)' => [Language::EN, 'EDITION', 14],
+        'edition p)' => [Language::EN, 'EDITION', 15],
+        'edition q)' => [Language::EN, 'EDITION', 16],
+        'edition r)' => [Language::EN, 'EDITION', 17],
+        'edition s)' => [Language::EN, 'EDITION', 18],
+        'edition t)' => [Language::EN, 'EDITION', 19],
+        'edition u)' => [Language::EN, 'EDITION', 20],
+        'edition v)' => [Language::EN, 'EDITION', 21],
+        'edition w)' => [Language::EN, 'EDITION', 22],
+        'edition x)' => [Language::EN, 'EDITION', 23],
+        'edition y)' => [Language::EN, 'EDITION', 24],
+        'edition z)' => [Language::EN, 'EDITION', 25],
+        'edition uncertain' => [Language::EN, 'EDITION', 26],
+
+        'edition a?)' => [Language::EN, 'EDITION', 100],
+        'edition b?)' => [Language::EN, 'EDITION', 101],
+        'edition c?)' => [Language::EN, 'EDITION', 102],
+        'edition d?)' => [Language::EN, 'EDITION', 103],
+        'edition e?)' => [Language::EN, 'EDITION', 104],
+        'edition f?)' => [Language::EN, 'EDITION', 105],
+        'edition g?)' => [Language::EN, 'EDITION', 106],
+        'edition h?)' => [Language::EN, 'EDITION', 107],
+        'edition i?)' => [Language::EN, 'EDITION', 108],
+        'edition j?)' => [Language::EN, 'EDITION', 109],
+        'edition k?)' => [Language::EN, 'EDITION', 110],
+        'edition l?)' => [Language::EN, 'EDITION', 111],
+        'edition m?)' => [Language::EN, 'EDITION', 112],
+        'edition n?)' => [Language::EN, 'EDITION', 113],
+        'edition o?)' => [Language::EN, 'EDITION', 114],
+        'edition p?)' => [Language::EN, 'EDITION', 115],
+        'edition q?)' => [Language::EN, 'EDITION', 116],
+        'edition r?)' => [Language::EN, 'EDITION', 117],
+        'edition s?)' => [Language::EN, 'EDITION', 118],
+        'edition t?)' => [Language::EN, 'EDITION', 119],
+        'edition u?)' => [Language::EN, 'EDITION', 120],
+        'edition v?)' => [Language::EN, 'EDITION', 121],
+        'edition w?)' => [Language::EN, 'EDITION', 122],
+        'edition x?)' => [Language::EN, 'EDITION', 123],
+        'edition y?)' => [Language::EN, 'EDITION', 124],
+        'edition z?)' => [Language::EN, 'EDITION', 125],
+
+
+        // '1st edition' => [Language::EN, 'EDITION', 1],
+        // '2nd edition' => [Language::EN, 'EDITION', 2],
+        // '3rd edition' => [Language::EN, 'EDITION', 3],
+        // '4th edition' => [Language::EN, 'EDITION', 4],
+        // '5th edition' => [Language::EN, 'EDITION', 5],
+        // '6th edition' => [Language::EN, 'EDITION', 6],
+        // '7th edition' => [Language::EN, 'EDITION', 7],
+        // '8th edition' => [Language::EN, 'EDITION', 8],
+        // '9th edition' => [Language::EN, 'EDITION', 9],
+        // '10th edition' => [Language::EN, 'EDITION', 10],
+        // '11th edition' => [Language::EN, 'EDITION', 11],
+        // '12th edition' => [Language::EN, 'EDITION', 12],
+//
+        // 'edition b)' => [Language::EN, 'EDITION', 1],
+        // 'edition c)' => [Language::EN, 'EDITION', 2],
+        // 'edition d)' => [Language::EN, 'EDITION', 3],
+        // 'edition e)' => [Language::EN, 'EDITION', 4],
+        // 'edition f)' => [Language::EN, 'EDITION', 5],
+        // 'edition g)' => [Language::EN, 'EDITION', 6],
+        // 'edition h)' => [Language::EN, 'EDITION', 7],
+        // 'edition i)' => [Language::EN, 'EDITION', 8],
+        // 'edition j)' => [Language::EN, 'EDITION', 9],
+        // 'edition k)' => [Language::EN, 'EDITION', 10],
+        // 'edition l)' => [Language::EN, 'EDITION', 11],
+        // 'edition m)' => [Language::EN, 'EDITION', 12],
     ];
 
     private static $historicEventTypeNotEntered = '[not entered]';
@@ -177,6 +275,15 @@ class GraphicInflator implements IInflator
         self::registerXPathNamespace($subNode);
 
         self::inflateInventoryNumber($subNode, $graphicCollection);
+
+        //// Debugging: only inflate for a specific graphic
+        //$idForDebugSessions = $graphicCollection->getInventoryNumber();
+        //if (preg_match('/DE_SMF_67012/', strval($idForDebugSessions), $matches)) {
+        //    echo "$idForDebugSessions\n";
+        //} else {
+        //    return;
+        //}
+
         self::inflateInvolvedPersons($subNode, $graphicCollection);
         self::inflatePersonNames($subNode, $graphicCollection);
         self::inflateTitles($subNode, $graphicCollection);
@@ -526,6 +633,19 @@ class GraphicInflator implements IInflator
             $classificationSectionElement,
             'Field[@FieldName="{@Druckzustand}"]/FormattedValue',
         );
+        //$inventoryNumberElement = self::findElementByXPath(
+        //        $node,
+        //        'Field[@FieldName="{@Inventarnummer}"]/FormattedValue',
+        //);
+        //
+        //if(preg_match('/DE_SMF_67012/', strval($inventoryNumberElement), $matches)) {
+        //        echo "$inventoryNumberElement\n";
+        //        var_dump($stateElement);
+        //
+        //}else{
+        //        return;
+        //}
+
         if ($stateElement) {
             $stateStr = trim(strval($stateElement));
 
@@ -538,8 +658,41 @@ class GraphicInflator implements IInflator
             if (isset($splitStateStr[1])) {
                 $classificationEn->setCondition($splitStateStr[1]);
             }
-        }
 
+            $edition = explode(";", $classificationDe->condition)[1] ?? null;
+
+            if ($edition) {
+                $edition = strtolower(trim($edition));
+
+            }
+        }
+        //if(preg_match('/DE_SMF_67012/', strval($inventoryNumberElement), $matches)) {
+        //    echo "Line 663 ->";
+        //
+        //
+        //            if (isset(self::$historicEventTypesLangMapping[$edition])) {
+        //                $mappedEventType = self::$historicEventTypesLangMapping[$edition];
+        //                if($mappedEventType){
+        //                    $language = $mappedEventType[0];
+        //                    $eventType = $mappedEventType[1];
+        //                    $editionNumber = $mappedEventType[2];
+        //
+        //                    if ($language === Language::DE) {
+        //                        #$classificationDe->setEditionNumber(2000);
+        //                        echo "Set $language edition number: $editionNumber eventType $eventType\n";
+        //                    } elseif ($language === Language::EN) {
+        //                        $graphicCollection->get(Language::DE)->setEditionNumber($editionNumber);
+        //                    } else {
+        //                        echo "Unknown language for edition: $language\n";
+        //                    }
+        //                } else {
+        //                    echo "No mapping found for edition: $edition\n";
+        //                }
+        //            }
+        //
+        //}else{
+        //        return;
+        //}
         /* PrintProcess */
         $objectNameSectionElement = $node->{'Section'}[5];
 
@@ -729,6 +882,10 @@ class GraphicInflator implements IInflator
 
         /* HistoricEventInformation */
         $historicEventDetailElements = $node->{'Section'}[13]->{'Subreport'}->{'Details'};
+        $inventoryNumberElement = self::findElementByXPath(
+            $node,
+            'Field[@FieldName="{@Inventarnummer}"]/FormattedValue',
+        );
 
         foreach ($historicEventDetailElements as $historicEventDetailElement) {
             $historicEventInformation = new HistoricEventInformation();
@@ -785,33 +942,55 @@ class GraphicInflator implements IInflator
             }
 
 
-            $eventType = strtolower($historicEventInformation->getEventType());
+            $eventType = strtolower(trim($historicEventInformation->getEventType()));
+            // if (!$graphicCollection->getIsVirtual()){
+            //     print "Leute, das ist ein echtes Objekt!";
+            //     //echo $graphicCollection->get(Language::DE)->getCondition() . "\n";
+            // }
 
-
-            if (empty($eventType) || $eventType === self::$historicEventTypeNotEntered) {
-                continue;
-            }
-
-            /* Map event type to language */
-
+            // Debug-Ausgabe hinzufügen
+            //if(preg_match('/DE_SMF_67012/', strval($inventoryNumberElement), $matches)) {
+            //    var_dump($historicEventInformation);
+            //    echo "Raw EventType: '" . $historicEventInformation->getEventType() . "'\n";
+            //    echo "Processed EventType: '" . $eventType . "'\n";
+            //    echo "Mapping exists: " . (isset(self::$historicEventTypesLangMapping[$eventType]) ? 'YES' : 'NO') . "\n";
+            //}
+            //
+            //            if (empty($eventType) || $eventType === self::$historicEventTypeNotEntered) {
+            //                continue;
+            //            }
+            //
+            //            /* Map event type to language */
+            //print "------->EventType\n";
+            //var_dump($eventType);
             if (isset(self::$historicEventTypesLangMapping[$eventType])) {
                 $mappedEventType = self::$historicEventTypesLangMapping[$eventType];
 
-                $historicEventInformation->setEventType($mappedEventType[1]);
-                $historicEventInformation->setEditionNumber($mappedEventType[2]);
-
-                switch ($mappedEventType[0]) {
-                    case Language::DE:
-                        $datingDe->addHistoricEventInformation($historicEventInformation);
-                        break;
-
-                    case Language::EN:
-                        $datingEn->addHistoricEventInformation($historicEventInformation);
-                        break;
+                if ($mappedEventType[0] === 'de') {
+                    $historicEventInformation->setEventType($mappedEventType[1]);
+                    $historicEventInformation->setEditionNumber($mappedEventType[2]);
+                    $datingDe->addHistoricEventInformation($historicEventInformation);
+                } else {
+                    $historicEventInformation->setEventType($mappedEventType[1]);
+                    $historicEventInformation->setEditionNumber($mappedEventType[2]);
+                    $datingEn->addHistoricEventInformation($historicEventInformation);
                 }
+                //switch ($mappedEventType[0]) {
+                // case Language::DE:
+                //     $datingDe->addHistoricEventInformation($historicEventInformation);
+                //     break;
+                //
+                // case Language::EN:
+                //     $datingEn->addHistoricEventInformation($historicEventInformation);
+                //     break;
+                //}
+
+
+
+
             } else {
-                $datingDe->addHistoricEventInformation($historicEventInformation);
-                $datingEn->addHistoricEventInformation($historicEventInformation);
+                // $datingDe->addHistoricEventInformation($historicEventInformation);
+                // $datingEn->addHistoricEventInformation($historicEventInformation);
             }
         }
 
