@@ -343,6 +343,7 @@ class RemoteImageExistenceChecker extends Hybrid
         foreach ($images as $image) {
             $destinationTypeStructure['images'][] = [
                 'id' => $this->getImageVariantId($image),
+                'download' => isset($image['origin']['download']) ? $image['origin']['download'] : false,
                 'metadata' => $this->getPreparedImageMetadata($image, $langCode),
                 'sizes' => $this->getPreparedImageVariant(
                     $image,
