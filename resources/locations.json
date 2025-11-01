@@ -1543,5 +1543,15 @@
         "name": "Berlin",
         "latitude": "52.5",
         "longitude": "13.4167"
+    },
+    "7196982": {
+        "name": "Dessau",
+        "latitude": "52.816667",
+        "longitude": "11.483333"
+    },
+    "1002450": {
+        "name": "Hannover",
+        "latitude": "52.5",
+        "longitude": "9"
     }
 }
