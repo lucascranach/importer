@@ -47,8 +47,8 @@ class DrawingInflator implements IInflator
     ];
 
     private static $titlesLanguageTypes = [
-        Language::DE => 'German',
-        Language::EN => 'English',
+        Language::DE => 'GERMAN',
+        Language::EN => 'ENGLISH',
         'not_assigned' => '(not assigned)',
     ];
 
@@ -355,10 +355,11 @@ class DrawingInflator implements IInflator
             /* title language */
             $langElement = self::findElementByXPath(
                 $titleDetailElement,
-                'Field[@FieldName="{LANGUAGES.Language}"]/FormattedValue',
+                'Field[@FieldName="{@Language}"]/FormattedValue',
             );
+
             if ($langElement) {
-                $langStr = trim(strval($langElement));
+                $langStr = trim(strtoupper(strval($langElement)));
 
                 if (self::$titlesLanguageTypes[Language::DE] === $langStr) {
                     $drawingCollection->get(Language::DE)->addTitle($title);

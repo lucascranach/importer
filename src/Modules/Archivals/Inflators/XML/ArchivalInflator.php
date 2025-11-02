@@ -173,7 +173,7 @@ class ArchivalInflator implements IInflator
             );
 
             if ($langElement && $summaryElement) {
-                $langStr = trim(strval($langElement));
+                $langStr = trim(strtoupper(strval($langElement)));
                 $summaryStr = trim(strval($summaryElement));
 
                 if (self::$titlesLanguageTypes[Language::DE] === $langStr) {
