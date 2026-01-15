@@ -35,9 +35,9 @@ class ExtenderWithSortingInfo extends Hybrid
         return true;
     }
 
-    private function extractSortingInfo(IDrawing $item): string
+    private function extractSortingInfo(GraphicLanguageCollection $collection): string
     {
-        $sortingNumber = $item->getSortingNumber();
+        $sortingNumber = $collection->getSortingNumber();
         $splitSortingNumber = array_filter(
             array_map(
                 'trim',
@@ -49,6 +49,11 @@ class ExtenderWithSortingInfo extends Hybrid
             return '3000';
         }
 
-        return $sortingNumber;
+        $year = array_shift($splitSortingNumber);
+        $pos = intval(array_shift($splitSortingNumber)) + 1000;
+
+        $updatedSortingNumber = implode('-', [$year, $pos, ...$splitSortingNumber]);
+
+        return $updatedSortingNumber;
     }
 }

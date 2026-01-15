@@ -6,6 +6,7 @@ use CranachDigitalArchive\Importer\Caches\FileCache;
 use CranachDigitalArchive\Importer\Constructions\Default\Utils\Parameters;
 use CranachDigitalArchive\Importer\Constructions\Default\Utils\Paths;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\LocationsGeoPositionExtender;
+use CranachDigitalArchive\Importer\Modules\Main\Transformers\ExcludeByInventoryNumberPrefix;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteDocumentExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Main\Gates\SkipSoftDeletedArtefactGate;
@@ -73,6 +74,7 @@ final class Graphics
 
         $this->loader = GraphicsLoader::withSourcesAt($paths->getGraphicsInputFilePaths());
         $this->loader->pipeline(
+            ExcludeByInventoryNumberPrefix::new('==', 'Graphics'),
             (!$parameters->getKeepSoftDeletedAretefacts()) ? SkipSoftDeletedArtefactGate::new('Graphics') : null,
             $graphicsRemoteDocumentExistenceChecker,
             $graphicsRemoteImageExistenceChecker,
