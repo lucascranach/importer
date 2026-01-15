@@ -68,7 +68,7 @@ final class Drawings
 
         $this->loader = DrawingsLoader::withSourcesAt($paths->getDrawingsInputFilePaths());
         $this->loader->pipeline(
-            ExcludeByInventoryNumberPrefix::new('==', 'Drawings'),
+            ExcludeByInventoryNumberPrefix::new($parameters->getEnvironmentVariables()->getExcludeInventoryNumberPrefix(), 'Drawings'),
             (!$parameters->getKeepSoftDeletedAretefacts()) ? SkipSoftDeletedArtefactGate::new('Drawings') : null,
             ExtenderWithReferences::new($this->drawingsReferencesCollector),
             ReferenceDivider::new($this->drawingsReferencesCollector),

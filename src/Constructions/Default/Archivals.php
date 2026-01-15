@@ -45,7 +45,7 @@ final class Archivals
 
         $this->loader = ArchivalsLoader::withSourcesAt($paths->getArchivalsInputFilePaths());
         $this->loader->pipeline(
-            ExcludeByInventoryNumberPrefix::new('==', 'Archivals'),
+            ExcludeByInventoryNumberPrefix::new($parameters->getEnvironmentVariables()->getExcludeInventoryNumberPrefix(), 'Archivals'),
             $archivalsRemoteDocumentExistenceChecker,
             $archivalsRemoteImageExistenceChecker,
             MetadataFiller::new(),

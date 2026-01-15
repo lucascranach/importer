@@ -74,7 +74,7 @@ final class Graphics
 
         $this->loader = GraphicsLoader::withSourcesAt($paths->getGraphicsInputFilePaths());
         $this->loader->pipeline(
-            ExcludeByInventoryNumberPrefix::new('==', 'Graphics'),
+            ExcludeByInventoryNumberPrefix::new($parameters->getEnvironmentVariables()->getExcludeInventoryNumberPrefix(), 'Graphics'),
             (!$parameters->getKeepSoftDeletedAretefacts()) ? SkipSoftDeletedArtefactGate::new('Graphics') : null,
             $graphicsRemoteDocumentExistenceChecker,
             $graphicsRemoteImageExistenceChecker,
