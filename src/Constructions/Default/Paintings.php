@@ -6,6 +6,7 @@ use CranachDigitalArchive\Importer\Caches\FileCache;
 use CranachDigitalArchive\Importer\Constructions\Default\Utils\Parameters;
 use CranachDigitalArchive\Importer\Constructions\Default\Utils\Paths;
 use CranachDigitalArchive\Importer\Modules\Main\Gates\SkipSoftDeletedArtefactGate;
+use CranachDigitalArchive\Importer\Modules\Main\Transformers\ExcludeByInventoryNumberPrefix;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteDocumentExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Paintings\Loaders\XML\PaintingsPreLoader;
@@ -67,6 +68,7 @@ final class Paintings
 
         $this->loader = PaintingsLoader::withSourcesAt($paths->getPaintingsInputFilePaths());
         $this->loader->pipeline(
+            ExcludeByInventoryNumberPrefix::new($parameters->getEnvironmentVariables()->getExcludeInventoryNumberPrefix(), 'Paintings'),
             (!$parameters->getKeepSoftDeletedAretefacts()) ? SkipSoftDeletedArtefactGate::new('Paintings'): null,
             ExtenderWithReferences::new($this->paintingsReferencesCollector),
             ReferenceDivider::new($this->paintingsReferencesCollector),

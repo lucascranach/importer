@@ -5,6 +5,7 @@ namespace CranachDigitalArchive\Importer\Constructions\Default;
 use CranachDigitalArchive\Importer\Caches\FileCache;
 use CranachDigitalArchive\Importer\Constructions\Default\Utils\Parameters;
 use CranachDigitalArchive\Importer\Constructions\Default\Utils\Paths;
+use CranachDigitalArchive\Importer\Modules\Main\Transformers\ExcludeByInventoryNumberPrefix;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteDocumentExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Main\Transformers\RemoteImageExistenceChecker;
 use CranachDigitalArchive\Importer\Modules\Archivals\Loaders\XML\ArchivalsLoader;
@@ -44,6 +45,7 @@ final class Archivals
 
         $this->loader = ArchivalsLoader::withSourcesAt($paths->getArchivalsInputFilePaths());
         $this->loader->pipeline(
+            ExcludeByInventoryNumberPrefix::new($parameters->getEnvironmentVariables()->getExcludeInventoryNumberPrefix(), 'Archivals'),
             $archivalsRemoteDocumentExistenceChecker,
             $archivalsRemoteImageExistenceChecker,
             MetadataFiller::new(),
