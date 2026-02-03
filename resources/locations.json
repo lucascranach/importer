@@ -1553,5 +1553,15 @@
         "name": "Hannover",
         "latitude": "52.5",
         "longitude": "9"
+    },
+    "7011798": {
+        "name": "City of London",
+        "latitude": "51.514125",
+        "longitude": "-.093689"
+    },
+    "7076975": {
+        "name": "Kreisfreie Stadt Worms",
+        "latitude": "49.663056",
+        "longitude": "8.335833"
     }
 }
