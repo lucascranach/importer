@@ -6,6 +6,7 @@ final class EnvironmentVariables
 {
     private string $imagesAPIKey;
     private string $cacheDirectoryPath;
+    private string $excludeInventoryNumberPrefix;
 
     private function __construct(string $rootPath)
     {
@@ -13,8 +14,15 @@ final class EnvironmentVariables
 
         $fallbackCacheDirectoryPath = './.cache';
 
+        $fallbackExcludeInventoryNumberPrefix = '==';
+
         $this->imagesAPIKey = $_ENV['IMAGES_API_KEY'];
         $this->cacheDirectoryPath = $_ENV['CACHE_DIR'] ?? $fallbackCacheDirectoryPath;
+
+        $excludeInventoryNumberPrefix = trim(strval($_ENV['EXCLUDE_INVENTORY_NUMBER_PREFIX'] ?? ''));
+        $this->excludeInventoryNumberPrefix = ($excludeInventoryNumberPrefix !== '')
+            ? $excludeInventoryNumberPrefix
+            : $fallbackExcludeInventoryNumberPrefix;
     }
 
     public static function new(string $rootPath): self
@@ -30,6 +38,11 @@ final class EnvironmentVariables
     public function getCacheDirectoryPath(): string
     {
         return $this->cacheDirectoryPath;
+    }
+
+    public function getExcludeInventoryNumberPrefix(): string
+    {
+        return $this->excludeInventoryNumberPrefix;
     }
 
     private function loadEnv(string $rootPath): void

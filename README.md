@@ -19,6 +19,12 @@ composer install
 
 Aktuell setzt der Importer PHP in Version 8.2 voraus.
 
+## Konfiguration (.env)
+
+Zusätzlich zu `IMAGES_API_KEY` können Artefakte per Inventarnummer-Prefix vom Import ausgeschlossen werden:
+
+- `EXCLUDE_INVENTORY_NUMBER_PREFIX` (Default: `==`)
+
 
 
 ## Scripts
