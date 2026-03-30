@@ -76,12 +76,8 @@ class MetaReferenceCollector extends Consumer
 
         // Skip objects without overall image category
         if (($item instanceof Graphic)) {
-            $isVirtual = $item->getIsVirtual();
-
-            // For graphics we only need the keywords for virtual graphics
-            if (!$isVirtual) {
-                return;
-            }
+            // Collect keywords from both virtual AND real graphics
+            // (previously only virtual graphics were considered)
 
             // TODO: identify hidden or not shown artefacts by some other characteristic
             $images = (array)$item->getImages();

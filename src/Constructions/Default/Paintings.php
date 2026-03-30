@@ -24,6 +24,7 @@ use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\MapToSearchabl
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithThesaurus as SearchablePaintingsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithBasicFilterValues as SearchablePaintingsExtenderWithBasicFilterValues;
 use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\ExtenderWithInvolvedPersonsFullnames as SearchablePaintingsExtenderWithInvolvedPersonsFullnames;
+use CranachDigitalArchive\Importer\Modules\Paintings\Transformers\KeywordParentTermExtender;
 use CranachDigitalArchive\Importer\Modules\Paintings\Exporters\PaintingsElasticsearchLangExporter as SearchablePaintingsElasticsearchLangExporter;
 
 final class Paintings
@@ -78,6 +79,7 @@ final class Paintings
             ExtenderWithIds::new($memoryFilters->getArtefactMemoryExporter()),
             MetadataFiller::new(),
             ExtenderWithSortingInfo::new(),
+            KeywordParentTermExtender::new($thesaurus->getMemoryExporter()),
             LocationsGeoPositionExtender::new($base->getLocationsSource())
                 /* Exporting the paintings as JSON */
                 ->pipeline(PaintingsJSONLangExporter::withDestinationAt($paintingsOutputFilepath))

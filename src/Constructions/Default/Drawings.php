@@ -24,6 +24,7 @@ use CranachDigitalArchive\Importer\Modules\Drawings\Transformers\MapToSearchable
 use CranachDigitalArchive\Importer\Modules\Drawings\Transformers\ExtenderWithThesaurus as SearchableDrawingsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Drawings\Transformers\ExtenderWithBasicFilterValues as SearchableDrawingsExtenderWithBasicFilterValues;
 use CranachDigitalArchive\Importer\Modules\Drawings\Transformers\ExtenderWithInvolvedPersonsFullnames as SearchableDrawingsExtenderWithInvolvedPersonsFullnames;
+use CranachDigitalArchive\Importer\Modules\Drawings\Transformers\KeywordParentTermExtender;
 use CranachDigitalArchive\Importer\Modules\Drawings\Exporters\DrawingsElasticsearchLangExporter as SearchableDrawingsElasticsearchLangExporter;
 
 final class Drawings
@@ -78,6 +79,7 @@ final class Drawings
             ExtenderWithIds::new($memoryFilters->getArtefactMemoryExporter()),
             MetadataFiller::new(),
             ExtenderWithSortingInfo::new(),
+            KeywordParentTermExtender::new($thesaurus->getMemoryExporter()),
             LocationsGeoPositionExtender::new($base->getLocationsSource())
                 /* Exporting the drawings as JSON */
                 ->pipeline(DrawingsJSONLangExporter::withDestinationAt($drawingsOutputFilepath))
