@@ -1568,5 +1568,10 @@
         "name": "Braunschweig",
         "latitude": "52.25",
         "longitude": "10.5"
+    },
+    "7005108": {
+        "name": "Worms",
+        "latitude": "49.635556",
+        "longitude": "8.359722"
     }
 }
