@@ -400,7 +400,7 @@ class DrawingInflator implements IInflator
             /* remark */
             $remarksElement = self::findElementByXPath(
                 $titleDetailElement,
-                'Field[@FieldName="{@ObjTitlesRemarks}"]/FormattedValue',
+                'Field[@FieldName="{OBJTITLES.Remarks}"]/FormattedValue',
             );
             if ($remarksElement) {
                 $remarksStr = trim(strval($remarksElement));
