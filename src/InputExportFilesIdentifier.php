@@ -47,7 +47,9 @@ class InputExportFilesIdentifier
      */
     public function getFilePathsAssociatedWithProbeClass(string $probeClassName): array
     {
-        $registeredProbeClasses = array_map(function ($probe) { return $probe::class; }, $this->probes);
+        $registeredProbeClasses = array_map(function ($probe) {
+            return $probe::class;
+        }, $this->probes);
         if (!in_array($probeClassName, $registeredProbeClasses, true)) {
             throw new Error('Unknown probe class "' . $probeClassName . '"' . "\n!");
         }

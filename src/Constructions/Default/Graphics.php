@@ -27,6 +27,8 @@ use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithRep
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithThesaurus as SearchableGraphicsExtenderWithThesaurus;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithBasicFilterValues as SearchableGraphicsExtenderWithBasicFilterValues;
 use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\ExtenderWithInvolvedPersonsFullnames as SearchableGraphicsExtenderWithInvolvedPersonsFullnames;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\KeywordParentTermExtender;
+use CranachDigitalArchive\Importer\Modules\Graphics\Transformers\VirtualGraphicKeywordBubbler;
 use CranachDigitalArchive\Importer\Modules\Graphics\Exporters\GraphicsElasticsearchLangExporter as SearchableGraphicsGraphicsElasticsearchLangExporter;
 
 final class Graphics
@@ -85,6 +87,8 @@ final class Graphics
             MetadataFiller::new(),
             ExtenderWithLocations::new($this->graphicsLocationsCollector, true),
             ExtenderWithSortingInfo::new(),
+            VirtualGraphicKeywordBubbler::new(),
+            KeywordParentTermExtender::new($thesaurus->getMemoryExporter()),
             LocationsGeoPositionExtender::new($base->getLocationsSource())
                 /* Exporting the graphics as JSON */
                 ->pipeline(GraphicsJSONLangExistenceTypeExporter::withDestinationAt($graphicsOutputFilepath))

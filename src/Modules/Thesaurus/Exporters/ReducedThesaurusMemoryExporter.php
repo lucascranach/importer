@@ -17,6 +17,7 @@ class ReducedThesaurusMemoryExporter implements IMemoryExporter
     private $reducedTermIds = [];
     private $thesaurusTermCounter = 0;
     private $skippedThesaurusTermCounter = 0;
+    private $keptAsParentCounter = 0;
 
 
     private function __construct()
@@ -32,7 +33,13 @@ class ReducedThesaurusMemoryExporter implements IMemoryExporter
         $self->item = $self->applyRestrictions($thesaurusMemoryExporter->getData());
 
         if ($self->thesaurusTermCounter !== 0) {
-            echo "Skipped " . $self->skippedThesaurusTermCounter . " of " . $self->thesaurusTermCounter . " thesaurus terms for the reduced thesaurus!\n";
+            $keptCount = $self->thesaurusTermCounter - $self->skippedThesaurusTermCounter;
+            echo "Reduced thesaurus statistics:\n";
+            echo "  - Total terms processed: " . $self->thesaurusTermCounter . "\n";
+            echo "  - Terms kept (directly used): " . ($keptCount - $self->keptAsParentCounter) . "\n";
+            echo "  - Terms kept (as parent): " . $self->keptAsParentCounter . "\n";
+            echo "  - Terms skipped: " . $self->skippedThesaurusTermCounter . "\n";
+            echo "  - Final count: " . $keptCount . " of " . $self->thesaurusTermCounter . " terms\n\n";
         }
 
         return $self;
@@ -98,13 +105,32 @@ class ReducedThesaurusMemoryExporter implements IMemoryExporter
             $this->thesaurusTermCounter += 1;
             $termId = $this->getTermId($term);
 
+            // Rekursiv Kinder verarbeiten
             $newTermSubTerms = $this->reduceTermList($term->getSubTerms(), $metaReferenceIds);
 
-            if (empty($newTermSubTerms) && (is_null($termId) || !in_array($termId, $metaReferenceIds, true))) {
+            // Entscheiden, ob dieser Term behalten wird:
+            // 1. Term wird in Artefakten verwendet (direkt referenziert)
+            $isDirectlyUsed = !is_null($termId) && in_array($termId, $metaReferenceIds, true);
+
+            // 2. Term hat Kinder, die verwendet werden (Parent-Term)
+            $hasUsedChildren = !empty($newTermSubTerms);
+
+            // Term wird BEHALTEN wenn:
+            // - Er direkt verwendet wird ODER
+            // - Er Kinder hat, die verwendet werden (damit die Hierarchie vollständig bleibt)
+            if (!$isDirectlyUsed && !$hasUsedChildren) {
+                // Term wird weder verwendet noch hat er verwendete Kinder → überspringen
                 $this->skippedThesaurusTermCounter += 1;
                 continue;
             }
 
+            // Statistik: Zähle Parent-Terms die nur wegen ihrer Kinder behalten werden
+            // An diesem Punkt muss $hasUsedChildren true sein, wenn !$isDirectlyUsed gilt
+            if (!$isDirectlyUsed) {
+                $this->keptAsParentCounter += 1;
+            }
+
+            // Term behalten und aufbauen
             $newTerm = new ThesaurusTerm();
             $newTerm->setTerm($term->getTerm());
 
