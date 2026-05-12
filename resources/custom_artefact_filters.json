@@ -2019,8 +2019,8 @@
                   {
                     "id": "collection_repository.country.germany.berlin.berlin_3",
                     "text": {
-                      "de": "Gemäldegalerie der Staatlichen Museen",
-                      "en": "Gemäldegalerie der Staatlichen Museen"
+                      "de": "Gemäldegalerie der Staatlichen Museen, Stiftung Preußischer Kulturbesitz",
+                      "en": "Gemäldegalerie der Staatlichen Museen, Stiftung Preußischer Kulturbesitz"
                     },
                     "matchers": [
                       {
@@ -2031,20 +2031,20 @@
                   {
                     "id": "collection_repository.country.germany.berlin.berlin_4",
                     "text": {
-                      "de": "Kupferstichkabinett der Staatlichen Museen, Preußischer Kulturbesitz",
-                      "en": "Kupferstichkabinett der Staatlichen Museen, Preußischer Kulturbesitz"
+                      "de": "Kupferstichkabinett der Staatlichen Museen, Stiftung Preußischer Kulturbesitz",
+                      "en": "Kupferstichkabinett der Staatlichen Museen, Stiftung Preußischer Kulturbesitz"
                     },
                     "matchers": [
                       {
-                        "collection_repository": "/(kupferstichkabinett,\\s+)?staatliche museen zu berlin\\s+(-\\s+)?preußischer kulturbesitz(,\\s+kupferstichkabinett)?/i"
+                        "collection_repository": "/Kupferstichkabinett, Staatliche Museen zu Berlin, Stiftung Preußischer Kulturbesitz/i"
                       }
                     ]
                   },
                   {
                     "id": "collection_repository.country.germany.berlin.berlin_5",
                     "text": {
-                      "de": "Staatsbibliothek - Preußischer Kulturbesitz, Abt. Historische Drucke",
-                      "en": "Staatsbibliothek - Preußischer Kulturbesitz, Abt. Historische Drucke"
+                      "de": "Staatsbibliothek - Stiftung Preußischer Kulturbesitz, Abt. Historische Drucke",
+                      "en": "Staatsbibliothek - Stiftung Preußischer Kulturbesitz, Abt. Historische Drucke"
                     },
                     "matchers": [
                       {
@@ -5919,12 +5919,33 @@
               {
                 "id": "collection_repository.country.america.chicago",
                 "text": {
-                  "de": "Chicago, Art Institute",
-                  "en": "Chicago, Art Institute"
+                  "de": "Chicago",
+                  "en": "Chicago"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/the art institute of chicago/i"
+                    "id": "collection_repository.country.america.houston.chicago_1",
+                    "text": {
+                      "de": "The Art Institute",
+                      "en": "The Art Institute"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/the art institute of chicago/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.america.houston.chicago_2",
+                    "text": {
+                      "de": "The Johnson Family Collection L.P.",
+                      "en": "The Johnson Family Collection L.P."
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/sarah campbell blaffer foundation, houston/i"
+                      }
+                    ]
                   }
                 ]
               },
