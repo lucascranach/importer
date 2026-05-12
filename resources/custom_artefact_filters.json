@@ -2550,6 +2550,18 @@
                 ]
               },
               {
+                "id": "collection_repository.country.germany.erlangen",
+                "text": {
+                  "de": "Erlangen-Nürnberg, Universitätsbibliothek",
+                  "en": "Erlangen-Nürnberg, Universitätsbibliothek"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Universitätsbibliothek Erlangen-Nürnberg/i"
+                  }
+                ]
+              },
+              {
                 "id": "collection_repository.country.germany.frankfurt",
                 "text": {
                   "de": "Frankfurt a. M.",
@@ -3383,12 +3395,33 @@
               {
                 "id": "collection_repository.country.germany.marburg",
                 "text": {
-                  "de": "Marburg, Kunstmuseum",
-                  "en": "Marburg, Kunstmuseum"
+                  "de": "Marburg",
+                  "en": "Marburg"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/Kunstmuseum Marburg/i"
+                    "id": "collection_repository.country.germany.marburg.marburg_1",
+                    "text": {
+                      "de": "Kunstmuseum",
+                      "en": "Kunstmuseum"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Kunstmuseum Marburg/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.marburg.marburg_2",
+                    "text": {
+                      "de": "Universitätsbibliothek",
+                      "en": "Universitätsbibliothek"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Universitätsbibliothek Marburg/i"
+                      }
+                    ]
                   }
                 ]
               },
@@ -3511,14 +3544,14 @@
                 "text": {
                   "de": "Münster, LWL-Museum für Kunst und Kultur",
                   "en": "Münster, LWL-Museum für Kunst und Kultur"
-                },
-                "matchers": [
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/lwl-museum für kunst und kultur münster/i"
+                      }
+                    ]
+                  },
                   {
-                    "collection_repository": "/lwl-museum für kunst und kultur münster/i"
-                  }
-                ]
-              },
-              {
                 "id": "collection_repository.country.germany.muenstermaifeld",
                 "text": {
                   "de": "Münstermaifeld, Burg Eltz",
@@ -6438,7 +6471,7 @@
         },
         "matchers": [
           {
-            "collection_repository": "/(painting not preserved|gemälde nicht erhalten)/i"
+            "collection_repository": "/(painting not preserved|[gemälde|zeichnung] nicht erhalten|drawing lost/ destroyed/i"
           }
         ]
       },
