@@ -4143,6 +4143,18 @@
                 ]
               },
               {
+                "id": "collection_repository.country.germany.worms",
+                "text": {
+                  "de": "Worms, Stadtbibliothek",
+                  "en": "Worms, Stadtbibliothek"
+                },
+                "matchers": [
+                  {
+                    "collection_repository": "/Stadtbibliothek Worms/i"
+                  }
+                ]
+              },
+              {
                 "id": "collection_repository.country.germany.wuerzburg",
                 "text": {
                   "de": "Würzburg",
@@ -6165,12 +6177,33 @@
               {
                 "id": "collection_repository.country.america.minneapolis",
                 "text": {
-                  "de": "Minneapolis, Institute of Arts",
-                  "en": "Minneapolis, Institute of Arts"
+                  "de": "Minneapolis",
+                  "en": "Minneapolis"
                 },
-                "matchers": [
+                "children": [
                   {
-                    "collection_repository": "/minneapolis institute of arts/i"
+                    "id": "collection_repository.country.america.minneapolis.minneapolis_1",
+                    "text": {
+                      "de": "Institute of Arts",
+                      "en": "Institute of Arts"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/minneapolis institute of arts/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.america.minneapolis.minneapolis_2",
+                    "text": {
+                      "de": "Thrivent Art Collection",
+                      "en": "Thrivent Art Collection"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/The Thrivent Collection of Religious Art, Minneapolis/i"
+                      }
+                    ]
                   }
                 ]
               },
