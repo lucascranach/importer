@@ -2883,6 +2883,18 @@
                   {
                     "id": "collection_repository.country.germany.hamburg.hamburg_4",
                     "text": {
+                      "de": "Staats- und Universitätsbibliothek – Carl von Ossietzky",
+                      "en": "Staats- und Universitätsbibliothek – Carl von Ossietzky"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Staats- und Universitätsbibliothek Hamburg – Carl von Ossietzky/i"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.hamburg.hamburg_5",
+                    "text": {
                       "de": "Stiftung August Ohm",
                       "en": "Stiftung August Ohm"
                     },
@@ -3504,8 +3516,8 @@
                   {
                     "id": "collection_repository.country.germany.munich.munich_2",
                     "text": {
-                      "de": "Staatliche Graphische Sammlung München",
-                      "en": "Staatliche Graphische Sammlung München"
+                      "de": "Staatliche Graphische Sammlung",
+                      "en": "Staatliche Graphische Sammlung"
                     },
                     "matchers": [
                       {
@@ -5799,18 +5811,6 @@
               "en": "United States of America"
             },
             "children": [
-              {
-                "id": "collection_repository.country.america.allentown",
-                "text": {
-                  "de": "Allentown Art Museum",
-                  "en": "Allentown Art Museum"
-                },
-                "matchers": [
-                  {
-                    "collection_repository": "/allentown art museum/i"
-                  }
-                ]
-              },
               {
                 "id": "collection_repository.country.america.atlanta",
                 "text": {
