@@ -11,8 +11,13 @@ use CranachDigitalArchive\Importer\Modules\Drawings\Interfaces\IDrawingInfo;
  */
 class DrawingInfo implements IDrawingInfo
 {
+    const INVENTORY_NUMBER_PREFIX_PATTERNS = [
+        '/^Z_/' => 'Z_',
+    ];
+
     public $metadata = null;
 
+    public $inventoryNumberPrefix = '';
     public $inventoryNumber = '';
     public $references = [];
 
@@ -32,9 +37,30 @@ class DrawingInfo implements IDrawingInfo
         return $this->metadata;
     }
 
+    public function getInventoryNumberPrefix(): string
+    {
+        return $this->inventoryNumberPrefix;
+    }
+
+    public function setInventoryNumberPrefix(string $inventoryNumberPrefix): void
+    {
+        $this->inventoryNumberPrefix = $inventoryNumberPrefix;
+    }
+
     public function setInventoryNumber(string $inventoryNumber): void
     {
         $this->inventoryNumber = $inventoryNumber;
+
+        foreach (self::INVENTORY_NUMBER_PREFIX_PATTERNS as $pattern => $value) {
+            $counter = 0;
+
+            $this->inventoryNumber = preg_replace($pattern, '', $this->inventoryNumber, -1, $counter);
+
+            if ($counter > 0) {
+                $this->setInventoryNumberPrefix($value);
+                break;
+            }
+        }
     }
 
 

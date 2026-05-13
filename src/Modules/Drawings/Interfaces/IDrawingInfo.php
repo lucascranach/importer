@@ -11,6 +11,10 @@ interface IDrawingInfo
 
     public function getMetadata(): ?Metadata;
 
+    public function getInventoryNumberPrefix(): string;
+
+    public function setInventoryNumberPrefix(string $inventoryNumberPrefix): void;
+
     public function setInventoryNumber(string $inventoryNumber): void;
 
     public function getInventoryNumber(): string;

@@ -125,6 +125,20 @@ class DrawingLanguageCollection extends AbstractItemLanguageCollection implement
     }
 
 
+    public function getInventoryNumberPrefix(): string
+    {
+        return $this->first()->getInventoryNumberPrefix();
+    }
+
+
+    public function setInventoryNumberPrefix(string $inventoryNumberPrefix): void
+    {
+        foreach ($this as $drawing) {
+            $drawing->setInventoryNumberPrefix($inventoryNumberPrefix);
+        }
+    }
+
+
     public function setInventoryNumber(string $inventoryNumber): void
     {
         foreach ($this as $drawing) {

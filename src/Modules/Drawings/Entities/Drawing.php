@@ -25,6 +25,10 @@ class Drawing extends AbstractImagesItem implements IDrawing
 {
     public const ENTITY_TYPE = 'DRAWING';
 
+    const INVENTORY_NUMBER_PREFIX_PATTERNS = [
+        '/^Z_/' => 'Z_',
+    ];
+
     public $metadata = null;
     public $involvedPersons = [];
     public $involvedPersonsNames = []; // Evtl. Umbau notwendig
@@ -32,6 +36,7 @@ class Drawing extends AbstractImagesItem implements IDrawing
     public $titles = [];
     public $classification = null;
     public $objectName = '';
+    public $inventoryNumberPrefix = '';
     public $inventoryNumber = '';
     public $objectId = null;
     public $dimensions = '';
@@ -70,7 +75,9 @@ class Drawing extends AbstractImagesItem implements IDrawing
 
     public function getRemoteId(): string
     {
-        return $this->getId();
+        $id = $this->getInventoryNumber();
+
+        return empty($id) ? $id : $this->getInventoryNumberPrefix() . $id;
     }
 
 
@@ -152,9 +159,30 @@ class Drawing extends AbstractImagesItem implements IDrawing
     }
 
 
+    public function getInventoryNumberPrefix(): string
+    {
+        return $this->inventoryNumberPrefix;
+    }
+
+    public function setInventoryNumberPrefix(string $inventoryNumberPrefix): void
+    {
+        $this->inventoryNumberPrefix = $inventoryNumberPrefix;
+    }
+
     public function setInventoryNumber(string $inventoryNumber): void
     {
         $this->inventoryNumber = $inventoryNumber;
+
+        foreach (self::INVENTORY_NUMBER_PREFIX_PATTERNS as $pattern => $value) {
+            $counter = 0;
+
+            $this->inventoryNumber = preg_replace($pattern, '', $this->inventoryNumber, -1, $counter);
+
+            if ($counter > 0) {
+                $this->setInventoryNumberPrefix($value);
+                break;
+            }
+        }
     }
 
 

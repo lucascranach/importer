@@ -1573,5 +1573,15 @@
         "name": "Worms",
         "latitude": "49.635556",
         "longitude": "8.359722"
+    },
+    "1000062": {
+        "name": "Österreich",
+        "latitude": "47.3333",
+        "longitude": "13.3333"
+    },
+    "8713915": {
+        "name": "Ancient Jerusalem",
+        "latitude": "31.7768",
+        "longitude": "35.231"
     }
 }
