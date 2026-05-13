@@ -2019,8 +2019,8 @@
                   {
                     "id": "collection_repository.country.germany.berlin.berlin_3",
                     "text": {
-                      "de": "Gemäldegalerie der Staatlichen Museen, Stiftung Preußischer Kulturbesitz",
-                      "en": "Gemäldegalerie der Staatlichen Museen, Stiftung Preußischer Kulturbesitz"
+                      "de": "Gemäldegalerie, Staatliche Museen zu Berlin, Stiftung Preußischer Kulturbesitz",
+                      "en": "Gemäldegalerie, Staatliche Museen zu Berlin, Stiftung Preußischer Kulturbesitz"
                     },
                     "matchers": [
                       {
@@ -2031,8 +2031,8 @@
                   {
                     "id": "collection_repository.country.germany.berlin.berlin_4",
                     "text": {
-                      "de": "Kupferstichkabinett der Staatlichen Museen, Stiftung Preußischer Kulturbesitz",
-                      "en": "Kupferstichkabinett der Staatlichen Museen, Stiftung Preußischer Kulturbesitz"
+                      "de": "Kupferstichkabinett, Staatliche Museen zu Berlin, Stiftung Preußischer Kulturbesitz",
+                      "en": "Kupferstichkabinett, Staatliche Museen zu Berlin, Stiftung Preußischer Kulturbesitz"
                     },
                     "matchers": [
                       {
