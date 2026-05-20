@@ -6525,7 +6525,7 @@
         },
         "matchers": [
           {
-            "collection_repository": "/(painting not preserved|[gemälde|zeichnung] nicht erhalten|drawing lost/ destroyed/i"
+            "collection_repository": "/(painting not preserved|[gemälde|zeichnung] nicht erhalten|drawing lost\\/ destroyed)/i"
           }
         ]
       },
