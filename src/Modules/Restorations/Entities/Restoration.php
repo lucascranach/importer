@@ -15,6 +15,7 @@ class Restoration implements IRestoration
         '/^CDA_/' => 'CDA_',
         '/^G_G_/' => 'G_G_',
         '/^G_/' => 'G_',
+        '/^Z_/' => 'Z_',
     ];
 
     public $langCode = '';
