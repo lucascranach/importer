@@ -2432,6 +2432,18 @@
                         "collection_repository": "/sächsische Landesbibliothek .* staats- und universitätsbibliothek dresden/i"
                       }
                     ]
+                  },
+                  {
+                    "id": "collection_repository.country.germany.dresden.dresden_5",
+                    "text": {
+                      "de": "Kupferstich-Kabinett, Staatliche Kunstsammlungen",
+                      "en": "Kupferstich-Kabinett, Staatliche Kunstsammlungen"
+                    },
+                    "matchers": [
+                      {
+                        "collection_repository": "/Kupferstich-Kabinett, Staatliche Kunstsammlungen Dresden/i"
+                      }
+                    ]
                   }
                 ]
               },
