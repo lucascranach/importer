@@ -313,6 +313,7 @@ class GraphicInflator implements IInflator
         self::inflateSortingNumber($subNode, $graphicCollection);
         self::inflateCatalogWorkReference($subNode, $graphicCollection);
         self::inflateStructuredDimension($subNode, $graphicCollection);
+        self::inflateIsBestOf($subNode, $graphicCollection);
         self::inflateIsPublished($subNode, $graphicCollection);
     }
 
@@ -1990,13 +1991,28 @@ class GraphicInflator implements IInflator
     }
 
 
+    private static function inflateIsBestOf(
+        SimpleXMLElement &$node,
+        GraphicLanguageCollection $graphicCollection,
+    ): void {
+        $isBestOfElement = self::findElementByXPath(
+            $node,
+            'Section[@SectionNumber="41"]',
+        );
+
+        $isBestOf = $isBestOfElement !== false;
+
+        $graphicCollection->setIsBestOf($isBestOf);
+    }
+
+
     private static function inflateIsPublished(
         SimpleXMLElement &$node,
         GraphicLanguageCollection $graphicCollection,
     ): void {
         $isPublishedElement = self::findElementByXPath(
             $node,
-            'Section[@SectionNumber="41"]/Field[@FieldName="{@CDA Online-Freigabe}"]/Value',
+            'Section[@SectionNumber="42"]/Field[@FieldName="{@CDA Online-Freigabe}"]/Value',
         );
 
         $isPublished = $isPublishedElement !== false && strval($isPublishedElement) === self::$isPublishedString;

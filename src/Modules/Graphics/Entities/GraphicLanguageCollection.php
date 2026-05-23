@@ -611,6 +611,20 @@ class GraphicLanguageCollection extends AbstractItemLanguageCollection implement
     }
 
 
+    public function setIsBestOf(bool $isBestOf): void
+    {
+        foreach ($this as $graphic) {
+            $graphic->setIsBestOf($isBestOf);
+        }
+    }
+
+
+    public function getIsBestOf(): bool
+    {
+        return $this->first()->getIsBestOf();
+    }
+
+
     public function setRestorationSurveys(array $restorationSurveys): void
     {
         foreach ($this as $graphic) {

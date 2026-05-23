@@ -74,6 +74,7 @@ class Graphic extends AbstractImagesItem implements IGraphic
     public $sortingNumber = '';
     public $catalogWorkReferences = [];
     public $structuredDimension = null;
+    public $isBestOf = false;
     public $restorationSurveys = [];
     public $searchSortingNumber = '';
 
@@ -519,6 +520,16 @@ class Graphic extends AbstractImagesItem implements IGraphic
     public function getStructuredDimension(): ?StructuredDimension
     {
         return $this->structuredDimension;
+    }
+
+    public function setIsBestOf(bool $isBestOf): void
+    {
+        $this->isBestOf = $isBestOf;
+    }
+
+    public function getIsBestOf(): bool
+    {
+        return $this->isBestOf;
     }
 
     public function setRestorationSurveys(array $restorationSurveys): void

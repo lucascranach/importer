@@ -178,6 +178,10 @@ interface IGraphic extends IImagesItem, ILocations
 
     public function getStructuredDimension(): ?StructuredDimension;
 
+    public function setIsBestOf(bool $isBestOf): void;
+
+    public function getIsBestOf(): bool;
+
     public function setRestorationSurveys(array $restorationSurveys): void;
 
     public function getRestorationSurveys(): array;
