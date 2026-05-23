@@ -21,3 +21,6 @@ cghooks.lock
 *.zip
 *.log
 .env
+
+# Service Scripts
+cn-manual-update-dev.sh
