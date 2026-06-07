@@ -10,6 +10,7 @@ use CranachDigitalArchive\Importer\Language;
 class ObjectReference
 {
     private static $inventoryNumberPrefixPatterns = [
+        '/^Z_/' => 'Z_',
         '/^GWN_/' => 'GWN_',
         '/^CDA\./' => 'CDA.',
         '/^CDA_/' => 'CDA_',
