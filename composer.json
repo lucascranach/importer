@@ -13,7 +13,7 @@
         "ext-dom": "*",
         "ext-simplexml": "*",
         "vlucas/phpdotenv": "5.4.1",
-        "guzzlehttp/guzzle": "7.4.5"
+        "guzzlehttp/guzzle": "7.12.1"
     },
     "scripts": {
         "cghooks": "cghooks",
