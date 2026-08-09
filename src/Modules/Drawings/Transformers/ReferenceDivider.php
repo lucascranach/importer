@@ -31,19 +31,21 @@ class ReferenceDivider extends Hybrid
             throw new Error('Pushed item is not of expected class \'DrawingLanguageCollection\'');
         }
 
-        $references = [
-            "relatedInContentTo"=>[],
-            "similarTo"=>[],
-            "belongsTo"=>[],
-            "partOfWork"=>[],
-            "counterpartTo"=>[],
-            "graphic"=>[],
-            "onSameSheet"=>[],
-            "identicalWatermark"=>[],
-            "partOfSerie"=>[]
-        ];
-
         foreach ($item as $subItem) {
+            /* has to be initialized per language, otherwise the references
+               of the previous languages would be carried over */
+            $references = [
+                "relatedInContentTo"=>[],
+                "similarTo"=>[],
+                "belongsTo"=>[],
+                "partOfWork"=>[],
+                "counterpartTo"=>[],
+                "graphic"=>[],
+                "onSameSheet"=>[],
+                "identicalWatermark"=>[],
+                "partOfSerie"=>[]
+            ];
+
             $subItemReferences = $subItem->getReferences();
             foreach ($subItemReferences as $referenceItem) {
                 if ($referenceItem->kind === 'RELATED_IN_CONTENT_TO') {
