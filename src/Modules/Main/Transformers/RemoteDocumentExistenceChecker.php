@@ -115,35 +115,32 @@ class RemoteDocumentExistenceChecker extends Hybrid
             throw new Error('Item is not an instance of interface \'IImagesItem\'');
         }
 
-        $id = $item->getRemoteId();
+        $candidateIds = $this->getCandidateRemoteIds($item);
 
-        if (empty($id)) {
+        if (empty($candidateIds)) {
             echo '  Missing remoteId for \'' . $item->getId() . "'\n";
             return;
         }
 
-        $documentDataURL = $this->buildDocumentDataURL($id);
-
         /* We simply skip the object, if the same object (but in a different language) already triggered an error */
-        if (in_array($id, $this->objectIdsWithOccuredErrors, true)) {
+        if (!empty(array_intersect($candidateIds, $this->objectIdsWithOccuredErrors))) {
             return;
         }
 
-        /* Fill cache to avoid unnecessary duplicate requests for the same resource */
-        if (is_null($this->getCacheFor($id))) {
-            $result = $this->getRemoteDocumentDataResource($documentDataURL);
-            $rawDocumentsData = null;
+        /* Use the first candidate id for which document data exists on the remote server */
+        $id = $candidateIds[0];
+        $cachedDocumentsForObject = null;
 
-            if (!is_null($result)) {
-                $rawDocumentsData = $result;
+        foreach ($candidateIds as $candidateId) {
+            $cachedDocumentsForObject = $this->getRawDocumentsDataFor($candidateId);
+
+            if (!is_null($cachedDocumentsForObject)) {
+                $id = $candidateId;
+                break;
             }
-
-            $dataToCache = $this->createCacheData($rawDocumentsData);
-            $this->updateCacheFor($id, $dataToCache);
         }
 
-        $cachedItem = $this->getCacheFor($id);
-        $cachedDocumentsForObject = $cachedItem['rawDocumentsData'];
+        $documentDataURL = $this->buildDocumentDataURL($id);
 
         if (!is_null($cachedDocumentsForObject)) {
             $selectedExaminationTypes = (array) call_user_func_array(
@@ -172,6 +169,49 @@ class RemoteDocumentExistenceChecker extends Hybrid
             }
         }
     }
+
+
+    /**
+     * Document folders may be named with or without the inventory number prefix
+     * (e.g. 'Z_DE_KSW_KK98' or 'DE_KSW_KK98'), so both variants are tried.
+     *
+     * @return string[]
+     */
+    private function getCandidateRemoteIds(IImagesItem $item): array
+    {
+        $id = $item->getRemoteId();
+
+        if (empty($id)) {
+            return [];
+        }
+
+        $candidateIds = [$id];
+
+        if (method_exists($item, 'getInventoryNumberPrefix')) {
+            $prefix = $item->getInventoryNumberPrefix();
+
+            if (!empty($prefix) && str_starts_with($id, $prefix)) {
+                $candidateIds[] = substr($id, strlen($prefix));
+            }
+        }
+
+        return $candidateIds;
+    }
+
+
+    private function getRawDocumentsDataFor(string $id): ?array
+    {
+        $cachedItem = $this->getCacheFor($id);
+
+        /* Fill cache to avoid unnecessary duplicate requests for the same resource */
+        if (is_null($cachedItem)) {
+            $cachedItem = $this->createCacheData($this->getRemoteDocumentDataResource($this->buildDocumentDataURL($id)));
+            $this->updateCacheFor($id, $cachedItem);
+        }
+
+        return $cachedItem['rawDocumentsData'];
+    }
+
 
     private function buildDocumentDataURL(string $id): string
     {
